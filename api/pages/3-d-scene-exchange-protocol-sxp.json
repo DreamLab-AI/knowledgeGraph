@@ -184,7 +184,7 @@
         "label": "Binary Encoding"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF Specification"
       },
       {
@@ -334,9 +334,24 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:technical-documentation",
+      "label": "Technical Documentation",
+      "slug": "technical-documentation"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation",
+      "slug": "documentation"
+    },
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data",
+      "slug": "data"
     }
   ],
   "inheritedRelations": {
@@ -470,6 +485,10 @@
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "implements": [
@@ -562,7 +581,7 @@
         "label": "Decentralised Storage"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -592,8 +611,8 @@
         "label": "3D Asset Standard"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -652,8 +671,8 @@
         "label": "ISO"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:khronos-group",
@@ -716,7 +735,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -724,12 +743,8 @@
         "label": "Apache Parquet"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
-      },
-      {
-        "id": "urn:ngm:class:protobuf",
-        "label": "Protocol Buffers"
       },
       {
         "id": "urn:ngm:class:protocol-buffer",
@@ -738,6 +753,10 @@
       {
         "id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   },

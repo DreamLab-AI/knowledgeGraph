@@ -8,7 +8,7 @@ description: "Decentralised Decision-Making is a governance paradigm in which au
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 enables:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:on-chain-governance
@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:governance-token
   - urn:ngm:class:snapshot-voting
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:liquid-democracy

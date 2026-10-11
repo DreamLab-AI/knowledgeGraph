@@ -20,8 +20,8 @@
       "label": "Artificial Intelligence"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
     }
   ],
   "entityType": "Class",
@@ -58,7 +58,7 @@
         "label": "Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       }
     ],
@@ -76,8 +76,8 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -136,8 +136,8 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -212,8 +212,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -232,7 +232,7 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -277,7 +277,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       }
     ],
     "supports": [
@@ -401,14 +401,19 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -431,9 +436,24 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     }
   ],
   "inheritedRelations": {
@@ -447,15 +467,15 @@
         "label": "GAN"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE"
       },
       {
@@ -489,20 +509,20 @@
         "label": "Computational Infrastructure"
       },
       {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:model-optimization",
-        "label": "Model Optimization"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
       }
     ],
     "enables": [
@@ -541,6 +561,10 @@
     ],
     "dependsOn": [
       {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
@@ -557,20 +581,16 @@
         "label": "Stochastic Gradient Descent"
       },
       {
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
       }
     ],
     "implements": [
@@ -609,26 +629,42 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:small-language-model",
+        "label": "Small Language Model"
+      },
+      {
         "id": "urn:ngm:class:shallow-machine-learning",
         "label": "Shallow Machine Learning"
       },
       {
-        "id": "urn:ngm:class:decision-tree",
-        "label": "Decision Tree"
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
       },
       {
-        "id": "urn:ngm:class:support-vector-machine",
-        "label": "Support Vector Machine"
+        "id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
       },
       {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -661,12 +697,24 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:parameter-count",
@@ -677,20 +725,8 @@
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "supports": [
@@ -703,28 +739,28 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
       },
       {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
-        "id": "urn:ngm:class:ai-policy",
-        "label": "AI Policy"
-      },
-      {
-        "id": "urn:ngm:class:ai-research",
-        "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
@@ -733,42 +769,64 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
     ],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
       },
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },
@@ -964,8 +1022,8 @@
       "label": "Generative AI"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "ms-phi-models",

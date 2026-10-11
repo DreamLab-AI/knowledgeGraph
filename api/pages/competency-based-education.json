@@ -342,8 +342,8 @@
         "label": "Data Privacy"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },
@@ -418,7 +418,7 @@
         "label": "Digital Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -494,7 +494,7 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -582,7 +582,7 @@
         "label": "Immersive Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -598,8 +598,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
       }
     ],
     "supports": [

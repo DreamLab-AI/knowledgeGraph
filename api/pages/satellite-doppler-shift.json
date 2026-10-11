@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-doppler-shift",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite Doppler shift is the change in received carrier frequency caused by relative line-of-sight motion between a satellite and another endpoint.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

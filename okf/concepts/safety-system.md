@@ -16,7 +16,7 @@ implements:
 uses:
   - urn:ngm:class:monitoring-system
   - urn:ngm:class:safety-plc
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:robot-safety
   - urn:ngm:class:safety-measure

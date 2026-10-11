@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:renewable-energy
 uses:
   - urn:ngm:class:carbon-accounting
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
 supports:
   - urn:ngm:class:sustainability
   - urn:ngm:class:esg

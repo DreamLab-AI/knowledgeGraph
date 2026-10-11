@@ -23,13 +23,12 @@ enables:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:data-interoperability
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analytics
 dependsOn:
   - urn:ngm:class:data-architecture
   - urn:ngm:class:organisational-policy
 contrastsWith:
-  - urn:ngm:class:data-management
   - urn:ngm:class:data-anarchy
 bridgesTo:
   - urn:ngm:class:blockchain

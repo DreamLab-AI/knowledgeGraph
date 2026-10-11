@@ -113,9 +113,9 @@
       "slug": "systems-engineering"
     },
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -263,14 +263,6 @@
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -283,8 +275,8 @@
         "label": "AIOps"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:ai-safety",
@@ -381,16 +373,12 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "relatedTo": [

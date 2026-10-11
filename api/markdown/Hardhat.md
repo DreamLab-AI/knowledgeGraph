@@ -42,7 +42,7 @@ Hardhat is a professional Ethereum development environment that provides a compr
 - **NFT Contract Deployment**
   - [[NFT]] projects use Hardhat to compile ERC-721/ERC-1155 contracts, run full test suites, and publish verified source on [[Etherscan]].
 - **DAO Governance Systems**
-  - [[DAO]] frameworks such as Governor contracts and timelock controllers are developed and audited using Hardhat's detailed revert-reason reporting.
+  - [[Decentralised Autonomous Organisation]] frameworks such as Governor contracts and timelock controllers are developed and audited using Hardhat's detailed revert-reason reporting.
 - **Security Audits and Fuzzing**
   - Security engineers use Hardhat in combination with [[Slither]] (static analysis) and fuzzing tools during smart contract audits; the stack-trace capability is invaluable for reproducing discovered exploits.
 - **Protocol Upgrades**

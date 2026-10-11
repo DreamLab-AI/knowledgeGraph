@@ -34,8 +34,8 @@ bridgesTo:
   - urn:ngm:class:distributed-systems
 supports:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:tls
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:public-key-infrastructure
 standardizedBy:
   - urn:ngm:class:internet-engineering-task-force
 relatedTo:

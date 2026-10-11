@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-data-quality",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation data quality is the degree to which an Earth observation data product meets stated requirements for calibration, uncertainty, consistency and documentation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:blockchain-domain
 requires:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:private-key
 enables:
@@ -35,7 +35,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:snapshot
   - urn:ngm:class:institutional-custody
 relatedTo:

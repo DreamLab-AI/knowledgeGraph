@@ -47,13 +47,13 @@ Real-time computing is a computational paradigm in which the correctness of a sy
 #### Automotive and Transportation
 
 - [[Autonomous Vehicles]] fuse sensor data from [[LiDAR]], camera, and radar with hard timing constraints on perception-to-actuation loops.
-- AUTOSAR (Automotive Open System Architecture) defines a real-time software framework for automotive [[Embedded Systems]].
+- AUTOSAR (Automotive Open System Architecture) defines a real-time software framework for automotive [[Embedded System]].
 - [[Antilock Braking System]] and electronic stability control implement hard real-time feedback loops operating at kHz rates.
 
 #### Industrial and Robotics
 
 - [[Industrial Automation]] uses programmable logic controllers (PLCs) and industrial Ethernet protocols (EtherCAT, PROFINET IRT) that provide sub-millisecond cycle times.
-- [[Robotics]] motion controllers require real-time joint-torque and position control loops, often implemented on [[Embedded Systems]] with dedicated real-time cores.
+- [[Robotics]] motion controllers require real-time joint-torque and position control loops, often implemented on [[Embedded System]] with dedicated real-time cores.
 - SCADA systems and [[Cyber-Physical Systems]] integrate real-time sensors with supervisory control over distributed networks.
 
 #### Telecommunications and Networking

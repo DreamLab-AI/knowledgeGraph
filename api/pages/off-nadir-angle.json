@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:off-nadir-angle",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Off-nadir angle describes how far a sensor's viewing direction departs from nadir, the point on the Earth's surface directly below the satellite.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

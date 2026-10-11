@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:personal-data-store
 uses:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:avatar-system
   - urn:ngm:class:avatar-portability
 relatedTo:

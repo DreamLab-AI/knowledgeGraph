@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:magnetotail",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planetary magnetosphere has a part pushed in the direction of the solar wind, called the magnetotail.[^1] NOAA explains the shape: the pressure of the solar wind compresses Earth\u2019s field on the dayside and stretches it into a long tail on the nightside, which extends to hundreds of Earth radii.[^2] ESA lists the magnetotail, together with the polar cusps, as a key region its Cluster spacecraft visited to study how the solar wind interacts with the magnetosphere.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

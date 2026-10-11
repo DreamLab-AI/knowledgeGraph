@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Housekeeping Data
 resource: urn:ngm:class:spacecraft-housekeeping-data
 domain: space-science-and-systems
+description: Spacecraft housekeeping data is the engineering and health telemetry that describes the state of the spacecraft itself, such as switch positions, subsystem states, voltages, temperatures and pressures.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Spacecraft Housekeeping Data
+
+Spacecraft housekeeping data is the engineering and health telemetry that describes the state of the spacecraft itself, such as switch positions, subsystem states, voltages, temperatures and pressures.[^1]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-formation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Planetary formation is the process by which planets are thought to grow from dust and gas in the disk surrounding a young star.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

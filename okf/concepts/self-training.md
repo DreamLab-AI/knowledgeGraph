@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:semi-supervised-learning
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:active-learning
 uses:
   - urn:ngm:class:transfer-learning

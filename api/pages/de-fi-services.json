@@ -60,7 +60,7 @@
         "label": "Financial Transactions"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "DeFi"
       }
     ]
@@ -304,7 +304,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

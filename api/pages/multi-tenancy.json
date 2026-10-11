@@ -297,12 +297,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:object-storage",
@@ -369,8 +369,8 @@
         "label": "NIST Cloud Computing Definition"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

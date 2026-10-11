@@ -12,10 +12,10 @@ is-a:
 enables:
   - urn:ngm:class:ontology-in-llm-operations
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:knowledge-base
 supports:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 relatedTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:knowledge-graph-construction

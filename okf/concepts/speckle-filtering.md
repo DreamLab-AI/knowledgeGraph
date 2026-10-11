@@ -4,6 +4,7 @@ type: Class
 title: Speckle Filtering
 resource: urn:ngm:class:speckle-filtering
 domain: earth-observation-and-geospatial-sensing
+description: Speckle filtering is the spatial filtering of synthetic aperture radar imagery to suppress speckle, the grainy salt and pepper pattern produced by coherent imaging.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Speckle Filtering
+
+Speckle filtering is the spatial filtering of synthetic aperture radar imagery to suppress speckle, the grainy salt and pepper pattern produced by coherent imaging.[^1][^2]

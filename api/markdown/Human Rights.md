@@ -112,7 +112,7 @@ Fundamental rights and freedoms inherent to all human beings as recognised in in
 - [[Digital Rights]]
 - [[Privacy Rights]]
 - [[Algorithmic Accountability]]
-- [[EU AI Act Regulatory Instrument]]
+- [[EU AI Act]]
 - [[Blockchain Technology]]
 
   ## References

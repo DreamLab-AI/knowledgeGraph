@@ -44,7 +44,7 @@ partOf:
   - urn:ngm:class:enterprise-blockchain
 relatedTo:
   - urn:ngm:class:non-fungible-token
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # VeChain

@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:schema
 enables:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 implements:
   - urn:ngm:class:property-graph
   - urn:ngm:class:rdf

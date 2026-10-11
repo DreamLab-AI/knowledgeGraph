@@ -41,7 +41,7 @@ supports:
 relatedTo:
   - urn:ngm:class:telepresence
   - urn:ngm:class:embodied-interaction
-  - urn:ngm:class:non-verbal-communication
+  - urn:ngm:class:nonverbal-communication
 ---
 
 # Immersive Communication

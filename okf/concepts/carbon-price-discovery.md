@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:environmental-asset-market
 uses:
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:environmental-trading

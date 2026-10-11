@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:did-resolver
   - urn:ngm:class:end-to-end-encryption
 enables:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:protocol-layer
   - urn:ngm:class:credential-issuance
   - urn:ngm:class:credential-presentation

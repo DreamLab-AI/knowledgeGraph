@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astrophysics",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Astrophysics is the study of how the universe works and evolved, including the physical nature of stars, galaxies, black holes and other cosmic objects.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-science",

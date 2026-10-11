@@ -132,14 +132,34 @@
       "slug": "network-component"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System",
       "slug": "cryptographic-system"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-ledger",
       "label": "Distributed Ledger",
       "slug": "distributed-ledger"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:append-only-log",
@@ -157,6 +177,16 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:distributed-system",
       "label": "Distributed System",
       "slug": "distributed-system"
@@ -172,6 +202,11 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
@@ -182,6 +217,11 @@
       "slug": "distributed-computing"
     },
     {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -190,6 +230,11 @@
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -207,6 +252,11 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -222,19 +272,9 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -327,12 +367,8 @@
         "label": "Atomic Swap"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:payment-system",
@@ -353,6 +389,10 @@
       {
         "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
       }
     ],
     "dependsOn": [
@@ -441,6 +481,10 @@
         "label": "Relational Database"
       },
       {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -451,10 +495,6 @@
       {
         "id": "urn:ngm:class:cloud-database",
         "label": "Cloud Database"
-      },
-      {
-        "id": "urn:ngm:class:federated-database",
-        "label": "Federated Database"
       }
     ],
     "bridgesTo": [
@@ -513,22 +553,22 @@
         "label": "Gossip Protocol"
       },
       {
-        "id": "urn:ngm:class:digital-signatures",
-        "label": "Digital Signatures"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:hash-pointers",
-        "label": "Hash Pointers"
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:multi-party-computation",
-        "label": "Multi-Party Computation"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -615,16 +655,16 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
       }
     ],
     "relatedTo": [

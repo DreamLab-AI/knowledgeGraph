@@ -270,7 +270,7 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -312,8 +312,8 @@
         "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:etsi-mec",
@@ -404,11 +404,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
@@ -451,8 +446,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:serverless-architecture",
@@ -773,10 +768,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -809,8 +800,8 @@
         "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Computing"
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
       }
     ]
   },
@@ -876,7 +867,7 @@
       "label": "Cloudlet Architecture"
     },
     {
-      "slug": "cncf",
+      "slug": "cloud-native-computing-foundation",
       "label": "CNCF"
     },
     {

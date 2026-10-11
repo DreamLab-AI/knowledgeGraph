@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:economic-mechanism
 enables:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:digital-marketplace
 uses:

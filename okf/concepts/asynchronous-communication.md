@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:message-broker
   - urn:ngm:class:publish-subscribe-pattern
   - urn:ngm:class:protocol-buffer
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 supports:
   - urn:ngm:class:parallel-processing
   - urn:ngm:class:edge-computing

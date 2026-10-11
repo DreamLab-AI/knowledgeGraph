@@ -29,10 +29,10 @@ uses:
 supports:
   - urn:ngm:class:feature-importance
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:boosting
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-importance
 ---
 

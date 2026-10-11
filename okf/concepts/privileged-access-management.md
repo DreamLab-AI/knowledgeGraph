@@ -22,7 +22,7 @@ enables:
 dependsOn:
   - urn:ngm:class:access-control
   - urn:ngm:class:identity-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
   - urn:ngm:class:discretionary-access-control
 bridgesTo:

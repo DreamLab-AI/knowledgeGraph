@@ -28,7 +28,7 @@ A DID Method is a specification that defines how a particular type of Decentrali
 - **Ledger-anchored methods** — anchor DID state to a blockchain; examples: `did:ethr` (Ethereum), `did:ion` (Bitcoin/[[IPFS]] via Sidetree), `did:indy` ([[Hyperledger Indy]]).
   - Trade-off: strong decentralisation and tamper-evidence but ledger cost, latency, and environmental footprint.
 - **Web-based methods** — `did:web` resolves identifiers via HTTPS at a well-known path on a domain; operationally simple but domain owner-dependent (trusted party).
-  - Trade-off: easy to deploy and revoke, but relies on [[DNS]] and [[TLS]] trust anchors.
+  - Trade-off: easy to deploy and revoke, but relies on [[DNS]] and [[Transport Layer Security]] trust anchors.
 - **Peer methods** — `did:peer` uses locally generated key material exchanged out-of-band; no registry required.
   - Trade-off: zero infrastructure cost but only useful for direct pairwise relationships.
 - **Key-based methods** — `did:key` encodes a single [[Cryptographic Key Pair]] directly in the identifier; immutable by design (no update or deactivate).
@@ -38,9 +38,9 @@ A DID Method is a specification that defines how a particular type of Decentrali
 
 ### Applications and Use Cases
 
-- **[[Verifiable Credentials]] ecosystems** — DID Methods provide the identifier layer that issuers, holders, and verifiers reference; e.g. a university issues a credential signed with its `did:web` or `did:ion` DID.
+- **[[Verifiable Credential]] ecosystems** — DID Methods provide the identifier layer that issuers, holders, and verifiers reference; e.g. a university issues a credential signed with its `did:web` or `did:ion` DID.
 - **[[DIDComm]]** — the DIDComm messaging protocol uses DIDs and their service endpoints to route encrypted peer-to-peer messages between [[Identity Wallet]] agents.
-- **[[Zero-Knowledge Proof]] selective disclosure** — methods such as `did:indy` are paired with ZKP-capable [[Verifiable Credentials]] (AnonCreds) for privacy-preserving presentation.
+- **[[Zero-Knowledge Proof]] selective disclosure** — methods such as `did:indy` are paired with ZKP-capable [[Verifiable Credential]] (AnonCreds) for privacy-preserving presentation.
 - **Enterprise [[Public Key Infrastructure]] replacement** — organisations replace costly X.509 hierarchies with DID-anchored key material, removing reliance on Certificate Authorities.
 - **[[Internet of Things]]** — devices are assigned lightweight DIDs (e.g. `did:key`) for machine-to-machine authentication without centralised directory services.
 - **Metaverse and spatial computing** — [[Digital Twin]] and avatar identity in [[Extended Reality]] environments can be anchored to DIDs, enabling portable [[Digital Identity]] across platforms.
@@ -52,12 +52,12 @@ A DID Method is a specification that defines how a particular type of Decentrali
 - **W3C DID Core 1.0** (July 2022) — the primary normative specification defining the data model, URI syntax, CRUD operations contract, and conformance criteria for DID Methods.
 - **W3C DID Resolution** (Draft Community Group Report) — specifies the [[DID Resolver]] interface, resolution options, and metadata returned by resolution.
 - **DIF DID Method Registry** — the Decentralized Identity Foundation maintains a public registry of submitted DID Method specifications; submission requires a published spec and working implementation.
-- **W3C Verifiable Credentials Data Model** — tightly coupled; DIDs are the canonical identifier for issuers and subjects in [[Verifiable Credentials]].
+- **W3C Verifiable Credentials Data Model** — tightly coupled; DIDs are the canonical identifier for issuers and subjects in [[Verifiable Credential]].
 - **DIDComm Messaging v2** (DIF specification) — defines encrypted, transport-agnostic messaging using DID-anchored keys and service endpoints.
 - **EU eIDAS 2.0 / ARF** — the European Architecture Reference Framework for the [[European Digital Identity Wallet]] references DID-compatible identifiers for natural and legal persons.
 - **NIST SP 800-63** — US digital identity guidelines acknowledge decentralised identity models and federation approaches compatible with DID Methods.
 - **ISO/IEC 18013-5** (mDL) — mobile driving licence standard uses [[CBOR]]-encoded credentials with identity binding mechanisms compatible with DID-anchored public keys.
-- Governance bodies: [[W3C]] Decentralised Identifiers Working Group; DIF Identifiers & Discovery Working Group; [[OpenID Foundation]] (SIOP v2 / OID4VCI for DID-based authentication).
+- Governance bodies: [[World Wide Web Consortium]] Decentralised Identifiers Working Group; DIF Identifiers & Discovery Working Group; [[OpenID Foundation]] (SIOP v2 / OID4VCI for DID-based authentication).
 
 ### Technical Considerations
 

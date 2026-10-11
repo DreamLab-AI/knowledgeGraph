@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:calldata
   - urn:ngm:class:state-root
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-application
 partOf:
   - urn:ngm:class:layer-2-scaling

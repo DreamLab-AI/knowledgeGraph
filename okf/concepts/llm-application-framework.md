@@ -8,9 +8,9 @@ description: A software library that provides abstractions for building applicat
 maturity: growing
 quality: 0.6
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:retrieval-augmented-generation
 bridgesTo:

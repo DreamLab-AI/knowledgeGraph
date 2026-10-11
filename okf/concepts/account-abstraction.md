@@ -20,7 +20,7 @@ hasPart:
 requires:
   - urn:ngm:class:evm
   - urn:ngm:class:digital-signature-verification
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-signature-verification
   - urn:ngm:class:gas-abstraction

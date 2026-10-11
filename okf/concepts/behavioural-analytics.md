@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:security
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:threat-detection
@@ -28,7 +28,7 @@ enables:
   - urn:ngm:class:recommendation-system
 dependsOn:
   - urn:ngm:class:siem
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:stream-processing
@@ -41,7 +41,7 @@ bridgesTo:
   - urn:ngm:class:security
   - urn:ngm:class:finance
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analytics
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:pattern-recognition

@@ -86,7 +86,7 @@ relatedTo:
   - urn:ngm:class:cyber-physical-systems
   - urn:ngm:class:concurrent-engineering
   - urn:ngm:class:combinatorial-optimisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:operations-research
   - urn:ngm:class:automated-planning
   - urn:ngm:class:neuro-symbolic-ai

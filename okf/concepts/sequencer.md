@@ -34,7 +34,7 @@ partOf:
   - urn:ngm:class:rollup
 relatedTo:
   - urn:ngm:class:mev
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 ---
 
 # Sequencer

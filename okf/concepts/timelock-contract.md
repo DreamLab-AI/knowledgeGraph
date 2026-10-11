@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:hash-time-locked-contract
 bridgesTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # Timelock Contract

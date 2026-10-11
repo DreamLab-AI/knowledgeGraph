@@ -10,7 +10,7 @@ A Smart Contract Platform is a blockchain-based infrastructure layer that provid
   - **Fee model** — [[Gas Metering]] (Ethereum), compute-unit budgets (Solana), or per-transaction flat fees.
   - **Consensus coupling** — proof-of-work, proof-of-stake, nominated proof-of-stake, or delegated BFT, each affecting finality guarantees and validator economics.
   - **Upgrade governance** — on-chain governance for protocol upgrades vs off-chain social consensus and hard forks.
-- Why they matter: smart contract platforms have become foundational infrastructure for [[Decentralized Finance (DeFi)]], [[Non-Fungible Token]] markets, [[DAO]] governance, [[Supply Chain Traceability]], and emerging [[Decentralised Identity]] frameworks, removing custodial intermediaries from high-value financial and coordination workflows.
+- Why they matter: smart contract platforms have become foundational infrastructure for [[Decentralized Finance (DeFi)]], [[Non-Fungible Token]] markets, [[Decentralised Autonomous Organisation]] governance, [[Supply Chain Traceability]], and emerging [[Decentralised Identity]] frameworks, removing custodial intermediaries from high-value financial and coordination workflows.
 
 ### Key Components
 
@@ -47,7 +47,7 @@ A Smart Contract Platform is a blockchain-based infrastructure layer that provid
 
 - **[[Decentralized Finance (DeFi)]]**: automated market makers (Uniswap), lending protocols (Aave, Compound), derivatives (dYdX), and stablecoin systems (MakerDAO) all execute via [[Smart Contract]]s on EVM-compatible platforms.
 - **[[Non-Fungible Token]] markets**: ERC-721 and ERC-1155 token standards define ownership and transfer rules encoded in contracts; platforms such as OpenSea aggregate secondary markets.
-- **[[DAO]] governance**: token-weighted or quadratic voting contracts manage treasuries (Compound Governor, Snapshot with on-chain execution) without legal entities.
+- **[[Decentralised Autonomous Organisation]] governance**: token-weighted or quadratic voting contracts manage treasuries (Compound Governor, Snapshot with on-chain execution) without legal entities.
 - **[[Supply Chain Traceability]]**: provenance attestations for goods (pharmaceuticals, food, luxury goods) stored on permissioned EVM chains (Hyperledger Besu, Polygon PoS) with IoT-fed [[Oracle Network]] data.
 - **[[Decentralised Identity]]**: W3C DID documents anchored on-chain; verifiable credential issuance and revocation managed by [[Smart Contract]] registries (e.g. Ethereum-based SIWE and ERC-7512).
 - **Gaming and virtual worlds**: in-game economies, item ownership, and guild governance encoded as on-chain assets interoperating with [[Metaverse]] environments.

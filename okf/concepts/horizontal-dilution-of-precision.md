@@ -4,6 +4,7 @@ type: Class
 title: Horizontal Dilution of Precision
 resource: urn:ngm:class:horizontal-dilution-of-precision
 domain: space-science-and-systems
+description: Horizontal Dilution of Precision (HDOP) is the horizontal east-and-north component of position geometry in a local East-North-Up frame at the user location.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Horizontal Dilution of Precision
+
+Horizontal Dilution of Precision (HDOP) is the horizontal east-and-north component of position geometry in a local East-North-Up frame at the user location.

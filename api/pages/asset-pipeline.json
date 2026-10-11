@@ -122,15 +122,15 @@
         "label": "Data Compression"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       }
     ],
@@ -329,7 +329,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -429,7 +429,7 @@
         "label": "Shader Compilation"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

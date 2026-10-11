@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ionosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ionosphere, the part of Earth's upper atmosphere ionised by solar extreme ultraviolet and X-ray radiation, creates a layer of electrons that reflects and modifies radio waves.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

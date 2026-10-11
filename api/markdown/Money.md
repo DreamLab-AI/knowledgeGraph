@@ -243,7 +243,7 @@ AsymmetricObjectProperty(dt:requires)
 
 - [[ISO 4217]] - Currency codes (USD, EUR, etc.)
 - [[BIS]] - Bank for International Settlements research and proposals
-- [[IMF]] - International Monetary Fund policy guidance
+- [[International Monetary Fund]] - International Monetary Fund policy guidance
 - [[Bank of England]] - Project Rosalind and CBDC research
 - [[ECB]] - European Central Bank digital euro investigation
 - [[CBDC Tracker]] - Global central bank digital currency initiatives
@@ -594,11 +594,11 @@ AsymmetricObjectProperty(dt:requires)
 
 - **Definition**: Government-issued money not backed by physical commodity
 - **2025 Context**: Facing evolution with [[CBDC]] emergence, but remains primary medium globally
-- **Examples**: US Dollar ([[USD]]), Euro ([[EUR]]), Japanese Yen ([[JPY]])
+- **Examples**: US Dollar ([[Universal Scene Description]]), Euro ([[EUR]]), Japanese Yen ([[JPY]])
 - **Regulatory Framework**: ISO 4217 standards maintained
   #### Cryptocurrency
 - **Definition**: Decentralized digital currency using cryptography and blockchain technology
-- **Key Variants**: [[Bitcoin Proof-of-Work Protocol]] (store of value), [[Ethereum Smart Contract Platform]] (smart contract platform), [[Litecoin]]
+- **Key Variants**: [[Bitcoin Proof-of-Work Protocol]] (store of value), [[Ethereum]] (smart contract platform), [[Litecoin]]
 - **2025 Market Status**: Crypto transactions exceed $600B annually in cross-border payments; merchant adoption growing 82.1% (2024-2026 projection)
 - **Regulatory Challenge**: Varied global approaches, but clearing trend toward framework establishment
   #### Stablecoin [Updated 2025]
@@ -641,7 +641,7 @@ AsymmetricObjectProperty(dt:requires)
 - **Cross-Chain Activity**: 52% increase in 2025 via Layer-2 solutions and blockchain bridges
 - **Composability**: [[USDC]] integration with Stripe enables dollar-denominated smart contracts
   #### Programmable Money via Smart Contracts
-- Tokenized money (USDC on [[Ethereum Smart Contract Platform]], Polygon)
+- Tokenized money (USDC on [[Ethereum]], Polygon)
 - Conditional transfers with [[smart contracts]]
 - Atomic settlement across [[Layer-2]] networks
 - DeFi composability enabling complex financial products
@@ -665,7 +665,7 @@ AsymmetricObjectProperty(dt:requires)
 - Negative interest rate experiments (theoretical, not yet deployed)
   #### Cryptocurrency Monetary Policy
 - [[Bitcoin Proof-of-Work Protocol]] halvings provide algorithmic issuance discipline
-- [[Ethereum Smart Contract Platform]] [[Proof-of-Stake]] yield mechanisms
+- [[Ethereum]] [[Proof-of-Stake]] yield mechanisms
 - Protocol-governed supply caps
 - Decentralized governance via DAOs
 
@@ -699,7 +699,7 @@ AsymmetricObjectProperty(dt:requires)
   #### Financial Stability Risks
 - Bank run risks if CBDC adoption undermines commercial bank deposits
 - Stablecoin reserve adequacy (Tether ~20% in non-liquid assets)
-- Interconnection risks between [[DeFi]] protocols ($153B TVL concentration)
+- Interconnection risks between [[Decentralised Finance]] protocols ($153B TVL concentration)
 - [[Quantum computing]] threats to cryptographic security
   #### Interoperability
 - Cross-chain bridges and protocols emerging (52% growth 2025)
@@ -729,7 +729,7 @@ AsymmetricObjectProperty(dt:requires)
 - [[GENIUS Act]] (USA 2025) - Federal stablecoin framework, 100% reserve requirement
 - [[MiCA]] (EU) - Markets in Crypto-Assets regulation, exchange delisting impact
 - [[BIS]] - Bank for International Settlements CBDC research and [[Project mBridge]]
-- [[IMF]] - International Monetary Fund policy guidance and cross-border CBDC coordination
+- [[International Monetary Fund]] - International Monetary Fund policy guidance and cross-border CBDC coordination
 - [[Bank of England]] - Project Rosalind, digital pound investigation
 - [[ECB]] - European Central Bank digital euro investigation phase
 - [[CBDC Tracker]] - Atlantic Council global central bank digital currency initiatives
@@ -740,11 +740,11 @@ AsymmetricObjectProperty(dt:requires)
 
 - [[Value Transfer]] - Parent concept of economic exchange mechanisms
 - [[Bitcoin Proof-of-Work Protocol]] - First decentralized cryptocurrency, store of value narrative
-- [[Ethereum Smart Contract Platform]] - Smart contract platform enabling DeFi
+- [[Ethereum]] - Smart contract platform enabling DeFi
 - [[Cryptocurrency]] - Decentralized digital currencies
 - [[Stablecoin]] - USD-pegged digital assets ([[USDC]], [[USDT]])
 - [[CBDC]] - Central bank digital currencies
-- [[DeFi]] - Decentralized finance protocols
+- [[Decentralised Finance]] - Decentralized finance protocols
 - [[Token]] - Blockchain-based asset representations
 - [[Smart Contract]] - Programmable money and settlement logic
 - [[Lightning Network]] - Bitcoin layer-2 scalability

@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:automated-publishing
 dependsOn:
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 implements:
   - urn:ngm:class:directed-acyclic-graph
   - urn:ngm:class:provenance-tracking

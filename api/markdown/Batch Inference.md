@@ -101,7 +101,7 @@ The process of applying a trained machine learning model to a collection of inpu
 - Chunked prefill / disaggregated prefill-decode (Microsoft, 2025): separating prefill and decode phases for independent scaling.
 - NVIDIA Blackwell B200 (2025): FP4 tensor cores, 10 PetaFLOP/s peak throughput; enables 2x larger batch sizes versus H100 for same GPU memory budget.
 
-  The landscape shifted significantly with the rise of [[Large Language Models]] (LLMs), where autoregressive text generation introduces a sequential dependency that fundamentally conflicts with batching: token N cannot be generated until token N-1 is known. The naive approach — completing each request in full before beginning the next — wastes GPU capacity between token generation steps. The PagedAttention mechanism (Kwon et al., 2023, vLLM) addressed this by managing [[KV Cache]] as non-contiguous pages (analogous to virtual memory), enabling continuous batching: new requests join an in-flight decode batch as slots become available, keeping GPU utilisation near 100% even with variable-length generations. Continuous batching is now the production standard for LLM serving, implemented in vLLM, NVIDIA TRT-LLM, and TensorFlow Serving v3.
+  The landscape shifted significantly with the rise of [[Large Language Model]] (LLMs), where autoregressive text generation introduces a sequential dependency that fundamentally conflicts with batching: token N cannot be generated until token N-1 is known. The naive approach — completing each request in full before beginning the next — wastes GPU capacity between token generation steps. The PagedAttention mechanism (Kwon et al., 2023, vLLM) addressed this by managing [[KV Cache]] as non-contiguous pages (analogous to virtual memory), enabling continuous batching: new requests join an in-flight decode batch as slots become available, keeping GPU utilisation near 100% even with variable-length generations. Continuous batching is now the production standard for LLM serving, implemented in vLLM, NVIDIA TRT-LLM, and TensorFlow Serving v3.
 
   ## Components / Architecture
   **1. Batching Scheduler**
@@ -111,10 +111,10 @@ The process of applying a trained machine learning model to a collection of inpu
   Variable-length inputs (sentences, documents, audio clips) must be padded to a common length before tensor operations can batch them. For [[Transformer Architecture]] models, variable-length sequences are padded to the maximum length in the batch, with attention masks preventing padded positions from contributing to the attention computation. Efficient padding strategies — grouping by similar lengths, using [[Flash Attention]]'s unpadded input support — reduce wasted compute on padding tokens significantly.
 
   **3. KV Cache Management**
-  For [[Large Language Models]] with autoregressive decoding, the [[KV Cache]] stores key-value attention tensors from previously generated tokens, avoiding recomputation. In batch inference, the KV cache is the dominant memory consumer: each sequence in the batch requires O(L × D × H) memory for L layers, D model dimension, and H attention heads. PagedAttention partitions KV cache into pages allocated dynamically, enabling the cache to be shared across requests with common prefixes and reclaimed as requests complete.
+  For [[Large Language Model]] with autoregressive decoding, the [[KV Cache]] stores key-value attention tensors from previously generated tokens, avoiding recomputation. In batch inference, the KV cache is the dominant memory consumer: each sequence in the batch requires O(L × D × H) memory for L layers, D model dimension, and H attention heads. PagedAttention partitions KV cache into pages allocated dynamically, enabling the cache to be shared across requests with common prefixes and reclaimed as requests complete.
 
   **4. Compute Kernel Execution**
-  The actual neural network forward pass executes as a sequence of GPU kernel launches — matrix multiplications, layer normalisations, activation functions, attention operations. [[Flash Attention]] (Dao et al., 2022) implements the attention computation in fused CUDA kernels that keep activations in fast SRAM rather than round-tripping through HBM, achieving 2–4x speedup over standard attention. [[Neural Network Quantisation]] (INT8, FP8, INT4) reduces weight and activation memory footprint, enabling larger batch sizes within GPU memory limits.
+  The actual neural network forward pass executes as a sequence of GPU kernel launches — matrix multiplications, layer normalisations, activation functions, attention operations. [[Flash Attention]] (Dao et al., 2022) implements the attention computation in fused CUDA kernels that keep activations in fast SRAM rather than round-tripping through HBM, achieving 2–4x speedup over standard attention. [[Model Quantisation]] (INT8, FP8, INT4) reduces weight and activation memory footprint, enabling larger batch sizes within GPU memory limits.
 
   **5. Model Parallelism for Large Models**
   When a model is too large for a single GPU's memory, [[Tensor Parallelism]] splits individual layer weight matrices across multiple GPUs, while pipeline parallelism assigns consecutive layer groups to different devices. Batch inference in this regime coordinates across the parallel device mesh, adding communication overhead that must be amortised over sufficiently large batch sizes to maintain efficiency. [[Distributed Inference]] addresses the multi-device coordination problem.
@@ -153,11 +153,11 @@ The process of applying a trained machine learning model to a collection of inpu
   The theoretical basis for optimal batch size selection was examined in "Mind the Memory Gap: Unveiling GPU Bottlenecks in Large-Batch LLM Inference" (arXiv:2503.08311, 2025), which characterised the transition between memory-bandwidth-bound and compute-bound regimes as a function of model size, batch size, and hardware specifications, enabling principled batch size selection.
 
   ## Current Landscape (2026)
-  Batch inference in 2025–2026 is dominated by two converging trends: the commoditisation of batch APIs for [[Large Language Models]] and the maturation of open-source serving frameworks. Anthropic, OpenAI (Batch API), and Google (Vertex AI Batch Prediction) all offer asynchronous batch APIs at 50% cost reduction compared to real-time APIs, making batch inference economically compelling for large-scale data processing tasks.
+  Batch inference in 2025–2026 is dominated by two converging trends: the commoditisation of batch APIs for [[Large Language Model]] and the maturation of open-source serving frameworks. Anthropic, OpenAI (Batch API), and Google (Vertex AI Batch Prediction) all offer asynchronous batch APIs at 50% cost reduction compared to real-time APIs, making batch inference economically compelling for large-scale data processing tasks.
 
   vLLM has emerged as the most widely adopted open-source LLM serving framework with over 2,000 contributors (as of 2025), implementing PagedAttention and continuous batching for production LLM serving. NVIDIA Triton Inference Server remains the production standard for multi-model serving, supporting backends including TensorRT, PyTorch, ONNX, and vLLM, with request batching controls and concurrency management. SGLang (Stanford, 2024–2025) offers structured generation and constrained decoding with competitive throughput to vLLM.
 
-  The 2025 inference stack has consolidated around FlashAttention-3, FP8/INT8 quantisation (via [[Neural Network Quantisation]]), PagedAttention-based KV cache management, and speculative decoding as the core components. UELLM (2025) reports 72–90% latency reduction and 4.1x better GPU utilisation versus naive schedulers through combined batching and resource profiling. Microsoft's chunked prefill interleaving technique (2025) prevents prefill computation from monopolising GPU resources and blocking decode steps in mixed-traffic batch serving.
+  The 2025 inference stack has consolidated around FlashAttention-3, FP8/INT8 quantisation (via [[Model Quantisation]]), PagedAttention-based KV cache management, and speculative decoding as the core components. UELLM (2025) reports 72–90% latency reduction and 4.1x better GPU utilisation versus naive schedulers through combined batching and resource profiling. Microsoft's chunked prefill interleaving technique (2025) prevents prefill computation from monopolising GPU resources and blocking decode steps in mixed-traffic batch serving.
 
   In the UK, the Nebius AI Cloud UK deployment (November 2025) of NVIDIA Blackwell Ultra infrastructure provides the first UK-based hyperscale NVIDIA GPU cluster available to UK startups, enterprises, and academic institutions. The UK government's "Britannia" AI supercomputer at the Hartree Centre (12 exaflops, Daresbury, Cheshire) supports research batch inference workloads across academic institutions. AWS, Azure, and Google Cloud all operate UK regions offering managed batch inference services including Amazon Bedrock Batch, Azure ML Batch Endpoints, and Vertex AI Batch Prediction.
 
@@ -229,7 +229,7 @@ The process of applying a trained machine learning model to a collection of inpu
 - Arithmetic intensity I(N) = 2 × N × d_model² / (d_model² × w + N × d_model × a) ≈ 2N/a for large N, w=2 bytes (FP16), a=2 bytes
 - Ridge point: I = A_peak / B_peak. For H100 SXM5: A_peak = 989 TFLOP/s (FP16), B_peak = 3.35 TB/s → ridge ≈ 295 FLOP/byte → N_ridge ≈ 147 tokens per batch per layer
 
-  This analysis shows that for typical [[Large Language Models]] with d_model = 4096:
+  This analysis shows that for typical [[Large Language Model]] with d_model = 4096:
 
 - At batch size 1: I ≈ 2 FLOP/byte (deeply memory-bandwidth-bound; GPU utilisation < 1%)
 - At batch size 32: I ≈ 64 FLOP/byte (still memory-bound but improving)
@@ -254,7 +254,7 @@ The process of applying a trained machine learning model to a collection of inpu
 - Frameworks (NVIDIA Triton, vLLM) implement this as a configurable max_batch_size + max_queue_delay policy
 
   **KV Cache Memory Sizing for LLM Batch Inference**
-  For a [[Large Language Models]] with L layers, H heads, d_head head dimension, precision P bytes:
+  For a [[Large Language Model]] with L layers, H heads, d_head head dimension, precision P bytes:
 
 - Per-sequence KV cache memory: M_kv = 2 × L × H × d_head × S_max × P
 - For Llama-3 70B (L=80, H=64, d_head=128, S_max=8192, P=2): M_kv ≈ 80 × 64 × 128 × 8192 × 2 × 2 / 10^9 ≈ 21 GB per sequence

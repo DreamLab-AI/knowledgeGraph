@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:model-compression-for-edge
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 uses:
   - urn:ngm:class:npu
   - urn:ngm:class:fpga

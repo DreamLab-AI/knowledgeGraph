@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:payment-channel
 enables:
   - urn:ngm:class:cross-chain-interoperability
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:cryptographic-hash-function
@@ -24,10 +24,10 @@ implements:
   - urn:ngm:class:hash-time-locked-contract
 contrastsWith:
   - urn:ngm:class:cross-chain-bridge
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
   - urn:ngm:class:wrapped-token
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:virtual-economy
 uses:
   - urn:ngm:class:hash-function
@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:submarine-swap
   - urn:ngm:class:adaptor-signature
 partOf:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 relatedTo:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:ethereum

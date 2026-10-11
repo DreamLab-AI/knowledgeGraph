@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:instance-segmentation
   - urn:ngm:class:panoptic-segmentation
   - urn:ngm:class:data-annotation
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:evaluation-metric
 requires:
   - urn:ngm:class:data-curation
@@ -37,7 +37,7 @@ enables:
   - urn:ngm:class:image-segmentation
 dependsOn:
   - urn:ngm:class:data-annotation
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:image-processing
 implements:
   - urn:ngm:class:object-recognition
@@ -48,7 +48,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:data-annotation
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:crowdsourcing
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:transfer-learning

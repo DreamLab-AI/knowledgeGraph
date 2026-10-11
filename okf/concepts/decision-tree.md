@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:interpretable-model
   - urn:ngm:class:explainable-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:classification
   - urn:ngm:class:regression

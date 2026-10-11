@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-signal-tracking",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS signal tracking is the continuing receiver process that follows an acquired signal's code delay, carrier phase and carrier frequency.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

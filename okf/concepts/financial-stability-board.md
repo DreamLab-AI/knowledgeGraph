@@ -18,15 +18,15 @@ enables:
   - urn:ngm:class:cross-border-regulatory-cooperation
 dependsOn:
   - urn:ngm:class:bis
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:central-bank
   - urn:ngm:class:g20
 implements:
   - urn:ngm:class:basel-iii
   - urn:ngm:class:crypto-regulation
 bridgesTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:ai-model-risk
 supports:
   - urn:ngm:class:systemic-risk

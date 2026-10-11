@@ -33,12 +33,12 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:capability-forecasting",
@@ -117,7 +117,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:ai-infrastructure-planning",
@@ -179,8 +179,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

@@ -16,10 +16,10 @@ requires:
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:data-sovereignty
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 relatedTo:
   - urn:ngm:class:ownership-freedom-distributed
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Ownership and Freedom Distributed

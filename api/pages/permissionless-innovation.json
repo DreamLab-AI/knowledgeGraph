@@ -20,8 +20,8 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralization",
-        "label": "Decentralization"
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       }
     ],
     "dependsOn": [],
@@ -265,7 +265,7 @@
   },
   "wikilinks": [
     {
-      "slug": "decentralization",
+      "slug": "decentralisation",
       "label": "Decentralization"
     },
     {

@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:trust-framework
   - urn:ngm:class:metadata-exchange
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:cross-domain-sso
   - urn:ngm:class:b2b-collaboration
   - urn:ngm:class:multi-organization-access

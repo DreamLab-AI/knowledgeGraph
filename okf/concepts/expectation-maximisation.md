@@ -50,7 +50,7 @@ uses:
   - urn:ngm:class:markov-chain-monte-carlo
 supports:
   - urn:ngm:class:graphical-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:graphical-model
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:bioinformatics

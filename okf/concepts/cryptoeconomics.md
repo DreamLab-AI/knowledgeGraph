@@ -26,14 +26,14 @@ uses:
   - urn:ngm:class:token-economics
   - urn:ngm:class:tokenomics
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-governance
 partOf:
   - urn:ngm:class:blockchain
 relatedTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:staking
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Cryptoeconomics

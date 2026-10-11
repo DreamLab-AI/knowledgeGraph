@@ -76,8 +76,8 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:multi-agent-system",
@@ -301,10 +301,6 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
-      },
-      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -425,8 +421,8 @@
       "label": "Community Governance Model"
     },
     {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     }
   ]
 }

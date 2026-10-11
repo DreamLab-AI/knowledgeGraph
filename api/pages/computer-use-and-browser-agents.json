@@ -84,8 +84,8 @@
         "label": "Browser Engine"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:inference-compute",
@@ -176,8 +176,8 @@
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:chrome-devtools-protocol",
@@ -322,8 +322,8 @@
         "label": "Quality Assurance Testing"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
-        "label": "Software Development Automation"
+        "id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
       },
       {
         "id": "urn:ngm:class:web-scraping",
@@ -529,9 +529,9 @@
       "slug": "distributed-system"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:multi-party-database",
@@ -564,14 +564,34 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -584,19 +604,19 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -614,6 +634,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
@@ -624,24 +654,19 @@
       "slug": "infra-network-and-comms"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
       "id": "urn:ngm:class:networked-systems",
       "label": "Networked Systems",
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -652,6 +677,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -716,8 +746,8 @@
         "label": "State Estimation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:knowledge-representation",
@@ -780,8 +810,8 @@
         "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:cognitive-psychology",
@@ -904,8 +934,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:chain-of-thought",
@@ -928,8 +958,8 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       }
     ],
     "supports": [
@@ -1030,7 +1060,7 @@
         "label": "Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -1040,8 +1070,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cognitive-architecture",
@@ -1052,8 +1082,12 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -1062,10 +1096,6 @@
       {
         "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical System"
-      },
-      {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
       }
     ]
   },

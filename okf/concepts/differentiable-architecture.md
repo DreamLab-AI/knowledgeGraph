@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:ai-model-architecture
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:neural-network-architecture

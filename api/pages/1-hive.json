@@ -8,8 +8,8 @@
   "definition": "A decentralised community and DAO that issues the Honey community currency and develops governance tooling such as the Gardens framework for conviction voting.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:dao",
-      "label": "Decentralized Autonomous Organization"
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
     }
   ],
   "entityType": "Class",
@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:governance-token",
@@ -115,9 +115,19 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -130,9 +140,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -150,6 +175,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -165,19 +200,19 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -188,6 +223,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -202,32 +242,32 @@
         "label": "DAO Treasury"
       },
       {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance Module"
+      },
+      {
         "id": "urn:ngm:class:governance-proposal",
         "label": "Governance Proposal"
       },
       {
-        "id": "urn:ngm:class:voting-mechanism",
-        "label": "Voting Mechanism"
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
       },
       {
-        "id": "urn:ngm:class:aml-kyc-compliance",
-        "label": "AML KYC Compliance"
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
       },
       {
-        "id": "urn:ngm:class:blockchain-compliance",
-        "label": "Blockchain Compliance"
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
       },
       {
-        "id": "urn:ngm:class:blockchain-governance",
-        "label": "Blockchain Governance"
+        "id": "urn:ngm:class:treasury-contract",
+        "label": "Treasury Contract"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
-      },
-      {
-        "id": "urn:ngm:class:financial-regulation",
-        "label": "Financial Regulation"
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
       }
     ],
     "requires": [
@@ -236,38 +276,46 @@
         "label": "Blockchain Infrastructure"
       },
       {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
         "id": "urn:ngm:class:distributed-consensus",
         "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
       },
       {
         "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:replication-protocol",
-        "label": "Replication Protocol"
-      },
-      {
-        "id": "urn:ngm:class:byzantine-fault-tolerance",
-        "label": "Byzantine Fault Tolerance"
+        "id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
       },
       {
         "id": "urn:ngm:class:on-chain-treasury",
@@ -275,37 +323,29 @@
       },
       {
         "id": "urn:ngm:class:permissionless-participation",
-        "label": "Permissionless Membership"
+        "label": "Permissionless Participation"
       },
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
       },
       {
-        "id": "urn:ngm:class:digital-asset",
-        "label": "Digital Asset"
-      },
-      {
-        "id": "urn:ngm:class:supply-chain-transparency",
-        "label": "Supply Chain Transparency"
-      },
-      {
-        "id": "urn:ngm:class:token-economics",
-        "label": "Token Economics"
+        "id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:ethereum",
-        "label": "Ethereum"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:layer-2-scaling",
-        "label": "Layer 2 Scaling"
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
       },
       {
         "id": "urn:ngm:class:cap-theorem",
@@ -338,6 +378,10 @@
         "label": "DAO Governance"
       },
       {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
         "id": "urn:ngm:class:data-partitioning",
         "label": "Data Partitioning"
       },
@@ -360,10 +404,6 @@
       {
         "id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitment"
-      },
-      {
-        "id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Tree Structure"
       }
     ],
     "contrastsWith": [
@@ -406,6 +446,10 @@
         "label": "AI Agent System"
       },
       {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
       },
@@ -428,13 +472,17 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
@@ -448,30 +496,22 @@
         "label": "On Chain Voting"
       },
       {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Weighted Voting"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
-      {
-        "id": "urn:ngm:class:digital-signatures",
-        "label": "Digital Signatures"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -562,12 +602,12 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -580,28 +620,28 @@
         "label": "DAO Governance"
       },
       {
-        "id": "urn:ngm:class:de-fi-protocol",
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
       },
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
       },
       {
-        "id": "urn:ngm:class:bc-defi-and-economics",
-        "label": "DeFi and Economics"
-      },
-      {
-        "id": "urn:ngm:class:bc-protocol-and-consensus",
-        "label": "Protocol and Consensus"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-technology",
-        "label": "Regulatory Technology"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
       }
     ]
   },

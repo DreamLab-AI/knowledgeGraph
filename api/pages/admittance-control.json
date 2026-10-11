@@ -150,7 +150,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:trajectory-generation",
         "label": "Compliant Trajectory Generation"
       },
       {
@@ -205,9 +205,9 @@
       "slug": "cyber-physical-control"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:enterprise-risk-management",
@@ -330,6 +330,11 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
       "id": "urn:ngm:class:roboticsdomain",
       "label": "RoboticsDomain",
       "slug": "roboticsdomain"
@@ -348,6 +353,11 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:feedback-systems",
@@ -385,9 +395,9 @@
       "slug": "systems-theory"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -395,14 +405,14 @@
       "slug": "robo-robot-type"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -760,6 +770,10 @@
         "label": "Institutional Framework"
       },
       {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },
@@ -770,6 +784,10 @@
       {
         "id": "urn:ngm:class:enterprise-risk-management",
         "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

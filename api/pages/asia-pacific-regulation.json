@@ -224,8 +224,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:us-executive-action-on-ai",
@@ -247,8 +247,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:regulatory-sandbox",
@@ -315,7 +315,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -468,7 +468,7 @@
         "label": "Transparency"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -476,7 +476,7 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -546,12 +546,12 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:eu-mi-ca-regulation",
@@ -602,12 +602,12 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:blockchain",

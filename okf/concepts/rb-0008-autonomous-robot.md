@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:rb-0089-risk-assessment
 uses:
   - urn:ngm:class:slam
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:rb-0049-motion-planning
 supports:
   - urn:ngm:class:rb-0096-safeguarding

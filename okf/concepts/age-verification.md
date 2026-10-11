@@ -28,7 +28,7 @@ supports:
   - urn:ngm:class:data-minimisation
 standardizedBy:
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 relatedTo:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:authentication

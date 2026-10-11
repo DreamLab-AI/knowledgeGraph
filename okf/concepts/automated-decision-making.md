@@ -8,7 +8,7 @@ description: Automated decision making is the use of algorithms or machine learn
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:decision-making
 requires:
   - urn:ngm:class:transparency

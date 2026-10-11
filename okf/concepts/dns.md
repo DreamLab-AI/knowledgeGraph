@@ -21,8 +21,8 @@ requires:
   - urn:ngm:class:ip-addressing
 enables:
   - urn:ngm:class:http
-  - urn:ngm:class:tls
-  - urn:ngm:class:cdn
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:service-discovery
   - urn:ngm:class:email-delivery
 implements:

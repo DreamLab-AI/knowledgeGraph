@@ -35,12 +35,12 @@ bridgesTo:
 standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:iso-standards
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
 partOf:
   - urn:ngm:class:governance
 relatedTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:gdpr
   - urn:ngm:class:algorithmic-accountability
 ---

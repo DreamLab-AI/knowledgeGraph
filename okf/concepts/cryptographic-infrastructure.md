@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:cryptographic-algorithm
 hasPart:
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-hash-function
 relatedTo:
   - urn:ngm:class:digital-signature

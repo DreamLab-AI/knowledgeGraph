@@ -37,7 +37,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -91,11 +91,6 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:bioinformatics",
-      "label": "Bioinformatics",
-      "slug": "bioinformatics"
     },
     {
       "id": "urn:ngm:class:biology",
@@ -260,7 +255,7 @@
         "label": "Linear Algebra"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -310,11 +305,15 @@
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:genome-assembly",
-        "label": "Genome Assembly"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
       {
         "id": "urn:ngm:class:classical-genetics",
         "label": "Classical Genetics"
@@ -362,16 +361,16 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:biology",
-        "label": "Biology"
-      },
-      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -400,11 +399,11 @@
         "label": "Hidden Markov Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -434,12 +433,12 @@
         "label": "Systems Biology"
       },
       {
-        "id": "urn:ngm:class:evolutionary-biology",
-        "label": "Evolutionary Biology"
-      },
-      {
         "id": "urn:ngm:class:business-intelligence",
         "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
@@ -460,20 +459,20 @@
         "label": "Wellcome Sanger Institute"
       },
       {
-        "id": "urn:ngm:class:pdb",
-        "label": "PDB"
-      },
-      {
-        "id": "urn:ngm:class:uniprot",
-        "label": "UniProt"
-      },
-      {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [

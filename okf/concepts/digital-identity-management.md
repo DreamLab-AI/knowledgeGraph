@@ -10,14 +10,14 @@ quality: 0.7
 is-a:
   - urn:ngm:class:identity-systems
 hasPart:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:digital-wallet
   - urn:ngm:class:credential-storage
 requires:
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:identity-provider
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:identity-providers
   - urn:ngm:class:credential-storage
 enables:
@@ -43,7 +43,7 @@ standardizedBy:
   - urn:ngm:class:iso-27001
 relatedTo:
   - urn:ngm:class:access-control
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 ---
 
 # Digital Identity Management

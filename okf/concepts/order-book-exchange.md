@@ -20,10 +20,10 @@ dependsOn:
   - urn:ngm:class:market-microstructure
 contrastsWith:
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:liquidity-mining
 bridgesTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 uses:
   - urn:ngm:class:latency
 supports:

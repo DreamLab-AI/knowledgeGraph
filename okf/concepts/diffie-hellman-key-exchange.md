@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:discrete-logarithm-problem
   - urn:ngm:class:modular-arithmetic
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:tls-handshake
 relatedTo:
   - urn:ngm:class:elliptic-curve-cryptography

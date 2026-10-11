@@ -18,7 +18,7 @@ partOf:
   - urn:ngm:class:neural-network-layer
 relatedTo:
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # RMSNorm

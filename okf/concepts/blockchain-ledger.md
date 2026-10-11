@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:transparency
   - urn:ngm:class:smart-contract
   - urn:ngm:class:tokenization
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:byzantine-fault-tolerance
   - urn:ngm:class:append-only-log

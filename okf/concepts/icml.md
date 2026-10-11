@@ -30,18 +30,18 @@ bridgesTo:
   - urn:ngm:class:natural-language-processing
 uses:
   - urn:ngm:class:optimisation-algorithm
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:double-blind-review
 standardizedBy:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:machine-learning
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:journal-of-machine-learning-research
   - urn:ngm:class:machine-learning
   - urn:ngm:class:journal-of-machine-learning-research
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:neural-network

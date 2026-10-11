@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:flow-control
 requires:
   - urn:ngm:class:udp
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:http3
   - urn:ngm:class:scalability
@@ -31,13 +31,13 @@ implements:
 contrastsWith:
   - urn:ngm:class:tcp
   - urn:ngm:class:http2
-  - urn:ngm:class:http
+  - urn:ngm:class:http2
   - urn:ngm:class:sctp
 bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:real-time-communication
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:udp
   - urn:ngm:class:packet-acknowledgement
 supports:
@@ -49,7 +49,7 @@ partOf:
   - urn:ngm:class:internet-protocol-suite
 relatedTo:
   - urn:ngm:class:web-rtc
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:edge-computing
 ---
 

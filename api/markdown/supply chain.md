@@ -23,14 +23,14 @@ A supply chain is the end-to-end network of organisations, people, activities, i
 - **[[Trade Compliance]]** — customs classification, export controls, sanctions screening, and rules-of-origin documentation.
 - **[[Sustainability Reporting]]** — disclosure of [[Scope 3 Emissions]] from upstream suppliers and downstream distribution under frameworks such as CSRD and the GHG Protocol.
 - **[[Enterprise Resource Planning]]** — ERP systems (e.g. SAP S/4HANA, Oracle SCM) serve as transactional backbones for order management, production planning, and financial settlement.
-- **[[IoT]]** — real-time sensor data from asset trackers, temperature loggers, and RFID tags feeds visibility platforms with in-transit condition monitoring.
+- **[[Internet of Things]]** — real-time sensor data from asset trackers, temperature loggers, and RFID tags feeds visibility platforms with in-transit condition monitoring.
 
 ### Mechanisms & Enabling Technologies
 
 - **[[Artificial Intelligence]] and [[Machine Learning]]** — applied to demand sensing, dynamic pricing, predictive maintenance of logistics assets, and anomaly detection in procurement data.
 - **[[Digital Twin]]** — virtual replicas of the supply network enable scenario planning and resilience testing without disrupting live operations.
 - **[[Supply Chain Blockchain]]** — distributed ledger platforms (e.g. IBM Food Trust, TradeLens) provide immutable, shared records of custody transfers and provenance assertions across competing organisations who may not otherwise share data.
-- **[[IoT]]** — cold-chain monitoring, geofencing of shipments, and real-time inventory counting via RFID and barcode scanning.
+- **[[Internet of Things]]** — cold-chain monitoring, geofencing of shipments, and real-time inventory counting via RFID and barcode scanning.
 - **[[Data Integration]]** — EDI, API-based supplier portals, and data-sharing platforms aggregate multi-tier information into a single operational picture.
 
 ### Applications & Use Cases

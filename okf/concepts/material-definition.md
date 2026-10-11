@@ -25,7 +25,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:metaverse
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:physically-based-rendering
   - urn:ngm:class:shader
@@ -36,7 +36,7 @@ standardizedBy:
   - urn:ngm:class:material-x
 relatedTo:
   - urn:ngm:class:open-usd
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:3-d-rendering
   - urn:ngm:class:scene-graph
   - urn:ngm:class:level-of-detail

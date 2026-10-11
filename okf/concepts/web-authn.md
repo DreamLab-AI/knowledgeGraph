@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:one-time-password
 bridgesTo:
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:fido2
@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:challenge-response-protocol
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:fido-alliance
 relatedTo:
   - urn:ngm:class:web-standard

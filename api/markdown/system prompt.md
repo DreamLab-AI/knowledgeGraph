@@ -6,7 +6,7 @@ A system prompt is a structured instruction block injected into the context wind
 
 ### Overview
 
-- The system prompt emerged as a first-class API concept alongside the development of instruction-tuned [[Large Language Models]] such as GPT-3.5-turbo and Claude 1. Prior to that, similar effects were achieved by prepending instructions to the single text completion prompt.
+- The system prompt emerged as a first-class API concept alongside the development of instruction-tuned [[Large Language Model]] such as GPT-3.5-turbo and Claude 1. Prior to that, similar effects were achieved by prepending instructions to the single text completion prompt.
 - Modern [[Chat Completions]] APIs formalise a three-role message schema: **system**, **user**, and **assistant**. The system role carries operator-level intent; user and assistant roles carry the conversational exchange.
 - System prompts are distinct from [[Fine-Tuning]]: fine-tuning bakes knowledge and style into model weights at training time, whereas a system prompt influences behaviour only for the duration of a single inference session and context window without altering weights.
 - The instructions in a system prompt are processed by the [[Attention Mechanism]] in exactly the same way as other tokens, but they benefit from positional primacy — appearing early in the sequence — and from the model's [[Instruction Tuning]] alignment, which trains the model to treat the system role as authoritative.

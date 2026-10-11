@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sea-ice-floe",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A sea ice floe is a relatively flat piece of floating ice, formed from frozen sea water, that is 20 m or more across.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

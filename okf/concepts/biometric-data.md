@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:policy-information-point
 dependsOn:
   - urn:ngm:class:data-management
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:session-key
 bridgesTo:

@@ -108,8 +108,8 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       }
     ],
     "requires": [
@@ -149,7 +149,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -192,7 +192,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "id": "urn:ngm:class:multimodal-model",
         "label": "Multimodal Model"
       },
       {
@@ -246,8 +246,8 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -276,8 +276,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network",

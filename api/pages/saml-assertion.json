@@ -45,8 +45,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "contrastsWith": [
@@ -157,7 +157,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -235,10 +235,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
-      },
-      {
         "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
       },
@@ -291,16 +287,12 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
-      },
-      {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence-ethics",
@@ -405,8 +397,8 @@
         "label": "ISO-IEC 24760"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:iso-iec",
@@ -433,6 +425,10 @@
         "label": "Identity Management"
       },
       {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
+      },
+      {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust"
       },
@@ -451,18 +447,14 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:hyperledger-indy",
-        "label": "Hyperledger Indy"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

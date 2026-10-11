@@ -33,8 +33,8 @@
         "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:frontier-model-evaluation",
@@ -95,7 +95,7 @@
         "label": "Decision Theory"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -205,7 +205,7 @@
         "label": "Adversarial Machine Learning"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -261,7 +261,7 @@
         "label": "AI Risk"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -277,11 +277,11 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {

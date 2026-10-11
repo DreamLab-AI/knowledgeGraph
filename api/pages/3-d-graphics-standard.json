@@ -116,14 +116,34 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:technical-documentation",
+      "label": "Technical Documentation",
+      "slug": "technical-documentation"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation",
+      "slug": "documentation"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data",
+      "slug": "data"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
@@ -229,6 +249,16 @@
         "label": "Privacy Framework"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:best-practices",
@@ -263,6 +293,14 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:tribal-knowledge",
+        "label": "Tribal Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -329,7 +367,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -381,8 +419,8 @@
         "label": "ISO"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:open-xr",

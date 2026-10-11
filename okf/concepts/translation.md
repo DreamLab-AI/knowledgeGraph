@@ -44,7 +44,7 @@ enables:
 dependsOn:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:linguistic-annotation
@@ -54,7 +54,7 @@ implements:
   - urn:ngm:class:byte-pair-encoding
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:transformer-architecture
 contrastsWith:
   - urn:ngm:class:interpreting

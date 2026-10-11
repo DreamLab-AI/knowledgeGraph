@@ -17,8 +17,8 @@ A Personal Data Store (PDS) is a user-controlled software system or vault that a
 ### Key Components
 
 - **Storage backend**: encrypted object store or graph database hosting the individual's data under user-controlled keys; may be self-hosted, hosted by a trusted provider, or distributed across edge devices.
-- **[[Decentralized Identifiers]] (DIDs)**: provide globally unique, cryptographically verifiable identifiers for the data subject that are not dependent on any central registry.
-- **[[Verifiable Credentials]]**: W3C-standardised data structures enabling third parties to issue attestations (age, qualifications, health status) that the PDS holder can selectively present without revealing the underlying raw data.
+- **[[Decentralised Identifier]] (DIDs)**: provide globally unique, cryptographically verifiable identifiers for the data subject that are not dependent on any central registry.
+- **[[Verifiable Credential]]**: W3C-standardised data structures enabling third parties to issue attestations (age, qualifications, health status) that the PDS holder can selectively present without revealing the underlying raw data.
 - **[[Access Control]] policies**: fine-grained rules specifying which agents, for which purposes, for which time windows, may read or write which data subsets; implemented as Web Access Control (WAC) in the Solid ecosystem or as ZCAP-LD capability tokens.
 - **[[Consent Management]] layer**: user-facing interface and machine-readable policy store tracking consent receipts as defined by ISO/IEC 29184 and the Kantara Consent Receipt specification.
 - **[[End-to-End Encryption]]**: data at rest and in transit is encrypted using keys held only by the data subject, preventing even the PDS hosting provider from accessing content in plaintext.
@@ -32,7 +32,7 @@ A Personal Data Store (PDS) is a user-controlled software system or vault that a
 - **Healthcare data control**: a patient's PDS aggregates EHR records from multiple providers; the patient grants a specialist temporary read access to relevant records only, revoking it after the consultation. Compatible with [[FHIR]] data standards.
 - **Financial data aggregation**: under Open Banking (PSD2 in the EU, CDR in Australia), a PDS acts as a consent broker, pulling transaction history from banks and selectively sharing it with budgeting apps or mortgage lenders without intermediary data brokers.
 - **Personalised advertising on user terms**: instead of tracking cookies and third-party data brokers, advertisers query a user's PDS for declared preferences; the user is compensated or simply retains control over what is shared via a [[Data Marketplace]] model.
-- **Education credential wallet**: academic certificates issued as [[Verifiable Credentials]] are held in the PDS; the holder presents cryptographic proofs of qualification to employers without revealing other transcript details.
+- **Education credential wallet**: academic certificates issued as [[Verifiable Credential]] are held in the PDS; the holder presents cryptographic proofs of qualification to employers without revealing other transcript details.
 - **Metaverse identity portability**: avatars, reputations, and in-world asset ownership are anchored to a PDS-held DID, allowing the user to carry their digital identity and social graph across virtual environments without platform re-registration. Connects to [[Federated Identity]] patterns in the metaverse.
 - **Federated machine learning**: a research consortium's [[Federated Machine Learning]] pipeline queries consented data subsets from participant PDSs; raw data never leaves the individual's store, enabling population-level insights with individual privacy preservation.
 - **Smart-city services**: municipal apps (transit, waste collection, local alerts) read only the attributes a citizen has explicitly shared from their PDS, avoiding the surveillance model of centralised city data lakes.
@@ -41,7 +41,7 @@ A Personal Data Store (PDS) is a user-controlled software system or vault that a
 ### Standards and Context
 
 - **W3C Solid**: Tim Berners-Lee's open standard (originally developed at MIT, now at Inrupt and standardised at W3C) that specifies a protocol for personal online datastores (Pods) using Linked Data principles. Solid Pods are the most mature open-standard PDS implementation available today.
-- **W3C DID Core**: defines [[Decentralized Identifiers]], the identity anchor mechanism for most PDS architectures, allowing authentication without centralised registries.
+- **W3C DID Core**: defines [[Decentralised Identifier]], the identity anchor mechanism for most PDS architectures, allowing authentication without centralised registries.
 - **W3C Verifiable Credentials Data Model**: specifies the credential format for attestations issued to and stored within a PDS.
 - **GDPR (General Data Protection Regulation, EU 2016/679)**: Articles 15–20 (rights of access, rectification, erasure, restriction, portability, and objection) create a regulatory mandate for PDS-like capabilities, driving adoption in European markets.
 - **CCPA / CPRA (California Consumer Privacy Act / Privacy Rights Act)**: analogous US state-level regulation driving similar data rights in the American market.

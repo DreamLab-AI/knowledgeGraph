@@ -85,7 +85,7 @@ A machine learning technique that aggregates predictions from multiple independe
 ### [BlenderGPT](https://github.com/gd3kr/BlenderGPT)
 
 - A plugin for controlling Blender using GPT models.
-- [[Stable Diffusion Image Model]]
+- [[Stable Diffusion]]
 
 ## Emerging Business Models
 

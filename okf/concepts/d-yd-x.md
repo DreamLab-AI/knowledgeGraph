@@ -8,7 +8,7 @@ description: "dYdX is a decentralised exchange focused on perpetual-futures trad
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-finance-domain
 hasPart:
   - urn:ngm:class:order-book
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:on-chain-settlement
   - urn:ngm:class:governance-token
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:ethereum

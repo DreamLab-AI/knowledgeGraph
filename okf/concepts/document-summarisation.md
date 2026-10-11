@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:faithfulness-evaluation
 requires:
   - urn:ngm:class:model-evaluation
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:training-data
   - urn:ngm:class:language-model
@@ -32,7 +32,7 @@ enables:
   - urn:ngm:class:question-answering
   - urn:ngm:class:semantic-search
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:backpropagation
@@ -51,7 +51,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:knowledge-management
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
   - urn:ngm:class:text-summarisation
   - urn:ngm:class:embedding

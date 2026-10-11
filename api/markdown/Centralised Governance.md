@@ -12,7 +12,7 @@ Centralised governance is a model in which decision-making authority over a syst
 - Authority is concentrated in a single entity or small controlling group.
 - Decisions can be made and enforced rapidly without broad stakeholder voting.
 - Accountability is clear but censorship resistance is low.
-- Contrasts directly with [[Decentralised Governance]] and [[DAO]] structures.
+- Contrasts directly with [[Decentralised Governance]] and [[Decentralised Autonomous Organisation]] structures.
 - Aligns with conventional [[Corporate Governance]] and regulatory oversight models.
 
 ### Applications

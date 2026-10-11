@@ -63,7 +63,7 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       }
     ],
@@ -119,7 +119,7 @@
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {

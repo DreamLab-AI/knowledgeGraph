@@ -14,10 +14,10 @@ hasPart:
   - urn:ngm:class:avatar-creator
   - urn:ngm:class:morph-target
 requires:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:oauth
   - urn:ngm:class:rest-api
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 enables:
   - urn:ngm:class:cross-platform-identity
   - urn:ngm:class:social-vr

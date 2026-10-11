@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:routing-network
   - urn:ngm:class:nvidia-nccl
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:trillion-parameter-model
   - urn:ngm:class:sparse-language-model
@@ -39,7 +39,7 @@ dependsOn:
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:nvidia-nccl
 implements:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:sparse-activation
   - urn:ngm:class:conditional-computation
@@ -62,7 +62,7 @@ supports:
   - urn:ngm:class:distributed-training
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 standardizedBy:
   - urn:ngm:class:mlcommons
   - urn:ngm:class:nvidia-nccl

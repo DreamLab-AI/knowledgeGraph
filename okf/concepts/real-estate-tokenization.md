@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:decentralised-identity
 enables:
   - urn:ngm:class:digital-asset-trading
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:blockchain-compliance
 uses:

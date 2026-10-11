@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:secure-boot
   - urn:ngm:class:remote-attestation
 contrastsWith:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 bridgesTo:
   - urn:ngm:class:key-management
   - urn:ngm:class:confidential-computing

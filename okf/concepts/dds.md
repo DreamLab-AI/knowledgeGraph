@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:network-protocol
 enables:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 bridgesTo:
   - urn:ngm:class:distributed-systems
 ---

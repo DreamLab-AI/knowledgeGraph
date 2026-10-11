@@ -135,11 +135,11 @@
         "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ]

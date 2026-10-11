@@ -30,7 +30,7 @@ enables:
   - urn:ngm:class:algorithmic-fairness
   - urn:ngm:class:ai-fairness
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:automated-decision-making
   - urn:ngm:class:data-collection
 implements:
@@ -55,8 +55,8 @@ supports:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:ai-governance
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ieee-p-7003-2021
   - urn:ngm:class:iso-iec-tr-24027
   - urn:ngm:class:nist-sp-1270

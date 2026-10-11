@@ -12,7 +12,7 @@
       "label": "AI Technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     },
     {
@@ -80,7 +80,7 @@
         "label": "Behavioural Analytics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -263,7 +263,7 @@
         "label": "UK Online Safety Act"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -373,11 +373,6 @@
       "slug": "mathematical-foundations"
     },
     {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network",
-      "slug": "neural-network"
-    },
-    {
       "id": "urn:ngm:class:probabilistic-inference",
       "label": "Probabilistic Inference",
       "slug": "probabilistic-inference"
@@ -391,11 +386,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -438,8 +428,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -464,6 +454,14 @@
         "label": "AI Infrastructure"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       },
@@ -482,17 +480,13 @@
       {
         "id": "urn:ngm:class:gaussian-process",
         "label": "Gaussian Process"
-      },
-      {
-        "id": "urn:ngm:class:kernel-function",
-        "label": "Kernel Function"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-inference",
-        "label": "Probabilistic Inference"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -514,16 +508,12 @@
         "label": "Predictive Analytics"
       },
       {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
         "id": "urn:ngm:class:ai-game-agent",
         "label": "Game Playing Agent"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Navigation"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
       }
     ],
     "dependsOn": [
@@ -532,8 +522,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:gaussian-process",
@@ -596,6 +586,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
@@ -618,14 +616,6 @@
       {
         "id": "urn:ngm:class:grid-search",
         "label": "Grid Search"
-      },
-      {
-        "id": "urn:ngm:class:random-search",
-        "label": "Random Search"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -636,6 +626,14 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       },
       {
         "id": "urn:ngm:class:autonomous-robot",
@@ -652,17 +650,13 @@
       {
         "id": "urn:ngm:class:experimental-design",
         "label": "Experimental Design"
-      },
-      {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
-        "id": "urn:ngm:class:model-predictive-control",
-        "label": "Model Predictive Control"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -676,6 +670,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
         "id": "urn:ngm:class:automated-planning",
         "label": "Model-Based Planning"
       },
@@ -684,26 +682,22 @@
         "label": "Acquisition Function"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
-      },
-      {
         "id": "urn:ngm:class:expected-improvement",
         "label": "Expected Improvement"
-      },
-      {
-        "id": "urn:ngm:class:gaussian-process",
-        "label": "Gaussian Process"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:auto-ml",
@@ -722,15 +716,19 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:material-science",
-        "label": "Materials Science"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:hpobench",
         "label": "HPOBench"
@@ -748,20 +746,12 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
-      },
-      {
         "id": "urn:ngm:class:aistats",
         "label": "AISTATS"
       },
       {
         "id": "urn:ngm:class:bayesian-analysis-journal",
         "label": "Bayesian Analysis Journal"
-      },
-      {
-        "id": "urn:ngm:class:journal-of-machine-learning-research",
-        "label": "Journal of Machine Learning Research"
       }
     ],
     "partOf": [
@@ -770,7 +760,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

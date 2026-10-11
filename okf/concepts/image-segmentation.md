@@ -19,7 +19,7 @@ hasPart:
   - urn:ngm:class:feature-pyramid-network
   - urn:ngm:class:task-specific-head
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:skip-connections
   - urn:ngm:class:convolution
   - urn:ngm:class:task-specific-head
@@ -28,10 +28,10 @@ requires:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:loss-function
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:loss-functions
   - urn:ngm:class:evaluation-metric
 enables:
@@ -83,7 +83,7 @@ relatedTo:
   - urn:ngm:class:multimodal-ai-architecture-learning
   - urn:ngm:class:optical-flow
   - urn:ngm:class:3-d-reconstruction
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:multi-modal-learning
 ---
 

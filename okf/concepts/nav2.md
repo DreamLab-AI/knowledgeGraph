@@ -22,7 +22,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:move-base
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:behaviour-tree
@@ -36,7 +36,7 @@ supports:
 relatedTo:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:autonomous-mobile-robots
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Nav2

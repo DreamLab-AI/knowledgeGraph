@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:dispute-resolution
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:price-oracle
   - urn:ngm:class:chainlink

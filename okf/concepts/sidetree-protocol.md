@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:content-addressed-storage
   - urn:ngm:class:ipfs
 supports:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 partOf:
   - urn:ngm:class:w3-c-did
 relatedTo:

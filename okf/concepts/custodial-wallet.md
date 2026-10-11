@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:account-balance-ledger
   - urn:ngm:class:omnibus-account
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:account-recovery
   - urn:ngm:class:fiat-on-ramp

@@ -13,17 +13,17 @@ hasPart:
   - urn:ngm:class:sanctions-screening
   - urn:ngm:class:compliance-audit-trail
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:entity-resolution
   - urn:ngm:class:watchlist-management
 enables:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:regulatory-reporting
 contrastsWith:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:counter-terrorist-financing
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract-compliance
 uses:
   - urn:ngm:class:blockchain-analytics
@@ -33,7 +33,7 @@ standardizedBy:
   - urn:ngm:class:ofac
 partOf:
   - urn:ngm:class:financial-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Sanctions Enforcement

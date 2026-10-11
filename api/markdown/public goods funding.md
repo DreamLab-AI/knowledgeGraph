@@ -20,7 +20,7 @@ Public goods funding encompasses the mechanisms, institutions, and coordination 
   - Inverts the conventional grant model: instead of speculating on future impact, a badgeholder committee distributes funds to projects with *proven* past contributions.
   - Reduces allocation error and speculative gaming; rewards demonstrated value over promises.
   - Closely related to [[Impact Certificates]] — tradeable tokens representing verified past impact that create secondary markets for public goods investment.
-- **[[DAO]] Treasury Grants**
+- **[[Decentralised Autonomous Organisation]] Treasury Grants**
   - Protocol DAOs such as Uniswap, Compound, Aave, and MakerDAO hold substantial on-chain treasuries funded by protocol fees or token reserves.
   - [[On-Chain Governance]] mechanisms — token voting, conviction voting, delegated governance — determine grant allocations.
   - Risk: plutocratic capture when large token holders dominate allocation decisions.
@@ -51,7 +51,7 @@ Public goods funding encompasses the mechanisms, institutions, and coordination 
 - **Plutocratic Capture**: Token-weighted governance concentrates power in large holders. Hybrid mechanisms combining token weight with identity-based or reputation-based voting are active research areas.
 - **Retroactive vs. Prospective Tradeoffs**: Retroactive funding rewards proven impact but may not fund genuinely speculative, high-variance research. Prospective grants carry higher allocation error. Optimal designs may combine both.
 - **Voter Fatigue and Participation**: [[On-Chain Governance]] suffers chronically low participation. Delegation, AI-assisted curation, and metagovernance frameworks attempt to address this.
-- **Capital Efficiency**: Large matching pools sitting idle generate opportunity costs. Integrating yield-bearing [[DeFi]] strategies with grant pools is an active design space.
+- **Capital Efficiency**: Large matching pools sitting idle generate opportunity costs. Integrating yield-bearing [[Decentralised Finance]] strategies with grant pools is an active design space.
 - **Scope Creep and Legitimacy**: As DAO treasuries grow, determining what counts as a public good versus a private benefit becomes contested. Legitimacy depends on transparent, inclusive deliberation processes.
 - **Cross-Chain Coordination**: Public goods often benefit multiple ecosystems simultaneously. Cross-chain grant coordination protocols and shared funding pools are nascent but growing.
 

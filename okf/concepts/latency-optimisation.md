@@ -18,13 +18,13 @@ enables:
   - urn:ngm:class:real-time
 dependsOn:
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 bridgesTo:
   - urn:ngm:class:bandwidth-adaptation
   - urn:ngm:class:distributed-systems
 uses:
   - urn:ngm:class:caching
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:user-experience
   - urn:ngm:class:quality-of-service

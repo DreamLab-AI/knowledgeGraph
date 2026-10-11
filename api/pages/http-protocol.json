@@ -91,8 +91,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -125,8 +125,8 @@
         "label": "GraphQL"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:caching",
@@ -157,12 +157,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",

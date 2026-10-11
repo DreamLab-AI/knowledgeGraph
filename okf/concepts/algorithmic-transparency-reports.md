@@ -43,15 +43,15 @@ enables:
   - urn:ngm:class:human-oversight
 dependsOn:
   - urn:ngm:class:automated-decision-system
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:recommendation-system
   - urn:ngm:class:content-moderation-system
   - urn:ngm:class:algorithmic-transparency-index
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:platform-to-business-regulation
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:black-box-ai
   - urn:ngm:class:opaque-ai
@@ -77,10 +77,10 @@ supports:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:algorithmic-transparency-index
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:platform-to-business-regulation
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:algorithmic-accountability

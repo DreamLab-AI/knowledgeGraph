@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reconstructed-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reconstructed data state is the SWEET data-processing state of data that have had some reconstruction process in their history.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -14,7 +14,7 @@ is-a:
   - urn:ngm:class:counter-terrorist-financing
   - urn:ngm:class:payment-transparency-standard
   - urn:ngm:class:fatf-recommendation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 hasPart:
   - urn:ngm:class:eba-travel-rule-guidelines
   - urn:ngm:class:ivms-101
@@ -29,12 +29,12 @@ hasPart:
   - urn:ngm:class:self-hosted-wallet-verification
 requires:
   - urn:ngm:class:blockchain-analytics
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:record-keeping
   - urn:ngm:class:sanctions-screening
   - urn:ngm:class:bc-0456-virtual-asset-service-providers
   - urn:ngm:class:bc-0456-virtual-asset-service-providers
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:vasp-to-vasp-messaging
   - urn:ngm:class:vasp-registration
 enables:
@@ -45,9 +45,9 @@ enables:
   - urn:ngm:class:aml-enforcement
   - urn:ngm:class:transaction-tracing
 dependsOn:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:blockchain-analytics
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:financial-action-task-force
   - urn:ngm:class:vasp-registration
   - urn:ngm:class:address-attribution
@@ -56,24 +56,24 @@ implements:
   - urn:ngm:class:eba-travel-rule-guidelines
   - urn:ngm:class:fatf-recommendation-16
   - urn:ngm:class:ivms-101
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:transfer-of-funds-regulation
   - urn:ngm:class:anti-money-laundering
 contrastsWith:
   - urn:ngm:class:privacy-coins
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-hosted-wallets
   - urn:ngm:class:peer-to-peer-transactions
   - urn:ngm:class:anonymous-transfers
   - urn:ngm:class:mixer-services
 bridgesTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:counter-terrorist-financing
 uses:
   - urn:ngm:class:ivms-101
-  - urn:ngm:class:lei-system
+  - urn:ngm:class:legal-entity-identifier
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:https-messaging
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:blockchain-address-attribution
@@ -95,7 +95,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:gdpr
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:open-banking
   - urn:ngm:class:stablecoin
   - urn:ngm:class:blockchain-interoperability

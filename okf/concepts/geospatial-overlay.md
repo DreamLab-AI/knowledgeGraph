@@ -4,6 +4,7 @@ type: Class
 title: Geospatial Overlay
 resource: urn:ngm:class:geospatial-overlay
 domain: earth-observation-and-geospatial-sensing
+description: A geospatial overlay is an analysis operation that combines two or more sets of spatial features so that their spatial relationships are resolved into a new set of features [^1].
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Geospatial Overlay
+
+A geospatial overlay is an analysis operation that combines two or more sets of spatial features so that their spatial relationships are resolved into a new set of features [^1].

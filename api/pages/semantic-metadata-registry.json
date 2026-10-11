@@ -127,6 +127,11 @@
       "id": "urn:ngm:class:data-governance",
       "label": "Data Governance",
       "slug": "data-governance"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -140,28 +145,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:controlled-vocabulary",
-        "label": "Controlled Vocabulary"
-      },
-      {
-        "id": "urn:ngm:class:data-element",
-        "label": "Data Element"
-      },
-      {
-        "id": "urn:ngm:class:data-quality-management",
-        "label": "Data Quality Management"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "requires": [
@@ -192,6 +197,10 @@
       {
         "id": "urn:ngm:class:data-ownership",
         "label": "Data Ownership"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       }
     ],
     "enables": [
@@ -204,8 +213,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -218,12 +227,20 @@
       {
         "id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-catalog",
-        "label": "Data Catalog"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:master-data-management",
@@ -266,8 +283,8 @@
         "label": "Data Anarchy"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -298,6 +315,10 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "uses": [
@@ -310,7 +331,7 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -338,6 +359,14 @@
       {
         "id": "urn:ngm:class:data-quality-management",
         "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "standardizedBy": [
@@ -360,6 +389,14 @@
       {
         "id": "urn:ngm:class:iso-8000",
         "label": "ISO 8000"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -390,20 +427,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
       },
       {
         "id": "urn:ngm:class:model-registry",
         "label": "Model Registry"
-      },
-      {
-        "id": "urn:ngm:class:data-privacy",
-        "label": "Data Privacy"
-      },
-      {
-        "id": "urn:ngm:class:data-security",
-        "label": "Data Security"
       }
     ]
   },

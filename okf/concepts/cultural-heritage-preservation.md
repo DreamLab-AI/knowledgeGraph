@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:point-cloud
   - urn:ngm:class:multispectral-imaging
   - urn:ngm:class:3-d-reconstruction
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 standardizedBy:
   - urn:ngm:class:iso-14721
   - urn:ngm:class:dublin-core

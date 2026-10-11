@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:atmosphere-revitalisation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Atmosphere revitalisation is the set of life support functions that keep the air of a crewed spacecraft breathable, including removing carbon dioxide, recovering and generating oxygen, controlling humidity, removing trace contaminants and filtering particulates.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

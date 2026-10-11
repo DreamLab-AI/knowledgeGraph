@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:beam-handover",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Beam handover is a change in the satellite beam or radio cell serving a user or link, as coverage or network resource assignments change.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

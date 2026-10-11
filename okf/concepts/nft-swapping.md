@@ -36,7 +36,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:virtual-economy
 partOf:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:nft-marketplace
 ---
 

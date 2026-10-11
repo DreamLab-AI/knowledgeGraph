@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:roc-curve
 standardizedBy:
   - urn:ngm:class:iso-iec-25059
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:model-performance
   - urn:ngm:class:model-evaluation

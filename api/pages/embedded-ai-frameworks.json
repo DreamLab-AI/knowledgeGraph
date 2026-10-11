@@ -68,7 +68,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -92,8 +92,8 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "enables": [
@@ -148,8 +148,8 @@
         "label": "FPGA"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:edge-computing-architecture",
@@ -183,7 +183,7 @@
       },
       {
         "id": "urn:ngm:class:neural-network-quantisation",
-        "label": "Neural Network Quantisation"
+        "label": "Model Quantisation"
       }
     ],
     "contrastsWith": [
@@ -219,8 +219,8 @@
         "label": "FPGA"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:onnx-standard",
@@ -367,7 +367,7 @@
       },
       {
         "id": "urn:ngm:class:neural-network-quantisation",
-        "label": "Neural Network Quantisation"
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:model-pruning",
@@ -386,8 +386,8 @@
         "label": "FPGA"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:ai-inference",
@@ -400,6 +400,11 @@
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
     {
       "id": "urn:ngm:class:deep-learning-framework",
       "label": "Deep Learning Framework",
@@ -421,9 +426,9 @@
       "slug": "inference-serving"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -511,11 +516,6 @@
       "slug": "network-function-virtualization"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
       "id": "urn:ngm:class:concurrent-computing",
       "label": "Concurrent Computing",
       "slug": "concurrent-computing"
@@ -556,24 +556,19 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps",
       "slug": "mlops"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -633,7 +628,7 @@
         "label": "Model Compression"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -701,12 +696,12 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantisation"
-      },
-      {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -766,7 +761,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -841,12 +836,12 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantisation"
-      },
-      {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       }
     ],
     "supports": [
@@ -859,8 +854,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -905,8 +900,8 @@
         "label": "IEEE (Institute of Electrical and Electronics Engineers)"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -927,16 +922,16 @@
         "label": "MLOps"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
         "id": "urn:ngm:class:internet-infrastructure",
         "label": "Internet Infrastructure"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       },
       {
         "id": "urn:ngm:class:ai-lifecycle",

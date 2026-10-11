@@ -7,7 +7,7 @@ The Ethereum Name Service (ENS) is a decentralised, on-chain naming system built
   - Reduces user error when sending cryptocurrency by replacing cryptographic addresses with readable labels.
   - Provides a single namespace that wallets, [[Decentralised Application|dApps]], and browsers can resolve uniformly.
   - Creates an on-chain public profile: ENS names can hold avatar, email, social-media handles, and website records, acting as a [[Self Sovereign Identity]] hub.
-  - Governance is fully on-chain through the [[DAO|ENS DAO]], funded by a November 2021 retroactive airdrop of the ENS [[Governance Token]], making the protocol one of the most studied examples of [[On-chain Governance]].
+  - Governance is fully on-chain through the [[Decentralised Autonomous Organisation|ENS DAO]], funded by a November 2021 retroactive airdrop of the ENS [[Governance Token]], making the protocol one of the most studied examples of [[On-chain Governance]].
 - How it works (high-level):
   - A hierarchical namespace is partitioned into nodes (hashed via the Namehash algorithm defined in ERC-137).
   - The root Registry [[Smart Contract]] records the owner, resolver address, and TTL for each node.

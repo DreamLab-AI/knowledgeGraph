@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:payload-fairing",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A payload fairing is the shell at the top of a launch vehicle that encloses the payload and protects it from aerodynamic, thermal and acoustic conditions during ascent through the atmosphere.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

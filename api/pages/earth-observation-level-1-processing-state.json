@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-1-processing-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation Level 1 is the processing state in which raw instrument data have been reconstructed and annotated or converted towards instrument or physical units, ahead of derived geophysical variables.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

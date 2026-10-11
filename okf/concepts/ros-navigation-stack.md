@@ -8,7 +8,7 @@ description: "The ROS Navigation Stack is a collection of software packages with
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 hasPart:
   - urn:ngm:class:move-base
   - urn:ngm:class:costmap
@@ -26,15 +26,15 @@ enables:
 dependsOn:
   - urn:ngm:class:publish-subscribe-pattern
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:lidar
   - urn:ngm:class:localisation
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:simultaneous-localisation-and-mapping
 partOf:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 relatedTo:
   - urn:ngm:class:ros-2
   - urn:ngm:class:gazebo-simulator

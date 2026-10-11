@@ -37,8 +37,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:realtime-collaboration",
-        "label": "Realtime Collaboration"
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
       },
       {
         "id": "urn:ngm:class:virtual-meeting",
@@ -271,7 +271,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

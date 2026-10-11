@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:image-compositing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Image compositing is the per-pixel combination or selection of observations from a gridded satellite time series into one representative image, used to reduce cloud and aerosol contamination.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

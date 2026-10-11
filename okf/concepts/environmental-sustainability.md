@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:e-waste
 requires:
   - urn:ngm:class:energy-efficiency
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
 enables:
   - urn:ngm:class:climate-action
   - urn:ngm:class:biodiversity-conservation
@@ -37,7 +37,7 @@ supports:
   - urn:ngm:class:sustainable-development-goals
 standardizedBy:
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:sustainability

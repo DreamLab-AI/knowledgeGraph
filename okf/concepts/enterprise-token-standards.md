@@ -68,8 +68,8 @@ bridgesTo:
   - urn:ngm:class:digital-asset-standards
 uses:
   - urn:ngm:class:erc-1155
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-735
   - urn:ngm:class:foundry
   - urn:ngm:class:hardhat

@@ -26,7 +26,7 @@ A polygon mesh is a collection of vertices, edges, and faces that defines the sh
 ### Applications
 
 - Real-time rendering of objects and environments in games and XR.
-- Asset interchange through formats such as [[USD]].
+- Asset interchange through formats such as [[Universal Scene Description]].
 - Deformable characters animated with [[Skeletal Animation]].
 - Surfaces produced or refined by [[Procedural Generation]].
 

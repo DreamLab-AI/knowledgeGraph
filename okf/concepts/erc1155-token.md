@@ -22,8 +22,8 @@ enables:
   - urn:ngm:class:nft-marketplace
   - urn:ngm:class:digital-asset-market
 contrastsWith:
-  - urn:ngm:class:erc721
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-721
+  - urn:ngm:class:erc-20
 relatedTo:
   - urn:ngm:class:nft
   - urn:ngm:class:fungible-token

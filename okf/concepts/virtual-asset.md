@@ -27,14 +27,14 @@ contrastsWith:
   - urn:ngm:class:physical-asset
   - urn:ngm:class:fungible-token
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain
   - urn:ngm:class:ipfs
   - urn:ngm:class:cryptographic-hash
 standardizedBy:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 partOf:
   - urn:ngm:class:virtual-economy

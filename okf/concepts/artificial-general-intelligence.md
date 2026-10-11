@@ -41,14 +41,14 @@ dependsOn:
   - urn:ngm:class:compute-trends
   - urn:ngm:class:bitter-lesson
   - urn:ngm:class:pretraining
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:benchmarks
 implements:
   - urn:ngm:class:chain-of-thought-reasoning
   - urn:ngm:class:inference-compute
   - urn:ngm:class:multimodal-ai-architecture-learning
-  - urn:ngm:class:constitutional-ai-training-methodology
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:constitutional-ai
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:scaling-hypothesis
   - urn:ngm:class:inference-compute
 contrastsWith:
@@ -73,13 +73,13 @@ supports:
   - urn:ngm:class:existential-risk-studies
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:openai-charter
   - urn:ngm:class:deepmind-levels-of-agi-framework
 relatedTo:
   - urn:ngm:class:existential-risk
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:recursive-self-improvement
   - urn:ngm:class:superintelligence

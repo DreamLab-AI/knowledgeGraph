@@ -21,7 +21,7 @@ implements:
   - urn:ngm:class:decentralised-identity
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:smart-contract

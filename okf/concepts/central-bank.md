@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:central-bank-independence
   - urn:ngm:class:foreign-exchange-reserves
 enables:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:payment-system
   - urn:ngm:class:inflation-control
   - urn:ngm:class:lender-of-last-resort
@@ -27,11 +27,11 @@ dependsOn:
   - urn:ngm:class:government-bond-market
 contrastsWith:
   - urn:ngm:class:commercial-bank
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 supports:
   - urn:ngm:class:monetary-sovereignty
   - urn:ngm:class:financial-stability

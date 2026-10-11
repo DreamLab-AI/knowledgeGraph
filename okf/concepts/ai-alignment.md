@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-safety
 hasPart:
   - urn:ngm:class:value-alignment
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:scalable-oversight
 requires:
   - urn:ngm:class:reinforcement-learning-from-human-feedback

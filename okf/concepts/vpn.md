@@ -15,7 +15,7 @@ requires:
 implements:
   - urn:ngm:class:encryption
   - urn:ngm:class:secure-communication
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 contrastsWith:
   - urn:ngm:class:tor
   - urn:ngm:class:onion-routing

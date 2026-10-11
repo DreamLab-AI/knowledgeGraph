@@ -29,8 +29,8 @@ uses:
   - urn:ngm:class:threat-modelling
   - urn:ngm:class:ai-model-card
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
 relatedTo:
   - urn:ngm:class:ai-impact-assessment

@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:smart-contract
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Centrifuge

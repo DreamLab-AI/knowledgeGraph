@@ -77,14 +77,14 @@ uses:
   - urn:ngm:class:decidim-platform
 supports:
   - urn:ngm:class:citizen-engagement
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:polycentric-governance
   - urn:ngm:class:public-goods-funding
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:subsidiarity
 standardizedBy:
   - urn:ngm:class:compound-governor-bravo
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:open-zeppelin-governor-contracts
   - urn:ngm:class:snapshot
   - urn:ngm:class:erc-712-typed-structured-data-signing

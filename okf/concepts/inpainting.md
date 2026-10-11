@@ -81,13 +81,13 @@ standardizedBy:
   - urn:ngm:class:iccv
   - urn:ngm:class:siggraph
   - urn:ngm:class:uk-online-safety-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:adobe-firefly
   - urn:ngm:class:apple-inc-technology-corporation
   - urn:ngm:class:deepfakes-and-fraudulent-content
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:apple-inc-technology-corporation
 ---
 

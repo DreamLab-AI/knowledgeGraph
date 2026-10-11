@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:three-axis-stabilisation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Three-axis stabilisation actively controls a spacecraft's orientation about three independent body axes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:attitude-control",

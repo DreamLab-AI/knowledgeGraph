@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:tragedy-of-the-commons
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:multi-agent-system
 uses:
   - urn:ngm:class:coordination-protocol

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:right-ascension-of-the-ascending-node",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Right ascension of the ascending node locates an orbital plane around a reference plane's positive axis.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

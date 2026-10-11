@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:language-model
   - urn:ngm:class:tool-use
   - urn:ngm:class:function-calling
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:context-window
 enables:
   - urn:ngm:class:multi-agent-coordination
@@ -52,7 +52,7 @@ supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:retrieval-augmented-generation
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:model-context-protocol
 relatedTo:
   - urn:ngm:class:semantic-kernel

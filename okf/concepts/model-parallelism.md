@@ -20,7 +20,7 @@ requires:
 enables:
   - urn:ngm:class:large-language-model-training
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
 dependsOn:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:nvlink

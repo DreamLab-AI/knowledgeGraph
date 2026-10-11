@@ -34,7 +34,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -207,7 +207,7 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -261,7 +261,7 @@
         "label": "Scalable Oversight"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -287,8 +287,8 @@
         "label": "Google DeepMind Frontier Safety Framework"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [],
@@ -330,7 +330,7 @@
         "label": "Scalable Oversight"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -342,12 +342,12 @@
         "label": "Reward Hacking"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
@@ -390,9 +390,9 @@
       "slug": "benchmarking"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -466,6 +466,10 @@
         "label": "Experiment Tracking"
       },
       {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
         "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       },
@@ -488,10 +492,6 @@
       {
         "id": "urn:ngm:class:human-oracle",
         "label": "Human Oracle"
-      },
-      {
-        "id": "urn:ngm:class:prompt-sensitivity",
-        "label": "Prompt Sensitivity"
       }
     ],
     "enables": [
@@ -516,16 +516,16 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:alignment-evaluation",
         "label": "Alignment Evaluation"
       },
       {
         "id": "urn:ngm:class:eval-factsheet",
         "label": "Eval Factsheet"
-      },
-      {
-        "id": "urn:ngm:class:frontier-models",
-        "label": "Frontier Model"
       }
     ],
     "dependsOn": [
@@ -538,16 +538,12 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:ai-agents",
@@ -560,6 +556,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
       }
     ],
     "implements": [
@@ -588,7 +588,7 @@
         "label": "Benchmarking"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -746,12 +746,16 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -760,16 +764,16 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -802,8 +806,8 @@
         "label": "Bias"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:prompt-sensitivity",
+        "label": "Prompt Sensitivity"
       }
     ]
   },

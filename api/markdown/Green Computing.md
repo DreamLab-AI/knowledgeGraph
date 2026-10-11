@@ -8,7 +8,7 @@ Green computing is the design, manufacture, operation and disposal of computing 
 - Hardware efficiency improves performance per watt through better silicon, cooling and power delivery.
 - Facility efficiency, tracked by metrics such as [[Power Usage Effectiveness]], minimises overhead energy in [[Data Centre]] operations.
 - Workload management shifts computation toward times and locations where low-carbon electricity is abundant, the essence of [[Carbon-Aware Computing]].
-- Lifecycle thinking, via [[Lifecycle Assessment]], accounts for embodied emissions in manufacturing and the impact of disposal and recycling.
+- Lifecycle thinking, via [[Life Cycle Assessment]], accounts for embodied emissions in manufacturing and the impact of disposal and recycling.
 
 ### Key aspects
 

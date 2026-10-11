@@ -36,12 +36,12 @@ uses:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:governance-token
   - urn:ngm:class:ethereum
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:total-value-locked
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:liquidation
   - urn:ngm:class:collateral-factor
   - urn:ngm:class:autonomous-market-operations

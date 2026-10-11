@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geocentric-latitude",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geocentric latitude is the angle from the equatorial plane to the direction from the centre of an ellipsoid through a given point, with north treated as positive.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -9,7 +9,7 @@ maturity: draft
 quality: 0.5
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:real-time-learning
 ---

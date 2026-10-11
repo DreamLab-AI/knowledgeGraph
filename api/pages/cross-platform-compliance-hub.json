@@ -162,7 +162,7 @@
         "label": "NIS2"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -190,8 +190,8 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -355,8 +355,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:accountability",

@@ -244,8 +244,8 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [],
@@ -279,7 +279,7 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -300,9 +300,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:probabilistic-inference",
@@ -525,12 +525,16 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:frequentist-inference",
-        "label": "Frequentist Inference"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:frequentist-inference",
+        "label": "Frequentist Inference"
       },
       {
         "id": "urn:ngm:class:deterministic-computation",
@@ -597,16 +601,16 @@
         "label": "Stochastic Gradient Langevin Dynamics"
       },
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -619,7 +623,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -631,12 +635,12 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
         "id": "urn:ngm:class:anomaly-detection",
@@ -649,11 +653,19 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"

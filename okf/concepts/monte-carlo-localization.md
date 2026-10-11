@@ -9,7 +9,7 @@ maturity: established
 quality: 0.5
 is-a:
   - urn:ngm:class:robo-navigation-and-planning
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:localisation
   - urn:ngm:class:bayes-filter
 requires:
   - urn:ngm:class:motion-model

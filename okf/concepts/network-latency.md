@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:network-component
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:propagation-delay
   - urn:ngm:class:transmission-delay

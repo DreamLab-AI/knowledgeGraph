@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:cryptographic-primitive
 relatedTo:
   - urn:ngm:class:bls-signature
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # BBS+ Signature

@@ -20,7 +20,7 @@ An order book exchange is a trading venue that matches buy and sell orders throu
 - **Equities and derivatives markets** — Stock and futures exchanges run central limit order books as the backbone of regulated [[Financial Services]].
 - **Centralised crypto exchanges** — Major [[Cryptocurrency]] venues operate order book matching engines analogous to traditional exchanges.
 - **Foreign exchange and fixed income** — Electronic communication networks and trading platforms use order book models for currencies and bonds.
-- **Comparison venue for DeFi** — Order book design is the baseline against which a [[Decentralized Exchange]] and [[Automated Market Maker]] are evaluated.
+- **Comparison venue for DeFi** — Order book design is the baseline against which a [[Decentralised Exchange]] and [[Automated Market Maker]] are evaluated.
 - **Market analysis** — Order book data feeds research into liquidity, volatility, and the broader [[Financial System]].
 
 ### Provenance

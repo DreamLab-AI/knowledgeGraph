@@ -10,17 +10,17 @@ quality: 0.72
 is-a:
   - urn:ngm:class:identity
 hasPart:
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:digital-signature
 requires:
   - urn:ngm:class:credential-storage
   - urn:ngm:class:privacy-controls
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:access-control
   - urn:ngm:class:digital-presence
 dependsOn:
@@ -43,11 +43,11 @@ supports:
   - urn:ngm:class:data-privacy
 standardizedBy:
   - urn:ngm:class:w3-c-did-specification
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 partOf:
   - urn:ngm:class:identity-and-access-management
 relatedTo:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 ---
 
 # Digital Identity

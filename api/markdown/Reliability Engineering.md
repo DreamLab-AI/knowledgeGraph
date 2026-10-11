@@ -12,7 +12,7 @@ Reliability engineering is the engineering discipline that applies probabilistic
 #### Analytical Methods
 
 - **[[Fault Tree Analysis]] (FTA)** — deductive Boolean logic tree from a defined top-level failure event to basic component fault events; enables quantitative failure probability calculation from component failure rate data.
-- **[[FMEA]] / FMECA** — inductive tabulation of every component failure mode, its effect at successively higher system levels, and (in FMECA) its criticality; the standard tool for design review and safety case construction.
+- **[[Failure Mode And Effects Analysis]] / FMECA** — inductive tabulation of every component failure mode, its effect at successively higher system levels, and (in FMECA) its criticality; the standard tool for design review and safety case construction.
 - **[[Reliability Block Diagram]]** — graphical model representing system structure as series, parallel, or k-of-n arrangements of subsystems; supports rapid calculation of system reliability from subsystem figures.
 - **[[Markov Chains]]** — state-transition model for repairable systems with multiple degraded states; captures repair rates, imperfect repair, and common-cause failure modes that block diagrams cannot represent.
 - **[[Monte Carlo Simulation]]** — stochastic sampling over component failure distributions to propagate uncertainty through complex system models; particularly useful when analytical solutions are intractable.
@@ -48,7 +48,7 @@ Reliability engineering is the engineering discipline that applies probabilistic
 
 - ISO 26262 "Road Vehicles — Functional Safety" mandates systematic reliability and safety analysis for automotive electrical/electronic systems, introducing Automotive Safety Integrity Levels (ASIL A–D).
 - SOTIF (ISO 21448) extends analysis to safe operation with sensors and machine learning, directly coupling reliability engineering with [[AI Safety]] for autonomous vehicles.
-- Powertrain, braking, and steering systems undergo extensive [[FMEA]] and durability testing against HALT/HASS protocols.
+- Powertrain, braking, and steering systems undergo extensive [[Failure Mode And Effects Analysis]] and durability testing against HALT/HASS protocols.
 
 #### Medical Devices
 
@@ -59,7 +59,7 @@ Reliability engineering is the engineering discipline that applies probabilistic
 
 - IEC 61511 applies IEC 61508 principles to process industry safety instrumented systems (SIS); probabilistic reliability analysis determines SIL and required test intervals for protective functions.
 - Nuclear power plants use [[Probabilistic Risk Assessment]] (PRA/PSA) — a probabilistic extension of reliability engineering — to quantify core damage frequency and inform safety case arguments.
-- Offshore oil and gas installations use Quantitative Risk Assessment (QRA) integrating FTA, [[FMEA]], and consequence modelling.
+- Offshore oil and gas installations use Quantitative Risk Assessment (QRA) integrating FTA, [[Failure Mode And Effects Analysis]], and consequence modelling.
 
 #### Cloud and Software Infrastructure
 

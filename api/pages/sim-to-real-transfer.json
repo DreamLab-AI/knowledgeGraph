@@ -152,9 +152,9 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -192,9 +192,14 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -209,7 +214,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:prompt-tuning",
@@ -276,8 +281,8 @@
         "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:zero-shot-learning",
@@ -330,8 +335,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
@@ -390,12 +395,12 @@
         "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:human-in-the-loop",
-        "label": "Human in the Loop"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       },
       {
         "id": "urn:ngm:class:hardware-engineering",
@@ -454,6 +459,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
@@ -462,12 +471,8 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
-      },
-      {
-        "id": "urn:ngm:class:servo-motor",
-        "label": "Servo Motor"
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
       }
     ],
     "supports": [
@@ -480,12 +485,16 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -498,10 +507,6 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
@@ -512,6 +517,14 @@
       {
         "id": "urn:ngm:class:nist-ai-standards",
         "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -528,14 +541,12 @@
       {
         "id": "urn:ngm:class:swebok",
         "label": "SWEBOK"
-      },
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
-      },
-      {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

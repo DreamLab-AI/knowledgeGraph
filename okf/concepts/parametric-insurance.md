@@ -8,7 +8,7 @@ description: Parametric insurance is a form of coverage that pays a predetermine
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:smart-contract
 enables:
@@ -24,14 +24,14 @@ uses:
   - urn:ngm:class:blockchain-oracle
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:insurance
 relatedTo:
   - urn:ngm:class:token-economics
   - urn:ngm:class:liquidity-pool
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Parametric Insurance

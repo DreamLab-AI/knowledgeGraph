@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:human-robot-interaction
 dependsOn:
   - urn:ngm:class:state-estimation
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 contrastsWith:
   - urn:ngm:class:teleoperation
 bridgesTo:

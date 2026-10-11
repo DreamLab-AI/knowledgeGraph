@@ -28,12 +28,12 @@ implements:
 contrastsWith:
   - urn:ngm:class:ieee
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 bridgesTo:
   - urn:ngm:class:ai-governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:cybersecurity-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 uses:
   - urn:ngm:class:iso-iec-27001
   - urn:ngm:class:iso-iec-42001

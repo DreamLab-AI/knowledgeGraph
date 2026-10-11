@@ -331,8 +331,8 @@
         "label": "BERT"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:fasthtml",
@@ -450,8 +450,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -464,8 +464,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },

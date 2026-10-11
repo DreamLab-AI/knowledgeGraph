@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:on-chain-governance
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:collateral-management
 dependsOn:
   - urn:ngm:class:smart-contract

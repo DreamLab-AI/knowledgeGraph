@@ -21,7 +21,7 @@ Healthcare AI is the systematic application of machine learning, natural languag
   - Medication safety systems flag dangerous drug-drug interactions and allergy conflicts
   - NLP pipelines extract structured phenotype information (diagnoses, procedures, medications) from free-text clinical notes
 - **Large Language Models in Healthcare**
-  - [[Large Language Models]] assist with discharge summary drafting, clinical note summarisation, and prior-authorisation letter generation
+  - [[Large Language Model]] assist with discharge summary drafting, clinical note summarisation, and prior-authorisation letter generation
   - LLMs are being evaluated for patient-facing symptom triage, medication counselling, and care-plan question answering
   - Fine-tuned clinical LLMs (e.g., Med-PaLM 2, BioMistral) are trained on medical literature and USMLE-style benchmarks
   - Hallucination risk and factual accuracy remain critical concerns for safety-sensitive outputs

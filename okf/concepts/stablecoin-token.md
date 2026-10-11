@@ -25,7 +25,7 @@ uses:
 relatedTo:
   - urn:ngm:class:token-economics
   - urn:ngm:class:digital-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:erc20-token
 ---

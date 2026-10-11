@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dike",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A dike, also spelt dyke, is an embankment built to confine or regulate water and protect adjacent land against overflow.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

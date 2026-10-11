@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:smart-contracts
 enables:
   - urn:ngm:class:financial-inclusion
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:agentic-internet
   - urn:ngm:class:agents
   - urn:ngm:class:cli-multi-agent-systems
@@ -55,7 +55,7 @@ contrastsWith:
   - urn:ngm:class:advertising-revenue
   - urn:ngm:class:traditional-banking
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:bc-defi-and-economics
   - urn:ngm:class:payment-system
@@ -63,7 +63,7 @@ uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:cashu
   - urn:ngm:class:cbdc-frameworks
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:lightning-and-similar-l2
   - urn:ngm:class:nostr-protocol
   - urn:ngm:class:zero-knowledge-proof

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-positioning-error",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS positioning error is the difference between a receiver's estimated position and the corresponding true or reference position, evaluated in a stated frame, epoch and error metric.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

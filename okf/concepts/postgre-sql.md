@@ -18,7 +18,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:nosql-database
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-systems
 uses:
   - urn:ngm:class:b-tree-index

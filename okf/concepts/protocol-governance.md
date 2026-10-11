@@ -33,7 +33,7 @@ supports:
   - urn:ngm:class:consensus-mechanism
 relatedTo:
   - urn:ngm:class:bitcoin-improvement-proposal
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:fork
   - urn:ngm:class:token-voting
 ---

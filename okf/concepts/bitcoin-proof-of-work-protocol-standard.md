@@ -25,7 +25,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:inflation
   - urn:ngm:class:fiat-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:digital-asset-governance
   - urn:ngm:class:macroeconomics

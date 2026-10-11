@@ -198,7 +198,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -280,7 +280,7 @@
         "label": "ERC-1155"
       },
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       },
       {

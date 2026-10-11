@@ -77,11 +77,11 @@ partOf:
   - urn:ngm:class:blockchain-network
 relatedTo:
   - urn:ngm:class:regtech
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:digital-services-tax
   - urn:ngm:class:value-added-tax
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:open-banking
 ---
 

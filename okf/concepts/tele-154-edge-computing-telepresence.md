@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:edge-computing
 requires:
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 enables:
   - urn:ngm:class:low-latency
 bridgesTo:

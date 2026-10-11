@@ -181,7 +181,7 @@ Practical institutional custody (2025): 2-of-3 multisig via [[Miniscript]] with 
 
 ### UTXO Model and Transaction Architecture
 
-[[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum Smart Contract Platform]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
+[[UTXO Model]] (Unspent Transaction Output) is Bitcoin's fundamental accounting primitive, contrasting sharply with the account/balance model used by [[Ethereum]] and traditional banking systems. The UTXO model has profound implications for privacy, parallelism, and protocol design: it enables stateless transaction validation (each transaction is self-contained with its input proofs), eliminates the replay attack surface present in sequential nonce-based account models, and provides a natural atomic unit for [[Payment Channels]] construction.
 
 #### UTXO Structure
 

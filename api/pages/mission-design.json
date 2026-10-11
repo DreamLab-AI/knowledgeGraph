@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mission-design",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mission design is the early engineering work that defines a mission concept, its architecture and its operating approach so that requirements and later development have a basis.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

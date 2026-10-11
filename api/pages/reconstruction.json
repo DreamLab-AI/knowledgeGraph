@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reconstruction",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reconstruction is the analysis service that estimates an image or a set of data values from other measurements when the quantity of interest was not recorded directly.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

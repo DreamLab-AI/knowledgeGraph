@@ -91,7 +91,7 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       }
     ]

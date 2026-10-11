@@ -29,12 +29,12 @@ contrastsWith:
   - urn:ngm:class:vendor-lock-in
 bridgesTo:
   - urn:ngm:class:open-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:web-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 standardizedBy:
   - urn:ngm:class:standards-development-organisation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
   - urn:ngm:class:ietf
   - urn:ngm:class:ieee

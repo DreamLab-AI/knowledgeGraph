@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:path-planning
   - urn:ngm:class:physics-simulation
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:gripper-control
 requires:
@@ -69,7 +69,7 @@ contrastsWith:
   - urn:ngm:class:plc
   - urn:ngm:class:scada
   - urn:ngm:class:custom-rtos-firmware
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 bridgesTo:
   - urn:ngm:class:simulation-environment
 uses:
@@ -79,7 +79,7 @@ uses:
   - urn:ngm:class:python
   - urn:ngm:class:sdf
   - urn:ngm:class:urdf
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:rust-systems-programming-language
   - urn:ngm:class:c
   - urn:ngm:class:pcl
@@ -110,7 +110,7 @@ relatedTo:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:computer-vision
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:autonomous-vehicle
 ---
 

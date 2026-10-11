@@ -8,7 +8,7 @@ description: Benign overfitting is the phenomenon, observed in heavily overparam
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:generalisation-theory
@@ -50,10 +50,10 @@ bridgesTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 supports:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:neural-network
   - urn:ngm:class:foundation-model
 standardizedBy:
@@ -85,7 +85,7 @@ relatedTo:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:chinchilla-scaling
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:neural-architecture-search
 ---

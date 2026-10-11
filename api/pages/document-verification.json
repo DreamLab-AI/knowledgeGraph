@@ -8,7 +8,7 @@
   "definition": "Document verification is the process of confirming that an identity or supporting document presented by a customer is authentic, unaltered, and belongs to the presenting individual. In financial onboarding it combines optical capture, security-feature and template checks, data extraction, and cross-referencing against issuing-authority records or biometric liveness, forming a core step within know-your-customer and anti-money-laundering controls.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:kyc",
+      "id": "urn:ngm:class:know-your-customer",
       "label": "Know Your Customer"
     }
   ],
@@ -50,13 +50,13 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -64,14 +64,14 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       }
     ],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -89,12 +89,17 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:compliance",
+      "label": "Compliance",
+      "slug": "compliance"
+    },
     {
       "id": "urn:ngm:class:identity-verification",
       "label": "Identity Verification",
@@ -109,6 +114,11 @@
       "id": "urn:ngm:class:compliance-control",
       "label": "Compliance Control",
       "slug": "compliance-control"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
     },
     {
       "id": "urn:ngm:class:identity-proofing",
@@ -139,11 +149,6 @@
       "id": "urn:ngm:class:enterprise-risk-management",
       "label": "Enterprise Risk Management",
       "slug": "enterprise-risk-management"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance",
-      "slug": "governance"
     },
     {
       "id": "urn:ngm:class:identity-management",
@@ -276,61 +281,69 @@
         "label": "Transaction Monitoring"
       },
       {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:control",
+        "label": "Control"
+      },
+      {
         "id": "urn:ngm:class:biometric-verification",
         "label": "Biometric Verification"
       },
       {
         "id": "urn:ngm:class:database-verification",
         "label": "Database Verification"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-based-authentication",
-        "label": "Knowledge-Based Authentication"
-      },
-      {
-        "id": "urn:ngm:class:liveness-detection",
-        "label": "Liveness Detection"
-      },
-      {
-        "id": "urn:ngm:class:mobile-network-operator-data",
-        "label": "Mobile Network Operator Data"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
       },
       {
         "id": "urn:ngm:class:customer-due-diligence",
         "label": "Customer Due Diligence"
       },
       {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       },
       {
         "id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:ngm:class:authoritative-data-source",
-        "label": "Authoritative Data Source"
-      },
-      {
-        "id": "urn:ngm:class:biometric-template",
-        "label": "Biometric Template"
-      },
-      {
-        "id": "urn:ngm:class:capture-device",
-        "label": "Capture Device"
-      },
-      {
-        "id": "urn:ngm:class:consent-management",
-        "label": "Consent Mechanism"
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
@@ -340,31 +353,43 @@
         "label": "Counter-Terrorist Financing"
       },
       {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:account-opening",
-        "label": "Account Opening"
-      },
-      {
-        "id": "urn:ngm:class:age-verification",
-        "label": "Age Verification"
-      },
-      {
-        "id": "urn:ngm:class:aml",
-        "label": "Anti-Money Laundering"
-      },
-      {
         "id": "urn:ngm:class:fraud-prevention",
         "label": "Fraud Prevention"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
       {
         "id": "urn:ngm:class:biometric-matching-algorithm",
         "label": "Biometric Matching Algorithm"
@@ -374,31 +399,19 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:optical-character-recognition",
-        "label": "Optical Character Recognition"
-      },
-      {
-        "id": "urn:ngm:class:business-process-management",
-        "label": "Business Process Management"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:standard",
+        "label": "Standard"
+      },
       {
         "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
@@ -422,17 +435,17 @@
       {
         "id": "urn:ngm:class:nist-800-63",
         "label": "NIST 800-63"
-      },
-      {
-        "id": "urn:ngm:class:uk-diatf",
-        "label": "UK DIATF"
-      },
-      {
-        "id": "urn:ngm:class:continuous-controls-monitoring",
-        "label": "Continuous Controls Monitoring"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymous-transaction",
+        "label": "Anonymous Transaction"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
       {
         "id": "urn:ngm:class:privacy-preserving-protocol",
         "label": "Privacy-Preserving Protocol"
@@ -440,6 +453,10 @@
       {
         "id": "urn:ngm:class:pseudonymity",
         "label": "Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:non-conformance",
+        "label": "Non-Conformance"
       },
       {
         "id": "urn:ngm:class:authorisation",
@@ -452,58 +469,50 @@
       {
         "id": "urn:ngm:class:automated-control",
         "label": "Automated Control"
-      },
-      {
-        "id": "urn:ngm:class:compensating-control",
-        "label": "Compensating Control"
-      },
-      {
-        "id": "urn:ngm:class:corrective-control",
-        "label": "Corrective Control"
-      },
-      {
-        "id": "urn:ngm:class:detective-control",
-        "label": "Detective Control"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "Know Your Customer"
-      },
-      {
         "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       },
       {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
         "id": "urn:ngm:class:enterprise-risk-management",
         "label": "Enterprise Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-law-and-privacy",
-        "label": "AI Governance Law and Privacy"
-      },
-      {
-        "id": "urn:ngm:class:cyber-security-and-cryptography",
-        "label": "Cyber Security and Cryptography"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:biometric-authentication",
         "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
       },
       {
         "id": "urn:ngm:class:optical-character-recognition",
@@ -514,27 +523,31 @@
         "label": "Risk Scoring"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:face-recognition",
-        "label": "Face Match"
-      },
-      {
-        "id": "urn:ngm:class:machine-readable-zone",
-        "label": "Machine-Readable Zone"
-      },
-      {
-        "id": "urn:ngm:class:near-field-communication",
-        "label": "Near Field Communication"
-      },
-      {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:grc-platform",
+        "label": "GRC Platform"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
       {
         "id": "urn:ngm:class:financial-services",
         "label": "Financial Services Onboarding"
@@ -558,24 +571,12 @@
       {
         "id": "urn:ngm:class:travel-and-border-control",
         "label": "Travel and Border Control"
-      },
-      {
-        "id": "urn:ngm:class:web3-compliance",
-        "label": "Web3 Compliance"
-      },
-      {
-        "id": "urn:ngm:class:aml-kyc-compliance",
-        "label": "AML KYC Compliance"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:aml",
-        "label": "EU Anti-Money Laundering Directive"
-      },
-      {
-        "id": "urn:ngm:class:bank-secrecy-act",
-        "label": "Bank Secrecy Act"
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
       },
       {
         "id": "urn:ngm:class:financial-action-task-force",
@@ -600,9 +601,17 @@
       {
         "id": "urn:ngm:class:ico",
         "label": "ICO"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
@@ -630,36 +639,36 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "AML/CFT"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "Know Your Customer"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:decentralised-identifier",
-        "label": "Decentralised Identifier"
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:deepfakes",
-        "label": "Deepfakes"
+        "id": "urn:ngm:class:politically-exposed-person",
+        "label": "Politically Exposed Person"
       },
       {
-        "id": "urn:ngm:class:digital-identity-wallet",
-        "label": "Digital Identity Wallet"
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
       },
       {
-        "id": "urn:ngm:class:presentation-attack-detection",
-        "label": "Presentation Attack Detection"
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
       },
       {
-        "id": "urn:ngm:class:self-sovereign-identity",
-        "label": "Self Sovereign Identity"
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
       },
       {
-        "id": "urn:ngm:class:synthetic-identity-fraud",
-        "label": "Synthetic Identity Fraud"
+        "id": "urn:ngm:class:reporting",
+        "label": "Reporting"
       }
     ]
   },

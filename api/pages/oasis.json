@@ -50,8 +50,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -96,8 +96,8 @@
         "label": "ISO/IEC"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:iso-standards",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:total-ionising-dose",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Total ionising dose is the cumulative long-term damage to electronics caused by solar and trapped protons and trapped electrons.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

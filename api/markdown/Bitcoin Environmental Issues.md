@@ -287,7 +287,7 @@ Bitcoin Environmental Issues refers to the multi-dimensional ecological footprin
 
 ### Proof of Work versus Proof of Stake Energy Comparison
 
-- The most direct competitive environmental comparison for Bitcoin's [[Proof of Work]] is [[Ethereum Smart Contract Platform]]'s **The Merge** (15 September 2022), which transitioned Ethereum from PoW to [[Proof of Stake]] and reduced energy consumption by approximately **99.95%**:
+- The most direct competitive environmental comparison for Bitcoin's [[Proof of Work]] is [[Ethereum]]'s **The Merge** (15 September 2022), which transitioned Ethereum from PoW to [[Proof of Stake]] and reduced energy consumption by approximately **99.95%**:
   - Pre-Merge Ethereum: roughly **75-85 TWh annually** (PoW)
   - Post-Merge Ethereum: approximately **0.01 TWh annually** (PoS, equivalent to ~2,100 US homes)
   - Energy per transaction: ~84,000 Wh under PoW → ~35 Wh under PoS (reduction factor 2,400x)

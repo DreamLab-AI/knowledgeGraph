@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pulsed-plasma-thruster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A pulsed plasma thruster is an electric thruster that produces thrust by triggering an electric arc between a pair of electrodes, typically ablating a solid propellant such as polytetrafluoroethylene or ionising a gaseous propellant.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:thruster",

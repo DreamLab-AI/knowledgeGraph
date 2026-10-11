@@ -36,7 +36,7 @@ partOf:
   - urn:ngm:class:model-optimization
   - urn:ngm:class:model-deployment
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
 ---
 

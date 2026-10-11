@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:encryption-scheme
   - urn:ngm:class:digital-signature
   - urn:ngm:class:hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:random-number-generator
 enables:
   - urn:ngm:class:blockchain-security
@@ -34,9 +34,9 @@ implements:
 contrastsWith:
   - urn:ngm:class:post-quantum-cryptography
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:multi-party-computation
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:post-quantum-cryptography
 uses:
   - urn:ngm:class:ecdsa

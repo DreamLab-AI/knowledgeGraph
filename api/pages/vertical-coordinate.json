@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertical-coordinate",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A vertical coordinate is a value in a one-dimensional coordinate system used for gravity-related height or depth measurements.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

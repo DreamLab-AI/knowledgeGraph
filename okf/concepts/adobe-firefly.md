@@ -39,10 +39,10 @@ implements:
   - urn:ngm:class:c2-pa-content-credentials
   - urn:ngm:class:digital-content-provenance-marking
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:midjourney-text-to-image-service
   - urn:ngm:class:open-source-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:midjourney-text-to-image-service
 bridgesTo:
   - urn:ngm:class:creative-industries
@@ -57,7 +57,7 @@ uses:
   - urn:ngm:class:neural-network
 supports:
   - urn:ngm:class:ai-governance
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:enterprise-ai
 partOf:
@@ -65,12 +65,12 @@ partOf:
 relatedTo:
   - urn:ngm:class:digital-content-provenance-marking
   - urn:ngm:class:generative-ai-api
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:creative-ai
   - urn:ngm:class:substance-3d
   - urn:ngm:class:multimodal-ai-architecture-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Adobe Firefly

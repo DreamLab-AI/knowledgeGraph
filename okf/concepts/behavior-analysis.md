@@ -9,7 +9,7 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:pattern-recognition

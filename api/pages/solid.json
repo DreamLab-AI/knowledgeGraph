@@ -24,8 +24,8 @@
       "label": "Linked Data"
     },
     {
-      "id": "urn:ngm:class:semantic-web-linked-data-standard",
-      "label": "Semantic Web Linked Data Standard"
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
     },
     {
       "id": "urn:ngm:class:web-standards",
@@ -50,7 +50,7 @@
         "label": "Access Control Policy"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -82,7 +82,7 @@
         "label": "Web Access Control"
       },
       {
-        "id": "urn:ngm:class:webid-decentralised-identity-uri",
+        "id": "urn:ngm:class:web-id",
         "label": "WebID"
       },
       {
@@ -104,7 +104,7 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -132,11 +132,11 @@
         "label": "URI"
       },
       {
-        "id": "urn:ngm:class:webid-decentralised-identity-uri",
+        "id": "urn:ngm:class:web-id",
         "label": "WebID"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -150,8 +150,8 @@
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:gdpr-compliance",
@@ -184,11 +184,11 @@
         "label": "W3C Standards"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -260,8 +260,8 @@
         "label": "Blockchain Storage"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:at-protocol",
@@ -280,7 +280,7 @@
         "label": "HTTP REST"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -372,8 +372,8 @@
         "label": "Open Data Institute"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:w3c-solid-community-group",
@@ -411,20 +411,20 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:shape-trees",
@@ -454,6 +454,11 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
       "id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability",
       "slug": "sc-standards-and-interop"
@@ -477,12 +482,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -535,12 +540,12 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:consent-management",
-        "label": "Consent Management"
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
       },
       {
-        "id": "urn:ngm:class:data-minimisation",
-        "label": "Data Minimisation"
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       }
     ],
     "enables": [
@@ -569,12 +574,12 @@
         "label": "Automated Reasoning"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:ontology-alignment",
-        "label": "Ontology Alignment"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "dependsOn": [
@@ -585,6 +590,10 @@
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
       },
       {
         "id": "urn:ngm:class:data-architecture",
@@ -651,16 +660,16 @@
         "label": "Data Anarchy"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
-      },
-      {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
       },
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "bridgesTo": [
@@ -689,12 +698,12 @@
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "uses": [
@@ -723,12 +732,12 @@
         "label": "Schema.org"
       },
       {
-        "id": "urn:ngm:class:owl-2-web-ontology-language",
-        "label": "OWL Web Ontology Language"
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
       },
       {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Web Ontology Language"
       }
     ],
     "supports": [
@@ -745,12 +754,16 @@
         "label": "Privacy"
       },
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:interoperability",
-        "label": "Interoperability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
       },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
@@ -759,10 +772,6 @@
       {
         "id": "urn:ngm:class:data-subject-rights",
         "label": "Data Subject Rights"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
       }
     ],
     "standardizedBy": [
@@ -797,6 +806,12 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "relatedTo": [
@@ -1150,8 +1165,8 @@
       "label": "Semantic Segmentation"
     },
     {
-      "slug": "webid-decentralised-identity-uri",
-      "label": "WebID Decentralised Identity URI"
+      "slug": "web-id",
+      "label": "WebID"
     }
   ]
 }

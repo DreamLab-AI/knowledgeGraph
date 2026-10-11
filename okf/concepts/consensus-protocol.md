@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:network-topology
   - urn:ngm:class:sybil-resistance

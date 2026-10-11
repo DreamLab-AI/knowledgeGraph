@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-track",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A ground track is the path traced by a spacecraft\u2019s subsatellite point on a specified Earth-fixed reference surface.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

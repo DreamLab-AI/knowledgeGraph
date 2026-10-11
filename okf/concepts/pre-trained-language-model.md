@@ -32,7 +32,7 @@ partOf:
   - urn:ngm:class:language-model
 relatedTo:
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
 ---
 
 # Pre Trained Language Model

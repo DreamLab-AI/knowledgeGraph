@@ -165,7 +165,7 @@ A CLIP Encoder is either of the two paired neural network encoders — an image 
 
   **Cross-Modal [[Retrieval-Augmented Generation]]**
 
-  [[CLIP Encoder]] [[Embedding]]s power image search engines accepting text queries: the same [[Embedding Space]] enables direct cosine-distance retrieval without separate re-ranking models. [[LAION]]-5B and DataComp-1B were built by filtering web-scraped (image, text) pairs using CLIP similarity scores, creating a self-referential data curation loop. Enterprise multimodal RAG systems retrieve relevant images and documents using CLIP similarity to augment [[Large Language Models]] with visual knowledge.
+  [[CLIP Encoder]] [[Embedding]]s power image search engines accepting text queries: the same [[Embedding Space]] enables direct cosine-distance retrieval without separate re-ranking models. [[LAION]]-5B and DataComp-1B were built by filtering web-scraped (image, text) pairs using CLIP similarity scores, creating a self-referential data curation loop. Enterprise multimodal RAG systems retrieve relevant images and documents using CLIP similarity to augment [[Large Language Model]] with visual knowledge.
 
   **[[Content Moderation]] and Safety Classification**
 

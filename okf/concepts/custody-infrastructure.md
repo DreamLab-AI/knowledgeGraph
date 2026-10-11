@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:key-management-system
   - urn:ngm:class:policy-engine
 requires:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:multi-party-computation
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:regulatory-compliance
@@ -38,8 +38,8 @@ supports:
   - urn:ngm:class:institutional-defi
   - urn:ngm:class:qualified-custodian
 standardizedBy:
-  - urn:ngm:class:bc-0482-eu-mica-regulation
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:occ-interpretive-letter
 partOf:
   - urn:ngm:class:digital-asset-infrastructure

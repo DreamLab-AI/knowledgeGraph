@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:neural-network
 enables:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:neural-network
 contrastsWith:
@@ -22,7 +22,7 @@ contrastsWith:
   - urn:ngm:class:symbolic-reasoning
 bridgesTo:
   - urn:ngm:class:cognitive-science
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:backpropagation

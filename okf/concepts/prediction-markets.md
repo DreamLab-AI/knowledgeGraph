@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:order-book
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:automated-market-maker

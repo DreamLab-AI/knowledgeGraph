@@ -18,9 +18,9 @@ enables:
   - urn:ngm:class:code-signing
 contrastsWith:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:internet-security
   - urn:ngm:class:digital-identity

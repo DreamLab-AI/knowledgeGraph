@@ -32,12 +32,12 @@ bridgesTo:
   - urn:ngm:class:edge-ai
 uses:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:ai-model-card
   - urn:ngm:class:py-torch
   - urn:ngm:class:ai-model-card
 supports:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:transfer-learning

@@ -8,7 +8,7 @@ description: Machine learning software is the category of tools, libraries, and 
 maturity: emerging
 quality: 0
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:software-engineering
 ---
 

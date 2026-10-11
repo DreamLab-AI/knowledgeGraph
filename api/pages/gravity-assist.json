@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gravity-assist",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A gravity assist is a planned close encounter in which a spacecraft\u2019s trajectory changes under a moving body\u2019s gravity, altering its velocity relative to a larger central body such as the Sun.[^1363][^1364]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

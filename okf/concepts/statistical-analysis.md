@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:statistics
 enables:
   - urn:ngm:class:inference
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-discovery
 dependsOn:
   - urn:ngm:class:data-collection

@@ -285,8 +285,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:openxr-standard",
-        "label": "OpenXR Standard"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       }
     ],
     "contrastsWith": [

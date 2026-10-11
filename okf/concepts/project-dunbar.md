@@ -8,9 +8,9 @@ description: Project Dunbar was a multi-central-bank experiment exploring a shar
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 enables:
   - urn:ngm:class:cross-border-payments
 bridgesTo:

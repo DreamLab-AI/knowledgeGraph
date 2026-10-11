@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-eccentricity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital eccentricity is a dimensionless parameter that describes a conic orbit's shape.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

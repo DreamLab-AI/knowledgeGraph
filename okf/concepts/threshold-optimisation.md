@@ -30,9 +30,9 @@ uses:
 supports:
   - urn:ngm:class:model-evaluation
 relatedTo:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:classification-threshold
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 ---
 
 # Threshold Optimisation

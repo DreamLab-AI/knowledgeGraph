@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:single-sign-on
 implements:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:oauth
 uses:

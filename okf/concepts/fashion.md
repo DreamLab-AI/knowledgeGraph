@@ -58,7 +58,7 @@ implements:
   - urn:ngm:class:nft
   - urn:ngm:class:blockchain-as-a-service
   - urn:ngm:class:carbon-neutral-blockchain
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:neural-garment-warping
 contrastsWith:

@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:reliability-engineering
   - urn:ngm:class:incident-management
   - urn:ngm:class:capacity-planning
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
 dependsOn:
   - urn:ngm:class:service-level-objective
   - urn:ngm:class:real-time-computing
@@ -39,7 +39,7 @@ supports:
   - urn:ngm:class:site-reliability-engineering
 standardizedBy:
   - urn:ngm:class:open-telemetry
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:observability
 relatedTo:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:propellant-feed-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A propellant feed system is the part of a liquid propulsion system that delivers propellants from the tanks to the thrust chamber at the required flow rate and pressure, and in a liquid rocket engine it comprises the tanks, feed lines, valves and pressurisation devices.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

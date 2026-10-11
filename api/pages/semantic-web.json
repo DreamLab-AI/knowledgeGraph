@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -32,6 +36,10 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:metadata",
         "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
       }
     ],
     "enables": [
@@ -56,6 +72,26 @@
       {
         "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
       }
     ],
     "dependsOn": [
@@ -64,8 +100,22 @@
         "label": "Ontology Engineering"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -74,6 +124,14 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -84,6 +142,26 @@
       {
         "id": "urn:ngm:class:vocabulary",
         "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle Syntax"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
       }
     ],
     "supports": [
@@ -115,15 +193,14 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
       }
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
@@ -132,10 +209,6 @@
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
-      },
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
@@ -161,8 +234,12 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "requires": [
@@ -188,10 +265,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:automated-reasoning",
-        "label": "Automated Reasoning"
-      },
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
@@ -219,16 +292,16 @@
       {
         "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:closed-world-assumption",
         "label": "Closed World Assumption"
-      },
-      {
-        "id": "urn:ngm:class:open-world-assumption",
-        "label": "Open World Assumption"
       }
     ],
     "contrastsWith": [
@@ -279,10 +352,6 @@
       {
         "id": "urn:ngm:class:semantic-network",
         "label": "Semantic Network"
-      },
-      {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
       }
     ],
     "supports": [
@@ -322,7 +391,24 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
   "backlinks": [
     {
       "slug": "a2-a-protocol",

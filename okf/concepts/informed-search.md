@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:machine-learning-discipline-technique
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:active-learning

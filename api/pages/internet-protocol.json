@@ -135,8 +135,8 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       }
     ],
     "requires": [

@@ -88,7 +88,7 @@
         "label": "Snapshot"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       }
     ]
@@ -248,7 +248,7 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {

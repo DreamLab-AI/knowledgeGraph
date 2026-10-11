@@ -30,7 +30,7 @@ requires:
 enables:
   - urn:ngm:class:transformer
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:multimodal-ai-architecture
   - urn:ngm:class:graph-attention-network

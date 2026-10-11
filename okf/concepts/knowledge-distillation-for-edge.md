@@ -16,7 +16,7 @@ enables:
 uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:model-compression-for-edge
   - urn:ngm:class:model-pruning-for-edge-deployment

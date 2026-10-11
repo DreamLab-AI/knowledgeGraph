@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:digital-infrastructure
   - urn:ngm:class:accessibility
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:personalised-learning
   - urn:ngm:class:collaborative-systems-modality-learning
@@ -57,7 +57,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:immersive-learning
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:recommendation-systems

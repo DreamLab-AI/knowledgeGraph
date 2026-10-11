@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:decentralised-governance
 dependsOn:
   - urn:ngm:class:open-source-software
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:venture-capital
   - urn:ngm:class:traditional-grant-making
@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:coordination-mechanisms
 uses:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:identity-attestation
   - urn:ngm:class:quadratic-funding

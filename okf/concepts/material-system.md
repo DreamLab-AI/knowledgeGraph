@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:simulation
   - urn:ngm:class:structural-optimisation
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
 dependsOn:
   - urn:ngm:class:thermodynamics
   - urn:ngm:class:mechanics-of-materials
@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:bulk-material
 bridgesTo:
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:complex-systems
 uses:
   - urn:ngm:class:finite-element-analysis

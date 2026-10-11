@@ -128,8 +128,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -185,7 +185,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -218,10 +218,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ]
   },

@@ -45,7 +45,7 @@ partOf:
   - urn:ngm:class:semiconductor-industry
   - urn:ngm:class:system-on-chip
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:hardware-component
   - urn:ngm:class:tape-out
   - urn:ngm:class:node-shrink

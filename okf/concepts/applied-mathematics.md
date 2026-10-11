@@ -32,7 +32,7 @@ requires:
 enables:
   - urn:ngm:class:convex-optimisation
   - urn:ngm:class:numerical-methods
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:signal-processing
   - urn:ngm:class:cryptography
@@ -70,7 +70,7 @@ relatedTo:
   - urn:ngm:class:mathematical-foundations
   - urn:ngm:class:mathematical-reasoning
   - urn:ngm:class:mathematical-hard-problems
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:simulation
   - urn:ngm:class:neural-network
   - urn:ngm:class:loss-function

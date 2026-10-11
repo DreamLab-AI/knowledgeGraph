@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:dense-retrieval
   - urn:ngm:class:hybrid-retrieval
@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:reciprocal-rank-fusion
 requires:
   - urn:ngm:class:embedding-layer
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:document-corpus
   - urn:ngm:class:evaluation-metric
 enables:
@@ -35,10 +35,10 @@ enables:
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:cross-modal-retrieval
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding
   - urn:ngm:class:embedding-space
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
 implements:
   - urn:ngm:class:bm25

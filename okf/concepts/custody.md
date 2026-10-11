@@ -9,11 +9,10 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:bc-token-and-asset
-  - urn:ngm:class:custody-infrastructure
 hasPart:
   - urn:ngm:class:self-custody
   - urn:ngm:class:institutional-custody
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 requires:
   - urn:ngm:class:private-key
   - urn:ngm:class:wallet

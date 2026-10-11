@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:plot",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Plot is the visualisation of data values as a graphic such as a map, line plot or contour plot.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

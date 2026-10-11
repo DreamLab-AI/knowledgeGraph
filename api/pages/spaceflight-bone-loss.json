@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-bone-loss",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight bone loss is the reduction in bone mass and bone mineral density that astronauts experience during exposure to microgravity, which one review puts at 1 to 2% bone loss per month.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

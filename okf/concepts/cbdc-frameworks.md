@@ -28,7 +28,7 @@ hasPart:
   - urn:ngm:class:kyc-tier-system
   - urn:ngm:class:offline-payment-capability
 requires:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:api-standard
   - urn:ngm:class:central-bank
   - urn:ngm:class:cryptographic-infrastructure
@@ -37,7 +37,7 @@ requires:
   - urn:ngm:class:operational-resilience
   - urn:ngm:class:regulatory-authorisation
   - urn:ngm:class:legal-tender-designation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:kyc-compliance
   - urn:ngm:class:api-standards
   - urn:ngm:class:operational-resilience
@@ -99,7 +99,7 @@ supports:
   - urn:ngm:class:financial-inclusion
   - urn:ngm:class:financial-stability
   - urn:ngm:class:programmable-money
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:monetary-sovereignty
   - urn:ngm:class:privacy
   - urn:ngm:class:payment-system-efficiency
@@ -120,14 +120,14 @@ relatedTo:
   - urn:ngm:class:digital-euro
   - urn:ngm:class:e-cny
   - urn:ngm:class:financial-regulation
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:programmable-money
   - urn:ngm:class:project-agora
   - urn:ngm:class:project-dunbar
   - urn:ngm:class:project-m-bridge
   - urn:ngm:class:project-nexus
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:interoperability
   - urn:ngm:class:zero-knowledge-proof
 ---

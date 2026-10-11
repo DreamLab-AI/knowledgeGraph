@@ -13,7 +13,6 @@ is-a:
   - urn:ngm:class:market-regulation
   - urn:ngm:class:digital-regulation
   - urn:ngm:class:platform-governance
-  - urn:ngm:class:product-liability
   - urn:ngm:class:ai-governance
   - urn:ngm:class:competition-law
 hasPart:
@@ -107,7 +106,7 @@ relatedTo:
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:data-protection
   - urn:ngm:class:deepfakes-and-fraudulent-content
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # Consumer Protection

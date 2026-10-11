@@ -92,7 +92,7 @@ Farcaster is a sufficiently decentralised social networking protocol built on Et
 - The ID Registry and Key Registry smart contracts are deployed on [[Optimism]] (OP Mainnet), an [[EVM]]-compatible Layer 2 scaling solution.
 - [[Farcaster Frames]] extend the [[Open Graph Protocol]] metadata standard (og:image, og:title) with additional fc:frame tags, making frames backwards-compatible with standard link previews.
 - Hub communication uses [[gRPC]] and [[Protocol Buffer]]s for efficient serialisation of signed messages.
-- The protocol aligns with [[W3C]] [[Decentralised Identifier]] (DID) concepts in spirit, though FIDs are a custom numeric scheme rather than full DID:* compliance.
+- The protocol aligns with [[World Wide Web Consortium]] [[Decentralised Identifier]] (DID) concepts in spirit, though FIDs are a custom numeric scheme rather than full DID:* compliance.
 - Storage unit economics were introduced as a mechanism to align Hub operator incentives and prevent spam, inspired by similar resource-constraint models in other decentralised storage systems.
 
 ### Governance

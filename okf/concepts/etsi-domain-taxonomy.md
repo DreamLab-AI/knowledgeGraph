@@ -41,36 +41,36 @@ enables:
   - urn:ngm:class:intelligence-layer-categorization
 dependsOn:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:cen-cenelec
 implements:
   - urn:ngm:class:ai-standardisation
   - urn:ngm:class:classification-framework
 contrastsWith:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-22989-2022
 bridgesTo:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:data-governance
   - urn:ngm:class:conformity-assessment
 uses:
   - urn:ngm:class:ontology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:controlled-vocabulary
 supports:
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:interoperability
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:harmonised-standards
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-risk-classification
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
 partOf:
   - urn:ngm:class:etsi
   - urn:ngm:class:european-ai-standards-ecosystem
@@ -82,7 +82,7 @@ relatedTo:
   - urn:ngm:class:etsi-tc-sai
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:itu-t-ai-standards
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:data-governance
   - urn:ngm:class:etsi-arf-010
   - urn:ngm:class:etsi-gr-arf-007

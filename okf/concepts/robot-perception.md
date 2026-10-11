@@ -31,10 +31,10 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:augmented-reality
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
 partOf:
   - urn:ngm:class:robot-control

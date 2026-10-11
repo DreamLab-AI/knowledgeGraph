@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:kotlin
   - urn:ngm:class:relational-database
   - urn:ngm:class:tls-encryption
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:x-509-identity
 enables:
   - urn:ngm:class:atomic-settlement
@@ -64,7 +64,7 @@ implements:
   - urn:ngm:class:flow-coroutine
 contrastsWith:
   - urn:ngm:class:hyperledger-fabric
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:quorum-blockchain
   - urn:ngm:class:hyperledger-besu
   - urn:ngm:class:daml-ledger
@@ -87,7 +87,7 @@ supports:
   - urn:ngm:class:securities-settlement
   - urn:ngm:class:trade-finance
   - urn:ngm:class:carbon-credit-tracking
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:syndicated-lending
   - urn:ngm:class:insurance-processing
   - urn:ngm:class:interbank-reconciliation
@@ -104,7 +104,7 @@ relatedTo:
   - urn:ngm:class:bis-innovation-hub
   - urn:ngm:class:digital-security
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:fnality
   - urn:ngm:class:digital-securities

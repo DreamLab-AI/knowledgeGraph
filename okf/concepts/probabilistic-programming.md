@@ -26,7 +26,7 @@ supports:
   - urn:ngm:class:generative-model
   - urn:ngm:class:statistical-modelling
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:representation-learning

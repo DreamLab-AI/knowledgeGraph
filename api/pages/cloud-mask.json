@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cloud-mask",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A cloud mask is a per-pixel layer that records which observations in an image have been assessed as cloud, so that users can select or exclude them.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

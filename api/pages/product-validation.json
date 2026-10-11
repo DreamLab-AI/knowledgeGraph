@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:product-validation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Product validation is the quantitative assessment of the accuracy of a satellite-derived product by comparison with reference data.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

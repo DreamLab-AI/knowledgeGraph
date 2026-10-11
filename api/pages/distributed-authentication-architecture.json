@@ -87,12 +87,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -235,8 +235,8 @@
         "label": "ISO-IEC 24760"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:iso-iec",

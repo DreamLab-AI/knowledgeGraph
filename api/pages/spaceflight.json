@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight is activity carried out by crewed or robotic vehicles outside the Earth\u2019s atmosphere.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

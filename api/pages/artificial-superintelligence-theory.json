@@ -23,8 +23,8 @@
         "label": "Artificial General Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "enables": [],
@@ -40,8 +40,8 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:aiethics",
-        "label": "AIEthics"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [],
@@ -99,8 +99,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

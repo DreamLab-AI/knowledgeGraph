@@ -4,7 +4,7 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
 
 - Gitcoin Passport emerged from the [[Gitcoin]] ecosystem's operational experience running public quadratic funding rounds that proved systematically vulnerable to sybil attacks. A sybil attack in this context occurs when one actor creates many pseudo-anonymous wallet addresses to multiply their effective voting weight, undermining the egalitarian assumptions of [[Quadratic Funding]].
 - The passport solves this by shifting identity evidence accumulation onto the individual participant. Rather than requiring any single, privacy-invasive identity check, it aggregates many weaker signals—social, biometric, financial, and on-chain—into a composite score. No single signal is required, but collectively they make impersonation economically and logistically prohibitive.
-- The system is deliberately non-custodial: [[Gitcoin]] stores no personal data. Credentials live on the [[Ceramic Network]] under user-controlled [[Decentralized Identifier]] keys, meaning the user can revoke or migrate credentials without vendor lock-in.
+- The system is deliberately non-custodial: [[Gitcoin]] stores no personal data. Credentials live on the [[Ceramic Network]] under user-controlled [[Decentralised Identifier]] keys, meaning the user can revoke or migrate credentials without vendor lock-in.
 - Passport scores are accessible via an open API, enabling other protocols to query a wallet's trust score without rebuilding identity infrastructure, positioning the passport as shared public infrastructure—a trust primitive for the Web3 stack.
 - The maturity level is "established": the protocol has been live through multiple major funding rounds, integrated by third-party protocols, and has undergone iterative stamp weighting revisions based on empirical sybil attack data.
 
@@ -12,7 +12,7 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
 
 - **Stamps**
   - The atomic unit of the passport. Each stamp represents a verified claim from a specific identity provider.
-  - Stamps are encoded as [[Verifiable Credential (VC)]] objects signed by the issuing provider.
+  - Stamps are encoded as [[Verifiable Credential]] objects signed by the issuing provider.
   - Examples: [[ENS (Ethereum Name Service)]] ownership, GitHub account age, Google OAuth attestation, [[Proof of Humanity]] registration, [[BrightID]] verification, Coinbase account KYC, Lens Protocol profile.
   - Stamps are time-limited and must be periodically refreshed to prevent stale credential exploitation.
 - **Scoring Model**
@@ -23,7 +23,7 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
 - **DID Document and Ceramic Storage**
   - Each passport is anchored to a [[DID Document]] stored on the [[Ceramic Network]], a decentralised data stream protocol built on [[IPFS]] and [[Ethereum]].
   - This architecture ensures that credential data is not held by Gitcoin's servers—only the user's wallet key can update or delete their passport record.
-  - The [[Decentralized Identifier]] format follows W3C DID Core specification, ensuring interoperability with any compatible identity layer.
+  - The [[Decentralised Identifier]] format follows W3C DID Core specification, ensuring interoperability with any compatible identity layer.
 - **Scoring API and Scorer IDs**
   - Gitcoin exposes a REST API and scorer IDs that allow third-party applications to request a wallet's current score without accessing raw credential data.
   - Applications register a scorer and receive a score integer; the underlying stamps remain private to the user unless explicitly shared.
@@ -39,7 +39,7 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
 - **Token Airdrops**
   - Projects conducting [[Token Airdrop]] campaigns use Gitcoin Passport to gate eligibility, filtering out farming bots and ensuring tokens reach genuine community participants.
 - **Decentralised Governance**
-  - [[Decentralized Governance]] platforms use passport scores to weight voting power or restrict proposal submission to verified humans, resisting plutocratic capture via multiple wallets.
+  - [[Decentralised Governance]] platforms use passport scores to weight voting power or restrict proposal submission to verified humans, resisting plutocratic capture via multiple wallets.
 - **Access-Gated Communities and Tooling**
   - DeSoc (Decentralised Social) platforms, DAO tooling, and NFT gated communities embed passport checks to restrict access to verified human participants.
 - **Cross-Protocol Trust Layer**
@@ -52,7 +52,7 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
 - **Stamp Collection Flow**
   - User connects their [[Digital Wallet]] to the Gitcoin Passport app.
   - For each identity provider, the user completes the relevant OAuth, biometric, or on-chain verification flow.
-  - The provider issues a signed [[Verifiable Credential (VC)]] to the user's [[DID Document]] on the [[Ceramic Network]].
+  - The provider issues a signed [[Verifiable Credential]] to the user's [[DID Document]] on the [[Ceramic Network]].
   - The passport aggregates all valid stamps and computes the composite trust score.
 - **Sybil Resistance Properties**
   - The system implements [[Sybil Resistance]] through economic friction (acquiring multiple stamps across many accounts is costly in time and sometimes money), social friction (some stamps require genuine social presence), and biometric uniqueness constraints ([[Proof of Humanity]], [[BrightID]]).
@@ -62,13 +62,13 @@ Gitcoin Passport is a decentralised identity aggregation and sybil-resistance pr
   - Future directions include [[Zero-Knowledge Proof]] based score attestations that allow a user to prove "my score exceeds threshold X" without revealing which stamps were collected or from which providers.
   - This aligns with [[Self-Sovereign Identity]] principles: the user controls disclosure.
 - **Interoperability**
-  - By conforming to [[W3C DID Specification]] and [[Verifiable Credential (VC)]] standards, passport credentials are portable to any standards-compliant [[Federated Identity]] or identity aggregation layer.
+  - By conforming to [[W3C DID Specification]] and [[Verifiable Credential]] standards, passport credentials are portable to any standards-compliant [[Federated Identity]] or identity aggregation layer.
   - The [[Ceramic Network]] storage layer is protocol-agnostic, enabling credential portability beyond Ethereum to other EVM-compatible and non-EVM chains.
 
 ### Standards and Context
 
-- **W3C DID Core** — The [[W3C DID Specification]] defines the [[Decentralized Identifier]] format underpinning each passport. Gitcoin Passport uses the `did:pkh` method, anchoring identifiers to wallet addresses.
-- **W3C Verifiable Credentials Data Model** — Stamps are encoded as [[Verifiable Credential (VC)]] objects conforming to the W3C VC Data Model, enabling interoperability with any VC-aware system.
+- **W3C DID Core** — The [[W3C DID Specification]] defines the [[Decentralised Identifier]] format underpinning each passport. Gitcoin Passport uses the `did:pkh` method, anchoring identifiers to wallet addresses.
+- **W3C Verifiable Credentials Data Model** — Stamps are encoded as [[Verifiable Credential]] objects conforming to the W3C VC Data Model, enabling interoperability with any VC-aware system.
 - **Ceramic Network Protocol** — [[Ceramic Network]] provides the decentralised, user-controlled data stream layer where passport credentials are persisted. It uses IPFS content addressing and Ethereum anchoring for tamper-evidence.
 - **EIP-4361 (Sign-In With Ethereum)** — Wallet authentication in the passport onboarding flow leverages SIWE for standardised authentication without password managers or centralised OAuth.
 - **Gitcoin Grants Stack** — The passport is a core component of the Gitcoin Grants Stack, an open-source suite of smart contracts and tooling enabling communities to run their own quadratic funding rounds with sybil protection built in.

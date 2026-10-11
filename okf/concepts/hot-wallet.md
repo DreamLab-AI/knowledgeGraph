@@ -21,7 +21,7 @@ uses:
   - urn:ngm:class:seed-phrase
 supports:
   - urn:ngm:class:cryptocurrency-exchange
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:digital-asset-custody
 relatedTo:

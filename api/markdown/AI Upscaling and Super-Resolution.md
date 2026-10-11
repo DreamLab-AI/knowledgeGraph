@@ -16,7 +16,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 
 ## Overview and History
 
-- **AI Upscaling** refers to the application of [[Machine Learning Discipline]] and [[Deep Learning]] techniques to increase the resolution of images and videos while preserving or enhancing perceptual quality beyond traditional interpolation methods
+- **AI Upscaling** refers to the application of [[Machine Learning]] and [[Deep Learning]] techniques to increase the resolution of images and videos while preserving or enhancing perceptual quality beyond traditional interpolation methods
 - The field evolved from classical [[Signal Processing]] methods (bicubic interpolation, Lanczos) to [[Neural Network]]-based approaches starting with SRCNN (2014), followed by [[GAN]]-based methods like SRGAN (2017) and ESRGAN (2018), and most recently [[Diffusion Model]]-based super-resolution (2023-2024)
 - **Historical Milestones**:
 - 2014: SRCNN - First [[Convolutional Neural Network]] for super-resolution (Dong et al.)
@@ -26,7 +26,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 - 2018: ESRGAN - Enhanced version with improved [[Generator]] architecture
 - 2020: Real-ESRGAN - Practical degradation model for real-world images
 - 2021: SwinIR - [[Transformer]]-based super-resolution architecture
-- 2023: StableSR - [[Stable Diffusion Image Model]]-based upscaling emerges
+- 2023: StableSR - [[Stable Diffusion]]-based upscaling emerges
 - 2024: SUPIR and CCSR - Current SOTA using [[Latent Diffusion Model]]
 - The transition from [[GAN]]-based to [[Diffusion Model]]-based upscaling [Updated 2025] represents a paradigm shift, with diffusion models providing better texture generation and fewer artifacts at the cost of computational complexity
 
@@ -83,7 +83,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 - Generator `G` produces HR images to fool discriminator
 - Enables photorealistic texture synthesis
 - RaGAN (Relativistic GAN) used in ESRGAN improves stability
-- **Diffusion Loss** (for [[Stable Diffusion Image Model]] upscaling):
+- **Diffusion Loss** (for [[Stable Diffusion]] upscaling):
 - `L_diffusion = E_t[||ε - ε_θ(z_t, t, c)||²]`
 - Predicts noise `ε` at timestep `t`
 - Conditioned on LR image `c` and latent `z_t`
@@ -160,10 +160,10 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 ### Stable Diffusion-Based Upscaling
 
 - **SD Upscale (Ultimate SD Upscale)**:
-- Uses [[Stable Diffusion Image Model]] [[Image-to-Image]] for texture generation
+- Uses [[Stable Diffusion]] [[Image-to-Image]] for texture generation
 - Tiled processing for large images (4K, 8K)
 - ControlNet Tile for structure preservation
-- Workflow: LR → [[VAE]] encode → diffusion → decode → HR
+- Workflow: LR → [[Variational Autoencoder]] encode → diffusion → decode → HR
 - Denoise strength: 0.3-0.5 for upscaling (vs. 0.7+ for generation)
 - Preserves original image structure while adding detail
 - **Ultimate SD Upscale** features:
@@ -316,11 +316,11 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 
 ### ComfyUI for AI Upscaling
 
-- [[Node-Based Diffusion Pipeline Interface]] is a node-based workflow system for [[Stable Diffusion Image Model]] and related models, providing powerful upscaling capabilities through custom nodes and integrations
+- [[Node-Based Diffusion Pipeline Interface]] is a node-based workflow system for [[Stable Diffusion]] and related models, providing powerful upscaling capabilities through custom nodes and integrations
 - **Core ComfyUI Upscaling Nodes**:
 - `UltimateSDUpscale`: Tiled diffusion-based upscaling
 - `ImageScaleBy`: Classical interpolation (bicubic, Lanczos, nearest)
-- `VAEEncode/VAEDecode`: Latent space processing for [[Stable Diffusion Image Model]]
+- `VAEEncode/VAEDecode`: Latent space processing for [[Stable Diffusion]]
 - `ControlNetApply`: Structure preservation during upscaling
 - `TilePreprocessor`: Prepares images for tiled processing
 
@@ -401,7 +401,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 - Formula: `VRAM_needed ≈ tile_size² × 0.000015 + 6GB`
 - **Multi-model Ensemble**:
 - Pass 1: [[ESRGAN]] 4x for initial upscale (fast, sharp)
-- Pass 2: [[Stable Diffusion Image Model]] with ControlNet Tile for texture
+- Pass 2: [[Stable Diffusion]] with ControlNet Tile for texture
 - Pass 3: Detail enhancement with [[CodeFormer]] (faces)
 - Blending: 70% ESRGAN + 30% SD for balanced result
 - **Iterative Upscaling**:
@@ -528,7 +528,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
   - Bored Ape Yacht Club: Enhance 1024×1024 to 4K for metaverse avatars
   - Art Blocks: Upscale generative art outputs for gallery exhibitions
 - **Blockchain-Based Image Provenance**:
-- Store original low-res image hash on [[Blockchain]] ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]])
+- Store original low-res image hash on [[Blockchain]] ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum]])
 - Upscaled versions linked via [[Smart Contract]] to prove derivation
 - [[IPFS]] storage: Low-res (500KB) on-chain, high-res (50MB) IPFS with CID reference
 - Example workflow:
@@ -541,7 +541,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 - **Decentralized Rendering Networks**:
 - **Render Network (RNDR)**:
   - Distributed GPU rendering for upscaling tasks
-  - Payment: [[RNDR]] token on [[Polygon]] (formerly [[Ethereum Smart Contract Platform]])
+  - Payment: [[RNDR]] token on [[Polygon]] (formerly [[Ethereum]])
   - Workflow: Upload LR image → Allocate RNDR tokens → Network processes → Download HR
   - Cost: ~$0.50-$2.00 per 4K upscale (vs. $0.10 local GPU electricity)
   - Benefits: No local GPU required, scalable for batch jobs
@@ -566,7 +566,7 @@ AI Upscaling and Super-Resolution is a family of deep learning techniques that s
 - Arweave (permanent, paid once): High-res (4K-8K) for archival
 - Filecoin (decentralized): Cold storage for extreme resolutions (16K+)
 - Trade-offs:
-  - [[Ethereum Smart Contract Platform]]: ~$50-$200 to store 1MB on-chain (prohibitive)
+  - [[Ethereum]]: ~$50-$200 to store 1MB on-chain (prohibitive)
   - [[IPFS]]: Free storage, no permanence guarantee
   - [[Arweave]]: $5-$10 per GB one-time payment
 - **Smart Contracts for Upscaling Services**:

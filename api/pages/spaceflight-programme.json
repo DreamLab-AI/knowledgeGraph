@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-programme",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spaceflight programme is a planned process to execute a series of spaceflights.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

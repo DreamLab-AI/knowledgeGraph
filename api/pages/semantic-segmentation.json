@@ -26,8 +26,8 @@
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       }
     ],
     "requires": [
@@ -36,8 +36,8 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:annotated-training-data",
-        "label": "Annotated Training Data"
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
       },
       {
         "id": "urn:ngm:class:gpu-computing",

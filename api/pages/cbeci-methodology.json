@@ -104,9 +104,14 @@
       "slug": "blockchain-entity"
     },
     {
-      "id": "urn:ngm:class:decentralized-autonomous-organization",
-      "label": "Decentralized Autonomous Organization",
-      "slug": "decentralized-autonomous-organization"
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation",
+      "slug": "decentralised-autonomous-organisation"
+    },
+    {
+      "id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability",
+      "slug": "environmental-sustainability"
     },
     {
       "id": "urn:ngm:class:model-evaluation",
@@ -117,6 +122,11 @@
       "id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety",
       "slug": "sc-governance-and-safety"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
     },
     {
       "id": "urn:ngm:class:cryptographic-system",
@@ -134,19 +144,19 @@
       "slug": "distributed-ledger"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "Network Component",
-      "slug": "network-component"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:sustainable-development",
+      "label": "Sustainable Development",
+      "slug": "sustainable-development"
     },
     {
       "id": "urn:ngm:class:append-only-log",
@@ -169,6 +179,11 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:distributed-system",
       "label": "Distributed System",
       "slug": "distributed-system"
@@ -184,6 +199,11 @@
       "slug": "multi-party-database"
     },
     {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
       "id": "urn:ngm:class:state-machine-replication",
       "label": "State Machine Replication",
       "slug": "state-machine-replication"
@@ -194,9 +214,19 @@
       "slug": "cryptography"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -204,9 +234,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -224,6 +269,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -239,19 +294,9 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -398,12 +443,12 @@
         "label": "Logging"
       },
       {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability"
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ],
     "implements": [
@@ -416,8 +461,12 @@
         "label": "Scientific Reproducibility"
       },
       {
-        "id": "urn:ngm:class:decentralization",
-        "label": "Decentralization"
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       },
       {
         "id": "urn:ngm:class:data-partitioning",
@@ -434,10 +483,6 @@
       {
         "id": "urn:ngm:class:channel-isolation-pattern",
         "label": "Channel Isolation Pattern"
-      },
-      {
-        "id": "urn:ngm:class:consensus-algorithm",
-        "label": "Consensus Algorithm"
       }
     ],
     "contrastsWith": [
@@ -462,16 +507,16 @@
         "label": "Corporate Governance"
       },
       {
-        "id": "urn:ngm:class:environmental-assessment",
-        "label": "Environmental Impact Assessment"
-      },
-      {
         "id": "urn:ngm:class:material-flow-analysis",
         "label": "Material Flow Analysis"
       },
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:qualitative-assessment",
+        "label": "Qualitative Assessment"
       }
     ],
     "bridgesTo": [
@@ -556,8 +601,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -578,7 +623,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -590,8 +635,8 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-14040",
@@ -606,11 +651,15 @@
         "label": "Product Environmental Footprint"
       },
       {
-        "id": "urn:ngm:class:eu-dlt-pilot-regime",
-        "label": "EU DLT Pilot Regime"
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
@@ -620,12 +669,8 @@
         "label": "Infrastructure"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
@@ -640,8 +685,8 @@
         "label": "Computer Science"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       }
     ],
     "relatedTo": [

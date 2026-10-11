@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:data-integration
   - urn:ngm:class:etl-pipeline
   - urn:ngm:class:matching-algorithm
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 relatedTo:
   - urn:ngm:class:data-warehousing
   - urn:ngm:class:data-mesh

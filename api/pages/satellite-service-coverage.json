@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-service-coverage",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite service coverage is the geographic area in which a specified satellite system can provide a defined service under stated radio, terminal, operational and authorisation conditions.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

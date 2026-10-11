@@ -25,18 +25,18 @@ enables:
   - urn:ngm:class:secure-communication
   - urn:ngm:class:compliance-management
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptography
 contrastsWith:
   - urn:ngm:class:perimeter-security
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:software-defined-networking
 uses:
   - urn:ngm:class:encryption
   - urn:ngm:class:network-protocol
   - urn:ngm:class:anomaly-detection
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:deep-packet-inspection
 standardizedBy:
   - urn:ngm:class:nist-cybersecurity-framework

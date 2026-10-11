@@ -4,6 +4,7 @@ type: Class
 title: Planetary Atmosphere
 resource: urn:ngm:class:planetary-atmosphere
 domain: space-science-and-systems
+description: A planetary atmosphere is the envelope of gas held around a planet, whose composition and pressure differ from one planet to another.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Planetary Atmosphere
+
+A planetary atmosphere is the envelope of gas held around a planet, whose composition and pressure differ from one planet to another.[^1][^2]

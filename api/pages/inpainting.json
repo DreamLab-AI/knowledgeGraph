@@ -284,8 +284,8 @@
         "label": "UK Online Safety Act"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ],
     "partOf": [],
@@ -307,8 +307,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:apple-inc-technology-corporation",
@@ -348,9 +348,9 @@
       "slug": "image-generation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -407,8 +407,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -497,7 +497,7 @@
         "label": "Neural Networks"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -505,16 +505,16 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
-      },
-      {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -535,7 +535,7 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -709,6 +709,14 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
@@ -729,6 +737,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:content-production-workflow",

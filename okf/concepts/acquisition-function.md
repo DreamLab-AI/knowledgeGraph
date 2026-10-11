@@ -47,7 +47,7 @@ uses:
   - urn:ngm:class:deep-kernel-learning
   - urn:ngm:class:variance-reduction
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:auto-ml
   - urn:ngm:class:material-science
   - urn:ngm:class:material-science
@@ -57,7 +57,7 @@ standardizedBy:
   - urn:ngm:class:botorch
 relatedTo:
   - urn:ngm:class:hyperparameter
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:active-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:exploration-exploitation-tradeoff

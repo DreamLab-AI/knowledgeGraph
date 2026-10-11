@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:interoperability
 requires:
   - urn:ngm:class:interoperability-standard
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 enables:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:avatar
@@ -21,9 +21,9 @@ bridgesTo:
   - urn:ngm:class:open-metaverse
   - urn:ngm:class:cross-chain-bridge
 uses:
-  - urn:ngm:class:usd
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 supports:
   - urn:ngm:class:asset-portability
   - urn:ngm:class:virtual-world

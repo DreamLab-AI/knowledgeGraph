@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:brightness-temperature",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Brightness temperature is the temperature of a blackbody that would emit the same radiance as the observed radiation at a specified frequency and direction, expressed in kelvin.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

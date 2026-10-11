@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nodal-precession",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Nodal precession is the change over time in an orbit\u2019s orientation, measured by the motion of its ascending node relative to a named reference plane and direction.[^nasa-orbits][^jpl-horizons]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

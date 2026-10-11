@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dark-energy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Dark energy is the name given to the unknown cause of the accelerating expansion of the universe.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

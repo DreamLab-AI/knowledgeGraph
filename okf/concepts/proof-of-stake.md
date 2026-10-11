@@ -34,7 +34,7 @@ contrastsWith:
   - urn:ngm:class:proof-of-authority
   - urn:ngm:class:proof-of-history
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:carbon-footprint
 relatedTo:
   - urn:ngm:class:finality

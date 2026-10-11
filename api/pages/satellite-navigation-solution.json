@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-navigation-solution",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite navigation solution is an estimate of a receiver's navigation state formed from satellite measurements, navigation data and a measurement model.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

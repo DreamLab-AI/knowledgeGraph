@@ -12,14 +12,14 @@ is-a:
   - urn:ngm:class:content-moderation
 requires:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 enables:
   - urn:ngm:class:content-moderation
   - urn:ngm:class:ai-safety
 uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:sentiment-analysis
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:ai-governance-and-ethics
 relatedTo:

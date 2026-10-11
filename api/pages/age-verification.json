@@ -61,7 +61,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "supports": [
@@ -84,8 +84,8 @@
         "label": "ISO 29115"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
       }
     ],
     "partOf": [],
@@ -181,7 +181,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "AML Screening"
       },
       {
@@ -231,8 +231,8 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:policy-enforcement",
@@ -265,7 +265,7 @@
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -288,7 +288,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:cloud-infrastructure",
@@ -303,8 +303,8 @@
         "label": "Graph Databases"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -409,7 +409,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -423,7 +423,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -535,7 +535,7 @@
         "label": "Financial Crime Prevention"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -551,8 +551,8 @@
         "label": "Governance Risk Compliance"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:regulatory-reporting",

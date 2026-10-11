@@ -10,7 +10,6 @@ quality: 0.52
 is-a:
   - urn:ngm:class:bc-defi-and-economics
   - urn:ngm:class:decentralized-finance-de-fi
-  - urn:ngm:class:market-making
   - urn:ngm:class:yield-generation
   - urn:ngm:class:capital-deployment
   - urn:ngm:class:financial-mechanism
@@ -28,9 +27,9 @@ requires:
   - urn:ngm:class:erc-20-tokens
   - urn:ngm:class:price-oracle
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-tokens
+  - urn:ngm:class:erc20-token
 enables:
   - urn:ngm:class:capital-efficiency
   - urn:ngm:class:mev
@@ -41,8 +40,8 @@ enables:
   - urn:ngm:class:protocol-revenue
   - urn:ngm:class:mev
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:ethereum
+  - urn:ngm:class:erc-20
   - urn:ngm:class:solidity
   - urn:ngm:class:chainlink-oracles
   - urn:ngm:class:mev-boost
@@ -76,9 +75,9 @@ supports:
   - urn:ngm:class:protocol-treasury
 standardizedBy:
   - urn:ngm:class:eip-1559
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:fatf-guidance-on-virtual-assets
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:uniswap-v3-core-whitepaper
   - urn:ngm:class:fatf-guidance-on-virtual-assets
 relatedTo:

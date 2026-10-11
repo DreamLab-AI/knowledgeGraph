@@ -23,7 +23,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -91,7 +91,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:sha-256",
@@ -169,7 +169,7 @@
         "label": "Secure Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -192,7 +192,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -409,7 +409,7 @@
         "label": "Biometric Data Protection"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -437,8 +437,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "self-sovereign-identity",
@@ -449,8 +449,8 @@
       "label": "Trust Framework"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

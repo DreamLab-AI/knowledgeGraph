@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:high-earth-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "High Earth Orbit is a broad altitude-based label for geocentric orbits beyond the medium-altitude region, with its boundary set by the convention in use.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

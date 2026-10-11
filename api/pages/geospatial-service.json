@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-service",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A geospatial service is a data service whose operation is tied to a location, so that every instance has at least one spatial location [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

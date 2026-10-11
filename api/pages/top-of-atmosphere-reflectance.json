@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:top-of-atmosphere-reflectance",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Top-of-atmosphere reflectance is the reflectance of the whole Earth-atmosphere system as seen from above, obtained by converting calibrated radiance to a ratio against incoming solar irradiance.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

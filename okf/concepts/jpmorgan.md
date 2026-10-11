@@ -12,9 +12,9 @@ is-a:
 requires:
   - urn:ngm:class:financial-services
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # JPMorgan

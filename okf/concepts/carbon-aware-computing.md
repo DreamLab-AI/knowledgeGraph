@@ -32,7 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:carbon-accounting
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
 ---
 
 # Carbon-Aware Computing

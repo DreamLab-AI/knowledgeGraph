@@ -38,9 +38,9 @@ uses:
   - urn:ngm:class:3-d-file-format
   - urn:ngm:class:shader
   - urn:ngm:class:data-compression
-  - urn:ngm:class:usd
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:universal-scene-description
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:gl-tf
 supports:
   - urn:ngm:class:creator-economy
   - urn:ngm:class:digital-rights-management

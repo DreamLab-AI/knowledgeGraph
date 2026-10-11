@@ -126,8 +126,8 @@
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "contrastsWith": [
@@ -155,8 +155,8 @@
         "label": "Information Retrieval"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -564,11 +564,7 @@
         "label": "Intent Classification"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -578,6 +574,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "supports": [
@@ -640,7 +640,7 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

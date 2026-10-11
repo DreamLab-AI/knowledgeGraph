@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:program-synthesis
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 hasPart:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism
@@ -20,12 +20,12 @@ hasPart:
   - urn:ngm:class:tokenization
   - urn:ngm:class:training-data
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
 requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:neural-network
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:self-supervised-learning
 enables:
@@ -41,7 +41,7 @@ enables:
   - urn:ngm:class:smart-contract
 dependsOn:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:distributed-training
@@ -62,12 +62,12 @@ bridgesTo:
   - urn:ngm:class:infrastructure-as-code
   - urn:ngm:class:smart-contract
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:attention-mechanism

@@ -13,10 +13,15 @@ hasPart:
   - urn:ngm:class:iot-gateway
   - urn:ngm:class:sensor-data
   - urn:ngm:class:actuator
+  - urn:ngm:class:sensor
+  - urn:ngm:class:embedded-system
 requires:
   - urn:ngm:class:network-infrastructure
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:cloud-computing
+  - urn:ngm:class:network-protocol
+  - urn:ngm:class:device-identity
+  - urn:ngm:class:firmware-update
 enables:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:telemetry-and-analytics
@@ -25,19 +30,26 @@ enables:
   - urn:ngm:class:predictive-maintenance
   - urn:ngm:class:telemetry-and-analytics
   - urn:ngm:class:industrial-automation
+  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:digital-twin
+  - urn:ngm:class:precision-agriculture
 contrastsWith:
   - urn:ngm:class:traditional-scada
+  - urn:ngm:class:cloud-computing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
   - urn:ngm:class:blockchain
+  - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:mqtt
   - urn:ngm:class:co-ap
   - urn:ngm:class:sensor
   - urn:ngm:class:wireless-communication
   - urn:ngm:class:microcontroller
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:edge-computing
+  - urn:ngm:class:lpwan
 standardizedBy:
   - urn:ngm:class:etsi
   - urn:ngm:class:ieee
@@ -47,6 +59,9 @@ relatedTo:
   - urn:ngm:class:5-g
   - urn:ngm:class:fog-computing
   - urn:ngm:class:device-management
+  - urn:ngm:class:sensor-fusion
+  - urn:ngm:class:time-series-data
+  - urn:ngm:class:predictive-maintenance
 ---
 
 # Internet of Things

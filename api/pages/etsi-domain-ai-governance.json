@@ -148,7 +148,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -158,7 +158,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -166,7 +166,7 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -268,7 +268,7 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -528,8 +528,8 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -550,8 +550,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -588,7 +588,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -604,7 +604,7 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -618,7 +618,7 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -648,10 +648,6 @@
         "label": "ETSI"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
-        "label": "ISO/IEC JTC 1/SC 42"
-      },
-      {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
       },
@@ -674,6 +670,10 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [

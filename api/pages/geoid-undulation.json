@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geoid-undulation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geoid undulation is the separation between the geoid and the reference ellipsoid at a given latitude and longitude, which Ordnance Survey calls the geoid-ellipsoid separation N.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

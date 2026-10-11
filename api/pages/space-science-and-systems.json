@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-science-and-systems",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space science and systems is the combined field of scientific investigation beyond Earth and the engineering of the spacecraft and supporting systems that make such investigation possible.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

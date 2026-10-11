@@ -4,7 +4,7 @@ The Internet Engineering Task Force (IETF) is the principal international open-s
 
 - The IETF was established in 1986 as an informal volunteer body of engineers working under the [[Internet Architecture Board]] (IAB). Unlike national standards bodies with country-based voting, the IETF has no formal membership, fees, or geographic representation requirements. Anyone can attend its three annual face-to-face meetings or participate in mailing lists, making it one of the most genuinely open technical governance institutions in existence.
 - Decision-making operates on "rough consensus and running code" — a pragmatic heuristic that demands implementation experience, not merely theoretical agreement, before specifications advance. This approach has produced remarkably stable, long-lived standards adopted across the entire internet stack.
-- The IETF sits alongside but is distinct from the [[W3C]] (which standardises web application layers: HTML, CSS, WebAssembly) and the [[IEEE]] (which standardises physical and data-link layers: Ethernet, Wi-Fi). The IETF focuses primarily on network-layer through application-layer protocols.
+- The IETF sits alongside but is distinct from the [[World Wide Web Consortium]] (which standardises web application layers: HTML, CSS, WebAssembly) and the [[IEEE]] (which standardises physical and data-link layers: Ethernet, Wi-Fi). The IETF focuses primarily on network-layer through application-layer protocols.
 - Administratively, the IETF is supported by the Internet Society (ISOC), which provides legal and financial infrastructure. The [[Internet Engineering Steering Group]] (IESG), composed of Area Directors, oversees working group activity and approves specifications for publication.
 
 ### Key Components
@@ -23,7 +23,7 @@ The Internet Engineering Task Force (IETF) is the principal international open-s
 - **Internet (INT)** — addresses IPv4/IPv6, [[DNS]], DHCP, and network-layer concerns
 - **Operations and Management (OPS)** — focuses on network operations, SNMP, NETCONF/YANG
 - **Routing (RTG)** — BGP, OSPF, IS-IS, segment routing
-- **Security (SEC)** — [[TLS]], [[OAuth 2.0]], [[Remote Attestation]], RATS working group
+- **Security (SEC)** — [[Transport Layer Security]], [[OAuth 2.0]], [[Remote Attestation]], RATS working group
 - **Transport (TSV)** — TCP, UDP, SCTP, [[QUIC]], DCCP
 
 #### RFC Maturity Levels
@@ -38,7 +38,7 @@ The Internet Engineering Task Force (IETF) is the principal international open-s
 #### Foundational Protocol Infrastructure
 
 - Every internet-connected device relies on IETF-standardised protocols: TCP/IP for packet routing and reliable transport, [[DNS]] for name resolution, [[SMTP]] for email, [[HTTP]] for web communication
-- [[TLS]] (standardised as RFC 8446 for TLS 1.3) secures the majority of internet traffic; its development by the IETF TLS working group is a canonical example of open security protocol development
+- [[Transport Layer Security]] (standardised as RFC 8446 for TLS 1.3) secures the majority of internet traffic; its development by the IETF TLS working group is a canonical example of open security protocol development
 - [[QUIC]] (RFC 9000) and HTTP/3 (RFC 9114) represent the IETF's modernisation of the transport and application layers, reducing latency for web and API traffic globally
 
 #### Identity and Authorisation
@@ -70,7 +70,7 @@ The Internet Engineering Task Force (IETF) is the principal international open-s
   - RFC 6749/6750 — OAuth 2.0
   - RFC 9000 / RFC 9114 — QUIC and HTTP/3
 - The IETF works alongside but remains institutionally separate from:
-  - **[[W3C]]** — web application standards (HTML5, CSS, WebAssembly, Semantic Web, DID Core)
+  - **[[World Wide Web Consortium]]** — web application standards (HTML5, CSS, WebAssembly, Semantic Web, DID Core)
   - **[[IEEE]]** — physical/data-link layer standards (802.11 Wi-Fi, 802.3 Ethernet)
   - **[[ISO]] / IEC** — formal national-body voting standards, often incorporating IETF work by reference
   - **ETSI / 3GPP** — telecommunications standards that build upon IETF protocols

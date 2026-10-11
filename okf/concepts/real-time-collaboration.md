@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: Real Time Collaboration
+title: Real-Time Collaboration
 resource: urn:ngm:class:real-time-collaboration
 domain: distributed-systems
 description: Real-time collaboration is the practice and technology of multiple users working concurrently on shared content with changes propagated and merged with minimal latency. It relies on synchronisation algorithms that resolve concurrent edits while preserving each participant's intent. It underpins collaborative editors, shared design tools, and multi-user virtual environments.
@@ -10,11 +10,17 @@ quality: 0.62
 is-a:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:synchronous-collaboration
+  - urn:ngm:class:infra-network-and-comms
 requires:
   - urn:ngm:class:conflict-resolution
   - urn:ngm:class:state-synchronisation
+  - urn:ngm:class:network-latency
+  - urn:ngm:class:crdt
+  - urn:ngm:class:multi-user-systems
 enables:
   - urn:ngm:class:distributed-collaboration
+  - urn:ngm:class:virtual-meeting
+  - urn:ngm:class:immersive-workspaces
 dependsOn:
   - urn:ngm:class:low-latency
   - urn:ngm:class:real-time-communication
@@ -32,8 +38,10 @@ partOf:
 relatedTo:
   - urn:ngm:class:state-synchronisation
   - urn:ngm:class:distributed-systems
+  - urn:ngm:class:metaverse-and-telecollaboration
+  - urn:ngm:class:social-presence
 ---
 
-# Real Time Collaboration
+# Real-Time Collaboration
 
 Real-time collaboration is the practice and technology of multiple users working concurrently on shared content with changes propagated and merged with minimal latency. It relies on synchronisation algorithms that resolve concurrent edits while preserving each participant's intent. It underpins collaborative editors, shared design tools, and multi-user virtual environments.

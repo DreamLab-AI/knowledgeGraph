@@ -64,8 +64,8 @@
         "label": "Latency"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ]
   },
@@ -81,9 +81,9 @@
       "slug": "cyber-physical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -111,6 +111,11 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control",
       "slug": "robo-actuation-and-control"
@@ -121,9 +126,24 @@
       "slug": "robotic-system"
     },
     {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -131,19 +151,9 @@
       "slug": "robo-robot-type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:automation",
-      "label": "Automation",
-      "slug": "automation"
     }
   ],
   "inheritedRelations": {
@@ -381,7 +391,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -445,12 +455,12 @@
         "label": "Telecommunications"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:over-the-air-update",
-        "label": "Over-the-Air Update"
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
       }
     ],
     "standardizedBy": [
@@ -483,8 +493,18 @@
         "label": "POSIX 1003.1b"
       },
       {
-        "id": "urn:ngm:class:misra-c",
-        "label": "MISRA C"
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "relatedTo": [

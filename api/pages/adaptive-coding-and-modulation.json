@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:adaptive-coding-and-modulation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Adaptive coding and modulation (ACM) selects among supported coding and modulation modes in response to information about channel conditions.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

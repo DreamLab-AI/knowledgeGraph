@@ -23,7 +23,7 @@
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       },
       {
@@ -139,7 +139,7 @@
         "label": "IFEval"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -147,7 +147,7 @@
         "label": "Helpfulness"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ]
@@ -178,8 +178,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

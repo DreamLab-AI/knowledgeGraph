@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:metaverse
 enables:
   - urn:ngm:class:virtual-world
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:web3
 uses:
   - urn:ngm:class:blockchain

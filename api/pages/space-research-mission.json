@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-research-mission",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A space research mission is a set of coordinated tasks and operations undertaken to meet specific scientific or technical objectives within defined time and location constraints.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

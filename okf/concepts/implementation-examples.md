@@ -10,7 +10,7 @@ quality: 0.4
 is-a:
   - urn:ngm:class:sc-content-and-assets
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:smart-contract

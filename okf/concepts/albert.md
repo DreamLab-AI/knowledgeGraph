@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:natural-language-processing
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:lo-ra-do-ra-etc
 ---
 

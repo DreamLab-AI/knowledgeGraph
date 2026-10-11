@@ -18,7 +18,7 @@ hasPart:
 requires:
   - urn:ngm:class:tokenization
   - urn:ngm:class:part-of-speech-tagging
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:dependency-parsing
 enables:
   - urn:ngm:class:knowledge-graph-construction
@@ -29,9 +29,9 @@ contrastsWith:
   - urn:ngm:class:text-classification
 bridgesTo:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:data-integration
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:transformer
   - urn:ngm:class:sequence-labelling

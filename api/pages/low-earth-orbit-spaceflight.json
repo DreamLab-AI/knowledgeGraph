@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:low-earth-orbit-spaceflight",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Low Earth orbit (LEO) spaceflight is a mission or trajectory in which a spacecraft completes an Earth-centred orbit in the near-Earth region, conventionally extending to about 2,000 km altitude.[^1438][^1441]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spaceflight",

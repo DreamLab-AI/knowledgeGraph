@@ -34,7 +34,7 @@ bridgesTo:
   - urn:ngm:class:robotics
 uses:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multi-agent-systems
 supports:
   - urn:ngm:class:drug-discovery

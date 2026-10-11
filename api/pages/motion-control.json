@@ -28,8 +28,8 @@
       "label": "Mechatronics"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System"
     }
   ],
   "entityType": "Class",
@@ -62,7 +62,7 @@
         "label": "Impedance Control"
       },
       {
-        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:trajectory-generation",
         "label": "Trajectory Generation"
       },
       {
@@ -279,7 +279,7 @@
       },
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "id": "urn:ngm:class:delta-robots",
@@ -343,7 +343,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       }
     ]
@@ -390,6 +390,11 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
@@ -398,6 +403,11 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:feedback-systems",
@@ -440,9 +450,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -450,14 +460,14 @@
       "slug": "robo-robot-type"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -687,7 +697,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -763,8 +773,8 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "standardizedBy": [
@@ -799,6 +809,20 @@
       {
         "id": "urn:ngm:class:iso-10218",
         "label": "ISO 10218"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

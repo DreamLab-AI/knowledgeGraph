@@ -20,7 +20,7 @@ requires:
 enables:
   - urn:ngm:class:zero-trust-architecture
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:package-repository
 implements:
   - urn:ngm:class:slsa-framework

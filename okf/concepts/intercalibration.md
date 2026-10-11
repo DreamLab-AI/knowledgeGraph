@@ -4,6 +4,7 @@ type: Class
 title: Intercalibration
 resource: urn:ngm:class:intercalibration
 domain: earth-observation-and-geospatial-sensing
+description: Intercalibration is the comparison and harmonisation of calibration between Earth observation instruments so that observations from different satellites can be used together.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Intercalibration
+
+Intercalibration is the comparison and harmonisation of calibration between Earth observation instruments so that observations from different satellites can be used together.[^1]

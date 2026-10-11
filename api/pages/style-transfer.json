@@ -95,7 +95,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -458,7 +458,7 @@
     },
     {
       "slug": "fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "slug": "fooocus",

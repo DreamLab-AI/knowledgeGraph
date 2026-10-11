@@ -19,7 +19,7 @@ hasPart:
 requires:
   - urn:ngm:class:validator-node
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft-marketplace
   - urn:ngm:class:blockchain-gaming
   - urn:ngm:class:decentralised-exchange

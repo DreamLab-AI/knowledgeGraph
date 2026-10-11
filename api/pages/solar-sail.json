@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-sail",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A solar sail is a spacecraft propulsion device that uses solar radiation pressure to generate thrust by reflecting photons from a lightweight, highly reflective membrane.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

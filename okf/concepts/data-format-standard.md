@@ -28,8 +28,8 @@ dependsOn:
   - urn:ngm:class:khronos-group
   - urn:ngm:class:open-standards
 implements:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:material-x
 contrastsWith:
   - urn:ngm:class:proprietary-format
@@ -51,7 +51,7 @@ partOf:
   - urn:ngm:class:interoperability-framework
 relatedTo:
   - urn:ngm:class:open-usd
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 ---
 
 # Data Format Standard

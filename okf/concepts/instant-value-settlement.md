@@ -9,8 +9,6 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-defi-and-economics
-  - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:blockchain-network
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:smart-contract
   - urn:ngm:class:financial-infrastructure
@@ -34,9 +32,9 @@ requires:
   - urn:ngm:class:regulatory-reporting
 enables:
   - urn:ngm:class:btc-layer-3
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-border-compliance
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:micropayments
   - urn:ngm:class:nostr-protocol
   - urn:ngm:class:smart-contract
@@ -77,9 +75,9 @@ uses:
   - urn:ngm:class:stable-coins
 supports:
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-border-compliance
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:micropayments
   - urn:ngm:class:regulatory-reporting
   - urn:ngm:class:stable-coins
@@ -98,7 +96,7 @@ relatedTo:
   - urn:ngm:class:btc-layer-3
   - urn:ngm:class:cashu
   - urn:ngm:class:cbdc-frameworks
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:micropayments
   - urn:ngm:class:nostr-protocol

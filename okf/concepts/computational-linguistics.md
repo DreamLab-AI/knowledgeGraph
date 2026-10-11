@@ -10,7 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:tokenization
   - urn:ngm:class:named-entity-recognition
@@ -61,7 +61,7 @@ contrastsWith:
   - urn:ngm:class:psycholinguistics
   - urn:ngm:class:symbolic-ai
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:information-retrieval
 uses:
   - urn:ngm:class:language-model
@@ -91,7 +91,7 @@ relatedTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:psycholinguistics
   - urn:ngm:class:corpus-linguistics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:deep-learning

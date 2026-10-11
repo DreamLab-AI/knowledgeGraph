@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:no-unique-name-assumption
 enables:
   - urn:ngm:class:knowledge-integration
-  - urn:ngm:class:semantic-reasoning-engine
+  - urn:ngm:class:semantic-reasoning
 dependsOn:
   - urn:ngm:class:formal-semantics
   - urn:ngm:class:logical-inference
@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:web-ontology-language
   - urn:ngm:class:rdf
 supports:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
 partOf:
   - urn:ngm:class:knowledge-representation

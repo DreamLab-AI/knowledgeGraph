@@ -18,7 +18,7 @@ Counterparty Risk is the risk that the other party to a financial transaction or
 ### Applications
 
 - Applied in contexts involving [[Blockchain]].
-- Applied in contexts involving [[Decentralized Finance]].
+- Applied in contexts involving [[Decentralised Finance]].
 - Applied in contexts involving [[Finance]].
 
 ### Provenance

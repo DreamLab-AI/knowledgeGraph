@@ -8,7 +8,7 @@ description: Data drift is the change over time in the statistical distribution 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:retraining
 dependsOn:

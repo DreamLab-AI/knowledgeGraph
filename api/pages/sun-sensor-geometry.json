@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sun-sensor-geometry",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Sun-sensor geometry is the relative arrangement of the Sun and the sensor viewing direction at an observed point, described by solar and viewing angles.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

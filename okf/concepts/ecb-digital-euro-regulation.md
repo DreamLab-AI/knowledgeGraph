@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:financial-regulation
 relatedTo:
   - urn:ngm:class:digital-euro
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # ECB Digital Euro Regulation

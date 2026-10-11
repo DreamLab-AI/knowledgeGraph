@@ -22,14 +22,14 @@ enables:
   - urn:ngm:class:collaboration
   - urn:ngm:class:automated-planning
 contrastsWith:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:empirical-experimental-design-tracking
 bridgesTo:
   - urn:ngm:class:fair-data-principles
   - urn:ngm:class:open-data
 uses:
   - urn:ngm:class:agile-software-development
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:knowledge-graph
 supports:
   - urn:ngm:class:decentralised-agent-coordination-initiative

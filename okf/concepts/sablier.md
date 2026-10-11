@@ -11,9 +11,9 @@ is-a:
   - urn:ngm:class:smart-contract
 requires:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:token-economics
 ---

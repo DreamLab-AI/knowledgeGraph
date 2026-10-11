@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:ai-monitoring
   - urn:ngm:class:ai-incident
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:natural-language-processing
 enables:

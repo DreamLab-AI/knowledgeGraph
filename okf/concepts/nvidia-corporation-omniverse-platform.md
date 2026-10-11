@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:nvidia-corporation-isaac-sim
 requires:
   - urn:ngm:class:gpu
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:gpu
 enables:
   - urn:ngm:class:digital-twin

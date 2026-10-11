@@ -62,7 +62,7 @@ A monitoring system is an integrated observability platform that continuously co
 - **AI and ML Operations**
   - [[AI Monitoring]] for production model health: prediction latency, throughput, error rates.
   - [[Model Drift Detection]] — statistical tests (PSI, KL divergence) on input feature distributions and output label distributions compared against training baselines.
-  - [[Machine Learning Operations|MLOps]] pipelines surface data quality metrics alongside model performance in unified dashboards.
+  - [[MLOps|MLOps]] pipelines surface data quality metrics alongside model performance in unified dashboards.
   - [[Compliance Monitoring]] for AI systems under emerging regulatory frameworks (EU AI Act audit trails).
 - **Cloud and Kubernetes infrastructure**
   - Node, pod, and container resource metrics via kube-state-metrics, cadvisor.

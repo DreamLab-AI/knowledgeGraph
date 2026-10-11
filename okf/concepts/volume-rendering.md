@@ -23,7 +23,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:rasterization
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:volumetric-video
   - urn:ngm:class:real-time-rendering

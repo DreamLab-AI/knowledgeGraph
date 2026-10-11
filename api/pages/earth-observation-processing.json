@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-processing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation processing is the staged conversion of raw instrument measurements into calibrated, derived and gridded data products, labelled by processing level.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

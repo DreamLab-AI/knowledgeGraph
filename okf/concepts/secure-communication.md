@@ -28,10 +28,10 @@ bridgesTo:
   - urn:ngm:class:iot-security
 uses:
   - urn:ngm:class:encryption
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:authenticated-encryption
   - urn:ngm:class:key-exchange
 standardizedBy:

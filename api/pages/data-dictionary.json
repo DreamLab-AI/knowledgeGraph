@@ -134,6 +134,16 @@
       "slug": "knowledge-management"
     },
     {
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System",
       "slug": "knowledge-organization-system"
@@ -154,6 +164,11 @@
       "slug": "software-architecture"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -162,11 +177,6 @@
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -176,8 +186,8 @@
         "label": "Business Glossary"
       },
       {
-        "id": "urn:ngm:class:data-catalog",
-        "label": "Data Catalog"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:data-contracts",
@@ -312,7 +322,7 @@
         "label": "Apache Atlas"
       },
       {
-        "id": "urn:ngm:class:data-catalog",
+        "id": "urn:ngm:class:data-catalogue",
         "label": "AWS Glue Data Catalog"
       },
       {
@@ -362,16 +372,16 @@
         "label": "Data Anarchy"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
-      },
-      {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
       },
       {
         "id": "urn:ngm:class:dark-data",
         "label": "Dark Data"
+      },
+      {
+        "id": "urn:ngm:class:data-debt",
+        "label": "Data Debt"
       }
     ],
     "bridgesTo": [
@@ -400,7 +410,7 @@
         "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -414,16 +424,12 @@
         "label": "Apache Kafka"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
         "id": "urn:ngm:class:owl",
         "label": "OWL"
-      },
-      {
-        "id": "urn:ngm:class:provenance-standard",
-        "label": "W3C PROV"
       },
       {
         "id": "urn:ngm:class:rdf",
@@ -436,6 +442,10 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
       },
       {
         "id": "urn:ngm:class:entity-resolution",
@@ -460,8 +470,8 @@
         "label": "Data Mesh"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:mlops",
@@ -502,7 +512,7 @@
         "label": "OpenLineage"
       },
       {
-        "id": "urn:ngm:class:provenance-standard",
+        "id": "urn:ngm:class:w3-c-prov",
         "label": "W3C PROV"
       },
       {

@@ -33,6 +33,10 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ],
     "enables": [
@@ -59,6 +63,10 @@
       {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
       }
     ],
     "bridgesTo": [
@@ -73,6 +81,10 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       }
     ],
     "uses": [
@@ -138,6 +150,14 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ]
   },
@@ -272,6 +292,94 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "addresses-concern",
+      "label": "addressesConcern"
+    },
+    {
+      "slug": "aigovernance",
+      "label": "AIGovernance"
+    },
+    {
+      "slug": "applies-to",
+      "label": "appliesTo"
+    },
+    {
+      "slug": "bias-and-fairness",
+      "label": "BiasAndFairness"
+    },
+    {
+      "slug": "dao-governance",
+      "label": "DAOGovernance"
+    },
+    {
+      "slug": "defines-guideline",
+      "label": "definesGuideline"
+    },
+    {
+      "slug": "digital-systems",
+      "label": "Digital Systems"
+    },
+    {
+      "slug": "discrimination-prevention",
+      "label": "DiscriminationPrevention"
+    },
+    {
+      "slug": "dt-enforced-by",
+      "label": "dt:enforcedBy"
+    },
+    {
+      "slug": "dt-governed-by",
+      "label": "dt:governedBy"
+    },
+    {
+      "slug": "dt-guides",
+      "label": "dt:guides"
+    },
+    {
+      "slug": "dt-tracked-on",
+      "label": "dt:trackedOn"
+    },
+    {
+      "slug": "dt-validates",
+      "label": "dt:validates"
+    },
+    {
+      "slug": "human-values",
+      "label": "Human Values"
+    },
+    {
+      "slug": "requires-compliance",
+      "label": "requiresCompliance"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "AuditTrail"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "AutonomousAgent"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
     }
   ],
   "backlinks": [
@@ -326,6 +434,10 @@
     {
       "slug": "ai-safety",
       "label": "AI Safety"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
     },
     {
       "slug": "ai-talent",
@@ -454,6 +566,10 @@
     {
       "slug": "trust-and-safety",
       "label": "Trust and Safety"
+    },
+    {
+      "slug": "ai-core-concepts",
+      "label": "ai core concepts"
     }
   ]
 }

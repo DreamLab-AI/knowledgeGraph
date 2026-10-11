@@ -124,7 +124,7 @@
         "label": "Mean Squared Error"
       },
       {
-        "id": "urn:ngm:class:rb-1013-localization",
+        "id": "urn:ngm:class:localisation",
         "label": "RB-1013-localization"
       },
       {
@@ -149,8 +149,8 @@
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB 1013 localization"
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
       },
       {
         "id": "urn:ngm:class:closed-loop-control",
@@ -227,7 +227,7 @@
         "label": "Factor Graph"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
       },
       {
@@ -523,7 +523,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -545,8 +545,8 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [

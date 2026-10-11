@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:did-document
   - urn:ngm:class:revocation-registry
   - urn:ngm:class:selective-disclosure
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:trust-framework
   - urn:ngm:class:verifiable-credentials
@@ -49,7 +49,7 @@ enables:
 dependsOn:
   - urn:ngm:class:cryptography
   - urn:ngm:class:distributed-ledger
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:dns
   - urn:ngm:class:internet-protocol-stack
   - urn:ngm:class:trust-over-ip-foundation
@@ -64,7 +64,7 @@ implements:
   - urn:ngm:class:sd-jwt-vc
   - urn:ngm:class:siopv2
   - urn:ngm:class:w3-c-did-specification
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:bbs-signatures
   - urn:ngm:class:iso-iec-18013-5-m-dl
 contrastsWith:
@@ -81,7 +81,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:cbor
   - urn:ngm:class:cryptographic-accumulator
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:merkle-proof
   - urn:ngm:class:zero-knowledge-proof
@@ -104,14 +104,14 @@ standardizedBy:
   - urn:ngm:class:oasis
   - urn:ngm:class:open-id-foundation
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:bluesky-at-protocol
   - urn:ngm:class:nostr
   - urn:ngm:class:proof-of-personhood
   - urn:ngm:class:sybil-resistance
   - urn:ngm:class:web-of-trust
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:web3
   - urn:ngm:class:keybase
 ---

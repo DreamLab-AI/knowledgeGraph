@@ -25,7 +25,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:standards-organization
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:fsb

@@ -77,11 +77,11 @@ supports:
   - urn:ngm:class:human-robot-interaction
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:motion-capture
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:wearable-computing

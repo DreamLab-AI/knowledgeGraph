@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptographic-key
 contrastsWith:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 uses:
   - urn:ngm:class:shamir-secret-sharing
   - urn:ngm:class:threshold-cryptography

@@ -24,7 +24,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:nft
 uses:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:open-protocol
 supports:
   - urn:ngm:class:digital-asset

@@ -17,7 +17,7 @@ uses:
   - urn:ngm:class:display-hardware
 relatedTo:
   - urn:ngm:class:tele020virtualrealitytelepresence
-  - urn:ngm:class:tele-050-neuralrenderingtelepresence
+  - urn:ngm:class:tele-050-neural-rendering-telepresence
   - urn:ngm:class:avatar
 ---
 

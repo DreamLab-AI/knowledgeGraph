@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:asset-continuity
 dependsOn:
   - urn:ngm:class:vrm-format
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:open-metaverse-interoperability
 implements:
   - urn:ngm:class:asset-portability

@@ -70,11 +70,11 @@ supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:human-oversight
   - urn:ngm:class:responsible-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-scaling-policy
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:california-sb53
 partOf:
   - urn:ngm:class:ai-governance

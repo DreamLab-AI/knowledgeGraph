@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:account-abstraction
   - urn:ngm:class:smart-contracts
 bridgesTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:wallet
 ---
 

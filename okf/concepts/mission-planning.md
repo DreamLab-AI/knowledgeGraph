@@ -4,6 +4,7 @@ type: Class
 title: Mission Planning
 resource: urn:ngm:class:mission-planning
 domain: space-science-and-systems
+description: Mission planning is the preparation of schedules, command sequences and resource use that tell a spacecraft and ground system what to do over a period of time.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Mission Planning
+
+Mission planning is the preparation of schedules, command sequences and resource use that tell a spacecraft and ground system what to do over a period of time.[^1][^2]

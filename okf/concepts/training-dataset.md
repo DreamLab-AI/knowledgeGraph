@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:data-preprocessing
 enables:
   - urn:ngm:class:model-training
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:foundation-model

@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:provenance-tracking
   - urn:ngm:class:x-509-certificate
   - urn:ngm:class:cryptographic-hash
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:ai-generated-content-disclosure
   - urn:ngm:class:provenance-verification
@@ -46,7 +46,7 @@ relatedTo:
   - urn:ngm:class:content-authenticity
   - urn:ngm:class:iptc-photo-metadata
   - urn:ngm:class:metadata
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:provenance
   - urn:ngm:class:content-authenticity
   - urn:ngm:class:metadata

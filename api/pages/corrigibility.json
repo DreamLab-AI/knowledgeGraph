@@ -134,7 +134,7 @@
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ],
@@ -172,7 +172,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -210,12 +210,12 @@
         "label": "Human Oversight"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:bletchley-declaration",
@@ -224,12 +224,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:bletchley-declaration",
@@ -264,7 +264,7 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {

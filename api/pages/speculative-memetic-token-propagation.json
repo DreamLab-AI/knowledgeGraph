@@ -52,8 +52,8 @@
         "label": "Agentic AI"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:ai-agent-system",
@@ -163,8 +163,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -177,8 +177,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },

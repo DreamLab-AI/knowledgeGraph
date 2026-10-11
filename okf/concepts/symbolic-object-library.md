@@ -20,7 +20,7 @@ bridgesTo:
   - urn:ngm:class:digital-asset
 uses:
   - urn:ngm:class:3-d-asset-standard
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 supports:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:avatar

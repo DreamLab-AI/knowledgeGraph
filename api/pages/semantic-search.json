@@ -307,8 +307,8 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
@@ -373,10 +373,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:text-representation",
         "label": "Text Representation"
       },
@@ -415,8 +411,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -433,8 +429,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:corpus",
@@ -511,8 +507,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:embedding-model",
@@ -555,12 +551,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:nearest-neighbor-search",
@@ -577,6 +569,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

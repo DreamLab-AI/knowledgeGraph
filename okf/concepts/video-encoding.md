@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:video-codec
 enables:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:bandwidth-adaptation
   - urn:ngm:class:bandwidth-optimization
 dependsOn:

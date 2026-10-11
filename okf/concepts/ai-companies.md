@@ -28,7 +28,7 @@ hasPart:
 requires:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:cloud-infrastructure
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:training-data
   - urn:ngm:class:capital-investment
   - urn:ngm:class:talent-pool
@@ -55,9 +55,9 @@ dependsOn:
 implements:
   - urn:ngm:class:frontier-model-training
   - urn:ngm:class:inference-serving
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:ai-safety-research
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:model-distribution
   - urn:ngm:class:commercial-productisation
   - urn:ngm:class:ai-safety-research
@@ -72,8 +72,8 @@ uses:
   - urn:ngm:class:chain-of-thought-reasoning
   - urn:ngm:class:distributed-training
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:constitutional-ai-training-methodology
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:constitutional-ai
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:transformer-architecture
 supports:
@@ -88,11 +88,11 @@ supports:
 standardizedBy:
   - urn:ngm:class:frontier-model-forum
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:partnership-on-ai
   - urn:ngm:class:uk-ai-safety-institute
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:uk-ai-safety-institute
   - urn:ngm:class:white-house-voluntary-ai-commitments
 relatedTo:

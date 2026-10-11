@@ -29,7 +29,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-coordination
   - urn:ngm:class:multi-agent-systems
 uses:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:asynchronous-coordination
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:incentive-mechanism

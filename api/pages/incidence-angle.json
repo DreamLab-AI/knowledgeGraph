@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:incidence-angle",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Incidence angle is the angle between the incident radar beam on a surface and the normal to a reference surface.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

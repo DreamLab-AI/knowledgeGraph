@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:fairness
   - urn:ngm:class:accountability
 contrastsWith:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:model-interpretability
   - urn:ngm:class:black-box-model

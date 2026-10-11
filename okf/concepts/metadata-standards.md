@@ -23,7 +23,7 @@ enables:
 dependsOn:
   - urn:ngm:class:linked-data
 implements:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:fair-data-principles
 bridgesTo:
   - urn:ngm:class:knowledge-graph
@@ -38,7 +38,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:data-governance
 relatedTo:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:information-architecture
 ---
 

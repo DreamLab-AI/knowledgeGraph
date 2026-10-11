@@ -59,7 +59,7 @@ Maintain quality through systematic approaches:
   * [En3D](https://menyifang.github.io/projects/En3D/index.html): A project focused on generating 3D human models with realistic detail.
   * [Character Creator 3 (Reallusion)](https://www.reallusion.com/character-creator/): A powerful tool for creating realistic and stylised 3D characters.
 
-#### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
+#### 3️⃣ Reinforcement Learning from Human Feedback [[Reinforcement Learning from Human Feedback]]
 
 - **Description**: Two neural networks trained in an adversarial process.
 - **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
@@ -132,7 +132,7 @@ Maintain quality through systematic approaches:
   * [En3D](https://menyifang.github.io/projects/En3D/index.html): A project focused on generating 3D human models with realistic detail.
   * [Character Creator 3 (Reallusion)](https://www.reallusion.com/character-creator/): A powerful tool for creating realistic and stylised 3D characters.
 
-#### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
+#### 3️⃣ Reinforcement Learning from Human Feedback [[Reinforcement Learning from Human Feedback]]
 
 - **Description**: Two neural networks trained in an adversarial process.
 - **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.

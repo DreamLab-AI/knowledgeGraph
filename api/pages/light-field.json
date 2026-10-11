@@ -512,10 +512,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:image-processing",
-        "label": "Image Processing"
-      },
-      {
         "id": "urn:ngm:class:optics",
         "label": "Optics"
       },
@@ -630,7 +626,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

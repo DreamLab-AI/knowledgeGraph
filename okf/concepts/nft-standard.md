@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:bc-token-and-asset
 hasPart:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
   - urn:ngm:class:eip-2981
   - urn:ngm:class:token-metadata
@@ -29,9 +29,9 @@ dependsOn:
   - urn:ngm:class:ipfs
 implements:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 contrastsWith:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:fungible-token
 bridgesTo:
   - urn:ngm:class:digital-twin
@@ -47,7 +47,7 @@ standardizedBy:
   - urn:ngm:class:ethereum-smart-contract-platform-foundation
 relatedTo:
   - urn:ngm:class:token-standard
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:web3
 ---
 

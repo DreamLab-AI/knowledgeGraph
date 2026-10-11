@@ -76,8 +76,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "implements": [],
@@ -131,7 +131,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "ROS (Robot Operating System)"
       },
       {
@@ -151,7 +151,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ]
@@ -173,9 +173,14 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -197,8 +202,8 @@
         "label": "Industrial Robots"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:motion-control",
@@ -239,12 +244,12 @@
         "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:configuration-management",
-        "label": "Configuration Management"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       },
       {
-        "id": "urn:ngm:class:model-based-systems-engineering",
-        "label": "Model-Based Systems Engineering"
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
@@ -297,20 +302,12 @@
         "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -339,8 +336,8 @@
         "label": "Security Engineering"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:robotics",
@@ -357,7 +354,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -395,16 +392,16 @@
         "label": "Supply Chain Management"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       },
       {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -421,12 +418,20 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -500,8 +505,8 @@
       "label": "Boston Dynamics Spot"
     },
     {
-      "slug": "collaborative-robots",
-      "label": "Collaborative Robots"
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
     },
     {
       "slug": "collision-avoidance",

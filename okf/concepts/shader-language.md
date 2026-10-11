@@ -47,7 +47,7 @@ supports:
   - urn:ngm:class:virtual-reality
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:rendering-pipeline
 relatedTo:

@@ -4,7 +4,7 @@ type: Class
 title: Satellite Communication
 resource: urn:ngm:class:satellite-communication
 domain: infrastructure
-description: Satellite communication is the use of artificial Earth-orbiting satellites as relay stations to transmit signals — including voice, data, video, and telemetry — between ground terminals separated by large distances or challenging terrain. Signals are uplinked from a ground station to a satellite transponder, which amplifies and retransmits them on a different frequency to one or more receiving ter
+description: Satellite communication is the end-to-end exchange of information through a system that uses one or more satellite links between space and terrestrial, airborne or maritime endpoints.
 maturity: mature
 quality: 0.62
 is-a:
@@ -41,4 +41,4 @@ relatedTo:
 
 # Satellite Communication
 
-Satellite communication is the use of artificial Earth-orbiting satellites as relay stations to transmit signals — including voice, data, video, and telemetry — between ground terminals separated by large distances or challenging terrain. Signals are uplinked from a ground station to a satellite transponder, which amplifies and retransmits them on a different frequency to one or more receiving terminals. Different orbital regimes (GEO, MEO, LEO) offer distinct trade-offs between coverage footprint, latency, and capacity.
+Satellite communication is the end-to-end exchange of information through a system that uses one or more satellite links between space and terrestrial, airborne or maritime endpoints.

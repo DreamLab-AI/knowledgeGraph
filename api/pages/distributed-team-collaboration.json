@@ -73,8 +73,8 @@
         "label": "Collaboration Platform"
       },
       {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:version-control",

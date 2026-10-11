@@ -79,7 +79,7 @@
         "label": "Sustainability-Linked Loans"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -117,7 +117,7 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -231,7 +231,7 @@
         "label": "Blockchain Tokenisation"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -247,7 +247,7 @@
         "label": "Tokenised Green Bonds"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {

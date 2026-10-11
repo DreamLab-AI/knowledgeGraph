@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:workflow-automation
 uses:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:ai-assisted-developer-tooling

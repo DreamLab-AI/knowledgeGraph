@@ -20,8 +20,8 @@
       "label": "Robotics Platform"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System"
     },
     {
       "id": "urn:ngm:class:mechatronics",
@@ -355,11 +355,6 @@
       "slug": "electromechanical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-system",
-      "label": "Embedded System",
-      "slug": "embedded-system"
-    },
-    {
       "id": "urn:ngm:class:embodied-ai",
       "label": "Embodied AI",
       "slug": "embodied-ai"
@@ -393,6 +388,11 @@
       "id": "urn:ngm:class:programmable-logic-controller",
       "label": "Programmable Logic Controller",
       "slug": "programmable-logic-controller"
+    },
+    {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -450,14 +450,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:real-time-control",
-      "label": "Real-Time Control",
-      "slug": "real-time-control"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robot",
@@ -485,6 +480,11 @@
       "slug": "technology-domain"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -505,19 +505,14 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -721,7 +716,7 @@
         "label": "Proprietary Robot Controller"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "ROS 1"
       }
     ],
@@ -743,7 +738,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -891,8 +886,8 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical System"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

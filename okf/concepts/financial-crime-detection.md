@@ -11,15 +11,15 @@ is-a:
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:ai-application
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:compliance
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transaction-monitoring
 supports:
   - urn:ngm:class:blockchain-analytics
 relatedTo:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:aml-kyc-compliance
 ---
 

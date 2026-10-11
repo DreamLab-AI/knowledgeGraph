@@ -133,14 +133,14 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 ## About Knowledge Graphing
 
-- **Knowledge Graphing** is the principled construction, enrichment, and exploitation of graph-structured knowledge bases that encode real-world entities and their semantic relationships as machine-readable structured data. Unlike [[Relational Databases]] that enforce rigid tabular schemas, or [[Document Stores]] that handle unstructured text, knowledge graphs represent information as a flexible network of typed (entity, relation, entity) triples — or richer property graphs with edge attributes — enabling multi-hop reasoning, automatic inference, and [[Semantic Search]] that traverses meaning rather than keywords. The discipline unifies contributions from the [[Semantic Web Linked Data Standard]] community (RDF, OWL, SPARQL standardised by W3C 2004-2013), database systems research (property graph models, graph query languages Cypher and GQL), [[Machine Learning Discipline]] (embedding models, GNNs, [[Large Language Models]]), and [[Information Extraction]] (named entity recognition, relation extraction, entity resolution).
+- **Knowledge Graphing** is the principled construction, enrichment, and exploitation of graph-structured knowledge bases that encode real-world entities and their semantic relationships as machine-readable structured data. Unlike [[Relational Databases]] that enforce rigid tabular schemas, or [[Document Stores]] that handle unstructured text, knowledge graphs represent information as a flexible network of typed (entity, relation, entity) triples — or richer property graphs with edge attributes — enabling multi-hop reasoning, automatic inference, and [[Semantic Search]] that traverses meaning rather than keywords. The discipline unifies contributions from the [[Semantic Web]] community (RDF, OWL, SPARQL standardised by W3C 2004-2013), database systems research (property graph models, graph query languages Cypher and GQL), [[Machine Learning]] (embedding models, GNNs, [[Large Language Model]]), and [[Information Extraction]] (named entity recognition, relation extraction, entity resolution).
 - The field's modern architecture involves three coupled layers:
   - (1) **Schema/ontology layer (TBox)**: defines entity types, property types, class hierarchies, and logical axioms — e.g. `owl:subClassOf`, `owl:someValuesFrom`, cardinality constraints; maintained by [[Ontology Engineering]] teams using Protégé, TopBraid Composer, or PoolParty
   - (2) **Instance/fact layer (ABox)**: contains individual entity assertions and relation triples derived from structured sources (databases, APIs, authority files) and unstructured text via [[Information Extraction]] pipelines including [[Named Entity Recognition]], [[Relation Extraction]], and coreference resolution
   - (3) **Inference layer**: applies reasoning rules (OWL axioms, Datalog rules, SPARQL CONSTRUCT) to derive implicit knowledge not explicitly stored — e.g. if owl:subClassOf(Cat, Animal) and rdf:type(Whiskers, Cat) then infer rdf:type(Whiskers, Animal); critical for data integration across heterogeneous sources
   - This layered architecture underpins formal bio-ontologies (Gene Ontology 50K+ terms, Human Disease Ontology 18K+ diseases, [[Drug Discovery]] ontologies via ChEMBL/DrugBank) and pragmatic open knowledge bases like Wikidata (112M+ items, 1.6B+ statements) and [[Schema.org]] (600+ types, 45M+ website adoptions)
 - The transition from knowledge graphs as static curated databases to **dynamic AI-augmented systems** accelerated 2022-2026, driven by three converging forces:
-  - [[Large Language Models]] demonstrating unprecedented [[Information Extraction]] capability for automated KG population — GPT-4 and Claude 3 can extract structured triples from unstructured text with 85-95% precision on well-defined entity/relation schemas, dramatically reducing manual curation cost
+  - [[Large Language Model]] demonstrating unprecedented [[Information Extraction]] capability for automated KG population — GPT-4 and Claude 3 can extract structured triples from unstructured text with 85-95% precision on well-defined entity/relation schemas, dramatically reducing manual curation cost
   - [[GraphRAG]] architectures proving that graph-structured retrieval outperforms flat vector search for multi-hop reasoning tasks requiring global synthesis — the Microsoft 2024 paper showed 3.2× comprehensiveness improvement on corpus-wide question answering
   - [[Graph Neural Network]] architectures (R-GCN, CompGCN, NBFNet) achieving near-human performance on KG completion benchmarks, enabling autonomous expansion of knowledge bases from seed facts without exhaustive manual curation
   - The result is hybrid [[Cognitive AI]] systems where LLMs provide flexible language understanding and KGs provide structured grounding, factual accuracy, and explainability — directly addressing LLM hallucination by anchoring generation to verified structured facts
@@ -208,7 +208,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 ## Knowledge Graph Embeddings
 
-- Knowledge graph embedding (KGE) models learn dense vector representations of entities e ∈ ℝ^d and relations r ∈ ℝ^d (or ℂ^d) that preserve graph structure, enabling link prediction (plausibility score for missing triple (h, r, ?)), entity similarity clustering, and feature generation for downstream [[Machine Learning Discipline]] tasks. Standard evaluation benchmarks: FB15k-237 (14,541 entities, 237 relation types, 272,115 train / 17,535 test triples from Freebase, removing redundant inverse triples from original FB15k to prevent test leakage), WN18RR (40,943 entities, 11 relation types, 86,835 train / 3,034 test triples from WordNet, similarly deduped). Evaluation metric: mean reciprocal rank (MRR = (1/|T|) ∑ 1/rank_t) and Hits@k (fraction of test triples with target ranked in top k candidates, k=1,3,10).
+- Knowledge graph embedding (KGE) models learn dense vector representations of entities e ∈ ℝ^d and relations r ∈ ℝ^d (or ℂ^d) that preserve graph structure, enabling link prediction (plausibility score for missing triple (h, r, ?)), entity similarity clustering, and feature generation for downstream [[Machine Learning]] tasks. Standard evaluation benchmarks: FB15k-237 (14,541 entities, 237 relation types, 272,115 train / 17,535 test triples from Freebase, removing redundant inverse triples from original FB15k to prevent test leakage), WN18RR (40,943 entities, 11 relation types, 86,835 train / 3,034 test triples from WordNet, similarly deduped). Evaluation metric: mean reciprocal rank (MRR = (1/|T|) ∑ 1/rank_t) and Hits@k (fraction of test triples with target ranked in top k candidates, k=1,3,10).
 
 ### Translational and Bilinear Models
 
@@ -267,7 +267,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 ### Think-on-Graph and KG-Grounded Reasoning
 
-- Sun et al. (2024, ICLR) proposed **Think-on-Graph**: iterative beam search over Wikidata/Freebase guided by [[Large Language Models|LLM]]-scored relation selection for [[Question Answering]]:
+- Sun et al. (2024, ICLR) proposed **Think-on-Graph**: iterative beam search over Wikidata/Freebase guided by [[Large Language Model|LLM]]-scored relation selection for [[Question Answering]]:
   - For each reasoning step, the LLM scores which relations to traverse from the current entity beam; the KG is queried to retrieve candidate next-hop entities; the LLM prunes the beam to k most promising entities based on relevance to the question
   - Achieves 54% accuracy on multi-hop WebQSP questions vs 33% for vanilla [[Retrieval Augmented Generation]], preventing hallucination by constraining generation to graph-verified entity paths
   - Each reasoning step is traceable as an explicit KG path, providing full [[Explainable AI]] audit trail of how the answer was derived — critical for medical, legal, and financial [[Agents|agentic]] applications
@@ -337,7 +337,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
 - **Inference Layer**: OWL reasoners (ELK for OWL 2 EL, HermiT for full DL, Pellet with SWRL rules) for ontological inference; RDFox/Stardog Rules for scalable Datalog forward-chaining materialisation; PSL (Probabilistic Soft Logic, Bach et al. 2017) for soft-constraint reasoning over uncertain knowledge; SHACL (W3C Shapes Constraint Language) for graph data quality validation and constraint enforcement in [[Data Engineering]] pipelines
 - **[[Knowledge Graph Embeddings]] Layer**: PyKEEN 1.10+ (60+ KGE models, MLflow integration, LCWA/sLCWA negative sampling); AmpliGraph 2.x; DGL-KE (DistributedGraphLearning for multi-GPU TransE/DistMult/RotatE training on billion-edge graphs); PyTorch Geometric (PyG 2.x, 60+ GNN layers, heterogeneous graph support); Stanford [[Graph Neural Network|GraphSAGE]], GAT, HGT
 - **Query Layer**: SPARQL 1.1 (W3C 2013), OpenCypher (Neo4j, Memgraph), ISO GQL (2024), Gremlin (Apache TinkerPop, Amazon Neptune), GSQL (TigerGraph); hybrid HNSW/IVF vector search + graph traversal; GraphQL-to-SPARQL translation (Hartig 2024 WWW); SPARQL over Wikidata Query Service (public endpoint, 1.5M+ queries/day)
-- **Application Layer**: [[Semantic Search]] engines (Elasticsearch with KG entity enrichment, Azure Cognitive Search, Typesense with [[Knowledge Graph Embeddings]] re-ranking); KGQA systems (SPARQL generation via [[Large Language Models|LLM]] fine-tuning on LC-QuAD 2.0, QALD, ComplexWebQuestions benchmarks); graph collaborative filtering recommendation (LightGCN, NGCF); [[Financial Regulation]] compliance reporting using XBRL+FIBO; [[Digital Twins]] platforms using SysML/IFC-to-OWL translation for engineering asset knowledge graphs
+- **Application Layer**: [[Semantic Search]] engines (Elasticsearch with KG entity enrichment, Azure Cognitive Search, Typesense with [[Knowledge Graph Embeddings]] re-ranking); KGQA systems (SPARQL generation via [[Large Language Model|LLM]] fine-tuning on LC-QuAD 2.0, QALD, ComplexWebQuestions benchmarks); graph collaborative filtering recommendation (LightGCN, NGCF); [[Financial Regulation]] compliance reporting using XBRL+FIBO; [[Digital Twins]] platforms using SysML/IFC-to-OWL translation for engineering asset knowledge graphs
 
 ## Use Cases and Major Families
 
@@ -373,10 +373,10 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 - Knowledge graphs have become the standard representation for scholarly knowledge infrastructure:
   - **OpenAlex** (OurResearch 2022): open-access replacement for discontinued Microsoft Academic Graph; 250M+ scholarly works, 80M+ authors, 200K+ institutions, 65K+ journals/venues as fully open linked data with REST API (`api.openalex.org`) and Parquet bulk download (CC0 licence); entities linked to Wikidata, ORCID, ROR, DOI, ISSN; powers research analytics, funding landscape analysis, and [[AI Search]] over scientific literature
-  - **Semantic Scholar** (Allen Institute for AI, S2ORC): 81M+ papers with citation graphs, entity extraction linking papers to methods, datasets, concepts, and code repositories (Papers With Code integration); Semantic Scholar SPECTER embeddings (citation-aware document vectors) for semantic similarity search; used as training data for scientific [[Large Language Models]] (Galactica, SciLLM)
+  - **Semantic Scholar** (Allen Institute for AI, S2ORC): 81M+ papers with citation graphs, entity extraction linking papers to methods, datasets, concepts, and code repositories (Papers With Code integration); Semantic Scholar SPECTER embeddings (citation-aware document vectors) for semantic similarity search; used as training data for scientific [[Large Language Model]] (Galactica, SciLLM)
   - **Connected Papers** (connectedpapers.com): interactive citation neighbourhood graph visualisation using semantic similarity (SPECTER embeddings) alongside citation links to discover related works beyond direct citations; based on the same [[Graph Neural Network]] graph co-citation clustering used in academic recommendation systems
   - **SciPhi Triplex / R2R knowledge extraction** (`kg.sciphi.ai`, `SciPhi/Triplex` on Hugging Face): LLM fine-tuned for high-precision scientific entity-relation triple extraction from PDFs; output fed into knowledge graphs for structured scientific literature mining; integrated into the R2R RAG platform for [[Retrieval Augmented Generation]] over scientific document corpora
-  - **Gephi** (open source, gephi.org): the dominant interactive graph visualisation platform for knowledge graph exploration; Force Atlas 2 layout algorithm; supports GEXF, GraphML, GDF, and CSV import; used by researchers to explore [[Semantic Web Linked Data Standard]] entity networks, citation clusters, and social knowledge graphs; 1M+ downloads
+  - **Gephi** (open source, gephi.org): the dominant interactive graph visualisation platform for knowledge graph exploration; Force Atlas 2 layout algorithm; supports GEXF, GraphML, GDF, and CSV import; used by researchers to explore [[Semantic Web]] entity networks, citation clusters, and social knowledge graphs; 1M+ downloads
 
 ## Academic Context
 
@@ -447,7 +447,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 ### Trend 3: LLM-Assisted Ontology Engineering
 
-- GPT-4 and [[Constitutional AI Language Model Family]] 3+ routinely used for ontology draft generation and [[Semantic Web Linked Data Standard]] tooling:
+- GPT-4 and [[Constitutional AI Language Model Family]] 3+ routinely used for ontology draft generation and [[Semantic Web]] tooling:
   - Structured prompting produces draft OWL class hierarchies, SPARQL queries, SHACL shape definitions, and R2RML mappings from natural language domain specifications
   - Human ontology engineers validate LLM-generated axioms; ELK/HermiT check consistency before commit; iterative refinement loops reduce manual axiom authoring by 60-80% on structured domain onboarding
   - Protégé 5.6 (Stanford, open source): LLM suggestion panel for axiom completion, property chain identification, and disjointness axiom generation; used by 100K+ ontology engineers globally
@@ -473,19 +473,19 @@ Knowledge Graphing is the discipline and computational framework for constructin
 
 ## UK Context
 
-- The United Kingdom has a high institutional concentration of knowledge graphing and [[Semantic Web Linked Data Standard]] research with several groups internationally pre-eminent. UK academic leadership traces from the foundational contributions of Tim Berners-Lee (CERN/Oxford/MIT, World Wide Web and [[Semantic Web Linked Data Standard]] architecture) and the UK's strong tradition in automated reasoning and description logics.
+- The United Kingdom has a high institutional concentration of knowledge graphing and [[Semantic Web]] research with several groups internationally pre-eminent. UK academic leadership traces from the foundational contributions of Tim Berners-Lee (CERN/Oxford/MIT, World Wide Web and [[Semantic Web]] architecture) and the UK's strong tradition in automated reasoning and description logics.
 
 ### Imperial College London — DKE Group and Knowledge Representation
 
 - Imperial's Data and Knowledge Engineering (DKE) group focuses on scalable OWL reasoning, ontology-based data access (OBDA), and neuro-symbolic [[Cognitive AI]] integrating [[Neural Networks]] with formal logic:
   - Prof. Jeff Pan: scalable OWL reasoning, knowledge graph question answering, [[Explainable AI]] via description logic explanations; co-editor of OWL 2 profiles W3C specification; lead of FaCT++ reasoner development; author of "Exploiting Linked Data and Knowledge Graphs in Large Organisations" (Springer 2017)
-  - Prof. Alessandra Russo: [[Machine Learning Discipline]] for knowledge representation, inductive logic programming, neural-symbolic integration (δILP — differentiable ILP for learning logical rules from data); collaboration with DeepMind on formal reasoning augmentation for neural systems
+  - Prof. Alessandra Russo: [[Machine Learning]] for knowledge representation, inductive logic programming, neural-symbolic integration (δILP — differentiable ILP for learning logical rules from data); collaboration with DeepMind on formal reasoning augmentation for neural systems
   - OBDA (Ontology-Based Data Access) system QuOnto: SPARQL query rewriting over DL-Lite ontologies for direct querying of relational databases without physical RDF materialisation — reduces storage overhead for enterprise data integration
   - NHS Digital collaboration: clinical knowledge graphs for medication safety checking using OWL-encoded SNOMED CT + BNF drug ontology; automated drug-drug interaction detection via DL reasoning over patient medication graphs
 
 ### Open University Knowledge Media Institute (KMi)
 
-- KMi (Prof. Enrico Motta, Prof. Mathieu d'Aquin) holds 30+ years of [[Semantic Web Linked Data Standard]] and knowledge graph research with direct W3C standards participation:
+- KMi (Prof. Enrico Motta, Prof. Mathieu d'Aquin) holds 30+ years of [[Semantic Web]] and knowledge graph research with direct W3C standards participation:
   - W3C standards contributions: RDF/OWL Working Group participation (2001-2012), SPARQL Working Group; co-editors of PROV-O W3C Provenance Ontology (2013)
   - **OpenLearn knowledge graph**: OWL ontology linking 8K+ OU learning resources (courses, videos, articles) to concept entities with learning objective taxonomies; enables semantic navigation and recommendation across the world's largest free open educational resource
   - **BBC [[Linked Data]] programme** (2010-2018): BBC Music, BBC News, BBC Sport RDF knowledge graphs using schema.org + BBC domain ontologies; SPARQL-powered content API serving structured BBC programme and artist data; pioneered linked data in public broadcasting globally
@@ -536,7 +536,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
   - Medical imaging KGs: DICOM image embeddings linked to SNOMED CT procedure/anatomy ontology nodes for [[Biomedical Research|radiology]] report generation and clinical decision support
 - **Verifiable and provenance-tracked KGs using W3C PROV-O**:
   - W3C PROV-O (Provenance Ontology, W3C 2013) encodes who generated, used, and derived each knowledge graph statement; combined with [[Blockchain Network|distributed ledger]] anchoring (IPLD content addressing) for immutable audit trails
-  - EU Data Governance Act (2023), UK Data Protection and Digital Information Act (2024), and AI Act (EU 2024) require audit trails for [[Large Language Models|AI-derived]] factual assertions; provenance-tracked KGs satisfy these requirements
+  - EU Data Governance Act (2023), UK Data Protection and Digital Information Act (2024), and AI Act (EU 2024) require audit trails for [[Large Language Model|AI-derived]] factual assertions; provenance-tracked KGs satisfy these requirements
   - NANOPUBLICATIONS (RDF quad-based provenance units linking assertion, attribution, publication info) adopted by biomedical community (nanopub.net, 1M+ nanopublications) for machine-readable claim-level provenance in open science
   - SHACL-SPARQL rules for continuous data quality monitoring: automated constraint violation detection as KG ingestion pipeline quality gate
 - **SPARQL 1.2 and GQL language convergence**:
@@ -546,8 +546,8 @@ Knowledge Graphing is the discipline and computational framework for constructin
 - **Causal and counterfactual knowledge graphs** (2026-2030):
   - Encoding Pearl do-calculus causal relationships (interventions, confounder adjustments, mediators, frontdoor/backdoor criteria) as typed graph edges in extended OWL ontologies
   - Enables queries like "what would company revenue have been had the supply chain disruption not occurred?" via structural causal model traversal
-  - [[Artificial General Intelligence|AGI]]-relevant: causal KGs provide the structured world model required for counterfactual reasoning — a key gap in current [[Large Language Models|LLM]] capabilities addressed by KG grounding
-- **Federated [[Machine Learning Discipline|learning]] over distributed KGs**:
+  - [[Artificial General Intelligence|AGI]]-relevant: causal KGs provide the structured world model required for counterfactual reasoning — a key gap in current [[Large Language Model|LLM]] capabilities addressed by KG grounding
+- **Federated [[Machine Learning|learning]] over distributed KGs**:
   - Differential privacy (DP-SGD, Rényi DP) and federated KGE training across institutional KGs without sharing raw triples; critical for NHS/HMRC/government data federation under UK GDPR and EU GDPR privacy constraints
   - FedE (Chen et al. 2021, EMNLP): federated knowledge graph embedding with distributed local training and privacy-preserving gradient aggregation; achieves 85-95% of centralised KGE performance with provable differential privacy guarantees
   - UK Digital Twin Hub and ELIXIR-UK federated data infrastructure programmes driving practical federated KG deployments across research data assets
@@ -608,7 +608,7 @@ Knowledge Graphing is the discipline and computational framework for constructin
 ## Note on Source Material
 
 - The original stub page (121 lines) contained primarily tool comparison notes for personal knowledge management (PKM) software (Obsidian, Notion, Logseq, Roam Research) and RAG/vector database links, reflecting the user's original use of "knowledge graphing" to mean personal knowledge management tools rather than the formal KG ontology discipline. These notes have been superseded by the comprehensive ontology-level treatment above. The original PKM tool context remains valid as an application use case (personal knowledge graphs via [[Logseq]], Obsidian with Dataview plugin, and Notion as linked knowledge management systems) but is a specialised subset of the broader knowledge graphing domain covered here.
-- The existing wikilinks to [[Large Language Models]], [[Semantic Web Linked Data Standard]], [[AI-Assisted Ontology Elicitation Method]], [[Agent Frameworks]], [[Agents]], [[Multi-Agent RAG Architecture Compendium]], [[Ollama]], [[Open Webui and Pipelines]], [[Autogen]], and [[Multi-Layer Agentic Governance Framework]] from the original stub have been preserved and contextualised within the enriched content above.
+- The existing wikilinks to [[Large Language Model]], [[Semantic Web]], [[AI-Assisted Ontology Elicitation Method]], [[Agent Frameworks]], [[Agents]], [[Multi-Agent RAG Architecture Compendium]], [[Ollama]], [[Open Webui and Pipelines]], [[Autogen]], and [[Multi-Layer Agentic Governance Framework]] from the original stub have been preserved and contextualised within the enriched content above.
 
 ## Metadata
 

@@ -9,25 +9,41 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:machine-learning-discipline-framework
+  - urn:ngm:class:ai-infrastructure
+hasPart:
+  - urn:ngm:class:python-programming-language
 requires:
   - urn:ngm:class:cuda
   - urn:ngm:class:gpu-compute
+  - urn:ngm:class:numpy
 enables:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:neural-network
+  - urn:ngm:class:model-training
+  - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:computer-vision
+  - urn:ngm:class:transfer-learning
+contrastsWith:
+  - urn:ngm:class:tensor-flow
+  - urn:ngm:class:jax
+bridgesTo:
+  - urn:ngm:class:robotics
+  - urn:ngm:class:spatial-computing
 uses:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:batch-processing
+  - urn:ngm:class:machine-learning-discipline-framework
+  - urn:ngm:class:hugging-face
 supports:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:parameter-efficient-fine-tuning
 relatedTo:
   - urn:ngm:class:open-source-framework
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:model-inference
 ---
 
 # PyTorch

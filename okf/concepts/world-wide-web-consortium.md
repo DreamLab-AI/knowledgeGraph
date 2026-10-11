@@ -12,24 +12,31 @@ is-a:
 hasPart:
   - urn:ngm:class:working-group
   - urn:ngm:class:web-accessibility-initiative
+  - urn:ngm:class:w3-c-did-core
+  - urn:ngm:class:verifiable-credential-standard
 requires:
   - urn:ngm:class:open-standard
 enables:
   - urn:ngm:class:web-interoperability
   - urn:ngm:class:web-accessibility
+  - urn:ngm:class:interoperability
+  - urn:ngm:class:interoperability-standard
+  - urn:ngm:class:accessibility
 implements:
   - urn:ngm:class:consensus-standardisation
 contrastsWith:
   - urn:ngm:class:proprietary-standard
 bridgesTo:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:html
   - urn:ngm:class:rdf
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:semantic-web-linked-data-standard-standards
 supports:
   - urn:ngm:class:web-standards
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 standardizedBy:
   - urn:ngm:class:w3c-recommendation-process
 partOf:
@@ -37,6 +44,11 @@ partOf:
 relatedTo:
   - urn:ngm:class:internet-engineering-task-force
   - urn:ngm:class:digital-identity-standards
+  - urn:ngm:class:web-standard
+  - urn:ngm:class:web-standards
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:linked-data
+  - urn:ngm:class:ietf
 ---
 
 # World Wide Web Consortium

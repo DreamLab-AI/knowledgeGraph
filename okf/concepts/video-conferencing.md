@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:telemedicine
   - urn:ngm:class:face-to-face-interaction
 dependsOn:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 implements:
   - urn:ngm:class:web-rtc
   - urn:ngm:class:session-initiation-protocol
@@ -43,7 +43,7 @@ supports:
   - urn:ngm:class:remote-pair-programming
 standardizedBy:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:unified-communications
 relatedTo:

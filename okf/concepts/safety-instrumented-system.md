@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:safety-lifecycle
 uses:
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
 relatedTo:
   - urn:ngm:class:iec-62061
 ---

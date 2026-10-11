@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spiral-galaxy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spiral galaxy is a galaxy with spiral arms, usually a rotating disk of stars and a central bulge.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:galaxy",

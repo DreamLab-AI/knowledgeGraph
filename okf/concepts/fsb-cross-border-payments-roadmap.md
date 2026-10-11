@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:financial-regulation
 relatedTo:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-border-settlement
 ---
 

@@ -1,6 +1,6 @@
 HMAC (hash-based message authentication code) is a construction that combines a cryptographic hash function with a secret key to produce a fixed-length tag verifying both the integrity and the authenticity of a message. It applies the underlying hash twice with key-derived inner and outer padding, providing security that does not depend on the hash being collision-resistant in the same way a plain hash would. HMAC is widely used to authenticate API requests, tokens, and protocol messages.
 
-- [[HMAC]] is a keyed message authentication code built on a [[Cryptography]] hash function such as [[SHA-256]]. It implements message [[Authentication]] and integrity, supports protocols like [[TLS]], and underpins signing of a [[Token]] by binding a secret key to message content.
+- [[HMAC]] is a keyed message authentication code built on a [[Cryptography]] hash function such as [[SHA-256]]. It implements message [[Authentication]] and integrity, supports protocols like [[Transport Layer Security]], and underpins signing of a [[Token]] by binding a secret key to message content.
 
 ### Overview
 

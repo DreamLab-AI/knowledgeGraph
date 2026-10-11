@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:digital-economy
 hasPart:
   - urn:ngm:class:wallet-infrastructure
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:blockchain-oracle
 requires:
   - urn:ngm:class:blockchain-network
@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:regulatory-compliance
 relatedTo:
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:interoperability-protocol
 ---

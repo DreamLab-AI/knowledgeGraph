@@ -56,12 +56,12 @@ supports:
   - urn:ngm:class:image-generation
   - urn:ngm:class:video-generation
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:inpainting
   - urn:ngm:class:image-upscaling
   - urn:ngm:class:face-restoration
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:real-esrgan
   - urn:ngm:class:animatediff
   - urn:ngm:class:flux-1
@@ -76,11 +76,11 @@ partOf:
   - urn:ngm:class:open-generative-ai-tools
 relatedTo:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification
   - urn:ngm:class:comfy-node-registry
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:comfy-cli
   - urn:ngm:class:openart-workflow-registry
   - urn:ngm:class:civitai-workflow-sharing

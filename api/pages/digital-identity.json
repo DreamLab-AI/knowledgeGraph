@@ -18,12 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:digital-signature",
@@ -44,7 +44,7 @@
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -54,8 +54,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:access-control",
@@ -132,8 +132,8 @@
         "label": "W3C DID Specification"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
       }
     ],
     "partOf": [
@@ -144,7 +144,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "KYC Know Your Customer"
       }
     ]
@@ -163,10 +163,6 @@
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:decentralised-identifier",
-        "label": "Decentralised Identifier"
-      },
       {
         "id": "urn:ngm:class:verifiable-claim",
         "label": "Verifiable Claim"
@@ -194,6 +190,10 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
     "requires": [
@@ -228,10 +228,6 @@
         "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
-      },
-      {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
       },
@@ -254,6 +250,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -327,7 +327,7 @@
     "standardizedBy": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:w3-c-did-core",
@@ -383,7 +383,7 @@
       "label": "Authentication"
     },
     {
-      "slug": "authorization",
+      "slug": "authorisation",
       "label": "Authorization"
     },
     {
@@ -425,10 +425,6 @@
       "label": "BrightID"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
       "slug": "central-bank-digital-currency",
       "label": "Central Bank Digital Currency"
     },
@@ -459,14 +455,6 @@
     {
       "slug": "decentralised-identifier",
       "label": "Decentralised Identifier"
-    },
-    {
-      "slug": "decentralised-identifiers",
-      "label": "Decentralised Identifiers"
-    },
-    {
-      "slug": "decentralized-identifier",
-      "label": "Decentralized Identifier"
     },
     {
       "slug": "digital-avatar",
@@ -577,8 +565,8 @@
       "label": "User Consent Token"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "virtual-identity",
@@ -609,8 +597,8 @@
       "label": "Zero Knowledge"
     },
     {
-      "slug": "e-idas",
-      "label": "eIDAS"
+      "slug": "eidas-regulation",
+      "label": "eIDAS Regulation"
     }
   ]
 }

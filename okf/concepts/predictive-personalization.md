@@ -29,9 +29,9 @@ bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:differential-privacy
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:behavioural-analytics
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:collaborative-systems-modality-filtering
   - urn:ngm:class:neural-network
   - urn:ngm:class:user-profiling

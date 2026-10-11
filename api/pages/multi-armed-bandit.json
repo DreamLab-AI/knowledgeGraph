@@ -60,9 +60,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -129,12 +129,16 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -143,10 +147,6 @@
       {
         "id": "urn:ngm:class:dataset-curation",
         "label": "Dataset Curation"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
       }
     ],
     "enables": [
@@ -167,6 +167,10 @@
         "label": "Recommendation System"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -177,10 +181,6 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
       }
     ],
     "dependsOn": [
@@ -189,8 +189,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -261,12 +261,16 @@
         "label": "Unsupervised Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -291,16 +295,16 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "uses": [
@@ -317,6 +321,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
@@ -325,26 +333,26 @@
         "label": "Gradient Descent"
       },
       {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:hypothesis-testing",
-        "label": "Hypothesis Testing"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -365,13 +373,17 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
@@ -383,7 +395,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

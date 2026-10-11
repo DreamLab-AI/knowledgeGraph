@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:liveness
 enables:
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:graceful-degradation
 dependsOn:

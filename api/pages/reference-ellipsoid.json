@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reference-ellipsoid",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A reference ellipsoid is a smooth, bi-axial surface defined to approximate the surface of the Earth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

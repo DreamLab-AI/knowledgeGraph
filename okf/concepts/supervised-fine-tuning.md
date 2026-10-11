@@ -38,13 +38,13 @@ bridgesTo:
   - urn:ngm:class:ai-safety
 uses:
   - urn:ngm:class:parameter-efficient-fine-tuning
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
 partOf:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 relatedTo:
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:catastrophic-forgetting
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Supervised Fine Tuning

@@ -45,7 +45,7 @@ uses:
   - urn:ngm:class:g-rpc
   - urn:ngm:class:apache-kafka
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:asyncapi
 relatedTo:
   - urn:ngm:class:enterprise-architecture

@@ -9,7 +9,6 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:ai-research-area
-  - urn:ngm:class:decision-theory
   - urn:ngm:class:operations-research
   - urn:ngm:class:cognitive-science
 hasPart:
@@ -47,7 +46,7 @@ bridgesTo:
   - urn:ngm:class:risk-management
 uses:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:deep-learning
   - urn:ngm:class:heuristics
@@ -59,16 +58,17 @@ supports:
   - urn:ngm:class:supply-chain-management
 standardizedBy:
   - urn:ngm:class:iso-31000
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:control-theory
   - urn:ngm:class:operations-research
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
+  - urn:ngm:class:decision-theory
 ---
 
 # Decision Making

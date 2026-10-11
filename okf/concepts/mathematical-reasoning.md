@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:scientific-reasoning
   - urn:ngm:class:code-verification
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:chain-of-thought-reasoning
 contrastsWith:
   - urn:ngm:class:commonsense-reasoning

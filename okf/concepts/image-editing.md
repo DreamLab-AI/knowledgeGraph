@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:visual-effects
   - urn:ngm:class:content-provenance
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 contrastsWith:
   - urn:ngm:class:image-generation

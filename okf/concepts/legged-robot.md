@@ -15,7 +15,7 @@ hasPart:
 uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:sensor-fusion
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 partOf:
   - urn:ngm:class:mobile-robot
 relatedTo:

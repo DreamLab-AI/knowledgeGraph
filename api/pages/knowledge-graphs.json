@@ -90,12 +90,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -190,8 +190,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "requires": [
@@ -318,8 +318,8 @@
         "label": "Semantic Network"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "supports": [

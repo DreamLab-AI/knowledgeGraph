@@ -359,7 +359,7 @@ Sampling is the family of computational and statistical procedures that draw rep
 
 ### Diffusion Model Sampling Strategies
 
-- **Diffusion models** (DDPM, Song et al. score matching, Rombach et al. LDM / [[Stable Diffusion Image Model]]) define a forward noising process q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) that gradually adds Gaussian noise over T = 1000 steps.
+- **Diffusion models** (DDPM, Song et al. score matching, Rombach et al. LDM / [[Stable Diffusion]]) define a forward noising process q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) that gradually adds Gaussian noise over T = 1000 steps.
 - A neural score network ε_θ(xₜ, t) ≈ -√(1-ᾱₜ) ∇_{xₜ} log p(xₜ) is learned to reverse the process.
 - Sampling = running the reverse process from xT ~ N(0, I) to x₀.
 - The schedule, step count, and ODE/SDE solver together determine both quality and speed; typical 2025 production trade-off is 20-30 NFE (network function evaluations) for high quality, 4-8 NFE for fast preview.

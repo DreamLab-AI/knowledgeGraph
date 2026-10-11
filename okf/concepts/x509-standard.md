@@ -14,7 +14,7 @@ hasPart:
 requires:
   - urn:ngm:class:certificate-authority
 enables:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 dependsOn:
   - urn:ngm:class:certificate-authority
 implements:
@@ -32,7 +32,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:trust-infrastructure
 relatedTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:trust-infrastructure
 ---
 

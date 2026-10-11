@@ -121,7 +121,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {
@@ -301,7 +301,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

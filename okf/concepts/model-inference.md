@@ -8,7 +8,7 @@ description: Model inference is the operational phase of a machine learning syst
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:model-training
   - urn:ngm:class:inference-engine

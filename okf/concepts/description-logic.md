@@ -89,7 +89,7 @@ uses:
   - urn:ngm:class:fact-reasoner
   - urn:ngm:class:whelk-reasoner
 supports:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology-engineering
   - urn:ngm:class:biomedical-ontology
   - urn:ngm:class:neuro-symbolic-ai
@@ -98,8 +98,8 @@ supports:
   - urn:ngm:class:snomed-ct
   - urn:ngm:class:gene-ontology
 standardizedBy:
-  - urn:ngm:class:w3-c
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:world-wide-web-consortium
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
 partOf:
   - urn:ngm:class:knowledge-representation
 relatedTo:

@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:directed-acyclic-graph
   - urn:ngm:class:data-schema
 contrastsWith:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 bridgesTo:
   - urn:ngm:class:blockchain-provenance
   - urn:ngm:class:supply-chain-transparency
@@ -35,7 +35,7 @@ supports:
   - urn:ngm:class:gdpr-compliance
 standardizedBy:
   - urn:ngm:class:open-lineage
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
 partOf:
   - urn:ngm:class:data-governance
   - urn:ngm:class:metadata-management

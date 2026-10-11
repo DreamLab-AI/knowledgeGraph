@@ -36,8 +36,8 @@ uses:
   - urn:ngm:class:ontology
   - urn:ngm:class:thesaurus
   - urn:ngm:class:faceted-classification
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 standardizedBy:
   - urn:ngm:class:iso-25964
   - urn:ngm:class:dublin-core

@@ -8,7 +8,7 @@ description: Intel SGX (Software Guard Extensions) is a set of Intel processor i
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 hasPart:
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:remote-attestation
@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:encryption
   - urn:ngm:class:key-management
 implements:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:hardware-security-module
 contrastsWith:
   - urn:ngm:class:arm-trust-zone
@@ -33,12 +33,12 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:blockchain
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:encryption
   - urn:ngm:class:hardware
 uses:
   - urn:ngm:class:aes-encryption
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:secure-multi-party-computation

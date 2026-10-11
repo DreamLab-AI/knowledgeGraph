@@ -30,7 +30,7 @@ dependsOn:
 implements:
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:self-regulation
 bridgesTo:
@@ -44,7 +44,7 @@ supports:
   - urn:ngm:class:digital-services-act
   - urn:ngm:class:intellectual-property-law
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso-standards
 relatedTo:
   - urn:ngm:class:cybersecurity

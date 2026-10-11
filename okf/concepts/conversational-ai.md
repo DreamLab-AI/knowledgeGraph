@@ -28,9 +28,9 @@ requires:
   - urn:ngm:class:language-modeling
   - urn:ngm:class:context-management
   - urn:ngm:class:knowledge-base
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:training-data
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 enables:
   - urn:ngm:class:virtual-assistant
   - urn:ngm:class:customer-service-automation
@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:accessibility
   - urn:ngm:class:agentic-ai-workflow
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:speech-processing
   - urn:ngm:class:deep-learning
   - urn:ngm:class:pre-trained-language-model
@@ -62,7 +62,7 @@ bridgesTo:
   - urn:ngm:class:autonomous-robot
   - urn:ngm:class:spatial-computing
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:text-to-speech
@@ -79,9 +79,9 @@ supports:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:human-robot-interaction
 standardizedBy:
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:nist-ai-standards
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:retrieval-augmented-generation

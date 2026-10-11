@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:ai-technique
 requires:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:training-data
 contrastsWith:
   - urn:ngm:class:differential-privacy

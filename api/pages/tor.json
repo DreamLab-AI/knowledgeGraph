@@ -90,7 +90,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       }
     ],
@@ -140,12 +140,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -166,12 +166,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:key-exchange",
         "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:network-addressing",

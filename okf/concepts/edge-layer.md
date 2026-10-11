@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:edge-computing-layer
   - urn:ngm:class:application-layer
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:internet-of-things
 ---
 

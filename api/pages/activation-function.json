@@ -303,8 +303,8 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "layer-normalization",
-      "label": "Layer Normalization"
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
     },
     {
       "slug": "ms-phi-models",

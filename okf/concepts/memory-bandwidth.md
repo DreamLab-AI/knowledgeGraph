@@ -18,7 +18,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:latency
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:interconnect

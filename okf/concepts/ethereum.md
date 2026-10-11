@@ -25,21 +25,23 @@ requires:
   - urn:ngm:class:validator-node
   - urn:ngm:class:public-key-cryptography
 enables:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:nft
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:account-abstraction
   - urn:ngm:class:restaking
   - urn:ngm:class:rollup
+  - urn:ngm:class:decentralized-finance-de-fi
+  - urn:ngm:class:token-standard
 implements:
   - urn:ngm:class:eip-1559
   - urn:ngm:class:eip-4844
-  - urn:ngm:class:eip
-  - urn:ngm:class:erc20
-  - urn:ngm:class:erc721
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:ethereum-improvement-proposal
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 contrastsWith:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:solana
@@ -54,6 +56,13 @@ uses:
   - urn:ngm:class:token-standard
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:elliptic-curve-cryptography
+  - urn:ngm:class:proof-of-stake
+  - urn:ngm:class:consensus-mechanism
+relatedTo:
+  - urn:ngm:class:blockchain
+  - urn:ngm:class:cryptocurrency
+  - urn:ngm:class:distributed-ledger-technology
+  - urn:ngm:class:mi-ca-regulation
 ---
 
 # Ethereum

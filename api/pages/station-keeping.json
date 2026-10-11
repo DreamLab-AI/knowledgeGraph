@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:station-keeping",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Station keeping is the set of orbit-control manoeuvres used to keep a spacecraft within defined orbital, phase, longitude, ground-track or relative-position limits despite perturbations.[^esa-geo-station-keeping][^esa-flight-dynamics]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

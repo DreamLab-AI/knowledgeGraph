@@ -57,7 +57,7 @@ enables:
   - urn:ngm:class:community-understanding
   - urn:ngm:class:institutional-due-diligence
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:evm-event-logs
   - urn:ngm:class:snapshot
   - urn:ngm:class:gnosis-safe
@@ -95,7 +95,7 @@ uses:
   - urn:ngm:class:ipfs
   - urn:ngm:class:time-series-analysis
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:sql-analytics
   - urn:ngm:class:graph-databases

@@ -29,7 +29,7 @@
         "label": "Knowledge Integration"
       },
       {
-        "id": "urn:ngm:class:semantic-reasoning-engine",
+        "id": "urn:ngm:class:semantic-reasoning",
         "label": "Semantic Reasoning"
       }
     ],
@@ -81,7 +81,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -307,8 +307,8 @@
         "label": "Semantic Network"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "supports": [
@@ -323,7 +323,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],

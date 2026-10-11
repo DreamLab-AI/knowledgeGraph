@@ -4,7 +4,7 @@ Self-consistency is a decoding and prompting strategy for large language models 
 
 - Self-consistency was introduced by Wang et al. (2022) as a response to the fragility of single-sample [[Chain of Thought]] prompting, where one erroneous intermediate step can propagate to a wrong final answer.
 - The core insight is statistical: if the model's conditional distribution over reasoning traces places higher probability mass on correct derivations, then sampling repeatedly and aggregating by [[Majority Voting]] acts as a low-cost, training-free mechanism to increase accuracy.
-- The technique requires no gradient updates, no labelled supervision beyond the original prompt, and no architecture changes — making it applicable to any [[Large Language Models]] accessed through an inference API.
+- The technique requires no gradient updates, no labelled supervision beyond the original prompt, and no architecture changes — making it applicable to any [[Large Language Model]] accessed through an inference API.
 - Its primary cost is inference-time compute: producing k samples multiplies the token budget k-fold, which makes [[Test-Time Compute]] scaling a central design consideration.
 - Since its introduction, self-consistency has become a de-facto baseline for evaluating advanced reasoning capabilities of frontier models and has informed the broader field of [[Test-Time Compute]] scaling research.
 

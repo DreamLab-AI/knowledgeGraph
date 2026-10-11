@@ -36,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:audit-logging",
+        "id": "urn:ngm:class:logging",
         "label": "Logging"
       },
       {
@@ -107,9 +107,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -139,12 +139,12 @@
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:continuous-integration",
-        "label": "Continuous Integration"
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
       }
     ],
     "requires": [
@@ -173,12 +173,12 @@
         "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:configuration-management",
-        "label": "Configuration Management"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       },
       {
-        "id": "urn:ngm:class:model-based-systems-engineering",
-        "label": "Model-Based Systems Engineering"
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
@@ -203,16 +203,16 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
-      },
-      {
-        "id": "urn:ngm:class:platform-engineering",
-        "label": "Platform Engineering"
       }
     ],
     "contrastsWith": [
@@ -221,20 +221,8 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -255,16 +243,16 @@
         "label": "Security Engineering"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -285,20 +273,12 @@
         "label": "Static Analysis"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
-      },
-      {
         "id": "urn:ngm:class:formal-methods",
         "label": "Formal Methods"
       },
       {
-        "id": "urn:ngm:class:simulation",
-        "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
       }
     ],
     "supports": [
@@ -309,18 +289,6 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
-      },
-      {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -345,12 +313,12 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "relatedTo": [
@@ -367,24 +335,24 @@
         "label": "Microservices"
       },
       {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
       },
       {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      },
+      {
         "id": "urn:ngm:class:refactoring",
         "label": "Refactoring"
-      },
-      {
-        "id": "urn:ngm:class:technical-debt",
-        "label": "Technical Debt"
-      },
-      {
-        "id": "urn:ngm:class:test-driven-development",
-        "label": "Test-Driven Development"
-      },
-      {
-        "id": "urn:ngm:class:computational-complexity-theory",
-        "label": "Complexity Theory"
       }
     ]
   },

@@ -24,12 +24,12 @@ hasPart:
   - urn:ngm:class:optical-fibre
   - urn:ngm:class:wireless-radio
   - urn:ngm:class:zigbee
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:ethernet-phy
   - urn:ngm:class:serdes
   - urn:ngm:class:modulation
   - urn:ngm:class:transceiver
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:photonic-integrated-circuit
   - urn:ngm:class:co-packaged-optics
   - urn:ngm:class:cable-plant

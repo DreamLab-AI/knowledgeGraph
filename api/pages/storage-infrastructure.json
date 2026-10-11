@@ -134,7 +134,7 @@
         "label": "Big Data Analytics"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -158,8 +158,8 @@
         "label": "Vector Search"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:data-lake",
@@ -472,6 +472,11 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -485,28 +490,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       },
       {
-        "id": "urn:ngm:class:cache-layer",
-        "label": "Cache Layer"
-      },
-      {
-        "id": "urn:ngm:class:connection-pool",
-        "label": "Connection Pool"
-      },
-      {
-        "id": "urn:ngm:class:data-availability-sampling",
-        "label": "Data Availability Sampling"
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
       }
     ],
     "requires": [
@@ -843,20 +848,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:avail",
         "label": "Avail"
       },
       {
         "id": "urn:ngm:class:celestia",
         "label": "Celestia"
-      },
-      {
-        "id": "urn:ngm:class:clean-architecture",
-        "label": "Clean Architecture"
-      },
-      {
-        "id": "urn:ngm:class:domain-driven-design",
-        "label": "Domain-Driven Design"
       }
     ]
   },

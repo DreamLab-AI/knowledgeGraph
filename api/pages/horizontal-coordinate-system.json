@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:horizontal-coordinate-system",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A horizontal coordinate system is a two-dimensional coordinate reference system, such as geodetic latitude and longitude or projected northing and easting, that is paired with a vertical system when a height is needed.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

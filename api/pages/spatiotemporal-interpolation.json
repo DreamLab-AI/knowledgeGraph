@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatiotemporal-interpolation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spatiotemporal interpolation estimates a quantity at unsampled places and times from nearby observations, with time treated as an explicit dimension alongside space.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

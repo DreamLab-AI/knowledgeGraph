@@ -94,15 +94,15 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -197,7 +197,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -209,7 +209,7 @@
         "label": "Open Source AI"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       }
     ],
@@ -230,7 +230,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -264,9 +264,9 @@
       "slug": "high-performance-computing"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:network-component",
@@ -274,19 +274,24 @@
       "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:networkcomponent",
-      "label": "Networkcomponent",
-      "slug": "networkcomponent"
-    },
-    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
     },
     {
       "id": "urn:ngm:class:computing-infrastructure",
@@ -304,9 +309,14 @@
       "slug": "digital-infrastructure"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:distributed-collaboration",
@@ -314,9 +324,19 @@
       "slug": "distributed-collaboration"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -339,8 +359,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -513,20 +533,20 @@
         "label": "General-Purpose Computing"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:centralised-workflow",
-        "label": "Centralised Workflow"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:co-located-collaboration",
-        "label": "Co-Located Collaboration"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
       }
     ],
     "bridgesTo": [
@@ -551,7 +571,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -585,16 +605,16 @@
         "label": "PyTorch"
       },
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
-        "label": "PyTorch"
-      },
-      {
         "id": "urn:ngm:class:torchtitan",
         "label": "TorchTitan"
       },
       {
         "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia"
+      },
+      {
+        "id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
       }
     ],
     "supports": [
@@ -615,20 +635,20 @@
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-policy",
-        "label": "AI Policy"
       }
     ],
     "standardizedBy": [
@@ -641,12 +661,20 @@
         "label": "MPI Standard"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -655,32 +683,32 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       },
       {
         "id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
       },
       {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:telecommunications-infrastructure",
         "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [

@@ -10,7 +10,7 @@ quality: 0.88
 is-a:
   - urn:ngm:class:ai-governance-and-ethics
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:decision-theory
   - urn:ngm:class:robustness
   - urn:ngm:class:neural-network
@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:uncertainty-quantification
   - urn:ngm:class:adversarial-machine-learning
   - urn:ngm:class:value-learning
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 supports:
   - urn:ngm:class:ai-policy
   - urn:ngm:class:ai-regulation
@@ -55,9 +55,9 @@ relatedTo:
   - urn:ngm:class:reward-hacking
   - urn:ngm:class:specification-gaming
   - urn:ngm:class:prompt-injection
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
 ---
 

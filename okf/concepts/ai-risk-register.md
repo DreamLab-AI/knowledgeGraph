@@ -33,8 +33,8 @@ dependsOn:
 implements:
   - urn:ngm:class:iso-31000
   - urn:ngm:class:iso-iec-23894
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:iso-iec-23894-2023
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:iso-iec-23894
 uses:
   - urn:ngm:class:red-teaming
   - urn:ngm:class:algorithmic-auditing
@@ -54,7 +54,7 @@ relatedTo:
   - urn:ngm:class:risk-management
   - urn:ngm:class:enterprise-risk-management
   - urn:ngm:class:model-drift
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # AI Risk Register

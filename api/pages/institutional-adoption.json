@@ -63,7 +63,7 @@
         "label": "Settlement Infrastructure"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -88,7 +88,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -128,11 +128,11 @@
         "label": "Tokenised Securities"
       },
       {
-        "id": "urn:ngm:class:de-fi-protocol",
+        "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -308,8 +308,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
@@ -356,8 +356,8 @@
         "label": "Workspace Tools"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:computer-supported-cooperative-work",

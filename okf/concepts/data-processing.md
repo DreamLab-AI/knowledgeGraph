@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:data-storage
   - urn:ngm:class:schema-management
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:data-analytics
   - urn:ngm:class:business-intelligence

@@ -8,7 +8,7 @@ description: "Transfer learning is a machine learning paradigm in which knowledg
 maturity: mature
 quality: 0.76
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 hasPart:
   - urn:ngm:class:fine-tuning
@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:pre-trained-model
   - urn:ngm:class:feature-representation
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:few-shot-learning
   - urn:ngm:class:zero-shot-learning
   - urn:ngm:class:foundation-model

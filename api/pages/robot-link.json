@@ -161,9 +161,9 @@
       "slug": "automation"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:industrial-robot",
@@ -221,11 +221,6 @@
       "slug": "electromechanical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-system",
-      "label": "Embedded System",
-      "slug": "embedded-system"
-    },
-    {
       "id": "urn:ngm:class:embodied-ai",
       "label": "Embodied AI",
       "slug": "embodied-ai"
@@ -259,6 +254,11 @@
       "id": "urn:ngm:class:programmable-logic-controller",
       "label": "Programmable Logic Controller",
       "slug": "programmable-logic-controller"
+    },
+    {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
     },
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -296,6 +296,11 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -316,14 +321,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:real-time-control",
-      "label": "Real-Time Control",
-      "slug": "real-time-control"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robot",
@@ -346,14 +346,14 @@
       "slug": "simulation"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain",
       "slug": "technology-domain"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -369,11 +369,6 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:human-computer-interaction",

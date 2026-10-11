@@ -30,10 +30,10 @@ bridgesTo:
   - urn:ngm:class:interoperability-standards
 uses:
   - urn:ngm:class:http
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:oauth
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:interoperability-standards
 relatedTo:
   - urn:ngm:class:software-architecture

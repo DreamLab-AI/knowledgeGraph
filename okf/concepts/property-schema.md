@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:sparql
 implements:
   - urn:ngm:class:linked-data
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 standardizedBy:
   - urn:ngm:class:rdf
 partOf:

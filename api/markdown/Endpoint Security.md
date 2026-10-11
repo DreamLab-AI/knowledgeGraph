@@ -10,7 +10,7 @@ The practice of protecting end-user and edge devices — laptops, desktops, serv
 
 The defining shift of the last decade is from signature-based antivirus to **endpoint detection and response (EDR)**: a resident agent streams behavioural telemetry to a cloud analytics backend, where detections are expressed as behaviours (credential dumping, ransomware-style mass encryption, living-off-the-land binary abuse) mapped to frameworks such as MITRE ATT&CK. Responders can then isolate a host from the network, kill processes, and pull forensic artefacts remotely. Extended detection and response (XDR) correlates this endpoint telemetry with identity, email, and [[Network Security]] signals.
 
-[[Remote Work]] made endpoint security load-bearing: devices now operate outside any network perimeter, on untrusted networks, so controls must travel with the device. This is why endpoint posture — patch level, EDR presence, encryption status — is a core signal in zero-trust access decisions, and why endpoint security is one of the strongest layers in a [[Defense In Depth]] architecture rather than a substitute for the others.
+[[Remote Work]] made endpoint security load-bearing: devices now operate outside any network perimeter, on untrusted networks, so controls must travel with the device. This is why endpoint posture — patch level, EDR presence, encryption status — is a core signal in zero-trust access decisions, and why endpoint security is one of the strongest layers in a [[Defence In Depth]] architecture rather than a substitute for the others.
 
 ## Current Landscape
 

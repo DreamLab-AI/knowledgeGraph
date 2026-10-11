@@ -285,7 +285,7 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -311,8 +311,8 @@
         "label": "Laplace Mechanism"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:random-noise",
@@ -425,7 +425,7 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       }
     ]

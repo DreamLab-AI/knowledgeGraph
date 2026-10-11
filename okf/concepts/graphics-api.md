@@ -85,7 +85,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:khronos-group
   - urn:ngm:class:microsoft
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:apple-inc-technology-corporation
   - urn:ngm:class:gpu-for-the-web-working-group
 relatedTo:

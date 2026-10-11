@@ -6,7 +6,7 @@ Quantum error correction is the set of techniques that protect quantum informati
 
 - Quantum states cannot be copied or measured directly without disturbance, so classical redundancy schemes do not transfer; quantum codes instead spread information non-locally and read out only error syndromes.
 - A logical qubit is built from many noisy physical qubits, and repeated syndrome extraction identifies which correctable error occurred so it can be reversed.
-- The threshold theorem shows that if physical error rates sit below a code-specific threshold, arbitrarily reliable [[Quantum Computation Paradigm]] computation is achievable by scaling the code distance.
+- The threshold theorem shows that if physical error rates sit below a code-specific threshold, arbitrarily reliable [[Quantum Computing]] computation is achievable by scaling the code distance.
 
 ### Mechanisms
 
@@ -18,7 +18,7 @@ Quantum error correction is the set of techniques that protect quantum informati
 
 ### Applications
 
-- Realising fault-tolerant [[Quantum Computation Paradigm]] devices at scale.
+- Realising fault-tolerant [[Quantum Computing]] devices at scale.
 - Preserving entanglement for long-distance [[Quantum Cryptography]] links.
 - Underpinning resilient quantum [[Infrastructure]] and repeaters.
 - Benchmarking hardware against the error-correction threshold.

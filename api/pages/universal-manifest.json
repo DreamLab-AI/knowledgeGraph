@@ -48,23 +48,23 @@
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schema"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -321,7 +321,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -359,7 +359,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

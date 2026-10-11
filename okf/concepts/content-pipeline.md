@@ -24,7 +24,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:asset-pipeline
   - urn:ngm:class:dependency-graph
@@ -36,7 +36,7 @@ supports:
   - urn:ngm:class:extended-reality
 relatedTo:
   - urn:ngm:class:workflow-automation
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:shader-compilation
 ---
 

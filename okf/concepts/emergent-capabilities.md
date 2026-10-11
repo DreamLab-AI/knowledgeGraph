@@ -8,7 +8,7 @@ description: Emergent Capabilities are abilities that appear in large language m
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:emergent-behavior
   - urn:ngm:class:scaling-laws
 hasPart:
@@ -54,7 +54,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:benchmark-evaluation
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:big-bench
 supports:
   - urn:ngm:class:ai-safety

@@ -150,11 +150,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:simulation",
       "label": "Simulation",
       "slug": "simulation"
@@ -165,14 +160,14 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin",
       "slug": "digital-twin"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -411,7 +406,7 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -423,20 +418,20 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
       }
     ],
     "uses": [
@@ -533,8 +528,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -545,10 +540,6 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -573,8 +564,8 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",

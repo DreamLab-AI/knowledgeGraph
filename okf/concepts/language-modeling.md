@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:natural-language-processing
 hasPart:
   - urn:ngm:class:causal-language-modelling
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 requires:
   - urn:ngm:class:transformer
   - urn:ngm:class:deep-learning
@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:tokenization
   - urn:ngm:class:training-data
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:text-generation
   - urn:ngm:class:question-answering
   - urn:ngm:class:machine-translation
@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:multimodal-ai-architecture-ai
 uses:
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:fine-tuning
 relatedTo:
   - urn:ngm:class:natural-language-processing

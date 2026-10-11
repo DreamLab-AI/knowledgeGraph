@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:monte-carlo-simulation
 relatedTo:
   - urn:ngm:class:statistical-modelling
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Probabilistic Modelling

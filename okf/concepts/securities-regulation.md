@@ -93,7 +93,7 @@ uses:
   - urn:ngm:class:decentralisation
   - urn:ngm:class:progressive-decentralisation-framework
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft
   - urn:ngm:class:real-world-asset-tokenisation
   - urn:ngm:class:spot-bitcoin-etf
@@ -115,7 +115,7 @@ standardizedBy:
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:cpmi
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-custody
   - urn:ngm:class:initial-coin-offering
   - urn:ngm:class:aml-kyc-compliance

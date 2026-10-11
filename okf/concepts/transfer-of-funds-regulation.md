@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:financial-regulation
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:beneficial-ownership
 enables:
   - urn:ngm:class:regulatory-compliance
@@ -21,7 +21,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:payment-system
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:counter-terrorist-financing
 standardizedBy:
   - urn:ngm:class:financial-action-task-force

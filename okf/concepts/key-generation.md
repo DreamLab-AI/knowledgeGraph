@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:symmetric-encryption
 partOf:
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:private-key
   - urn:ngm:class:public-key

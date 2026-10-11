@@ -17,7 +17,7 @@ supports:
   - urn:ngm:class:accountability
   - urn:ngm:class:governance
 relatedTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:democratic-governance
   - urn:ngm:class:privacy
 ---

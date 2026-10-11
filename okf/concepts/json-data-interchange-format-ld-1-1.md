@@ -12,17 +12,17 @@ is-a:
 requires:
   - urn:ngm:class:rdf
   - urn:ngm:class:iri
-  - urn:ngm:class:json-data-interchange-format
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
+  - urn:ngm:class:json
 enables:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:semantic-interoperability
   - urn:ngm:class:linked-data-platform
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 implements:
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:owl2
 contrastsWith:
   - urn:ngm:class:turtle
@@ -31,10 +31,10 @@ contrastsWith:
   - urn:ngm:class:json-data-interchange-format-schema
 bridgesTo:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:knowledge-graph-embedding
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:context-document
   - urn:ngm:class:rdf-dataset
 standardizedBy:

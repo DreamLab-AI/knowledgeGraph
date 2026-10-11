@@ -10,14 +10,14 @@ quality: 0.62
 is-a:
   - urn:ngm:class:deep-learning-framework
 hasPart:
-  - urn:ngm:class:tokenizer
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:tokeniser
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:attention-mechanism
 enables:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:model-inference
 dependsOn:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:transformer-architecture
 implements:
   - urn:ngm:class:vision-transformer

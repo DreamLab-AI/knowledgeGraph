@@ -9,10 +9,17 @@ maturity: emerging
 quality: 0.5
 is-a:
   - urn:ngm:class:ai-technique
+  - urn:ngm:class:neural-network
+requires:
+  - urn:ngm:class:activation-function
 enables:
   - urn:ngm:class:deep-learning
+  - urn:ngm:class:transformer-architecture
 contrastsWith:
   - urn:ngm:class:batch-normalisation
+bridgesTo:
+  - urn:ngm:class:deep-learning
+  - urn:ngm:class:backpropagation
 partOf:
   - urn:ngm:class:transformer-architecture
 relatedTo:

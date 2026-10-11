@@ -4,6 +4,7 @@ type: Class
 title: Gridding
 resource: urn:ngm:class:gridding
 domain: earth-observation-and-geospatial-sensing
+description: Gridding is a geospatial service that places data onto a regular grid, producing gridded data [^1].
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Gridding
+
+Gridding is a geospatial service that places data onto a regular grid, producing gridded data [^1].

@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:visual-rendering-system
 bridgesTo:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:head-related-transfer-function
   - urn:ngm:class:pulse-code-modulation

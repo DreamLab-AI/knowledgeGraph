@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exoplanet-direct-imaging",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Exoplanet direct imaging is the detection of a planet orbiting another star by capturing light from the planet itself, as though photographing it, rather than inferring it from indirect effects.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:model-training
   - urn:ngm:class:high-performance-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:high-availability
 dependsOn:
   - urn:ngm:class:power-grid
@@ -55,7 +55,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:energy-and-power
   - urn:ngm:class:colocation-services
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:geographic-distribution
 ---
 

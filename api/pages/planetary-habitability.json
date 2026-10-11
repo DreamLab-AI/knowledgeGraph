@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-habitability",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Planetary habitability is the degree to which a world has conditions that could support life, judged mainly by whether liquid water can exist there.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

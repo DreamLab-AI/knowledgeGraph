@@ -38,7 +38,7 @@ partOf:
   - urn:ngm:class:risk-management
 relatedTo:
   - urn:ngm:class:employment-social-contract-under-automation
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:informed-consent
 ---
 

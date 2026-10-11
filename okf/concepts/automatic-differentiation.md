@@ -41,7 +41,6 @@ implements:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:gradient-descent
 contrastsWith:
-  - urn:ngm:class:numerical-methods
   - urn:ngm:class:forward-mode-differentiation
 bridgesTo:
   - urn:ngm:class:differentiable-rendering
@@ -60,7 +59,7 @@ supports:
   - urn:ngm:class:probabilistic-programming
   - urn:ngm:class:physics-simulation
   - urn:ngm:class:differentiable-rendering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
 standardizedBy:
   - urn:ngm:class:machine-learning-discipline-framework

@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:ai-technique
 enables:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
 dependsOn:
   - urn:ngm:class:transformer
   - urn:ngm:class:hyperparameter

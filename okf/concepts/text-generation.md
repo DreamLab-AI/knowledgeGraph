@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:autoregressive-generation
   - urn:ngm:class:beam-search
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
   - urn:ngm:class:neural-network
   - urn:ngm:class:training-data
@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:question-answering
 dependsOn:
   - urn:ngm:class:language-modeling
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
 contrastsWith:
   - urn:ngm:class:image-generation
   - urn:ngm:class:speech-and-voice

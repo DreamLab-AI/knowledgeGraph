@@ -56,7 +56,7 @@ Game theory is the mathematical study of strategic interaction among rational ag
 - **[[Reinforcement Learning]] and self-play**: AlphaGo/AlphaZero use self-play, a special case of game-theoretic learning where an agent improves by playing against itself — equivalent to best-response dynamics in a symmetric two-player zero-sum game.
 - **Cooperative [[Multi-Agent Reinforcement Learning]]**: Shapley value and counterfactual credit assignment (COMA, QMIX architectures) solve multi-agent reward attribution — a cooperative game theory problem at training time.
 - **[[AI Alignment]] and mechanism design**: inverse reward design and cooperative inverse reinforcement learning (CIRL) model alignment as a cooperative game between human and AI agent with mismatched information, providing formal grounding for value learning.
-- **Strategic robustness in [[Large Language Models]]**: emerging research treats prompt injection, jailbreaking, and adversarial queries as games between attackers and model defenders; red-teaming is formalised as a Stackelberg game.
+- **Strategic robustness in [[Large Language Model]]**: emerging research treats prompt injection, jailbreaking, and adversarial queries as games between attackers and model defenders; red-teaming is formalised as a Stackelberg game.
 
 ### Standards and Context
 

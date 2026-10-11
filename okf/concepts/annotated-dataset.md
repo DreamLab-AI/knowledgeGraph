@@ -9,6 +9,8 @@ maturity: mature
 quality: 0.8
 is-a:
   - urn:ngm:class:dataset
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:data-annotation
 enables:
@@ -18,6 +20,8 @@ relatedTo:
   - urn:ngm:class:training-data
   - urn:ngm:class:active-learning
   - urn:ngm:class:synthetic-data-generation
+  - urn:ngm:class:cross-validation
+  - urn:ngm:class:segmentation-and-identification
 ---
 
 # Annotated Dataset

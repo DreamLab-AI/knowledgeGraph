@@ -45,7 +45,7 @@ Workflow automation is the systematic encoding of business processes, data-trans
 
 - **BPMN 2.0** ([[BPMN]]) — the Object Management Group (OMG) standard graphical notation for modelling business processes, supported by engines such as Camunda, Activiti, and Flowable. Provides a common vocabulary for analysts and engineers.
 - **DMN 1.4** ([[DMN]]) — Decision Model and Notation standard for expressing business decision logic as decision tables, decision requirement diagrams, and FEEL (Friendly Enough Expression Language) expressions. Complements BPMN by externalising rules from process flow.
-- **WSDL / SOAP and REST / OpenAPI** — foundational integration standards that workflow connectors consume when calling external services; [[OpenAPI Specification]] is the dominant descriptor format for REST-based connectors.
+- **WSDL / SOAP and REST / OpenAPI** — foundational integration standards that workflow connectors consume when calling external services; [[OpenAPI]] is the dominant descriptor format for REST-based connectors.
 - **CloudEvents** — a CNCF specification for describing event data in a common format, enabling interoperability between [[Event-Driven Architecture]] platforms and workflow triggers.
 - **OpenTelemetry** ([[OpenTelemetry]]) — provides distributed tracing, metrics, and logs across workflow steps, essential for [[Observability]] in complex multi-system pipelines.
 - **Workflow languages**: AWS States Language (for Step Functions), DAG-based YAML (Airflow, Argo Workflows), Temporal's SDK-native definitions (Go, Java, Python, TypeScript), and open-source workflow definition languages (WDL, CWL for scientific computing).

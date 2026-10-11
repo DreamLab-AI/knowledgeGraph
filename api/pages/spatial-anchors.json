@@ -97,7 +97,7 @@
         "label": "Geospatial Data"
       },
       {
-        "id": "urn:ngm:class:semantic-spatial-web-layer",
+        "id": "urn:ngm:class:spatial-web",
         "label": "Spatial Web"
       }
     ],
@@ -379,7 +379,7 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

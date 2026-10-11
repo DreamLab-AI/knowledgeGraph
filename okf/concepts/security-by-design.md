@@ -20,7 +20,7 @@ implements:
   - urn:ngm:class:authentication
   - urn:ngm:class:access-control
 uses:
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:least-privilege
 supports:
   - urn:ngm:class:zero-trust-architecture

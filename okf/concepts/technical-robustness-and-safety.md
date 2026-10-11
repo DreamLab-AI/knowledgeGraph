@@ -26,7 +26,7 @@ supports:
   - urn:ngm:class:ai-alignment
 relatedTo:
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Technical Robustness and Safety

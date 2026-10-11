@@ -11,10 +11,10 @@ is-a:
   - urn:ngm:class:infra-security-and-identity
 hasPart:
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:digital-wallet
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-key-management
 enables:
   - urn:ngm:class:self-sovereign-identity
@@ -39,7 +39,7 @@ supports:
   - urn:ngm:class:data-protection
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso-iec-24760
 relatedTo:
   - urn:ngm:class:access-control

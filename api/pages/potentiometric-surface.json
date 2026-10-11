@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:potentiometric-surface",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A potentiometric surface is an imaginary surface representing the elevation and pressure head of groundwater, defined by the level to which water rises in a well or piezometer.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

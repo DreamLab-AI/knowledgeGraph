@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:commercial-bank
   - urn:ngm:class:payment-system
   - urn:ngm:class:clearing-house
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
   - urn:ngm:class:monetary-policy
   - urn:ngm:class:regulatory-framework
@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:financial-inclusion
   - urn:ngm:class:cross-border-payments
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:barter-system
 bridgesTo:
   - urn:ngm:class:metaverse

@@ -26,7 +26,7 @@
         "label": "Open Banking"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -66,12 +66,16 @@
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
       }
     ],
     "dependsOn": [
@@ -103,6 +107,14 @@
       {
         "id": "urn:ngm:class:supply-chain-finance",
         "label": "Supply Chain Finance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "uses": [
@@ -115,7 +127,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -125,6 +137,10 @@
       {
         "id": "urn:ngm:class:application-programming-interface",
         "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
       }
     ],
     "supports": [],
@@ -138,7 +154,12 @@
         "label": "ISO 20022"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -151,6 +172,18 @@
       {
         "id": "urn:ngm:class:insurtech",
         "label": "InsurTech"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
       }
     ]
   },

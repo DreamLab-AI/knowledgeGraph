@@ -62,7 +62,7 @@ supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:human-rights
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:unesco-recommendation-on-the-ethics-of-ai

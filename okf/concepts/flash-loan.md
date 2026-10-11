@@ -8,7 +8,7 @@ description: "A flash loan is an uncollateralised loan mechanism in decentralise
 maturity: established
 quality: 0.75
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:evm-compatible-blockchain
 enables:
@@ -29,8 +29,8 @@ uses:
   - urn:ngm:class:atomic-settlement
   - urn:ngm:class:smart-contract-execution
 relatedTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:transaction
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:twap-oracle

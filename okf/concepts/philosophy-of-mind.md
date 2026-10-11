@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:behaviourism
   - urn:ngm:class:eliminative-materialism
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:affective-computing
 uses:

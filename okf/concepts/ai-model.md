@@ -10,7 +10,7 @@ quality: 0.93
 is-a:
   - urn:ngm:class:generative-model
   - urn:ngm:class:ai-model-architecture
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:model-weights
   - urn:ngm:class:model-checkpoint
@@ -46,7 +46,7 @@ bridgesTo:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:model-deployment
   - urn:ngm:class:compute-governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 uses:
   - urn:ngm:class:ai-model-architecture
   - urn:ngm:class:deep-learning
@@ -58,18 +58,18 @@ uses:
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:mixture-of-experts
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 supports:
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:retrieval-augmented-generation
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-model-card
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:foundation-model

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation data product is a packaged dataset derived from satellite or other Earth observation measurements and issued at a stated processing level.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

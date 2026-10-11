@@ -9,14 +9,44 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:foundation-model
+  - urn:ngm:class:multimodal-ai-architecture-ai
+hasPart:
+  - urn:ngm:class:modality-specific-encoder
+  - urn:ngm:class:decoder
+  - urn:ngm:class:projection-layer
+  - urn:ngm:class:decoder
+requires:
+  - urn:ngm:class:transformer
+  - urn:ngm:class:cross-attention
+  - urn:ngm:class:training-data
+  - urn:ngm:class:training-data
 enables:
   - urn:ngm:class:creative-ai
   - urn:ngm:class:creative-tools
+  - urn:ngm:class:text-to-image
+  - urn:ngm:class:visual-question-answering
+  - urn:ngm:class:image-captioning
+  - urn:ngm:class:speech-recognition
+  - urn:ngm:class:speech-recognition
+  - urn:ngm:class:multimodal-retrieval
+contrastsWith:
+  - urn:ngm:class:unimodal-models
+bridgesTo:
+  - urn:ngm:class:spatial-computing
+  - urn:ngm:class:human-computer-interaction
 uses:
   - urn:ngm:class:transformer
+  - urn:ngm:class:encoder
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:contrastive-learning
+  - urn:ngm:class:embedding-space
+  - urn:ngm:class:encoder
 relatedTo:
   - urn:ngm:class:vision-language-model
   - urn:ngm:class:large-language-model
+  - urn:ngm:class:clip
+  - urn:ngm:class:diffusion-models
+  - urn:ngm:class:instruction-tuning
 ---
 
 # Multimodal Model

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:economic-systems
 hasPart:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft-marketplace
   - urn:ngm:class:cryptocurrency-exchange
   - urn:ngm:class:token-economics

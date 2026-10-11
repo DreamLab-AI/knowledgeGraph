@@ -21,7 +21,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:optimisation
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:uncertainty-quantification
 partOf:
   - urn:ngm:class:statistics

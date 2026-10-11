@@ -54,8 +54,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:auto-scaling",
-        "label": "Auto-Scaling"
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -159,8 +159,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

@@ -41,7 +41,7 @@ dependsOn:
   - urn:ngm:class:fourier-analysis
   - urn:ngm:class:psychoacoustics
   - urn:ngm:class:nyquist-shannon-sampling-theorem
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:image-processing
   - urn:ngm:class:analogue-signal-processing
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:audio-processing-system
   - urn:ngm:class:waveform
   - urn:ngm:class:audio-generation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
 ---

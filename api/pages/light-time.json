@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:light-time",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Light time is the time a light or radio signal takes to travel between two bodies, such as Earth and a spacecraft.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

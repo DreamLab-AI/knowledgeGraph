@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-ambiguity-resolution",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS ambiguity resolution estimates the integer carrier cycles associated with a continuous phase-tracking arc and tests whether an integer candidate can be accepted in the positioning solution.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -4,6 +4,7 @@ type: Class
 title: Redshift
 resource: urn:ngm:class:redshift
 domain: space-science-and-systems
+description: Redshift is the apparent shift toward longer wavelengths of light or spectral lines emitted by an object.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Redshift
+
+Redshift is the apparent shift toward longer wavelengths of light or spectral lines emitted by an object.[^1]

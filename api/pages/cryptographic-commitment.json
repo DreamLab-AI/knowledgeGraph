@@ -92,7 +92,7 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -159,14 +159,14 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "Network Component",
-      "slug": "network-component"
     },
     {
       "id": "urn:ngm:class:cryptographic-security",
@@ -174,9 +174,19 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -189,6 +199,11 @@
       "slug": "infra-security-and-identity"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
@@ -197,6 +212,11 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     }
   ],
   "inheritedRelations": {
@@ -206,8 +226,16 @@
         "label": "Asymmetric Encryption"
       },
       {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       },
       {
         "id": "urn:ngm:class:hash-function",
@@ -218,20 +246,12 @@
         "label": "Key Derivation Function"
       },
       {
-        "id": "urn:ngm:class:random-number-generation",
-        "label": "Random Number Generation"
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       },
       {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
-      },
-      {
-        "id": "urn:ngm:class:block",
-        "label": "Block"
-      },
-      {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
       }
     ],
     "requires": [
@@ -248,24 +268,24 @@
         "label": "Network Participation"
       },
       {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital-Signature"
-      },
-      {
-        "id": "urn:ngm:class:encryption-scheme",
-        "label": "Encryption Scheme"
-      },
-      {
-        "id": "urn:ngm:class:hash-function",
-        "label": "Hash-Function"
-      },
-      {
-        "id": "urn:ngm:class:key-management",
-        "label": "Key Management"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -274,7 +294,11 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -296,10 +320,6 @@
       {
         "id": "urn:ngm:class:distributed-trust",
         "label": "Distributed Trust"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
       }
     ],
     "dependsOn": [
@@ -312,12 +332,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -330,6 +350,10 @@
       {
         "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       }
     ],
     "implements": [
@@ -338,11 +362,43 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      },
       {
         "id": "urn:ngm:class:steganography",
         "label": "Steganography"
@@ -350,6 +406,10 @@
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Traditional Payment System"
       },
       {
         "id": "urn:ngm:class:adversarial-machine-learning",
@@ -362,18 +422,6 @@
       {
         "id": "urn:ngm:class:threat-actor",
         "label": "Threat Actor"
-      },
-      {
-        "id": "urn:ngm:class:anarchy",
-        "label": "Anarchy"
-      },
-      {
-        "id": "urn:ngm:class:self-organisation",
-        "label": "Self-Organisation"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -390,24 +438,24 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ],
     "uses": [
@@ -416,12 +464,32 @@
         "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
       }
     ],
     "supports": [
@@ -446,7 +514,7 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -472,6 +540,14 @@
         "label": "IETF"
       },
       {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
         "id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001"
       },
@@ -482,14 +558,6 @@
       {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -504,14 +572,6 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -536,16 +596,16 @@
         "label": "Proof Of Work"
       },
       {
-        "id": "urn:ngm:class:multi-party-computation",
-        "label": "Multi-Party Computation"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:threshold-cryptography",
-        "label": "Threshold Cryptography"
+        "id": "urn:ngm:class:network-component",
+        "label": "Network Component"
       },
       {
-        "id": "urn:ngm:class:blockchain-protocol",
-        "label": "Blockchain Protocol"
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ]
   },
@@ -571,7 +631,7 @@
       "label": "Blockchain Entity"
     },
     {
-      "slug": "bc-cryptographic-primitive",
+      "slug": "cryptographic-primitive",
       "label": "CryptographicDomain"
     },
     {

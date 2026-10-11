@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:reserve-asset
 enables:
   - urn:ngm:class:liquidity
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:liquidity
   - urn:ngm:class:predictable-pricing
   - urn:ngm:class:automated-trading

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:sc-standards-and-interop
   - urn:ngm:class:extended-reality-api
   - urn:ngm:class:khronos-group
+  - urn:ngm:class:open-standard
 hasPart:
   - urn:ngm:class:openxr-session
   - urn:ngm:class:openxr-action-system
@@ -35,6 +36,7 @@ enables:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:hardware-platform-agnostic
   - urn:ngm:class:spatial-computing-paradigm
+  - urn:ngm:class:extended-reality
 dependsOn:
   - urn:ngm:class:vulkan-graphics-api
   - urn:ngm:class:open-gl
@@ -46,13 +48,17 @@ implements:
   - urn:ngm:class:openxr-extension-registry
 bridgesTo:
   - urn:ngm:class:web-assembly
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:web-rtc
   - urn:ngm:class:gazebo-simulator
+  - urn:ngm:class:web-xr
 partOf:
   - urn:ngm:class:technology-stack
   - urn:ngm:class:metaverse-infrastructure
   - urn:ngm:class:technology-stack
+relatedTo:
+  - urn:ngm:class:khronos-group
+  - urn:ngm:class:xr-headset
 ---
 
 # OpenXR

@@ -20,13 +20,13 @@ enables:
 dependsOn:
   - urn:ngm:class:graph-database
 contrastsWith:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:anonymous-credential
 bridgesTo:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:self-sovereign-identity
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:audience-segmentation
 standardizedBy:

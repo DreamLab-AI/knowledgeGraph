@@ -20,7 +20,7 @@ enables:
 dependsOn:
   - urn:ngm:class:data-quality
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:classification
   - urn:ngm:class:model-evaluation

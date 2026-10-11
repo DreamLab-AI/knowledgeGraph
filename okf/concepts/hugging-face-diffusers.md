@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-infrastructure
 hasPart:
   - urn:ngm:class:noise-schedule
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
   - urn:ngm:class:noise-schedule
 enables:
@@ -31,13 +31,13 @@ implements:
   - urn:ngm:class:latent-diffusion
 contrastsWith:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:augmented-reality-content-creation
 uses:
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:jax
   - urn:ngm:class:hugging-face-accelerate
   - urn:ngm:class:py-torch
@@ -45,16 +45,16 @@ uses:
   - urn:ngm:class:hugging-face-accelerate
 supports:
   - urn:ngm:class:kohya-dreambooth-and-similar
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:control-net
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:kohya-dreambooth-and-similar
 relatedTo:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:generative-ai
   - urn:ngm:class:clip
   - urn:ngm:class:hugging-face-model-hub
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:hugging-face-model-hub
 ---
 

@@ -32,7 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:deepfakes
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:misinformation
   - urn:ngm:class:deepfakes
 ---

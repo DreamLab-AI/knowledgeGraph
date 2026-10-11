@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:liquidity-provider
   - urn:ngm:class:web3-wallet
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:yield-farming
   - urn:ngm:class:token-swapping
   - urn:ngm:class:token-swapping
@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:smart-contract
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 relatedTo:
   - urn:ngm:class:curve-finance
   - urn:ngm:class:impermanent-loss

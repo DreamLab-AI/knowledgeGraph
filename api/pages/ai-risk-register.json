@@ -102,11 +102,11 @@
         "label": "ISO/IEC 23894:2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
+        "id": "urn:ngm:class:iso-iec-23894",
         "label": "ISO/IEC 23894:2023"
       }
     ],
@@ -181,7 +181,7 @@
         "label": "Model Drift"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ]
@@ -305,7 +305,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -369,7 +369,7 @@
         "label": "ISO 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

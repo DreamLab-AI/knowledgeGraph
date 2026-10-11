@@ -32,7 +32,7 @@ enables:
   - urn:ngm:class:robotics
 dependsOn:
   - urn:ngm:class:algorithmic-complexity
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:heuristic-methods
   - urn:ngm:class:brute-force-search
@@ -54,7 +54,7 @@ relatedTo:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:optimization-technique
   - urn:ngm:class:algorithmic-complexity
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Algorithmic Framework

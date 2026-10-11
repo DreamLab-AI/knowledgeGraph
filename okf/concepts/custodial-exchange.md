@@ -10,14 +10,14 @@ quality: 0.62
 is-a:
   - urn:ngm:class:cryptocurrency-exchange
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:custodial-wallet
 dependsOn:
   - urn:ngm:class:regulatory-compliance
 implements:
   - urn:ngm:class:proof-of-reserve
 contrastsWith:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:self-custody
 uses:
   - urn:ngm:class:custody
@@ -25,7 +25,7 @@ uses:
 supports:
   - urn:ngm:class:liquidity
 relatedTo:
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
   - urn:ngm:class:qualified-custodian
   - urn:ngm:class:digital-asset-custody
   - urn:ngm:class:wallet

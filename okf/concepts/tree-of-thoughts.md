@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:thought-evaluator
   - urn:ngm:class:search-algorithm
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:prompt-engineering
 enables:
   - urn:ngm:class:mathematical-reasoning

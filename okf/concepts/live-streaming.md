@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:bandwidth
   - urn:ngm:class:network-protocol
 requires:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:low-latency
 enables:
   - urn:ngm:class:user-engagement
@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:bandwidth
 uses:
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:real-time-communication
 partOf:

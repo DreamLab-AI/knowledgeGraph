@@ -19,7 +19,7 @@ bridgesTo:
   - urn:ngm:class:computer-vision
 uses:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:natural-language-processing
 ---

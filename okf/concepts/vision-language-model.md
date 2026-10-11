@@ -8,12 +8,12 @@ description: A Vision Language Model (VLM) is a multimodal neural architecture t
 maturity: emerging
 quality: 0.85
 is-a:
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
 enables:
   - urn:ngm:class:visual-question-answering
   - urn:ngm:class:visual-grounding
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:visual-representation
   - urn:ngm:class:instruction-tuning
 relatedTo:

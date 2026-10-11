@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:elliptical-galaxy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An elliptical galaxy is a galaxy with a shape ranging from completely round to oval, usually containing little gas and dust and showing very little organised structure.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:galaxy",

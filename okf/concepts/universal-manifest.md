@@ -18,11 +18,11 @@ hasPart:
   - urn:ngm:class:relationship-graph
 requires:
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:metadata-schema
-  - urn:ngm:class:decentralized-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:verifiable-credentials
 enables:
   - urn:ngm:class:asset-interoperability
   - urn:ngm:class:avatar-portability

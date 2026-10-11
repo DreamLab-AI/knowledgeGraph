@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astronomical-photometry",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Astronomical photometry is the measurement of the brightness of astronomical objects, reported for example as fluxes or magnitudes in defined wavelength bands.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

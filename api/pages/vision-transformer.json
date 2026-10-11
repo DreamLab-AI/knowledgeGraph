@@ -32,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:pre-training",
+        "id": "urn:ngm:class:pretraining",
         "label": "Large-Scale Pre-Training"
       }
     ],

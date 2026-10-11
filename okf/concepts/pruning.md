@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:model-deployment
   - urn:ngm:class:tiny-ml
 contrastsWith:
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
 bridgesTo:
   - urn:ngm:class:large-language-model

@@ -4,6 +4,7 @@ type: Class
 title: Orbital Eccentricity
 resource: urn:ngm:class:orbital-eccentricity
 domain: space-science-and-systems
+description: Orbital eccentricity is a dimensionless parameter that describes a conic orbit's shape.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Orbital Eccentricity
+
+Orbital eccentricity is a dimensionless parameter that describes a conic orbit's shape.

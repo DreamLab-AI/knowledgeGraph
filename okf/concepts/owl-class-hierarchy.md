@@ -46,11 +46,11 @@ uses:
   - urn:ngm:class:turtle
 supports:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology-alignment
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:owl-2-web-ontology-language
   - urn:ngm:class:owl-2-web-ontology-language

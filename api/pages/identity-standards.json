@@ -43,12 +43,12 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ]
   },

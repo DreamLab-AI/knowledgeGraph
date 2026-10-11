@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:physics-engine
 enables:
   - urn:ngm:class:social-presence
-  - urn:ngm:class:non-verbal-communication
+  - urn:ngm:class:nonverbal-communication
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:user-embodiment
 dependsOn:
@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:network-synchronization
 implements:
   - urn:ngm:class:hanim-standard
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 contrastsWith:
   - urn:ngm:class:non-player-character
   - urn:ngm:class:ai-agent

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:telecollaboration
 requires:
   - urn:ngm:class:speech-recognition
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:meeting-transcription
 bridgesTo:

@@ -66,7 +66,7 @@ uses:
   - urn:ngm:class:deep-neural-network
   - urn:ngm:class:extended-kalman-filter
   - urn:ngm:class:point-cloud-processing
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:sensor-fusion
 supports:
   - urn:ngm:class:agricultural-robotics
@@ -80,9 +80,9 @@ standardizedBy:
   - urn:ngm:class:iso-10218
   - urn:ngm:class:iso-21448
   - urn:ngm:class:iso-ts-15066
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sae-j-3016
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:iso-21448
 relatedTo:
   - urn:ngm:class:3-d-perception

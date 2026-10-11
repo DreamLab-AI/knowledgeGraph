@@ -10,8 +10,8 @@ quality: 0.72
 is-a:
   - urn:ngm:class:financial-regulation
 hasPart:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:market-abuse-regulation
 requires:
   - urn:ngm:class:regulatory-frameworks
@@ -28,12 +28,12 @@ implements:
   - urn:ngm:class:bc-0484-markets-in-crypto-assets
   - urn:ngm:class:travel-rule
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-regulation
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contracts

@@ -8,14 +8,21 @@ description: A pre-trained model is a machine-learning model whose parameters ha
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:foundation-model
   - urn:ngm:class:ai-model-architecture
+  - urn:ngm:class:ai-technique
+  - urn:ngm:class:model
+hasPart:
+  - urn:ngm:class:pretrained-weights
+  - urn:ngm:class:checkpoints
 requires:
   - urn:ngm:class:big-data
   - urn:ngm:class:self-supervised-learning
 enables:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:few-shot-learning
+  - urn:ngm:class:parameter-efficient-fine-tuning
+  - urn:ngm:class:lo-ra-fine-tuning
+  - urn:ngm:class:neural-network-quantisation
 dependsOn:
   - urn:ngm:class:model-training
   - urn:ngm:class:representation-learning
@@ -24,6 +31,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:embedding
+  - urn:ngm:class:pretraining
 supports:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:inference
@@ -31,7 +39,11 @@ partOf:
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:transfer-learning
+  - urn:ngm:class:fine-tuning
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:domain-adaptation
 ---
 
 # Pre-Trained Model

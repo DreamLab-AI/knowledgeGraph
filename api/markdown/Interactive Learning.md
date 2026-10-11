@@ -11,7 +11,7 @@ Interactive learning is a machine learning paradigm where the model actively que
 #### Related Concepts
 
 - [[Active Learning]]
-- [[Human-in-the- Loop Learning]]
+- [[Human-in-the-Loop Learning]]
 - [[Reinforcement Learning from Human Feedback]]
 
 ### Provenance

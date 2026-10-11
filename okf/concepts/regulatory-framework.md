@@ -16,8 +16,8 @@ hasPart:
 requires:
   - urn:ngm:class:compliance
   - urn:ngm:class:licensing
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
 enables:
   - urn:ngm:class:market-integrity
   - urn:ngm:class:consumer-protection
@@ -33,8 +33,8 @@ contrastsWith:
   - urn:ngm:class:regulatory-arbitrage
   - urn:ngm:class:self-regulation
 bridgesTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
 standardizedBy:
   - urn:ngm:class:financial-action-task-force
   - urn:ngm:class:bank-for-international-settlements

@@ -32,7 +32,7 @@ partOf:
   - urn:ngm:class:policy-optimisation
 relatedTo:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Policy Gradient Methods

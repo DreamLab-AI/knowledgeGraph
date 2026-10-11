@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:compliance-framework",
@@ -265,7 +265,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

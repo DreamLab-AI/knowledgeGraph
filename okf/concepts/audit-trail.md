@@ -57,11 +57,11 @@ bridgesTo:
 uses:
   - urn:ngm:class:hash-function
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:worm-storage
   - urn:ngm:class:append-only-database
 supports:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr-compliance
   - urn:ngm:class:soc-2-certification
   - urn:ngm:class:iso-27001

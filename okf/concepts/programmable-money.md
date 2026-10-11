@@ -11,14 +11,14 @@ is-a:
   - urn:ngm:class:digital-currency
 hasPart:
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:token-standard
 requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain
   - urn:ngm:class:tokenization
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 enables:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:payment-system
@@ -42,8 +42,8 @@ relatedTo:
   - urn:ngm:class:monetary-policy
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:liquidity
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-autonomous-organization
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Programmable Money

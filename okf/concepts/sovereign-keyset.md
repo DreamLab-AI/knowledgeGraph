@@ -32,7 +32,7 @@ implements:
   - urn:ngm:class:secp256k1
   - urn:ngm:class:w3-c-did-core
 bridgesTo:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:blockchain-keypair
   - urn:ngm:class:schnorr-signature
 ---

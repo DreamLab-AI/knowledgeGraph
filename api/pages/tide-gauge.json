@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tide-gauge",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A tide gauge is an instrument that records changes in sea level relative to a datum, a height reference, using a mechanical, acoustic or radar sensing method.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-instrument",

@@ -54,8 +54,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -95,7 +95,7 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -170,8 +170,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:star",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A star is an astronomical body that is powered by nuclear fusion in its core.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

@@ -168,7 +168,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
   #### 3. Machine-to-Machine Payments
 
-  **[[IoT]] sensors** purchasing [[cloud storage]]:
+  **[[Internet of Things]] sensors** purchasing [[cloud storage]]:
   ```
   Temperature sensor → Lightning payment → Database write
   ```
@@ -214,7 +214,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
   **[[Privacy-Preserving]]**:
 
-- No [[KYC]] requirements
+- No [[Know Your Customer]] requirements
 - [[Pseudonymous]] payments
 - Optional [[channel]] privacy via [[Tor]]
 
@@ -245,7 +245,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
   **Supported Cryptocurrencies**:
 
 - [[Bitcoin Proof-of-Work Protocol]] ([[BTC]])
-- [[Ethereum Smart Contract Platform]] ([[ETH]])
+- [[Ethereum]] ([[ETH]])
 - [[USD Coin]] ([[USDC]])
 - [[Solana]] ([[SOL]])
 - [[Polygon]] ([[MATIC]])
@@ -406,16 +406,16 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
   **Features**:
 
-- [[Multi-chain]] support ([[Ethereum Smart Contract Platform]], [[Polygon]], [[Base]], [[Bitcoin Proof-of-Work Protocol]])
+- [[Multi-chain]] support ([[Ethereum]], [[Polygon]], [[Base]], [[Bitcoin Proof-of-Work Protocol]])
 - [[Instant settlement]] for [[stablecoins]] ([[USDC]], [[USDT]])
 - [[Fiat]] conversion options
-- [[Compliance]] and [[KYC]] for regulated entities
+- [[Compliance]] and [[Know Your Customer]] for regulated entities
 - [[Merchant]] dashboards and [[analytics]]
 
   **Security Model**:
 
 - [[Hardware wallet]] integration ([[Ledger]], [[Trezor]])
-- [[Multi-signature]] wallets for [[enterprise]]
+- [[Multisignature]] wallets for [[enterprise]]
 - [[Rate limiting]] and [[fraud detection]]
 - [[Transaction monitoring]] for [[AML compliance]]
 
@@ -533,7 +533,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
 - **Challenge-response** authentication pattern
 - **Payment metadata** in [[WWW-Authenticate]] header
-- **Proof-of-payment** in [[Authorization]] header
+- **Proof-of-payment** in [[Authorisation]] header
 - **Standardized error format**
 
   ### Challenge-Response Flow Comparison
@@ -566,7 +566,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
   ### Payment Verification
 
   **L402 Verification Steps**:
-  1. Extract [[preimage]] from [[Authorization]] header
+  1. Extract [[preimage]] from [[Authorisation]] header
   2. Compute [[SHA-256]](preimage)
   3. Compare to original [[payment hash]]
   4. Verify [[macaroon]] signature
@@ -661,7 +661,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
   **L402 Philosophy**:
 
 - **[[Bitcoin-maximalist]]** approach
-- **[[Decentralization]]** first
+- **[[Decentralisation]]** first
 - **[[Privacy]]** by default
 - **[[Minimal dependencies]]** ([[Lightning]] only)
 - **[[Cypherpunk]]** ethos
@@ -981,7 +981,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 - **2027**: $10B+ as [[autonomous agents]] proliferate
 
   **Agent Economic Models**:
-  1. **[[DAO]]-Governed Agents**: [[Smart contracts]] controlling budgets
+  1. **[[Decentralised Autonomous Organisation]]-Governed Agents**: [[Smart contracts]] controlling budgets
   2. **[[Token-Staked]] Agents**: [[Reputation]] systems with [[slashing]]
   3. **[[Profit-Sharing]] Agents**: Revenue splits between [[developers]] and [[agents]]
   4. **[[Agent Federations]]**: Collectives negotiating bulk [[API]] discounts
@@ -992,9 +992,9 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
 - Draft [[RFC]] for HTTP 402 implementation
 - [[WWW-Authenticate]] header [[schema]] for [[payment protocols]]
-- [[Authorization]] header [[proof-of-payment]] formats
+- [[Authorisation]] header [[proof-of-payment]] formats
 
-  **[[W3C]]** (World Wide Web Consortium):
+  **[[World Wide Web Consortium]]** (World Wide Web Consortium):
 
 - [[Web Payments]] [[working group]] exploring [[crypto]] integration
 - [[Payment Request API]] extensions for [[Lightning]] and [[blockchain]]
@@ -1041,7 +1041,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 
   2. **[[Protocol Bifurcation]]**: [[L402]] serves [[privacy-focused]], [[low-latency]], [[Bitcoin-native]] use cases; [[X402]] targets [[multi-chain]], [[enterprise]], [[AI-first]] applications
 
-  3. **[[Economic Unlock]]**: [[AI agents]], [[robots]], and [[IoT]] devices can now participate in [[markets]] without [[human]] [[custodians]]
+  3. **[[Economic Unlock]]**: [[AI agents]], [[robots]], and [[Internet of Things]] devices can now participate in [[markets]] without [[human]] [[custodians]]
 
   4. **[[Institutional Validation]]**: [[Google AI Technology Corporation]]'s [[X402]] adoption signals [[mainstream]] acceptance of [[cryptocurrency]] [[payment rails]]
 
@@ -1052,7 +1052,7 @@ The emergence of these protocols in 2023-2025 reflects the convergence of three 
 - [[L402]] becoming the standard for [[Lightning-native]] [[apps]]
 - [[X402]] powering [[AI agent]] [[ecosystems]] in [[enterprise]]
 - Hybrid implementations supporting both [[payment rails]]
-- New protocols emerging for [[specific niches]] ([[IoT]], [[gaming]], [[metaverse]])
+- New protocols emerging for [[specific niches]] ([[Internet of Things]], [[gaming]], [[metaverse]])
 
   We are witnessing the birth of the **[[programmable money]] [[web]]**—where every [[HTTP]] [[request]] can carry a [[payment]], every [[API]] can be monetized at [[satoshi]] [[granularity]], and [[machines]] can [[transact]] autonomously at the [[speed of computation]].
 

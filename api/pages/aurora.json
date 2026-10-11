@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aurora",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Aurora is light emitted when energetic electrons, guided by Earth's magnetic field, collide with atoms and molecules in the upper atmosphere.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

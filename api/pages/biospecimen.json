@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:biospecimen",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A biospecimen is any material sample taken from a biological entity for testing, diagnostic, propagation, treatment or research purposes.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:power-spectrum",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A power spectrum describes how the power of a signal, or the variance of a time series, is distributed over frequency.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -115,7 +115,7 @@
         "label": "Cryptographic Hashing"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -183,9 +183,9 @@
       "slug": "state-machine-replication"
     },
     {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity",
-      "slug": "blockchain-entity"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -198,9 +198,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -211,6 +226,11 @@
       "id": "urn:ngm:class:coordination-systems",
       "label": "Coordination Systems",
       "slug": "coordination-systems"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -228,14 +248,9 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -313,8 +328,8 @@
         "label": "Atomic Settlement"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cross-border-payments",
@@ -469,12 +484,12 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:distributed-ai-training",
-        "label": "Distributed AI Training"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
+        "id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
       }
     ],
     "uses": [
@@ -593,12 +608,20 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -607,15 +630,15 @@
         "label": "Atomic Swap"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -716,8 +739,8 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "citi-token-services",

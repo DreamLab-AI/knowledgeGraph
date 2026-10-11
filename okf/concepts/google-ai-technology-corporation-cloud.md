@@ -21,11 +21,11 @@ requires:
   - urn:ngm:class:data-centre
   - urn:ngm:class:internet-connectivity
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:serverless-architecture
   - urn:ngm:class:data-analytics
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:serverless-architecture
 dependsOn:
   - urn:ngm:class:network-infrastructure

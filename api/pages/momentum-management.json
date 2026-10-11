@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:momentum-management",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Momentum management keeps the angular momentum stored in spacecraft attitude actuators within a usable envelope. Reaction and momentum wheels exchange momentum internally with the spacecraft. They can reject a short disturbance or execute a slew, but cannot remove angular momentum from the closed spacecraft-wheel system. A persistent external torque therefore drives wheel speed and stored momentum towards a limit.[^nasa-actuators-2024]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -31,6 +31,16 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "control-moment-gyroscope",
+      "label": "Control Moment Gyroscope"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "momentum-wheel",
+      "label": "Momentum Wheel"
+    }
+  ]
 }

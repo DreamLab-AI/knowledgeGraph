@@ -10,7 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:pattern-recognition
 hasPart:
   - urn:ngm:class:classification
@@ -80,8 +80,8 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
   - urn:ngm:class:iso-iec-23053
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:probabilistic-inference

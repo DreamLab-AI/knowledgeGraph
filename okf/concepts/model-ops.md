@@ -27,7 +27,7 @@ uses:
 supports:
   - urn:ngm:class:ai-risk-management
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:ai-governance-framework
 ---

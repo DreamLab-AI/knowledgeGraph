@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:backdoor-attack
   - urn:ngm:class:membership-inference
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:threat-modelling
 enables:
   - urn:ngm:class:adversarial-robustness
@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:formal-verification
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
 uses:

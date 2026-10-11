@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-archiving",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Data archiving is the activity of preserving information in an archive so that a designated user community can access and use it over the long term.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

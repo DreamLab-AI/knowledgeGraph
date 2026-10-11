@@ -24,7 +24,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:sc-platform-and-environment
   - urn:ngm:class:sc-content-and-assets
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 ---
 
 # Standards and Interoperability

@@ -87,8 +87,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:agent-frameworks",
@@ -201,8 +201,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:auto-scaling",
-        "label": "Auto-Scaling"
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
       },
       {
         "id": "urn:ngm:class:continuous-deployment",

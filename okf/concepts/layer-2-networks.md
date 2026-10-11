@@ -23,7 +23,7 @@ requires:
 enables:
   - urn:ngm:class:scalability
   - urn:ngm:class:micropayments
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:optimistic-rollup
   - urn:ngm:class:zk-rollup

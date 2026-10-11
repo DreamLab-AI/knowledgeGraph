@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:university-college-london
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 bridgesTo:
   - urn:ngm:class:university-college-london
   - urn:ngm:class:alan-turing-institute

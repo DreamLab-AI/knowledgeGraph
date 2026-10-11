@@ -59,8 +59,8 @@ Real-time filmmaking technique combining LED Volume stages, game engine renderin
 - [[NotchLC]] codec enables GPU-to-GPU video transfer between [[Unity]] and [[Disguise]] media servers, eliminating CPU bottlenecks. This allows 8K textures and video playback at 60 fps with <5ms latency, critical for virtual production backgrounds.
 - [[Disguise]] [[GX 3]] media servers integrate with both [[Unreal Engine]] and [[Unity]], providing [[real-time compositing]], [[chroma key]], and [[projection mapping]] capabilities. Productions often use hybrid workflows: UE5 for 3D environments, Disguise for 2D background elements and VFX overlays.
 - [[SideFX Houdini]] integrates with game engines via [[Houdini Engine]], enabling [[procedural generation]] of environments, particle effects, and destruction simulations. [[Karma XPU]] real-time renderer (2024) challenges UE5 with superior [[volumetric rendering]] for clouds, smoke, and atmospheric effects.
-- Custom [[proprietary engines]] persist at studios like [[ILM]] ([[Helios Engine]]), [[Weta Digital]] ([[Manuka]]), and [[DNEG]] ([[DNA Engine]]). These engines optimize for specific workflows but increasingly adopt [[USD]] (Universal Scene Description) for interoperability with [[Unreal Engine]].
-- [[USD]] by [[Pixar]] emerged as the industry standard for asset interchange, enabling environment assembly in [[Houdini]], [[Maya]], or [[Blender 3D Creation Suite]], then import to [[Unreal Engine]] for real-time rendering. [[OpenUSD Alliance]] (2023) standardizes virtual production pipelines across software vendors.
+- Custom [[proprietary engines]] persist at studios like [[ILM]] ([[Helios Engine]]), [[Weta Digital]] ([[Manuka]]), and [[DNEG]] ([[DNA Engine]]). These engines optimize for specific workflows but increasingly adopt [[Universal Scene Description]] (Universal Scene Description) for interoperability with [[Unreal Engine]].
+- [[Universal Scene Description]] by [[Pixar]] emerged as the industry standard for asset interchange, enabling environment assembly in [[Houdini]], [[Maya]], or [[Blender 3D Creation Suite]], then import to [[Unreal Engine]] for real-time rendering. [[OpenUSD Alliance]] (2023) standardizes virtual production pipelines across software vendors.
 
 ## ICVFX Workflow
 
@@ -157,9 +157,9 @@ Real-time filmmaking technique combining LED Volume stages, game engine renderin
 
 #### AI-Generated Environments
 
-- [[Generative AI]] transforms virtual production environment creation, with [[Stable Diffusion Image Model]], [[Midjourney Text-to-Image Service]], and [[DALL-E 3]] generating concept art and texture maps for [[Unreal Engine]] import. [[Stability AI]]'s [[SDXL 1.0]] produces 1024×1024 images refined to 4K via [[Real-ESRGAN]] upscaling for LED wall backgrounds.
+- [[Generative AI]] transforms virtual production environment creation, with [[Stable Diffusion]], [[Midjourney Text-to-Image Service]], and [[DALL-E 3]] generating concept art and texture maps for [[Unreal Engine]] import. [[Stability AI]]'s [[SDXL 1.0]] produces 1024×1024 images refined to 4K via [[Real-ESRGAN]] upscaling for LED wall backgrounds.
 - [[Text-to-3D]] models like [[Shap-E]], [[Point-E]], and [[DreamFusion]] generate 3D assets from text prompts, accelerating virtual art department workflows. Productions in 2025 use AI-generated background elements (rocks, vegetation, architecture) at 10x speed compared to manual 3D modeling.
-- [[ControlNet]] for [[Stable Diffusion Image Model]] enables precise artistic control using depth maps, edge detection, and pose guidance. Virtual production teams generate environment variations matching specific camera angles, lighting conditions, and compositional requirements, then texture-project outputs onto UE5 geometry.
+- [[ControlNet]] for [[Stable Diffusion]] enables precise artistic control using depth maps, edge detection, and pose guidance. Virtual production teams generate environment variations matching specific camera angles, lighting conditions, and compositional requirements, then texture-project outputs onto UE5 geometry.
 - [[Runway ML Gen-2]] generates video textures for animated backgrounds (waterfalls, crowds, traffic) displayed on LED walls. The AI-generated 4K video at 60 fps eliminates stock footage licensing costs and enables customization matching specific creative requirements.
 - [[Adobe Firefly]] integration with [[Substance 3D]] generates PBR (physically-based rendering) material textures with proper albedo, roughness, metalness, and normal maps. Virtual production teams describe materials verbally ("weathered copper with verdigris"), with AI generating production-ready textures in minutes.
 
@@ -183,7 +183,7 @@ Real-time filmmaking technique combining LED Volume stages, game engine renderin
 #### Large Language Models and Script-to-Scene
 
 - [[Instruction-Following Conversational AI System]], [[Claude]], and [[GPT 4]] generate [[Unreal Engine Blueprints]] from natural language descriptions, accelerating technical artist workflows. Prompts like "create a blueprint that changes sky color based on time of day" generate functional node graphs requiring only minor refinement.
-- [[Scenario.gg]] and [[Inworld AI]] generate game-engine-ready 3D assets using fine-tuned [[Stable Diffusion Image Model]] models. Virtual production teams describe assets verbally, receiving textured 3D models compatible with [[Unreal Engine]]'s [[Nanite]] system within minutes.
+- [[Scenario.gg]] and [[Inworld AI]] generate game-engine-ready 3D assets using fine-tuned [[Stable Diffusion]] models. Virtual production teams describe assets verbally, receiving textured 3D models compatible with [[Unreal Engine]]'s [[Nanite]] system within minutes.
 - [[Semantic segmentation]] via [[SAM (Segment Anything Model)]] by [[Meta AI]] automatically separates environment photographs into layers (sky, buildings, vegetation, ground). Virtual production teams rapidly create depth-separated elements for LED wall parallax effects without manual rotoscoping.
 - [[AI-powered animation]] using [[DeepMotion]] and [[Plask]] generates character motion from video reference or text descriptions. Background characters on LED walls animate realistically without manual keyframing, populating environments at 10x traditional production speed.
 
@@ -202,11 +202,11 @@ Real-time filmmaking technique combining LED Volume stages, game engine renderin
 - [[Sketchfab]] NFT platform features 10,000+ blockchain-certified 3D models suitable for virtual production, from photoscanned architecture to stylized fantasy assets. NFT ownership includes commercial usage rights, simplifying licensing for film and television productions.
 - [[Ready Player Me]] NFT avatars integrate with [[Unreal Engine 5]] via plugins, enabling productions to license diverse digital humans for background characters. Blockchain provenance ensures proper attribution and royalty distribution to original character designers.
 - [[Decentraland]] and [[The Sandbox]] virtual world assets export to standard [[glTF]] and [[FBX]] formats, importable to [[Unreal Engine]]. Productions license pre-built virtual environments from metaverse platforms, repurposing existing 3D content at fraction of custom creation cost.
-- [[Non-Fungible Studios]] created blockchain-certified virtual production stages, where LED volume bookings recorded on [[Ethereum Smart Contract Platform]] ensure transparent scheduling and prevent double-booking across global facility network.
+- [[Non-Fungible Studios]] created blockchain-certified virtual production stages, where LED volume bookings recorded on [[Ethereum]] ensure transparent scheduling and prevent double-booking across global facility network.
 
 #### Smart Contracts for Rights Management
 
-- [[Ethereum Smart Contract Platform]]-based smart contracts automate royalty distribution for virtual production assets used across multiple projects. When an environment or prop appears in a new production, the blockchain automatically triggers payment to original creator based on usage terms.
+- [[Ethereum]]-based smart contracts automate royalty distribution for virtual production assets used across multiple projects. When an environment or prop appears in a new production, the blockchain automatically triggers payment to original creator based on usage terms.
 - [[Arweave]] permanent storage preserves virtual production project files, ensuring [[Unreal Engine]] scenes, [[LiDAR scans]], and [[photogrammetry]] data remain accessible for sequels, reboots, or archival purposes. Projects like [[Blade Runner 2049]] stored environment backups on Arweave for potential future use.
 - [[IPFS]] (InterPlanetary File System) enables decentralized distribution of large virtual production assets (multi-GB [[Quixel Megascans]] libraries) without centralized server dependency. Studios share assets peer-to-peer, reducing bandwidth costs and improving download speeds.
 - [[Chainlink oracles]] verify real-world events (box office performance, streaming views) triggering smart contract bonuses for virtual production teams. Success-based compensation models automate payment without manual accounting or contract renegotiation.
@@ -255,7 +255,7 @@ Real-time filmmaking technique combining LED Volume stages, game engine renderin
 
 - [[NVIDIA Omniverse Platform]] creates digital twins of physical camera equipment, LED stages, and lighting rigs, enabling [[virtual commissioning]] before physical builds. Productions simulate entire LED volume workflows in Omniverse, identifying problems (sightlines, tracking dead zones, cable routing) before expensive on-set discovery.
 - [[Siemens NX]] and [[Dassault CATIA]] CAD software export stage designs to [[Unreal Engine]], where virtual cameras preview shooting possibilities. LED panel positions, camera crane reach, and actor blocking rehearse virtually, optimizing physical stage configuration before construction.
-- [[ROS]] (Robot Operating System) connects physical [[MRMC robots]], [[Mo-Sys tracking]], and [[Unreal Engine]], creating unified control interface. Operators command all systems from single workstation, with [[digital twin]] simulation predicting collision risks and ensuring safe operation.
+- [[Robot Operating System]] (Robot Operating System) connects physical [[MRMC robots]], [[Mo-Sys tracking]], and [[Unreal Engine]], creating unified control interface. Operators command all systems from single workstation, with [[digital twin]] simulation predicting collision risks and ensuring safe operation.
 
 ### Emerging Technologies
 

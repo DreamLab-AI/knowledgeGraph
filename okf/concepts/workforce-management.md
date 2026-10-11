@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:customer-service-automation
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:automated-compliance
 supports:
   - urn:ngm:class:ai-driven-workforce-displacement-registry

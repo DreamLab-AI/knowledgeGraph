@@ -4,6 +4,7 @@ type: Class
 title: Orbital Insertion
 resource: urn:ngm:class:orbital-insertion
 domain: space-science-and-systems
+description: Orbital insertion is the launch-vehicle phase or spacecraft manoeuvre that establishes a vehicle in a specified target orbit around a named body.[^nasa-navigation][^esa-flight-dynamics]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Orbital Insertion
+
+Orbital insertion is the launch-vehicle phase or spacecraft manoeuvre that establishes a vehicle in a specified target orbit around a named body.[^nasa-navigation][^esa-flight-dynamics]

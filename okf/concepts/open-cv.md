@@ -22,7 +22,7 @@ implements:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:scale-invariant-feature-transform
 contrastsWith:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
 bridgesTo:
   - urn:ngm:class:robotics
@@ -35,7 +35,7 @@ uses:
 supports:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:perception-system
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:embedded-vision
 relatedTo:
   - urn:ngm:class:computer-vision

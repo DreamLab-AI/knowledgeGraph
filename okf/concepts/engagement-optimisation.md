@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:personalised-interaction
   - urn:ngm:class:recommender-system
@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:behavioural-feedback-loop
   - urn:ngm:class:user-modelling
   - urn:ngm:class:behavioural-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:real-time-processing
   - urn:ngm:class:data-pipeline
 enables:
@@ -75,7 +75,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:digital-services-act
   - urn:ngm:class:uk-online-safety-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ico-children-s-code
   - urn:ngm:class:ai-ethics
 relatedTo:

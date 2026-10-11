@@ -28,7 +28,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:fossil-fuel-subsidies
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenised-carbon-credits
   - urn:ngm:class:supply-chain-sustainability
 supports:

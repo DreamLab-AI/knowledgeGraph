@@ -14,8 +14,8 @@ enables:
 bridgesTo:
   - urn:ngm:class:autonomous-robot
 uses:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:machine-learning-discipline-model
 partOf:
   - urn:ngm:class:semi-supervised-learning
 relatedTo:

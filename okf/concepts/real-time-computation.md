@@ -21,7 +21,7 @@ supports:
 relatedTo:
   - urn:ngm:class:real-time-ai
   - urn:ngm:class:latency
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Real-Time Computation

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geomagnetic-substorm",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A geomagnetic substorm is a sudden release of energy by the magnetosphere, the protective magnetic bubble surrounding Earth, that occurs in the magnetic fields of near-Earth space.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

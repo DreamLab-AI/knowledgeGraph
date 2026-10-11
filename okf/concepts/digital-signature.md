@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:computational-hardness-assumption
   - urn:ngm:class:random-number-generator
   - urn:ngm:class:hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:random-number-generator
   - urn:ngm:class:trusted-key-distribution
 enables:
@@ -76,9 +76,9 @@ uses:
 supports:
   - urn:ngm:class:nostr
   - urn:ngm:class:sigstore
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:openpgp
   - urn:ngm:class:eidas-qes
   - urn:ngm:class:smart-contract-authorisation
@@ -97,7 +97,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:bls-signature
   - urn:ngm:class:certificate-transparency
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:verifiable-random-function
   - urn:ngm:class:zero-knowledge-proof
 ---

@@ -4,15 +4,24 @@ type: Class
 title: Heatmap Regression
 resource: urn:ngm:class:risk-intensity-heatmap-regression
 domain: ai
-description: Heatmap regression is a computer-vision technique for keypoint localisation in which a network predicts a 2D probability map per landmark rather than directly regressing coordinates. The peak of each predicted heatmap indicates the most likely location, and Gaussian-blurred ground-truth targets make training spatially smooth and robust. It is the dominant approach for human pose estimation and fac
+description: A dense prediction technique for keypoint localisation in which a neural network outputs a 2D likelihood map per landmark instead of regressing coordinates directly. Ground-truth targets are rendered as Gaussian peaks centred on each keypoint, giving a spatially smooth supervision signal that preserves the convolutional structure of the feature maps. The final location is decoded from the argmax (
 maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:regression
+contrastsWith:
+  - urn:ngm:class:bounding-box-regression
+uses:
+  - urn:ngm:class:convolutional-neural-network
+partOf:
+  - urn:ngm:class:keypoint-detection
+  - urn:ngm:class:pose-estimation
 relatedTo:
   - urn:ngm:class:pose-estimation
+  - urn:ngm:class:non-maximum-suppression
 ---
 
 # Heatmap Regression
 
-Heatmap regression is a computer-vision technique for keypoint localisation in which a network predicts a 2D probability map per landmark rather than directly regressing coordinates. The peak of each predicted heatmap indicates the most likely location, and Gaussian-blurred ground-truth targets make training spatially smooth and robust. It is the dominant approach for human pose estimation and facial landmark detection.
+A dense prediction technique for keypoint localisation in which a neural network outputs a 2D likelihood map per landmark instead of regressing coordinates directly. Ground-truth targets are rendered as Gaussian peaks centred on each keypoint, giving a spatially smooth supervision signal that preserves the convolutional structure of the feature maps. The final location is decoded from the argmax (or a sub-pixel refinement) of each predicted heatmap. It is the dominant formulation for human pose estimation, facial landmark detection, and anatomical landmark localisation.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Earth's exosphere, the uppermost region of its atmosphere, has no clear upper boundary and gradually fades into outer space.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

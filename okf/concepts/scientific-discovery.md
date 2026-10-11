@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:knowledge-graph
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:generative-model
 relatedTo:
   - urn:ngm:class:drug-discovery-ai

@@ -23,7 +23,7 @@ dependsOn:
   - urn:ngm:class:discrete-logarithm-problem
 implements:
   - urn:ngm:class:asymmetric-cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
   - urn:ngm:class:public-key
   - urn:ngm:class:symmetric-key

@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:robot-controller
   - urn:ngm:class:power-supply
 requires:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:simultaneous-localisation-and-mapping
 enables:
@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:path-planning
   - urn:ngm:class:kinematics
 supports:

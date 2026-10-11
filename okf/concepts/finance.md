@@ -17,12 +17,12 @@ requires:
   - urn:ngm:class:financial-system
   - urn:ngm:class:banking-system
 enables:
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:payment-processing
 dependsOn:
   - urn:ngm:class:monetary-policy
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-economy
 uses:
   - urn:ngm:class:risk

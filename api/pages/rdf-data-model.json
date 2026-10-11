@@ -8,8 +8,8 @@
   "definition": "The RDF data model represents information as triples of subject, predicate and object, forming a directed labelled graph. It is the foundation of the Resource Description Framework used to publish structured data on the web.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:semantic-web-linked-data-standard",
-      "label": "Semantic Web Linked Data Standard"
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
     }
   ],
   "entityType": "Class",
@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "enables": [
@@ -59,6 +59,11 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation",
+      "slug": "knowledge-representation"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -75,6 +80,18 @@
         "label": "Ontology"
       },
       {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
       },
@@ -85,18 +102,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-construction",
-        "label": "Knowledge Graph Construction"
       }
     ],
     "requires": [
@@ -109,22 +114,42 @@
         "label": "Information Extraction"
       },
       {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       },
       {
         "id": "urn:ngm:class:knowledge-representation",
@@ -135,24 +160,22 @@
         "label": "Ontology Alignment"
       },
       {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
-      },
-      {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
       }
     ],
     "implements": [
@@ -163,22 +186,46 @@
       {
         "id": "urn:ngm:class:open-world-assumption",
         "label": "Open World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -191,15 +238,15 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -217,25 +264,49 @@
       {
         "id": "urn:ngm:class:turtle",
         "label": "Turtle Syntax"
+      },
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:data-integration",
-        "label": "Data Integration"
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:interoperability",
-        "label": "Interoperability"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
-    "standardizedBy": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
@@ -255,6 +326,14 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       }
     ]
   },

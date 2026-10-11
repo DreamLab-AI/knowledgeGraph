@@ -54,7 +54,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -144,7 +144,7 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -251,8 +251,8 @@
         "label": "Distributed Ledger"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:crl-certificate-revocation",
@@ -261,7 +261,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:e-idas",
+        "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Compliance"
       },
       {
@@ -277,7 +277,7 @@
         "label": "Smart Contract Enforcement"
       },
       {
-        "id": "urn:ngm:class:e-idas",
+        "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Compliance"
       },
       {
@@ -295,7 +295,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:e-idas",
+        "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Regulation"
       },
       {
@@ -359,7 +359,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ]
   },
@@ -383,11 +383,6 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:regulatory-framework",
-      "label": "Regulatory Framework",
-      "slug": "regulatory-framework"
     },
     {
       "id": "urn:ngm:class:ai-governance",
@@ -523,14 +518,6 @@
         "label": "Jurisdiction"
       },
       {
-        "id": "urn:ngm:class:legal-jurisdiction",
-        "label": "Legal Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:supervisory-authority",
-        "label": "Supervisory Authority"
-      },
-      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
@@ -557,7 +544,7 @@
         "label": "Security Obligations"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -565,12 +552,12 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-mi-ca-regulation",
-        "label": "EU MiCA Regulation"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "contrastsWith": [
@@ -585,10 +572,6 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-arbitrage",
-        "label": "Regulatory Arbitrage"
       }
     ],
     "bridgesTo": [
@@ -703,7 +686,7 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -711,8 +694,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",

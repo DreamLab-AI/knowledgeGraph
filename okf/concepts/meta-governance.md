@@ -8,7 +8,7 @@ description: Meta governance is the practice of governing the governance process
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 hasPart:
   - urn:ngm:class:voting-system
   - urn:ngm:class:governance-token
@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:polycentric-governance
   - urn:ngm:class:dao-governance
 implements:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 contrastsWith:
   - urn:ngm:class:polycentric-governance
 bridgesTo:
@@ -27,13 +27,13 @@ uses:
   - urn:ngm:class:governance-token
   - urn:ngm:class:voting-mechanism
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:treasury-management
 partOf:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:on-chain-governance
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:polycentric-governance
 ---
 

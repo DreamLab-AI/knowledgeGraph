@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:data-labelling
   - urn:ngm:class:real-time-data-pipelines
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:risk-management
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:identity-verification
@@ -29,19 +29,19 @@ bridgesTo:
   - urn:ngm:class:blockchain-analytics
   - urn:ngm:class:federated-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:stream-processing
   - urn:ngm:class:anomaly-detection
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:behavioural-biometrics
   - urn:ngm:class:stream-processing
 relatedTo:
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:credit-risk
 ---
 

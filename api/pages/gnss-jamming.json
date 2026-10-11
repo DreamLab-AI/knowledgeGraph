@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-jamming",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS jamming is intentional radio frequency interference that prevents a GNSS receiver from locking onto satellite signals, leaving its position and time service degraded or unusable.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -4,6 +4,7 @@ type: Class
 title: Horizon Sensor
 resource: urn:ngm:class:horizon-sensor
 domain: space-science-and-systems
+description: A horizon sensor observes the limb of a planet to provide an attitude reference.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Horizon Sensor
+
+A horizon sensor observes the limb of a planet to provide an attitude reference.

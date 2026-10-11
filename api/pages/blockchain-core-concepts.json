@@ -37,16 +37,16 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:zero-knowledge",
         "label": "Zero Knowledge"
       },
       {
-        "id": "urn:ngm:class:layer2-scaling",
-        "label": "Layer2Scaling"
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
       }
     ],
     "dependsOn": [],
@@ -106,8 +106,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -275,7 +275,7 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "dao",
+      "slug": "decentralised-autonomous-organisation",
       "label": "DAO"
     },
     {

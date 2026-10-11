@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:virtual-set-design
 uses:
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:motion-capture
   - urn:ngm:class:robotics-control

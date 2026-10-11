@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:urban-heat-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Urban heat monitoring is the measurement of how much warmer built-up areas are than their natural surroundings, using surface temperatures from satellites and aircraft and air temperatures from ground stations.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

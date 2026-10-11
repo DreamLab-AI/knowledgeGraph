@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:optimisation-algorithm
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:supervised-learning
 relatedTo:

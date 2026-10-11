@@ -79,10 +79,10 @@ supports:
 standardizedBy:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals
   - urn:ngm:class:iso-31000-risk-management
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:ietf-rfc-process
   - urn:ngm:class:ethereum-improvement-proposal
-  - urn:ngm:class:decentralised-identifiers
+  - urn:ngm:class:decentralised-identifier
 relatedTo:
   - urn:ngm:class:asynchronous-collaboration
   - urn:ngm:class:collective-action

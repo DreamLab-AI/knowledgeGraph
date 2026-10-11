@@ -21,7 +21,7 @@ AI regulation encompasses binding laws, technical standards, and administrative 
 
 #### US Approach
 
-- The US pursues a sector-led, principles-based approach coordinated through executive orders, agency guidance, and the [[NIST AI RMF]] rather than comprehensive legislation.
+- The US pursues a sector-led, principles-based approach coordinated through executive orders, agency guidance, and the [[NIST AI Risk Management Framework]] rather than comprehensive legislation.
 - The 2023 Executive Order on AI directed agencies to issue sector-specific guidance, required safety evaluations for frontier models, and tasked NIST with developing evaluation standards.
 - The Federal Trade Commission (FTC), Equal Employment Opportunity Commission (EEOC), and Consumer Financial Protection Bureau (CFPB) apply existing law to AI-related harms in their respective sectors.
 - State-level activity is accelerating: Colorado, Illinois, and Texas have enacted algorithmic-discrimination statutes; California has introduced multiple AI accountability bills.

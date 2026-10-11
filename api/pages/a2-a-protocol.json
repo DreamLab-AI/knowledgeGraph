@@ -141,7 +141,7 @@
         "label": "Web of Things"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -167,7 +167,7 @@
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -175,11 +175,11 @@
         "label": "Protocol Buffers"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
-        "id": "urn:ngm:class:protobuf",
+        "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {
@@ -359,6 +359,11 @@
       "slug": "roboticsdomain"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:automation",
       "label": "Automation",
       "slug": "automation"
@@ -369,9 +374,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -385,7 +390,7 @@
         "label": "Error Handling"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -691,8 +696,8 @@
         "label": "Linux Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -711,8 +716,8 @@
         "label": "W3C Standards"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [

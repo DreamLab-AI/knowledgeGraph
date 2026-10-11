@@ -10,7 +10,7 @@ A **quantum gate** is the elementary operation of gate-based quantum computing: 
 
 Single-qubit gates are 2×2 unitary matrices acting on the state α|0⟩ + β|1⟩. Canonical examples include the Pauli gates X (bit flip), Y, and Z (phase flip); the Hadamard gate H, which maps basis states to equal superpositions; the phase gate S; and the T gate, which supplies the non-Clifford resource needed for universality. Two-qubit gates such as the controlled-NOT (CNOT) and controlled-Z act on 4-dimensional joint states and are the standard mechanism for generating entanglement. A gate set is universal when arbitrary unitaries can be approximated to any precision from its elements — {H, T, CNOT} is the textbook example, with the Solovay–Kitaev theorem guaranteeing efficient approximation.
 
-Quantum circuits, as formalised within the [[Quantum Computation Paradigm]], are timed sequences of gates applied to registers of qubits followed by measurement. All the celebrated algorithms — Shor's factoring, Grover's search, quantum phase estimation, and the variational circuits used on near-term hardware — are ultimately compiled down to such gate sequences and then to the native gate set of a physical machine.
+Quantum circuits, as formalised within the [[Quantum Computing]], are timed sequences of gates applied to registers of qubits followed by measurement. All the celebrated algorithms — Shor's factoring, Grover's search, quantum phase estimation, and the variational circuits used on near-term hardware — are ultimately compiled down to such gate sequences and then to the native gate set of a physical machine.
 
 ## Technical Details
 

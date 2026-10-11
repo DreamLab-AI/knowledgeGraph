@@ -19,7 +19,7 @@ hasPart:
   - urn:ngm:class:audit
 requires:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:identity-management
 enables:

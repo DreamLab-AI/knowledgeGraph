@@ -14,7 +14,7 @@ enables:
 uses:
   - urn:ngm:class:network-protocol
 relatedTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 ---
 
 # Directory Service

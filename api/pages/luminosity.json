@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:luminosity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Luminosity is the total amount of energy that a star or other celestial object emits per second, which is its power output.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

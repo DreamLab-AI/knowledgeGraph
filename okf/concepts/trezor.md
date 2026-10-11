@@ -36,7 +36,7 @@ contrastsWith:
   - urn:ngm:class:hot-wallet
   - urn:ngm:class:custodial-wallet
 bridgesTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:supply-chain-security
 uses:
   - urn:ngm:class:shamir-secret-sharing
@@ -44,7 +44,7 @@ uses:
 supports:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:ethereum
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:hardware-wallet
   - urn:ngm:class:self-custody

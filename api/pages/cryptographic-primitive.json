@@ -40,6 +40,30 @@
       {
         "id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       }
     ],
     "requires": [],
@@ -53,7 +77,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -63,6 +87,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "dependsOn": [],
@@ -116,6 +144,10 @@
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ]
   },
@@ -154,10 +186,6 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       },
@@ -170,10 +198,6 @@
         "label": "Message Authentication Code"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
-      },
-      {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
@@ -184,6 +208,14 @@
       {
         "id": "urn:ngm:class:intrusion-detection",
         "label": "Intrusion Detection"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       }
     ],
     "requires": [
@@ -204,12 +236,12 @@
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -264,12 +296,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -290,7 +322,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -330,7 +362,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -338,7 +370,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -394,7 +426,7 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -521,8 +553,40 @@
       "label": "Address"
     },
     {
+      "slug": "address",
+      "label": "Address"
+    },
+    {
+      "slug": "archival-node",
+      "label": "Archival Node"
+    },
+    {
       "slug": "blake2",
       "label": "BLAKE2"
+    },
+    {
+      "slug": "blake2",
+      "label": "BLAKE2"
+    },
+    {
+      "slug": "block-propagation-time",
+      "label": "Block Propagation Time"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "bootstrap-node",
+      "label": "Bootstrap Node"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "collision-resistance",
+      "label": "Collision Resistance"
     },
     {
       "slug": "collision-resistance",
@@ -533,6 +597,14 @@
       "label": "Cryptographic Commitment"
     },
     {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "difficulty",
+      "label": "Difficulty"
+    },
+    {
       "slug": "difficulty",
       "label": "Difficulty"
     },
@@ -541,12 +613,40 @@
       "label": "Digital Signature"
     },
     {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
       "slug": "ecdsa",
       "label": "ECDSA"
     },
     {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
       "slug": "elliptic-curve-cryptography",
       "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
     },
     {
       "slug": "groth-16",
@@ -557,12 +657,32 @@
       "label": "Hash Collision"
     },
     {
+      "slug": "hash-collision",
+      "label": "Hash Collision"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "keccak-256",
+      "label": "Keccak-256"
+    },
+    {
       "slug": "keccak-256",
       "label": "Keccak-256"
     },
     {
       "slug": "lattice-cryptography",
       "label": "Lattice Cryptography"
+    },
+    {
+      "slug": "light-node",
+      "label": "Light Node"
+    },
+    {
+      "slug": "merkle-proof",
+      "label": "Merkle Proof"
     },
     {
       "slug": "merkle-proof",
@@ -573,12 +693,60 @@
       "label": "Merkle Root"
     },
     {
+      "slug": "merkle-root",
+      "label": "Merkle Root"
+    },
+    {
       "slug": "merkle-tree",
       "label": "Merkle Tree"
     },
     {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
       "slug": "nonce",
       "label": "Nonce"
+    },
+    {
+      "slug": "nonce",
+      "label": "Nonce"
+    },
+    {
+      "slug": "partition-attack",
+      "label": "Partition Attack"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "permissioned-network",
+      "label": "Permissioned Network"
+    },
+    {
+      "slug": "permissionless-network",
+      "label": "Permissionless Network"
+    },
+    {
+      "slug": "preimage-resistance",
+      "label": "Preimage Resistance"
     },
     {
       "slug": "preimage-resistance",
@@ -589,8 +757,24 @@
       "label": "Private Key"
     },
     {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "pruned-node",
+      "label": "Pruned Node"
+    },
+    {
       "slug": "public-key",
       "label": "Public Key"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
     },
     {
       "slug": "public-key-cryptography",
@@ -601,16 +785,56 @@
       "label": "SHA-256"
     },
     {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
       "slug": "salt",
       "label": "Salt"
+    },
+    {
+      "slug": "salt",
+      "label": "Salt"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
     },
     {
       "slug": "schnorr-signature",
       "label": "Schnorr Signature"
     },
     {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
       "slug": "signature-scheme",
       "label": "Signature Scheme"
+    },
+    {
+      "slug": "signature-scheme",
+      "label": "Signature Scheme"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
     },
     {
       "slug": "zero-knowledge-proof",

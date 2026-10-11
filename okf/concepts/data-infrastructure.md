@@ -30,9 +30,9 @@ uses:
   - urn:ngm:class:database
 supports:
   - urn:ngm:class:business-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:reliability
 ---
 

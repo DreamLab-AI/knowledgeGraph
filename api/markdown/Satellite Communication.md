@@ -1,29 +1,21 @@
-Satellite communication is the use of artificial Earth-orbiting satellites as relay stations to transmit signals — including voice, data, video, and telemetry — between ground terminals separated by large distances or challenging terrain. Signals are uplinked from a ground station to a satellite transponder, which amplifies and retransmits them on a different frequency to one or more receiving terminals. Different orbital regimes (GEO, MEO, LEO) offer distinct trade-offs between coverage footprint, latency, and capacity.
 
-### Overview
+Satellite communication is the end-to-end exchange of information through a system that uses one or more satellite links between space and terrestrial, airborne or maritime endpoints.
 
-- Satellite communication emerged in the 1960s and has grown into a critical global infrastructure supporting broadcasting, telephony, internet backhaul, navigation, and Earth observation. GEO satellites provide continental coverage from a fixed position but impose roughly 480–600 ms round-trip latency; LEO constellations (e.g., Starlink, OneWeb) offer low-latency broadband but require large numbers of satellites and complex handover systems.
-- Modern systems increasingly use high-throughput satellites (HTS) with frequency reuse across spot beams, dramatically increasing capacity per satellite. Integration with terrestrial networks via non-terrestrial network (NTN) standards is extending satellite connectivity to smartphones and IoT devices.
+A satellite communications system can include a payload, user terminals, feeder links, gateway earth stations, mission control and terrestrial network connections. It is broader than an individual radio link and distinct from the satellite platform itself. A system may use an Earth-to-space uplink, a space-to-Earth downlink, a satellite crosslink or a relay route; it need not provide all of these functions.[^2][^8]
 
-### Key aspects
+Satellite communication can carry user traffic, broadcast content, mission data or telemetry, tracking and command. RF is common, but optical free-space links also provide satellite communications without using radio-frequency spectrum. The ITU handbook project page lists fixed-satellite, broadcast-satellite, mobile-satellite and radiodetermination-satellite services; these are radiocommunication service categories, not labels for a particular orbit or business model. The page describes a handbook project agreed in 2024, not an adopted recommendation.[^1][^8][^9]
 
-- **Orbital regime selection** — GEO favours broadcast and backhaul; LEO/MEO favour broadband and navigation.
-- **Link budget design** — antenna gain, transmit power, atmospheric losses, and noise figure determine achievable data rates.
-- **Spectrum coordination** — adjacent satellite system interference requires careful frequency planning and ITU filing procedures.
-- **Latency characteristics** — GEO latency precludes real-time interactive applications; LEO latency is comparable to long-distance fibre.
+Network architecture varies. For example, feeder links may connect satellite capacity to gateways, while service links connect to user or mission terminals; some designs distribute these functions across satellites. ESA’s Hylas ground-segment page documents one historical architecture, and its MARIS page discusses a proposed split-satellite design. These examples illustrate possible arrangements, not the current deployment of every commercial system.[^6][^7]
 
-### Applications
+Technical capability, spectrum allocation, international network filing, national earth-station authorisation and an operational service are separate matters. Ofcom’s UK framework authorises earth-station use of spectrum and distinguishes NGSO gateway licences from network licences for user terminals. Ofcom states that such earth-station licences do not themselves authorise satellite operation. A licence register entry, allocation or filing therefore does not by itself prove launch, full deployment or customer service. UK Space Agency’s 2025 ARTES ground-station call records a funding opportunity, not an award or delivered gateway.[^3][^4][^5]
 
-- Maritime and aviation in-flight connectivity beyond terrestrial mobile coverage.
-- Disaster-recovery communications when terrestrial networks are destroyed.
-- Direct broadcast satellite (DBS) television distribution.
-- Backhaul for remote cellular base stations and offshore platforms.
-
-### Mechanisms
-
-- **Frequency division** — C-band, Ku-band, Ka-band, and V-band offer different rain-fade characteristics and regulatory environments.
-- **Modulation and coding** — DVB-S2X and adaptive coding modulation (ACM) optimise link efficiency under varying conditions.
-- **On-board processing** — digital regenerative payloads demodulate and re-encode signals, reducing noise accumulation.
-
-### Provenance
+[^1]: https://www.itu.int/en/ITU-R/study-groups/rsg4/Pages/satcomtechhandbook.aspx
+[^2]: https://www.ofcom.org.uk/spectrum/space-and-satellites/satellite-earth?language=en
+[^3]: https://www.ofcom.org.uk/spectrum/space-and-satellites/non-geo-fss?language=en
+[^4]: https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-2-6-weeks/222439-non-geostationary-satellite-systems/associated-documents/statement-ngso-licensing.pdf?v=327294
+[^5]: https://www.gov.uk/government/publications/artes-call-2/artes-ground-station-innovation-call-guidance
+[^6]: https://www.esa.int/Applications/Connectivity_and_Secure_Communications/Hylas/Ground_segment
+[^7]: https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Multiple_Access_Telecom_Reconfigurable_Intersatellites
+[^8]: https://www.nasa.gov/smallsat-institute/sst-soa/soa-communications/
+[^9]: https://www.gov.uk/government/news/dstl-achieves-uks-first-optical-downlink-from-space
 

@@ -17,7 +17,7 @@ dependsOn:
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:json-data-interchange-format-web-token
   - urn:ngm:class:json-web-key-set
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 implements:
   - urn:ngm:class:identity-provider
   - urn:ngm:class:relying-party
@@ -41,7 +41,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:access-control
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:financial-grade-api
 ---
 

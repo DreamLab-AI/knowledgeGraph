@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:real-time-control
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:actuators
 bridgesTo:
@@ -42,13 +42,13 @@ supports:
   - urn:ngm:class:simultaneous-localisation-and-mapping
   - urn:ngm:class:object-detection
 standardizedBy:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:ieee-1451
 partOf:
   - urn:ngm:class:perception-system
   - urn:ngm:class:robotic-system
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Sensors

@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:bc-token-and-asset
   - urn:ngm:class:fungible-token
-  - urn:ngm:class:erc-20-tokens
+  - urn:ngm:class:erc20-token
   - urn:ngm:class:digital-asset
   - urn:ngm:class:crypto-asset
   - urn:ngm:class:coordination-primitive
@@ -37,7 +37,7 @@ requires:
   - urn:ngm:class:wallet
   - urn:ngm:class:block-height
 enables:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:liquid-democracy
   - urn:ngm:class:retroactive-public-goods-funding
   - urn:ngm:class:vote-delegation
@@ -75,7 +75,7 @@ contrastsWith:
   - urn:ngm:class:reward-token
 uses:
   - urn:ngm:class:eip-712
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:ipfs
   - urn:ngm:class:multi-signature-wallet
   - urn:ngm:class:timelock
@@ -89,13 +89,13 @@ supports:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:liquidity-mining
   - urn:ngm:class:meta-governance
-  - urn:ngm:class:de-fi-protocol
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:retroactive-airdrops
 standardizedBy:
   - urn:ngm:class:compound-governor-bravo
   - urn:ngm:class:eip-712
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:erc-2612-permit
   - urn:ngm:class:erc-20-votes
   - urn:ngm:class:open-zeppelin-governor-contracts

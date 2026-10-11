@@ -10,9 +10,9 @@ quality: 0.74
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
 requires:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:ivms-101
   - urn:ngm:class:vasp-counterparty-discovery
 enables:
@@ -29,13 +29,13 @@ contrastsWith:
   - urn:ngm:class:wallet
 bridgesTo:
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:trisa
   - urn:ngm:class:travel-rule-protocol
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:openvasp
 standardizedBy:
   - urn:ngm:class:fatf

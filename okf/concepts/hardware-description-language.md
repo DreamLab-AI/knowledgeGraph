@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:infra-computing-and-cloud
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:fpga
   - urn:ngm:class:asic
@@ -19,12 +19,12 @@ enables:
 contrastsWith:
   - urn:ngm:class:gpu
 bridgesTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 uses:
   - urn:ngm:class:digital-logic
 supports:
   - urn:ngm:class:hardware-accelerator
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 partOf:
   - urn:ngm:class:infrastructure
 relatedTo:

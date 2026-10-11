@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:token-economics
 bridgesTo:
   - urn:ngm:class:token
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Token Engineering

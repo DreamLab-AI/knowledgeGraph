@@ -1,6 +1,6 @@
 Next token prediction is the autoregressive language-modelling objective in which a model predicts the next token in a sequence given all preceding tokens. Trained by maximising the likelihood of each token conditioned on its left context, it requires no explicit labels and scales to vast text corpora. It is the core pre-training objective behind generative transformer language models such as the GPT family.
 
-- Next token prediction trains a model to estimate the probability of the next token given all preceding tokens, an [[Autoregressive Model]] objective that drives generative [[Language Model]] pre-training. As a [[Pre Training]] task it is a form of [[Self Supervised Learning]], since the next token in any text supplies its own target.
+- Next token prediction trains a model to estimate the probability of the next token given all preceding tokens, an [[Autoregressive Model]] objective that drives generative [[Language Model]] pre-training. As a [[Pretraining]] task it is a form of [[Self Supervised Learning]], since the next token in any text supplies its own target.
 - It differs from [[Masked Language Modelling]] in that prediction is strictly left-to-right, which makes the resulting model naturally suited to text generation.
 
 ### Overview
@@ -20,7 +20,7 @@ Next token prediction is the autoregressive language-modelling objective in whic
 ### Applications
 
 - Pre-training generative [[GPT]]-style language models.
-- Producing transferable representations later adapted via [[Fine Tuning]].
+- Producing transferable representations later adapted via [[Fine-Tuning]].
 - Text completion, summarisation, dialogue and code generation.
 - Serving as the foundation for instruction-tuned and aligned assistants.
 

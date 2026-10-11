@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:api-standard
 contrastsWith:
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ieee
 bridgesTo:
   - urn:ngm:class:ai-infrastructure
@@ -36,7 +36,7 @@ supports:
   - urn:ngm:class:remote-attestation
 standardizedBy:
   - urn:ngm:class:oauth-2-0
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:http
   - urn:ngm:class:quic
   - urn:ngm:class:dns

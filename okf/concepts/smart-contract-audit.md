@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:solidity
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-security
 dependsOn:
   - urn:ngm:class:smart-contract

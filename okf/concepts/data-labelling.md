@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:data-annotation
 hasPart:
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:dataset-curation
 requires:
   - urn:ngm:class:human-in-the-loop
@@ -33,7 +33,7 @@ partOf:
   - urn:ngm:class:training-data
 relatedTo:
   - urn:ngm:class:data-quality
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
 ---
 
 # Data Labelling

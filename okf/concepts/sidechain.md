@@ -35,9 +35,9 @@ bridgesTo:
   - urn:ngm:class:distributed-systems
 uses:
   - urn:ngm:class:cross-chain-bridge
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 supports:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:token-standard
 partOf:
   - urn:ngm:class:blockchain

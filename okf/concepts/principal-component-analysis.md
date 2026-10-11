@@ -22,9 +22,9 @@ contrastsWith:
 uses:
   - urn:ngm:class:linear-algebra
 supports:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:data-processing
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:data-preprocessing

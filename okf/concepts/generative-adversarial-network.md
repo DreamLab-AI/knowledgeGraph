@@ -29,13 +29,13 @@ implements:
 contrastsWith:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:autoencoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:privacy-preserving-ai
 uses:
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
 partOf:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:deep-learning

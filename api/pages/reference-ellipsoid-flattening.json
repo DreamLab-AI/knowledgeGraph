@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reference-ellipsoid-flattening",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reference ellipsoid flattening is the ratio of the difference between the semi-major and semi-minor axes of an ellipsoid to the semi-major axis.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

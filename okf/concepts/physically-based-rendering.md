@@ -40,13 +40,13 @@ bridgesTo:
   - urn:ngm:class:neural-radiance-field
   - urn:ngm:class:metaverse
 uses:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:monte-carlo-integration
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:hdri
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 relatedTo:
   - urn:ngm:class:ray-tracing
   - urn:ngm:class:path-tracing

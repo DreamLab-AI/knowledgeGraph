@@ -13,7 +13,7 @@ is-a:
 bridgesTo:
   - urn:ngm:class:singapore
 relatedTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:digital-currency
   - urn:ngm:class:regulatory-framework
 ---

@@ -41,7 +41,7 @@ implements:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:value-alignment
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 contrastsWith:
   - urn:ngm:class:reward-hacking
   - urn:ngm:class:instrumental-convergence
@@ -52,7 +52,7 @@ bridgesTo:
   - urn:ngm:class:governance
   - urn:ngm:class:responsible-ai
 uses:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:mechanistic-interpretability
@@ -62,12 +62,12 @@ supports:
   - urn:ngm:class:robustness
   - urn:ngm:class:governance
   - urn:ngm:class:human-oversight
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:bletchley-declaration
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:bletchley-declaration
 partOf:
   - urn:ngm:class:ai-safety
@@ -77,7 +77,7 @@ relatedTo:
   - urn:ngm:class:reward-hacking
   - urn:ngm:class:existential-risk
   - urn:ngm:class:responsible-ai
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:scalable-oversight
   - urn:ngm:class:ai-governance

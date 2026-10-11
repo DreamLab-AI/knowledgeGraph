@@ -34,7 +34,7 @@ enables:
   - urn:ngm:class:social-gatherings
 dependsOn:
   - urn:ngm:class:network-infrastructure
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:physics-engine
 partOf:
   - urn:ngm:class:metaverse-venue

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uncertainty-propagation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Uncertainty propagation is the combination of the standard uncertainties of input estimates into a combined standard uncertainty for a result computed from them.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

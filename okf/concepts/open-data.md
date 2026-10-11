@@ -34,7 +34,7 @@ supports:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:decentralised-web
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:open-government
   - urn:ngm:class:open-science

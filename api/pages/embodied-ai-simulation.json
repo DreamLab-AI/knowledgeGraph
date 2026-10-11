@@ -368,8 +368,8 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "uses": [

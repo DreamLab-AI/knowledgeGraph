@@ -25,7 +25,7 @@ contrastsWith:
   - urn:ngm:class:api-gateway
 bridgesTo:
   - urn:ngm:class:load-balancer
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:ssl-termination
   - urn:ngm:class:caching

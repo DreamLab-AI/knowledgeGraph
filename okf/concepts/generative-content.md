@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:c2-pa-standard
   - urn:ngm:class:spatial-computing
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:multimodal-ai-architecture-ai
@@ -44,7 +44,7 @@ relatedTo:
   - urn:ngm:class:content-provenance
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:deepfakes
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:deepfakes
 ---
 

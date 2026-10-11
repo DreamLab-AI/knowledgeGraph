@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:message-queue
   - urn:ngm:class:oauth
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:asyncapi
 relatedTo:
   - urn:ngm:class:data-integration

@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:social-network-analysis
 dependsOn:
   - urn:ngm:class:graph-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:network-topology
 implements:
   - urn:ngm:class:modularity-optimisation
@@ -58,7 +58,7 @@ bridgesTo:
   - urn:ngm:class:bioinformatics
   - urn:ngm:class:cybersecurity
 uses:
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
   - urn:ngm:class:matrix-factorisation
   - urn:ngm:class:random-walk
   - urn:ngm:class:information-theory
@@ -66,7 +66,7 @@ uses:
   - urn:ngm:class:random-walk
   - urn:ngm:class:graph-convolutional-network
   - urn:ngm:class:graph-attention-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:temporal-graph-networks
   - urn:ngm:class:graph-database

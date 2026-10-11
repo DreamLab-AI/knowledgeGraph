@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:onboard-computer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An onboard computer is the processor-based unit on a spacecraft that runs flight software and manages spacecraft operations as part of command and data handling.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

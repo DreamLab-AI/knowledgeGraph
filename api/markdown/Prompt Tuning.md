@@ -42,7 +42,7 @@ Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous
 - **Applying Reflection**: Regularly incorporate reflection in prompt engineering. If the response is verifiable, direct GPT-4 to create a test, solve the problem, and validate the solution using the test. If errors arise, instruct it to refine and retest. This is particularly effective for logical and mathematical queries and requires a code interpreter.
 - **Persona-Based Review**: After receiving an answer, conduct a review using multiple personas. Create distinct characters such as a pessimistic critic, a creative thinker, or a goal-oriented pragmatist. Have them discuss and critique the answer to refine it further. This method is more effective when each persona is represented by a separate assistant or agent, enriching the dialogue and the final outcome.
 - **Use Diagrams as Code to Set Context:** Large language models seem to appreciate a good diagram as much as humans do. https://www.linkedin.com/posts/jjohare_i-threw-my-last-4-years-of-research-about-activity-7191166234929868800-7Ith?utm_source=share&utm_medium=member_desktop
-- [[Stable Diffusion Image Model]] prompt tips
+- [[Stable Diffusion]] prompt tips
 - **Floor View for Full Body Portraits**: "Floor view" yields better full-body results than "full body". Include "standing" or "walking" to prevent subjects from sitting.
 - **Adjusting Image Contrast**: Lower the CFG if your image is too contrasty. Use "very" or "highly" for emphasis.
 - **Warm Tone Adjustments**: SDXL leans into warm tones; use a warm filter in the negative or a cool filter in the positive for adjustments.
@@ -201,7 +201,7 @@ Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous
 - **Applying Reflection**: Regularly incorporate reflection in prompt engineering. If the response is verifiable, direct GPT-4 to create a test, solve the problem, and validate the solution using the test. If errors arise, instruct it to refine and retest. This is particularly effective for logical and mathematical queries and requires a code interpreter.
 - **Persona-Based Review**: After receiving an answer, conduct a review using multiple personas. Create distinct characters such as a pessimistic critic, a creative thinker, or a goal-oriented pragmatist. Have them discuss and critique the answer to refine it further. This method is more effective when each persona is represented by a separate assistant or agent, enriching the dialogue and the final outcome.
 - **Use Diagrams as Code to Set Context:** Large language models seem to appreciate a good diagram as much as humans do. https://www.linkedin.com/posts/jjohare_i-threw-my-last-4-years-of-research-about-activity-7191166234929868800-7Ith?utm_source=share&utm_medium=member_desktop
-- [[Stable Diffusion Image Model]] prompt tips
+- [[Stable Diffusion]] prompt tips
 - **Floor View for Full Body Portraits**: "Floor view" yields better full-body results than "full body". Include "standing" or "walking" to prevent subjects from sitting.
 - **Adjusting Image Contrast**: Lower the CFG if your image is too contrasty. Use "very" or "highly" for emphasis.
 - **Warm Tone Adjustments**: SDXL leans into warm tones; use a warm filter in the negative or a cool filter in the positive for adjustments.

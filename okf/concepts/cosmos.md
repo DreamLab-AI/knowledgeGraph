@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:cross-chain-interoperability
   - urn:ngm:class:cross-chain-asset-transfer
   - urn:ngm:class:interchain-accounts
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:polkadot
   - urn:ngm:class:ethereum

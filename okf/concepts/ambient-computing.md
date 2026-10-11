@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:smart-building
 dependsOn:
   - urn:ngm:class:infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:cloud-computing
 bridgesTo:
@@ -37,7 +37,7 @@ standardizedBy:
   - urn:ngm:class:matter-protocol
 relatedTo:
   - urn:ngm:class:mixed-reality
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:industrial-io-t
   - urn:ngm:class:privacy-preserving
 ---

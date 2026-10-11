@@ -16,7 +16,7 @@ dependsOn:
   - urn:ngm:class:model-training
   - urn:ngm:class:deep-learning
 implements:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:instruction-tuning
 contrastsWith:
   - urn:ngm:class:gemini-multimodal-language-model
@@ -26,9 +26,9 @@ supports:
   - urn:ngm:class:responsible-ai
 relatedTo:
   - urn:ngm:class:anthropic
-  - urn:ngm:class:constitutional-ai-training-methodology
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:constitutional-ai
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 
 # Constitutional AI Language Model Family

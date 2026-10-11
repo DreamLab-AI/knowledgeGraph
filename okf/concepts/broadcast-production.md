@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:production-pipeline
 enables:
   - urn:ngm:class:video-streaming
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:video-codec
   - urn:ngm:class:signal-processing

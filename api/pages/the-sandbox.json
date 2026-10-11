@@ -24,8 +24,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -98,7 +98,7 @@
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       }
     ],
@@ -266,12 +266,12 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:client-application",
         "label": "Client Application"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:infrastructure",

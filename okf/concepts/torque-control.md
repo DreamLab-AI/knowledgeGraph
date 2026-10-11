@@ -33,7 +33,7 @@ contrastsWith:
   - urn:ngm:class:position-control
   - urn:ngm:class:velocity-control
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
 uses:
   - urn:ngm:class:actuator

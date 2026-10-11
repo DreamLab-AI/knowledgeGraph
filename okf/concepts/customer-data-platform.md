@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:data-warehouse
   - urn:ngm:class:data-management-platform
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-analytics
 uses:
   - urn:ngm:class:event-streaming

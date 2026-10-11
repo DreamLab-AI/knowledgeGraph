@@ -26,9 +26,9 @@ supports:
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:normalising-flow
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:neural-network
 ---

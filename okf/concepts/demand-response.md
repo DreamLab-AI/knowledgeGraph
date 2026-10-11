@@ -23,7 +23,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:peaking-power-plant
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:blockchain
 uses:

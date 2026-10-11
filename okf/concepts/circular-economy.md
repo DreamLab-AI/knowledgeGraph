@@ -50,7 +50,7 @@ dependsOn:
   - urn:ngm:class:product-design
   - urn:ngm:class:blockchain
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:digital-twin
   - urn:ngm:class:material-science
   - urn:ngm:class:gs1
@@ -73,7 +73,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:gs1
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:ve-chain
   - urn:ngm:class:artificial-intelligence

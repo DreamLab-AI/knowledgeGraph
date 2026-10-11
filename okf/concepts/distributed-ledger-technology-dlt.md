@@ -25,7 +25,7 @@ requires:
   - urn:ngm:class:network-protocol
   - urn:ngm:class:peer-to-peer-network
 enables:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:immutable-record
   - urn:ngm:class:trustless-transaction
   - urn:ngm:class:cryptocurrency

@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:state-availability
 bridgesTo:
   - urn:ngm:class:distributed-storage
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:erasure-coding
   - urn:ngm:class:data-availability-sampling

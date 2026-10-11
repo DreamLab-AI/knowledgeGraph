@@ -37,7 +37,7 @@ AI systems designed to provide clear, understandable explanations of their decis
 
       ## Related Terms
 
-- **Broader**: [[Artificial Intelligence]], [[Machine Learning Discipline]]
+- **Broader**: [[Artificial Intelligence]], [[Machine Learning]]
 - **Narrower**: [[Interpretable AI]], [[Post Hoc Explanation]], [[Intrinsic Interpretability]]
 - **Related**: [[Model Interpretability]], [[Algorithmic Transparency]], [[XAI Methods]]
 

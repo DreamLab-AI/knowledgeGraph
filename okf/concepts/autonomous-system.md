@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:autonomous-warehouse-robot
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:control-theory
 contrastsWith:
   - urn:ngm:class:teleoperated-robot

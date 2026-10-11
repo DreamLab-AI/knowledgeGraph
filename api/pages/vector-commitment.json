@@ -144,8 +144,20 @@
         "label": "Asymmetric Encryption"
       },
       {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
       },
       {
         "id": "urn:ngm:class:hash-function",
@@ -156,20 +168,8 @@
         "label": "Key Derivation Function"
       },
       {
-        "id": "urn:ngm:class:random-number-generation",
-        "label": "Random Number Generation"
-      },
-      {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:encryption",
-        "label": "Encryption"
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
     "requires": [
@@ -194,12 +194,12 @@
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -232,8 +232,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
         "id": "urn:ngm:class:cryptographic-protocol",
@@ -250,12 +250,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -284,7 +284,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -336,7 +336,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -344,7 +344,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {

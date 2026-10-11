@@ -8,7 +8,7 @@ description: A machine-learning approach to modelling student knowledge, introdu
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:adaptive-learning
   - urn:ngm:class:intelligent-tutoring-system

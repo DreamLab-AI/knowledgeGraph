@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optical-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Optical remote sensing is remote sensing carried out at visible and nearby infrared wavelengths, acquiring information about a surface without contact.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

@@ -17,7 +17,7 @@ contrastsWith:
   - urn:ngm:class:mqtt
   - urn:ngm:class:http-protocol
 uses:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:rest-api
 ---
 

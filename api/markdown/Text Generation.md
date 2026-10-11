@@ -358,7 +358,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 ### Logseq
 
 - **Logseq**: is very similar to Obsidian, but self hosted and open source. It works on top of plain text files stored in a local system. It supports markdown and Org-mode formatting and allows for hierarchical and networked note-taking. It can be connected to it's mobile app via github.
-- Integration to [[Large Language Models]] can be OpenAI or local.
+- Integration to [[Large Language Model]] can be OpenAI or local.
   - Compare notion, obsidian, and logseq, using a simply markdown table with coloured dots
 - [ChatGPT Logseq Summarizer (openai.com)](https://chat.openai.com/g/g-3ooWV51Sb-logseq-summarizer)
 
@@ -422,7 +422,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - Allows creators to bring intricate visions and stories to life through simple text prompts, expanding visual storytelling horizons.
 - **Technical Insights**
   - Designed to scale language model capabilities to visual data, converting videos into patches for efficient processing and diverse video/image handling.
-  - Features a video compression network for temporal and spatial video compression, operating within a [[Neural Network Latent Space]].
+  - Features a video compression network for temporal and spatial video compression, operating within a [[Latent Space]].
   - Uses a diffusion transformer architecture, effectively scaling video generation and improving sample quality with increased compute.
 - **Innovative Features**
   - Works with videos at native sizes to offer sampling flexibility and improve composition and framing.
@@ -509,7 +509,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[RFC 2119 SHOULD Normative Keyword]]
 - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
 - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
-- https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
+- https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Model]] empathetic voice to voice
 - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
 - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse Platform]] [[Speech and Voice]] primer and demo.
 
@@ -957,7 +957,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 ### Logseq
 
 - **Logseq**: is very similar to Obsidian, but self hosted and open source. It works on top of plain text files stored in a local system. It supports markdown and Org-mode formatting and allows for hierarchical and networked note-taking. It can be connected to it's mobile app via github.
-- Integration to [[Large Language Models]] can be OpenAI or local.
+- Integration to [[Large Language Model]] can be OpenAI or local.
   - Compare notion, obsidian, and logseq, using a simply markdown table with coloured dots
 - [ChatGPT Logseq Summarizer (openai.com)](https://chat.openai.com/g/g-3ooWV51Sb-logseq-summarizer)
 
@@ -1021,7 +1021,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
   - Allows creators to bring intricate visions and stories to life through simple text prompts, expanding visual storytelling horizons.
 - **Technical Insights**
   - Designed to scale language model capabilities to visual data, converting videos into patches for efficient processing and diverse video/image handling.
-  - Features a video compression network for temporal and spatial video compression, operating within a [[Neural Network Latent Space]].
+  - Features a video compression network for temporal and spatial video compression, operating within a [[Latent Space]].
   - Uses a diffusion transformer architecture, effectively scaling video generation and improving sample quality with increased compute.
 - **Innovative Features**
   - Works with videos at native sizes to offer sampling flexibility and improve composition and framing.
@@ -1108,7 +1108,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 - [Tincans - Gazelle v0.2](https://tincans.ai/slm3) [[Speech and Voice]] fast speech engine [[RFC 2119 SHOULD Normative Keyword]]
 - [[Speech and Voice]] [Open Voice (myshell.ai)](https://research.myshell.ai/open-voice) cloning MIT license
 - [EndlessDreams: Voice directed real-time videos at 1280x1024 : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1c8oea6/endlessdreams_voice_directed_realtime_videos_at/) [[Speech and Voice]] [[Speech and Voice]] [[Product Design]] [[Real Time]]
-- https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Models]] empathetic voice to voice
+- https://demo.hume.ai/? [[Speech and Voice]] [[Large Language Model]] empathetic voice to voice
 - [[Speech and Voice]] [metavoiceio/metavoice-src: AI for human-level speech intelligence (github.com)](https://github.com/metavoiceio/metavoice-src) check for [[PlayerTwo]]
 - [NeMo/tutorials/tts/NeMo_TTS_Primer.ipynb at main · NVIDIA/NeMo (github.com)](https://github.com/NVIDIA/NeMo/blob/main/tutorials/tts/NeMo_TTS_Primer.ipynb) [[NVIDIA Omniverse Platform]] [[Speech and Voice]] primer and demo.
 
@@ -1289,7 +1289,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 
 - [AI-Powered Search: Embedding-Based Retrieval and Retrieval-Augmented Generation (RAG) | by Daniel Tunkelang | Apr, 2024 | Medium](https://dtunkelang.medium.com/ai-powered-search-embedding-based-retrieval-and-retrieval-augmented-generation-rag-cabeaba26a8b)
 - [AutoRAG documentation (marker-inc-korea.github.io)](https://marker-inc-korea.github.io/AutoRAG/index.html)
-- [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
+- [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Model]] [[Infrastructure]] [[Knowledge Graphing]]
 - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
 - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
 - [[Instruction-Following Conversational AI System]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
@@ -1349,7 +1349,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 ### [Dream Textures](https://github.com/carson-katri/dream-textures)
 
 - A Blender addon for applying textures with text prompts.
-- [[Stable Diffusion Image Model]]
+- [[Stable Diffusion]]
 
 ## Some software choices
 
@@ -1372,7 +1372,7 @@ Text Generation is the NLP task of producing coherent, contextually appropriate 
 ### Multi-Modal Large Language Models (LLMs)
 
 - **Introduction:**
-  - [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+  - [[Large Language Model]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 
 ## **April 2024**
 

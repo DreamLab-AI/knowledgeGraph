@@ -1,6 +1,6 @@
 Credential exchange is the protocol-governed flow by which verifiable credentials are issued to, held by and presented from a digital identity wallet to relying parties. It defines how issuers offer credentials, how holders store and selectively disclose them, and how verifiers request and validate proofs. It is a foundational interaction pattern of decentralised and self-sovereign identity systems.
 
-- Credential exchange is the set of protocols and message flows that move [[Verifiable Credentials]] between issuers, holders and verifiers. It governs how a credential is offered and accepted, how a [[Digital Wallet]] stores it, and how a holder later presents proofs to a relying party.
+- Credential exchange is the set of protocols and message flows that move [[Verifiable Credential]] between issuers, holders and verifiers. It governs how a credential is offered and accepted, how a [[Digital Wallet]] stores it, and how a holder later presents proofs to a relying party.
 - It underpins [[Self Sovereign Identity]] by letting individuals control which attributes they reveal, using [[Selective Disclosure]] and [[Decentralised Identifier]] mechanisms rather than centralised account federation.
 
 ### Overview

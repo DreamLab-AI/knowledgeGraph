@@ -4,6 +4,7 @@ type: Class
 title: Habitat Mapping
 resource: urn:ngm:class:habitat-mapping
 domain: earth-observation-and-geospatial-sensing
+description: Habitat mapping is the delineation and classification of habitats on the land or seabed, with Earth observation used to support extent and condition assessment.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Habitat Mapping
+
+Habitat mapping is the delineation and classification of habitats on the land or seabed, with Earth observation used to support extent and condition assessment.[^1][^2]

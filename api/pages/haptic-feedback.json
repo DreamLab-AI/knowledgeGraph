@@ -65,7 +65,7 @@
         "label": "Robotic System"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -327,7 +327,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -452,7 +452,7 @@
       "label": "WearableHaptics"
     },
     {
-      "slug": "aisystem",
+      "slug": "ai-system",
       "label": "AISystem"
     },
     {

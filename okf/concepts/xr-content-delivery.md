@@ -8,7 +8,7 @@ description: XR Content Delivery is the distribution of extended-reality assets,
 maturity: emerging
 quality: 0.55
 is-a:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # XR Content Delivery

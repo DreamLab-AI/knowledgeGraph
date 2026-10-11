@@ -13,12 +13,12 @@ is-a:
 hasPart:
   - urn:ngm:class:validity-proof
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:rollup
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:data-availability
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:decentralised-finance-domain

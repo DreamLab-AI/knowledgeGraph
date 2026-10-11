@@ -20,7 +20,7 @@ requires:
 enables:
   - urn:ngm:class:cross-chain-asset-transfer
   - urn:ngm:class:cross-chain-messaging
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:finality
@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:cross-chain-messaging
 uses:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:hash-time-locked-contract
 supports:

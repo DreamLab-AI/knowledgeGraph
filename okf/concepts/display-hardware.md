@@ -29,7 +29,7 @@ enables:
   - urn:ngm:class:spatial-computing-paradigm
 dependsOn:
   - urn:ngm:class:gpu
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:flat-panel-display
 bridgesTo:
@@ -40,7 +40,7 @@ supports:
   - urn:ngm:class:eye-tracking
   - urn:ngm:class:foveated-rendering
 standardizedBy:
-  - urn:ngm:class:openxr-standard
+  - urn:ngm:class:open-xr
 partOf:
   - urn:ngm:class:xr-device
   - urn:ngm:class:spatial-computing

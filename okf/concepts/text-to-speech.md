@@ -35,7 +35,7 @@ relatedTo:
   - urn:ngm:class:voice-cloning
   - urn:ngm:class:natural-language-understanding
   - urn:ngm:class:dialogue-system
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Text-to-Speech

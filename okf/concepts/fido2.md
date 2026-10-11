@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:challenge-response-protocol
   - urn:ngm:class:digital-signature
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:fido-alliance
 relatedTo:
   - urn:ngm:class:authentication

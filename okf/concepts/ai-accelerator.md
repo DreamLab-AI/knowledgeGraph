@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:distributed-training
 bridgesTo:
   - urn:ngm:class:compute-infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:matrix-multiplication
 supports:

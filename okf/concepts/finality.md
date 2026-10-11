@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:probabilistic-finality
   - urn:ngm:class:deterministic-finality

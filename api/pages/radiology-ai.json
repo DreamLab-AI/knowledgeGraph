@@ -130,8 +130,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
-        "label": "Annotated Training Data"
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
       },
       {
         "id": "urn:ngm:class:dicom",
@@ -274,8 +274,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -358,8 +358,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:data-augmentation",

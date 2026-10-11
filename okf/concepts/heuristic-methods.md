@@ -30,7 +30,7 @@ uses:
   - urn:ngm:class:optimisation-algorithm
 supports:
   - urn:ngm:class:decision-making
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:artificial-intelligence
 relatedTo:

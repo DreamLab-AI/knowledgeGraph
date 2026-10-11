@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:link-margin",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Link margin is the available link performance above a required threshold under stated assumptions, commonly expressed in decibels.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

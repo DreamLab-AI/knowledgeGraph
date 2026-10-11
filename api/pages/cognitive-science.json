@@ -99,7 +99,7 @@
       },
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
-        "label": "Intelligent Tutoring Systems"
+        "label": "Intelligent Tutoring System"
       },
       {
         "id": "urn:ngm:class:neuro-symbolic-ai",
@@ -186,8 +186,8 @@
         "label": "Neuromorphic Computing"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:cognitive-load",
@@ -234,7 +234,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -303,8 +303,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

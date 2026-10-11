@@ -37,8 +37,8 @@
         "label": "Collective Intelligence System"
       },
       {
-        "id": "urn:ngm:class:realtime-collaboration",
-        "label": "Realtime Collaboration"
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
       }
     ],
     "dependsOn": [],
@@ -111,8 +111,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

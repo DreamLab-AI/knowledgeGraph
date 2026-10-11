@@ -80,8 +80,8 @@
         "label": "Evaluation Harness"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:memory-store",
@@ -92,8 +92,8 @@
         "label": "Retrieval System"
       },
       {
-        "id": "urn:ngm:class:tokenizer",
-        "label": "Tokenizer"
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
       },
       {
         "id": "urn:ngm:class:context-window",
@@ -189,7 +189,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:retrieval-engineering",
@@ -356,8 +356,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -554,8 +554,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
@@ -640,8 +640,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:adversarial-machine-learning",
@@ -971,7 +971,7 @@
       "label": "Systems Engineering for AI"
     },
     {
-      "slug": "tokenizer",
+      "slug": "tokeniser",
       "label": "Tokenizer"
     },
     {

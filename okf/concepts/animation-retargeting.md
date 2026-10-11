@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:keyframe-animation
 bridgesTo:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:forward-kinematics
   - urn:ngm:class:coordinate-transformation

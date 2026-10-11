@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:beyond-low-earth-orbit-spacecraft",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A beyond-Low Earth Orbit spacecraft is a platform designed or operated for a mission phase outside the near-Earth region conventionally called LEO.[^1447][^1452]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -78,8 +78,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -168,8 +168,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

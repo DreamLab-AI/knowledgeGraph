@@ -24,7 +24,7 @@ uses:
 supports:
   - urn:ngm:class:zero-trust-architecture
 partOf:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:trusted-platform-module
 relatedTo:
   - urn:ngm:class:secure-enclave

@@ -31,7 +31,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:lo-ra-fine-tuning
   - urn:ngm:class:control-net
 ---

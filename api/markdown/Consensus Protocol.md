@@ -59,7 +59,7 @@ A consensus protocol is a set of rules and algorithms by which distributed netwo
 - **Enterprise / consortium blockchains**: [[Hyperledger Fabric]] uses a pluggable consensus ordering service (Raft or Kafka-based); [[Quorum]] uses Istanbul BFT; [[R3 Corda]] uses notary-based deterministic finality.
 - **Layer 2 scaling**: [[Rollup]] sequencers rely on L1 consensus for data availability and settlement; optimistic and ZK rollups defer fraud/validity proofs to L1 consensus.
 - **Cross-chain bridges**: [[Interoperability Protocol]]s use consensus proofs (light clients, [[Merkle Proof]]s) from one chain to verify state on another.
-- **Decentralised Autonomous Organisations**: [[DAO]] governance votes are recorded and executed via on-chain transactions committed by consensus.
+- **Decentralised Autonomous Organisations**: [[Decentralised Autonomous Organisation]] governance votes are recorded and executed via on-chain transactions committed by consensus.
 - **Distributed databases**: [[Raft Consensus]] and [[Paxos]] underpin etcd, CockroachDB, Google Spanner — CFT consensus for data stores without open participation.
 - **Federated AI**: [[Federated Learning]] aggregation can use consensus-inspired Byzantine-robust aggregation rules (Krum, Bulyan) to tolerate malicious gradient updates.
 

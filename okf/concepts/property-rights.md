@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:legal-framework
   - urn:ngm:class:identity-management
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-economy
   - urn:ngm:class:creator-economy
 dependsOn:

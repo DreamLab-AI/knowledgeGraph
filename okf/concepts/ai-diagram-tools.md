@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:editor-surface
   - urn:ngm:class:export-pipeline
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:layout-engine
   - urn:ngm:class:markdown-diagramming-as-code-tool
   - urn:ngm:class:large-language-model

@@ -78,7 +78,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -100,7 +100,7 @@
         "label": "AI Model Attestation"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -238,12 +238,12 @@
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -302,12 +302,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -328,7 +328,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -368,7 +368,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -376,7 +376,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -436,7 +436,7 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -538,12 +538,8 @@
       "label": "Humanity Attestation"
     },
     {
-      "slug": "layer2-scaling",
-      "label": "Layer2Scaling"
-    },
-    {
-      "slug": "layer2-scaling",
-      "label": "Layer2Scaling"
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
     },
     {
       "slug": "reputation-system",
@@ -566,12 +562,8 @@
       "label": "Verifiable Computation"
     },
     {
-      "slug": "verifiable-credential-vc",
-      "label": "Verifiable Credential (VC)"
-    },
-    {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "zero-knowledge",

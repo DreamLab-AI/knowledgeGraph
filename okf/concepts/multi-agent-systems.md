@@ -40,7 +40,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:orchestration
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:message-passing
 supports:
   - urn:ngm:class:reinforcement-learning

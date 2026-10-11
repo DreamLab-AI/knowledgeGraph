@@ -8,9 +8,9 @@ description: Collateralised borrowing is a lending mechanism in which a borrower
 maturity: established
 quality: 0.55
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Collateralised Borrowing

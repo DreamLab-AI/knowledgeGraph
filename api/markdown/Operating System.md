@@ -7,7 +7,7 @@ An Operating System (OS) is system software that manages computer hardware, soft
 - By abstracting physical hardware behind stable APIs — most prominently [[POSIX]] on Unix-like systems — the OS allows application code to remain portable across different processor architectures and device configurations.
 - Security boundaries enforced by the OS (privilege rings, address-space isolation, capability-based access control) are the primary line of defence against malicious or buggy software.
 - Modern OSes also serve as the runtime foundation for [[Cloud Computing]] infrastructure: hypervisors such as Xen and KVM allow a single physical machine to host many independent [[Virtual Machine]] instances, each running its own OS image.
-- In constrained environments — [[Embedded Systems]], [[Robotics]], industrial controllers — a lightweight [[Real-Time Operating System]] replaces the general-purpose OS, providing deterministic scheduling with bounded interrupt latency.
+- In constrained environments — [[Embedded System]], [[Robotics]], industrial controllers — a lightweight [[Real-Time Operating System]] replaces the general-purpose OS, providing deterministic scheduling with bounded interrupt latency.
 
 ### Key Components
 
@@ -67,7 +67,7 @@ An Operating System (OS) is system software that manages computer hardware, soft
 
 - [[Real-Time Operating System]] platforms — FreeRTOS, Zephyr, VxWorks, QNX — run on microcontrollers in automotive ECUs, medical devices, and factory automation.
 - Deterministic scheduling and minimal footprint are defining constraints; the OS may fit in tens of kilobytes of flash.
-- [[Embedded Systems]] without any OS (bare-metal programming) are still common for the simplest sensor nodes.
+- [[Embedded System]] without any OS (bare-metal programming) are still common for the simplest sensor nodes.
 
 #### Robotics
 

@@ -24,7 +24,7 @@ supports:
   - urn:ngm:class:data-validation
   - urn:ngm:class:quality-assurance
 relatedTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:schema-validation
 ---
 

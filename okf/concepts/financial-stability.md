@@ -30,9 +30,9 @@ contrastsWith:
   - urn:ngm:class:financial-contagion
   - urn:ngm:class:bank-run
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:crypto-regulation
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:crypto-regulation
 standardizedBy:
   - urn:ngm:class:financial-stability-board
@@ -42,7 +42,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:prudential-supervision
 ---
 

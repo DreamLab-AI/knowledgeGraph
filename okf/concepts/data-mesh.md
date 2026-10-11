@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:data-lake
 relatedTo:
   - urn:ngm:class:data-governance
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:data-lineage
 ---
 

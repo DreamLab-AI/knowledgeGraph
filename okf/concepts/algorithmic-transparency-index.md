@@ -40,15 +40,15 @@ enables:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:responsible-ai
 dependsOn:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:recommendation-system
   - urn:ngm:class:content-moderation-system
   - urn:ngm:class:automated-decision-system
   - urn:ngm:class:explainable-ai
 implements:
   - urn:ngm:class:ieee-7001-2021
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 contrastsWith:
   - urn:ngm:class:black-box-ai
@@ -71,8 +71,8 @@ supports:
   - urn:ngm:class:responsible-ai
 standardizedBy:
   - urn:ngm:class:ieee-7001-2021
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 partOf:
   - urn:ngm:class:algorithmic-accountability

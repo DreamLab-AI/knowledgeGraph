@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:location-based-service",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A location based service is a wireless-IP service that uses geographic information to serve a mobile user, or any application service that exploits the position of a mobile terminal [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

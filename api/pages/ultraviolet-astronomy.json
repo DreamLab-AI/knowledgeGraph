@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ultraviolet-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ultraviolet astronomy is the study of astronomical objects through their ultraviolet radiation, light with shorter wavelengths than visible light.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

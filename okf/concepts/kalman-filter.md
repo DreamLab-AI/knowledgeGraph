@@ -40,13 +40,13 @@ bridgesTo:
 uses:
   - urn:ngm:class:rb-1008-odometry
   - urn:ngm:class:mean-squared-error
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:localisation
   - urn:ngm:class:closed-loop-control
   - urn:ngm:class:sensor-fusion
 relatedTo:
   - urn:ngm:class:control-theory
   - urn:ngm:class:signal-processing
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:localisation
   - urn:ngm:class:closed-loop-control
 ---
 

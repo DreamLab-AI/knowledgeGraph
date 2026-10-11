@@ -4,6 +4,7 @@ type: Class
 title: Suborbital Spaceflight Vehicle
 resource: urn:ngm:class:suborbital-spaceflight-vehicle
 domain: space-science-and-systems
+description: A suborbital spaceflight vehicle is a craft used or designed to carry out a flight that does not complete an Earth orbit.[^1430][^1437][^1453]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Suborbital Spaceflight Vehicle
+
+A suborbital spaceflight vehicle is a craft used or designed to carry out a flight that does not complete an Earth orbit.[^1430][^1437][^1453]

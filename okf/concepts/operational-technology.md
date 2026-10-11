@@ -34,7 +34,7 @@ standardizedBy:
   - urn:ngm:class:iec-62443
 relatedTo:
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:resilience
 ---
 

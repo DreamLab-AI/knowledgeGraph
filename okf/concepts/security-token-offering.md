@@ -13,8 +13,8 @@ requires:
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:investor-accreditation
 enables:
   - urn:ngm:class:asset-tokenisation
@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:initial-dex-offering
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:security-token
@@ -40,10 +40,10 @@ standardizedBy:
   - urn:ngm:class:erc-3643
 relatedTo:
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:capital-markets
   - urn:ngm:class:tokenomics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Security Token Offering

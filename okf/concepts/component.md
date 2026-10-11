@@ -78,13 +78,13 @@ supports:
   - urn:ngm:class:data-governance
   - urn:ngm:class:deep-learning
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:mlops
   - urn:ngm:class:distributed-training
 standardizedBy:
   - urn:ngm:class:iso-iec-23053
   - urn:ngm:class:iso-iec-25010
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:ai-system-eu-definition
 relatedTo:
@@ -92,7 +92,7 @@ relatedTo:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:machine-learning-discipline-framework
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:microservices
   - urn:ngm:class:software-architecture
   - urn:ngm:class:event-driven-architecture

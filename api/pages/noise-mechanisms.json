@@ -196,8 +196,8 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ],
     "enables": [
@@ -314,7 +314,7 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -336,8 +336,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:random-noise",
@@ -446,7 +446,7 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {

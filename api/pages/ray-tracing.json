@@ -635,7 +635,7 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning Denoising"
       },
       {
@@ -673,7 +673,7 @@
         "label": "WebGPU"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -729,7 +729,7 @@
         "label": "SIGGRAPH"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {

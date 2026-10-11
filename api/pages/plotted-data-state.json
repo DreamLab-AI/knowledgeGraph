@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:plotted-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A plotted data state is the condition of data after they have been rendered as a plot, such as a map, line plot or contour plot.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

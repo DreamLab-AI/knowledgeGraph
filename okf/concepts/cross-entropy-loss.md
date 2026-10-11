@@ -44,7 +44,7 @@ uses:
   - urn:ngm:class:maximum-likelihood-estimation
 supports:
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:natural-language-processing
 standardizedBy:
@@ -52,7 +52,7 @@ standardizedBy:
   - urn:ngm:class:nist
 relatedTo:
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:kl-divergence
   - urn:ngm:class:information-theory
   - urn:ngm:class:perplexity-ai-search-platform

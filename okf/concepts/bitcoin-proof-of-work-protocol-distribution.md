@@ -14,7 +14,6 @@ is-a:
   - urn:ngm:class:blockchain
   - urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition
   - urn:ngm:class:bitcoin-proof-of-work-protocol-as-money
-  - urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues
 hasPart:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-halving
   - urn:ngm:class:gini-coefficient
@@ -97,7 +96,7 @@ relatedTo:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:btc-layer-3
   - urn:ngm:class:cashu
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Bitcoin Distribution

@@ -12,10 +12,10 @@ is-a:
 requires:
   - urn:ngm:class:erc-20-tokens
   - urn:ngm:class:quorum-threshold
-  - urn:ngm:class:erc-20-tokens
+  - urn:ngm:class:erc20-token
   - urn:ngm:class:proposal-mechanism
 enables:
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:treasury-management
   - urn:ngm:class:parameter-governance
   - urn:ngm:class:decentralised-decision-making
@@ -44,7 +44,7 @@ uses:
 relatedTo:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:snapshot-voting
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:plutocracy
   - urn:ngm:class:governance-attack
   - urn:ngm:class:voter-turnout

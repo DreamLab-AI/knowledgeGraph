@@ -33,8 +33,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:ai-trustworthiness
   - urn:ngm:class:iot-security
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:measurement-science
   - urn:ngm:class:software-testing

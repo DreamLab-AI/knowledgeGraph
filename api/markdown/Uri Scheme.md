@@ -17,10 +17,10 @@ A URI scheme is the leading component of a Uniform Resource Identifier that name
 ### Applications
 
 - Web addressing via http and https.
-- Decentralised identity via the did: scheme resolving to [[Decentralised Identifiers]].
+- Decentralised identity via the did: scheme resolving to [[Decentralised Identifier]].
 - Content addressing via ipfs: and content-hash schemes.
 - Application deep linking and custom protocol handlers.
-- Credential exchange flows that embed scheme-typed identifiers into [[Verifiable Credentials]].
+- Credential exchange flows that embed scheme-typed identifiers into [[Verifiable Credential]].
 
 ### Provenance
 

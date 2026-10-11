@@ -31,7 +31,7 @@ Core Lightning (formerly c-lightning) is a specification-compliant, production-g
 ### Applications / Use Cases
 
 - **Retail and e-commerce micropayments** — merchants integrate Core Lightning via the REST/JSON-RPC API (or BTCPay Server which supports CLN as a backend) to accept sub-cent Bitcoin payments instantly.
-- **[[Streaming Payments]]** — time-value streaming (pay-per-second APIs, podcast monetisation via Podcasting 2.0 / Value4Value) is straightforward with Core Lightning's keysend and BOLT-12 support.
+- **[[Streaming Payment]]** — time-value streaming (pay-per-second APIs, podcast monetisation via Podcasting 2.0 / Value4Value) is straightforward with Core Lightning's keysend and BOLT-12 support.
 - **[[Machine Payments]]** — IoT and autonomous agent scenarios where devices settle micro-transactions without human intermediation. Core Lightning's small footprint is advantageous here, bridging to the concept of [[Decentralised Finance]] infrastructure for machines.
 - **Exchange and custodial liquidity** — LSPs (Lightning Service Providers) use Core Lightning to manage large routing node infrastructure, using its plugin system for custom liquidity management policies.
 - **Research and protocol development** — the clean separation of concerns in CLN's architecture makes it the preferred implementation for Lightning protocol researchers experimenting with new channel types and payment schemes.

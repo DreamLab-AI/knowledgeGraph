@@ -27,13 +27,13 @@ enables:
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:key-exchange
 implements:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:diffie-hellman-key-exchange
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 contrastsWith:
   - urn:ngm:class:symmetric-encryption
 bridgesTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 uses:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:asymmetric-encryption

@@ -14,7 +14,7 @@ is-a:
   - urn:ngm:class:technical-architecture-framework
   - urn:ngm:class:standards-based-taxonomy
 hasPart:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:network-slicing
   - urn:ngm:class:edge-computing-node

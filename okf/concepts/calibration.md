@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:reference-standard
   - urn:ngm:class:ground-truth-labels
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:error-model
 enables:
   - urn:ngm:class:sensor-fusion

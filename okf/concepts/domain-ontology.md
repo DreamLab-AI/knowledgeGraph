@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:clinical-decision-support
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:regulatory-reporting
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:scientific-data-sharing
 standardizedBy:
   - urn:ngm:class:w-3-c-owl-2

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:programming-language
 relatedTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:lang-chain
 ---
 

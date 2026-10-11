@@ -4,6 +4,7 @@ type: Class
 title: Unconfined Aquifer
 resource: urn:ngm:class:unconfined-aquifer
 domain: earth-observation-and-geospatial-sensing
+description: An unconfined aquifer is an aquifer whose upper boundary is the water table, so that its water is at atmospheric pressure at that surface.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Unconfined Aquifer
+
+An unconfined aquifer is an aquifer whose upper boundary is the water table, so that its water is at atmospheric pressure at that surface.[^1][^2]

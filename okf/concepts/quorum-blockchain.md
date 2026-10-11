@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:network-component
   - urn:ngm:class:consortium-blockchain
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:permissioned-blockchain
   - urn:ngm:class:enterprise-blockchain
   - urn:ngm:class:distributed-ledger
@@ -54,20 +54,19 @@ dependsOn:
   - urn:ngm:class:p2p-networking
 implements:
   - urn:ngm:class:enterprise-ethereum-alliance-specification
-  - urn:ngm:class:erc20-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:qbft
   - urn:ngm:class:raft-consensus
   - urn:ngm:class:istanbul-bft
   - urn:ngm:class:qbft
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 contrastsWith:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:r3-corda
   - urn:ngm:class:public-ethereum
   - urn:ngm:class:hyperledger-besu
   - urn:ngm:class:daml-ledger
-  - urn:ngm:class:permissioned-blockchain
 uses:
   - urn:ngm:class:hardhat
   - urn:ngm:class:infura

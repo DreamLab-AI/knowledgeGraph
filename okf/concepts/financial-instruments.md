@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:intangible-assets
 bridgesTo:
   - urn:ngm:class:tokenization
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contracts
 standardizedBy:

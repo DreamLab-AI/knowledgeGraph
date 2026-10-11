@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:network-fabric
   - urn:ngm:class:infiniband
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-parallelism
 standardizedBy:
   - urn:ngm:class:mpi-forum

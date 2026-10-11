@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:aztec-protocol
 requires:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:zk-snark
   - urn:ngm:class:rollup
 enables:
@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:utxo-model
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset
 partOf:
   - urn:ngm:class:ethereum

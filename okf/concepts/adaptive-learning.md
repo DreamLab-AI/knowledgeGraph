@@ -10,7 +10,7 @@ quality: 0.91
 is-a:
   - urn:ngm:class:education-technology
   - urn:ngm:class:personalised-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:learner-model
   - urn:ngm:class:domain-model

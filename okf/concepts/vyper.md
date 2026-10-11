@@ -14,11 +14,11 @@ requires:
   - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:formal-verification
 implements:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 contrastsWith:
   - urn:ngm:class:solidity
   - urn:ngm:class:yul

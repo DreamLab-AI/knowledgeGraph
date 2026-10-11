@@ -4,7 +4,7 @@ Tree of Thoughts (ToT) is a deliberate reasoning framework for large language mo
 
 - Tree of Thoughts arose from the observation that human problem-solving rarely proceeds linearly: people explore multiple partial solutions, abandon dead ends, and revisit earlier decisions. Standard [[Chain of Thought]] prompting forces an LLM to commit to a single left-to-right sequence, offering no mechanism to recover from an early reasoning error.
 - ToT addresses this by reframing LLM reasoning as a classical [[Tree Search Algorithm|tree search]] problem with three cooperating components: a **thought generator**, a **thought evaluator**, and a **search controller**. This decomposition makes inference-time computation explicit and steerable.
-- The framework is model-agnostic: any instruction-following [[Large Language Models|LLM]] can serve as both the generator and evaluator, requiring only well-structured prompts. No additional training or fine-tuning is required, making it a zero-shot prompting strategy that complements [[Prompt Engineering]] best practices.
+- The framework is model-agnostic: any instruction-following [[Large Language Model|LLM]] can serve as both the generator and evaluator, requiring only well-structured prompts. No additional training or fine-tuning is required, making it a zero-shot prompting strategy that complements [[Prompt Engineering]] best practices.
 - ToT is a landmark instance of **inference-time scaling**, the broader paradigm in which spending more compute at inference (rather than training) unlocks qualitatively harder problems. It directly influenced subsequent work on [[Process Reward Model|process reward models]], [[Graph of Thoughts]], and OpenAI o1-style reasoning models.
 
 ### Key Mechanisms
@@ -82,7 +82,7 @@ Tree of Thoughts (ToT) is a deliberate reasoning framework for large language mo
 
 - ToT emerged within the [[AI Safety]] and [[AI Alignment]] adjacent discourse on making LLM reasoning legible: tree-structured intermediate states are explicitly observable and auditable, contrasting with opaque next-token prediction.
 - It influenced the design philosophy of OpenAI's o1 and o3 reasoning model series, which implement inference-time chain-of-thought extension internally, and DeepSeek-R1 which uses a similar search-and-evaluate paradigm during training via [[Reinforcement Learning]] from verifier feedback.
-- The framework intersects with classical [[Automated Planning]] (STRIPS, PDDL) research, reconnecting modern [[Large Language Models|LLM]] capabilities to symbolic AI traditions.
+- The framework intersects with classical [[Automated Planning]] (STRIPS, PDDL) research, reconnecting modern [[Large Language Model|LLM]] capabilities to symbolic AI traditions.
 - No formal standardisation body governs ToT; it is an academic framework adopted by the practitioner community and extended through open-source implementations (e.g. `princeton-nlp/tree-of-thought-llm` on GitHub).
 
 ### Provenance

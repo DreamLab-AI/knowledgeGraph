@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:apparent-magnitude",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Apparent magnitude is a logarithmic measure of how bright an astronomical object looks from Earth, on a scale in which a larger number means a fainter object.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

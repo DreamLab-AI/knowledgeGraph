@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:didcomm
   - urn:ngm:class:revocation-registry
   - urn:ngm:class:selective-disclosure
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:digital-wallet
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:verifiable-data-registry
@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:key-management
   - urn:ngm:class:wallet
   - urn:ngm:class:blockchain-oracle
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:governance-framework
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:trust-framework
@@ -56,11 +56,11 @@ dependsOn:
   - urn:ngm:class:cryptography
   - urn:ngm:class:blockchain-technology
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cryptographic-infrastructure
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:gdpr
   - urn:ngm:class:w-3-c-standards
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:cbor
 implements:
   - urn:ngm:class:anon-creds
@@ -70,7 +70,7 @@ implements:
   - urn:ngm:class:sd-jwt
   - urn:ngm:class:trust-over-ip-stack
   - urn:ngm:class:w3-c-did-core
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:openid-for-verifiable-credentials
   - urn:ngm:class:iso-iec-18013-5-m-dl
 contrastsWith:
@@ -89,14 +89,14 @@ uses:
   - urn:ngm:class:cbor
   - urn:ngm:class:ed-dsa
   - urn:ngm:class:ipfs
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:sidetree-protocol
   - urn:ngm:class:cha-cha20-poly1305
   - urn:ngm:class:camenisch-lysyanskaya-signatures
   - urn:ngm:class:ecdh-1pu
   - urn:ngm:class:cha-cha20-poly1305
 supports:
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:educational-credentials
   - urn:ngm:class:gdpr
   - urn:ngm:class:supply-chain-provenance
@@ -113,7 +113,7 @@ standardizedBy:
   - urn:ngm:class:iso
   - urn:ngm:class:open-id-foundation
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:access-control-system
   - urn:ngm:class:agents

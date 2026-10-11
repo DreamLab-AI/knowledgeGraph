@@ -67,7 +67,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       }
     ]
@@ -154,9 +154,19 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -169,9 +179,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -189,6 +214,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -204,19 +239,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -227,6 +257,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -249,8 +284,8 @@
         "label": "Blockchain Governance"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:financial-regulation",
@@ -271,7 +306,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -283,7 +318,7 @@
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -317,7 +352,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -385,7 +420,7 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -407,8 +442,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:privacy-coin",
@@ -479,8 +514,8 @@
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -529,8 +564,8 @@
         "label": "Inclusive Growth"
       },
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -555,7 +590,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -567,8 +602,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -601,12 +636,12 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -627,7 +662,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {

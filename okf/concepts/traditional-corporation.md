@@ -14,8 +14,8 @@ requires:
 dependsOn:
   - urn:ngm:class:fiduciary-duty
 contrastsWith:
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-governance
 bridgesTo:
   - urn:ngm:class:rule-of-law
 uses:

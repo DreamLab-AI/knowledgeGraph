@@ -24,10 +24,6 @@
       "label": "LLM Capability"
     },
     {
-      "id": "urn:ngm:class:structured-output",
-      "label": "Structured Output Generation"
-    },
-    {
       "id": "urn:ngm:class:agentic-capability",
       "label": "Agentic Capability"
     },
@@ -92,8 +88,8 @@
         "label": "JSON Schema"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:large-language-model",
@@ -164,8 +160,8 @@
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:json-schema-specification",
@@ -247,8 +243,8 @@
         "label": "JSON Schema"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:server-sent-events",
@@ -323,7 +319,7 @@
         "label": "OpenAI Function Calling API"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI 3.1"
       },
       {
@@ -343,7 +339,7 @@
         "label": "Google Gemini Function Declarations"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI 3.1"
       },
       {
@@ -358,7 +354,7 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -423,8 +419,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -513,14 +509,6 @@
         "label": "Inference-Time Computation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:tokenization",
-        "label": "Tokenization"
-      },
-      {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       },
@@ -539,6 +527,14 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
       }
     ],
     "implements": [
@@ -578,15 +574,11 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "id": "urn:ngm:class:chain-of-thought",
-        "label": "Chain-of-Thought"
       },
       {
         "id": "urn:ngm:class:expert-systems",
@@ -637,32 +629,32 @@
         "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:structured-output",
         "label": "Structured Output"
       },
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
-      },
-      {
-        "id": "urn:ngm:class:regular-expression",
-        "label": "Regular Expression"
-      },
-      {
-        "id": "urn:ngm:class:type-system",
-        "label": "Type System"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
     "supports": [
@@ -679,24 +671,24 @@
         "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:agentic-workflow",
-        "label": "Agentic Workflow"
-      },
-      {
-        "id": "urn:ngm:class:api-integration",
-        "label": "API Integration"
-      },
-      {
-        "id": "urn:ngm:class:information-extraction",
-        "label": "Data Extraction"
-      },
-      {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
       },
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
       }
     ],
     "standardizedBy": [
@@ -719,6 +711,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-system",
         "label": "Multi-Agent System"
       },
@@ -731,12 +727,8 @@
         "label": "ReAct Prompting"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:openai-research-organisation-api",
-        "label": "OpenAI API"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ]
   },
@@ -998,7 +990,7 @@
       "label": "Retrieval-Augmented Generation"
     },
     {
-      "slug": "rlhf",
+      "slug": "reinforcement-learning-from-human-feedback",
       "label": "RLHF"
     },
     {

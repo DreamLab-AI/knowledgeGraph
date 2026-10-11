@@ -28,13 +28,13 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:traditional-retail
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:metaverse-commerce
 uses:
   - urn:ngm:class:marketplace
   - urn:ngm:class:blockchain
   - urn:ngm:class:recommendation-system
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:api
 relatedTo:
   - urn:ngm:class:conversion-rate-optimisation

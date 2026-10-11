@@ -32,8 +32,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantization"
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:inference-runtime",
@@ -60,7 +60,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -147,6 +147,11 @@
       "slug": "ai-infrastructure"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -219,16 +224,16 @@
         "label": "Networking Fabric"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -245,8 +250,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network-training",
@@ -261,8 +266,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
       }
     ],
     "dependsOn": [
@@ -329,6 +334,14 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -393,8 +406,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -403,8 +416,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

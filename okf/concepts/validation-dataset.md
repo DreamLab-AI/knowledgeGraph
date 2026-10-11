@@ -4,6 +4,7 @@ type: Class
 title: Validation Dataset
 resource: urn:ngm:class:validation-dataset
 domain: earth-observation-and-geospatial-sensing
+description: A validation dataset is a set of reference data against which satellite-derived product values are compared to assess their accuracy.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Validation Dataset
+
+A validation dataset is a set of reference data against which satellite-derived product values are compared to assess their accuracy.[^1]

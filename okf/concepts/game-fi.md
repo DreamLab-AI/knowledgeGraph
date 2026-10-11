@@ -8,7 +8,7 @@ description: GameFi refers to the combination of gaming with decentralised finan
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:token
   - urn:ngm:class:smart-contract

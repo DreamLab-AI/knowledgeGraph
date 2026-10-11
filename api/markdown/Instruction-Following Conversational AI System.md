@@ -2,15 +2,15 @@ An instruction-following conversational AI system is a natural language processi
 
 ### Overview
 
-- Instruction-following conversational AI systems emerged as the productive synthesis of three prior research threads: large-scale [[Pre Training]] on internet corpora, [[Fine Tuning]] on curated task demonstrations, and preference-based alignment via [[Reinforcement Learning from Human Feedback]].
+- Instruction-following conversational AI systems emerged as the productive synthesis of three prior research threads: large-scale [[Pretraining]] on internet corpora, [[Fine-Tuning]] on curated task demonstrations, and preference-based alignment via [[Reinforcement Learning from Human Feedback]].
 - The defining characteristic is generalisation: a single model trained on diverse instructions can answer factual questions, write and debug code, analyse documents, and engage in extended multi-turn dialogue without mode-switching or specialised modules.
 - Consumer deployment — exemplified by [[ChatGPT]]'s release in November 2022 — demonstrated that general-purpose [[Conversational AI]] could operate at internet scale, fundamentally shifting public and enterprise expectations of AI capability.
 - The practical utility of these systems is inseparable from [[Prompt Engineering]]: the skill of formulating instructions that reliably elicit desired model behaviour, a discipline that emerged as a direct consequence of this class's flexibility.
-- Latent risks — including [[Hallucination in Language Models]], susceptibility to adversarial prompt injection, and potential for misuse — drove parallel research into [[AI Safety]] and triggered regulatory attention, most notably from the [[EU AI Act Regulatory Instrument]].
+- Latent risks — including [[Hallucination in Language Models]], susceptibility to adversarial prompt injection, and potential for misuse — drove parallel research into [[AI Safety]] and triggered regulatory attention, most notably from the [[EU AI Act]].
 
 ### Key Components
 
-- **Foundation model**: a [[Transformer]]-based [[Large Language Models]] pre-trained on web-scale corpora, providing broad world knowledge and linguistic fluency.
+- **Foundation model**: a [[Transformer]]-based [[Large Language Model]] pre-trained on web-scale corpora, providing broad world knowledge and linguistic fluency.
 - **Instruction fine-tuning**: supervised learning on human-authored prompt–response pairs that calibrates the model to follow instructions rather than merely predict next tokens. See [[Instruction Tuning]].
 - **RLHF alignment**: [[Reinforcement Learning from Human Feedback]] trains a reward model from human preference rankings, then uses this to fine-tune the policy model via proximal policy optimisation (PPO), reducing harmful or unhelpful outputs.
 - **Context window management**: the system maintains a token-bounded context including the system prompt (operator-defined behaviour), conversation history, and any injected tool outputs, mediating multi-turn coherence.
@@ -20,7 +20,7 @@ An instruction-following conversational AI system is a natural language processi
 
 ### Mechanisms
 
-- **Pre-training**: the backbone [[Large Language Models]] is trained with next-token prediction over trillions of tokens drawn from web pages, books, and code. This establishes knowledge, syntax, and latent reasoning capability.
+- **Pre-training**: the backbone [[Large Language Model]] is trained with next-token prediction over trillions of tokens drawn from web pages, books, and code. This establishes knowledge, syntax, and latent reasoning capability.
 - **Supervised fine-tuning (SFT)**: human annotators produce gold-standard responses to a diverse set of prompts; the model is fine-tuned via cross-entropy loss on these demonstrations, teaching instruction-following format and tone.
 - **Reward modelling**: a separate model is trained to predict human preference between pairs of model outputs, providing a differentiable signal for subsequent reinforcement learning.
 - **PPO fine-tuning**: the SFT model is further optimised against the reward model with a KL-divergence penalty that prevents excessive deviation from the SFT baseline, balancing helpfulness and policy compliance.
@@ -41,13 +41,13 @@ An instruction-following conversational AI system is a natural language processi
 
 - **[[ChatGPT]]** (OpenAI, launched November 2022): the canonical public instance built on [[GPT]]-3.5 and subsequently GPT-4, GPT-4o. Reached 100 million users within two months.
 - **[[Gemini]]** (Google DeepMind): multimodal instruction-following system integrating text, image, audio, and video understanding, tightly integrated with Google Search and Workspace.
-- **[[Anthropic Claude]]**: grounded in [[Constitutional AI Training Methodology]], emphasising safety and long-context reasoning; introduced 200k-token context windows. Anthropic uses AI-generated feedback (RLAIF) at scale.
+- **[[Anthropic Claude]]**: grounded in [[Constitutional AI]], emphasising safety and long-context reasoning; introduced 200k-token context windows. Anthropic uses AI-generated feedback (RLAIF) at scale.
 - **LLaMA-based open systems** (Meta): open-weight instruction-tuned models (LLaMA 2 Chat, LLaMA 3 Instruct) that democratised deployment of this class beyond proprietary API access.
 - **Mistral Instruct**: compact European open-weight instruction-following models demonstrating high capability per parameter count.
 
 ### Standards & Context
 
-- **EU AI Act (2024)**: the [[EU AI Act Regulatory Instrument]] classifies general-purpose AI models (including instruction-following systems above compute thresholds) as requiring capability evaluations, transparency reports, and adversarial red-teaming. Providers must maintain model cards and incident-reporting mechanisms.
+- **EU AI Act (2024)**: the [[EU AI Act]] classifies general-purpose AI models (including instruction-following systems above compute thresholds) as requiring capability evaluations, transparency reports, and adversarial red-teaming. Providers must maintain model cards and incident-reporting mechanisms.
 - **NIST AI RMF**: the US National Institute of Standards and Technology's AI Risk Management Framework provides voluntary guidance for trustworthy deployment, including bias evaluation and documentation practices applicable to this class.
 - **OpenAI Usage Policies**: OpenAI's operator / user permission hierarchy establishes a contractual governance layer above the technical safety controls, influencing how system prompts can restrict or expand model behaviour.
 - **Model cards & datasheets**: Google's model card standard and Gebru et al.'s datasheet framework provide documentation templates for communicating training data, intended use, and known limitations of instruction-following systems.

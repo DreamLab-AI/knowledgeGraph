@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:intelligent-tutoring-system
 dependsOn:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:pre-trained-language-model
   - urn:ngm:class:named-entity-recognition
   - urn:ngm:class:intent-classification

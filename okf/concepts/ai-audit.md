@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:compliance-audit
 requires:
   - urn:ngm:class:ai-documentation-standards
-  - urn:ngm:class:ai-documentation-standards
+  - urn:ngm:class:ai-documentation
   - urn:ngm:class:access-to-systems-and-personnel
 enables:
   - urn:ngm:class:accountability
@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:internal-audit
 bridgesTo:
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 uses:
   - urn:ngm:class:ai-monitoring
   - urn:ngm:class:ai-impact-assessment
@@ -34,9 +34,9 @@ supports:
   - urn:ngm:class:risk-management
   - urn:ngm:class:quality-assurance
 standardizedBy:
-  - urn:ngm:class:iso-iec-23894-2023
+  - urn:ngm:class:iso-iec-23894
   - urn:ngm:class:iso-iec-5338-2023
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:ai-governance
 relatedTo:

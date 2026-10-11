@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:expectation-maximisation
   - urn:ngm:class:bayesian-inference
 supports:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:gaussian-mixture-model
 partOf:
   - urn:ngm:class:probabilistic-model

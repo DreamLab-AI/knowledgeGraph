@@ -19,7 +19,7 @@ requires:
 enables:
   - urn:ngm:class:audit-trail
   - urn:ngm:class:asset-tokenisation
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:peer-to-peer-network
 contrastsWith:

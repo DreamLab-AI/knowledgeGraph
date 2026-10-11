@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:difficulty
   - urn:ngm:class:mining-pool
 supports:
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:cryptocurrency-regulation
 relatedTo:
   - urn:ngm:class:proof-of-work-energy-consumption

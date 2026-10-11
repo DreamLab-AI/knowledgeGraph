@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:accountability
 standardizedBy:
   - urn:ngm:class:iso-iec-25010
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:performance-metrics
   - urn:ngm:class:quality-assurance

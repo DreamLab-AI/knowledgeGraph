@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:data-management
 hasPart:
   - urn:ngm:class:access-control
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:data-integration
   - urn:ngm:class:data-virtualization
   - urn:ngm:class:governance-framework

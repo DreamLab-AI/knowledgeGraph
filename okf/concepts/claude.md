@@ -10,20 +10,20 @@ quality: 0.9
 is-a:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:proprietary-large-language-models
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:agentic-ai
 hasPart:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:red-teaming
-  - urn:ngm:class:rlhf
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:pretraining
   - urn:ngm:class:direct-preference-optimisation
 requires:
-  - urn:ngm:class:pre-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:pretraining
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:human-feedback
   - urn:ngm:class:instruction-tuning
@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:workflow-automation
 dependsOn:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:human-feedback
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:direct-preference-optimisation
@@ -50,7 +50,7 @@ dependsOn:
 implements:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:ai-model-card
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:responsible-scaling-policy
   - urn:ngm:class:ai-safety
 contrastsWith:
@@ -67,8 +67,8 @@ bridgesTo:
   - urn:ngm:class:ai-safety-institute
   - urn:ngm:class:frontier-ai
 uses:
-  - urn:ngm:class:constitutional-ai-training-methodology
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:constitutional-ai
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:instruction-tuning
@@ -87,7 +87,7 @@ standardizedBy:
   - urn:ngm:class:model-context-protocol
 relatedTo:
   - urn:ngm:class:anthropic
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-safety
   - urn:ngm:class:alignment-research
   - urn:ngm:class:foundation-model

@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:visual-feedback
 bridgesTo:
   - urn:ngm:class:robotic-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:tactile-actuator
   - urn:ngm:class:haptics

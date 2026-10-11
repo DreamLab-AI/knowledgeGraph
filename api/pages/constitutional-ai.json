@@ -10,24 +10,77 @@
     {
       "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -36,6 +89,14 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:ai-feedback",
+        "label": "AI Feedback"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
       }
     ],
     "supports": [],
@@ -44,6 +105,10 @@
       {
         "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "relatedTo": [
@@ -58,6 +123,10 @@
       {
         "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Model Safety Evaluation"
       }
     ]
   },
@@ -68,22 +137,18 @@
       "slug": "ai-safety"
     },
     {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics",
-      "slug": "ai-governance-and-ethics"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
-      {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
-      },
       {
         "id": "urn:ngm:class:scalable-oversight",
         "label": "Scalable Oversight"
@@ -93,24 +158,28 @@
         "label": "Value Alignment"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:corrigibility",
-        "label": "Corrigibility"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:interpretability",
-        "label": "Interpretability"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:mechanistic-interpretability",
-        "label": "Mechanistic Interpretability"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "requires": [
@@ -197,10 +266,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI"
-      },
-      {
         "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimisation"
       },
@@ -271,10 +336,6 @@
         "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red Teaming"
-      },
-      {
         "id": "urn:ngm:class:adversarial-machine-learning",
         "label": "Adversarial Machine Learning"
       },
@@ -315,7 +376,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -323,8 +384,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -355,24 +416,24 @@
         "label": "Mesa-Optimisation"
       },
       {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
       {
         "id": "urn:ngm:class:ai-security-institute",
         "label": "AI Security Institute"
-      },
-      {
-        "id": "urn:ngm:class:apollo-research",
-        "label": "Apollo Research"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-robot",
-        "label": "Autonomous Robot"
-      },
-      {
-        "id": "urn:ngm:class:distributional-shift",
-        "label": "Distributional Shift"
       }
     ]
   },
@@ -382,7 +443,7 @@
       "label": "AI Alignment"
     },
     {
-      "slug": "rlhf",
+      "slug": "reinforcement-learning-from-human-feedback",
       "label": "RLHF"
     },
     {
@@ -392,6 +453,18 @@
     {
       "slug": "ai-safety-research",
       "label": "AI Safety Research"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
     }
   ],
   "backlinks": [
@@ -428,16 +501,12 @@
       "label": "Chatbots"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
-    },
-    {
-      "slug": "constitutional-ai-training-methodology",
-      "label": "Constitutional AI Training Methodology"
     },
     {
       "slug": "corrigibility",

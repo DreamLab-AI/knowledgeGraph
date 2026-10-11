@@ -4,6 +4,7 @@ type: Class
 title: Lidar Instrument
 resource: urn:ngm:class:lidar-instrument
 domain: earth-observation-and-geospatial-sensing
+description: A lidar instrument is a remote sensing device that uses a pulsed laser to measure ranges to the Earth.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Lidar Instrument
+
+A lidar instrument is a remote sensing device that uses a pulsed laser to measure ranges to the Earth.[^1]

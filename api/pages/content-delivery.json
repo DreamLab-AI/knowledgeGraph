@@ -33,7 +33,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       }
     ],
@@ -53,12 +53,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",

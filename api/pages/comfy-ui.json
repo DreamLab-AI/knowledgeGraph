@@ -140,7 +140,7 @@
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -148,8 +148,8 @@
         "label": "CLIP"
       },
       {
-        "id": "urn:ngm:class:vae",
-        "label": "VAE"
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       },
       {
         "id": "urn:ngm:class:noise-schedule",
@@ -203,8 +203,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:latent-diffusion",
@@ -219,7 +219,7 @@
         "label": "CLIP"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE"
       },
       {
@@ -231,7 +231,7 @@
         "label": "Noise Schedule"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -339,7 +339,7 @@
         "label": "Hugging Face Hub"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -369,9 +369,9 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -394,9 +394,14 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -410,8 +415,8 @@
         "label": "GAN"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -422,7 +427,7 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE"
       },
       {
@@ -596,18 +601,18 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -694,16 +699,16 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
@@ -728,16 +733,22 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:ieee-std-730",
         "label": "IEEE Std 730"
-      },
+      }
+    ],
+    "partOf": [
       {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -841,7 +852,7 @@
       "label": "LoRA Fine-Tuning"
     },
     {
-      "slug": "vae",
+      "slug": "variational-autoencoder",
       "label": "VAE"
     },
     {
@@ -984,7 +995,7 @@
     },
     {
       "slug": "fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "slug": "fooocus",
@@ -1031,8 +1042,8 @@
       "label": "Player Two"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "procedural-and-hybrid-4-d",
@@ -1055,8 +1066,8 @@
       "label": "Proprietary Image Generation"
     },
     {
-      "slug": "python-pytorch-deep-learning-stack",
-      "label": "Python PyTorch Deep Learning Stack"
+      "slug": "py-torch",
+      "label": "PyTorch"
     },
     {
       "slug": "sampling",

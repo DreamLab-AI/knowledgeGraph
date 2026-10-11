@@ -22,11 +22,11 @@ enables:
   - urn:ngm:class:private-set-intersection
   - urn:ngm:class:secure-aggregation
 contrastsWith:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:homomorphic-encryption
 bridgesTo:
   - urn:ngm:class:privacy-preserving-machine-learning
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:zero-knowledge-proof

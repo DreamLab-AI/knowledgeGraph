@@ -276,7 +276,7 @@ SubClassOf(ai:EnterpriseAIAdoption
 - **AI Champion**: An employee trained as an internal advocate and peer support resource for AI tool adoption, typically comprising 1–3% of the workforce in mature enterprise AI programmes.
 - **Data Residency**: The requirement that data used by AI systems remain within a specified geographic jurisdiction, enforced by regulation (GDPR, EU AI Act), contractual obligation, or corporate policy — a primary driver of sovereign AI infrastructure investment.
 - **Human-in-the-Loop (HITL)**: A governance pattern in which AI-generated recommendations or actions above a configurable risk threshold require human review and approval before execution — particularly critical in [[Agentic Workflow]] deployments with access to real-world action surfaces.
-- **AI Risk Register**: A structured inventory of all AI systems deployed within an organisation, documenting risk classification, technical specifications, governance controls, monitoring arrangements, and regulatory compliance status under frameworks such as [[EU AI Act]] and [[NIST AI RMF]].
+- **AI Risk Register**: A structured inventory of all AI systems deployed within an organisation, documenting risk classification, technical specifications, governance controls, monitoring arrangements, and regulatory compliance status under frameworks such as [[EU AI Act]] and [[NIST AI Risk Management Framework]].
 
 ## Research & Literature
 

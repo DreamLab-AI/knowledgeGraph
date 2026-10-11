@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:gaming
 bridgesTo:
   - urn:ngm:class:metaverse
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:blockchain

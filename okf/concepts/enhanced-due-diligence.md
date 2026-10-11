@@ -23,8 +23,8 @@ uses:
   - urn:ngm:class:transaction-monitoring
   - urn:ngm:class:identity-verification
 supports:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
 partOf:
   - urn:ngm:class:compliance
 relatedTo:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pushbroom-scanner",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A pushbroom scanner is an along-track multispectral scanner in which the motion of a detector array builds up an image as the platform moves forward.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

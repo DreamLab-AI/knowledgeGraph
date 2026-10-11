@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:governance-token
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-governance
 dependsOn:
   - urn:ngm:class:smart-contract
@@ -23,8 +23,8 @@ uses:
   - urn:ngm:class:token-weighted-voting
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:dao
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-autonomous-organisation
 partOf:
   - urn:ngm:class:on-chain-governance
 relatedTo:

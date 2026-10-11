@@ -9,7 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:sc-content-and-assets
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:data-collection
   - urn:ngm:class:machine-learning-discipline-models
@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:personalization
   - urn:ngm:class:user-experience-optimization
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Behavioral Learning

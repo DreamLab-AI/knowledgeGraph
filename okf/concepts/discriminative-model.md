@@ -28,7 +28,7 @@ supports:
   - urn:ngm:class:decision-theory
 partOf:
   - urn:ngm:class:supervised-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:neural-network
   - urn:ngm:class:deep-learning

@@ -202,8 +202,8 @@
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:supply-chain-traceability",
@@ -402,6 +402,11 @@
       "slug": "bc-token-and-asset"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure",
       "slug": "dc-protocol-and-infra"
@@ -427,14 +432,9 @@
       "slug": "knowledge-economy"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-technique",
@@ -445,11 +445,6 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:behavioural-economics",
-      "label": "Behavioural Economics",
-      "slug": "behavioural-economics"
     },
     {
       "id": "urn:ngm:class:blockchain",
@@ -470,16 +465,6 @@
       "id": "urn:ngm:class:information-theory",
       "label": "Information Theory",
       "slug": "information-theory"
-    },
-    {
-      "id": "urn:ngm:class:institutional-economics",
-      "label": "Institutional Economics",
-      "slug": "institutional-economics"
-    },
-    {
-      "id": "urn:ngm:class:political-economy",
-      "label": "Political Economy",
-      "slug": "political-economy"
     },
     {
       "id": "urn:ngm:class:social-science",
@@ -552,6 +537,11 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
@@ -560,6 +550,16 @@
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -577,6 +577,11 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -587,14 +592,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -605,6 +610,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -643,8 +653,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -683,6 +693,10 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
@@ -699,20 +713,16 @@
         "label": "System Integration"
       },
       {
+        "id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ai-art-generation",
         "label": "AI Art"
       },
       {
         "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
-      },
-      {
-        "id": "urn:ngm:class:cultural-heritage",
-        "label": "Cultural Heritage"
-      },
-      {
-        "id": "urn:ngm:class:digital-fashion",
-        "label": "Digital Fashion"
       }
     ],
     "dependsOn": [
@@ -785,10 +795,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
       },
@@ -801,7 +807,7 @@
         "label": "Value Chain Management"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -815,6 +821,10 @@
       {
         "id": "urn:ngm:class:shallow-machine-learning",
         "label": "Shallow Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -949,7 +959,7 @@
         "label": "ISO 28000"
       },
       {
-        "id": "urn:ngm:class:erc-20-token-standard",
+        "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
       }
     ],
@@ -959,8 +969,8 @@
         "label": "Operations Management"
       },
       {
-        "id": "urn:ngm:class:decision-science",
-        "label": "Decision Science"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -1001,24 +1011,24 @@
         "label": "Network and Communication"
       },
       {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
       },
       {
+        "id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      },
+      {
         "id": "urn:ngm:class:refactoring",
         "label": "Refactoring"
-      },
-      {
-        "id": "urn:ngm:class:technical-debt",
-        "label": "Technical Debt"
-      },
-      {
-        "id": "urn:ngm:class:test-driven-development",
-        "label": "Test-Driven Development"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ]
   },
@@ -1311,15 +1321,15 @@
     },
     {
       "slug": "fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "slug": "model-width",
       "label": "Model Width"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     }
   ]
 }

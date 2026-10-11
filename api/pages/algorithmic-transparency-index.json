@@ -132,7 +132,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -158,11 +158,11 @@
         "label": "IEEE 7001-2021"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -217,7 +217,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       }
     ],
     "supports": [
@@ -244,11 +244,11 @@
         "label": "IEEE 7001-2021"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -375,9 +375,9 @@
       "slug": "governance-framework"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -534,7 +534,7 @@
         "label": "Automated Decision-Making"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -722,7 +722,7 @@
         "label": "IEEE P2863"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {

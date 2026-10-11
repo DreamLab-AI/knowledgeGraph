@@ -72,8 +72,8 @@
         "label": "Edge AI Accelerator"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:inference-hardware",
@@ -107,8 +107,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

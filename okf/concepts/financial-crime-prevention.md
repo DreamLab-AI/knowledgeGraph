@@ -10,12 +10,12 @@ quality: 0.62
 is-a:
   - urn:ngm:class:regulatory-compliance
 hasPart:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:transaction-monitoring
   - urn:ngm:class:sanctions-screening
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:transaction-monitoring
   - urn:ngm:class:audit-trail
 enables:
@@ -35,7 +35,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:regulatory-compliance
 relatedTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:compliance
 ---

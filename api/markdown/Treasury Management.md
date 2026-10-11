@@ -164,7 +164,7 @@ The 2022 bear market constituted the field's most significant stress test: nativ
 
 ## About Treasury Management
 
-- **Treasury management** in the blockchain and [[DAO|decentralised autonomous organisation]] domain is the institutional practice of governing, allocating, and growing the collective financial resources of decentralised protocols and crypto-native corporations. Unlike traditional corporate treasury functions — which operate under centralised CFO discretion, quarterly board reporting, and regulatory filings — DAO treasury management executes every significant financial decision through on-chain or off-chain token-holder governance, with all transactions permanently recorded on public blockchains enabling real-time auditability that far exceeds the disclosure standards of listed public companies.
+- **Treasury management** in the blockchain and [[Decentralised Autonomous Organisation|decentralised autonomous organisation]] domain is the institutional practice of governing, allocating, and growing the collective financial resources of decentralised protocols and crypto-native corporations. Unlike traditional corporate treasury functions — which operate under centralised CFO discretion, quarterly board reporting, and regulatory filings — DAO treasury management executes every significant financial decision through on-chain or off-chain token-holder governance, with all transactions permanently recorded on public blockchains enabling real-time auditability that far exceeds the disclosure standards of listed public companies.
 
 #### Three Phases of DAO Treasury Development (2020-2026)
 

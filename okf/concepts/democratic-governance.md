@@ -16,7 +16,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
 relatedTo:
   - urn:ngm:class:dao-governance
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 ---
 
 # Democratic Governance

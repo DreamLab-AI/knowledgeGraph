@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:ether-cat
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 partOf:
   - urn:ngm:class:robot
   - urn:ngm:class:cyber-physical-systems

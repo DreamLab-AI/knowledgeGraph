@@ -36,7 +36,7 @@
         "label": "Disclosure Obligations"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       }
     ],
@@ -56,7 +56,7 @@
         "label": "Securities Regulation"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       }
     ],
@@ -77,7 +77,7 @@
         "label": "Crypto-Asset Regulation"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -129,7 +129,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -271,7 +271,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {

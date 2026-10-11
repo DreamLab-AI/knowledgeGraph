@@ -62,7 +62,7 @@ Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism th
   - [[Smart Contract]]-enforced milestone disbursement and contribution tracking tools partially address this.
 - **Latency and contributor liquidity**
   - The gap between performing work and receiving RetroPGF rewards can span years, creating cash-flow problems for contributors without alternative income.
-  - Anticipated RetroPGF income cannot be easily collateralised or discounted, though [[DeFi]] lending protocols have explored RetroPGF-backed loans.
+  - Anticipated RetroPGF income cannot be easily collateralised or discounted, though [[Decentralised Finance]] lending protocols have explored RetroPGF-backed loans.
 - **Round capture and governance risk**
   - Repeated rounds create incumbent advantages as established projects learn to optimise for evaluation criteria rather than genuine impact.
   - Governance capture of the badge holder selection process could direct funds toward insider networks.
@@ -71,7 +71,7 @@ Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism th
 
 - RetroPGF does not yet have a formal cross-organisation standard; each implementation defines its own round mechanics, evaluation criteria, and treasury governance.
 - The [[Optimism Collective]] has published governance documentation and retroactive funding frameworks that serve as de facto reference implementations.
-- Related governance standards include [[EIP]] proposals for on-chain treasury management and [[Ethereum Attestation Service]] (EAS) for impact evidence.
+- Related governance standards include [[Ethereum Improvement Proposal]] proposals for on-chain treasury management and [[Ethereum Attestation Service]] (EAS) for impact evidence.
 - Academic precedents include Elinor Ostrom's work on [[Commons Governance]] (Governing the Commons, 1990) and contemporary mechanism design literature on public goods provision.
 - The [[Open Source Initiative]] (OSI) and [[Linux Foundation]] provide adjacent frameworks for sustainable open-source funding, though these do not directly encode retroactive mechanics.
 - Regulatory context: RetroPGF distributions in token form may constitute taxable income or, in some jurisdictions, securities distributions — an evolving regulatory area intersecting with [[Crypto Regulation]] frameworks.

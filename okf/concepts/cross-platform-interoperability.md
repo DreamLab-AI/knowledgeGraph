@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:threshold-cryptography
   - urn:ngm:class:relayer
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-transfer
 standardizedBy:
   - urn:ngm:class:erc-5164
@@ -47,7 +47,7 @@ standardizedBy:
   - urn:ngm:class:ieee
 partOf:
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:oracle-network
   - urn:ngm:class:rollup

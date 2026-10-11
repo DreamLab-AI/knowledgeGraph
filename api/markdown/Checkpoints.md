@@ -258,7 +258,7 @@ Checkpoints are serialised snapshots of a machine-learning model's complete trai
 
 ### Transfer Learning and Fine-tuning
 
-- Pre-trained checkpoints from [[Large-Scale Pretrained Foundation Model]] (BERT, RoBERTa, LLaMA, Mistral, GPT-2, Gemma, Qwen) published on [[Hugging Face]] Hub enable practitioners to initialise domain-specific models with zero or minimal training data:
+- Pre-trained checkpoints from [[Foundation Model]] (BERT, RoBERTa, LLaMA, Mistral, GPT-2, Gemma, Qwen) published on [[Hugging Face]] Hub enable practitioners to initialise domain-specific models with zero or minimal training data:
   - `AutoModel.from_pretrained("bert-base-uncased")` downloads the `.safetensors` checkpoint, verifies the JSON header, deserialises weights via mmap, and loads them into the appropriate architecture class
   - The Hub's `model.safetensors.index.json` enables lazy loading of only the required parameter shards for architectures where only specific layers are fine-tuned
 - [[Fine-tuning]] techniques including [[LoRA]], QLoRA, and prefix-tuning checkpoint only the delta weights (adapter tensors) rather than the full model, reducing checkpoint size from gigabytes (full model) to megabytes (adapter only). [[PEFT]] library checkpoints save `adapter_config.json` + `adapter_model.safetensors`, typically 10-500 MB for a 7-70B base model.
@@ -580,8 +580,8 @@ Checkpoints are serialised snapshots of a machine-learning model's complete trai
 - **TIES-merging**: Checkpoint merging algorithm that resolves sign conflicts between merged parameters by voting before averaging, reducing parameter interference
 - **DARE**: Checkpoint merging via random sparsification of delta weights (zeroing 90-99%) before merging, reducing cross-checkpoint interference
 - **Post-hoc EMA**: Karras et al. 2024 technique for reconstructing any EMA profile post-training via linear mixture of stored short-EMA snapshots
-- **Weak subjectivity checkpoint**: [[Ethereum Smart Contract Platform]] beacon chain mechanism providing syncing nodes with a recent finalised `(epoch, block_root)` anchor for fast-sync without full chain replay
-- **Casper FFG**: [[Ethereum Smart Contract Platform]]'s Friendly Finality Gadget overlay protocol that justifies and finalises checkpoint pairs (epoch, block_root) via stake-weighted validator attestations
+- **Weak subjectivity checkpoint**: [[Ethereum]] beacon chain mechanism providing syncing nodes with a recent finalised `(epoch, block_root)` anchor for fast-sync without full chain replay
+- **Casper FFG**: [[Ethereum]]'s Friendly Finality Gadget overlay protocol that justifies and finalises checkpoint pairs (epoch, block_root) via stake-weighted validator attestations
 
 ### Provenance
 

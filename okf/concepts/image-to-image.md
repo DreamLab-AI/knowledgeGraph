@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:inpainting
 bridgesTo:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 ---
 
 # Image-to-Image

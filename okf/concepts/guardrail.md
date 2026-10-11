@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:aisafety
 contrastsWith:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:constitutionalai
 uses:
   - urn:ngm:class:content-moderation

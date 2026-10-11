@@ -22,13 +22,13 @@ implements:
 uses:
   - urn:ngm:class:probability-theory
 supports:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:reinforcement-learning
 partOf:
   - urn:ngm:class:information-theory
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:deep-learning

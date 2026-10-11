@@ -8,7 +8,7 @@ description: EU AI Act Article 50 establishes transparency obligations that appl
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 enables:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:content-authentication

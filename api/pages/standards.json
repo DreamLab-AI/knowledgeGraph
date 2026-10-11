@@ -87,11 +87,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -314,8 +314,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "contrastsWith": [
@@ -358,8 +358,8 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "uses": [
@@ -392,7 +392,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -440,7 +440,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

@@ -18,10 +18,6 @@
     {
       "id": "urn:ngm:class:scientific-machine-learning",
       "label": "Scientific Machine Learning"
-    },
-    {
-      "id": "urn:ngm:class:simulation",
-      "label": "Simulation"
     }
   ],
   "entityType": "Class",
@@ -211,7 +207,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -333,14 +329,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:digital-twin",
-      "label": "Digital Twin",
-      "slug": "digital-twin"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:scientific-discovery",
@@ -348,29 +339,14 @@
       "slug": "scientific-discovery"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -400,8 +376,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -422,24 +398,24 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:computational-model",
-        "label": "Computational Model"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:real-time-computing",
-        "label": "Real-Time Computing"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
-        "id": "urn:ngm:class:3d-visualisation",
-        "label": "3D Visualisation"
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
       },
       {
-        "id": "urn:ngm:class:data-aggregation",
-        "label": "Data Aggregation"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:io-t-infrastructure",
-        "label": "IoT Infrastructure"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
@@ -468,34 +444,22 @@
         "label": "Scientific Computing"
       },
       {
-        "id": "urn:ngm:class:immersive-experience",
-        "label": "Immersive Experience"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:data-validation",
-        "label": "Data Validation"
-      },
-      {
-        "id": "urn:ngm:class:mathematical-modelling",
-        "label": "Mathematical Modelling"
-      },
-      {
-        "id": "urn:ngm:class:numerical-methods",
-        "label": "Numerical Methods"
-      },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -508,6 +472,18 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
       }
     ],
     "implements": [
@@ -546,28 +522,16 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:emulation",
-        "label": "Emulation"
-      },
-      {
-        "id": "urn:ngm:class:physical-prototype",
-        "label": "Physical Prototype"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -596,12 +560,12 @@
         "label": "Scientific Computing"
       },
       {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:synthetic-data",
-        "label": "Synthetic Data"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "uses": [
@@ -614,28 +578,28 @@
         "label": "Optimisation"
       },
       {
-        "id": "urn:ngm:class:agent-based-modelling",
-        "label": "Agent-Based Modelling"
-      },
-      {
-        "id": "urn:ngm:class:monte-carlo-methods",
-        "label": "Monte Carlo Methods"
-      },
-      {
-        "id": "urn:ngm:class:physics-engine",
-        "label": "Physics Engine"
-      },
-      {
-        "id": "urn:ngm:class:procedural-content-generation",
-        "label": "Procedural Content Generation"
-      },
-      {
-        "id": "urn:ngm:class:render-pipeline",
-        "label": "Render Pipeline"
-      },
-      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
       }
     ],
     "supports": [
@@ -648,12 +612,16 @@
         "label": "Scientific Computing"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -666,30 +634,30 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
-      },
-      {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
-      },
-      {
-        "id": "urn:ngm:class:web-xr",
-        "label": "WebXR"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -706,7 +674,7 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -714,16 +682,16 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:mixed-reality",
-        "label": "Mixed Reality"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
+        "id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
       }
     ]
   },

@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:snapshot
   - urn:ngm:class:reality-eth
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 bridgesTo:
   - urn:ngm:class:smart-contract
 ---

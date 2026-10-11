@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:consensus-mechanism
@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:decentralisation
 enables:
   - urn:ngm:class:immutability
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:financial-inclusion
   - urn:ngm:class:trustless-transaction
 dependsOn:

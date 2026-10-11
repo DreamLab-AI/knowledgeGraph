@@ -13,11 +13,11 @@ is-a:
 requires:
   - urn:ngm:class:cryptography
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:data-sovereignty
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 supports:
   - urn:ngm:class:governance-framework
   - urn:ngm:class:nft-ownership-proof

@@ -13,10 +13,10 @@ is-a:
 hasPart:
   - urn:ngm:class:scalable-oversight
   - urn:ngm:class:reward-modelling
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:value-alignment
   - urn:ngm:class:corrigibility
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 requires:
   - urn:ngm:class:human-feedback
   - urn:ngm:class:interpretability
@@ -34,7 +34,7 @@ dependsOn:
   - urn:ngm:class:sparse-autoencoders
 implements:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
 contrastsWith:
   - urn:ngm:class:reward-hacking
@@ -56,8 +56,8 @@ uses:
 supports:
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:ai-safety-research
 relatedTo:

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:adaptive-learning
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:learner-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
 hasPart:
   - urn:ngm:class:hidden-markov-model
@@ -61,7 +61,7 @@ bridgesTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:open-learner-model
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:expectation-maximisation
   - urn:ngm:class:hidden-markov-model

@@ -13,10 +13,10 @@ requires:
   - urn:ngm:class:distributed-ledger
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:asset-tokenisation
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:non-fungible-token
 implements:
   - urn:ngm:class:on-chain-governance

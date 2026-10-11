@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -64,7 +64,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -349,10 +349,6 @@
         "label": "Self Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
-      },
-      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -375,10 +371,6 @@
         "label": "One-Time Password"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -393,6 +385,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "supports": [
@@ -523,8 +519,8 @@
       "label": "Trust Framework"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

@@ -119,9 +119,9 @@
       "slug": "interpretable-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:supervised-learning",
@@ -269,7 +269,7 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -277,8 +277,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
@@ -341,12 +341,12 @@
         "label": "Black-Box Model"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -457,6 +457,14 @@
         "label": "IEEE P2976 (XAI)"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -475,7 +483,11 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

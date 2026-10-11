@@ -200,7 +200,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       }
     ],
     "dependsOn": [
@@ -274,7 +274,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:knowledge-distillation",
-        "label": "Model Distillation"
+        "label": "Knowledge Distillation"
       },
       {
         "id": "urn:ngm:class:neural-architecture-search",
@@ -383,10 +383,6 @@
         "label": "Model Deployment"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
-        "label": "Multimodal AI"
-      },
-      {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
@@ -405,16 +401,20 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -453,7 +453,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -466,11 +466,11 @@
       },
       {
         "id": "urn:ngm:class:knowledge-distillation",
-        "label": "Model Distillation"
+        "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:mixture-of-experts",

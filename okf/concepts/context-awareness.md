@@ -18,7 +18,7 @@ hasPart:
 requires:
   - urn:ngm:class:data-processing
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:decision-logic
 enables:
@@ -32,7 +32,7 @@ dependsOn:
   - urn:ngm:class:io-t-infrastructure
   - urn:ngm:class:edge-computing
   - urn:ngm:class:real-time-analytics
-  - urn:ngm:class:semantic-reasoning-engine
+  - urn:ngm:class:semantic-reasoning
 bridgesTo:
   - urn:ngm:class:sensor-input
 partOf:

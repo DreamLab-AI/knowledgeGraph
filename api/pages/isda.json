@@ -84,7 +84,7 @@
         "label": "Commercial Banking"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -152,16 +152,16 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:virtual-economy-market-framing",
         "label": "Virtual Economy Market Framing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -192,7 +192,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "DeFi"
       },
       {
@@ -210,12 +210,8 @@
         "label": "Blockchain Interoperability"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:tokenised-real-world-assets",
@@ -236,6 +232,10 @@
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "supports": [
@@ -244,7 +244,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {

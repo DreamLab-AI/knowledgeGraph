@@ -10,7 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:machine-learning-discipline-technique
   - urn:ngm:class:regularisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:geometric-transformation
   - urn:ngm:class:photometric-transformation
@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:randaugment
   - urn:ngm:class:feature-space-augmentation
   - urn:ngm:class:generative-adversarial-networks
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:synthetic-data
 requires:
@@ -50,7 +50,7 @@ contrastsWith:
   - urn:ngm:class:active-learning
 uses:
   - urn:ngm:class:generative-adversarial-networks
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:synthetic-data-generator
   - urn:ngm:class:reinforcement-learning

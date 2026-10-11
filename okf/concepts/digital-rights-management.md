@@ -14,7 +14,7 @@ hasPart:
 requires:
   - urn:ngm:class:encryption
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-watermarking
   - urn:ngm:class:license-management
 enables:
@@ -23,13 +23,13 @@ enables:
   - urn:ngm:class:royalty-distribution
   - urn:ngm:class:content-monetisation
 implements:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 contrastsWith:
   - urn:ngm:class:open-source-licensing
   - urn:ngm:class:creative-commons
 bridgesTo:
   - urn:ngm:class:metaverse
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:blockchain

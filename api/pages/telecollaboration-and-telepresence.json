@@ -268,7 +268,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -945,7 +945,7 @@
       "label": "CCPA"
     },
     {
-      "slug": "cdn",
+      "slug": "content-delivery-network",
       "label": "CDN"
     },
     {
@@ -3609,7 +3609,7 @@
       "label": "Teams"
     },
     {
-      "slug": "tee",
+      "slug": "trusted-execution-environment",
       "label": "TEE"
     },
     {
@@ -3677,7 +3677,7 @@
       "label": "Timelooper"
     },
     {
-      "slug": "tls",
+      "slug": "transport-layer-security",
       "label": "TLS"
     },
     {
@@ -3777,7 +3777,7 @@
       "label": "URLLC"
     },
     {
-      "slug": "usd",
+      "slug": "universal-scene-description",
       "label": "USD"
     },
     {
@@ -4237,7 +4237,7 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "dao",
+      "slug": "decentralised-autonomous-organisation",
       "label": "DAO"
     },
     {

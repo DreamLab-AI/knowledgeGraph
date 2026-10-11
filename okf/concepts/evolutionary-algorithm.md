@@ -61,7 +61,7 @@ uses:
   - urn:ngm:class:mutation-operator
   - urn:ngm:class:selection-pressure
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:neural-network
   - urn:ngm:class:deep-reinforcement-learning

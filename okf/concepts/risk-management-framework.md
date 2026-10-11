@@ -22,7 +22,7 @@ enables:
 implements:
   - urn:ngm:class:iso-31000
   - urn:ngm:class:nist-cybersecurity-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:supply-chain-risk-management

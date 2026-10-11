@@ -21,7 +21,7 @@ The OECD AI Principles are five intergovernmental policy guidelines adopted by t
   - Foundational to [[Algorithmic Accountability]] and [[Interpretable Machine Learning]].
 - **Principle 4 — Robustness, Security, and Safety**
   - AI systems should be robust, secure, and safe throughout their lifecycle; risks should be continually assessed and managed, and operators must ensure [[AI Safety]] and security-by-design.
-  - The 2024 update extended this to systemic risks from [[Foundation Models]] and red-team [[AI Risk Management]].
+  - The 2024 update extended this to systemic risks from [[Foundation Model]] and red-team [[AI Risk Management]].
 - **Principle 5 — Accountability**
   - AI actors, whether individuals, organisations, or governments, should be [[Accountability|accountable]] for the proper functioning of AI systems according to these principles, with liability mechanisms commensurate with their role.
 - **Implementation Recommendations**
@@ -41,7 +41,7 @@ The OECD AI Principles are five intergovernmental policy guidelines adopted by t
 
 - **Issuing body**: Organisation for Economic Co-operation and Development (OECD), 38 member countries plus associate and partner economies, headquartered in Paris.
 - **Adoption date**: 22 May 2019 (OECD/LEGAL/0449); G20 endorsement June 2019.
-- **Revision**: 2024 update to address [[Foundation Models]] and generative AI; the first substantive revision since adoption.
+- **Revision**: 2024 update to address [[Foundation Model]] and generative AI; the first substantive revision since adoption.
 - **Companion instruments**:
   - [[UNESCO AI Ethics Recommendation]] (2021) — broader cultural and scientific framing, 193 UNESCO member states.
   - [[Global Partnership on AI]] (GPAI) — operationalises the principles through multi-stakeholder working groups.

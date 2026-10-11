@@ -10,9 +10,9 @@ quality: 0.72
 is-a:
   - urn:ngm:class:standards-body
 requires:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:credential-exchange
   - urn:ngm:class:identity-verification
@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:governance-framework
 implements:
   - urn:ngm:class:w3-c-did-core
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 contrastsWith:
   - urn:ngm:class:federated-identity
   - urn:ngm:class:centralized-identity-provider

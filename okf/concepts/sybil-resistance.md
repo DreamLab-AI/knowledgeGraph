@@ -40,9 +40,9 @@ relatedTo:
   - urn:ngm:class:reputation-system
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:proof-of-personhood
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:web-of-trust
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 ---
 
 # Sybil Resistance

@@ -84,14 +84,14 @@ supports:
   - urn:ngm:class:validator-training
 standardizedBy:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-core
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:polkadot
   - urn:ngm:class:cosmos-ibc
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:polkadot
 relatedTo:
   - urn:ngm:class:formal-verification
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:validator-economics
   - urn:ngm:class:staging-environment
   - urn:ngm:class:protocol-upgrade

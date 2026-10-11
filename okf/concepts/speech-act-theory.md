@@ -28,7 +28,7 @@ partOf:
   - urn:ngm:class:distributed-systems
 relatedTo:
   - urn:ngm:class:dialogue-system
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-representation
 ---
 

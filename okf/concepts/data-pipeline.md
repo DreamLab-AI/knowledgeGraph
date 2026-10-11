@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:message-queue
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:real-time-analytics
 dependsOn:

@@ -412,9 +412,9 @@
       "slug": "human-computer-interaction"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -730,8 +730,8 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
@@ -756,6 +756,14 @@
         "label": "WebXR"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -768,6 +776,10 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -1089,8 +1101,8 @@
       "label": "Neural 3D Generation"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "procedural-and-hybrid-4-d",

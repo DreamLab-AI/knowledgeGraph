@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:model-predictive-control
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:reinforcement-learning

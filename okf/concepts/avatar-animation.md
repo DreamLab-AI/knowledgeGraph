@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:telepresence
   - urn:ngm:class:embodied-interaction
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 uses:
   - urn:ngm:class:motion-capture
@@ -32,14 +32,14 @@ uses:
   - urn:ngm:class:blend-tree
   - urn:ngm:class:skeletal-animation
 standardizedBy:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:metaverse-standards-forum
 relatedTo:
   - urn:ngm:class:avatar
   - urn:ngm:class:avatar-system
   - urn:ngm:class:avatar-interoperability
   - urn:ngm:class:virtual-reality
-  - urn:ngm:class:non-verbal-communication
+  - urn:ngm:class:nonverbal-communication
   - urn:ngm:class:embodiment
 ---
 

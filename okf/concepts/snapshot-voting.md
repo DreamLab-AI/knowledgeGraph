@@ -56,7 +56,7 @@ enables:
   - urn:ngm:class:nft-gated-governance
   - urn:ngm:class:reputation-weighted-voting
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:ipfs
   - urn:ngm:class:eip-712
   - urn:ngm:class:ethereum-smart-contract-platform-name-service
@@ -104,9 +104,9 @@ supports:
 standardizedBy:
   - urn:ngm:class:eip-712
   - urn:ngm:class:erc-1155
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:erc20-votes-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:ipfs-specification
   - urn:ngm:class:erc20-votes-standard
 relatedTo:

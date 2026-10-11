@@ -33,7 +33,7 @@ supports:
 relatedTo:
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:game-theory
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Preference Aggregation

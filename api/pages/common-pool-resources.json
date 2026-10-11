@@ -278,7 +278,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -314,8 +314,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     },
     {
       "slug": "quadratic-voting",

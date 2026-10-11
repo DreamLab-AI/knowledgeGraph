@@ -76,7 +76,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -309,7 +309,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],

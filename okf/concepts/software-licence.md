@@ -10,7 +10,7 @@ quality: 0.7
 is-a:
   - urn:ngm:class:infra-legal-and-regulatory
 relatedTo:
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 ---
 
 # Software Licence

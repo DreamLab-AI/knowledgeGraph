@@ -77,7 +77,7 @@ uses:
   - urn:ngm:class:v8-isolates
 supports:
   - urn:ngm:class:autonomous-vehicle
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:industrial-io-t
   - urn:ngm:class:on-device-llm
   - urn:ngm:class:smart-city
@@ -88,7 +88,7 @@ supports:
   - urn:ngm:class:autonomous-vehicle
 standardizedBy:
   - urn:ngm:class:3-gpp
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:linux-foundation
   - urn:ngm:class:o-ran-alliance

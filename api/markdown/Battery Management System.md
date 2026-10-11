@@ -9,5 +9,5 @@ A Battery Management System (BMS) is an embedded electronic system that monitors
 
 ### See Also
 
-- [[Embedded Systems]] | [[Power Management]] | [[Energy Management]] | [[Control System]] | [[Current Sensor]]
+- [[Embedded System]] | [[Power Management]] | [[Energy Management]] | [[Control System]] | [[Current Sensor]]
 

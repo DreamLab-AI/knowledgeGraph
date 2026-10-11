@@ -21,12 +21,12 @@ hasPart:
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:sampler
 requires:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:python
   - urn:ngm:class:gradio
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
 enables:
   - urn:ngm:class:image-to-image
@@ -43,7 +43,7 @@ dependsOn:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:u-net
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:attention-mechanism
 implements:
   - urn:ngm:class:latent-diffusion
@@ -54,16 +54,16 @@ contrastsWith:
   - urn:ngm:class:invoke-ai
   - urn:ngm:class:comfy-ui
 uses:
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:control-net
   - urn:ngm:class:hypernetwork
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 supports:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:generative-ai
@@ -82,7 +82,7 @@ relatedTo:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:image-generation
 ---
 

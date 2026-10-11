@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:knowledge-graph-construction
   - urn:ngm:class:ai-alignment
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transfer-learning
 relatedTo:
   - urn:ngm:class:ai-governance

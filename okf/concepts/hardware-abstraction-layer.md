@@ -35,15 +35,15 @@ uses:
   - urn:ngm:class:system-software
   - urn:ngm:class:middleware-layer
 supports:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:gpu-compute
 partOf:
   - urn:ngm:class:operating-system
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:middleware
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Hardware Abstraction Layer

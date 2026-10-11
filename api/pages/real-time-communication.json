@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:communication-protocol",
       "label": "Communication Protocol"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
@@ -36,6 +40,26 @@
       {
         "id": "urn:ngm:class:transport-protocol",
         "label": "Real-Time Transport Protocol"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence System"
+      },
+      {
+        "id": "urn:ngm:class:signalling-protocol",
+        "label": "Signalling Protocol"
+      },
+      {
+        "id": "urn:ngm:class:media-codec",
+        "label": "Media Codec"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence System"
       }
     ],
     "requires": [
@@ -54,6 +78,18 @@
       {
         "id": "urn:ngm:class:nat-traversal",
         "label": "NAT Traversal"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
       }
     ],
     "enables": [
@@ -72,6 +108,22 @@
       {
         "id": "urn:ngm:class:collaborative-editing",
         "label": "Collaborative Editing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
       }
     ],
     "dependsOn": [
@@ -80,7 +132,7 @@
         "label": "Wireless Connectivity"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -101,6 +153,10 @@
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:store-and-forward",
+        "label": "Store and Forward"
       }
     ],
     "bridgesTo": [
@@ -111,6 +167,14 @@
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:ai-voice-synthesis",
+        "label": "AI Voice Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:avatar-streaming",
+        "label": "Avatar Streaming"
       }
     ],
     "uses": [
@@ -129,6 +193,22 @@
       {
         "id": "urn:ngm:class:data-channel",
         "label": "Data Channel"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
       }
     ],
     "supports": [],
@@ -138,8 +218,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [],
@@ -155,6 +235,18 @@
       {
         "id": "urn:ngm:class:media-server",
         "label": "Media Server"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ]
   },
@@ -173,6 +265,11 @@
       "id": "urn:ngm:class:information-architecture",
       "label": "Information Architecture",
       "slug": "information-architecture"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -195,6 +292,11 @@
       "slug": "roboticsdomain"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:automation",
       "label": "Automation",
       "slug": "automation"
@@ -215,14 +317,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -244,20 +341,20 @@
         "label": "Message Format"
       },
       {
-        "id": "urn:ngm:class:accessibility",
-        "label": "Accessibility"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robot"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:gesture-recognition",
-        "label": "Gesture Recognition"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:haptic-feedback",
-        "label": "Haptic Feedback"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "requires": [
@@ -274,10 +371,6 @@
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency Tolerance"
-      },
-      {
         "id": "urn:ngm:class:physical-layer",
         "label": "Network Physical Layer"
       },
@@ -292,6 +385,10 @@
       {
         "id": "urn:ngm:class:safetymetrics",
         "label": "SafetyMetrics"
+      },
+      {
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
       }
     ],
     "enables": [
@@ -320,12 +417,12 @@
         "label": "Communication Tools"
       },
       {
-        "id": "urn:ngm:class:immersive-communication",
-        "label": "Immersive Communication"
-      },
-      {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
       }
     ],
     "dependsOn": [
@@ -334,7 +431,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -394,6 +491,10 @@
         "label": "Software Architecture"
       },
       {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
         "id": "urn:ngm:class:general-purpose-computing",
         "label": "General-Purpose Computing"
       },
@@ -402,16 +503,8 @@
         "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -440,12 +533,12 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:decentralised-ai",
-        "label": "Decentralised AI"
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
@@ -478,7 +571,7 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -496,24 +589,24 @@
         "label": "Telepresence"
       },
       {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:business-process-management",
-        "label": "Business Process Management"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ],
     "standardizedBy": [
@@ -526,8 +619,16 @@
         "label": "ISO 25964"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -540,14 +641,6 @@
       {
         "id": "urn:ngm:class:iso-iec-12207",
         "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
       }
     ],
     "partOf": [
@@ -557,6 +650,18 @@
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      },
       {
         "id": "urn:ngm:class:bandwidth-optimization",
         "label": "Bandwidth Optimization"
@@ -576,18 +681,6 @@
       {
         "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Actuation and Control"
-      },
-      {
-        "id": "urn:ngm:class:robo-perception",
-        "label": "Perception and Sensing"
-      },
-      {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
-      },
-      {
-        "id": "urn:ngm:class:robot-control",
-        "label": "Robot Control"
       }
     ]
   },

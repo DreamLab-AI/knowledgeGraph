@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geomagnetic-field",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Earth's geomagnetic field, whose main part is generated in the conducting, fluid outer core, includes contributions from several sources.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -79,7 +79,7 @@ uses:
 supports:
   - urn:ngm:class:game-engine
   - urn:ngm:class:game-development
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:autonomous-driving
   - urn:ngm:class:human-robot-interaction

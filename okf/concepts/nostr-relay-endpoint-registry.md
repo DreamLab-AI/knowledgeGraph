@@ -17,7 +17,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:did-nostr-identity
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:relayer
 ---
 

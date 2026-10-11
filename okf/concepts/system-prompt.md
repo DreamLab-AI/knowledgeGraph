@@ -10,7 +10,7 @@ quality: 0.74
 is-a:
   - urn:ngm:class:prompt-engineering
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:context-window
   - urn:ngm:class:inference
 enables:
@@ -22,7 +22,7 @@ enables:
 dependsOn:
   - urn:ngm:class:tokenization
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:retrieval-augmented-generation
@@ -40,8 +40,8 @@ relatedTo:
   - urn:ngm:class:self-consistency
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:ai-safety
-  - urn:ngm:class:constitutional-ai-training-methodology
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
+  - urn:ngm:class:constitutional-ai
 ---
 
 # System Prompt

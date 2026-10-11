@@ -33,7 +33,7 @@ partOf:
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:subword-tokenisation
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tokenization
   - urn:ngm:class:gpt
   - urn:ngm:class:ro-berta

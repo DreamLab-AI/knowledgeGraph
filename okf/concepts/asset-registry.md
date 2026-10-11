@@ -59,7 +59,7 @@ uses:
   - urn:ngm:class:graph-database
   - urn:ngm:class:hash-function
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:securities-settlement
   - urn:ngm:class:supply-chain-tracking
   - urn:ngm:class:carbon-credit-tracking
@@ -76,7 +76,7 @@ relatedTo:
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:carbon-credit-tracking
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:enterprise-token-standards
   - urn:ngm:class:ethical-sourcing
 ---

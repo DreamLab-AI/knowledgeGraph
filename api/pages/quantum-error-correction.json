@@ -8,8 +8,8 @@
   "definition": "Quantum error correction is the set of techniques that protect quantum information against decoherence and operational noise by encoding a logical qubit redundantly across many physical qubits. Stabiliser measurements detect errors without collapsing the encoded state, allowing the system to diagnose and reverse bit-flip and phase-flip faults. It is the central prerequisite for fault-tolerant quantum computation, where logical error rates can be driven arbitrarily low provided physical error rates fall below a threshold.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computation Paradigm"
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
     }
   ],
   "entityType": "Class",
@@ -42,8 +42,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:quantum-cryptography",
@@ -87,14 +87,14 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:infrastructure",
@@ -197,16 +197,6 @@
         "label": "Robotics"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:quantum-mechanics",
-        "label": "Quantum Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:superconductivity",
-        "label": "Superconductivity"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:grovers-algorithm",
@@ -241,6 +231,10 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -250,14 +244,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-machine-learning",
-        "label": "Quantum Machine Learning"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -283,6 +269,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -291,8 +281,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -309,10 +299,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:robot-dynamics
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:workspace-analysis
   - urn:ngm:class:collision-avoidance
 dependsOn:

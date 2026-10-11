@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
 supports:
   - urn:ngm:class:economic-development
   - urn:ngm:class:national-ai-strategy

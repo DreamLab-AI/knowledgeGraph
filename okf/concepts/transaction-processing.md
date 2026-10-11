@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:smart-contract
 enables:
   - urn:ngm:class:transaction-finality
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:payment-system
 bridgesTo:
   - urn:ngm:class:blockchain-transaction

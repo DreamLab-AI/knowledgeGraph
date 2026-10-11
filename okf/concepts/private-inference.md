@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:confidential-computing
 requires:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 ---
 
 # Private Inference

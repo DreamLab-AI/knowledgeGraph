@@ -17,13 +17,13 @@ requires:
   - urn:ngm:class:central-bank
   - urn:ngm:class:interbank-market
 enables:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:programmable-money
   - urn:ngm:class:financial-stability
   - urn:ngm:class:liquidity-management
 contrastsWith:
   - urn:ngm:class:fiscal-policy
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:sc-governance-and-safety
   - urn:ngm:class:smart-contract

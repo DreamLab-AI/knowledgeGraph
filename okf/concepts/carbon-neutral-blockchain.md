@@ -119,7 +119,7 @@ relatedTo:
   - urn:ngm:class:algorand
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:carbon-markets
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:energy-consumption
   - urn:ngm:class:green-finance
   - urn:ngm:class:hedera-hashgraph
@@ -127,7 +127,7 @@ relatedTo:
   - urn:ngm:class:tezos
   - urn:ngm:class:blockchain
   - urn:ngm:class:cardano
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
   - urn:ngm:class:solana
   - urn:ngm:class:carbon-credits

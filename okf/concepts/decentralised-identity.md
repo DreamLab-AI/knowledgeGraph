@@ -9,40 +9,62 @@ maturity: emerging
 quality: 0.72
 is-a:
   - urn:ngm:class:digital-identity
+hasPart:
+  - urn:ngm:class:did-document
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:credential-verification
+  - urn:ngm:class:didcomm
+  - urn:ngm:class:digital-identity-wallet
+  - urn:ngm:class:verifiable-credentials
 requires:
   - urn:ngm:class:verifiable-data-registry
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:did-method
+  - urn:ngm:class:cryptographic-signature
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:privacy-preserving-authentication
   - urn:ngm:class:digital-identity
   - urn:ngm:class:digital-identity
+  - urn:ngm:class:privacy-by-design
+  - urn:ngm:class:cross-border-authentication
 implements:
   - urn:ngm:class:w3-c-did-specification
   - urn:ngm:class:openid-for-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 contrastsWith:
   - urn:ngm:class:centralized-identity-provider
   - urn:ngm:class:federated-identity
   - urn:ngm:class:centralized-identity-provider
+  - urn:ngm:class:oauth
 bridgesTo:
   - urn:ngm:class:ai-agent-identity
   - urn:ngm:class:access-control
+  - urn:ngm:class:smart-contract
+  - urn:ngm:class:web3
+  - urn:ngm:class:iot-device-authentication
 uses:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:did-document
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:public-key-cryptography
+  - urn:ngm:class:cryptographic-keys
+  - urn:ngm:class:blockchain
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:distributed-ledger-technology
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:open-id-foundation
 relatedTo:
   - urn:ngm:class:credential-schema
   - urn:ngm:class:federated-identity
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:trust-framework
+  - urn:ngm:class:access-control
+  - urn:ngm:class:data-sovereignty
 ---
 
 # Decentralised Identity

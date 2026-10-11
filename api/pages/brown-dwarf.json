@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:brown-dwarf",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A brown dwarf is a substellar object more massive than a planet but too light to sustain the hydrogen fusion of a main-sequence star.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

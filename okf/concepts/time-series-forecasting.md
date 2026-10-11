@@ -9,7 +9,7 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-modelling
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:sequential-data-processing

@@ -4,7 +4,7 @@ Credential verification is the process of cryptographically or institutionally c
 
 - Credential verification sits at the heart of digital trust infrastructure. Wherever a system must confirm that a party possesses a right, qualification, or attribute asserted by a third party, credential verification is the technical mechanism that makes that confirmation reliable without requiring synchronous contact with the issuer.
 - The classic model is the three-party triangle: an **issuer** (e.g. a government, university, or employer) cryptographically signs a structured credential about a **subject**; the subject presents the credential (or a derived proof) to a **verifier**; the verifier checks the signature, validates the structure, and confirms revocation status.
-- Historically this process was institutionally mediated — sealed letters, notarised documents, in-person checks. Digital credential verification began with X.509 certificates and the [[Public Key Infrastructure]] underpinning SSL/TLS, which enabled automated machine-to-machine trust at scale. The emergence of [[Decentralized Identity (DID)]] and the [[W3C Verifiable Credentials]] data model has extended this paradigm to person-centric credentials that individuals can carry and present across multiple services.
+- Historically this process was institutionally mediated — sealed letters, notarised documents, in-person checks. Digital credential verification began with X.509 certificates and the [[Public Key Infrastructure]] underpinning SSL/TLS, which enabled automated machine-to-machine trust at scale. The emergence of [[Decentralized Identity (DID)]] and the [[W3C Verifiable Credentials Data Model]] data model has extended this paradigm to person-centric credentials that individuals can carry and present across multiple services.
 - Credential verification is distinct from [[Credential Issuance]] (the act of creating and signing the credential) and from [[Authentication]] in its narrow sense (proving you are who you claim to be via a secret). Verification asserts *properties about a subject* based on claims from a trusted issuer rather than relying on secrets the subject holds.
 
 ### Key Components
@@ -17,7 +17,7 @@ Credential verification is the process of cryptographically or institutionally c
 
 #### Issuer Key Resolution
 
-- For DID-based credentials the verifier resolves the issuer's [[Decentralized Identifier]] via a [[DID Resolver]] to retrieve the DID Document containing the verification method (public key).
+- For DID-based credentials the verifier resolves the issuer's [[Decentralised Identifier]] via a [[DID Resolver]] to retrieve the DID Document containing the verification method (public key).
 - For X.509-based credentials (TLS, mDL, eIDAS) the verifier traverses a certificate chain up to a trusted [[Certificate Authority]] root.
 - The [[Trust Anchor]] defines the root of the trust hierarchy; mismatches cause verification failure.
 

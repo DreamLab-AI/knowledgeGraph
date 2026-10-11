@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:merkle-tree
 supports:
   - urn:ngm:class:lightning-network
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:interoperability
 relatedTo:
   - urn:ngm:class:payment-channel

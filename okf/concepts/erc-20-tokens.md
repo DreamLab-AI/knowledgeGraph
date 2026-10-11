@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:technical-standard
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # ERC-20 Tokens

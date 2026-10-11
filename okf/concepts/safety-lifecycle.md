@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:hazard-analysis
   - urn:ngm:class:risk-assessment
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
 requires:
   - urn:ngm:class:hazard-analysis
   - urn:ngm:class:safety-integrity-level
@@ -22,7 +22,7 @@ implements:
   - urn:ngm:class:iec-61508
   - urn:ngm:class:iec-62061
 uses:
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
   - urn:ngm:class:fault-tree-analysis
 supports:
   - urn:ngm:class:safety-instrumented-system

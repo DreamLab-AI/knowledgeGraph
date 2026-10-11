@@ -57,8 +57,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:defense-in-depth",
-        "label": "Defense In Depth"
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence In Depth"
       },
       {
         "id": "urn:ngm:class:adversarial-training",
@@ -103,7 +103,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {

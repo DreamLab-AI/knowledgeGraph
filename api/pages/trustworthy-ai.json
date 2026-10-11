@@ -60,19 +60,19 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -94,8 +94,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:algorithmic-auditing",
@@ -138,7 +138,7 @@
         "label": "NIST"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC1 SC42"
       },
       {
@@ -284,10 +284,6 @@
       "label": "AI Certification"
     },
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "ai-policy",
       "label": "ai policy"
     },
@@ -334,6 +330,10 @@
     {
       "slug": "ethical-ai",
       "label": "Ethical AI"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "responsible-ai",

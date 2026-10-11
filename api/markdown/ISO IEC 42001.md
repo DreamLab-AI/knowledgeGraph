@@ -2,7 +2,7 @@ ISO/IEC 42001:2023 is the first international management system standard specifi
 
 ### Overview
 
-- ISO/IEC 42001:2023 emerged from the recognition that existing management system standards — while mature for quality, environment, and security — lacked domain-specific coverage of [[Artificial Intelligence]] risks, including bias, opacity, and systemic harm. [[ISO IEC JTC1 SC42]] developed it over several years, drawing on earlier technical reports and guidance documents (ISO/IEC TR 24028, ISO/IEC TR 24029, etc.) to formalise controls at the management system level.
+- ISO/IEC 42001:2023 emerged from the recognition that existing management system standards — while mature for quality, environment, and security — lacked domain-specific coverage of [[Artificial Intelligence]] risks, including bias, opacity, and systemic harm. [[ISO-IEC JTC 1 SC 42]] developed it over several years, drawing on earlier technical reports and guidance documents (ISO/IEC TR 24028, ISO/IEC TR 24029, etc.) to formalise controls at the management system level.
 - The standard is structured around ten clauses:
   - Clause 1–3: Scope, normative references, and terms
   - Clause 4: Context of the organisation — understanding the AI environment, stakeholders, and scope of the AIMS
@@ -36,7 +36,7 @@ ISO/IEC 42001:2023 is the first international management system standard specifi
 
 ### Applications and Use Cases
 
-- **Enterprise AI Governance** — large enterprises developing or deploying [[Machine Learning]] models or [[Large Language Models]] use ISO/IEC 42001 certification to demonstrate governance maturity to boards, investors, and customers.
+- **Enterprise AI Governance** — large enterprises developing or deploying [[Machine Learning]] models or [[Large Language Model]] use ISO/IEC 42001 certification to demonstrate governance maturity to boards, investors, and customers.
 - **Regulatory Compliance** — organisations subject to the [[EU AI Act]] (particularly providers of high-risk AI systems under Annex III) use the standard's documented controls and third-party audit trail as evidence of compliance. The European Commission has signalled intent to reference ISO/IEC 42001 as a harmonised standard.
 - **Procurement and Supply Chain** — buyers of AI-powered software or services require supplier certification as a due-diligence gate, driving adoption across the [[AI Supply Chain Management]] ecosystem.
 - **Financial Services and Insurance** — regulated entities use the AIMS framework to satisfy AI governance expectations from prudential supervisors (EBA, PRA, FCA) and align with model risk management guidance.
@@ -54,7 +54,7 @@ ISO/IEC 42001:2023 is the first international management system standard specifi
   - ISO/IEC 42005 (in development) — AI system impact assessment guidance
   - ISO/IEC 42006 (in development) — requirements for bodies providing audit and certification of AIMS
 - **Relationship with EU AI Act** — the [[EU AI Act]] requires providers of high-risk AI systems to implement quality management and risk management systems. ISO/IEC 42001 is expected to be cited as a harmonised standard under the Act once the European standards body (CEN/CENELEC) publishes the EN version, allowing certification to create a presumption of conformity for covered obligations.
-- **Relationship with NIST AI RMF** — the US [[NIST AI RMF]] (2023) is a voluntary framework for AI risk management. Mapping documents from NIST and ISO show significant overlap in Govern, Map, Measure, and Manage functions with ISO/IEC 42001 clauses and Annex A controls, supporting organisations operating in both US and EU jurisdictions.
+- **Relationship with NIST AI RMF** — the US [[NIST AI Risk Management Framework]] (2023) is a voluntary framework for AI risk management. Mapping documents from NIST and ISO show significant overlap in Govern, Map, Measure, and Manage functions with ISO/IEC 42001 clauses and Annex A controls, supporting organisations operating in both US and EU jurisdictions.
 - **Relationship with ISO/IEC 27001** — the Annex SL alignment means the AIMS can be integrated with the [[Information Security Management System]], sharing scope definition, risk treatment processes, internal audit programmes, and management review cadence.
 - **Certification ecosystem** — accredited certification bodies (BSI, DNV, SGS, Bureau Veritas, TÜV) offer AIMS certification audits, with Stage 1 (documentation review) and Stage 2 (implementation audit) mirroring the ISO 27001 certification model. Surveillance audits occur annually; recertification every three years.
 - **Sector-specific extensions** — ISO/IEC JTC1 SC42 is developing sector-specific AI governance standards (e.g., for health, finance) that reference 42001 as the management system baseline, analogous to how ISO 27799 extends 27001 for healthcare.

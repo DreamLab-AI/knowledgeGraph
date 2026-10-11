@@ -12,12 +12,12 @@ is-a:
 hasPart:
   - urn:ngm:class:prudential-regulation
   - urn:ngm:class:securities-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:stablecoin-regulation
   - urn:ngm:class:conduct-regulation
 requires:
   - urn:ngm:class:regulatory-compliance
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:capital-adequacy
 enables:
   - urn:ngm:class:financial-stability
@@ -31,9 +31,9 @@ contrastsWith:
   - urn:ngm:class:self-regulation
   - urn:ngm:class:regulatory-arbitrage
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:regtech
 standardizedBy:
   - urn:ngm:class:basel-committee

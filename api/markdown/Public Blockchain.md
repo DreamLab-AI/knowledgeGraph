@@ -4,7 +4,7 @@ A permissionless, decentralised distributed ledger network in which any party ma
 
 ### Content
 
-- Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority or permission requirements. Public blockchains—[[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Cardano]]—provide [[CensorshipResistance]], [[Immutability]], and [[UserSovereignty]] through global state replication and permissionless consensus whilst sacrificing scalability, privacy, and energy efficiency compared to [[PermissionedBlockchain|permissioned alternatives]]. Tradeoffs enable censorship-resistant financial systems but inhibit enterprise adoption requiring confidentiality and regulatory compliance.
+- Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority or permission requirements. Public blockchains—[[Bitcoin Proof-of-Work Protocol]], [[Ethereum]], [[Cardano]]—provide [[CensorshipResistance]], [[Immutability]], and [[UserSovereignty]] through global state replication and permissionless consensus whilst sacrificing scalability, privacy, and energy efficiency compared to [[PermissionedBlockchain|permissioned alternatives]]. Tradeoffs enable censorship-resistant financial systems but inhibit enterprise adoption requiring confidentiality and regulatory compliance.
 
   ## Academic Context
 

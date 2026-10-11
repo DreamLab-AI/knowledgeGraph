@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:real-time-synchronisation
   - urn:ngm:class:bim-software
 enables:
-  - urn:ngm:class:ai-energy-optimisation
+  - urn:ngm:class:energy-optimization
   - urn:ngm:class:lifecycle-management
   - urn:ngm:class:space-planning
   - urn:ngm:class:predictive-maintenance

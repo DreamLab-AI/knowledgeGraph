@@ -62,12 +62,12 @@
         "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -134,8 +134,8 @@
         "label": "ISO/IEC 22989"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [],
@@ -167,8 +167,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -284,8 +284,8 @@
       "label": "Model Performance"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "technology-adoption",

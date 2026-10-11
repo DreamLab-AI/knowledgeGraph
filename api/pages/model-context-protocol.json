@@ -125,7 +125,7 @@
         "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
@@ -165,6 +165,11 @@
     "relatedTo": []
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
     {
       "id": "urn:ngm:class:coordination-protocol",
       "label": "Coordination Protocol",
@@ -246,9 +251,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -312,12 +317,12 @@
         "label": "Trust Management"
       },
       {
-        "id": "urn:ngm:class:message-format",
-        "label": "Message Schema"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:network-transport",
-        "label": "Network Transport"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -482,12 +487,12 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:llm-application-framework",
-        "label": "LLM Agent Framework"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -516,12 +521,12 @@
         "label": "HTTP Protocol"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
-        "label": "JSON-RPC 2.0"
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
       },
       {
-        "id": "urn:ngm:class:json-ld",
-        "label": "JSON-LD"
+        "id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
       }
     ],
     "supports": [
@@ -534,8 +539,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:algorithmic-trading",
@@ -568,16 +573,16 @@
         "label": "Linux Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

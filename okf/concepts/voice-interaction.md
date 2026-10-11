@@ -33,7 +33,7 @@ dependsOn:
   - urn:ngm:class:language-support
 partOf:
   - urn:ngm:class:multimodal-ai-architecture
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
 ---
 
 # Voice Interaction

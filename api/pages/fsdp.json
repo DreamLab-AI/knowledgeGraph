@@ -20,7 +20,7 @@
       "label": "Data Parallelism"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
@@ -72,7 +72,7 @@
         "label": "Gradient Synchronisation"
       },
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
@@ -106,8 +106,8 @@
         "label": "Checkpoint Resharding"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
@@ -199,7 +199,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
@@ -249,8 +249,8 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "standardizedBy": [
@@ -322,6 +322,16 @@
       "slug": "ai-research-area"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
@@ -345,16 +355,6 @@
       "id": "urn:ngm:class:parallel-processing",
       "label": "Parallel Processing",
       "slug": "parallel-processing"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:computing-infrastructure",
@@ -395,11 +395,6 @@
       "id": "urn:ngm:class:networked-systems",
       "label": "Networked Systems",
       "slug": "networked-systems"
-    },
-    {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
     }
   ],
   "inheritedRelations": {
@@ -481,10 +476,6 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
         "id": "urn:ngm:class:real-time-inference",
         "label": "Real-Time Inference"
       },
@@ -503,6 +494,10 @@
       {
         "id": "urn:ngm:class:throughput-scaling",
         "label": "Throughput Scaling"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "dependsOn": [
@@ -599,12 +594,12 @@
         "label": "Model Parallelism"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -637,8 +632,8 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       }
     ],
     "uses": [
@@ -689,8 +684,8 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -735,12 +730,12 @@
         "label": "PyTorch DDP"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -751,6 +746,10 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:high-performance-computing",

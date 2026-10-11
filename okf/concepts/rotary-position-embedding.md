@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:attention-mechanism
 supports:
   - urn:ngm:class:meta-llama-model-family
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 partOf:
   - urn:ngm:class:transformer-architecture
 relatedTo:

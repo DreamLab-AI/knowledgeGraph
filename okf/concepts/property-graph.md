@@ -26,7 +26,7 @@ supports:
   - urn:ngm:class:knowledge-graph-embedding
 relatedTo:
   - urn:ngm:class:sparql
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology
 ---
 

@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:polarity-marker
 requires:
   - urn:ngm:class:natural-language-understanding
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:parsing
   - urn:ngm:class:semantic-role-labelling
   - urn:ngm:class:word-sense-disambiguation
@@ -59,13 +59,13 @@ supports:
   - urn:ngm:class:pharmacovigilance
   - urn:ngm:class:scientific-claim-extraction
   - urn:ngm:class:clinical-decision-support
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 standardizedBy:
   - urn:ngm:class:conll-2010-shared-task
   - urn:ngm:class:bionlp-shared-task
 relatedTo:
   - urn:ngm:class:computational-linguistics
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:uncertainty-quantification
   - urn:ngm:class:dialogue-systems
   - urn:ngm:class:named-entity-recognition

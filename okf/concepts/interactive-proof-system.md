@@ -8,7 +8,7 @@ description: An Interactive Proof System is a protocol in which a computationall
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:cryptographic-proof-system
+  - urn:ngm:class:proof-system
 hasPart:
   - urn:ngm:class:commitment-scheme
 requires:
@@ -28,9 +28,9 @@ uses:
 supports:
   - urn:ngm:class:zk-snark
 partOf:
-  - urn:ngm:class:cryptographic-proof-system
+  - urn:ngm:class:proof-system
 relatedTo:
-  - urn:ngm:class:cryptographic-proof-system
+  - urn:ngm:class:proof-system
   - urn:ngm:class:fiat-shamir-heuristic
 ---
 

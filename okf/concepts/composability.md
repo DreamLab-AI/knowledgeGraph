@@ -13,23 +13,23 @@ requires:
   - urn:ngm:class:interoperability
 enables:
   - urn:ngm:class:interoperability
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:smart-contract
 contrastsWith:
   - urn:ngm:class:interoperability
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:defi-protocol
 partOf:
   - urn:ngm:class:blockchain
 relatedTo:
-  - urn:ngm:class:decentralized-exchange
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:interoperability
 ---
 

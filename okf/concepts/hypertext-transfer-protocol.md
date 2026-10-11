@@ -23,7 +23,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:rest-api
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:rest-api
 standardizedBy:

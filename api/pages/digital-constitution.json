@@ -125,8 +125,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:metaverse-platform",
@@ -319,8 +319,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "contrastsWith": [
@@ -363,8 +363,8 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "uses": [
@@ -453,8 +453,8 @@
         "label": "Cross Metaverse Commerce"
       },
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:virtual-world-platform",

@@ -4,7 +4,7 @@ The Financial Stability Board (FSB) is an international body established in 2009
 
 - The FSB emerged from the 2008–2009 global [[Financial Crisis]] as policymakers recognised that the existing architecture of international financial oversight — centred on the Financial Stability Forum (est. 1999) — lacked the mandate, membership, and tools to address cross-border [[Systemic Risk]] at the scale revealed by the crisis.
 - The FSB was endowed with a broader mandate: to promote [[Macroprudential Policy]], coordinate reforms across the banking, insurance, and securities sectors, and monitor shadow banking (now termed [[Non-Bank Financial Intermediation]]).
-- Membership encompasses G20 jurisdictions, key financial centres, and major international institutions, covering approximately 90% of global GDP. Members include central banks, ministries of finance, and supervisory authorities from 24 national jurisdictions plus the EU, alongside institutions such as the [[IMF]], [[World Bank]], [[BIS]], [[OECD]], [[Basel Committee]], [[IOSCO]], and [[IAIS]].
+- Membership encompasses G20 jurisdictions, key financial centres, and major international institutions, covering approximately 90% of global GDP. Members include central banks, ministries of finance, and supervisory authorities from 24 national jurisdictions plus the EU, alongside institutions such as the [[International Monetary Fund]], [[World Bank]], [[BIS]], [[OECD]], [[Basel Committee]], [[IOSCO]], and [[IAIS]].
 - The FSB does not issue legally binding rules; rather, it publishes recommendations, policy frameworks, and peer review findings that carry significant normative weight and shape the domestic regulatory agendas of member jurisdictions.
 
 ### Key Components
@@ -20,10 +20,10 @@ The Financial Stability Board (FSB) is an international body established in 2009
 
 ### Mechanisms
 
-- **Vulnerability Assessments** — the SCAV produces regular assessments of [[Systemic Risk]], shared with the [[IMF]]/[[World Bank]] and presented at G20 finance ministers' meetings.
+- **Vulnerability Assessments** — the SCAV produces regular assessments of [[Systemic Risk]], shared with the [[International Monetary Fund]]/[[World Bank]] and presented at G20 finance ministers' meetings.
 - **Policy Development** — the FSB leads multi-stakeholder workstreams to develop global policy frameworks (e.g., [[Total Loss-Absorbing Capacity]] (TLAC), [[Crypto-Asset Regulation]] frameworks, [[Climate-Related Financial Risk]] disclosures).
 - **Peer Reviews** — thematic and country-level [[Peer Review]] processes assess members' implementation of FSB recommendations and [[Basel Committee]] standards, reporting publicly.
-- **Data Collection** — the FSB's Data Gaps Initiative (coordinated with the [[IMF]]) drives improvements in the availability and comparability of global financial data, supporting [[Data Reporting]] standards.
+- **Data Collection** — the FSB's Data Gaps Initiative (coordinated with the [[International Monetary Fund]]) drives improvements in the availability and comparability of global financial data, supporting [[Data Reporting]] standards.
 - **Coordination with SSBs** — the FSB acts as an umbrella body for standard-setting bodies (SSBs) including the [[Basel Committee]], [[IOSCO]], [[IAIS]], IASB, and CPMI, aligning their work programmes.
 - **Monitoring Implementation** — annual reports track the status of post-crisis reform implementation across [[G20]] jurisdictions, covering capital requirements, [[Resolution Framework]] regimes, [[OTC Derivatives]] reform, and [[Stress Testing]] practices.
 
@@ -35,7 +35,7 @@ The Financial Stability Board (FSB) is an international body established in 2009
 - **Crypto-Asset Regulation** — the FSB developed high-level recommendations for the regulation, supervision, and oversight of [[Crypto-Asset]] markets and activities (2022–2023), as well as for global stablecoin arrangements, directly shaping jurisdictional legislation.
 - **Climate-Related Financial Disclosures** — the FSB established and continues to support the [[Task Force on Climate-related Financial Disclosures]] (TCFD), whose voluntary disclosure framework has been widely adopted and incorporated into mandatory regimes, addressing [[Climate-Related Financial Risk]].
 - **Cross-Border Payments** — the FSB, in partnership with the [[BIS]] Committee on Payments and Market Infrastructures (CPMI), leads the G20 Roadmap to enhance [[Cross-Border Payments]], targeting cheaper, faster, more transparent international transfers.
-- **AI and Technology in Finance** — the FSB monitors financial stability implications of [[AI in Finance]] and [[Decentralised Finance]], publishing thematic reports and early-warning analyses on [[Algorithmic Trading]], cloud concentration, and [[Fintech]] risks.
+- **AI and Technology in Finance** — the FSB monitors financial stability implications of [[AI in Finance]] and [[Decentralised Finance]], publishing thematic reports and early-warning analyses on [[Algorithmic Trading]], cloud concentration, and [[Financial Technology]] risks.
 - **Compensation Practices** — the FSB's Principles for Sound Compensation Practices and Implementation Standards (2009) established global norms on financial sector remuneration to reduce excessive risk-taking.
 
 ### Standards and Context
@@ -49,7 +49,7 @@ The Financial Stability Board (FSB) is an international body established in 2009
 - The FSB's **Key Attributes of Effective Resolution Regimes** (2011, updated 2014) established the global template for bank resolution planning and bail-in tools, widely enacted through national legislation.
 - On crypto-assets: FSB recommendations (July 2023) established that same-activity, same-risk, same-regulation principles should apply, informing the EU's [[MiCA]] regulation and other jurisdictional frameworks.
 - On climate: the [[TCFD]] framework (2017 recommendations) is now embedded in mandatory disclosure requirements in the UK, EU (via [[CSRD]]), Japan, Canada, and other jurisdictions.
-- The FSB engages with the [[IMF]] through joint Early Warning Exercise (EWE) processes and coordinates data standards via the Data Gaps Initiative.
+- The FSB engages with the [[International Monetary Fund]] through joint Early Warning Exercise (EWE) processes and coordinates data standards via the Data Gaps Initiative.
 
 ### Governance and Membership
 

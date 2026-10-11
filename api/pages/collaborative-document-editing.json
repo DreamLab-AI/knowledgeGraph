@@ -1,0 +1,648 @@
+{
+  "id": "urn:visionflow:page:3bd5444a5f19399bfee6de92dc2e4cffb4e7e51293db9fb333326a634a76e1a0",
+  "title": "Collaborative Document Editing",
+  "slug": "collaborative-document-editing",
+  "public": true,
+  "classIri": "urn:ngm:class:tc-0002-collaborative-document-editing",
+  "domain": "distributed-collaboration",
+  "definition": "Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
+      "id": "urn:ngm:class:telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-co-creation",
+      "label": "Knowledge Co-Creation"
+    },
+    {
+      "id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:document-comments",
+        "label": "Comments"
+      },
+      {
+        "id": "urn:ngm:class:version-history",
+        "label": "Version History"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:document-comments",
+        "label": "Comments"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-teamwork",
+        "label": "Distributed Teamwork"
+      },
+      {
+        "id": "urn:ngm:class:peer-learning",
+        "label": "Peer Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-building",
+        "label": "Knowledge Building"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-teams",
+      "label": "Distributed Teams",
+      "slug": "distributed-teams"
+    },
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology",
+      "slug": "dc-communication"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-office-spaces",
+        "label": "Virtual Office Spaces"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:co-location",
+        "label": "Co-location"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-located Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-workspaces",
+        "label": "Metaverse Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-assisted-collaboration",
+        "label": "AI-Assisted Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-types",
+        "label": "Conflict-Free Replicated Data Types"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      },
+      {
+        "id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "asynchronous-communication",
+      "label": "Asynchronous Communication"
+    },
+    {
+      "slug": "asynchronous-synchronous-communication",
+      "label": "Asynchronous-Synchronous Communication"
+    },
+    {
+      "slug": "change-tracking",
+      "label": "Change Tracking"
+    },
+    {
+      "slug": "cloud-storage",
+      "label": "Cloud Storage"
+    },
+    {
+      "slug": "collaborative-inquiry",
+      "label": "Collaborative Inquiry"
+    },
+    {
+      "slug": "collaborative-research",
+      "label": "Collaborative Research"
+    },
+    {
+      "slug": "collaborative-thinking",
+      "label": "Collaborative Thinking"
+    },
+    {
+      "slug": "collaborative-writing",
+      "label": "Collaborative Writing"
+    },
+    {
+      "slug": "comments",
+      "label": "Comments"
+    },
+    {
+      "slug": "confluence",
+      "label": "Confluence"
+    },
+    {
+      "slug": "connectivism",
+      "label": "Connectivism"
+    },
+    {
+      "slug": "constructivism",
+      "label": "Constructivism"
+    },
+    {
+      "slug": "crdt-conflict-free-replicated-data-type",
+      "label": "CRDT (Conflict-free Replicated Data Type)"
+    },
+    {
+      "slug": "credential-verification",
+      "label": "Credential Verification"
+    },
+    {
+      "slug": "distributed-editing-networks",
+      "label": "Distributed Editing Networks"
+    },
+    {
+      "slug": "distributed-teamwork",
+      "label": "Distributed Teamwork"
+    },
+    {
+      "slug": "etherpad",
+      "label": "Etherpad"
+    },
+    {
+      "slug": "google-workspace",
+      "label": "Google Workspace"
+    },
+    {
+      "slug": "hack-md",
+      "label": "HackMD"
+    },
+    {
+      "slug": "high-contrast",
+      "label": "High Contrast"
+    },
+    {
+      "slug": "immutable-document-history",
+      "label": "Immutable Document History"
+    },
+    {
+      "slug": "keyboard-navigation",
+      "label": "Keyboard Navigation"
+    },
+    {
+      "slug": "knowledge-building",
+      "label": "Knowledge Building"
+    },
+    {
+      "slug": "knowledge-co-creation",
+      "label": "Knowledge Co-Creation"
+    },
+    {
+      "slug": "knowledge-creation",
+      "label": "Knowledge Creation"
+    },
+    {
+      "slug": "language-correction",
+      "label": "Language Correction"
+    },
+    {
+      "slug": "metacognition",
+      "label": "Metacognition"
+    },
+    {
+      "slug": "microsoft-office-365",
+      "label": "Microsoft Office 365"
+    },
+    {
+      "slug": "notion",
+      "label": "Notion"
+    },
+    {
+      "slug": "operational-transformation",
+      "label": "Operational Transformation"
+    },
+    {
+      "slug": "peer-feedback",
+      "label": "Peer Feedback"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
+    },
+    {
+      "slug": "peer-review",
+      "label": "Peer Review"
+    },
+    {
+      "slug": "plagiarism-detection",
+      "label": "Plagiarism Detection"
+    },
+    {
+      "slug": "quantum-safe-encryption",
+      "label": "Quantum-Safe Encryption"
+    },
+    {
+      "slug": "real-time-cursor",
+      "label": "Real-time Cursor"
+    },
+    {
+      "slug": "remote-collaboration-technology",
+      "label": "Remote Collaboration Technology"
+    },
+    {
+      "slug": "scaffolding",
+      "label": "Scaffolding"
+    },
+    {
+      "slug": "screen-reader-support",
+      "label": "Screen Reader Support"
+    },
+    {
+      "slug": "semantic-collaboration",
+      "label": "Semantic Collaboration"
+    },
+    {
+      "slug": "shared-documents",
+      "label": "Shared Documents"
+    },
+    {
+      "slug": "smart-writing-suggestions",
+      "label": "Smart Writing Suggestions"
+    },
+    {
+      "slug": "social-constructivism",
+      "label": "Social Constructivism"
+    },
+    {
+      "slug": "social-learning",
+      "label": "Social Learning"
+    },
+    {
+      "slug": "suggestions",
+      "label": "Suggestions"
+    },
+    {
+      "slug": "synchronous-communication",
+      "label": "Synchronous Communication"
+    },
+    {
+      "slug": "team-knowledge",
+      "label": "Team Knowledge"
+    },
+    {
+      "slug": "text-resizing",
+      "label": "Text Resizing"
+    },
+    {
+      "slug": "version-control-systems",
+      "label": "Version Control Systems"
+    },
+    {
+      "slug": "version-history",
+      "label": "Version History"
+    },
+    {
+      "slug": "web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "TelecollaborationDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    }
+  ]
+}

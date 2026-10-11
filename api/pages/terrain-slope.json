@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:terrain-slope",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Terrain slope is the steepness of the ground surface at a location, usually calculated for each cell of an elevation raster.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

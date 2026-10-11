@@ -9,7 +9,6 @@ maturity: emerging
 quality: 0.9
 is-a:
   - urn:ngm:class:agent-harness
-  - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:prompt-engineering
 hasPart:

@@ -138,11 +138,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -213,8 +208,8 @@
         "label": "Time Synchronisation"
       },
       {
-        "id": "urn:ngm:class:gpu-architecture",
-        "label": "GPU Architecture"
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       }
     ],
     "enables": [
@@ -279,10 +274,6 @@
       {
         "id": "urn:ngm:class:vector-clocks",
         "label": "Vector Clocks"
-      },
-      {
-        "id": "urn:ngm:class:cache-coherence",
-        "label": "Cache Coherence"
       }
     ],
     "implements": [
@@ -345,10 +336,6 @@
         "label": "Single-Machine Multiprocessing"
       },
       {
-        "id": "urn:ngm:class:sequential-computing",
-        "label": "Sequential Computing"
-      },
-      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -361,22 +348,6 @@
       {
         "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
-      },
-      {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:data",
@@ -469,8 +440,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -487,12 +458,6 @@
       {
         "id": "urn:ngm:class:quic",
         "label": "IETF QUIC"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [

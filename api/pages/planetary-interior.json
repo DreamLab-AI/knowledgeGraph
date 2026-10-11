@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-interior",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planetary interior is the structure beneath a body's surface, usually described as layers such as a core, a mantle and a crust.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

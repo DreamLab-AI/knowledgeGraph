@@ -34,7 +34,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:model-selection",
@@ -87,7 +87,7 @@
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -163,9 +163,9 @@
       "slug": "model-evaluation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -290,16 +290,16 @@
         "label": "Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:ai-system",
@@ -336,7 +336,7 @@
         "label": "ELO Rating"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -460,8 +460,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -482,7 +482,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -494,8 +494,8 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:bletchley-declaration",
@@ -506,6 +506,10 @@
         "label": "ISO IEC 42001"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -514,6 +518,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

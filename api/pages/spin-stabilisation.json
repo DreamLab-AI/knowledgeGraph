@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spin-stabilisation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spin stabilisation is a method of holding a spacecraft's attitude by setting the whole vehicle spinning so that the gyroscopic action of the rotating mass acts as the stabilising mechanism.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:attitude-control",

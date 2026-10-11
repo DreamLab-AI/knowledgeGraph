@@ -54,7 +54,7 @@ W3C DID Core is the World Wide Web Consortium Recommendation (published July 202
 #### Self-Sovereign Identity and Digital Wallets
 
 - DIDs are the subject identifiers in [[Self-Sovereign Identity]] architectures, allowing individuals to own and control their digital identity without reliance on Google, Facebook, or government databases.
-- [[Digital Identity Wallet]] applications (e.g. Microsoft Entra Verified ID, Lissi, Sphereon) store DIDs and associated [[Verifiable Credentials]], enabling portable, privacy-preserving credential presentation.
+- [[Digital Identity Wallet]] applications (e.g. Microsoft Entra Verified ID, Lissi, Sphereon) store DIDs and associated [[Verifiable Credential]], enabling portable, privacy-preserving credential presentation.
 
 #### Verifiable Credentials Ecosystem
 

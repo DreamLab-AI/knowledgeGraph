@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-3-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation Level 3 data product holds variables mapped on a uniform space-time grid, usually with some completeness and consistency.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-data-product",

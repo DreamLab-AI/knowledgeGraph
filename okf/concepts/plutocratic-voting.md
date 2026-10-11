@@ -19,12 +19,12 @@ contrastsWith:
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:conviction-voting
 bridgesTo:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:decentralisation
 uses:
   - urn:ngm:class:governance-token
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralised-autonomous-organisation
 partOf:
   - urn:ngm:class:on-chain-governance

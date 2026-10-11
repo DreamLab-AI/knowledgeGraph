@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:distributed-collaboration
 hasPart:
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
   - urn:ngm:class:asynchronous-communication
   - urn:ngm:class:video-conferencing
   - urn:ngm:class:web-rtc

@@ -19,7 +19,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:bias
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:classification
 supports:
   - urn:ngm:class:explainability

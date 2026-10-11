@@ -50,7 +50,7 @@ dependsOn:
   - urn:ngm:class:governor-of-california
   - urn:ngm:class:california-department-of-justice
   - urn:ngm:class:california-office-of-emergency-services
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:ccpa
 implements:
@@ -64,9 +64,9 @@ implements:
   - urn:ngm:class:whistleblower-protection
   - urn:ngm:class:dual-threshold-regulation
 contrastsWith:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:federal-ai-policy
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:voluntary-ai-commitments
   - urn:ngm:class:self-regulation
   - urn:ngm:class:risk-based-regulation
@@ -87,7 +87,7 @@ supports:
   - urn:ngm:class:federal-preemption-debate
 standardizedBy:
   - urn:ngm:class:california-office-of-emergency-services
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:nist
   - urn:ngm:class:california-legislature
   - urn:ngm:class:california-attorney-general
@@ -118,9 +118,9 @@ relatedTo:
   - urn:ngm:class:kill-switch
   - urn:ngm:class:compute-threshold
   - urn:ngm:class:open-source-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:dario-amodei
   - urn:ngm:class:elon-musk
   - urn:ngm:class:marc-andreessen

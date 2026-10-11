@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 partOf:
   - urn:ngm:class:blockchain
 relatedTo:
@@ -36,7 +36,7 @@ relatedTo:
   - urn:ngm:class:crypto-token
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:blockchain-economics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenomics
   - urn:ngm:class:initial-coin-offering
 ---

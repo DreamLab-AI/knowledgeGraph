@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:tax-collection
   - urn:ngm:class:vat-administration
 implements:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:uk-tax-law
 contrastsWith:
   - urn:ngm:class:irs

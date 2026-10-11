@@ -51,7 +51,7 @@ uses:
   - urn:ngm:class:principal-component-analysis
   - urn:ngm:class:autoencoder
   - urn:ngm:class:smote
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:embedding
 supports:
   - urn:ngm:class:computer-vision

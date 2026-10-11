@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:asynchronous-collaboration
 enables:
   - urn:ngm:class:collective-intelligence-system
-  - urn:ngm:class:realtime-collaboration
+  - urn:ngm:class:real-time-collaboration
 bridgesTo:
   - urn:ngm:class:collaboration
 relatedTo:

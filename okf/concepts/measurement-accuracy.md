@@ -4,6 +4,7 @@ type: Class
 title: Measurement Accuracy
 resource: urn:ngm:class:measurement-accuracy
 domain: earth-observation-and-geospatial-sensing
+description: Measurement accuracy is the closeness of agreement between a measured quantity value and a true quantity value of a measurand.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Measurement Accuracy
+
+Measurement accuracy is the closeness of agreement between a measured quantity value and a true quantity value of a measurand.[^1]

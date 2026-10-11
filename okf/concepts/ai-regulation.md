@@ -41,7 +41,7 @@ supports:
   - urn:ngm:class:digital-rights
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
 relatedTo:
   - urn:ngm:class:ai-ethics

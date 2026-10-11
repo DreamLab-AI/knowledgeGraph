@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:vector-database
 supports:
   - urn:ngm:class:database-management-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:data-storage-layer
   - urn:ngm:class:storage-hardware

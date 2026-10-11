@@ -37,7 +37,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -66,11 +66,11 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       }
     ],
@@ -161,8 +161,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

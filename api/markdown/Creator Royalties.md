@@ -85,7 +85,7 @@ Creator royalties are automatic, programmable payments directed to the original 
 ### Challenges and Limitations
 
 - **Enforcement fragility**: without protocol-level coercion, creators depend on marketplace goodwill, which erodes under competitive pressure from zero-royalty venues.
-- **Composability tension**: transfer-hook approaches that enforce royalties can break [[DeFi]] lending, fractionalization, and wrapped-token protocols that perform token movements without paying fees.
+- **Composability tension**: transfer-hook approaches that enforce royalties can break [[Decentralised Finance]] lending, fractionalization, and wrapped-token protocols that perform token movements without paying fees.
 - **Wash trading**: reported sales between related wallets can artificially generate royalty flows to the creator from fictional volume, distorting income statistics.
 - **Cross-chain fragmentation**: royalty standards differ across [[Solana]], [[Flow]], [[Tezos]], and [[EVM]]-compatible chains, creating inconsistent creator experiences.
 - **Off-chain income gap**: royalties only apply to on-chain transfers; off-chain bilateral trades or OTC deals generate no royalty disbursements.

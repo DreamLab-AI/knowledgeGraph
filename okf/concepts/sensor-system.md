@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:lidar
   - urn:ngm:class:camera
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:edge-computing
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:reliability

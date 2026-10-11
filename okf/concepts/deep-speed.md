@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:distributed-training
   - urn:ngm:class:distributed-ai-training
   - urn:ngm:class:distributed-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:high-performance-computing
 hasPart:
   - urn:ngm:class:pipeline-parallelism
@@ -19,7 +19,7 @@ hasPart:
   - urn:ngm:class:sparse-attention
   - urn:ngm:class:gradient-checkpointing
   - urn:ngm:class:mixed-precision-training
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:zero-optimizer
 requires:
   - urn:ngm:class:high-performance-computing
@@ -33,10 +33,10 @@ enables:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:distributed-inference
   - urn:ngm:class:high-performance-computing
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:distributed-ai-training
 dependsOn:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:message-passing-interface
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:gpu-cluster
@@ -74,7 +74,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:hugging-face-accelerate
   - urn:ngm:class:data-parallelism
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:distributed-inference
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:backpropagation

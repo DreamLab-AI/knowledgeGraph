@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:visualization",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Visualization is the data analysis service that renders data as images, plots or maps so that people can inspect them.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

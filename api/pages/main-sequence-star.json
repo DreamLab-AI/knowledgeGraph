@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:main-sequence-star",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A main-sequence star is a star that is fusing hydrogen to helium in its core.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:star",

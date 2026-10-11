@@ -23,7 +23,7 @@ NeRF has spawned 1,000+ research papers and commercial applications in teleprese
 
   #### Related Concepts
 
-- [[TELE-050-neural-rendering-telepresence]]
+- [[Neural Rendering Telepresence]]
 - [[TELE-051-3d-gaussian-splatting]]
 - [[TELE-053-volumetric-video-conferencing]]
 

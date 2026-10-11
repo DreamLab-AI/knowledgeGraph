@@ -4,6 +4,7 @@ type: Class
 title: Spaceflight Experiment
 resource: urn:ngm:class:spaceflight-experiment
 domain: space-science-and-systems
+description: A spaceflight experiment is a scientific investigation designed to examine how spaceflight affects living systems or physical processes, flown on a platform such as the International Space Station or compared with ground-based work that mimics aspects of spaceflight.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -14,3 +15,5 @@ relatedTo:
 ---
 
 # Spaceflight Experiment
+
+A spaceflight experiment is a scientific investigation designed to examine how spaceflight affects living systems or physical processes, flown on a platform such as the International Space Station or compared with ground-based work that mimics aspects of spaceflight.[^1]

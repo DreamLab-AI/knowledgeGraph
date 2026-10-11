@@ -20,9 +20,9 @@ implements:
   - urn:ngm:class:polygon-mesh
 contrastsWith:
   - urn:ngm:class:fbx
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 bridgesTo:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 uses:
   - urn:ngm:class:mesh-data
   - urn:ngm:class:texture-mapping

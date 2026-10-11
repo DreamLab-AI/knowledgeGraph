@@ -4,7 +4,7 @@ Identity is the complete, verifiable representation of a principal — person, o
 
 - Identity is one of the most foundational concepts in computing and society. In digital systems, identity answers the question "who or what is this entity?" and provides the anchor point for every subsequent security and governance decision.
 - **Why it matters**: Without reliable identity, there can be no meaningful [[Access Control]], no enforceable [[Authorisation]], and no attribution for actions taken. Every networked interaction — from logging into an application to executing a cross-chain token transfer — depends on resolving the identity of the participating principals.
-- **Evolution**: Early digital identity relied on centralised directories (LDAP, Active Directory) and simple username/password pairs. Federated models (SAML, OAuth 2.0, OpenID Connect) emerged to reduce siloed accounts. The current frontier is [[Self-Sovereign Identity]] (SSI), in which the individual controls their own identity record via [[Decentralised Identifier]]s and [[Verifiable Credentials]] — removing the need to trust any single identity provider.
+- **Evolution**: Early digital identity relied on centralised directories (LDAP, Active Directory) and simple username/password pairs. Federated models (SAML, OAuth 2.0, OpenID Connect) emerged to reduce siloed accounts. The current frontier is [[Self-Sovereign Identity]] (SSI), in which the individual controls their own identity record via [[Decentralised Identifier]]s and [[Verifiable Credential]] — removing the need to trust any single identity provider.
 - **Scope**: Identity applies to humans, legal entities, IoT devices, [[AI Agent]]s, and virtual constructs such as [[Avatar]]s in spatial environments. Each principal type introduces distinct lifecycle and revocation challenges.
 
 ### Key Components
@@ -12,7 +12,7 @@ Identity is the complete, verifiable representation of a principal — person, o
 - **Identifier**: A persistent, unique reference — a username, DID, X.509 subject DN, or blockchain address — that names the identity without necessarily revealing attributes.
   - Identifiers may be opaque (UUID, DID) or semantic (email address). Opacity enhances [[Privacy]] by preventing correlation.
   - Persistence is distinct from the entity itself; identifiers can outlive the principal's control of a key and must support rotation without losing continuity.
-- **Credentials**: Assertions about the principal (name, role, affiliation) issued by a trusted party. In W3C parlance these are [[Verifiable Credentials]], signed with the issuer's key and presented via [[Verifiable Presentation]]s.
+- **Credentials**: Assertions about the principal (name, role, affiliation) issued by a trusted party. In W3C parlance these are [[Verifiable Credential]], signed with the issuer's key and presented via [[Verifiable Presentation]]s.
   - Credentials encode the issuer–subject relationship; the relying party trusts the issuer's signature, not the presenter directly.
   - Bearer credentials convey rights on possession; bound credentials cryptographically bind the credential to the holder's key, preventing theft.
 - **Decentralised Identifiers (DIDs)**: URN-like identifiers specified in the [[W3C DID Core]] standard, resolvable to a DID Document containing [[Public Key Infrastructure]] material and service endpoints, without a central registry.
@@ -21,7 +21,7 @@ Identity is the complete, verifiable representation of a principal — person, o
 - **Authentication factors**: Something you know (password), have (hardware token, [[Smart Card]]), or are (biometric). Multi-factor combinations raise assurance level per [[NIST SP 800-63]].
   - FIDO2 / WebAuthn eliminates shared secrets entirely by binding authentication to a device-resident private key, preventing phishing.
   - Continuous or contextual authentication re-evaluates identity assurance during a session based on behaviour signals rather than only at login.
-- **Verifiable Claims**: [[Verifiable Claim]]s are machine-readable statements about a subject, cryptographically signed by an issuer and verifiable by any relying party, forming the payload of the [[Verifiable Credentials]] ecosystem.
+- **Verifiable Claims**: [[Verifiable Claim]]s are machine-readable statements about a subject, cryptographically signed by an issuer and verifiable by any relying party, forming the payload of the [[Verifiable Credential]] ecosystem.
   - Selective disclosure — enabled by BBS+ signatures or SD-JWT — lets a holder reveal only the subset of claims needed for a given interaction.
   - Derived credentials let a holder prove a predicate (e.g. "age ≥ 18") without revealing the underlying attribute value, using [[Zero Knowledge Proof]] techniques.
 - **Identity Proofing**: The process of binding an identifier to a real-world entity — in-person, remote, or automated — with an assurance level matched to the risk of the service being accessed.
@@ -30,7 +30,7 @@ Identity is the complete, verifiable representation of a principal — person, o
 - **Attribute Aggregation**: Combining claims from multiple issuers (government, employer, university) into a coherent identity profile usable across contexts.
   - Aggregation requires consent management and auditability to comply with data protection regulations such as GDPR and CCPA.
 - **Revocation**: Mechanisms (CRLs, OCSP, status lists) for invalidating credentials when a principal's rights change or a key is compromised. A critical operational concern in [[Public Key Infrastructure]].
-  - W3C Status List 2021 provides a privacy-preserving, bitstring-based revocation mechanism for [[Verifiable Credentials]] without per-credential lookups.
+  - W3C Status List 2021 provides a privacy-preserving, bitstring-based revocation mechanism for [[Verifiable Credential]] without per-credential lookups.
 
 ### Identity Models
 
@@ -47,12 +47,12 @@ Identity is the complete, verifiable representation of a principal — person, o
 - **IoT device identity**: Industrial and consumer devices require stable, rotatable identities for firmware updates, telemetry attribution, and command authorisation. [[Public Key Infrastructure]] and TPM-backed attestation are standard approaches.
 - **Metaverse / spatial computing**: [[Avatar]] identity in virtual worlds must be persistent, cross-platform, and linked to real-world legal identity where regulation demands it (e.g., financial services). [[Decentralised Identifier]]s enable portable avatar credentials.
 - **AI agent identity**: [[AI Agent]]s operating autonomously in agentic pipelines require verifiable identities so that their actions can be audited, their permissions scoped, and their outputs attributed. DID-based agent identity is an active area of standardisation.
-- **Supply chain**: Entity identity for organisations, products, and logistics nodes underpins [[Supply Chain]] traceability, anti-counterfeiting, and provenance attestation via [[Verifiable Credentials]].
+- **Supply chain**: Entity identity for organisations, products, and logistics nodes underpins [[Supply Chain]] traceability, anti-counterfeiting, and provenance attestation via [[Verifiable Credential]].
 
 ### Standards & Context
 
 - **W3C DID Core 1.0** (2022): Specifies the Decentralised Identifiers data model and resolution protocol. Foundational to SSI ecosystems.
-- **W3C Verifiable Credentials Data Model 2.0** (2024): Defines the format, proof mechanisms, and ecosystem roles (issuer, holder, verifier) for [[Verifiable Credentials]].
+- **W3C Verifiable Credentials Data Model 2.0** (2024): Defines the format, proof mechanisms, and ecosystem roles (issuer, holder, verifier) for [[Verifiable Credential]].
 - **OpenID for Verifiable Credentials (OID4VC)**: OpenID Foundation extensions enabling VC issuance and presentation over [[OpenID Connect]] flows — primary bridge between SSI and existing OAuth/OIDC deployments.
 - **NIST SP 800-63**: US federal digital identity guidelines defining identity assurance levels (IAL) and authentication assurance levels (AAL), widely adopted beyond the US as a risk framework.
 - **EU eIDAS 2.0 / EUDI Wallet**: European regulation mandating cross-border digital identity for citizens and legal entities, with a wallet architecture built on W3C VC and DID primitives.

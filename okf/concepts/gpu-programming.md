@@ -31,7 +31,7 @@ uses:
   - urn:ngm:class:vulkan
   - urn:ngm:class:simd
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:rendering
 partOf:
   - urn:ngm:class:high-performance-computing

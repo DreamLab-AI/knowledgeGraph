@@ -8,7 +8,7 @@ description: A framework that studies the conditions under which algorithms can 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:vc-dimension

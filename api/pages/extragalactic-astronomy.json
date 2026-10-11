@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:extragalactic-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Extragalactic astronomy is the study of galaxies and other structures beyond the Milky Way.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

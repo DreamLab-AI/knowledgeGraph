@@ -40,14 +40,14 @@ The OSI (Open Systems Interconnection) Model is a conceptual reference framework
 
 - Manages the establishment, maintenance, and termination of sessions (dialogues) between applications.
 - Handles synchronisation checkpoints for long transfers and session recovery.
-- Protocols: [[NetBIOS]], [[RPC]] session establishment, parts of [[TLS]] handshake.
+- Protocols: [[NetBIOS]], [[RPC]] session establishment, parts of [[Transport Layer Security]] handshake.
 - In the [[TCP/IP Model]] this functionality is embedded in the application layer.
 
 #### Layer 6 — Presentation Layer
 
 - Responsible for data translation, compression, and [[Encryption]] between the application and the network.
 - Handles character encoding conversion (e.g. ASCII to EBCDIC), serialisation formats ([[JSON]], [[XML]], [[ASN.1]]), and compression.
-- [[TLS]]/[[SSL]] encryption is often placed here conceptually.
+- [[Transport Layer Security]]/[[SSL]] encryption is often placed here conceptually.
 
 #### Layer 7 — Application Layer
 
@@ -67,7 +67,7 @@ The OSI (Open Systems Interconnection) Model is a conceptual reference framework
 - **Network Design and Engineering**: the OSI framework guides architects in partitioning responsibilities, selecting appropriate hardware and protocols, and documenting where different components operate. [[Network Switches]] operate at Layer 2; [[Routers]] at Layer 3; [[Application Delivery Controllers]] at Layer 7.
 - **Security Architecture**: [[Firewall]] products are classified by the OSI layer at which they inspect traffic—packet-filtering firewalls at Layer 3/4, stateful inspection at Layer 4, and next-generation firewalls and [[Web Application Firewall]] (WAF) products at Layer 7. [[Network Security]] policies map naturally to OSI layers.
 - **Network Troubleshooting**: the "bottom-up" OSI diagnostic methodology isolates faults by checking layers sequentially: first physical connectivity, then data link, then IP reachability (ping), then transport (port open), then application. This systematic approach structures tools like [[Wireshark]], traceroute, and [[SNMP]] monitoring.
-- **Protocol Development and Standardisation**: new protocol designers use the OSI model to position their work and define clear interfaces. [[QUIC]] (now RFC 9000), for example, is analysed relative to OSI Layers 4–5 to understand how it departs from the [[TCP]]+[[TLS]] paradigm.
+- **Protocol Development and Standardisation**: new protocol designers use the OSI model to position their work and define clear interfaces. [[QUIC]] (now RFC 9000), for example, is analysed relative to OSI Layers 4–5 to understand how it departs from the [[TCP]]+[[Transport Layer Security]] paradigm.
 - **Education and Certification**: OSI is the foundational framework in networking curricula worldwide. Certifications such as CompTIA Network+, Cisco CCNA, and related qualifications organise their syllabi around OSI layers.
 - **Distributed Systems and Cloud**: cloud services map to OSI conceptually—[[Software-Defined Networking]] (SDN) abstracts Layers 2–4; service meshes (e.g. [[Istio]]) operate at Layer 7; [[Microservices]] communicate over Layer 7 protocols such as [[HTTP]] and [[gRPC]].
 - **IoT and Embedded Networks**: [[Internet of Things]] protocol stacks (Zigbee, [[LoRaWAN]], Matter) are frequently mapped to OSI layers to explain their design trade-offs and security boundaries.

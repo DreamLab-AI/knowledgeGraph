@@ -35,7 +35,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:fault-tree-analysis
   - urn:ngm:class:monte-carlo-simulation
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
   - urn:ngm:class:probabilistic-risk-assessment
   - urn:ngm:class:red-teaming
 ---

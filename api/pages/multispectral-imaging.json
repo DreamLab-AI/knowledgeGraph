@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multispectral-imaging",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Multispectral imaging is the collection of image data over several different wavelength ranges, as done by a multispectral scanner.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

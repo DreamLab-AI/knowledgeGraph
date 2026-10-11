@@ -26,7 +26,7 @@ bridgesTo:
   - urn:ngm:class:financial-risk-management
 uses:
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:explainable-ai
 supports:

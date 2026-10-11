@@ -55,7 +55,7 @@ Ethereum is an open-source, decentralised layer-1 blockchain platform conceived 
 
 #### EIP Governance Process
 
-- Protocol changes proceed through the [[EIP]] process: draft → review → last call → final. Core EIPs affecting consensus require coordination among client teams and are activated at a specific block or epoch.
+- Protocol changes proceed through the [[Ethereum Improvement Proposal]] process: draft → review → last call → final. Core EIPs affecting consensus require coordination among client teams and are activated at a specific block or epoch.
 - The [[Ethereum Foundation]] funds core research and client development but does not unilaterally control protocol changes; governance is informal, relying on rough consensus among client maintainers, researchers, and the broader community.
 
 ### Applications & Use Cases
@@ -67,12 +67,12 @@ Ethereum is an open-source, decentralised layer-1 blockchain platform conceived 
 
 #### NFTs & Digital Ownership
 
-- Ethereum's [[ERC-721 Standard]] and [[ERC-20]] standards established the dominant framework for provably scarce digital assets, including art, collectibles, music rights, and in-game items.
+- Ethereum's [[ERC-721]] and [[ERC-20]] standards established the dominant framework for provably scarce digital assets, including art, collectibles, music rights, and in-game items.
 - [[Digital Ownership]] of on-chain assets is enforced by the network's consensus without relying on any centralised custodian.
 
 #### DAOs & On-Chain Governance
 
-- [[DAO]] organisations encode membership rules, voting mechanisms, and treasury management in [[Smart Contract]] code deployed on Ethereum, enabling trustless collective decision-making.
+- [[Decentralised Autonomous Organisation]] organisations encode membership rules, voting mechanisms, and treasury management in [[Smart Contract]] code deployed on Ethereum, enabling trustless collective decision-making.
 - [[On-Chain Governance]] frameworks (Governor, Compound Bravo, OpenZeppelin Governor) provide composable primitives adopted across DeFi protocols and public goods funding platforms such as [[Gitcoin]].
 
 #### Identity & Credentialing
@@ -93,12 +93,12 @@ Ethereum is an open-source, decentralised layer-1 blockchain platform conceived 
 
 ### Standards & Context
 
-- The [[EIP]] process (Ethereum Improvement Proposals) governs all protocol changes; EIPs include standards for the core protocol (core EIPs), networking (networking EIPs), interfaces (ERCs), and meta-process (meta EIPs).
+- The [[Ethereum Improvement Proposal]] process (Ethereum Improvement Proposals) governs all protocol changes; EIPs include standards for the core protocol (core EIPs), networking (networking EIPs), interfaces (ERCs), and meta-process (meta EIPs).
 - [[EIP-1559]] (fee market reform, 2021), [[EIP-4337]] (account abstraction, 2023), and [[EIP-4844]] (Proto-Danksharding, 2024) are landmark standards that define modern Ethereum behaviour.
 - The [[Ethereum Yellow Paper]] by Gavin Wood formally specifies the EVM and state transition function, serving as the authoritative technical reference for client implementations.
 - [[Enterprise Ethereum Alliance]] publishes specifications for EVM compatibility in enterprise settings, referenced by [[Central Bank Digital Currency]] pilot programmes and regulated financial infrastructure.
 - Ethereum interacts with off-chain data through [[Chainlink]] oracle networks, providing [[Smart Contract]] access to real-world price feeds, randomness, and cross-chain messaging.
-- [[ERC-721 Standard]], [[ERC-20]], and related standards are referenced by the W3C and other bodies in work on verifiable credentials, tokenised assets, and digital identity.
+- [[ERC-721]], [[ERC-20]], and related standards are referenced by the W3C and other bodies in work on verifiable credentials, tokenised assets, and digital identity.
 - [[Safe]] (formerly Gnosis Safe) provides the dominant multi-signature [[Crypto Wallet]] standard on Ethereum, acting as treasury infrastructure for DAOs and institutional holders.
 - [[OpenZeppelin]] provides audited, reusable [[Smart Contract]] libraries implementing ERC standards, used across the majority of deployed Ethereum contracts.
 - [[IPFS]] and [[Filecoin]] are frequently paired with Ethereum for decentralised content storage, with [[Content Addressed Storage]] references embedded in NFT metadata and DAO documents.

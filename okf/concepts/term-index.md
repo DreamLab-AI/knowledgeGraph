@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:sparql
 relatedTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
   - urn:ngm:class:metaverse
 ---

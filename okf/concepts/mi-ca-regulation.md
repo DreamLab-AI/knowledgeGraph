@@ -9,13 +9,16 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:financial-regulation
+  - urn:ngm:class:regulatory-compliance
 requires:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:aml-kyc-compliance
+  - urn:ngm:class:securities-regulation
 enables:
   - urn:ngm:class:digital-asset-market
   - urn:ngm:class:financial-stability
+  - urn:ngm:class:regulatory-compliance
 contrastsWith:
   - urn:ngm:class:digital-regulation
   - urn:ngm:class:securities-regulation
@@ -28,7 +31,7 @@ relatedTo:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:blockchain-compliance
   - urn:ngm:class:blockchain-analytics
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # MiCA Regulation

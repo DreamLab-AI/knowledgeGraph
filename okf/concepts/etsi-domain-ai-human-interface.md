@@ -25,7 +25,7 @@ hasPart:
   - urn:ngm:class:accessibility
 requires:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:multimodal-ai-architecture-ai
@@ -47,7 +47,7 @@ dependsOn:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:deep-learning
   - urn:ngm:class:multimodal-ai-architecture-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:computer-vision
 implements:
   - urn:ngm:class:conversational-ai-classification
@@ -65,7 +65,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:telecollaboration
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:reinforcement-learning-from-human-feedback

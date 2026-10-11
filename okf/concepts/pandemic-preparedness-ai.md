@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:artificial-intelligence
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:public-health
   - urn:ngm:class:biosecurity

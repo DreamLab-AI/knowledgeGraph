@@ -50,7 +50,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:multi-agent-reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:swarm-intelligence
 uses:
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:swarm-intelligence
   - urn:ngm:class:game-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:agent-based-modelling
   - urn:ngm:class:collective-intelligence
   - urn:ngm:class:emergence

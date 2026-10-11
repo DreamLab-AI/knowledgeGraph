@@ -29,14 +29,14 @@ contrastsWith:
   - urn:ngm:class:python
   - urn:ngm:class:web-assembly
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:asynchronous-programming
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:rest-api
   - urn:ngm:class:prototype-chain
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 standardizedBy:
   - urn:ngm:class:ecmascript
   - urn:ngm:class:ecma-international

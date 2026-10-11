@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-conjunction",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An orbital conjunction is a predicted close approach between two orbiting objects at a stated time, based on their estimated trajectories.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

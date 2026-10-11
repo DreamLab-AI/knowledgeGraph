@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:compute-resources
 enables:
   - urn:ngm:class:inference
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:transfer-learning
 dependsOn:
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:batch-normalisation
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 ---
 
 # Training

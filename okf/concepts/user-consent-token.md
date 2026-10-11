@@ -30,7 +30,7 @@ enables:
   - urn:ngm:class:granular-consent-control
 dependsOn:
   - urn:ngm:class:decentralized-identifier-did
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:blockchain-ledger
   - urn:ngm:class:time-oracle
 partOf:

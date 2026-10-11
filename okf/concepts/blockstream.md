@@ -35,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 bridgesTo:
   - urn:ngm:class:digital-asset-custody
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:hashcash
   - urn:ngm:class:hardware-security-module

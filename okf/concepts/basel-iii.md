@@ -30,8 +30,8 @@ contrastsWith:
   - urn:ngm:class:basel-i
   - urn:ngm:class:basel-ii
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:risk-management
 standardizedBy:
   - urn:ngm:class:basel-committee-on-banking-supervision

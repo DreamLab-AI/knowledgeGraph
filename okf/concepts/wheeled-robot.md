@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:odometry
   - urn:ngm:class:navigation
 uses:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:slam
 partOf:
   - urn:ngm:class:mobile-robot

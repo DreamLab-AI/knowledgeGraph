@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:random-number-generation
   - urn:ngm:class:hardware-security-module
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:encryption

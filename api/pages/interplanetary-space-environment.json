@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interplanetary-space-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Interplanetary space environment is the set of regions of the solar system where physical and biological phenomena are relatively unaffected by the properties of planets and their moons, compared with the influence of the Sun.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

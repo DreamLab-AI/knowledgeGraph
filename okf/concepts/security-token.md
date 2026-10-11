@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:fractional-ownership
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
   - urn:ngm:class:non-fungible-token-nft
   - urn:ngm:class:semi-fungible-token
@@ -42,7 +42,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:governance-token
   - urn:ngm:class:token-economics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Security Token

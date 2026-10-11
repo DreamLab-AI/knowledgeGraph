@@ -6,7 +6,7 @@ A large language model (LLM) is a deep neural network — almost universally bas
 - The term "large" is relative and has shifted over time — early GPT (2018, 117M parameters) was large by the standards of its era; frontier models as of 2025 operate at the scale of hundreds of billions of parameters and trillions of training tokens.
 - Scaling laws (empirically established by Kaplan et al. 2020 and refined by Hoffmann et al. 2022 — the Chinchilla result) show that model capability scales predictably as a power law with compute, parameter count, and data volume, enabling principled allocation of training budgets.
 - Emergent abilities — capabilities that appear abruptly as scale increases and are absent at smaller scale — have been observed for arithmetic, multi-step reasoning, and code generation, though the mechanism remains debated.
-- LLMs are the canonical instance of [[Foundation Model]]: a single large pretrained model that serves as the starting point for many downstream tasks via [[Fine Tuning]] or prompting.
+- LLMs are the canonical instance of [[Foundation Model]]: a single large pretrained model that serves as the starting point for many downstream tasks via [[Fine-Tuning]] or prompting.
 
 ### Key Components
 
@@ -71,7 +71,7 @@ A large language model (LLM) is a deep neural network — almost universally bas
 
 ### Standards & Context
 
-- The [[EU AI Act Regulatory Instrument]] (2024) classifies general-purpose AI models (GPAIs) above a training compute threshold of 10²⁵ FLOPs as "systemic-risk" systems subject to mandatory transparency, incident reporting, and adversarial testing obligations; frontier LLMs fall squarely within scope.
+- The [[EU AI Act]] (2024) classifies general-purpose AI models (GPAIs) above a training compute threshold of 10²⁵ FLOPs as "systemic-risk" systems subject to mandatory transparency, incident reporting, and adversarial testing obligations; frontier LLMs fall squarely within scope.
 - NIST AI Risk Management Framework (AI RMF 1.0, 2023) provides voluntary governance guidance applicable to LLM deployment, covering identification, measurement, and mitigation of AI-related risks.
 - Model cards (Mitchell et al.) and datasheets for datasets (Gebru et al.) are community norms for documenting intended use, limitations, evaluation results, and training data provenance, adopted by major LLM providers.
 - The Chinchilla scaling laws (Hoffmann et al., 2022) and Kaplan et al. (2020) power-law scaling results are the empirical foundation for compute-budget allocation decisions in frontier training runs.

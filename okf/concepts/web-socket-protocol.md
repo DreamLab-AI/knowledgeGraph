@@ -12,9 +12,9 @@ is-a:
 requires:
   - urn:ngm:class:transmission-control-protocol
   - urn:ngm:class:hypertext-transfer-protocol
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
-  - urn:ngm:class:realtime-collaboration
+  - urn:ngm:class:real-time-collaboration
   - urn:ngm:class:agent-event-stream
   - urn:ngm:class:server-push
   - urn:ngm:class:real-time-streaming
@@ -40,10 +40,10 @@ supports:
   - urn:ngm:class:publish-subscribe-pattern
 relatedTo:
   - urn:ngm:class:web-socket
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
   - urn:ngm:class:http
   - urn:ngm:class:mqtt
-  - urn:ngm:class:http
+  - urn:ngm:class:http2
 ---
 
 # WebSocket Protocol

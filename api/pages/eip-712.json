@@ -33,7 +33,7 @@
         "label": "Account Abstraction"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "DeFi"
       },
       {
@@ -69,7 +69,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       },
       {
@@ -220,12 +220,12 @@
         "label": "Computational Hardness Assumption"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generator",
@@ -415,7 +415,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -462,8 +462,8 @@
         "label": "eIDAS QES"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:nostr",
@@ -482,8 +482,8 @@
         "label": "Smart Contract Authorisation"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "standardizedBy": [
@@ -552,8 +552,8 @@
         "label": "Certificate Transparency"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:verifiable-random-function",

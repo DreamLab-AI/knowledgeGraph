@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:standards-body
 requires:
   - urn:ngm:class:asymmetric-cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:hardware-security-key
 enables:
   - urn:ngm:class:passwordless-authentication

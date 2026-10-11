@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:gazebo-simulator
   - urn:ngm:class:physics-simulation
 uses:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:robot-kinematics
 ---
 

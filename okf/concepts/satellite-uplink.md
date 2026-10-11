@@ -4,6 +4,7 @@ type: Class
 title: Satellite Uplink
 resource: urn:ngm:class:satellite-uplink
 domain: space-science-and-systems
+description: A satellite uplink is a transmission from an Earth-based station or terminal to a satellite.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Satellite Uplink
+
+A satellite uplink is a transmission from an Earth-based station or terminal to a satellite.

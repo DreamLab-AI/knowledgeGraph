@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:ai-agents
   - urn:ngm:class:autonomous-ai-agents
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multi-agent-systems
 relatedTo:
   - urn:ngm:class:agent-frameworks

@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:settlement-layer
   - urn:ngm:class:application-layer
 bridgesTo:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:key-management
 ---
 

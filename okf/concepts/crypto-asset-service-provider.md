@@ -12,8 +12,8 @@ is-a:
 requires:
   - urn:ngm:class:eu-mi-ca-regulation
 implements:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
   - urn:ngm:class:cryptocurrency-exchange
   - urn:ngm:class:digital-asset-custody

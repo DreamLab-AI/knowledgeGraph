@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:byzantine-fault-tolerance
 requires:
   - urn:ngm:class:partial-synchrony
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:blockchain-infrastructure

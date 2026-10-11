@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:longest-chain-rule
 bridgesTo:
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:virtual-economy
 uses:
   - urn:ngm:class:bls-signature

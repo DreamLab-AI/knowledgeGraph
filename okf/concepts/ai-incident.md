@@ -19,7 +19,7 @@ enables:
 relatedTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:bias
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # AI Incident

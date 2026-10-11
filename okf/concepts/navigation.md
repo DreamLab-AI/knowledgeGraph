@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:collision-detection
   - urn:ngm:class:control-theory
   - urn:ngm:class:kinematics
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:slam
 enables:
@@ -47,7 +47,7 @@ enables:
 dependsOn:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:point-cloud-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:graph-search
   - urn:ngm:class:gaussian-process
@@ -95,7 +95,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:simultaneous-localisation-and-mapping
   - urn:ngm:class:visual-language-navigation
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:object-detection
   - urn:ngm:class:scene-understanding
 ---

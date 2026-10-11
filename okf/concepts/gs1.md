@@ -29,8 +29,8 @@ implements:
   - urn:ngm:class:data-interoperability
 bridgesTo:
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:rfid

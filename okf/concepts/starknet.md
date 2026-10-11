@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:sequencer
 requires:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:programming-language
 enables:
   - urn:ngm:class:scalability
@@ -37,7 +37,7 @@ partOf:
   - urn:ngm:class:ethereum
 relatedTo:
   - urn:ngm:class:polygon-zkevm
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Starknet

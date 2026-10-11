@@ -17,7 +17,7 @@ uses:
   - urn:ngm:class:digital-currency
   - urn:ngm:class:lightning-network
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # AI Agent Payments

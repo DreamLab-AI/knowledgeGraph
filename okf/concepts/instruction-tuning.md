@@ -29,10 +29,10 @@ bridgesTo:
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:ai-safety
 uses:
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:parameter-efficient-fine-tuning
 relatedTo:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:multi-task-learning

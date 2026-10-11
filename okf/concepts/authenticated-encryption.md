@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:nonce
 supports:
   - urn:ngm:class:tls-1-3
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 partOf:
   - urn:ngm:class:cryptography
 relatedTo:

@@ -52,7 +52,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:service-discovery
   - urn:ngm:class:message-passing
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:json-data-interchange-format-rpc-2-0
   - urn:ngm:class:server-sent-events
   - urn:ngm:class:oauth-2-0

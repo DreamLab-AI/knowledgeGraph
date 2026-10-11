@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:metaverse-ontology
 ---

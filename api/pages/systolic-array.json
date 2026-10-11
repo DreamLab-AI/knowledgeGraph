@@ -76,7 +76,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -107,6 +107,11 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -218,8 +223,8 @@
         "label": "Autonomous Robot"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
@@ -296,6 +301,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -372,8 +381,8 @@
         "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

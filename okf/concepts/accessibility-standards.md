@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:telecollaboration
   - urn:ngm:class:metaverse
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:wcag-2-2
   - urn:ngm:class:xr-accessibility-user-requirements
 relatedTo:

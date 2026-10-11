@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:upper-atmosphere",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Upper atmosphere is the high part of Earth\u2019s atmosphere, above the layers closest to the surface, and the retained sources draw its lower limit differently.[^1][^2] SWEET types it as a subclass of atmosphere layer.[^3]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:atmosphere-layer",

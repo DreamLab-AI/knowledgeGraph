@@ -40,7 +40,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -153,8 +153,8 @@
         "label": "Open Media Alliance"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
       },
       {
         "id": "urn:ngm:class:joint-development-foundation",
@@ -361,7 +361,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -399,7 +399,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

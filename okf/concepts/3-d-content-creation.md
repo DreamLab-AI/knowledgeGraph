@@ -19,7 +19,7 @@ uses:
   - urn:ngm:class:physically-based-rendering
 relatedTo:
   - urn:ngm:class:3-d-asset
-  - urn:ngm:class:3-d-content-generation
+  - urn:ngm:class:3-d-generation
   - urn:ngm:class:motion-capture
 ---
 

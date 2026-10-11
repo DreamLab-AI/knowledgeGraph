@@ -37,7 +37,7 @@ enables:
 dependsOn:
   - urn:ngm:class:client-application
   - urn:ngm:class:infrastructure
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 partOf:
   - urn:ngm:class:metaverse
   - urn:ngm:class:metaverse-platform

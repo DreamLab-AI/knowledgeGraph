@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:objective-function
   - urn:ngm:class:constraint
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:optimal-control
   - urn:ngm:class:operations-research
@@ -29,8 +29,8 @@ contrastsWith:
   - urn:ngm:class:satisfiability
   - urn:ngm:class:simulation
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:distributed-computing
 uses:
   - urn:ngm:class:calculus

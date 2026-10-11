@@ -41,7 +41,7 @@ Semantic interoperability is the capability of disparate information systems to 
 
 ### Standards and Context
 
-- **W3C Semantic Web Stack** — the foundational standards ladder: [[RDF]] (data model), RDFS (schema), [[OWL]] (ontology), [[SPARQL]] (query), [[JSON-LD]] (JSON serialisation). All published by the [[W3C]] and freely implementable.
+- **W3C Semantic Web Stack** — the foundational standards ladder: [[RDF]] (data model), RDFS (schema), [[OWL]] (ontology), [[SPARQL]] (query), [[JSON-LD]] (JSON serialisation). All published by the [[World Wide Web Consortium]] and freely implementable.
 - **SKOS (Simple Knowledge Organisation System)** — W3C recommendation for representing [[Controlled Vocabulary]], thesauri, and classification schemes as linked data, with well-defined concept relationships (broader, narrower, related, exactMatch).
 - **ISO/IEC 11179** — international standard for metadata registries, providing a framework for registering, naming, defining, and mapping data elements — the governance infrastructure for semantic interoperability at enterprise scale.
 - **HL7 FHIR** — the dominant healthcare interoperability standard, which encodes clinical resources as JSON/XML/RDF with mandatory terminology bindings to SNOMED CT, LOINC, and ICD-10, making health data semantically portable.

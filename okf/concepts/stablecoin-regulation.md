@@ -36,13 +36,13 @@ requires:
   - urn:ngm:class:independent-attestation
 enables:
   - urn:ngm:class:cross-border-payments
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:financial-stability
   - urn:ngm:class:regulatory-clarity
   - urn:ngm:class:consumer-protection
   - urn:ngm:class:cross-border-compliance
   - urn:ngm:class:payment-stablecoin-issuance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-border-payments
 dependsOn:
   - urn:ngm:class:electronic-money-regulation
@@ -57,12 +57,12 @@ implements:
   - urn:ngm:class:financial-stability-board
   - urn:ngm:class:genius-act
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:eu-mi-ca-regulation
   - urn:ngm:class:mas-scs-framework
   - urn:ngm:class:fca
 contrastsWith:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:unregulated-crypto
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:bank-deposit
@@ -80,7 +80,7 @@ supports:
   - urn:ngm:class:circle
   - urn:ngm:class:tether
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-border-compliance
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:micropayments
@@ -96,10 +96,10 @@ relatedTo:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cashu
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:decentralized-exchange
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:micropayments
   - urn:ngm:class:eu-mi-ca-regulation
   - urn:ngm:class:circle

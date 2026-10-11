@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:censorship-resistance
   - urn:ngm:class:immutability
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-autonomous-organisation
 contrastsWith:

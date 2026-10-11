@@ -23,7 +23,7 @@ dependsOn:
 implements:
   - urn:ngm:class:automated-reasoning
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:inference
   - urn:ngm:class:reasoning

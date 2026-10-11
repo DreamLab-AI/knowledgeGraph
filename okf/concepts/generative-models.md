@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:generative-ai
 hasPart:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:normalising-flow
@@ -28,7 +28,7 @@ enables:
   - urn:ngm:class:synthetic-data
 dependsOn:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:backpropagation
 implements:
   - urn:ngm:class:unsupervised-learning

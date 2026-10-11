@@ -1,6 +1,6 @@
 PKCE, Proof Key for Code Exchange, is an extension to the OAuth 2.0 authorisation code flow that protects public clients, such as mobile and single-page applications, against interception of the authorisation code. The client generates a secret code verifier and sends its hashed code challenge when requesting authorisation, then proves possession of the verifier when redeeming the code, so a stolen code cannot be exchanged for tokens. It is now recommended for all OAuth clients, not only public ones.
 
-- [[Pkce]] hardens the [[OAuth 2.0]] authorisation code flow for public clients by binding the code to a secret verifier, using a hashed challenge built on [[Encryption]] to protect [[Authorization]].
+- [[Pkce]] hardens the [[OAuth 2.0]] authorisation code flow for public clients by binding the code to a secret verifier, using a hashed challenge built on [[Encryption]] to protect [[Authorisation]].
 
 ### Overview
 

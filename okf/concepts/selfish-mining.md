@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-entity
   - urn:ngm:class:network-component
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:block
   - urn:ngm:class:blockchain-network
@@ -20,7 +20,7 @@ dependsOn:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:fork-choice-rule
 contrastsWith:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:proof-of-stake
 bridgesTo:

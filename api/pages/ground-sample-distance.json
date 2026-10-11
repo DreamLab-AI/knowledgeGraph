@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-sample-distance",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ground sample distance is the separation between the centres of two adjacent samples on the ground.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

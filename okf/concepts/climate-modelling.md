@@ -24,7 +24,7 @@ bridgesTo:
   - urn:ngm:class:smart-city-infrastructure
 uses:
   - urn:ngm:class:time-series-forecasting
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:gpu-acceleration
 relatedTo:

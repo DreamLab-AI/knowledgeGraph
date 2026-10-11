@@ -8,14 +8,14 @@ description: ERC20Votes is an extension of the ERC-20 fungible-token standard th
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:erc20-standard
+  - urn:ngm:class:erc-20
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:smart-contract
 relatedTo:
   - urn:ngm:class:erc-20-votes
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # ERC20Votes Standard

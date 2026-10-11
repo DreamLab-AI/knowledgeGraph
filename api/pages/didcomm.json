@@ -29,8 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential (VC)"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:protocol-layer",
@@ -74,7 +74,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:peer-to-peer-network",
@@ -177,16 +177,16 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -207,8 +207,8 @@
         "label": "Cross-Domain Identity"
       },
       {
-        "id": "urn:ngm:class:decentralized-authentication",
-        "label": "Decentralized Authentication"
+        "id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
       },
       {
         "id": "urn:ngm:class:privacy-preserving-identity",
@@ -241,7 +241,7 @@
         "label": "Blockchain Technology"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -355,8 +355,8 @@
       "label": "Self Sovereign Identity"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

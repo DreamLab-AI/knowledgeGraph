@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:nft-minting
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:rarible
   - urn:ngm:class:blur
@@ -33,7 +33,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:ethereum
   - urn:ngm:class:polygon
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
   - urn:ngm:class:ipfs
 relatedTo:

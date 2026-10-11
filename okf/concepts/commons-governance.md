@@ -16,10 +16,10 @@ enables:
 dependsOn:
   - urn:ngm:class:governance-token
 bridgesTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:collective-action
 uses:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
 supports:
   - urn:ngm:class:retroactive-public-goods-funding
@@ -29,7 +29,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:retroactive-public-goods-funding
   - urn:ngm:class:quadratic-funding
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Commons Governance

@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:risk-management
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:financial-stability
 uses:
   - urn:ngm:class:financial-instruments

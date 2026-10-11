@@ -8,23 +8,30 @@ description: "A Foundation Model is a large-scale machine learning model trained
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:ai-model-architecture
+  - urn:ngm:class:pre-trained-model
 hasPart:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:neural-network
   - urn:ngm:class:context-window
 requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:self-supervised-learning
+  - urn:ngm:class:common-crawl
 enables:
   - urn:ngm:class:in-context-learning
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:few-shot-learning
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:emergent-capabilities
+  - urn:ngm:class:fine-tuning
+  - urn:ngm:class:transfer-learning
+  - urn:ngm:class:multimodal-ai-architecture-ai
+  - urn:ngm:class:image-generation
+  - urn:ngm:class:video-generation
 dependsOn:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:deep-learning
@@ -37,19 +44,24 @@ bridgesTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:generative-ai
 uses:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:domain-adaptation
   - urn:ngm:class:lo-ra-fine-tuning
+  - urn:ngm:class:attention-mechanism
+  - urn:ngm:class:parameter-count
+  - urn:ngm:class:scaling-laws
 supports:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:prompt-engineering
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
   - urn:ngm:class:benchmark-evaluation
   - urn:ngm:class:ai-safety
+  - urn:ngm:class:deep-learning
+  - urn:ngm:class:generative-model
 ---
 
 # Foundation Model

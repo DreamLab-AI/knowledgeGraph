@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:erc-20-tokens
   - urn:ngm:class:redemption-mechanism
 requires:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:custody-infrastructure
   - urn:ngm:class:reserve-attestation
   - urn:ngm:class:smart-contract
@@ -25,12 +25,12 @@ dependsOn:
   - urn:ngm:class:payment-system
   - urn:ngm:class:regulatory-compliance
 implements:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:cross-chain-bridge
 contrastsWith:
   - urn:ngm:class:usdt
   - urn:ngm:class:dai
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:traditional-finance
   - urn:ngm:class:programmable-money

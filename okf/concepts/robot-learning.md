@@ -9,7 +9,7 @@ maturity: established
 quality: 0.5
 is-a:
   - urn:ngm:class:robo-actuation-and-control
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:robotics
 hasPart:

@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:data-consistency
 dependsOn:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:master-data-management
 implements:
   - urn:ngm:class:iso-11179
@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:knowledge-graph
 uses:
   - urn:ngm:class:ontology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:api
 supports:
   - urn:ngm:class:data-quality-management

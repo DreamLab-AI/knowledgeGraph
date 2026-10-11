@@ -10,7 +10,7 @@ The branch of knowledge representation and reasoning concerned with representing
 
 The canonical qualitative formalism is Allen's interval algebra (1983), which defines thirteen mutually exclusive relations between intervals (before, meets, overlaps, during, starts, finishes, equals, and their inverses) and supports constraint propagation over networks of such relations. Metric reasoning is typically cast as a Simple Temporal Problem (STP) or its disjunctive and uncertain extensions (TCSP, STNU), solved with shortest-path and consistency algorithms. Logical treatments include [[Temporal Logic]] families (LTL, CTL, MTL) used in verification, and the event calculus and situation calculus, which address persistence and the frame problem in action reasoning.
 
-Within this graph, temporal reasoning is a component of [[Common Sense Reasoning]] — humans effortlessly infer event order and duration from narrative — and a close companion of [[Planning]] and [[Automated Planning]], where durative actions, deadlines, and concurrency turn plan synthesis into temporal constraint solving.
+Within this graph, temporal reasoning is a component of [[Commonsense Reasoning]] — humans effortlessly infer event order and duration from narrative — and a close companion of [[Planning]] and [[Automated Planning]], where durative actions, deadlines, and concurrency turn plan synthesis into temporal constraint solving.
 
 ## Technical Details
 

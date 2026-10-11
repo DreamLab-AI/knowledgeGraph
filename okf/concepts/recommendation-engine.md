@@ -16,7 +16,7 @@ dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:data-pipeline
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding-model
 relatedTo:
   - urn:ngm:class:search-technology

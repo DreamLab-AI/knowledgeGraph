@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:white-dwarf",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A white dwarf is the stellar remnant core that remains after a red giant has shed all its atmosphere.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-remnant",

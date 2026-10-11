@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:direct-preference-optimisation
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
 uses:
   - urn:ngm:class:optimization-algorithms

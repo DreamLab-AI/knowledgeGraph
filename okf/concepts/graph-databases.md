@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:columnar-databases
 bridgesTo:
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
   - urn:ngm:class:ontology-engineering
 uses:
   - urn:ngm:class:cypher-query-language

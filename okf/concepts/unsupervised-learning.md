@@ -8,7 +8,7 @@ description: Unsupervised Learning discovers hidden patterns, structures, and re
 maturity: emerging
 quality: 0
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:dimensionality-reduction
@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:autoencoder
 requires:
   - urn:ngm:class:unlabeled-data
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
 enables:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:feature-extraction
@@ -33,7 +33,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 relatedTo:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:federated-learning

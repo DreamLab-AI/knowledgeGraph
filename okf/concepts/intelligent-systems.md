@@ -10,7 +10,7 @@ quality: 0.35
 is-a:
   - urn:ngm:class:sc-platform-and-environment
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reasoning
 enables:
   - urn:ngm:class:artificial-intelligence

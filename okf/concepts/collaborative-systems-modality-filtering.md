@@ -10,7 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:machine-learning-discipline-technique
   - urn:ngm:class:information-retrieval
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:matrix-factorisation
   - urn:ngm:class:user-item-interaction-matrix
@@ -19,7 +19,7 @@ hasPart:
   - urn:ngm:class:user-behaviour-data
   - urn:ngm:class:embeddings
   - urn:ngm:class:nearest-neighbor-search
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:stochastic-gradient-descent
 requires:
@@ -29,7 +29,7 @@ requires:
   - urn:ngm:class:loss-function
   - urn:ngm:class:regularisation
   - urn:ngm:class:gradient-descent
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 enables:
   - urn:ngm:class:recommendation-engine
   - urn:ngm:class:recommendation-system
@@ -46,7 +46,7 @@ dependsOn:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:vector-database
 implements:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:stochastic-gradient-descent
   - urn:ngm:class:alternating-least-squares
@@ -56,14 +56,14 @@ contrastsWith:
   - urn:ngm:class:content-based-filtering
   - urn:ngm:class:search-engine
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:approximate-nearest-neighbour-search
   - urn:ngm:class:embeddings
   - urn:ngm:class:vector-database
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:large-language-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:data-pipeline

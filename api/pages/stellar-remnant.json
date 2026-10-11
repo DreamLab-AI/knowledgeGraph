@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-remnant",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Stellar remnant is the compact object, such as a white dwarf, neutron star or black hole, that is left when a star ends its life.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

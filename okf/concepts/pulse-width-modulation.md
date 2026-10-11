@@ -24,7 +24,7 @@ dependsOn:
 implements:
   - urn:ngm:class:signal-processing
 bridgesTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 uses:
   - urn:ngm:class:duty-cycle
   - urn:ngm:class:microcontroller
@@ -37,7 +37,7 @@ relatedTo:
   - urn:ngm:class:actuator
   - urn:ngm:class:servo-motor
   - urn:ngm:class:control-system
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Pulse Width Modulation

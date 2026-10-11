@@ -30,7 +30,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-augmented-reasoning
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
 relatedTo:
   - urn:ngm:class:ai-risk
   - urn:ngm:class:ai-alignment

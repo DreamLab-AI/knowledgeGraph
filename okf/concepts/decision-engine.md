@@ -8,8 +8,6 @@ description: A decision engine is a software component that encapsulates decisio
 maturity: established
 quality: 0.9
 is-a:
-  - urn:ngm:class:inference-engine
-  - urn:ngm:class:automated-reasoning
   - urn:ngm:class:expert-systems
   - urn:ngm:class:decision-intelligence
 hasPart:
@@ -40,7 +38,7 @@ enables:
   - urn:ngm:class:risk-scoring
 dependsOn:
   - urn:ngm:class:policy-engine
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:model-serving-runtime
   - urn:ngm:class:mlops
@@ -67,7 +65,7 @@ uses:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:chain-of-thought
   - urn:ngm:class:constraint-satisfaction
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:neuro-symbolic-ai
   - urn:ngm:class:api-gateway

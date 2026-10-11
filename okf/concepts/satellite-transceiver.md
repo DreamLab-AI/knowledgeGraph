@@ -4,6 +4,7 @@ type: Class
 title: Satellite Transceiver
 resource: urn:ngm:class:satellite-transceiver
 domain: space-science-and-systems
+description: A satellite transceiver is an electronic unit or subsystem that both transmits and receives signals for a satellite communications link.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Satellite Transceiver
+
+A satellite transceiver is an electronic unit or subsystem that both transmits and receives signals for a satellite communications link.

@@ -11,14 +11,14 @@ is-a:
   - urn:ngm:class:dao-analytics
 enables:
   - urn:ngm:class:dao-governance
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:decision-transparency
 uses:
   - urn:ngm:class:blockchain-analytics
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:governance-token
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:dao-tooling
 ---
 

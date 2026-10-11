@@ -9,11 +9,11 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-defi-and-economics
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:protocol-economics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:token-bonding-curve
   - urn:ngm:class:bribe-market
@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:vote-escrow
   - urn:ngm:class:emission-schedule
   - urn:ngm:class:treasury-management
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:token-bonding-curve
   - urn:ngm:class:buyback-and-burn
@@ -77,9 +77,9 @@ supports:
 standardizedBy:
   - urn:ngm:class:compound-governor-bravo
   - urn:ngm:class:eip-1559
-  - urn:ngm:class:erc20-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:open-zeppelin-governor-contracts
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:open-zeppelin-governor-contracts
   - urn:ngm:class:makerdao-endgame-framework
 relatedTo:

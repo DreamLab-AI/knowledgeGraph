@@ -48,17 +48,17 @@ enables:
 dependsOn:
   - urn:ngm:class:ieee-7000
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:ieee-7000
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:unesco-ai-ethics-recommendations
 implements:
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:ieee-7000
   - urn:ngm:class:unesco-ai-ethics-recommendations
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 contrastsWith:
   - urn:ngm:class:ai-agent-system
@@ -84,7 +84,7 @@ standardizedBy:
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:unesco-ai-ethics-recommendations
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:ai-governance-framework
 relatedTo:

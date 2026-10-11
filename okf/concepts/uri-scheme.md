@@ -10,23 +10,23 @@ quality: 0.62
 is-a:
   - urn:ngm:class:protocol
 enables:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:authentication
 implements:
   - urn:ngm:class:naming-scheme
   - urn:ngm:class:protocol
 bridgesTo:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:identifier
   - urn:ngm:class:standards
 supports:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 standardizedBy:
   - urn:ngm:class:standards
 partOf:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 relatedTo:
   - urn:ngm:class:web
   - urn:ngm:class:naming-scheme

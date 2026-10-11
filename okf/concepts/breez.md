@@ -28,15 +28,15 @@ contrastsWith:
   - urn:ngm:class:custodial-wallet
   - urn:ngm:class:strike
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:open-banking
 uses:
   - urn:ngm:class:bolt-11
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:submarine-swap
   - urn:ngm:class:lnurl
   - urn:ngm:class:greenlight
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
 relatedTo:
   - urn:ngm:class:phoenix-wallet
   - urn:ngm:class:lnd

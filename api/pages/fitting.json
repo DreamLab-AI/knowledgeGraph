@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fitting",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Fitting is the adjustment of the parameters of a model, curve or geometry so that it follows a set of observations as closely as an objective function allows.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

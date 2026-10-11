@@ -29,6 +29,8 @@ partOf:
   - urn:ngm:class:data-management
 relatedTo:
   - urn:ngm:class:data-management
+  - urn:ngm:class:metadata-management
+  - urn:ngm:class:data-fabric-architecture
 ---
 
 # Data Catalogue

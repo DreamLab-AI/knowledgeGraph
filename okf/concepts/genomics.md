@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:scientific-computing
   - urn:ngm:class:big-data
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:alphafold

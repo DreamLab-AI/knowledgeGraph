@@ -33,10 +33,10 @@ contrastsWith:
   - urn:ngm:class:additive-manufacturing
   - urn:ngm:class:printed-circuit-board-assembly
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:neuromorphic-computing
   - urn:ngm:class:artificial-intelligence-hardware
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 standardizedBy:
   - urn:ngm:class:jedec
   - urn:ngm:class:semi-standards

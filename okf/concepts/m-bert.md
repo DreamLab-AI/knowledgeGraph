@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:named-entity-recognition
 dependsOn:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:fine-tuning
 uses:
   - urn:ngm:class:attention-mechanism

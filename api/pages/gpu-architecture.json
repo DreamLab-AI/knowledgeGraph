@@ -125,7 +125,7 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -152,6 +152,11 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -196,12 +201,12 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:cloud-storage",
-        "label": "Cloud Storage"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "requires": [
@@ -218,24 +223,24 @@
         "label": "Networking Fabric"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       },
       {
         "id": "urn:ngm:class:power-grid",
         "label": "Power Grid"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
       }
     ],
     "enables": [
@@ -256,20 +261,20 @@
         "label": "Real-Time Inference"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       }
     ],
     "dependsOn": [
@@ -314,6 +319,18 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       },
       {
         "id": "urn:ngm:class:data",
@@ -382,8 +399,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

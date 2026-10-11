@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:mining
 bridgesTo:
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenomics
   - urn:ngm:class:consensus-mechanism
 uses:

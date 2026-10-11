@@ -93,7 +93,7 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       }
     ],
@@ -139,8 +139,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:iso-standards",
@@ -218,7 +218,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -226,7 +226,7 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -332,12 +332,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -400,7 +400,7 @@
         "label": "International Organization of Securities Commissions"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

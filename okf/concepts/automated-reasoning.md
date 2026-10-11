@@ -47,7 +47,7 @@ uses:
   - urn:ngm:class:first-order-logic
   - urn:ngm:class:constraint-satisfaction
   - urn:ngm:class:ontology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 supports:
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:expert-systems
@@ -60,7 +60,7 @@ relatedTo:
   - urn:ngm:class:logic-programming
   - urn:ngm:class:neuro-symbolic-ai
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:automatic-differentiation
 ---

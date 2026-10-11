@@ -25,7 +25,7 @@ supports:
   - urn:ngm:class:payment-service-provider
 relatedTo:
   - urn:ngm:class:finance
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:incentive-alignment
 ---
 

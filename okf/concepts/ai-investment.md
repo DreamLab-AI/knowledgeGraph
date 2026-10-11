@@ -39,7 +39,7 @@ dependsOn:
   - urn:ngm:class:geopolitics
   - urn:ngm:class:regulatory-frameworks
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:antitrust-oversight
 implements:
   - urn:ngm:class:national-ai-strategies
@@ -51,7 +51,7 @@ contrastsWith:
   - urn:ngm:class:open-source-ai
   - urn:ngm:class:public-research-grants
 uses:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:inference-optimisation
   - urn:ngm:class:generative-ai
 supports:
@@ -61,7 +61,7 @@ supports:
   - urn:ngm:class:uk-ai-sector
   - urn:ngm:class:foundation-model
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-governance
   - urn:ngm:class:risk-management
 relatedTo:

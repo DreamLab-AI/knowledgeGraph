@@ -18,7 +18,7 @@ implements:
   - urn:ngm:class:transfer-learning
 uses:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:computer-vision
 ---

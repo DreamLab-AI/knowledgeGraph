@@ -4,6 +4,7 @@ type: Class
 title: Parabolic Flight
 resource: urn:ngm:class:parabolic-flight
 domain: space-science-and-systems
+description: Parabolic flight is flight within the atmosphere in which an aircraft describes a series of parabolic arcs lasting tens of seconds to simulate microgravity.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Parabolic Flight
+
+Parabolic flight is flight within the atmosphere in which an aircraft describes a series of parabolic arcs lasting tens of seconds to simulate microgravity.[^1]

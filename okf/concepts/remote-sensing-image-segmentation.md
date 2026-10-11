@@ -4,6 +4,7 @@ type: Class
 title: Remote Sensing Image Segmentation
 resource: urn:ngm:class:remote-sensing-image-segmentation
 domain: earth-observation-and-geospatial-sensing
+description: Remote sensing image segmentation is image segmentation applied to aerial and orbital imagery, commonly treated as a classification problem at pixel level.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -15,3 +16,5 @@ relatedTo:
 ---
 
 # Remote Sensing Image Segmentation
+
+Remote sensing image segmentation is image segmentation applied to aerial and orbital imagery, commonly treated as a classification problem at pixel level.[^1][^2]

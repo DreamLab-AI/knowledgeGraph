@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:payment-rail
 supports:
   - urn:ngm:class:digital-wallet
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:financial-technology
 partOf:
   - urn:ngm:class:payment-network

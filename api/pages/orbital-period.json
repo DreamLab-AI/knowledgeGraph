@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-period",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital period is the elapsed time for an orbiting object to complete a specified revolution or return event in a stated reference frame.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

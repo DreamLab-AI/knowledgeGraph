@@ -38,7 +38,7 @@ LND (Lightning Network Daemon) is a production-grade, open-source implementation
 - **[[Atomic Swap]]s** — LND facilitates cross-chain atomic swaps using shared HTLC timelock logic, enabling trustless exchange between [[Bitcoin]] and compatible assets.
 - **[[Taproot Assets]] issuance** — Lightning Labs' Taproot Assets protocol is built on LND, enabling stablecoins and other assets to be issued and transferred over the Lightning network.
 - **VPN and bandwidth markets** — services such as [[Lightning Pool]] allow node operators to monetise inbound liquidity, creating a marketplace for routing capacity.
-- **[[Streaming Payments]] for podcasting** — the Podcasting 2.0 ecosystem uses LND-compatible nodes to stream micropayments per-minute to content creators via [[Value4Value]] apps.
+- **[[Streaming Payment]] for podcasting** — the Podcasting 2.0 ecosystem uses LND-compatible nodes to stream micropayments per-minute to content creators via [[Value4Value]] apps.
 
 ### Standards and Context
 

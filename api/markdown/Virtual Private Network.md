@@ -12,7 +12,7 @@ A virtual private network (VPN) is a technology that establishes an encrypted tu
 
 - Endpoint authentication and key exchange.
 - Packet encapsulation and [[Encryption]] in transit.
-- Protocol choices: [[IPsec]], [[TLS]]-based, and WireGuard.
+- Protocol choices: [[IPsec]], [[Transport Layer Security]]-based, and WireGuard.
 
 ### Applications
 

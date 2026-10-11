@@ -4,6 +4,7 @@ type: Class
 title: Space Station
 resource: urn:ngm:class:space-station
 domain: space-science-and-systems
+description: A space station is a spacecraft capable of supporting a human crew in orbit for an extended period of time.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Space Station
+
+A space station is a spacecraft capable of supporting a human crew in orbit for an extended period of time.[^1]

@@ -8,7 +8,7 @@ Data quality management is the discipline of measuring, monitoring, and improvin
 - Data quality management begins by defining what "good" data means for a given use — the dimensions of accuracy, completeness, consistency, validity, uniqueness and timeliness.
 - Profiling establishes a baseline; validation rules then enforce expectations as data flows through a [[Data Pipeline]].
 - When defects are found, [[Data Cleaning]] corrects or quarantines records, while [[Data Observability]] tooling continuously watches for drift and freshness failures.
-- Sustained quality requires governance: clear ownership, documented rules in a [[Data Catalog]], and traceability via [[Data Lineage]].
+- Sustained quality requires governance: clear ownership, documented rules in a [[Data Catalogue]], and traceability via [[Data Lineage]].
 
 ### Key aspects
 
@@ -30,7 +30,7 @@ Data quality management is the discipline of measuring, monitoring, and improvin
 - Preparing reliable inputs for [[Data Analytics]] and [[Machine Learning]] models.
 - Regulatory and financial reporting that demands auditable, accurate data.
 - Consolidating golden records through [[Master Data Management]].
-- Cataloguing trusted datasets in a [[Data Catalog]] for self-service use.
+- Cataloguing trusted datasets in a [[Data Catalogue]] for self-service use.
 
 ### Provenance
 

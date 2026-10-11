@@ -31,7 +31,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       }
     ],
     "requires": [

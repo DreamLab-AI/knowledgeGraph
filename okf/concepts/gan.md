@@ -13,7 +13,7 @@ is-a:
 hasPart:
   - urn:ngm:class:generator-network
   - urn:ngm:class:discriminator-network
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:latent-space
 requires:
   - urn:ngm:class:backpropagation
@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:super-resolution
   - urn:ngm:class:data-augmentation
 contrastsWith:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:autoregressive-model
 bridgesTo:

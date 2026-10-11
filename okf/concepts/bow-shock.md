@@ -4,6 +4,7 @@ type: Class
 title: Bow Shock
 resource: urn:ngm:class:bow-shock
 domain: space-science-and-systems
+description: Bow shock is the region sunward of Earth where the supersonic solar wind is decelerated to subsonic speed before being deflected around the planet.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Bow Shock
+
+Bow shock is the region sunward of Earth where the supersonic solar wind is decelerated to subsonic speed before being deflected around the planet.[^1]

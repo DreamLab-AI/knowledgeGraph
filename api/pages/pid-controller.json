@@ -132,9 +132,14 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -228,12 +233,12 @@
         "label": "Disturbance Rejection"
       },
       {
-        "id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "Trajectory Generation"
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
       },
       {
-        "id": "urn:ngm:class:rb-1013-localization",
-        "label": "Localization"
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -318,12 +323,12 @@
         "label": "Virtual Agent"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -454,12 +459,12 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "partOf": [

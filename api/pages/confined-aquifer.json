@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:confined-aquifer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Confined aquifer is an aquifer bounded above and below by confining units of distinctly lower permeability than the aquifer itself, so that its water is held under pressure.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:aquifer",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-thermal-model",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft thermal model is a numerical representation of a spacecraft and its surroundings as thermal capacitance nodes coupled by conductors, used to predict temperatures.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validation-dataset",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A validation dataset is a set of reference data against which satellite-derived product values are compared to assess their accuracy.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

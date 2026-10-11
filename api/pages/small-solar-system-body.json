@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:small-solar-system-body",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A Small Solar System Body is, in the IAU 2006 definition, any object orbiting the Sun that is not a planet, a dwarf planet or a satellite.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

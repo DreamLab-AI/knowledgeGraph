@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-processing-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A data processing state is the condition of a dataset with respect to the processing it has undergone, which SWEET models as a kind of system state with named states such as calibrated, gridded and archived.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

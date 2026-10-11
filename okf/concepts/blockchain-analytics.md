@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:fatf-travel-rule
 dependsOn:
   - urn:ngm:class:high-performance-computing
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 uses:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:cryptographic-hash
@@ -25,7 +25,7 @@ uses:
 relatedTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:blockchain-transaction
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:blockchain-governance
   - urn:ngm:class:decentralized-finance-de-fi
 ---

@@ -108,7 +108,7 @@
         "label": "Multimodal Interaction"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       }
     ],
@@ -313,7 +313,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

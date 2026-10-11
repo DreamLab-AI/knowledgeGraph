@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:secure-communication
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptography
 enables:
   - urn:ngm:class:secure-communication
@@ -19,19 +19,19 @@ dependsOn:
 implements:
   - urn:ngm:class:end-to-end-encryption
 contrastsWith:
-  - urn:ngm:class:tls
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:transport-layer-security
 uses:
   - urn:ngm:class:end-to-end-encryption
-  - urn:ngm:class:tls
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:compliance
 standardizedBy:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 ---
 
 # Secure Email

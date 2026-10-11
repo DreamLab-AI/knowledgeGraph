@@ -245,10 +245,6 @@
         "label": "Data Anarchy"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
-      },
-      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       },

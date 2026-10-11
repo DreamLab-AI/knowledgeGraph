@@ -109,6 +109,11 @@
       "slug": "software-architecture"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -322,12 +327,16 @@
         "label": "Infrastructure as Code"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -382,8 +391,8 @@
         "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
@@ -400,7 +409,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -412,8 +421,8 @@
         "label": "ISO/IEC 25010"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -456,8 +465,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:event-driven-architecture",

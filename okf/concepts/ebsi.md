@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:network-component
 relatedTo:
   - urn:ngm:class:consortium-blockchain
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # EBSI

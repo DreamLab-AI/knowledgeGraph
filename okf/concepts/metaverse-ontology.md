@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:metaverse
   - urn:ngm:class:knowledge-graphing
   - urn:ngm:class:cross-platform-interoperability
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 dependsOn:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:linked-data
@@ -36,22 +36,22 @@ bridgesTo:
   - urn:ngm:class:lightning-and-similar-l2
 uses:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:ontology
   - urn:ngm:class:nostr-protocol
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-ownership
   - urn:ngm:class:agentic-ai
 standardizedBy:
   - urn:ngm:class:metaverse-standards-forum
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:metaverse
 relatedTo:
   - urn:ngm:class:metaverse-ontology-schema
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 ---
 
 # Metaverse Ontology

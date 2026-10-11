@@ -14,9 +14,9 @@ is-a:
 hasPart:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:style-transfer
   - urn:ngm:class:clip
   - urn:ngm:class:foundation-model
@@ -51,9 +51,9 @@ bridgesTo:
 uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:style-transfer
   - urn:ngm:class:clip
   - urn:ngm:class:latent-space

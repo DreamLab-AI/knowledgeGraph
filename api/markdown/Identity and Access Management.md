@@ -56,7 +56,7 @@ Identity and Access Management (IAM) is a security discipline comprising the fra
 - **Cloud IAM**: AWS IAM, Azure Entra ID, and GCP IAM provide fine-grained resource-level access control for cloud infrastructure. Misconfigured cloud IAM policies are a leading cause of cloud data breaches.
 - **API Security**: OAuth 2.0 with scoped access tokens controls API access between microservices and third-party integrations. API gateways enforce token validation and scope-based authorisation.
 - **Privileged User Management**: PAM controls over domain administrators, database administrators, and cloud root accounts; session recording for forensic accountability; just-in-time privilege elevation for break-glass scenarios.
-- **Decentralised and Self-Sovereign Identity**: Emerging deployments using [[Verifiable Credentials]], [[Decentralised Identifiers]] (DIDs), and blockchain-anchored attestations for user-controlled identity portability across organisations and jurisdictions.
+- **Decentralised and Self-Sovereign Identity**: Emerging deployments using [[Verifiable Credential]], [[Decentralised Identifier]] (DIDs), and blockchain-anchored attestations for user-controlled identity portability across organisations and jurisdictions.
 - **Zero Trust Network Access**: IAM as the policy enforcement engine for ZTNA solutions — every connection request is evaluated against identity posture, device health, and resource sensitivity before access is granted.
 
 ### Standards and Context

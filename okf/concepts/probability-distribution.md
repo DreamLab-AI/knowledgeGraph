@@ -29,7 +29,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:information-theory
   - urn:ngm:class:stochastic-process
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Probability Distribution

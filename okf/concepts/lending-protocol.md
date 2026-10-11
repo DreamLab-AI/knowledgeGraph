@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:decentralised-exchange
 implements:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:centralised-exchange
   - urn:ngm:class:traditional-banking

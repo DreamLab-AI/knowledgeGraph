@@ -63,9 +63,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -114,8 +114,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "requires": [
@@ -140,16 +140,16 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -174,16 +174,16 @@
         "label": "Predictive Maintenance"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "dependsOn": [
@@ -204,10 +204,6 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       },
@@ -218,6 +214,10 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "implements": [
@@ -264,12 +264,16 @@
         "label": "Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -290,20 +294,20 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -324,20 +328,20 @@
         "label": "Graph Neural Network"
       },
       {
-        "id": "urn:ngm:class:graph-neural-networks",
-        "label": "Graph Neural Network"
-      },
-      {
         "id": "urn:ngm:class:lstm",
         "label": "LSTM"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:normalising-flows",
         "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       }
     ],
     "supports": [
@@ -350,12 +354,16 @@
         "label": "IoT Sensor Data"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -368,16 +376,26 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

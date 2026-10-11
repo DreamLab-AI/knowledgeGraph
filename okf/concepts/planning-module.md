@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:automated-reasoning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:path-planning
   - urn:ngm:class:autonomous-behavior

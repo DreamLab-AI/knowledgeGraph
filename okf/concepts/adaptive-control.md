@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:robust-control
   - urn:ngm:class:pid-control
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:ai-agent-system
 uses:

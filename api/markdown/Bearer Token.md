@@ -1,6 +1,6 @@
 A bearer token is a security credential that grants access to a protected resource to any party that presents it, without requiring the holder to prove possession of an associated cryptographic key. Commonly issued by authorisation servers and transmitted in an HTTP Authorization header, it is simple to use but must be protected in transit and at rest because anyone who obtains it can use it. Bearer tokens are central to modern API authorisation flows such as OAuth.
 
-- A [[Bearer Token]] is a [[Token]] that grants access to whoever presents it, without proving possession of a key. It implements [[Authorization]] in API flows, is typically issued via [[OAuth]], and must travel over [[TLS]] to avoid theft, supporting [[Authentication]] and binding to an [[Identity]].
+- A [[Bearer Token]] is a [[Token]] that grants access to whoever presents it, without proving possession of a key. It implements [[Authorisation]] in API flows, is typically issued via [[OAuth]], and must travel over [[Transport Layer Security]] to avoid theft, supporting [[Authentication]] and binding to an [[Identity]].
 
 ### Overview
 

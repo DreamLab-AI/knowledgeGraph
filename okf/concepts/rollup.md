@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:sequencer
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
   - urn:ngm:class:data-availability
 enables:
@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:state-channel
   - urn:ngm:class:plasma
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:polygon
 uses:

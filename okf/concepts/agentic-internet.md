@@ -29,7 +29,7 @@ hasPart:
 requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:authorisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:persistent-memory
   - urn:ngm:class:reasoning-engine
   - urn:ngm:class:tool-use
@@ -47,13 +47,13 @@ enables:
   - urn:ngm:class:personal-ai
 dependsOn:
   - urn:ngm:class:http
-  - urn:ngm:class:tls
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:json
   - urn:ngm:class:oauth
   - urn:ngm:class:dns
   - urn:ngm:class:rest
   - urn:ngm:class:web-sockets
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:json-data-interchange-format-rpc
   - urn:ngm:class:server-sent-events
@@ -99,7 +99,7 @@ standardizedBy:
   - urn:ngm:class:linux-foundation
   - urn:ngm:class:open-id-foundation
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:agntcy
 relatedTo:
   - urn:ngm:class:ai-agents

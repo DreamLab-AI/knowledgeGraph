@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:spatial-computing
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data
 relatedTo:
   - urn:ngm:class:governance

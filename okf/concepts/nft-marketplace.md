@@ -19,11 +19,11 @@ enables:
   - urn:ngm:class:nft-renting
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 relatedTo:
   - urn:ngm:class:digital-asset-trading
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:digital-marketplace
   - urn:ngm:class:non-fungible-token-nft
 ---

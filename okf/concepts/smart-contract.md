@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:virtual-machine
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft
   - urn:ngm:class:programmable-finance
   - urn:ngm:class:tokenised-transactions
@@ -41,8 +41,8 @@ enables:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:carbon-credit-tracking
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-exchange
 dependsOn:
   - urn:ngm:class:formal-verification
   - urn:ngm:class:cryptographic-proof
@@ -50,9 +50,9 @@ dependsOn:
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:ecdsa
 implements:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:erc-4337
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:open-zeppelin
   - urn:ngm:class:erc-1967-proxy
   - urn:ngm:class:eip-2535-diamond
@@ -72,7 +72,7 @@ uses:
   - urn:ngm:class:cairo-language
   - urn:ngm:class:ink
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:insurance-automation
   - urn:ngm:class:nft
   - urn:ngm:class:prediction-markets
@@ -95,7 +95,7 @@ relatedTo:
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agents
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:mev
   - urn:ngm:class:token
   - urn:ngm:class:zero-knowledge-proof

@@ -20,7 +20,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:gradient-descent
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:gradient
   - urn:ngm:class:learning-rate

@@ -192,7 +192,7 @@
         "label": "Generator Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -421,9 +421,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -451,10 +451,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
-      },
-      {
         "id": "urn:ngm:class:optimiser",
         "label": "Optimiser"
       },
@@ -469,6 +465,10 @@
       {
         "id": "urn:ngm:class:hidden-layer",
         "label": "Hidden Layer"
+      },
+      {
+        "id": "urn:ngm:class:neuron",
+        "label": "Neuron"
       }
     ],
     "requires": [
@@ -489,10 +489,6 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
       },
@@ -503,6 +499,10 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
       }
     ],
     "enables": [
@@ -701,7 +701,7 @@
         "label": "Decoder Network"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder Architecture"
       },
       {
@@ -745,7 +745,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -761,6 +761,14 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -773,6 +781,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

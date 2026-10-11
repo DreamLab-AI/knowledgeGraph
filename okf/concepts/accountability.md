@@ -23,9 +23,9 @@ enables:
   - urn:ngm:class:redress-mechanism
   - urn:ngm:class:risk-management
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
@@ -34,7 +34,7 @@ supports:
   - urn:ngm:class:safety
   - urn:ngm:class:ai-trustworthiness
 standardizedBy:
-  - urn:ngm:class:iso-iec-23894-2023
+  - urn:ngm:class:iso-iec-23894
   - urn:ngm:class:iso-iec-38500
   - urn:ngm:class:oecd-ai-principles
 relatedTo:

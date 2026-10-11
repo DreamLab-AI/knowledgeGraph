@@ -14,13 +14,13 @@ requires:
   - urn:ngm:class:decentralised-governance
   - urn:ngm:class:validator-network
 enables:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:layer-2-scaling
 dependsOn:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 implements:
   - urn:ngm:class:governance-model
 contrastsWith:
@@ -42,7 +42,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:blockchain-protocol
   - urn:ngm:class:web3-foundation
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:blockchain-security
 ---
 

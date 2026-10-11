@@ -33,7 +33,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:metadata-management
   - urn:ngm:class:master-data-management
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 ---
 
 # Schema Management

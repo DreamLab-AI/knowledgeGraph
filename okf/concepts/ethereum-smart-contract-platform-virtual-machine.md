@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:merkle-patricia-trie
 enables:
   - urn:ngm:class:ethereum-smart-contract-platform-smart-contracts
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-application
 dependsOn:

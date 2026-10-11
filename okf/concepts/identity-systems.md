@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:infra-security-and-identity
 hasPart:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:access-control
 uses:

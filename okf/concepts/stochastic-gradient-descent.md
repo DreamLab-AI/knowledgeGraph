@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:scientific-computing
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:gpu-computing
 supports:
   - urn:ngm:class:computer-vision

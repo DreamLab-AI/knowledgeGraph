@@ -11,8 +11,8 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:parameter-efficient-fine-tuning
 requires:
-  - urn:ngm:class:pre-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:pretraining
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:domain-adaptation

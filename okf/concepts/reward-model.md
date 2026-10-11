@@ -33,12 +33,12 @@ uses:
   - urn:ngm:class:bradley-terry-model
   - urn:ngm:class:proximal-policy-optimisation
 partOf:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 relatedTo:
   - urn:ngm:class:model-performance
   - urn:ngm:class:reward-hacking
   - urn:ngm:class:preference-learning
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Reward Model

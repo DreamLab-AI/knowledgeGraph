@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:identity-verification
 requires:
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:biometric-authentication
 enables:
   - urn:ngm:class:authentication
@@ -24,7 +24,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:self-sovereign-identity
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:user-experience
 relatedTo:
   - urn:ngm:class:digital-identity

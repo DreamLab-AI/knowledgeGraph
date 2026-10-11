@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space beyond Earth's protective atmosphere includes conditions such as radiation and microgravity that spacecraft and living systems experience in spaceflight.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

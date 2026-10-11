@@ -41,10 +41,10 @@ uses:
   - urn:ngm:class:bitcoin-script
   - urn:ngm:class:public-key-cryptography
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:exchange-custody
 relatedTo:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:blockchain-security
   - urn:ngm:class:threshold-signature-scheme

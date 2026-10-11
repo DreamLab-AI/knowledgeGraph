@@ -14,8 +14,8 @@ hasPart:
   - urn:ngm:class:vostro-account
   - urn:ngm:class:loro-account
 requires:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:liquidity-management
 enables:
   - urn:ngm:class:cross-border-payments
@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:foreign-exchange
   - urn:ngm:class:documentary-credit
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:payment-hub
 bridgesTo:
   - urn:ngm:class:distributed-ledger-technology

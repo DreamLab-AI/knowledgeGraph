@@ -37,7 +37,7 @@ supports:
 relatedTo:
   - urn:ngm:class:multi-sig-governance
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Hardware Wallet

@@ -47,12 +47,12 @@ dependsOn:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:scaling-laws
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 implements:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:diffusion-transformer
@@ -79,8 +79,8 @@ supports:
   - urn:ngm:class:digital-marketing
   - urn:ngm:class:education-technology
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:c2-pa
 relatedTo:
@@ -88,16 +88,16 @@ relatedTo:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:ai-governance
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:hallucination
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:copyright
   - urn:ngm:class:ai-safety
   - urn:ngm:class:bias-in-ai
   - urn:ngm:class:model-collapse
   - urn:ngm:class:c2-pa
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Content Generation

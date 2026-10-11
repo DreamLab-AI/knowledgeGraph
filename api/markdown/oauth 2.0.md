@@ -60,7 +60,7 @@ OAuth 2.0 is an open authorisation framework standardised as RFC 6749 (2012) tha
 - **Single-page applications** — Modern SPAs use authorisation code + PKCE via a BFF (Backend For Frontend) proxy to keep tokens out of the browser.
 - **Enterprise SSO** — Enterprises federate Active Directory / LDAP identity into cloud SaaS via OAuth 2.0 / OIDC, replacing legacy [[SAML]] in greenfield deployments.
 - **IoT and smart devices** — Device Authorisation Grant (RFC 8628) enables headless devices to request authorisation from a companion device.
-- **[[Decentralised Identity]]** — Wallet and DID ecosystems (e.g., OpenID for Verifiable Presentations) build on OAuth 2.0 to present [[Verifiable Credentials]] to relying parties without a central identity hub.
+- **[[Decentralised Identity]]** — Wallet and DID ecosystems (e.g., OpenID for Verifiable Presentations) build on OAuth 2.0 to present [[Verifiable Credential]] to relying parties without a central identity hub.
 
 ### Standards & Context
 

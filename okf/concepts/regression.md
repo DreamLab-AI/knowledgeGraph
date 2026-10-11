@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:statistics
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 bridgesTo:
   - urn:ngm:class:deep-learning
 ---

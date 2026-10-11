@@ -29,14 +29,14 @@ implements:
 uses:
   - urn:ngm:class:feedback-control
   - urn:ngm:class:microcontroller
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 supports:
   - urn:ngm:class:servo-motor
 partOf:
   - urn:ngm:class:robotic-system
 relatedTo:
   - urn:ngm:class:control-system
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Robot Controller

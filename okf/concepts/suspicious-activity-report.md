@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:sanctions-screening
 dependsOn:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 uses:
   - urn:ngm:class:risk-based-approach
 supports:
@@ -25,7 +25,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:fatf
 partOf:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:regulatory-compliance
 relatedTo:
   - urn:ngm:class:financial-regulation

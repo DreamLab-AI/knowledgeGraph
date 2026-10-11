@@ -36,21 +36,21 @@ requires:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:hash-function
   - urn:ngm:class:computational-hardness-assumption
-  - urn:ngm:class:cryptographic-proof-system
+  - urn:ngm:class:proof-system
 enables:
   - urn:ngm:class:confidential-transactions
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:financial-privacy
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:regulatory-compliance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:confidential-transactions
   - urn:ngm:class:compliance-proofs
 dependsOn:
   - urn:ngm:class:elliptic-curve-discrete-logarithm-problem
   - urn:ngm:class:knowledge-of-exponent-assumption
   - urn:ngm:class:random-oracle-model
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:distributed-consensus
   - urn:ngm:class:peer-to-peer-network
 implements:
@@ -68,10 +68,10 @@ implements:
   - urn:ngm:class:pedersen-commitment
 contrastsWith:
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:public-transparent-blockchain
   - urn:ngm:class:permissioned-blockchain-without-privacy
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:confidential-transactions
   - urn:ngm:class:homomorphic-encryption
@@ -86,8 +86,8 @@ uses:
   - urn:ngm:class:decoy-outputs
   - urn:ngm:class:confidential-transactions
 supports:
-  - urn:ngm:class:aml
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:gdpr-compliance
   - urn:ngm:class:healthcare-data-privacy
   - urn:ngm:class:supply-chain
@@ -98,7 +98,7 @@ standardizedBy:
   - urn:ngm:class:ieee-2418-1
   - urn:ngm:class:nist-post-quantum-cryptography
   - urn:ngm:class:w3-c-did-specification
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:eu-mi-ca-regulation
   - urn:ngm:class:ofac-sdn-designations
   - urn:ngm:class:nist-post-quantum-cryptography

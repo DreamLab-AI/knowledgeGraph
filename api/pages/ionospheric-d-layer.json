@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ionospheric-d-layer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ionospheric D layer, the lower, denser region of the ionosphere, is present mainly in daylight and essentially absent at night.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

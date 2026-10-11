@@ -35,7 +35,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:lossless-compression
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:neural-video-compression
 uses:
   - urn:ngm:class:psychovisual-model

@@ -22,7 +22,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:fairness-accuracy-tradeoffs
 uses:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:explainability
 relatedTo:
   - urn:ngm:class:fairness

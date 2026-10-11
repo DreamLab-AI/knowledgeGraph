@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:hyperparameter-tuning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-evaluation
 hasPart:
   - urn:ngm:class:model-complexity

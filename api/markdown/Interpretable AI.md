@@ -8,7 +8,7 @@ Machine learning models and systems whose internal decision-making processes are
 
   ## Related Terms
 
-- **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
+- **Broader**: [[Explainable AI]], [[Machine Learning]]
 - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
 - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 
@@ -245,7 +245,7 @@ Machine learning models and systems whose internal decision-making processes are
 
   ## Related Terms
 
-- **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
+- **Broader**: [[Explainable AI]], [[Machine Learning]]
 - **Narrower**: [[Intrinsic Interpretability]], [[Decision Tree Approximation]]
 - **Related**: [[Model Interpretability]], [[Model Transparency]], [[Black Box Model]]
 

@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:semiconductor-fabrication
   - urn:ngm:class:cooling-system
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network-training
   - urn:ngm:class:ai-inference

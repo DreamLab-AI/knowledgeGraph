@@ -10,13 +10,13 @@ quality: 0
 is-a:
   - urn:ngm:class:infra-network-and-comms
 requires:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:platform-governance
 enables:
   - urn:ngm:class:distributed-collaboration
 uses:
   - urn:ngm:class:content-moderation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:bias
   - urn:ngm:class:privacy

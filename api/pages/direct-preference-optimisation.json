@@ -36,8 +36,8 @@
         "label": "Preference Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
@@ -67,7 +67,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:instruction-following",
@@ -160,7 +160,7 @@
         "label": "Gradient Accumulation"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:low-rank-adaptation",
         "label": "LoRA Adaptation"
       },
       {
@@ -178,8 +178,8 @@
         "label": "Human Feedback"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       }
     ],
     "standardizedBy": [
@@ -199,7 +199,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -211,7 +211,7 @@
         "label": "KTO"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       }
     ]
@@ -415,7 +415,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

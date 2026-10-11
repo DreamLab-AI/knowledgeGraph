@@ -31,7 +31,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:curriculum-learning
   - urn:ngm:class:uncertainty-quantification
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Domain Randomisation

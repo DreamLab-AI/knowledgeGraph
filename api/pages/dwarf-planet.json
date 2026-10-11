@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dwarf-planet",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A dwarf planet is a celestial body in orbit around the Sun that has enough mass to assume a nearly round shape but has not cleared the neighbourhood around its orbit.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

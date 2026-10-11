@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dark-matter",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Dark matter is invisible material that makes up most of the mass in galaxies and galaxy clusters and is detected through its gravity rather than its light.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

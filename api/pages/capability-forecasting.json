@@ -245,7 +245,7 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -255,11 +255,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -392,6 +392,11 @@
       "slug": "ai-governance-and-ethics"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -405,11 +410,6 @@
       "id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards",
       "slug": "robo-safety-and-standards"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:accountability",
@@ -571,24 +571,24 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:bow-tie-analysis",
         "label": "Bow-Tie Analysis"
       },
       {
-        "id": "urn:ngm:class:fault-tree-analysis",
-        "label": "Fault Tree Analysis"
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode And Effects Analysis"
       },
       {
-        "id": "urn:ngm:class:fmea",
-        "label": "FMEA"
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
       },
       {
         "id": "urn:ngm:class:iso-31000",
@@ -633,8 +633,8 @@
         "label": "Voluntary Guidelines"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -711,16 +711,16 @@
         "label": "Digital Rights"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:defi-risk",
         "label": "DeFi Risk"
       },
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
       },
       {
         "id": "urn:ngm:class:smart-contract-security",

@@ -42,7 +42,7 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -56,8 +56,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:neural-processing-unit",
@@ -68,7 +68,7 @@
         "label": "Model Compression"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -128,7 +128,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -216,7 +216,7 @@
         "label": "Neural Architecture Search"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -383,11 +383,6 @@
       "id": "urn:ngm:class:networked-systems",
       "label": "Networked Systems",
       "slug": "networked-systems"
-    },
-    {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -683,7 +678,7 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -713,8 +708,8 @@
         "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee-1934-openfog",
@@ -749,10 +744,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [

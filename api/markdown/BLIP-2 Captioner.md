@@ -244,7 +244,7 @@ The BLIP-2 family includes multiple pre-trained checkpoints combining different 
 
 **blip2-opt-2.7b**: Q-Former + ViT-L/14 (CLIP) + OPT-2.7B. The lightest configuration, requiring approximately 7GB VRAM for inference. Suitable for rapid captioning on consumer GPUs. OPT-2.7B's smaller knowledge base limits OK-VQA and MMMU performance but provides adequate captioning quality for diffusion fine-tuning dataset curation workflows.
 
-**blip2-opt-6.7b**: Q-Former + ViT-L/14 (CLIP) + OPT-6.7B. Improved captioning quality and VQA accuracy (65.0% VQAv2) at approximately 14GB VRAM. The most commonly used configuration for [[Fine Tuning]] dataset preparation in [[Diffusion Models]] training pipelines.
+**blip2-opt-6.7b**: Q-Former + ViT-L/14 (CLIP) + OPT-6.7B. Improved captioning quality and VQA accuracy (65.0% VQAv2) at approximately 14GB VRAM. The most commonly used configuration for [[Fine-Tuning]] dataset preparation in [[Diffusion Models]] training pipelines.
 
 **blip2-flan-t5-xl**: Q-Former + ViT-G/14 (EVA-CLIP) + FlanT5-XL (3B). The encoder-decoder architecture with instruction-following capabilities enables more controllable captioning (e.g., specifying caption length or style via text prompts). Approximately 12GB VRAM. FlanT5's instruction-tuning makes this variant better at following specific captioning instructions.
 

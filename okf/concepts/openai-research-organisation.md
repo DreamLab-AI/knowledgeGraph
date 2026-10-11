@@ -17,12 +17,12 @@ hasPart:
   - urn:ngm:class:dall-e-3
   - urn:ngm:class:sora
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:generative-ai
 dependsOn:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:azure
   - urn:ngm:class:azure

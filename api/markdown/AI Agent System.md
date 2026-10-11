@@ -389,7 +389,7 @@ These developments validated several architectural principles that had been theo
 - [[Intelligent Virtual Entity]] - AI agents in metaverse contexts
 - [[Intelligent Virtual Entity]] - AI agents in [[Metaverse]] contexts
   - [[Autonomous Robot]] - Physical embodiment of AI agents
-  - [[Machine Learning Discipline]] - Foundational AI technique
+  - [[Machine Learning]] - Foundational AI technique
   - [[Planning Algorithm]] - Decision-making component
   - [[Perception System]] - Environmental sensing
 - [[Natural Language Processing]] - For conversational agents
@@ -408,8 +408,8 @@ These developments validated several architectural principles that had been theo
   - [[Database Interaction]] - Agent persistent storage
   - [[Blockchain Integration]] - Agent [[Cryptocurrency]] operations
   - [[Lightning Network Agent]] - [[Bitcoin Proof-of-Work Protocol]] payment automation
-  - [[Smart Contract Agent]] - [[Ethereum Smart Contract Platform]] and [[DeFi]] interaction
-  - [[DAO Agent]] - [[Decentralized Governance]] participation
+  - [[Smart Contract Agent]] - [[Ethereum]] and [[Decentralised Finance]] interaction
+  - [[DAO Agent]] - [[Decentralised Governance]] participation
   - [[Oracle Agent]] - [[External Data]] provision to [[Blockchain]]
   - [[Trading Bot]] - [[Market Making]] and [[Arbitrage]]
   - [[Node Management Agent]] - [[Bitcoin Node]] operations

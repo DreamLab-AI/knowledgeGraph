@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:tool-use
   - urn:ngm:class:llm-capability
-  - urn:ngm:class:structured-output
   - urn:ngm:class:agentic-capability
   - urn:ngm:class:language-model-augmentation
 hasPart:
@@ -29,7 +28,7 @@ hasPart:
 requires:
   - urn:ngm:class:metaverse-application-platform
   - urn:ngm:class:json-data-interchange-format-schema
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:large-language-model
   - urn:ngm:class:conversation-context
   - urn:ngm:class:metaverse-application-platform
@@ -48,7 +47,7 @@ enables:
   - urn:ngm:class:computer-use-and-browser-agents
 dependsOn:
   - urn:ngm:class:instruction-tuning
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:json-schema-specification
   - urn:ngm:class:tokenizer-special-tokens
   - urn:ngm:class:constrained-decoding
@@ -70,7 +69,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:json-data-interchange-format-rpc-2-0
   - urn:ngm:class:json-data-interchange-format-schema
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:server-sent-events
   - urn:ngm:class:pydantic-models
   - urn:ngm:class:special-tokens
@@ -90,16 +89,16 @@ standardizedBy:
   - urn:ngm:class:google-ai-technology-corporation-gemini
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:openai-research-organisation-api
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:function-calling
   - urn:ngm:class:tool-use
   - urn:ngm:class:google-ai-technology-corporation-gemini
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:json-data-interchange-format-schema
 relatedTo:
   - urn:ngm:class:agent-to-agent-protocol
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:code-execution
   - urn:ngm:class:meta-llama-model-family-index
   - urn:ngm:class:retrieval-augmented-generation

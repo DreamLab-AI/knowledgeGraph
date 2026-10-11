@@ -164,12 +164,12 @@
         "label": "OECD AI Principles"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -180,8 +180,8 @@
         "label": "IEEE 7000 Standard"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:unesco-ai-ethics-recommendations",
@@ -202,8 +202,8 @@
         "label": "UNESCO AI Ethics Recommendations"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -296,8 +296,8 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -507,7 +507,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -606,7 +606,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:ai-risk-assessment",
@@ -661,11 +661,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {

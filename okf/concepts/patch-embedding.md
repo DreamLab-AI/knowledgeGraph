@@ -8,7 +8,7 @@ description: Patch embedding is the mechanism by which a Vision Transformer (ViT
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding
 hasPart:
   - urn:ngm:class:image-patch

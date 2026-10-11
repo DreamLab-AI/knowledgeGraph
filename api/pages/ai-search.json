@@ -100,8 +100,8 @@
         "label": "Inference Infrastructure"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:tokeniser",
@@ -315,8 +315,8 @@
         "label": "ICO AI Guidance"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:uk-online-safety-act",
@@ -327,7 +327,7 @@
         "label": "UK Online Safety Act 2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -338,8 +338,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:vector-database",
@@ -454,16 +454,16 @@
         "label": "Approximate Nearest Neighbour Search"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:text-representation",
         "label": "Text Representation"
       },
       {
         "id": "urn:ngm:class:context-management",
         "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
       }
     ],
     "enables": [
@@ -472,8 +472,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -522,7 +522,7 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -567,7 +567,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:parametric-knowledge",
@@ -630,8 +630,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -690,7 +690,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -698,7 +698,7 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Voice Browser Working Group"
       }
     ],
@@ -722,8 +722,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:machine-translation",

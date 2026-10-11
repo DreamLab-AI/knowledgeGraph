@@ -60,7 +60,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:fiat-money
   - urn:ngm:class:gold-standard
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:keynesian-economics
   - urn:ngm:class:stablecoin
   - urn:ngm:class:traditional-banking

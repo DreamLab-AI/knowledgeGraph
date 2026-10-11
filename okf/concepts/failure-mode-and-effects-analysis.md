@@ -9,6 +9,7 @@ maturity: mature
 quality: 0.62
 is-a:
   - urn:ngm:class:reliability-engineering
+  - urn:ngm:class:robo-safety-and-standards
 hasPart:
   - urn:ngm:class:risk-assessment
 enables:
@@ -33,6 +34,8 @@ relatedTo:
   - urn:ngm:class:hazop
   - urn:ngm:class:safety-instrumented-system
   - urn:ngm:class:functional-safety
+  - urn:ngm:class:reliability-engineering
+  - urn:ngm:class:risk-assessment
 ---
 
 # Failure Mode And Effects Analysis

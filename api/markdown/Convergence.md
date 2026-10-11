@@ -154,7 +154,7 @@ Technological Convergence is the macro-level process by which previously distinc
 
 - **Technological Convergence** is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities that none of the converging components could have achieved independently.
 - As a theoretical frame, convergence explains why the most significant capability discontinuities in the history of technology — the steam-textile-railway complex, electrification of manufacturing, [[Digital Transformation|digital communications]], the smartphone revolution — appear at disciplinary intersections rather than within established fields.
-- In 2026, the concept is indispensable for understanding the simultaneous acceleration occurring across [[Artificial General Intelligence|AGI]] research, [[Biocomputing]], [[Quantum Computation Paradigm]], [[Cyber Physical Systems]], [[Spatial Computing Paradigm]], and [[Platform Economy|platform economics]].
+- In 2026, the concept is indispensable for understanding the simultaneous acceleration occurring across [[Artificial General Intelligence|AGI]] research, [[Biocomputing]], [[Quantum Computing]], [[Cyber Physical Systems]], [[Spatial Computing Paradigm]], and [[Platform Economy|platform economics]].
 - Convergence differs from simple technology adoption in four key respects:
   - **Bidirectionality**: each converging domain shapes and accelerates the others. AI accelerates drug discovery, but improved understanding of biological systems (protein folding, organoid intelligence) feeds back into AI architecture design.
   - **Emergent capability clusters**: capabilities that are genuinely surprising even to domain experts arise from the combination, not from extrapolation of any single component trajectory.
@@ -173,7 +173,7 @@ Technological Convergence is the macro-level process by which previously distinc
   - Communications infrastructure (5G, 6G, satellite broadband LEO constellations)
 - **Layer 2: Enabling Platforms** — integrated software and hardware stacks mediating between substrates and applications:
   - Cloud hyperscalers (AWS, Azure, Google Cloud) providing scalable compute and data infrastructure
-  - AI training and inference infrastructure ([[Large-Scale Pretrained Foundation Model]] as universal interface layers)
+  - AI training and inference infrastructure ([[Foundation Model]] as universal interface layers)
   - [[Internet of Things|IoT]] platforms connecting billions of endpoints
   - Quantum cloud services (IBM Quantum, Azure Quantum, Amazon Braket)
   - [[Spatial Computing Paradigm]] operating systems (visionOS, Android XR, OpenXR standard)
@@ -193,7 +193,7 @@ Technological Convergence is the macro-level process by which previously distinc
 
 ### AI-Physical Convergence (Embodied / Physical AI)
 
-- The fusion of large-scale [[Large-Scale Pretrained Foundation Model]] with robotics, actuation, proprioception, and embodied sensors constitutes the most commercially active convergence front of 2025–2026.
+- The fusion of large-scale [[Foundation Model]] with robotics, actuation, proprioception, and embodied sensors constitutes the most commercially active convergence front of 2025–2026.
 - Foundation models trained on internet-scale data are fine-tuned on physical-world demonstrations using imitation learning (behaviour cloning) and reinforcement learning from physical environment feedback, producing robots capable of generalising across manipulation tasks in unstructured environments.
 - The [[Physical AI]] market grew from $4.12 billion in 2024 and is projected to reach $61.19 billion by 2034 at a 31.26% CAGR (TechAhead / Deloitte Tech Trends 2026).
 - Key commercial platforms: Tesla Optimus (limited production 2025), Figure AI, Agility Robotics (Amazon-backed), Unitree, Boston Dynamics (Hyundai).
@@ -240,7 +240,7 @@ Technological Convergence is the macro-level process by which previously distinc
 
 ### Quantum-AI Convergence
 
-- [[Quantum Computation Paradigm]] and AI are converging along two complementary pathways:
+- [[Quantum Computing]] and AI are converging along two complementary pathways:
   - **AI for quantum**: machine learning accelerates quantum hardware calibration, error mitigation, and circuit optimisation
   - **Quantum for AI**: quantum processors function as selective accelerators within hybrid quantum-classical architectures for specific AI subroutines (quantum sampling, optimisation, linear algebra)
 - Google demonstrated 13,000× speedup over the Frontier supercomputer using just 65 qubits on a random circuit sampling benchmark for physics simulations (October 2025) — a new quantum advantage milestone.
@@ -307,7 +307,7 @@ Technological Convergence is the macro-level process by which previously distinc
   - **Domain-specific silicon**: NVIDIA H100/B200 GPUs, Google TPU v5, Apple Neural Engine, Intel Habana Gaudi — purpose-built for AI workloads
   - **Photonic computing**: using photons rather than electrons as information carriers; photonic neural networks (PNNs) achieve ultrafast processing, ultra-low energy, and high bandwidth advantages over CMOS for matrix multiplication (Li et al., Advanced Materials, 2025)
   - **Neuromorphic computing**: physical artificial neurons (Intel Loihi 2, IBM NorthPole, BrainScaleS-2) implementing spiking neural networks with orders-of-magnitude lower energy for inference workloads
-  - **[[Quantum Computation Paradigm]]**: selective accelerator for exponentially hard problems (factoring, simulation, optimisation)
+  - **[[Quantum Computing]]**: selective accelerator for exponentially hard problems (factoring, simulation, optimisation)
 - Nature (2026) published "From Moore to more: the future of silicon chips" documenting convergence of these paradigms into a heterogeneous computing landscape replacing the homogeneous CMOS monoculture.
 - The trajectory: "More-than-Moore" (heterogeneous integration, specialised silicon) → "Beyond Moore" (quantum, neuromorphic, photonic) → hybrid convergence landscape combining all approaches.
 
@@ -371,7 +371,7 @@ Technological Convergence is the macro-level process by which previously distinc
 ## Current Landscape (2026)
 
 - The dominant empirical fact of the 2026 technology landscape is that AI has become the primary convergence accelerant and integrating mechanism across virtually all technology domains simultaneously — a **meta-convergence dynamic** not anticipated in prior theoretical frameworks which modelled convergence as pairwise or small-N domain interactions.
-- This meta-convergence is driven by the generalist capability of [[Large-Scale Pretrained Foundation Model]], which can translate representations across modalities (text, image, protein sequence, code, sensor data, 3D geometry) and thereby serve as universal interface layers between previously incompatible technical domains.
+- This meta-convergence is driven by the generalist capability of [[Foundation Model]], which can translate representations across modalities (text, image, protein sequence, code, sensor data, 3D geometry) and thereby serve as universal interface layers between previously incompatible technical domains.
 - Key 2026 empirical datapoints:
   - Enterprise AI spend reached $37 billion in 2025 with agentic AI the fastest-growing deployment category
   - Physical AI market CAGR 31.26%, with humanoid robot production scaling commercially for the first time
@@ -382,7 +382,7 @@ Technological Convergence is the macro-level process by which previously distinc
   - Streaming platform convergence reached 65% US household bundled subscription penetration (Netflix Q4 2025)
 - The OECD STI Outlook 2025 chapter on technology convergence identifies AI-biology, AI-manufacturing, AI-climate, and quantum-AI as the four highest-priority convergence vectors for policy intervention in the 2025–2030 period.
 - **Governance convergence is the critical gap**: regulatory frameworks designed for single-domain industries struggle with convergence products that simultaneously implicate multiple regulatory regimes.
-- The [[EU AI Act Regulatory Instrument]] (2024) represents the first major attempt to regulate AI-as-convergence-accelerant rather than regulating specific AI applications, establishing risk-based requirements that apply across sectors.
+- The [[EU AI Act]] (2024) represents the first major attempt to regulate AI-as-convergence-accelerant rather than regulating specific AI applications, establishing risk-based requirements that apply across sectors.
 - UK AI Safety Institute (AISI, est. November 2023, renamed AI Security Institute 2025) tested 30+ frontier models in 2025, including assessment of expert-level cyber capability — a convergence risk combining AI language capability with cybersecurity knowledge in ways that neither domain previously faced alone.
 
 ## UK Context
@@ -442,7 +442,7 @@ Technological Convergence is the macro-level process by which previously distinc
   - FinalSpark's neuroplatform (2024) achieved persistent biological-digital computing
   - Ethical and governance dimensions (moral status of hybrid systems, consent frameworks for neural tissue donors) not yet addressed by existing regulatory structures
 - **Quantum Supremacy for AI (2028–2035)**:
-  - Fault-tolerant [[Quantum Computation Paradigm]] with 1,000+ logical qubits will enable quantum machine learning subroutines (quantum sampling, quantum PCA, quantum SVM) demonstrating clear advantage over classical AI for specific problem classes
+  - Fault-tolerant [[Quantum Computing]] with 1,000+ logical qubits will enable quantum machine learning subroutines (quantum sampling, quantum PCA, quantum SVM) demonstrating clear advantage over classical AI for specific problem classes
   - Most profound impact expected in quantum chemistry, financial optimisation, and combinatorial problems
 - **Convergence Governance and Standards (Ongoing)**:
   - IEEE P7000 series, [[ISO/IEC JTC 1]]/SC 42 (AI), SC 38 (cloud/edge), and emerging quantum information standards must converge into interoperable frameworks

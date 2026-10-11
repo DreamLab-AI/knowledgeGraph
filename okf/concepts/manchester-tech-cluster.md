@@ -21,7 +21,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:digital-economy
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Manchester Tech Cluster

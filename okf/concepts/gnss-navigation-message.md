@@ -4,6 +4,7 @@ type: Class
 title: GNSS Navigation Message
 resource: urn:ngm:class:gnss-navigation-message
 domain: space-science-and-systems
+description: A GNSS navigation message is structured data encoded onto one or more satellite signal components for reception and interpretation by user equipment.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # GNSS Navigation Message
+
+A GNSS navigation message is structured data encoded onto one or more satellite signal components for reception and interpretation by user equipment.

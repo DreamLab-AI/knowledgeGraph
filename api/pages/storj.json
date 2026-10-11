@@ -45,6 +45,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems",
       "slug": "distributed-systems"
@@ -55,14 +60,14 @@
       "slug": "digital-infrastructure"
     },
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud",
-      "slug": "infra-computing-and-cloud"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     }
   ],
   "inheritedRelations": {
@@ -76,28 +81,28 @@
         "label": "Data Replication"
       },
       {
+        "id": "urn:ngm:class:node",
+        "label": "Storage Node"
+      },
+      {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:replication",
-        "label": "Replication"
-      },
-      {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
       }
     ],
     "requires": [
@@ -110,34 +115,42 @@
         "label": "Distributed Hash Table"
       },
       {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
         "id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronisation"
       },
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
-      },
-      {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
       },
       {
         "id": "urn:ngm:class:data-sovereignty",
@@ -148,24 +161,16 @@
         "label": "Provenance"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:user-sovereignty",
+        "label": "User Sovereignty"
       },
       {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:horizontal-scalability",
-        "label": "Horizontal Scalability"
-      },
-      {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "dependsOn": [
@@ -218,6 +223,10 @@
         "label": "Centralised Cloud Storage"
       },
       {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
+      },
+      {
         "id": "urn:ngm:class:centralised-computing",
         "label": "Centralised Computing"
       },
@@ -232,12 +241,24 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
         "id": "urn:ngm:class:filecoin",
         "label": "Filecoin"
       },
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -248,23 +269,19 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      }
+    ],
+    "uses": [
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralised-governance",
-        "label": "Decentralised Governance"
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
       },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      }
-    ],
-    "uses": [
       {
         "id": "urn:ngm:class:erasure-coding",
         "label": "Erasure Coding"
@@ -272,6 +289,10 @@
       {
         "id": "urn:ngm:class:merkle-dag",
         "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token Incentive"
       },
       {
         "id": "urn:ngm:class:remote-procedure-call",
@@ -284,10 +305,6 @@
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
-      },
-      {
-        "id": "urn:ngm:class:serverless-architecture",
-        "label": "Serverless Computing"
       }
     ],
     "supports": [
@@ -300,6 +317,18 @@
         "label": "Non-Fungible Token"
       },
       {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       },
@@ -310,24 +339,20 @@
       {
         "id": "urn:ngm:class:stream-processing",
         "label": "Stream Processing"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -348,6 +373,10 @@
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
         "id": "urn:ngm:class:web-3-infrastructure",
         "label": "Web3 Infrastructure"
       }
@@ -358,32 +387,32 @@
         "label": "Data Availability"
       },
       {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
       },
       {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
+        "id": "urn:ngm:class:information-management",
+        "label": "Information Management"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
       }
     ]
   },
@@ -399,16 +428,16 @@
   ],
   "backlinks": [
     {
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
     {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
-    },
-    {
-      "slug": "decentralized-storage",
-      "label": "Decentralized Storage"
     }
   ]
 }

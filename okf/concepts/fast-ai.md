@@ -93,7 +93,7 @@ relatedTo:
   - urn:ngm:class:hugging-face-accelerate
   - urn:ngm:class:ulmfi-t
   - urn:ngm:class:bert
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:fasthtml
   - urn:ngm:class:claudette
   - urn:ngm:class:fsdp-qlora

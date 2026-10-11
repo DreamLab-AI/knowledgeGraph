@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transport-layer-security",
   "domain": "security",
-  "definition": "A cryptographic protocol standardised by the IETF that provides mutual authentication, confidentiality and data integrity for communications over a computer network, succeeding the deprecated Secure Sockets Layer and currently at version 1.3 (RFC 8446).",
+  "definition": "Transport Layer Security (TLS) is an IETF-standardised cryptographic protocol that provides authenticated, confidential, and integrity-protected communication channels over reliable transports such as TCP and QUIC. TLS 1.3 (RFC 8446, 2018) achieves a one-round-trip handshake using ephemeral Diffie-Hellman key exchange with mandatory forward secrecy, encrypting the server certificate within the handshake to prevent passive fingerprinting. It is the security foundation of HTTPS, gRPC, MQTT, SMTP-over-TLS, LDAPS, and virtually every application-layer protocol requiring channel security, with mutual TLS (mTLS) extending the model to bidirectional client and server authentication.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-protocol",
@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
       }
     ],
     "enables": [
@@ -64,19 +68,69 @@
       {
         "id": "urn:ngm:class:mutual-authentication",
         "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTPS"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Encrypted Communication"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ssl",
+        "label": "SSL"
+      },
+      {
+        "id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "id": "urn:ngm:class:wireguard",
+        "label": "WireGuard"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -95,6 +149,18 @@
       {
         "id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hkdf",
+        "label": "HKDF"
+      },
+      {
+        "id": "urn:ngm:class:aead-cipher",
+        "label": "AEAD Cipher"
       }
     ],
     "supports": [
@@ -130,6 +196,26 @@
       {
         "id": "urn:ngm:class:forward-secrecy",
         "label": "Forward Secrecy"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:encrypted-client-hello",
+        "label": "Encrypted Client Hello"
       }
     ]
   },
@@ -291,12 +377,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -321,7 +407,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -369,28 +455,28 @@
         "label": "Post-Quantum-Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
         "id": "urn:ngm:class:ai-governance-law-and-privacy",
         "label": "AI Governance Law and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
       }
     ],
     "uses": [
@@ -564,16 +650,44 @@
   ],
   "backlinks": [
     {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
     },
     {
       "slug": "identity-provider",
       "label": "Identity Provider"
     },
     {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
       "slug": "screen-sharing",
       "label": "Screen Sharing"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
     },
     {
       "slug": "x-509-certificate",

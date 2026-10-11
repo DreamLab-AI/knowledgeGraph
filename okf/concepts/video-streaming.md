@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:video-codec
 enables:
   - urn:ngm:class:virtual-production

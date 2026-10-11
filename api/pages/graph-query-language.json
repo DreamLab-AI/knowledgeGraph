@@ -385,7 +385,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -443,7 +443,7 @@
         "label": "W3C SPARQL 1.1"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C SHACL"
       },
       {
@@ -475,8 +475,8 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:data-architecture",

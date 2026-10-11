@@ -11,7 +11,6 @@ is-a:
   - urn:ngm:class:infra-network-and-comms
   - urn:ngm:class:policy-enforcement-point
   - urn:ngm:class:middleware
-  - urn:ngm:class:reverse-proxy
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:cloud-native-component
 hasPart:
@@ -42,9 +41,9 @@ enables:
   - urn:ngm:class:graphql-federation
   - urn:ngm:class:strangler-fig-pattern
 dependsOn:
-  - urn:ngm:class:http
+  - urn:ngm:class:http2
   - urn:ngm:class:http-protocol
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:tcp-ip
   - urn:ngm:class:dns
   - urn:ngm:class:service-discovery
@@ -63,14 +62,14 @@ contrastsWith:
   - urn:ngm:class:load-balancer
   - urn:ngm:class:service-mesh
   - urn:ngm:class:reverse-proxy
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:open-telemetry
   - urn:ngm:class:prometheus
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:asyncapi
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
   - urn:ngm:class:w3c-trace-context
 supports:
   - urn:ngm:class:g-rpc
@@ -81,14 +80,14 @@ supports:
   - urn:ngm:class:web-socket
   - urn:ngm:class:webhook
 standardizedBy:
-  - urn:ngm:class:cncf
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:ietf
   - urn:ngm:class:kubernetes-gateway-api
   - urn:ngm:class:openapi-initiative
 relatedTo:
   - urn:ngm:class:api-management
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:ingress-controller
   - urn:ngm:class:service-mesh
   - urn:ngm:class:web-application-firewall

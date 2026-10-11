@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:blockchain
   - urn:ngm:class:systemic-risk
   - urn:ngm:class:blockchain-governance-risk
-  - urn:ngm:class:decentralisation
   - urn:ngm:class:network-security
   - urn:ngm:class:concentration-risk
 hasPart:

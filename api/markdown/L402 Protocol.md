@@ -50,7 +50,7 @@ L402 Protocol is a web-native payment authentication specification that combines
 - **Machine-to-Machine Payments**
   - In [[Internet of Things]] and edge-computing scenarios, devices pay each other for sensor readings, compute offloading, or network relay services using L402 without requiring human-held payment accounts.
 - **Streaming Data and Real-Time Feeds**
-  - Financial tick data, geospatial feeds, and telemetry streams can be gated per-update, with the client maintaining a Lightning payment channel that funds ongoing access. [[Streaming Payments]] via [[Lightning Network]] Keysend complement L402 for continuous-flow billing.
+  - Financial tick data, geospatial feeds, and telemetry streams can be gated per-update, with the client maintaining a Lightning payment channel that funds ongoing access. [[Streaming Payment]] via [[Lightning Network]] Keysend complement L402 for continuous-flow billing.
 - **Decentralised CDN and Storage**
   - Distributed storage networks (such as those inspired by [[IPFS]] or Filecoin-adjacent models) use L402 to pay storage nodes for retrieval bandwidth without centralised accounts.
 
@@ -61,7 +61,7 @@ L402 Protocol is a web-native payment authentication specification that combines
 - **Relationship to BOLT Standards**
   - The [[Lightning Network]] payment layer relies on the [[BOLT]] (Basis of Lightning Technology) specification suite, particularly BOLT11 for invoice encoding and BOLT4 for onion routing. L402 Protocol sits above these as an application-layer standard, consuming Lightning as a settlement primitive.
 - **HTTP Standards Alignment**
-  - L402 aligns with [[RFC 7235]] (HTTP/1.1 Authentication) and the `WWW-Authenticate` / `Authorization` header conventions, ensuring compatibility with standard [[HTTP Client]] libraries, reverse proxies, and [[CDN]] infrastructure without requiring custom transport.
+  - L402 aligns with [[RFC 7235]] (HTTP/1.1 Authentication) and the `WWW-Authenticate` / `Authorization` header conventions, ensuring compatibility with standard [[HTTP Client]] libraries, reverse proxies, and [[Content Delivery Network]] infrastructure without requiring custom transport.
 - **Macaroon Specification**
   - Macaroons were originally specified in the 2014 Google Research paper "Macaroons: Cookies with Contextual Caveats for Decentralised Authorization." L402 adopts their serialisation format (v1 and v2 binary encoding) and HMAC-SHA256 construction unchanged.
 - **Competitive Landscape**

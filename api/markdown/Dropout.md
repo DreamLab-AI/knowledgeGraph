@@ -26,7 +26,7 @@ Dropout is a regularisation technique for neural network training in which a ran
   ## References
   1. Srivastava et al. - "Dropout: A Simple Way to Prevent Neural Networks from Overfitting" - JMLR, 2014
   2. [[ISO/IEC 22989:2022]] - Training techniques
-  3. [[NIST AI RMF]] - MAP function mapping
+  3. [[NIST AI Risk Management Framework]] - MAP function mapping
 
 ### Provenance
 

@@ -24,7 +24,7 @@ bridgesTo:
   - urn:ngm:class:supply-chain-security
 uses:
   - urn:ngm:class:ai-security
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:behavioural-analytics
   - urn:ngm:class:endpoint-detection-and-response
 supports:

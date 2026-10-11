@@ -12,15 +12,15 @@ is-a:
 hasPart:
   - urn:ngm:class:content-addressing
 requires:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:content-addressing
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 enables:
   - urn:ngm:class:federation
   - urn:ngm:class:decentralised-identity
 dependsOn:
-  - urn:ngm:class:did
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:decentralised-identifier
 implements:
   - urn:ngm:class:protocol
   - urn:ngm:class:open-standards
@@ -29,9 +29,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:infrastructure
 uses:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:content-addressing
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 supports:
   - urn:ngm:class:federation
 partOf:

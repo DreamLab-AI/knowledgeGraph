@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:robotics
   - urn:ngm:class:reward-function
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-evaluation
 ---
 

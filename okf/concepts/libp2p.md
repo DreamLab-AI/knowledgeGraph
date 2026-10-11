@@ -12,12 +12,12 @@ is-a:
 hasPart:
   - urn:ngm:class:noise-protocol
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:transport-layer
 enables:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
 dependsOn:
   - urn:ngm:class:kademlia-dht
   - urn:ngm:class:distributed-hash-table
@@ -29,7 +29,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:bittorrent-protocol
 bridgesTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 uses:
   - urn:ngm:class:congestion-control
   - urn:ngm:class:cryptographic-protocol

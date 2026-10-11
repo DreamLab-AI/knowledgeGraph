@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:dynamic-batching
   - urn:ngm:class:quantisation
 requires:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:hardware-acceleration
 enables:
   - urn:ngm:class:real-time-inference-at-edge

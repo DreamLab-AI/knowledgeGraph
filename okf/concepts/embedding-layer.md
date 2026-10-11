@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:recommendation-system
   - urn:ngm:class:knowledge-graph-completion
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:training-data
 implements:
@@ -47,7 +47,7 @@ supports:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 standardizedBy:
   - urn:ngm:class:hugging-face
   - urn:ngm:class:py-torch

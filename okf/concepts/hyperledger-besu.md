@@ -24,7 +24,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:hyperledger-fabric
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:private-channels

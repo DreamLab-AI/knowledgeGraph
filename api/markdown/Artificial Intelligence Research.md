@@ -127,7 +127,7 @@ SubClassOf(ai:ArtificialIntelligenceResearch
   - **Symbolic era (1940s–1970s):** intelligence as explicit logical inference; [[Expert System]]s (MYCIN, DENDRAL, XCON), theorem provers, planning formalisms (STRIPS 1971, PDDL 1998); collapsed in AI winters (1974–1980, 1987–1993) due to failure to scale
   - **Statistical era (1980s–2000s):** intelligence as probabilistic inference over learned parameters; [[Bayesian Deep Learning]], support vector machines (Vapnik 1995), graphical models, PAC learning theory; connectionism re-emerging with backpropagation (Rumelhart et al., 1986)
   - **Deep learning era (2010–2022):** massively parameterised [[Neural Network]]s trained on [[GPU Compute]] achieving human-level or superhuman perception and language performance; AlexNet (2012), ResNet (2015), attention (2015), transformer (2017), GPT-3 (2020), CLIP (2021)
-  - **Foundation model era (2022–present):** [[Large Language Models]] and [[Multimodal AI]] exhibiting emergent in-context reasoning and [[Agentic AI]] behaviour; ChatGPT (2022), GPT-4 (2023), Claude 3 (2024), Gemini 1.5 (2024), DeepSeek-R1 (2025)
+  - **Foundation model era (2022–present):** [[Large Language Model]] and [[Multimodal AI]] exhibiting emergent in-context reasoning and [[Agentic AI]] behaviour; ChatGPT (2022), GPT-4 (2023), Claude 3 (2024), Gemini 1.5 (2024), DeepSeek-R1 (2025)
 - A defining structural feature of AI Research is the dual role of benchmarks:
   - Benchmarks simultaneously measure progress and drive it; benchmark choice shapes which capabilities receive research attention
   - "Benchmark hacking" — improving benchmark scores by exploiting statistical regularities of test set construction rather than acquiring intended capability — is a systematic concern
@@ -156,7 +156,7 @@ SubClassOf(ai:ArtificialIntelligenceResearch
 - **Research Subfields (bridgesTo):**
   - [[Machine Learning]] — the primary technical subfield; concerns model architectures, learning algorithms, generalisation theory, and training methodology
   - [[Deep Learning]] — dominant paradigm since 2012; concerns deep [[Neural Network]] architectures including convolutional networks, recurrent networks, and [[Transformer Architecture]]
-  - [[Natural Language Processing]] — language understanding and generation; transformed by [[Large Language Models]] and [[Attention Mechanism]]-based [[Transformer Architecture]]s since 2017
+  - [[Natural Language Processing]] — language understanding and generation; transformed by [[Large Language Model]] and [[Attention Mechanism]]-based [[Transformer Architecture]]s since 2017
   - [[Computer Vision]] — visual perception including image classification, object detection, segmentation, and video understanding; increasingly subsumed into multimodal [[Foundation Model]]s
   - [[Reinforcement Learning]] — learning from environment feedback; foundational for game playing (AlphaGo, AlphaZero), robotic control, and [[Alignment Research]] (RLHF)
   - [[Robotics]] — physical embodiment of AI; requires integration of perception, planning, and control under real-world physical constraints
@@ -176,7 +176,7 @@ SubClassOf(ai:ArtificialIntelligenceResearch
 ## Use Cases / Major Families
 
 - **Language and Reasoning Research:**
-  - Dominant AI research programme 2022–2026; centred on scaling [[Large Language Models]] to study emergent capabilities, measure reasoning, and characterise failure modes
+  - Dominant AI research programme 2022–2026; centred on scaling [[Large Language Model]] to study emergent capabilities, measure reasoning, and characterise failure modes
   - Key results: GPT-4 (OpenAI 2023), Claude 3 family (Anthropic 2024), Gemini 1.5 (Google 2024), Llama 3.3 (Meta 2024), DeepSeek-R1 (DeepSeek 2025)
   - Reasoning measurement benchmarks: MATH (competitive mathematics), HumanEval (code), MMLU (knowledge), BIG-Bench Hard (diverse reasoning), FrontierMath (advanced mathematics, below 2% for frontier models)
   - Failure mode research: hallucination characterisation and suppression methods, sycophancy (models agreeing with incorrect user beliefs), deceptive alignment detection (Apollo Research 2024 in-context scheming experiments)
@@ -332,7 +332,7 @@ SubClassOf(ai:ArtificialIntelligenceResearch
   - International AI Safety Report (Bengio et al., 2025): scalable oversight identified as highest-priority alignment research direction
   - Open theoretical problem: RLHF-based approaches do not scale to domains where human evaluators cannot assess AI outputs
 - **Reasoning and Planning Integration:**
-  - Current [[Large Language Models]]: impressive natural language reasoning but brittle on formal mathematical and logical chains of inference
+  - Current [[Large Language Model]]: impressive natural language reasoning but brittle on formal mathematical and logical chains of inference
   - [[Neural-Symbolic AI]] integration: combining neural language understanding with symbolic [[Planning and Search]] and [[Knowledge Representation]]
   - AlphaProof (IMO 2024) and AlphaGeometry 2 (gold-medal geometry): demonstrated hybrid approaches viable for structured mathematical reasoning
   - Test-time compute scaling: OpenAI o1, DeepSeek-R1 — extended inference chains with self-critique improve reasoning without additional training compute

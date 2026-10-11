@@ -9,7 +9,7 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:machine-learning-discipline-technique
   - urn:ngm:class:distribution-shift
 hasPart:
@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:observability
   - urn:ngm:class:mlops
   - urn:ngm:class:ai-lifecycle
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:machine-learning-discipline-infrastructure
   - urn:ngm:class:model-training-pipeline
 standardizedBy:
@@ -94,7 +94,7 @@ relatedTo:
   - urn:ngm:class:time-series
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:feature-store
   - urn:ngm:class:model-registry
   - urn:ngm:class:inference
@@ -106,7 +106,7 @@ relatedTo:
   - urn:ngm:class:federated-edge-learning
   - urn:ngm:class:machine-learning-accelerator
   - urn:ngm:class:bayesian-optimisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Concept Drift

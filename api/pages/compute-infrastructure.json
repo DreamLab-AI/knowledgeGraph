@@ -387,8 +387,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -455,8 +455,8 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "dependsOn": [

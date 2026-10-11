@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:resource-management",
       "label": "Resource Management"
+    },
+    {
+      "id": "urn:ngm:class:scalability",
+      "label": "Scalability"
     }
   ],
   "entityType": "Class",
@@ -24,6 +28,10 @@
       {
         "id": "urn:ngm:class:load-balancing",
         "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
       }
     ],
     "requires": [
@@ -34,6 +42,10 @@
       {
         "id": "urn:ngm:class:capacity-planning",
         "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ],
     "enables": [
@@ -44,6 +56,10 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [
@@ -77,6 +93,14 @@
       {
         "id": "urn:ngm:class:observability",
         "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
       }
     ],
     "supports": [
@@ -110,8 +134,12 @@
         "label": "Load Balancing"
       },
       {
-        "id": "urn:ngm:class:auto-scaling",
-        "label": "Auto-Scaling"
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ]
   },
@@ -120,6 +148,16 @@
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure",
       "slug": "computing-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -147,24 +185,24 @@
         "label": "Scheduler"
       },
       {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "id": "urn:ngm:class:vertical-scaling",
+        "label": "Vertical Scaling"
+      },
+      {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:networking-infrastructure",
-        "label": "Networking Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:storage-infrastructure",
-        "label": "Storage Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
       }
     ],
     "requires": [
@@ -173,26 +211,50 @@
         "label": "Telemetry"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
         "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Metaverse Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:elastic-computing",
+        "label": "Elastic Computing"
+      },
+      {
+        "id": "urn:ngm:class:global-deployments",
+        "label": "Global Deployments"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       },
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -203,20 +265,12 @@
         "label": "Orchestration"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "dependsOn": [
@@ -227,6 +281,14 @@
       {
         "id": "urn:ngm:class:virtualisation",
         "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "implements": [
@@ -245,6 +307,18 @@
         "label": "Over-Provisioning"
       },
       {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vertical-integration",
+        "label": "Vertical Integration"
+      },
+      {
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -259,12 +333,28 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:ai-model-scaling",
+        "label": "AI Model Scaling"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -273,8 +363,32 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:load-balancing",
-        "label": "Load Balancing"
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "id": "urn:ngm:class:message-queuing",
+        "label": "Message Queuing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
       }
     ],
     "supports": [
@@ -287,6 +401,18 @@
         "label": "Microservices"
       },
       {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud-Native Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
         "id": "urn:ngm:class:power-management",
         "label": "Power Management"
       },
@@ -297,13 +423,29 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:scalability",
-        "label": "Scalability"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      },
+      {
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
+      },
+      {
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
@@ -325,7 +467,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -337,24 +479,24 @@
         "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
+        "id": "urn:ngm:class:availability",
+        "label": "Availability"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
       },
       {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
       },
       {
-        "id": "urn:ngm:class:compute-infrastructure",
-        "label": "Compute Infrastructure"
+        "id": "urn:ngm:class:scalability-pattern",
+        "label": "Scalability Pattern"
       }
     ]
   },

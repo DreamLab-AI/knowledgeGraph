@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-orientation-parameter",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Earth orientation parameters are the quantities that describe the rotation of the International Terrestrial Reference System relative to the International Celestial Reference System, in conjunction with a conventional precession-nutation model.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

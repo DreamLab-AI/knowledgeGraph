@@ -96,8 +96,8 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:pretrained-model",
-        "label": "Pretrained Model"
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
       }
     ]
   },
@@ -113,9 +113,9 @@
       "slug": "generative-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -123,14 +123,14 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -160,12 +160,12 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       }
     ],
     "requires": [
@@ -198,8 +198,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:dataset-curation",
-        "label": "Dataset Curation"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       }
     ],
     "enables": [
@@ -229,7 +229,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -242,7 +242,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
@@ -254,8 +254,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -322,12 +322,16 @@
         "label": "Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -382,10 +386,6 @@
         "label": "Embeddings"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -394,18 +394,26 @@
         "label": "Transformer Architecture"
       },
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -426,22 +434,32 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:inference",
@@ -452,15 +470,11 @@
         "label": "Language Modeling"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:mixture-of-experts",
-        "label": "Mixture of Experts"
-      },
-      {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -470,6 +484,10 @@
       {
         "id": "urn:ngm:class:quantisation",
         "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ]
   },

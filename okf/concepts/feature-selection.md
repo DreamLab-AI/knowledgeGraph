@@ -21,10 +21,10 @@ enables:
 contrastsWith:
   - urn:ngm:class:dimensionality-reduction
 supports:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:model-training
   - urn:ngm:class:classification
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:feature-engineering
   - urn:ngm:class:regularisation

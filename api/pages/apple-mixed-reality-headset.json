@@ -236,8 +236,8 @@
         "label": "Inertial Measurement Unit"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -330,7 +330,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -440,12 +440,12 @@
         "label": "OpenXR Scene Understanding Extension"
       },
       {
-        "id": "urn:ngm:class:openxr-standard",
-        "label": "OpenXR Standard"
-      },
-      {
         "id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "W3C WebXR Device API"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
       }
     ],
     "partOf": [

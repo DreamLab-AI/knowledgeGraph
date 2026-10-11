@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:generative-model
   - urn:ngm:class:parameter-efficient-fine-tuning
 relatedTo:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:generative-ai
   - urn:ngm:class:3-d-animation
   - urn:ngm:class:computer-vision-video-analysis

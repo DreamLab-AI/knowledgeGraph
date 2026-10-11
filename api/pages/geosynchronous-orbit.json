@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geosynchronous-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A geosynchronous orbit is an Earth-centred orbit whose period equals the Earth's rotation period.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

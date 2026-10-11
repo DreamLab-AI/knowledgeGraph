@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:metadata
   - urn:ngm:class:identity
 implements:
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
 contrastsWith:
   - urn:ngm:class:anonymisation
 bridgesTo:
@@ -38,10 +38,10 @@ uses:
   - urn:ngm:class:cryptographic-hash
   - urn:ngm:class:merkle-tree
 supports:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:open-data
 standardizedBy:
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
   - urn:ngm:class:provenance-ontology-prov-o
 partOf:
   - urn:ngm:class:data-governance

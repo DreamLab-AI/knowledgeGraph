@@ -11,13 +11,13 @@ is-a:
   - urn:ngm:class:ai-model-architecture
   - urn:ngm:class:natural-language-processing
 requires:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 enables:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:fine-tuning
 uses:
   - urn:ngm:class:transformers
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:attention-mechanism
 ---
 

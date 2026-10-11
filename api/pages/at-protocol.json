@@ -24,7 +24,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:did",
+        "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifiers"
       },
       {
@@ -32,8 +32,8 @@
         "label": "Content Addressing"
       },
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "enables": [
@@ -48,12 +48,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:did",
+        "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifiers"
       },
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "implements": [
@@ -80,7 +80,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:did",
+        "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifiers"
       },
       {
@@ -88,8 +88,8 @@
         "label": "Content Addressing"
       },
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "supports": [
@@ -239,7 +239,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -389,11 +389,11 @@
         "label": "Technical Committee"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -457,8 +457,8 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:metaverse-standards-forum",
@@ -521,7 +521,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ]

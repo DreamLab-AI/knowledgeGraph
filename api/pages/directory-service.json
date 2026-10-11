@@ -39,8 +39,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ]
   },
@@ -238,10 +238,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
@@ -252,6 +248,10 @@
       {
         "id": "urn:ngm:class:network-security",
         "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:api-gateway",
@@ -272,7 +272,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Delegated Authorization"
       },
       {
@@ -318,16 +318,16 @@
         "label": "JSON Web Token"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-logging",
@@ -398,7 +398,7 @@
         "label": "Passwordless Authentication"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -530,8 +530,8 @@
         "label": "OpenID Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ansi-incits-359",

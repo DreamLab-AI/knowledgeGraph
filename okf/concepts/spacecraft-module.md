@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Module
 resource: urn:ngm:class:spacecraft-module
 domain: space-science-and-systems
+description: A spacecraft module is a self-contained unit of a spacecraft.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Spacecraft Module
+
+A spacecraft module is a self-contained unit of a spacecraft.[^1]

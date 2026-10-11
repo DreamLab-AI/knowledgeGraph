@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mapped-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Mapped data state is the processing state of data that has undergone a mapping process [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

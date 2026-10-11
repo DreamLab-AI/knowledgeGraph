@@ -1,6 +1,6 @@
 Token distribution is the process and schema by which a blockchain project allocates its native tokens across stakeholders such as founders, investors, the community, and a treasury. It specifies how many tokens each group receives, when they unlock through vesting, and through which mechanisms they are released, all of which shape decentralisation, incentive alignment, and market liquidity. A distribution design is a central lever of a project's tokenomics.
 
-- [[Token Distribution]] is the allocation schema that determines who receives a project's [[Token]], in what proportion, and on what release schedule. It is a defining component of [[Tokenomics]] and [[Token Economics]], directly influencing [[Decentralization]] and incentive alignment.
+- [[Token Distribution]] is the allocation schema that determines who receives a project's [[Token]], in what proportion, and on what release schedule. It is a defining component of [[Tokenomics]] and [[Token Economics]], directly influencing [[Decentralisation]] and incentive alignment.
 
 ### Overview
 

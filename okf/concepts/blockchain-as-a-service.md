@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:microservices
   - urn:ngm:class:api-gateway
   - urn:ngm:class:container-orchestration
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:hardware-security-module
 implements:
   - urn:ngm:class:crash-fault-tolerance
@@ -59,7 +59,7 @@ implements:
   - urn:ngm:class:raft-consensus
   - urn:ngm:class:smart-bft
   - urn:ngm:class:byzantine-fault-tolerance
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:hyperledger-besu
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:r3-corda
@@ -68,7 +68,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:self-hosted-blockchain-infrastructure
   - urn:ngm:class:public-blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:permissionless-blockchain
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:public-cloud-blockchain
@@ -107,7 +107,7 @@ standardizedBy:
   - urn:ngm:class:ietf-satp
 relatedTo:
   - urn:ngm:class:api-management
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:devops
   - urn:ngm:class:digital-asset
@@ -120,7 +120,7 @@ relatedTo:
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:digital-asset
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Blockchain As A Service

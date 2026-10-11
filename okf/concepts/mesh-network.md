@@ -23,7 +23,7 @@ implements:
 uses:
   - urn:ngm:class:routing-protocol
 supports:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:edge-computing
 partOf:
   - urn:ngm:class:network-topology

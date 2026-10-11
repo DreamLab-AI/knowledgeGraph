@@ -13,14 +13,14 @@ hasPart:
   - urn:ngm:class:tokenomics
 requires:
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:kyc-aml
 enables:
   - urn:ngm:class:token-distribution
 dependsOn:
   - urn:ngm:class:ethereum
 contrastsWith:
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:initial-public-offering
   - urn:ngm:class:venture-capital
 bridgesTo:

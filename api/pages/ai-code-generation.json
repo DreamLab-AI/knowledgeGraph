@@ -33,8 +33,8 @@
         "label": "Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },
@@ -81,8 +81,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "requires": [
@@ -163,7 +163,7 @@
         "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -171,8 +171,8 @@
         "label": "Model Interpretability"
       },
       {
-        "id": "urn:ngm:class:pretrained-model",
-        "label": "Pretrained Model"
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
       },
       {
         "id": "urn:ngm:class:ai-application",

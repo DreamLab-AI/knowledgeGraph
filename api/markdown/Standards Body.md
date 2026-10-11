@@ -31,10 +31,10 @@ A standards body is a formal organisation that develops, publishes, and maintain
 ### Applications and Use Cases
 
 - **[[Spatial Computing]]** — [[Khronos Group]] publishes [[OpenXR]], [[Vulkan]], [[glTF]], and [[OpenCL]], enabling cross-device [[Mixed Reality]] and GPU-compute [[Interoperability]] without proprietary lock-in.
-- **[[Web Platform]]** — [[W3C]] specifies [[WebXR Device API]], [[WebGPU]], [[Web Audio API]], and semantic web standards ([[RDF]], [[OWL]], [[SPARQL]]) that underpin the open web stack.
-- **Networking and protocols** — [[IETF]] produces RFCs governing [[TCP-IP]], [[HTTP]], [[TLS]], and [[QUIC]]; these form the substrate of every internet application.
+- **[[Web Platform]]** — [[World Wide Web Consortium]] specifies [[WebXR Device API]], [[WebGPU]], [[Web Audio API]], and semantic web standards ([[RDF]], [[OWL]], [[SPARQL]]) that underpin the open web stack.
+- **Networking and protocols** — [[IETF]] produces RFCs governing [[TCP-IP]], [[HTTP]], [[Transport Layer Security]], and [[QUIC]]; these form the substrate of every internet application.
 - **[[AI Safety Framework|AI Safety and Ethics]]** — bodies such as [[NIST]] (AI Risk Management Framework), ISO/IEC JTC 1/SC 42, and [[IEEE]] are developing frameworks for trustworthy [[Artificial Intelligence]], bridging governance and [[Machine Learning]].
-- **[[Blockchain Protocol|Blockchain and distributed ledgers]]** — ISO TC 307 standardises terminology, smart contracts, and identity schemes; [[W3C]] published [[Decentralised Identifiers]] (DID) and [[Verifiable Credentials]] specifications.
+- **[[Blockchain Protocol|Blockchain and distributed ledgers]]** — ISO TC 307 standardises terminology, smart contracts, and identity schemes; [[World Wide Web Consortium]] published [[Decentralised Identifier]] (DID) and [[Verifiable Credential]] specifications.
 - **[[Geospatial Data]]** — [[Open Geospatial Consortium]] defines [[GeoJSON]], OGC API standards, and [[3D Tiles]], enabling interoperable [[Digital Twin]] and [[GIS]] systems.
 - **Telecommunications** — [[3GPP]] specifies 4G/5G/6G radio and core network standards adopted globally by operators and device manufacturers.
 - **Manufacturing and safety** — IEC 61508 (functional safety), ISO 26262 (automotive), and ISO/IEC 27001 ([[Information Security]]) provide sector-specific assurance frameworks.
@@ -46,7 +46,7 @@ A standards body is a formal organisation that develops, publishes, and maintain
   - [[ISO]] (International Organisation for Standardisation) — 167 member countries; publishes ~25,000 active standards across all industries
   - [[IEC]] (International Electrotechnical Commission) — electrical, electronic, and related technologies; joint ISO/IEC JTC 1 covers [[Information Technology]]
   - [[IEEE]] (Institute of Electrical and Electronics Engineers) — 802.x networking, 754 floating-point arithmetic, 2030 smart-grid, P2048 [[Extended Reality]]
-  - [[W3C]] (World Wide Web Consortium) — web architecture, [[HTML]], [[CSS]], [[WebXR]], [[Linked Data]], [[Verifiable Credentials]]
+  - [[World Wide Web Consortium]] (World Wide Web Consortium) — web architecture, [[HTML]], [[CSS]], [[WebXR]], [[Linked Data]], [[Verifiable Credential]]
   - [[IETF]] (Internet Engineering Task Force) — open, volunteer-driven; produces RFCs governing all internet protocols
   - [[NIST]] (National Institute of Standards and Technology) — US federal standards including [[FIPS]], [[SP 800-series]] security standards, [[AI Risk Management Framework]]
 - **Domain-specific bodies**

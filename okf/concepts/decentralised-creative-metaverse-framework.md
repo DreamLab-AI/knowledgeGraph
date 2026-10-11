@@ -20,7 +20,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:lightning-network
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Decentralised Creative Metaverse Framework

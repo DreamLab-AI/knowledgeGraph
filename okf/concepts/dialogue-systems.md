@@ -42,9 +42,9 @@ enables:
 dependsOn:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:context-management
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:pre-trained-language-model
 implements:
@@ -64,7 +64,7 @@ bridgesTo:
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:robotics
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-augmented-reasoning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
@@ -78,8 +78,8 @@ supports:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:autonomous-robot
 standardizedBy:
-  - urn:ngm:class:iso-iec-jtc1-sc42
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:multiwoz-benchmark
   - urn:ngm:class:schema-guided-dialogue
 relatedTo:

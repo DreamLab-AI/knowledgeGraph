@@ -33,7 +33,7 @@ enables:
 implements:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:gan
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:gaussian-splatting
   - urn:ngm:class:neural-radiance-field
 bridgesTo:

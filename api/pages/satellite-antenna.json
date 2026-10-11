@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-antenna",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite antenna is a radiating structure that transmits or receives signals for a satellite communications link.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

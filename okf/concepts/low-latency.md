@@ -46,7 +46,7 @@ relatedTo:
   - urn:ngm:class:quality-of-service
   - urn:ngm:class:5-g
   - urn:ngm:class:web-rtc
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:network-slicing
 ---
 

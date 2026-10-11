@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-surface",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planetary surface is the solid outer boundary of a rocky world, and the sources opened here describe what shapes it on particular bodies.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

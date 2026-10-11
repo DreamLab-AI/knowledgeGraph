@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-carrier-phase",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS carrier phase is the receiver's measured carrier-phase range from a satellite, recorded as phase cycles and containing an unresolved ambiguity.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

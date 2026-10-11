@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:condition-based-maintenance
   - urn:ngm:class:asset-health-management
   - urn:ngm:class:industrial-io-t
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:cmms-integration
@@ -41,7 +41,7 @@ enables:
   - urn:ngm:class:carbon-footprint-measurement
 dependsOn:
   - urn:ngm:class:industrial-io-t
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:signal-processing
   - urn:ngm:class:digital-twin
   - urn:ngm:class:cloud-computing

@@ -21,9 +21,9 @@ contrastsWith:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:transaction-monitoring
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:zero-knowledge
   - urn:ngm:class:homomorphic-encryption

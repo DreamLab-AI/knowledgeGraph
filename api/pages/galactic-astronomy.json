@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:galactic-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Galactic astronomy is the study of the structure and contents of the Milky Way, the home galaxy of the Sun.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

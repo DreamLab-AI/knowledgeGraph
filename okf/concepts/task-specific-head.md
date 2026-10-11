@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:ai-technique
 uses:
   - urn:ngm:class:neural-network-layer
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:knowledge-distillation

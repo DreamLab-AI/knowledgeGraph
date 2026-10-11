@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-resolution",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spatial resolution is the size of the area on the Earth's surface represented by each pixel of a digital image, so a smaller value shows more detail.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

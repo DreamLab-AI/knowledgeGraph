@@ -30,7 +30,7 @@ requires:
   - urn:ngm:class:variational-inference
   - urn:ngm:class:stochastic-gradient-descent
 enables:
-  - urn:ngm:class:3-d-content-generation
+  - urn:ngm:class:3-d-generation
   - urn:ngm:class:audio-synthesis
   - urn:ngm:class:image-editing
   - urn:ngm:class:image-synthesis
@@ -52,7 +52,7 @@ implements:
   - urn:ngm:class:variational-lower-bound-maximisation
 contrastsWith:
   - urn:ngm:class:generative-adversarial-networks
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:energy-based-model
@@ -64,7 +64,7 @@ uses:
   - urn:ngm:class:u-net
   - urn:ngm:class:variational-autoencoders
   - urn:ngm:class:cross-attention
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:t5-encoder
 supports:
   - urn:ngm:class:creative-tools

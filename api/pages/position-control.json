@@ -167,9 +167,9 @@
       "slug": "dynamical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:industrial-automation",
@@ -262,9 +262,19 @@
       "slug": "mathematical-modelling"
     },
     {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:feedback-systems",
@@ -277,9 +287,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:mathematical-physics",
@@ -548,7 +558,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -672,8 +682,16 @@
         "label": "Control System"
       },
       {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
         "id": "urn:ngm:class:control-theory",
         "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -694,16 +712,16 @@
         "label": "Dynamics"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:safety-critical-systems",

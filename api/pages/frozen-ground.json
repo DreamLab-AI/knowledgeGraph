@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:frozen-ground",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Frozen ground is soil or land held at or below the freezing point of water, covering both seasonally frozen ground and permafrost.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

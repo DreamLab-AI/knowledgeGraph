@@ -16,8 +16,12 @@
       "label": "Artificial Intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "ArtificialIntelligenceDomain"
     }
   ],
   "entityType": "Class",
@@ -84,8 +88,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001-2023",
@@ -124,6 +128,10 @@
       {
         "id": "urn:ngm:class:supply-chain-optimisation",
         "label": "Supply Chain Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -160,6 +168,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-capability",
+        "label": "AI Capability"
       }
     ],
     "contrastsWith": [
@@ -172,11 +184,16 @@
         "label": "AI Ethics"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industry-vertical",
+        "label": "Industry Vertical"
+      }
+    ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -195,8 +212,8 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -247,8 +264,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001-2023",
@@ -259,7 +276,12 @@
         "label": "GDPR"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:explainable-ai",
@@ -296,6 +318,18 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },
@@ -306,14 +340,14 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -365,6 +399,10 @@
         "label": "AI Infrastructure"
       },
       {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:dataset-curation",
         "label": "Dataset Curation"
       },
@@ -379,20 +417,12 @@
       {
         "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
-      },
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -411,6 +441,10 @@
         "label": "Natural Language Processing"
       },
       {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
       },
@@ -425,8 +459,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -485,12 +519,16 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -517,9 +555,21 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -527,6 +577,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
@@ -543,24 +597,20 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:scientific-method",
-        "label": "Scientific Method"
-      },
-      {
-        "id": "urn:ngm:class:statistical-learning-theory",
-        "label": "Statistical Learning"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -581,13 +631,13 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
@@ -601,10 +651,6 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
       },
       {
         "id": "urn:ngm:class:federated-learning",
@@ -625,6 +671,10 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
       }
     ]
   },
@@ -832,6 +882,18 @@
     {
       "slug": "transfer-learning",
       "label": "Transfer Learning"
+    },
+    {
+      "slug": "ai-capability",
+      "label": "AI Capability"
+    },
+    {
+      "slug": "application-domain",
+      "label": "Application Domain"
+    },
+    {
+      "slug": "industry-vertical",
+      "label": "Industry Vertical"
     }
   ],
   "backlinks": [

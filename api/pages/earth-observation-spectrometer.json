@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-spectrometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation spectrometer is an instrument that records the spectrum of light reflected or emitted from the Earth, resolving it into many wavelength bands.[^1][^2][^3]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-instrument",

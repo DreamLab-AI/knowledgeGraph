@@ -21,7 +21,7 @@ contrastsWith:
   - urn:ngm:class:robotic-process-automation
 uses:
   - urn:ngm:class:event-log
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:business-intelligence
 supports:
   - urn:ngm:class:intelligent-automation

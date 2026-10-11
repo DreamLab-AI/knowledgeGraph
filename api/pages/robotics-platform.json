@@ -70,7 +70,7 @@
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
@@ -244,7 +244,7 @@
         "label": "Custom RTOS Firmware"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "ROS 1"
       }
     ],
@@ -280,8 +280,8 @@
         "label": "URDF"
       },
       {
-        "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       },
       {
         "id": "urn:ngm:class:rust-systems-programming-language",
@@ -399,8 +399,8 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:autonomous-vehicle",
@@ -485,9 +485,9 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -548,20 +548,20 @@
         "label": "Timing Synchronisation"
       },
       {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:real-time-scheduling",
+        "label": "Real-Time Scheduling"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
-      },
-      {
-        "id": "urn:ngm:class:physics-engine",
-        "label": "Physics Engine"
       }
     ],
     "enables": [
@@ -586,16 +586,16 @@
         "label": "Automation"
       },
       {
-        "id": "urn:ngm:class:io-t",
-        "label": "IoT"
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       },
       {
-        "id": "urn:ngm:class:robot-control",
-        "label": "Robot Control"
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:distributed-communication",
-        "label": "Distributed Communication"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "dependsOn": [
@@ -634,6 +634,14 @@
     ],
     "implements": [
       {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
       },
@@ -643,6 +651,14 @@
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
       {
         "id": "urn:ngm:class:hardware-in-the-loop-testing",
         "label": "Hardware-in-the-Loop"
@@ -666,14 +682,6 @@
       {
         "id": "urn:ngm:class:human-in-the-loop",
         "label": "Human in the Loop"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
-      },
-      {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
       }
     ],
     "bridgesTo": [
@@ -686,6 +694,18 @@
         "label": "Robotic System"
       },
       {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -696,18 +716,6 @@
       {
         "id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin-technology",
-        "label": "Digital Twin Technology"
       }
     ],
     "uses": [
@@ -724,6 +732,14 @@
         "label": "Actuator"
       },
       {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:interrupt-controller",
+        "label": "Interrupt Controller"
+      },
+      {
         "id": "urn:ngm:class:microcontroller",
         "label": "Microcontroller"
       },
@@ -734,14 +750,6 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
-      },
-      {
-        "id": "urn:ngm:class:neural-rendering",
-        "label": "Neural Rendering"
-      },
-      {
-        "id": "urn:ngm:class:kubernetes",
-        "label": "Kubernetes"
       }
     ],
     "supports": [
@@ -780,8 +788,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -844,6 +852,10 @@
         "label": "Kinematics"
       },
       {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
         "id": "urn:ngm:class:firmware",
         "label": "Firmware"
       },
@@ -852,16 +864,12 @@
         "label": "FPGA"
       },
       {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      },
+      {
         "id": "urn:ngm:class:microcontroller",
         "label": "Microcontroller"
-      },
-      {
-        "id": "urn:ngm:class:real-time",
-        "label": "Real-Time System"
-      },
-      {
-        "id": "urn:ngm:class:system-on-chip",
-        "label": "System-on-Chip"
       }
     ]
   },
@@ -1115,7 +1123,7 @@
       "label": "URDF"
     },
     {
-      "slug": "usd",
+      "slug": "universal-scene-description",
       "label": "USD"
     },
     {

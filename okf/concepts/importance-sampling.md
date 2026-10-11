@@ -19,7 +19,7 @@ contrastsWith:
   - urn:ngm:class:rejection-sampling
 bridgesTo:
   - urn:ngm:class:path-tracing
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 uses:
   - urn:ngm:class:sampling
   - urn:ngm:class:probabilistic-model

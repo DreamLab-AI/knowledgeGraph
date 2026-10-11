@@ -145,16 +145,12 @@
         "label": "Blockchain Provenance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralised Finance"
-      },
-      {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:non-fungible-token",
@@ -171,6 +167,10 @@
       {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
       }
     ],
     "dependsOn": [
@@ -283,8 +283,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:consensus-mechanism",
@@ -359,8 +359,8 @@
         "label": "ISO TC 307"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -393,8 +393,8 @@
         "label": "Workspace Tools"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:cross-chain-interoperability",

@@ -8,9 +8,9 @@ description: DeFi infrastructure is the layer of foundational protocols and serv
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # DeFi Infrastructure

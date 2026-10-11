@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:infra-computing-and-cloud
 hasPart:
   - urn:ngm:class:5-g-network
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:edge-computing
   - urn:ngm:class:hardware-abstraction-layer-hal

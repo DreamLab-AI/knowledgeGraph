@@ -9,7 +9,7 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
   - urn:ngm:class:smart-contract
   - urn:ngm:class:decentralised-web
@@ -39,14 +39,14 @@ requires:
 enables:
   - urn:ngm:class:cross-chain-governance
   - urn:ngm:class:parameter-governance
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:dao-analytics
   - urn:ngm:class:delegate-democracy
   - urn:ngm:class:reputation-system
   - urn:ngm:class:treasury-management
   - urn:ngm:class:anti-collusion-voting
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
   - urn:ngm:class:cryptography-security-and-privacy
   - urn:ngm:class:distributed-identity
@@ -88,9 +88,9 @@ uses:
   - urn:ngm:class:prediction-markets
   - urn:ngm:class:zk-snark
 supports:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:compliance-monitoring
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:privacy-preserving-blockchain
@@ -109,7 +109,7 @@ relatedTo:
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:conviction-voting
   - urn:ngm:class:dao-analytics
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:governance-token
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:privacy-preserving-blockchain

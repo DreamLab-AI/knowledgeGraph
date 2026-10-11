@@ -8,12 +8,16 @@
   "definition": "A Foundation Model is a large-scale machine learning model trained on broad, diverse datasets using self-supervised or semi-supervised objectives, producing a general-purpose parametric representation that can be adapted to a wide range of downstream tasks through fine-tuning, prompting, or retrieval augmentation without retraining from scratch. Introduced as a conceptual category by the Stanford HAI Centre for Research on Foundation Models in 2021, the term emphasises the homogenising role such models play across AI research and application domains: a single pre-trained artefact serves as the foundation for specialised systems in natural language processing, computer vision, speech, multimodal reasoning, scientific discovery, and robotics. Foundation models are characterised by emergent capabilities that arise from scale \u2014 properties not present in smaller models that appear as parameter count and training-data volume increase \u2014 and by their fundamentally transferable representations, which dramatically lower the cost of building capable task-specific systems. The category encompasses large language models, vision-language models, diffusion models, and cross-modal architectures such as GPT-4, BERT, DALL-E, Stable Diffusion, and Segment Anything.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-model",
+      "id": "urn:ngm:class:machine-learning-discipline-model",
       "label": "Machine Learning Model"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model"
     }
   ],
   "entityType": "Class",
@@ -26,8 +30,8 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -50,6 +54,10 @@
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:common-crawl",
+        "label": "Common Crawl"
       }
     ],
     "enables": [
@@ -72,6 +80,26 @@
       {
         "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
       }
     ],
     "dependsOn": [
@@ -115,7 +143,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       },
       {
@@ -125,6 +153,18 @@
       {
         "id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
       }
     ],
     "supports": [
@@ -145,16 +185,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       },
       {
         "id": "urn:ngm:class:benchmark-evaluation",
@@ -163,19 +203,42 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -186,15 +249,18 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
       {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
@@ -208,27 +274,31 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
       {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
@@ -242,95 +312,99 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:dataset-curation",
-        "label": "Dataset Curation"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
-      },
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
+        "id": "urn:ngm:class:intelligent-metaverse-systems",
+        "label": "Intelligent Metaverse Systems"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Automation"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:personalisation",
-        "label": "Personalisation"
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:predictive-analytics",
-        "label": "Predictive Analytics"
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:feature-selection",
-        "label": "Feature Selection"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       },
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
       },
       {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       },
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
-      }
-    ],
-    "implements": [
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
       {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
@@ -346,25 +420,13 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:continual-learning",
-        "label": "Continual Learning"
-      },
-      {
-        "id": "urn:ngm:class:data-driven-learning",
-        "label": "Data-Driven Learning"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
@@ -376,12 +438,20 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:robotics",
@@ -402,110 +472,132 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
       },
-      {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:hypothesis-testing",
-        "label": "Hypothesis Testing"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-policy",
-        "label": "AI Policy"
-      },
-      {
-        "id": "urn:ngm:class:ai-research",
-        "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
-      },
-      {
-        "id": "urn:ngm:class:alignment-research",
-        "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
-      }
-    ],
-    "relatedTo": [
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-technique",
-        "label": "AI Technique"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },

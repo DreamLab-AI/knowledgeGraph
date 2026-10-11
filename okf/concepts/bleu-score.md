@@ -16,11 +16,11 @@ hasPart:
   - urn:ngm:class:brevity-penalty
   - urn:ngm:class:modified-precision
   - urn:ngm:class:geometric-mean
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 requires:
   - urn:ngm:class:reference-translation
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:parallel-corpus
   - urn:ngm:class:test-dataset
 enables:
@@ -31,7 +31,7 @@ enables:
   - urn:ngm:class:reproducible-research
 dependsOn:
   - urn:ngm:class:reference-translation
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:corpus
 implements:
   - urn:ngm:class:evaluation-metric
@@ -46,7 +46,7 @@ contrastsWith:
   - urn:ngm:class:meteor
   - urn:ngm:class:rouge
 bridgesTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:evaluation-harness
   - urn:ngm:class:benchmark-dataset
 uses:
@@ -54,7 +54,7 @@ uses:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:n-gram-overlap
   - urn:ngm:class:geometric-mean
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:reference-translation
 supports:
   - urn:ngm:class:machine-translation

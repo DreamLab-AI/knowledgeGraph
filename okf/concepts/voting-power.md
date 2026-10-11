@@ -17,7 +17,7 @@ relatedTo:
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:snapshot-governance
   - urn:ngm:class:quorum
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Voting Power

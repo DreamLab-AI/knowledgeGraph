@@ -22,7 +22,7 @@ enables:
 dependsOn:
   - urn:ngm:class:technology-transfer
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:knowledge-transfer
   - urn:ngm:class:artificial-intelligence

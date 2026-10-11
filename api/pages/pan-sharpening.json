@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pan-sharpening",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Pan-sharpening is the fusion of a higher-resolution panchromatic image with a lower-resolution multiband image to produce a multiband image at the panchromatic resolution.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

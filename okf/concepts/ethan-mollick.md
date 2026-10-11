@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:one-useful-thing-newsletter
   - urn:ngm:class:wharton-generative-ai-lab
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
   - urn:ngm:class:empirical-research-methods
   - urn:ngm:class:field-experimentation
@@ -32,7 +32,7 @@ dependsOn:
   - urn:ngm:class:wharton-school
   - urn:ngm:class:university-of-pennsylvania
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:co-intelligence-framework
   - urn:ngm:class:empirical-ai-research
@@ -47,7 +47,7 @@ bridgesTo:
   - urn:ngm:class:behavioural-economics
 uses:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:field-experiments
   - urn:ngm:class:randomised-controlled-trials

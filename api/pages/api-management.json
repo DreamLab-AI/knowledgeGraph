@@ -40,7 +40,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "TLS/SSL"
       }
     ],
@@ -74,8 +74,8 @@
         "label": "Zero-Trust Security"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       }
     ],
     "contrastsWith": [
@@ -184,8 +184,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

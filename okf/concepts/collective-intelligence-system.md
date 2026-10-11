@@ -39,7 +39,7 @@ enables:
   - urn:ngm:class:federated-learning
 dependsOn:
   - urn:ngm:class:distributed-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:game-theory
   - urn:ngm:class:complex-systems

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Astronomy is the observational study of the universe and the objects in it, including their positions, motions and brightness.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-science",

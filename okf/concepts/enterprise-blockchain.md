@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:data-sharing
   - urn:ngm:class:audit-trail
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:peer-to-peer-network
 implements:
   - urn:ngm:class:hyperledger-fabric
@@ -33,7 +33,7 @@ contrastsWith:
   - urn:ngm:class:centralised-database
 bridgesTo:
   - urn:ngm:class:supply-chain-management
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:merkle-tree

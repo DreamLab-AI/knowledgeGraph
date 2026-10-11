@@ -27,7 +27,7 @@ contrastsWith:
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:monetary-sovereignty
   - urn:ngm:class:economic-layer
 ---

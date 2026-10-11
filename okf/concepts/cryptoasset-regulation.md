@@ -10,9 +10,9 @@ quality: 0.62
 is-a:
   - urn:ngm:class:regulation
 requires:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:know-your-customer
 implements:
   - urn:ngm:class:markets-in-crypto-assets
   - urn:ngm:class:travel-rule

@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:technical-standard
 requires:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 ---
 
 # W3C Linked Data Platform

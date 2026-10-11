@@ -191,7 +191,7 @@ Image Generation is the synthesis of realistic or stylised images using generati
 
 ## Image, Video and 3D
 
-- [[Stable Diffusion Image Model]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
 
 ### Text-to-Image Generation
 
@@ -333,9 +333,9 @@ Image Generation is the synthesis of realistic or stylised images using generati
   - [https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent](https://www.reddit.com/r/StableDiffusion/comments/1148x38/tencent_ai_just_release_their_method_and_code/%7D%7BTencent)
   - [https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced](https://www.reddit.com/r/StableDiffusion/comments/114dxgl/advanced_advice_for_model_training_finetuning_and/%7D%7BAdvanced)
   - [https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/%22)
-  - [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion Image Model]]
-  - [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion Image Model]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
-  - [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion Image Model]] [[Stable Video Diffusion]]
+  - [Stable Assistant — Stability AI](https://stability.ai/stable-assistant) [[Stable Diffusion]]
+  - [[ControlNet and Similar Spatial Conditioning Systems]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
+  - [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
   - (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
 # Vision Mamba
@@ -404,7 +404,7 @@ Image Generation is the synthesis of realistic or stylised images using generati
 - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
 - [x] Fix the [[Ollama]] directory issue.
 - [[Node-Based Diffusion Pipeline Interface]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
-- [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Meta Llama Model Family]] [[Ollama]] [[Function Calling]] [[Python PyTorch Deep Learning Stack]] [[Agents]]
+- [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Meta Llama Model Family]] [[Ollama]] [[Function Calling]] [[PyTorch]] [[Agents]]
 
 ## Identity
 
@@ -507,7 +507,7 @@ Image Generation is the synthesis of realistic or stylised images using generati
 ### Multi-Modal Large Language Models (LLMs)
 
 - **Introduction:**
-  - [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+  - [[Large Language Model]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
   - Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
 - **Core Concepts:**
   - **LLMs for Text:**
@@ -544,7 +544,7 @@ D -->|Next Token Prediction| F[Generated Sequence]
 F -->|Decoded| G[Output Image & Text]
 
 - Some random links
-- Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+- Apple Ferret is a [[Multimodal]] [[Large Language Model]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
 - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
 - [moondream
   - a tiny vision language model](https://moondream.ai/)

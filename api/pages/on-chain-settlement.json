@@ -29,8 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:tokenization",
@@ -137,7 +137,7 @@
         "label": "Settlement Finality"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -209,12 +209,12 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:virtual-economy-market-framing",
         "label": "Virtual Economy Market Framing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "dependsOn": [
@@ -281,7 +281,7 @@
         "label": "Central Securities Depository"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -325,7 +325,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -403,10 +403,6 @@
         "label": "Correspondent Banking"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
       },
@@ -417,6 +413,10 @@
       {
         "id": "urn:ngm:class:economic-layer",
         "label": "Economic Layer"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
       }
     ]
   },

@@ -25,7 +25,7 @@ enables:
 implements:
   - urn:ngm:class:gs1-epcis
   - urn:ngm:class:gs-1-standards
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
   - urn:ngm:class:gs1-epcis
 contrastsWith:
   - urn:ngm:class:centralised-database

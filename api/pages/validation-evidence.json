@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validation-evidence",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Validation evidence is the documented outcome of comparing a satellite-derived product with reference data, used to state how well the product performs.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

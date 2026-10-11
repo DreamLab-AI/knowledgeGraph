@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reference-measurement",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A reference measurement is an independent measurement of a quantity, traceable to a recognised standard where possible, that is used as the basis for calibrating or validating a satellite observation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

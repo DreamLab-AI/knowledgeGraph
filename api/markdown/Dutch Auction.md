@@ -1,7 +1,7 @@
 A Dutch auction is a descending-price auction mechanism in which the offered price starts high and falls over time until a bidder accepts, with the first acceptance determining the clearing price. In blockchain and token markets it is implemented in smart contracts to distribute tokens or NFTs, set initial offering prices, and liquidate collateral, with the falling-price schedule encoded on-chain. Variants include single-item and multi-unit uniform-price formats used for fairer price discovery.
 
 - A [[Dutch Auction]] is a descending-price [[Auction Mechanism]]: the price starts high and falls until a bidder accepts, fixing the clearing price. On-chain it is realised in a [[Smart Contract]] that encodes the falling-price schedule.
-- It is widely used for token distribution, [[NFT Marketplace]] sales and collateral liquidation in [[Decentralized Finance]].
+- It is widely used for token distribution, [[NFT Marketplace]] sales and collateral liquidation in [[Decentralised Finance]].
 
 ### Overview
 

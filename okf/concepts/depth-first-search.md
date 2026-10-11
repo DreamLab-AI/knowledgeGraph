@@ -49,7 +49,6 @@ contrastsWith:
   - urn:ngm:class:breadth-first-search
   - urn:ngm:class:a-star-algorithm
   - urn:ngm:class:dijkstra-algorithm
-  - urn:ngm:class:search-algorithm
   - urn:ngm:class:uniform-cost-search
 uses:
   - urn:ngm:class:graph-theory

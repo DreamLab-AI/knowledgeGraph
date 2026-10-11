@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:wi-fi
   - urn:ngm:class:bluetooth
   - urn:ngm:class:5-g
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
 requires:
   - urn:ngm:class:communication-protocol
   - urn:ngm:class:radio-frequency-spectrum

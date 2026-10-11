@@ -48,11 +48,11 @@ enables:
 dependsOn:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:signal-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:6-lo-wpan
   - urn:ngm:class:ble-mesh
@@ -77,7 +77,7 @@ uses:
   - urn:ngm:class:co-ap
   - urn:ngm:class:dtls
   - urn:ngm:class:mqtt
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:x-509-certificate
   - urn:ngm:class:tiny-ml
   - urn:ngm:class:x-509-certificates
@@ -105,7 +105,7 @@ standardizedBy:
   - urn:ngm:class:wireless-hart
 relatedTo:
   - urn:ngm:class:5-g-network
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:fog-computing
   - urn:ngm:class:industrial-io-t
   - urn:ngm:class:internet-of-things

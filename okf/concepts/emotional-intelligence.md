@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:emotional-analytics-engine
 requires:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:empathetic-ai
   - urn:ngm:class:emotional-immersion

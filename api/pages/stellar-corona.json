@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-corona",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Stellar corona is the outermost layer of a star's atmosphere, a region of hot plasma lying above the lower atmospheric layers.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-atmosphere",

@@ -69,8 +69,8 @@ uses:
   - urn:ngm:class:microsoft-copilot
   - urn:ngm:class:computer-vision
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:microsoft-copilot
@@ -83,11 +83,11 @@ supports:
   - urn:ngm:class:knowledge-graph-publication-classifier
 standardizedBy:
   - urn:ngm:class:iso-iec-42001-ai-management-system
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:uk-ai-opportunities-action-plan
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:us-ai-action-plan-2025
 relatedTo:
   - urn:ngm:class:ai-investment

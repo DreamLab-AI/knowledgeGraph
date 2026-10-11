@@ -14,15 +14,15 @@ requires:
   - urn:ngm:class:human-oversight
 enables:
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-policy
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 implements:
   - urn:ngm:class:european-ai-strategy
 contrastsWith:
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:digital-ethics
   - urn:ngm:class:fundamental-rights

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cloud-shadow-mask",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A cloud shadow mask is a per-pixel layer that records which observations have been assessed as lying in the shadow cast by cloud.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -8,7 +8,7 @@ description: Inductive bias is the set of assumptions a learning algorithm uses 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-research-area
 requires:
   - urn:ngm:class:hypothesis-space
@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:bias-variance-tradeoff
   - urn:ngm:class:generalisation

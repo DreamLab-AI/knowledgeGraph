@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:service-layer
 enables:
   - urn:ngm:class:interoperability
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
 implements:
   - urn:ngm:class:service-layer
 uses:
@@ -22,7 +22,7 @@ uses:
   - urn:ngm:class:mqtt
 supports:
   - urn:ngm:class:smart-city
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
 standardizedBy:
   - urn:ngm:class:etsi
 partOf:

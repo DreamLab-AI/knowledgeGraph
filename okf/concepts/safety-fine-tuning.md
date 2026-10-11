@@ -20,7 +20,7 @@ dependsOn:
   - urn:ngm:class:human-feedback
   - urn:ngm:class:reward-model
 implements:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:supervised-fine-tuning
   - urn:ngm:class:direct-preference-optimisation
 contrastsWith:

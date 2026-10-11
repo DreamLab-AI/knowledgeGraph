@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-navigation-and-planning
 relatedTo:
   - urn:ngm:class:gps
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 ---
 
 # Global Localisation

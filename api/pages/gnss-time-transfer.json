@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-time-transfer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS time transfer is the use of GNSS satellite signals to synchronise a local clock or to compare clocks at separate sites.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

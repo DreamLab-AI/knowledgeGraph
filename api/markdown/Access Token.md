@@ -1,6 +1,6 @@
 An access token is a credential that a client presents to a resource server to access protected resources within a granted scope and lifetime. Typically short-lived and often a bearer token, it carries or references the authorisation decision so the resource server need not re-check with the authorisation server on every request. Access tokens are the workhorse credential of OAuth 2.0 and API authorisation.
 
-- An [[Access Token]] is a scoped, short-lived [[Token]] presented to a resource server to access an [[API]]; it implements [[Authorization]] in [[OAuth 2.0]], often as a [[Bearer Token]].
+- An [[Access Token]] is a scoped, short-lived [[Token]] presented to a resource server to access an [[API]]; it implements [[Authorisation]] in [[OAuth 2.0]], often as a [[Bearer Token]].
 
 ### Overview
 

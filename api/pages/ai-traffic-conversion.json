@@ -122,15 +122,15 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:memory",
@@ -167,7 +167,7 @@
         "label": "Scientific Discovery"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -329,8 +329,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -369,7 +369,7 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

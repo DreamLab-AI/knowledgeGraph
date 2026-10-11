@@ -30,7 +30,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:chaos-theory
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-mechanics
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:time-series-analysis

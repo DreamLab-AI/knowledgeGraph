@@ -61,7 +61,7 @@ contrastsWith:
   - urn:ngm:class:end-to-end-neural-network
 uses:
   - urn:ngm:class:bayesian-inference
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:production-system
   - urn:ngm:class:semantic-network
   - urn:ngm:class:spreading-activation
@@ -81,7 +81,7 @@ standardizedBy:
   - urn:ngm:class:cognitive-science-society
   - urn:ngm:class:soar
 relatedTo:
-  - urn:ngm:class:common-sense-reasoning
+  - urn:ngm:class:commonsense-reasoning
   - urn:ngm:class:embodied-ai
   - urn:ngm:class:global-workspace-theory
   - urn:ngm:class:predictive-processing

@@ -1,7 +1,7 @@
 A sequencer is a component in a blockchain rollup or layer-2 system that receives user transactions, orders them into a canonical sequence, and produces blocks or batches for execution and settlement. By fixing transaction order off-chain before posting to the base layer, the sequencer enables fast confirmations and low fees. Sequencer design directly governs liveness, fairness, and the centralisation risk of a rollup.
 
 - A sequencer orders user transactions into a canonical sequence and batches them for a [[Rollup]], enabling fast confirmations before settling to [[Ethereum]].
-- It is a defining component of [[Layer 2 Scaling]] and a major determinant of a rollup's liveness, fairness and [[Decentralization]].
+- It is a defining component of [[Layer 2 Scaling]] and a major determinant of a rollup's liveness, fairness and [[Decentralisation]].
 
 ### Overview
 
@@ -21,7 +21,7 @@ A sequencer is a component in a blockchain rollup or layer-2 system that receive
 
 - The sequencer executes transactions against rollup state and emits ordered blocks that feed [[Optimistic Rollup]] settlement.
 - Batches are committed to the base layer, where a [[Fraud Proof]] window allows challenges to invalid state transitions.
-- Decentralised and shared-sequencer schemes rotate ordering authority to reduce reliance on a single operator and improve [[Decentralization]].
+- Decentralised and shared-sequencer schemes rotate ordering authority to reduce reliance on a single operator and improve [[Decentralisation]].
 
 ### Applications
 

@@ -17,7 +17,7 @@ Privacy-preserving identity refers to identity management architectures and prot
 - **[[zk-SNARK]] / zk-STARK circuits** — succinct non-interactive proofs enabling arbitrary predicate proofs (range proofs, set membership, hashing constraints) over credential fields, used in high-assurance or on-chain verification contexts.
 - **[[Cryptographic Commitment]]** — allows a prover to commit to a value without revealing it; used in CL signatures and Pedersen-commitment-based credential schemes to bind credential attributes to the holder without linkable identifiers.
 - **[[Trusted Execution Environment]] (TEE)** — hardware-backed secure enclaves (Intel SGX, ARM TrustZone, Apple Secure Enclave) that hold credential key material and perform signing operations in isolation, providing a tamper-resistant trust anchor for [[Digital Identity Wallet]] applications.
-- **[[Decentralized Identifiers]] (DIDs)** — W3C-standardised self-controlled identifiers whose DID documents are resolvable from [[Blockchain]] ledgers or peer-to-peer registries, removing reliance on central certificate authorities.
+- **[[Decentralised Identifier]] (DIDs)** — W3C-standardised self-controlled identifiers whose DID documents are resolvable from [[Blockchain]] ledgers or peer-to-peer registries, removing reliance on central certificate authorities.
 
 ### Credential Formats & Protocols
 

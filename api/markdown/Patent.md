@@ -16,7 +16,7 @@ A time-limited exclusive right granted by a sovereign authority to an inventor f
 - [[Artificial Intelligence]] patents growing 25-30% annually
 - China dominates with **70% of global AI patents**
 - [[United States]] leads in granted AI patents with strategic focus on market-ready innovations
-- Key areas: [[Machine Learning Discipline]], [[Deep Learning]], [[Neural Networks]], [[Natural Language Processing]], [[Computer Vision]]
+- Key areas: [[Machine Learning]], [[Deep Learning]], [[Neural Networks]], [[Natural Language Processing]], [[Computer Vision]]
 - Emerging focus: [[Federated Learning]], [[Unsupervised Learning]], [[Reinforcement Learning]] [Updated 2025]
 - Blockchain patent market: **$228M (2020) → $703M (2025)**, CAGR 25.3%
 - [[Blockchain Technology]] broader adoption: $3B (2020) → $39.7B projected (2025)
@@ -121,7 +121,7 @@ A time-limited exclusive right granted by a sovereign authority to an inventor f
     **Towards Task-Generic Image Compression: A Study of Semantics-Oriented Metrics** (Gao et al., 2023-2024)
   - Score: 8.5/10
   - [[Patent Priority]]: Foundational patent filed 2024 [Updated 2025]
-  - Introduces task-generic [[image compression]] using [[end-to-end learning]], focusing on [[semantic compression]] metrics in [[Neural Network Latent Space]].
+  - Introduces task-generic [[image compression]] using [[end-to-end learning]], focusing on [[semantic compression]] metrics in [[Latent Space]].
   - Patent Coverage: [[AI Patents]], [[Computer Vision Patents]], [[Semantic Communication Patents]]
   - [(Gao et al., 2023)](https://consensus.app/papers/towards-taskgeneric-image-compression-study-gao/99b6d01831c955d0bd886c0c47edb06b/?utm_source=chatgpt)
     **Hyperspectral Image Compression Using Implicit Neural Representation** (Rezasoltani & Qureshi, 2023-2024)
@@ -151,7 +151,7 @@ A time-limited exclusive right granted by a sovereign authority to an inventor f
 - **Raw Image Reconstruction with Learned Compact Metadata** (Wang et al., 2023-2024)
   - Score: 6/10
   - [[Patent Status]]: [[Design Patent]] filed 2024 [Updated 2025]
-  - Novel framework for [[raw image]] compression with [[learned metadata]] in [[Neural Network Latent Space]].
+  - Novel framework for [[raw image]] compression with [[learned metadata]] in [[Latent Space]].
   - Technology Transfer: [[Patent Monetization]], [[Licensing Deal]] potential
   - [(Wang et al., 2023)](https://consensus.app/papers/image-reconstruction-learned-compact-metadata-wang/f8b86fd89dda589d85f1702466e2d930/?utm_source=chatgpt)
 - **Quantum Approach to Image Data Encoding and Compression** (Majji et al., 2023-2024)

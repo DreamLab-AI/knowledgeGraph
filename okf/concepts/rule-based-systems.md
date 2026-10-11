@@ -27,7 +27,7 @@ implements:
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:production-system-model
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:neural-network
   - urn:ngm:class:case-based-reasoning

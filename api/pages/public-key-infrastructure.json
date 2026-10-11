@@ -62,7 +62,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -121,11 +121,11 @@
         "label": "Blockchain Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -223,10 +223,6 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
@@ -249,6 +245,10 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
@@ -269,10 +269,6 @@
         "label": "Encryption Scheme"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
@@ -283,6 +279,10 @@
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       }
     ],
     "enables": [
@@ -329,10 +329,6 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
       },
@@ -361,10 +357,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
       }
     ],
     "contrastsWith": [
@@ -411,7 +403,7 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -419,7 +411,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -447,11 +439,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -477,6 +465,10 @@
       {
         "id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
       }
     ],
     "standardizedBy": [
@@ -709,12 +701,8 @@
       "label": "Trust Framework"
     },
     {
-      "slug": "verifiable-credential-vc",
-      "label": "Verifiable Credential (VC)"
-    },
-    {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "virtual-notary-service",
@@ -725,8 +713,8 @@
       "label": "X.509 Certificate"
     },
     {
-      "slug": "e-idas",
-      "label": "eIDAS"
+      "slug": "eidas-regulation",
+      "label": "eIDAS Regulation"
     }
   ]
 }

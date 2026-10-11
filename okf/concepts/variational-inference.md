@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:graphical-model
   - urn:ngm:class:graphical-model
 enables:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:generative-model
   - urn:ngm:class:probabilistic-programming
   - urn:ngm:class:latent-diffusion

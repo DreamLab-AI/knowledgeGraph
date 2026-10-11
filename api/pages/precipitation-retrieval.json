@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:precipitation-retrieval",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Precipitation retrieval is the process of transforming radar reflectivities and passive brightness temperatures measured from space into estimates of precipitation.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

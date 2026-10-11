@@ -32,10 +32,10 @@ requires:
 enables:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:uncertainty-quantification
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:monte-carlo-localization
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:particle-filter
+  - urn:ngm:class:stable-diffusion
 dependsOn:
   - urn:ngm:class:information-theory
   - urn:ngm:class:measure-theory
@@ -68,8 +68,8 @@ supports:
   - urn:ngm:class:node-based-diffusion-pipeline-interface
   - urn:ngm:class:node-based-diffusion-pipeline-interface-workflows
   - urn:ngm:class:diffusion-models
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:particle-filter
 standardizedBy:
   - urn:ngm:class:hugging-face-diffusers
   - urn:ngm:class:py-mc
@@ -82,11 +82,11 @@ relatedTo:
   - urn:ngm:class:attention
   - urn:ngm:class:checkpoints
   - urn:ngm:class:node-based-diffusion-pipeline-interface
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:model-optimisation-and-performance
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:reasoning
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:training-data
   - urn:ngm:class:transformers
 ---

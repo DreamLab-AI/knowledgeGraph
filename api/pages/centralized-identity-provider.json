@@ -34,8 +34,8 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "uses": [],
@@ -238,10 +238,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
@@ -258,6 +254,10 @@
         "label": "Network Security"
       },
       {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
@@ -272,7 +272,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Delegated Authorization"
       },
       {
@@ -322,16 +322,16 @@
         "label": "JSON Web Token"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-logging",
@@ -398,7 +398,7 @@
         "label": "Passwordless Authentication"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -530,8 +530,8 @@
         "label": "OpenID Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ansi-incits-359",
@@ -619,12 +619,8 @@
   ],
   "backlinks": [
     {
-      "slug": "decentralized-identifier",
-      "label": "Decentralized Identifier"
-    },
-    {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "digital-identity-wallet",

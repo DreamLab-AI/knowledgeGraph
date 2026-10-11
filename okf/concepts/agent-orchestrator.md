@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:planning-and-scheduling
 requires:
   - urn:ngm:class:agent-runtime
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-memory
   - urn:ngm:class:capability-advertisement
 enables:

@@ -33,7 +33,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:embeddings
   - urn:ngm:class:vector-database
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
   - urn:ngm:class:nearest-neighbor-search
 supports:

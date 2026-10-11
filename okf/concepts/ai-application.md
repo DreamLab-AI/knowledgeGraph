@@ -19,12 +19,12 @@ hasPart:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:autonomous-driving
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:ai-safety
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # AI Application

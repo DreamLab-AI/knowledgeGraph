@@ -73,7 +73,7 @@ Asset portability is the technical and standards-based capability to transfer, i
 - **[[Alliance for OpenUSD]] (AOUSD)** — industry alliance (Pixar/Apple/NVIDIA/Adobe/Autodesk) stewarding OpenUSD specification, conformance, and educational resources since 2023.
 - **[[Metaverse Standards Forum]]** — W3C-adjacent forum coordinating portability standards across avatar, scene, identity, and payment domains; liaison relationships with ISO, IEEE, and W3C.
 - **[[Open Metaverse Interoperability Group]] (OMI)** — open-source consortium producing glTF extensions for avatars, social features, and portals; publishes work-in-progress specs on GitHub.
-- **[[W3C]] Immersive Web Working Group** — owns the WebXR Device API and related immersive-web specifications that form the browser-side portability runtime layer.
+- **[[World Wide Web Consortium]] Immersive Web Working Group** — owns the WebXR Device API and related immersive-web specifications that form the browser-side portability runtime layer.
 - **[[GDPR]] and data-portability regulations** — in the European Union, [[Data Portability]] rights (Article 20 GDPR) apply to user-generated content platforms; their applicability to in-game assets and avatar data is an active regulatory question.
 - **[[ISO/IEC JTC 1/SC 24]]** — the ISO subcommittee for computer graphics, image processing, and environmental data representation; published relevant standards including ISO 32000 (PDF) as a portability precedent.
 

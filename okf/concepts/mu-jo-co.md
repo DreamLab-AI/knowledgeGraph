@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:gazebo-simulator
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:reinforcement-learning-algorithm
   - urn:ngm:class:proximal-policy-optimisation

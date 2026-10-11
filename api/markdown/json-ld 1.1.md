@@ -15,7 +15,7 @@ JSON-LD 1.1 is a W3C Recommendation (published July 2020) that extends JSON-LD 1
 
 - **Context (`@context`)** — maps short human-readable terms to globally unique [[IRI]]s; can be an inline object, a URL reference to a remote context document, or an array combining both.
 - **Scoped Contexts** — a major 1.1 addition; contexts can be scoped to a specific `@type` (type-scoped) or to the values of a specific property (property-scoped), avoiding pollution of the global term map.
-- **`@protected` keyword** — prevents terms defined in a context from being redefined by embedded or remote contexts, improving security and predictability in multi-party documents such as [[Verifiable Credentials]].
+- **`@protected` keyword** — prevents terms defined in a context from being redefined by embedded or remote contexts, improving security and predictability in multi-party documents such as [[Verifiable Credential]].
 - **Propagation control** — the `@propagate: false` flag on a scoped context limits its effect to the node in which it is declared, preventing unintended bleeding into sibling or parent nodes.
 - **`@version` declaration** — asserting `"@version": 1.1` in a context signals to processors that 1.1 rules must be applied, enabling safe co-existence with 1.0 documents.
 - **Compaction algorithm** — takes an expanded [[RDF]] representation and applies a context to produce a compact, human-readable JSON document with short term names.
@@ -36,12 +36,12 @@ JSON-LD 1.1 is a W3C Recommendation (published July 2020) that extends JSON-LD 1
 
 ### Applications and Use Cases
 
-- **Verifiable Credentials** — the [[Verifiable Credentials Data Model]] (W3C Recommendation) mandates JSON-LD 1.1 as one of its two serialisation formats, with contexts defining credential types and proof mechanisms for [[Decentralised Identifiers]] (DIDs).
+- **Verifiable Credentials** — the [[Verifiable Credentials Data Model]] (W3C Recommendation) mandates JSON-LD 1.1 as one of its two serialisation formats, with contexts defining credential types and proof mechanisms for [[Decentralised Identifier]] (DIDs).
 - **ActivityPub / Fediverse** — [[ActivityPub]] uses [[Activity Streams 2.0]], itself defined as a JSON-LD 1.1 vocabulary; every Mastodon post, Like, and Follow is a JSON-LD document.
 - **Solid ecosystem** — the [[Solid Protocol]] uses JSON-LD 1.1 for [[Linked Data Platform]] resources, enabling pod-based personal data stores with structured semantics.
 - **Schema.org structured data** — [[Schema.org]] vocabularies are published as JSON-LD contexts; major search engines index JSON-LD `<script>` tags in HTML pages to populate [[Knowledge Graph]]s used in rich snippets.
 - **Knowledge graph pipelines** — JSON-LD sits between REST/GraphQL JSON APIs and backend [[RDF Triple Store]]s, removing the need for custom ETL mapping code; libraries like `rdflib` and `Apache Jena` read JSON-LD natively.
-- **Decentralised Identity** — [[Decentralised Identifiers]] (DID) documents are serialised in JSON-LD 1.1, with scoped contexts enabling type-specific property resolution for each DID method.
+- **Decentralised Identity** — [[Decentralised Identifier]] (DID) documents are serialised in JSON-LD 1.1, with scoped contexts enabling type-specific property resolution for each DID method.
 - **Ontology authoring** — JSON-LD 1.1 with `@type: owl:Class` and related constructs can express lightweight [[OWL2]] assertions, as used in this knowledge graph pipeline.
 - **Healthcare data interoperability** — [[FHIR]] (HL7 Fast Healthcare Interoperability Resources) supports a JSON-LD representation aligned with its RDF profile.
 - **Cultural heritage / digital humanities** — [[CIDOC-CRM]], the standard conceptual reference model for cultural heritage documentation, is distributed with a JSON-LD context for museum data exchange.
@@ -58,7 +58,7 @@ JSON-LD 1.1 is a W3C Recommendation (published July 2020) that extends JSON-LD 1
   - [[SPARQL]] 1.1 Query Language — the standard query language for [[RDF Triple Store]]s
 - **Relationship to [[OWL2]]** — JSON-LD 1.1 documents can assert OWL2 axioms when combined with the `owl:` prefix in context; this enables lightweight ontology authoring without specialised tooling.
 - **Conformance levels** — the specification defines JSON-LD document conformance and JSON-LD processor conformance separately; a document may be conformant even if a processor does not implement optional features (e.g. remote context loading with custom document loaders).
-- **Security considerations** — remote context loading introduces a server-side request forgery (SSRF) risk; the `@protected` keyword and context caching are standard mitigations. Credential issuers in the [[Verifiable Credentials]] ecosystem are advised to host contexts at stable, cacheable URLs.
+- **Security considerations** — remote context loading introduces a server-side request forgery (SSRF) risk; the `@protected` keyword and context caching are standard mitigations. Credential issuers in the [[Verifiable Credential]] ecosystem are advised to host contexts at stable, cacheable URLs.
 - **Test suite** — the W3C maintains a public conformance test suite at `https://w3c.github.io/json-ld-api/tests/` covering all algorithms and edge cases.
 - **IANA media type** — `application/ld+json` (registered with IANA); the `profile` link relation parameter can specify the processing mode.
 

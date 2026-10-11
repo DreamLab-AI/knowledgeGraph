@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bi-elliptic-transfer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A bi-elliptic transfer moves between coplanar circular orbits through two transfer ellipses and three impulses.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

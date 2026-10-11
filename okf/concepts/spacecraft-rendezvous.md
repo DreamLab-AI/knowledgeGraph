@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Rendezvous
 resource: urn:ngm:class:spacecraft-rendezvous
 domain: space-science-and-systems
+description: Spacecraft rendezvous brings a chaser from a separated orbit to a controlled relative state from which close approach, capture or docking can begin.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Spacecraft Rendezvous
+
+Spacecraft rendezvous brings a chaser from a separated orbit to a controlled relative state from which close approach, capture or docking can begin.

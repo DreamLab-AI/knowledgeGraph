@@ -20,7 +20,7 @@ contrastsWith:
   - urn:ngm:class:market-making
 bridgesTo:
   - urn:ngm:class:mev
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:order-book
 supports:

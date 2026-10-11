@@ -385,7 +385,7 @@ Cloud-based Solutions: Platforms like [RunDiffusion](https://app.rundiffusio
 ### [Pinecone](https://www.pinecone.io/)
 
 - A vector database for AI applications.
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[Artificial Intelligence]]
 
 ## Calls for a New Social Contract
@@ -472,9 +472,9 @@ This currently borrows heavily from [the AI breakdown podcast](https://www.youtu
 
 ## See Also
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[Artificial Intelligence]]
-- [[Machine Learning Discipline]]
+- [[Machine Learning]]
 - [[Deep Learning]]
 
 ## Zuckerberg’s New Goal: Creating Artificial General Intelligence
@@ -502,7 +502,7 @@ This currently borrows heavily from [the AI breakdown podcast](https://www.youtu
 ## See Also
 
 - [[AI Video]] is a broad category encompassing techniques for generating, editing, and manipulating video content using [[artificial intelligence]] and [[deep learning]] methods
-- [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+- [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 - [[Node-Based Diffusion Pipeline Interface]] is a node-based graphical interface for Stable Diffusion that enables visual workflow [[design thinking]] and simplified [[user experience]] for creating complex AI-generated imagery
 
   # Artificial Intelligence Ontology Entry – Updated 2025

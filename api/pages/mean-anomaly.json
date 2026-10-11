@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mean-anomaly",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mean anomaly is a time-like orbital phase that advances uniformly on an ideal fixed Keplerian ellipse.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

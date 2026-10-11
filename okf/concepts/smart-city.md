@@ -34,7 +34,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:sensor-networks
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:open-data
 relatedTo:
   - urn:ngm:class:urban-infrastructure

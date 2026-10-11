@@ -12,7 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:programmatic-advertising
   - urn:ngm:class:digital-marketing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # AI Advertising

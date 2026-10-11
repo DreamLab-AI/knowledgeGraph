@@ -34,7 +34,7 @@
         "label": "Correspondent Banking"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -70,7 +70,7 @@
         "label": "Cross-Border Payment"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -120,7 +120,7 @@
         "label": "Financial Instruments"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {

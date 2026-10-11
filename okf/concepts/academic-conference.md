@@ -54,7 +54,7 @@ supports:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
   - urn:ngm:class:generative-ai
@@ -75,7 +75,7 @@ relatedTo:
   - urn:ngm:class:publication
   - urn:ngm:class:ijcai
   - urn:ngm:class:iccv
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing

@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:agentic-internet
   - urn:ngm:class:agents
   - urn:ngm:class:agent-frameworks
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:cognitive-ai
 hasPart:
   - urn:ngm:class:context-engineering
@@ -25,7 +25,7 @@ requires:
   - urn:ngm:class:data-layer
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:fault-tolerance
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 enables:
   - urn:ngm:class:call-centres
   - urn:ngm:class:chatbots
@@ -54,7 +54,7 @@ uses:
   - urn:ngm:class:attention
   - urn:ngm:class:emergence
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 supports:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:compliance-control

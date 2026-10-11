@@ -74,17 +74,17 @@ supports:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:catastrophic-risk-reduction
   - urn:ngm:class:biosecurity
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-scaling-policy
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:california-sb53
   - urn:ngm:class:iso-iec-42001
 relatedTo:
   - urn:ngm:class:california-ai-bill
   - urn:ngm:class:existential-risk
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-scaling-policy
   - urn:ngm:class:cbrn-risk
   - urn:ngm:class:biosecurity

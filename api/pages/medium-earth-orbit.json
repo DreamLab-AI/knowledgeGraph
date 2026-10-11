@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:medium-earth-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Medium Earth Orbit (MEO) is the broad region of geocentric Earth orbits between low Earth orbit and the geosynchronous altitude range, under a stated altitude convention.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

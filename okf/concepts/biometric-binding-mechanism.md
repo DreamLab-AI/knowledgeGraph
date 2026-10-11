@@ -30,7 +30,7 @@ enables:
   - urn:ngm:class:non-repudiation
 dependsOn:
   - urn:ngm:class:biometric-template-database
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:authentication-server
 partOf:
   - urn:ngm:class:zero-trust-architecture

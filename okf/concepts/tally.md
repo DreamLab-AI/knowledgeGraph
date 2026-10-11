@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:aragon
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:web3-wallet
   - urn:ngm:class:ipfs
@@ -36,7 +36,7 @@ supports:
 relatedTo:
   - urn:ngm:class:multisig-wallet
   - urn:ngm:class:timelock-controller
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Tally

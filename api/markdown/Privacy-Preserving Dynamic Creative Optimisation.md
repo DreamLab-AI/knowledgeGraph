@@ -19,8 +19,8 @@ Client-side Dynamic Creative Optimisation (DCO) is an approach where personalise
   - [[Multimodal]] Product Representation
   - Marketers create rich, multi-modal representations of their products, capturing visual appearance, textual descriptions, and other relevant attributes.
     These are [[Training and fine tuning]] using AI to generate variations catering to different user preferences and demographics.
-  - Fine-tuned product variations are stored in a cloud-based [[Neural Network Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
-  - This [[Neural Network Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
+  - Fine-tuned product variations are stored in a cloud-based [[Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
+  - This [[Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
   - Marketers distribute product variations across a cloud of [[Nostr]] servers, each variation associated with a unique Nostr event containing metadata and content.
   - The Nostr servers act as a decentralised storage and distribution network for marketing content.
   - Advertisers and brand leaders support the Nostr network by subsidising network nodes, helping maintain network infrastructure and incentivising node operators.

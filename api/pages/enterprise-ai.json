@@ -146,8 +146,8 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:ai-agents",
@@ -236,12 +236,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-42001",
@@ -274,9 +274,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management",
-      "slug": "data-management"
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
     },
     {
       "id": "urn:ngm:class:organizational-change",
@@ -284,14 +284,24 @@
       "slug": "organizational-change"
     },
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -309,8 +319,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -407,28 +417,20 @@
         "label": "Document Management"
       },
       {
-        "id": "urn:ngm:class:data-hoarding",
-        "label": "Data Hoarding"
-      },
-      {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       },
       {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -461,8 +463,8 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "uses": [
@@ -471,8 +473,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -509,16 +511,16 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       },
       {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -539,12 +541,20 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -563,8 +573,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:enterprise-architecture",

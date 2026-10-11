@@ -38,7 +38,7 @@ contrastsWith:
   - urn:ngm:class:frequentist-statistics
   - urn:ngm:class:maximum-likelihood-estimation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-deep-learning
   - urn:ngm:class:natural-language-processing
 uses:
@@ -48,7 +48,7 @@ supports:
   - urn:ngm:class:inference
   - urn:ngm:class:reasoning
   - urn:ngm:class:decision-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:probability-theory
 partOf:

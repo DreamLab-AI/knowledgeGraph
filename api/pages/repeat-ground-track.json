@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:repeat-ground-track",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A repeat ground track is an orbit geometry designed to bring the subsatellite path back over the same Earth-fixed locations after a specified cycle.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

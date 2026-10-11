@@ -3,7 +3,7 @@ Cross-chain asset transfer is the cryptographic and protocol-level process of mo
 ### Overview
 
 - Cross-chain asset transfer addresses one of the fundamental limitations of distributed ledger systems: the inability of one blockchain to natively read or verify the state of another. As the ecosystem expanded from Bitcoin to a multi-chain landscape — Ethereum, BNB Chain, Solana, Avalanche, Cosmos, Polkadot, and hundreds of others — capital became fragmented across incompatible networks. This fragmentation reduces capital efficiency, limits composability, and forces users into centralised intermediaries (exchanges) to move value between ecosystems.
-- The economic importance is substantial: cross-chain bridges routinely facilitated hundreds of billions of dollars in cumulative volume by the mid-2020s, connecting isolated liquidity pools and enabling [[DeFi]] protocols to access the total available capital across the multi-chain universe.
+- The economic importance is substantial: cross-chain bridges routinely facilitated hundreds of billions of dollars in cumulative volume by the mid-2020s, connecting isolated liquidity pools and enabling [[Decentralised Finance]] protocols to access the total available capital across the multi-chain universe.
 - The core invariant that every correct cross-chain transfer must preserve is **supply conservation**: the aggregate supply of an asset across all chains must never exceed its total issued supply on the canonical chain. Violations of this invariant — whether through bugs, exploits, or protocol failures — constitute the most severe class of cross-chain security failure.
 
 ### Key Mechanisms
@@ -53,7 +53,7 @@ Cross-chain asset transfer is the cryptographic and protocol-level process of mo
 - **DeFi Liquidity Aggregation**: [[Decentralised Exchange]] protocols such as Thorchain enable native cross-chain swaps of non-wrapped assets.
 - **Stablecoin Portability**: Circle's CCTP allows USDC to move natively between Ethereum, Avalanche, Base, and other chains by burn-and-mint, eliminating custodied synthetic representations.
 - **NFT Portability**: [[Non-Fungible Token]] transfer across chains allows provenance and ownership records to follow assets into new ecosystems.
-- **Cross-Chain Yield Farming**: [[DeFi]] strategies that deploy capital to whichever chain offers the highest yield, with automated bridge execution.
+- **Cross-Chain Yield Farming**: [[Decentralised Finance]] strategies that deploy capital to whichever chain offers the highest yield, with automated bridge execution.
 - **Layer 2 Withdrawals**: Users withdrawing assets from [[Rollup]] networks (Optimism, Arbitrum, zkSync) to Ethereum mainnet utilise specialised bridge contracts that are closely related to cross-chain transfer but operate within a trust-inheritance hierarchy.
 - **Cross-Chain Governance**: DAOs holding assets on multiple chains use cross-chain transfer to consolidate treasury or distribute grants.
 - **Interchain DeFi Composability**: [[Cosmos IBC]] enables chains in the Cosmos ecosystem to compose smart contract calls across chains atomically, with asset transfer as a primitive.
@@ -102,7 +102,7 @@ Cross-chain asset transfer is the cryptographic and protocol-level process of mo
 - [[Smart Contract]] — the execution environment for bridge logic
 - [[Zero-Knowledge Proof]] — the cryptographic foundation for trust-minimised ZK bridges
 - [[Blockchain Security]] — the security domain in which most cross-chain bridge attacks occur
-- [[DeFi]] — the primary application domain driving cross-chain transfer demand
+- [[Decentralised Finance]] — the primary application domain driving cross-chain transfer demand
 - [[Rollup]] — Layer 2 scaling technology whose withdrawal mechanism is a specialised cross-chain transfer
 - [[Decentralised Exchange]] — frequently built on cross-chain transfer primitives
 - [[Consensus Mechanism]] — the security foundation each chain's state transitions rest upon

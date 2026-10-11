@@ -34,7 +34,7 @@
         "label": "Non Maximum Suppression"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -50,7 +50,7 @@
         "label": "IoU Loss"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -144,7 +144,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -192,7 +192,7 @@
         "label": "Regression Testing"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -200,7 +200,7 @@
         "label": "Semantic Segmentation"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -380,9 +380,9 @@
       "slug": "computer-vision"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -470,8 +470,8 @@
         "label": "Semantic Segmentation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:autonomous-navigation",
@@ -520,8 +520,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -584,12 +584,16 @@
         "label": "Unsupervised Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -662,12 +666,16 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -688,13 +696,17 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
@@ -706,8 +718,12 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -749,7 +765,7 @@
   "backlinks": [
     {
       "slug": "heatmap-regression",
-      "label": "Heatmap Regression (Keypoint Localisation)"
+      "label": "Heatmap Regression"
     }
   ]
 }

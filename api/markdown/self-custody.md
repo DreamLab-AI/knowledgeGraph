@@ -25,7 +25,7 @@ Self-custody is the security model and operational practice whereby an individua
 
 #### Multi-Party and Threshold Schemes
 
-- [[Multi-Signature]] (multisig): an on-chain script mechanism requiring m signatures from a set of n public keys (m-of-n) to authorise a transaction. The keys can reside on separate hardware wallets in separate locations, eliminating single-point-of-failure without requiring trust in a single device. Bitcoin's P2SH, P2WSH, and Taproot enable native multisig.
+- [[Multisignature]] (multisig): an on-chain script mechanism requiring m signatures from a set of n public keys (m-of-n) to authorise a transaction. The keys can reside on separate hardware wallets in separate locations, eliminating single-point-of-failure without requiring trust in a single device. Bitcoin's P2SH, P2WSH, and Taproot enable native multisig.
 - [[Threshold Signature Scheme]] (TSS): a cryptographic protocol (e.g. GG18, GG20, FROST) where a signing key is distributed as n shares such that any m participants can collaboratively produce a valid signature without ever reconstructing the full key. Unlike multisig, TSS produces a single signature indistinguishable on-chain from a single-signer transaction, preserving privacy.
 - [[Social Recovery Wallet]]: a smart-contract wallet (e.g. Argent) that designates trusted guardians who can collectively initiate account recovery if the primary key is lost, without any single guardian having unilateral access. Relies on [[Smart Contract]] logic rather than raw key custody.
 - [[Shamir Secret Sharing]] (SSS): the master seed or key is split into n shards using Shamir's scheme such that any m shards can reconstruct it, but fewer than m reveal no information. Allows geographically distributed backup of a single key.

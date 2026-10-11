@@ -46,7 +46,7 @@
         "label": "Social Presence"
       },
       {
-        "id": "urn:ngm:class:non-verbal-communication",
+        "id": "urn:ngm:class:nonverbal-communication",
         "label": "Non-Verbal Communication"
       },
       {
@@ -74,7 +74,7 @@
         "label": "HAnim"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF/GLB"
       }
     ],
@@ -339,7 +339,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

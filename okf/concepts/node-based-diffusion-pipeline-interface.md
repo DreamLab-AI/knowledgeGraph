@@ -16,10 +16,10 @@ hasPart:
   - urn:ngm:class:custom-node-extension-system
 requires:
   - urn:ngm:class:deep-learning-framework
-  - urn:ngm:class:python-pytorch-deep-learning-stack
-  - urn:ngm:class:vae
   - urn:ngm:class:py-torch
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:py-torch
+  - urn:ngm:class:variational-autoencoder
 enables:
   - urn:ngm:class:image-generation
   - urn:ngm:class:video-generation
@@ -41,12 +41,12 @@ bridgesTo:
   - urn:ngm:class:node-graph-visual-programming-interface
   - urn:ngm:class:shader-graph
 uses:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora-adapter
   - urn:ngm:class:latent-diffusion
 partOf:
   - urn:ngm:class:generative-ai-toolchain

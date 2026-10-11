@@ -17,7 +17,7 @@ enables:
 relatedTo:
   - urn:ngm:class:multi-factor-authentication
   - urn:ngm:class:biometric-authentication
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 ---
 
 # Participant Authentication

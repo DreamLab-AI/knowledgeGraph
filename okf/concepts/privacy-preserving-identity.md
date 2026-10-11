@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:digital-identity
 requires:
   - urn:ngm:class:cryptographic-commitment
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:privacy-preserving-authentication
@@ -20,10 +20,10 @@ enables:
   - urn:ngm:class:age-verification
   - urn:ngm:class:self-sovereign-identity
 dependsOn:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-identity-wallet
 implements:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:sd-jwt
   - urn:ngm:class:e-idas-2-0
 contrastsWith:
@@ -36,15 +36,15 @@ uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:bbs-signatures
   - urn:ngm:class:zk-snark
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 supports:
   - urn:ngm:class:gdpr-compliance
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
 relatedTo:
   - urn:ngm:class:unlinkability

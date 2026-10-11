@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:traditional-finance
 uses:
   - urn:ngm:class:data-aggregation
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:digital-signatures
   - urn:ngm:class:zero-knowledge-proof
 relatedTo:

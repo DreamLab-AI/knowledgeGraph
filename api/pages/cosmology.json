@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cosmology",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Cosmology is the study of the origin, evolution and nature of the universe, and of how it is conceptualised.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -366,7 +366,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -525,10 +525,6 @@
     {
       "slug": "perception-system",
       "label": "Perception System"
-    },
-    {
-      "slug": "ros",
-      "label": "ROS"
     },
     {
       "slug": "robot-learning",

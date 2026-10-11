@@ -24,8 +24,8 @@
       "label": "Generative AI"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model"
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model"
     },
     {
       "id": "urn:ngm:class:diffusion-models",
@@ -58,16 +58,16 @@
         "label": "Checkpoints"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation and Performance"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:transformers",
@@ -88,16 +88,16 @@
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -148,8 +148,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -172,8 +172,8 @@
         "label": "Hardware and Edge"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       }
     ],
     "implements": [
@@ -198,8 +198,8 @@
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:lo-ra-do-ra-etc",
@@ -220,8 +220,8 @@
         "label": "Temporal Motion Diffusion Adapter"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:generative-adversarial-networks",
@@ -263,12 +263,12 @@
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:latent-diffusion-model-training",
@@ -331,8 +331,8 @@
         "label": "California AI bill"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:safety-and-alignment",
@@ -370,8 +370,8 @@
         "label": "Deepfakes and fraudulent content"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
@@ -415,11 +415,6 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:foundation-model",
-      "label": "Foundation Model",
-      "slug": "foundation-model"
-    },
-    {
       "id": "urn:ngm:class:generative-model",
       "label": "Generative Model",
       "slug": "generative-model"
@@ -430,14 +425,14 @@
       "slug": "latent-variable-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
     },
     {
       "id": "urn:ngm:class:markov-chain-model",
@@ -460,6 +455,11 @@
       "slug": "optimisation"
     },
     {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
+    },
+    {
       "id": "urn:ngm:class:score-based-model",
       "label": "Score-Based Model",
       "slug": "score-based-model"
@@ -475,9 +475,19 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     },
     {
       "id": "urn:ngm:class:probabilistic-model",
@@ -498,11 +508,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:probabilistic-inference",
@@ -613,16 +618,16 @@
         "label": "Emergent Capabilities"
       },
       {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
         "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reasoning",
@@ -741,8 +746,8 @@
         "label": "Synthetic Media"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -757,16 +762,16 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
       },
       {
-        "id": "urn:ngm:class:io-t-sensors",
-        "label": "IoT Sensors"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
     "uses": [
@@ -775,8 +780,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:checkpoints",
@@ -795,12 +800,12 @@
         "label": "Flash Attention"
       },
       {
-        "id": "urn:ngm:class:jax",
-        "label": "JAX"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
       }
     ],
     "supports": [
@@ -885,6 +890,14 @@
         "label": "Probabilistic Model"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
         "id": "urn:ngm:class:mathematical-foundations",
         "label": "Mathematical Foundations"
       },
@@ -907,8 +920,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:artificial-general-intelligence",

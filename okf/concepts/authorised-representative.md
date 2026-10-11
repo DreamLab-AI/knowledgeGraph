@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:sc-governance-and-safety
 requires:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:compliance-framework
 bridgesTo:
   - urn:ngm:class:governance

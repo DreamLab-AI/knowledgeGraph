@@ -1,1 +1,13 @@
+A single event effect is a disturbance to the normal operation of an electronic circuit caused by the passage of a single ion, either a proton or a heavy ion, through or near a sensitive node.[^1]
+
+NASA's tutorial divides these effects into destructive and non-destructive kinds. It lists latchup, burnout and gate rupture as destructive, and upsets, multiple-bit upsets, transients and functional interrupts as non-destructive.[^1] A JEDEC definition quoted in a NASA presentation describes a functional interrupt as a soft error that disturbs a component in a detectable way without needing the device to be power cycled, unlike latchup.[^2]
+
+Protons have very low linear energy transfer, so the upsets they cause are usually dominated by indirect ionisation from nuclear reactions, although low-energy protons can also cause effects by direct ionisation. In proton-dominated environments such as low Earth orbit, proton effects can be a large part of the overall rate.[^1] The same tutorial reports that the first actual satellite anomalies were reported in 1975, and treats single event effects as one of three types of radiation effect in electronics beside total ionising dose and displacement damage.[^1]
+
+Goddard's radiation group describes heavy-ion testing of electronic parts, components and small assemblies at cyclotron and synchrotron facilities. It also notes a shift towards off-the-shelf parts that are assessed or tested for radiation tolerance instead of parts radiation-hardened by design.[^3] A NASA test primer stresses that most upset testing of complex devices gives application-specific information, so a test result does not by itself give a flight error rate. The cited sources do not establish rates for particular orbits or devices.[^4]
+
+[^1]: NASA Goddard Space Flight Center (Jonathan A. Pellish), *Tutorial: Radiation Effects in Electronic Systems*, May 2017. https://ntrs.nasa.gov/api/citations/20170004674/downloads/20170004674.pdf
+[^2]: NASA Electronic Parts and Packaging Program (Kenneth A. LaBel and Melanie D. Berg), *Complex Parts, Complex Data*, GOMAC Tech, March 2015. https://ntrs.nasa.gov/api/citations/20150004129/downloads/20150004129.pdf
+[^3]: NASA Goddard Engineering and Technology Directorate, “Radiation Effects and Analysis”. https://radhome.gsfc.nasa.gov/radhome/see.htm
+[^4]: NASA Electronic Parts and Packaging Program (Edward Wyrwas), *Radiation Effects and Analysis Lessons: a Scientist’s Field Instruction to Explain Radiation Testing*, March 2022. https://ntrs.nasa.gov/api/citations/20220002512/downloads/Wyrwas-Rad-Effects-Testing-Primer_7f.pdf
 

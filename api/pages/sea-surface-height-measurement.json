@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sea-surface-height-measurement",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Sea surface height measurement is the determination of the height of the ocean surface from a satellite altimeter, which times a microwave pulse sent to the sea and back.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

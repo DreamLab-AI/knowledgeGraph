@@ -4,6 +4,7 @@ type: Class
 title: Plot
 resource: urn:ngm:class:plot
 domain: earth-observation-and-geospatial-sensing
+description: Plot is the visualisation of data values as a graphic such as a map, line plot or contour plot.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Plot
+
+Plot is the visualisation of data values as a graphic such as a map, line plot or contour plot.[^1][^2]

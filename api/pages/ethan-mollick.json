@@ -48,8 +48,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -100,8 +100,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "implements": [
@@ -152,8 +152,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:prompt-engineering",
@@ -264,8 +264,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -359,12 +359,12 @@
       "label": "Education and AI"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
-    },
-    {
       "slug": "preference-learning",
       "label": "Preference Learning"
+    },
+    {
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "prompt-tuning",

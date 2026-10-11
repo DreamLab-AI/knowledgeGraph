@@ -8,9 +8,9 @@ description: The RDF data model represents information as triples of subject, pr
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 requires:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 enables:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:linked-data

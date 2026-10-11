@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-antenna",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS antenna receives navigation signals from satellites and couples them into the receiver's radio-frequency path.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

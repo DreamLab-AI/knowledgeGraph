@@ -9,7 +9,7 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:information-retrieval
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-management
 hasPart:
   - urn:ngm:class:collaborative-systems-modality-filtering
@@ -57,7 +57,7 @@ contrastsWith:
   - urn:ngm:class:broadcast-media
   - urn:ngm:class:manual-curation
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:recommendation-systems
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:transformer-architecture

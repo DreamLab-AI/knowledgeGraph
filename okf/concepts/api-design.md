@@ -29,7 +29,7 @@ bridgesTo:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:microservices
 uses:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:http
 supports:
   - urn:ngm:class:api-gateway

@@ -64,8 +64,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transformer",
@@ -392,9 +392,9 @@
       "slug": "emergent-behavior"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models",
-      "slug": "large-language-models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model",
+      "slug": "large-language-model"
     },
     {
       "id": "urn:ngm:class:scaling-laws",
@@ -432,14 +432,19 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -467,9 +472,14 @@
       "slug": "dynamical-systems-theory"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:systems-theory",
@@ -482,9 +492,19 @@
       "slug": "applied-mathematics"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
       "id": "urn:ngm:class:mathematical-physics",
       "label": "Mathematical Physics",
       "slug": "mathematical-physics"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -492,14 +512,19 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:mathematical-science",
       "label": "Mathematical Science",
       "slug": "mathematical-science"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -521,8 +546,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -699,12 +724,12 @@
         "label": "Top-Down Design"
       },
       {
-        "id": "urn:ngm:class:diminishing-returns",
-        "label": "Diminishing Returns"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       },
       {
-        "id": "urn:ngm:class:emergent-capabilities",
-        "label": "Emergent Abilities"
+        "id": "urn:ngm:class:small-language-model",
+        "label": "Small Language Model"
       }
     ],
     "bridgesTo": [
@@ -737,8 +762,8 @@
         "label": "Autonomous Economic Agents"
       },
       {
-        "id": "urn:ngm:class:l402-payment-protocol",
-        "label": "L402 Payment Protocol"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ],
     "uses": [
@@ -751,7 +776,7 @@
         "label": "BIG-Bench"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -847,6 +872,18 @@
       {
         "id": "urn:ngm:class:complexity-science",
         "label": "Complexity Science"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "relatedTo": [

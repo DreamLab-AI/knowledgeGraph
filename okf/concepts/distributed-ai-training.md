@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:distributed-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:data-parallelism
   - urn:ngm:class:tensor-parallelism
@@ -28,7 +28,7 @@ requires:
   - urn:ngm:class:loss-function
   - urn:ngm:class:collective-communication
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:model-training

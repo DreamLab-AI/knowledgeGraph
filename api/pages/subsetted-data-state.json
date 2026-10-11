@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:subsetted-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Subsetted data state is the state of a dataset after a subset process has been applied to it, and SWEET defines it as a data state that had a subset process [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

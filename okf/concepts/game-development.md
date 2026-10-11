@@ -30,7 +30,7 @@ dependsOn:
   - urn:ngm:class:asset-pipeline
 bridgesTo:
   - urn:ngm:class:robotics-simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:procedural-content-generation

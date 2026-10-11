@@ -30,10 +30,6 @@
     {
       "id": "urn:ngm:class:global-catastrophic-risk",
       "label": "Global Catastrophic Risk"
-    },
-    {
-      "id": "urn:ngm:class:pandemic-preparedness",
-      "label": "Pandemic Preparedness"
     }
   ],
   "entityType": "Class",
@@ -232,8 +228,8 @@
         "label": "Synthetic Biology"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [
@@ -323,8 +319,8 @@
         "label": "Embodied Minds"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:ukhsa",
@@ -383,8 +379,8 @@
         "label": "Australia Group"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:ai-scrapers",
@@ -548,14 +544,14 @@
       "slug": "accountability-mechanism"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards",
       "slug": "robo-safety-and-standards"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:accountability",
@@ -701,16 +697,16 @@
         "label": "Deployment Context"
       },
       {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
         "id": "urn:ngm:class:frontier-ai-systems",
         "label": "Frontier AI Systems"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -721,8 +717,8 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       }
     ],
     "implements": [
@@ -747,16 +743,16 @@
         "label": "Tiered Capability Thresholds"
       },
       {
-        "id": "urn:ngm:class:risk-management",
-        "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "contrastsWith": [
@@ -807,10 +803,6 @@
         "label": "Cybersecurity"
       },
       {
-        "id": "urn:ngm:class:resilience",
-        "label": "Resilience"
-      },
-      {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
       },
@@ -825,6 +817,10 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
       }
     ],
     "uses": [
@@ -857,8 +853,8 @@
         "label": "Threat Intelligence"
       },
       {
-        "id": "urn:ngm:class:data-collection",
-        "label": "Data Collection"
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
       }
     ],
     "supports": [
@@ -891,8 +887,8 @@
         "label": "Standards Development"
       },
       {
-        "id": "urn:ngm:class:biosecurity",
-        "label": "Biosecurity"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
@@ -905,8 +901,8 @@
         "label": "Council of Europe AI Convention"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:iso-iec-23894",
@@ -921,8 +917,8 @@
         "label": "MIT AI Risk Repository"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",

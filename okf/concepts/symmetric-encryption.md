@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:asymmetric-encryption
   - urn:ngm:class:digital-signature
 bridgesTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:hardware-security-module
 uses:
   - urn:ngm:class:block-cipher

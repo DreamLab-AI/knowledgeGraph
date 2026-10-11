@@ -50,7 +50,7 @@ Solidity is a statically-typed, curly-brace, contract-oriented programming langu
 
 - **[[Decentralised Finance]] (DeFi)** — automated market makers (Uniswap, Curve), lending protocols (Aave, Compound), derivatives (Synthetix, dYdX), yield optimisers (Yearn Finance). Core logic encoding interest rate models, liquidity pool mathematics, and liquidation thresholds is written in Solidity.
 - **[[NFT]] Standards** — [[ERC-721]] (unique tokens) and [[ERC-1155]] (multi-token) implementations power art markets (OpenSea), gaming items, and identity credentials.
-- **[[DAO]] Governance** — on-chain voting contracts (Governor Bravo, OpenZeppelin Governor) encode proposal, voting, timelock, and execution flows for community governance of protocols.
+- **[[Decentralised Autonomous Organisation]] Governance** — on-chain voting contracts (Governor Bravo, OpenZeppelin Governor) encode proposal, voting, timelock, and execution flows for community governance of protocols.
 - **[[Token]] Issuance** — [[ERC-20]] contracts are the universal standard for fungible tokens; stablecoins (USDC, DAI), governance tokens (UNI, COMP), and wrapped assets (WETH) are all Solidity contracts.
 - **Cross-chain Bridges** — locking and minting contracts coordinate asset transfers between chains, interacting with [[Oracle]] feeds to verify cross-chain events.
 - **[[Zero-Knowledge Proof]] Verifiers** — ZK proof verifier contracts (Groth16, PLONK) are deployed as Solidity; zkSync, Polygon zkEVM, and StarkNet validity proofs are verified on Ethereum via Solidity verifier contracts.

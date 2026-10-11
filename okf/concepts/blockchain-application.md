@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:distributed-application
 hasPart:
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:blockchain-oracle
 requires:
   - urn:ngm:class:cryptocurrency-wallet
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
   - urn:ngm:class:layer-2-scaling
 supports:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:digital-identity
 partOf:
   - urn:ngm:class:web3
@@ -50,7 +50,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Blockchain Application

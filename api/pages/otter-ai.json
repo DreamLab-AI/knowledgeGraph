@@ -160,13 +160,13 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       },
       {
@@ -206,7 +206,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {

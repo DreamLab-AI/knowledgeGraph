@@ -23,7 +23,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:lo-ra-fine-tuning",
@@ -77,7 +77,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-model",
@@ -87,7 +87,7 @@
     "implements": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:model-registry",
@@ -124,7 +124,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:image-generation",
@@ -143,7 +143,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -167,7 +167,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -175,7 +175,7 @@
         "label": "SafeTensors Format"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       }
     ],
@@ -194,7 +194,7 @@
         "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -244,14 +244,9 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-operations",
-      "label": "Machine Learning Operations",
-      "slug": "machine-learning-operations"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:mlops",
@@ -305,8 +300,8 @@
         "label": "GAN"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -317,7 +312,7 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE"
       },
       {
@@ -423,8 +418,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:ai-monitoring",
@@ -483,26 +478,26 @@
         "label": "Symbolic AI"
       },
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
       },
       {
         "id": "urn:ngm:class:general-purpose-computing",
         "label": "General-Purpose Computing"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -521,8 +516,8 @@
         "label": "Software Asset Management"
       },
       {
-        "id": "urn:ngm:class:data-catalog",
-        "label": "Data Catalog"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:feature-store",
@@ -547,8 +542,12 @@
         "label": "Semantic Versioning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -561,10 +560,6 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:continuous-integration",
-        "label": "Continuous Integration"
       }
     ],
     "supports": [
@@ -589,16 +584,16 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:model-governance",
-        "label": "Model Governance"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
@@ -609,6 +604,14 @@
       {
         "id": "urn:ngm:class:nist-ai-standards",
         "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -623,22 +626,18 @@
         "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
-      },
-      {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
-      },
-      {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps Platform"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:ai-lifecycle",
@@ -663,8 +662,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",

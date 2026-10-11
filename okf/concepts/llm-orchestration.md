@@ -8,9 +8,9 @@ description: The coordination of multiple calls to one or more large language mo
 maturity: growing
 quality: 0.6
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
 enables:
   - urn:ngm:class:retrieval-augmented-generation

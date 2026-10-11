@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:cross-chain-bridge
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:smart-contract
   - urn:ngm:class:squid-router
@@ -36,7 +36,7 @@ uses:
 supports:
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:rollup
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:intent-based-bridging

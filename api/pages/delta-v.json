@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:delta-v",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Delta-v is a change in velocity, represented as a vector with a magnitude, direction, reference frame and epoch.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

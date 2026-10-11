@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:model-deployment
   - urn:ngm:class:platform-engineering
 standardizedBy:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:google-sre
   - urn:ngm:class:argo-project
   - urn:ngm:class:do-ra

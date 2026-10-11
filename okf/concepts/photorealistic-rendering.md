@@ -28,7 +28,7 @@ dependsOn:
   - urn:ngm:class:rendering-equation
   - urn:ngm:class:3-d-rendering-engine
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:generative-ai
 uses:
   - urn:ngm:class:ray-tracing

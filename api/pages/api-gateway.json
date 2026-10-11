@@ -20,10 +20,6 @@
       "label": "Middleware"
     },
     {
-      "id": "urn:ngm:class:reverse-proxy",
-      "label": "Reverse Proxy"
-    },
-    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     },
@@ -140,7 +136,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:http",
+        "id": "urn:ngm:class:http2",
         "label": "HTTP/2"
       },
       {
@@ -148,8 +144,8 @@
         "label": "HTTP/3"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:tcp-ip",
@@ -220,15 +216,15 @@
         "label": "Reverse Proxy"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:open-telemetry",
@@ -247,7 +243,7 @@
         "label": "AsyncAPI"
       },
       {
-        "id": "urn:ngm:class:protobuf",
+        "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {
@@ -287,12 +283,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -314,8 +310,8 @@
         "label": "API Management"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:ingress-controller",
@@ -361,16 +357,6 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:network-architecture",
-      "label": "Network Architecture",
-      "slug": "network-architecture"
-    },
-    {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture",
-      "slug": "ai-model-architecture"
-    },
-    {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
@@ -379,11 +365,6 @@
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -399,12 +380,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -457,12 +438,12 @@
         "label": "Operating System"
       },
       {
-        "id": "urn:ngm:class:http",
-        "label": "HTTP"
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:tcp-ip",
-        "label": "TCP-IP"
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       }
     ],
     "enables": [
@@ -521,16 +502,16 @@
         "label": "Open Source Software"
       },
       {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
       }
     ],
     "implements": [
@@ -589,16 +570,16 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:adversarial-machine-learning",
         "label": "Adversarial Machine Learning"
       },
       {
         "id": "urn:ngm:class:attack-vector",
         "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
       }
     ],
     "bridgesTo": [
@@ -609,14 +590,6 @@
       {
         "id": "urn:ngm:class:data-mesh",
         "label": "Data Mesh"
-      },
-      {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
-        "id": "urn:ngm:class:load-balancer",
-        "label": "Load Balancer"
       },
       {
         "id": "urn:ngm:class:blockchain-network",
@@ -633,6 +606,14 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -649,14 +630,6 @@
         "label": "Service Mesh"
       },
       {
-        "id": "urn:ngm:class:caching",
-        "label": "Caching"
-      },
-      {
-        "id": "urn:ngm:class:ssl-termination",
-        "label": "SSL Termination"
-      },
-      {
         "id": "urn:ngm:class:access-control-list",
         "label": "Access Control List"
       },
@@ -667,6 +640,14 @@
       {
         "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
       }
     ],
     "supports": [
@@ -683,14 +664,6 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
-      },
-      {
-        "id": "urn:ngm:class:web-application-firewall",
-        "label": "Web Application Firewall"
-      },
-      {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
       },
@@ -701,6 +674,14 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
       }
     ],
     "standardizedBy": [
@@ -755,20 +736,8 @@
         "label": "Software Architecture"
       },
       {
-        "id": "urn:ngm:class:cloud-infrastructure",
-        "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:network-architecture",
-        "label": "Network Architecture"
-      },
-      {
         "id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -888,7 +857,7 @@
       "label": "Calcote & Butcher 2019 Istio Up and Running"
     },
     {
-      "slug": "cdn",
+      "slug": "content-delivery-network",
       "label": "CDN"
     },
     {
@@ -928,7 +897,7 @@
       "label": "Cloudflare API Shield"
     },
     {
-      "slug": "cncf",
+      "slug": "cloud-native-computing-foundation",
       "label": "CNCF"
     },
     {
@@ -1332,7 +1301,7 @@
       "label": "TCP/IP"
     },
     {
-      "slug": "tls",
+      "slug": "transport-layer-security",
       "label": "TLS"
     },
     {

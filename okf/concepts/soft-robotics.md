@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:physics-engine
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:simulation
   - urn:ngm:class:generative-design
   - urn:ngm:class:3d-printing

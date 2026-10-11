@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-gateway",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite gateway is an earth-station facility that connects a satellite network to terrestrial networks or operator infrastructure.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

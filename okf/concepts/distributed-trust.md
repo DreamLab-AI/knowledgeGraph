@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:distributed-ledger
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:web-of-trust
 partOf:
   - urn:ngm:class:blockchain

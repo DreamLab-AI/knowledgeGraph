@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:fine-tuning
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transfer-learning
 contrastsWith:
   - urn:ngm:class:continued-pre-training

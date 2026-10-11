@@ -15,7 +15,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:computer-vision
 uses:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 supports:
   - urn:ngm:class:fairness
 partOf:

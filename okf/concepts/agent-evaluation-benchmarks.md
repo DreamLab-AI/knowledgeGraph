@@ -57,7 +57,6 @@ implements:
 contrastsWith:
   - urn:ngm:class:reward-hacking
   - urn:ngm:class:static-nlp-benchmarks
-  - urn:ngm:class:llm-evaluation
 uses:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:re-act-pattern

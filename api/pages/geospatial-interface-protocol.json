@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-interface-protocol",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A geospatial interface protocol is a standardised request and response interface through which a client reaches geospatial data, maps or features held by a remote service [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

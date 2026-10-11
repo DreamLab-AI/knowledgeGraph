@@ -34,7 +34,7 @@ contrastsWith:
   - urn:ngm:class:swift
 bridgesTo:
   - urn:ngm:class:open-banking
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:hash-time-locked-contracts
   - urn:ngm:class:bolt-specifications
@@ -43,7 +43,7 @@ uses:
   - urn:ngm:class:bolt-specifications
 relatedTo:
   - urn:ngm:class:financial-inclusion
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cryptocurrency-exchange
   - urn:ngm:class:open-payments-protocol
   - urn:ngm:class:central-bank-digital-currency

@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:infra-network-and-comms
 hasPart:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:edge-computing
   - urn:ngm:class:software-defined-networking
   - urn:ngm:class:network-function-virtualization
@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:quality-of-service
   - urn:ngm:class:traffic-engineering
 enables:
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
   - urn:ngm:class:metaverse-infrastructure
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:cloud-computing

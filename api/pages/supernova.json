@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:supernova",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A supernova is the explosion of a star, produced either by the collapse of a massive star's core or by a runaway thermonuclear explosion in a degenerate stellar core.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

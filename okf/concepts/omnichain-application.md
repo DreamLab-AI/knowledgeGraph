@@ -8,10 +8,10 @@ description: An omnichain application is a decentralised application designed to
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
 enables:
   - urn:ngm:class:cross-chain-asset-transfer
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:cross-chain-messaging
   - urn:ngm:class:cross-chain-interoperability

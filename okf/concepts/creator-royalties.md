@@ -36,13 +36,13 @@ uses:
   - urn:ngm:class:token-standard
   - urn:ngm:class:operator-filter-registry
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 relatedTo:
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:royalty-distribution
   - urn:ngm:class:secondary-market
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:royalty-distribution
 ---
 

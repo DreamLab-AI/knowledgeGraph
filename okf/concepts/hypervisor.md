@@ -30,7 +30,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:operating-system
   - urn:ngm:class:snapshot
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 ---
 
 # Hypervisor

@@ -10,10 +10,10 @@ quality: 0.6
 is-a:
   - urn:ngm:class:layer-2-scaling
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:rollup
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:optimistic-rollup
 ---

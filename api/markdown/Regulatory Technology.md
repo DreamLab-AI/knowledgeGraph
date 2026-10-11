@@ -2,7 +2,7 @@ Regulatory Technology (RegTech) is the application of digital tools—encompassi
 
 ### Overview
 
-- RegTech emerged as a distinct sub-sector of [[FinTech]] following the wave of post-financial-crisis regulation (Basel III, MiFID II, EMIR, Dodd-Frank) that dramatically increased the volume and complexity of compliance obligations for financial institutions.
+- RegTech emerged as a distinct sub-sector of [[Financial Technology]] following the wave of post-financial-crisis regulation (Basel III, MiFID II, EMIR, Dodd-Frank) that dramatically increased the volume and complexity of compliance obligations for financial institutions.
 - Rather than growing compliance headcount linearly with regulatory burden, RegTech firms offer software platforms that automate ingestion of regulatory text, map obligations to internal controls, monitor transactions in real time, and produce standardised regulatory reports.
 - The term was popularised by the UK's [[Financial Conduct Authority]] (FCA) around 2015, and the FCA's regulatory sandbox has been a key accelerator of RegTech adoption globally.
 - A related but distinct concept is [[Supervisory Technology]] (SupTech), which refers to technology adopted by regulators themselves—central banks and supervisory authorities—to improve oversight efficiency. RegTech and SupTech are complementary and increasingly co-designed.
@@ -15,7 +15,7 @@ Regulatory Technology (RegTech) is the application of digital tools—encompassi
 - [[Know Your Customer]] (KYC) — automated identity verification using document scanning, biometric matching, and sanctions-list screening.
 - [[Anti-Money Laundering]] (AML) — transaction monitoring models trained on historical suspicious-activity patterns, producing alerts prioritised by risk score.
 - Customer Due Diligence (CDD) and Enhanced Due Diligence (EDD) workflows integrated with global watchlists (OFAC, UN, EU consolidated list).
-- [[Identity Management]] infrastructure including decentralised identity standards ([[Decentralised Identifiers]], [[Verifiable Credentials]]).
+- [[Identity Management]] infrastructure including decentralised identity standards ([[Decentralised Identifier]], [[Verifiable Credential]]).
 
 #### Regulatory Reporting
 

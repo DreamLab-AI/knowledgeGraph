@@ -42,10 +42,10 @@ standardizedBy:
   - urn:ngm:class:financial-action-task-force
   - urn:ngm:class:g20-global-partnership-for-financial-inclusion
 relatedTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:remittances
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:remittances
 ---
 

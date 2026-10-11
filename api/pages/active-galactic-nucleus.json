@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:active-galactic-nucleus",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An active galactic nucleus is an unusually bright galactic nucleus whose light is not due to starlight, now understood as an active supermassive black hole at the centre of a galaxy.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

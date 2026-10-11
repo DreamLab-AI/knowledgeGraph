@@ -9,7 +9,7 @@ maturity: established
 quality: 0.62
 is-a:
   - urn:ngm:class:model-interpretability
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:predictive-model
 hasPart:
   - urn:ngm:class:prediction-interface
@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:scalability
   - urn:ngm:class:transfer-learning
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr-article-22
   - urn:ngm:class:iso-iec-22989
   - urn:ngm:class:ieee-p7001
@@ -101,7 +101,7 @@ relatedTo:
   - urn:ngm:class:robustness
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:ai-governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:mechanistic-interpretability

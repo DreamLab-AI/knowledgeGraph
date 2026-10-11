@@ -9,42 +9,70 @@ maturity: established
 quality: 0.75
 is-a:
   - urn:ngm:class:technical-standard
+  - urn:ngm:class:verifiable-credentials
 hasPart:
   - urn:ngm:class:verifiable-presentation
   - urn:ngm:class:credential-subject
   - urn:ngm:class:credential-status
 requires:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:cryptographic-proof
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:cryptographic-security
 enables:
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:privacy-preserving-authentication
   - urn:ngm:class:digital-identity-wallet
+  - urn:ngm:class:self-sovereign-identity
+  - urn:ngm:class:privacy-preserving-identity
+  - urn:ngm:class:credential-verification
+  - urn:ngm:class:federated-credential-exchange
 implements:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:open-world-assumption
+  - urn:ngm:class:trust-model
 contrastsWith:
   - urn:ngm:class:saml
   - urn:ngm:class:centralized-identity-provider
   - urn:ngm:class:centralized-identity-provider
+  - urn:ngm:class:x-509-certificate
+  - urn:ngm:class:saml-assertion
+  - urn:ngm:class:oauth-token
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:digital-identity-wallet
+  - urn:ngm:class:ai-agent-identity
+  - urn:ngm:class:supply-chain-provenance
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:linked-data-proofs
   - urn:ngm:class:json-data-interchange-format-web-token
   - urn:ngm:class:digital-signature
   - urn:ngm:class:selective-disclosure-jwt
+  - urn:ngm:class:did-document
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:cryptographic-proof
+  - urn:ngm:class:linked-data
+  - urn:ngm:class:ed25519
+  - urn:ngm:class:ed25519
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:bitstring-status-list
   - urn:ngm:class:trust-registry
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:credential-format-standard
+  - urn:ngm:class:decentralized-identity-did
+  - urn:ngm:class:open-badges
+  - urn:ngm:class:eidas-regulation
+  - urn:ngm:class:zero-knowledge-proof
 ---
 
 # W3C Verifiable Credentials Data Model

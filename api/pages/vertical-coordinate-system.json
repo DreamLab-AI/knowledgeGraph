@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertical-coordinate-system",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A vertical coordinate system is a one-dimensional coordinate system used to express gravity-related height or depth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

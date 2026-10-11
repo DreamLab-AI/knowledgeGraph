@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:photosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Photosphere is the layer of the Sun commonly called its surface, and the first layer of the solar atmosphere.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-atmosphere",

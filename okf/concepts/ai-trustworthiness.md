@@ -31,7 +31,7 @@ dependsOn:
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:ai-audit
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
 contrastsWith:
   - urn:ngm:class:algorithmic-bias
@@ -39,7 +39,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:cybersecurity-framework
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-tr-24028
   - urn:ngm:class:ieee-p-7009
 relatedTo:

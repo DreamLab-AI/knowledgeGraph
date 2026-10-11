@@ -18,10 +18,6 @@
     {
       "id": "urn:ngm:class:neural-information-retrieval",
       "label": "Neural Information Retrieval"
-    },
-    {
-      "id": "urn:ngm:class:dense-retrieval",
-      "label": "Dense Retrieval"
     }
   ],
   "entityType": "Class",
@@ -310,8 +306,8 @@
         "label": "Knowledge Retrieval"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
@@ -374,16 +370,16 @@
         "label": "Relevance Ranking"
       },
       {
-        "id": "urn:ngm:class:bi-encoder",
-        "label": "Bi-Encoder"
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
       },
       {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:hard-negative-mining",
-        "label": "Hard Negative Mining"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "requires": [
@@ -404,10 +400,6 @@
         "label": "Text Embeddings"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:text-representation",
         "label": "Text Representation"
       },
@@ -416,8 +408,12 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -434,24 +430,24 @@
         "label": "Search Engine"
       },
       {
-        "id": "urn:ngm:class:agentic-rag",
-        "label": "Agentic RAG"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-retrieval",
-        "label": "Hybrid Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-retrieval",
-        "label": "Knowledge Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
-      },
-      {
         "id": "urn:ngm:class:information-extraction",
         "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
       }
     ],
     "dependsOn": [
@@ -468,24 +464,16 @@
         "label": "Evaluation Metrics"
       },
       {
-        "id": "urn:ngm:class:embedding-model",
-        "label": "Embedding Model"
-      },
-      {
-        "id": "urn:ngm:class:hnsw-index",
-        "label": "HNSW Index"
-      },
-      {
-        "id": "urn:ngm:class:vector-database",
-        "label": "Vector Database"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "implements": [
@@ -500,14 +488,6 @@
       {
         "id": "urn:ngm:class:cross-encoder-reranking",
         "label": "Cross-Encoder Reranking"
-      },
-      {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
-      },
-      {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
       }
     ],
     "contrastsWith": [
@@ -518,18 +498,6 @@
       {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
-      },
-      {
-        "id": "urn:ngm:class:inverted-index",
-        "label": "Inverted Index"
-      },
-      {
-        "id": "urn:ngm:class:sparse-retrieval",
-        "label": "Sparse Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:tf-idf",
-        "label": "TF-IDF"
       },
       {
         "id": "urn:ngm:class:rule-based-systems",
@@ -596,52 +564,28 @@
         "label": "Word Embeddings"
       },
       {
-        "id": "urn:ngm:class:contrastive-learning",
-        "label": "Contrastive Learning"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:embedding-model",
-        "label": "Embedding Model"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:hnsw-index",
-        "label": "HNSW Index"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
-      },
-      {
-        "id": "urn:ngm:class:agentic-rag",
-        "label": "Agentic RAG"
-      },
-      {
-        "id": "urn:ngm:class:cross-encoder-reranking",
-        "label": "Cross-Encoder Reranking"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-retrieval",
-        "label": "Hybrid Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:nist-ir-evaluation",
         "label": "NIST IR Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:mteb-leaderboard",
-        "label": "MTEB Leaderboard"
-      },
-      {
-        "id": "urn:ngm:class:trec-deep-learning-track",
-        "label": "TREC Deep Learning Track"
       }
     ],
     "partOf": [
@@ -672,16 +616,16 @@
         "label": "Question Answering"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ]
   },

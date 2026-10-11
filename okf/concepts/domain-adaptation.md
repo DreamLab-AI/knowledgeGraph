@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:representation-learning
 hasPart:
   - urn:ngm:class:unsupervised-domain-adaptation
@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:source-domain
   - urn:ngm:class:target-domain
   - urn:ngm:class:representation-learning
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 enables:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:zero-shot-learning
@@ -37,7 +37,7 @@ enables:
   - urn:ngm:class:clinical-ai-deployment
   - urn:ngm:class:federated-learning
 dependsOn:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:representation-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
@@ -71,7 +71,7 @@ uses:
   - urn:ngm:class:pseudo-labelling
   - urn:ngm:class:maximum-mean-discrepancy
   - urn:ngm:class:parameter-efficient-fine-tuning
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:adapter-modules
 supports:
   - urn:ngm:class:natural-language-processing
@@ -89,7 +89,7 @@ standardizedBy:
   - urn:ngm:class:visda-benchmark
 partOf:
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:concept-drift

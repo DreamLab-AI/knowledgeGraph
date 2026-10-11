@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 relatedTo:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:deep-learning

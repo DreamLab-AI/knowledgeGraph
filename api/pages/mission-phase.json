@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mission-phase",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A mission phase is a defined stage in a project or flight, separated from the next by a decision or a change in operations.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

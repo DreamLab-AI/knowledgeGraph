@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:3-d-gaussian-splatting
 bridgesTo:
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:lidar
   - urn:ngm:class:photogrammetry

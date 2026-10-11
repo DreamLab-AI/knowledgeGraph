@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:formal-verification
 enables:
   - urn:ngm:class:trustless-system
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:immutability
 contrastsWith:
   - urn:ngm:class:51-attack
@@ -31,9 +31,9 @@ bridgesTo:
   - urn:ngm:class:post-quantum-cryptography
 uses:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:oracle-network
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 standardizedBy:
   - urn:ngm:class:nist-cybersecurity-framework
 partOf:

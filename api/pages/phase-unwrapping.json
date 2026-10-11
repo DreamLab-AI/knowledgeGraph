@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:phase-unwrapping",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Phase unwrapping is the stage of interferometric processing that resolves the ambiguity of a wrapped phase measurement so that phase differences between pixels relate to actual height or displacement.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -8,7 +8,7 @@ description: Masked language modelling is a self-supervised pre-training objecti
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 hasPart:
   - urn:ngm:class:cross-entropy-loss
 requires:
@@ -31,7 +31,7 @@ uses:
 supports:
   - urn:ngm:class:bert
 partOf:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 relatedTo:
   - urn:ngm:class:word-embedding
   - urn:ngm:class:representation-learning

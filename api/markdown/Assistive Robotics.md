@@ -26,7 +26,7 @@ Assistive Robotics is a branch of robotics concerned with designing, building, a
 - **Power and Connectivity**
   - [[Battery Management]] systems must deliver high peak currents during stair-climbing or stumble recovery while meeting ambulatory duration targets of 4–8 hours.
   - Wireless telemetry transmits device telemetry and health data for clinician monitoring, raising data privacy obligations under GDPR and HIPAA.
-  - [[Embedded Systems]] integrate sensing, computation, and actuation in compact, waterproof housings suitable for daily community use.
+  - [[Embedded System]] integrate sensing, computation, and actuation in compact, waterproof housings suitable for daily community use.
 - **Interaction and Social Capabilities**
   - [[Social Robotics]] methods equip companion robots with expressive faces, voice synthesis, and gesture recognition to engage users with dementia, autism, or social anxiety.
   - [[Natural Language Processing]] enables voice-commanded operation for users with limited dexterity, freeing them from manual interface interaction.

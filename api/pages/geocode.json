@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geocode",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geocoding is the process of taking an address and returning a latitude and longitude coordinate for it.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -27,7 +27,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:decentralised-autonomous-organisation
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-economy
 uses:
   - urn:ngm:class:platform-layer

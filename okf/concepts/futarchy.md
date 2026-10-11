@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:market-making
 enables:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:dao-governance
   - urn:ngm:class:transparent-decision-making
   - urn:ngm:class:evidence-based-policy
@@ -25,7 +25,7 @@ contrastsWith:
   - urn:ngm:class:token-weighted-voting
   - urn:ngm:class:representative-democracy
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:automated-market-maker
 uses:
   - urn:ngm:class:mechanism-design

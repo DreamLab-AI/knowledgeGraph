@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:ray-tracing
 bridgesTo:
   - urn:ngm:class:neural-rendering
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:physically-based-rendering
   - urn:ngm:class:texture-mapping

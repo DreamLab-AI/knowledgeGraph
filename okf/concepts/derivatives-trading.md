@@ -20,7 +20,7 @@ enables:
 dependsOn:
   - urn:ngm:class:settlement
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:automated-market-maker
 uses:
   - urn:ngm:class:smart-contract

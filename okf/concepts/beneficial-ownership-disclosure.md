@@ -13,11 +13,11 @@ requires:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:data-governance
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:aml-kyc-compliance
 relatedTo:
   - urn:ngm:class:fatf
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 ---
 
 # Beneficial Ownership Disclosure

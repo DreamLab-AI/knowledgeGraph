@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:quadratic-funding
 bridgesTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Commons Stack

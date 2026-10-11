@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar-foreshortening",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Radar foreshortening is the compression of slopes that face a side-looking radar, which occurs because the beam reaches the base of a tall tilted feature before it reaches the top.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -36,7 +36,7 @@
         "label": "SAR Terrain Correction"
       },
       {
-        "id": "urn:ngm:class:radar",
+        "id": "urn:ngm:class:synthetic-aperture-radar",
         "label": "Synthetic Aperture Radar"
       }
     ]

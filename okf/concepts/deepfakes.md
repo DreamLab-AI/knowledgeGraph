@@ -69,7 +69,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:neural-vocoder
   - urn:ngm:class:optical-flow-estimation
   - urn:ngm:class:latent-diffusion
@@ -84,7 +84,7 @@ standardizedBy:
   - urn:ngm:class:iso-29100
   - urn:ngm:class:online-safety-act-2023
   - urn:ngm:class:data-use-and-access-act-2025
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:c2-pa-standard
 partOf:
   - urn:ngm:class:ai-generated-content

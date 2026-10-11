@@ -127,7 +127,7 @@ Systematic deviation from fairness, objectivity, or expected outcomes in an AI s
 - ### Bias and Fairness
 - AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
 - **The increasing integration of AI into our daily lives.**
-- [[Large Language Models]]
+- [[Large Language Model]]
 
 - ## Bias in images
 - Bias is really hard, and the current tools are blunt.
@@ -149,8 +149,8 @@ Systematic deviation from fairness, objectivity, or expected outcomes in an AI s
 - ## See Also
 - [[AI Risks]]
 - [[Bias in Large Language Models]]
-- [[Large Language Models]]
-- [[Machine Learning Discipline]]
+- [[Large Language Model]]
+- [[Machine Learning]]
 - [[Deep Learning]]
 
 - ## Bias and Discrimination

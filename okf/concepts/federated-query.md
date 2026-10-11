@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:linked-data
   - urn:ngm:class:knowledge-graph
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:sparql
   - urn:ngm:class:sparql-endpoint
@@ -28,7 +28,7 @@ partOf:
   - urn:ngm:class:data-integration
 relatedTo:
   - urn:ngm:class:graph-database
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 ---
 
 # Federated Query

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:microwave-radiometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A microwave radiometer is a passive sensor, typically built as a radiometer or scanner with an antenna, that detects naturally emitted microwave energy within its field of view.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:radiometer",

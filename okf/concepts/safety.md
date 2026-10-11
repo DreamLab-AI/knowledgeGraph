@@ -24,19 +24,19 @@ dependsOn:
   - urn:ngm:class:reliability
 implements:
   - urn:ngm:class:safety-and-alignment
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
 contrastsWith:
   - urn:ngm:class:security
 bridgesTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:infrastructure
   - urn:ngm:class:ai-governance-law-and-privacy
 standardizedBy:
   - urn:ngm:class:iso-26262
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:adversarial-examples
   - urn:ngm:class:formal-verification

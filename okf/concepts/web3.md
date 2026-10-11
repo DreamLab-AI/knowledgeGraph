@@ -9,7 +9,7 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-defi-and-economics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:digital-asset
@@ -23,24 +23,24 @@ hasPart:
   - urn:ngm:class:nft
   - urn:ngm:class:restaking
   - urn:ngm:class:account-abstraction
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:smart-contract
 requires:
   - urn:ngm:class:content-addressed-storage
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-sovereignty
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:agentic-internet
   - urn:ngm:class:neural-network-text-tokenisation
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:layer-2-networks
   - urn:ngm:class:cryptography
   - urn:ngm:class:p2p-networking
@@ -67,17 +67,17 @@ uses:
   - urn:ngm:class:uniswap
   - urn:ngm:class:wallet
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:nft
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:blockchain-interoperability
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 standardizedBy:
   - urn:ngm:class:ethereum-smart-contract-platform-foundation
   - urn:ngm:class:ietf
   - urn:ngm:class:open-zeppelin
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:agent-frameworks

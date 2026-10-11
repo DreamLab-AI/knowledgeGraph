@@ -18,7 +18,7 @@ enables:
 supports:
   - urn:ngm:class:open-source-ai
 relatedTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:game-engine
 ---
 

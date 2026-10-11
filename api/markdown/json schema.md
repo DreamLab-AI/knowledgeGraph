@@ -51,10 +51,10 @@ JSON Schema is an IETF-standardised declarative vocabulary for annotating and va
 
 ### Applications and Use Cases
 
-- **REST API description** — [[OpenAPI Specification]] (v3.x) embeds JSON Schema as the schema object for request bodies, response payloads, and parameters. Every major API gateway and developer portal renders schemas into human-readable documentation.
+- **REST API description** — [[OpenAPI]] (v3.x) embeds JSON Schema as the schema object for request bodies, response payloads, and parameters. Every major API gateway and developer portal renders schemas into human-readable documentation.
 - **Event-driven APIs** — [[AsyncAPI]] applies the same schema vocabulary to message payloads in [[Kafka]], [[AMQP]], [[MQTT]], and WebSocket systems, extending the REST-centric model to event streaming.
 - **Configuration validation** — [[Kubernetes]] Custom Resource Definition (CRD) validation uses a structural JSON Schema subset; [[Helm]] chart values files use schemas to validate user-supplied configuration at install time.
-- **Verifiable Credentials** — The [[W3C]] [[Verifiable Credentials]] data model uses JSON Schema (alongside [[JSON-LD]] contexts) to validate credential subject properties, ensuring interoperability between issuers and verifiers in [[Decentralised Identity]] ecosystems.
+- **Verifiable Credentials** — The [[World Wide Web Consortium]] [[Verifiable Credential]] data model uses JSON Schema (alongside [[JSON-LD]] contexts) to validate credential subject properties, ensuring interoperability between issuers and verifiers in [[Decentralised Identity]] ecosystems.
 - **Code and form generation** — Tools such as `quicktype`, `json-schema-to-typescript`, and React JSON Schema Form consume schemas to emit typed data-transfer objects or complete UI forms, enabling schema-driven [[Full-Stack Development]].
 - **Data contract enforcement** — Platform engineering teams use JSON Schema as [[Data Contract]] artefacts — stored in schema registries — to enforce backward-compatible evolution of [[Event-Driven Architecture]] payloads.
 - **Infrastructure as Code** — [[Terraform]] provider schemas and VS Code's `settings.json` schema use JSON Schema to provide IDE autocompletion and inline validation, bridging data description into [[Infrastructure as Code]] workflows.
@@ -70,7 +70,7 @@ JSON Schema is an IETF-standardised declarative vocabulary for annotating and va
 - **Vocabulary extension** — the 2020-12 dialect formalises custom vocabularies via `$vocabulary`, enabling [[OpenAPI]] and others to declare their keyword extensions as first-class schema citizens.
 - **Schema registries** — Confluent Schema Registry and AWS Glue Schema Registry support JSON Schema alongside [[Apache Avro]] and [[Protocol Buffers]] for [[Event-Driven Architecture]] payload governance.
 - **Security considerations** — recursive `$ref` chains can create infinite loops; conformant validators must implement cycle detection. The `format` keyword is annotation-only by default; validators must explicitly opt in to format assertion to avoid false positives in security-sensitive contexts.
-- **Relationship to [[JSON-LD]]** — JSON Schema validates structure; JSON-LD assigns semantic meaning via linked-data context. The two are complementary and co-used in [[Verifiable Credentials]], where a JSON-LD context expresses semantics while a JSON Schema enforces data shape.
+- **Relationship to [[JSON-LD]]** — JSON Schema validates structure; JSON-LD assigns semantic meaning via linked-data context. The two are complementary and co-used in [[Verifiable Credential]], where a JSON-LD context expresses semantics while a JSON Schema enforces data shape.
 - **Relationship to [[XML Schema Definition]]** — XSD is the older, more verbose XML-world counterpart; JSON Schema borrows composability ideas from Relax NG while remaining JSON-native and far more concise.
 
 ### Tooling Ecosystem

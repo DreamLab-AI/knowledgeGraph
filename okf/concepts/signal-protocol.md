@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:secure-messaging
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:secure-messaging
   - urn:ngm:class:asynchronous-communication
@@ -20,7 +20,7 @@ dependsOn:
 implements:
   - urn:ngm:class:forward-secrecy
 contrastsWith:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:decentralised-identity
 uses:

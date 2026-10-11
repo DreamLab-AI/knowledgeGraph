@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:conventional-finance
   - urn:ngm:class:greenwashing
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-tokenisation
   - urn:ngm:class:regenerative-finance
 uses:

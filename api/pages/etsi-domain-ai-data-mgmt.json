@@ -34,8 +34,8 @@
         "label": "Intelligent Analytics Categorization"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:feature-store",
@@ -94,8 +94,8 @@
         "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:feature-store",
@@ -146,7 +146,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -196,7 +196,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -248,7 +248,7 @@
         "label": "ETSI"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -272,8 +272,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:data-governance",
@@ -435,7 +435,7 @@
         "label": "ETSI Domain Taxonomy"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -467,8 +467,8 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -481,8 +481,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -515,7 +515,7 @@
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -529,7 +529,7 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

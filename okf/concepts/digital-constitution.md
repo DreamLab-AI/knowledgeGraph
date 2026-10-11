@@ -38,7 +38,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:blockchain
 partOf:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:metaverse-platform
   - urn:ngm:class:virtual-society
 ---

@@ -19,12 +19,12 @@ enables:
   - urn:ngm:class:microservices
 uses:
   - urn:ngm:class:semantic-versioning
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 supports:
   - urn:ngm:class:backward-compatibility
   - urn:ngm:class:api-management
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 partOf:
   - urn:ngm:class:api-management
   - urn:ngm:class:api-lifecycle

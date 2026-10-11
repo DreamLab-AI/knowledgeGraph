@@ -163,7 +163,7 @@ Tokenomics is the study and design of the economic systems governing cryptocurre
 
 - [[Cryptocurrency]]
 - [[Smart Contract]]
-- [[DeFi]]
+- [[Decentralised Finance]]
 - [[Staking]]
 - [[Governance Token]]
 - [[MEV]]

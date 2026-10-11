@@ -29,8 +29,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:provenance-tracking
   - urn:ngm:class:verifiable-credentials

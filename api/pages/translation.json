@@ -148,8 +148,8 @@
         "label": "Neural Networks"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -186,8 +186,8 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -344,9 +344,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:supervised-learning",
@@ -434,8 +434,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -498,7 +498,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder Decoder"
       },
       {
@@ -548,6 +548,10 @@
         "label": "Psycholinguistics"
       },
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -558,10 +562,6 @@
       {
         "id": "urn:ngm:class:unsupervised-learning",
         "label": "Unsupervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -582,7 +582,7 @@
         "label": "Information Retrieval"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -604,8 +604,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -676,6 +676,14 @@
         "label": "Universal Dependencies"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -686,7 +694,11 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -700,8 +712,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:machine-translation",
@@ -1013,8 +1025,8 @@
       "label": "Back-Translation"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "text-generation",

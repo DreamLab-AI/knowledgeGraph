@@ -31,7 +31,7 @@ bridgesTo:
   - urn:ngm:class:autonomous-agent
 uses:
   - urn:ngm:class:software-development-process
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 supports:
   - urn:ngm:class:regulatory-compliance

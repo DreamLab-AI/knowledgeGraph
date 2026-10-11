@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:digital-commons
 uses:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:treasury-management
   - urn:ngm:class:smart-contract
   - urn:ngm:class:quadratic-voting

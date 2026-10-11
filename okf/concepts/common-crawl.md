@@ -24,16 +24,16 @@ requires:
   - urn:ngm:class:deduplication
   - urn:ngm:class:data-curation
   - urn:ngm:class:data-pipeline
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:web-scraping
   - urn:ngm:class:language-identification
   - urn:ngm:class:web-crawl-infrastructure
   - urn:ngm:class:cloud-storage
 enables:
   - urn:ngm:class:model-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:information-retrieval
@@ -86,8 +86,8 @@ relatedTo:
   - urn:ngm:class:bias-in-large-language-models
   - urn:ngm:class:copyright
   - urn:ngm:class:data-governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:robotics
   - urn:ngm:class:language-model

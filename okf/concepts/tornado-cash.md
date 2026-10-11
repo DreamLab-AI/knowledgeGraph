@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:cryptographic-domain
 requires:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:zk-snark
   - urn:ngm:class:merkle-tree
 enables:
@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:relayer
 relatedTo:
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Tornado Cash

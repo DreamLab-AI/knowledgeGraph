@@ -23,7 +23,7 @@ Schema management is the practice of defining, versioning, evolving, and enforci
 - Maintaining stable contracts for a [[Data Pipeline]] and streaming topics via a [[Schema Registry]].
 - Coordinating safe schema evolution across many services and analytical stores via [[Data Validation]].
 - Improving [[Data Quality]] and [[Data Integration]] through enforced validation.
-- Supporting [[Interoperability]] and discoverability within a [[Data Catalog]].
+- Supporting [[Interoperability]] and discoverability within a [[Data Catalogue]].
 
 ### Provenance
 

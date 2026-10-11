@@ -21,10 +21,10 @@ enables:
   - urn:ngm:class:systemic-risk-management
   - urn:ngm:class:cross-border-regulatory-cooperation
 contrastsWith:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:bis
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ai-in-finance
 uses:
   - urn:ngm:class:peer-review

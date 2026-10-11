@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:large-scale-compute
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:proprietary-training-dataset
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:content-moderation
   - urn:ngm:class:latent-diffusion
 enables:
@@ -50,7 +50,7 @@ dependsOn:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 implements:
   - urn:ngm:class:autoregressive-image-decoding
   - urn:ngm:class:classifier-free-guidance
@@ -60,7 +60,7 @@ implements:
   - urn:ngm:class:synth-id-watermarking
   - urn:ngm:class:synthid-watermarking
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:flux-1
   - urn:ngm:class:open-source-ai
   - urn:ngm:class:generative-adversarial-networks
@@ -91,10 +91,10 @@ supports:
 standardizedBy:
   - urn:ngm:class:adobe-content-authenticity-initiative
   - urn:ngm:class:c2-pa
-  - urn:ngm:class:iso-iec-jtc1-sc42
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:c2-pa
 relatedTo:
   - urn:ngm:class:creative-ai

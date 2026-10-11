@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:blockchain-scalability
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:horizontal-scalability
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 dependsOn:
   - urn:ngm:class:cap-theorem
   - urn:ngm:class:consistency-model
@@ -48,7 +48,7 @@ uses:
   - urn:ngm:class:cryptographic-hash-function
 supports:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
 partOf:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:infrastructure

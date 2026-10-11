@@ -18,7 +18,7 @@ enables:
 uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:ray-marching
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:real-time-rendering-pipeline
   - urn:ngm:class:3-d-content-generation

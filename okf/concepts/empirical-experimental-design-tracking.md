@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:version-control
   - urn:ngm:class:data-pipeline
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-comparison
   - urn:ngm:class:model-registry
   - urn:ngm:class:continuous-training
@@ -57,6 +57,8 @@ uses:
   - urn:ngm:class:dvc
   - urn:ngm:class:kubeflow
   - urn:ngm:class:ci-cd
+  - urn:ngm:class:data-versioning
+  - urn:ngm:class:version-control
 supports:
   - urn:ngm:class:collaborative-research
   - urn:ngm:class:model-governance
@@ -64,11 +66,12 @@ supports:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:model-monitoring
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:mlops
+  - urn:ngm:class:ai-model-development
 relatedTo:
   - urn:ngm:class:feature-engineering
   - urn:ngm:class:hyperparameter-tuning
@@ -76,6 +79,10 @@ relatedTo:
   - urn:ngm:class:ci-cd
   - urn:ngm:class:feature-store
   - urn:ngm:class:model-serving
+  - urn:ngm:class:mlflow
+  - urn:ngm:class:weights-and-biases
+  - urn:ngm:class:dvc
+  - urn:ngm:class:model-registry
 ---
 
 # Experiment Tracking

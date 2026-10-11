@@ -29,13 +29,13 @@ bridgesTo:
   - urn:ngm:class:entity-linking
   - urn:ngm:class:retrieval-augmented-generation
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:sparql
   - urn:ngm:class:turtle
   - urn:ngm:class:owl
   - urn:ngm:class:schema-org
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:rdf-schema
 relatedTo:
   - urn:ngm:class:ontology

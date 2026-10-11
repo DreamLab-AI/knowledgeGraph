@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-infrastructure
 relatedTo:
   - urn:ngm:class:checkpoints
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Weights and Biases

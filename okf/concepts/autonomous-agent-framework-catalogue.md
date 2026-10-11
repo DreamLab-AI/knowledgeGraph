@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:agentic-ai
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
 relatedTo:
   - urn:ngm:class:reinforcement-learning

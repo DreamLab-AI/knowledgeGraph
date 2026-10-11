@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:carbon-markets
   - urn:ngm:class:net-zero-targets
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:environmental-monitoring
 relatedTo:
   - urn:ngm:class:esg-reporting

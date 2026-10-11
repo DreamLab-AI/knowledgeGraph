@@ -20,7 +20,7 @@ supports:
 partOf:
   - urn:ngm:class:risk-management
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:finance
 ---
 

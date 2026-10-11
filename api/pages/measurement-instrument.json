@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-instrument",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A measurement instrument is a device used for making measurements, alone or in conjunction with one or more supplementary devices.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

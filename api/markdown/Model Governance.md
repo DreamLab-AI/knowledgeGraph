@@ -15,7 +15,7 @@ Model governance is the framework of policies, roles, controls, and documentatio
 
 #### Documentation
 
-- [[Model Documentation]] and [[Model Cards]] capture purpose, data, limitations, performance, and intended use for review and reuse.
+- [[Model Documentation]] and [[Model Card]] capture purpose, data, limitations, performance, and intended use for review and reuse.
 
 #### Independent validation
 

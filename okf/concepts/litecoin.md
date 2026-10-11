@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:ethereum
   - urn:ngm:class:bitcoin-proof-of-work-protocol-cash
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:payment-network
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network

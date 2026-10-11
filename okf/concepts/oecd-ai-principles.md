@@ -21,8 +21,8 @@ implements:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:human-centred-ai
 contrastsWith:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:binding-ai-regulation
 bridgesTo:
   - urn:ngm:class:foundation-model

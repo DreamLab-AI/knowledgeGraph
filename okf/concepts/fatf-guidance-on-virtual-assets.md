@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:financial-regulation
 relatedTo:
   - urn:ngm:class:decentralized-finance-de-fi
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # FATF Guidance on Virtual Assets

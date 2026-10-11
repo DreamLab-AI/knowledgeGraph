@@ -23,7 +23,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:knowledge-graph
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:text-mining
   - urn:ngm:class:natural-language-processing
 supports:

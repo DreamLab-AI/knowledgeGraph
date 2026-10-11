@@ -10,13 +10,13 @@ quality: 0.72
 is-a:
   - urn:ngm:class:digital-identity
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:access-control
   - urn:ngm:class:digital-onboarding
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 contrastsWith:
   - urn:ngm:class:knowledge-based-authentication
   - urn:ngm:class:password-authentication
@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:biometric-authentication
   - urn:ngm:class:facial-recognition
   - urn:ngm:class:optical-character-recognition
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:liveness-detection
 supports:
   - urn:ngm:class:regulatory-compliance
@@ -42,7 +42,7 @@ relatedTo:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:digital-identity-framework
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Digital Identity Verification

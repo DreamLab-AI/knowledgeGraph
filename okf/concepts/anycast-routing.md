@@ -8,7 +8,7 @@ description: Anycast routing is a network addressing and routing technique in wh
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 requires:
   - urn:ngm:class:geographic-distribution
 enables:
@@ -20,12 +20,12 @@ bridgesTo:
   - urn:ngm:class:edge-computing
 uses:
   - urn:ngm:class:ip-addressing
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
   - urn:ngm:class:network-routing
 supports:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:dns
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:latency
   - urn:ngm:class:load-balancer

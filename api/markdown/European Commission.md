@@ -29,7 +29,7 @@ The European Commission is the politically independent executive body of the Eur
 ### Standards and Regulatory Context
 
 - The Commission's standardisation mandate M/570 (AI) directs [[CEN-CENELEC]] and [[ETSI]] to produce harmonised standards aligned with the [[EU AI Act]], covering risk management, data governance, transparency, robustness, and post-market monitoring. A corresponding mandate for cybersecurity of AI covers adversarial robustness.
-- The Commission participates actively in international standards bodies including [[ISO-IEC JTC 1-SC 42]] (AI), [[IEEE]], and ITU-T, seeking to export its risk-based approach to global AI standardisation.
+- The Commission participates actively in international standards bodies including [[ISO-IEC JTC 1 SC 42]] (AI), [[IEEE]], and ITU-T, seeking to export its risk-based approach to global AI standardisation.
 - EU Regulations cited: EU 2024/1689 (AI Act), EU 2022/2065 (DSA), EU 2022/1925 (DMA), EU 2022/868 (Data Governance Act), EU 2023/2854 (Data Act), EU 2022/2554 (DORA – financial sector digital resilience), eIDAS 2.0 (EU 2024/1183).
 - The Commission's Better Regulation framework requires impact assessments, stakeholder consultations, and fitness checks (REFIT evaluations) before major legislative proposals, integrating [[Regulatory Compliance]] feedback loops into the legislative design cycle.
 - Competition law enforcement under Articles 101–102 TFEU by DG COMP intersects with digital regulation: major decisions on algorithmic collusion, self-preferencing, and killer acquisitions in tech sectors complement the sector-specific DMA regime.

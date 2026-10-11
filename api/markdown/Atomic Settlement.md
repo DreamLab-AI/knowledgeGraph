@@ -18,7 +18,7 @@ Atomic settlement is a transaction completion mechanism in which the transfer of
 
 ### Applications and Use Cases
 
-- **[[Decentralized Exchange]] (DEX)** — automated market makers and order-book DEXes depend on atomic settlement to prevent front-running exploits that exploit the gap between trade commitment and execution. Without atomicity, a malicious actor could observe a pending trade and insert a competing transaction.
+- **[[Decentralised Exchange]] (DEX)** — automated market makers and order-book DEXes depend on atomic settlement to prevent front-running exploits that exploit the gap between trade commitment and execution. Without atomicity, a malicious actor could observe a pending trade and insert a competing transaction.
 - **[[Atomic Swap]]** — the direct peer-to-peer application: two parties exchange tokens on different blockchains without a centralised exchange, using HTLCs to guarantee that both transfers complete or neither does.
 - **[[Securities Settlement]]** — post-trade infrastructure for equities, bonds, and derivatives. Blockchain-based atomic settlement enables T+0 (same-day) or even intraday settlement, reducing systemic exposure and margin requirements compared to T+2 cycles.
 - **[[Tokenised Securities]]** — when securities are represented as blockchain tokens, atomic settlement allows simultaneous transfer of ownership token and payment token in a single transaction, implementing [[Delivery-versus-Payment]] natively without a CSD or CCP.

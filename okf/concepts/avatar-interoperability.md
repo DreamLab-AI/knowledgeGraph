@@ -27,7 +27,7 @@ enables:
 dependsOn:
   - urn:ngm:class:hanim-standard
   - urn:ngm:class:vrm-format
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 bridgesTo:
   - urn:ngm:class:did-nostr-identity
 ---

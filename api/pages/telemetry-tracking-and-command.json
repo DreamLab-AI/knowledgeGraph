@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telemetry-tracking-and-command",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Telemetry tracking and command (TT&C) is the mission function that reports spacecraft status, supports knowledge of its position, and sends commands between a spacecraft and its operators.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

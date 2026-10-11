@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:export-controls
 requires:
   - urn:ngm:class:semiconductor-supply-chain
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:international-cooperation
 enables:
   - urn:ngm:class:ai-safety
@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:security
 uses:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:cryptographic-verification
 supports:
   - urn:ngm:class:ai-risk-management

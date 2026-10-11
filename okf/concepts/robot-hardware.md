@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-actuation-and-control
   - urn:ngm:class:mobile-robot-platform
   - urn:ngm:class:robotics-platform
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:mechatronics
   - urn:ngm:class:industrial-robot
 hasPart:

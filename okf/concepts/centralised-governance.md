@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:audit
 contrastsWith:
   - urn:ngm:class:decentralised-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralisation
 supports:
   - urn:ngm:class:financial-services

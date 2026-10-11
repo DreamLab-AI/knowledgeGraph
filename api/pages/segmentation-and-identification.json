@@ -88,8 +88,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
-        "label": "Annotated Training Data"
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
       },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -397,9 +397,9 @@
       "slug": "computer-vision-task"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:perception-system",
@@ -545,8 +545,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
@@ -597,12 +597,16 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:end-to-end-learning",
-        "label": "End-to-End Learning"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
       }
     ],
     "bridgesTo": [
@@ -645,8 +649,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -683,12 +687,16 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -701,10 +709,6 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
@@ -715,6 +719,14 @@
       {
         "id": "urn:ngm:class:nist-ai-standards",
         "label": "NIST AI Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-21448",
@@ -747,6 +759,10 @@
         "label": "Computer Vision"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
       },
@@ -769,8 +785,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:foundation-model",

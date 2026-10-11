@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:wallet
 enables:
   - urn:ngm:class:governance-voting
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:digital-ownership
   - urn:ngm:class:programmable-value
 dependsOn:

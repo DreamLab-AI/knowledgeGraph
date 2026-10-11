@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:fiat-currency
 bridgesTo:
   - urn:ngm:class:bitcoin-protocol
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:asset-tokenisation
 uses:
   - urn:ngm:class:commodity-money

@@ -14,9 +14,9 @@ enables:
   - urn:ngm:class:image-generation
   - urn:ngm:class:lo-ra-fine-tuning
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 uses:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip-encoder
   - urn:ngm:class:classifier-free-guidance
 relatedTo:

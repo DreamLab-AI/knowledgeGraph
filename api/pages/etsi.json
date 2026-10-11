@@ -73,11 +73,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:e-idas",
-        "label": "eIDAS"
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -85,7 +85,7 @@
         "label": "European Cybersecurity Act"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],

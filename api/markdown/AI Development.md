@@ -908,7 +908,7 @@ This series of papers explores the concept of agentic patterns in AI,
 - **The increasing integration of AI into our daily lives.**
 - **The ongoing debate about the ethical and societal implications of AI.**
 - [[Bias in Large Language Models]]
-- [[Large Language Models]]
+- [[Large Language Model]]
 
 ## Title: Bitcoin Mining Supporting Renewable Energy Development
 
@@ -1213,7 +1213,7 @@ This series of papers explores the concept of agentic patterns in AI,
 
 ## Image, Video and 3D
 
-- [[Stable Diffusion Image Model]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
+- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
 - For brands and private companies this allows private development of digital assets.
 
 #### Designers and engineers
@@ -1899,7 +1899,7 @@ Intellectual property rights form another complex dimension in the discussion. O
   - [[AI Lifecycle]]
   - [[Training Data]]
   - [[AI Model]]
-  - [[Machine Learning Discipline]]
+  - [[Machine Learning]]
   - [[Model Performance]]
   - [[AI Deployment]]
   - [[Bias]]

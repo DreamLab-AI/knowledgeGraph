@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-geology",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Planetary geology is the study of the surfaces and rocky structure of planets, moons and other solid bodies and the processes that shaped them.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:simulation
   - urn:ngm:class:high-performance-computing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:cuda

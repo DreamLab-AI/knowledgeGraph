@@ -20,7 +20,7 @@ enables:
 dependsOn:
   - urn:ngm:class:regulation
 supports:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:infrastructure
 standardizedBy:
   - urn:ngm:class:ofcom

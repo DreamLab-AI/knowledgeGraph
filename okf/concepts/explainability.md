@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:human-oversight
   - urn:ngm:class:contestability-ai-0043
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-interpretability
 implements:
   - urn:ngm:class:shap
@@ -40,8 +40,8 @@ supports:
   - urn:ngm:class:bias-detection-methods
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-23894
 partOf:
   - urn:ngm:class:ai-trustworthiness

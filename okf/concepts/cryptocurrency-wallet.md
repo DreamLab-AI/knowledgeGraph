@@ -32,7 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:hardware-wallet
   - urn:ngm:class:staking
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Cryptocurrency Wallet

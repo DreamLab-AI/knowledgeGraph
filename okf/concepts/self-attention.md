@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:embeddings
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:sequence-to-sequence-learning

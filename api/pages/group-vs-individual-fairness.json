@@ -61,7 +61,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -143,6 +143,10 @@
         "label": "Accountability"
       },
       {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
@@ -207,11 +211,19 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
@@ -297,6 +309,10 @@
         "label": "Ai Transparency Framework"
       },
       {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
       },
@@ -311,10 +327,6 @@
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:privacy-preserving-machine-learning",
-        "label": "Privacy-Preserving Machine Learning"
       }
     ]
   },

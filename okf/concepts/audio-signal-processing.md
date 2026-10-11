@@ -39,7 +39,7 @@ dependsOn:
   - urn:ngm:class:digital-signal-processing
   - urn:ngm:class:audio-parameters
   - urn:ngm:class:gpu-acceleration
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 implements:
   - urn:ngm:class:convolution
   - urn:ngm:class:fourier-transform
@@ -47,7 +47,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:audio-synthesis
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:digital-signal-processing

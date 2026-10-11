@@ -4,6 +4,7 @@ type: Class
 title: Neutron Star
 resource: urn:ngm:class:neutron-star
 domain: space-science-and-systems
+description: A neutron star is the dense remnant left when the core of a massive star collapses and the core is stopped by neutrons.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Neutron Star
+
+A neutron star is the dense remnant left when the core of a massive star collapses and the core is stopped by neutrons.[^1]

@@ -2,7 +2,7 @@ Mathematical reasoning is the faculty — in humans or artificial systems — to
 
 ### Overview
 
-- Mathematical reasoning has been studied in AI since the 1950s, when programs such as the Logic Theorist and General Problem Solver demonstrated that computers could produce formal proofs. Modern interest has intensified because [[Large Language Models]] exhibit emergent quantitative abilities at scale, yet also make elementary arithmetic errors — revealing a gap between statistical approximation and rigorous deduction.
+- Mathematical reasoning has been studied in AI since the 1950s, when programs such as the Logic Theorist and General Problem Solver demonstrated that computers could produce formal proofs. Modern interest has intensified because [[Large Language Model]] exhibit emergent quantitative abilities at scale, yet also make elementary arithmetic errors — revealing a gap between statistical approximation and rigorous deduction.
 - The field is important for several reasons:
   - It provides clean, checkable ground truth, making it ideal for measuring AI progress.
   - Mathematical competence underpins [[Scientific Reasoning]], engineering simulation, financial modelling, and [[Formal Verification]] of software.
@@ -44,7 +44,7 @@ Mathematical reasoning is the faculty — in humans or artificial systems — to
 
 #### Neuro-Symbolic Integration
 
-- Hybrid architectures that couple a neural [[Large Language Models]] with a sound symbolic reasoner.
+- Hybrid architectures that couple a neural [[Large Language Model]] with a sound symbolic reasoner.
 - [[Neuro-Symbolic AI]] approaches include: (a) using LLMs to translate natural-language problems into formal languages; (b) using symbolic solvers to enumerate sub-goals; (c) training neural components to predict tactic usefulness within a formal system.
 
 ### Mechanisms and Techniques

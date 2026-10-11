@@ -8,9 +8,9 @@ description: Cyber Physical Systems (CPS) are engineered systems in which comput
 maturity: established
 quality: 0.73
 is-a:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:sensor-networks
   - urn:ngm:class:actuator
   - urn:ngm:class:real-time-operating-system
@@ -45,7 +45,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-predictive-control
 supports:
   - urn:ngm:class:industrial-io-t

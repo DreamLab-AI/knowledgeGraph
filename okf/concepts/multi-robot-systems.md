@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:robotic-control
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:consensus-algorithm
   - urn:ngm:class:reinforcement-learning
 relatedTo:

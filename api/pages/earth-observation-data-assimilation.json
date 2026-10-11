@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-data-assimilation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation data assimilation is the use of observations together with short-range model forecasts to determine a best possible estimate of the state of a system and its uncertainties.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

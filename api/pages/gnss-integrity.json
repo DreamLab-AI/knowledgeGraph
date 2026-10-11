@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-integrity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS integrity is the measure of the trust that can be placed in the correctness of the information supplied by a navigation system, including the ability to give users timely warnings when the system should not be used.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

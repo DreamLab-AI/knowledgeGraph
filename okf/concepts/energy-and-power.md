@@ -14,7 +14,6 @@ is-a:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:sustainability
   - urn:ngm:class:critical-infrastructure
-  - urn:ngm:class:carbon-footprint-measurement
 hasPart:
   - urn:ngm:class:data-centre
   - urn:ngm:class:demand-response

@@ -33,10 +33,10 @@ bridgesTo:
 supports:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:autonomous-system
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:autonomous-system
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 relatedTo:
   - urn:ngm:class:ietf
   - urn:ngm:class:iso

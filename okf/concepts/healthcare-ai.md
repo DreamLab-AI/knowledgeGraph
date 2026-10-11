@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:medical-imaging
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:computer-vision
   - urn:ngm:class:federated-learning
 standardizedBy:

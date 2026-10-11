@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:event-management
 uses:
   - urn:ngm:class:event-driven-architecture
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
 partOf:
   - urn:ngm:class:platform-service
   - urn:ngm:class:networking-infrastructure

@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:enterprise-blockchain-architecture
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 dependsOn:
   - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:r3-corda
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:supply-chain-management
 uses:
   - urn:ngm:class:byzantine-fault-tolerance

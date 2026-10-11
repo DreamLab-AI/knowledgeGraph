@@ -48,8 +48,8 @@ dependsOn:
   - urn:ngm:class:data-governance
 implements:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
 contrastsWith:
   - urn:ngm:class:algorithmic-bias
@@ -74,8 +74,8 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:governance-model
   - urn:ngm:class:ai-governance

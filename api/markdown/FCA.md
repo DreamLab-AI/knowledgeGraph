@@ -50,7 +50,7 @@ The Financial Conduct Authority (FCA) is the UK's statutory conduct regulator fo
 #### Compliance and Risk Management
 
 - Financial institutions build [[Compliance Framework]] programmes around FCA rules (Principles for Businesses, SYSC, COND, and sector-specific sourcebooks)
-- [[KYC]] and Customer Due Diligence requirements under MLR registration are enforced by the FCA with escalating penalty power
+- [[Know Your Customer]] and Customer Due Diligence requirements under MLR registration are enforced by the FCA with escalating penalty power
 - FCA Guidance and Policy Statements shape internal [[AML/CFT]] programme design across traditional and digital finance
 
 #### FinTech and Innovation

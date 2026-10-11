@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:systems-engineering
 hasPart:
   - urn:ngm:class:fault-tree-analysis
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
   - urn:ngm:class:accelerated-life-testing
   - urn:ngm:class:reliability-block-diagram
 requires:

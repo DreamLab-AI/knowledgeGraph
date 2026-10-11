@@ -31,7 +31,7 @@ enables:
 dependsOn:
   - urn:ngm:class:neural-machine-translation
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:attention-mechanism
 implements:
   - urn:ngm:class:data-augmentation
@@ -42,7 +42,7 @@ contrastsWith:
   - urn:ngm:class:round-trip-translation
   - urn:ngm:class:knowledge-distillation
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:language-model
   - urn:ngm:class:bleu-score
   - urn:ngm:class:beam-search

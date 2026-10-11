@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:autonomous-ai-agents
   - urn:ngm:class:workflow-automation
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:neural-network
 relatedTo:

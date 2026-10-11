@@ -17,7 +17,7 @@ dependsOn:
   - urn:ngm:class:big-data
   - urn:ngm:class:data-warehouse
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:data-science
   - urn:ngm:class:data-analysis

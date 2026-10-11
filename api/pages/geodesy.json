@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geodesy",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geodesy is the science of accurately measuring and understanding the Earth's geometric shape, orientation in space and gravity field.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

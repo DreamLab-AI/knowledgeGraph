@@ -240,7 +240,7 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -296,7 +296,7 @@
         "label": "Data Use and Access Act 2025"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -370,9 +370,9 @@
       "slug": "governance"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -597,6 +597,10 @@
         "label": "Expert System"
       },
       {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
@@ -623,8 +627,8 @@
         "label": "Digital Media"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -641,8 +645,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -683,12 +687,16 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -697,10 +705,6 @@
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
-      },
-      {
-        "id": "urn:ngm:class:ai-research",
-        "label": "AI Research"
       }
     ],
     "standardizedBy": [
@@ -729,18 +733,22 @@
         "label": "OECD Principles on AI"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -753,8 +761,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:content-moderation",
@@ -769,7 +777,7 @@
         "label": "Digital Watermarking"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "id": "urn:ngm:class:intellectual-property",
         "label": "Intellectual Property"
       },
       {

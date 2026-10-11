@@ -95,8 +95,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -185,10 +185,6 @@
       "label": "AI Governance Maturity Model"
     },
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "ai-policy",
       "label": "ai policy"
     },
@@ -273,8 +269,8 @@
       "label": "Carbon Credit Token"
     },
     {
-      "slug": "central-bank-digital-currency-cbdc",
-      "label": "Central Bank Digital Currency (CBDC)"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "community-governance-model",
@@ -537,6 +533,10 @@
       "label": "Metaverse Safety Protocol"
     },
     {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
       "slug": "model-compression-for-edge",
       "label": "Model Compression for Edge"
     },
@@ -545,8 +545,8 @@
       "label": "Model Pruning for Edge Deployment"
     },
     {
-      "slug": "neural-network-quantisation",
-      "label": "Neural Network Quantisation"
+      "slug": "model-quantisation",
+      "label": "Model Quantisation"
     },
     {
       "slug": "on-device-learning",
@@ -713,8 +713,8 @@
       "label": "User Consent Token"
     },
     {
-      "slug": "verifiable-credential-vc",
-      "label": "Verifiable Credential (VC)"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "virtual-notary-service",

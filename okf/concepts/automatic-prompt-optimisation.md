@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:model-optimisation-and-performance
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 hasPart:
   - urn:ngm:class:ape
@@ -29,7 +29,7 @@ hasPart:
   - urn:ngm:class:tree-of-thoughts
   - urn:ngm:class:re-act
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:in-context-learning
   - urn:ngm:class:instruction-following
@@ -45,7 +45,7 @@ dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:context-window
   - urn:ngm:class:few-shot-prompting
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:evolutionary-algorithm
   - urn:ngm:class:bayesian-optimisation

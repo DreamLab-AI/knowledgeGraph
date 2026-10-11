@@ -44,18 +44,18 @@ implements:
   - urn:ngm:class:datalog
   - urn:ngm:class:prolog
 contrastsWith:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:open-world-assumption
   - urn:ngm:class:owl-class-hierarchy
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:non-monotonic-logic
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:logic-programming
   - urn:ngm:class:shacl
   - urn:ngm:class:enterprise-knowledge-graph
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:inference-engine
   - urn:ngm:class:negation-as-failure
@@ -74,7 +74,7 @@ supports:
   - urn:ngm:class:sql
   - urn:ngm:class:shacl
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso-iec
 partOf:
   - urn:ngm:class:artificial-intelligence
@@ -93,7 +93,7 @@ relatedTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:database-theory
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Closed World Assumption

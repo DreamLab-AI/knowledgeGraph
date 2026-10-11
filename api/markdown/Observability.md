@@ -43,7 +43,7 @@ Observability is the capability of a system that allows engineers to infer its i
 - **Sampling** — Head-based and tail-based sampling strategies reduce trace volume while preserving coverage of errors and slow requests.
 - **Context Propagation** — Trace context headers (W3C TraceContext, B3) are injected into inter-service calls to link spans across network boundaries, including through [[Service Mesh]] sidecars.
 - **SLO-Driven Alerting** — Alerts tied to [[Service Level Objective]] burn rates express reliability in user-facing terms, improving incident prioritisation.
-- **AIOps Integration** — [[Anomaly Detection]] and ML-driven correlations applied to telemetry streams allow proactive detection of degradation before thresholds are breached, bridging to [[Machine Learning Operations]].
+- **AIOps Integration** — [[Anomaly Detection]] and ML-driven correlations applied to telemetry streams allow proactive detection of degradation before thresholds are breached, bridging to [[MLOps]].
 
 ### Applications and Use Cases
 
@@ -53,7 +53,7 @@ Observability is the capability of a system that allows engineers to infer its i
 - **[[Chaos Engineering]]** — Fault injection experiments are validated against observability data; without adequate telemetry, the blast radius of chaos experiments cannot be measured.
 - **[[Continuous Delivery]] Safety** — Canary deployments and feature flags are evaluated by comparing observability signals (error rates, latency) between old and new versions.
 - **Security and Compliance** — Audit logs and anomalous access patterns detected via log analysis support security monitoring, bridging observability to [[Fault Tolerance]] and compliance requirements.
-- **[[Machine Learning Operations]]** — Model serving infrastructure requires the same pillars (prediction latency metrics, feature pipeline traces, error logs) as any distributed service; ML-specific metrics (drift, accuracy) extend the pattern.
+- **[[MLOps]]** — Model serving infrastructure requires the same pillars (prediction latency metrics, feature pipeline traces, error logs) as any distributed service; ML-specific metrics (drift, accuracy) extend the pattern.
 
 ### Standards and Context
 

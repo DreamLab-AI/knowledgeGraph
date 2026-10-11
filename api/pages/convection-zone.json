@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:convection-zone",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Outermost layer of the solar interior, the convection zone carries heat outward to the photosphere via rising and sinking plasma.[^1][^2][^3]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-interior",

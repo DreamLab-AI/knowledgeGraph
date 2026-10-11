@@ -8,9 +8,9 @@ description: A joint experiment by the Bank of England and the Bank for Internat
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:bank-of-england
 ---

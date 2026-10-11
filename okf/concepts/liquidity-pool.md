@@ -29,10 +29,10 @@ dependsOn:
   - urn:ngm:class:token-standard
   - urn:ngm:class:cryptographic-verification
 partOf:
-  - urn:ngm:class:de-fi-protocol
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:defi-protocol
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:decentralized-exchange-dex
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 ---
 
 # Liquidity Pool

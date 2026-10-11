@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ballistic-coefficient",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A ballistic coefficient is a parameter that combines an object\u2019s aerodynamic drag properties with its mass for use in a drag model.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

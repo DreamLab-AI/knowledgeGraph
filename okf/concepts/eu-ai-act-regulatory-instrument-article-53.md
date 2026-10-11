@@ -8,12 +8,12 @@ description: "The article of the EU Artificial Intelligence Act (Regulation (EU)
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 requires:
   - urn:ngm:class:transparency
   - urn:ngm:class:copyright
 partOf:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-scrapers
   - urn:ngm:class:training-data

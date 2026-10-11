@@ -60,7 +60,6 @@ implements:
 contrastsWith:
   - urn:ngm:class:optics
   - urn:ngm:class:traditional-film-photography
-  - urn:ngm:class:image-processing
 uses:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:diffusion-model

@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:digital-payments
   - urn:ngm:class:open-banking
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:regulatory-technology
   - urn:ngm:class:robo-advisory
   - urn:ngm:class:digital-payments
@@ -23,8 +23,9 @@ requires:
 enables:
   - urn:ngm:class:payment-system
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-inclusion
+  - urn:ngm:class:digital-payments
 dependsOn:
   - urn:ngm:class:internet-infrastructure
   - urn:ngm:class:cryptography
@@ -34,19 +35,27 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:supply-chain-finance
+  - urn:ngm:class:blockchain
+  - urn:ngm:class:regulatory-compliance
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:application-programming-interface
+  - urn:ngm:class:payment-gateway
 standardizedBy:
   - urn:ngm:class:financial-services-regulatory-body
   - urn:ngm:class:iso-20022
+partOf:
+  - urn:ngm:class:financial-services
 relatedTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:neobank
   - urn:ngm:class:insurtech
+  - urn:ngm:class:cryptocurrency
+  - urn:ngm:class:digital-economy
+  - urn:ngm:class:central-bank
 ---
 
 # Financial Technology

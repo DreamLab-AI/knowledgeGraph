@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:training-data
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:training-dataset
 uses:
   - urn:ngm:class:synthetic-data

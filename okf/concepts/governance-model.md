@@ -9,7 +9,6 @@ maturity: established
 quality: 0.35
 is-a:
   - urn:ngm:class:ai-governance-and-ethics
-  - urn:ngm:class:ai-governance-framework
 hasPart:
   - urn:ngm:class:accountability-mechanism
   - urn:ngm:class:policy-framework
@@ -23,7 +22,7 @@ requires:
 enables:
   - urn:ngm:class:self-regulation
   - urn:ngm:class:community-governance
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:platform-governance
 dependsOn:
   - urn:ngm:class:regulatory-compliance

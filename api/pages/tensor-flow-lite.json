@@ -32,15 +32,15 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -132,7 +132,7 @@
         "label": "FlatBuffers"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       }
     ],
@@ -186,6 +186,11 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -260,16 +265,16 @@
         "label": "Networking Fabric"
       },
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -290,8 +295,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:federated-learning",
@@ -302,8 +307,8 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       }
     ],
     "dependsOn": [
@@ -378,12 +383,20 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "uses": [
@@ -426,8 +439,8 @@
         "label": "Edge Deployment"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantization"
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:ai-lifecycle",
@@ -446,8 +459,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -456,8 +469,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

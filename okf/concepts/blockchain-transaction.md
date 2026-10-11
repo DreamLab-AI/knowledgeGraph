@@ -27,10 +27,10 @@ requires:
 enables:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:payment-system
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
   - urn:ngm:class:atomic-swap
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:transaction
   - urn:ngm:class:transaction

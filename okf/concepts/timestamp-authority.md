@@ -35,7 +35,7 @@ relatedTo:
   - urn:ngm:class:timestamp
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:non-repudiation
 ---
 

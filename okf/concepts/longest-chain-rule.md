@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:block
   - urn:ngm:class:blockchain
 enables:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:blockchain-protocol
 contrastsWith:
   - urn:ngm:class:51-attack

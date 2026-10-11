@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "AML Screening"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "implements": [
@@ -112,7 +112,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -246,8 +246,8 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:policy-enforcement",
@@ -272,7 +272,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -318,8 +318,8 @@
         "label": "Graph Databases"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -428,7 +428,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -466,8 +466,8 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:access-control",
@@ -554,7 +554,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -570,8 +570,8 @@
         "label": "Governance Risk Compliance"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:regulatory-reporting",

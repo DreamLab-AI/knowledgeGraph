@@ -58,7 +58,7 @@ uses:
   - urn:ngm:class:information-theory
   - urn:ngm:class:gaussian-process
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:ai-safety
   - urn:ngm:class:operations-research

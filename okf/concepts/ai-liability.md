@@ -47,7 +47,7 @@ implements:
   - urn:ngm:class:product-liability-directive
   - urn:ngm:class:strict-liability
   - urn:ngm:class:product-liability
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:negligence-standard
   - urn:ngm:class:product-liability
   - urn:ngm:class:abnormally-dangerous-activity-doctrine
@@ -74,14 +74,14 @@ supports:
 standardizedBy:
   - urn:ngm:class:ieee-7000
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:product-liability-directive
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:consumer-protection-act-1987
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ieee-7000
 relatedTo:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:ai-governance

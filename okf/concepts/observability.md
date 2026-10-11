@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:audit-logging
   - urn:ngm:class:distributed-tracing
   - urn:ngm:class:alerting
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:metrics
 requires:
   - urn:ngm:class:telemetry
@@ -34,7 +34,7 @@ contrastsWith:
   - urn:ngm:class:debugging
 bridgesTo:
   - urn:ngm:class:anomaly-detection
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
 uses:
   - urn:ngm:class:time-series-database
   - urn:ngm:class:log-aggregation
@@ -44,7 +44,7 @@ supports:
   - urn:ngm:class:continuous-delivery
 standardizedBy:
   - urn:ngm:class:open-telemetry
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:reliability-engineering
 relatedTo:

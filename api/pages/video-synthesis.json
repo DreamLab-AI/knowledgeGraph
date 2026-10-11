@@ -86,9 +86,9 @@
       "slug": "generative-ai"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:probabilistic-model",
@@ -124,11 +124,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:probabilistic-inference",
@@ -227,7 +222,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:3-d-content-generation",
+        "id": "urn:ngm:class:3-d-generation",
         "label": "3D Generation"
       },
       {
@@ -252,7 +247,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
@@ -345,7 +340,7 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -425,7 +420,7 @@
         "label": "U-Net"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -485,7 +480,7 @@
         "label": "NeurIPS"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -509,6 +504,10 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:statistics",
@@ -549,8 +548,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },

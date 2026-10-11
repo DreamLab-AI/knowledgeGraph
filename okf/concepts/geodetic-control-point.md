@@ -4,6 +4,7 @@ type: Class
 title: Geodetic Control Point
 resource: urn:ngm:class:geodetic-control-point
 domain: earth-observation-and-geospatial-sensing
+description: A geodetic control point is a marked or continuously operating station whose coordinates have been determined and are used as the known starting position for surveying and mapping.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Geodetic Control Point
+
+A geodetic control point is a marked or continuously operating station whose coordinates have been determined and are used as the known starting position for surveying and mapping.[^1][^2]

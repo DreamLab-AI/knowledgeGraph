@@ -23,7 +23,7 @@ relatedTo:
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:software-engineering
 ---

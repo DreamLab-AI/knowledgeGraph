@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:bot-prevention
   - urn:ngm:class:account-security
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:pattern-recognition
   - urn:ngm:class:cryptographic-proof
 partOf:

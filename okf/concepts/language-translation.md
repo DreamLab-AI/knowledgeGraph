@@ -15,7 +15,7 @@ implements:
   - urn:ngm:class:machine-translation
 uses:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
 relatedTo:
   - urn:ngm:class:distributed-collaboration

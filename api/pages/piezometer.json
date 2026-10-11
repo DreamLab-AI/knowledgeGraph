@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:piezometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A piezometer is a pressure- and head-measuring device, which in groundwater hydraulics takes the form of a tightly cased well of small diameter.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-instrument",

@@ -22,7 +22,7 @@ partOf:
   - urn:ngm:class:ai-research-area
 relatedTo:
   - urn:ngm:class:reward-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---

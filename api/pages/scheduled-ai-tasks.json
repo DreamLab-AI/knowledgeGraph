@@ -108,8 +108,8 @@
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:tool-use",
@@ -169,7 +169,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:inference",
@@ -316,7 +316,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -324,8 +324,8 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:bpmn",
@@ -359,7 +359,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:gaia",

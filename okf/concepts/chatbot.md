@@ -50,7 +50,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:autonomous-robot
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:speech-recognition
@@ -63,9 +63,9 @@ supports:
   - urn:ngm:class:multi-turn-dialogue
   - urn:ngm:class:sentiment-analysis
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:sentiment-analysis
   - urn:ngm:class:text-classification

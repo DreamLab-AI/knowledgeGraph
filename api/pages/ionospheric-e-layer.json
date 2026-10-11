@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ionospheric-e-layer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ionospheric E layer, the electrically conducting layer of the ionosphere found at about 100 km altitude in the historical account, was the first ionospheric layer to be discovered.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

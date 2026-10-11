@@ -27,7 +27,7 @@ uses:
   - urn:ngm:class:threat-detection
 supports:
   - urn:ngm:class:cybersecurity
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 relatedTo:
   - urn:ngm:class:data-breach
   - urn:ngm:class:network-protocol

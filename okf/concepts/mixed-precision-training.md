@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:tensor-core
 enables:
   - urn:ngm:class:model-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:distributed-training
 dependsOn:
   - urn:ngm:class:floating-point-arithmetic
@@ -26,7 +26,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:hardware-software-co-design
 uses:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:bfloat16
 supports:

@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:computer-vision
 dependsOn:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:cross-attention
   - urn:ngm:class:attention-mechanism

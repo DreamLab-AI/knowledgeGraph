@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:science-operations-phase",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A science operations phase is the part of a mission in which the spacecraft carries out its main scientific observations, for a planetary orbiter by exploring a planetary system or mapping a planet.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mission-phase",

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
 relatedTo:
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-alignment
 ---
 

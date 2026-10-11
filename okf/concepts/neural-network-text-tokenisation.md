@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:vocabulary
   - urn:ngm:class:training-corpus
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:text-generation
   - urn:ngm:class:machine-translation

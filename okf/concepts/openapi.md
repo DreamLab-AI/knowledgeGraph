@@ -9,15 +9,36 @@ maturity: established
 quality: 0.62
 is-a:
   - urn:ngm:class:api
+  - urn:ngm:class:api-standard
+hasPart:
+  - urn:ngm:class:json-data-interchange-format-schema
+  - urn:ngm:class:yaml
+requires:
+  - urn:ngm:class:http-protocol
+  - urn:ngm:class:rest
 enables:
   - urn:ngm:class:interoperability
   - urn:ngm:class:software-development
+  - urn:ngm:class:api-integration
+  - urn:ngm:class:documentation-generation
+  - urn:ngm:class:microservices
+  - urn:ngm:class:contract-testing
+  - urn:ngm:class:code-generation
 implements:
   - urn:ngm:class:api-specification
+contrastsWith:
+  - urn:ngm:class:graph-ql
+  - urn:ngm:class:g-rpc
+  - urn:ngm:class:asyncapi
+bridgesTo:
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:yaml
   - urn:ngm:class:data-format
   - urn:ngm:class:api
+  - urn:ngm:class:rest-api
+  - urn:ngm:class:json
+  - urn:ngm:class:data-schema
 supports:
   - urn:ngm:class:api-design
   - urn:ngm:class:documentation
@@ -25,12 +46,16 @@ supports:
 standardizedBy:
   - urn:ngm:class:standards
   - urn:ngm:class:interoperability
+partOf:
+  - urn:ngm:class:openapi-initiative
+  - urn:ngm:class:linux-foundation
 relatedTo:
   - urn:ngm:class:rest
   - urn:ngm:class:rest-api
   - urn:ngm:class:graph-ql
   - urn:ngm:class:api-gateway
   - urn:ngm:class:api-versioning
+  - urn:ngm:class:api-management
 ---
 
 # OpenAPI

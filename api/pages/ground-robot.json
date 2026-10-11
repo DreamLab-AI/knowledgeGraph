@@ -176,8 +176,8 @@
         "label": "Path Planning Algorithms"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "implements": [
@@ -383,14 +383,14 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robot",
@@ -401,6 +401,11 @@
       "id": "urn:ngm:class:robotics",
       "label": "Robotics",
       "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -423,9 +428,14 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -438,9 +448,24 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
     }
   ],
   "inheritedRelations": {
@@ -552,8 +577,8 @@
         "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:localisation",
@@ -708,7 +733,7 @@
         "label": "Lidar"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
@@ -780,8 +805,8 @@
         "label": "OpenAI Gym"
       },
       {
-        "id": "urn:ngm:class:ros",
-        "label": "ROS"
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ],
     "partOf": [
@@ -792,6 +817,18 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:cyber-physical-systems",

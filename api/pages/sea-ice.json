@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sea-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Sea ice is any form of ice found at sea that has formed by the freezing of sea water.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

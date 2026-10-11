@@ -28,7 +28,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:prefix-tuning
   - urn:ngm:class:prompt-tuning
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:full-fine-tuning
 bridgesTo:
   - urn:ngm:class:computer-vision

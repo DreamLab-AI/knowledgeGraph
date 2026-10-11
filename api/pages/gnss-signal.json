@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-signal",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS signal is a radio-frequency waveform transmitted by a navigation satellite for user equipment to acquire and track.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

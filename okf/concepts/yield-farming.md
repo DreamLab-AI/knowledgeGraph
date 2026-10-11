@@ -8,7 +8,7 @@ description: Yield farming is the practice of actively deploying digital assets 
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:liquidity-mining
@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:token-emission
   - urn:ngm:class:yield-aggregator
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:impermanent-loss
   - urn:ngm:class:annual-percentage-yield

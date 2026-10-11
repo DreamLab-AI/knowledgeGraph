@@ -61,7 +61,6 @@ implements:
 contrastsWith:
   - urn:ngm:class:multi-agent-orchestration-frameworks
   - urn:ngm:class:lang-graph
-  - urn:ngm:class:agent-frameworks
 uses:
   - urn:ngm:class:tool-calling-api
   - urn:ngm:class:structured-output

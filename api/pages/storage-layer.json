@@ -113,28 +113,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:5-g-network",
-        "label": "5G Network"
-      },
-      {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "requires": [
@@ -181,8 +181,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -301,20 +301,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

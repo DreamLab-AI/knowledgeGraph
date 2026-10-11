@@ -9,10 +9,11 @@ maturity: emerging
 quality: 0.72
 is-a:
   - urn:ngm:class:ai-technique
+  - urn:ngm:class:model
 hasPart:
   - urn:ngm:class:teacher-student-training
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:training-data
   - urn:ngm:class:neural-network
 enables:
@@ -36,6 +37,8 @@ relatedTo:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:distilbert
   - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:model-training
 ---
 
 # Knowledge Distillation

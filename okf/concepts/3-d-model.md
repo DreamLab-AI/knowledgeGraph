@@ -40,8 +40,8 @@ supports:
   - urn:ngm:class:metaverse
   - urn:ngm:class:digital-twin
 standardizedBy:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 partOf:
   - urn:ngm:class:virtual-environment-design
   - urn:ngm:class:digital-asset

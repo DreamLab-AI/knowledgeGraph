@@ -54,7 +54,7 @@ Robotic Process Automation (RPA) is a software technology that deploys configura
   - [[Optical Character Recognition]] extracts text from scanned documents and PDFs
   - [[Natural Language Processing]] classifies and extracts entities from emails, tickets, and unstructured notes
   - [[Machine Learning]] models score data quality, predict exceptions, and route work items to appropriate sub-flows
-  - [[Large Language Models]] provide conversational interfaces for bot configuration and enable extraction from free-text fields
+  - [[Large Language Model]] provide conversational interfaces for bot configuration and enable extraction from free-text fields
 
 ### Applications and Use Cases
 
@@ -92,7 +92,7 @@ Robotic Process Automation (RPA) is a software technology that deploys configura
 - The term [[Hyperautomation]], coined by Gartner in 2019, describes the strategic combination of RPA with AI, [[Process Mining]], API integration, and decision management to automate end-to-end processes rather than isolated tasks.
 - [[Process Mining]] tools (exemplified by Celonis and UiPath Process Mining) analyse event logs from ERP, CRM, and ticketing systems to objectively identify automation candidates and measure execution conformance after bot deployment.
 - AI-powered document understanding platforms (such as UiPath Document Understanding and Automation Anywhere IQ Bot) combine [[Optical Character Recognition]], layout analysis, and [[Natural Language Processing]] to extract structured data from invoice PDFs, insurance forms, and medical records — inputs that rule-based bots alone cannot reliably handle.
-- The boundary between RPA and autonomous [[AI Agents]] is actively contested: agentic architectures powered by [[Large Language Models]] can dynamically plan and execute multi-step UI interactions without pre-recorded scripts, potentially subsuming traditional RPA for complex, variable processes.
+- The boundary between RPA and autonomous [[AI Agents]] is actively contested: agentic architectures powered by [[Large Language Model]] can dynamically plan and execute multi-step UI interactions without pre-recorded scripts, potentially subsuming traditional RPA for complex, variable processes.
 - Legacy RPA vendors have repositioned as "automation platforms" incorporating native [[Machine Learning]] model hosting, conversational bot builders, and agentic task runners to remain competitive with [[AI Agents]] offered by general-purpose AI providers.
 
 ### Standards and Context
@@ -120,7 +120,7 @@ Robotic Process Automation (RPA) is a software technology that deploys configura
 - **Scope Creep** — RPA is effective for structured, rule-based processes; applying it to variable, judgment-intensive processes increases exception rates and maintenance burden.
 - **Legacy Dependency** — while UI-layer access enables legacy integration, it also couples bots tightly to application versions, making upgrades disruptive.
 - **Security Surface** — bots with elevated privileges, if compromised, represent an attack vector; credential management and least-privilege principles are essential.
-- **AI Substitution Risk** — agentic [[AI Agents]] powered by [[Large Language Models]] are increasingly capable of executing multi-step UI tasks with less upfront configuration, challenging the RPA model.
+- **AI Substitution Risk** — agentic [[AI Agents]] powered by [[Large Language Model]] are increasingly capable of executing multi-step UI tasks with less upfront configuration, challenging the RPA model.
 
 ### Provenance
 

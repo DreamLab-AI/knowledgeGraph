@@ -28,7 +28,7 @@ requires:
   - urn:ngm:class:sandbox-environment
   - urn:ngm:class:version-control
   - urn:ngm:class:context-window
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:prompt-engineering
 enables:
   - urn:ngm:class:ai-augmented-software-engineering
@@ -38,7 +38,7 @@ enables:
   - urn:ngm:class:non-engineer-development
   - urn:ngm:class:ai-augmented-software-engineering
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:neural-network-text-tokenisation

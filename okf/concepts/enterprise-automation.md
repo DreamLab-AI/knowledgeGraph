@@ -48,10 +48,10 @@ contrastsWith:
   - urn:ngm:class:attended-automation
   - urn:ngm:class:traditional-bpm
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:low-code-development
   - urn:ngm:class:generative-ai
   - urn:ngm:class:intelligent-document-processing

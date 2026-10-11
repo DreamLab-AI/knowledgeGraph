@@ -17,7 +17,7 @@ enables:
 dependsOn:
   - urn:ngm:class:ethereum
 implements:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 contrastsWith:
   - urn:ngm:class:rollup
   - urn:ngm:class:sidechain

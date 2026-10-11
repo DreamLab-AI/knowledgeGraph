@@ -8,7 +8,7 @@ description: A Wholesale Central Bank Digital Currency (wCBDC) is a form of cent
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
   - urn:ngm:class:kyc-aml-compliance
   - urn:ngm:class:central-bank
@@ -39,7 +39,7 @@ standardizedBy:
   - urn:ngm:class:bank-for-international-settlements
 relatedTo:
   - urn:ngm:class:central-bank
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:real-time-gross-settlement
   - urn:ngm:class:correspondent-banking

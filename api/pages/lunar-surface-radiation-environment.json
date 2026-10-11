@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lunar-surface-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Lunar surface radiation environment is the natural radiation on or adjacent to the surface of the Moon, made up of free space radiation partly shielded by the Moon, albedo radiation from the lunar crust and particles from the decay of radioactive elements in the crust.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lunar-radiation-environment",

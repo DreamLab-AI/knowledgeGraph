@@ -8,7 +8,7 @@ description: Yearn is a decentralised finance protocol that automates the alloca
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:smart-contracts
 enables:

@@ -25,7 +25,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:privacy-preserving-identity",
@@ -55,8 +55,8 @@
         "label": "BLS Signature"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ]
   },
@@ -139,12 +139,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -193,16 +193,16 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential"
-      },
-      {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "dependsOn": [
@@ -223,7 +223,7 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -329,7 +329,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -337,7 +337,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       }
     ],
@@ -373,7 +373,7 @@
         "label": "Secure Email"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -451,8 +451,8 @@
         "label": "Blind Signature"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
@@ -487,8 +487,8 @@
       "label": "Digital Identity Wallet"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

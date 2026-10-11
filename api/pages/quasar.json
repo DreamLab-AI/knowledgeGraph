@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quasar",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A quasar is an extremely luminous active galactic nucleus, powered by a supermassive black hole accreting matter at the centre of a galaxy.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:probabilistic-inference
 hasPart:
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:extended-kalman-filter
   - urn:ngm:class:factor-graph
 requires:

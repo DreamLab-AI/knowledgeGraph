@@ -59,7 +59,7 @@ uses:
   - urn:ngm:class:agent-to-agent-protocol
   - urn:ngm:class:knowledge-interchange-format
   - urn:ngm:class:message-passing
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:owl-2-web-ontology-language
 supports:
   - urn:ngm:class:autonomous-agent
@@ -76,7 +76,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:agent-communication-language
   - urn:ngm:class:communication-protocol
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:agent2-agent-protocol
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:distributed-systems

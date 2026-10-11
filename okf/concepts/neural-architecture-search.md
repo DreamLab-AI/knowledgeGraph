@@ -39,7 +39,7 @@ uses:
 relatedTo:
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:zero-cost-proxy
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:foundation-model
 ---
 

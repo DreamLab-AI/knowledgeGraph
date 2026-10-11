@@ -122,9 +122,29 @@
       "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity",
-      "slug": "blockchain-entity"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -188,12 +208,12 @@
         "label": "Deterministic Encoding"
       },
       {
-        "id": "urn:ngm:class:cryptographic-security",
-        "label": "Cryptographic Security"
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:distributed-protocol",
-        "label": "Distributed Protocol"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -226,8 +246,26 @@
         "label": "Decentralised Storage"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
       }
     ],
     "implements": [
@@ -246,12 +284,40 @@
       {
         "id": "urn:ngm:class:ipfs-content-addressing",
         "label": "IPFS Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
@@ -280,18 +346,46 @@
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       }
     ],
     "supports": [
@@ -306,6 +400,22 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "standardizedBy": [
@@ -332,8 +442,20 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -362,16 +484,20 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:blockchain-protocol",
-        "label": "Blockchain Protocol"
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     }
   ]
 }

@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:data-preprocessing
   - urn:ngm:class:exploratory-data-analysis
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-training
   - urn:ngm:class:predictive-modelling
 dependsOn:

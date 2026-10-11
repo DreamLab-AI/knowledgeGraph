@@ -10,7 +10,6 @@ quality: 0.88
 is-a:
   - urn:ngm:class:workforce-development
   - urn:ngm:class:human-capital
-  - urn:ngm:class:ai-research-talent
 hasPart:
   - urn:ngm:class:ai-research-talent
   - urn:ngm:class:ml-engineering
@@ -25,14 +24,14 @@ requires:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:ai-investment
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:ai-model-development
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:technological-leadership
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
 dependsOn:
   - urn:ngm:class:education-and-ai
@@ -48,7 +47,7 @@ contrastsWith:
   - urn:ngm:class:ai-talent-war
   - urn:ngm:class:talent-concentration
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:reinforcement-learning

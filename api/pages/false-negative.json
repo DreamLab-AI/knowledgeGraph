@@ -102,9 +102,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:model-architecture",
@@ -176,8 +176,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -196,6 +196,10 @@
       {
         "id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
       },
       {
         "id": "urn:ngm:class:ground-truth-labels",
@@ -218,12 +222,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:computational-resources",
-        "label": "Computational Resource"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -248,16 +248,16 @@
         "label": "AI Safety Evaluation"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "dependsOn": [
@@ -274,8 +274,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:backpropagation",
@@ -338,20 +338,20 @@
         "label": "Overfitting"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:graphical-model",
-        "label": "Probabilistic Graphical Model"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
       },
       {
         "id": "urn:ngm:class:model-architecture",
@@ -380,20 +380,20 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
         "id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
       },
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -440,12 +440,16 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:federated-learning",
@@ -458,20 +462,24 @@
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:ai-policy",
-        "label": "AI Policy"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -493,7 +501,11 @@
     "partOf": [
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:deep-learning-pipeline",

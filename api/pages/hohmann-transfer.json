@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hohmann-transfer",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A Hohmann transfer is a two-impulse transfer between coplanar circular orbits using an ellipse tangent to both.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

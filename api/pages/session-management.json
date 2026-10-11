@@ -63,7 +63,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {

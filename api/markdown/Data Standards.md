@@ -28,7 +28,7 @@ Data Standards are formally agreed specifications, schemas, formats, vocabularie
 
 ### Mechanisms
 
-- **Standardisation lifecycle** — drafting by technical committee → public review → balloting → publication → maintenance. Bodies such as [[ISO]], [[W3C]], and [[IETF]] operate formal consensus processes.
+- **Standardisation lifecycle** — drafting by technical committee → public review → balloting → publication → maintenance. Bodies such as [[ISO]], [[World Wide Web Consortium]], and [[IETF]] operate formal consensus processes.
 - **De facto vs de jure** — de facto standards emerge from dominant market adoption ([[JSON]], [[Markdown]]); de jure are formally ratified. Both coexist and often converge.
 - **Profiles and extensions** — a base standard (e.g., [[Dublin Core]]) is profiled for a domain (e.g., DCAT-AP for EU public sector) by restricting or extending permitted terms.
 - **Conformance testing** — reference implementations, validation schemas (e.g., [[SHACL]], [[JSON Schema]]), and certification programmes ensure standard compliance.

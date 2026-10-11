@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-mask",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A quality mask is a per-pixel layer that records which pixels of an Earth observation product are affected by conditions that reduce their usefulness, such as cloud, cloud shadow, snow or sensor saturation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

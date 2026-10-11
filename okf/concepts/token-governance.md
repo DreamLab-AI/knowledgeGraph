@@ -16,7 +16,7 @@ uses:
   - urn:ngm:class:governance-token
   - urn:ngm:class:smart-contract
 partOf:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:tokenomics

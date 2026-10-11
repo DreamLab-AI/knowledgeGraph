@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:georeferenced-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A georeferenced data state is the condition of a dataset that has undergone a georeferencing process, so that its elements are tied to locations in a map coordinate system.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

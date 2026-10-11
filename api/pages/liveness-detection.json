@@ -58,7 +58,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -66,7 +66,7 @@
         "label": "Multi-Factor Authentication"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       }
     ],
@@ -342,7 +342,7 @@
         "label": "Remote Identity Proofing"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -354,7 +354,7 @@
         "label": "Age Verification"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -372,10 +372,6 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
@@ -386,6 +382,10 @@
       {
         "id": "urn:ngm:class:optical-character-recognition",
         "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:business-process-management",
@@ -508,7 +508,7 @@
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {

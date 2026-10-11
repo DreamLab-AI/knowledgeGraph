@@ -62,7 +62,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -80,7 +80,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
@@ -92,7 +92,7 @@
         "label": "Bounding Volume Hierarchy"
       },
       {
-        "id": "urn:ngm:class:heatmap-regression",
+        "id": "urn:ngm:class:risk-intensity-heatmap-regression",
         "label": "Heatmap Regression"
       }
     ]
@@ -338,7 +338,7 @@
   "backlinks": [
     {
       "slug": "heatmap-regression",
-      "label": "Heatmap Regression (Keypoint Localisation)"
+      "label": "Heatmap Regression"
     }
   ]
 }

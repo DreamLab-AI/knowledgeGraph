@@ -122,10 +122,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:digital-watermarking",
         "label": "Digital Watermarking"
       },
@@ -136,6 +132,10 @@
       {
         "id": "urn:ngm:class:license-management",
         "label": "License Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -190,7 +190,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -218,7 +218,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {

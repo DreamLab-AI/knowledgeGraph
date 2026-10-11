@@ -8,7 +8,7 @@ description: A precise, documented statement of the requirements, behaviour, int
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:technical-standard
+  - urn:ngm:class:technical-documentation
 enables:
   - urn:ngm:class:interoperability
 partOf:

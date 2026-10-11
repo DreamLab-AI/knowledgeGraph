@@ -26,7 +26,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:spatial-user-interfaces
   - urn:ngm:class:natural-language-interface
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:spatial-user-interfaces
 uses:
   - urn:ngm:class:information-architecture

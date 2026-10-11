@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ionospheric-delay",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ionospheric delay is the frequency-dependent propagation effect of the ionised upper atmosphere on a GNSS signal.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:theoretical-astrophysics",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Theoretical astrophysics is the branch of astrophysics that builds mathematical and computational models of astronomical systems to explain observations and to predict phenomena not yet observed.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

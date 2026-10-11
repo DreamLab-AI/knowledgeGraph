@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:hash-function
 enables:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:digital-identity
   - urn:ngm:class:mutual-authentication
   - urn:ngm:class:non-repudiation
@@ -38,8 +38,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:blockchain-identity
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:identity-and-access-management

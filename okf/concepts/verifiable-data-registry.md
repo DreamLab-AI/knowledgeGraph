@@ -13,18 +13,18 @@ hasPart:
   - urn:ngm:class:did-document
 requires:
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:digital-identity
   - urn:ngm:class:credential-revocation
   - urn:ngm:class:did-resolution
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:distributed-ledger
 implements:
   - urn:ngm:class:w3-c-did-specification
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 contrastsWith:
   - urn:ngm:class:centralized-identity-provider
   - urn:ngm:class:certificate-authority
@@ -38,13 +38,13 @@ supports:
   - urn:ngm:class:trust-framework
   - urn:ngm:class:zero-knowledge-proof
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:decentralized-identity-foundation
 partOf:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 relatedTo:
-  - urn:ngm:class:decentralized-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:verifiable-credentials
 ---
 
 # Verifiable Data Registry

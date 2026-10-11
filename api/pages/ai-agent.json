@@ -64,8 +64,8 @@
         "label": "Tool Use"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:memory-management",
@@ -106,7 +106,7 @@
         "label": "Workflow Orchestration"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -272,7 +272,7 @@
         "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -510,8 +510,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -582,8 +582,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:sc-display-and-rendering",
@@ -891,8 +891,8 @@
       "label": "BTC Layer 3"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "commonsense-reasoning",

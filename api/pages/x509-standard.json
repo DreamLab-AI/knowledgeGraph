@@ -30,8 +30,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "dependsOn": [
@@ -84,8 +84,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:trust-infrastructure",
@@ -162,16 +162,16 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-security",
@@ -230,14 +230,14 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "TLS Protocol"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:self-signed-certificate",
@@ -262,7 +262,7 @@
         "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -326,7 +326,7 @@
         "label": "Code Signing"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "SSL/TLS"
       },
       {

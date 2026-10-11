@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:antenna-gain",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Antenna gain is the directional radiation or reception ratio of an antenna relative to a stated reference antenna.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

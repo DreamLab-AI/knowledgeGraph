@@ -162,11 +162,11 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -221,7 +221,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
@@ -256,11 +256,11 @@
         "label": "OECD AI Principles"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -416,8 +416,8 @@
         "label": "Community Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:platform-governance",
@@ -564,7 +564,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -636,8 +636,8 @@
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ]
   },

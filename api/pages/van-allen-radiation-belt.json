@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:van-allen-radiation-belt",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Van Allen radiation belts are regions encircling Earth in which energetic electrons and ions are trapped by Earth\u2019s magnetic field.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:radiation-belt",

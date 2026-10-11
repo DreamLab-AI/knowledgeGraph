@@ -32,13 +32,13 @@ bridgesTo:
 uses:
   - urn:ngm:class:http2
   - urn:ngm:class:eventsource-api
-  - urn:ngm:class:http
+  - urn:ngm:class:http2
 supports:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:llm-inference-api
   - urn:ngm:class:real-time-dashboard
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:whatwg
 relatedTo:
   - urn:ngm:class:api-gateway

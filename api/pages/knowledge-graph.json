@@ -317,7 +317,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -552,10 +552,6 @@
       "label": "Collaborative Filtering"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
-    },
-    {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
     },
@@ -632,8 +628,8 @@
       "label": "Graph Database"
     },
     {
-      "slug": "graph-neural-networks",
-      "label": "Graph Neural Networks"
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
     },
     {
       "slug": "graph-theory",
@@ -680,8 +676,8 @@
       "label": "Semantic Reasoning Engine"
     },
     {
-      "slug": "semantic-web-linked-data-standard",
-      "label": "Semantic Web Linked Data Standard"
+      "slug": "semantic-web",
+      "label": "Semantic Web"
     },
     {
       "slug": "solid",

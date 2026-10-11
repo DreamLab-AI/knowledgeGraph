@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:cross-chain-bridge
 relatedTo:
   - urn:ngm:class:hyperledger-iroha
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # M-Bridge

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:natural-satellite",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A natural satellite is a naturally formed body that orbits a planet, and is also called a moon or planetary satellite.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

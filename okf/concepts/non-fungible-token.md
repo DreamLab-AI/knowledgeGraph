@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:token
 requires:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:wallet
 enables:
@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:public-key-cryptography
 supports:
   - urn:ngm:class:nft-marketplace
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:digital-art
   - urn:ngm:class:tokenization

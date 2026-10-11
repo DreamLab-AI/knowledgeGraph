@@ -56,13 +56,13 @@ uses:
   - urn:ngm:class:feature-store
   - urn:ngm:class:data-lake
 supports:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:etsi-domain-taxonomy
   - urn:ngm:class:ai-governance-and-ethics
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:etsi-isg-ai
 partOf:
   - urn:ngm:class:etsi-metaverse-domain-taxonomy

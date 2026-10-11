@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:calculus
   - urn:ngm:class:set-theory
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:principal-component-analysis
   - urn:ngm:class:neural-network
@@ -30,7 +30,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:graph-theory
   - urn:ngm:class:information-theory
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:computer-graphics
 uses:
   - urn:ngm:class:matrix-factorisation

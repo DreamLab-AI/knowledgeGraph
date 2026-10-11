@@ -10,7 +10,7 @@ quality: 0.74
 is-a:
   - urn:ngm:class:prompt-engineering
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:chain-of-thought
   - urn:ngm:class:stochastic-sampling
 enables:

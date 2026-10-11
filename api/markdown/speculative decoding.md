@@ -50,7 +50,7 @@ Speculative decoding is an inference acceleration technique for autoregressive l
   - **Hugging Face `generate()` API** — the `assisted_generation` parameter enables speculative decoding with any compatible draft model.
   - **vLLM** — open-source, production-grade LLM serving engine with native speculative decoding support including Medusa and ngram-based drafts.
   - **NVIDIA TensorRT-LLM** — production inference library for NVIDIA GPUs with speculative decoding as a first-class optimisation path.
-  - **Apple MLX** — open-source framework for Apple Silicon that uses speculative decoding for on-device [[Large Language Models]] inference.
+  - **Apple MLX** — open-source framework for Apple Silicon that uses speculative decoding for on-device [[Large Language Model]] inference.
 - The technique's statistical guarantees are grounded in classical [[Rejection Sampling]] theory; the key theoretical papers (Leviathan et al. 2022; Chen et al. 2023) established the acceptance criterion and distribution equivalence proofs that all subsequent variants inherit.
 - Acceptance rate — the fraction of draft tokens accepted on average — is the key tuning metric. It depends on: draft model quality relative to the target, task predictability, the value of K (lookahead width), and temperature settings.
 - Integration with [[Continuous Batching]] and paged [[KV Cache]] management (as in vLLM) requires careful scheduling to avoid draft/target divergence across batch items.
@@ -58,7 +58,7 @@ Speculative decoding is an inference acceleration technique for autoregressive l
 ### Related Concepts
 
 - [[Inference Optimisation]] — the parent category; speculative decoding is one of several complementary optimisation strategies.
-- [[Model Distillation]] — draft models are often distilled versions of the target; the two techniques are frequently deployed together.
+- [[Knowledge Distillation]] — draft models are often distilled versions of the target; the two techniques are frequently deployed together.
 - [[Model Quantisation]] — quantisation reduces memory footprint; speculative decoding addresses the bandwidth utilisation problem; combined they produce compound gains.
 - [[Flash Attention]] — an attention kernel optimisation that accelerates both the draft's generation and the target's verification pass.
 - [[Tensor Parallelism]] — multi-GPU strategies interact with speculative decoding scheduling; the draft may run on fewer devices than the target.

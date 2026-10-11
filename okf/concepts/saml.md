@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:saml-metadata
 requires:
   - urn:ngm:class:xml
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:identity-provider
 enables:
   - urn:ngm:class:single-sign-on
@@ -45,7 +45,7 @@ relatedTo:
   - urn:ngm:class:identity-management
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:identity-and-access-management
-  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:zero-trust
 ---
 
 # SAML

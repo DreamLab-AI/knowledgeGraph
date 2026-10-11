@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:provider
   - urn:ngm:class:security-assertion
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:authentication-standards
   - urn:ngm:class:digital-certificate
@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:siloed-identity
   - urn:ngm:class:centralised-identity
 bridgesTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:self-sovereign-identity
 uses:

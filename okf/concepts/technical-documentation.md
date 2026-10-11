@@ -8,7 +8,7 @@ description: Technical documentation is the body of written material that explai
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:technical-standard
+  - urn:ngm:class:documentation
 supports:
   - urn:ngm:class:open-standard
   - urn:ngm:class:interoperability

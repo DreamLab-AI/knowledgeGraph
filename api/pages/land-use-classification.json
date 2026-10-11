@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:land-use-classification",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Land use classification assigns areas to classes describing the arrangements, activities and inputs people undertake on a land cover type to produce, change or maintain it [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

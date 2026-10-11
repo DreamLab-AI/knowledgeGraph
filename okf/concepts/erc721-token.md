@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:nft-ownership-proof
   - urn:ngm:class:smart-contract
 requires:
-  - urn:ngm:class:erc721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:digital-ownership
 enables:
@@ -23,13 +23,13 @@ enables:
   - urn:ngm:class:digital-asset-trading
   - urn:ngm:class:fractionalized-nft
 contrastsWith:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:erc-1155
   - urn:ngm:class:erc1155-token
 bridgesTo:
   - urn:ngm:class:non-fungible-token-nft
 standardizedBy:
-  - urn:ngm:class:erc721
+  - urn:ngm:class:erc-721
   - urn:ngm:class:token-standard
 relatedTo:
   - urn:ngm:class:nft

@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:kubernetes
   - urn:ngm:class:containerisation
   - urn:ngm:class:object-storage
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:cloud-platform
   - urn:ngm:class:edge-computing

@@ -123,19 +123,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -335,12 +330,8 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:sequential-computing",
-        "label": "Sequential Computing"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -353,28 +344,24 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
         "id": "urn:ngm:class:machine-learning-engineering",
         "label": "Machine Learning Engineering"
       },
       {
         "id": "urn:ngm:class:security-engineering",
         "label": "Security Engineering"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -451,8 +438,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -479,12 +466,6 @@
         "label": "Open Standards"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
-      }
-    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:parallel-processing",
@@ -507,16 +488,16 @@
         "label": "High-Performance Computing"
       },
       {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Computing"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
       }
     ]
   },

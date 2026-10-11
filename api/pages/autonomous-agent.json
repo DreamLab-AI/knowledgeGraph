@@ -310,7 +310,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -485,8 +485,8 @@
       "label": "ai agents"
     },
     {
-      "slug": "aiethics",
-      "label": "AIEthics"
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
     },
     {
       "slug": "action-executor",
@@ -557,8 +557,8 @@
       "label": "Autonomous Operation"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "cognitive-architecture",

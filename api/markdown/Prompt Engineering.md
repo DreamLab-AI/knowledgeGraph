@@ -253,7 +253,7 @@ Prompt Engineering is the systematic discipline of designing, structuring, and o
 
 - **Creative and domain-expert tasks**: Persona-based prompts for legal drafting, medical summarisation, financial analysis, and creative writing. Style guides embedded in system prompts ensure consistency across long documents. Multi-persona review prompts (pessimist, pragmatist, creative critic) improve output quality through simulated adversarial review.
 
-- **Image generation prompting** (for [[Stable Diffusion Image Model]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
+- **Image generation prompting** (for [[Stable Diffusion]], DALL-E 3, Midjourney): Compositional positive prompts specifying subject, style, lighting, camera angle, artist reference, and quality terms; negative prompts excluding artefacts, deformations, and style contaminations. SDXL prompt dynamics (warm-tone bias, CFG sensitivity, negative-space style control) require model-specific calibration. Comfy UI workflow prompting integrates LLM-generated prompt text into graph-based pipelines via Ollama or API nodes.
 
 - ### Academic Context
 

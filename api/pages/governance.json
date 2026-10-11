@@ -346,6 +346,10 @@
       "label": "DAO Analytics"
     },
     {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
       "slug": "dao-legal-structures",
       "label": "DAO Legal Structures"
     },
@@ -354,12 +358,8 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "daogovernance",
-      "label": "DAOGovernance"
-    },
-    {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     },
     {
       "slug": "decision-making",

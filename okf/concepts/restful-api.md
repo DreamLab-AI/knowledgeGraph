@@ -33,7 +33,7 @@ supports:
   - urn:ngm:class:api-design
   - urn:ngm:class:microservices
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 partOf:
   - urn:ngm:class:web-api
   - urn:ngm:class:api-design

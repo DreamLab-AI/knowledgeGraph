@@ -8,7 +8,7 @@
   "definition": "The glTF 2.0 specification is the Khronos Group standard defining the GL Transmission Format for efficient transmission and loading of 3D scenes and models. It uses JSON for structure with binary buffers for geometry and a physically based material model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:gltf-standard",
+      "id": "urn:ngm:class:gl-tf",
       "label": "glTF"
     }
   ],
@@ -46,9 +46,19 @@
       "slug": "3-d-asset-standard"
     },
     {
+      "id": "urn:ngm:class:3-d-file-format",
+      "label": "3D File Format",
+      "slug": "3-d-file-format"
+    },
+    {
       "id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability",
       "slug": "sc-standards-and-interop"
+    },
+    {
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard",
+      "slug": "data-format-standard"
     },
     {
       "id": "urn:ngm:class:interoperability-standard",
@@ -71,6 +81,11 @@
       "slug": "technical-standard"
     },
     {
+      "id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards",
+      "slug": "technical-standards"
+    },
+    {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
@@ -86,6 +101,11 @@
       "slug": "specification"
     },
     {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards",
+      "slug": "standards"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -94,20 +114,72 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse",
+      "slug": "metaverse"
+    },
+    {
+      "id": "urn:ngm:class:technical-documentation",
+      "label": "Technical Documentation",
+      "slug": "technical-documentation"
+    },
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation",
+      "slug": "documentation"
+    },
+    {
+      "id": "urn:ngm:class:multiverse",
+      "label": "Multiverse",
+      "slug": "multiverse"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data",
+      "slug": "data"
+    },
+    {
+      "id": "urn:ngm:class:semantic-spatial-web-layer",
+      "label": "Semantic Spatial Web Layer",
+      "slug": "semantic-spatial-web-layer"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:binary-buffer",
+        "label": "Binary Buffer"
+      },
+      {
         "id": "urn:ngm:class:pbr-materials",
         "label": "PBR Materials"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering Material"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
       },
       {
         "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -115,26 +187,22 @@
         "label": "Level of Detail"
       },
       {
-        "id": "urn:ngm:class:physically-based-rendering",
-        "label": "Physically Based Rendering"
-      },
-      {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
-      },
-      {
-        "id": "urn:ngm:class:3-d-file-format",
-        "label": "3D File Format"
-      },
-      {
-        "id": "urn:ngm:class:asset-format-standards",
-        "label": "Asset Format Standards"
       }
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
         "id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
       },
       {
         "id": "urn:ngm:class:web-gl",
@@ -153,19 +221,23 @@
         "label": "Texture Atlas"
       },
       {
-        "id": "urn:ngm:class:protocol-specification",
-        "label": "Protocol Specification"
-      },
-      {
-        "id": "urn:ngm:class:standards-conformance-testing",
-        "label": "Conformance Testing"
-      },
-      {
-        "id": "urn:ngm:class:depth-sensing",
-        "label": "Depth Sensing"
+        "id": "urn:ngm:class:animation-keyframes",
+        "label": "Animation Keyframes"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:3-d-rendering",
+        "label": "Web-Based 3D Rendering"
+      },
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery",
+        "label": "Augmented Reality Content Delivery"
+      },
       {
         "id": "urn:ngm:class:cross-platform-content",
         "label": "Cross-Platform 3D Content"
@@ -176,37 +248,33 @@
       },
       {
         "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time 3D Rendering"
-      },
-      {
-        "id": "urn:ngm:class:asset-interoperability",
-        "label": "Asset Interoperability"
+        "label": "Real-Time Rendering"
       },
       {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:content-portability",
-        "label": "XR Content Portability"
-      },
-      {
-        "id": "urn:ngm:class:cross-platform-compatibility",
-        "label": "Cross-Platform Compatibility"
-      },
-      {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       },
       {
-        "id": "urn:ngm:class:royalty-free-licensing",
-        "label": "Royalty-Free Licensing"
+        "id": "urn:ngm:class:web-gl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards Process"
       },
       {
         "id": "urn:ngm:class:industry-consortium",
@@ -215,12 +283,24 @@
       {
         "id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-distribution-network",
+        "label": "Content Distribution Network"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group Standard"
       },
       {
         "id": "urn:ngm:class:iso-iec-14496-16",
@@ -231,37 +311,37 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:khronos-group",
-        "label": "Khronos Group"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:material-x",
+        "label": "MaterialX"
       },
       {
         "id": "urn:ngm:class:metaverse-standards-forum",
         "label": "Metaverse Standards Forum"
-      },
-      {
-        "id": "urn:ngm:class:best-practices",
-        "label": "Best Practices"
-      },
-      {
-        "id": "urn:ngm:class:specification",
-        "label": "Specification"
-      },
-      {
-        "id": "urn:ngm:class:technical-requirements",
-        "label": "Technical Requirements"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:collada",
+        "label": "COLLADA"
+      },
+      {
         "id": "urn:ngm:class:fbx",
-        "label": "FBX Format"
+        "label": "FBX"
       },
       {
         "id": "urn:ngm:class:obj-format",
         "label": "OBJ Format"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "USD Universal Scene Description"
       },
       {
@@ -269,20 +349,16 @@
         "label": "Proprietary Asset Format"
       },
       {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-agent",
-        "label": "Autonomous Agent"
-      },
-      {
-        "id": "urn:ngm:class:de-facto-standard",
-        "label": "De Facto Standard"
-      },
-      {
-        "id": "urn:ngm:class:proprietary-specification",
-        "label": "Proprietary Specification"
       }
     ],
     "bridgesTo": [
@@ -291,35 +367,39 @@
         "label": "3D Asset Standard"
       },
       {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
         "id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
       },
       {
         "id": "urn:ngm:class:neural-radiance-fields",
         "label": "Neural Radiance Fields"
       },
       {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
         "id": "urn:ngm:class:non-fungible-token",
         "label": "Non-Fungible Token"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:3-d-reconstruction",
-        "label": "3D Reconstruction"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Meshopt Compression"
+      },
       {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
@@ -341,30 +421,26 @@
         "label": "Skeleton Animation"
       },
       {
-        "id": "urn:ngm:class:api-specification",
-        "label": "API Specification"
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
       },
       {
-        "id": "urn:ngm:class:data-format-standard",
-        "label": "Data Format Standard"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
+        "label": "JSON Serialisation"
       }
     ],
     "supports": [
       {
+        "id": "urn:ngm:class:babylon-js",
+        "label": "Babylon.js"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:avatar-standard",
-        "label": "Avatar Standard"
-      },
-      {
-        "id": "urn:ngm:class:virtual-reality",
-        "label": "Virtual Reality"
       },
       {
         "id": "urn:ngm:class:game-engine",
@@ -375,23 +451,19 @@
         "label": "Metaverse Platform"
       },
       {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
       {
         "id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
@@ -405,12 +477,16 @@
         "label": "Metaverse Standards Forum"
       },
       {
+        "id": "urn:ngm:class:pixar-animation-studios",
+        "label": "Pixar Animation Studios"
+      },
+      {
         "id": "urn:ngm:class:3-d-asset-standard",
         "label": "3D Asset Standard"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:open-xr",
@@ -423,18 +499,46 @@
     ],
     "partOf": [
       {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "3D Asset Pipeline"
+      },
+      {
         "id": "urn:ngm:class:metaverse-standards-forum",
         "label": "Metaverse Standards Forum"
       },
       {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      },
+      {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      },
+      {
+        "id": "urn:ngm:class:semantic-spatial-web-layer",
+        "label": "Semantic Spatial Web Layer"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:e-commerce-3-d",
         "label": "E-Commerce 3D"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "USD Universal Scene Description"
       },
       {
         "id": "urn:ngm:class:vrm-format",
@@ -453,16 +557,8 @@
         "label": "ISO/IEC 14496-16"
       },
       {
-        "id": "urn:ngm:class:semantic-spatial-web-layer",
+        "id": "urn:ngm:class:spatial-web",
         "label": "Spatial Web"
-      },
-      {
-        "id": "urn:ngm:class:sc-content-and-assets",
-        "label": "Content and Assets"
-      },
-      {
-        "id": "urn:ngm:class:sc-platform-and-environment",
-        "label": "Platform and Environment"
       }
     ]
   },

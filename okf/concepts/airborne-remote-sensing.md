@@ -4,6 +4,7 @@ type: Class
 title: Airborne Remote Sensing
 resource: urn:ngm:class:airborne-remote-sensing
 domain: earth-observation-and-geospatial-sensing
+description: Airborne remote sensing is remote sensing carried out with sensors mounted on aircraft or other platforms within the Earth's atmosphere.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Airborne Remote Sensing
+
+Airborne remote sensing is remote sensing carried out with sensors mounted on aircraft or other platforms within the Earth's atmosphere.[^1][^2]

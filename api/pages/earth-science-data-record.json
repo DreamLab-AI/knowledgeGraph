@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-science-data-record",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth science data record is a unified and coherent set of observations of a given parameter of the Earth system, optimised to meet specific requirements in addressing science questions.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

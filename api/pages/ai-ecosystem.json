@@ -8,10 +8,6 @@
   "definition": "The AI Ecosystem is the interconnected network of organisations, technologies, standards, talent pipelines, regulatory frameworks, and capital flows that collectively produce, deploy, and govern artificial intelligence systems. It encompasses foundation model providers, cloud infrastructure operators, toolchain vendors, application developers, research institutions, standardisation bodies, and end-user communities, together constituting the supply chain and governance fabric of AI as a general-purpose technology.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:digital-asset-ecosystem",
-      "label": "Digital Asset Ecosystem"
-    },
-    {
       "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy"
     }
@@ -22,8 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:ai-inference",
@@ -35,7 +31,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:gpu-computing",
@@ -88,7 +84,7 @@
         "label": "Data Centres"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -168,7 +164,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -190,7 +186,7 @@
         "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -223,8 +219,8 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:ai-inference",
@@ -263,7 +259,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -275,8 +271,8 @@
         "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
@@ -290,7 +286,7 @@
         "label": "AI Policy"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -331,7 +327,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       }
     ]
   },
@@ -370,23 +366,11 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:blockchain-oracle",
-        "label": "Blockchain Oracle"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
-      },
-      {
-        "id": "urn:ngm:class:wallet-infrastructure",
-        "label": "Wallet Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptocurrency-exchange",
         "label": "Cryptocurrency Exchange"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -400,29 +384,21 @@
       {
         "id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
-      },
-      {
-        "id": "urn:ngm:class:exchange-platforms",
-        "label": "Exchange Platforms"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:wallet-infrastructure",
-        "label": "Wallet Infrastructure"
-      },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
@@ -434,29 +410,29 @@
       {
         "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:asset-tokenisation",
-        "label": "Asset Tokenization"
-      },
-      {
-        "id": "urn:ngm:class:cross-border-payments",
-        "label": "Cross-Border Payment"
-      },
-      {
-        "id": "urn:ngm:class:de-fi-services",
-        "label": "DeFi Services"
-      },
-      {
-        "id": "urn:ngm:class:digital-ownership",
-        "label": "Digital Ownership"
-      },
-      {
-        "id": "urn:ngm:class:non-fungible-token",
-        "label": "Non-Fungible Token"
-      },
       {
         "id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetisation"
@@ -468,21 +444,29 @@
       {
         "id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:distributed-ledger-technology",
-        "label": "Distributed Ledger Technology"
-      },
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
@@ -498,10 +482,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-financial-system",
-        "label": "Traditional Financial System"
-      },
-      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
       },
@@ -512,20 +492,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:supply-chain",
-        "label": "Supply Chain"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -542,6 +514,14 @@
       {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -574,19 +554,11 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:digital-economy",
-        "label": "Digital Economy"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
       {
         "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
@@ -616,22 +588,6 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cryptocurrency",
-        "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
-      },
-      {
-        "id": "urn:ngm:class:interoperability-protocol",
-        "label": "Interoperability Protocol"
-      },
-      {
-        "id": "urn:ngm:class:layer-2-scaling",
-        "label": "Layer 2 Scaling"
-      },
-      {
         "id": "urn:ngm:class:gig-economy",
         "label": "Gig Economy"
       },
@@ -646,6 +602,22 @@
       {
         "id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sc-interaction",
+        "label": "Interaction Technology"
+      },
+      {
+        "id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
       }
     ]
   },

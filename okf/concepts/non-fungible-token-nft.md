@@ -33,9 +33,9 @@ bridgesTo:
   - urn:ngm:class:metaverse
   - urn:ngm:class:supply-chain
 uses:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-collectible
 standardizedBy:
   - urn:ngm:class:iso-24165

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exoplanet-transit-method",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planet passing between its star and observer dims the star's light slightly, revealing its presence through this transit method.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

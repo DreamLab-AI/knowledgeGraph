@@ -3,7 +3,7 @@ Privilege escalation is the act of gaining rights beyond those originally grante
 ### Overview
 
 - Privilege escalation takes two canonical forms. Vertical escalation elevates a principal from a lower to a higher privilege level, such as from a standard user to an administrator. Horizontal escalation moves laterally to impersonate or access another principal at the same level.
-- Attackers reach escalation by chaining flaws: a software [[Vulnerability]], a permissive [[Authorization]] policy, exposed credentials weakening [[Authentication]], or insecure defaults. Once achieved, escalation unlocks data exfiltration, persistence and further lateral movement.
+- Attackers reach escalation by chaining flaws: a software [[Vulnerability]], a permissive [[Authorisation]] policy, exposed credentials weakening [[Authentication]], or insecure defaults. Once achieved, escalation unlocks data exfiltration, persistence and further lateral movement.
 - Defenders counter escalation by enforcing [[Least Privilege]], hardening [[Access Control]], and monitoring through [[Audit Logging]] and [[Observability]] so that anomalous elevation is detected quickly.
 
 ### Mechanisms

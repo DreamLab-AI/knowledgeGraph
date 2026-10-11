@@ -46,12 +46,12 @@ dependsOn:
   - urn:ngm:class:bayesian-inference
 implements:
   - urn:ngm:class:fault-tree-analysis
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
   - urn:ngm:class:iso-31000
   - urn:ngm:class:mitre-atlas
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:owasp-llm-top-10-2025
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:bow-tie-analysis
   - urn:ngm:class:owasp-llm-top-10-2025
 contrastsWith:
@@ -69,18 +69,18 @@ uses:
   - urn:ngm:class:helm
 supports:
   - urn:ngm:class:financial-stability
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:smart-contract-security
   - urn:ngm:class:ai-safety
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:defi-risk
 standardizedBy:
   - urn:ngm:class:basel-iii
   - urn:ngm:class:fsb
   - urn:ngm:class:iso-31000
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:fca-ps21-3
 relatedTo:
   - urn:ngm:class:operational-resilience

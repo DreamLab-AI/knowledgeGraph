@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:ai-model-architecture
 hasPart:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 requires:
@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:distributed-training
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:ai-agent
   - urn:ngm:class:retrieval-augmented-generation
@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:infrastructure
 uses:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:scaling-laws
 supports:
@@ -45,7 +45,7 @@ supports:
   - urn:ngm:class:code-generation
   - urn:ngm:class:image-synthesis
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:systemic-risk

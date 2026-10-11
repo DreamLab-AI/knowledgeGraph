@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:data-debt
   - urn:ngm:class:dark-data
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-engineering
 uses:
   - urn:ngm:class:statistical-process-control

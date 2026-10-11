@@ -19,7 +19,7 @@ contrastsWith:
   - urn:ngm:class:raw-data
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:data-schema
   - urn:ngm:class:data-standards
@@ -34,7 +34,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:metadata-management
   - urn:ngm:class:metadata-schema
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:ontology
 ---
 

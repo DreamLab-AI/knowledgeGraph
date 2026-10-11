@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:laser-communication-terminal",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A laser communication terminal is optical communications hardware that transmits or receives modulated light and acquires and points towards a compatible optical endpoint.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

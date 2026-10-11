@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:chromosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "In the solar atmosphere, the chromosphere lies above the photosphere and below the transition region and the corona.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-atmosphere",

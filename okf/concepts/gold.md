@@ -59,7 +59,7 @@ contrastsWith:
   - urn:ngm:class:government-bond
 uses:
   - urn:ngm:class:algorand
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:stellar
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger
@@ -68,7 +68,7 @@ uses:
 supports:
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin
@@ -86,7 +86,7 @@ relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-as-money
   - urn:ngm:class:bitcoin-proof-of-work-protocol-etf
   - urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:digital-asset
   - urn:ngm:class:stablecoin

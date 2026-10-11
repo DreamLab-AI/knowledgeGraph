@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:model-training
   - urn:ngm:class:hyperparameter-optimisation
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:neural-network-architecture
   - urn:ngm:class:reinforcement-learning
 dependsOn:

@@ -31,7 +31,7 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:webid-decentralised-identity-uri",
+        "id": "urn:ngm:class:web-id",
         "label": "WebID"
       }
     ],
@@ -50,8 +50,8 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -100,12 +100,12 @@
         "label": "Replication"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -298,8 +298,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

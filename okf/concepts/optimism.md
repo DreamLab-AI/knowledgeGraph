@@ -15,12 +15,12 @@ hasPart:
   - urn:ngm:class:op-stack
   - urn:ngm:class:optimism-collective
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:rollup
   - urn:ngm:class:fraud-proof
   - urn:ngm:class:sequencer
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:superchain
   - urn:ngm:class:public-goods-funding

@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:digital-content
   - urn:ngm:class:real-time-communication
   - urn:ngm:class:user-interface
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 enables:
   - urn:ngm:class:user-engagement
   - urn:ngm:class:creator-economy
@@ -83,7 +83,7 @@ supports:
   - urn:ngm:class:virtual-event
   - urn:ngm:class:social-platform
   - urn:ngm:class:video-streaming
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 standardizedBy:
   - urn:ngm:class:ofcom
   - urn:ngm:class:digital-services-act

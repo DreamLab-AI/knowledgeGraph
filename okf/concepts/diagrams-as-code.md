@@ -65,7 +65,7 @@ contrastsWith:
   - urn:ngm:class:whiteboard-photographs
 uses:
   - urn:ngm:class:json-data-interchange-format-schema
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:markdown-code-fence
   - urn:ngm:class:yaml-frontmatter
   - urn:ngm:class:web-components
@@ -83,7 +83,7 @@ standardizedBy:
   - urn:ngm:class:ieee
   - urn:ngm:class:markdown-diagramming-as-code-tool
   - urn:ngm:class:object-management-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:markdown-diagramming-as-code-tool
   - urn:ngm:class:omg
   - urn:ngm:class:thoughtworks-tech-radar

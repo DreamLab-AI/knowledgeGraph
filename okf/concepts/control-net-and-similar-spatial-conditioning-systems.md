@@ -42,7 +42,7 @@ enables:
   - urn:ngm:class:edge-guided-generation
   - urn:ngm:class:structural-layout-control
 dependsOn:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:u-net-architecture
   - urn:ngm:class:clip
@@ -58,8 +58,8 @@ implements:
   - urn:ngm:class:feedback-control
 contrastsWith:
   - urn:ngm:class:generative-adversarial-networks
-  - urn:ngm:class:vae
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:lora
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:kohya-dreambooth-and-similar
 uses:
@@ -80,8 +80,8 @@ supports:
   - urn:ngm:class:image-to-image
   - urn:ngm:class:node-based-diffusion-pipeline-interface
   - urn:ngm:class:inpainting
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
+  - urn:ngm:class:lora
 standardizedBy:
   - urn:ngm:class:ar-xiv
   - urn:ngm:class:cvpr
@@ -98,7 +98,7 @@ relatedTo:
   - urn:ngm:class:image-generation
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:pose-estimation
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:adapter-modules
 ---
 

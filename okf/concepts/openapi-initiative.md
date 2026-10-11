@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:standards
 hasPart:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 requires:
   - urn:ngm:class:web-standard
 enables:
@@ -21,7 +21,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:api-gateway
 uses:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 supports:
   - urn:ngm:class:rest-api
   - urn:ngm:class:api-design

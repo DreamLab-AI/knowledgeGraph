@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:policy-decision-point
   - urn:ngm:class:policy-enforcement-point
 enables:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:access-control
 implements:
   - urn:ngm:class:attribute-based-access-control

@@ -8,7 +8,7 @@ description: A tool-augmented large language model is an LLM that can invoke ext
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:agents
   - urn:ngm:class:computer-use-and-browser-agents

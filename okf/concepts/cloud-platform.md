@@ -47,7 +47,7 @@ supports:
   - urn:ngm:class:finops
   - urn:ngm:class:data-governance
 standardizedBy:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:nist-cloud-computing
 partOf:
   - urn:ngm:class:cloud-infrastructure

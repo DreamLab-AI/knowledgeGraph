@@ -8,11 +8,11 @@ description: A decentralised exchange aggregator that routes trades across multi
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 requires:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:liquidity-pool
 bridgesTo:

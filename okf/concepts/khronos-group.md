@@ -14,10 +14,10 @@ hasPart:
   - urn:ngm:class:open-gl
   - urn:ngm:class:opencl
   - urn:ngm:class:open-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:spir-v
   - urn:ngm:class:web-gl
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:nnef
 enables:
   - urn:ngm:class:graphics-api

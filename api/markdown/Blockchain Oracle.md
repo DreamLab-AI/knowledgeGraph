@@ -9,14 +9,14 @@ A decentralized service that bridges blockchain smart contracts with external re
 - **Blockchain oracles** are trusted third-party data providers that supply external information to [[smart contracts]] on [[blockchain]] networks, enabling them to interact with real-world data and events.
 - Oracles solve the fundamental limitation that [[blockchains]] are deterministic, closed systems that cannot natively access off-chain data.
 - They act as middleware that securely fetches, verifies, and transmits data from external sources (APIs, web servers, IoT devices) to on-chain [[smart contracts]].
-- Critical infrastructure for [[DeFi]], [[parametric insurance]], [[prediction markets]], [[gaming]], and any blockchain application requiring real-world information.
+- Critical infrastructure for [[Decentralised Finance]], [[parametric insurance]], [[prediction markets]], [[gaming]], and any blockchain application requiring real-world information.
 - The global blockchain oracle market reached $1.2 billion in 2024, projected to grow at 42% CAGR through 2030 as [[Web3]] adoption accelerates.
 
   ## The Oracle Problem
 
 - **The Oracle Problem** refers to the fundamental security and trust challenge of reliably connecting deterministic [[blockchain]] systems with non-deterministic external data sources.
 - [[Smart contracts]] are trustless and verifiable, but introducing external data creates a **single point of failure** that can compromise the entire system.
-- Traditional centralized oracles undermine blockchain's [[decentralization]] by reintroducing trusted intermediaries.
+- Traditional centralized oracles undermine blockchain's [[Decentralisation]] by reintroducing trusted intermediaries.
 - Key challenges include:
   - **Data Authenticity**: Ensuring data comes from legitimate sources and hasn't been tampered with.
   - **Data Accuracy**: Verifying that the data correctly represents real-world state.
@@ -30,19 +30,19 @@ A decentralized service that bridges blockchain smart contracts with external re
   ### Decentralized Oracle Networks (DONs)
 
 - **Decentralized Oracle Networks** distribute trust across multiple independent node operators who collectively fetch, validate, and deliver data to smart contracts.
-- [[Chainlink]] pioneered the DON model with thousands of independent node operators providing data to [[Ethereum Smart Contract Platform]], [[BNB Chain]], [[Polygon]], [[Avalanche]], and 15+ other chains.
+- [[Chainlink]] pioneered the DON model with thousands of independent node operators providing data to [[Ethereum]], [[BNB Chain]], [[Polygon]], [[Avalanche]], and 15+ other chains.
 - Architecture components:
   - **Oracle Nodes**: Independent operators running oracle client software to fetch and submit data.
   - **Data Aggregation**: Combining responses from multiple sources to create a single trustworthy data point.
   - **Consensus Mechanisms**: Majority voting, median calculation, or weighted consensus to determine final oracle answer.
   - **Reputation Systems**: On-chain performance tracking and [[slashing]] for dishonest nodes.
   - **Cryptographic Guarantees**: [[Digital signatures]], [[zero-knowledge proofs]], and [[Trusted Execution Environments]] (TEEs) for data integrity.
-- As of 2025, [[Chainlink]] secures over $75 billion in [[total value locked]] (TVL) across [[DeFi]] protocols, making it the largest oracle infrastructure.
+- As of 2025, [[Chainlink]] secures over $75 billion in [[total value locked]] (TVL) across [[Decentralised Finance]] protocols, making it the largest oracle infrastructure.
 
   ### Oracle Types by Data Category
 
 - **Price Feed Oracles** provide real-time market data for [[cryptocurrencies]], [[commodities]], [[fiat currencies]], and traditional assets.
-- Essential for [[DeFi]] protocols including [[lending platforms]], [[decentralized exchanges]] (DEXs), [[derivatives]], and [[stablecoins]].
+- Essential for [[Decentralised Finance]] protocols including [[lending platforms]], [[decentralized exchanges]] (DEXs), [[derivatives]], and [[stablecoins]].
 - [[Chainlink Price Feeds]] aggregate data from 50+ premium data providers (CoinGecko, CoinMarketCap, Brave New Coin) across hundreds of asset pairs.
 - [[Pyth Network]] delivers sub-second price updates from 90+ first-party publishers including Jane Street, Jump Trading, and major exchanges.
 - [[Band Protocol]] provides price feeds optimized for [[Cosmos]] ecosystem and cross-chain applications.
@@ -71,11 +71,11 @@ A decentralized service that bridges blockchain smart contracts with external re
 - Vulnerable to manipulation, downtime, and censorship.
 - **Decentralized Oracles** distribute trust across multiple independent nodes using [[consensus mechanisms]] to aggregate data.
 - Significantly more secure and censorship-resistant than centralized alternatives.
-- Higher operational costs but appropriate for securing high-value [[DeFi]] applications.
+- Higher operational costs but appropriate for securing high-value [[Decentralised Finance]] applications.
 - Examples: [[Chainlink]], [[Band Protocol]], [[API3]] DAOs.
 - **Hybrid Oracles** combine on-chain and off-chain components, leveraging [[smart contracts]] for settlement and off-chain oracles for data.
 - Balances security, cost-efficiency, and flexibility.
-- Most common architecture for production [[DeFi]] applications in 2025.
+- Most common architecture for production [[Decentralised Finance]] applications in 2025.
 - **First-Party Oracles** allow data providers to run their own oracle nodes, eliminating intermediary trust assumptions.
 - [[API3]] pioneered this model where data owners (exchanges, weather services) operate oracle infrastructure.
 - Reduces latency and costs while improving data authenticity.
@@ -85,7 +85,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   ### Chainlink
 
 - **[[Chainlink]]** is the largest and most widely adopted [[decentralized oracle network]], providing data and computation services to [[smart contracts]] across 15+ blockchain networks.
-- Market Leadership: Secures $75+ billion in [[DeFi]] TVL, powers 1,500+ projects, processes 10+ million oracle updates monthly.
+- Market Leadership: Secures $75+ billion in [[Decentralised Finance]] TVL, powers 1,500+ projects, processes 10+ million oracle updates monthly.
 - Core Services:
   - **Data Feeds**: 1,000+ price feeds covering [[cryptocurrencies]], [[commodities]], [[forex]], and indices.
   - **VRF (Verifiable Random Function)**: Cryptographically secure randomness for [[gaming]] and [[NFTs]].
@@ -96,7 +96,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   - **Node Operators**: 1,000+ independent operators including T-Systems, Deutsche Telekom, Swisscom, and major staking providers.
   - **Staking v0.2**: [[LINK token]] staking with [[slashing]] for dishonest reporting (launched 2024).
   - **Off-Chain Reporting (OCR 2.0)**: Reduces gas costs by 90% through off-chain aggregation with on-chain verification.
-- Integrations: [[Ethereum Smart Contract Platform]], [[Polygon]], [[Avalanche]], [[Arbitrum]], [[Optimism]], [[BNB Chain]], [[Fantom]], [[Solana]] (via Wormhole), [[Cosmos]].
+- Integrations: [[Ethereum]], [[Polygon]], [[Avalanche]], [[Arbitrum]], [[Optimism]], [[BNB Chain]], [[Fantom]], [[Solana]] (via Wormhole), [[Cosmos]].
 - 2025 Developments: Chainlink Economics 2.0 with enhanced [[staking]], [[Build program]] supporting 100+ startups, expansion to [[Bitcoin Proof-of-Work Protocol]] via [[DLCs]].
 
   ### Pyth Network
@@ -109,7 +109,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   - Publishers submit price/confidence data to Pyth on-chain aggregator.
   - [[Wormhole]] cross-chain messaging delivers data to 40+ blockchains.
   - Confidence intervals provide uncertainty metrics for risk management.
-- Adoption: [[Drift Protocol]], [[Zeta Markets]], [[Jupiter]], and 200+ [[DeFi]] protocols use Pyth for real-time pricing.
+- Adoption: [[Drift Protocol]], [[Zeta Markets]], [[Jupiter]], and 200+ [[Decentralised Finance]] protocols use Pyth for real-time pricing.
 - Governance: [[PYTH token]] launched 2023 for decentralized governance and [[staking]].
 
   ### Band Protocol
@@ -121,7 +121,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   - BandChain blockchain dedicated to oracle operations.
 - Data Coverage: Price feeds, random numbers, sports scores, weather data, and custom API requests.
 - Validators: 100+ active validators securing oracle network with [[BAND token]] staking.
-- Supported Chains: [[Cosmos Hub]], [[Osmosis]], [[Terra]], [[BNB Chain]], [[Ethereum Smart Contract Platform]], [[Solana]], and 30+ networks.
+- Supported Chains: [[Cosmos Hub]], [[Osmosis]], [[Terra]], [[BNB Chain]], [[Ethereum]], [[Solana]], and 30+ networks.
 - Performance: 5-second block time, $50M+ TVL secured.
 
   ### API3
@@ -130,7 +130,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 - Architecture:
   - **Airnodes**: Serverless oracle nodes deployed by data providers directly.
   - **dAPIs (Decentralized APIs)**: Aggregated data feeds from multiple first-party sources.
-  - **OEV Network**: Captures [[oracle extractable value]] and returns it to [[DeFi]] protocols.
+  - **OEV Network**: Captures [[oracle extractable value]] and returns it to [[Decentralised Finance]] protocols.
 - Governance: [[API3 DAO]] manages oracle feeds, data provider onboarding, and treasury ($100M+).
 - Adoption: 100+ dAPIs covering price feeds, [[NFT]] floor prices, and custom data.
 - Innovation: OEV (Oracle Extractable Value) recapture returns $10M+ annually to protocols.
@@ -167,7 +167,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   - [[Suredbits]] Oracle: Bitcoin price feeds, sports scores, exchange data.
   - [[Crypto Garage]]: Japanese financial market data for DLCs.
   - [[Atomic Finance]]: Hash rate and difficulty oracles.
-- Adoption: DLC.Link bridges Bitcoin DLCs to [[Ethereum Smart Contract Platform]] and [[Stacks]] for cross-chain applications.
+- Adoption: DLC.Link bridges Bitcoin DLCs to [[Ethereum]] and [[Stacks]] for cross-chain applications.
 - Limitations: Requires trusted oracle (working on decentralized oracle solutions), only supports discrete outcomes.
 
   ### RGB Protocol Oracles
@@ -180,7 +180,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   - Supports [[Taproot]] for enhanced privacy and efficiency.
 - Use Cases: [[Stablecoins]] backed by fiat, [[tokenized assets]], [[conditional payments]] on Lightning.
 - Development Status: Testnet implementations in 2025, mainnet production expected late 2025.
-- Potential: Brings [[DeFi]] primitives to Bitcoin while maintaining [[Layer 1]] security.
+- Potential: Brings [[Decentralised Finance]] primitives to Bitcoin while maintaining [[Layer 1]] security.
 
   ### Lightning Network Oracles
 
@@ -198,7 +198,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 - Attack Pattern:
   1. Attacker borrows millions via [[flash loan]] (no collateral required).
   2. Uses funds to manipulate price on low-liquidity [[DEX]].
-  3. Oracle reads manipulated price and reports to [[DeFi]] protocol.
+  3. Oracle reads manipulated price and reports to [[Decentralised Finance]] protocol.
   4. Attacker exploits mispriced assets for profit.
   5. Repays flash loan within same transaction.
 - Notable Incidents:
@@ -209,7 +209,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 - **Data Source Manipulation** targets upstream data providers to corrupt oracle inputs.
 - Attacking exchange APIs, weather stations, or web servers that oracles query.
 - 2021 incident: Compromised API endpoint fed false data to multiple oracles.
-- Mitigation: Multi-source aggregation, cryptographic data signing, [[TLS]] verification, reputation systems.
+- Mitigation: Multi-source aggregation, cryptographic data signing, [[Transport Layer Security]] verification, reputation systems.
 - **Oracle Node Collusion** occurs when majority of oracle nodes coordinate to report false data.
 - Prevents: Economic penalties ([[slashing]]), geographic distribution, anonymous node selection, [[trusted execution environments]].
 - **Frontrunning Oracle Updates** exploits predictable oracle update timing to gain trading advantage.
@@ -220,7 +220,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 
 - **Multi-Source Aggregation**: Query 5+ independent data sources and use median or weighted average.
 - **Decentralization**: Distribute trust across 10+ independent node operators.
-- **Cryptographic Verification**: Require [[digital signatures]], [[TLS]] certificates, or [[zero-knowledge proofs]] for data authenticity.
+- **Cryptographic Verification**: Require [[digital signatures]], [[Transport Layer Security]] certificates, or [[zero-knowledge proofs]] for data authenticity.
 - **Economic Security**: Ensure oracle node [[staking]] value exceeds potential profit from attack.
 - **Deviation Thresholds**: Reject oracle updates that differ >X% from recent values.
 - **Time-Weighted Averages**: Use TWAP to smooth out short-term manipulation attempts.
@@ -264,7 +264,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   ### Supply Chain and IoT
 
 - **[[Supply Chain]]** tracking uses oracles to verify real-world conditions like temperature, location, and timestamps.
-- [[IoT]] sensors report to oracles that trigger smart contract payments upon delivery confirmation.
+- [[Internet of Things]] sensors report to oracles that trigger smart contract payments upon delivery confirmation.
 - Pharmaceutical cold-chain monitoring ensures vaccines maintained proper temperature.
 - [[Chainlink]] integrates with [[Google Cloud]] and [[AWS IoT]] for enterprise supply chain solutions.
 
@@ -280,14 +280,14 @@ A decentralized service that bridges blockchain smart contracts with external re
   ### Market Size and Growth
 
 - Global blockchain oracle market valuation: **$1.2 billion** (2024), projected **$8.3 billion by 2030** (42% CAGR).
-- Oracle-secured [[DeFi]] TVL: **$75+ billion** across all chains.
+- Oracle-secured [[Decentralised Finance]] TVL: **$75+ billion** across all chains.
 - Daily oracle requests: **100+ million** queries processed globally.
 - Active oracle nodes: **5,000+** independent operators across major networks.
 
   ### Network Comparisons (2025)
 
 - **[[Chainlink]]**: 1,500+ integrated projects, $75B+ secured, 1,000+ price feeds, 15+ supported blockchains.
-- **[[Pyth Network]]**: 200+ [[DeFi]] protocols, 200+ price feeds, 40+ blockchains, 90+ first-party publishers.
+- **[[Pyth Network]]**: 200+ [[Decentralised Finance]] protocols, 200+ price feeds, 40+ blockchains, 90+ first-party publishers.
 - **[[Band Protocol]]**: 30+ blockchains, 100+ validators, [[Cosmos]] ecosystem leader.
 - **[[API3]]**: 100+ dAPIs, $100M+ DAO treasury, OEV recapture innovation.
 - **[[UMA]]**: $200M+ secured, 500+ Optimistic Oracle requests monthly.
@@ -304,7 +304,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 
 - **Latency**: Oracle updates often lag seconds to minutes behind real-world events.
 - [[Pyth Network]] addresses with <400ms latency but adoption still growing.
-- **Cost**: High gas fees for frequent oracle updates on [[Ethereum Smart Contract Platform]] (partially solved by [[Layer 2]] rollups).
+- **Cost**: High gas fees for frequent oracle updates on [[Ethereum]] (partially solved by [[Layer 2]] rollups).
 - **Cross-Chain Fragmentation**: Data silos across blockchains require separate oracle deployments.
 - **Centralization Risks**: Many "decentralized" oracles still rely on limited node operators.
 - **Data Privacy**: Oracles may expose sensitive information on public blockchains.
@@ -317,7 +317,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 - **[[AI-Enhanced Oracles]]**: Machine learning for anomaly detection, data validation, and predictive oracles.
 - **[[TEE Integration]]**: [[Trusted Execution Environments]] (Intel SGX, ARM TrustZone) for verifiable off-chain computation.
 - **[[Oracle Extractable Value]]** (OEV) Management: [[API3]]'s OEV Network returns frontrunning profits to protocols.
-- **[[Bitcoin Oracle Expansion]]**: Broader adoption of [[DLCs]], [[RGB Protocol]], and Lightning-based oracles for Bitcoin [[DeFi]].
+- **[[Bitcoin Oracle Expansion]]**: Broader adoption of [[DLCs]], [[RGB Protocol]], and Lightning-based oracles for Bitcoin [[Decentralised Finance]].
 
   ### Research Directions
 
@@ -335,7 +335,7 @@ A decentralized service that bridges blockchain smart contracts with external re
 - **Adler, J., Berryhill, R., Veneris, A., Poulos, Z., Veira, N., & Kastania, A.** (2018). "Astraea: A Decentralized Blockchain Oracle." *IEEE BigData*, 283-290. DOI: 10.1109/BigData.2018.8622438
 - Proposed voting-based decentralized oracle with reputation system.
 - **Caldarelli, G., & Ellul, J.** (2021). "The Blockchain Oracle Problem in Decentralized Finance—A Multivocal Approach." *Applied Sciences*, 11(16), 7572. DOI: 10.3390/app11167572
-- Comprehensive survey of oracle security challenges in [[DeFi]].
+- Comprehensive survey of oracle security challenges in [[Decentralised Finance]].
 
   ### Recent Research (2023-2025)
 
@@ -399,7 +399,7 @@ A decentralized service that bridges blockchain smart contracts with external re
   #### Related Concepts
 
 - See [[Smart Contracts]] for oracle-dependent contract logic.
-- See [[DeFi]] for primary oracle use cases in finance.
+- See [[Decentralised Finance]] for primary oracle use cases in finance.
 - See [[Chainlink]] for largest decentralized oracle network details.
 - See [[The Oracle Problem]] for deep dive on trust and security challenges.
 - See [[Discreet Log Contracts]] for Bitcoin-specific oracle contracts.

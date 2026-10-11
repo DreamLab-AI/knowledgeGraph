@@ -48,21 +48,21 @@ enables:
   - urn:ngm:class:operational-runway
   - urn:ngm:class:token-holder-value-accrual
 dependsOn:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:gnosis-safe
   - urn:ngm:class:on-chain-voting
   - urn:ngm:class:block-explorer
   - urn:ngm:class:price-oracle
 implements:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:protocol-owned-liquidity
   - urn:ngm:class:quadratic-funding
   - urn:ngm:class:governance-model
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:governance-model
   - urn:ngm:class:dollar-cost-averaging
   - urn:ngm:class:otc-token-sale
@@ -98,17 +98,17 @@ uses:
   - urn:ngm:class:nansen
 supports:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-standard
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:financial-transparency
   - urn:ngm:class:open-source-development
   - urn:ngm:class:protocol-sustainability
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ecosystem-grants
   - urn:ngm:class:token-holder-value
 standardizedBy:
   - urn:ngm:class:dao-legal-structures
   - urn:ngm:class:fasb-asu-2023-08
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:sec-form-8-k
   - urn:ngm:class:gaap-fair-value-accounting
   - urn:ngm:class:dao-legal-structures

@@ -93,14 +93,19 @@
       "slug": "version-controlled-artefact"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:software-development",
       "label": "Software Development",
       "slug": "software-development"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -168,8 +173,8 @@
         "label": "Code Review"
       },
       {
-        "id": "urn:ngm:class:programming-paradigm",
-        "label": "Programming Paradigm"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       }
     ],
     "enables": [
@@ -202,8 +207,8 @@
         "label": "Runbook"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       }
     ],
     "dependsOn": [
@@ -296,12 +301,12 @@
         "label": "WYSIWYG Editor"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       },
       {
         "id": "urn:ngm:class:waterfall-model",
@@ -318,24 +323,28 @@
         "label": "Security Engineering"
       },
       {
-        "id": "urn:ngm:class:ai-code-generation",
-        "label": "AI Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "AI Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
       }
     ],
     "uses": [
@@ -348,8 +357,8 @@
         "label": "Markdown Code Fence"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:web-components",
@@ -428,8 +437,8 @@
         "label": "ThoughtWorks Tech Radar"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ieee-std-730",

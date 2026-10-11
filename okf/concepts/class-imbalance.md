@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:classification
   - urn:ngm:class:ai-technique
   - urn:ngm:class:supervised-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:resampling
   - urn:ngm:class:cost-sensitive-learning
@@ -63,7 +63,7 @@ standardizedBy:
   - urn:ngm:class:neurips-benchmarks
 partOf:
   - urn:ngm:class:classification
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:precision-recall-curve
   - urn:ngm:class:confusion-matrix

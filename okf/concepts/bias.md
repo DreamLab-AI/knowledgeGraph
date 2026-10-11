@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:algorithmic-auditing
 dependsOn:
   - urn:ngm:class:training-data
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:ai-fairness
   - urn:ngm:class:algorithmic-fairness
@@ -30,8 +30,8 @@ uses:
   - urn:ngm:class:confusion-matrix
   - urn:ngm:class:statistical-testing
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-tr-24027
 partOf:
   - urn:ngm:class:ai-risks

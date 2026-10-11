@@ -8,7 +8,7 @@ description: Programmable finance is the encoding of financial logic, agreements
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:btc-layer-3
   - urn:ngm:class:smart-contract

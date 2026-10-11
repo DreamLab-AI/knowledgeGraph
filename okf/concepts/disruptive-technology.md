@@ -11,11 +11,11 @@ is-a:
   - urn:ngm:class:infra-computing-and-cloud
 enables:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:edge-computing
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:edge-computing
   - urn:ngm:class:internet-of-things
 contrastsWith:

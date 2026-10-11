@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:bolt-specifications
 enables:
   - urn:ngm:class:micropayment
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:bitcoin-payment-routing
 implements:
   - urn:ngm:class:lightning-network
@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:eclair
   - urn:ngm:class:ldk
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:machine-to-machine-payments
   - urn:ngm:class:machine-to-machine-payments
 uses:

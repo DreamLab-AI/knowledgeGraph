@@ -6,7 +6,7 @@ Tool Use is the capability of large language models and AI agent systems to invo
 
 ### Overview
 
-- Tool Use transforms a [[Large Language Models|language model]] from a closed-world text predictor into an open-world agent capable of interacting with live information and external systems.
+- Tool Use transforms a [[Large Language Model|language model]] from a closed-world text predictor into an open-world agent capable of interacting with live information and external systems.
 - Prior to tool use, LLMs were confined to knowledge encoded in their training weights and the contents of a single context window; any information beyond the training cut-off or requiring live computation was inaccessible.
 - By exposing a set of [[Tool Schema|tool definitions]] within the context, the orchestration layer delegates execution authority to the model while retaining control over which tools are available and when results are returned.
 - The core interaction loop:

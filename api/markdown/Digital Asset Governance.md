@@ -11,7 +11,7 @@ Digital asset governance is the set of rules, processes, and authority structure
 
 #### On-chain governance
 
-- [[Governance Token]]-weighted voting, proposal lifecycles, timelocks, and execution through [[DAO]] contracts.
+- [[Governance Token]]-weighted voting, proposal lifecycles, timelocks, and execution through [[Decentralised Autonomous Organisation]] contracts.
 - Delegation, quorum rules, and emergency multisig safeguards balance decentralisation and safety.
 
 #### Custody and key management

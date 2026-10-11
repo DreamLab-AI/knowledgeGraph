@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:distributed-consensus
 enables:
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:treasury-management
   - urn:ngm:class:protocol-upgrade
@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:governance-token
   - urn:ngm:class:on-chain-voting
-  - urn:ngm:class:time-lock
+  - urn:ngm:class:timelock
 relatedTo:
   - urn:ngm:class:polkadot-parachains
   - urn:ngm:class:cosmos-ibc

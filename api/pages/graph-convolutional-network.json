@@ -101,6 +101,14 @@
         "label": "Graph-Structured Data"
       },
       {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
       },
@@ -115,10 +123,6 @@
       {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -129,6 +133,10 @@
       {
         "id": "urn:ngm:class:graph-classification",
         "label": "Graph Classification"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       },
       {
         "id": "urn:ngm:class:link-prediction",
@@ -143,16 +151,12 @@
         "label": "Recommendation System"
       },
       {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "dependsOn": [
@@ -193,6 +197,10 @@
         "label": "Recurrent Neural Network"
       },
       {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
         "id": "urn:ngm:class:decision-tree",
         "label": "Decision Tree"
       },
@@ -203,6 +211,14 @@
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:deep-learning-domain",
+        "label": "Deep Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
       },
@@ -211,31 +227,27 @@
         "label": "Knowledge Graphing"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       },
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:robotics-perception",
-        "label": "Robotics Perception"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
@@ -257,10 +269,6 @@
         "label": "Node Embedding"
       },
       {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
-      },
-      {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
       },
@@ -279,10 +287,24 @@
         "label": "Social Network Analysis"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:graph-rag",
         "label": "GraphRAG"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
       },
       {
         "id": "urn:ngm:class:transformer",
@@ -303,14 +325,6 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ]
   },

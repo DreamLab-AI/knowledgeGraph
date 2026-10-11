@@ -8,7 +8,7 @@
   "definition": "The mathematical study of the resources \u2014 principally time and memory (space) \u2014 required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, BPP, and EXPTIME. It establishes which problems are tractable (solvable efficiently in polynomial time) and which are intractable, and investigates the relationships between complexity classes, most famously the unresolved P vs NP question.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:computer-science",
+      "id": "urn:ngm:class:theoretical-computer-science",
       "label": "Theoretical Computer Science"
     },
     {
@@ -106,7 +106,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -210,7 +210,7 @@
         "label": "Quantum Information"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -236,7 +236,7 @@
         "label": "Oracle"
       },
       {
-        "id": "urn:ngm:class:cryptographic-proof-system",
+        "id": "urn:ngm:class:proof-system",
         "label": "Proof System"
       },
       {
@@ -266,7 +266,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -299,7 +299,7 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:computer-science",
+        "id": "urn:ngm:class:theoretical-computer-science",
         "label": "Theoretical Computer Science"
       },
       {
@@ -335,70 +335,57 @@
       "slug": "artificial-intelligence"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:logic",
       "label": "Logic",
       "slug": "logic"
     },
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
-    },
-    {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation",
       "slug": "knowledge-representation"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:algorithms",
-        "label": "Algorithms"
-      },
-      {
-        "id": "urn:ngm:class:computability-theory",
-        "label": "Computability Theory"
-      },
-      {
-        "id": "urn:ngm:class:computer-networks",
-        "label": "Computer Networks"
-      },
-      {
-        "id": "urn:ngm:class:data-structure",
-        "label": "Data Structures"
-      },
-      {
-        "id": "urn:ngm:class:database-systems",
-        "label": "Database Systems"
-      },
-      {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating Systems"
-      },
-      {
-        "id": "urn:ngm:class:programming-language",
-        "label": "Programming Languages"
-      },
-      {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:discrete-mathematics",
-        "label": "Discrete Mathematics"
-      },
-      {
-        "id": "urn:ngm:class:logic",
-        "label": "Logic"
-      },
       {
         "id": "urn:ngm:class:computer-science",
         "label": "Computer Science"
@@ -416,31 +403,23 @@
         "label": "Training Data"
       },
       {
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
         "id": "urn:ngm:class:proof-theory",
         "label": "Proof Theory"
       },
       {
-        "id": "urn:ngm:class:agile-software-development",
-        "label": "Agile Methodology"
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
-      },
-      {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
-      },
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
@@ -456,6 +435,22 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -484,7 +479,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -496,24 +491,12 @@
         "label": "Probabilistic Reasoning"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
-      },
-      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:sub-symbolic-ai",
         "label": "Sub-Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -522,20 +505,20 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:information-theory",
@@ -546,19 +529,11 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-engineering",
-        "label": "Machine Learning Engineering"
+        "id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
-      {
-        "id": "urn:ngm:class:type-theory",
-        "label": "Type Theory"
-      },
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
@@ -566,6 +541,14 @@
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
       },
       {
         "id": "urn:ngm:class:model-theory",
@@ -576,12 +559,12 @@
         "label": "Set Theory"
       },
       {
-        "id": "urn:ngm:class:containerisation",
-        "label": "Containerisation"
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
       },
       {
-        "id": "urn:ngm:class:infrastructure-as-code",
-        "label": "Infrastructure as Code"
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
       }
     ],
     "supports": [
@@ -604,18 +587,6 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
       }
     ],
     "standardizedBy": [
@@ -626,26 +597,6 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
-      },
-      {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
-      },
-      {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
       }
     ],
     "partOf": [
@@ -659,14 +610,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human Computer Interaction"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
@@ -686,6 +629,14 @@
       {
         "id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:mathematics",

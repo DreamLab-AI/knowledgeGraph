@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:compute-threshold
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-safety-framework
 contrastsWith:
   - urn:ngm:class:limited-risk-ai

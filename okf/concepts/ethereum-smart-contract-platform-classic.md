@@ -13,9 +13,9 @@ requires:
   - urn:ngm:class:mining
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 ---
 

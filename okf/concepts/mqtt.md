@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:telemetry-and-analytics
 dependsOn:
   - urn:ngm:class:network-infrastructure
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 implements:
   - urn:ngm:class:publish-subscribe-pattern
 contrastsWith:
@@ -39,8 +39,8 @@ uses:
   - urn:ngm:class:communication-protocol
   - urn:ngm:class:tcp-ip
   - urn:ngm:class:web-sockets
-  - urn:ngm:class:tls
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:industrial-io-t

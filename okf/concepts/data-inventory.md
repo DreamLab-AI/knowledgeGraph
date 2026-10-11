@@ -8,7 +8,7 @@ description: A data inventory is a structured, maintained record of the categori
 maturity: established
 quality: 0
 is-a:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 ---
 
 # Data Inventory

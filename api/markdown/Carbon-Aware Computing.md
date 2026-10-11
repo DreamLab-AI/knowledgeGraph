@@ -28,7 +28,7 @@ Carbon-aware computing is the practice of scheduling and placing computational w
 - Scheduling machine-learning training during low-carbon periods.
 - Geographically routing batch processing to renewable-rich regions.
 - Reducing data-centre emissions toward [[Net Zero]] commitments.
-- Reporting against [[Environmental Sustainability]] and [[Lifecycle Assessment]] targets.
+- Reporting against [[Environmental Sustainability]] and [[Life Cycle Assessment]] targets.
 
 ### Provenance
 

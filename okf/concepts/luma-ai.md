@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:neural-network
   - urn:ngm:class:video-generation
 enables:
-  - urn:ngm:class:3-d-content-generation
+  - urn:ngm:class:3-d-generation
   - urn:ngm:class:3-d-asset
 bridgesTo:
   - urn:ngm:class:computer-vision

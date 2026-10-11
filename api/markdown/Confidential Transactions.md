@@ -75,7 +75,7 @@ Confidential Transactions (CT) is a cryptographic protocol for distributed ledge
 - **Integration with MPC** — Combining CT with [[Secure Multi-Party Computation]] enables multi-party signing over committed amounts, enabling confidential multi-sig and threshold wallets. See [[Threshold Signature Scheme]].
 - **Confidential smart contracts** — Extending CT semantics to programmable contracts requires zero-knowledge circuits that reason over committed values; projects such as Aleo and Aztec Network explore this via custom ZKP languages. See [[Zero-Knowledge Virtual Machine]].
 - **Interoperability** — Cross-chain CT interoperability (atomic swaps between chains with different commitment schemes) requires compatible curve parameters or hash functions; this is an open problem in [[Cross-Chain Interoperability]].
-- **Selective disclosure standards** — Standardising audit-key formats and disclosure protocols for CT-based compliance is an active area in the [[W3C Verifiable Credentials]] and DIF (Decentralised Identity Foundation) communities.
+- **Selective disclosure standards** — Standardising audit-key formats and disclosure protocols for CT-based compliance is an active area in the [[W3C Verifiable Credentials Data Model]] and DIF (Decentralised Identity Foundation) communities.
 
 ### Provenance
 

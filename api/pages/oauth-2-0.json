@@ -106,7 +106,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -349,8 +349,8 @@
       "label": "Collaborative Whiteboard"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "gpts-and-custom-assistants",

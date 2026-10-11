@@ -24,14 +24,14 @@ implements:
 contrastsWith:
   - urn:ngm:class:custody
 bridgesTo:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:cryptocurrency
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:mobile-payment
 relatedTo:
   - urn:ngm:class:settlement

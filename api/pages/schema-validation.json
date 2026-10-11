@@ -79,7 +79,7 @@
         "label": "JSON Schema"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI"
       }
     ],
@@ -106,7 +106,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI"
       },
       {
@@ -138,28 +138,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
-      },
-      {
-        "id": "urn:ngm:class:identity-management",
-        "label": "Identity Management"
       }
     ],
     "requires": [
@@ -168,8 +168,8 @@
         "label": "Error Handling"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON Data Interchange Format"
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       },
       {
         "id": "urn:ngm:class:access-control",
@@ -244,10 +244,6 @@
       {
         "id": "urn:ngm:class:apache-avro",
         "label": "Apache Avro"
-      },
-      {
-        "id": "urn:ngm:class:protobuf",
-        "label": "Protocol Buffers"
       },
       {
         "id": "urn:ngm:class:protocol-buffer",
@@ -340,12 +336,12 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "standardizedBy": [
@@ -384,7 +380,7 @@
         "label": "GraphQL Schema"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

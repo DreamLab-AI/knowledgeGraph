@@ -44,21 +44,21 @@ uses:
   - urn:ngm:class:lo-ra-fine-tuning
   - urn:ngm:class:generative-model
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 supports:
   - urn:ngm:class:open-source-ai
   - urn:ngm:class:creative-ai
   - urn:ngm:class:image-generation
   - urn:ngm:class:generative-ai
 standardizedBy:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:safetensors-format
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:open-source-ai
   - urn:ngm:class:content-moderation
   - urn:ngm:class:generative-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:flux
   - urn:ngm:class:comfy-ui
   - urn:ngm:class:textual-inversion

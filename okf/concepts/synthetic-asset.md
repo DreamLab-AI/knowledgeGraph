@@ -17,12 +17,12 @@ requires:
 enables:
   - urn:ngm:class:derivatives-trading
   - urn:ngm:class:decentralized-finance-de-fi
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 dependsOn:
   - urn:ngm:class:price-oracle
   - urn:ngm:class:oracle
 implements:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 contrastsWith:
   - urn:ngm:class:wrapped-token
   - urn:ngm:class:stablecoin

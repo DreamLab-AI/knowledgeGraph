@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:delta-differential-one-way-ranging",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Delta Differential One-way Ranging (Delta-DOR or \u0394DOR) is a differential radio-tracking technique that constrains a spacecraft\u2019s position in the plane of the sky.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

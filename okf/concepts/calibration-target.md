@@ -30,7 +30,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:reference-standard
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:image-processing

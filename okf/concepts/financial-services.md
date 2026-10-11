@@ -27,18 +27,18 @@ enables:
   - urn:ngm:class:economic-growth
   - urn:ngm:class:financial-inclusion
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:shadow-banking
 bridgesTo:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 uses:
   - urn:ngm:class:cryptography
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:api-economy
 standardizedBy:
   - urn:ngm:class:basel-iii

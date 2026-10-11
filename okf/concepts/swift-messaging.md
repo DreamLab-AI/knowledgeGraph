@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:cross-border-payments
 dependsOn:
   - urn:ngm:class:real-time-gross-settlement
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:iso-20022
   - urn:ngm:class:cpmi-iosco-pfmi
@@ -34,15 +34,15 @@ contrastsWith:
   - urn:ngm:class:blockchain-payment
   - urn:ngm:class:fedwire
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:distributed-ledger-technology
 uses:
   - urn:ngm:class:message-authentication-code
   - urn:ngm:class:financial-cryptography
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:sanctions-screening
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 standardizedBy:
   - urn:ngm:class:swift
   - urn:ngm:class:iso-tc68

@@ -70,7 +70,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:reinforcement-learning
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:large-language-model
   - urn:ngm:class:model-based-reinforcement-learning
   - urn:ngm:class:offline-reinforcement-learning

@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:merkle-tree
 enables:
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:blockchain-technology
   - urn:ngm:class:bitcoin-protocol

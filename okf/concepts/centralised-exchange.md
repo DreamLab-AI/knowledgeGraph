@@ -9,19 +9,30 @@ maturity: established
 quality: 0.62
 is-a:
   - urn:ngm:class:financial-infrastructure
+  - urn:ngm:class:blockchain
+  - urn:ngm:class:bc-defi-and-economics
 hasPart:
   - urn:ngm:class:order-book
 requires:
   - urn:ngm:class:custody
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:order-book
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:liquidity
 enables:
   - urn:ngm:class:liquidity
 implements:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 contrastsWith:
   - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:self-custody
+bridgesTo:
+  - urn:ngm:class:order-book
 uses:
   - urn:ngm:class:identity-verification
+  - urn:ngm:class:custodial-wallet
+  - urn:ngm:class:anti-money-laundering
 supports:
   - urn:ngm:class:liquidity
 relatedTo:
@@ -29,6 +40,7 @@ relatedTo:
   - urn:ngm:class:coinbase
   - urn:ngm:class:blockchain
   - urn:ngm:class:financial-services
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Centralised Exchange

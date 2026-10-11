@@ -83,7 +83,7 @@ supports:
   - urn:ngm:class:visual-regression-testing
   - urn:ngm:class:security-testing
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:whatwg
   - urn:ngm:class:ieee
 relatedTo:
@@ -94,7 +94,7 @@ relatedTo:
   - urn:ngm:class:headless-browser
   - urn:ngm:class:computer-use
   - urn:ngm:class:agentic-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:security
   - urn:ngm:class:bot-detection

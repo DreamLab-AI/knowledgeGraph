@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:fuzzy-logic
   - urn:ngm:class:knowledge-representation
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:inference
 relatedTo:

@@ -36,10 +36,10 @@ uses:
 standardizedBy:
   - urn:ngm:class:fatf
   - urn:ngm:class:bank-secrecy-act
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:financial-crime-compliance
 ---
 

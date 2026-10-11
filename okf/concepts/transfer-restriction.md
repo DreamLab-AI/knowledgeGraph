@@ -10,8 +10,8 @@ quality: 0.62
 is-a:
   - urn:ngm:class:security-token
 hasPart:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:compliance
@@ -21,7 +21,7 @@ implements:
   - urn:ngm:class:erc-1400
   - urn:ngm:class:token-standard
 contrastsWith:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:access-control

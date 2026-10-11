@@ -8,7 +8,7 @@ description: "Curve Finance is a decentralised exchange protocol operating acros
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:vote-escrow
   - urn:ngm:class:liquidity-pool

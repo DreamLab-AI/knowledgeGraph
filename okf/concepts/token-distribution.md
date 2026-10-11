@@ -14,7 +14,7 @@ hasPart:
 requires:
   - urn:ngm:class:token
 enables:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:liquidity-pool
 dependsOn:
   - urn:ngm:class:vesting-schedule

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:public-key-cryptography
 enables:
   - urn:ngm:class:key-exchange
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 dependsOn:
   - urn:ngm:class:modular-arithmetic
 implements:

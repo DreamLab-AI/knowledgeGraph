@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:point-cloud-processing
   - urn:ngm:class:occupancy-grid-mapping
   - urn:ngm:class:path-planning-algorithms
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 implements:
   - urn:ngm:class:slam
   - urn:ngm:class:deep-reinforcement-learning

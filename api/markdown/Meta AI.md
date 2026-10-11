@@ -14,11 +14,11 @@ Meta AI is the artificial intelligence research and applied AI division of Meta 
 
 - Long-horizon academic research unit publishing peer-reviewed work without immediate product requirement.
 - Early contributions: fastText (subword word embeddings), FAISS (billion-scale approximate nearest-neighbour search), and [[Self-Supervised Learning]] methods (DINO, DINO v2 for vision transformers).
-- Ongoing research streams in [[Graph Neural Networks]], [[Reinforcement Learning]], [[Causal Inference]], and AI alignment foundations.
+- Ongoing research streams in [[Graph Neural Network]], [[Reinforcement Learning]], [[Causal Inference]], and AI alignment foundations.
 
 #### LLaMA Family
 
-- A series of open-weight transformer-based [[Large Language Models]] spanning parameter counts from 7B to 70B+ (and later 400B+).
+- A series of open-weight transformer-based [[Large Language Model]] spanning parameter counts from 7B to 70B+ (and later 400B+).
 - LLaMA 1 (2023) released weights for research under a restricted licence; LLaMA 2 (2023) extended commercial use to most organisations; LLaMA 3 (2024) improved instruction-following and multilingual capability.
 - The open-weight approach spawned derivative models including Alpaca, Vicuna, and Mistral, reshaping the [[Open-Source AI]] landscape.
 - [[Instruction Tuning]] and [[Reinforcement Learning from Human Feedback]] applied to LLaMA base weights produce instruction-following variants (e.g. LLaMA-Chat).

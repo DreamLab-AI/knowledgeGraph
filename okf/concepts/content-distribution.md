@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:cloud-native-applications
 relatedTo:
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:cloud-infrastructure
 ---
 

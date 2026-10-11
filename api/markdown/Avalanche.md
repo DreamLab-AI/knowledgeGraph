@@ -7,7 +7,7 @@ Avalanche is a high-throughput, low-latency layer-1 blockchain platform develope
   - [[Scalability]] — throughput of thousands of transactions per second on the X-Chain and sub-2-second finality address classical blockchain trilemma tensions.
   - [[Decentralisation]] — leaderless consensus avoids single points of failure present in delegated or leader-based BFT systems.
   - Flexibility — subnet architecture enables application-specific chains with custom rules, validators, and [[Virtual Machine]] implementations, including non-EVM VMs such as the Subnet-EVM fork, HyperSDK VMs, and custom AVM variants.
-  - [[EVM]] compatibility — the C-Chain allows direct deployment of [[Solidity]] contracts, enabling migration of existing [[Ethereum Smart Contract Platform]] dApps with minimal code changes.
+  - [[EVM]] compatibility — the C-Chain allows direct deployment of [[Solidity]] contracts, enabling migration of existing [[Ethereum]] dApps with minimal code changes.
 
 ### Key Components
 

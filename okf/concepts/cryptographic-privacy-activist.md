@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:cryptographic-protocol
 enables:
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:digital-signature
 contrastsWith:
   - urn:ngm:class:digital-society-surveillance

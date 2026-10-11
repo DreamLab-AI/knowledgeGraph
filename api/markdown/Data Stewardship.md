@@ -16,7 +16,7 @@ Data stewardship is the operational accountability for managing an organisation'
 ### Mechanisms
 
 - Assigning stewards and documenting roles and responsibilities.
-- Maintaining a [[Data Catalog]] of definitions and ownership.
+- Maintaining a [[Data Catalogue]] of definitions and ownership.
 - Tracking issues, root causes, and quality rules.
 - Reviewing and approving changes to shared data assets.
 

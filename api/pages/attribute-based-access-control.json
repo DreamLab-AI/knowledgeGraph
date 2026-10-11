@@ -22,8 +22,8 @@
         "label": "Access Control Policy"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "requires": [
@@ -50,8 +50,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "contrastsWith": [
@@ -134,10 +134,6 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
-      },
-      {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Permission Management"
       },
@@ -156,6 +152,10 @@
       {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
     "requires": [
@@ -228,12 +228,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -249,10 +249,6 @@
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
-      },
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Permission Management"

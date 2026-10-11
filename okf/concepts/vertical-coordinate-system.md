@@ -4,6 +4,7 @@ type: Class
 title: Vertical Coordinate System
 resource: urn:ngm:class:vertical-coordinate-system
 domain: earth-observation-and-geospatial-sensing
+description: A vertical coordinate system is a one-dimensional coordinate system used to express gravity-related height or depth.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Vertical Coordinate System
+
+A vertical coordinate system is a one-dimensional coordinate system used to express gravity-related height or depth.[^1]

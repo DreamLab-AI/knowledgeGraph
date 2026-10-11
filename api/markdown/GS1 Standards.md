@@ -63,7 +63,7 @@ GS1 Standards constitute a globally adopted, open framework of identification ke
 #### [[Digital Product Passport]]
 
 - GS1 Digital Link URIs embedded in [[QR Code]]s or [[RFID]] tags enable scanning to retrieve EU Digital Product Passport data (recycled content, repairability, carbon footprint) mandated under the Ecodesign for Sustainable Products Regulation (ESPR).
-- Bridges physical product identity into web-accessible [[Linked Data]] and [[Verifiable Credentials]] trust frameworks.
+- Bridges physical product identity into web-accessible [[Linked Data]] and [[Verifiable Credential]] trust frameworks.
 
 #### [[Internet of Things]]
 

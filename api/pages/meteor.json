@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meteor",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A meteor is the visible streak of light produced when a meteoroid enters an atmosphere at high speed and burns up.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

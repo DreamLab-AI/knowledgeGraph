@@ -23,13 +23,13 @@ hasPart:
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:neural-processing-unit
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:quantisation
   - urn:ngm:class:model-pruning
   - urn:ngm:class:onnx-standard
   - urn:ngm:class:hardware-acceleration
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:edge-ai-system
   - urn:ngm:class:real-time-inference-at-edge
@@ -44,7 +44,7 @@ dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network-architecture
   - urn:ngm:class:fpga
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:edge-computing-architecture
   - urn:ngm:class:hardware-acceleration
 implements:
@@ -63,7 +63,7 @@ uses:
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:inference
   - urn:ngm:class:fpga
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:onnx-standard
   - urn:ngm:class:tensor-flow-lite
   - urn:ngm:class:tiny-ml
@@ -106,7 +106,7 @@ relatedTo:
   - urn:ngm:class:model-pruning-for-edge-deployment
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:fpga
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:ai-inference
   - urn:ngm:class:federated-learning
 ---

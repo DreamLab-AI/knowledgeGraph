@@ -10,9 +10,9 @@ quality: 0.72
 is-a:
   - urn:ngm:class:financial-regulation
 supports:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 relatedTo:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
 ---
 
 # IMF CBDC Framework

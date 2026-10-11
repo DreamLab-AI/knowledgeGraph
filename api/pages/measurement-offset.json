@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-offset",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Measurement offset is the constant added to a stored value to recover the measurement it represents [^1][^2].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

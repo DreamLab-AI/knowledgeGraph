@@ -44,18 +44,18 @@ enables:
   - urn:ngm:class:synthetic-data
 dependsOn:
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:noise-schedule
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 implements:
   - urn:ngm:class:adapter-tuning
   - urn:ngm:class:spatial-conditioning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:zero-initialisation-protocol
 contrastsWith:
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:adapter-modules
@@ -107,18 +107,18 @@ relatedTo:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:generative-ai
   - urn:ngm:class:hugging-face-diffusers
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:foundation-model
   - urn:ngm:class:training-data
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:zero-convolution
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:u-net
   - urn:ngm:class:skip-connection-injection
   - urn:ngm:class:conditioning-signal

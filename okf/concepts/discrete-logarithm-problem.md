@@ -22,7 +22,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:rsa
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:elliptic-curve-cryptography
 supports:

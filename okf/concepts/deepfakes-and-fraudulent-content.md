@@ -47,7 +47,7 @@ dependsOn:
   - urn:ngm:class:face-recognition
   - urn:ngm:class:speech-synthesis
   - urn:ngm:class:wav2lip
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 implements:
   - urn:ngm:class:voice-cloning
   - urn:ngm:class:identity-impersonation

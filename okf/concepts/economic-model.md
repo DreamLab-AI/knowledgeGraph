@@ -59,7 +59,7 @@ uses:
   - urn:ngm:class:agent-based-modelling
   - urn:ngm:class:simulation
   - urn:ngm:class:monte-carlo-simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:sensitivity-analysis
   - urn:ngm:class:uncertainty-quantification
 supports:
@@ -71,7 +71,7 @@ supports:
   - urn:ngm:class:ai-governance
 standardizedBy:
   - urn:ngm:class:bank-of-england
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:oecd
   - urn:ngm:class:hm-treasury
 relatedTo:

@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:robotic-process-automation
   - urn:ngm:class:api-gateway
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:context-window
   - urn:ngm:class:structured-output
 supports:

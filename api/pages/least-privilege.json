@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
       },
       {
@@ -33,7 +33,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:defense-in-depth",
+        "id": "urn:ngm:class:defence-in-depth",
         "label": "Defence in Depth"
       },
       {
@@ -88,11 +88,11 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
       },
       {
-        "id": "urn:ngm:class:defense-in-depth",
+        "id": "urn:ngm:class:defence-in-depth",
         "label": "Defence in Depth"
       },
       {
@@ -237,12 +237,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",

@@ -44,12 +44,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -206,8 +206,8 @@
       "label": "Blockchain Network"
     },
     {
-      "slug": "central-bank-digital-currency-cbdc",
-      "label": "Central Bank Digital Currency (CBDC)"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "coinbase-transaction",
@@ -246,6 +246,14 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
@@ -254,16 +262,8 @@
       "label": "Decentralised file storage"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
-    },
-    {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
     },
     {
       "slug": "difficulty-adjustment",
@@ -434,8 +434,8 @@
       "label": "Travel Rule"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "web3",

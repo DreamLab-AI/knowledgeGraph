@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-segment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft ground segment is the coordinated ground-based infrastructure and operations that support spacecraft control, communications, tracking and mission data handling.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

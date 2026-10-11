@@ -321,7 +321,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -476,8 +476,8 @@
   ],
   "backlinks": [
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "etsi-domain-virtual-economy",

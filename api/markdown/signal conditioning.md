@@ -5,7 +5,7 @@ Signal conditioning is the ensemble of analogue and digital processing stages ap
 - Signal conditioning transforms inherently imperfect transducer outputs into data that digital processors can reliably use.
 - Raw sensor voltages are afflicted by noise, drift, non-linearity, cross-axis sensitivity, and electromagnetic interference; conditioning stages systematically remove or compensate for these artefacts.
 - The discipline spans hardware (analogue circuits, ADC chips), firmware (bias estimation, temperature lookup tables), and software ([[Digital Signal Processing]] algorithms such as [[FIR Filter]]s and [[Kalman Filter]]s).
-- It is a prerequisite in virtually every domain that depends on physical measurement: robotics, industrial automation, aerospace, medical devices, automotive, and [[IoT]] edge nodes.
+- It is a prerequisite in virtually every domain that depends on physical measurement: robotics, industrial automation, aerospace, medical devices, automotive, and [[Internet of Things]] edge nodes.
 - Correctly conditioned signals allow higher-level algorithms — [[SLAM]], [[Anomaly Detection]], [[Predictive Maintenance]] — to operate within their design assumptions.
 - Without adequate signal conditioning, even sophisticated estimation algorithms diverge or produce unreliable outputs because their statistical noise models do not match reality.
 
@@ -28,7 +28,7 @@ Signal conditioning is the ensemble of analogue and digital processing stages ap
 #### Digital Conditioning Stages
 
 - **[[FIR Filter]]s** (finite impulse response): linear-phase, stable, suitable for anti-alias shaping or notch filtering at known interference frequencies (e.g. mains hum at 50/60 Hz).
-- **[[IIR Filter]]s** (infinite impulse response): computationally cheaper but introduce phase distortion; common as Butterworth or Chebyshev low-pass implementations on resource-constrained [[Embedded Systems]].
+- **[[IIR Filter]]s** (infinite impulse response): computationally cheaper but introduce phase distortion; common as Butterworth or Chebyshev low-pass implementations on resource-constrained [[Embedded System]].
 - **Notch filters**: remove narrowband interference at actuator resonances or power-supply frequencies.
 - **Sample-rate conversion**: up- or down-sampling to align sensor outputs from different acquisition clocks before [[Sensor Fusion]].
 

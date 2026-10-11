@@ -20,20 +20,20 @@ dependsOn:
 implements:
   - urn:ngm:class:authentication
 contrastsWith:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 bridgesTo:
   - urn:ngm:class:token
 uses:
   - urn:ngm:class:sha-256
 supports:
   - urn:ngm:class:authentication
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 standardizedBy:
   - urn:ngm:class:standards
 relatedTo:
   - urn:ngm:class:cryptography
   - urn:ngm:class:sha-256
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:authentication
 ---
 

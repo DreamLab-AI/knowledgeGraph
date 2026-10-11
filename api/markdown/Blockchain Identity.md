@@ -4,8 +4,8 @@ Blockchain Identity is an approach to digital identity in which identifiers, cre
 
 - Conventional identity systems store identity records in centralised databases controlled by a provider, which creates honeypots for attackers and forces users to trust intermediaries.
 - Blockchain Identity inverts this: the ledger holds only resolvable pointers and cryptographic proofs, while the actual credential data is held by the holder in a wallet.
-- An identifier is typically a [[Decentralized Identifier]] (DID) whose method describes how it is created, resolved and updated against a ledger or anchoring layer.
-- Issuers sign [[Verifiable Credentials]] that holders present to verifiers; the verifier checks signatures against the issuer's published keys without contacting the issuer.
+- An identifier is typically a [[Decentralised Identifier]] (DID) whose method describes how it is created, resolved and updated against a ledger or anchoring layer.
+- Issuers sign [[Verifiable Credential]] that holders present to verifiers; the verifier checks signatures against the issuer's published keys without contacting the issuer.
 - This separation of issuance, holding and verification is the defining architectural pattern of the approach.
 
 ### Key aspects

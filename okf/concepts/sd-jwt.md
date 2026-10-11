@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:selective-disclosure
 requires:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:privacy-preserving-identity
   - urn:ngm:class:credential-verification

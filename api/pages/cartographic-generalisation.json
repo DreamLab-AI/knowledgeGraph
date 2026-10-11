@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cartographic-generalisation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Cartographic generalisation is the selection and simplified representation of map detail appropriate to the scale or purpose of a map.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:text-generation
   - urn:ngm:class:language-modeling
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:natural-language-understanding
 enables:

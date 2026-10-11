@@ -10,7 +10,7 @@ quality: 0.68
 is-a:
   - urn:ngm:class:generative-ai
 hasPart:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:flux-1
   - urn:ngm:class:proprietary-image-generation
 requires:
@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:ai-video
   - urn:ngm:class:data-augmentation
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 contrastsWith:
   - urn:ngm:class:computer-vision
@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:variational-autoencoders
   - urn:ngm:class:prompt-engineering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:control-net-and-similar-spatial-conditioning-systems
 supports:
   - urn:ngm:class:multimodal-ai-architecture-ai

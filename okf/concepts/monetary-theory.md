@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:economics
 enables:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:fiat-currency
   - urn:ngm:class:inflation

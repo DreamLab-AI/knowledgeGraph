@@ -17,7 +17,7 @@ uses:
   - urn:ngm:class:data-management
 relatedTo:
   - urn:ngm:class:database-query
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
 ---
 

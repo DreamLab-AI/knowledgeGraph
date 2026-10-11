@@ -19,7 +19,7 @@ uses:
 partOf:
   - urn:ngm:class:ai-governance
 relatedTo:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:data-lifecycle
 ---
 

@@ -152,12 +152,12 @@
         "label": "Browser Graphics Rendering"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:crdt",
@@ -212,12 +212,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:hybrid-logical-clock",
@@ -348,12 +348,12 @@
         "label": "Canvas API"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON Data Interchange Format"
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:oauth-2-0",

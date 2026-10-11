@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:liquidity-pool
 implements:
@@ -24,10 +24,10 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:security-token-offering
 uses:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:automated-market-maker
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:token-sale
 relatedTo:

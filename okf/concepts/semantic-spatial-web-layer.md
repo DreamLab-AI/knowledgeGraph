@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:immersive-experience
 bridgesTo:
   - urn:ngm:class:web3
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Semantic Spatial Web Layer

@@ -26,10 +26,10 @@ bridgesTo:
   - urn:ngm:class:data-observability
 uses:
   - urn:ngm:class:data-observability
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 supports:
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:data-governance
 relatedTo:

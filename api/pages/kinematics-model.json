@@ -126,7 +126,7 @@
         "label": "Teleoperation"
       },
       {
-        "id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:trajectory-generation",
         "label": "Trajectory Generation"
       },
       {
@@ -224,8 +224,8 @@
         "label": "MuJoCo"
       },
       {
-        "id": "urn:ngm:class:ros",
-        "label": "ROS"
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:sdf",
@@ -322,6 +322,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:computational-model",
+      "label": "Computational Model",
+      "slug": "computational-model"
+    },
+    {
       "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation",
       "slug": "physics-simulation"
@@ -342,6 +347,16 @@
       "slug": "sc-platform-and-environment"
     },
     {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation",
+      "slug": "simulation"
+    },
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin",
+      "slug": "digital-twin"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
@@ -352,14 +367,19 @@
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -425,20 +445,20 @@
         "label": "State Space Representation"
       },
       {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      },
+      {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
         "id": "urn:ngm:class:numerical-integration",
         "label": "Numerical Integration"
-      },
-      {
-        "id": "urn:ngm:class:spatial-data-structure",
-        "label": "Spatial Data Structure"
-      },
-      {
-        "id": "urn:ngm:class:actuators",
-        "label": "Actuators"
       }
     ],
     "enables": [
@@ -467,12 +487,12 @@
         "label": "Trajectory Tracking"
       },
       {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicle",
-        "label": "Autonomous Vehicle"
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "dependsOn": [
@@ -483,6 +503,14 @@
       {
         "id": "urn:ngm:class:logic",
         "label": "Programmable Logic Controllers"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
       }
     ],
     "implements": [
@@ -491,8 +519,12 @@
         "label": "Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
       }
     ],
     "contrastsWith": [
@@ -525,8 +557,8 @@
         "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:emulation",
+        "label": "Emulation"
       }
     ],
     "bridgesTo": [
@@ -547,6 +579,10 @@
         "label": "Physics Simulation"
       },
       {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
         "id": "urn:ngm:class:neural-physics",
         "label": "Neural Physics"
       },
@@ -557,10 +593,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "uses": [
@@ -607,6 +639,10 @@
         "label": "Simultaneous Localisation and Mapping"
       },
       {
+        "id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -625,10 +661,6 @@
       {
         "id": "urn:ngm:class:supply-chain-management",
         "label": "Supply Chain Management"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
@@ -653,12 +685,16 @@
         "label": "WebXR"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
       }
     ],
     "partOf": [
@@ -669,6 +705,10 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -900,7 +940,7 @@
       "label": "Robot Model"
     },
     {
-      "slug": "ros",
+      "slug": "robot-operating-system",
       "label": "ROS"
     },
     {

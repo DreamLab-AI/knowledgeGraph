@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:edge-computing
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:opc-ua
 relatedTo:

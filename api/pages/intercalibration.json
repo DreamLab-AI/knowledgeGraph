@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:intercalibration",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Intercalibration is the comparison and harmonisation of calibration between Earth observation instruments so that observations from different satellites can be used together.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -30,7 +30,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:benchmarks
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:statistical-testing
 relatedTo:
   - urn:ngm:class:model-performance

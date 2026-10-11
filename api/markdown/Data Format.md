@@ -9,7 +9,7 @@ A Data Format is a formal structural and encoding specification that governs how
   - **Schema**: the formal declaration of field names, types, and constraints, sometimes embedded in the payload, sometimes maintained separately in a [[Schema Registry]].
   - **Versioning rules**: how a format evolves without breaking existing readers (backward/forward compatibility, field deprecation).
 - The trade-off space is well understood: binary formats such as [[Protocol Buffers]] and [[Apache Avro]] minimise payload size and parsing cost but sacrifice human readability; text formats such as [[JSON]] and [[YAML]] maximise debuggability and ecosystem breadth but impose serialisation overhead; columnar formats such as [[Apache Parquet]] and [[Apache ORC]] optimise analytic query performance at the cost of row-level write amplification.
-- Format standardisation through bodies such as the [[IETF]], [[ISO]], and [[W3C]] converts ad-hoc encoding conventions into durable, cite-able specifications that enable [[Data Exchange]] across organisations and decades.
+- Format standardisation through bodies such as the [[IETF]], [[ISO]], and [[World Wide Web Consortium]] converts ad-hoc encoding conventions into durable, cite-able specifications that enable [[Data Exchange]] across organisations and decades.
 
 ### Key Components
 
@@ -83,7 +83,7 @@ A Data Format is a formal structural and encoding specification that governs how
 ### Standards and Governance
 
 - [[IETF]] publishes core text-format RFCs: RFC 8259 (JSON), RFC 7049 (CBOR), RFC 4180 (CSV informal guidance).
-- [[W3C]] governs XML, JSON-LD, RDF serialisations (Turtle, N-Quads), and OWL2 syntax profiles.
+- [[World Wide Web Consortium]] governs XML, JSON-LD, RDF serialisations (Turtle, N-Quads), and OWL2 syntax profiles.
 - [[ISO]]/IEC standardises binary exchange formats in domains such as MPEG (ISO 14496), office documents (ISO 29500 OOXML), and archival (ISO 19005 PDF/A).
 - [[Khronos Group]] stewards glTF and SPIR-V for 3D and GPU shader interchange.
 - [[HL7 International]] maintains FHIR and V2/V3 messaging standards for healthcare [[Data Interoperability]].

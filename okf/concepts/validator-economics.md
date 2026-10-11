@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:blockchain-economics
 enables:
   - urn:ngm:class:finality
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 uses:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:consensus-mechanism

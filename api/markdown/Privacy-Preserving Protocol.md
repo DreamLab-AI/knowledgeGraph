@@ -5,7 +5,7 @@ A privacy-preserving protocol is a cryptographic protocol designed to let partie
 - These protocols answer the question: how can one prove or compute something without exposing the underlying secret?
 - They span confidential transactions, anonymous credentials, private set intersection and federated analytics.
 - Many combine several primitives, layering [[Pedersen Commitment]] hiding with zero-knowledge soundness.
-- They stand in tension with disclosure regimes such as [[KYC]], driving designs that selectively reveal only what is required.
+- They stand in tension with disclosure regimes such as [[Know Your Customer]], driving designs that selectively reveal only what is required.
 
 ### Mechanisms
 

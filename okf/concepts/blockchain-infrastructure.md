@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:distributed-ledger
 enables:
   - urn:ngm:class:blockchain-application
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:tokenization
   - urn:ngm:class:smart-contracts
@@ -38,14 +38,14 @@ contrastsWith:
   - urn:ngm:class:financial-infrastructure
 bridgesTo:
   - urn:ngm:class:ai-energy-optimisation
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:peer-to-peer-network
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:non-fungible-token
 partOf:
   - urn:ngm:class:distributed-systems

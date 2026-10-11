@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:semantic-search
 uses:
   - urn:ngm:class:embedding-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
 relatedTo:
   - urn:ngm:class:language-model

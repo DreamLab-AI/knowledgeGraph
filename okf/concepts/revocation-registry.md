@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:digital-signature
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:credential-issuance
   - urn:ngm:class:access-control
   - urn:ngm:class:trust-management
@@ -38,7 +38,7 @@ relatedTo:
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:certificate-transparency
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 ---
 
 # Revocation Registry

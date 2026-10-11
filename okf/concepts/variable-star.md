@@ -4,6 +4,7 @@ type: Class
 title: Variable Star
 resource: urn:ngm:class:variable-star
 domain: space-science-and-systems
+description: A variable star is a star whose observed brightness changes, and the General Catalogue of Variable Stars sorts such stars into types by the astrophysical reason for the change.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Variable Star
+
+A variable star is a star whose observed brightness changes, and the General Catalogue of Variable Stars sorts such stars into types by the astrophysical reason for the change.[^1]

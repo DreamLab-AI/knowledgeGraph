@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:contrastive-learning
 requires:
   - urn:ngm:class:training-data
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 enables:
   - urn:ngm:class:fine-tuning
 ---

@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:swarm-robotics
 uses:
   - urn:ngm:class:sensor-fusion
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:slam

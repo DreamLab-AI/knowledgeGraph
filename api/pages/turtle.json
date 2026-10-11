@@ -33,7 +33,7 @@
         "label": "Ontology Engineering"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -50,7 +50,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
+        "id": "urn:ngm:class:json",
         "label": "JSON"
       },
       {
@@ -94,8 +94,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [],
@@ -109,7 +109,7 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -136,6 +136,11 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -161,16 +166,16 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
-      },
-      {
-        "id": "urn:ngm:class:data-quality",
-        "label": "Data Quality"
-      },
-      {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
       }
     ],
     "requires": [
@@ -201,6 +206,10 @@
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       }
     ],
     "enables": [
@@ -269,6 +278,10 @@
       {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -277,7 +290,7 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -299,6 +312,10 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "uses": [
@@ -339,6 +356,18 @@
       {
         "id": "urn:ngm:class:business-intelligence",
         "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -361,6 +390,14 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -387,8 +424,8 @@
         "label": "Data Format Standard"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON Data Interchange Format"
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       },
       {
         "id": "urn:ngm:class:messagepack",

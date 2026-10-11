@@ -10,10 +10,10 @@ quality: 0.8
 is-a:
   - urn:ngm:class:data-serialization
 contrastsWith:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:xml
 relatedTo:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:data-format
 ---
 

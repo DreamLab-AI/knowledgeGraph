@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:governance-framework
   - urn:ngm:class:identity-management
   - urn:ngm:class:permissioned-blockchain
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:atomic-settlement
   - urn:ngm:class:delivery-versus-payment

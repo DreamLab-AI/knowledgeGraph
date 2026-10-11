@@ -30,9 +30,9 @@ uses:
   - urn:ngm:class:owl
   - urn:ngm:class:rdf
   - urn:ngm:class:sparql
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:hl7-fhir
   - urn:ngm:class:iso-11179
   - urn:ngm:class:iso-11179

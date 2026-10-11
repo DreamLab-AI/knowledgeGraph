@@ -15,10 +15,10 @@ requires:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:governance-token
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 bridgesTo:
   - urn:ngm:class:decentralised-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:multisignature
@@ -27,7 +27,7 @@ supports:
   - urn:ngm:class:tokenomics
 relatedTo:
   - urn:ngm:class:self-regulation
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Distributed Governance

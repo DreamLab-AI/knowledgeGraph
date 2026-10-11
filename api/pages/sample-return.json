@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sample-return",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Sample return is the practice of bringing material collected from a body in the solar system back to Earth for laboratory study.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

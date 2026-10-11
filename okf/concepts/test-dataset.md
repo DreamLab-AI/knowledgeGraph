@@ -8,13 +8,13 @@ description: A test dataset is a partition of data held out from model training 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:dataset
 hasPart:
   - urn:ngm:class:supervised-learning
 requires:
   - urn:ngm:class:model-evaluation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:model-performance
@@ -29,7 +29,7 @@ uses:
 supports:
   - urn:ngm:class:model-performance
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:overfitting
   - urn:ngm:class:hyperparameter-tuning

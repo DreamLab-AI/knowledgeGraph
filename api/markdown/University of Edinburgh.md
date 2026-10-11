@@ -34,7 +34,7 @@ The University of Edinburgh is a public research university in Edinburgh, Scotla
 - Edinburgh's [[School of Informatics]] is accredited for postgraduate research by [[EPSRC]] and aligns with [[ACM]] and [[IEEE]] standards for computer science education and research methodology.
 - Work on [[Probabilistic Programming]] from Edinburgh has informed standards discussions around [[Bayesian Inference]] tooling and reproducibility in [[Machine Learning]] research.
 - The university's data governance and research ethics frameworks align with UKRI policies and are informed by engagement with the [[Information Commissioner's Office]] and [[AI Safety Institute]] (DSIT).
-- Edinburgh's language technology output feeds into [[ISO]] and [[W3C]] standards discussions around [[Multilingual NLP]], [[Speech Synthesis]], and [[Linguistic Annotation]].
+- Edinburgh's language technology output feeds into [[ISO]] and [[World Wide Web Consortium]] standards discussions around [[Multilingual NLP]], [[Speech Synthesis]], and [[Linguistic Annotation]].
 
 ### Notable Research Contributions
 

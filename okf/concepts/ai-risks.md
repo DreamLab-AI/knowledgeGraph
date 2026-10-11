@@ -51,8 +51,8 @@ enables:
   - urn:ngm:class:ai-liability
   - urn:ngm:class:algorithmic-impact-assessment
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:frontier-ai-systems
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:training-data
@@ -94,12 +94,12 @@ standardizedBy:
   - urn:ngm:class:iso-iec-23894
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:mit-ai-risk-repository
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:seoul-declaration
   - urn:ngm:class:uk-ai-safety-institute
   - urn:ngm:class:us-ai-safety-institute
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:privacy-protection
   - urn:ngm:class:surveillance-capitalism

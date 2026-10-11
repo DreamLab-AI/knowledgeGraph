@@ -89,7 +89,7 @@ relatedTo:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:hidden-state
   - urn:ngm:class:localisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:monte-carlo-tree-search
   - urn:ngm:class:simulation
   - urn:ngm:class:state-estimation

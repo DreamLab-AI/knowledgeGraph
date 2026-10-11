@@ -442,6 +442,6 @@ Predictive Maintenance (PdM) is a condition-based maintenance strategy that uses
   - Quality confidence: high. Coverage spans all required subdomains: RUL estimation (C-MAPSS, FEMTO-ST benchmarks), signal processing (FFT, envelope, wavelet, cepstral), IIoT sensors (Yokogawa, Augury, SKF, Emerson, Fluke), digital twins (NVIDIA Omniverse, Siemens Xcelerator, Bentley iTwin, PTC), CMMS integration (IBM Maximo, SAP EAM, Infor, ServiceMax), ML methods (LSTM, Transformer, autoencoder, CNN, GBM, PINN, GNN, RL), NDE (UT, AE, thermography, ECT), standards (ISO 20816, 13374, 55001, API 670, IEC 62443), and UK context (Rolls-Royce Derby, AMRC Sheffield, BAE Systems, Network Rail, ORE Catapult, Imperial, Loughborough, Strathclyde, Manchester Dalton).
 - **Cross-domain linkages**:
   - Feeds into: [[Safety Assurance]], [[Risk Assessment]], [[Carbon Footprint Measurement]], [[Circular Economy]]
-  - Draws from: [[Machine Learning Discipline]], [[Deep Learning]], [[Industrial Internet of Things]], [[Digital Twin]], [[Edge Computing]], [[Cloud Computing]]
+  - Draws from: [[Machine Learning]], [[Deep Learning]], [[Industrial Internet of Things]], [[Digital Twin]], [[Edge Computing]], [[Cloud Computing]]
   - Adjacent domains: [[Robotics]] (actuator health), [[Aerospace MRO]] (EHM), [[Reliability Engineering]] (RCM), [[Prognostics and Health Management]] (PHM framework)
 

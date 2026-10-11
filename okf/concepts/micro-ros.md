@@ -8,24 +8,22 @@ description: micro-ROS is a framework that brings the ROS 2 programming model an
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:dds-middleware
   - urn:ngm:class:microcontroller
 enables:
   - urn:ngm:class:real-time-control
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 implements:
   - urn:ngm:class:ros-2
   - urn:ngm:class:publish-subscribe-pattern
-contrastsWith:
-  - urn:ngm:class:ros
 bridgesTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:dds-middleware
 uses:
   - urn:ngm:class:freertos
@@ -33,7 +31,7 @@ supports:
   - urn:ngm:class:robotics
   - urn:ngm:class:edge-computing
 partOf:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:robotics
 relatedTo:
   - urn:ngm:class:internet-of-things

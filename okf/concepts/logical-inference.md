@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:theorem-proving
   - urn:ngm:class:automated-reasoning
-  - urn:ngm:class:semantic-reasoning-engine
+  - urn:ngm:class:semantic-reasoning
 dependsOn:
   - urn:ngm:class:logic
 implements:

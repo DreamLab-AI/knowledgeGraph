@@ -22,10 +22,10 @@ requires:
 enables:
   - urn:ngm:class:cross-chain-messaging
   - urn:ngm:class:blockchain-interoperability
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:shared-security
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
 dependsOn:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:cryptographic-primitive
@@ -46,7 +46,7 @@ uses:
 relatedTo:
   - urn:ngm:class:cross-chain-interoperability
   - urn:ngm:class:web3
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:kusama
 ---

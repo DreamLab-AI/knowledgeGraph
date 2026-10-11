@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:deep-learning
 hasPart:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:autoregressive-model
@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:flow-matching
 requires:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:training-data
   - urn:ngm:class:probabilistic-inference
   - urn:ngm:class:backpropagation
@@ -50,7 +50,7 @@ uses:
   - urn:ngm:class:stochastic-gradient-descent
   - urn:ngm:class:backpropagation
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:decoder-network
   - urn:ngm:class:reparameterisation-trick
   - urn:ngm:class:evidence-lower-bound
@@ -62,7 +62,7 @@ supports:
   - urn:ngm:class:spatial-computing
 standardizedBy:
   - urn:ngm:class:governance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:deep-learning

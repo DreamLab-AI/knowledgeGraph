@@ -41,11 +41,6 @@
       "slug": "energy-and-power"
     },
     {
-      "id": "urn:ngm:class:carbon-footprint-measurement",
-      "label": "Carbon Footprint Measurement",
-      "slug": "carbon-footprint-measurement"
-    },
-    {
       "id": "urn:ngm:class:critical-infrastructure",
       "label": "Critical Infrastructure",
       "slug": "critical-infrastructure"
@@ -76,24 +71,14 @@
       "slug": "sustainability"
     },
     {
-      "id": "urn:ngm:class:climate-risk-management",
-      "label": "Climate Risk Management",
-      "slug": "climate-risk-management"
-    },
-    {
-      "id": "urn:ngm:class:corporate-disclosure",
-      "label": "Corporate Disclosure",
-      "slug": "corporate-disclosure"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:environmental-accounting",
-      "label": "Environmental Accounting",
-      "slug": "environmental-accounting"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -104,41 +89,6 @@
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
-    },
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity",
-      "slug": "infra-security-and-identity"
-    },
-    {
-      "id": "urn:ngm:class:measurement-frameworks",
-      "label": "Measurement Frameworks",
-      "slug": "measurement-frameworks"
-    },
-    {
-      "id": "urn:ngm:class:sustainability-reporting",
-      "label": "SustainabilityReporting",
-      "slug": "sustainability-reporting"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:corporate-governance",
-      "label": "Corporate Governance",
-      "slug": "corporate-governance"
-    },
-    {
-      "id": "urn:ngm:class:governance-framework",
-      "label": "Governance Framework",
-      "slug": "governance-framework"
-    },
-    {
-      "id": "urn:ngm:class:organisational-framework",
-      "label": "Organisational Framework",
-      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -270,12 +220,12 @@
         "label": "Transmission Infrastructure"
       },
       {
-        "id": "urn:ngm:class:activity-data",
-        "label": "Activity Data"
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
       },
       {
-        "id": "urn:ngm:class:ai",
-        "label": "AI"
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "implements": [
@@ -308,8 +258,8 @@
         "label": "Small Modular Reactors"
       },
       {
-        "id": "urn:ngm:class:carbon-footprint",
-        "label": "Product Carbon Footprint"
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       }
     ],
     "contrastsWith": [
@@ -338,12 +288,12 @@
         "label": "Carbon Footprint Measurement"
       },
       {
-        "id": "urn:ngm:class:carbon-offsetting",
-        "label": "Carbon Offsetting"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:greenwashing",
-        "label": "Greenwashing"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -480,20 +430,6 @@
       {
         "id": "urn:ngm:class:ofgem",
         "label": "Ofgem"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:corporate-sustainability-reporting",
-        "label": "Corporate Sustainability Reporting"
-      },
-      {
-        "id": "urn:ngm:class:national-accounts",
-        "label": "National Accounts"
-      },
-      {
-        "id": "urn:ngm:class:institutional-framework",
-        "label": "Institutional Framework"
       }
     ],
     "relatedTo": [

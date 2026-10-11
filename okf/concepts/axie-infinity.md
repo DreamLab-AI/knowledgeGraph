@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:nft
   - urn:ngm:class:smart-contract
 bridgesTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # Axie Infinity

@@ -26,12 +26,12 @@ uses:
   - urn:ngm:class:wireless-communication
   - urn:ngm:class:encryption
 supports:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:reliability
 partOf:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
 relatedTo:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:edge-computing
   - urn:ngm:class:microcontroller
 ---

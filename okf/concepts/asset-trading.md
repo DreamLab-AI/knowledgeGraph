@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:bc-defi-and-economics
   - urn:ngm:class:financial-services
 enables:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 bridgesTo:
   - urn:ngm:class:financial-services
   - urn:ngm:class:blockchain

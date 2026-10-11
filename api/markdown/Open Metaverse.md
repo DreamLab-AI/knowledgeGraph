@@ -5,7 +5,7 @@ The open metaverse is a vision of interconnected virtual worlds built on open st
 ### Overview
 
 - Where closed platforms confine content, identity, and value to a single provider, the open metaverse aims for assets and avatars that move freely between experiences through shared formats and protocols.
-- Open 3D scene and asset standards such as [[USD]] and glTF, together with open identity and an [[Open Protocol]] layer, are the connective tissue that makes cross-world portability practical.
+- Open 3D scene and asset standards such as [[Universal Scene Description]] and glTF, together with open identity and an [[Open Protocol]] layer, are the connective tissue that makes cross-world portability practical.
 - Decentralised ownership models, sometimes anchored on [[Blockchain]] and verifiable [[Digital Asset]] records, give users durable claims to what they create and acquire.
 
 ### Key aspects

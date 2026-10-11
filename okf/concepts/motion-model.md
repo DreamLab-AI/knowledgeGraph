@@ -8,7 +8,7 @@ description: A motion model is a mathematical or learned representation that des
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:kinematics-model
+  - urn:ngm:class:computational-model
 hasPart:
   - urn:ngm:class:state-transition-function
 requires:
@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:robot-localisation
 implements:
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 contrastsWith:
   - urn:ngm:class:observation-model
   - urn:ngm:class:sensor-model

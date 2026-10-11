@@ -15,19 +15,19 @@ hasPart:
 requires:
   - urn:ngm:class:regulatory-requirements
   - urn:ngm:class:disclosure-obligations
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:market-integrity
   - urn:ngm:class:financial-inclusion
 dependsOn:
   - urn:ngm:class:securities-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 contrastsWith:
   - urn:ngm:class:market-manipulation
   - urn:ngm:class:insider-trading
 bridgesTo:
   - urn:ngm:class:crypto-regulation
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:consumer-protection
 supports:
   - urn:ngm:class:consumer-protection

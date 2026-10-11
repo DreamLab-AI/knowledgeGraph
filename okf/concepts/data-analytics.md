@@ -31,7 +31,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:federated-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:data-lake
   - urn:ngm:class:data-warehouse

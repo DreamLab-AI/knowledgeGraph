@@ -37,7 +37,7 @@ The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-com
 ### Opcode Set
 
 - The EVM defines approximately 150 opcodes covering: arithmetic (ADD, MUL, DIV, MOD, EXP), comparison (LT, GT, EQ, ISZERO), bitwise logic (AND, OR, XOR, NOT, SHL, SHR), cryptographic hashing (SHA3/KECCAK256), environment queries (ADDRESS, CALLER, CALLVALUE, BLOCKHASH, TIMESTAMP), stack manipulation (PUSH1–PUSH32, DUP1–DUP16, SWAP1–SWAP16), memory ops (MLOAD, MSTORE, MSTORE8), storage ops (SLOAD, SSTORE), control flow (JUMP, JUMPI, JUMPDEST, PC, STOP, RETURN, REVERT, INVALID), and inter-contract calls (CALL, STATICCALL, DELEGATECALL, CREATE, CREATE2).
-- [[Opcodes]] are specified in the [[Ethereum Yellow Paper]] and updated through the [[EIP]] process; gas costs have been adjusted multiple times (e.g., EIP-150, EIP-2929) as real-world attack patterns emerged.
+- [[Opcodes]] are specified in the [[Ethereum Yellow Paper]] and updated through the [[Ethereum Improvement Proposal]] process; gas costs have been adjusted multiple times (e.g., EIP-150, EIP-2929) as real-world attack patterns emerged.
 - SELFDESTRUCT has been progressively restricted; post-EIP-6780 it can only self-destruct in the same transaction that created the contract, neutralising historical griefing attacks.
 
 ### Source Languages and Compilation
@@ -50,7 +50,7 @@ The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-com
 
 ### Gas and Economic Model
 
-- Every opcode has a fixed or dynamic gas cost set by the [[Ethereum Yellow Paper]] and amended by [[EIP]]s. Arithmetic is cheap (3 gas for ADD); storage writes are expensive (20,000 gas for a cold SSTORE).
+- Every opcode has a fixed or dynamic gas cost set by the [[Ethereum Yellow Paper]] and amended by [[Ethereum Improvement Proposal]]s. Arithmetic is cheap (3 gas for ADD); storage writes are expensive (20,000 gas for a cold SSTORE).
 - [[Gas Optimization]] is the discipline of writing [[Smart Contract]] code that minimises opcode and storage costs. Techniques include packing storage slots, using calldata over memory, using immutables, and loop unrolling.
 - EIP-1559 introduced a base fee (burned) plus a priority tip, making gas pricing more predictable while reducing miner extractable value from pure fee auctions.
 - Layer 2 rollups dramatically reduce effective gas costs by batching many EVM executions off-chain and posting only compressed state diffs or proofs to Ethereum mainnet.
@@ -65,7 +65,7 @@ The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-com
 
 ### Evolution and Upgrades
 
-- The EVM evolves through the [[EIP]] (Ethereum Improvement Proposal) governance process. Hard forks bundle batches of EIPs into protocol upgrades.
+- The EVM evolves through the [[Ethereum Improvement Proposal]] (Ethereum Improvement Proposal) governance process. Hard forks bundle batches of EIPs into protocol upgrades.
 - Key historical upgrades: Homestead (2016) — initial opcode cost corrections; Tangerine Whistle / Spurious Dragon (2016) — gas repricing after the DoS attacks; Istanbul (2019) — further repricing and new precompiles; Berlin / London (2021) — EIP-2929 cold/warm storage distinction + EIP-1559; Shanghai (2023) — withdrawal opcodes; Cancun (2024) — EIP-4844 blob data for [[Layer 2 Rollup]] cost reduction.
 - EVM Object Format (EOF) is a proposed restructuring of the bytecode container format, separating code and data sections and eliminating dynamic jumps in favour of static function calls. EOF would enable better static analysis, dead code elimination, and versioned future extensions.
 - Verkle Trees are replacing [[Merkle Patricia Trie]] structures to reduce witness sizes, enabling stateless clients that do not need to store the full state to validate blocks.
@@ -84,7 +84,7 @@ The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-com
 
 - The canonical specification is the **Ethereum Yellow Paper** (Gavin Wood, 2014; continuously updated), which formally defines the EVM state transition function, opcode semantics, and gas schedule.
 - The **[[Enterprise Ethereum Alliance]]** (EEA) publishes the EVM-compatible client specification, enabling certified interoperability between public Ethereum, L2 networks, and private consortium deployments.
-- **[[EIP]]s** (Ethereum Improvement Proposals) are the governance mechanism for evolving the EVM. Core EIPs are reviewed by Ethereum core developers and implemented through hard forks agreed by the validator community.
+- **[[Ethereum Improvement Proposal]]s** (Ethereum Improvement Proposals) are the governance mechanism for evolving the EVM. Core EIPs are reviewed by Ethereum core developers and implemented through hard forks agreed by the validator community.
 - The EVM ISA (instruction set architecture) has informal equivalence to a register machine despite its stack-based presentation; this enables [[Formal Verification]] tooling to represent it in mathematical logics (K Framework, Isabelle/HOL).
 - **ERC standards** (EIP sub-category for application-layer standards) such as ERC-20 (fungible tokens), ERC-721 (NFTs), ERC-1155 (multi-tokens), and ERC-4626 (vaults) are not EVM-level features but define standardised [[Smart Contract]] interfaces compiled to EVM bytecode.
 

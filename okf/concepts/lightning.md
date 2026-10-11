@@ -15,20 +15,20 @@ hasPart:
 requires:
   - urn:ngm:class:payment-channel
   - urn:ngm:class:bitcoin-proof-of-work-protocol-network
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:hash-time-locked-contract
 enables:
   - urn:ngm:class:bolt
   - urn:ngm:class:micropayment
   - urn:ngm:class:instant-payment
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
 implements:
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:payment-routing
 contrastsWith:
   - urn:ngm:class:on-chain-transaction
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:layer-2-scaling
 uses:

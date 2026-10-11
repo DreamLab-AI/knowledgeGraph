@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:authentication
 requires:
   - urn:ngm:class:authentication
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:service-discovery
   - urn:ngm:class:microservices
@@ -22,7 +22,7 @@ dependsOn:
 implements:
   - urn:ngm:class:api
 bridgesTo:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:rest-api
   - urn:ngm:class:http
@@ -34,7 +34,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:service-discovery
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Service Endpoint

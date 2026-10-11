@@ -9,7 +9,7 @@ maturity: mature
 quality: 0.72
 is-a:
   - urn:ngm:class:deep-learning-framework
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:keras
   - urn:ngm:class:tensor-flow-lite

@@ -28,7 +28,7 @@ hasPart:
 requires:
   - urn:ngm:class:browser-based-screen-capture
   - urn:ngm:class:cloud-storage
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:video-codec
   - urn:ngm:class:video-playback-infrastructure
   - urn:ngm:class:speech-recognition
@@ -61,7 +61,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:optical-character-recognition
   - urn:ngm:class:speaker-diarisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:named-entity-recognition
   - urn:ngm:class:semantic-search
 supports:

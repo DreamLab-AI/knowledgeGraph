@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:true-anomaly",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "True anomaly is the in-plane angle at the focus from periapsis to an orbiting body's position vector.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

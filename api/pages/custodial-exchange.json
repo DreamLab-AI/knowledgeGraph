@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -42,8 +42,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:self-custody",
@@ -71,8 +71,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:centralized-exchange",
-        "label": "Centralized Exchange"
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
       },
       {
         "id": "urn:ngm:class:qualified-custodian",
@@ -144,7 +144,7 @@
         "label": "Cryptocurrency Exchange"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -248,10 +248,6 @@
         "label": "Centralised Exchange"
       },
       {
-        "id": "urn:ngm:class:decentralised-exchange",
-        "label": "Decentralised Exchange"
-      },
-      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
       },
@@ -300,8 +296,8 @@
         "label": "Fiat Currency"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:computer-vision",

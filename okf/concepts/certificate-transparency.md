@@ -8,9 +8,9 @@ description: Certificate Transparency (CT) is an open framework and internet sta
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:append-only-log
 enables:
   - urn:ngm:class:certificate-authority
@@ -27,7 +27,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:audit-log
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:digital-signature
   - urn:ngm:class:x-509-certificate

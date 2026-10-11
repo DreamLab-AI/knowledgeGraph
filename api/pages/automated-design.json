@@ -111,8 +111,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:algorithm",
@@ -147,8 +147,8 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:gradient-descent",
@@ -198,7 +198,7 @@
         "label": "Additive Manufacturing"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "id": "urn:ngm:class:intellectual-property",
         "label": "Intellectual Property"
       },
       {
@@ -215,7 +215,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:hardware-description-language",
@@ -265,14 +265,19 @@
       "slug": "computer-graphics"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -305,19 +310,19 @@
       "slug": "software-development"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -399,7 +404,7 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -429,8 +434,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -513,16 +518,16 @@
         "label": "Image Processing"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:pervasive-computing",
-        "label": "Pervasive Computing"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -531,7 +536,7 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -629,7 +634,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -645,20 +650,20 @@
         "label": "SIGGRAPH"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
-      },
-      {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
-      },
-      {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
       }
     ],
     "partOf": [
@@ -669,6 +674,10 @@
       {
         "id": "urn:ngm:class:asset-pipeline",
         "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:software-engineering",

@@ -68,7 +68,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -76,8 +76,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "contrastsWith": [],
@@ -108,8 +108,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",
@@ -464,6 +464,10 @@
       "label": "AI Audit"
     },
     {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
       "slug": "ai-impact-assessment",
       "label": "AI Impact Assessment"
     },
@@ -482,10 +486,6 @@
     {
       "slug": "ai-risk-register",
       "label": "AI Risk Register"
-    },
-    {
-      "slug": "aiethics",
-      "label": "AIEthics"
     },
     {
       "slug": "access-control-system",
@@ -556,8 +556,8 @@
       "label": "Legal Framework"
     },
     {
-      "slug": "model-cards",
-      "label": "Model Cards"
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "non-repudiation",

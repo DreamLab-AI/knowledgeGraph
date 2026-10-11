@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-solar-cell",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft solar cell is a semiconductor photovoltaic device that converts sunlight into electricity, and cells are assembled into panels and arrays as one means of spacecraft power generation.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

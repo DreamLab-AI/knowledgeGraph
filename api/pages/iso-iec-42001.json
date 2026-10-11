@@ -76,15 +76,15 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -113,8 +113,8 @@
         "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
-        "label": "ISO IEC JTC1 SC42"
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO-IEC JTC 1 SC 42"
       }
     ],
     "partOf": [],
@@ -287,10 +287,6 @@
       "label": "AI Liability"
     },
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "ai-policy",
       "label": "ai policy"
     },
@@ -337,6 +333,10 @@
     {
       "slug": "cross-platform-compliance-hub",
       "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "proprietary-large-language-models",

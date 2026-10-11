@@ -17,9 +17,9 @@ requires:
   - urn:ngm:class:gas
   - urn:ngm:class:ethereum-account
 enables:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:decentralised-application
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:automated-market-maker
@@ -27,16 +27,16 @@ dependsOn:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:blockchain
 implements:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 contrastsWith:
   - urn:ngm:class:bitcoin-script
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:governance
   - urn:ngm:class:supply-chain
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 uses:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:vyper
 supports:
   - urn:ngm:class:tokenization

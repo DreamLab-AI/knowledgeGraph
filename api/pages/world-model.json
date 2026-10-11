@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent State Space"
       },
       {
@@ -95,7 +95,7 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -116,8 +116,8 @@
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:simulation",
@@ -168,8 +168,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "requires": [
@@ -288,8 +288,8 @@
         "label": "Semantic Network"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "supports": [
@@ -346,10 +346,6 @@
     {
       "slug": "autonomous-behavior",
       "label": "Autonomous Behavior"
-    },
-    {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
     },
     {
       "slug": "commonsense-reasoning",

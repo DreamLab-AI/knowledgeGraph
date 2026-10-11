@@ -8,7 +8,7 @@ The degree to which a human can understand the cause-effect relationships within
 
   ## Related Terms
 
-- **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
+- **Broader**: [[Explainable AI]], [[Machine Learning]]
 - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
 - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 

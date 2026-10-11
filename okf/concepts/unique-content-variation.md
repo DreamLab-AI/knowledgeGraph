@@ -19,7 +19,7 @@ uses:
   - urn:ngm:class:procedural-generation
   - urn:ngm:class:nft-minting
 standardizedBy:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
 relatedTo:
   - urn:ngm:class:digital-art-application
   - urn:ngm:class:nft-ownership-proof

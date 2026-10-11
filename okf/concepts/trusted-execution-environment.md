@@ -17,11 +17,13 @@ requires:
   - urn:ngm:class:hardware-root-of-trust
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:secure-boot
+  - urn:ngm:class:hardware
 enables:
   - urn:ngm:class:confidential-computing
   - urn:ngm:class:privacy-enhancing-computation-pec
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:private-inference
+  - urn:ngm:class:data-confidentiality
 implements:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:confidential-virtual-machine
@@ -33,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:blockchain-oracle
 uses:
   - urn:ngm:class:hardware-security-module
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:symmetric-encryption
 supports:
   - urn:ngm:class:digital-rights-management

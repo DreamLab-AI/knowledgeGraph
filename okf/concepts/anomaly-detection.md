@@ -8,9 +8,9 @@ description: "Anomaly detection is a machine learning and statistical discipline
 maturity: established
 quality: 0.92
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:point-anomaly-detection
   - urn:ngm:class:contextual-anomaly-detection
@@ -44,14 +44,14 @@ bridgesTo:
   - urn:ngm:class:sensor-data
   - urn:ngm:class:sensor-data
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:pattern-recognition
   - urn:ngm:class:deep-learning
   - urn:ngm:class:autoencoder
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:vae
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:normalising-flows
   - urn:ngm:class:lstm
   - urn:ngm:class:graph-neural-network

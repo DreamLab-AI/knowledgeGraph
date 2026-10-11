@@ -167,10 +167,10 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
   - Widely required by procurement contracts as due-diligence standard for supplier carbon claims
 - **[[ISO 14067]]:2018** — Product Carbon Footprint (PCF) standard:
   - Quantification requirements for the carbon footprint of products (goods and services) on a lifecycle basis
-  - Built on [[Lifecycle Assessment]] framework of ISO 14040/14044; applies LCA principles specifically to carbon footprinting
+  - Built on [[Life Cycle Assessment]] framework of ISO 14040/14044; applies LCA principles specifically to carbon footprinting
   - Requires definition of functional unit (e.g. "1 tonne of processed steel delivered to gate"), system boundary (cradle-to-gate, gate-to-gate, or cradle-to-grave), and cut-off criteria
   - Third-party PCF verification per ISO 14064-3 increasingly required for Environmental Product Declarations (EPDs) and [[Digital Product Passport]] carbon declarations
-- **ISO 14040:2006/Amd 1:2020 and ISO 14044:2006/Amd 2:2020** — [[Lifecycle Assessment]] framework:
+- **ISO 14040:2006/Amd 1:2020 and ISO 14044:2006/Amd 2:2020** — [[Life Cycle Assessment]] framework:
   - 2020 amendments enhanced alignment with ISO 14067, clarified biogenic carbon treatment (temporary atmospheric carbon storage in wood products), land-use-change emission accounting, and carbon storage in products
   - Four-phase LCA methodology: Goal and Scope Definition → Life Cycle Inventory (LCI) analysis → Life Cycle Impact Assessment (LCIA) → Interpretation
   - Ecoinvent database (v3.10, 2024, ~20,000 unit processes) and GaBi/SimaPro software are primary LCA computational tools
@@ -236,7 +236,7 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
 
 ### AI-Powered Estimation Layer
 
-- [[AI]] and [[Machine Learning Discipline]] address the data-completeness problem inherent in Scope 3 measurement, where supplier-specific primary emission data is typically available for fewer than 15% of spend categories.
+- [[AI]] and [[Machine Learning]] address the data-completeness problem inherent in Scope 3 measurement, where supplier-specific primary emission data is typically available for fewer than 15% of spend categories.
 - **Spend-based ML models**:
   - Random forest and gradient-boosted regressors (XGBoost, LightGBM) trained on EXIOBASE/USEEIO EIO-LCA databases map supplier NACE/SIC sector codes and spend values to sector-specific emission intensities
   - Uncertainty propagated through Monte Carlo simulation: Scope 3 Category 1 estimates carry ±50-200% relative uncertainty on spend-based inputs vs ±10-30% with supplier-specific PCF data
@@ -389,7 +389,7 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
   - EcoVadis supplier sustainability ratings (adopted by 1,000+ companies): Scope 1/2 data collected, PCF data for key categories
   - CDP Supply Chain programme (2024: 28,000+ supplier responses): standardised Scope 1/2/3 questionnaire enabling buyer-side Scope 3 Cat. 1 primary data collection
   - IKEA Supplier Carbon Programme: requires tier-1 suppliers to report Scope 1 and 2 emissions, with 100% renewable electricity pathway commitments
-- **AI-powered spend analysis**: [[Machine Learning Discipline]] maps procurement system spend categories to emission factors in real time, surfacing high-emission categories for targeted decarbonisation investment; continuously updated as supplier PCF data replaces EIO-LCA estimates.
+- **AI-powered spend analysis**: [[Machine Learning]] maps procurement system spend categories to emission factors in real time, surfacing high-emission categories for targeted decarbonisation investment; continuously updated as supplier PCF data replaces EIO-LCA estimates.
 - **Scope 3 Cat. 1 data quality ladder** (from lowest to highest reliability):
   - Tier 5 (worst): Spend × industry-average EIO-LCA factor (±150-200% uncertainty)
   - Tier 4: Spend × sector-specific EIO-LCA factor with country adjustment (±80-150%)
@@ -423,14 +423,14 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
   - Wiedmann & Minx (2008) definitional review established the carbon footprint concept in ecological economics, distinguishing production-based (territorial) from consumption-based (CBA) emission attribution
   - Matthews et al. (2008) demonstrated EIO-LCA for US supply-chain attribution, establishing spend-based emission factors as pragmatic Scope 3 methodology
   - Peters & Hertwich (2008) formalised CBA framework showing trade-exposed economies (UK, Netherlands) face substantially different policy incentives under territorial vs consumption-based accounting
-  - Wiedmann (2009) review of input-output analysis for [[Lifecycle Assessment]]: methodological synthesis of process-based LCA and EIO-LCA
+  - Wiedmann (2009) review of input-output analysis for [[Life Cycle Assessment]]: methodological synthesis of process-based LCA and EIO-LCA
 - **Multi-regional input-output (MRIO) databases**:
   - EXIOBASE (European research consortium, 43 countries, 200 industry sectors): primary basis for EU Scope 3 spend-based emission factors; v3.8.2 (2022)
   - WIOD (World Input-Output Database, 43 countries, 56 industries): Timmer et al. (2015) — used for global value-chain carbon flow analysis
   - US EPA USEEIO (71 sectors, US national): basis for US corporate EIO-LCA Scope 3 estimation
   - EXIOBASE MRIO analysis reveals: UK's consumption-based footprint is approximately 50% larger than its territorial production-based footprint, primarily through imported manufactured goods from China and Southeast Asia
 - **Attributional vs. consequential LCA**:
-  - Attributional [[Lifecycle Assessment]] describes current supply-chain state using average emission factors — appropriate for PCF declarations and annual inventory reporting
+  - Attributional [[Life Cycle Assessment]] describes current supply-chain state using average emission factors — appropriate for PCF declarations and annual inventory reporting
   - Consequential LCA models marginal system changes induced by a specific decision — appropriate for investment decisions (new technology deployment, renewable energy purchase)
   - Distinction has significant practical implications: attributional PCF using average grid intensity may misrepresent the marginal impact of incremental electricity consumption if the marginal generator is coal rather than the grid average mix
 - **Satellite-inventory reconciliation research**:
@@ -488,7 +488,7 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
 - **UCL Energy Institute**:
   - UCL Energy Models series: UK energy system models informing BEIS national energy and carbon projections
   - Building-energy carbon modelling and retrofit carbon payback analysis; Scope 3 Category 3 and Category 13 methodology for property sector
-  - UCL Plastic Waste Innovation Hub: [[Lifecycle Assessment]] methodology for plastic waste management, informing [[Circular Economy]] carbon accounting
+  - UCL Plastic Waste Innovation Hub: [[Life Cycle Assessment]] methodology for plastic waste management, informing [[Circular Economy]] carbon accounting
 - **Northern English industrial context**:
   - British Steel (Scunthorpe) and TATA Steel (Port Talbot): among UK's highest Scope 1 emitters in manufacturing; both subject to UK ETS allowance obligations (2024 price £35-55/tCO₂e), driving high-precision blast furnace and basic oxygen steelmaking CO₂ measurement
   - Teesside petrochemical cluster (Ineos, Sabic, Wilton Centre): one of UK's highest Scope 1 emission concentrations; HyNet North West hydrogen and CCS project (planned operational 2026-2028) depends on precise Scope 1 CH₄/CO₂ measurement for carbon project accounting under [[ISO 14064]]-2
@@ -519,7 +519,7 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
   - [[AI]]-powered multi-tier supply-chain tracing (using customs, procurement, and financial data) progressively operationalising CBA at enterprise scale
 - **AI system carbon disclosure standardisation**:
   - Green Software Foundation SCI specification, EU AI Act implementing acts, and voluntary industry frameworks converging toward mandatory per-query or per-functional-unit carbon intensity disclosure for commercial [[AI]] services by 2027
-  - [[Machine Learning Discipline]] model registries expected to require embodied carbon declarations analogous to DPP product declarations
+  - [[Machine Learning]] model registries expected to require embodied carbon declarations analogous to DPP product declarations
   - Creating an entirely new [[Regulatory Technology]] surface for the AI sector around carbon intensity of digital infrastructure
   - MLCommons and Green Software Foundation co-developing unified benchmark methodology harmonising MLPerf power measurements with SCI carbon intensity calculations
 - **Interoperability and open data standards**:
@@ -528,7 +528,7 @@ Systematic quantitative modology for calculating the total greenhouse gas (GHG) 
   - [[Blockchain]]-anchored carbon data registries piloted by DENA (German Energy Agency), ClimateCheck, and Verra for verified emission data provenance across multi-tier [[Supply Chain]] networks
   - [[Circular Economy]] material-flow tracing systems (e.g. Circularise DPP platform) extending from product identity to embedded carbon, enabling closed-loop carbon accounting for recycled content
 - **Carbon removal and negative emission accounting**:
-  - IPCC negative emission technologies (NETs) — direct air capture (DAC), bioenergy with CCS (BECCS), enhanced weathering, soil carbon — require [[Lifecycle Assessment]]-based accounting to distinguish genuine atmospheric CO₂ removal from avoided emission or carbon storage displacement
+  - IPCC negative emission technologies (NETs) — direct air capture (DAC), bioenergy with CCS (BECCS), enhanced weathering, soil carbon — require [[Life Cycle Assessment]]-based accounting to distinguish genuine atmospheric CO₂ removal from avoided emission or carbon storage displacement
   - Emerging Voluntary Carbon Market standards (Verra VCS, Gold Standard, ICROA) developing MRV (Measurement, Reporting, Verification) protocols integrating satellite monitoring with ground-truth sampling for high-integrity [[Carbon Credits]]
   - UK Government's Woodland Carbon Code and Peatland Code: government-backed standards for UK nature-based carbon sequestration projects; third-party verification per [[ISO 14064]]-3 required for UK Carbon Units issuance
 

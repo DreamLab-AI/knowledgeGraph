@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:blockchain
 enables:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 bridgesTo:
   - urn:ngm:class:blockchain
 uses:

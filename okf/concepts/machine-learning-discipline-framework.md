@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:tensor-data-structure
 supports:
   - urn:ngm:class:edge-deployment
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 partOf:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:mlops

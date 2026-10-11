@@ -64,6 +64,10 @@
       "@id": "https://narrativegoldmine.com/ns/v1#enabledBy",
       "@type": "@id"
     },
+    "disjointWith": {
+      "@id": "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type": "@id"
+    },
     "sameAs": {
       "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
       "@type": "@id"

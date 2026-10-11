@@ -3,7 +3,7 @@ Pseudonymity is the property of operating under a persistent, stable identifier 
 ### Overview
 
 - Pseudonymity is a foundational concept across security, cryptography, communications, and decentralised systems. The word derives from the Greek *pseudōnymos* (false name) and has been practised since antiquity — authors writing under pen names, activists using aliases — but has taken on new technical precision in the digital era.
-- A pseudonymous actor uses a chosen identifier (username, cryptographic [[Public Key Cryptography]] address, or [[Decentralized Identifier]]) that may accumulate reputation, history, and trust, yet no automatic mechanism links that identifier to the holder's legal name or physical location.
+- A pseudonymous actor uses a chosen identifier (username, cryptographic [[Public Key Cryptography]] address, or [[Decentralised Identifier]]) that may accumulate reputation, history, and trust, yet no automatic mechanism links that identifier to the holder's legal name or physical location.
 - The security-relevant distinction is the *linkability spectrum*:
   - **Full anonymity**: individual actions cannot be linked to any consistent actor.
   - **Pseudonymity**: actions are linkable to a persistent identifier but not to a real-world person.
@@ -15,7 +15,7 @@ Pseudonymity is the property of operating under a persistent, stable identifier 
 ### Key Mechanisms
 
 - **Persistent pseudonym creation**
-  - The actor generates or adopts a stable identifier independent of legal identity: a username on a forum, an asymmetric [[Key Pair]], or a W3C [[Decentralized Identifier]].
+  - The actor generates or adopts a stable identifier independent of legal identity: a username on a forum, an asymmetric [[Key Pair]], or a W3C [[Decentralised Identifier]].
   - The identifier must be self-generated or issued by a party that does not record real-world identity linkage.
 - **Cryptographic pseudonymity**
   - [[Public Key Cryptography]] enables pseudonymity via key pairs: the public key serves as the pseudonym; ownership is proved by signing with the corresponding private key, with no third-party identity authority needed.
@@ -35,7 +35,7 @@ Pseudonymity is the property of operating under a persistent, stable identifier 
   - Blockchain addresses (e.g. Bitcoin's UTXO addresses, Ethereum account addresses) are the canonical example of practical pseudonymity at scale. Addresses are not inherently linked to legal identity, yet the transparent ledger links all transactions from a given address, creating a pseudonymous audit trail. [[Blockchain]] analytics firms specialise in chain-tracing and cluster analysis to deanonymise wallets.
   - Privacy-focused ledgers (Zcash, Monero) apply [[Zero-Knowledge Proof]] and [[Ring Signature]] techniques to strengthen pseudonymity toward unlinkability.
 - **Decentralised identity**
-  - W3C [[Decentralized Identifier]]s (DIDs) and [[Verifiable Credential]]s form an architecture where users control pseudonymous identifiers across contexts and selectively disclose attestations. [[Self-Sovereign Identity]] (SSI) systems build on this to give users portable, privacy-preserving digital identity without centralised registries.
+  - W3C [[Decentralised Identifier]]s (DIDs) and [[Verifiable Credential]]s form an architecture where users control pseudonymous identifiers across contexts and selectively disclose attestations. [[Self-Sovereign Identity]] (SSI) systems build on this to give users portable, privacy-preserving digital identity without centralised registries.
 - **Online communication and journalism**
   - Activists, journalists, and [[Whistleblowing]] sources operate pseudonymously to communicate sensitive information without personal risk. Platforms such as SecureDrop combine pseudonymous accounts with [[Tor Network]] routing.
 - **Open-source development**
@@ -80,7 +80,7 @@ Pseudonymity is the property of operating under a persistent, stable identifier 
 
 ### Pseudonymity in Decentralised and Web3 Contexts
 
-- [[Self-Sovereign Identity]] architectures use [[Decentralized Identifier]]s as the pseudonymous anchor for portable digital identity; the holder controls the DID document and chooses which verifiers can see which credentials.
+- [[Self-Sovereign Identity]] architectures use [[Decentralised Identifier]]s as the pseudonymous anchor for portable digital identity; the holder controls the DID document and chooses which verifiers can see which credentials.
 - In [[Blockchain]] ecosystems, pseudonymity is the baseline: wallet addresses serve as pseudonyms, but their public transaction history creates a permanent, globally auditable trail. Layer-2 privacy extensions and off-chain channels (e.g. Lightning Network payment channels) reduce on-chain footprint.
 - [[Censorship Resistance]] in decentralised systems depends partly on pseudonymity: if participants cannot be identified, targeted suppression of their keys or addresses requires broad network-level interference rather than identity-specific action.
 - Non-fungible token (NFT) ownership, decentralised autonomous organisation (DAO) voting rights, and on-chain governance all rest on pseudonymous key ownership, making [[Identity Management]] for these contexts a distinct challenge compared with traditional enterprise identity.

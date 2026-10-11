@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-uplink",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite uplink is a transmission from an Earth-based station or terminal to a satellite.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-to-ground-link",

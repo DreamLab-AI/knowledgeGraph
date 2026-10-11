@@ -108,7 +108,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -184,8 +184,8 @@
         "label": "Metaverse Infrastructure"
       },
       {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

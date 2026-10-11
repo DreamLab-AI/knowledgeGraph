@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:iir-filter
 supports:
   - urn:ngm:class:slam
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:predictive-maintenance
 partOf:
   - urn:ngm:class:data-acquisition
@@ -46,7 +46,7 @@ relatedTo:
   - urn:ngm:class:accelerometer
   - urn:ngm:class:force-torque-sensor
   - urn:ngm:class:noise-reduction
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Signal Conditioning

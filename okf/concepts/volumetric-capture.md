@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:stereoscopic-3d
 bridgesTo:
   - urn:ngm:class:gaussian-splatting
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:depth-sensing
   - urn:ngm:class:photogrammetry

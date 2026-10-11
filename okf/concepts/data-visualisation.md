@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:text-report
 bridgesTo:
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:explainable-ai
 uses:
   - urn:ngm:class:computer-vision

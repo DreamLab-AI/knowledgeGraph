@@ -464,7 +464,7 @@ FunctionalDataProperty(sc:forkYear)
 - **[[Avatar]] Portability and Identity**:
   - OMI Avatar and the ReadyPlayerMe ecosystem are developing standards for portable [[Avatar]] representations that can move between platforms
   - A user creating an avatar in one platform and carrying it to another requires interoperable skeletal rigs, material systems, and blend shape semantics—problems Vircadia and [[Overte]] engaged with but did not fully solve interoperably
-  - Decentralised identity standards ([[Distributed Identity|W3C DIDs]], [[Verifiable Credentials]]) could enable avatar identity that is not tied to any single platform's authentication server, addressing the partial-centralisation problem in Vircadia's metaverse server architecture
+  - Decentralised identity standards ([[Distributed Identity|W3C DIDs]], [[Verifiable Credential]]) could enable avatar identity that is not tied to any single platform's authentication server, addressing the partial-centralisation problem in Vircadia's metaverse server architecture
   - [[High Fidelity]]'s HFC token experiment (blockchain-based in-world currency) failed commercially; the broader question of how virtual asset ownership is represented and transferred across platforms without central authority remains unsolved and is being re-approached through NFT standards and post-NFT successor approaches
 - **AI-Driven World Generation**:
   - Generative AI for 3D scene content (NeRFs, Gaussian splats, text-to-3D models from DALL-E 3D, Shap-E, Point-E successors) will lower the cost of populating virtual worlds

@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:autonomous-robot
 uses:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # RB 1016 pathplanning

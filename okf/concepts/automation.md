@@ -39,7 +39,7 @@ bridgesTo:
   - urn:ngm:class:agents
   - urn:ngm:class:digital-twin
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
 supports:

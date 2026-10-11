@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-ephemeris",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS broadcast ephemeris is satellite-specific orbit information used to compute that satellite's position at a stated time.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

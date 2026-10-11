@@ -16,7 +16,7 @@ dependsOn:
   - urn:ngm:class:neural-network-architecture
 partOf:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:machine-learning-discipline-infrastructure
 ---

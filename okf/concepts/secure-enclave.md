@@ -8,7 +8,7 @@ description: A secure enclave is a hardware-isolated execution environment embed
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 hasPart:
   - urn:ngm:class:remote-attestation
   - urn:ngm:class:memory-encryption
@@ -29,7 +29,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:symmetric-encryption

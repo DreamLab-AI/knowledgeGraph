@@ -10,14 +10,13 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:artificial-general-intelligence
-  - urn:ngm:class:cognitive-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:formal-verification
 hasPart:
   - urn:ngm:class:beam-search
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:reward-model
   - urn:ngm:class:process-reward-model
   - urn:ngm:class:re-act
@@ -32,7 +31,7 @@ requires:
   - urn:ngm:class:formal-verification
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:attention
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:transformers
   - urn:ngm:class:knowledge-graphs
@@ -52,9 +51,9 @@ dependsOn:
   - urn:ngm:class:formal-logic
   - urn:ngm:class:information-theory
   - urn:ngm:class:benchmarks
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:neuro-symbolic-ai
   - urn:ngm:class:re-act
   - urn:ngm:class:self-consistency
@@ -73,7 +72,7 @@ uses:
   - urn:ngm:class:beam-search
   - urn:ngm:class:benchmarks
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:monte-carlo-tree-search
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:lean

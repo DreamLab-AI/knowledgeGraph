@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:quality-attribute
   - urn:ngm:class:design-principle
   - urn:ngm:class:human-factors
-  - urn:ngm:class:inclusive-design
   - urn:ngm:class:non-functional-requirement
 hasPart:
   - urn:ngm:class:live-captions

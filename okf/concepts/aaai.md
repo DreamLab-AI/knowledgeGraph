@@ -39,7 +39,7 @@ bridgesTo:
   - urn:ngm:class:ai-safety
 supports:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:open-science

@@ -35,7 +35,7 @@ Newcastle upon Tyne is a major city and metropolitan centre in North East Englan
 #### Smart City and Urban Data
 
 - Newcastle has been a testbed for [[Urban Observatory]] deployments — a large-scale urban sensor network collecting real-time environmental, transport, and energy data that feeds open data platforms and [[knowledge graph]] research.
-- The Urban Observatory project, led by Newcastle University, is one of the largest civic sensor arrays in the UK and has generated datasets used in [[distributed systems]], [[IoT]] research, and urban [[AI]] modelling.
+- The Urban Observatory project, led by Newcastle University, is one of the largest civic sensor arrays in the UK and has generated datasets used in [[distributed systems]], [[Internet of Things]] research, and urban [[AI]] modelling.
 
 #### Data Science and Analytics
 
@@ -72,7 +72,7 @@ Newcastle upon Tyne is a major city and metropolitan centre in North East Englan
 ### Notable Connections in Knowledge Graph Context
 
 - Newcastle is an example of a [[Regional Innovation Ecosystem]] where physical urban infrastructure, higher education, and distributed digital infrastructure co-evolve.
-- Its [[Urban Observatory]] is frequently cited in literature on [[IoT]] data platforms, [[edge computing]] for civic sensors, and [[knowledge graphs]] for city-scale information integration.
+- Its [[Urban Observatory]] is frequently cited in literature on [[Internet of Things]] data platforms, [[edge computing]] for civic sensors, and [[knowledge graphs]] for city-scale information integration.
 - The relationship between Newcastle and [[Manchester]] (as two northern English city-region anchors) illustrates [[distributed collaboration]] and polycentric economic geography, relevant to how [[digital infrastructure]] can be designed at sub-national scale.
 - The city's dual identity as an [[infrastructure]] node (physical transport, broadband) and a [[data]] node (urban sensing, academic research) makes it a useful ontological example of concepts that bridge spatial and informational domains.
 

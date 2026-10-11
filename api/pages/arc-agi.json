@@ -104,8 +104,8 @@
         "label": "Cognitive Science"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:programme-synthesis",
@@ -128,8 +128,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -143,8 +143,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
@@ -294,9 +294,9 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:measurement",
@@ -354,18 +354,42 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:technical-documentation",
+      "label": "Technical Documentation",
+      "slug": "technical-documentation"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation",
+      "slug": "documentation"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:data",
+      "label": "Data",
+      "slug": "data"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
       {
         "id": "urn:ngm:class:annotation-pipelines",
         "label": "Annotation Pipelines"
@@ -389,10 +413,6 @@
       {
         "id": "urn:ngm:class:held-out-test-sets",
         "label": "Held-Out Test Sets"
-      },
-      {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
       },
       {
         "id": "urn:ngm:class:benchmark-dataset",
@@ -575,7 +595,7 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -681,8 +701,8 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:spec",
@@ -727,6 +747,10 @@
         "label": "AI Governance"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
       }
@@ -739,6 +763,10 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:annotation-pipelines",
@@ -759,10 +787,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
       }
     ]
   },

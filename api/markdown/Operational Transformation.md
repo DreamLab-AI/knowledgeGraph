@@ -57,7 +57,7 @@ Operational Transformation (OT) is a concurrency control technique for real-time
   - Suleiman et al. (1997), Ressel et al. (1996) — TP2 conditions and GOTO algorithm.
   - Sun & Ellis (1998) — SOCT2, GOT algorithms with correctness proofs.
 - [[Apache Wave Protocol]] (Google, 2009) standardised an OT-based wire protocol for federated collaborative editing; the project was open-sourced but later archived.
-- [[W3C]] has no normative OT specification; browser-based collaborative applications implement OT at the application layer.
+- [[World Wide Web Consortium]] has no normative OT specification; browser-based collaborative applications implement OT at the application layer.
 - The field has largely moved toward [[CRDT]]-based libraries (Yjs, Automerge) for new systems, but OT remains in production at significant scale in existing platforms.
 
 ### Semantic Classification

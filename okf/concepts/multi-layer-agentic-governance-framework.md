@@ -19,7 +19,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:blockchain
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:blockchain
   - urn:ngm:class:self-sovereign-identity
 relatedTo:

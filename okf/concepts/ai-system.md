@@ -9,6 +9,7 @@ maturity: established
 quality: 0.91
 is-a:
   - urn:ngm:class:sociotechnical-system
+  - urn:ngm:class:ai-infrastructure
 hasPart:
   - urn:ngm:class:ai-model
   - urn:ngm:class:ai-inference
@@ -16,11 +17,14 @@ hasPart:
   - urn:ngm:class:inference-runtime
   - urn:ngm:class:monitoring
   - urn:ngm:class:monitoring
+  - urn:ngm:class:machine-learning-discipline-model
+  - urn:ngm:class:neural-network
 requires:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:training-data
   - urn:ngm:class:machine-learning-discipline-framework
   - urn:ngm:class:learning-algorithm
+  - urn:ngm:class:ai-agent-system
 enables:
   - urn:ngm:class:ai-risk-assessment
   - urn:ngm:class:autonomous-decision-making
@@ -45,6 +49,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:digital-infrastructure
   - urn:ngm:class:regulatory-compliance
+  - urn:ngm:class:ai-agent-system
 uses:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -56,8 +61,8 @@ supports:
   - urn:ngm:class:ai-safety
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:regulatory-compliance
 relatedTo:
   - urn:ngm:class:ai-system-eu-definition

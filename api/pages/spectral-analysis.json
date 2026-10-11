@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-analysis",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spectral analysis is the process of calculating and interpreting a spectrum, that is a representation of a time or space series in the frequency domain.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

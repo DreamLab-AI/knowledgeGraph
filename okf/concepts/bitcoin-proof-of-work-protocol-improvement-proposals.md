@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview
   - urn:ngm:class:soft-fork
   - urn:ngm:class:hard-fork
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:schnorr-signatures
   - urn:ngm:class:taproot
   - urn:ngm:class:protocol-upgrade
@@ -39,7 +39,7 @@ implements:
   - urn:ngm:class:decentralised-governance
   - urn:ngm:class:standards-process
 contrastsWith:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:ietf-rfc
   - urn:ngm:class:w3c-recommendation
   - urn:ngm:class:ethereum-improvement-proposal

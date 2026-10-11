@@ -9,7 +9,6 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:enterprise-software-platform
-  - urn:ngm:class:crm
   - urn:ngm:class:user-experience
 hasPart:
   - urn:ngm:class:omnichannel
@@ -42,9 +41,9 @@ enables:
   - urn:ngm:class:personalised-learning
 dependsOn:
   - urn:ngm:class:behavioural-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:business-intelligence
 implements:
@@ -61,8 +60,8 @@ contrastsWith:
 uses:
   - urn:ngm:class:behavioural-analytics
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:business-intelligence
   - urn:ngm:class:sentiment-analysis

@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:onnx
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # ONNX Operator Set

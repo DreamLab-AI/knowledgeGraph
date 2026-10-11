@@ -8,7 +8,7 @@ description: Digital asset governance is the set of rules, processes, and author
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 hasPart:
   - urn:ngm:class:governance-token
   - urn:ngm:class:custody
@@ -26,7 +26,7 @@ bridgesTo:
   - urn:ngm:class:tokenization
 uses:
   - urn:ngm:class:on-chain-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 supports:
   - urn:ngm:class:regulatory-compliance
 partOf:

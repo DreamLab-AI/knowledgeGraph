@@ -11,10 +11,7 @@ is-a:
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:complexity-science
   - urn:ngm:class:social-science
-  - urn:ngm:class:political-economy
   - urn:ngm:class:information-theory
-  - urn:ngm:class:institutional-economics
-  - urn:ngm:class:behavioural-economics
 hasPart:
   - urn:ngm:class:macroeconomics
   - urn:ngm:class:market-design
@@ -85,7 +82,7 @@ supports:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cashu
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:digital-asset
   - urn:ngm:class:governance
@@ -93,7 +90,7 @@ standardizedBy:
   - urn:ngm:class:bank-of-england
   - urn:ngm:class:bis
   - urn:ngm:class:financial-conduct-authority
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:oecd
   - urn:ngm:class:hm-treasury
   - urn:ngm:class:world-bank

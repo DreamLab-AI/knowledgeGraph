@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:few-shot-exemplar
   - urn:ngm:class:reasoning-token
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
   - urn:ngm:class:in-context-learning
   - urn:ngm:class:transformer-architecture

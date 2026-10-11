@@ -42,8 +42,8 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [],
@@ -186,7 +186,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       },
       {
@@ -226,7 +226,7 @@
         "label": "Accessibility Technology"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {
@@ -260,8 +260,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -308,8 +308,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",

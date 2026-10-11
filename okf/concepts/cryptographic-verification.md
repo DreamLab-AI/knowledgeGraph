@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:blockchain
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:non-repudiation
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 implements:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:message-authentication-code
@@ -26,12 +26,12 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:cryptographic-system
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:public-key-cryptography
 supports:
@@ -44,7 +44,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 ---
 
 # Cryptographic Verification

@@ -8,7 +8,7 @@ description: The post-deployment lifecycle activity of training a machine learni
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
 dependsOn:
   - urn:ngm:class:ai-monitoring
   - urn:ngm:class:drift-detection

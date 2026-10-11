@@ -16,7 +16,7 @@ uses:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:model-pruning-for-edge-deployment
   - urn:ngm:class:model-compression-for-edge
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:embedded-ai-frameworks
 relatedTo:
   - urn:ngm:class:edge-computing

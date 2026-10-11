@@ -14,7 +14,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:oecd
 relatedTo:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
 ---
 
 # World Trade Organization

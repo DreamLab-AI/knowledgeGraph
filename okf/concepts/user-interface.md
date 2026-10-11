@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:design-systems
   - urn:ngm:class:widget-toolkit
 supports:
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:localisation
 standardizedBy:
   - urn:ngm:class:w-3-c-standards

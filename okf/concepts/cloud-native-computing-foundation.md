@@ -12,13 +12,24 @@ is-a:
 hasPart:
   - urn:ngm:class:kubernetes
   - urn:ngm:class:observability
+  - urn:ngm:class:open-telemetry
+  - urn:ngm:class:prometheus
+  - urn:ngm:class:envoy-proxy
 enables:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:devops
+  - urn:ngm:class:cloud-native-applications
+  - urn:ngm:class:microservices-architecture
+  - urn:ngm:class:open-source-software
+  - urn:ngm:class:container-orchestration
+  - urn:ngm:class:platform-engineering
 contrastsWith:
   - urn:ngm:class:standards-body
 bridgesTo:
   - urn:ngm:class:standards-organization
+  - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:distributed-collaboration
 uses:
   - urn:ngm:class:kubernetes
 supports:
@@ -33,6 +44,10 @@ partOf:
 relatedTo:
   - urn:ngm:class:cloud-platform
   - urn:ngm:class:observability
+  - urn:ngm:class:cloud-infrastructure
+  - urn:ngm:class:microservices
+  - urn:ngm:class:service-mesh
+  - urn:ngm:class:open-container-initiative
 ---
 
 # Cloud Native Computing Foundation

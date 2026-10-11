@@ -22,10 +22,6 @@
     {
       "id": "urn:ngm:class:biology",
       "label": "Biology"
-    },
-    {
-      "id": "urn:ngm:class:bioinformatics",
-      "label": "Bioinformatics"
     }
   ],
   "entityType": "Class",
@@ -168,7 +164,7 @@
         "label": "Biology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -234,11 +230,15 @@
       {
         "id": "urn:ngm:class:classical-genetics",
         "label": "Classical Genetics"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -268,15 +268,15 @@
         "label": "Graph Neural Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -300,7 +300,7 @@
         "label": "Hidden Markov Model"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -537,8 +537,8 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:biological-database",
-        "label": "Biological Database"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
@@ -589,10 +589,6 @@
         "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
@@ -613,18 +609,6 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:genome-assembly",
-        "label": "Genome Assembly"
-      },
-      {
-        "id": "urn:ngm:class:phylogenetic-analysis",
-        "label": "Phylogenetic Analysis"
-      },
-      {
-        "id": "urn:ngm:class:variant-calling",
-        "label": "Variant Calling"
       }
     ],
     "contrastsWith": [
@@ -659,10 +643,6 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:biology",
-        "label": "Biology"
-      },
-      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -673,6 +653,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "uses": [
@@ -701,12 +685,12 @@
         "label": "Simulation Engine"
       },
       {
-        "id": "urn:ngm:class:data-science",
-        "label": "Data Science"
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "supports": [
@@ -717,14 +701,6 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
-      },
-      {
-        "id": "urn:ngm:class:evolutionary-biology",
-        "label": "Evolutionary Biology"
-      },
-      {
-        "id": "urn:ngm:class:precision-agriculture",
-        "label": "Precision Agriculture"
       },
       {
         "id": "urn:ngm:class:power-management",
@@ -741,17 +717,17 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:pdb",
-        "label": "PDB"
-      },
-      {
-        "id": "urn:ngm:class:uniprot",
-        "label": "UniProt"
-      },
       {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
@@ -789,14 +765,6 @@
         "label": "Unsupervised Learning"
       },
       {
-        "id": "urn:ngm:class:bert",
-        "label": "BERT"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
         "id": "urn:ngm:class:big-data",
         "label": "Big Data"
       },
@@ -807,6 +775,14 @@
       {
         "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
+      },
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ]
   },

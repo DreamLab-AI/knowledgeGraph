@@ -22,7 +22,7 @@ A hot wallet is a cryptocurrency wallet whose private keys are held on an intern
 
 - Exchange hot wallets that settle customer withdrawals and internal transfers.
 - Merchant and payment-processor wallets accepting crypto in real time.
-- User wallets interacting with [[DeFi]] protocols and decentralised applications.
+- User wallets interacting with [[Decentralised Finance]] protocols and decentralised applications.
 - Treasury operations holding a working balance separate from long-term reserves.
 
 ### Provenance

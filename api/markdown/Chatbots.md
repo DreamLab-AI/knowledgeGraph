@@ -171,7 +171,7 @@ FunctionalDataProperty(ai:resolutionRateLLM)
 
 ### Core NLU–DM–NLG Pipeline
 
-- The canonical chatbot architecture organises three processing stages into a pipeline with bidirectional context flows, each stage mapping to a distinct sub-discipline of [[Natural Language Processing]] and [[Machine Learning Discipline]]. The pipeline model traces its lineage to the AT&T Bell Labs GENESIS system (1992) and was formalised in the ATIS benchmark corpus work of the early 1990s. Modern LLM-native architectures can collapse all three stages into a single model pass, but the conceptual decomposition remains useful for design, debugging, and governance.
+- The canonical chatbot architecture organises three processing stages into a pipeline with bidirectional context flows, each stage mapping to a distinct sub-discipline of [[Natural Language Processing]] and [[Machine Learning]]. The pipeline model traces its lineage to the AT&T Bell Labs GENESIS system (1992) and was formalised in the ATIS benchmark corpus work of the early 1990s. Modern LLM-native architectures can collapse all three stages into a single model pass, but the conceptual decomposition remains useful for design, debugging, and governance.
 - **Natural Language Understanding (NLU)** converts raw text or ASR transcript into a structured intent-entity representation.
   - *Intent recognition* maps utterances to a categorical user goal via supervised classification. Classical: bag-of-words + logistic regression or SVM (60–75% accuracy on real customer utterances). Modern: fine-tuned BERT/RoBERTa encoders (90–95%+ accuracy on intent detection).
   - *Entity extraction / [[Slot Filling]]* identifies specific named slots (e.g., `departure_city`, `travel_date`, `seat_class`) using BIO sequence labelling. BERT-NER achieves F1 ≥ 0.90 on standard benchmarks (SNIPS, ATIS). LLM-based slot extraction via JSON schema prompting removes per-domain training data requirements at higher latency cost.
@@ -336,7 +336,7 @@ FunctionalDataProperty(ai:resolutionRateLLM)
 - Alignment and safety for LLM chatbots:
   - RLHF (Christiano et al. 2017; Stiennon et al. 2020): reinforcement learning from human preference feedback; the dominant technique for making LLM chatbots helpful, harmless, and honest.
   - InstructGPT (Ouyang et al. 2022): applied RLHF to GPT-3 to produce instruction-following behaviour; direct precursor to ChatGPT.
-  - [[Constitutional AI Training Methodology]] (Bai et al. 2022, Anthropic): self-critique approach grounded in natural-language principles, reducing dependence on human labellers for harmlessness training and establishing a replicable safety methodology.
+  - [[Constitutional AI]] (Bai et al. 2022, Anthropic): self-critique approach grounded in natural-language principles, reducing dependence on human labellers for harmlessness training and establishing a replicable safety methodology.
 - Evaluation methodology:
   - Liu et al. (2016): demonstrated that BLEU, ROUGE, and METEOR correlate poorly with human judgement in open-domain dialogue — a seminal negative result that redirected evaluation research.
   - [[BERTScore]] (Zhang et al. 2019): contextualised semantic similarity using BERT embeddings; 59% alignment with human judgements versus 47% for BLEU (ACL 2025 ExPerT study).
@@ -496,7 +496,7 @@ FunctionalDataProperty(ai:resolutionRateLLM)
   - 80% of organisations have encountered risky agent behaviours including unauthorised data exposure and improper system access.
   - Building guardrails is characterised as "slow, expensive, and annoying" — safety as friction for companies racing to deploy.
 - **Key guardrail platforms in production as of 2026**:
-  - Anthropic [[Constitutional AI Training Methodology]]: principle-based rather than ad-hoc rule lists; self-critique training reduces need for human-labelled harmlessness data.
+  - Anthropic [[Constitutional AI]]: principle-based rather than ad-hoc rule lists; self-critique training reduces need for human-labelled harmlessness data.
   - AWS Bedrock Guardrails: configurable content filtering, PII detection, grounding validation.
   - Azure AI Content Safety (2025 updates): enterprise-grade moderation API; integrated with Azure OpenAI Service.
   - Patronus AI and GraySwan: specialised LLM safety evaluation and red-teaming platforms.

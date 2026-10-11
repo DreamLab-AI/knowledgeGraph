@@ -31,10 +31,10 @@ bridgesTo:
   - urn:ngm:class:enterprise-software-integration
   - urn:ngm:class:robotic-autonomous-systems
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:context-window
   - urn:ngm:class:vector-database
 supports:

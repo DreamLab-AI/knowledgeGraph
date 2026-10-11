@@ -4,6 +4,7 @@ type: Class
 title: Measurement Bias
 resource: urn:ngm:class:measurement-bias
 domain: earth-observation-and-geospatial-sensing
+description: Measurement bias is an estimate of a systematic measurement error.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Measurement Bias
+
+Measurement bias is an estimate of a systematic measurement error.[^1]

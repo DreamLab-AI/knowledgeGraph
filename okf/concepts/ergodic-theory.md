@@ -43,7 +43,7 @@ contrastsWith:
   - urn:ngm:class:non-stationary-processes
   - urn:ngm:class:deterministic-chaos
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:probability-theory
   - urn:ngm:class:stochastic-process

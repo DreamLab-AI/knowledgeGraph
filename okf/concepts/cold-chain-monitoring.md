@@ -53,7 +53,7 @@ dependsOn:
   - urn:ngm:class:logistics
   - urn:ngm:class:refrigeration-technology
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cryptography
   - urn:ngm:class:edge-computing
   - urn:ngm:class:cloud-infrastructure
@@ -82,7 +82,7 @@ uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:satellite-connectivity

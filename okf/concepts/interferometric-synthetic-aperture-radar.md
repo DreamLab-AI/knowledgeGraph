@@ -8,7 +8,7 @@ description: Interferometric synthetic aperture radar (InSAR) compares the phase
 maturity: draft
 quality: 0
 is-a:
-  - urn:ngm:class:radar
+  - urn:ngm:class:synthetic-aperture-radar
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

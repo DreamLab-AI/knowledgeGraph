@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:trust-establishment
   - urn:ngm:class:secure-communication
 dependsOn:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:identity-and-access-management
 implements:
   - urn:ngm:class:access-control

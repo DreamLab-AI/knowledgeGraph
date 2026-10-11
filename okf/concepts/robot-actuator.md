@@ -36,8 +36,8 @@ contrastsWith:
   - urn:ngm:class:passive-mechanism
 bridgesTo:
   - urn:ngm:class:hardware-component
-  - urn:ngm:class:embedded-systems
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:embedded-system
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:pid-control
   - urn:ngm:class:encoder

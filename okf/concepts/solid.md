@@ -12,13 +12,13 @@ is-a:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:decentralized-web
   - urn:ngm:class:linked-data
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:web-standards
   - urn:ngm:class:privacy-by-design
   - urn:ngm:class:decentralised-protocol
 hasPart:
   - urn:ngm:class:access-control-policy
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:linked-data-platform
   - urn:ngm:class:solid-pod
   - urn:ngm:class:rdf
@@ -26,25 +26,25 @@ hasPart:
   - urn:ngm:class:sparql
   - urn:ngm:class:turtle
   - urn:ngm:class:web-access-control
-  - urn:ngm:class:webid-decentralised-identity-uri
+  - urn:ngm:class:web-id
   - urn:ngm:class:web-id-profile
   - urn:ngm:class:solid-pod
   - urn:ngm:class:solid-protocol-specification
 requires:
   - urn:ngm:class:http
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:rdf
   - urn:ngm:class:sparql
   - urn:ngm:class:turtle
   - urn:ngm:class:uri
-  - urn:ngm:class:webid-decentralised-identity-uri
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:web-id
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:data-portability
   - urn:ngm:class:data-sovereignty
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:gdpr-compliance
   - urn:ngm:class:open-data
   - urn:ngm:class:consent-management
@@ -53,8 +53,8 @@ enables:
   - urn:ngm:class:privacy-by-design
 dependsOn:
   - urn:ngm:class:w-3-c-standards
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:rest-architecture
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:rdf-data-model
@@ -73,13 +73,13 @@ contrastsWith:
   - urn:ngm:class:activity-pub
   - urn:ngm:class:ipfs
   - urn:ngm:class:blockchain-storage
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:at-protocol
 bridgesTo:
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:rest
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:n-triples
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:rdf
@@ -103,7 +103,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:ietf
   - urn:ngm:class:open-data-institute
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:w3c-solid-community-group
   - urn:ngm:class:linked-web-storage-working-group
 relatedTo:
@@ -113,9 +113,9 @@ relatedTo:
   - urn:ngm:class:open-data
   - urn:ngm:class:sh-ex
   - urn:ngm:class:agent-frameworks
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:shape-trees
 ---

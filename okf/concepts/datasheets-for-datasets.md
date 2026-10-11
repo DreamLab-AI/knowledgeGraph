@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:transparency
 contrastsWith:
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
 partOf:
   - urn:ngm:class:ai-documentation-standards
 relatedTo:

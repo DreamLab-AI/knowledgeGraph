@@ -10,20 +10,20 @@ quality: 0.62
 is-a:
   - urn:ngm:class:token
 requires:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:api
 dependsOn:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:cryptography
 bridgesTo:
   - urn:ngm:class:identity
 uses:
   - urn:ngm:class:oauth
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:authentication
 standardizedBy:

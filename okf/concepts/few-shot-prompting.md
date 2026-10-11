@@ -34,7 +34,7 @@ partOf:
   - urn:ngm:class:prompt-engineering
 relatedTo:
   - urn:ngm:class:zero-shot-prompting
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:meta-learning

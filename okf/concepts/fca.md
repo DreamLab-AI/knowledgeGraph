@@ -11,16 +11,16 @@ is-a:
   - urn:ngm:class:infra-legal-and-regulatory
 requires:
   - urn:ngm:class:compliance-framework
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:anti-money-laundering
 enables:
   - urn:ngm:class:regulatory-sandbox
   - urn:ngm:class:fintech-innovation
   - urn:ngm:class:financial-promotion
 implements:
   - urn:ngm:class:financial-services-and-markets-act
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:anti-money-laundering
 contrastsWith:
   - urn:ngm:class:sec
@@ -29,10 +29,10 @@ bridgesTo:
   - urn:ngm:class:crypto-regulation
   - urn:ngm:class:stablecoin
   - urn:ngm:class:digital-asset-custody
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:crypto-regulation
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:consumer-protection
   - urn:ngm:class:financial-stability
   - urn:ngm:class:market-integrity

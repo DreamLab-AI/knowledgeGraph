@@ -8,10 +8,10 @@ description: TLS 1.3 (Transport Layer Security version 1.3, standardised in RFC 
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:encryption-protocol
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
 enables:
   - urn:ngm:class:quic
@@ -19,7 +19,6 @@ enables:
   - urn:ngm:class:http
   - urn:ngm:class:forward-secrecy
 contrastsWith:
-  - urn:ngm:class:tls
   - urn:ngm:class:ssl
 bridgesTo:
   - urn:ngm:class:infrastructure

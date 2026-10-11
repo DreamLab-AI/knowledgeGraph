@@ -28,7 +28,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:computer-graphics
   - urn:ngm:class:film-production
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 ---
 
 # Academy Software Foundation

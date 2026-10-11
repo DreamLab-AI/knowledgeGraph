@@ -8,10 +8,10 @@ description: Maple Finance is a decentralised finance protocol that arranges und
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:institutional-adoption
 ---

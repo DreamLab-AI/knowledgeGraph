@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:scaled-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A scaled data state is the condition of a dataset whose stored values have been transformed by a scale factor, usually with an additive offset, so that physical values are recovered only by applying the stated transformation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

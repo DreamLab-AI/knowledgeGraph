@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:red-dwarf",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A red dwarf is the smallest and coolest kind of main-sequence star, a fraction of the Sun\u2019s size and mass.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:main-sequence-star",

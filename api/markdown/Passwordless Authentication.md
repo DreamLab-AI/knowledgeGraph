@@ -37,7 +37,7 @@ Passwordless Authentication encompasses identity verification mechanisms that pr
 - **[[Zero Trust Architecture]] deployments** — Continuous-verification environments benefit from cryptographic device attestation carried by passkeys, which provides stronger device-identity signals than certificate-based approaches.
 - **[[Digital Identity Wallet]] integration** — Emerging wallet architectures (EU eIDAS 2.0 EUDI wallet, mDL specifications) use FIDO2-compatible cryptographic binding as a credential-presentation layer.
 - **Developer and API authentication** — SSH key pairs and FIDO2-backed SSH (OpenSSH 8.2+) provide passwordless authentication to servers and code repositories without transmitting secrets over the network.
-- **[[Decentralised Identity]] systems** — [[Verifiable Credentials]] frameworks leverage the same asymmetric-key primitives as passkeys, enabling passwordless presentation of identity claims to verifiers without central identity brokers.
+- **[[Decentralised Identity]] systems** — [[Verifiable Credential]] frameworks leverage the same asymmetric-key primitives as passkeys, enabling passwordless presentation of identity claims to verifiers without central identity brokers.
 
 ### Standards and Governance Context
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-data-bus",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft data bus is an onboard communication link or network over which spacecraft units exchange commands and data under a defined interface protocol.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-signal-acquisition",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS signal acquisition is the receiver process that detects a candidate satellite signal and estimates initial code-delay and carrier-frequency parameters.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

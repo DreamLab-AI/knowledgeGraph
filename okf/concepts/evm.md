@@ -20,11 +20,11 @@ enables:
   - urn:ngm:class:smart-contract-execution
   - urn:ngm:class:smart-contract
   - urn:ngm:class:smart-contract-platform
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft
 implements:
   - urn:ngm:class:ethereum-yellow-paper
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 contrastsWith:
   - urn:ngm:class:bitcoin-script
   - urn:ngm:class:wasm

@@ -34,9 +34,9 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
   - Focus on unified, graph-based models ([[world graph]]) for representing real-world spatial structures and virtual content integration
   - Development of [[IPSME]] (Inter-Platform Semantic Messaging Environment) as a base communication layer
 - **Privacy and Identity Frameworks** [Updated 2025]:
-  - Advanced work on [[privacy-preserving identity frameworks]], including standards for [[decentralized identity]] and secure authentication in virtual environments
+  - Advanced work on [[privacy-preserving identity frameworks]], including standards for [[Decentralised Identity]] and secure authentication in virtual environments
   - Alignment with [[EU Digital Identity Initiative]] and [[GDPR]] compliance requirements
-  - Integration of [[zero-knowledge proofs]] and [[verifiable credentials]] for privacy-preserving authentication
+  - Integration of [[zero-knowledge proofs]] and [[Verifiable Credential]] for privacy-preserving authentication
   - Support for [[self-sovereign identity (SSI)]] models enabling user control over personal data
 - **AI and Immersive Media**:
   - Integration of [[AI]] for social moderation, content generation, and enhanced immersive experiences
@@ -162,7 +162,7 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
 - **Virtual Asset Markets**:
   - Players can own, trade, sell, or loan in-game assets (tokenized as NFTs) on decentralized marketplaces
   - Assets include virtual land, items, characters, each with real-world value and liquidity
-  - [[DeFi]] solutions enable lending, borrowing, staking, and insurance for virtual assets
+  - [[Decentralised Finance]] solutions enable lending, borrowing, staking, and insurance for virtual assets
 - **Play-to-Earn Mechanisms**:
   - **[[Play-to-Earn (P2E)]]** models where players earn cryptocurrency or NFTs through gameplay and achievements
   - Rewards distributed via smart contracts based on player milestones
@@ -172,7 +172,7 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
   - Built on **[[tokenomics]]** where in-game currencies and assets have real-world value
   - **[[DAOs]]** (Decentralized Autonomous Organizations) enable community governance
   - Economic activities include asset trading, virtual land ownership, running virtual businesses, and governance participation
-  - Integration of [[DeFi]] expands economic possibilities for passive income, loans, and staking
+  - Integration of [[Decentralised Finance]] expands economic possibilities for passive income, loans, and staking
 - **Challenges**:
   - Regulatory clarity evolving around crypto gaming, NFTs, and virtual assets
   - Technical challenges: transaction costs, scalability, security vulnerabilities
@@ -214,13 +214,13 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
   - [[AI-enhanced AR/VR]] for context-aware interactions
 - **Privacy and Security Advances**:
   - Privacy-preserving identity frameworks and secure authentication critical for user trust
-  - Integration of [[zero-knowledge proofs]], [[verifiable credentials]], and [[self-sovereign identity]]
+  - Integration of [[zero-knowledge proofs]], [[Verifiable Credential]], and [[self-sovereign identity]]
   - Compliance with [[GDPR]], [[EU Digital Identity]], and [[Cyber Resilience Act]]
 - **Blockchain and Digital Rights Expansion** [Updated 2025]:
   - Blockchain-based solutions for digital asset ownership and rights management expand
   - Support for user-generated content and virtual economies through [[smart contracts]] and [[tokenomics]]
   - [[NFT]] standards mature for cross-platform asset portability
-  - Integration of [[DeFi]] protocols for virtual asset lending, staking, and insurance
+  - Integration of [[Decentralised Finance]] protocols for virtual asset lending, staking, and insurance
 - **Regulatory Compliance**:
   - Alignment with evolving regulatory frameworks essential for global adoption
   - Harmonization of standards across EU, US, and Asian markets
@@ -244,7 +244,7 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
 - [[World Graph]]
 - [[Interoperable Anchoring]]
 - [[IPSME (Inter-Platform Semantic Messaging Environment)]]
-- [[Decentralized Identity]]
+- [[Decentralised Identity]]
 - [[Self-Sovereign Identity (SSI)]]
 - [[NFT Standards]]
 - [[GameFi]]
@@ -275,18 +275,18 @@ ETSI_Domain_Virtual_Society is a standardisation domain within the European Tele
   - [[IPSME]]
 - **Identity and Privacy**:
   - [[Digital Identity]]
-  - [[Decentralized Identity]]
+  - [[Decentralised Identity]]
   - [[Self-Sovereign Identity (SSI)]]
   - [[Privacy-preserving Identity]]
-  - [[Verifiable Credentials]]
+  - [[Verifiable Credential]]
   - [[Zero-Knowledge Proofs]]
   - [[GDPR]]
 - **Blockchain and Crypto**:
   - [[Blockchain]]
   - [[NFT]]
   - [[Smart Contracts]]
-  - [[DeFi]]
-  - [[DAO]]
+  - [[Decentralised Finance]]
+  - [[Decentralised Autonomous Organisation]]
   - [[Tokenomics]]
   - [[GameFi]]
   - [[Play-to-Earn (P2E)]]

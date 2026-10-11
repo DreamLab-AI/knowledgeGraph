@@ -302,7 +302,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
+        "id": "urn:ngm:class:json",
         "label": "JSON"
       },
       {
@@ -358,8 +358,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:3-d-asset-standard",
@@ -376,7 +376,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI"
       },
       {
@@ -404,7 +404,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ]

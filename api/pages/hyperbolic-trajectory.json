@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hyperbolic-trajectory",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A hyperbolic trajectory is an open two-body conic with eccentricity greater than one and positive specific orbital energy relative to a named central body.[^1351][^1365]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:anemometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An anemometer is an instrument that measures wind, recording wind speed and in some arrangements direction and the strength of gusts.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-instrument",

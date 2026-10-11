@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:language-modeling
 enables:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 partOf:
   - urn:ngm:class:neural-network-text-tokenisation
 relatedTo:

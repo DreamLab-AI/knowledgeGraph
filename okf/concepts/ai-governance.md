@@ -26,8 +26,8 @@ dependsOn:
   - urn:ngm:class:risk-management
   - urn:ngm:class:data-governance
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:decentralised-autonomous-organisation

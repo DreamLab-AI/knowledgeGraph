@@ -11,15 +11,15 @@ is-a:
   - urn:ngm:class:asymmetric-cryptography
 requires:
   - urn:ngm:class:key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:code-signing
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:non-repudiation
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 implements:
   - urn:ngm:class:ecdsa
   - urn:ngm:class:ed25519
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:private-key
   - urn:ngm:class:public-key
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:secure-email
   - urn:ngm:class:zero-knowledge-proof
 standardizedBy:
@@ -52,7 +52,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:blind-signatures
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:post-quantum-cryptography
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:blind-signatures

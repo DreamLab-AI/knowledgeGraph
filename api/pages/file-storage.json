@@ -177,6 +177,11 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -250,7 +255,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -278,8 +283,8 @@
         "label": "Lakehouse Architecture"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "dependsOn": [
@@ -406,8 +411,8 @@
         "label": "Data Science"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:stream-processing",

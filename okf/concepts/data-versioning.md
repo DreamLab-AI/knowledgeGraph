@@ -57,7 +57,7 @@ supports:
   - urn:ngm:class:mlops
   - urn:ngm:class:reproducibility
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:data-management

@@ -265,8 +265,8 @@
         "label": "Rule of Law"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
       }
     ],
     "implements": [
@@ -449,8 +449,8 @@
         "label": "Data Protection Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:gdpr-article-22-compliance",

@@ -21,7 +21,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:non-fungible-token
 bridgesTo:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 uses:
   - urn:ngm:class:token-standard
 supports:

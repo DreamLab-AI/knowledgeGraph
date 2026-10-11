@@ -31,7 +31,7 @@ Inter-Agent Communication (IAC) is the set of protocols, message formats, and tr
   - [[Agent Identity]] management via DID documents allows agents to carry cryptographically verifiable capability manifests.
   - OAuth 2.0 / OIDC token flows authenticate agent-to-agent API calls in cloud deployments.
   - [[Authentication]] of sub-agents prevents malicious impersonation and prompt injection escalation.
-  - Capability attestations via [[Verifiable Credentials]] allow an agent to prove its permitted action scope to a receiving orchestrator.
+  - Capability attestations via [[Verifiable Credential]] allow an agent to prove its permitted action scope to a receiving orchestrator.
 - **Context Propagation**
   - A central IAC challenge: how much conversation history, memory, and world state to carry in each message without exceeding [[Context Window]] limits.
   - Strategies: full-context pass-through (simple but expensive), compressed summaries, embedding-based retrieval of relevant context (RAG-style), and stateful session tokens that the receiving agent can use to reconstruct context independently.

@@ -8,7 +8,7 @@ description: A video codec (coder-decoder) is an algorithm or hardware implement
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 hasPart:
   - urn:ngm:class:encoder
   - urn:ngm:class:decoder
@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:audio-codec
   - urn:ngm:class:lossless-compression
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:quantisation
@@ -34,7 +34,7 @@ uses:
 supports:
   - urn:ngm:class:video-streaming
   - urn:ngm:class:video-conferencing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 standardizedBy:
   - urn:ngm:class:compliance-standards
   - urn:ngm:class:open-media-alliance

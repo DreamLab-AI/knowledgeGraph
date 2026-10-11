@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coordinate-conversion",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A coordinate conversion is a coordinate operation that changes coordinates in a source coordinate reference system to coordinates in a target coordinate reference system when both systems are based on the same datum.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

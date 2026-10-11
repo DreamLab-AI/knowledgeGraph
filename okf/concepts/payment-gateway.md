@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:currency-conversion
 requires:
   - urn:ngm:class:pci-dss
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:micropayment
   - urn:ngm:class:payment-token
@@ -42,7 +42,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:digital-payment-system
   - urn:ngm:class:open-banking
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Payment Gateway

@@ -126,8 +126,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:khronos-group",
@@ -149,11 +149,11 @@
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -161,11 +161,11 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ]
@@ -189,12 +189,12 @@
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -405,8 +405,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "cosmos-ibc",
@@ -421,8 +421,8 @@
       "label": "Cross-Chain Messaging"
     },
     {
-      "slug": "layer2-scaling",
-      "label": "Layer2Scaling"
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
     },
     {
       "slug": "light-client",

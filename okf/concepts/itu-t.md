@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:x-509-certificate
   - urn:ngm:class:g-711
 enables:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:video-compression
 implements:
   - urn:ngm:class:network-protocol

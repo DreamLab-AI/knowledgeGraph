@@ -14,7 +14,7 @@ is-a:
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:benchmark-evaluation
 hasPart:
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:few-shot-prompting
   - urn:ngm:class:red-teaming
   - urn:ngm:class:scaffolded-evaluation
@@ -60,7 +60,7 @@ contrastsWith:
   - urn:ngm:class:naive-evaluation
 uses:
   - urn:ngm:class:red-teaming
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:few-shot-prompting
   - urn:ngm:class:scaffolded-evaluation
   - urn:ngm:class:adversarial-machine-learning
@@ -74,14 +74,14 @@ supports:
   - urn:ngm:class:aisi-frontier-ai-safety-framework
   - urn:ngm:class:human-oversight
   - urn:ngm:class:scalable-oversight
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 standardizedBy:
   - urn:ngm:class:metr
   - urn:ngm:class:ai-safety-institute
   - urn:ngm:class:anthropic-responsible-scaling-policy
   - urn:ngm:class:openai-preparedness-framework
   - urn:ngm:class:google-deepmind-frontier-safety-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:alignment
@@ -92,11 +92,11 @@ relatedTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:mechanistic-interpretability
   - urn:ngm:class:scalable-oversight
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:mesa-optimisation
   - urn:ngm:class:reward-hacking
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ai-benchmark-epistemological-critique
   - urn:ngm:class:benchmarks
   - urn:ngm:class:chain-of-thought

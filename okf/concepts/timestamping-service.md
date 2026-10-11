@@ -9,7 +9,6 @@ maturity: established
 quality: 0.6
 is-a:
   - urn:ngm:class:cryptographic-protocol
-  - urn:ngm:class:trusted-timestamping
 requires:
   - urn:ngm:class:hash-function
   - urn:ngm:class:cryptography

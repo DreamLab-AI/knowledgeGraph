@@ -1,6 +1,6 @@
 The EUDI Wallet (European Digital Identity Wallet) is a mobile application framework mandated under the revised eIDAS regulation, enabling European citizens and residents to store, present, and selectively disclose identity attributes and credentials across member states. It allows holders to prove identity, sign documents, and share verifiable attestations with public and private services while retaining control over what data is revealed. The wallet is the user-facing instrument of the EU's interoperable cross-border identity scheme.
 
-- The [[EUDI Wallet]] is the EU's regulated mobile identity wallet, standardised by [[eIDAS]], that lets holders store and selectively present [[Verifiable Credentials]]. It is a concrete [[Digital Identity Wallet]] supporting cross-border [[Identity Verification]] and strong [[Privacy]] guarantees.
+- The [[EUDI Wallet]] is the EU's regulated mobile identity wallet, standardised by [[eIDAS Regulation]], that lets holders store and selectively present [[Verifiable Credential]]. It is a concrete [[Digital Identity Wallet]] supporting cross-border [[Identity Verification]] and strong [[Privacy]] guarantees.
 
 ### Overview
 
@@ -20,7 +20,7 @@ The EUDI Wallet (European Digital Identity Wallet) is a mobile application frame
 - Accessing public services and signing documents across EU member states.
 - Proving age or qualifications to private services with minimal data exposure.
 - Strong customer authentication for banking and regulated onboarding.
-- Cross-border interoperability built on [[Decentralized Identifier]] and credential standards.
+- Cross-border interoperability built on [[Decentralised Identifier]] and credential standards.
 
 ### Provenance
 

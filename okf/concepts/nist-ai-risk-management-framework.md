@@ -14,28 +14,39 @@ hasPart:
   - urn:ngm:class:map-function
   - urn:ngm:class:measure-function
   - urn:ngm:class:manage-function
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:ai-rmf-govern-function
+  - urn:ngm:class:ai-rmf-map-function
+  - urn:ngm:class:ai-rmf-measure-function
+  - urn:ngm:class:ai-rmf-manage-function
 requires:
   - urn:ngm:class:ai-risk-assessment
   - urn:ngm:class:stakeholder-engagement
   - urn:ngm:class:ai-lifecycle-management
+  - urn:ngm:class:risk-assessment
+  - urn:ngm:class:organisational-governance
 enables:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-transparency-framework
   - urn:ngm:class:algorithmic-accountability
   - urn:ngm:class:ai-transparency-framework
+  - urn:ngm:class:ai-risk-management
+  - urn:ngm:class:accountability
+  - urn:ngm:class:ai-governance-maturity-model
 implements:
   - urn:ngm:class:risk-management
   - urn:ngm:class:ai-safety
 contrastsWith:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:iso-42001
 bridgesTo:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:data-governance
+  - urn:ngm:class:ai-risk
+  - urn:ngm:class:responsible-ai
 supports:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:ai-fairness
@@ -43,11 +54,17 @@ supports:
   - urn:ngm:class:explainable-ai
 standardizedBy:
   - urn:ngm:class:nist
+partOf:
+  - urn:ngm:class:us-ai-policy
 relatedTo:
   - urn:ngm:class:nist-cybersecurity-framework
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:incident-reporting
   - urn:ngm:class:incident-reporting
+  - urn:ngm:class:ai-governance
+  - urn:ngm:class:cybersecurity-framework
+  - urn:ngm:class:risk-management
+  - urn:ngm:class:algorithmic-impact-assessment
 ---
 
 # NIST AI Risk Management Framework

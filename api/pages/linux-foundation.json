@@ -18,8 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:hyperledger-foundation",
@@ -111,7 +111,7 @@
         "label": "Linux Kernel"
       },
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {

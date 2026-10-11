@@ -38,7 +38,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:network-security
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:transmission-control-protocol
   - urn:ngm:class:congestion-control
 uses:

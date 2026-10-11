@@ -72,7 +72,7 @@
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:ngm:class:fintech",
+        "id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
       },
       {
@@ -139,7 +139,7 @@
         "label": "State Channel"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -215,22 +215,22 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:tokenization",
-        "label": "Tokenisation"
+        "id": "urn:ngm:class:virtual-economy-market-framing",
+        "label": "Virtual Economy Market Framing"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:internet-infrastructure",
         "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
@@ -251,7 +251,7 @@
         "label": "Barter System"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -321,7 +321,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -369,7 +369,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {

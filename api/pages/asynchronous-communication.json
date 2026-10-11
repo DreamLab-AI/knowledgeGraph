@@ -89,7 +89,7 @@
         "label": "Protocol Buffers"
       },
       {
-        "id": "urn:ngm:class:protobuf",
+        "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       }
     ],
@@ -151,12 +151,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:distributed-system",
@@ -285,16 +285,16 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
       "slug": "collaborative-whiteboard",
       "label": "Collaborative Whiteboard"
     },
     {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "label": "tc 0002 collaborative document editing"
     }
   ]
 }

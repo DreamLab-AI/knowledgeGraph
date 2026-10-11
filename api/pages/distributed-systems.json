@@ -153,12 +153,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -299,8 +299,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -498,20 +498,16 @@
       "label": "Database Systems"
     },
     {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
       "slug": "decentralised-storage",
       "label": "Decentralised Storage"
     },
     {
       "slug": "decentralised-file-storage",
       "label": "Decentralised file storage"
-    },
-    {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
-    },
-    {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
     },
     {
       "slug": "distributed-decision-making",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-nebula",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planetary nebula is an expanding cloud of dust and gas formed when a dying star blows away its outer layers.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

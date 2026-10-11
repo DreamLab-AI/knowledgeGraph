@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-profile",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A data profile is a representation of values arranged along a path or axis, which SWEET models as a kind of representation related to its profile class in the mathematical-function module.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

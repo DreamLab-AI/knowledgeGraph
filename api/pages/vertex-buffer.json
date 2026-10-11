@@ -122,9 +122,9 @@
       "slug": "ai-infrastructure"
     },
     {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing",
-      "slug": "distributed-computing"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:embedded-system",
@@ -147,14 +147,9 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing",
-      "slug": "concurrent-computing"
-    },
-    {
-      "id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems",
-      "slug": "coordination-systems"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -172,19 +167,9 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication",
-      "slug": "infra-network-and-comms"
-    },
-    {
       "id": "urn:ngm:class:multiverse",
       "label": "Multiverse",
       "slug": "multiverse"
-    },
-    {
-      "id": "urn:ngm:class:networked-systems",
-      "label": "Networked Systems",
-      "slug": "networked-systems"
     },
     {
       "id": "urn:ngm:class:real-time-control",
@@ -222,11 +207,6 @@
       "slug": "semantic-spatial-web-layer"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
       "id": "urn:ngm:class:feedback-systems",
       "label": "Feedback Systems",
       "slug": "feedback-systems"
@@ -250,11 +230,6 @@
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -424,8 +399,8 @@
         "label": "Visibility Buffer Rendering"
       },
       {
-        "id": "urn:ngm:class:actor-model",
-        "label": "Actor Model"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       }
     ],
     "contrastsWith": [
@@ -492,7 +467,7 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -594,8 +569,8 @@
         "label": "SIGGRAPH"
       },
       {
-        "id": "urn:ngm:class:apache-software-foundation",
-        "label": "Apache Software Foundation"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       }
     ],
     "partOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertical-dilution-of-precision",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Vertical Dilution of Precision (VDOP) is the dimensionless geometry factor for the vertical coordinate in a GNSS position solution.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dilution-of-precision",

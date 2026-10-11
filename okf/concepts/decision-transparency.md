@@ -31,7 +31,7 @@ enables:
   - urn:ngm:class:stakeholder-engagement-in-ai
   - urn:ngm:class:responsible-ai
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:decision-tree
   - urn:ngm:class:automated-decision-making
@@ -68,10 +68,10 @@ supports:
   - urn:ngm:class:algorithmic-transparency-index
   - urn:ngm:class:knowledge-graph
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
   - urn:ngm:class:ieee-p2976-xai
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:ai-fairness
@@ -79,7 +79,7 @@ relatedTo:
   - urn:ngm:class:algorithmic-transparency-index
   - urn:ngm:class:ai-model-card
   - urn:ngm:class:stakeholder-engagement-in-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
   - urn:ngm:class:automated-decision-making
   - urn:ngm:class:counterfactual-explanation

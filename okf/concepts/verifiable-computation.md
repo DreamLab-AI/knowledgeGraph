@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:interactive-proof-system
 supports:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:confidential-computing
 relatedTo:
   - urn:ngm:class:interactive-proof-system

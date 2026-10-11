@@ -48,7 +48,7 @@ A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which 
 - **August 2020**: Massive attack with [[double-spending]] of $5.6 million worth of ETC
 - **2020 Series**: Network experienced three additional attacks in 2020, losing over $5 million total
 - **2024 Attack**: Further [[double-spending]] incidents and [[transaction]] disruptions, causing financial harm and reputational damage
-  **Why Targeted**: Lower [[hash rate]] compared to [[Ethereum Smart Contract Platform]], making it economically feasible to rent sufficient computational power for attacks.
+  **Why Targeted**: Lower [[hash rate]] compared to [[Ethereum]], making it economically feasible to rent sufficient computational power for attacks.
   *Sources: Coinbase Security (2019), BeInCrypto (2024)*
 
   #### Bitcoin Gold (Ongoing Target)
@@ -91,7 +91,7 @@ A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which 
 - **[[Proof-of-Stake]] (PoS)**: Replaces [[hash rate]] with token ownership
 - Attack cost shifts from hardware to capital
 - Requires acquiring >50% of token supply (often billions of dollars)
-- Examples: [[Ethereum Smart Contract Platform]] 2.0, [[Cardano]], [[Polkadot]]
+- Examples: [[Ethereum]] 2.0, [[Cardano]], [[Polkadot]]
 - **Hybrid Models**: Combine PoW with PoS or other mechanisms
 - [[Decred]]: Hybrid PoW/PoS system
 - Makes attacks significantly more complex and expensive
@@ -120,7 +120,7 @@ A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which 
 
   #### 5. Economic Barriers
 
-- **Staking Requirements**: [[Ethereum Smart Contract Platform]] requires staking 32 ETH (~$54,000+) to become validator
+- **Staking Requirements**: [[Ethereum]] requires staking 32 ETH (~$54,000+) to become validator
 - **Slashing Penalties**: Validators lose stake for malicious behaviour
 - **Bonding Mechanisms**: Economic deterrents for attack attempts
 

@@ -104,8 +104,8 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -168,8 +168,8 @@
         "label": "Speech Recognition"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -414,8 +414,8 @@
         "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -491,14 +491,14 @@
       "slug": "autonomous-agent"
     },
     {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management",
-      "slug": "data-management"
-    },
-    {
       "id": "urn:ngm:class:goal-directed-system",
       "label": "Goal-Directed System",
       "slug": "goal-directed-system"
+    },
+    {
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
     },
     {
       "id": "urn:ngm:class:organizational-change",
@@ -509,6 +509,11 @@
       "id": "urn:ngm:class:process-automation",
       "label": "Process Automation",
       "slug": "process-automation"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     },
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -526,14 +531,19 @@
       "slug": "workflow-automation"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -781,8 +791,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -853,7 +863,7 @@
         "label": "WCAG 2.1"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -861,11 +871,11 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Voice Browser Working Group"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -873,8 +883,8 @@
         "label": "ISO 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -905,8 +915,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:ai-agent",

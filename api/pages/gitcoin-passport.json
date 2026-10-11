@@ -18,8 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential (VC)"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:did-document",
@@ -40,8 +40,8 @@
         "label": "Ceramic Network"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:digital-wallet",
@@ -58,8 +58,8 @@
         "label": "Public Goods Funding"
       },
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:token-airdrop",
@@ -204,16 +204,16 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-centre",
@@ -234,16 +234,16 @@
         "label": "Cross-Domain Identity"
       },
       {
-        "id": "urn:ngm:class:decentralized-authentication",
-        "label": "Decentralized Authentication"
+        "id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
       },
       {
         "id": "urn:ngm:class:privacy-preserving-identity",
         "label": "Privacy-Preserving Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
-        "label": "Verifiable Credential (VC)"
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -268,7 +268,7 @@
         "label": "Blockchain Technology"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],

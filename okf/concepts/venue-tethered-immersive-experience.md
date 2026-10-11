@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:virtual-production
 uses:
   - urn:ngm:class:extended-reality
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:metaverse-venue
 ---

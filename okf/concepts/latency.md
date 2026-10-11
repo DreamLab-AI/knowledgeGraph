@@ -44,7 +44,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:round-trip-time
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Latency

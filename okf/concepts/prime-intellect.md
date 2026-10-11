@@ -100,8 +100,8 @@ supports:
   - urn:ngm:class:metagenomic-ai
   - urn:ngm:class:pandemic-monitoring
   - urn:ngm:class:reasoning-models
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:mixture-of-experts
 standardizedBy:

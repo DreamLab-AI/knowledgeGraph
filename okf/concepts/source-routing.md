@@ -8,7 +8,7 @@ description: Source routing is a packet-forwarding technique in which the sender
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 requires:
   - urn:ngm:class:network-protocol
 enables:
@@ -17,8 +17,6 @@ enables:
 dependsOn:
   - urn:ngm:class:routing-protocol
 implements:
-  - urn:ngm:class:routing-protocol
-contrastsWith:
   - urn:ngm:class:routing-protocol
 bridgesTo:
   - urn:ngm:class:tor

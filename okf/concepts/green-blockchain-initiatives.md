@@ -110,13 +110,13 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:algorand
   - urn:ngm:class:clean-spark
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:klima-dao
   - urn:ngm:class:toucan-protocol
   - urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues
   - urn:ngm:class:carbon-credit-tracking
   - urn:ngm:class:carbon-neutral-blockchain
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:solana
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:celo

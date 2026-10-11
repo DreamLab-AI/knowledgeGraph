@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astronomical-time-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An astronomical time system is a scheme for assigning times to events in astronomy and spacecraft navigation, covering scales tied to Earth rotation, such as mean solar time, and uniform scales such as atomic time, Terrestrial Time and Barycentric Dynamical Time.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

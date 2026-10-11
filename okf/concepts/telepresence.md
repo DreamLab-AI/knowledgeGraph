@@ -14,6 +14,13 @@ hasPart:
   - urn:ngm:class:haptic-feedback
   - urn:ngm:class:volumetric-capture
   - urn:ngm:class:video-conferencing
+  - urn:ngm:class:robotic-telepresence
+  - urn:ngm:class:haptic-feedback-telepresence
+  - urn:ngm:class:teleoperation-systems
+  - urn:ngm:class:social-presence
+  - urn:ngm:class:spatial-presence
+  - urn:ngm:class:presence
+  - urn:ngm:class:immersive-communication
 requires:
   - urn:ngm:class:low-latency-networking
   - urn:ngm:class:real-time-communication
@@ -35,12 +42,15 @@ bridgesTo:
   - urn:ngm:class:robotic-system
   - urn:ngm:class:metaverse
   - urn:ngm:class:robotic-system
+  - urn:ngm:class:metaverse-telepresence-bridge
 uses:
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:teleoperation
   - urn:ngm:class:point-cloud
   - urn:ngm:class:neural-rendering
+  - urn:ngm:class:haptics
+  - urn:ngm:class:avatar-system
 supports:
   - urn:ngm:class:hybrid-work
   - urn:ngm:class:telemedicine
@@ -55,6 +65,9 @@ relatedTo:
   - urn:ngm:class:presence-technology
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:holographic-display
+  - urn:ngm:class:dc-workspace-tools
+  - urn:ngm:class:dc-communication
+  - urn:ngm:class:robotics-telepresence-bridge
 ---
 
 # Telepresence

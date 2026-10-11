@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:edge-ai
 hasPart:
   - urn:ngm:class:model-compression
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:inference-engine
   - urn:ngm:class:hardware-aware-compilation
   - urn:ngm:class:over-the-air-update
@@ -22,9 +22,9 @@ hasPart:
 requires:
   - urn:ngm:class:model-compression
   - urn:ngm:class:pruning
-  - urn:ngm:class:model-quantization
-  - urn:ngm:class:model-quantization
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:neural-network-quantisation
+  - urn:ngm:class:neural-network-quantisation
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:inference-engine
   - urn:ngm:class:knowledge-distillation
 enables:
@@ -39,9 +39,9 @@ dependsOn:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:mobile-edge-computing
   - urn:ngm:class:model-compression
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:mlops
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 implements:
   - urn:ngm:class:edge-ai
   - urn:ngm:class:on-device-learning
@@ -51,7 +51,7 @@ contrastsWith:
   - urn:ngm:class:cloud-ai
   - urn:ngm:class:centralised-machine-learning
 bridgesTo:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:smart-manufacturing
   - urn:ngm:class:autonomous-vehicle
@@ -77,16 +77,16 @@ standardizedBy:
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:mlperf
 relatedTo:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:latency
   - urn:ngm:class:mobile-computing
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:edge-ai
   - urn:ngm:class:model-serving
   - urn:ngm:class:mlops
   - urn:ngm:class:over-the-air-update
   - urn:ngm:class:model-monitoring
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:neural-processing-unit
 ---

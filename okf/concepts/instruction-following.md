@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:instruction-tuning
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:large-language-model
   - urn:ngm:class:supervised-fine-tuning
 enables:
@@ -42,9 +42,9 @@ relatedTo:
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:alignment
   - urn:ngm:class:ifeval
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:helpfulness
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Instruction Following

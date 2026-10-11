@@ -10,15 +10,15 @@ quality: 0.8
 is-a:
   - urn:ngm:class:trust-framework
 hasPart:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-data-registry
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 enables:
   - urn:ngm:class:credential-verification
   - urn:ngm:class:decentralised-trust
 relatedTo:
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-identity-framework
 ---
 

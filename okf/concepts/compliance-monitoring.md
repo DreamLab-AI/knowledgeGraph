@@ -25,13 +25,13 @@ hasPart:
   - urn:ngm:class:policy-engine
 requires:
   - urn:ngm:class:identity-and-access-management
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:security-information-and-event-management
   - urn:ngm:class:data-governance
   - urn:ngm:class:policy-enforcement
   - urn:ngm:class:regulatory-framework
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:gdpr
@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:soc-2-compliance
   - urn:ngm:class:iso-27001
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:stream-processing
   - urn:ngm:class:graph-databases
   - urn:ngm:class:cryptographic-hash-function
@@ -66,7 +66,7 @@ uses:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:knowledge-graphs
 supports:
   - urn:ngm:class:financial-regulation
@@ -85,11 +85,11 @@ standardizedBy:
   - urn:ngm:class:iso-iec-27001
   - urn:ngm:class:nist-cybersecurity-framework
 relatedTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:digital-operational-resilience
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:governance-risk-compliance
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:security-operations
   - urn:ngm:class:regulatory-reporting
 ---

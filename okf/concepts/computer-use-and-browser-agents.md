@@ -27,7 +27,7 @@ hasPart:
   - urn:ngm:class:virtual-machine-sandbox
 requires:
   - urn:ngm:class:browser-engine
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:inference-compute
   - urn:ngm:class:tool-definition
   - urn:ngm:class:vision-language-model
@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:multimodal-foundation-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:chrome-devtools-protocol
   - urn:ngm:class:webdriver-bidi
   - urn:ngm:class:playwright
@@ -90,7 +90,7 @@ supports:
   - urn:ngm:class:enterprise-workflow
   - urn:ngm:class:personal-assistance
   - urn:ngm:class:quality-assurance
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:web-scraping
   - urn:ngm:class:accessibility
   - urn:ngm:class:quality-assurance

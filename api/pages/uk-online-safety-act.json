@@ -77,7 +77,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:client-side-scanning",
@@ -386,6 +386,10 @@
         "label": "Cybersecurity"
       },
       {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
@@ -404,10 +408,6 @@
       {
         "id": "urn:ngm:class:multi-stakeholder-governance",
         "label": "Multi-Stakeholder Governance"
-      },
-      {
-        "id": "urn:ngm:class:public-administration",
-        "label": "Public Administration"
       }
     ]
   },

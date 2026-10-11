@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:financial-services
 relatedTo:
   - urn:ngm:class:financial-infrastructure
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Real-Time Settlement

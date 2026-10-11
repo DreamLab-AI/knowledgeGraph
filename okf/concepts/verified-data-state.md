@@ -4,6 +4,7 @@ type: Class
 title: Verified Data State
 resource: urn:ngm:class:verified-data-state
 domain: earth-observation-and-geospatial-sensing
+description: A verified data state is the processing state of a dataset that has passed through a verification process.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Verified Data State
+
+A verified data state is the processing state of a dataset that has passed through a verification process.[^1]

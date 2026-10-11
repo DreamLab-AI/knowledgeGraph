@@ -10,24 +10,35 @@ quality: 0.62
 is-a:
   - urn:ngm:class:blockchain
   - urn:ngm:class:bc-defi-and-economics
+  - urn:ngm:class:programmable-money
+requires:
+  - urn:ngm:class:smart-contract
+  - urn:ngm:class:payment-channel
 enables:
   - urn:ngm:class:pay-per-use
   - urn:ngm:class:web-monetization
   - urn:ngm:class:machine-to-machine-payments
   - urn:ngm:class:real-time-economy
   - urn:ngm:class:machine-to-machine-payments
+  - urn:ngm:class:micropayment
 dependsOn:
   - urn:ngm:class:payment-channel
   - urn:ngm:class:lightning-network
   - urn:ngm:class:smart-contract
+implements:
+  - urn:ngm:class:programmable-money
 contrastsWith:
   - urn:ngm:class:batch-payment
   - urn:ngm:class:subscription-model
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:payment-channel
 uses:
   - urn:ngm:class:hash-time-locked-contract
   - urn:ngm:class:programmable-money
+  - urn:ngm:class:smart-contract
+  - urn:ngm:class:stablecoin
+  - urn:ngm:class:payment-channel
 supports:
   - urn:ngm:class:content-monetisation
   - urn:ngm:class:api-monetisation
@@ -35,9 +46,11 @@ partOf:
   - urn:ngm:class:programmable-money
   - urn:ngm:class:micropayment
 relatedTo:
-  - urn:ngm:class:streaming-payments
   - urn:ngm:class:iot-payments
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:superfluid
+  - urn:ngm:class:sablier
+  - urn:ngm:class:lightning-network
 ---
 
 # Streaming Payment

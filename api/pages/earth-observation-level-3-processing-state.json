@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-3-processing-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation Level 3 is the stage at which Level 2 data have been gridded onto a uniform space-time grid.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -4,6 +4,7 @@ type: Class
 title: Natural Satellite
 resource: urn:ngm:class:natural-satellite
 domain: space-science-and-systems
+description: A natural satellite is a naturally formed body that orbits a planet, and is also called a moon or planetary satellite.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -14,3 +15,5 @@ relatedTo:
 ---
 
 # Natural Satellite
+
+A natural satellite is a naturally formed body that orbits a planet, and is also called a moon or planetary satellite.[^1]

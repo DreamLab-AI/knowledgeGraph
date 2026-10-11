@@ -26,12 +26,12 @@ enables:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:condition-monitoring
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:power-management
 contrastsWith:
   - urn:ngm:class:actuator
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:edge-computing
   - urn:ngm:class:spatial-computing
 uses:
@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:autonomous-vehicle
 standardizedBy:
   - urn:ngm:class:ieee-1451
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 partOf:
   - urn:ngm:class:robotics-systems
   - urn:ngm:class:iot-device

@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:continuous-deployment
 requires:
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
   - urn:ngm:class:idempotency
 enables:
   - urn:ngm:class:high-availability

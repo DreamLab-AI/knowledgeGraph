@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-buffering",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geospatial buffering is the construction of a zone of a stated distance around input geometries, producing polygons that cover everything within that distance.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

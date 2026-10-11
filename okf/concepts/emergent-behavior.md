@@ -67,7 +67,7 @@ relatedTo:
   - urn:ngm:class:emergent-capabilities
   - urn:ngm:class:grokking
   - urn:ngm:class:phase-transition
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multi-agent-reinforcement-learning
   - urn:ngm:class:open-endedness
   - urn:ngm:class:artificial-life

@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:block-production
 dependsOn:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 bridgesTo:
   - urn:ngm:class:market-microstructure
   - urn:ngm:class:high-frequency-trading
@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:front-running
   - urn:ngm:class:mempool
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:consensus-security
   - urn:ngm:class:validator

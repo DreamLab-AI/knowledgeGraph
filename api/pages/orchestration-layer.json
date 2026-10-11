@@ -131,8 +131,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:auto-scaling",
-        "label": "Auto-Scaling"
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
       },
       {
         "id": "urn:ngm:class:continuous-deployment",

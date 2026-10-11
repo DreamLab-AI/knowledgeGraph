@@ -18,13 +18,13 @@ dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:transaction-signing
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract
 supports:
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:asset-management
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:hardware-wallet

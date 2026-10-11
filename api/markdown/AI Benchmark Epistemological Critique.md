@@ -6,7 +6,7 @@ A critical epistemological lens applied to AI benchmark claims, model capability
 
 # Hallucinations
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 
 ### Provenance
 

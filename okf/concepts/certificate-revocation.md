@@ -25,14 +25,14 @@ contrastsWith:
   - urn:ngm:class:certificate-transparency
   - urn:ngm:class:short-lived-certificate
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:http
 standardizedBy:
   - urn:ngm:class:x509
   - urn:ngm:class:rfc-5280
   - urn:ngm:class:x-509-certificate
 relatedTo:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:key-management

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:airborne-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Airborne remote sensing is remote sensing carried out with sensors mounted on aircraft or other platforms within the Earth's atmosphere.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

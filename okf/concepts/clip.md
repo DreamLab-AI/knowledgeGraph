@@ -57,9 +57,9 @@ uses:
   - urn:ngm:class:self-supervised-learning
 supports:
   - urn:ngm:class:text-to-image
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:multimodal-search
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:text-to-image-generation
   - urn:ngm:class:vision-language-model
 standardizedBy:

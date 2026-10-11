@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:ephemeral-storage
   - urn:ngm:class:in-memory-computing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-collaboration
 supports:
   - urn:ngm:class:cloud-native-architecture

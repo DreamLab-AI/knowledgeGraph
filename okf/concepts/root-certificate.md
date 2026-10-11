@@ -15,9 +15,9 @@ requires:
   - urn:ngm:class:certificate-authority
 enables:
   - urn:ngm:class:authentication
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:trust-anchor
 uses:
@@ -26,7 +26,7 @@ supports:
   - urn:ngm:class:ocsp
   - urn:ngm:class:certificate-revocation
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:trust-anchor

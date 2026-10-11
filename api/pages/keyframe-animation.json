@@ -86,8 +86,8 @@
         "label": "Motion Capture"
       },
       {
-        "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

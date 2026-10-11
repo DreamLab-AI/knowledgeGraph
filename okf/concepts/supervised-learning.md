@@ -8,7 +8,7 @@ description: Supervised Learning is the machine learning paradigm where models l
 maturity: emerging
 quality: 0
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:classification
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:cross-validation
   - urn:ngm:class:regularisation
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:overfitting
   - urn:ngm:class:bias-variance-tradeoff

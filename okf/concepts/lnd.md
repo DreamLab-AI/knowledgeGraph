@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:micropayment
   - urn:ngm:class:atomic-swap
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:keysend
 implements:
   - urn:ngm:class:bolt-specifications
@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:eclair
 bridgesTo:
   - urn:ngm:class:layer-2-protocol
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:g-rpc
   - urn:ngm:class:onion-routing

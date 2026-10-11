@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:raised-bank",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A raised bank is an embankment built up above the surrounding ground to hold back or regulate water, which SWEET treats as equivalent to a dike.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

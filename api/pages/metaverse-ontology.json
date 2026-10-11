@@ -54,7 +54,7 @@
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -108,7 +108,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -120,14 +120,14 @@
         "label": "Nostr Protocol"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:digital-ownership",
@@ -144,8 +144,8 @@
         "label": "Metaverse Standards Forum"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [
@@ -160,7 +160,7 @@
         "label": "Metaverse Ontology Schema"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ]
@@ -364,7 +364,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -511,8 +511,8 @@
       "label": "Multi-Layer Agentic Governance Framework"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     }
   ]
 }

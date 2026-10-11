@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:field-oriented-control
 dependsOn:
   - urn:ngm:class:mosfet
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:servo-amplifier
 bridgesTo:

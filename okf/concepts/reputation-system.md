@@ -9,7 +9,7 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:trust-networks
   - urn:ngm:class:social-interaction
   - urn:ngm:class:decentralised-governance
@@ -40,9 +40,9 @@ enables:
 dependsOn:
   - urn:ngm:class:graph-theory
   - urn:ngm:class:cryptography
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 implements:
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:verifiable-credentials
@@ -70,7 +70,7 @@ supports:
   - urn:ngm:class:worldcoin
   - urn:ngm:class:karma3-labs
 standardizedBy:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:ethereum-smart-contract-platform-attestation-service
   - urn:ngm:class:w-3-c-did-working-group
   - urn:ngm:class:w3c-vc-working-group

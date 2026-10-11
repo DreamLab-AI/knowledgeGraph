@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pulsar",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A pulsar is a rotating neutron star observed to emit pulses of radiation at very regular intervals, typically ranging from milliseconds to seconds.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:neutron-star",

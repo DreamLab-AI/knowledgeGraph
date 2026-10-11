@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:transaction-finality
   - urn:ngm:class:cryptographic-commitment
 enables:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:securities-settlement
   - urn:ngm:class:cross-chain-interoperability
   - urn:ngm:class:trustless-settlement
@@ -42,11 +42,11 @@ uses:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:escrow-system
 supports:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:tokenised-securities
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:real-time-gross-settlement

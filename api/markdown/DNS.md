@@ -7,7 +7,7 @@ The Domain Name System (DNS) is a hierarchical, distributed naming system and di
   - **Distributed** — no single server holds all records; each zone is authoritative only for its own portion of the namespace.
   - **Cached** — resolvers store responses for the duration of the record's Time-To-Live (TTL), reducing latency and query load on authoritative servers.
   - **Extensible** — new resource record types (SRV, TXT, CAA, TLSA, HTTPS, SVCB) and extensions (EDNS0, DNSSEC, DoH, DoT) have been layered over the original design without breaking backward compatibility.
-- Without DNS, users would have to memorise IP addresses, [[TLS]] certificate validation would require different naming semantics, and [[Email Delivery]] routing (via MX records) would not exist in its current form. DNS is therefore a foundational dependency of the modern internet and enterprise networks alike.
+- Without DNS, users would have to memorise IP addresses, [[Transport Layer Security]] certificate validation would require different naming semantics, and [[Email Delivery]] routing (via MX records) would not exist in its current form. DNS is therefore a foundational dependency of the modern internet and enterprise networks alike.
 
 ### Key Components
 
@@ -52,7 +52,7 @@ The Domain Name System (DNS) is a hierarchical, distributed naming system and di
 - **[[Content Delivery Network]] (CDN) Routing** — CDNs use low-TTL CNAME chains and EDNS Client Subnet (ECS) data in DNS to direct users to the nearest edge node.
 - **[[Load Balancing]]** — DNS round-robin and weighted responses distribute traffic across multiple server instances. Global Server Load Balancing (GSLB) products use DNS to route across data centres.
 - **[[Service Discovery]]** — SRV records and DNS-SD (RFC 6763) allow services in a network to advertise themselves and be discovered by clients, underpinning mDNS / Bonjour and Kubernetes CoreDNS.
-- **[[TLS]] Certificate Validation** — CAs use DNS-01 ACME challenges to verify domain ownership; CAA records restrict which CAs may issue certificates; TLSA records enable DANE certificate pinning.
+- **[[Transport Layer Security]] Certificate Validation** — CAs use DNS-01 ACME challenges to verify domain ownership; CAA records restrict which CAs may issue certificates; TLSA records enable DANE certificate pinning.
 - **Anti-Spam and Email Authentication** — SPF (TXT records), DKIM (TXT records), and DMARC policies are all published via DNS, allowing receiving mail servers to verify sender legitimacy.
 - **Cloud and Microservices** — Kubernetes uses an internal DNS server (typically CoreDNS) to resolve service names within the cluster, enabling loose coupling between [[Distributed Systems]] components.
 - **Zero-Trust Security** — DNS filtering (DNS sinkholes, RPZ — Response Policy Zones) is a layer-one defence in many [[Network Security]] architectures, blocking connections to known-malicious domains at resolution time.

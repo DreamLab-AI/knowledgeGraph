@@ -87,7 +87,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
       },
       {
@@ -166,9 +166,9 @@
       "slug": "governance"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:performance-optimization",
@@ -306,12 +306,12 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:alignment-evaluation",
-        "label": "Alignment Evaluation"
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
-        "id": "urn:ngm:class:eval-factsheet",
-        "label": "Eval Factsheet"
+        "id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
       }
     ],
     "dependsOn": [
@@ -332,16 +332,16 @@
         "label": "Ground Truth Labels"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
@@ -378,7 +378,7 @@
         "label": "Testing"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ],
@@ -494,8 +494,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -544,7 +544,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -556,6 +556,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

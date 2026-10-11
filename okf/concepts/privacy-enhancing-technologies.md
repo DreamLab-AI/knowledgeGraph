@@ -17,7 +17,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:surveillance-technology
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-collaboration
 uses:
@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:secure-multi-party-computation
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:pseudonymisation
   - urn:ngm:class:synthetic-data
 supports:

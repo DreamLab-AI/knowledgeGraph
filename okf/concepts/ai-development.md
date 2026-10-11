@@ -17,7 +17,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
 uses:
   - urn:ngm:class:ai-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # AI Development

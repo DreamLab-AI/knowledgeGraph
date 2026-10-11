@@ -15,12 +15,12 @@ hasPart:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:real-time-rendering
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:network-protocol
 requires:
   - urn:ngm:class:network-latency
   - urn:ngm:class:gpu-acceleration
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 enables:
   - urn:ngm:class:virtual-world
   - urn:ngm:class:virtual-experience
@@ -34,7 +34,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:web-xr
 supports:
   - urn:ngm:class:spatial-computing

@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:serverless-architecture
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:tpu
   - urn:ngm:class:fpga
 relatedTo:

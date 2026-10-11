@@ -30,7 +30,7 @@ partOf:
   - urn:ngm:class:robotics
 relatedTo:
   - urn:ngm:class:path-planning
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Sampling Based Planning

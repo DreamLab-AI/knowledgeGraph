@@ -46,8 +46,8 @@
         "label": "3D Asset Standard"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       }
     ],
     "supports": [
@@ -282,7 +282,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -342,7 +342,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

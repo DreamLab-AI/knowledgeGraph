@@ -30,7 +30,7 @@ requires:
   - urn:ngm:class:g-rpc
   - urn:ngm:class:validator-set
   - urn:ngm:class:rust-systems-programming-language
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:ed25519
   - urn:ngm:class:blake2b-hashing
   - urn:ngm:class:g-rpc
@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:payment-system
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:digital-identity
   - urn:ngm:class:payment-system
   - urn:ngm:class:cross-border-payments
@@ -67,7 +67,7 @@ contrastsWith:
   - urn:ngm:class:hyperledger-besu
   - urn:ngm:class:r3-corda
   - urn:ngm:class:quorum-blockchain
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:aleo
   - urn:ngm:class:aztec-protocol
   - urn:ngm:class:stellar
@@ -80,7 +80,7 @@ uses:
   - urn:ngm:class:rocks-db
   - urn:ngm:class:web-assembly
   - urn:ngm:class:blake2b
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
   - urn:ngm:class:tokio
   - urn:ngm:class:polkadot
 supports:

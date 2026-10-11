@@ -10,16 +10,16 @@ quality: 0.68
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:decentralized-autonomous-organization
+  - urn:ngm:class:decentralised-autonomous-organisation
 hasPart:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:on-chain-voting
   - urn:ngm:class:proposal-system
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:blockchain-entity
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:delegation-system
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 requires:
   - urn:ngm:class:token
   - urn:ngm:class:voting-mechanism
@@ -28,7 +28,7 @@ requires:
   - urn:ngm:class:token
 enables:
   - urn:ngm:class:decentralised-decision-making
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:decentralised-decision-making
   - urn:ngm:class:protocol-evolution
   - urn:ngm:class:community-alignment

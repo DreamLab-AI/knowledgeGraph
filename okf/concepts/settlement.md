@@ -36,7 +36,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 partOf:
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:financial-infrastructure-domain
@@ -45,7 +45,7 @@ relatedTo:
   - urn:ngm:class:systemic-risk
   - urn:ngm:class:correspondent-banking
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 ---
 
 # Settlement

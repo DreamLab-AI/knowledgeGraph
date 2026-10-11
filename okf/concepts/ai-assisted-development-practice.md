@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:user-experience
 uses:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:generative-ai-engineering
 ---

@@ -42,9 +42,9 @@ enables:
   - urn:ngm:class:digital-asset-workflow
 dependsOn:
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:noise-schedule
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion-pipeline
@@ -59,14 +59,14 @@ contrastsWith:
   - urn:ngm:class:automatic-1111-web-ui
   - urn:ngm:class:invoke-ai
 uses:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:node-graph
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:lo-ra-fine-tuning
   - urn:ngm:class:noise-schedule
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:json-data-interchange-format-serialisation
   - urn:ngm:class:web-socket-protocol
   - urn:ngm:class:py-torch
@@ -95,7 +95,7 @@ relatedTo:
   - urn:ngm:class:digital-asset-workflow
   - urn:ngm:class:image-to-image
   - urn:ngm:class:hugging-face-hub
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:inference-orchestration-system
 ---

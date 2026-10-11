@@ -144,7 +144,7 @@
         "label": "Automated Decision System"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -162,8 +162,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:platform-to-business-regulation",
@@ -174,7 +174,7 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       }
     ],
@@ -237,7 +237,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       }
     ],
     "supports": [
@@ -268,8 +268,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:platform-to-business-regulation",
@@ -280,7 +280,7 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       }
     ],
@@ -430,6 +430,10 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
         "id": "urn:ngm:class:fairness",
         "label": "Fairness"
       },
@@ -456,10 +460,6 @@
       {
         "id": "urn:ngm:class:audit",
         "label": "Audit"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "enables": [
@@ -514,7 +514,7 @@
         "label": "Risk Management"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -566,6 +566,10 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       },
@@ -592,12 +596,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:digital-rights",
-        "label": "Digital Rights"
-      },
-      {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
       },
       {
         "id": "urn:ngm:class:ai-governance",
@@ -766,6 +770,10 @@
         "label": "Ai Transparency Framework"
       },
       {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
       },
@@ -780,10 +788,6 @@
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:privacy-preserving-machine-learning",
-        "label": "Privacy-Preserving Machine Learning"
       }
     ]
   },

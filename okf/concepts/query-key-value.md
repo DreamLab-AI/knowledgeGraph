@@ -12,9 +12,9 @@ is-a:
   - urn:ngm:class:attention-mechanism
 requires:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
 partOf:
   - urn:ngm:class:attention-mechanism

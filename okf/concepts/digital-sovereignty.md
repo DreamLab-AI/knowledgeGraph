@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:data-localisation
 enables:
   - urn:ngm:class:open-source-ai
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 dependsOn:
   - urn:ngm:class:semiconductor-supply-chain
   - urn:ngm:class:digital-infrastructure
@@ -28,7 +28,7 @@ relatedTo:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:data-governance
   - urn:ngm:class:digital-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-protection
   - urn:ngm:class:internet-governance
   - urn:ngm:class:national-security

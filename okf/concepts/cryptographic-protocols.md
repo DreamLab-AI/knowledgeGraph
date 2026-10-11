@@ -10,13 +10,13 @@ quality: 0.72
 is-a:
   - urn:ngm:class:cryptography
 hasPart:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:ipsec
   - urn:ngm:class:diffie-hellman-key-exchange
 requires:
   - urn:ngm:class:encryption
   - urn:ngm:class:digital-signatures
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-hash-function
 enables:
   - urn:ngm:class:kerberos

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-almanac",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS almanac is a reduced-precision set of orbit and status information for multiple satellites in a constellation.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

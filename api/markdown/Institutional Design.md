@@ -2,7 +2,7 @@ Institutional design is the deliberate construction of the rules, roles, and dec
 
 - Institutional design is the deliberate construction of rules, roles, and decision procedures that structure how a collective coordinates and allocates authority.
 - A specialisation of [[Institutional Economics]] and part of [[Governance]], it shapes incentives so self-interested actors produce shared-goal outcomes.
-- It applies to states, firms, standards bodies, and on-chain organisations such as a [[Decentralized Autonomous Organization]].
+- It applies to states, firms, standards bodies, and on-chain organisations such as a [[Decentralised Autonomous Organisation]].
 
 ### Overview
 

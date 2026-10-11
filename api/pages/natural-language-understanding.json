@@ -204,8 +204,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -322,10 +322,6 @@
       "label": "Chatbots"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
-    },
-    {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
     },
@@ -354,8 +350,8 @@
       "label": "GLUE Benchmark"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "real-time-translation",

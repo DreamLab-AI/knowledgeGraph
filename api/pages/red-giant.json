@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:red-giant",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A red giant is a large, luminous, cool star that has left the main sequence after exhausting the hydrogen in its core.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:star",

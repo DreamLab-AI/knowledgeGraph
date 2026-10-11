@@ -28,12 +28,12 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:self-custody
 bridgesTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:non-fungible-token
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
 relatedTo:
   - urn:ngm:class:exchange-traded-fund

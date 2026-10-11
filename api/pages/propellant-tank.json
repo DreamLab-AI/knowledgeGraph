@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:propellant-tank",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A propellant tank is the vessel in a propulsion system that stores propellant and, together with feed lines, valves and pressurisation devices, forms part of the system that delivers it to the thrust chamber.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

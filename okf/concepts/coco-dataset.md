@@ -19,7 +19,7 @@ uses:
 relatedTo:
   - urn:ngm:class:image-segmentation
   - urn:ngm:class:object-recognition
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 ---
 
 # COCO Dataset

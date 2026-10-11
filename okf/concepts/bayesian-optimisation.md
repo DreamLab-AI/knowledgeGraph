@@ -10,7 +10,7 @@ quality: 0.93
 is-a:
   - urn:ngm:class:optimisation
   - urn:ngm:class:probabilistic-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
 hasPart:
   - urn:ngm:class:gaussian-process
@@ -76,7 +76,7 @@ uses:
   - urn:ngm:class:variational-inference
   - urn:ngm:class:sparse-gaussian-process
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:material-science

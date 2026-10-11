@@ -39,9 +39,9 @@ uses:
   - urn:ngm:class:ethers-js
   - urn:ngm:class:mocha
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:nft
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
   - urn:ngm:class:open-zeppelin
   - urn:ngm:class:remix-ide

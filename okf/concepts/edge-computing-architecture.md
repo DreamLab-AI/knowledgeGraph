@@ -13,7 +13,7 @@ is-a:
 hasPart:
   - urn:ngm:class:edge-node
   - urn:ngm:class:fog-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 requires:
   - urn:ngm:class:network-bandwidth
   - urn:ngm:class:real-time-data-processing
@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:internet-of-things
 standardizedBy:
   - urn:ngm:class:etsi-mec
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 partOf:
   - urn:ngm:class:distributed-system-architecture
   - urn:ngm:class:infrastructure

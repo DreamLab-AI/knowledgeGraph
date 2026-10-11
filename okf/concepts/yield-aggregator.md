@@ -8,7 +8,7 @@ description: A yield aggregator is a decentralised-finance protocol that automat
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:vault
   - urn:ngm:class:liquidity-pool
@@ -27,8 +27,8 @@ uses:
 supports:
   - urn:ngm:class:composability
 partOf:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:governance-token
   - urn:ngm:class:total-value-locked

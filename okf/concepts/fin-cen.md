@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:beneficial-ownership-disclosure
   - urn:ngm:class:customer-identification-programme
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:sanctions-enforcement
   - urn:ngm:class:counter-terrorist-financing

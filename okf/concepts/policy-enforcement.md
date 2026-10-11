@@ -31,7 +31,7 @@ enables:
   - urn:ngm:class:compliance-audit-trail
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:data-protection-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr-article-22-compliance
 dependsOn:
   - urn:ngm:class:authentication-service
@@ -65,7 +65,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:compliance-standards
   - urn:ngm:class:data-protection-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr-article-22-compliance
 relatedTo:
   - urn:ngm:class:aml-kyc-compliance

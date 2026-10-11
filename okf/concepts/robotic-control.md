@@ -27,7 +27,7 @@ implements:
   - urn:ngm:class:trajectory-planning
 bridgesTo:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:pid-control
   - urn:ngm:class:inverse-kinematics

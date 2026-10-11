@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertical-datum",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A vertical datum is a reference frame that describes how gravity-related heights or depths relate to the Earth, and in most cases it is related to mean sea level.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

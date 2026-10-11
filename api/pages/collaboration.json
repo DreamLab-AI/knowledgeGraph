@@ -130,7 +130,7 @@
         "label": "IEEE (Institute of Electrical and Electronics Engineers)"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C (World Wide Web Consortium)"
       }
     ],
@@ -335,8 +335,8 @@
       "label": "Cryptography"
     },
     {
-      "slug": "machine-learning-discipline",
-      "label": "Machine Learning Discipline"
+      "slug": "machine-learning",
+      "label": "Machine Learning"
     },
     {
       "slug": "tc-0080-team-coordination",

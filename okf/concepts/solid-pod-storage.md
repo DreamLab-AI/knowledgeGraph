@@ -13,12 +13,12 @@ is-a:
 requires:
   - urn:ngm:class:linked-data
   - urn:ngm:class:rdf
-  - urn:ngm:class:webid-decentralised-identity-uri
+  - urn:ngm:class:web-id
 enables:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:decentralised-identity
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:self-sovereign-identity
 ---
 

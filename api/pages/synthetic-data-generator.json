@@ -227,8 +227,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:cryptographic-keys",
@@ -307,8 +307,8 @@
         "label": "Security Policy"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ],
     "implements": [
@@ -435,7 +435,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -491,8 +491,8 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bathymetry",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Bathymetry is the study of the beds or floors of water bodies, including oceans, rivers, streams and lakes.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

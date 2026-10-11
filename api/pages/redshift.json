@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:redshift",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Redshift is the apparent shift toward longer wavelengths of light or spectral lines emitted by an object.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

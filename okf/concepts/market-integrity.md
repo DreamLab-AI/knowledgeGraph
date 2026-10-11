@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:enforcement-mechanism
 requires:
   - urn:ngm:class:price-discovery
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 enables:
   - urn:ngm:class:financial-trading
   - urn:ngm:class:consumer-protection
@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:market-manipulation
   - urn:ngm:class:insider-trading
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract-compliance
 supports:
   - urn:ngm:class:regulatory-compliance

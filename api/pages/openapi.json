@@ -10,14 +10,36 @@
     {
       "id": "urn:ngm:class:api",
       "label": "API"
+    },
+    {
+      "id": "urn:ngm:class:api-standard",
+      "label": "API Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.62,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST Architectural Style"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -26,6 +48,26 @@
       {
         "id": "urn:ngm:class:software-development",
         "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:contract-testing",
+        "label": "Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
     "dependsOn": [],
@@ -35,8 +77,26 @@
         "label": "API Specification"
       }
     ],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:yaml",
@@ -49,6 +109,18 @@
       {
         "id": "urn:ngm:class:api",
         "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
       }
     ],
     "supports": [
@@ -75,7 +147,16 @@
         "label": "Interoperability"
       }
     ],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:rest",
@@ -96,19 +177,33 @@
       {
         "id": "urn:ngm:class:api-versioning",
         "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication",
+      "slug": "infra-network-and-comms"
+    },
     {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -118,32 +213,32 @@
         "label": "Versioning"
       },
       {
-        "id": "urn:ngm:class:continuous-integration",
-        "label": "Continuous Integration"
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
       },
       {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
+        "id": "urn:ngm:class:authentication-schema",
+        "label": "Authentication Schema"
       },
       {
-        "id": "urn:ngm:class:requirements-engineering",
-        "label": "Requirements Engineering"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:software-architecture",
-        "label": "Software Architecture"
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Specification"
       },
       {
-        "id": "urn:ngm:class:software-design-patterns",
-        "label": "Software Design Patterns"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:software-testing",
-        "label": "Software Testing"
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
       },
       {
-        "id": "urn:ngm:class:interface-management",
-        "label": "Interface Management"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "requires": [
@@ -160,6 +255,14 @@
         "label": "Data Serialisation"
       },
       {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Specification Document"
+      },
+      {
         "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Methodology"
       },
@@ -170,32 +273,32 @@
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
-      },
-      {
-        "id": "urn:ngm:class:configuration-management",
-        "label": "Configuration Management"
-      },
-      {
-        "id": "urn:ngm:class:model-based-systems-engineering",
-        "label": "Model-Based Systems Engineering"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
-      },
       {
         "id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:component-integration",
+        "label": "Component Integration"
       },
       {
         "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       },
       {
         "id": "urn:ngm:class:platform-engineering",
@@ -204,14 +307,16 @@
       {
         "id": "urn:ngm:class:system-integration",
         "label": "System Integration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:system-of-systems",
-        "label": "System of Systems"
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Network Transport Layer"
       }
     ],
     "implements": [
@@ -230,20 +335,16 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
+        "id": "urn:ngm:class:proprietary-interface",
+        "label": "Proprietary Interface"
       },
       {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
       },
       {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -264,20 +365,20 @@
         "label": "Spatial Computing"
       },
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-runtime",
+        "label": "Spatial Computing Runtime"
+      },
+      {
         "id": "urn:ngm:class:machine-learning-engineering",
         "label": "Machine Learning Engineering"
       },
       {
         "id": "urn:ngm:class:security-engineering",
         "label": "Security Engineering"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber Physical Systems"
       }
     ],
     "uses": [
@@ -286,12 +387,12 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON"
-      },
-      {
         "id": "urn:ngm:class:oauth",
         "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
       },
       {
         "id": "urn:ngm:class:containerisation",
@@ -310,22 +411,30 @@
         "label": "Static Analysis"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:developer-portal",
+        "label": "Developer Portal"
       },
       {
-        "id": "urn:ngm:class:robo-safety-and-standards",
-        "label": "Safety and Standards"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -334,8 +443,16 @@
         "label": "Interoperability Standards"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ieee-std-730",
@@ -350,12 +467,8 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
-      },
-      {
-        "id": "urn:ngm:class:open-standard",
-        "label": "Open Standard"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       }
     ],
     "relatedTo": [
@@ -368,28 +481,28 @@
         "label": "Software Architecture"
       },
       {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-security-and-identity",
+        "label": "Security and Identity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
-      },
-      {
-        "id": "urn:ngm:class:refactoring",
-        "label": "Refactoring"
-      },
-      {
-        "id": "urn:ngm:class:technical-debt",
-        "label": "Technical Debt"
-      },
-      {
-        "id": "urn:ngm:class:test-driven-development",
-        "label": "Test-Driven Development"
-      },
-      {
-        "id": "urn:ngm:class:computational-complexity-theory",
-        "label": "Complexity Theory"
-      },
-      {
-        "id": "urn:ngm:class:lifecycle-management",
-        "label": "Lifecycle Management"
       }
     ]
   },

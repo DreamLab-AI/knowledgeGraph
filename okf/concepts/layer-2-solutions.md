@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:scalability
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:micropayment
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:cryptographic-commitment

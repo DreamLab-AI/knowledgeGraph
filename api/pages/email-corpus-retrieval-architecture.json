@@ -140,10 +140,6 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:text-representation",
         "label": "Text Representation"
       },
@@ -158,6 +154,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -190,8 +190,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
@@ -278,7 +278,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -334,7 +334,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

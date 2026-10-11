@@ -13,7 +13,7 @@ is-a:
 hasPart:
   - urn:ngm:class:consensus-mechanism
 requires:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:byzantine-fault-tolerance
 enables:
   - urn:ngm:class:finality

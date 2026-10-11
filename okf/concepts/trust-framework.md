@@ -42,9 +42,9 @@ enables:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:interoperability
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptography
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:identity-and-access-management
   - urn:ngm:class:data-protection-law
 implements:
@@ -82,7 +82,7 @@ standardizedBy:
   - urn:ngm:class:european-commission
   - urn:ngm:class:iso
   - urn:ngm:class:nist
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:identity-and-access-management

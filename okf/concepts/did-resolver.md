@@ -16,11 +16,11 @@ requires:
   - urn:ngm:class:verifiable-data-registry
   - urn:ngm:class:did-method
 enables:
-  - urn:ngm:class:decentralized-authentication
+  - urn:ngm:class:decentralised-authentication
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:self-sovereign-identity
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:dns
 implements:
@@ -34,12 +34,12 @@ bridgesTo:
   - urn:ngm:class:web-of-trust
 uses:
   - urn:ngm:class:cryptographic-key-pair
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:decentralized-identity-did
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:identity-verification
 ---
 

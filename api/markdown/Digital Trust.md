@@ -10,7 +10,7 @@ Digital trust is the confidence that users, organisations, and systems place in 
 ### Mechanisms
 
 - Public-key cryptography and digital certificates anchoring authenticity.
-- Identity assurance and [[Verifiable Credentials]] proving claims about subjects.
+- Identity assurance and [[Verifiable Credential]] proving claims about subjects.
 - [[Encryption]] protecting confidentiality and integrity in transit and at rest.
 - Transparent governance, audit, and [[Accountability]] structures.
 

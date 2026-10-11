@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astrophysical-jet",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An astrophysical jet is a narrow, fast outflow of gas and particles launched from the neighbourhood of a compact object such as an accreting black hole.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

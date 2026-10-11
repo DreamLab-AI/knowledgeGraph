@@ -11,13 +11,13 @@ is-a:
   - urn:ngm:class:infra-security-and-identity
   - urn:ngm:class:technical-standards
 hasPart:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:authentication-protocol
 requires:
   - urn:ngm:class:standards-conformance-testing
   - urn:ngm:class:standards-body
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:standards-bodies
   - urn:ngm:class:protocol-specifications

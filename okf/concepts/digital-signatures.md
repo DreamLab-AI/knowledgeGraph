@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:private-key
   - urn:ngm:class:public-key
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:asymmetric-cryptography
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:private-key

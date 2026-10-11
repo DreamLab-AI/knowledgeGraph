@@ -10,10 +10,10 @@ quality: 0.62
 is-a:
   - urn:ngm:class:blockchain-analytics
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:data-fusion
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:sanctions-screening
   - urn:ngm:class:fraud-detection
 bridgesTo:

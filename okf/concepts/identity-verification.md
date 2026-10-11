@@ -32,15 +32,15 @@ requires:
   - urn:ngm:class:consent-management
 enables:
   - urn:ngm:class:age-verification
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:fraud-prevention
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:sanctions-compliance
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:account-opening
   - urn:ngm:class:reusable-identity
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:computer-vision
   - urn:ngm:class:deep-learning

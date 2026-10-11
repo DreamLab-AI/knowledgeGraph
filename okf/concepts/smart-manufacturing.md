@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:industrial-metaverse
   - urn:ngm:class:digital-thread
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:opc-ua
 supports:

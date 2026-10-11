@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cone-of-depression",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Cone of depression is the inverted-cone lowering of the water table or potentiometric surface that forms around a pumped well.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

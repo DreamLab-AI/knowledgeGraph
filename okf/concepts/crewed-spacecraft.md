@@ -4,6 +4,7 @@ type: Class
 title: Crewed Spacecraft
 resource: urn:ngm:class:crewed-spacecraft
 domain: space-science-and-systems
+description: A crewed spacecraft is a spacecraft that carries human occupants and therefore has to provide them with a living area and life support.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Crewed Spacecraft
+
+A crewed spacecraft is a spacecraft that carries human occupants and therefore has to provide them with a living area and life support.[^1]

@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-use
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:grammar-constrained-generation
@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:information-extraction
 relatedTo:
   - urn:ngm:class:prompt-engineering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:pydantic
   - urn:ngm:class:openai-research-organisation-api
 ---

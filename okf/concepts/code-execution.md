@@ -28,7 +28,7 @@ hasPart:
   - urn:ngm:class:gvisor
   - urn:ngm:class:state-management
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:sandbox-environment
   - urn:ngm:class:firecracker
   - urn:ngm:class:docker-containerisation-platform
@@ -53,7 +53,7 @@ dependsOn:
   - urn:ngm:class:code-generation
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:function-calling
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:orchestration
   - urn:ngm:class:state-management
   - urn:ngm:class:tool-use

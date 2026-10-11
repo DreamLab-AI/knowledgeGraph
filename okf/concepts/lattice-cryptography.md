@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:digital-signature
 bridgesTo:
   - urn:ngm:class:cryptographic-primitive
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 ---
 
 # Lattice Cryptography

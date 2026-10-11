@@ -15,15 +15,15 @@ hasPart:
   - urn:ngm:class:oxford-robotics-institute
 enables:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
 bridgesTo:
   - urn:ngm:class:blockchain-governance
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:quantum-computing
 supports:
   - urn:ngm:class:open-source-software
   - urn:ngm:class:ai-governance

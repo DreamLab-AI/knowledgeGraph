@@ -67,7 +67,7 @@ uses:
   - urn:ngm:class:active-learning
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:text-to-speech
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:information-retrieval
 supports:

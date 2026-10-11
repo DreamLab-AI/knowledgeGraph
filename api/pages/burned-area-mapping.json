@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:burned-area-mapping",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Burned area mapping is the satellite-based identification of land surfaces affected by fire, reported as where and when burning occurred.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

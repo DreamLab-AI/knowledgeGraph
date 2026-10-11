@@ -17,7 +17,7 @@ bridgesTo:
   - urn:ngm:class:digital-governance
 uses:
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:smart-contract
 relatedTo:
   - urn:ngm:class:metaverse

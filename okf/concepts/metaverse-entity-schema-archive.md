@@ -13,9 +13,9 @@ enables:
   - urn:ngm:class:knowledge-graph-construction
 uses:
   - urn:ngm:class:rdf
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 relatedTo:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:ontology
   - urn:ngm:class:knowledge-graph
 ---

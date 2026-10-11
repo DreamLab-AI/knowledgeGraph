@@ -184,8 +184,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:decentralization",
-        "label": "Decentralization"
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -304,7 +304,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

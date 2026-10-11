@@ -26,12 +26,12 @@ The condition whereby an AI system operates without causing unacceptable risk of
 
 # Potential Green Shoots
 
-- There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[WebID Decentralised Identity URI]] and [[Decentralised Web]] monikers.
+- There is a chance to build on recent advances in long running projects like [[Solid]]. This is all wrapped up with [[WebID]] and [[Decentralised Web]] monikers.
 - Using AI to reduce conspiracy theory beliefs https://osf.io/preprints/psyarxiv/xcwdn [[Trust and Safety]] [[Death of the Internet]] the flips side being that they are very capable of [persuasion](https://www.anthropic.com/news/measuring-model-persuasiveness).
 - [2403.18802.pdf (arxiv.org)](https://arxiv.org/pdf/2403.18802.pdf) [[Trust and Safety]]
   - 1) Most surprisingly: "LLM agents can achieve superhuman rating performance" on fact checking when given access to Google!
     2) Bigger models are more factual than smaller ones, as expected
-    3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large Language Models]] had to make.
+    3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the [[Large Language Model]] had to make.
   - 4) [AI Outperforms Humans in Moral Judgments - Neuroscience News](https://neurosciencenews.com/ai-llm-morality-26041/)
 
 ### Human Suffering and Exploitation

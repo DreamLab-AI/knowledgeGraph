@@ -8,12 +8,12 @@ description: Mistral AI is a French AI company that developed a family of open-w
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 contrastsWith:
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
   - urn:ngm:class:gpt
 uses:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:context-window

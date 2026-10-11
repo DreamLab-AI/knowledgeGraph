@@ -47,7 +47,7 @@ standardizedBy:
   - urn:ngm:class:nist-fips-186
   - urn:ngm:class:nist-fips-202
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-protocol
 relatedTo:
   - urn:ngm:class:blockchain-security

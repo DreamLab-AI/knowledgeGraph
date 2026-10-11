@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbiter",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An orbiter is a spacecraft designed to travel to a distant planet and enter orbit about it, carrying enough propulsive capability to decelerate at the right moment for orbit insertion.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -78,8 +78,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -164,8 +164,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

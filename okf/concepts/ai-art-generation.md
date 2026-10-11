@@ -17,13 +17,13 @@ hasPart:
   - urn:ngm:class:image-synthesis
   - urn:ngm:class:style-transfer
   - urn:ngm:class:image-editing
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:super-resolution
 requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:latent-space
   - urn:ngm:class:large-scale-datasets
   - urn:ngm:class:natural-language-processing
@@ -42,7 +42,7 @@ dependsOn:
   - urn:ngm:class:gpu-compute
 implements:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:image-processing
   - urn:ngm:class:computer-vision
 contrastsWith:
@@ -78,7 +78,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:kohya-dreambooth-and-similar
   - urn:ngm:class:generative-model
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:text-generation
   - urn:ngm:class:image-to-image
   - urn:ngm:class:stability-ai

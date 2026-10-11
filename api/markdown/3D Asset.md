@@ -42,7 +42,7 @@ A 3D Asset is a discrete, self-contained digital artefact encoding three-dimensi
 
 ### Interchange Formats
 
-- **[[glTF Standard]]** (GL Transmission Format 2.0): the primary open web and real-time standard, maintained by the [[Khronos Group]]. JSON scene descriptor with binary buffer (.glb binary variant). Supports PBR materials, skeletons, morph targets, animations, and extensions (KHR_draco_mesh_compression, KHR_texture_basisu, KHR_materials_variants).
+- **[[glTF]]** (GL Transmission Format 2.0): the primary open web and real-time standard, maintained by the [[Khronos Group]]. JSON scene descriptor with binary buffer (.glb binary variant). Supports PBR materials, skeletons, morph targets, animations, and extensions (KHR_draco_mesh_compression, KHR_texture_basisu, KHR_materials_variants).
 - **[[Universal Scene Description]]** (USD / USDA / USDC / USDZ): Pixar's open hierarchical scene description language, adopted by [[Academy Software Foundation]] (ASWF) and Apple (USDZ on iOS/AR Quick Look). Supports layering, instancing, variants, and schema composition; preferred in VFX and enterprise digital-twin pipelines.
 - **FBX** (Filmbox): Autodesk's binary and ASCII format. Industry-standard for skeletal animation interchange; not openly specified but widely supported across DCCs and engines.
 - **OBJ / MTL**: legacy text-based geometry and material format; no animation support but universally readable.

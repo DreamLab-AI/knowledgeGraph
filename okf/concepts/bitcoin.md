@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-core
 enables:
   - urn:ngm:class:lightning-network
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-custody
   - urn:ngm:class:censorship-resistance
   - urn:ngm:class:store-of-value
@@ -29,7 +29,7 @@ implements:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:distributed-ledger-technology
 contrastsWith:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:solana
   - urn:ngm:class:digital-currency
   - urn:ngm:class:monetary-system

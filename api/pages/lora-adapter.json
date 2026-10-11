@@ -199,8 +199,8 @@
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",

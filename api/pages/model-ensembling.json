@@ -36,15 +36,15 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       }
     ],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -91,8 +91,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

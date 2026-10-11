@@ -51,7 +51,7 @@ supports:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:question-answering
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:transfer-learning
 standardizedBy:

@@ -14,7 +14,7 @@ enables:
 dependsOn:
   - urn:ngm:class:zero-knowledge-proof
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 ---
 

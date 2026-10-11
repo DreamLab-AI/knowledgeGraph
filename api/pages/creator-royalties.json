@@ -113,7 +113,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eip",
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
         "label": "Ethereum Improvement Proposal"
       }
     ],
@@ -132,11 +132,11 @@
         "label": "Secondary Market"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "id": "urn:ngm:class:intellectual-property",
         "label": "Intellectual Property"
       },
       {
@@ -214,10 +214,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:digital-watermarking",
         "label": "Digital Watermarking"
       },
@@ -228,6 +224,10 @@
       {
         "id": "urn:ngm:class:license-management",
         "label": "License Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -282,7 +282,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -310,7 +310,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {

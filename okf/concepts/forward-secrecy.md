@@ -20,7 +20,7 @@ implements:
   - urn:ngm:class:cryptographic-protocol
 supports:
   - urn:ngm:class:tls-encryption
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 partOf:
   - urn:ngm:class:information-security
 relatedTo:

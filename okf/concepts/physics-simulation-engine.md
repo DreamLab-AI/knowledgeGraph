@@ -27,7 +27,7 @@ dependsOn:
   - urn:ngm:class:scene-graph
 bridgesTo:
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
   - urn:ngm:class:3-d-engine
 uses:

@@ -10,11 +10,11 @@ quality: 0.74
 is-a:
   - urn:ngm:class:interoperability-standard
 hasPart:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:physically-based-rendering
   - urn:ngm:class:level-of-detail
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 requires:
   - urn:ngm:class:coordinate-system
   - urn:ngm:class:mesh-compression
@@ -32,8 +32,8 @@ contrastsWith:
   - urn:ngm:class:proprietary-asset-format
 bridgesTo:
   - urn:ngm:class:non-fungible-token
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:scene-graph
   - urn:ngm:class:skeletal-animation
@@ -49,7 +49,7 @@ standardizedBy:
   - urn:ngm:class:academy-software-foundation
 relatedTo:
   - urn:ngm:class:digital-content-creation
-  - urn:ngm:class:semantic-spatial-web-layer
+  - urn:ngm:class:spatial-web
   - urn:ngm:class:iso-iec-14496-16
 ---
 

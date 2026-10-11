@@ -11,15 +11,15 @@ is-a:
   - urn:ngm:class:bc-token-and-asset
   - urn:ngm:class:blockchain
 hasPart:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:application-binary-interface
 enables:
-  - urn:ngm:class:decentralized-exchange
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-interoperability
   - urn:ngm:class:smart-contract
 dependsOn:
@@ -29,23 +29,23 @@ implements:
   - urn:ngm:class:fungibility
 contrastsWith:
   - urn:ngm:class:native-token
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:digital-asset-standards
   - urn:ngm:class:data-schema
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:event-log
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 supports:
   - urn:ngm:class:nft
   - urn:ngm:class:stablecoin
   - urn:ngm:class:governance-token
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 partOf:
   - urn:ngm:class:blockchain-protocol
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:wallet
   - urn:ngm:class:token-metadata

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solid-rocket-motor",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A solid rocket motor is a rocket engine whose propellant is a mixture of oxidiser and fuel stored in solid form as a propellant grain.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

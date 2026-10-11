@@ -28,7 +28,7 @@ requires:
   - urn:ngm:class:algorithmic-transparency
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:bias-analysis
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:algorithmic-auditing
   - urn:ngm:class:explainable-ai
 enables:
@@ -41,19 +41,19 @@ enables:
   - urn:ngm:class:algorithmic-transparency
   - urn:ngm:class:decision-transparency
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:explainable-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:ai-ethics
 implements:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:ai-governance-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:informal-ai-disclosure
 bridgesTo:
   - urn:ngm:class:smart-contract
@@ -73,18 +73,18 @@ supports:
   - urn:ngm:class:ai-ethics-checklist
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ieee-7001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-23053
 relatedTo:
   - urn:ngm:class:documentation-standards
   - urn:ngm:class:ai-governance-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-23053
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:ieee-7001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:gdpr
   - urn:ngm:class:model-cards-mitchell-et-al
   - urn:ngm:class:ai-transparency-framework

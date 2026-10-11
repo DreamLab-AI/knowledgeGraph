@@ -44,12 +44,12 @@ dependsOn:
   - urn:ngm:class:etsi-domain-ai
   - urn:ngm:class:ai-governance
   - urn:ngm:class:regulatory-compliance
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bias-mitigation-techniques
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:etsi-ts-104-224
 contrastsWith:
@@ -77,7 +77,7 @@ standardizedBy:
   - urn:ngm:class:etsi-isg-sai
   - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:nist-ai-standards
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
 partOf:
   - urn:ngm:class:etsi-domain-taxonomy

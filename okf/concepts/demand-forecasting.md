@@ -23,7 +23,7 @@ bridgesTo:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:digital-twin
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:gradient-boosted-trees
   - urn:ngm:class:recurrent-neural-network
   - urn:ngm:class:exponential-smoothing

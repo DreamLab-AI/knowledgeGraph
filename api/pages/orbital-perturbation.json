@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-perturbation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An orbital perturbation is a force or dynamical effect that causes an orbit to depart over time from an ideal two-body Keplerian trajectory.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

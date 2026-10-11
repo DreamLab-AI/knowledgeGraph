@@ -10,7 +10,7 @@ quality: 0.4
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
 requires:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:regulatory-framework
 dependsOn:
   - urn:ngm:class:blockchain
@@ -20,7 +20,7 @@ partOf:
   - urn:ngm:class:blockchain
   - urn:ngm:class:blockchain-domain
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract
 ---
 

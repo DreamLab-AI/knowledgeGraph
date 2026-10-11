@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model"
     }
   ],
   "entityType": "Class",
@@ -24,8 +28,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -110,6 +114,14 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
       }
     ]
   },
@@ -139,8 +151,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -157,11 +169,23 @@
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -201,6 +225,12 @@
         "label": "Telecollaboration"
       }
     ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-application",
@@ -213,6 +243,22 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
       }
     ]
   },

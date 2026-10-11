@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lunar-orbit-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Lunar orbit radiation environment is the time-varying particle and photon field encountered by a spacecraft orbiting the Moon, together with the shielding that modifies that field.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:lunar-radiation-environment",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-2-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation Level 2 data product holds derived geophysical variables at the same resolution and location as its Level 1 source data.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-data-product",

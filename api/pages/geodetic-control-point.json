@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geodetic-control-point",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A geodetic control point is a marked or continuously operating station whose coordinates have been determined and are used as the known starting position for surveying and mapping.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

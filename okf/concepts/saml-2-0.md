@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:federated-identity
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:xml-encryption
   - urn:ngm:class:xml-digital-signature
 enables:
@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:xml
   - urn:ngm:class:http
   - urn:ngm:class:soap
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 standardizedBy:
   - urn:ngm:class:oasis
 relatedTo:

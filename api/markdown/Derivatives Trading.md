@@ -1,6 +1,6 @@
 Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, index or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.
 
-- Derivatives trading transacts contracts whose value derives from an underlying asset, enabling hedging, leverage and speculation; in DeFi it is enacted through [[Smart Contract]] logic and bridges to [[Decentralized Finance]].
+- Derivatives trading transacts contracts whose value derives from an underlying asset, enabling hedging, leverage and speculation; in DeFi it is enacted through [[Smart Contract]] logic and bridges to [[Decentralised Finance]].
 - It supports [[Risk Management]] and extends [[Digital Asset Trading]].
 
 ### Overview

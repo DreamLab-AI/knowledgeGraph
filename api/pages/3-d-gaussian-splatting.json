@@ -13,7 +13,7 @@
     },
     {
       "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-      "label": "TELE-050-neural-rendering-telepresence"
+      "label": "Neural Rendering Telepresence"
     }
   ],
   "entityType": "Class",
@@ -99,7 +99,7 @@
     "bridgesTo": [
       {
         "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
-        "label": "TELE-050-neural-rendering-telepresence"
+        "label": "Neural Rendering Telepresence"
       },
       {
         "id": "urn:ngm:class:extended-reality",
@@ -144,6 +144,11 @@
       "id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics",
       "slug": "computer-graphics"
+    },
+    {
+      "id": "urn:ngm:class:tele-001-telepresence",
+      "label": "TELE 001 telepresence",
+      "slug": "tele-001-telepresence"
     },
     {
       "id": "urn:ngm:class:telepresence",
@@ -264,8 +269,16 @@
         "label": "Real-Time Rendering"
       },
       {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
       },
       {
         "id": "urn:ngm:class:3-d-animation",
@@ -274,14 +287,6 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:level-of-detail",
-        "label": "Level of Detail"
       }
     ],
     "dependsOn": [
@@ -374,12 +379,12 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:robotic-system",
-        "label": "Robotic Systems"
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
       },
       {
-        "id": "urn:ngm:class:ai-assisted-collaboration",
-        "label": "AI-Assisted Collaboration"
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
       }
     ],
     "uses": [
@@ -404,16 +409,16 @@
         "label": "Volume Rendering"
       },
       {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
-      },
-      {
-        "id": "urn:ngm:class:open-gl",
-        "label": "OpenGL"
-      },
-      {
-        "id": "urn:ngm:class:vulkan",
-        "label": "Vulkan"
       }
     ],
     "supports": [
@@ -478,6 +483,10 @@
         "label": "Distributed Collaboration"
       },
       {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
       }
@@ -496,6 +505,14 @@
         "label": "Scene Understanding"
       },
       {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:tele020virtualrealitytelepresence",
+        "label": "TELE020virtualrealitytelepresence"
+      },
+      {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
       },
@@ -504,16 +521,8 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:holographic-display",
-        "label": "Holographic Display"
-      },
-      {
-        "id": "urn:ngm:class:presence-technology",
-        "label": "Presence Technology"
-      },
-      {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
       }
     ]
   },
@@ -531,7 +540,7 @@
       "label": "TELE-020-virtual-reality-telepresence"
     },
     {
-      "slug": "tele-050-neural-rendering-telepresence",
+      "slug": "neural-rendering-telepresence",
       "label": "TELE-050-neural-rendering-telepresence"
     },
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-accuracy",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Measurement accuracy is the closeness of agreement between a measured quantity value and a true quantity value of a measurand.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

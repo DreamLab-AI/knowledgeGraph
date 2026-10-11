@@ -18,8 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
         "id": "urn:ngm:class:recurrent-neural-network",
@@ -43,8 +43,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:deep-learning",
@@ -60,8 +60,8 @@
         "label": "Neural Rendering"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },
@@ -103,8 +103,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

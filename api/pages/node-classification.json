@@ -41,9 +41,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:pattern-recognition",
@@ -136,8 +136,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-dataset",
-        "label": "Labeled Dataset"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -200,11 +200,11 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -264,16 +264,16 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
         "id": "urn:ngm:class:rule-based-systems",
-        "label": "Rule-Based Systems"
+        "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:semi-supervised-learning",
-        "label": "Semi-Supervised Learning"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -306,8 +306,8 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:medical-imaging",
-        "label": "Medical Imaging"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       }
     ],
     "uses": [
@@ -367,20 +367,20 @@
       },
       {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
-        "id": "urn:ngm:class:ai-policy",
-        "label": "AI Policy"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -392,8 +392,12 @@
         "label": "ISO/IEC 23053"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -402,7 +406,11 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

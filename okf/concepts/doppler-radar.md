@@ -4,6 +4,7 @@ type: Class
 title: Doppler Radar
 resource: urn:ngm:class:doppler-radar
 domain: earth-observation-and-geospatial-sensing
+description: Doppler radar is a radar instrument that measures the motion of targets, used in meteorology to detect precipitation and wind.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Doppler Radar
+
+Doppler radar is a radar instrument that measures the motion of targets, used in meteorology to detect precipitation and wind.[^1]

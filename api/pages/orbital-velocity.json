@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-velocity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital velocity is the velocity vector of an orbiting object at a stated epoch, relative to a specified origin and reference frame.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

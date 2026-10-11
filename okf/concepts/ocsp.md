@@ -18,12 +18,12 @@ implements:
 contrastsWith:
   - urn:ngm:class:certificate-revocation-list
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:public-key-cryptography
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:trust-model
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 relatedTo:
   - urn:ngm:class:online-certificate-status-protocol
   - urn:ngm:class:security

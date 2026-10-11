@@ -84,8 +84,8 @@
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:ngm:class:e-idas",
-        "label": "eIDAS"
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
       }
     ],
     "uses": [],
@@ -100,7 +100,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:digital-identity-standards",
@@ -375,8 +375,8 @@
       "label": "Agentic Internet"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "digital-identity-wallet",
@@ -411,8 +411,8 @@
       "label": "Trust Framework Policy"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

@@ -22,7 +22,7 @@ enables:
 dependsOn:
   - urn:ngm:class:physics-engine
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
 uses:
   - urn:ngm:class:skeletal-animation

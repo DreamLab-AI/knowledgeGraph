@@ -25,7 +25,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "DeFi"
       }
     ],
@@ -60,9 +60,29 @@
       "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity",
-      "slug": "blockchain-entity"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -92,12 +112,12 @@
         "label": "Price Oracle"
       },
       {
-        "id": "urn:ngm:class:block",
-        "label": "Block"
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
       }
     ],
     "requires": [
@@ -122,16 +142,16 @@
         "label": "Staking"
       },
       {
-        "id": "urn:ngm:class:cryptographic-security",
-        "label": "Cryptographic Security"
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:distributed-protocol",
-        "label": "Distributed Protocol"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:network-participation",
-        "label": "Network Participation"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       }
     ],
     "enables": [
@@ -196,6 +216,32 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
       }
     ],
     "contrastsWith": [
@@ -214,6 +260,18 @@
       {
         "id": "urn:ngm:class:oracle",
         "label": "Centralized Oracle"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
       }
     ],
     "bridgesTo": [
@@ -222,7 +280,7 @@
         "label": "Financial Data API"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -238,16 +296,16 @@
         "label": "Traditional Finance"
       },
       {
-        "id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
       }
     ],
     "uses": [
@@ -260,17 +318,33 @@
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:de-fi-protocol",
+        "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -280,11 +354,27 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -296,8 +386,20 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -326,8 +428,12 @@
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:blockchain-protocol",
-        "label": "Blockchain Protocol"
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       }
     ]
   },

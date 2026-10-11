@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:virtual-reality-experience
 requires:
   - urn:ngm:class:real-time-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:user-behavior-tracking
 enables:
   - urn:ngm:class:gaming

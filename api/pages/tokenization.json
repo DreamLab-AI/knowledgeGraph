@@ -137,8 +137,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -378,8 +378,8 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "smart-contracts",

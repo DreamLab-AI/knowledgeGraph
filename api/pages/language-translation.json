@@ -39,8 +39,8 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transformer",
@@ -87,8 +87,8 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:video-conferencing",

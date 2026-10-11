@@ -88,8 +88,8 @@
         "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:prompt-engineering",
@@ -124,8 +124,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
@@ -451,11 +451,6 @@
       "slug": "web-architecture"
     },
     {
-      "id": "urn:ngm:class:workflow-engine",
-      "label": "Workflow Engine",
-      "slug": "workflow-engine"
-    },
-    {
       "id": "urn:ngm:class:agent",
       "label": "Agent",
       "slug": "agent"
@@ -526,9 +521,9 @@
       "slug": "interdisciplinary-science"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models",
-      "slug": "large-language-models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model",
+      "slug": "large-language-model"
     },
     {
       "id": "urn:ngm:class:networked-systems",
@@ -541,11 +536,6 @@
       "slug": "organizational-change"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
@@ -554,11 +544,6 @@
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment",
       "slug": "sc-platform-and-environment"
-    },
-    {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
     },
     {
       "id": "urn:ngm:class:symbolic-reasoning",
@@ -611,19 +596,24 @@
       "slug": "distributed-collaboration"
     },
     {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:neural-network",
@@ -646,14 +636,14 @@
       "slug": "simulation"
     },
     {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:systems-theory",
@@ -669,6 +659,11 @@
       "id": "urn:ngm:class:automation",
       "label": "Automation",
       "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:cryptographic-system",
@@ -711,14 +706,19 @@
       "slug": "knowledge-representation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
     },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing",
       "slug": "natural-language-processing"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:scientific-machine-learning",
@@ -766,6 +766,16 @@
       "slug": "general-intelligence"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
+    },
+    {
       "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database",
       "slug": "multi-party-database"
@@ -786,19 +796,29 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
     },
     {
-      "id": "urn:ngm:class:foundation-model-layer",
-      "label": "Foundation Model Layer",
-      "slug": "foundation-model-layer"
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:cryptographic-security",
       "label": "Cryptographic Security",
       "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
     },
     {
       "id": "urn:ngm:class:security",
@@ -954,8 +974,8 @@
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
       }
     ],
     "implements": [
@@ -1066,8 +1086,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:agentic-ai",
@@ -1082,8 +1102,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:microsoft-copilot",
@@ -1130,16 +1150,16 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001-ai-management-system",
         "label": "ISO IEC 42001 AI Management System"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -1206,8 +1226,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:ai-investment",

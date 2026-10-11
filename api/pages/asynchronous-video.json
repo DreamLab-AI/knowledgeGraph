@@ -88,7 +88,7 @@
         "label": "Cloud Storage"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -211,8 +211,8 @@
         "label": "Speaker Diarisation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -321,14 +321,19 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management",
-      "slug": "data-management"
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
     },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -359,8 +364,8 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:video-conferencing",
@@ -535,10 +540,6 @@
         "label": "Message Queue"
       },
       {
-        "id": "urn:ngm:class:protobuf",
-        "label": "Protocol Buffers"
-      },
-      {
         "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
@@ -549,6 +550,10 @@
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
         "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
       }
     ],
     "supports": [

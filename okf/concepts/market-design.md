@@ -25,7 +25,7 @@ contrastsWith:
   - urn:ngm:class:central-planning
 bridgesTo:
   - urn:ngm:class:tokenomics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:incentive-alignment
   - urn:ngm:class:strategyproof-mechanism

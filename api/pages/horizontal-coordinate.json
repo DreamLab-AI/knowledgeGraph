@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:horizontal-coordinate",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A horizontal coordinate is a position value on the two-dimensional, surface-following part of a reference system, such as geodetic latitude and longitude on a reference ellipsoid.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

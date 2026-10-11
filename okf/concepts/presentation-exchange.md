@@ -17,7 +17,7 @@ partOf:
   - urn:ngm:class:decentralized-identity-foundation
 relatedTo:
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Presentation Exchange

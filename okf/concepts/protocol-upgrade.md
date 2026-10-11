@@ -9,6 +9,10 @@ maturity: emerging
 quality: 0
 is-a:
   - urn:ngm:class:protocol-governance
+  - urn:ngm:class:bc-governance-and-regulation
+relatedTo:
+  - urn:ngm:class:on-chain-voting
+  - urn:ngm:class:decentralised-governance
 ---
 
 # Protocol Upgrade

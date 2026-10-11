@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:knowledge-management
   - urn:ngm:class:information-retrieval
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
 relatedTo:
   - urn:ngm:class:knowledge-graph

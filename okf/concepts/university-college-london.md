@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:ucl-quantum-science-and-technology-institute
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing
@@ -29,8 +29,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:digital-health
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:high-performance-computing
   - urn:ngm:class:federated-learning

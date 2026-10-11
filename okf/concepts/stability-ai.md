@@ -10,8 +10,8 @@ quality: 0.72
 is-a:
   - urn:ngm:class:generative-ai
 hasPart:
-  - urn:ngm:class:stable-diffusion-image-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:stable-audio
   - urn:ngm:class:stable-video-diffusion
   - urn:ngm:class:stablelm
@@ -36,7 +36,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
   - urn:ngm:class:latent-diffusion
 relatedTo:

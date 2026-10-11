@@ -23,7 +23,7 @@ Cryptoeconomics is the discipline that combines cryptography with economic incen
 - Securing [[Proof of Stake]] networks through [[Staking]] and slashing incentives.
 - Designing [[Consensus Mechanism]] rules that achieve [[Sybil Resistance]].
 - Structuring incentives for [[Decentralised Finance]] protocols and [[Smart Contract]] systems.
-- Informing [[Blockchain Governance]] and [[DAO]] reward and voting design.
+- Informing [[Blockchain Governance]] and [[Decentralised Autonomous Organisation]] reward and voting design.
 
 ### Provenance
 

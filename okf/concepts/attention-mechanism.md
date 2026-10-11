@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:matrix-multiplication
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:machine-translation
   - urn:ngm:class:long-range-dependency-modelling

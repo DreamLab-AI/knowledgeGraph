@@ -37,7 +37,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:training-data
   - urn:ngm:class:model-performance

@@ -26,7 +26,7 @@
         "label": "Software-Defined Networking"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -415,8 +415,8 @@
       "label": "Middleware"
     },
     {
-      "slug": "networkcomponent",
-      "label": "Networkcomponent"
+      "slug": "network-component",
+      "label": "Network Component"
     },
     {
       "slug": "physical-network-hardware",

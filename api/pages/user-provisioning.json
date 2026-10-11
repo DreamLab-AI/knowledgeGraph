@@ -67,8 +67,8 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:compliance",
@@ -249,10 +249,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -267,6 +263,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:saml",

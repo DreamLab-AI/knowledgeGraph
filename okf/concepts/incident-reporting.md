@@ -34,7 +34,7 @@ supports:
   - urn:ngm:class:risk-management
 standardizedBy:
   - urn:ngm:class:nis2-directive
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-27035
 relatedTo:
   - urn:ngm:class:incident-response

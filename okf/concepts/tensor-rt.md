@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:triton-inference-server
   - urn:ngm:class:autonomous-driving
 relatedTo:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:nvidia-corporation-jetson
   - urn:ngm:class:py-torch

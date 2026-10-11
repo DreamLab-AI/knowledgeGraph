@@ -21,8 +21,8 @@ enables:
   - urn:ngm:class:search-and-rescue-robotics
   - urn:ngm:class:planetary-exploration
 dependsOn:
-  - urn:ngm:class:ros
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:robot-operating-system
+  - urn:ngm:class:embedded-system
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:digital-twin

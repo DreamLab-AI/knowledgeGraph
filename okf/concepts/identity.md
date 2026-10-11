@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:access-control

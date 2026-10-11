@@ -16,7 +16,7 @@ enables:
 dependsOn:
   - urn:ngm:class:sampling
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
 uses:
   - urn:ngm:class:probability-theory

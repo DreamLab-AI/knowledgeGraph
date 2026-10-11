@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:audit-trail
   - urn:ngm:class:algorithmic-auditing
   - urn:ngm:class:ai-impact-assessment
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:post-market-monitoring
   - urn:ngm:class:redress-mechanism
@@ -36,18 +36,18 @@ enables:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-alignment
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:liability
   - urn:ngm:class:foundation-model
   - urn:ngm:class:artificial-intelligence
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:gdpr
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:voluntary-transparency
   - urn:ngm:class:self-regulation
@@ -66,9 +66,9 @@ supports:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-trustworthiness
 standardizedBy:
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 relatedTo:
   - urn:ngm:class:ai-governance
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:ai-ethics-board
   - urn:ngm:class:information-commissioner-s-office
   - urn:ngm:class:centre-for-data-ethics-and-innovation
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:gdpr
 ---
 

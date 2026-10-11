@@ -31,8 +31,8 @@ contrastsWith:
   - urn:ngm:class:relational-database
   - urn:ngm:class:document-store
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:graph-database
 uses:

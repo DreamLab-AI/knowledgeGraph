@@ -22,7 +22,7 @@ bridgesTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:knowledge-graph
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:schema-definition
   - urn:ngm:class:http-protocol
   - urn:ngm:class:type-system
@@ -35,7 +35,7 @@ relatedTo:
   - urn:ngm:class:api-management
   - urn:ngm:class:api-gateway
   - urn:ngm:class:g-rpc
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 ---
 
 # GraphQL

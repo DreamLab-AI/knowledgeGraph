@@ -16,7 +16,7 @@ enables:
 dependsOn:
   - urn:ngm:class:ethereum
 implements:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 contrastsWith:
   - urn:ngm:class:smart-contract
 uses:
@@ -25,12 +25,12 @@ uses:
 supports:
   - urn:ngm:class:gas-optimization
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 partOf:
   - urn:ngm:class:smart-contract
 relatedTo:
   - urn:ngm:class:token-standard
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 ---
 
 # Proxy Pattern

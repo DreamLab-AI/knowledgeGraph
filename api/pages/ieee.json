@@ -106,7 +106,7 @@
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -118,7 +118,7 @@
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       }
     ],
@@ -394,8 +394,8 @@
       "label": "Camera"
     },
     {
-      "slug": "decentralized-storage",
-      "label": "Decentralized Storage"
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
     },
     {
       "slug": "diagrams-as-code",

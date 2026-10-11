@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:financial-transparency
   - urn:ngm:class:decision-making
 contrastsWith:
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:governance

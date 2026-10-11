@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transfer-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A transfer orbit is an intermediate trajectory used to move a spacecraft between orbital states or dynamical regimes.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

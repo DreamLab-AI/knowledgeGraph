@@ -23,7 +23,7 @@ The Metaverse Ontology is a formal knowledge representation that classifies the 
     ![metaverse.png|818](assets/metaverse_1712344788144_0.png)
 
   - For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
-  - Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Models]].
+  - Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large Language Model]].
   - Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
     - Scope and Complexity of Linked-JSON vs JSON-LD
       - Linked-JSON: lightweight subset focused on linking data using `@id`

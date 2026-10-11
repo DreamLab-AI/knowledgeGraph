@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-unmixing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spectral unmixing is the estimation, from the spectrum of a mixed pixel, of the spectral signatures of the materials present (endmembers) and of their relative contributions to that pixel (abundances) [^1] [^2].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

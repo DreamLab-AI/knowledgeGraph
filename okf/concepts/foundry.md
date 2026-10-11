@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:json-data-interchange-format-rpc
   - urn:ngm:class:cheatcodes
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:nft
   - urn:ngm:class:evm-compatible-blockchain
   - urn:ngm:class:evm-compatible-blockchain

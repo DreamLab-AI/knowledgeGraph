@@ -61,8 +61,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
-        "label": "JSON Data Interchange Format"
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
       },
       {
         "id": "urn:ngm:class:schema-definition",
@@ -108,8 +108,8 @@
         "label": "gRPC"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       }
     ]
   },
@@ -144,7 +144,7 @@
         "label": "Data Format Specification"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -224,8 +224,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:rest",
@@ -296,8 +296,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:iso-iec",

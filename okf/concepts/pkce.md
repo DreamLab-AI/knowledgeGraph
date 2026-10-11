@@ -18,14 +18,14 @@ enables:
 dependsOn:
   - urn:ngm:class:oauth
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:bearer-token
 bridgesTo:
   - urn:ngm:class:identity-provider
 uses:
   - urn:ngm:class:oauth-2-0
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 supports:
   - urn:ngm:class:single-sign-on
 standardizedBy:
@@ -34,7 +34,7 @@ relatedTo:
   - urn:ngm:class:access-token
   - urn:ngm:class:refresh-token
   - urn:ngm:class:oauth
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 ---
 
 # Pkce

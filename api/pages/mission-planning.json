@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mission-planning",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mission planning is the preparation of schedules, command sequences and resource use that tell a spacecraft and ground system what to do over a period of time.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

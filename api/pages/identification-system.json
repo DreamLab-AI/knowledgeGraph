@@ -57,8 +57,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:biometric-binding-mechanism",
@@ -126,8 +126,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -212,8 +212,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

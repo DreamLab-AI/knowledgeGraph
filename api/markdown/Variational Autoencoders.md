@@ -7,7 +7,7 @@ Generative neural network architecture combining autoencoders with variational i
 - A variational autoencoder is a type of generative model that combines the concepts of autoencoders and variational inference. This page is a bit maths heavy.
 - An autoencoder is a type of neural network architecture that learns to encode and reconstruct input data, while reducing noise and dimensionality. It consists of an encoder network that maps the input data to a lower-dimensional latent space representation, and a decoder network that reconstructs the original data from this representation.
 - On the other hand, variational inference is a probabilistic approach to approximate complex probability distributions. It aims to approximate an intractable posterior distribution by learning a variational distribution that is easier to evaluate.
-- A variational autoencoder (VAE) brings together these two concepts by extending the traditional autoencoder framework with probabilistic modeling. Instead of encoding the input data into a deterministic latent vector, a VAE maps the data to a distribution in the [[Neural Network Latent Space]] .
+- A variational autoencoder (VAE) brings together these two concepts by extending the traditional autoencoder framework with probabilistic modeling. Instead of encoding the input data into a deterministic latent vector, a VAE maps the data to a distribution in the [[Latent Space]] .
 - At its core, a VAE consists of an encoder network that transforms the input data into two vectors: the mean and the standard deviation of a multivariate Gaussian distribution. These vectors represent the parameters of the variational distribution in the latent space. During the training process, the VAE samples from this distribution to generate a latent vector.
 - The sampled latent vector is then decoded by a decoder network, which reconstructs the original input data. The reconstruction loss in a VAE is typically measured as the similarity between the reconstructed data and the original input data.
 - The key innovation of a VAE lies in the training objective. In addition to the reconstruction loss, a VAE also introduces a regularization term called the Kullback-Leibler (KL) divergence. The KL divergence acts as a regularizer, encouraging the learned variational distribution to approximate a chosen prior distribution in the latent space, often a standard Gaussian.
@@ -98,7 +98,7 @@ Generative neural network architecture combining autoencoders with variational i
 - Architecture progression: Latent z → FC/Deconv layers → Reconstructed output
 - The decoder is parameterized by weights θ: p_θ(x|z)
 - **Design considerations**:
-- Use [[Batch Normalization]] or [[Layer Normalization]] for training stability
+- Use [[Batch Normalization]] or [[Layer Normalisation]] for training stability
 - [[Skip Connections]] (from encoder) can improve reconstruction quality
 - Output activation depends on data type: [[Sigmoid]] for [0,1], [[Tanh]] for [-1,1], none for unbounded
 - Modern decoders use [[Progressive Growing]], [[StyleGAN]]-inspired architectures, or [[Neural Radiance Fields]] for 3D generation
@@ -331,7 +331,7 @@ def vae_loss(x, x_recon, mu, log_var):
   3. Decode to reconstruct clean/complete data
 - Applications:
 - Missing pixel imputation in images
-- Sensor data completion in [[IoT]] systems
+- Sensor data completion in [[Internet of Things]] systems
 - Medical record completion
 
 ### Text and Language Modeling
@@ -345,7 +345,7 @@ def vae_loss(x, x_recon, mu, log_var):
 - [[Dialogue Systems]] with diverse responses
 - [[Neural Machine Translation]]
 - [[Text Style Transfer]]
-- [Updated 2025] [[Large Language Models]] integrate VAE-like latent spaces for controlled generation
+- [Updated 2025] [[Large Language Model]] integrate VAE-like latent spaces for controlled generation
 
 ### Molecular and Drug Design
 
@@ -392,7 +392,7 @@ def vae_loss(x, x_recon, mu, log_var):
 - Exchange flow analysis
 - Companies like [[Chainalysis]] and [[Elliptic]] use VAE-based models to identify suspicious transaction patterns
 - VAEs capture multi-modal distributions of legitimate transactions (exchanges, retail, peer-to-peer)
-- [Updated 2025] Integration with [[Graph Neural Networks]] for transaction graph analysis
+- [Updated 2025] Integration with [[Graph Neural Network]] for transaction graph analysis
 
 #### Cryptocurrency Price Prediction
 
@@ -419,14 +419,14 @@ def vae_loss(x, x_recon, mu, log_var):
 - Learn latent distribution of safe contract patterns
 - Identify outlier contracts with unusual patterns
 - **Execution analysis**:
-- Monitor contract state changes on [[Ethereum Smart Contract Platform]] or [[Binance Smart Chain]]
+- Monitor contract state changes on [[Ethereum]] or [[Binance Smart Chain]]
 - VAE learns normal execution patterns
 - Detect [[Reentrancy Attack|reentrancy attacks]], [[Flash Loan]] exploits
 - **Vulnerability detection**:
 - Train on labeled dataset of vulnerable vs. safe contracts
 - Semi-supervised VAE uses both labeled and unlabeled contracts
 - Latent space clustering reveals common vulnerability patterns
-- Applications in automated security auditing for [[DeFi]] protocols
+- Applications in automated security auditing for [[Decentralised Finance]] protocols
 - [Updated 2025] VAEs integrated with [[Symbolic Execution]] tools for comprehensive analysis
 
 #### Blockchain Data Compression
@@ -459,7 +459,7 @@ def vae_loss(x, x_recon, mu, log_var):
 - **Identity verification**:
 - Encode biometric or identity credentials to latent space
 - [[Zero-Knowledge Proof]] that latent code satisfies properties without revealing identity
-- Integration with [[Decentralized Identifier]] (DID) standards
+- Integration with [[Decentralised Identifier]] (DID) standards
 - [Updated 2025] VAEs combined with [[Homomorphic Encryption]] for encrypted computation
 
 #### Cryptocurrency Portfolio Optimization
@@ -469,7 +469,7 @@ def vae_loss(x, x_recon, mu, log_var):
 - Learn joint distribution of asset returns in latent space
 - Generate diverse portfolio samples for [[Monte Carlo]] simulation
 - Conditional VAE generates portfolios optimized for risk/return preferences
-- Applications in [[DeFi]] yield farming strategy optimization
+- Applications in [[Decentralised Finance]] yield farming strategy optimization
 
 ### Robotics and Autonomous Systems
 
@@ -615,7 +615,7 @@ def vae_loss(x, x_recon, mu, log_var):
 - **Property optimization**:
 - Condition VAE on molecular properties: [[Solubility]], [[Binding Affinity]], [[Toxicity]]
 - [[Multi-Objective Optimization]] in latent space
-- Predict properties from latent codes using [[Graph Neural Networks]]
+- Predict properties from latent codes using [[Graph Neural Network]]
 - **Platforms and tools**:
 - [[DeepChem]]: Open-source deep learning for drug discovery
 - [[RDKit]]: Cheminformatics toolkit for molecule manipulation
@@ -678,7 +678,7 @@ def vae_loss(x, x_recon, mu, log_var):
 
 #### Quantum Machine Learning
 
-- Quantum VAEs ([[QVAE]]) leverage [[Quantum Computation Paradigm]] for potential speedup and enhanced expressiveness
+- Quantum VAEs ([[QVAE]]) leverage [[Quantum Computing]] for potential speedup and enhanced expressiveness
 - **Architecture**:
 - [[Quantum Circuit]] encoder: Parameterized quantum gates map data to quantum state
 - Classical latent space: Measure quantum state to obtain latent variables
@@ -1092,7 +1092,7 @@ def plot_latent_traversal(vae, device, latent_dim=0, range_vals=(-3, 3), steps=1
 
 ### Integration with Foundation Models
 
-- VAEs combined with [[Large Language Models]] for controllable text generation
+- VAEs combined with [[Large Language Model]] for controllable text generation
 - [[Vision-Language Models]] using VAE latent spaces for cross-modal retrieval
 - [[Multimodal Learning]] with unified VAE representations across modalities
 
@@ -1134,7 +1134,7 @@ def plot_latent_traversal(vae, device, latent_dim=0, range_vals=(-3, 3), steps=1
 ## Metadata
 
 - **Topic**: [[Variational Autoencoders]]
-- **Domain**: [[Machine Learning Discipline]], [[Deep Learning]], [[Generative Models]]
+- **Domain**: [[Machine Learning]], [[Deep Learning]], [[Generative Models]]
 - **Related Concepts**: [[Autoencoder]], [[Variational Inference]], [[Generative Adversarial Networks]], [[Diffusion Models]], [[Latent Space]]
 - **Applications**: [[Image Generation]], [[Anomaly Detection]], [[Drug Discovery]], [[Robotics]], [[Blockchain Analytics]]
 - **Maturity**: Mature (established since 2013, widely deployed)

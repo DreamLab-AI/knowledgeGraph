@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:prime-meridian",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A prime meridian is the meridian of a reference ellipsoid that is chosen to carry zero longitude, from which the longitude of other points is measured.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:meridian",

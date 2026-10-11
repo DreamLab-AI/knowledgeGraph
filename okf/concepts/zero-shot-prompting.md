@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:in-context-learning
 bridgesTo:
   - urn:ngm:class:few-shot-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Zero-Shot Prompting

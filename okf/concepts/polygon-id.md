@@ -8,7 +8,7 @@ description: A decentralised identity framework that uses zero-knowledge proofs 
 maturity: emerging
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 requires:
   - urn:ngm:class:zero-knowledge-proof
 enables:

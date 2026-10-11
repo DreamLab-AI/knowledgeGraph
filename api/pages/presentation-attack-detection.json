@@ -166,16 +166,16 @@
         "label": "Privacy By Design"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:digital-certificate",
@@ -296,7 +296,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -313,7 +313,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:data",
@@ -342,10 +342,6 @@
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -356,6 +352,10 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
       }
     ],
     "supports": [

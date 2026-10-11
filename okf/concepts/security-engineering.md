@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:risk-management
   - urn:ngm:class:cryptography
 enables:
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:data-protection
   - urn:ngm:class:defence-in-depth
 contrastsWith:
@@ -26,7 +26,7 @@ bridgesTo:
   - urn:ngm:class:supply-chain-security
 uses:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:access-control
   - urn:ngm:class:penetration-testing
   - urn:ngm:class:authorisation

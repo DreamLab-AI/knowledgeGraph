@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Magnetometer
 resource: urn:ngm:class:spacecraft-magnetometer
 domain: space-science-and-systems
+description: A spacecraft magnetometer measures the local magnetic-field vector in its sensor frame.
 maturity: draft
 quality: 0
 is-a:
@@ -14,3 +15,5 @@ relatedTo:
 ---
 
 # Spacecraft Magnetometer
+
+A spacecraft magnetometer measures the local magnetic-field vector in its sensor frame.

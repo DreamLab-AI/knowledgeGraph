@@ -14,13 +14,13 @@ hasPart:
 requires:
   - urn:ngm:class:cryptographic-proof
 enables:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:file-storage
 dependsOn:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 implements:
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 contrastsWith:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:proof-of-stake

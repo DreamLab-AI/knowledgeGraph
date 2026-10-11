@@ -28,7 +28,7 @@ requires:
   - urn:ngm:class:fitness-function
   - urn:ngm:class:membership-function
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:pattern-recognition
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:autonomous-system
@@ -52,7 +52,7 @@ implements:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:transformer
   - urn:ngm:class:deep-neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
 contrastsWith:
   - urn:ngm:class:symbolic-ai
@@ -62,7 +62,7 @@ uses:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:transformer
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-neural-network
   - urn:ngm:class:attention-mechanism
 supports:
@@ -77,7 +77,7 @@ supports:
   - urn:ngm:class:drug-discovery
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:reasoning
   - urn:ngm:class:cognitive-ai

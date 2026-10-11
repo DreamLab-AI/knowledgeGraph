@@ -88,7 +88,7 @@
         "label": "Informed Consent"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning Decoder"
       },
       {
@@ -168,8 +168,8 @@
         "label": "Computational Neuroscience"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:biocompatible-engineering",
@@ -432,11 +432,6 @@
       "slug": "human-factors"
     },
     {
-      "id": "urn:ngm:class:inclusive-design",
-      "label": "Inclusive Design",
-      "slug": "inclusive-design"
-    },
-    {
       "id": "urn:ngm:class:non-functional-requirement",
       "label": "Non-Functional Requirement",
       "slug": "non-functional-requirement"
@@ -472,11 +467,6 @@
       "slug": "automation"
     },
     {
-      "id": "urn:ngm:class:design-thinking",
-      "label": "Design Thinking",
-      "slug": "design-thinking"
-    },
-    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
@@ -497,9 +487,9 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:knowledge-representation",
-      "label": "Knowledge Representation",
-      "slug": "knowledge-representation"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -543,8 +533,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -677,10 +667,6 @@
       {
         "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG 2.2"
-      },
-      {
-        "id": "urn:ngm:class:closed-world-assumption",
-        "label": "Closed World Assumption"
       }
     ],
     "contrastsWith": [
@@ -705,16 +691,16 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:retrofitting",
-        "label": "Retrofitting"
-      },
-      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
       },
       {
         "id": "urn:ngm:class:human-in-the-loop",
         "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
@@ -849,8 +835,8 @@
         "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:european-accessibility-act",
-        "label": "European Accessibility Act"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       }
     ],
     "partOf": [

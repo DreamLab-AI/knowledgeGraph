@@ -26,7 +26,7 @@ hasPart:
   - urn:ngm:class:subscription-paywall
   - urn:ngm:class:content-moderation
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:persistent-storage
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:user-authentication
@@ -67,7 +67,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:image-generation
   - urn:ngm:class:embedding-search
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:speech-synthesis
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:speech-synthesis
@@ -87,7 +87,7 @@ standardizedBy:
   - urn:ngm:class:gdpr
   - urn:ngm:class:ofcom
   - urn:ngm:class:uk-online-safety-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ftc-ai-enforcement
   - urn:ngm:class:ofcom
 relatedTo:

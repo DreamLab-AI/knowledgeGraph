@@ -26,7 +26,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:normalising-flow
 bridgesTo:
   - urn:ngm:class:computational-biology

@@ -35,8 +35,8 @@ uses:
 supports:
   - urn:ngm:class:distributed-team-collaboration
 standardizedBy:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 relatedTo:
   - urn:ngm:class:3-d-content-generation
   - urn:ngm:class:digital-twin

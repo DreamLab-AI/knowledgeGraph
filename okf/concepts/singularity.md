@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:artificial-general-intelligence
   - urn:ngm:class:compute-infrastructure
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 enables:
   - urn:ngm:class:intelligence-amplification
   - urn:ngm:class:mind-uploading
@@ -36,7 +36,7 @@ enables:
   - urn:ngm:class:economics
   - urn:ngm:class:technological-acceleration
 dependsOn:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:reasoning

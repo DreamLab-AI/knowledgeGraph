@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:parameter
 requires:
   - urn:ngm:class:embedding-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:fine-tuning

@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0.8
 is-a:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:media-forensics
   - urn:ngm:class:signal-processing
   - urn:ngm:class:deep-learning
@@ -59,7 +59,7 @@ bridgesTo:
   - urn:ngm:class:ai-regulation
 uses:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:face-recognition
@@ -79,7 +79,7 @@ supports:
   - urn:ngm:class:identity-verification
 standardizedBy:
   - urn:ngm:class:c2-pa
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:online-safety-act-2023
 relatedTo:
   - urn:ngm:class:generative-ai

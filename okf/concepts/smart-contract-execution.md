@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:blockchain-node
   - urn:ngm:class:cryptographic-signature
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-transfer
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:non-fungible-token
@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:centralised-execution
 bridgesTo:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:decentralised-ai-inference
 uses:
   - urn:ngm:class:smart-contract

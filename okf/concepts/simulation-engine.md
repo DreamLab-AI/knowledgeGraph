@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:multithreading
   - urn:ngm:class:numerical-integration
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:robotics
   - urn:ngm:class:agent-based-modelling
 partOf:

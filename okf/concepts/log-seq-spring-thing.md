@@ -14,7 +14,7 @@ uses:
   - urn:ngm:class:ontology
 relatedTo:
   - urn:ngm:class:knowledge-management
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
 ---
 

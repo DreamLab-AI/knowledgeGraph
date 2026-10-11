@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:bc-governance-and-regulation
 relatedTo:
   - urn:ngm:class:governance-token
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 ---
 
 # Holographic Consensus

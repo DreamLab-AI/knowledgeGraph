@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:marine-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Marine remote sensing is remote sensing applied to oceans and coasts, in which information about the sea is obtained from a distance, typically from aircraft or satellites.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

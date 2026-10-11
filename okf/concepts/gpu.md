@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:opencl
   - urn:ngm:class:vulkan
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:augmented-reality
 standardizedBy:

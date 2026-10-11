@@ -42,8 +42,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "contrastsWith": [
@@ -64,8 +64,8 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "supports": [
@@ -95,8 +95,8 @@
         "label": "OAuth"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ]
   },
@@ -234,7 +234,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:data",
@@ -246,10 +246,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation Server"
-      },
       {
         "id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"

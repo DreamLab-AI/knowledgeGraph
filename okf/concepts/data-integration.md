@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:message-broker
   - urn:ngm:class:data-pipeline
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:data-catalogue
 standardizedBy:
   - urn:ngm:class:sql

@@ -10,13 +10,13 @@ quality: 0.5
 is-a:
   - urn:ngm:class:software-engineering
 hasPart:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 enables:
   - urn:ngm:class:knowledge-management
 relatedTo:
   - urn:ngm:class:machine-learning-discipline-pipeline
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
 ---
 
 # Practitioner Learning Roadmap Backlog

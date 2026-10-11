@@ -89,7 +89,7 @@ relatedTo:
   - urn:ngm:class:data-provenance
   - urn:ngm:class:c2-pa
   - urn:ngm:class:deepfakes
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:information-security
   - urn:ngm:class:neural-network
 ---

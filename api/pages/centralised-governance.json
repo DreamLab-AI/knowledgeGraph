@@ -41,8 +41,8 @@
         "label": "Decentralised Governance"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:decentralisation",
@@ -311,8 +311,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
     },
     {
       "slug": "on-chain-voting",

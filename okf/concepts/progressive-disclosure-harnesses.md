@@ -23,7 +23,7 @@ hasPart:
 requires:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:embeddings
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:context-window
   - urn:ngm:class:foundation-model
   - urn:ngm:class:function-calling
@@ -41,7 +41,7 @@ enables:
   - urn:ngm:class:agentic-rag
 dependsOn:
   - urn:ngm:class:agent-loop
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vector-database
   - urn:ngm:class:embeddings
   - urn:ngm:class:model-context-protocol
@@ -79,7 +79,7 @@ supports:
   - urn:ngm:class:harness-configuration-packs
 standardizedBy:
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:agent-memory-layers
   - urn:ngm:class:harness-configuration-packs

@@ -25,10 +25,10 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:latency
 uses:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:smart-city
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:edge-ai
   - urn:ngm:class:internet-of-things
 relatedTo:

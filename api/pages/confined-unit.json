@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:confined-unit",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Confined unit is a hydrogeological unit whose water is held under raised pressure beneath a confining bed, as the Groundwater Project uses the phrase.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

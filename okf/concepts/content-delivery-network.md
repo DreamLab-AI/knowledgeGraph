@@ -17,13 +17,18 @@ hasPart:
 requires:
   - urn:ngm:class:anycast-routing
   - urn:ngm:class:dns
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:origin-server
+  - urn:ngm:class:load-balancing
 enables:
   - urn:ngm:class:low-latency
   - urn:ngm:class:edge-computing
   - urn:ngm:class:ddos-mitigation
   - urn:ngm:class:low-latency
   - urn:ngm:class:origin-offload
+  - urn:ngm:class:bandwidth-optimization
+  - urn:ngm:class:latency
+  - urn:ngm:class:serverless-architecture
 contrastsWith:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:origin-server
@@ -31,12 +36,19 @@ bridgesTo:
   - urn:ngm:class:edge-inference
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:edge-inference
+  - urn:ngm:class:distributed-systems
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:http-caching
   - urn:ngm:class:encryption
   - urn:ngm:class:quic
   - urn:ngm:class:anycast-routing
   - urn:ngm:class:quic
+  - urn:ngm:class:edge-computing
+  - urn:ngm:class:network-protocol
+  - urn:ngm:class:network-security
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:dns
 supports:
   - urn:ngm:class:scalability-pattern
   - urn:ngm:class:cloud-infrastructure
@@ -49,6 +61,10 @@ relatedTo:
   - urn:ngm:class:reverse-proxy
   - urn:ngm:class:caching
   - urn:ngm:class:web-performance
+  - urn:ngm:class:cloud-infrastructure
+  - urn:ngm:class:internet-infrastructure
+  - urn:ngm:class:content-delivery-network-cdn
+  - urn:ngm:class:http-caching
 ---
 
 # Content Delivery Network

@@ -99,7 +99,7 @@ relatedTo:
   - urn:ngm:class:supir
   - urn:ngm:class:diffbir
   - urn:ngm:class:comfy-ui
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:esrgan
   - urn:ngm:class:image-classification
   - urn:ngm:class:object-detection

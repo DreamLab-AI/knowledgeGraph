@@ -4,6 +4,7 @@ type: Class
 title: Photosphere
 resource: urn:ngm:class:photosphere
 domain: space-science-and-systems
+description: Photosphere is the layer of the Sun commonly called its surface, and the first layer of the solar atmosphere.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Photosphere
+
+Photosphere is the layer of the Sun commonly called its surface, and the first layer of the solar atmosphere.[^1]

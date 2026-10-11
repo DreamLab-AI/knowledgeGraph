@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -27,7 +27,7 @@
         "label": "Cryptographic Hashing"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -41,7 +41,7 @@
         "label": "Digital Onboarding"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti Money Laundering"
       }
     ],
@@ -85,7 +85,7 @@
         "label": "Optical Character Recognition"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -129,15 +129,15 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:digital-identity-framework",
         "label": "Digital Identity Framework"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ]
   },
@@ -161,20 +161,16 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identifier",
-        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-claim",
@@ -191,6 +187,10 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
       }
     ],
     "requires": [
@@ -233,8 +233,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:digital-presence",
@@ -243,10 +243,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:privacy",
@@ -259,6 +255,10 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -375,16 +375,16 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
         "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
-      },
-      {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:w3-c-did-core",
@@ -407,7 +407,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "KYC Know Your Customer"
       },
       {

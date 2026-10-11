@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:hash-function
 standardizedBy:
   - urn:ngm:class:ietf-rfc
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
 relatedTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:verifiable-credentials

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:infra-security-and-identity
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:pseudonymity
   - urn:ngm:class:peer-to-peer-network
@@ -31,7 +31,7 @@ uses:
 relatedTo:
   - urn:ngm:class:selfish-mining
   - urn:ngm:class:51-attack
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:consensus-mechanism
 ---
 

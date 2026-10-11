@@ -27,8 +27,8 @@ dependsOn:
 implements:
   - urn:ngm:class:3-d-file-format
 contrastsWith:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:collada
   - urn:ngm:class:obj-format
 bridgesTo:
@@ -36,8 +36,8 @@ bridgesTo:
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:robotics
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 uses:
   - urn:ngm:class:binary-encoding
   - urn:ngm:class:keyframe-animation

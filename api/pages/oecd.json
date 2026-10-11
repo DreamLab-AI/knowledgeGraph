@@ -87,7 +87,7 @@
         "label": "World Trade Organization"
       },
       {
-        "id": "urn:ngm:class:imf",
+        "id": "urn:ngm:class:international-monetary-fund",
         "label": "International Monetary Fund"
       }
     ],
@@ -159,7 +159,7 @@
         "label": "FATF"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -167,7 +167,7 @@
         "label": "Financial Stability Board"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ]
@@ -412,10 +412,6 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "accountability-oecd",
       "label": "Accountability (OECD)"
     },
@@ -462,6 +458,10 @@
     {
       "slug": "mi-ca",
       "label": "MiCA"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "tax-treatment-crypto",

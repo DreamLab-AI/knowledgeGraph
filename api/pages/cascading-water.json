@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cascading-water",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Cascading water is groundwater that trickles or pours through cracks or perforations down the casing or uncased borehole above the water level in a well.[^1] It is a well-construction and well-measurement term, not a separate body of water in the ground.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

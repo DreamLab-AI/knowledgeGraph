@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:european-securities-and-markets-authority
 implements:
   - urn:ngm:class:crypto-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:crypto-regulation
 contrastsWith:
   - urn:ngm:class:mifid-ii
@@ -31,13 +31,13 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:asset-referenced-token
   - urn:ngm:class:e-money-token
 supports:
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 standardizedBy:
   - urn:ngm:class:european-union
   - urn:ngm:class:eba

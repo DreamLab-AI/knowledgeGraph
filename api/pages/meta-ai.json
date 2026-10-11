@@ -111,8 +111,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:instruction-tuning",
@@ -127,7 +127,7 @@
         "label": "Self-Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
@@ -154,7 +154,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:zero-shot-learning",
@@ -208,8 +208,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

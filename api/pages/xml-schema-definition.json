@@ -190,7 +190,7 @@
         "label": "Validation Tools"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -270,8 +270,8 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "dependsOn": [
@@ -310,7 +310,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -318,8 +318,8 @@
         "label": "MaterialX"
       },
       {
-        "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       },
       {
         "id": "urn:ngm:class:metaverse",
@@ -388,12 +388,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format-schema",
-        "label": "JSON Schema"
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
       },
       {
-        "id": "urn:ngm:class:json-ld",
-        "label": "JSON-LD"
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
       },
       {
         "id": "urn:ngm:class:owl",
@@ -460,8 +460,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:khronos-group",

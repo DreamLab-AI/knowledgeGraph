@@ -22,7 +22,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:privacy
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:identity-resolution
 supports:
   - urn:ngm:class:conversion-rate-optimisation

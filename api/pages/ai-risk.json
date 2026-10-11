@@ -56,8 +56,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:high-risk-ai-system",
@@ -66,8 +66,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-23894",
@@ -112,7 +112,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -427,12 +427,12 @@
       "label": "AI Applications"
     },
     {
-      "slug": "ai-safety-research",
-      "label": "ai safety research"
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
     },
     {
-      "slug": "aiethics",
-      "label": "AIEthics"
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
     },
     {
       "slug": "hallucination",

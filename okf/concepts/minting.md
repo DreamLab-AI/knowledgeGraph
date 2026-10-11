@@ -19,8 +19,8 @@ contrastsWith:
   - urn:ngm:class:deflationary-token
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 relatedTo:
   - urn:ngm:class:tokenomics
   - urn:ngm:class:inflation

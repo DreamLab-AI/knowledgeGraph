@@ -38,9 +38,9 @@ enables:
   - urn:ngm:class:voice-interfaces
   - urn:ngm:class:virtual-assistant
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:vector-databases
   - urn:ngm:class:embedding-models
 implements:
@@ -58,7 +58,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:bleu-score
   - urn:ngm:class:human-evaluation
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:bleu-score
   - urn:ngm:class:bertscore
@@ -71,9 +71,9 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:model-context-protocol
 relatedTo:
   - urn:ngm:class:multi-turn-dialogue

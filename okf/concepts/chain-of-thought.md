@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:programme-of-thought
   - urn:ngm:class:graph-of-thought
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:autoregressive-model
@@ -79,7 +79,7 @@ relatedTo:
   - urn:ngm:class:planning
   - urn:ngm:class:ai-agent
   - urn:ngm:class:chain-of-thought-reasoning
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:neuro-symbolic-ai
   - urn:ngm:class:automatic-prompt-optimisation
 ---

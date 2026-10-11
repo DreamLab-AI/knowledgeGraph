@@ -192,8 +192,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "contrastsWith": [
@@ -296,6 +296,10 @@
       {
         "id": "urn:ngm:class:information-management",
         "label": "Information Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
       }
     ]
   },

@@ -116,7 +116,7 @@
         "label": "Coreference Resolution"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
@@ -158,7 +158,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -330,10 +330,6 @@
         "label": "Dependency Parsing"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:part-of-speech-tagging",
         "label": "Part-of-Speech Tagging"
       },
@@ -368,8 +364,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",

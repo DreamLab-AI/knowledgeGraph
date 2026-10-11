@@ -16,7 +16,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
 uses:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-video
 supports:
   - urn:ngm:class:ai-governance-and-ethics

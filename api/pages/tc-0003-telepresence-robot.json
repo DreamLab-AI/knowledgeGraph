@@ -149,9 +149,14 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -161,32 +166,32 @@
         "label": "Haptic Feedback"
       },
       {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:video-conferencing",
-        "label": "Video Conferencing"
-      },
-      {
-        "id": "urn:ngm:class:volumetric-capture",
-        "label": "Volumetric Capture"
-      },
-      {
-        "id": "urn:ngm:class:actuator",
-        "label": "Actuator"
-      },
-      {
-        "id": "urn:ngm:class:locomotion",
-        "label": "Locomotion System"
-      },
-      {
-        "id": "urn:ngm:class:onboard-computer",
-        "label": "Onboard Computer"
-      },
-      {
-        "id": "urn:ngm:class:power-supply",
-        "label": "Power Supply"
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
       }
     ],
     "requires": [
@@ -271,20 +276,20 @@
         "label": "WebRTC"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:localisation",
         "label": "Localisation"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:consensus-algorithm",
@@ -331,6 +336,10 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
@@ -353,16 +362,20 @@
       {
         "id": "urn:ngm:class:metaverse-workspaces",
         "label": "Metaverse Workspaces"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
       },
       {
         "id": "urn:ngm:class:neural-rendering",
@@ -383,14 +396,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:inertial-measurement-unit",
-        "label": "Inertial Measurement Unit"
-      },
-      {
-        "id": "urn:ngm:class:lidar",
-        "label": "Lidar"
       }
     ],
     "supports": [
@@ -489,12 +494,24 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
       },
       {
         "id": "urn:ngm:class:presence-technology",
         "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -507,18 +524,6 @@
       {
         "id": "urn:ngm:class:legged-robot",
         "label": "Legged Robot"
-      },
-      {
-        "id": "urn:ngm:class:swarm-robotics",
-        "label": "Swarm Robotics"
-      },
-      {
-        "id": "urn:ngm:class:unmanned-aerial-vehicle",
-        "label": "Unmanned Aerial Vehicle"
-      },
-      {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
       }
     ]
   },

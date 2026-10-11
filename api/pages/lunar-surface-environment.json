@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lunar-surface-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Lunar surface environment is the space environment at the surface of the Earth's Moon.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

@@ -4,7 +4,7 @@ Google DeepMind is an AI research and development division of Alphabet Inc., for
 
 - Google DeepMind sits at the apex of modern AI research, combining the complementary strengths of two historically significant laboratories into a single unified entity.
 - **Historical roots** — DeepMind was founded in London in 2010 by Demis Hassabis, Shane Legg, and Mustafa Suleyman. Google Brain emerged from a 2011 internal project at Google led by Jeff Dean and Andrew Ng, becoming the company's core deep learning research unit. Google acquired DeepMind in 2014 for approximately £400 million.
-- **The 2023 merger** — In April 2023, Alphabet merged the two labs under the Google DeepMind banner, with Demis Hassabis as CEO. The rationale was to eliminate duplication, pool compute resources, and accelerate delivery of [[Foundation Models]] and AI-powered products.
+- **The 2023 merger** — In April 2023, Alphabet merged the two labs under the Google DeepMind banner, with Demis Hassabis as CEO. The rationale was to eliminate duplication, pool compute resources, and accelerate delivery of [[Foundation Model]] and AI-powered products.
 - **Scale** — The organisation employs several thousand researchers and engineers across London (HQ), Mountain View, New York, Paris, Tel Aviv, and other cities.
 - **Mission** — Formally expressed as "solving intelligence, and then using that to solve everything else," with an explicit commitment to [[AI Safety Research]] as a co-equal research pillar alongside capability development.
 - **Relationship to Google** — Products and capabilities are integrated into Google Search, Google Cloud Vertex AI, Gmail, Google Workspace, YouTube, and Waymo, giving research direct commercial expression.
@@ -18,7 +18,7 @@ Google DeepMind is an AI research and development division of Alphabet Inc., for
 - **MuZero (2020)** — Extended AlphaZero to environments without known rules using [[Model-Based Reinforcement Learning]].
 - **[[AlphaFold]] 2 (2020)** — Predicted protein three-dimensional structure from amino acid sequence with near-experimental accuracy, achieving a breakthrough in [[Computational Biology]] and [[Drug Discovery]] that earned Demis Hassabis the 2024 Nobel Prize in Chemistry.
 - **AlphaFold 3 (2024)** — Extended predictions to DNA, RNA, and small molecules, further expanding the scope of [[Protein Structure Prediction]].
-- **[[Gemini Multimodal Language Model]] (2023–2025)** — A family of natively multimodal [[Large Language Models]] (Gemini Ultra, Pro, Flash, Nano) integrated into Google products, competing with GPT-4 and [[Anthropic]] Claude models.
+- **[[Gemini Multimodal Language Model]] (2023–2025)** — A family of natively multimodal [[Large Language Model]] (Gemini Ultra, Pro, Flash, Nano) integrated into Google products, competing with GPT-4 and [[Anthropic]] Claude models.
 - **AlphaCode (2022) / AlphaCode 2 (2023)** — Code generation systems demonstrating competitive-programming-level performance, contributing to [[AI-Assisted Software Engineering]].
 - **Lyria (2023)** — A generative music model, extending DeepMind's reach into creative [[Generative AI]].
 - **Veo (2024)** — A video generation model integrating [[Diffusion Models]] and temporal reasoning.
@@ -54,7 +54,7 @@ Google DeepMind is an AI research and development division of Alphabet Inc., for
 
 ### Standards & Context
 
-- **Chinchilla Scaling Laws** — DeepMind's 2022 paper established compute-optimal training recipes that influenced [[Large Language Models]] training across the industry.
+- **Chinchilla Scaling Laws** — DeepMind's 2022 paper established compute-optimal training recipes that influenced [[Large Language Model]] training across the industry.
 - **Model Cards & Safety Evaluations** — Gemini model releases include detailed model cards, red-team evaluations, and responsible deployment documentation.
 - **Open Science** — AlphaFold model weights and the Protein Structure Database are publicly released under open licences; some RL codebases (e.g., Acme, TRFL) are open-sourced.
 - **Regulatory Engagement** — Actively engaged with the UK Information Commissioner's Office, the EU AI Office, and equivalent bodies for compliance with [[AI Governance]] obligations.

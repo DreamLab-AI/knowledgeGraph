@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar-instrument",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A radar instrument is a sensor that transmits a microwave signal towards a target and detects the backscattered portion of the returned signal.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

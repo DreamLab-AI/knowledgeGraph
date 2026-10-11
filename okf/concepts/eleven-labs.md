@@ -85,7 +85,7 @@ supports:
   - urn:ngm:class:speech-and-voice
   - urn:ngm:class:voice-memo
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-regulation
 relatedTo:
   - urn:ngm:class:deepfake-detection

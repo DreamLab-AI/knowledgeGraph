@@ -8,7 +8,7 @@ description: Reinforcement learning is a machine learning paradigm in which agen
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:policy-gradient-methods
@@ -38,9 +38,9 @@ uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:automated-planning
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:multi-agent-system

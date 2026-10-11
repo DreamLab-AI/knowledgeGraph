@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:challenge-response-protocol
 requires:
   - urn:ngm:class:cryptographic-keys
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-channel
 enables:
   - urn:ngm:class:authorisation

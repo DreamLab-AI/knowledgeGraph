@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-circadian-rhythm",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight circadian rhythm is the timing of the roughly daily biological cycles of an astronaut, including sleep and wakefulness, as it is altered by the light and dark cycles, isolation and workload of a mission.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

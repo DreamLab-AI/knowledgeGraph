@@ -28,7 +28,7 @@
         "label": "AI Documentation"
       },
       {
-        "id": "urn:ngm:class:ai-documentation-standards",
+        "id": "urn:ngm:class:ai-documentation",
         "label": "AI documentation"
       },
       {
@@ -73,7 +73,7 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -99,15 +99,15 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-5338-2023",
         "label": "ISO-IEC 5338 2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       }
     ],

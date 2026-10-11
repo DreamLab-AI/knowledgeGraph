@@ -91,7 +91,7 @@ relatedTo:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cli-multi-agent-systems
   - urn:ngm:class:distributed-computing
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:smart-contract
 ---

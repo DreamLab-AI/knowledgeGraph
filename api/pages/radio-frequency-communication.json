@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radio-frequency-communication",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Radio-frequency communication carries information by modulating a radio-frequency electromagnetic carrier for transmission and recovering the information at a receiver.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

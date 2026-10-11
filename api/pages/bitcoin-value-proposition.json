@@ -256,20 +256,20 @@
         "label": "Fiat Currency"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:gold",
         "label": "Gold"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "DeFi"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:traditional-banking",
@@ -485,11 +485,6 @@
       "slug": "bearer-instrument"
     },
     {
-      "id": "urn:ngm:class:behavioural-economics",
-      "label": "Behavioural Economics",
-      "slug": "behavioural-economics"
-    },
-    {
       "id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science",
       "slug": "complexity-science"
@@ -530,11 +525,6 @@
       "slug": "information-theory"
     },
     {
-      "id": "urn:ngm:class:institutional-economics",
-      "label": "Institutional Economics",
-      "slug": "institutional-economics"
-    },
-    {
       "id": "urn:ngm:class:network-component",
       "label": "Network Component",
       "slug": "network-component"
@@ -543,11 +533,6 @@
       "id": "urn:ngm:class:permissionless-asset",
       "label": "Permissionless Asset",
       "slug": "permissionless-asset"
-    },
-    {
-      "id": "urn:ngm:class:political-economy",
-      "label": "Political Economy",
-      "slug": "political-economy"
     },
     {
       "id": "urn:ngm:class:social-science",
@@ -585,6 +570,11 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-system",
       "label": "Distributed System",
       "slug": "distributed-system"
@@ -595,14 +585,34 @@
       "slug": "multi-party-database"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:state-machine-replication",
       "label": "State Machine Replication",
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -625,6 +635,11 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:concurrent-computing",
       "label": "Concurrent Computing",
       "slug": "concurrent-computing"
@@ -640,6 +655,11 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -650,9 +670,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:networked-systems",
@@ -660,24 +680,24 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -690,9 +710,9 @@
       "slug": "infra-security-and-identity"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -711,12 +731,12 @@
         "label": "Blockchain Economics"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
@@ -795,7 +815,7 @@
         "label": "Hyperbitcoinization"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -889,10 +909,6 @@
         "label": "Bitcoin Centralisation Risks"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
-        "label": "Central Bank Digital Currency"
-      },
-      {
         "id": "urn:ngm:class:monetary-policy-implementation",
         "label": "Monetary Policy Implementation"
       },
@@ -903,6 +919,10 @@
       {
         "id": "urn:ngm:class:physical-asset",
         "label": "Physical Asset"
+      },
+      {
+        "id": "urn:ngm:class:bank-deposit",
+        "label": "Bank Deposit"
       }
     ],
     "bridgesTo": [
@@ -915,7 +935,7 @@
         "label": "Bitcoin Protocol"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -983,7 +1003,7 @@
         "label": "Fixed Supply Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -1009,19 +1029,15 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:erc-20-token-standard",
+        "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
       },
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
-        "label": "MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Request for Comments"
       },
       {
@@ -1037,6 +1053,10 @@
         "label": "ISO 24165 Digital Token Identifier"
       },
       {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
         "id": "urn:ngm:class:bank-of-england",
         "label": "Bank of England"
       }
@@ -1045,10 +1065,6 @@
       {
         "id": "urn:ngm:class:functions-of-money",
         "label": "Functions of Money"
-      },
-      {
-        "id": "urn:ngm:class:decision-science",
-        "label": "Decision Science"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -1063,16 +1079,20 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:distributed-ledger",
-        "label": "Distributed Ledger"
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
       }
     ],
     "relatedTo": [
@@ -1636,7 +1656,7 @@
       "label": "Cashu"
     },
     {
-      "slug": "cbdcs",
+      "slug": "central-bank-digital-currency",
       "label": "CBDCs"
     },
     {

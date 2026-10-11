@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:robo-actuation-and-control
 relatedTo:
   - urn:ngm:class:forward-kinematics
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Robot Simulation

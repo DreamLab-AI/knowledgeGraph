@@ -171,7 +171,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -360,12 +360,12 @@
       "label": "Cyber Security and Cryptography"
     },
     {
-      "slug": "tee",
-      "label": "TEE"
-    },
-    {
       "slug": "trust-infrastructure",
       "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "trusted execution environment"
     }
   ]
 }

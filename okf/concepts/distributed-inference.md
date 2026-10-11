@@ -27,7 +27,7 @@ uses:
 supports:
   - urn:ngm:class:model-serving
 standardizedBy:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:model-serving
 relatedTo:

@@ -17,14 +17,14 @@ enables:
 bridgesTo:
   - urn:ngm:class:digital-asset
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:code-generation
   - urn:ngm:class:agentic-ai
 relatedTo:
   - urn:ngm:class:software-engineering
   - urn:ngm:class:software-testing
   - urn:ngm:class:software-architecture
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # AI-Augmented Software Engineering

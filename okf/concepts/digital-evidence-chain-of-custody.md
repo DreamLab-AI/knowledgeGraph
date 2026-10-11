@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:evidence-integrity-verification
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:evidence-collection-protocol
   - urn:ngm:class:legal-framework
 bridgesTo:

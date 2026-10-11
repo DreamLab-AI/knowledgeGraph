@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:lightning-network
 hasPart:
   - urn:ngm:class:bolt-11
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:gossip-protocol
   - urn:ngm:class:onion-routing
 requires:
@@ -21,7 +21,7 @@ requires:
   - urn:ngm:class:hashed-timelock-contract
 enables:
   - urn:ngm:class:bolt-11
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:micropayment
   - urn:ngm:class:peer-to-peer-payment
 implements:

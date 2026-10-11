@@ -100,7 +100,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bim-virtual-model",
+        "id": "urn:ngm:class:building-information-modelling",
         "label": "Building Information Modelling"
       },
       {
@@ -302,7 +302,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

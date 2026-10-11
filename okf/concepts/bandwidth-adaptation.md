@@ -99,7 +99,7 @@ standardizedBy:
   - urn:ngm:class:3-gpp
   - urn:ngm:class:itu-t
 relatedTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:forward-error-correction
   - urn:ngm:class:latency-optimisation
   - urn:ngm:class:network-slicing

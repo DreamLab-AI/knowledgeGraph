@@ -12,12 +12,12 @@ is-a:
   - urn:ngm:class:layer2
   - urn:ngm:class:blockchain-domain
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:validator-node
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:smart-contract

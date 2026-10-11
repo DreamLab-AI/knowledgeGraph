@@ -88,7 +88,7 @@ standardizedBy:
   - urn:ngm:class:w3c-decentralized-governance
   - urn:ngm:class:iso-37001-anti-bribery-management
 partOf:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:virtual-community-platform
   - urn:ngm:class:platform-cooperative
   - urn:ngm:class:digital-public-infrastructure

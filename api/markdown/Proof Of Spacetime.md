@@ -1,6 +1,6 @@
 Proof of Spacetime (PoSt) is a cryptographic consensus mechanism in which a participant repeatedly proves that it has continuously stored a specific set of data over a period of time, rather than expending computation as in proof of work. Used by decentralised storage networks such as Filecoin, it combines storage proofs with time-based challenges so that providers cannot reclaim space without losing the ability to answer. This ties block production and rewards to verifiable, useful storage capacity.
 
-- Proof Of Spacetime is a [[Consensus Mechanism]] that uses [[Cryptographic Proof]] and [[Verifiable Computation]] to demonstrate that data has been stored continuously over time, powering [[Decentralized Storage]] networks like [[Filecoin]].
+- Proof Of Spacetime is a [[Consensus Mechanism]] that uses [[Cryptographic Proof]] and [[Verifiable Computation]] to demonstrate that data has been stored continuously over time, powering [[Decentralised Storage]] networks like [[Filecoin]].
 - It binds rewards to ongoing, verifiable storage rather than raw computation.
 
 ### Overview

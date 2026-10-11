@@ -61,8 +61,8 @@
         "label": "Carbon Accounting"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       }
     ],
     "supports": [
@@ -175,8 +175,8 @@
         "label": "Energy Efficiency"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:policy-framework",
@@ -357,7 +357,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

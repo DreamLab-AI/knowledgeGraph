@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:benchmarking
   - urn:ngm:class:llmevaluation
 uses:
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:groundtruth
 partOf:
   - urn:ngm:class:evaluation-harness

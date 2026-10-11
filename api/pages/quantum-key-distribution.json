@@ -8,8 +8,8 @@
   "definition": "A method of securely sharing cryptographic keys using the principles of quantum mechanics, such that any eavesdropping disturbs the transmission and can be detected. It provides key exchange whose security rests on physics rather than computational hardness.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computation Paradigm"
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
     }
   ],
   "entityType": "Class",
@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "enables": [
@@ -143,16 +143,6 @@
         "label": "Spatial Computing"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:quantum-mechanics",
-        "label": "Quantum Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:superconductivity",
-        "label": "Superconductivity"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:grovers-algorithm",
@@ -187,6 +177,10 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -196,14 +190,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-machine-learning",
-        "label": "Quantum Machine Learning"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -229,6 +215,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -237,8 +227,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -255,10 +245,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

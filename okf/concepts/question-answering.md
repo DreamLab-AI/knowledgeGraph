@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:semantic-search
 dependsOn:
   - urn:ngm:class:text-corpus
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:document-retrieval
 bridgesTo:

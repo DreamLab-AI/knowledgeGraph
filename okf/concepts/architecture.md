@@ -58,24 +58,24 @@ uses:
   - urn:ngm:class:dropout
   - urn:ngm:class:feedforward-neural-network
 supports:
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:model-deployment
   - urn:ngm:class:ai-safety
   - urn:ngm:class:multimodal-ai-architecture-ai
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:neural-network-architecture
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:neural-architecture-search
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-model
 ---

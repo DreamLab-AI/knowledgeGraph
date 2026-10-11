@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:token-distribution
 enables:
   - urn:ngm:class:governance-token
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:gas-fee

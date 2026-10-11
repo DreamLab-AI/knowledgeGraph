@@ -8,12 +8,12 @@ description: A DID Method is a specification that defines how a particular type 
 maturity: established
 quality: 0.75
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 requires:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:did-document
   - urn:ngm:class:verifiable-data-registry
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:decentralised-identifier
 enables:
   - urn:ngm:class:self-sovereign-identity
@@ -37,10 +37,10 @@ uses:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:content-addressing
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:decentralized-identity-foundation
 relatedTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:did-resolver
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:zero-knowledge-proof

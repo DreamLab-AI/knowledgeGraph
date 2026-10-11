@@ -18,20 +18,20 @@ enables:
 contrastsWith:
   - urn:ngm:class:html
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:html
 supports:
   - urn:ngm:class:web-standard
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:web-standard
 partOf:
   - urn:ngm:class:web-standard
 relatedTo:
   - urn:ngm:class:html
   - urn:ngm:class:web-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:accessibility
 ---
 

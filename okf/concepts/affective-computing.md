@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:biometric-sensing
 requires:
   - urn:ngm:class:emotion-recognition
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:multimodal-fusion
   - urn:ngm:class:annotated-dataset
   - urn:ngm:class:data-labelling
@@ -37,7 +37,7 @@ enables:
   - urn:ngm:class:social-robotics
   - urn:ngm:class:digital-health
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-labelling
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:foundation-model
@@ -81,7 +81,7 @@ supports:
   - urn:ngm:class:social-robotics
   - urn:ngm:class:user-experience-design
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ieee-p7014
   - urn:ngm:class:gdpr
 relatedTo:
@@ -91,7 +91,7 @@ relatedTo:
   - urn:ngm:class:wearable-computing
   - urn:ngm:class:biometric-sensing
   - urn:ngm:class:explainable-ai
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback

@@ -41,8 +41,8 @@ relatedTo:
   - urn:ngm:class:data-protection
   - urn:ngm:class:privacy
   - urn:ngm:class:algorithmic-bias
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
 ---
 
 # Facial Recognition

@@ -11,16 +11,16 @@ is-a:
   - urn:ngm:class:public-goods-funding
 requires:
   - urn:ngm:class:cryptocurrency-wallet
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 enables:
   - urn:ngm:class:open-source-development
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:retroactive-public-goods-funding
   - urn:ngm:class:community-governance
 dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:ethereum
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:matching-funds
 contrastsWith:
@@ -40,7 +40,7 @@ supports:
 relatedTo:
   - urn:ngm:class:gitcoin
   - urn:ngm:class:web3
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:crowdfunding
 ---
 

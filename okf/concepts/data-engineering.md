@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:schema-management
   - urn:ngm:class:distributed-systems-domain
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:business-intelligence
   - urn:ngm:class:data-science
   - urn:ngm:class:real-time-analytics
@@ -35,7 +35,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:data-science
 bridgesTo:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:data-science
   - urn:ngm:class:stream-processing

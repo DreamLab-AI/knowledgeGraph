@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:receiver-clock-bias",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Receiver clock bias is the receiver\u2019s estimated offset from the GNSS time scale, represented either as a time offset or as the equivalent range term in a measurement model.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:feed-forward-network
   - urn:ngm:class:layer-normalisation
 requires:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 enables:
   - urn:ngm:class:multimodal-ai-architecture-learning
   - urn:ngm:class:text-to-image-generation

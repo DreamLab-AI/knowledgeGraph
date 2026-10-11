@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:payment-channel
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:distributed-trust
   - urn:ngm:class:consensus-mechanism

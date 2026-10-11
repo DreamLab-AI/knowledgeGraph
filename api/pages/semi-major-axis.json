@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:semi-major-axis",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Semi-major axis is a length parameter that sets the scale of an elliptic orbit.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:node
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:key-exchange
 enables:
   - urn:ngm:class:censorship-resistance

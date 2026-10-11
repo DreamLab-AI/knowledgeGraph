@@ -18,13 +18,13 @@ requires:
 enables:
   - urn:ngm:class:crypto-trading
   - urn:ngm:class:cross-border-payments
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:stablecoin
 dependsOn:
   - urn:ngm:class:dollar-peg
   - urn:ngm:class:liquidity-provision
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:algorithmic-stablecoin
   - urn:ngm:class:usd-coin
 bridgesTo:
@@ -43,7 +43,7 @@ supports:
   - urn:ngm:class:liquidity
 partOf:
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:money-market-fund
   - urn:ngm:class:stablecoin-regulation

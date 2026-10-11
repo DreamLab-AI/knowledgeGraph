@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:sc-display-and-rendering
 relatedTo:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:diagrams-as-code
 ---
 

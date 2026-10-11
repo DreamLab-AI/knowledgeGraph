@@ -42,7 +42,7 @@ dependsOn:
   - urn:ngm:class:automated-decision-making
   - urn:ngm:class:model-documentation
   - urn:ngm:class:algorithm
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:ethical-framework
   - urn:ngm:class:regulatory-compliance
@@ -66,9 +66,9 @@ supports:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:ai-ethics
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:ieee-p2863
 partOf:

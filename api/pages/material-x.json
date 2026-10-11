@@ -56,11 +56,11 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ],
@@ -262,7 +262,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -366,8 +366,8 @@
         "label": "3D Rendering"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       },
       {
         "id": "urn:ngm:class:level-of-detail",

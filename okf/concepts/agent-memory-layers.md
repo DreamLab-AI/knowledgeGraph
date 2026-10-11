@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:context-window
   - urn:ngm:class:foundation-model
   - urn:ngm:class:agent-identity
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-loop
 enables:
   - urn:ngm:class:personalisation
@@ -44,7 +44,7 @@ dependsOn:
   - urn:ngm:class:vector-database
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:agent-loop
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:retrieval-augmented-generation
 implements:

@@ -18,7 +18,7 @@ A data silo is an isolated repository of data controlled by one team, system, or
 - Departmental tool proliferation without shared standards.
 - Incompatible schemas and proprietary formats.
 - Access controls that restrict data to its originating team.
-- Absence of a shared [[Data Catalog]] or [[Metadata Management]].
+- Absence of a shared [[Data Catalogue]] or [[Metadata Management]].
 
 ### Applications
 

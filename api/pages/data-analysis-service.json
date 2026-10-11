@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-analysis-service",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A data analysis service is, in the SWEET ontology, a kind of data service, with analysis operations such as classification and clustering placed beneath it.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

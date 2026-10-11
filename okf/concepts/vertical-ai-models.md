@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:model
 relatedTo:
   - urn:ngm:class:model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Vertical AI Models

@@ -20,9 +20,9 @@ enables:
   - urn:ngm:class:ontology
   - urn:ngm:class:ontology
 implements:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:open-world-assumption
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 contrastsWith:
   - urn:ngm:class:sql
   - urn:ngm:class:graph-ql
@@ -41,11 +41,11 @@ supports:
   - urn:ngm:class:wikidata
   - urn:ngm:class:owl-2-web-ontology-language
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:turtle
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:apache-jena
   - urn:ngm:class:turtle
 ---

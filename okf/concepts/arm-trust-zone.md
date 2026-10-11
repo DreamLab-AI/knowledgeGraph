@@ -8,13 +8,13 @@ description: ARM TrustZone is a hardware security technology built into ARM proc
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 enables:
   - urn:ngm:class:secure-enclave
 supports:
   - urn:ngm:class:hardware-security
 relatedTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 ---
 
 # ARM TrustZone

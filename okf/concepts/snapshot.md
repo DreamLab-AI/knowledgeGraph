@@ -8,16 +8,16 @@ description: Snapshot is an off-chain governance platform that lets token holder
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-finance-domain
 hasPart:
   - urn:ngm:class:voting-systems
   - urn:ngm:class:governance-proposal
 requires:
   - urn:ngm:class:ipfs
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 enables:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:on-chain-governance

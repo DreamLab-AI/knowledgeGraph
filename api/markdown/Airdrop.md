@@ -15,13 +15,13 @@ An Airdrop is a token distribution mechanism in which a blockchain project alloc
 ### Mechanisms
 
 - Airdrop enables [[Governance Token]].
-- Airdrop enables [[Decentralized Finance]].
+- Airdrop enables [[Decentralised Finance]].
 - Airdrop supports [[Sybil Attack]].
 
 ### Applications
 
 - Applied in contexts involving [[Governance Token]].
-- Applied in contexts involving [[Decentralized Finance]].
+- Applied in contexts involving [[Decentralised Finance]].
 - Applied in contexts involving [[Sybil Attack]].
 - Applied in contexts involving [[Tokenomics]].
 - Applied in contexts involving [[Cryptocurrency Token]].

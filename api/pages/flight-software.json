@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:flight-software",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Flight software is the software that runs on a spacecraft's onboard computer and its subsystems to command it, process telemetry and manage its operation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-reference-system",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A spatial reference system is a set of conventions that ties positions to the real world, which in modern geodesy is called a reference system and is made usable through a reference frame.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

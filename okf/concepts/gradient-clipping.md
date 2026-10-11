@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:loss-function
 relatedTo:
   - urn:ngm:class:optimiser
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Gradient Clipping

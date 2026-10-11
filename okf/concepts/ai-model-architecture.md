@@ -14,8 +14,8 @@ hasPart:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:recurrent-neural-network
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:mixture-of-experts-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:mixture-of-experts
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:autoencoder
 enables:
   - urn:ngm:class:generative-ai
@@ -23,7 +23,7 @@ enables:
 relatedTo:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:attention-mechanism
 ---
 

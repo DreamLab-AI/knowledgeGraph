@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:tensor-core
   - urn:ngm:class:high-bandwidth-memory
 requires:
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:inference-runtime
 enables:
   - urn:ngm:class:real-time-ai
@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:model-serving
   - urn:ngm:class:autonomous-driving-perception
 dependsOn:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:compiler-optimization
 implements:
   - urn:ngm:class:asic

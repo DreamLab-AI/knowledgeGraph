@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:international-atomic-time",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "International Atomic Time (TAI) is a continuous atomic time scale computed by the BIPM from clock and time-transfer data contributed by participating laboratories.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

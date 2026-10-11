@@ -15,7 +15,7 @@ contrastsWith:
 partOf:
   - urn:ngm:class:text-generation
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:language-model
 ---
 

@@ -8,7 +8,7 @@ description: Reasoning models are large language models trained or post-trained 
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:frontier-models
   - urn:ngm:class:prime-intellect

@@ -70,7 +70,7 @@ JavaScript is a high-level, dynamically typed, interpreted programming language 
   - ES2017 — async/await, Object.entries/values
   - ES2020 — optional chaining (`?.`), nullish coalescing (`??`), BigInt, dynamic import
   - ES2022 — top-level await, class fields, Array.at()
-- **WHATWG and W3C** — browser Web APIs (DOM, Fetch, Service Worker, WebXR) are standardised separately by the Web Hypertext Application Technology Working Group ([[WHATWG]]) and the World Wide Web Consortium ([[W3C]]).
+- **WHATWG and W3C** — browser Web APIs (DOM, Fetch, Service Worker, WebXR) are standardised separately by the Web Hypertext Application Technology Working Group ([[WHATWG]]) and the World Wide Web Consortium ([[World Wide Web Consortium]]).
 - **OpenJS Foundation** — stewards major JavaScript projects including [[Node.js]], jQuery, and Electron under a vendor-neutral governance model.
 - **Security Considerations**
   - Cross-Site Scripting ([[XSS]]) is the most common JavaScript-related vulnerability; Content Security Policy mitigates injection risks.

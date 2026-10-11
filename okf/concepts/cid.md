@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:content-identifier
 enables:
   - urn:ngm:class:ipfs
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:content-addressing
 uses:
   - urn:ngm:class:cryptographic-hash-function

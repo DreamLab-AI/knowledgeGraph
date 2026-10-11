@@ -30,7 +30,7 @@ enables:
 dependsOn:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 bridgesTo:
   - urn:ngm:class:virtual-economy
 partOf:

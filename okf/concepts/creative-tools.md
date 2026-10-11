@@ -65,8 +65,8 @@ relatedTo:
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:human-ai-collaboration
   - urn:ngm:class:c2-pa
-  - urn:ngm:class:intellectual-property-rights-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:intellectual-property
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:metaverse-content
   - urn:ngm:class:digital-twin

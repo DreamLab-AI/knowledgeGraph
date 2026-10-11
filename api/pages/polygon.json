@@ -27,8 +27,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
@@ -45,7 +45,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -195,6 +195,11 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-system",
       "label": "Distributed System",
       "slug": "distributed-system"
@@ -203,6 +208,11 @@
       "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database",
       "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:smart-contract",
@@ -215,6 +225,16 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
@@ -223,6 +243,11 @@
       "id": "urn:ngm:class:digital-agreement",
       "label": "Digital Agreement",
       "slug": "digital-agreement"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -255,6 +280,16 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:concurrent-computing",
       "label": "Concurrent Computing",
       "slug": "concurrent-computing"
@@ -273,6 +308,11 @@
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
     },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -295,19 +335,9 @@
       "slug": "open-standards"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -368,11 +398,6 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -402,8 +427,8 @@
         "label": "Transaction"
       },
       {
-        "id": "urn:ngm:class:layer2-scaling",
-        "label": "Layer2Scaling"
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
       },
       {
         "id": "urn:ngm:class:lightning-and-similar-l2",
@@ -610,8 +635,8 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "uses": [
@@ -650,8 +675,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -730,8 +755,16 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
@@ -740,14 +773,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -845,8 +870,8 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "enterprise-token-standards",
@@ -865,12 +890,12 @@
       "label": "Interoperability"
     },
     {
-      "slug": "layer2",
-      "label": "Layer2"
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
     },
     {
-      "slug": "layer2-scaling",
-      "label": "Layer2Scaling"
+      "slug": "layer2",
+      "label": "Layer2"
     },
     {
       "slug": "nft-minting",

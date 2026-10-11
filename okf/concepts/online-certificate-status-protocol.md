@@ -8,7 +8,7 @@ description: The Online Certificate Status Protocol (OCSP) is an internet protoc
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 hasPart:
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:tls-handshake
@@ -19,14 +19,14 @@ enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:certificate-revocation
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
 implements:
   - urn:ngm:class:certificate-revocation
 contrastsWith:
   - urn:ngm:class:trust-anchor
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:tls-handshake
 relatedTo:

@@ -61,7 +61,7 @@
         "label": "Crypto-Asset Regulation"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -93,7 +93,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -113,7 +113,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       }
     ],
@@ -349,8 +349,8 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "enterprise-token-standards",

@@ -164,7 +164,7 @@ Bioterrorism (biological terrorism) is the deliberate use, threat, or weaponisat
   - This recalibrated how policymakers assess deliberate release consequences, even for sub-optimal agents.
   - The pandemic exposed the dual-use tension most sharply: gain-of-function tools for pandemic preparedness could under a different value system be directed at pathogen enhancement for weapons.
 - **The emerging AI-bio nexus — three disrupted assumptions:**
-  - Traditional models assumed a human expert was required to translate conceptual knowledge into operational capability; [[Large Language Models]] can in principle substitute for expert knowledge retrieval.
+  - Traditional models assumed a human expert was required to translate conceptual knowledge into operational capability; [[Large Language Model]] can in principle substitute for expert knowledge retrieval.
   - Traditional models assumed physical laboratory access was a bottleneck; cloud laboratories increasingly decouple wet-lab execution from physical presence.
   - Traditional models assumed state intelligence could monitor acquisition of specialised equipment; proliferation of general-purpose life-science equipment makes this harder.
   - GovAI December 2025 analysis specifically flagged autonomous coding agents that write executable wet-lab protocols as a qualitative shift — moving [[AI Risks]] from information provision to operational planning support.

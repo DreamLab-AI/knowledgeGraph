@@ -22,8 +22,8 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:token-standard",
@@ -48,7 +48,7 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -139,11 +139,11 @@
         "label": "Liquidity"
       },
       {
-        "id": "urn:ngm:class:dao",
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralized Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralized Autonomous Organisation"
       }
     ]
@@ -193,15 +193,11 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
-        "label": "Central Bank Digital Currency"
-      },
-      {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -223,6 +219,10 @@
       {
         "id": "urn:ngm:class:cryptocurrency-exchange",
         "label": "Cryptocurrency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
       }
     ],
     "requires": [
@@ -281,7 +281,7 @@
         "label": "Virtual Transactions"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -341,7 +341,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -357,20 +357,20 @@
         "label": "Artificial Intelligence"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
       },
       {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
         "id": "urn:ngm:class:supply-chain-finance",
         "label": "Supply Chain Finance"
-      },
-      {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       }
     ],
     "uses": [
@@ -387,8 +387,12 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -401,10 +405,6 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
       }
     ],
     "supports": [
@@ -451,6 +451,10 @@
       {
         "id": "urn:ngm:class:monetary-system",
         "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
       }
     ],
     "relatedTo": [
@@ -463,6 +467,18 @@
         "label": "Tokenisation"
       },
       {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
         "id": "urn:ngm:class:insurtech",
         "label": "InsurTech"
       },
@@ -473,18 +489,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:gig-economy",
-        "label": "Gig Economy"
-      },
-      {
-        "id": "urn:ngm:class:open-banking",
-        "label": "Open Banking"
-      },
-      {
-        "id": "urn:ngm:class:platform-economy",
-        "label": "Platform Economy"
       }
     ]
   },
@@ -503,12 +507,8 @@
       "label": "CBDC Frameworks"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
-      "slug": "central-bank-digital-currency-cbdc",
-      "label": "Central Bank Digital Currency (CBDC)"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "cryptocurrency",

@@ -16,7 +16,7 @@ uses:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:sparql
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 ---
 

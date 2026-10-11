@@ -29,7 +29,7 @@ partOf:
   - urn:ngm:class:observability
 relatedTo:
   - urn:ngm:class:observability
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Performance Monitoring

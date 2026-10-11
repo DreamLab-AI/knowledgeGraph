@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:path-planning
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:lidar
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:deep-learning
 standardizedBy:
   - urn:ngm:class:iso-13482

@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:autonomous-robot
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:haptic-feedback
   - urn:ngm:class:motion-planning

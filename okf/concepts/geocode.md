@@ -4,6 +4,7 @@ type: Class
 title: Geocode
 resource: urn:ngm:class:geocode
 domain: earth-observation-and-geospatial-sensing
+description: Geocoding is the process of taking an address and returning a latitude and longitude coordinate for it.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Geocode
+
+Geocoding is the process of taking an address and returning a latitude and longitude coordinate for it.[^1][^2]

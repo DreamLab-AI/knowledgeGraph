@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:validator-network
 enables:
   - urn:ngm:class:blockchain-interoperability
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-chain-liquidity
   - urn:ngm:class:multi-chain-ecosystem
   - urn:ngm:class:wrapped-token
@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:centralised-exchange
   - urn:ngm:class:wrapped-token
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-regulation
 uses:
   - urn:ngm:class:atomic-swap

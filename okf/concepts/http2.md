@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:http
 requires:
   - urn:ngm:class:tcp
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:latency
 dependsOn:

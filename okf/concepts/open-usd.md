@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:collaborative-3d-editing
   - urn:ngm:class:augmented-reality-content
 contrastsWith:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:fbx
   - urn:ngm:class:fbx
   - urn:ngm:class:collada-format

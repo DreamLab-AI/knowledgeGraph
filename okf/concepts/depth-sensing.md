@@ -23,7 +23,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:monocular-depth-estimation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-radiance-field
 uses:
   - urn:ngm:class:lidar

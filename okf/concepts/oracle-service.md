@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:chainlink
   - urn:ngm:class:optimistic-oracle

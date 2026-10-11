@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:international-celestial-reference-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "ICRS (the International Celestial Reference System) is an idealised barycentric coordinate system to which celestial positions are referred, kinematically non-rotating with respect to distant extragalactic objects.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

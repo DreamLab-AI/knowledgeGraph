@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:rest-api
 implements:
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
   - urn:ngm:class:json-data-interchange-format-schema
 contrastsWith:
   - urn:ngm:class:document-store

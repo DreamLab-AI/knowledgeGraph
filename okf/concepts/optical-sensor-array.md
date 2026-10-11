@@ -47,7 +47,7 @@ enables:
   - urn:ngm:class:slam
 dependsOn:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:real-time-processing
   - urn:ngm:class:edge-computing-architecture

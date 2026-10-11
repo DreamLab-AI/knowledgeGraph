@@ -10,6 +10,8 @@ quality: 0.74
 is-a:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:ai-technique
+  - urn:ngm:class:artificial-intelligence-core
+  - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:unsupervised-learning
@@ -17,10 +19,12 @@ hasPart:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:federated-learning
+  - urn:ngm:class:self-supervised-learning
 requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:optimisation-algorithm
   - urn:ngm:class:computational-infrastructure
+  - urn:ngm:class:ai-infrastructure
 enables:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -28,6 +32,7 @@ enables:
   - urn:ngm:class:recommendation-system
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:autonomous-system
+  - urn:ngm:class:deep-learning
 dependsOn:
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:feature-engineering
@@ -40,20 +45,25 @@ bridgesTo:
   - urn:ngm:class:data-governance
   - urn:ngm:class:supply-chain-optimisation
   - urn:ngm:class:smart-grid
+  - urn:ngm:class:responsible-ai
 uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:bayesian-inference
+  - urn:ngm:class:feature-engineering
 supports:
   - urn:ngm:class:decision-support
   - urn:ngm:class:robotics
   - urn:ngm:class:intelligent-automation
 standardizedBy:
   - urn:ngm:class:iso-iec-23053-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:artificial-intelligence
+relatedTo:
+  - urn:ngm:class:federated-learning
+  - urn:ngm:class:knowledge-representation
 ---
 
 # Machine Learning

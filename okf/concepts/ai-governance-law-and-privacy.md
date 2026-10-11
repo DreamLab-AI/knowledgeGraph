@@ -27,7 +27,7 @@ dependsOn:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:rule-of-law
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-protection-regulation
 contrastsWith:
   - urn:ngm:class:digital-society-surveillance
@@ -44,7 +44,7 @@ supports:
   - urn:ngm:class:civil-liberties
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:digital-governance
 relatedTo:

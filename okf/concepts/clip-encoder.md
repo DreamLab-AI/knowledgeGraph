@@ -45,7 +45,7 @@ enables:
   - urn:ngm:class:semantic-search
   - urn:ngm:class:content-moderation
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:text-to-image-generation
 dependsOn:
   - urn:ngm:class:backpropagation
@@ -62,7 +62,7 @@ contrastsWith:
   - urn:ngm:class:supervised-image-classifier
   - urn:ngm:class:bert
   - urn:ngm:class:autoencoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:masked-autoencoder
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:generative-adversarial-network
@@ -98,14 +98,14 @@ relatedTo:
   - urn:ngm:class:metaclip
   - urn:ngm:class:embedding-space
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:llava
   - urn:ngm:class:flamingo
   - urn:ngm:class:align
   - urn:ngm:class:dall-e-3
   - urn:ngm:class:imagenet
   - urn:ngm:class:multimodal-ai-architecture-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # CLIP Encoder

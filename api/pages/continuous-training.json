@@ -12,8 +12,8 @@
       "label": "MLOps"
     },
     {
-      "id": "urn:ngm:class:machine-learning-operations",
-      "label": "Machine Learning Operations"
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
     },
     {
       "id": "urn:ngm:class:ai-lifecycle",
@@ -323,8 +323,8 @@
         "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -349,14 +349,24 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -372,16 +382,6 @@
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework",
       "slug": "governance-framework"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -532,8 +532,8 @@
         "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "implements": [
@@ -542,12 +542,12 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -588,12 +588,16 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -602,16 +606,16 @@
         "label": "Data Engineering"
       },
       {
-        "id": "urn:ngm:class:platform-engineering",
-        "label": "Platform Engineering"
-      },
-      {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
       },
       {
         "id": "urn:ngm:class:ai-agent-system",
@@ -644,16 +648,16 @@
         "label": "Container"
       },
       {
-        "id": "urn:ngm:class:workflow-orchestration",
-        "label": "Workflow Orchestration"
-      },
-      {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
       },
       {
         "id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
       },
       {
         "id": "urn:ngm:class:ai-agent-system",
@@ -712,7 +716,7 @@
         "label": "ISO-IEC 5338 2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -732,6 +736,12 @@
         "label": "Open Standards"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:a-b-testing",
@@ -742,12 +752,12 @@
         "label": "Data Drift"
       },
       {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
-      },
-      {
         "id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
       },
       {
         "id": "urn:ngm:class:model-training",

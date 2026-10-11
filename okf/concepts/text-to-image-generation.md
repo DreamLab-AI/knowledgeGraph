@@ -31,23 +31,23 @@ bridgesTo:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:synthetic-media
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:cross-attention
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip
   - urn:ngm:class:contrastive-learning
 relatedTo:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:kohya-dreambooth-and-similar
   - urn:ngm:class:content-moderation
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:kohya-dreambooth-and-similar
 ---
 

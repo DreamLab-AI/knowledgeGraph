@@ -39,7 +39,7 @@ requires:
   - urn:ngm:class:sha-256
   - urn:ngm:class:schnorr-signatures
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:programmable-money
   - urn:ngm:class:digital-currency
   - urn:ngm:class:micropayments
@@ -52,7 +52,7 @@ dependsOn:
   - urn:ngm:class:game-theory
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:network-theory
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:halving-schedule
   - urn:ngm:class:difficulty-adjustment
@@ -62,11 +62,11 @@ implements:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:utxo-model
 contrastsWith:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:account-model
   - urn:ngm:class:permissioned-blockchain
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:bloom-filter
   - urn:ngm:class:schnorr-signature

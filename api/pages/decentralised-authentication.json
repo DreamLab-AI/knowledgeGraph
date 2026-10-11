@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:authentication-protocol",
       "label": "Authentication Protocol"
+    },
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
     }
   ],
   "entityType": "Class",
@@ -25,6 +29,14 @@
       {
         "id": "urn:ngm:class:trust-anchor",
         "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
       }
     ],
     "enables": [
@@ -35,12 +47,20 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "implements": [
@@ -57,26 +77,46 @@
       {
         "id": "urn:ngm:class:user-authentication",
         "label": "User Authentication"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:did-method",
         "label": "DID Method"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "supports": [
@@ -94,6 +134,10 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       }
     ],
     "relatedTo": [
@@ -104,6 +148,14 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ]
   },
@@ -114,14 +166,29 @@
       "slug": "cryptographic-protocol"
     },
     {
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management",
+      "slug": "identity-and-access-management"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
     },
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-security",
       "label": "Cryptographic Security",
       "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:security",
@@ -134,19 +201,9 @@
       "slug": "governance"
     },
     {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity",
-      "slug": "infra-security-and-identity"
-    },
-    {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -164,24 +221,24 @@
         "label": "Key Exchange Protocol"
       },
       {
-        "id": "urn:ngm:class:asymmetric-encryption",
-        "label": "Asymmetric Encryption"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
-        "id": "urn:ngm:class:hash-function",
-        "label": "Hash Function"
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
       },
       {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
+        "id": "urn:ngm:class:identity-governance-and-administration",
+        "label": "Identity Governance and Administration"
       },
       {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
       }
     ],
     "requires": [
@@ -190,11 +247,11 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -214,8 +271,8 @@
         "label": "Random Number Generator"
       },
       {
-        "id": "urn:ngm:class:key-management",
-        "label": "Key Management"
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificates"
       }
     ],
     "enables": [
@@ -228,6 +285,18 @@
         "label": "Multi-Factor Authentication"
       },
       {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
         "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security"
       },
@@ -238,21 +307,21 @@
       {
         "id": "urn:ngm:class:privacy-preservation",
         "label": "Privacy Preservation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
       },
       {
         "id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication"
       },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
-      }
-    ],
-    "dependsOn": [
       {
         "id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Computational Hardness Assumption"
@@ -270,23 +339,27 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
-      },
-      {
-        "id": "urn:ngm:class:secure-boot",
-        "label": "Secure Boot"
-      },
-      {
-        "id": "urn:ngm:class:information-asymmetry",
-        "label": "Information Asymmetry"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
       {
         "id": "urn:ngm:class:security-framework",
         "label": "Security Framework"
@@ -296,52 +369,60 @@
         "label": "Trust Model"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      },
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
       },
       {
         "id": "urn:ngm:class:steganography",
         "label": "Steganography"
       },
       {
-        "id": "urn:ngm:class:adversarial-machine-learning",
-        "label": "Adversarial Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:attack-vector",
-        "label": "Attack Vector"
-      },
-      {
-        "id": "urn:ngm:class:threat-actor",
-        "label": "Threat Actor"
-      },
-      {
-        "id": "urn:ngm:class:anarchy",
-        "label": "Anarchy"
-      },
-      {
-        "id": "urn:ngm:class:self-organisation",
-        "label": "Self-Organisation"
-      },
-      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:oauth",
         "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
       },
       {
         "id": "urn:ngm:class:multi-party-computation",
@@ -352,24 +433,16 @@
         "label": "Post-Quantum-Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ],
     "uses": [
@@ -390,15 +463,35 @@
         "label": "Schnorr Signature"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "id": "urn:ngm:class:ldap",
+        "label": "LDAP"
       },
       {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
       }
     ],
     "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
       {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
@@ -418,18 +511,6 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-application",
-        "label": "Decentralised Application"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
       }
     ],
     "standardizedBy": [
@@ -442,6 +523,18 @@
         "label": "Post-Quantum Cryptography Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      },
+      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
@@ -452,18 +545,6 @@
       {
         "id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "id": "urn:ngm:class:iso-27001",
-        "label": "ISO 27001"
-      },
-      {
-        "id": "urn:ngm:class:nist-cybersecurity-framework",
-        "label": "NIST Cybersecurity Framework"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO-IEC 38500"
       }
     ],
     "partOf": [
@@ -482,6 +563,22 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:biometrics",
+        "label": "Biometrics"
+      },
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -490,28 +587,12 @@
         "label": "Digital Infrastructure"
       },
       {
-        "id": "urn:ngm:class:homomorphic-encryption",
-        "label": "Homomorphic Encryption"
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       },
       {
-        "id": "urn:ngm:class:multi-party-computation",
-        "label": "Multi-Party Computation"
-      },
-      {
-        "id": "urn:ngm:class:threshold-cryptography",
-        "label": "Threshold Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:network-security",
-        "label": "Network Security"
-      },
-      {
-        "id": "urn:ngm:class:threat-model",
-        "label": "Threat Model"
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ]
   },

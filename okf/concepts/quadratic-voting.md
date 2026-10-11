@@ -75,7 +75,7 @@ uses:
   - urn:ngm:class:allo-protocol
   - urn:ngm:class:bright-id
   - urn:ngm:class:commit-reveal-scheme
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:gitcoin-passport
   - urn:ngm:class:merkle-proof
   - urn:ngm:class:polygon-id
@@ -83,7 +83,7 @@ uses:
   - urn:ngm:class:snapshot-voting
   - urn:ngm:class:zk-snarks
   - urn:ngm:class:merkle-proofs
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 supports:
   - urn:ngm:class:digital-democracy
   - urn:ngm:class:carbon-credit-tracking

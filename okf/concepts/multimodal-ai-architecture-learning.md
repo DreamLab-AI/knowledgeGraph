@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:visual-question-answering
   - urn:ngm:class:text-to-image-generation
 implements:
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
 contrastsWith:
   - urn:ngm:class:self-supervised-learning
 bridgesTo:

@@ -26,7 +26,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:manual-manufacturing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:edge-computing
 uses:
   - urn:ngm:class:control-system

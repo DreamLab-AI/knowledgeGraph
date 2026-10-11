@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:frame-reference-epoch",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Frame reference epoch is the epoch of coordinates that define a dynamic reference frame.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

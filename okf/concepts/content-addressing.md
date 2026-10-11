@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:deterministic-encoding
 enables:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:deduplication
   - urn:ngm:class:tamper-detection
   - urn:ngm:class:immutability

@@ -21,13 +21,13 @@ enables:
   - urn:ngm:class:closed-loop-control
   - urn:ngm:class:obstacle-avoidance
 dependsOn:
-  - urn:ngm:class:embedded-systems
-  - urn:ngm:class:ros
+  - urn:ngm:class:embedded-system
+  - urn:ngm:class:robot-operating-system
 contrastsWith:
   - urn:ngm:class:robot-actuator
 bridgesTo:
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:kalman-filter

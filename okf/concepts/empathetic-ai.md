@@ -46,7 +46,7 @@ dependsOn:
   - urn:ngm:class:speech-processing
   - urn:ngm:class:computer-vision
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:affective-computing
 implements:
   - urn:ngm:class:facial-action-coding-system
@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:elder-care-robots
 standardizedBy:
   - urn:ngm:class:iso-iec-27001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ieee-p7014-standard-for-ethical-considerations-in-emulated-empathy
 relatedTo:
   - urn:ngm:class:ai-companions

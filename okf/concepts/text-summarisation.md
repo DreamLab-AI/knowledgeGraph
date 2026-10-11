@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:information-retrieval
 uses:
   - urn:ngm:class:bart
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:text-generation
   - urn:ngm:class:prompt-engineering

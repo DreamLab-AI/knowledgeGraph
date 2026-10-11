@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:clearing-and-settlement
   - urn:ngm:class:central-securities-depository
   - urn:ngm:class:correspondent-banking
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:network-security
@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:tokenization
   - urn:ngm:class:cross-border-payments
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:identity-and-access-management
@@ -38,7 +38,7 @@ bridgesTo:
 supports:
   - urn:ngm:class:financial-services
   - urn:ngm:class:financial-instruments
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:capital-markets
 standardizedBy:
   - urn:ngm:class:iso-20022

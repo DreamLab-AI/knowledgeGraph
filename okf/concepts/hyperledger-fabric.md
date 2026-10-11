@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:membership-service-provider
   - urn:ngm:class:ordering-service
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
 enables:
   - urn:ngm:class:supply-chain-traceability

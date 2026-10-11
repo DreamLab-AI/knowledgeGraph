@@ -18,8 +18,8 @@ Venture capital is a form of private financing in which investors provide fundin
 ### Applications
 
 - Funding protocol and infrastructure teams across the [[Web3]] and [[Blockchain]] ecosystems.
-- Capitalising [[Decentralized Finance]] startups ahead of any public token event.
-- Strategic investment into [[Decentralized Autonomous Organization]] treasuries and ecosystems.
+- Capitalising [[Decentralised Finance]] startups ahead of any public token event.
+- Strategic investment into [[Decentralised Autonomous Organisation]] treasuries and ecosystems.
 - Bridging traditional finance into crypto via token-and-equity hybrid deals.
 
 ### Provenance

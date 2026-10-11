@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:adaptive-virtual-experience
   - urn:ngm:class:dynamic-adjustment
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:affective-computing
   - urn:ngm:class:user-modeling
 ---

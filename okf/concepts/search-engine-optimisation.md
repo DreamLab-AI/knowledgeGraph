@@ -20,7 +20,7 @@ enables:
 implements:
   - urn:ngm:class:a-b-testing
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-graph
 uses:
   - urn:ngm:class:web-crawler

@@ -25,8 +25,8 @@ enables:
   - urn:ngm:class:real-time-graphics
   - urn:ngm:class:augmented-reality
 implements:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 bridgesTo:
   - urn:ngm:class:data-format-standard
   - urn:ngm:class:interoperability

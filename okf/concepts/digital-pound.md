@@ -8,7 +8,7 @@ description: The Digital Pound is a proposed central bank digital currency for t
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
   - urn:ngm:class:bank-of-england
 enables:

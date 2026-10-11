@@ -10,7 +10,7 @@ quality: 0.74
 is-a:
   - urn:ngm:class:ai-application
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-engineering
   - urn:ngm:class:statistical-modelling
   - urn:ngm:class:historical-data

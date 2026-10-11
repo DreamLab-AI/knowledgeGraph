@@ -12,9 +12,9 @@ is-a:
 requires:
   - urn:ngm:class:identity-verification
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 bridgesTo:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 ---
 
 # BC-0480-kyc-requirements

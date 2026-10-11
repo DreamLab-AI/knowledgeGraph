@@ -70,7 +70,7 @@ A neural network architecture that processes sequential data by maintaining a hi
 - **Optimization Strategies** [Updated 2025]:
 - [[Adam optimizer]]: Adaptive learning rates
 - [[Truncated BPTT]]: Limits sequence length for efficiency
-- [[Layer normalization]]: Stabilizes training
+- [[Layer Normalisation]]: Stabilizes training
 
   ## Academic Context [Updated 2025]
 
@@ -209,7 +209,7 @@ A neural network architecture that processes sequential data by maintaining a hi
 - **[[NIST AI Risk Management Framework]]**:
 - **Function**: MEASURE (MS-2.7 - Performance metrics for temporal data)
 - **Focus**: Bias in sequential predictions, temporal fairness
-- **[[EU AI Act Regulatory Instrument]]**:
+- **[[EU AI Act]]**:
 - Article 15: Accuracy and robustness requirements for sequence processing
 - High-risk classification for NLP systems in critical applications (healthcare, legal, employment)
 
@@ -424,7 +424,7 @@ A neural network architecture that processes sequential data by maintaining a hi
 - [[Gated Recurrent Unit]] (GRU)
 - [[Bidirectional RNN]]
 - [[Deep RNN]]
-- [[Encoder Decoder Architecture]]
+- [[Encoder-Decoder]]
 - [[Sequence-to-Sequence Model]]
 - [[Backpropagation Through Time]] (BPTT)
 - [[Vanishing Gradient Problem]]
@@ -458,7 +458,7 @@ A neural network architecture that processes sequential data by maintaining a hi
 
 - [[Teacher Forcing]]
 - [[Gradient Clipping]]
-- [[Layer Normalization]]
+- [[Layer Normalisation]]
 - [[Dropout]]
 - [[Truncated BPTT]]
 - [[Curriculum Learning]]
@@ -468,7 +468,7 @@ A neural network architecture that processes sequential data by maintaining a hi
 - [[ISO/IEC 22989:2022]] - AI terminology
 - [[ISO/IEC 23894:2023]] - AI risk management
 - [[NIST AI Risk Management Framework]]
-- [[EU AI Act Regulatory Instrument]]
+- [[EU AI Act]]
 - [[PyTorch]]
 - [[TensorFlow]]
 - [[Keras]]

@@ -21,11 +21,11 @@ requires:
   - urn:ngm:class:network-protocol
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:byzantine-fault-tolerance
   - urn:ngm:class:immutability

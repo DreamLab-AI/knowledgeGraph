@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:regulation
   - urn:ngm:class:risk-management
 enables:
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:open-banking
 dependsOn:
   - urn:ngm:class:central-bank

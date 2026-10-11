@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:single-event-upset",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A single event upset is a non-destructive single event effect, a disturbance to circuit operation caused by a single ion passing through or near a sensitive node.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

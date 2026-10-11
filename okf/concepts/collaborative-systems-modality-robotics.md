@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
 uses:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:motion-planning
   - urn:ngm:class:tactile-sensing
 standardizedBy:

@@ -28,7 +28,7 @@ hasPart:
   - urn:ngm:class:pixel-classification-head
   - urn:ngm:class:decoder
 requires:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:feature-pyramid-network
   - urn:ngm:class:gpu-acceleration

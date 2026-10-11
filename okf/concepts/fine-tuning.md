@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: Fine Tuning
+title: Fine-Tuning
 resource: urn:ngm:class:fine-tuning
 domain: machine-learning
 description: The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.
@@ -10,6 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:ai-technique
+  - urn:ngm:class:model-training
 hasPart:
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:full-fine-tuning
@@ -18,7 +19,7 @@ requires:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:task-specific-dataset
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:image-generation
   - urn:ngm:class:instruction-following
   - urn:ngm:class:domain-adaptation
@@ -34,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:training-from-scratch
 bridgesTo:
   - urn:ngm:class:style-transfer
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
 uses:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:backpropagation
@@ -46,8 +47,10 @@ relatedTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:overfitting
   - urn:ngm:class:knowledge-distillation
+  - urn:ngm:class:model
+  - urn:ngm:class:open-source
 ---
 
-# Fine Tuning
+# Fine-Tuning
 
 The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.

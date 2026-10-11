@@ -56,11 +56,6 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:decision-making",
-      "label": "Decision Making",
-      "slug": "decision-making"
-    },
-    {
       "id": "urn:ngm:class:operations-research",
       "label": "Operations Research",
       "slug": "operations-research"
@@ -69,16 +64,6 @@
       "id": "urn:ngm:class:probability-theory",
       "label": "Probability Theory",
       "slug": "probability-theory"
-    },
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:cognitive-science",
-      "label": "Cognitive Science",
-      "slug": "cognitive-science"
     },
     {
       "id": "urn:ngm:class:measure-theory",
@@ -91,9 +76,9 @@
       "slug": "optimisation"
     },
     {
-      "id": "urn:ngm:class:interdisciplinary-science",
-      "label": "Interdisciplinary Science",
-      "slug": "interdisciplinary-science"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     },
     {
       "id": "urn:ngm:class:mathematical-foundations",
@@ -106,19 +91,19 @@
       "slug": "mathematical-science"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -288,8 +273,8 @@
         "label": "Maximum Likelihood Estimation"
       },
       {
-        "id": "urn:ngm:class:decision-theory",
-        "label": "Decision Theory"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "contrastsWith": [
@@ -352,8 +337,8 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:signal-processing",
@@ -386,12 +371,12 @@
         "label": "Heuristics"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
       }
     ],
     "supports": [
@@ -400,7 +385,7 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -438,16 +423,12 @@
         "label": "Von Neumann-Morgenstern Axioms"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:iso-31000",
-        "label": "ISO 31000"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -462,6 +443,10 @@
       {
         "id": "urn:ngm:class:mathematical-foundations",
         "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:generative-ai
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:avatar-system
   - urn:ngm:class:spatial-audio

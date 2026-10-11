@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:context-window",
@@ -63,7 +63,7 @@
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -71,7 +71,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -131,11 +131,11 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ]
@@ -177,9 +177,9 @@
       "slug": "instruction-following"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:natural-language-processing",
@@ -275,7 +275,7 @@
         "label": "Neural Network Text Tokenisation"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       },
       {
@@ -287,8 +287,8 @@
         "label": "Human Oversight"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
       }
     ],
     "enables": [
@@ -339,12 +339,16 @@
         "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -353,10 +357,6 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
-      },
-      {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
       }
     ],
     "implements": [
@@ -389,7 +389,7 @@
         "label": "Self-Consistency"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ],
@@ -403,8 +403,8 @@
         "label": "Model Optimisation and Performance"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:training-and-fine-tuning",
@@ -487,8 +487,8 @@
         "label": "Reasoning"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:direct-preference-optimisation",
@@ -551,16 +551,16 @@
         "label": "OpenAI Research Organisation"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:bletchley-declaration",
         "label": "Bletchley Declaration"
-      },
-      {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-42001",
-        "label": "ISO IEC 42001"
       }
     ],
     "partOf": [
@@ -575,6 +575,10 @@
       {
         "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:ai-governance",

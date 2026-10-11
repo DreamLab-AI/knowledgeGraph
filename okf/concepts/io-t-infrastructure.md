@@ -30,7 +30,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:mqtt
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:5-g-network
   - urn:ngm:class:bluetooth-low-energy
 standardizedBy:

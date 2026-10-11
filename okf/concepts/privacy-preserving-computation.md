@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:differential-privacy
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 requires:
   - urn:ngm:class:cryptography
   - urn:ngm:class:key-management
@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:confidential-computing
 dependsOn:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:data-minimisation
   - urn:ngm:class:privacy-by-design

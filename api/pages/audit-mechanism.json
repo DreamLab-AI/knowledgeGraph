@@ -292,7 +292,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -300,8 +300,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:accountability",
@@ -430,8 +430,8 @@
         "label": "SOC 2"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",
@@ -462,6 +462,10 @@
         "label": "Fraud Detection"
       },
       {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
+      },
+      {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust"
       },
@@ -480,10 +484,6 @@
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:governance-framework",
-        "label": "Governance Framework"
       }
     ]
   },

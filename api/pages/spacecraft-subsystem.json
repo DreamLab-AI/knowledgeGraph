@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-subsystem",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft subsystem is a functional part of a spacecraft, or flight system, that sits between the whole system and its individual assemblies in NASA's ideal hierarchy.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:system",
@@ -73,8 +73,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -159,8 +159,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gas-giant",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A gas giant is a large planet mostly composed of helium and/or hydrogen.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:planet",

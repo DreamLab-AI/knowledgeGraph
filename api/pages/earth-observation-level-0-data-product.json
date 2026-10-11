@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-0-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation Level 0 data product is the lowest processing level of satellite data, consisting of raw instrument and payload data before calibration or geolocation.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-data-product",

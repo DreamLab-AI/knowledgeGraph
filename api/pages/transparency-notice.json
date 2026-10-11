@@ -64,8 +64,8 @@
         "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:aiethics",
-        "label": "AIEthics"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ]
   },
@@ -273,7 +273,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

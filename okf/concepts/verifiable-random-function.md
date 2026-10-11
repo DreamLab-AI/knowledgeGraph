@@ -24,7 +24,7 @@ implements:
   - urn:ngm:class:pseudorandom-function
 contrastsWith:
   - urn:ngm:class:commit-reveal-scheme
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 bridgesTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:non-fungible-token
@@ -37,7 +37,7 @@ uses:
 supports:
   - urn:ngm:class:blockchain-oracle
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:random-number-generation
   - urn:ngm:class:leader-election

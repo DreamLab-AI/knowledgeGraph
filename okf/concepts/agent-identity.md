@@ -10,20 +10,20 @@ quality: 0.88
 is-a:
   - urn:ngm:class:identity-management
   - urn:ngm:class:trust-framework
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 hasPart:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:key-management
   - urn:ngm:class:capability-token
   - urn:ngm:class:audit-trail
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:key-management
   - urn:ngm:class:cryptographic-proof
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:trust-framework
 enables:
   - urn:ngm:class:accountability
@@ -37,13 +37,13 @@ enables:
 dependsOn:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:oauth
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:spiffe
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 contrastsWith:
   - urn:ngm:class:single-sign-on
   - urn:ngm:class:api-key-authentication
@@ -54,7 +54,7 @@ bridgesTo:
   - urn:ngm:class:microsoft-entra
   - urn:ngm:class:amazon-bedrock
 uses:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:oauth
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:spiffe
@@ -62,14 +62,14 @@ supports:
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:ai-safety
   - urn:ngm:class:human-in-the-loop
-  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:zero-trust
   - urn:ngm:class:sandboxing
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:agent-to-agent-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:agentic-internet
   - urn:ngm:class:identity-management

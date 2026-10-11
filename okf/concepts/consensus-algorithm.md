@@ -39,7 +39,7 @@ bridgesTo:
 supports:
   - urn:ngm:class:decentralised-governance
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:data-integrity

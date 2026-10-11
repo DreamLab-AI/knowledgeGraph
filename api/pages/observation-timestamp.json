@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:observation-timestamp",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An observation timestamp is the recorded date and time at which an Earth observation was collected, held in a product's metadata so that data can be placed in time.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

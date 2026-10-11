@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reanalysis",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reanalysis is the reprocessing of archived observations through a fixed forecast model and data assimilation system to produce a consistent gridded record of past conditions.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -26,7 +26,7 @@ relatedTo:
   - urn:ngm:class:autoencoder
   - urn:ngm:class:deep-generative-model
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-models
 ---
 

@@ -441,16 +441,16 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "data-protection",
       "label": "Data Protection"
     },
     {
       "slug": "investor-protection",
       "label": "Investor Protection"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "process-regulation",

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-governance-and-ethics
 relatedTo:
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # AI Sovereign Wealth Fund

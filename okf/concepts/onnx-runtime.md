@@ -38,10 +38,10 @@ uses:
   - urn:ngm:class:operator-fusion
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:kv-cache
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:execution-provider
 supports:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:transformers
   - urn:ngm:class:scikit-learn

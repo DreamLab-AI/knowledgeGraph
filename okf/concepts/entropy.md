@@ -60,10 +60,10 @@ uses:
   - urn:ngm:class:logarithm
   - urn:ngm:class:expectation-operator
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:decision-tree
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:bayesian-inference

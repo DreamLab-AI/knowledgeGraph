@@ -83,8 +83,8 @@ uses:
   - urn:ngm:class:data-loss-prevention
   - urn:ngm:class:siem
   - urn:ngm:class:workflow-automation
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:grc-software
   - urn:ngm:class:audit
   - urn:ngm:class:policy-management-platform
@@ -126,8 +126,8 @@ relatedTo:
   - urn:ngm:class:identity-and-access-management
   - urn:ngm:class:siem
   - urn:ngm:class:data-loss-prevention
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:cyber-risk-management
   - urn:ngm:class:onetrust
   - urn:ngm:class:service-now

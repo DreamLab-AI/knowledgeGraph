@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:gps-coordinate
 bridgesTo:
   - urn:ngm:class:geospatial-data
-  - urn:ngm:class:semantic-spatial-web-layer
+  - urn:ngm:class:spatial-web
 uses:
   - urn:ngm:class:point-cloud
   - urn:ngm:class:lidar

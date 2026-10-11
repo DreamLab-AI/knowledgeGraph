@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:landslide-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Landslide monitoring is the observation of slopes and the conditions that precede or follow their failure, so that past events can be mapped and hazard assessed.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

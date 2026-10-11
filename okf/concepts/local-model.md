@@ -17,7 +17,7 @@ contrastsWith:
   - urn:ngm:class:cloud-computing
 uses:
   - urn:ngm:class:on-device-inference
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:ondeviceinference
   - urn:ngm:class:modelquantization
 ---

@@ -18,7 +18,7 @@ hasPart:
 requires:
   - urn:ngm:class:real-time-communication
   - urn:ngm:class:avatar
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 enables:
   - urn:ngm:class:remote-collaboration
   - urn:ngm:class:telecollaboration

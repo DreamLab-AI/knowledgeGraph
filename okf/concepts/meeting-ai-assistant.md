@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:post-meeting-workflow
 dependsOn:
   - urn:ngm:class:cloud-infrastructure
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:conformer-architecture
   - urn:ngm:class:whisper
   - urn:ngm:class:bert-based-nlp

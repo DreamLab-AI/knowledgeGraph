@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:topographic-correction",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Topographic correction adjusts reflectance for the effect of terrain on illumination, usually with a digital elevation model, so that the product approximates what a flat surface would have returned.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -17,7 +17,7 @@ Elliptic is a blockchain analytics and financial crime compliance company that p
 
 - **On-Chain Data Ingestion** — Elliptic ingests full [[Blockchain]] history for [[Bitcoin]], [[Ethereum]], and many other networks, maintaining a continuously updated ledger database.
 - **Entity Attribution Database** — a proprietary intelligence dataset mapping clusters of addresses to named entities (exchanges, darknet markets, mixing services, sanctioned persons). This is built from open-source intelligence, court records, industry feeds, and internal research.
-- **Cross-Chain Coverage** — the platform extends beyond Bitcoin to cover [[Ethereum]], [[Stablecoins]] (USDT, USDC), [[DeFi]] protocols, and NFT markets, reflecting the breadth of modern [[Digital Asset]] activity.
+- **Cross-Chain Coverage** — the platform extends beyond Bitcoin to cover [[Ethereum]], [[Stablecoins]] (USDT, USDC), [[Decentralised Finance]] protocols, and NFT markets, reflecting the breadth of modern [[Digital Asset]] activity.
 
 #### Analytics Engine
 
@@ -36,7 +36,7 @@ Elliptic is a blockchain analytics and financial crime compliance company that p
 
 #### Virtual Asset Service Provider Compliance
 
-- Crypto exchanges, brokers, and custodians use Elliptic's wallet screening API to check deposit and withdrawal addresses against its entity database at onboarding and in real time, fulfilling obligations under the [[FATF Travel Rule]] and local [[AML]] directives.
+- Crypto exchanges, brokers, and custodians use Elliptic's wallet screening API to check deposit and withdrawal addresses against its entity database at onboarding and in real time, fulfilling obligations under the [[FATF Travel Rule]] and local [[Anti-Money Laundering]] directives.
 
 #### Bank Correspondent Compliance
 

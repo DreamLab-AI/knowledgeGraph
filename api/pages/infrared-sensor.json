@@ -191,14 +191,14 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -330,11 +330,11 @@
         "label": "Wave Propagation"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       }
     ],
@@ -412,7 +412,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -450,7 +450,7 @@
         "label": "Extended Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
       },
       {
@@ -522,7 +522,7 @@
         "label": "ISO TS 15066"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "ROS sensor_msgs"
       },
       {
@@ -565,10 +565,6 @@
       },
       {
         "id": "urn:ngm:class:embedded-system",
-        "label": "Embedded System"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],

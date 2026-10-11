@@ -12,7 +12,7 @@ Instruction following is a language model capability enabling accurate parsing a
 #### Training Techniques
 
 - **[[Instruction Tuning]]** — Supervised fine-tuning on collections of (instruction, ideal-response) pairs, e.g. FLAN, Alpaca, Dolly, OpenAssistant, or proprietary datasets. Teaches the model the format and intent of following directives.
-- **[[RLHF]]** (Reinforcement Learning from Human Feedback) — Human annotators rank multiple candidate responses; a reward model is trained on these rankings; the policy is fine-tuned via proximal policy optimisation (PPO) to maximise reward. Demonstrated in InstructGPT to produce responses rated as more helpful and honest than SFT-only.
+- **[[Reinforcement Learning from Human Feedback]]** (Reinforcement Learning from Human Feedback) — Human annotators rank multiple candidate responses; a reward model is trained on these rankings; the policy is fine-tuned via proximal policy optimisation (PPO) to maximise reward. Demonstrated in InstructGPT to produce responses rated as more helpful and honest than SFT-only.
 - **[[Direct Preference Optimisation]] (DPO)** — Bypasses the explicit reward model by directly fine-tuning on preference pairs using a reparametrised objective, reducing training complexity while achieving similar alignment quality to PPO-based RLHF.
 - **[[Constitutional AI]]** — Anthropic's approach of using a model to critique and revise its own outputs against a constitution of principles, reducing reliance on human labels for each constraint.
 

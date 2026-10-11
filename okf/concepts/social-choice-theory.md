@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:market-mechanism
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:artificial-intelligence
 uses:

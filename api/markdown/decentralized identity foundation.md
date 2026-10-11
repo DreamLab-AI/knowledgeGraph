@@ -2,7 +2,7 @@ The Decentralized Identity Foundation (DIF) is an open industry consortium found
 
 ### Overview
 
-- The Decentralized Identity Foundation was established to address a fundamental coordination problem: while W3C produced foundational standards for [[Decentralized Identifier]] and [[Verifiable Credentials Data Model]], no single body was developing the interoperability protocols needed to make diverse implementations work together in practice.
+- The Decentralized Identity Foundation was established to address a fundamental coordination problem: while W3C produced foundational standards for [[Decentralised Identifier]] and [[Verifiable Credentials Data Model]], no single body was developing the interoperability protocols needed to make diverse implementations work together in practice.
 - DIF operates as a pre-competitive collaboration space where identity software vendors, blockchain projects, government agencies, and standards experts contribute to shared specifications. Members include Microsoft, IBM, Consensys, Transmute, Ping Identity, and dozens of other organisations.
 - The organisation functions through topical working groups, each producing specifications and reference implementations. Outputs typically begin as DIF work items before being contributed upstream to W3C, IETF, or OpenID Foundation for formal standardisation.
 - DIF is legally structured as a non-profit under the Joint Development Foundation (Linux Foundation family), which provides intellectual property policies that enable royalty-free implementation of all DIF specifications.
@@ -12,7 +12,7 @@ The Decentralized Identity Foundation (DIF) is an open industry consortium found
 #### Working Groups
 
 - **Identifiers and Discovery** — defines resolution protocols and driver registries for [[DID Document]] retrieval across heterogeneous [[DID Method]] implementations; produces the Universal Resolver reference service
-- **Claims and Credentials** — develops [[Presentation Exchange]], [[Credential Manifest]], and [[Trust Establishment]] specifications governing how [[Verifiable Credentials]] are requested, presented, and verified
+- **Claims and Credentials** — develops [[Presentation Exchange]], [[Credential Manifest]], and [[Trust Establishment]] specifications governing how [[Verifiable Credential]] are requested, presented, and verified
 - **DID Communication (DIDComm)** — defines [[DIDComm]] v2, a transport-agnostic encrypted messaging protocol enabling secure peer-to-peer communication between identity agents using [[Cryptographic Key Management]] derived from DID documents
 - **Secure Data Storage** — produces the [[Decentralized Web Node]] (DWN) protocol, enabling identity holders to store and share personal data in a privacy-preserving, self-hosted or cloud-hosted manner with fine-grained access control
 - **Sidetree** — specifies the [[Sidetree Protocol]] family, a batching and anchoring mechanism that makes DID operations cost-efficient on [[Blockchain]] substrates; underlies ION on Bitcoin and Element on Ethereum
@@ -22,7 +22,7 @@ The Decentralized Identity Foundation (DIF) is an open industry consortium found
 
 - **Presentation Exchange** — a structured vocabulary for verifiers to express credential requirements (input descriptors) and for holders to respond with proof submissions; widely implemented in mobile wallets and enterprise verifiers
 - **DIDComm v2** — message envelope format using [[Public Key Infrastructure]] operations (ECDH key agreement, AEAD encryption) ensuring authenticity and confidentiality regardless of transport layer (HTTP, Bluetooth, NFC, WebSocket)
-- **Decentralized Web Node (DWN)** — a replicated personal data store protocol allowing identity subjects to grant selective access to data objects to specific DIDs; conceptually similar to a personal [[Data Vault]] addressable via [[Decentralized Identifier]]
+- **Decentralized Web Node (DWN)** — a replicated personal data store protocol allowing identity subjects to grant selective access to data objects to specific DIDs; conceptually similar to a personal [[Data Vault]] addressable via [[Decentralised Identifier]]
 - **Universal Resolver** — an open-source driver framework and hosted service resolving any registered DID method to a compliant [[DID Document]]; acts as a global DNS-equivalent for decentralised identifiers
 - **Credential Manifest** — a specification for issuers to advertise what credentials they offer and what information applicants must provide to receive them
 
@@ -30,7 +30,7 @@ The Decentralized Identity Foundation (DIF) is an open industry consortium found
 
 #### Digital Identity Wallets
 
-- DIF specifications underpin the European Union Digital Identity ([[EUDI Wallet]]) Architecture Reference Framework (ARF), defining how citizens store, manage, and present national identity credentials using [[Verifiable Credentials]]
+- DIF specifications underpin the European Union Digital Identity ([[EUDI Wallet]]) Architecture Reference Framework (ARF), defining how citizens store, manage, and present national identity credentials using [[Verifiable Credential]]
 - Mobile wallet applications (e.g., Microsoft Authenticator, Trinsic, Walt.id) implement [[Presentation Exchange]] to allow users to selectively disclose credential attributes to verifiers, preserving [[Privacy Preserving Computation]] principles
 - Healthcare identity systems use [[DIDComm]] for secure, auditable exchange of patient data between providers without centralised intermediaries
 
@@ -42,7 +42,7 @@ The Decentralized Identity Foundation (DIF) is an open industry consortium found
 #### Web3 and Decentralised Applications
 
 - [[Blockchain]] projects integrate [[Sidetree Protocol]] to anchor DID operations on-chain in a scalable and cost-efficient manner, enabling millions of DIDs per blockchain transaction batch
-- [[Decentralized Finance]] platforms use DIF-based identity to introduce KYC and AML compliance without sacrificing [[Self Sovereign Identity]] principles
+- [[Decentralised Finance]] platforms use DIF-based identity to introduce KYC and AML compliance without sacrificing [[Self Sovereign Identity]] principles
 
 #### AI and Autonomous Agents
 

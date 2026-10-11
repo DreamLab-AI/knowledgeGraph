@@ -339,7 +339,7 @@
       },
       {
         "id": "urn:ngm:class:collaborative-systems-modality-robot",
-        "label": "Collaborative Robots"
+        "label": "Collaborative Robot"
       },
       {
         "id": "urn:ngm:class:industrial-robot",
@@ -414,9 +414,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:industrial-robot",
@@ -484,11 +484,6 @@
       "slug": "electromechanical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-system",
-      "label": "Embedded System",
-      "slug": "embedded-system"
-    },
-    {
       "id": "urn:ngm:class:embodied-ai",
       "label": "Embodied AI",
       "slug": "embodied-ai"
@@ -522,6 +517,11 @@
       "id": "urn:ngm:class:programmable-logic-controller",
       "label": "Programmable Logic Controller",
       "slug": "programmable-logic-controller"
+    },
+    {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
     },
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -574,14 +574,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:real-time-control",
-      "label": "Real-Time Control",
-      "slug": "real-time-control"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robot",
@@ -614,6 +609,11 @@
       "slug": "technology-domain"
     },
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -624,19 +624,14 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:human-computer-interaction",
@@ -761,24 +756,24 @@
         "label": "Real-Time Scheduling"
       },
       {
-        "id": "urn:ngm:class:memory-management",
-        "label": "Memory Management"
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
       },
       {
-        "id": "urn:ngm:class:power-management",
-        "label": "Power Management"
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:rtos",
+        "label": "RTOS"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "implements": [
@@ -859,7 +854,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -939,12 +934,12 @@
         "label": "Surgical Robot"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:over-the-air-update",
-        "label": "Over-the-Air Update"
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
       },
       {
         "id": "urn:ngm:class:automotive-manufacturing",
@@ -973,16 +968,16 @@
         "label": "ROS 2 REPs"
       },
       {
-        "id": "urn:ngm:class:iec-61508",
-        "label": "IEC 61508"
+        "id": "urn:ngm:class:en-60204",
+        "label": "EN 60204"
       },
       {
-        "id": "urn:ngm:class:iso-26262",
-        "label": "ISO 26262"
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
       },
       {
-        "id": "urn:ngm:class:misra-c",
-        "label": "MISRA C"
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
       }
     ],
     "partOf": [
@@ -1015,8 +1010,8 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-systems",
-        "label": "Cyber-Physical System"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

@@ -33,8 +33,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:differential-privacy
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:sql
   - urn:ngm:class:map-reduce
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:message-queue
   - urn:ngm:class:mapreduce
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:federated-learning
 relatedTo:

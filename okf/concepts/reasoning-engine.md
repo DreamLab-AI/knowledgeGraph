@@ -16,7 +16,7 @@ uses:
   - urn:ngm:class:knowledge-graph
 relatedTo:
   - urn:ngm:class:llm-agents
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Reasoning Engine

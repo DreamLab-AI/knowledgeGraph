@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:ai-application
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:robot-perception
 bridgesTo:

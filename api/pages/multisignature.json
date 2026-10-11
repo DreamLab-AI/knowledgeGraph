@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:cryptographic-signature",
       "label": "Cryptographic Signature"
+    },
+    {
+      "id": "urn:ngm:class:signature-scheme",
+      "label": "Signature Scheme"
     }
   ],
   "entityType": "Class",
@@ -23,12 +27,20 @@
         "label": "Private Key"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:quorum-threshold",
         "label": "Quorum Threshold"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
@@ -51,6 +63,18 @@
       {
         "id": "urn:ngm:class:treasury-management",
         "label": "DAO Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [
@@ -71,6 +95,10 @@
       {
         "id": "urn:ngm:class:distributed-trust",
         "label": "Distributed Trust"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
       }
     ],
     "contrastsWith": [
@@ -81,6 +109,14 @@
       {
         "id": "urn:ngm:class:custodial-wallet",
         "label": "Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      },
+      {
+        "id": "urn:ngm:class:single-signature",
+        "label": "Single Signature"
       }
     ],
     "bridgesTo": [
@@ -91,6 +127,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       }
     ],
     "uses": [
@@ -117,6 +157,18 @@
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ],
     "supports": [],
@@ -142,6 +194,26 @@
       {
         "id": "urn:ngm:class:secret-sharing",
         "label": "Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
       }
     ]
   },
@@ -150,6 +222,21 @@
       "id": "urn:ngm:class:asymmetric-cryptography",
       "label": "Asymmetric Cryptography",
       "slug": "asymmetric-cryptography"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
     },
     {
       "id": "urn:ngm:class:cryptography",
@@ -162,9 +249,19 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -177,6 +274,11 @@
       "slug": "infra-security-and-identity"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
@@ -185,6 +287,11 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     }
   ],
   "inheritedRelations": {
@@ -192,6 +299,10 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
       },
       {
         "id": "urn:ngm:class:key-pair",
@@ -206,26 +317,26 @@
         "label": "Public Key"
       },
       {
-        "id": "urn:ngm:class:asymmetric-encryption",
-        "label": "Asymmetric Encryption"
+        "id": "urn:ngm:class:block",
+        "label": "Block"
       },
       {
-        "id": "urn:ngm:class:hash-function",
-        "label": "Hash Function"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:key-management",
-        "label": "Key Management"
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
       },
       {
         "id": "urn:ngm:class:random-number-generation",
@@ -236,24 +347,20 @@
         "label": "Trapdoor Function"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital-Signature"
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
       },
       {
-        "id": "urn:ngm:class:encryption-scheme",
-        "label": "Encryption Scheme"
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
       },
       {
-        "id": "urn:ngm:class:hash-function",
-        "label": "Hash-Function"
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
       },
       {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
       }
     ],
     "enables": [
@@ -278,7 +385,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -286,8 +393,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
       }
     ],
     "dependsOn": [
@@ -308,7 +415,7 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -376,20 +483,20 @@
         "label": "Symmetric Cryptography"
       },
       {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      },
+      {
         "id": "urn:ngm:class:steganography",
         "label": "Steganography"
       },
       {
-        "id": "urn:ngm:class:adversarial-machine-learning",
-        "label": "Adversarial Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:attack-vector",
-        "label": "Attack Vector"
-      },
-      {
-        "id": "urn:ngm:class:threat-actor",
-        "label": "Threat Actor"
+        "id": "urn:ngm:class:payment-system",
+        "label": "Traditional Payment System"
       }
     ],
     "bridgesTo": [
@@ -410,20 +517,20 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computing"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
       }
     ],
     "uses": [
@@ -436,16 +543,28 @@
         "label": "Public Key"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
       }
     ],
     "supports": [
@@ -454,7 +573,7 @@
         "label": "Secure Email"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -500,23 +619,27 @@
         "label": "ISO/IEC"
       },
       {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
         "id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001"
       },
       {
         "id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
       {
         "id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
@@ -532,16 +655,16 @@
         "label": "Blind Signature"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
-      },
-      {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:threshold-signature-scheme",
-        "label": "Threshold Signature"
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       },
       {
         "id": "urn:ngm:class:certificate-transparency",
@@ -556,8 +679,8 @@
         "label": "Key Management"
       },
       {
-        "id": "urn:ngm:class:homomorphic-encryption",
-        "label": "Homomorphic Encryption"
+        "id": "urn:ngm:class:network-component",
+        "label": "Network Component"
       }
     ]
   },
@@ -576,16 +699,44 @@
       "label": "Bitcoin Technical Overview"
     },
     {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "custody-layer",
+      "label": "Custody Layer"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
       "slug": "gnosis",
       "label": "Gnosis"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
     },
     {
       "slug": "lightning-network",
       "label": "Lightning Network"
     },
     {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
       "slug": "mu-sig-2",
       "label": "MuSig2"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regenerative-payload",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A regenerative payload processes a received communications signal or protocol onboard and generates a new outgoing signal, potentially including demodulation, protocol handling, routing or switching.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

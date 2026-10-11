@@ -12,8 +12,8 @@ is-a:
 contrastsWith:
   - urn:ngm:class:serialisation
 uses:
-  - urn:ngm:class:json-data-interchange-format
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:json
+  - urn:ngm:class:protocol-buffer
 partOf:
   - urn:ngm:class:data-exchange
 ---

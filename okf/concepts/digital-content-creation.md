@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:texture-authoring
 requires:
   - urn:ngm:class:digital-asset-management
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 enables:
   - urn:ngm:class:digital-content
   - urn:ngm:class:metaverse-content-pipeline

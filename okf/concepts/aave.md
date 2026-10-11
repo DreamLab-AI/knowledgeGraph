@@ -8,7 +8,7 @@ description: Aave is a decentralised, non-custodial liquidity protocol deployed 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:over-collateralisation
   - urn:ngm:class:oracle

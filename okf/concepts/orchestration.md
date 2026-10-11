@@ -20,7 +20,7 @@ requires:
 enables:
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:continuous-deployment
 dependsOn:

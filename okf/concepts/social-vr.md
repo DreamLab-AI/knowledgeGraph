@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:community-governance
 uses:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:virtual-economy
   - urn:ngm:class:non-fungible-token
 supports:

@@ -144,7 +144,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       }
     ]
@@ -174,7 +174,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -278,6 +278,10 @@
       {
         "id": "urn:ngm:class:packet-switching",
         "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
       },
       {
         "id": "urn:ngm:class:power-infrastructure",

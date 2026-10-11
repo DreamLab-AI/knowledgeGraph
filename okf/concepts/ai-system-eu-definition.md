@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:ai-risk-management
   - urn:ngm:class:human-oversight
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-provider
   - urn:ngm:class:ai-lifecycle

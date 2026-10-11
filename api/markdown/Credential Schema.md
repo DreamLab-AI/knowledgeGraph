@@ -42,7 +42,7 @@ A Credential Schema is a machine-readable, versioned specification — typically
 - **SD-JWT VC (IETF draft)** — [[SD-JWT VC]] defines a format for selective-disclosure JWT credentials that reference [[JSON Schema]] documents for structural validation; increasingly adopted by eIDAS 2.0 conformance profiles.
 - **ISO/IEC 18013-5 mDL** — defines schema-equivalent data element dictionaries for mobile driving licences, influencing the [[MDOC]] ecosystem and cross-border identity use cases.
 - **IETF JSON Schema (draft-bhutton-json-schema)** — the foundational syntactic validation language; ongoing standardisation at IETF is relevant to schema portability across credential ecosystems.
-- **Governance Bodies** — [[W3C]] Credentials Community Group, [[Decentralised Identity Foundation]] (DIF), [[OpenID Foundation]], and ISO/IEC JTC 1/SC 17 (identity cards and personal identification) are the primary standardisation venues.
+- **Governance Bodies** — [[World Wide Web Consortium]] Credentials Community Group, [[Decentralised Identity Foundation]] (DIF), [[OpenID Foundation]], and ISO/IEC JTC 1/SC 17 (identity cards and personal identification) are the primary standardisation venues.
 
 ### Semantic Classification
 

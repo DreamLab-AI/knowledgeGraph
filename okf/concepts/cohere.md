@@ -8,7 +8,7 @@ description: Cohere is a Canadian-American enterprise AI company founded in 2019
 maturity: established
 quality: 0.91
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:enterprise-ai
   - urn:ngm:class:natural-language-processing
 hasPart:
@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:instruction-tuning
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:fine-tuning
 enables:
@@ -50,7 +50,7 @@ enables:
   - urn:ngm:class:knowledge-graph
 dependsOn:
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:embeddings
   - urn:ngm:class:vector-database
@@ -93,7 +93,7 @@ relatedTo:
   - urn:ngm:class:model-compression
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:self-supervised-learning
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 
 # Cohere

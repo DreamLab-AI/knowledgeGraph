@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:video-compression
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Content Delivery

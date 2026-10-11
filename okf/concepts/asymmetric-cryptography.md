@@ -18,8 +18,8 @@ requires:
   - urn:ngm:class:trapdoor-function
   - urn:ngm:class:random-number-generation
 enables:
-  - urn:ngm:class:cryptographic-infrastructure
-  - urn:ngm:class:tls
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:authentication
 dependsOn:

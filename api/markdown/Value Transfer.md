@@ -203,7 +203,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
 - **Cross-Border Efficiency**: 96% faster than correspondent banking networks, 78% lower fees
 - **Layer 2 Scaling**: [[Lightning Network]] capacity reaches 5,000+ BTC ($250M), processing $250M monthly volume
 - **Ethereum L2s**: [[Arbitrum]], [[Optimism]], and [[Base]] process 45 TPS combined, $2.8B daily volume
-- **Finality Guarantees**: [[Bitcoin Proof-of-Work Protocol]] 6-block confirmation (60 min), [[Ethereum Smart Contract Platform]] single-slot finality (12 sec post-Merge)
+- **Finality Guarantees**: [[Bitcoin Proof-of-Work Protocol]] 6-block confirmation (60 min), [[Ethereum]] single-slot finality (12 sec post-Merge)
 - **Enterprise Throughput**: [[Ripple]] XRP Ledger 1,500 TPS, [[Solana]] 65,000 TPS theoretical (2,500 actual)
 
   ### Central Bank Digital Currencies (CBDCs) [Updated 2026]
@@ -223,7 +223,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
   ### Decentralized Finance (DeFi) Ecosystem [Updated 2025]
 
 - **Total Value Locked (TVL)**: $85B across all protocols (down from $180B peak in 2021)
-- **Chain Distribution**: [[Ethereum Smart Contract Platform]] 60% dominance ($51B), [[Binance Smart Chain]] 12%, [[Solana]] 8%, [[Avalanche]] 5%
+- **Chain Distribution**: [[Ethereum]] 60% dominance ($51B), [[Binance Smart Chain]] 12%, [[Solana]] 8%, [[Avalanche]] 5%
 - **Leading Protocols**:
   - [[Aave]]: $11.2B TVL, lending/borrowing market leader
   - [[Uniswap]]: $4.8B liquidity, $1.2B daily volume (automated market maker)
@@ -244,7 +244,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
     ### Enterprise Blockchain Adoption [Updated 2025]
 
 - **Payment Giants**:
-  - [[Stripe]]: Full crypto payment integration, supporting [[USDC]], [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]]
+  - [[Stripe]]: Full crypto payment integration, supporting [[USDC]], [[Bitcoin Proof-of-Work Protocol]], [[Ethereum]]
   - [[PayPal]]: 435M users can buy/sell/hold crypto, PYUSD stablecoin launched
   - [[Visa]]: $3B crypto card spending quarterly, [[Base]] L2 settlement pilot
   - [[Mastercard]]: Multi-Token Network (MTN) for tokenized bank deposits
@@ -644,7 +644,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
     ### Technical Challenges
 
 - **Scalability Requirements**:
-  - **Current State**: [[Visa]] processes 65,000 TPS, [[Ethereum Smart Contract Platform]] L1 only 30 TPS
+  - **Current State**: [[Visa]] processes 65,000 TPS, [[Ethereum]] L1 only 30 TPS
   - **Target**: 100,000+ TPS needed for global payment adoption
   - **Solutions**:
     - Layer 2 rollups (4,000 TPS per chain, multiple chains in parallel)
@@ -674,7 +674,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
       ### Research Priorities
 
 - **Quantum-Resistant Payment Protocols**:
-  - **Threat**: Shor's algorithm (quantum) can break ECDSA signatures used in [[Bitcoin Proof-of-Work Protocol]]/[[Ethereum Smart Contract Platform]]
+  - **Threat**: Shor's algorithm (quantum) can break ECDSA signatures used in [[Bitcoin Proof-of-Work Protocol]]/[[Ethereum]]
   - **Timeline**: NIST post-quantum cryptography standards finalized (2024), migration needed by 2030
   - **Solutions**:
     - [[SPHINCS+]]: Hash-based signatures (quantum-resistant)
@@ -690,7 +690,7 @@ The mechanism and process by which economic value, rights, or utility are exchan
   - **Projects**: [[Cosmos IBC]], [[Polkadot XCMP]], [[Chainlink CCIP]]
 - **Decentralized Identity for KYC**:
   - **Concept**: Self-sovereign identity (SSI) with verifiable credentials for reusable KYC
-  - **Standards**: [[W3C DID]], [[Verifiable Credentials]], [[BBS+ Signatures]]
+  - **Standards**: [[W3C DID]], [[Verifiable Credential]], [[BBS+ Signatures]]
   - **Benefits**: Privacy-preserving compliance, reduced onboarding friction, cross-platform identity
   - **Pilots**: [[Sovrin]], [[uPort]], [[Microsoft ION]], [[Polygon ID]]
 

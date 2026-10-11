@@ -184,8 +184,8 @@
         "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cryptography",
@@ -292,8 +292,8 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -558,6 +558,11 @@
       "slug": "blockchain"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure",
       "slug": "dc-protocol-and-infra"
@@ -568,19 +573,14 @@
       "slug": "entity"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "Network Component",
-      "slug": "network-component"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -608,6 +608,11 @@
       "slug": "distributed-ledger"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation",
       "slug": "knowledge-representation"
@@ -628,6 +633,11 @@
       "slug": "append-only-log"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-primitive",
       "label": "Cryptographic Primitive",
       "slug": "cryptographic-primitive"
@@ -643,9 +653,19 @@
       "slug": "distributed-system"
     },
     {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
       "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database",
       "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
     },
     {
       "id": "urn:ngm:class:state-machine-replication",
@@ -653,19 +673,29 @@
       "slug": "state-machine-replication"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
     },
     {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -691,11 +721,6 @@
       "id": "urn:ngm:class:networked-systems",
       "label": "Networked Systems",
       "slug": "networked-systems"
-    },
-    {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
     },
     {
       "id": "urn:ngm:class:security",
@@ -812,8 +837,8 @@
         "label": "Blockchain Entity"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       }
     ],
     "dependsOn": [
@@ -826,8 +851,8 @@
         "label": "Enterprise Resource Planning"
       },
       {
-        "id": "urn:ngm:class:io-t",
-        "label": "IoT"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       },
       {
         "id": "urn:ngm:class:consensus-mechanism",
@@ -920,7 +945,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -988,8 +1013,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:network-security",
@@ -1084,8 +1109,8 @@
         "label": "World Model"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

@@ -23,7 +23,7 @@ implements:
   - urn:ngm:class:forward-chaining
   - urn:ngm:class:backward-chaining
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 bridgesTo:
   - urn:ngm:class:autonomous-robot

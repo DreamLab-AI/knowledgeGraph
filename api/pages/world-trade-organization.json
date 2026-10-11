@@ -39,8 +39,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:imf",
-        "label": "IMF"
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
       }
     ]
   },
@@ -278,7 +278,7 @@
       "label": "International Trade"
     },
     {
-      "slug": "imf",
+      "slug": "international-monetary-fund",
       "label": "IMF"
     },
     {

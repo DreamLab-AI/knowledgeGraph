@@ -29,8 +29,8 @@ supports:
 partOf:
   - urn:ngm:class:governance-framework
 relatedTo:
-  - urn:ngm:class:did
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:digital-identity
 ---

@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:sequence-model
 hasPart:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:sequence-model
 requires:
   - urn:ngm:class:feature-extraction
@@ -22,10 +22,10 @@ requires:
 enables:
   - urn:ngm:class:automatic-speech-recognition
   - urn:ngm:class:voice-user-interface
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:accessibility
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:speech-processing
   - urn:ngm:class:hidden-markov-model
   - urn:ngm:class:expectation-maximisation

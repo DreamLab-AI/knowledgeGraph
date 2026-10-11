@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:langsmith-observability
 requires:
   - urn:ngm:class:embedding-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:python-3
   - urn:ngm:class:vector-database
   - urn:ngm:class:large-language-model
@@ -47,7 +47,7 @@ bridgesTo:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:solid-pod
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:auto-ml
 partOf:
   - urn:ngm:class:llm-application-framework

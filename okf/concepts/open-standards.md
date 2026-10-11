@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:interoperability
   - urn:ngm:class:vendor-neutrality
   - urn:ngm:class:khronos-open-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 dependsOn:
   - urn:ngm:class:open-source
   - urn:ngm:class:intellectual-property-rights
@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:digital-sovereignty
   - urn:ngm:class:technology-transfer
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
   - urn:ngm:class:ieee
   - urn:ngm:class:iso

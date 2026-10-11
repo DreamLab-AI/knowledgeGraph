@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:leaderboard
 requires:
   - urn:ngm:class:data-annotation
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:ground-truth-labels
   - urn:ngm:class:data-curation
   - urn:ngm:class:data-quality
@@ -29,7 +29,7 @@ enables:
   - urn:ngm:class:transfer-learning
 dependsOn:
   - urn:ngm:class:data-curation
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
   - urn:ngm:class:data-quality
   - urn:ngm:class:human-evaluation
 implements:

@@ -10,7 +10,7 @@ quality: 0.7
 is-a:
   - urn:ngm:class:economic-governance
 hasPart:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:monetary-policy
 requires:
   - urn:ngm:class:central-bank
@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:international-monetary-system
 contrastsWith:
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:dollarisation
 bridgesTo:
   - urn:ngm:class:blockchain
@@ -35,7 +35,7 @@ partOf:
   - urn:ngm:class:national-sovereignty
   - urn:ngm:class:economic-governance
 relatedTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:financial-privacy
   - urn:ngm:class:programmable-money
   - urn:ngm:class:stablecoin

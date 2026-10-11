@@ -179,7 +179,7 @@ DAO Tooling is the integrated software stack of governance platforms, treasury c
   - The [[Safe{Core} Protocol]] (2024) standardised the module + plugin + hook architecture for the broader ecosystem, enabling third-party developers to extend Safe behaviour without forking the core contracts.
 - **[[Karpatkey]] (Treasury Manager)**:
   - Karpatkey is a non-custodial DAO treasury manager spun out of the [[Gnosis]] ecosystem, advising [[Gnosis DAO]], [[Balancer DAO]], [[ENS DAO]], [[CoW DAO]] and others with cumulative AUM approaching €500M+.
-  - The firm publishes quarterly transparent reports detailing treasury composition, diversification rationale, [[DeFi]] yield strategies (typically conservative [[Aave]] / [[Compound]] / [[Lido]] stETH / [[Maker]] sDAI / [[Curve]] LP positions), and risk frameworks.
+  - The firm publishes quarterly transparent reports detailing treasury composition, diversification rationale, [[Decentralised Finance]] yield strategies (typically conservative [[Aave]] / [[Compound]] / [[Lido]] stETH / [[Maker]] sDAI / [[Curve]] LP positions), and risk frameworks.
   - Pioneered the "non-custodial advisor" model where the manager operates inside the DAO's Safe via [[Zodiac Roles]] permissioning — the manager can execute trades within whitelisted ranges but cannot withdraw funds, providing institutional-grade management without custody risk.
   - Maintains real-time dashboards at reports.karpatkey.com showing treasury composition per DAO, yield-strategy P&L, and risk metrics, setting transparency expectations for the broader sector.
 - **[[Meta Llama Model Family]] (Treasury Operations + Governance Tooling)**:
@@ -210,7 +210,7 @@ DAO Tooling is the integrated software stack of governance platforms, treasury c
   - [[Roles Module]] — granular permissioning specifying which signers can call which functions with which arguments; the foundation of Karpatkey's non-custodial advisor model.
   - [[Tellor Module]] — alternative oracle integration for execution authorisation.
   - [[Connext Module]] — cross-chain composability via the Connext network.
-- **[[SafeSnap]] / [[Reality Module]] + [[Reality.eth]]**: The canonical bridge from Snapshot off-chain votes to Safe on-chain execution. After a Snapshot vote resolves, the proposer posts the resulting transaction to [[Reality.eth]] as an "is the outcome true?" question with an [[Ethereum Smart Contract Platform]] bond. After the dispute period (typically 24-72h) with no successful challenge, the Reality Module authorises the Safe to execute the transaction. Used by [[Balancer]], [[Gnosis DAO]], [[CoW DAO]], [[ENS Workstreams]], and many sub-DAOs.
+- **[[SafeSnap]] / [[Reality Module]] + [[Reality.eth]]**: The canonical bridge from Snapshot off-chain votes to Safe on-chain execution. After a Snapshot vote resolves, the proposer posts the resulting transaction to [[Reality.eth]] as an "is the outcome true?" question with an [[Ethereum]] bond. After the dispute period (typically 24-72h) with no successful challenge, the Reality Module authorises the Safe to execute the transaction. Used by [[Balancer]], [[Gnosis DAO]], [[CoW DAO]], [[ENS Workstreams]], and many sub-DAOs.
 - **[[Hypernative]]**: An AI-driven real-time risk monitoring platform that flagged several governance attacks and oracle exploits in 2023-2024 before funds were drained, used as a 24/7 watchtower over Aave, Lido, Compound, Etherfi.
 - **[[Cross-Chain Governance]] ([[LayerZero]] OFTs / [[Wormhole Multigov]] / [[Axelar]] ITS / [[Connext]])**: Multi-chain protocols increasingly need governance messages to traverse [[Optimism]] / [[Arbitrum]] / [[Polygon]] / [[Base]] / [[zkSync]]. [[Uniswap]] famously uses a [[Wormhole]] cross-chain governance bridge after extensive debate against [[LayerZero]] in 2023; [[Maker]] uses [[Maker Wormhole]] proprietary; [[Compound]] cross-chain governor extends Bravo to L2s.
 
@@ -251,7 +251,7 @@ DAO Tooling is the integrated software stack of governance platforms, treasury c
 - **[[Gitcoin Grants Stack]]**:
   - Open-source quadratic-funding rounds infrastructure (replaced the legacy Gitcoin Grants centralised platform in 2023).
   - [[Allo Protocol]] is the underlying [[smart contract]] layer enabling permissionless round creation.
-  - Cumulative distribution exceeds $50M to public goods, primarily [[Ethereum Smart Contract Platform]] open-source.
+  - Cumulative distribution exceeds $50M to public goods, primarily [[Ethereum]] open-source.
   - Round operators include [[Gitcoin]] itself plus delegated operators ([[Octant]], [[Optimism]] Gitcoin-on-Optimism, [[ENS]] rounds, [[Arbitrum]] community).
 - **[[Optimism]] [[RetroPGF]]**: As above; ~$80M Round 3, scaling to ~$90M+ across Rounds 1-5 combined by 2024, plus [[Optimism Foundation]] mission grants.
 - **[[Arbitrum Foundation]] Programmes**:
@@ -406,7 +406,7 @@ DAO Tooling is the integrated software stack of governance platforms, treasury c
 
 - **[[The DAO]] (June 2016)**:
   - $150M ETH raised, $60M drained via [[reentrancy attack]] exploiting recursive `splitDAO` call.
-  - Recovery via [[Ethereum Smart Contract Platform]] hard fork at block 1,920,000 (20 July 2016) splitting chain into ETH (forked) and [[Ethereum Classic]] (unforked).
+  - Recovery via [[Ethereum]] hard fork at block 1,920,000 (20 July 2016) splitting chain into ETH (forked) and [[Ethereum Classic]] (unforked).
   - Originated the entire DAO security literature, the [[Checks-Effects-Interactions]] pattern, and ongoing debate about social-layer hard-fork legitimacy.
 - **[[Beanstalk]] (17 April 2022)**:
   - $182M drained via [[flash-loan governance attack]].
@@ -483,7 +483,7 @@ DAO Tooling is the integrated software stack of governance platforms, treasury c
 - **[[Polygon Labs UK]]**, **[[Chainlink Labs UK]]**, **[[Quant Network]]** (Gilbert Verdian, AQSE:QNT): UK-based protocol development with associated foundations and DAOs.
 - **[[ICON]]**, **[[Aztec Network]]** (London-based ZK rollup building [[Noir]] language with implications for private voting): Significant UK Web3 employment cluster.
 - **[[Copper.co]]**: UK institutional custodian providing infrastructure used by some DAO treasuries for off-ramp services.
-- **[[Argo Blockchain]] plc** (LON:ARB): Listed UK mining company, occasionally engages with DAO governance for [[Ethereum Smart Contract Platform]]-affiliated treasury services.
+- **[[Argo Blockchain]] plc** (LON:ARB): Listed UK mining company, occasionally engages with DAO governance for [[Ethereum]]-affiliated treasury services.
 
 ### UK Regulatory Context
 

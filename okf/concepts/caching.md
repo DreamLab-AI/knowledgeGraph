@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:performance-optimization
 hasPart:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 enables:
   - urn:ngm:class:latency
 dependsOn:
@@ -18,7 +18,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:in-memory-computing
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:memory-management
   - urn:ngm:class:state-management

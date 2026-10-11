@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:application-layer
 bridgesTo:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Smart Contract Layer

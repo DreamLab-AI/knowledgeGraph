@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-masking",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Data masking in Earth observation is the use of per-pixel flag layers that mark observations assessed as, for example, cloud, cloud shadow, land or water, or snow or ice, so that users can select or exclude them during analysis.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

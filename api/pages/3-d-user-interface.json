@@ -90,10 +90,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:user-interface",
-        "label": "User Interface"
-      },
-      {
         "id": "urn:ngm:class:graphical-user-interface",
         "label": "Graphical User Interface"
       }
@@ -144,7 +140,7 @@
         "label": "Accessibility Standard"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       }
     ],
@@ -345,7 +341,7 @@
         "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {
@@ -399,7 +395,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

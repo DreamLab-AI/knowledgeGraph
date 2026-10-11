@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:simultaneous-localisation-and-mapping
   - urn:ngm:class:web-xr
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:edge-detection
   - urn:ngm:class:corner-detection

@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:sha-256
 supports:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:51-attack
 partOf:
   - urn:ngm:class:proof-of-work

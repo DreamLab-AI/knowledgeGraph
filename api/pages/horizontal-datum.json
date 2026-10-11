@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:horizontal-datum",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A horizontal datum is the geodetic datum that fixes a reference ellipsoid against the Earth so that latitude and longitude have a defined meaning.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

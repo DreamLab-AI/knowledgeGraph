@@ -93,8 +93,8 @@
         "label": "Carbon Accounting"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       }
     ]
   },
@@ -123,8 +123,8 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:economic-sustainability",

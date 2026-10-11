@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hydrographic-bank",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Hydrographic Bank is the sloping ground that borders a stream and confines the water in its natural channel at normal water level or flow.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

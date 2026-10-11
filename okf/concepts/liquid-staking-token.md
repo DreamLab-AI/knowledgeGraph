@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:validator-node
 enables:
   - urn:ngm:class:liquidity
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:validator-node

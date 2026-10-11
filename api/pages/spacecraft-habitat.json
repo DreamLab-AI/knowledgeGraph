@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-habitat",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft habitat is the crewed living and working volume of a spacecraft or ground analogue in which people live under conditions of isolation and confinement.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optical-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Optical astronomy is the area of astronomy that observes and analyses light from the Universe within the wavelength range to which the human eye is sensitive, also called visible light.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -24,16 +24,16 @@
       "label": "Open Source Software"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model"
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model"
     },
     {
       "id": "urn:ngm:class:ai-ecosystem",
       "label": "AI Ecosystem"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
     }
   ],
   "entityType": "Class",
@@ -71,7 +71,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:flux-1",
@@ -90,8 +90,8 @@
         "label": "Local LLM Runtime Platform"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:hugging-face-hub",
@@ -167,7 +167,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
@@ -222,7 +222,7 @@
         "label": "Quantisation"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       },
       {
@@ -234,8 +234,8 @@
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -455,11 +455,6 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:digital-asset-ecosystem",
-      "label": "Digital Asset Ecosystem",
-      "slug": "digital-asset-ecosystem"
-    },
-    {
       "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy",
       "slug": "digital-economy"
@@ -470,19 +465,29 @@
       "slug": "digital-infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
     },
     {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network",
       "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -505,6 +510,11 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:economic-systems",
       "label": "Economic Systems",
       "slug": "economic-systems"
@@ -515,19 +525,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -657,24 +672,24 @@
         "label": "GPU-Accelerated Computing"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
       }
     ],
     "implements": [
@@ -729,20 +744,20 @@
         "label": "Proprietary Software"
       },
       {
+        "id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      },
+      {
         "id": "urn:ngm:class:digital-asset-ecosystem",
         "label": "Digital Asset Ecosystem"
       },
       {
         "id": "urn:ngm:class:sovereign-ai",
         "label": "Sovereign AI"
-      },
-      {
-        "id": "urn:ngm:class:shallow-machine-learning",
-        "label": "Shallow Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -763,8 +778,8 @@
         "label": "Data Center"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:lightning-network",
@@ -823,8 +838,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:large-language-model",
@@ -861,7 +876,7 @@
         "label": "AI Standards"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -869,8 +884,8 @@
         "label": "ISO/IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-22989-2022",
@@ -885,6 +900,18 @@
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "relatedTo": [
@@ -1056,7 +1083,7 @@
       "label": "Research Reproducibility"
     },
     {
-      "slug": "rlhf",
+      "slug": "reinforcement-learning-from-human-feedback",
       "label": "RLHF"
     },
     {

@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:penetration-testing
   - urn:ngm:class:vulnerability-assessment
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analytics
 uses:
   - urn:ngm:class:cryptographic-hash

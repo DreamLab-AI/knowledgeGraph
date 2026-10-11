@@ -25,7 +25,7 @@ requires:
 enables:
   - urn:ngm:class:virtual-machine
   - urn:ngm:class:containerisation
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:edge-computing
   - urn:ngm:class:cloud-computing
 implements:
@@ -35,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:bare-metal
 bridgesTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:virtualisation

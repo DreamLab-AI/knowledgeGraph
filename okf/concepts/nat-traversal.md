@@ -21,7 +21,7 @@ uses:
   - urn:ngm:class:gossip-protocol
 supports:
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:decentralisation
 partOf:
   - urn:ngm:class:distributed-systems

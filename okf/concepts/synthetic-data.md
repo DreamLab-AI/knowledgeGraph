@@ -32,7 +32,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:autonomous-system
@@ -41,10 +41,10 @@ supports:
   - urn:ngm:class:autonomous-system
 relatedTo:
   - urn:ngm:class:differential-privacy
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-governance
   - urn:ngm:class:bias-in-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Synthetic Data

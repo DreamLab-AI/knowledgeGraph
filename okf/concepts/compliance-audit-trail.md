@@ -44,8 +44,8 @@ dependsOn:
 implements:
   - urn:ngm:class:iso-37301
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
@@ -60,7 +60,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso-37301
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:compliance-management
   - urn:ngm:class:compliance-management
@@ -69,10 +69,10 @@ relatedTo:
   - urn:ngm:class:gdpr
   - urn:ngm:class:ai-governance
   - urn:ngm:class:mlops
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:explainability
   - urn:ngm:class:responsible-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:operational-resilience
   - urn:ngm:class:mifid-ii
   - urn:ngm:class:ai-model-card

@@ -32,7 +32,7 @@ Transfer learning is a machine learning paradigm in which knowledge encoded in a
   - Part of the broader Parameter-Efficient Fine-Tuning (PEFT) family.
 - **LoRA (Low-Rank Adaptation)**
   - Decomposes weight-update matrices into low-rank products, dramatically reducing trainable parameters.
-  - Now the dominant PEFT method for adapting [[Large Language Models]] to specialist tasks.
+  - Now the dominant PEFT method for adapting [[Large Language Model]] to specialist tasks.
 - **Domain adaptation**
   - Addresses distribution shift between source and target domains without requiring labelled target data.
   - [[Domain Adaptation]] methods (e.g., adversarial domain alignment, DANN) learn domain-invariant [[Feature Representation]].
@@ -78,7 +78,7 @@ Transfer learning is a machine learning paradigm in which knowledge encoded in a
 - **PyTorch and TensorFlow/Keras**: both provide first-class APIs for loading pre-trained weights and freezing/unfreezing layers.
 - **ONNX**: Open Neural Network Exchange enables transfer of pre-trained weights across frameworks, supporting deployment.
 - **MLflow and Weights & Biases**: experiment tracking standards used to log transfer learning runs, comparing source model provenance and target metrics.
-- **PEFT library (Hugging Face)**: standardises LoRA, adapter, and prompt-tuning interfaces for [[Large Language Models]], accelerating adoption.
+- **PEFT library (Hugging Face)**: standardises LoRA, adapter, and prompt-tuning interfaces for [[Large Language Model]], accelerating adoption.
 - **Benchmarks**: GLUE, SuperGLUE, BIG-Bench (NLP); ImageNet, VTAB, ELEVATER (vision) — standard test beds measuring the quality of transferred representations.
 - **Ethical considerations**: biases encoded during source pre-training are transferred to downstream applications; careful auditing of source corpora and fine-tuning data is required. Bias amplification is a known risk when fine-tuning on domain-specific data that reflects historical inequities (e.g., clinical data).
 

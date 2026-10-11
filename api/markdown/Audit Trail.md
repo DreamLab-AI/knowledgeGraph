@@ -431,7 +431,7 @@ AnnotationAssertion(dcterms:subject ai:AuditTrail "Security, Compliance, Governa
 
   ### Cross-Organisational Audit Trail Federation
 
-- The convergence of audit trails with [[Verifiable Credentials]] (W3C VC specification) and decentralised identity (DID) frameworks will enable cross-organisational audit trail federation — events from multiple organisations' systems can be correlated without centralising raw data.
+- The convergence of audit trails with [[Verifiable Credential]] (W3C VC specification) and decentralised identity (DID) frameworks will enable cross-organisational audit trail federation — events from multiple organisations' systems can be correlated without centralising raw data.
 - This is critical for multi-party AI supply chains where training data, model development, fine-tuning, and deployment occur across different organisations, each with their own governance and data residency requirements.
 - Privacy-preserving record linkage techniques will allow correlation of audit events across organisations using pseudonymous identifiers, revealing the combined audit trail for a multi-party process without any party revealing individual event details to others.
 - EU AI Act Article 25 (Obligations for deployers) requires deployers to inform providers of high-risk AI systems about their use — audit trail federation mechanisms provide the technical infrastructure for this information flow in complex supply chains.

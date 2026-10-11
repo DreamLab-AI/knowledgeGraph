@@ -10,7 +10,7 @@ Traditional Finance (TradFi) denotes the incumbent financial system comprising c
   - Regulated exchanges (NYSE, LSE, Euronext) and alternative trading systems operating under market conduct rules
   - Custodial chains ensuring legal title and beneficial ownership are segregated and protected
 - TradFi institutions hold systemic importance because their failure can cascade across the broader economy, motivating macroprudential regulation and deposit insurance schemes such as those provided by the FDIC (US) and FSCS (UK).
-- The term "TradFi" gained currency specifically as a contrastive label once [[DeFi]] protocols began offering financial primitives (lending, exchange, derivatives) without intermediaries, highlighting the trade-offs between trusted efficiency and permissionless access.
+- The term "TradFi" gained currency specifically as a contrastive label once [[Decentralised Finance]] protocols began offering financial primitives (lending, exchange, derivatives) without intermediaries, highlighting the trade-offs between trusted efficiency and permissionless access.
 
 ### Key Components
 
@@ -74,7 +74,7 @@ Traditional Finance (TradFi) denotes the incumbent financial system comprising c
 - TradFi is increasingly intersecting with blockchain and distributed-ledger technology through several vectors:
   - **[[Tokenisation]] of [[Real World Assets]]** — Bonds, equities, fund units, and commodities represented as on-chain tokens, settling on permissioned or public ledgers
   - **[[Central Bank Digital Currency|CBDCs]]** — Central banks exploring digital fiat issued directly to end-users or as wholesale interbank settlement assets
-  - **[[Blockchain Interoperability]]** — Bridges and atomic-swap protocols enabling TradFi assets to interact with [[DeFi]] liquidity pools
+  - **[[Blockchain Interoperability]]** — Bridges and atomic-swap protocols enabling TradFi assets to interact with [[Decentralised Finance]] liquidity pools
   - **[[Institutional Adoption]]** — Custodians (BNY Mellon, State Street), exchanges (DTCC, SIX Digital Exchange), and prime brokers entering digital-asset markets
   - **[[Stablecoin|Stablecoins]]** — Fiat-backed tokens (USDC, USDT) acting as settlement rails connecting TradFi and DeFi ecosystems
 - This convergence is shaping regulatory frameworks such as MiCA (EU) and the UK's Financial Services and Markets Act 2023 amendments covering digital assets.

@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:speaker-recognition
   - urn:ngm:class:speaker-diarisation
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:speaker-recognition
   - urn:ngm:class:speech-recognition

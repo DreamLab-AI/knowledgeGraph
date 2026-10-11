@@ -152,7 +152,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -188,7 +188,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora",
         "label": "LoRA"
       },
       {
@@ -252,7 +252,7 @@
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -260,7 +260,7 @@
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -399,7 +399,7 @@
         "label": "U-Net"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -425,14 +425,19 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:model-architecture",
       "label": "Model Architecture",
       "slug": "model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training",
+      "slug": "model-training"
     },
     {
       "id": "urn:ngm:class:parameter-efficient-fine-tuning",
@@ -450,9 +455,39 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture",
       "slug": "system-architecture"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:software-architecture",
@@ -463,6 +498,21 @@
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -499,8 +549,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -559,8 +609,8 @@
         "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:zero-shot-learning",
@@ -613,7 +663,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       }
     ],
@@ -695,8 +745,8 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       },
       {
         "id": "urn:ngm:class:style-transfer",
@@ -749,8 +799,8 @@
         "label": "Hyperparameter"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "supports": [
@@ -763,28 +813,28 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:multi-modal-learning",
         "label": "Multi-Modal Learning"
       },
       {
-        "id": "urn:ngm:class:instruction-tuning",
-        "label": "Instruction Tuning"
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
       }
     ],
     "standardizedBy": [
@@ -797,28 +847,28 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
       },
       {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
       },
       {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Chinchilla Scaling Laws"
       }
     ],
     "partOf": [
@@ -829,6 +879,10 @@
       {
         "id": "urn:ngm:class:model-training-pipeline",
         "label": "Model Training Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:deep-learning-pipeline",
@@ -843,8 +897,12 @@
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
       }
     ],
     "relatedTo": [
@@ -862,7 +920,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:lo-ra-do-ra-etc",

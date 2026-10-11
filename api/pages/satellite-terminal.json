@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-terminal",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite terminal is endpoint equipment that transmits, receives or both over a satellite communications link.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

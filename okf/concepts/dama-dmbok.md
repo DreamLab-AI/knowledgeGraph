@@ -23,7 +23,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:data-security
 uses:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:data-lineage
 supports:
   - urn:ngm:class:master-data-management

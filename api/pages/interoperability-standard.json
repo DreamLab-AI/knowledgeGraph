@@ -22,11 +22,11 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -115,8 +115,8 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [
@@ -151,6 +151,26 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:technical-documentation",
+      "label": "Technical Documentation",
+      "slug": "technical-documentation"
+    },
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation",
+      "slug": "documentation"
+    },
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data",
+      "slug": "data"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
     }
   ],
   "inheritedRelations": {
@@ -208,6 +228,18 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
       }
     ],
     "enables": [
@@ -244,6 +276,16 @@
         "label": "Artificial Intelligence"
       }
     ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:best-practices",
@@ -270,6 +312,14 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:tribal-knowledge",
+        "label": "Tribal Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -292,6 +342,28 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:ngm:class:static-site-generation",
+        "label": "Static Site Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "supports": [
@@ -318,6 +390,14 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
       }
     ],
     "standardizedBy": [
@@ -340,6 +420,18 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
       }
     ],
     "relatedTo": [

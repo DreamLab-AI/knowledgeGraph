@@ -22,7 +22,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:data-clean-room
 uses:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:auction-mechanism
   - urn:ngm:class:audience-segmentation
   - urn:ngm:class:consent-management

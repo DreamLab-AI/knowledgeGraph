@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:electromagnetic-compatibility-testing",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Electromagnetic compatibility testing is the verification of space hardware against limits on the electromagnetic interference it emits and on its susceptibility to emissions from itself or other sources.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

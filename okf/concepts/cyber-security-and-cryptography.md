@@ -23,11 +23,11 @@ hasPart:
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:security-operations-centre
   - urn:ngm:class:threat-intelligence
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:digital-signature
   - urn:ngm:class:post-quantum-cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-multi-party-computation
 requires:
   - urn:ngm:class:certificate-authority
@@ -35,7 +35,7 @@ requires:
   - urn:ngm:class:entropy
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:threat-model
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:vulnerability-management
   - urn:ngm:class:cryptographic-primitive
 enables:
@@ -54,7 +54,7 @@ dependsOn:
   - urn:ngm:class:lattice-cryptography
   - urn:ngm:class:computational-complexity-theory
   - urn:ngm:class:entropy
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:formal-methods
 implements:
   - urn:ngm:class:aes-gcm
@@ -86,13 +86,13 @@ uses:
   - urn:ngm:class:siem
   - urn:ngm:class:soar
   - urn:ngm:class:threat-intelligence-platform
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:vulnerability-scanner
 supports:
   - urn:ngm:class:critical-national-infrastructure
   - urn:ngm:class:financial-services
   - urn:ngm:class:blockchain
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:digital-identity
   - urn:ngm:class:defence-and-intelligence
@@ -113,7 +113,7 @@ relatedTo:
   - urn:ngm:class:privacy-enhancing-technologies
   - urn:ngm:class:supply-chain-security
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:regulatory-compliance
 ---
 

@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:cryptocurrency
 hasPart:
   - urn:ngm:class:fiat-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-money
   - urn:ngm:class:stablecoin

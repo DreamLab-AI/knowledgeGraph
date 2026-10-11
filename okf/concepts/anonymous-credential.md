@@ -15,8 +15,8 @@ enables:
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:unlinkability
 implements:
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 contrastsWith:
   - urn:ngm:class:digital-identity
 bridgesTo:
@@ -28,8 +28,8 @@ supports:
   - urn:ngm:class:pseudonymity
 relatedTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 ---
 
 # Anonymous Credential

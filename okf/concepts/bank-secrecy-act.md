@@ -11,9 +11,9 @@ is-a:
   - urn:ngm:class:financial-regulation
 hasPart:
   - urn:ngm:class:currency-transaction-report
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 requires:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:transaction-monitoring
   - urn:ngm:class:customer-due-diligence
   - urn:ngm:class:beneficial-ownership

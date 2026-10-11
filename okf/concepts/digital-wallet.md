@@ -21,14 +21,14 @@ requires:
 enables:
   - urn:ngm:class:transaction-signing
   - urn:ngm:class:asset-management
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:defi-access
 implements:
   - urn:ngm:class:account-abstraction
   - urn:ngm:class:bip39
 contrastsWith:
   - urn:ngm:class:custodial-wallet
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
 bridgesTo:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:payment-system

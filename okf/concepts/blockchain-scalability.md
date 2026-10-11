@@ -29,7 +29,7 @@ requires:
 enables:
   - urn:ngm:class:low-latency
   - urn:ngm:class:mass-adoption
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:micropayment
   - urn:ngm:class:high-throughput
 dependsOn:

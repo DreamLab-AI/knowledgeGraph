@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aquifuge",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An aquifuge is a hydrogeologic unit with no interconnected openings, so it can neither store nor transmit water.[^1] It is the limiting case of low permeability, stricter than an aquiclude, which still stores water.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

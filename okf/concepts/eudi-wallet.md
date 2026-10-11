@@ -16,20 +16,20 @@ enables:
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:authentication
 dependsOn:
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
 implements:
   - urn:ngm:class:verifiable-credentials
 bridgesTo:
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:verifiable-credentials
 uses:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:zero-knowledge-proof
 supports:
   - urn:ngm:class:privacy
   - urn:ngm:class:digital-identity
 standardizedBy:
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
 partOf:
   - urn:ngm:class:digital-identity
 relatedTo:

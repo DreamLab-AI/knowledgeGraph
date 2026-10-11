@@ -46,7 +46,7 @@
         "label": "AI Audit"
       },
       {
-        "id": "urn:ngm:class:model-cards",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       },
       {
@@ -74,7 +74,7 @@
         "label": "Redress Mechanism"
       },
       {
-        "id": "urn:ngm:class:ai-documentation-standards",
+        "id": "urn:ngm:class:ai-documentation",
         "label": "AI Documentation"
       },
       {
@@ -96,7 +96,7 @@
         "label": "Human Oversight"
       },
       {
-        "id": "urn:ngm:class:ai-documentation-standards",
+        "id": "urn:ngm:class:ai-documentation",
         "label": "AI Documentation"
       },
       {
@@ -174,11 +174,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -275,7 +275,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -283,7 +283,7 @@
         "label": "ISO/IEC 42001:2023"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -498,7 +498,7 @@
         "label": "Automated Decision-Making"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -566,6 +566,10 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       },
@@ -608,8 +612,8 @@
         "label": "Human Rights"
       },
       {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       }
     ],
     "uses": [
@@ -682,8 +686,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",

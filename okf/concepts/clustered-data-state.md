@@ -4,6 +4,7 @@ type: Class
 title: Clustered Data State
 resource: urn:ngm:class:clustered-data-state
 domain: earth-observation-and-geospatial-sensing
+description: A clustered data state is the condition of data that has been through a clustering process.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Clustered Data State
+
+A clustered data state is the condition of data that has been through a clustering process.[^1]

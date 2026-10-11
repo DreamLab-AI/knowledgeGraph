@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:smart-contract
 enables:
   - urn:ngm:class:cross-chain-governance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-chain-liquidity
   - urn:ngm:class:multi-chain-application
 dependsOn:

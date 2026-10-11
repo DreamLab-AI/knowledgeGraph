@@ -37,10 +37,10 @@ contrastsWith:
   - urn:ngm:class:hipaa
   - urn:ngm:class:ai-regulation
 bridgesTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:federated-learning
   - urn:ngm:class:differential-privacy
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 supports:
   - urn:ngm:class:data-governance
   - urn:ngm:class:trust

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-phase-change-thermal-storage",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft phase change thermal storage is a thermal control device in which a material such as wax, held in a metal housing against a heat source, absorbs energy as it changes phase and releases that energy when it changes back.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

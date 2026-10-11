@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:expectation-maximisation
 relatedTo:
   - urn:ngm:class:gaussian-mixture-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:principal-component-analysis
 ---
 

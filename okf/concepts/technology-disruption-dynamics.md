@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:software-engineering
 enables:
   - urn:ngm:class:disruptive-technology
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:supply-chain-management
 bridgesTo:

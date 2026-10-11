@@ -114,8 +114,8 @@
         "label": "IEEE P7003-2021"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-tr-24027",
@@ -265,12 +265,12 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "equalized-odds",
       "label": "Equalized Odds"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     }
   ]
 }

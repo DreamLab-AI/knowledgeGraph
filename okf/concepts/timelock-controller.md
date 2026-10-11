@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:operation-queue
   - urn:ngm:class:cryptographic-hash-function
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:treasury-management
 relatedTo:
   - urn:ngm:class:access-control
@@ -32,7 +32,7 @@ relatedTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:role-based-access-control
   - urn:ngm:class:multisignature-wallets
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
 ---
 
 # Timelock Controller

@@ -8,7 +8,7 @@ description: "Yield generation in the context of decentralised finance (DeFi) re
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:staking-reward
 requires:
@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:capital-efficiency
   - urn:ngm:class:passive-income
 dependsOn:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:oracle
 contrastsWith:
   - urn:ngm:class:traditional-finance

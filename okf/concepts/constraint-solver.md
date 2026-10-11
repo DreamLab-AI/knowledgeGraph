@@ -71,7 +71,7 @@ relatedTo:
   - urn:ngm:class:trajectory-planning
   - urn:ngm:class:mixed-integer-programming
   - urn:ngm:class:neuro-symbolic-ai
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:gpu-computing
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:reinforcement-learning

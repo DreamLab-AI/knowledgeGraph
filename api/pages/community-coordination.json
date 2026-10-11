@@ -216,8 +216,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -244,8 +244,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
+        "id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ],
     "uses": [

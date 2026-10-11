@@ -30,7 +30,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:supply-chain-blockchain
   - urn:ngm:class:internet-of-things
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:gs1-epcis
 supports:

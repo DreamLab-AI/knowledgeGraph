@@ -302,7 +302,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -459,10 +459,6 @@
     {
       "slug": "ai-diagram-tools",
       "label": "AI Diagram Tools"
-    },
-    {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
     },
     {
       "slug": "ai-risks",
@@ -817,24 +813,24 @@
       "label": "Data Protection"
     },
     {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
-    },
-    {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "slug": "decentralized-governance",
-      "label": "Decentralized Governance"
-    },
-    {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
     },
     {
       "slug": "decision-engine",
@@ -1285,6 +1281,10 @@
       "label": "Mobile Robot Platform"
     },
     {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     },
@@ -1561,8 +1561,8 @@
       "label": "Travel Rule"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "vircadia",

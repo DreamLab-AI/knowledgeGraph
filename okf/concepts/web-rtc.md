@@ -47,7 +47,7 @@ bridgesTo:
   - urn:ngm:class:infra-network-and-comms
   - urn:ngm:class:open-xr
   - urn:ngm:class:nostr-protocol
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:web-assembly
 partOf:
   - urn:ngm:class:telecollaboration

@@ -9,5 +9,5 @@ LlamaIndex (formerly GPT Index) is an open-source data framework and Python libr
 
 ### See Also
 
-- [[Retrieval-Augmented Generation]] | [[Large Language Models]] | [[Embeddings]] | [[Vector Database]] | [[LangChain]]
+- [[Retrieval-Augmented Generation]] | [[Large Language Model]] | [[Embeddings]] | [[Vector Database]] | [[LangChain]]
 

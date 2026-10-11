@@ -20,10 +20,10 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:web3
   - urn:ngm:class:metaverse
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 relatedTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:augmented-reality

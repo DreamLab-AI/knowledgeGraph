@@ -16,10 +16,10 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:on-chain-governance
 enables:
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:public-goods-funding
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
 dependsOn:
   - urn:ngm:class:ethereum
   - urn:ngm:class:op-stack

@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:prime-contractor",
+  "title": "Prime Contractor",
+  "slug": "prime-contractor",
+  "public": true,
+  "classIri": "urn:ngm:class:prime-contractor",
+  "domain": "space-science-and-systems",
+  "definition": "A prime contractor is the organisation that, in the sources used here, receives work from other suppliers and integrates it into a system delivered to a customer.[^1][^2]",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-integrator",
+        "label": "Space Systems Integrator"
+      },
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:atmospheric-drag",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Atmospheric drag is the aerodynamic force that opposes a spacecraft\u2019s motion relative to the surrounding atmosphere.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

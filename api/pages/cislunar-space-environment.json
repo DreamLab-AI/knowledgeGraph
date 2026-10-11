@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cislunar-space-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "NASA's Space Life Sciences Ontology defines cislunar space environment as the region of space between the Earth and the Moon.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

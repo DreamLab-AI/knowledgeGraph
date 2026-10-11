@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hypergravity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Hypergravity is a gravity level above that felt at Earth's surface, produced for research and training mainly by spinning a payload or person in a centrifuge.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

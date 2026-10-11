@@ -12,7 +12,7 @@ Taproot is a soft-fork upgrade to the Bitcoin protocol, activated at block 709,6
   - Replace [[ECDSA]] as the default signature scheme for P2TR outputs.
   - Mathematically linear, enabling [[Signature Aggregation]]: multiple parties can produce a single aggregate signature indistinguishable from a single-party signature.
   - Based on the [[secp256k1]] elliptic curve, the same curve used for all prior [[Bitcoin Network]] signatures.
-  - Enable [[MuSig2]], the two-round interactive protocol for key aggregation, building [[Multi-Signature]] schemes without on-chain indication of the number of participants.
+  - Enable [[MuSig2]], the two-round interactive protocol for key aggregation, building [[Multisignature]] schemes without on-chain indication of the number of participants.
 - **[[Pay-to-Taproot]] (P2TR) and [[Merkelised Abstract Syntax Tree]] (BIP 341)**
   - A P2TR output commits to a tweaked public key: Q = P + H(P, m)G, where P is the internal (aggregate) key and m is the root of a [[Merkle Tree]] over all alternative script spending conditions.
   - Key-path spending: all parties sign with the aggregate key, producing a Schnorr signature. On-chain appearance is identical to a simple single-key spend, providing maximum [[Transaction Privacy]].
@@ -37,7 +37,7 @@ Taproot is a soft-fork upgrade to the Bitcoin protocol, activated at block 709,6
   - The BitVM paradigm (2023–2024) uses Tapscript's expressiveness to encode arbitrary computation as large Taproot script trees.
   - Enables optimistic verification of off-chain computations on Bitcoin without a consensus-level hard fork, significantly expanding [[Smart Contracts]] capabilities on the base layer.
   - Serves as the verification layer for Bitcoin bridges and zkVM rollups.
-- **[[Multi-Signature]] and Treasury Management**
+- **[[Multisignature]] and Treasury Management**
   - Enterprises and DAOs use [[MuSig2]] over P2TR outputs for k-of-n co-signers with a single on-chain key, reducing fees and concealing custody architecture.
   - Hardware wallets (Ledger, Trezor, Coldcard) and software wallets (Bitcoin Core, Sparrow, Wasabi) have progressively adopted P2TR support.
 - **Privacy-Preserving DeFi Bridges**

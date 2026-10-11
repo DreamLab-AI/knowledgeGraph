@@ -8,7 +8,7 @@ description: Probabilistic forecasting predicts future quantities as full probab
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:time-series-forecasting

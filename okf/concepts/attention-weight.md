@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:gpu-computing
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:machine-translation
   - urn:ngm:class:image-captioning
@@ -53,7 +53,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:neural-network
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:feed-forward-network
   - urn:ngm:class:layer-normalisation
   - urn:ngm:class:automatic-differentiation
@@ -66,14 +66,14 @@ supports:
   - urn:ngm:class:speech-recognition
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:multi-head-attention
   - urn:ngm:class:self-attention
   - urn:ngm:class:cross-attention
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 relatedTo:
   - urn:ngm:class:self-attention
   - urn:ngm:class:multi-head-attention
@@ -94,7 +94,7 @@ relatedTo:
   - urn:ngm:class:causal-language-modelling
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:alphafold
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:chain-of-thought-reasoning

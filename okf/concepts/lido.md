@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:liquidity-provision
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:yield-farming
 dependsOn:
   - urn:ngm:class:blockchain
@@ -29,17 +29,17 @@ implements:
 contrastsWith:
   - urn:ngm:class:staking
   - urn:ngm:class:proof-of-work
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
 bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:governance
   - urn:ngm:class:lido-dao
 uses:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:oracle
   - urn:ngm:class:governance-token
 relatedTo:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:staking
   - urn:ngm:class:token
 ---

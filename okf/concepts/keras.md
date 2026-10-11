@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:deep-learning
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Keras

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:circular-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A circular orbit is a bound orbit with constant radius and zero eccentricity in the ideal two-body model.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

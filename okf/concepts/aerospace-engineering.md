@@ -19,14 +19,14 @@ enables:
   - urn:ngm:class:satellite-communication
   - urn:ngm:class:remote-sensing
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:sensor-fusion
 bridgesTo:
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:robotics
   - urn:ngm:class:autonomous-system

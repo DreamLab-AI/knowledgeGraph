@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:agent-loop
 requires:
   - urn:ngm:class:context-window
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-memory
   - urn:ngm:class:tool-use
   - urn:ngm:class:function-calling
@@ -65,8 +65,8 @@ supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:robotic-process-automation
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:model-context-protocol
 relatedTo:
   - urn:ngm:class:agentic-ai

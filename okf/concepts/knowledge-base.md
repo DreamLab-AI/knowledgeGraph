@@ -40,9 +40,9 @@ uses:
   - urn:ngm:class:rdf
 relatedTo:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Knowledge Base

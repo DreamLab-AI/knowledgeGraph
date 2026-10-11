@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:surface-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A surface radiation environment is the natural radiation environment on or near the surface of a planet or moon, made up of free-space radiation as partly shielded and modulated by the body, together with radiation from naturally radioactive elements in its crust.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-radiation-environment",

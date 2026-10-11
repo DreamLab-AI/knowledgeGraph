@@ -44,7 +44,7 @@ enables:
 dependsOn:
   - urn:ngm:class:control-theory
   - urn:ngm:class:rigid-body-dynamics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:real-time-operating-systems

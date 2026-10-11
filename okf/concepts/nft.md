@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:tokenization
   - urn:ngm:class:programmable-royalties
   - urn:ngm:class:provenance-tracking
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:decentralised-storage
   - urn:ngm:class:ethereum
@@ -33,18 +33,18 @@ bridgesTo:
   - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
   - urn:ngm:class:ipfs
   - urn:ngm:class:arweave
   - urn:ngm:class:public-key-cryptography
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 partOf:
   - urn:ngm:class:web3
 relatedTo:
   - urn:ngm:class:metaverse
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset
   - urn:ngm:class:eip-process
   - urn:ngm:class:real-world-asset-tokenisation

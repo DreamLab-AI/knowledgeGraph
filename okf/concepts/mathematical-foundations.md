@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:mathematical-science
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cryptography
   - urn:ngm:class:optimisation-algorithm
   - urn:ngm:class:formal-verification
@@ -20,7 +20,7 @@ supports:
 relatedTo:
   - urn:ngm:class:mathematical-reasoning
   - urn:ngm:class:mathematical-hard-problems
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 ---
 
 # Mathematical Foundations

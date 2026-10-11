@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:digital-asset
 relatedTo:
   - urn:ngm:class:financial-transactions
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # De Fi Services

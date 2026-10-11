@@ -10,18 +10,18 @@ quality: 0.73
 is-a:
   - urn:ngm:class:decentralized-identity-did
 hasPart:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:did-document
   - urn:ngm:class:trust-score-metric
   - urn:ngm:class:trust-score-metric
 requires:
   - urn:ngm:class:ceramic-network
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:digital-wallet
 enables:
   - urn:ngm:class:quadratic-funding
   - urn:ngm:class:public-goods-funding
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:token-airdrop
 dependsOn:
   - urn:ngm:class:ethereum

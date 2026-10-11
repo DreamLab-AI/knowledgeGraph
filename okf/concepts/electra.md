@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:sc-content-and-assets
 enables:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 contrastsWith:
   - urn:ngm:class:albert
   - urn:ngm:class:ro-berta
@@ -22,7 +22,7 @@ uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:language-modeling
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # ELECTRA

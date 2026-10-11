@@ -92,8 +92,8 @@
         "label": "Authorisation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:persistent-memory",
@@ -160,11 +160,11 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
+        "id": "urn:ngm:class:json",
         "label": "JSON"
       },
       {
@@ -184,7 +184,7 @@
         "label": "WebSockets"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -356,8 +356,8 @@
         "label": "Trust Over IP Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:agntcy",
@@ -463,11 +463,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
@@ -488,9 +483,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -520,8 +515,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -694,8 +689,8 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:sequential-computing",
-        "label": "Sequential Computing"
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -806,8 +801,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -832,12 +827,6 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
@@ -870,8 +859,8 @@
         "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Computing"
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
       }
     ]
   },
@@ -1797,7 +1786,7 @@
       "label": "The Browser Company"
     },
     {
-      "slug": "tls",
+      "slug": "transport-layer-security",
       "label": "TLS"
     },
     {

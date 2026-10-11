@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bow-shock",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Bow shock is the region sunward of Earth where the supersonic solar wind is decelerated to subsonic speed before being deflected around the planet.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

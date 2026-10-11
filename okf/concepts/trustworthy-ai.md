@@ -21,17 +21,17 @@ enables:
   - urn:ngm:class:public-trust-in-ai
   - urn:ngm:class:ai-certification
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:black-box-ai
 bridgesTo:
   - urn:ngm:class:data-governance
   - urn:ngm:class:digital-sovereignty
 uses:
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:algorithmic-auditing
   - urn:ngm:class:ai-impact-assessment
   - urn:ngm:class:robustness-testing
@@ -43,7 +43,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:eu-hleg-ai
   - urn:ngm:class:nist
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:eu-hleg-ai
 relatedTo:
   - urn:ngm:class:responsible-ai

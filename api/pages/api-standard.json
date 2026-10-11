@@ -78,8 +78,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:rest",
@@ -108,7 +108,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
+        "id": "urn:ngm:class:json",
         "label": "JSON Data Format"
       },
       {
@@ -132,8 +132,8 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:etsi",
@@ -158,7 +158,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {

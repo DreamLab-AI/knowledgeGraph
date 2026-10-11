@@ -107,11 +107,6 @@
       "slug": "bc-token-and-asset"
     },
     {
-      "id": "urn:ngm:class:custody-infrastructure",
-      "label": "Custody Infrastructure",
-      "slug": "custody-infrastructure"
-    },
-    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
@@ -172,9 +167,19 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -187,9 +192,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -207,6 +227,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -222,19 +252,19 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -245,6 +275,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -271,7 +306,7 @@
         "label": "Institutional Custody"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
+        "id": "urn:ngm:class:multisignature",
         "label": "Multi-Signature Scheme"
       },
       {
@@ -305,20 +340,20 @@
         "label": "Wallet"
       },
       {
-        "id": "urn:ngm:class:multi-party-computation",
-        "label": "Multi-Party Computation"
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:threshold-signature-scheme",
-        "label": "Threshold Signature Scheme"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       }
     ],
     "enables": [
@@ -343,16 +378,16 @@
         "label": "Transaction Signing"
       },
       {
-        "id": "urn:ngm:class:digital-asset-etf",
-        "label": "Digital Asset ETF"
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:institutional-digital-asset-custody",
-        "label": "Institutional Digital Asset Custody"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:tokenised-real-world-assets",
-        "label": "Tokenised Real World Assets"
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
       }
     ],
     "dependsOn": [
@@ -425,7 +460,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -483,12 +518,12 @@
         "label": "Self-Custody"
       },
       {
-        "id": "urn:ngm:class:key-management",
-        "label": "Distributed Key Management"
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:traditional-securities-custody",
-        "label": "Traditional Securities Custody"
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
       }
     ],
     "uses": [
@@ -501,18 +536,6 @@
         "label": "Blockchain Transaction"
       },
       {
-        "id": "urn:ngm:class:air-gap",
-        "label": "Air Gap"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-analytics",
-        "label": "Blockchain Analytics"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
@@ -523,6 +546,18 @@
       {
         "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
       }
     ],
     "supports": [
@@ -535,16 +570,8 @@
         "label": "Regulatory Reporting"
       },
       {
-        "id": "urn:ngm:class:institutional-defi",
-        "label": "Institutional DeFi"
-      },
-      {
-        "id": "urn:ngm:class:qualified-custodian",
-        "label": "Qualified Custodian"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -557,17 +584,17 @@
       {
         "id": "urn:ngm:class:retail-cbdc",
         "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
-        "label": "MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:occ-interpretive-letter",
-        "label": "OCC Interpretive Letter"
-      },
       {
         "id": "urn:ngm:class:eu-dlt-pilot-regime",
         "label": "EU DLT Pilot Regime"
@@ -591,6 +618,14 @@
       {
         "id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23244",
+        "label": "ISO TR 23244"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-23258",
+        "label": "ISO TS 23258"
       }
     ],
     "partOf": [
@@ -601,14 +636,6 @@
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
-      },
-      {
-        "id": "urn:ngm:class:digital-asset-infrastructure",
-        "label": "Digital Asset Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:financial-market-infrastructure",
-        "label": "Financial Market Infrastructure"
       },
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -625,6 +652,14 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
       }
     ],
     "relatedTo": [
@@ -649,16 +684,16 @@
         "label": "Asset Tokenisation"
       },
       {
-        "id": "urn:ngm:class:erc-20-token-standard",
+        "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
       },
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:cryptographic-key",
-        "label": "Cryptographic Key"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       }
     ]
   },

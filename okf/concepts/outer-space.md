@@ -4,6 +4,7 @@ type: Class
 title: Outer Space
 resource: urn:ngm:class:outer-space
 domain: space-science-and-systems
+description: Outer space is the region beyond Earth's atmosphere, which the exosphere separates from the rest of the atmosphere.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Outer Space
+
+Outer space is the region beyond Earth's atmosphere, which the exosphere separates from the rest of the atmosphere.[^1]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-medicine",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space medicine is the research and clinical practice directed at protecting the health and performance of people who travel in space.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

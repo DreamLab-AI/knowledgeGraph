@@ -9,7 +9,7 @@ maturity: draft
 quality: 0.5
 is-a:
   - urn:ngm:class:network-component
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:blockchain
 requires:
   - urn:ngm:class:blockchain-oracle

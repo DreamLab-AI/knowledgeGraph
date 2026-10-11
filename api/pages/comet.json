@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:comet",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A comet is a small body of frozen gases, rock and dust that orbits the Sun and, when heated near it, releases gas and dust that form a coma and tails.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

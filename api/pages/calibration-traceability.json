@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:calibration-traceability",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Calibration traceability is the property of a measurement result that allows it to be related to a reference through a documented, unbroken chain of calibrations, each of which contributes to the measurement uncertainty.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

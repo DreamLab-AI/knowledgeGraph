@@ -17,8 +17,8 @@ requires:
   - urn:ngm:class:light-client
 enables:
   - urn:ngm:class:atomic-swap
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:cross-chain-interoperability
 bridgesTo:

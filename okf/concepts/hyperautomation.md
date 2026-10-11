@@ -26,7 +26,7 @@ bridgesTo:
   - urn:ngm:class:workflow-automation
 uses:
   - urn:ngm:class:robotic-process-automation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:process-mining
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:ai-agents

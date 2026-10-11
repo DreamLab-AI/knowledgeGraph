@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:telecollaboration
 requires:
   - urn:ngm:class:dao-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 enables:
   - urn:ngm:class:remote-collaboration
 bridgesTo:

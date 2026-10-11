@@ -84,7 +84,7 @@ relatedTo:
   - urn:ngm:class:climate-change
   - urn:ngm:class:human-development-index
   - urn:ngm:class:universal-basic-income
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-technology
   - urn:ngm:class:ai-labour-displacement
   - urn:ngm:class:austerity

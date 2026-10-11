@@ -29,8 +29,8 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:access-control",
@@ -128,8 +128,8 @@
         "label": "Access Control Policy"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:audit-logging",
@@ -138,10 +138,6 @@
       {
         "id": "urn:ngm:class:authentication",
         "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
       },
       {
         "id": "urn:ngm:class:identity-and-access-management",
@@ -154,6 +150,10 @@
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       }
     ],
     "requires": [
@@ -230,12 +230,12 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -251,10 +251,6 @@
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
-      },
       {
         "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"

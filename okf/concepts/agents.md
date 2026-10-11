@@ -16,7 +16,7 @@ is-a:
 hasPart:
   - urn:ngm:class:action-executor
   - urn:ngm:class:agent-memory
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:planning-module
   - urn:ngm:class:reasoning-trace
   - urn:ngm:class:reflection-loop
@@ -25,7 +25,7 @@ hasPart:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:observation-buffer
 requires:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:inference-compute
   - urn:ngm:class:tool-definition
   - urn:ngm:class:context-window
@@ -44,7 +44,7 @@ enables:
 dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:vector-database
   - urn:ngm:class:function-calling-api
@@ -80,7 +80,7 @@ supports:
   - urn:ngm:class:enterprise-workflow
   - urn:ngm:class:personal-assistance
   - urn:ngm:class:scientific-research
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:robotics-control
 standardizedBy:
   - urn:ngm:class:agent2-agent-protocol-google-2025

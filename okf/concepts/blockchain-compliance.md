@@ -12,8 +12,8 @@ is-a:
   - urn:ngm:class:regulatory-compliance
 requires:
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:counter-terrorist-financing
   - urn:ngm:class:transaction-monitoring
 enables:
@@ -27,7 +27,7 @@ implements:
   - urn:ngm:class:data-protection
 contrastsWith:
   - urn:ngm:class:privacy-coin
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:financial-crime-prevention
@@ -35,7 +35,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:blockchain-analytics
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:smart-contract
 standardizedBy:
   - urn:ngm:class:bc-0484-markets-in-crypto-assets
@@ -45,8 +45,8 @@ relatedTo:
   - urn:ngm:class:securities-regulation
   - urn:ngm:class:regulatory-reporting
   - urn:ngm:class:blockchain
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Blockchain Compliance

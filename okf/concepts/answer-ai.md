@@ -10,7 +10,7 @@ quality: 0.82
 is-a:
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:applied-machine-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:fast-ai
   - urn:ngm:class:fasthtml
@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:distributed-training
 requires:
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:python-programming-language
   - urn:ngm:class:deep-learning-framework
 enables:
@@ -64,7 +64,7 @@ relatedTo:
   - urn:ngm:class:fast-ai
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:open-source-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:education-and-ai
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:direct-preference-optimisation
@@ -76,7 +76,7 @@ relatedTo:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:agentic-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Answer AI

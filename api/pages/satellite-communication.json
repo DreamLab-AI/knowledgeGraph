@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-communication",
   "domain": "infrastructure",
-  "definition": "Satellite communication is the use of artificial Earth-orbiting satellites as relay stations to transmit signals \u2014 including voice, data, video, and telemetry \u2014 between ground terminals separated by large distances or challenging terrain. Signals are uplinked from a ground station to a satellite transponder, which amplifies and retransmits them on a different frequency to one or more receiving terminals. Different orbital regimes (GEO, MEO, LEO) offer distinct trade-offs between coverage footprint, latency, and capacity.",
+  "definition": "Satellite communication is the end-to-end exchange of information through a system that uses one or more satellite links between space and terrestrial, airborne or maritime endpoints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infrastructure",

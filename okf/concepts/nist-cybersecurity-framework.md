@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:soc-2
   - urn:ngm:class:cis-controls
 bridgesTo:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ai-governance
 uses:
   - urn:ngm:class:risk-register

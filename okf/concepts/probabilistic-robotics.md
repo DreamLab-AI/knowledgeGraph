@@ -31,11 +31,11 @@ implements:
   - urn:ngm:class:bayes-filter
   - urn:ngm:class:hidden-markov-model
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 uses:
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:kalman-filter
   - urn:ngm:class:extended-kalman-filter
   - urn:ngm:class:markov-decision-process

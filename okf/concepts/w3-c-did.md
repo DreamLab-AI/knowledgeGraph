@@ -11,14 +11,14 @@ is-a:
   - urn:ngm:class:w3-c-did-core
 hasPart:
   - urn:ngm:class:did-document
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:did-method
   - urn:ngm:class:did-resolver
   - urn:ngm:class:verification-method
 requires:
   - urn:ngm:class:verifiable-data-registry
   - urn:ngm:class:public-key-cryptography
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 enables:
   - urn:ngm:class:decentralised-trust
   - urn:ngm:class:authentication
@@ -26,10 +26,10 @@ enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:selective-disclosure
 implements:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:trust-over-ip-stack
 contrastsWith:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:open-id-connect
 bridgesTo:
@@ -40,9 +40,9 @@ uses:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:uri
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:sidetree-protocol
 ---
 

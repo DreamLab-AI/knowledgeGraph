@@ -18,8 +18,8 @@ enables:
   - urn:ngm:class:accountability
   - urn:ngm:class:regulatory-compliance
 implements:
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:self-certification
   - urn:ngm:class:black-box-ai

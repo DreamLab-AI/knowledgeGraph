@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0.75
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:gradient-descent
@@ -17,13 +17,13 @@ hasPart:
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 requires:
   - urn:ngm:class:loss-function
   - urn:ngm:class:neural-network
 relatedTo:
   - urn:ngm:class:optimisation-algorithm
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:mixed-precision-training
   - urn:ngm:class:distributed-training

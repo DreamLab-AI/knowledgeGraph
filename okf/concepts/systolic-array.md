@@ -27,7 +27,7 @@ uses:
   - urn:ngm:class:data-flow-architecture
   - urn:ngm:class:hardware-accelerator
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:gpu
   - urn:ngm:class:field-programmable-gate-array

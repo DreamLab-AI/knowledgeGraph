@@ -8,14 +8,14 @@ description: Mango Markets is a decentralised trading platform on Solana offerin
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 requires:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 enables:
   - urn:ngm:class:yield-farming
 bridgesTo:
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Mango Markets

@@ -71,7 +71,7 @@ supports:
   - urn:ngm:class:scientific-computing
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:neural-network
   - urn:ngm:class:gaussian-process
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:neural-architecture-search
 ---
 

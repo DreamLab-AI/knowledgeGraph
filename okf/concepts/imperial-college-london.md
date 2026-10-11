@@ -25,7 +25,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:blockchain-research
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:robotics

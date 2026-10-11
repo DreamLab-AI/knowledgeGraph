@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:text-classification
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 enables:
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:reputation-system
@@ -24,9 +24,9 @@ enables:
   - urn:ngm:class:customer-feedback-analysis
   - urn:ngm:class:reputation-system
 dependsOn:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:feature-extraction
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
 contrastsWith:
   - urn:ngm:class:named-entity-recognition
   - urn:ngm:class:machine-translation
@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:financial-analytics
 uses:
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:word-embeddings
   - urn:ngm:class:recurrent-neural-network
 partOf:

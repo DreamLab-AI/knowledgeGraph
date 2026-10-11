@@ -21,10 +21,10 @@ enables:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:secure-ai-deployment
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:threat-modelling
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:ai-safety
 bridgesTo:

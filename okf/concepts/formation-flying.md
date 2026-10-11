@@ -4,6 +4,7 @@ type: Class
 title: Formation Flying
 resource: urn:ngm:class:formation-flying
 domain: space-science-and-systems
+description: Formation flying is the operation of two or more spacecraft in a controlled relative arrangement, which the NASA small-spacecraft survey treats as a research area needing relative navigation, guidance and actuation.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Formation Flying
+
+Formation flying is the operation of two or more spacecraft in a controlled relative arrangement, which the NASA small-spacecraft survey treats as a research area needing relative navigation, guidance and actuation.[^1]

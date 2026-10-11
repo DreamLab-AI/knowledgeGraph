@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:calculus
 enables:
   - urn:ngm:class:statistical-learning-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analysis
   - urn:ngm:class:experimental-design
   - urn:ngm:class:bayesian-inference
@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:information-theory
   - urn:ngm:class:signal-processing
   - urn:ngm:class:financial-modelling
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:causal-inference
 relatedTo:

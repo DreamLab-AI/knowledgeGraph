@@ -8,10 +8,10 @@ description: Learning is the process by which a system improves its performance 
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning

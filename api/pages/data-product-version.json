@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-product-version",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A data product version is an identifier that distinguishes one release of a data product from another, for example releases produced with different processing algorithms or updated calibration parameters.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

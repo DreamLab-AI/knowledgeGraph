@@ -21,7 +21,7 @@ Risk scoring is the quantitative practice of assigning a numerical value to an e
 
 - Credit decisioning, lending and underwriting.
 - Transaction monitoring for [[Fraud Detection]] and [[Anti-Money Laundering]].
-- Customer due diligence and [[KYC]] tiering.
+- Customer due diligence and [[Know Your Customer]] tiering.
 - Insurance pricing and claims triage.
 
 ### Provenance

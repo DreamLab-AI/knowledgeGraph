@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:neural-network-text-tokenisation
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
 contrastsWith:
   - urn:ngm:class:word-piece

@@ -30,7 +30,7 @@ uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:lidar
   - urn:ngm:class:path-planning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:iso-26262
   - urn:ngm:class:ieee-standards

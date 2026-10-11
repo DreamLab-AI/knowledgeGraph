@@ -16,7 +16,7 @@ supports:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-safety
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:generative-ai
 ---

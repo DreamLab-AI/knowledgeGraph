@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:timelock
 enables:
   - urn:ngm:class:micropayment
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:atomic-swap
 dependsOn:
   - urn:ngm:class:blockchain

@@ -24,7 +24,7 @@ hasPart:
 requires:
   - urn:ngm:class:authoring-tool
   - urn:ngm:class:asset-management-system
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:real-time-rendering-engine
   - urn:ngm:class:authoring-tool
   - urn:ngm:class:asset-compression
@@ -36,7 +36,7 @@ enables:
   - urn:ngm:class:procedural-generation
   - urn:ngm:class:dynamic-asset-loading
 dependsOn:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:usd-format
   - urn:ngm:class:material-system
   - urn:ngm:class:shader-pipeline

@@ -4,6 +4,7 @@ type: Class
 title: Meteorite
 resource: urn:ngm:class:meteorite
 domain: space-science-and-systems
+description: A meteorite is a meteoroid that survives a trip through the atmosphere and hits the ground.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Meteorite
+
+A meteorite is a meteoroid that survives a trip through the atmosphere and hits the ground.[^1]

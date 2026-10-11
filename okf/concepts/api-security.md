@@ -14,21 +14,21 @@ hasPart:
   - urn:ngm:class:api-gateway
 requires:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 enables:
   - urn:ngm:class:api-management
 implements:
   - urn:ngm:class:zero-trust-architecture
 uses:
   - urn:ngm:class:oauth
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:mutual-tls
   - urn:ngm:class:encryption
 supports:
   - urn:ngm:class:rest-api
   - urn:ngm:class:api-design
 standardizedBy:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 relatedTo:
   - urn:ngm:class:penetration-testing
   - urn:ngm:class:microservices

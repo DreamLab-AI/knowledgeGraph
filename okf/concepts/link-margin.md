@@ -4,6 +4,7 @@ type: Class
 title: Link Margin
 resource: urn:ngm:class:link-margin
 domain: space-science-and-systems
+description: Link margin is the available link performance above a required threshold under stated assumptions, commonly expressed in decibels.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Link Margin
+
+Link margin is the available link performance above a required threshold under stated assumptions, commonly expressed in decibels.

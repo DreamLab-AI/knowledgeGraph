@@ -44,7 +44,7 @@ relatedTo:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:tokenomics
   - urn:ngm:class:proof-of-stake
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Transaction Fee

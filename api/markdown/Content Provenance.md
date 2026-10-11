@@ -78,7 +78,7 @@ Content provenance is the verifiable, machine-readable record of the origin, aut
 
 #### W3C and Verifiable Credentials
 
-- The W3C [[Verifiable Credentials]] Data Model provides a complementary framework for expressing creator identity claims in a decentralised, [[Decentralised Identity]] compatible manner.
+- The W3C [[Verifiable Credential]] Data Model provides a complementary framework for expressing creator identity claims in a decentralised, [[Decentralised Identity]] compatible manner.
 - Integration work links C2PA signing keys to W3C DID documents, enabling cross-ecosystem trust resolution.
 
 #### IPTC Photo Metadata Standard

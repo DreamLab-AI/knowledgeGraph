@@ -34,7 +34,7 @@ supports:
   - urn:ngm:class:pruning
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:neural-network
   - urn:ngm:class:deep-learning

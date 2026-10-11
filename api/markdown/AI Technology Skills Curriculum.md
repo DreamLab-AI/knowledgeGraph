@@ -38,7 +38,7 @@ Structured educational programmes and skill-development resources covering artif
 - touchdesigner community: A community dedicated to TouchDesigner, a visual development platform.
 - [Torin Blankensmith](https://www.torinblankensmith.com/): Website of Torin Blankensmith, a creative technologist.
 - [Torin Blankensmith YouTube](https://www.youtube.com/c/torinblankensmith): YouTube channel of Torin Blankensmith, featuring various creative and tech-related content.
-- [Latent space](https://huggingface.co/learn/nlp-course/chapter0/1?fw=pt): An educational resource that explains the concept of [[Neural Network Latent Space]] in natural language processing.
+- [Latent space](https://huggingface.co/learn/nlp-course/chapter0/1?fw=pt): An educational resource that explains the concept of [[Latent Space]] in natural language processing.
 - [Embeddings explainer (MUST READ)](https://simonwillison.net/2023/Oct/23/embeddings/): An article explaining the concept of embeddings in machine learning.
 - [Ebooks and stuff](https://z-lib.io/): A website where you can find and download ebooks.
 - [AWS Skill Builder](https://explore.skillbuilder.aws/learn/course/external/view/elearning/17763/foundations-of-prompt-engineering): A course provided by AWS that focuses on the foundations of prompt engineering.

@@ -8,7 +8,6 @@ description: Customer experience (CX) is the holistic perception a customer form
 maturity: established
 quality: 0.9
 is-a:
-  - urn:ngm:class:user-experience
   - urn:ngm:class:customer-experience-management
 hasPart:
   - urn:ngm:class:omnichannel-orchestration
@@ -31,9 +30,9 @@ enables:
   - urn:ngm:class:next-best-action
   - urn:ngm:class:customer-rewards
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:crm
   - urn:ngm:class:e-commerce
@@ -60,9 +59,9 @@ uses:
   - urn:ngm:class:sentiment-analysis
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:journey-mapping
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:conversational-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:voice-of-customer
   - urn:ngm:class:real-time-decisioning
   - urn:ngm:class:net-promoter-score

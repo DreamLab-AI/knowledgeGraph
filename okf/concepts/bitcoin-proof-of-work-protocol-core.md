@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:distributed-ledger
 enables:
   - urn:ngm:class:lightning-network
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-custody
 dependsOn:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-network

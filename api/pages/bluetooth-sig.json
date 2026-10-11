@@ -51,8 +51,8 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ]
   },

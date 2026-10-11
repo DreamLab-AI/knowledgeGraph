@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:transaction-monitoring
 bridgesTo:
   - urn:ngm:class:blockchain-analytics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:blockchain-compliance
@@ -37,8 +37,8 @@ partOf:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:financial-crime-compliance
 relatedTo:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:correspondent-banking
 ---
 

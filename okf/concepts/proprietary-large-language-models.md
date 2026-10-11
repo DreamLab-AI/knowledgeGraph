@@ -11,18 +11,18 @@ is-a:
   - urn:ngm:class:ai-model-architecture
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:cognitive-ai
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:generative-ai
 hasPart:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:safety-evaluation
   - urn:ngm:class:system-prompt
-  - urn:ngm:class:tokenizer
+  - urn:ngm:class:tokeniser
   - urn:ngm:class:api-gateway
   - urn:ngm:class:attention
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:context-window
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:transformer-architecture
@@ -30,7 +30,7 @@ requires:
   - urn:ngm:class:human-feedback
   - urn:ngm:class:inference-infrastructure
   - urn:ngm:class:large-scale-compute
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:red-teaming
   - urn:ngm:class:supervised-fine-tuning
   - urn:ngm:class:human-feedback
@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:supervised-fine-tuning
   - urn:ngm:class:large-scale-compute
   - urn:ngm:class:human-feedback
-  - urn:ngm:class:tokenizer
+  - urn:ngm:class:tokeniser
   - urn:ngm:class:algorithmic-bias-and-variance
   - urn:ngm:class:bias-in-large-language-models
 implements:
@@ -59,7 +59,7 @@ implements:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-use
   - urn:ngm:class:attention
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:multimodal-ai-architecture
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:supervised-fine-tuning
@@ -74,11 +74,11 @@ contrastsWith:
 uses:
   - urn:ngm:class:chain-of-thought
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:rlhf
-  - urn:ngm:class:tokenizer
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:tokeniser
   - urn:ngm:class:tool-use
   - urn:ngm:class:attention
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:multimodal-ai-architecture
   - urn:ngm:class:multimodal-ai-architecture
 supports:
@@ -93,11 +93,11 @@ supports:
   - urn:ngm:class:competition-in-ai
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:uk-ai-safety-institute
   - urn:ngm:class:asia-pacific-regulation
   - urn:ngm:class:california-ai-bill
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-companies
   - urn:ngm:class:ai-liability
@@ -109,7 +109,7 @@ relatedTo:
   - urn:ngm:class:brain-computer-interfaces
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:competition-in-ai
-  - urn:ngm:class:artificial-superintelligence-theory
+  - urn:ngm:class:superintelligence
 ---
 
 # Proprietary Large Language Models

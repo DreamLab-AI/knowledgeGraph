@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:monetary-sovereignty
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:self-sovereign-identity

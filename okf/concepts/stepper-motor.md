@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:encoder
   - urn:ngm:class:rotary-encoder
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:motion-control
   - urn:ngm:class:open-loop-control
 enables:

@@ -36,9 +36,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:de-fi",
-      "label": "DeFi",
-      "slug": "de-fi"
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance",
+      "slug": "decentralised-finance"
     },
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -106,9 +106,19 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -121,9 +131,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -141,6 +166,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -156,19 +191,19 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -179,6 +214,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -193,8 +233,16 @@
         "label": "Automated Market Maker"
       },
       {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
         "id": "urn:ngm:class:flash-loan",
         "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
       },
       {
         "id": "urn:ngm:class:liquidity-pool",
@@ -205,20 +253,12 @@
         "label": "Yield Aggregator"
       },
       {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
         "id": "urn:ngm:class:blockchain-economics",
         "label": "Blockchain Economics"
-      },
-      {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-finance-de-fi",
-        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "requires": [
@@ -229,6 +269,14 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
         "id": "urn:ngm:class:oracle",
@@ -245,14 +293,6 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:distributed-consensus",
-        "label": "Distributed Consensus"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
       }
     ],
     "enables": [
@@ -273,20 +313,20 @@
         "label": "MEV"
       },
       {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
         "id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-derivatives",
-        "label": "On-Chain Derivatives"
-      },
-      {
-        "id": "urn:ngm:class:permissionless-lending",
-        "label": "Permissionless Lending"
-      },
-      {
-        "id": "urn:ngm:class:yield-farming",
-        "label": "Yield Farming"
       }
     ],
     "dependsOn": [
@@ -299,12 +339,16 @@
         "label": "Price Oracle"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:gas-fee",
-        "label": "Gas Fee"
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
       },
       {
         "id": "urn:ngm:class:cap-theorem",
@@ -317,10 +361,6 @@
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
       }
     ],
     "implements": [
@@ -363,6 +403,14 @@
         "label": "Centralised Exchange"
       },
       {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
         "id": "urn:ngm:class:traditional-finance",
         "label": "Traditional Finance"
       },
@@ -381,14 +429,6 @@
       {
         "id": "urn:ngm:class:centralised-ledger",
         "label": "Centralised Ledger"
-      },
-      {
-        "id": "urn:ngm:class:cloud-database",
-        "label": "Cloud Database"
-      },
-      {
-        "id": "urn:ngm:class:federated-database",
-        "label": "Federated Database"
       }
     ],
     "bridgesTo": [
@@ -405,6 +445,10 @@
         "label": "Digital Identity"
       },
       {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
       },
@@ -419,10 +463,6 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
@@ -461,8 +501,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -553,12 +593,12 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
       },
       {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       }
     ],
     "relatedTo": [
@@ -567,12 +607,12 @@
         "label": "Automated Market Maker"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralised Finance"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:transaction",
@@ -587,12 +627,12 @@
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:ngm:class:dao-governance",
-        "label": "DAO Governance"
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:maximal-extractable-value",
-        "label": "Maximal Extractable Value"
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
       }
     ]
   },

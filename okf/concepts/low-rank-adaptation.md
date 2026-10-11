@@ -9,16 +9,20 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:parameter-efficient-fine-tuning
+  - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:adapter-modules
 requires:
   - urn:ngm:class:neural-network
   - urn:ngm:class:pre-trained-model
   - urn:ngm:class:matrix-factorisation
+  - urn:ngm:class:transformer-architecture
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:multi-task-learning
+  - urn:ngm:class:instruction-tuning
 dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:weight-matrix
@@ -28,6 +32,7 @@ contrastsWith:
   - urn:ngm:class:full-fine-tuning
   - urn:ngm:class:prompt-tuning
   - urn:ngm:class:prefix-tuning
+  - urn:ngm:class:knowledge-distillation
 bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:robotics

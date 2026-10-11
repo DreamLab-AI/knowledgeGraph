@@ -16,7 +16,7 @@ contrastsWith:
   - urn:ngm:class:adversarial-robustness
 uses:
   - urn:ngm:class:data-poisoning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:model-robustness
   - urn:ngm:class:privacy

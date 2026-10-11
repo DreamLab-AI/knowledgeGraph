@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:machine-learning-software
   - urn:ngm:class:deep-learning-domain
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:automatic-differentiation
   - urn:ngm:class:tensor-operation

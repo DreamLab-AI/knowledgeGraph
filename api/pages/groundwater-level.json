@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:groundwater-level",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Groundwater Level is the elevation of the water table, expressed either as a height above a datum such as sea level or as a depth below the surface.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

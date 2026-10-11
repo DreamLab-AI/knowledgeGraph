@@ -3,7 +3,7 @@ Fiat currency is money issued and declared legal tender by a sovereign governmen
 ### Overview
 
 - Fiat currency represents the dominant form of [[Money]] in virtually every contemporary national economy. The word "fiat" derives from Latin for "let it be done," reflecting that value is conferred by governmental decree rather than by any physical backing.
-- Prior to the 20th century, many currencies operated under a [[Gold Standard]] or [[Commodity Money]] arrangement, where each unit could be redeemed for a fixed quantity of precious metal. The transition away from commodity backing culminated globally in 1971, when the United States abandoned Bretton Woods convertibility, allowing the [[USD]] to float freely — a change that generalised to nearly all major currencies.
+- Prior to the 20th century, many currencies operated under a [[Gold Standard]] or [[Commodity Money]] arrangement, where each unit could be redeemed for a fixed quantity of precious metal. The transition away from commodity backing culminated globally in 1971, when the United States abandoned Bretton Woods convertibility, allowing the [[Universal Scene Description]] to float freely — a change that generalised to nearly all major currencies.
 - Modern fiat systems rely on a hierarchy of institutions: [[Central Bank]] at the apex sets the monetary base and interest rate corridor; commercial banks create broad money through [[Fractional Reserve Banking]]; and interbank settlement occurs via [[Real-Time Gross Settlement]] systems such as Fedwire, CHAPS, and TARGET2.
 - The legitimacy of fiat currency rests on three pillars:
   - **Legal authority** — governments mandate its acceptance for settling debts and tax obligations.
@@ -18,16 +18,16 @@ Fiat currency is money issued and declared legal tender by a sovereign governmen
 - **[[Fractional Reserve Banking]]** — commercial banks hold only a fraction of deposits as reserves, multiplying the money supply beyond the monetary base through credit creation.
 - **[[Foreign Exchange Market]]** — fiat currencies trade against one another in the world's largest and most liquid market, with exchange rates set by supply and demand subject to central bank intervention.
 - **Settlement infrastructure** — large-value payments clear via [[Real-Time Gross Settlement]] systems; retail payments use card networks and ACH-style batch systems. [[SWIFT]] provides the messaging layer for cross-border correspondent banking.
-- **[[Reserve Currency]] status** — certain fiat currencies (especially [[USD]], EUR, JPY, GBP) are held by foreign central banks as foreign exchange reserves, conferring exorbitant privilege and liquidity advantages on the issuing nation.
+- **[[Reserve Currency]] status** — certain fiat currencies (especially [[Universal Scene Description]], EUR, JPY, GBP) are held by foreign central banks as foreign exchange reserves, conferring exorbitant privilege and liquidity advantages on the issuing nation.
 
 ### Applications and Use Cases
 
 - **Everyday commerce** — wages, retail transactions, and tax payments denominated and settled in the domestic fiat unit.
 - **Government finance** — sovereign bonds denominated in fiat currency allow states to borrow and spend; [[Monetary Policy]] can be used to manage debt burdens.
-- **[[International Trade]]** — most commodity contracts and trade invoices are priced in dominant fiat currencies, principally [[USD]]; exporters and importers manage [[Exchange Rate]] risk through hedging instruments.
+- **[[International Trade]]** — most commodity contracts and trade invoices are priced in dominant fiat currencies, principally [[Universal Scene Description]]; exporters and importers manage [[Exchange Rate]] risk through hedging instruments.
 - **Banking system liquidity** — central bank reserves (digital fiat held by commercial banks at the central bank) underpin overnight lending markets and interbank settlement.
 - **Digital asset on/off ramps** — [[Cryptocurrency]] exchanges use fiat currency as the entry and exit point; fiat-to-crypto conversion is the primary gateway to [[Decentralised Finance]].
-- **[[Stablecoin]] reserves** — fiat-backed stablecoins (e.g. USDC, Tether) hold fiat cash and short-term government securities as collateral, anchoring their peg to the [[USD]] or other fiat unit.
+- **[[Stablecoin]] reserves** — fiat-backed stablecoins (e.g. USDC, Tether) hold fiat cash and short-term government securities as collateral, anchoring their peg to the [[Universal Scene Description]] or other fiat unit.
 - **[[Central Bank Digital Currency]]** — governments and central banks are piloting and deploying CBDCs as a digital form of fiat currency that is a direct liability of the monetary authority, potentially bypassing commercial bank intermediation.
 - **[[Tokenisation]]** — real-world assets, including fiat-denominated instruments like bonds and deposits, are increasingly tokenised on distributed ledgers, blending fiat-denominated value with blockchain settlement.
 
@@ -35,7 +35,7 @@ Fiat currency is money issued and declared legal tender by a sovereign governmen
 
 - **ISO 4217** — the international standard for currency codes (e.g. USD, EUR, GBP, JPY), maintained by the International Organization for Standardization. Currency codes are used in [[SWIFT]] messages and financial data feeds.
 - **BIS (Bank for International Settlements)** — the central bank for central banks; publishes research and coordinates regulatory standards (Basel Accords) affecting the capital and liquidity requirements of commercial banks operating in fiat currency systems.
-- **IMF Special Drawing Rights (SDR)** — a supplementary reserve asset defined as a basket of major fiat currencies ([[USD]], EUR, CNY, JPY, GBP), reflecting the international monetary hierarchy.
+- **IMF Special Drawing Rights (SDR)** — a supplementary reserve asset defined as a basket of major fiat currencies ([[Universal Scene Description]], EUR, CNY, JPY, GBP), reflecting the international monetary hierarchy.
 - **Basel III / Capital Adequacy** — [[Fractional Reserve Banking]] is governed by Basel Committee standards requiring minimum capital ratios, liquidity coverage ratios, and net stable funding ratios, all denominated in fiat.
 - **Anti-Money Laundering (AML) / Know Your Customer (KYC)** — fiat currency transactions above threshold values are subject to reporting requirements under FATF recommendations; these obligations extend to fiat on/off ramps in [[Cryptocurrency]] exchanges.
 - **[[Central Bank Digital Currency]] regulation** — emerging frameworks (e.g. EU MiCA regulation, BIS Project mBridge) are defining the legal and technical standards for digital fiat, distinguishing retail CBDC from wholesale CBDC.

@@ -8,13 +8,13 @@ description: Model Evaluation is the systematic process of measuring the perform
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:labelled-data
   - urn:ngm:class:ground-truth-labels
   - urn:ngm:class:empirical-experimental-design-tracking
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
 enables:
   - urn:ngm:class:model-deployment
   - urn:ngm:class:model-selection

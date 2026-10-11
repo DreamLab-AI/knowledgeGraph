@@ -105,16 +105,16 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
-      },
-      {
-        "id": "urn:ngm:class:data-quality",
-        "label": "Data Quality"
-      },
-      {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
       }
     ],
     "requires": [
@@ -173,8 +173,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -295,20 +295,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
-      },
-      {
-        "id": "urn:ngm:class:devops",
-        "label": "DevOps"
       }
     ]
   },

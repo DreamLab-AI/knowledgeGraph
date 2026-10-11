@@ -8,13 +8,34 @@ description: The engineering discipline and technology stack that performs compu
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:infra-computing-and-cloud
 hasPart:
   - urn:ngm:class:qubit
+  - urn:ngm:class:quantum-gate
+  - urn:ngm:class:quantum-error-correction
+  - urn:ngm:class:quantum-circuit
+requires:
+  - urn:ngm:class:quantum-error-correction
+enables:
+  - urn:ngm:class:encryption
+  - urn:ngm:class:quantum-key-distribution
+  - urn:ngm:class:combinatorial-optimisation
+  - urn:ngm:class:scientific-simulation
+implements:
+  - urn:ngm:class:shors-algorithm
+  - urn:ngm:class:grovers-algorithm
+contrastsWith:
+  - urn:ngm:class:cryptography
+  - urn:ngm:class:classical-computing
 bridgesTo:
   - urn:ngm:class:combinatorial-optimisation
+  - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:blockchain
 relatedTo:
   - urn:ngm:class:computational-complexity-theory
+  - urn:ngm:class:distributed-systems
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:deep-learning
 ---
 
 # Quantum Computing

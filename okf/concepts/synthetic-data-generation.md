@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:simulation
   - urn:ngm:class:data-pipeline
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:regulatory-compliance

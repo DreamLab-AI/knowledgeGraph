@@ -16,7 +16,7 @@ A governance attack is an exploit in which an adversary acquires or temporarily 
 
 ### Applications
 
-- Threat modelling for [[DAO]] treasuries and protocol upgrade processes.
+- Threat modelling for [[Decentralised Autonomous Organisation]] treasuries and protocol upgrade processes.
 - Designing time-locks, quorum floors, and vote-snapshot strategies that resist flash-loan voting.
 - Security audits of [[Voting Mechanism]] and delegation contracts.
 - Post-mortem analysis and remediation after exploited proposals.

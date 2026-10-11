@@ -58,7 +58,7 @@ Site Reliability Engineering (SRE) is a discipline that applies software enginee
 - **E-commerce**: retail platforms deploy SRE for peak-load management (e.g. seasonal traffic surges), using error budgets to balance feature releases around high-traffic events.
 - **Healthcare systems**: SRE practices are applied to patient-facing applications and clinical data platforms where availability and data integrity are safety-critical requirements.
 - **Cloud provider infrastructure**: major [[Cloud Computing]] platforms (AWS, GCP, Azure) internally use SRE-derived practices for managing their own control planes, and surface SLO/SLA concepts to customers.
-- **MLOps pipelines**: [[Machine Learning Operations]] borrows SRE concepts to define reliability targets for model serving endpoints, manage training infrastructure, and handle model drift as an operational concern.
+- **MLOps pipelines**: [[MLOps]] borrows SRE concepts to define reliability targets for model serving endpoints, manage training infrastructure, and handle model drift as an operational concern.
 
 ### Contrasts and Complements
 

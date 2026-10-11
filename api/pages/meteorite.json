@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meteorite",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A meteorite is a meteoroid that survives a trip through the atmosphere and hits the ground.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

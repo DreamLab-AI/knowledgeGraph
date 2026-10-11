@@ -5,7 +5,7 @@ Programmable Money is a form of digital currency in which the conditions governi
 - Programmable money sits at the intersection of monetary theory, computer science, and financial regulation. The core insight is that a monetary unit need not be a dumb integer in a ledger — it can carry executable metadata that governs its own lifecycle.
 - The concept predates blockchain: prepaid cards with merchant-category restrictions and earmarked welfare vouchers are analogue predecessors. What blockchain and [[Smart Contract]] infrastructure add is trustless enforcement: no central party needs to police the rules because the code does so automatically on every transfer.
 - Three major design axes define the design space:
-  - **Centralisation vs. decentralisation**: [[CBDCs]] are issued and revocable by a central bank; DeFi tokens are governed by protocol rules and on-chain [[Decentralized Autonomous Organisation]] votes.
+  - **Centralisation vs. decentralisation**: [[Central Bank Digital Currency]] are issued and revocable by a central bank; DeFi tokens are governed by protocol rules and on-chain [[Decentralized Autonomous Organisation]] votes.
   - **Programmability of money vs. programmability of payments**: restricting what the money can buy (money-level programmability) is more controversial than conditional payment triggers such as [[Delivery Versus Payment]] in securities settlement (payment-level programmability).
   - **Privacy**: programmable rules require enforcement visibility, which creates tension with [[Financial Privacy]] expectations and GDPR-style data-protection frameworks.
 - Why it matters:
@@ -52,7 +52,7 @@ Programmable Money is a form of digital currency in which the conditions governi
 - **FATF Guidance**: The Financial Action Task Force (FATF) Travel Rule requires virtual asset service providers to transmit sender and recipient identity data alongside transfers, complicating pseudonymous programmable money flows.
 - **MiCA (Markets in Crypto-Assets Regulation)**: The EU MiCA framework (2024 implementation) creates regulatory categories for e-money tokens and asset-referenced tokens, imposing reserve, disclosure, and operational requirements that constrain how stablecoin programmability can be structured.
 - **ISO 20022**: The ISO 20022 financial messaging standard is being adopted by SWIFT and central banks for richer payment data, and is viewed as the structured-data layer that programmable CBDC payment systems will need to align with.
-- **W3C DID / Verifiable Credentials**: [[Digital Identity]] infrastructure based on W3C Decentralised Identifiers and [[Verifiable Credentials]] is increasingly positioned as the identity layer that satisfies KYC requirements for programmable money without exposing raw personal data on-chain.
+- **W3C DID / Verifiable Credentials**: [[Digital Identity]] infrastructure based on W3C Decentralised Identifiers and [[Verifiable Credential]] is increasingly positioned as the identity layer that satisfies KYC requirements for programmable money without exposing raw personal data on-chain.
 - **Privacy Tension**: Zero-knowledge proof systems (zk-SNARKs, zk-STARKs) are being integrated into CBDC and stablecoin designs to allow proof of rule compliance without revealing transaction details — a research-active frontier.
 
 ### Risks and Criticisms

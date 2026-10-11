@@ -118,6 +118,11 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -151,8 +156,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-lineage",
-        "label": "Data Lineage"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       }
     ],
     "requires": [
@@ -179,6 +184,14 @@
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
       }
     ],
     "enables": [
@@ -211,14 +224,18 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -241,6 +258,14 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
@@ -273,7 +298,7 @@
         "label": "Digital Content"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -289,12 +314,32 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [

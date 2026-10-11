@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:database-schema
 uses:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology
   - urn:ngm:class:description-logic
   - urn:ngm:class:first-order-logic

@@ -22,7 +22,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics
 uses:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:mesh-networking
 standardizedBy:
   - urn:ngm:class:bluetooth-sig

@@ -9,10 +9,10 @@ maturity: established
 quality: 0.92
 is-a:
   - urn:ngm:class:ai-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:model-evaluation
-  - urn:ngm:class:experiment-tracking
+  - urn:ngm:class:empirical-experimental-design-tracking
   - urn:ngm:class:hyperparameter-optimisation
   - urn:ngm:class:empirical-experimental-design-tracking
   - urn:ngm:class:data-pipeline
@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:ai-model
   - urn:ngm:class:ai-inference
   - urn:ngm:class:ai-deployment
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
 dependsOn:
@@ -59,7 +59,7 @@ supports:
   - urn:ngm:class:model-registry
   - urn:ngm:class:empirical-experimental-design-tracking
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:mlops
 relatedTo:
   - urn:ngm:class:ai-risk-assessment

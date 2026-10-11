@@ -68,7 +68,7 @@
         "label": "Transducer"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System"
       },
       {
@@ -317,7 +317,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -391,8 +391,8 @@
         "label": "IEEE 1451"
       },
       {
-        "id": "urn:ngm:class:ros",
-        "label": "ROS"
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:ieee-standards",
@@ -426,10 +426,6 @@
       },
       {
         "id": "urn:ngm:class:embedded-system",
-        "label": "Embedded System"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],

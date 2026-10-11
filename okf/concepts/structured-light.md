@@ -27,7 +27,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:depth-estimation

@@ -9,13 +9,12 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:model-training
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 hasPart:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:knowledge-distillation
@@ -26,7 +25,7 @@ hasPart:
   - urn:ngm:class:safety-fine-tuning
   - urn:ngm:class:supervised-fine-tuning
 requires:
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:loss-function
@@ -37,7 +36,7 @@ enables:
   - urn:ngm:class:agents
   - urn:ngm:class:code-generation
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:medical-ai
   - urn:ngm:class:multi-task-learning
   - urn:ngm:class:safety-and-alignment
@@ -47,7 +46,7 @@ dependsOn:
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
 implements:
   - urn:ngm:class:causal-language-modelling
   - urn:ngm:class:low-rank-adaptation
@@ -82,13 +81,13 @@ supports:
 standardizedBy:
   - urn:ngm:class:aisi-frontier-ai-safety-framework
   - urn:ngm:class:hugging-face
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:openai-research-organisation
   - urn:ngm:class:openai-research-organisation
 relatedTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:bias-in-large-language-models
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:emergence
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:knowledge-distillation

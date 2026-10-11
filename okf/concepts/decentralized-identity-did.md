@@ -18,15 +18,15 @@ hasPart:
 requires:
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:distributed-ledger
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
-  - urn:ngm:class:decentralized-authentication
+  - urn:ngm:class:decentralised-authentication
   - urn:ngm:class:privacy-preserving-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:cross-domain-identity
 dependsOn:
   - urn:ngm:class:w3-c-did-specification
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:blockchain-technology
 bridgesTo:
   - urn:ngm:class:did-nostr-identity

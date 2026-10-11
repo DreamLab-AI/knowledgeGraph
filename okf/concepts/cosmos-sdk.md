@@ -27,10 +27,10 @@ contrastsWith:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 bridgesTo:
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-interoperability
 uses:
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 supports:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain-interoperability

@@ -19,7 +19,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:general-purpose-smart-contract-platform
 partOf:
-  - urn:ngm:class:layer-2-solutions
+  - urn:ngm:class:layer2
 ---
 
 # Layer 3

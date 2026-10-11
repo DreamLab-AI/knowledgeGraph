@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:normalised-difference-water-index",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "The Normalised Difference Water Index names two different normalised-difference indices, and this page bounds the open-water form built from green and near-infrared reflectance.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

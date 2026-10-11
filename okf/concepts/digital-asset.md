@@ -21,7 +21,7 @@ requires:
   - urn:ngm:class:cryptographic-key
   - urn:ngm:class:digital-wallet
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:programmable-money
   - urn:ngm:class:decentralised-exchange
@@ -32,7 +32,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:physical-asset
   - urn:ngm:class:fiat-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:metaverse-economy
@@ -41,8 +41,8 @@ uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:token-standard
 standardizedBy:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 relatedTo:
   - urn:ngm:class:digital-asset-management
   - urn:ngm:class:custody

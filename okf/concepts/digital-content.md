@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:metadata
   - urn:ngm:class:digital-rights
 requires:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:storage-systems
 enables:
   - urn:ngm:class:digital-content-creation

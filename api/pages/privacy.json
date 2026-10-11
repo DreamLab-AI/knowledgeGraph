@@ -494,10 +494,6 @@
       "label": "CBDC Frameworks"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
       "slug": "ccpa",
       "label": "CCPA"
     },
@@ -508,6 +504,10 @@
     {
       "slug": "cashu",
       "label": "Cashu"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "corda",

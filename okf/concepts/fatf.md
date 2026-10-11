@@ -18,9 +18,9 @@ hasPart:
 requires:
   - urn:ngm:class:customer-due-diligence
   - urn:ngm:class:suspicious-activity-report
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:counter-terrorist-financing
   - urn:ngm:class:financial-stability
   - urn:ngm:class:proliferation-financing-controls
@@ -44,8 +44,8 @@ relatedTo:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:virtual-asset
   - urn:ngm:class:bc-0456-virtual-asset-service-providers
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:bc-0456-virtual-asset-service-providers
 ---
 

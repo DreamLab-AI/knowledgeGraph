@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:error-handling
   - urn:ngm:class:negotiation
   - urn:ngm:class:trust-management
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:ontology
 requires:
   - urn:ngm:class:ontology
@@ -53,13 +53,13 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:robotics
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:multi-agent-reinforcement-learning
   - urn:ngm:class:event-driven-architecture
 uses:
   - urn:ngm:class:message-passing
   - urn:ngm:class:speech-act-theory
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:web-socket
   - urn:ngm:class:http-protocol
   - urn:ngm:class:json-data-interchange-format-rpc-2-0
@@ -79,7 +79,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:fipa
   - urn:ngm:class:linux-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:agent-to-agent-protocol
   - urn:ngm:class:model-context-protocol

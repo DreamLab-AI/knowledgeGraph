@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:identity-management
 requires:
   - urn:ngm:class:blockchain-anchoring
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 enables:
   - urn:ngm:class:credential-verification

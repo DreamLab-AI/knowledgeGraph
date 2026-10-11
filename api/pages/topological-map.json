@@ -211,8 +211,8 @@
         "label": "Convolutional Neural Networks"
       },
       {
-        "id": "urn:ngm:class:graph-neural-networks",
-        "label": "Graph Neural Networks"
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
       },
       {
         "id": "urn:ngm:class:bag-of-words-model",
@@ -335,9 +335,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -605,7 +605,7 @@
         "label": "Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
       },
       {
@@ -615,7 +615,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -673,7 +673,7 @@
         "label": "W3C SPARQL 1.1"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C SHACL"
       },
       {

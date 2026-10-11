@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-multiple-access",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite multiple access is the set of techniques and procedures by which multiple transmitters or users share satellite communications resources.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

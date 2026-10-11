@@ -23,8 +23,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "enables": [
@@ -51,8 +51,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "uses": [
@@ -67,8 +67,8 @@
         "label": "Hardware Accelerator"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "standardizedBy": [],

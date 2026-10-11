@@ -11,7 +11,6 @@ is-a:
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:scientific-machine-learning
-  - urn:ngm:class:simulation
 hasPart:
   - urn:ngm:class:numerical-methods
   - urn:ngm:class:finite-element-analysis
@@ -61,7 +60,7 @@ contrastsWith:
   - urn:ngm:class:agent-based-modelling
   - urn:ngm:class:simulation
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:surrogate-model
   - urn:ngm:class:physics-informed-neural-network
   - urn:ngm:class:bayesian-inference

@@ -108,9 +108,9 @@
       "slug": "information-security"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:privacy-enhancing-technologies",
@@ -192,8 +192,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -226,7 +226,7 @@
         "label": "Sensitivity Analysis"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -298,7 +298,7 @@
         "label": "Statistical Learning Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -370,12 +370,12 @@
         "label": "Adversarial Machine Learning"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:surveillance-technology",
-        "label": "Surveillance Technology"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -498,7 +498,7 @@
         "label": "NIST Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Data Privacy Vocabulary"
       },
       {
@@ -510,14 +510,18 @@
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC 29101"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:ontology",

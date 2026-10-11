@@ -10,7 +10,6 @@ quality: 0.52
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
   - urn:ngm:class:infra-network-and-comms
-  - urn:ngm:class:parallel-computing
   - urn:ngm:class:networked-systems
   - urn:ngm:class:concurrent-computing
   - urn:ngm:class:coordination-systems
@@ -83,7 +82,7 @@ supports:
   - urn:ngm:class:streaming-analytics
 standardizedBy:
   - urn:ngm:class:apache-software-foundation
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:g-rpc
   - urn:ngm:class:quic
   - urn:ngm:class:open-telemetry
@@ -97,6 +96,7 @@ relatedTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:federated-learning
   - urn:ngm:class:peer-to-peer-network
+  - urn:ngm:class:parallel-computing
 ---
 
 # Distributed Computing

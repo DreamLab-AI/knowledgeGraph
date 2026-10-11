@@ -36,11 +36,11 @@ bridgesTo:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:metaverse
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:self-supervised-learning
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:py-torch
 supports:
   - urn:ngm:class:natural-language-processing

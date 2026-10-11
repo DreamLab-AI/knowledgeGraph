@@ -153,7 +153,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System"
       },
       {
@@ -218,8 +218,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

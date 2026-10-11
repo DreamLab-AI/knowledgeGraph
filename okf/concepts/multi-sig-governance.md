@@ -89,7 +89,7 @@ contrastsWith:
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:timelock-contract
   - urn:ngm:class:single-key-wallet
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:delegate-democracy
 uses:
   - urn:ngm:class:argent
@@ -108,14 +108,14 @@ uses:
   - urn:ngm:class:copper-co
 supports:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-etf-custody
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:institutional-digital-asset-custody
   - urn:ngm:class:layer-2-security-council
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:payment-system
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:lightning-network
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:payment-system
 standardizedBy:
@@ -136,7 +136,7 @@ relatedTo:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cryptography-security-and-privacy
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:governance-token
   - urn:ngm:class:lightning-network
   - urn:ngm:class:smart-contract

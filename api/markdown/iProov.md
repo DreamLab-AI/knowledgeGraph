@@ -43,7 +43,7 @@ iProov is a British biometric technology company founded in 2011 that specialise
   - UK Home Office e-gates and visa application biometric matching.
   - US Department of Homeland Security Trusted Traveller Programme integration.
   - Singapore Singpass face verification for government service access.
-  - EU digital identity wallet pilots under the [[eIDAS]] Regulation 2.0 framework.
+  - EU digital identity wallet pilots under the [[eIDAS Regulation]] Regulation 2.0 framework.
 - **Financial services and KYC**
   - Remote [[Know Your Customer]] onboarding for retail banks, challenger banks, and investment platforms.
   - [[Anti-Money Laundering]] compliance workflows where identity assurance must meet regulatory standards.

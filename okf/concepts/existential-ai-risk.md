@@ -69,7 +69,7 @@ supports:
   - urn:ngm:class:ai-risk-management
 standardizedBy:
   - urn:ngm:class:bletchley-declaration
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:seoul-ai-safety-commitments
   - urn:ngm:class:aisi-frontier-ai-safety-framework
 partOf:

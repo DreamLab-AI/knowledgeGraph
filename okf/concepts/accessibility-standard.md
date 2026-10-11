@@ -33,7 +33,7 @@ bridgesTo:
 supports:
   - urn:ngm:class:user-experience-design
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
   - urn:ngm:class:etsi
 partOf:

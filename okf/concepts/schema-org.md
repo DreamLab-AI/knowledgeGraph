@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:linked-data
 enables:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:named-entity-recognition
 implements:
   - urn:ngm:class:owl-2-web-ontology-language
@@ -19,7 +19,7 @@ bridgesTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:rdf
   - urn:ngm:class:controlled-vocabulary
 supports:

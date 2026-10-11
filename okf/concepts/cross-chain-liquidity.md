@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:liquidity-pool
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:dex
 partOf:
   - urn:ngm:class:cross-chain-interoperability

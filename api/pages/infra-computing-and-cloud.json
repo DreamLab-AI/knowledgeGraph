@@ -46,8 +46,8 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:tpu",

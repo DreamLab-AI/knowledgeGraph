@@ -8,10 +8,10 @@ description: Frontier models are large-scale AI systems trained at the leading e
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:ai-model-architecture
 hasPart:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:context-window
   - urn:ngm:class:inference-time-compute-scaling
 requires:
@@ -36,12 +36,12 @@ supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:responsible-scaling-policy
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:frontier-model-forum
 relatedTo:
   - urn:ngm:class:emergent-capabilities
   - urn:ngm:class:scaling-laws
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-safety
   - urn:ngm:class:compute-governance
 ---

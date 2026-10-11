@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:transaction-finality
   - urn:ngm:class:immutability
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 dependsOn:
   - urn:ngm:class:blockchain
   - urn:ngm:class:peer-to-peer-network

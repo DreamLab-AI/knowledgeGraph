@@ -33,7 +33,7 @@ contrastsWith:
   - urn:ngm:class:segregated-witness
 bridgesTo:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:cryptographic-primitive
@@ -51,7 +51,7 @@ relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-network
   - urn:ngm:class:bitcoin-script
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:bitcoin-proof-of-work-protocol
 ---

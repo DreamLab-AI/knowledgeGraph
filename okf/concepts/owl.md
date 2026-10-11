@@ -8,7 +8,7 @@ description: OWL (Web Ontology Language) is a W3C-standardised semantic web lang
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 requires:
   - urn:ngm:class:rdf
   - urn:ngm:class:description-logic
@@ -35,7 +35,7 @@ supports:
   - urn:ngm:class:biomedical-ontology
   - urn:ngm:class:neuro-symbolic-ai
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:owl-2-web-ontology-language
 ---

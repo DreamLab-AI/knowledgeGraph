@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:real-time-kinematic-positioning",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Real-time kinematic positioning (RTK) is a carrier-phase differential GNSS method in which a reference receiver supplies contemporaneous observations or corrections to a rover for relative positioning.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

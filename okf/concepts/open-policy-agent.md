@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:policy-enforcement-point
 enables:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:access-control
 implements:
   - urn:ngm:class:policy-as-code

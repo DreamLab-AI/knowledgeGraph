@@ -30,7 +30,7 @@ hasPart:
   - urn:ngm:class:delaware-statutory-trust
   - urn:ngm:class:singapore-variable-capital-company
 requires:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:beneficial-ownership-disclosure
   - urn:ngm:class:registered-agent
   - urn:ngm:class:articles-of-organization
@@ -89,7 +89,7 @@ supports:
   - urn:ngm:class:regulatory-negotiation-capacity
 standardizedBy:
   - urn:ngm:class:fsma-2023
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:wyoming-sf0038
   - urn:ngm:class:wyoming-duna-act-2024
   - urn:ngm:class:vermont-title-11-chapter-25
@@ -103,7 +103,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:howey-test
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:securities-regulation
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:corporate-law

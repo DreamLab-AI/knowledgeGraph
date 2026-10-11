@@ -25,10 +25,10 @@ enables:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:network-slicing
 implements:
-  - urn:ngm:class:e-idas
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eidas-regulation
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:european-cybersecurity-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 bridgesTo:
   - urn:ngm:class:network-function-virtualization
   - urn:ngm:class:ai-trustworthiness

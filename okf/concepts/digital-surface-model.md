@@ -4,6 +4,7 @@ type: Class
 title: Digital Surface Model
 resource: urn:ngm:class:digital-surface-model
 domain: earth-observation-and-geospatial-sensing
+description: A digital surface model is a gridded elevation model of the Earth's surface that includes buildings, infrastructure and vegetation.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Digital Surface Model
+
+A digital surface model is a gridded elevation model of the Earth's surface that includes buildings, infrastructure and vegetation.[^1]

@@ -42,6 +42,10 @@
       {
         "id": "urn:ngm:class:secure-boot",
         "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
       }
     ],
     "enables": [
@@ -60,6 +64,10 @@
       {
         "id": "urn:ngm:class:private-inference",
         "label": "Private Inference"
+      },
+      {
+        "id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
       }
     ],
     "dependsOn": [],
@@ -99,7 +107,7 @@
         "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -185,10 +193,6 @@
       {
         "id": "urn:ngm:class:data-centre",
         "label": "Data Center"
-      },
-      {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
       },
       {
         "id": "urn:ngm:class:operating-system",
@@ -294,7 +298,20 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "hardware",
+      "label": "Hardware"
+    },
+    {
+      "slug": "data-confidentiality",
+      "label": "Data Confidentiality"
+    },
+    {
+      "slug": "trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
   "backlinks": [
     {
       "slug": "blockchain-oracle",
@@ -337,8 +354,12 @@
       "label": "Privacy Preserving Blockchain"
     },
     {
-      "slug": "tee",
-      "label": "TEE"
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
     },
     {
       "slug": "telecollaboration-and-telepresence",

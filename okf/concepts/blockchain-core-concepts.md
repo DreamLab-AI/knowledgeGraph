@@ -15,9 +15,9 @@ hasPart:
   - urn:ngm:class:hash-function
   - urn:ngm:class:merkle-tree
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:zero-knowledge
-  - urn:ngm:class:layer2-scaling
+  - urn:ngm:class:layer-2-scaling
 uses:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:digital-signature

@@ -229,7 +229,7 @@ Hardware and Edge refers to the integrated class of specialised silicon architec
   - Core ML delegate — Apple Neural Engine
 - The LiteRT Acceleration Service auto-selects delegates at runtime based on device capability profiling. MediaPipe on-device ML framework (open source, Apache 2.0) wraps LiteRT for computer vision pipelines (hand tracking, face detection, pose estimation, text classification) deployed in Google Meet, YouTube, and Pixel features.
 - **ExecuTorch (Meta)**
-- Introduced in September 2024 as Meta's production on-device inference runtime, supporting [[Large Language Models]] including Llama 3.2 1B and 3B at INT4 on iPhone 15 Pro (12 tok/s) and Samsung Galaxy S24 (6-8 tok/s via Qualcomm QNN backend).
+- Introduced in September 2024 as Meta's production on-device inference runtime, supporting [[Large Language Model]] including Llama 3.2 1B and 3B at INT4 on iPhone 15 Pro (12 tok/s) and Samsung Galaxy S24 (6-8 tok/s via Qualcomm QNN backend).
 - ExecuTorch's operator fusion and memory planning reduce peak SRAM requirements by 40% versus naive PyTorch mobile export, enabling deployment on devices with < 4 GB RAM.
 - ExecuTorch hardware backend coverage:
   - Apple CoreML backend — ANE + GPU, Llama 3.2 3B at 12 tok/s on A17 Pro+

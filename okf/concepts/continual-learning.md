@@ -8,7 +8,7 @@ description: Continual Learning is a machine learning paradigm in which a model 
 maturity: emerging
 quality: 0.91
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
   - urn:ngm:class:online-learning
   - urn:ngm:class:transfer-learning
@@ -61,7 +61,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:generative-adversarial-networks
   - urn:ngm:class:meta-learning
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:variational-autoencoders
   - urn:ngm:class:fisher-information
@@ -69,7 +69,7 @@ uses:
 supports:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:robotics
   - urn:ngm:class:natural-language-processing

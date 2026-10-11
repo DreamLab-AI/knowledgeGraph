@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fast-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Fast ice is sea ice that forms along a coast and stays attached to the shore, to an ice wall, to an ice front, or between shoals or grounded icebergs.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

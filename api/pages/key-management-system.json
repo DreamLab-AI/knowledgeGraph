@@ -29,8 +29,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:custody-infrastructure",
@@ -196,8 +196,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     }
   ]
 }

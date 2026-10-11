@@ -4,6 +4,7 @@ type: Class
 title: Cartographic Generalisation
 resource: urn:ngm:class:cartographic-generalisation
 domain: earth-observation-and-geospatial-sensing
+description: Cartographic generalisation is the selection and simplified representation of map detail appropriate to the scale or purpose of a map.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Cartographic Generalisation
+
+Cartographic generalisation is the selection and simplified representation of map detail appropriate to the scale or purpose of a map.[^1][^2]

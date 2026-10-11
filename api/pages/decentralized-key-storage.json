@@ -28,8 +28,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       }
     ],
     "bridgesTo": [],
@@ -199,10 +199,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
@@ -213,6 +209,10 @@
       {
         "id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-primitive",
@@ -265,8 +265,8 @@
         "label": "Threshold Cryptography"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:confidential-computing",

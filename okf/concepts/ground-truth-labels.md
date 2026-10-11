@@ -21,9 +21,9 @@ enables:
 uses:
   - urn:ngm:class:data-annotation
 supports:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 partOf:
   - urn:ngm:class:training-data
 relatedTo:

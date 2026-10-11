@@ -9,6 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:bolt
+  - urn:ngm:class:lightning-network
 requires:
   - urn:ngm:class:bolt
   - urn:ngm:class:lightning-network
@@ -23,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:bolt-11
   - urn:ngm:class:payment-request
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-identity
   - urn:ngm:class:bolt-11
 uses:
@@ -37,6 +38,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:payment-protocol
   - urn:ngm:class:invoice
+  - urn:ngm:class:lightning-network
 ---
 
 # BOLT12

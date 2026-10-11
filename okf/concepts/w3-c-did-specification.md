@@ -34,13 +34,13 @@ bridgesTo:
   - urn:ngm:class:open-id-connect
 uses:
   - urn:ngm:class:public-key-cryptography
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:uri-scheme
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
-  - urn:ngm:class:w3-c
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:world-wide-web-consortium
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:did-document
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:digital-identity-standards

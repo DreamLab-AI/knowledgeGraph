@@ -39,7 +39,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:neural-network-quantisation",
-        "label": "Neural Network Quantisation"
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:knowledge-distillation",
@@ -103,8 +103,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

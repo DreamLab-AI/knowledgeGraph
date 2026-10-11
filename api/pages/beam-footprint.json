@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:beam-footprint",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A beam footprint is the region or contour on a specified surface associated with a defined geometric or radiometric boundary of an antenna beam.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0.74
 is-a:
   - urn:ngm:class:ai-research-area
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:robotics
 hasPart:
   - urn:ngm:class:sim-to-real-transfer
@@ -71,7 +71,7 @@ supports:
   - urn:ngm:class:agricultural-robotics
   - urn:ngm:class:autonomous-mobile-robots
 standardizedBy:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:openai-research-organisation
   - urn:ngm:class:open-x-embodiment-dataset
 relatedTo:

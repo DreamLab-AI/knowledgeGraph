@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exoplanet-radial-velocity-method",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "This method detects a planet indirectly by measuring changes in the line-of-sight velocity of its host star.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

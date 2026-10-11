@@ -146,12 +146,12 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "contrastsWith": [],
@@ -206,7 +206,7 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -238,7 +238,7 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:model-cards",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       },
       {
@@ -250,7 +250,7 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -289,14 +289,14 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
-      "id": "urn:ngm:class:organisational-framework",
-      "label": "Organisational Framework",
-      "slug": "organisational-framework"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:organisational-framework",
+      "label": "Organisational Framework",
+      "slug": "organisational-framework"
     }
   ],
   "inheritedRelations": {
@@ -386,7 +386,7 @@
         "label": "Data Interoperability"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -438,10 +438,6 @@
       {
         "id": "urn:ngm:class:data-anarchy",
         "label": "Data Anarchy"
-      },
-      {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
       },
       {
         "id": "urn:ngm:class:data-hoarding",
@@ -538,8 +534,8 @@
         "label": "ISO 8000"
       },
       {
-        "id": "urn:ngm:class:iso-iec-23894-2023",
-        "label": "ISO-IEC 23894 2023"
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
       },
       {
         "id": "urn:ngm:class:iso-iec-38500",

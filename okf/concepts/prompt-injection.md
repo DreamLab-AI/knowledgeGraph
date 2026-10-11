@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:agentic-ai
 standardizedBy:
   - urn:ngm:class:owasp-llm-top-10-2025
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:owasp-llm-top-10-2025
 partOf:
   - urn:ngm:class:ai-safety
@@ -43,9 +43,9 @@ relatedTo:
   - urn:ngm:class:red-teaming
   - urn:ngm:class:social-engineering
   - urn:ngm:class:alignment
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:sql-injection
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Prompt Injection

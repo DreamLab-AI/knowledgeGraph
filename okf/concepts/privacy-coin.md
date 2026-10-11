@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:digital-signature
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:blockchain
 relatedTo:

@@ -12,7 +12,7 @@
       "label": "Computer Vision"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     },
     {
@@ -200,8 +200,8 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -276,7 +276,7 @@
         "label": "C2PA"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -399,16 +399,16 @@
         "label": "Semantic Segmentation"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:self-supervised-learning",
-        "label": "Self-Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
       }
     ],
     "requires": [
@@ -429,20 +429,20 @@
         "label": "AI Infrastructure"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       },
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning-framework",
-        "label": "Deep Learning Framework"
       }
     ],
     "enables": [
@@ -467,16 +467,16 @@
         "label": "Surveillance Systems"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
       }
     ],
     "dependsOn": [
@@ -489,8 +489,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -549,16 +549,20 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
       {
         "id": "urn:ngm:class:shallow-machine-learning",
         "label": "Shallow Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       },
       {
         "id": "urn:ngm:class:penetration-testing",
@@ -603,15 +607,19 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -619,6 +627,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
       },
       {
         "id": "urn:ngm:class:compressed-sensing",
@@ -635,27 +647,23 @@
       {
         "id": "urn:ngm:class:wavelet-transform",
         "label": "Wavelet Transform"
-      },
-      {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:hypothesis-testing",
-        "label": "Hypothesis Testing"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -673,13 +681,17 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO/IEC 22989:2022"
@@ -703,17 +715,13 @@
       {
         "id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001"
-      },
-      {
-        "id": "urn:ngm:class:nist-cybersecurity-framework",
-        "label": "NIST Cybersecurity Framework"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-27001",
-        "label": "ISO/IEC 27001"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:digital-forensics",
         "label": "Digital Forensics"

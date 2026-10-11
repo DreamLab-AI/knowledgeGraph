@@ -4,6 +4,7 @@ type: Class
 title: Frozen Ground
 resource: urn:ngm:class:frozen-ground
 domain: earth-observation-and-geospatial-sensing
+description: Frozen ground is soil or land held at or below the freezing point of water, covering both seasonally frozen ground and permafrost.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Frozen Ground
+
+Frozen ground is soil or land held at or below the freezing point of water, covering both seasonally frozen ground and permafrost.[^1][^2]

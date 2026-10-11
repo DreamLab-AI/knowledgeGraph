@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-band",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A spectral band is a defined interval of wavelengths over which an instrument records radiation, so that an image is built from several such intervals.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

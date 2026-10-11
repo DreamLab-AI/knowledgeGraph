@@ -14,7 +14,7 @@ enables:
 implements:
   - urn:ngm:class:protocol-specification
 contrastsWith:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
 bridgesTo:
   - urn:ngm:class:interoperability

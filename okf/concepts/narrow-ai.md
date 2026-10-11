@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:recommendation-engine
   - urn:ngm:class:automatic-speech-recognition
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:training-data
   - urn:ngm:class:supervised-learning
 enables:

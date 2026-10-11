@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:manometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A manometer is a device that measures fluid pressure by means of a column of liquid.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-instrument",

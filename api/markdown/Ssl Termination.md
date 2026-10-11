@@ -10,7 +10,7 @@ SSL termination is the practice of decrypting inbound TLS-encrypted traffic at a
 
 ### Mechanisms
 
-- The edge node completes the [[TLS]] handshake and session-key negotiation with the client.
+- The edge node completes the [[Transport Layer Security]] handshake and session-key negotiation with the client.
 - Decrypted requests are routed to backend pools, optionally over a re-encrypted internal channel.
 - Certificate rotation, OCSP stapling, and cipher policy are managed centrally.
 

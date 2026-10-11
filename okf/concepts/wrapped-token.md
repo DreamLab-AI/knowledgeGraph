@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:mint-burn-mechanism
 enables:
   - urn:ngm:class:decentralized-finance-de-fi
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:cross-chain-interoperability
   - urn:ngm:class:yield-farming
   - urn:ngm:class:liquidity-pool
@@ -29,7 +29,7 @@ bridgesTo:
   - urn:ngm:class:automated-market-maker
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:multi-party-computation
   - urn:ngm:class:threshold-signature-scheme
 relatedTo:

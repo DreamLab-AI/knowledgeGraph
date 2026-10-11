@@ -28,12 +28,12 @@ bridgesTo:
   - urn:ngm:class:thermodynamics
   - urn:ngm:class:quantum-information
   - urn:ngm:class:network-coding
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistics
 uses:
   - urn:ngm:class:random-variable
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-selection
   - urn:ngm:class:natural-language-processing
 relatedTo:

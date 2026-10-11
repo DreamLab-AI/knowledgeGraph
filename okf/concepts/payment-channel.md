@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:micropayment
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:payment-routing
   - urn:ngm:class:streaming-payment
 dependsOn:
@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:timelock
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:peer-to-peer-network
 partOf:
   - urn:ngm:class:layer-2-solutions

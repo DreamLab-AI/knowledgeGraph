@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:visualization-layer
 uses:
   - urn:ngm:class:data-visualisation
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:software-library
 relatedTo:
   - urn:ngm:class:open-source-software

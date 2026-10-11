@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:key-management
   - urn:ngm:class:self-custody
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:nft
   - urn:ngm:class:smart-contract
 contrastsWith:

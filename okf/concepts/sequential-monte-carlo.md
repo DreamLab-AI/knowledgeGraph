@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:importance-sampling
   - urn:ngm:class:resampling
 enables:
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:state-estimation
   - urn:ngm:class:real-time-tracking
   - urn:ngm:class:simultaneous-localisation-and-mapping

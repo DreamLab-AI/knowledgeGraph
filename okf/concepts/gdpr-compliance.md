@@ -32,9 +32,9 @@ contrastsWith:
   - urn:ngm:class:ccpa
   - urn:ngm:class:hipaa
 bridgesTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:privacy-enhancing-technologies
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:privacy-enhancing-technologies
 supports:
   - urn:ngm:class:data-governance

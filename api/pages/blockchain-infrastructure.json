@@ -62,8 +62,8 @@
         "label": "Blockchain Application"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:layer-2-scaling",
@@ -118,8 +118,8 @@
         "label": "AI Energy Optimisation"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:internet-of-things",
@@ -142,8 +142,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:non-fungible-token",
@@ -178,14 +178,14 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity",
-      "slug": "blockchain-entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System",
       "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -203,9 +203,24 @@
       "slug": "distributed-ledger"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:append-only-log",
       "label": "Append-Only Log",
       "slug": "append-only-log"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
     },
     {
       "id": "urn:ngm:class:cryptographic-primitive",
@@ -216,6 +231,11 @@
       "id": "urn:ngm:class:data-structure",
       "label": "Data Structure",
       "slug": "data-structure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:distributed-system",
@@ -238,6 +258,16 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
@@ -258,6 +288,11 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:concurrent-computing",
       "label": "Concurrent Computing",
       "slug": "concurrent-computing"
@@ -273,6 +308,11 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -283,19 +323,9 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -336,16 +366,16 @@
         "label": "Transaction"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
       },
       {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
       },
       {
-        "id": "urn:ngm:class:replication",
-        "label": "Replication"
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
       }
     ],
     "requires": [
@@ -366,20 +396,20 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:cryptographic-security",
-        "label": "Cryptographic Security"
-      },
-      {
-        "id": "urn:ngm:class:distributed-protocol",
-        "label": "Distributed Protocol"
-      },
-      {
-        "id": "urn:ngm:class:network-participation",
-        "label": "Network Participation"
-      },
-      {
         "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
       }
     ],
     "enables": [
@@ -400,20 +430,20 @@
         "label": "Token Economics"
       },
       {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
       }
     ],
     "dependsOn": [
@@ -532,6 +562,10 @@
         "label": "Telecollaboration"
       },
       {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -546,13 +580,17 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
       {
         "id": "urn:ngm:class:remote-procedure-call",
         "label": "Remote Procedure Call"
@@ -560,6 +598,10 @@
       {
         "id": "urn:ngm:class:service-discovery",
         "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:kubernetes",
@@ -572,18 +614,6 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
-      },
-      {
-        "id": "urn:ngm:class:digital-signatures",
-        "label": "Digital Signatures"
-      },
-      {
-        "id": "urn:ngm:class:hash-pointers",
-        "label": "Hash Pointers"
       }
     ],
     "supports": [
@@ -608,8 +638,8 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -622,8 +652,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -660,12 +690,24 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
@@ -674,52 +716,40 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:security",
-        "label": "Security"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       },
       {
         "id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
       },
       {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-security",
-        "label": "Cryptographic Security"
-      },
-      {
-        "id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Tree"
       }
     ]
   },
@@ -803,12 +833,12 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "dao",
-      "label": "DAO"
+      "slug": "defi-protocol",
+      "label": "DeFi Protocol"
     },
     {
-      "slug": "de-fi-protocol",
-      "label": "De Fi Protocol"
+      "slug": "decentralised-autonomous-organisation",
+      "label": "decentralised autonomous organisation"
     },
     {
       "slug": "digital-asset-workflow",

@@ -9,7 +9,7 @@ The International Organisation of Securities Commissions (IOSCO) is the principa
   - Ensuring that markets are fair, efficient, and transparent
   - Reducing [[Systemic Risk]]
 - IOSCO's normative outputs have two tiers:
-  - High-level framework: the IOSCO [[Principles of Securities Regulation]] (38 Principles), used as the benchmark for [[Financial Sector Assessment Program]] (FSAP) reviews conducted by the [[IMF]] and [[World Bank]]
+  - High-level framework: the IOSCO [[Principles of Securities Regulation]] (38 Principles), used as the benchmark for [[Financial Sector Assessment Program]] (FSAP) reviews conducted by the [[International Monetary Fund]] and [[World Bank]]
   - Issue-specific: Recommendations, Final Reports, and Consultation Papers on specific market segments, instruments, or risks
 - IOSCO does not have direct enforcement power; it relies on members to implement its standards in national law, supported by cooperation mechanisms such as the Multilateral Memorandum of Understanding ([[MMoU]]) and Enhanced MMoU (EMMoU) for information sharing and cross-border enforcement.
 - Within the [[G20]] financial architecture, IOSCO is a peer of the [[Financial Stability Board]], the [[Basel Committee]] on Banking Supervision, and the Committee on Payments and Market Infrastructures ([[CPMI]]), with which it co-produces joint standards on clearing and settlement.
@@ -18,7 +18,7 @@ The International Organisation of Securities Commissions (IOSCO) is the principa
 
 - **38 Principles of Securities Regulation**: grouped into modules covering regulator governance, self-regulation, enforcement, cooperation, issuers, auditors and credit rating agencies, collective investment schemes, market intermediaries, secondary markets, and market infrastructure.
 - **Multilateral MoU (MMoU)**: the IOSCO information-sharing agreement signed by over 130 regulators, enabling cross-border exchange of supervisory and enforcement data without requiring bilateral treaties. The Enhanced MMoU adds mandatory cooperation provisions for serious market misconduct.
-- **FSAP Assessments**: IOSCO Principles form the methodology for [[IMF]] and [[World Bank]] Financial Sector Assessment Program evaluations of capital market regulation in member countries, creating strong implementation incentives.
+- **FSAP Assessments**: IOSCO Principles form the methodology for [[International Monetary Fund]] and [[World Bank]] Financial Sector Assessment Program evaluations of capital market regulation in member countries, creating strong implementation incentives.
 - **Committee Structure**: IOSCO's technical work is organised through standing Committees (Growth and Emerging Markets, Retail Investors, Secondary Markets, Intermediaries, Investment Management, Credit Rating Agencies, Derivatives), each producing sector-specific standards.
 - **Policy Recommendations for Crypto and Digital Asset Markets (2023)**: IOSCO's landmark report setting out 18 recommendations covering [[Conflicts of Interest]], [[Market Manipulation]], [[Custody]] of client assets, cross-border cooperation, operational resilience, and disclosure for crypto-asset intermediaries. These benchmarks are referenced by the [[EU MiCA Regulation]], UK FCA, Japanese FSA, and Monetary Authority of Singapore frameworks.
 - **Artificial Intelligence and Algorithmic Trading**: IOSCO has published guidance on [[Algorithmic Trading]] and is developing principles for [[AI Governance]] in [[Market Surveillance]] and automated investment advice, reflecting the growing presence of machine-learning models in capital markets.
@@ -26,7 +26,7 @@ The International Organisation of Securities Commissions (IOSCO) is the principa
 ### Applications and Use Cases
 
 - **National Regulatory Implementation**: Member regulators — including the US [[SEC]], UK [[FCA]], EU's ESMA, Japan's FSA, and Australia's ASIC — use IOSCO Principles as templates when drafting or revising national securities laws and supervisory frameworks.
-- **FSAP Reviews**: The [[IMF]] uses IOSCO Principles to assess how well a country's securities market regulation protects investors and promotes stability, influencing sovereign credit assessments and development finance.
+- **FSAP Reviews**: The [[International Monetary Fund]] uses IOSCO Principles to assess how well a country's securities market regulation protects investors and promotes stability, influencing sovereign credit assessments and development finance.
 - **Digital Asset Frameworks**: National regulators and regional bodies such as the EU (via [[MiCA]]) explicitly cite IOSCO's 2023 Crypto Recommendations as the international baseline, aligning domestic rules with global standards to avoid regulatory arbitrage.
 - **Cross-Border Enforcement**: Regulators use the IOSCO MMoU and EMMoU to request trading data, freeze assets, and share witness statements in cross-border fraud and [[Market Manipulation]] investigations without requiring a formal mutual legal assistance treaty.
 - **Derivatives and Post-Trade**: Joint IOSCO-[[CPMI]] standards govern [[Central Counterparty]] (CCP) resilience, [[Margin Requirements]], and [[Trade Repositories]], directly shaping derivatives clearing regulation in G20 jurisdictions.

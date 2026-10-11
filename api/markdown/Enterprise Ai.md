@@ -124,7 +124,7 @@ SubClassOf(ai:EnterpriseAI
 
 ### Foundation Model Layer
 
-- Selection and version management of general-purpose [[Large Language Models]]: proprietary APIs (OpenAI GPT-4o, Anthropic Claude 3.7 Sonnet, Google Gemini 2.0 Pro) or open-weight self-hosted models (Llama 3.1 70B/405B, Mistral Large 2, Phi-3.5, Qwen 2.5).
+- Selection and version management of general-purpose [[Large Language Model]]: proprietary APIs (OpenAI GPT-4o, Anthropic Claude 3.7 Sonnet, Google Gemini 2.0 Pro) or open-weight self-hosted models (Llama 3.1 70B/405B, Mistral Large 2, Phi-3.5, Qwen 2.5).
 - Model selection criteria for enterprise deployment: context window size, instruction-following accuracy, tool-use capability, cost per million tokens, data residency of API provider, and fine-tuning availability.
 - Fine-tuning infrastructure for domain-adapted specialists where generic [[Foundation Model]] performance is insufficient: clinical coding models fine-tuned on SNOMED CT, legal review models trained on precedent corpora, financial analysis models calibrated to company-specific reporting formats.
 - Model version pinning and rollback capabilities to ensure reproducible behaviour in audited workflows.

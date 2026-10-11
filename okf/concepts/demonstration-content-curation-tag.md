@@ -14,7 +14,7 @@ uses:
 relatedTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Demonstration Content Curation Tag

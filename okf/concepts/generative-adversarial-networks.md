@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:generator-network
   - urn:ngm:class:sampling-procedure
   - urn:ngm:class:value-function
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:optimiser
   - urn:ngm:class:latent-space
   - urn:ngm:class:adversarial-loss
@@ -53,7 +53,7 @@ implements:
   - urn:ngm:class:wasserstein-distance-minimisation
   - urn:ngm:class:implicit-density-estimation
 contrastsWith:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:autoregressive-model

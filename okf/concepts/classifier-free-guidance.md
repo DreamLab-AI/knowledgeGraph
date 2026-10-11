@@ -43,7 +43,7 @@ dependsOn:
   - urn:ngm:class:variational-inference
   - urn:ngm:class:stochastic-differential-equation
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:markov-chain
 implements:
@@ -64,7 +64,7 @@ uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:score-function
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:null-conditioning
   - urn:ngm:class:clip
   - urn:ngm:class:sampling
@@ -84,7 +84,7 @@ partOf:
   - urn:ngm:class:generative-ai
 relatedTo:
   - urn:ngm:class:generative-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:control-net
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:sampling
@@ -94,7 +94,7 @@ relatedTo:
   - urn:ngm:class:conditioning-signal
   - urn:ngm:class:multimodal-ai-architecture-learning
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:reward-model
   - urn:ngm:class:stochastic-differential-equation

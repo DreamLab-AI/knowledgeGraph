@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:object-detection
   - urn:ngm:class:sensor-fusion
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:autonomous-robot
   - urn:ngm:class:edge-ai-accelerator

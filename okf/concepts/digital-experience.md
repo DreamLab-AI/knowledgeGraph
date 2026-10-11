@@ -18,7 +18,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:sensor-input
 uses:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:digital-content
 ---

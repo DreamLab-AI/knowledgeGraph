@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:robotics
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 relatedTo:
   - urn:ngm:class:robot-standard
   - urn:ngm:class:industrial-robot

@@ -75,7 +75,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:kohya-dreambooth-and-similar
   - urn:ngm:class:clip
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:lo-ra-fine-tuning
   - urn:ngm:class:instruct-blip
   - urn:ngm:class:multimodal-ai-architecture-understanding

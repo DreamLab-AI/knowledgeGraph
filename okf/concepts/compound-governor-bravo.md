@@ -16,8 +16,8 @@ requires:
   - urn:ngm:class:comp-token
   - urn:ngm:class:ethereum-smart-contract-platform-smart-contracts
 enables:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:protocol-parameter-management
 dependsOn:
   - urn:ngm:class:governance-token
@@ -47,7 +47,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:governance-attack
   - urn:ngm:class:dao-analytics
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 ---
 
 # Compound Governor Bravo

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-actuation-and-control
   - urn:ngm:class:motion-control
 hasPart:
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:trajectory-planning
   - urn:ngm:class:velocity-control
   - urn:ngm:class:position-control
@@ -31,7 +31,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:position-control
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
 relatedTo:
   - urn:ngm:class:path-planning

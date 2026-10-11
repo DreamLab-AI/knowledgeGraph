@@ -28,7 +28,7 @@ hasPart:
 requires:
   - urn:ngm:class:clinical-trials
   - urn:ngm:class:informed-consent
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:real-time-computing
   - urn:ngm:class:regulatory-approval
   - urn:ngm:class:biocompatible-materials
@@ -49,7 +49,7 @@ dependsOn:
   - urn:ngm:class:neuroscience
   - urn:ngm:class:electrophysiology
   - urn:ngm:class:computational-neuroscience
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:biocompatible-engineering
   - urn:ngm:class:surgical-robotics
   - urn:ngm:class:signal-processing

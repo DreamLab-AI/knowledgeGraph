@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robotics
   - urn:ngm:class:kinematics-model
 relatedTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:gazebo-simulator
 ---
 

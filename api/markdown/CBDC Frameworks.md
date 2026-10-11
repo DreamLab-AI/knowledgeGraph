@@ -129,10 +129,10 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 ## About CBDC Frameworks
 
 - **CBDC Frameworks** constitute the global institutional, technical, and regulatory architecture for sovereign digital money.
-- [[CBDCs]] are issued by monetary authorities as legal tender backed by central bank liabilities, distinguishing them fundamentally from [[Cryptocurrency]] (decentralised permissionless networks), [[Stablecoin]] (private reserve-backed), and commercial bank deposits (private-institution liabilities).
+- [[Central Bank Digital Currency]] are issued by monetary authorities as legal tender backed by central bank liabilities, distinguishing them fundamentally from [[Cryptocurrency]] (decentralised permissionless networks), [[Stablecoin]] (private reserve-backed), and commercial bank deposits (private-institution liabilities).
 - The framework concept is multi-dimensional: spanning monetary policy design, [[Financial Stability]] analysis, cross-border payment reform, technical [[DLT]] and [[Privacy]] engineering, [[Programmable Money]] smart contract layers, AML/CFT compliance systems, and international diplomatic coordination across 137+ jurisdictions.
 - The global CBDC landscape as of mid-2026 reflects the most rapid adoption cycle in monetary innovation history.
-- The Atlantic Council CBDC Tracker (July 2025) reports: 137 countries (98% of global GDP) actively exploring [[CBDCs]]; 72 countries in advanced development, pilot, or launch phases; a record 49 active pilot programmes; and 13 cross-border wholesale CBDC projects — more than double the 2022 count, with the doubling driven largely by G7 financial sanctions on Russia in 2022 demonstrating the strategic importance of payment system sovereignty.
+- The Atlantic Council CBDC Tracker (July 2025) reports: 137 countries (98% of global GDP) actively exploring [[Central Bank Digital Currency]]; 72 countries in advanced development, pilot, or launch phases; a record 49 active pilot programmes; and 13 cross-border wholesale CBDC projects — more than double the 2022 count, with the doubling driven largely by G7 financial sanctions on Russia in 2022 demonstrating the strategic importance of payment system sovereignty.
 - This compares with just 35 countries in advanced exploration in 2020, demonstrating fivefold acceleration driven by: China's e-CNY rollout creating competitive pressure on reserve-currency central banks; COVID-19-era digital payments acceleration; G7 alignment on strategic digital money; and the [[BIS]] Innovation Hub's structured research programme.
 - The conceptual distinction between CBDC framework types is critical.
 - **Retail CBDC frameworks** address general-public access — individuals and businesses holding and transacting with digital central bank money for everyday payments, creating design tensions around [[Privacy]], [[Financial Inclusion]], bank disintermediation, and user experience.
@@ -165,10 +165,10 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 #### BIS Annual Economic Report 2025 — Unified Ledger Blueprint
 
 - The [[BIS]] June 2025 Annual Economic Report published a landmark special chapter proposing a next-generation monetary system based on a **tokenised unified ledger**.
-- The unified ledger combines: (i) tokenised central bank reserves (wholesale [[CBDCs]]); (ii) tokenised commercial bank money; and (iii) tokenised government bonds on a single programmable settlement platform.
+- The unified ledger combines: (i) tokenised central bank reserves (wholesale [[Central Bank Digital Currency]]); (ii) tokenised commercial bank money; and (iii) tokenised government bonds on a single programmable settlement platform.
 - The unified ledger harnesses programmability and composability (transaction bundling) to automate complex financial sequences such as atomic delivery-versus-payment in securities settlement and instant [[Cross Border Payments]] payment-plus-FX-conversion in a single operation.
 - **Project Agora** (seven central banks including those of five major reserve currencies, 40+ leading financial institutions, 2024 onward) is the primary empirical test of the unified ledger concept for cross-border wholesale [[Cross Border Payments]], including the Bank of France/ECB, [[Bank of England]], Bank of Japan, Bank of Korea, Banco de Mexico, Swiss National Bank, and US Federal Reserve.
-- The blueprint positions wholesale [[CBDCs]] as the foundational settlement asset ensuring trust in tokenised financial markets, extending the current two-tier model to encompass all major financial assets on a common programmable infrastructure.
+- The blueprint positions wholesale [[Central Bank Digital Currency]] as the foundational settlement asset ensuring trust in tokenised financial markets, extending the current two-tier model to encompass all major financial assets on a common programmable infrastructure.
 
 #### 2024 BIS CBDC Survey (BIS Papers No. 159)
 
@@ -180,7 +180,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 ## IMF Framework — 5P Methodology and Virtual Handbook
 
-- The [[IMF]] has developed the most comprehensive policymaker guidance system for CBDC adoption through its **CBDC Virtual Handbook**, launched 2022 and expanded through 2025 with Government of Japan support.
+- The [[International Monetary Fund]] has developed the most comprehensive policymaker guidance system for CBDC adoption through its **CBDC Virtual Handbook**, launched 2022 and expanded through 2025 with Government of Japan support.
 - The Handbook covers eleven thematic areas: monetary policy; [[Financial Stability]]; [[Cross Border Payments]]; financial integrity; [[Financial Inclusion]]; legal frameworks; technology; cybersecurity; governance; currency substitution; and capital flow management.
 - Third-wave chapters on wholesale CBDC and cross-border platforms were published in 2025, completing the Handbook's coverage.
 
@@ -191,22 +191,22 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 - **Phase 3 — Prototype**: Developing technology infrastructure, testing core ledger and intermediary integration.
 - **Phase 4 — Pilot**: Live testing with a limited population and use cases under real monetary conditions, with genuine CBDC issuance and redemption.
 - **Phase 5 — Production**: Full issuance with nationwide availability, operational governance, and ongoing policy monitoring.
-- Over 40 [[IMF]] member central banks have adopted the 5P methodology as their organising framework for CBDC programmes.
+- Over 40 [[International Monetary Fund]] member central banks have adopted the 5P methodology as their organising framework for CBDC programmes.
 
 #### IMF eMoney Prime Concept
 
-- The [[IMF]] has developed the concept of "eMoney Prime" — a category of regulated digital money combining characteristics of e-money (backed by fiat reserves, universally redeemable) with CBDC-like features ([[Central Bank]] oversight, [[Interoperability]] mandates, [[Privacy]] standards).
-- This framework provides a regulatory bridge between private stablecoins and full [[CBDCs]], particularly relevant for emerging-market economies where full CBDC deployment may be premature but private digital money proliferation requires public-sector anchoring.
+- The [[International Monetary Fund]] has developed the concept of "eMoney Prime" — a category of regulated digital money combining characteristics of e-money (backed by fiat reserves, universally redeemable) with CBDC-like features ([[Central Bank]] oversight, [[Interoperability]] mandates, [[Privacy]] standards).
+- This framework provides a regulatory bridge between private stablecoins and full [[Central Bank Digital Currency]], particularly relevant for emerging-market economies where full CBDC deployment may be premature but private digital money proliferation requires public-sector anchoring.
 - Under eMoney Prime, regulated stablecoins operating under CBDC-equivalent standards could serve as de-facto private CBDC complements, preserving private sector innovation whilst ensuring public-interest safeguards.
 
 #### 2024-2025 IMF Analytical Publications
 
 - FinTech Note 2024/005: CBDC Adoption — inclusive strategies for intermediaries and users; IMF 5P methodology detailed elaboration.
 - FinTech Note 2024/007: CBDC implications for bank funding stability — disintermediation risk quantification.
-- FinTech Note 2024/002: [[Cross Border Payments]] with retail [[CBDCs]] — feasibility and design considerations.
+- FinTech Note 2024/002: [[Cross Border Payments]] with retail [[Central Bank Digital Currency]] — feasibility and design considerations.
 - FinTech Note 2025/002: Estimating digital money impact on cross-border flows — finding 5-10% bilateral trade volume increase through reduced payment frictions, alongside potential exchange rate volatility increase.
 - FinTech Note 2025/007: CBDC impact on the payments landscape — competition with existing payment systems.
-- FinTech Note 2025/010: Financial integrity implications of retail [[CBDCs]] — AML/CFT framework requirements.
+- FinTech Note 2025/010: Financial integrity implications of retail [[Central Bank Digital Currency]] — AML/CFT framework requirements.
 - FinTech Note 2025/011: [[Central Bank]] exploration of tokenised reserves — wholesale CBDC and unified ledger.
 - IMF Policy Paper PPEA2024052: Central Bank Digital Currency — comprehensive global CBDC progress report.
 
@@ -242,7 +242,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 - The programmability capabilities of CBDC frameworks have been analysed as a mechanism for implementing **Tobin-style financial transaction taxes** — levies on currency conversions historically difficult to enforce under analogue systems.
 - The Tobin tax concept (James Tobin, 1972) proposes small levies on currency conversions (0.1-0.5%) to reduce speculative FX volatility and generate revenue for public goods, widely endorsed by economists but historically unimplementable due to tax evasion and off-shore avoidance.
 - [[Programmable Money]] smart contracts on wholesale CBDC rails could automatically withhold transaction taxes at point of settlement before any off-shore routing is possible, potentially making Tobin-style levies technically enforceable for the first time.
-- The [[IMF]] Making Tax Smart research (2024) confirmed smart-contract-based VAT collection and financial transaction tax withholding are technically feasible, with Hong Kong e-HKD pilot (11 industry groups, 2023-2024) demonstrating automatic VAT splits at the point of transaction.
+- The [[International Monetary Fund]] Making Tax Smart research (2024) confirmed smart-contract-based VAT collection and financial transaction tax withholding are technically feasible, with Hong Kong e-HKD pilot (11 industry groups, 2023-2024) demonstrating automatic VAT splits at the point of transaction.
 - Barriers to Tobin tax CBDC implementation remain formidable: political consensus requirements, smart contract security risks, and the risk that programmable tax enforcement could chill legitimate transactions.
 
 #### G7 2024-2025 Additional Requirements
@@ -302,7 +302,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 ## Privacy Framework and Zero-Knowledge Proofs
 
 - Privacy engineering is the most technically complex and politically sensitive dimension of CBDC frameworks.
-- [[CBDCs]] must simultaneously satisfy contradictory requirements: cash-like [[Privacy]] for users (preventing surveillance of ordinary economic activity) and AML/CFT compliance traceability (detecting illicit finance).
+- [[Central Bank Digital Currency]] must simultaneously satisfy contradictory requirements: cash-like [[Privacy]] for users (preventing surveillance of ordinary economic activity) and AML/CFT compliance traceability (detecting illicit finance).
 - The [[BIS]] Innovation Hub has funded multiple research projects specifically addressing this core tension.
 
 #### Project Tourbillon (BIS Innovation Hub Swiss Centre, 2023)
@@ -317,7 +317,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 #### Zero-Knowledge Proofs in CBDC Compliance
 
 - [[Zero Knowledge Proofs]] (ZKPs) enable a prover to demonstrate a statement is true without revealing the underlying data — e.g., "this transaction does not exceed the holding limit", "the sender is not on a sanctions list", "the user passes KYC tier 2 requirements" — all provable without disclosing identity or transaction content.
-- Applied to [[CBDCs]], ZKPs allow intermediaries to conduct compliance verification (AML screening, KYC checks, sanctions screening) without disclosing transaction content to the [[Central Bank]] or other parties — achieving **privacy-preserving compliance**.
+- Applied to [[Central Bank Digital Currency]], ZKPs allow intermediaries to conduct compliance verification (AML screening, KYC checks, sanctions screening) without disclosing transaction content to the [[Central Bank]] or other parties — achieving **privacy-preserving compliance**.
 - [[BIS]] Working Paper 1242 (2024) catalogues ZKP-based CBDC privacy architectures, finding practical deployability advancing rapidly but computational overhead (ZKP proof generation requires significant processing per transaction) remaining a constraint for high-throughput retail CBDC systems.
 - The 2026 BIS eCash prototype (arxiv 2603.03804) targets ZKP-based offline CBDC authentication — combining secure hardware elements with ZKP credentials for anonymous offline payments resistant to double-spending.
 - ZKP computational efficiency is improving: benchmark improvements of 10-50x in proof generation speed between 2020 and 2025 across major ZKP systems (zk-SNARKs, STARKs, Bulletproofs); by 2028, sub-100-millisecond proof generation is projected for retail-scale CBDC applications.
@@ -358,7 +358,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 #### Project mBridge (Multi-CBDC Bridge)
 
-- The most operationally advanced cross-border wholesale [[CBDCs]] platform, developed by the [[BIS]] Innovation Hub with the central banks of: China (PBOC), Hong Kong (HKMA), Thailand (BOT), UAE (CBUAE), and Saudi Arabia (SAMA, joined 2024).
+- The most operationally advanced cross-border wholesale [[Central Bank Digital Currency]] platform, developed by the [[BIS]] Innovation Hub with the central banks of: China (PBOC), Hong Kong (HKMA), Thailand (BOT), UAE (CBUAE), and Saudi Arabia (SAMA, joined 2024).
 - [[Project mBridge]] reached **Minimum Viable Product (MVP) status in June 2024**, with the [[BIS]] Innovation Hub stepping back from active governance — acknowledging the project's operational readiness.
 - The mBridge platform uses [[DLT]] enabling **atomic delivery-versus-payment** across borders: both legs of a [[Cross Border Payments]] transaction (currency disbursement in sending country, currency receipt in destination country) settle simultaneously and irrevocably, eliminating settlement risk inherent in correspondent banking's sequential processing.
 - In 2025, Chinese state-owned banks began executing live cross-border transactions via mBridge; regional and non-state banks followed in subsequent phases, marking the transition from pilot to operational deployment.
@@ -371,12 +371,12 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 - The Nexus blueprint (July 2024) demonstrated [[Interoperability]] across instant payment systems of: India (UPI, 10+ billion monthly transactions), Malaysia (RPP), Philippines (InstaPay), Singapore (PayNow), Thailand (PromptPay), and the [[ECB]] (TIPS/EBAClearing).
 - Nexus Global Payments was incorporated as an independent company in Singapore in March 2025, with founding central bank participants: India, Malaysia, Philippines, Singapore, and Thailand.
 - A Network Service Operator (NSO) tender was issued in 2025, with live implementation targeted for 2026 — making Project Nexus the first BIS Innovation Hub payment project to move toward live implementation.
-- Critically, Project Nexus does not require [[CBDCs]] — it works with existing commercial bank instant payment rails — but provides the [[Interoperability]] architecture adaptable for cross-border CBDC settlement as retail [[CBDCs]] mature.
+- Critically, Project Nexus does not require [[Central Bank Digital Currency]] — it works with existing commercial bank instant payment rails — but provides the [[Interoperability]] architecture adaptable for cross-border CBDC settlement as retail [[Central Bank Digital Currency]] mature.
 - The Reserve Bank of India joined Project Nexus in 2024, significantly expanding reach to UPI's 10+ billion monthly transaction volume.
 
 #### Project Dunbar (BIS Innovation Hub, 2021-2022)
 
-- The earlier [[BIS]] cross-border CBDC project tested a **shared multi-CBDC platform** where multiple central banks' [[CBDCs]] co-exist on a common distributed ledger, enabling direct peer-to-peer settlement without correspondent banks.
+- The earlier [[BIS]] cross-border CBDC project tested a **shared multi-CBDC platform** where multiple central banks' [[Central Bank Digital Currency]] co-exist on a common distributed ledger, enabling direct peer-to-peer settlement without correspondent banks.
 - Participating central banks: Australia, Malaysia, Singapore, and South Africa.
 - Produced foundational lessons about: multi-jurisdiction governance (handling disputes when multiple sovereign authorities share infrastructure); [[Privacy]] (preventing one jurisdiction's [[Central Bank]] from viewing another's domestic transactions); and legal [[Interoperability]] (recognising foreign CBDC payments as legally binding across jurisdictions).
 - Dunbar's governance architecture findings directly informed [[Project mBridge]] design choices on jurisdictional data access and dispute resolution.
@@ -403,7 +403,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 #### China e-CNY (Digital Yuan) — Scale Leader
 
-- The world's most operationally advanced retail [[CBDCs]], issued by the PBOC (People's Bank of China).
+- The world's most operationally advanced retail [[Central Bank Digital Currency]], issued by the PBOC (People's Bank of China).
 - By 2025: cumulative transactions exceeded CNY 7 trillion (approximately $980 billion); over 260 million digital wallets opened; deployment across 26 cities.
 - India's e-rupee emerged as the world's second-largest CBDC pilot by transaction growth, up 334% year-on-year by 2025, integrated with the existing UPI infrastructure.
 - **e-CNY architecture**: Two-tier — PBOC issues to six major state commercial banks plus Alipay and WeChat Pay; these distribute to end users.
@@ -430,43 +430,43 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 #### US Federal Reserve (Project Hamilton and Post-2025 Pause)
 
-- Project Hamilton (Fed Boston/MIT Digital Currency Initiative, 2020-2022): demonstrated 1.7 million transactions per second in experimental testing, producing OpenCBDC open-source software — establishing technical feasibility of US-scale [[CBDCs]] infrastructure.
-- Executive Order 14178 (Trump administration, January 2025) prohibits Federal agencies from promoting retail CBDC development without Congressional approval — effectively pausing US retail [[CBDCs]] programme.
-- The administration participates in wholesale CBDC infrastructure (Project Agora participation) and supports private stablecoin regulation (GENIUS Act, signed 2025) as alternatives to government-issued retail [[CBDCs]].
+- Project Hamilton (Fed Boston/MIT Digital Currency Initiative, 2020-2022): demonstrated 1.7 million transactions per second in experimental testing, producing OpenCBDC open-source software — establishing technical feasibility of US-scale [[Central Bank Digital Currency]] infrastructure.
+- Executive Order 14178 (Trump administration, January 2025) prohibits Federal agencies from promoting retail CBDC development without Congressional approval — effectively pausing US retail [[Central Bank Digital Currency]] programme.
+- The administration participates in wholesale CBDC infrastructure (Project Agora participation) and supports private stablecoin regulation (GENIUS Act, signed 2025) as alternatives to government-issued retail [[Central Bank Digital Currency]].
 - Political sensitivity remains: concerns about government surveillance, disruption to commercial banking, and the dollar's reserve currency role shape US policy.
 
 #### Early Retail CBDC Launches — Adoption Lessons
 
-- The four countries with fully launched retail [[CBDCs]] (Bahamas Sand Dollar 2020; Nigeria eNaira 2021; Jamaica JAM-DEX 2022; Zimbabwe ZiG 2024) provide critical lessons.
+- The four countries with fully launched retail [[Central Bank Digital Currency]] (Bahamas Sand Dollar 2020; Nigeria eNaira 2021; Jamaica JAM-DEX 2022; Zimbabwe ZiG 2024) provide critical lessons.
 - **Technology without compelling use case fails**: Nigeria's eNaira reached under 1% adoption despite aggressive promotion — improving only after integration with mobile money and targeted subsidy disbursement in 2023-2024.
 - **Merchant acceptance is critical**: Limited merchant acceptance creates negative adoption spirals where consumers stop carrying CBDC due to limited acceptance, which discourages merchant adoption, reinforcing the cycle.
 - **[[Financial Inclusion]] requires reducing KYC barriers**: Sand Dollar adoption improved when minimum KYC tiers were streamlined for small-balance wallets.
-- **Competition from existing digital payments**: In markets with mature mobile money (Nigeria, Jamaica), [[CBDCs]] must offer clear advantages over established platforms — mere digital availability is insufficient.
+- **Competition from existing digital payments**: In markets with mature mobile money (Nigeria, Jamaica), [[Central Bank Digital Currency]] must offer clear advantages over established platforms — mere digital availability is insufficient.
 
 ## Academic Context
 
 #### Disintermediation Risk Literature
 
-- Fernández-Villaverde et al. (2020, NBER Working Paper 26300) model interest-bearing CBDC macroeconomic effects, finding significant bank disintermediation risk when CBDC interest rates exceed zero — households shift deposits to [[CBDCs]], reducing bank loan supply and increasing equilibrium interest rates. This finding motivates holding limits and zero-remuneration policies adopted in the [[ECB]] digital euro and BoE digital pound designs.
+- Fernández-Villaverde et al. (2020, NBER Working Paper 26300) model interest-bearing CBDC macroeconomic effects, finding significant bank disintermediation risk when CBDC interest rates exceed zero — households shift deposits to [[Central Bank Digital Currency]], reducing bank loan supply and increasing equilibrium interest rates. This finding motivates holding limits and zero-remuneration policies adopted in the [[ECB]] digital euro and BoE digital pound designs.
 - Brunnermeier and Niepelt (2019, Journal of Monetary Economics) demonstrate that under certain conditions, CBDC issuance is "neutrality"-equivalent: the [[Central Bank]] can replicate any CBDC outcome through open-market operations and lending to intermediaries — suggesting disintermediation fears may be overstated if accompanied by appropriate [[Central Bank]] policy responses.
 - The net academic consensus: disintermediation risk is real but manageable through holding limits and tiered remuneration; the optimal policy response depends on the specific CBDC interest rate, holding limit, and macroeconomic environment.
 
 #### Optimal CBDC Design Literature
 
 - Andolfatto (2021, Economic Journal) models CBDC as competitive discipline on commercial banking — interest-bearing CBDC forces banks to raise deposit rates, benefiting depositors and reducing banking rents at the cost of reduced bank profitability.
-- Chiu et al. (2023, Journal of Finance) find [[CBDCs]] improves welfare when payment system competition is imperfect, as CBDC forces efficient pricing by dominant [[Payment Service Provider]] platforms.
+- Chiu et al. (2023, Journal of Finance) find [[Central Bank Digital Currency]] improves welfare when payment system competition is imperfect, as CBDC forces efficient pricing by dominant [[Payment Service Provider]] platforms.
 - Garratt and van Oordt (2021, BIS Working Paper 960) examine [[Privacy]] design optimality, finding intermediate privacy levels — neither full anonymity nor full transparency — maximise social welfare by balancing [[Privacy]] benefits with AML compliance costs. This finding supports tiered privacy architectures.
 - The welfare effects of CBDC programmability remain understudied: how does [[Programmable Money]]'s conditional transfer capability affect welfare compared to unconditional CBDC? Early theoretical work (IMF FinTech Note 2025/007) suggests programmability increases welfare in financial inclusion contexts by enabling better targeting of social transfers.
 
 #### Cross-Border Dynamics Literature
 
-- The [[IMF]] FinTech Note 2025/002 estimates that widespread cross-border [[CBDCs]] adoption could increase bilateral trade volumes by 5-10% through reduced payment frictions, alongside potential exchange rate volatility increase through faster capital flow transmission.
-- Clayton and Zysman (2023, Brookings) argue that competing CBDC blocs (Western-aligned vs. China/Russia-aligned) could fragment the international monetary system — a scenario actively being countered by [[BIS]] [[Interoperability]] standards and [[IMF]] coordination frameworks.
-- Niepelt (2020, VoxEU) analyses currency substitution risk when foreign [[CBDCs]] are adopted domestically, finding significant [[Monetary Policy]] transmission disruption for smaller economies — a key concern for developing nations considering CBDC adoption in economies where foreign CBDCs might substitute domestic currency.
+- The [[International Monetary Fund]] FinTech Note 2025/002 estimates that widespread cross-border [[Central Bank Digital Currency]] adoption could increase bilateral trade volumes by 5-10% through reduced payment frictions, alongside potential exchange rate volatility increase through faster capital flow transmission.
+- Clayton and Zysman (2023, Brookings) argue that competing CBDC blocs (Western-aligned vs. China/Russia-aligned) could fragment the international monetary system — a scenario actively being countered by [[BIS]] [[Interoperability]] standards and [[International Monetary Fund]] coordination frameworks.
+- Niepelt (2020, VoxEU) analyses currency substitution risk when foreign [[Central Bank Digital Currency]] are adopted domestically, finding significant [[Monetary Policy]] transmission disruption for smaller economies — a key concern for developing nations considering CBDC adoption in economies where foreign CBDCs might substitute domestic currency.
 
 #### Privacy Cryptography Literature
 
-- Garratt and Lee (2023, [[BIS]] Working Paper 1242) systematically evaluate privacy-enhancing technologies for [[CBDCs]] — blind signatures (Chaum 1983), [[Zero Knowledge Proofs]] (Goldwasser, Micali, Rackoff 1985), homomorphic encryption, multi-party computation — against computational cost, audit capability, and AML compliance metrics.
+- Garratt and Lee (2023, [[BIS]] Working Paper 1242) systematically evaluate privacy-enhancing technologies for [[Central Bank Digital Currency]] — blind signatures (Chaum 1983), [[Zero Knowledge Proofs]] (Goldwasser, Micali, Rackoff 1985), homomorphic encryption, multi-party computation — against computational cost, audit capability, and AML compliance metrics.
 - Finding: ZKP-based architectures offer the best [[Privacy]]/compliance balance but require ongoing computational efficiency improvements before retail-scale deployment.
 - Chaum (1983) blind signature scheme — the cryptographic foundation of Project Tourbillon — provides unconditional payer anonymity but requires a trusted [[Central Bank]] issuer to prevent double-spending, maintaining the centrality of the central bank in the payment system.
 
@@ -475,7 +475,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 #### Global Status
 
 - As of May 2026, CBDC frameworks are entering a critical transition from research and pilot programmes toward first large-economy launches and maturing cross-border infrastructure.
-- Atlantic Council CBDC Tracker (July 2025): 137 countries exploring [[CBDCs]] (98% of global GDP); 72 in advanced phases; 13 cross-border wholesale CBDC projects; 49 active pilots.
+- Atlantic Council CBDC Tracker (July 2025): 137 countries exploring [[Central Bank Digital Currency]] (98% of global GDP); 72 in advanced phases; 13 cross-border wholesale CBDC projects; 49 active pilots.
 - The competitive dynamic between the Western approach ([[Privacy]]-preserving, two-tier, democratic oversight) and China's e-CNY model (controllable anonymity, PBOC data access, internationalisation objectives) continues to shape framework design choices globally.
 - China's e-CNY cumulative transactions reached CNY 7 trillion ($980 billion) by 2025; India's e-rupee is the fastest-growing CBDC pilot (334% year-on-year transaction growth); the [[ECB]] digital euro is progressing through EU co-legislation.
 
@@ -483,7 +483,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 - EU Council position agreed December 2025; European Parliament legislative process ongoing in 2026.
 - Digital euro regulation expected to complete co-legislative process in 2026, enabling [[ECB]] issuance from 2029.
-- This would make the [[Digital Euro]] the first G7 retail [[CBDCs]] with a clear legislative launch path.
+- This would make the [[Digital Euro]] the first G7 retail [[Central Bank Digital Currency]] with a clear legislative launch path.
 - [[ECB]] financial stability analysis confirmed holding limits up to €3,000 produce no harmful disintermediation under extreme stress scenarios.
 
 #### mBridge Expansion and Geopolitical Dynamics
@@ -494,9 +494,9 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 #### US Position Under Trump Administration
 
-- Executive Order 14178 (January 2025) has effectively frozen US retail [[CBDCs]] progress.
+- Executive Order 14178 (January 2025) has effectively frozen US retail [[Central Bank Digital Currency]] progress.
 - The administration participates in wholesale CBDC infrastructure through Project Agora and the Fed Faster Payments Council.
-- The GENIUS Act (private stablecoin legislation, signed 2025) represents the administration's preferred approach — regulated private stablecoins as digital dollar complements rather than government-issued retail [[CBDCs]].
+- The GENIUS Act (private stablecoin legislation, signed 2025) represents the administration's preferred approach — regulated private stablecoins as digital dollar complements rather than government-issued retail [[Central Bank Digital Currency]].
 - The US position creates a significant gap in the G7 CBDC coordination: the world's reserve currency central bank is not pursuing retail CBDC whilst four other G7 currencies (euro, pound, yen, CAD) are in active development.
 
 #### BIS Unified Ledger as 2026-2027 Framework Target
@@ -530,7 +530,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 - **Imperial College Business School (Centre for Digital Finance)**: Active research on CBDC design and [[Financial Regulation]] led by Andrei Kirilenko (former CFTC Chief Economist) and Pasquale Della Corte. Research on [[Privacy]] framework optimality, empirical analysis of cross-country CBDC design choices, and CBDC implications for [[Financial Stability]]. Hosted key workshops on [[Digital Euro]] design feeding into [[ECB]] preparation phase policy decisions.
 - **University College London Centre for Blockchain Technologies (UCL CBT)**: Founded 2015 by Paolo Tasca; approximately 30 affiliated researchers across UCL Computer Science, Economics, and Law. Research on CBDC technical architectures — particularly [[Zero Knowledge Proofs]]-based privacy designs and [[DLT]]-based core ledger implementations — cited in [[BIS]] Innovation Hub project documentation. UCL CBT annual DLT Talks conference (London) convenes central bank, regulatory, and academic CBDC researchers.
 - **Cambridge Centre for Alternative Finance (CCAF, Cambridge Judge Business School)**: World-leading academic centre for cryptoasset empirical research, founded 2015 by Bryan Zhang. Annual Global Cryptoasset Benchmarking Study and Cambridge CBDC Network for Financial Inclusion (70+ central banks) provide the most cited empirical CBDC data globally. Funding from Mastercard Foundation, EY, Visa, and Invesco.
-- **University of Edinburgh Business School (Centre for Spatial and Digital Economics)**: Empirical research on CBDC adoption dynamics, cross-border implications for emerging economies, and [[Financial Inclusion]] outcomes from early CBDC deployments (Bahamas Sand Dollar, Nigeria eNaira) — findings informing [[IMF]] analytical frameworks.
+- **University of Edinburgh Business School (Centre for Spatial and Digital Economics)**: Empirical research on CBDC adoption dynamics, cross-border implications for emerging economies, and [[Financial Inclusion]] outcomes from early CBDC deployments (Bahamas Sand Dollar, Nigeria eNaira) — findings informing [[International Monetary Fund]] analytical frameworks.
 - **King's College London**: Research on CBDC legal frameworks and international monetary law under the King's Centre for Law, Economics and Society — relevant to legal [[Interoperability]] challenge dimensions.
 - **Oxford Internet Institute / Saïd Business School (Future of Finance Initiative)**: CBDC governance, consumer protection, and digital inclusion dimensions — Bige Kahraman leading research on FinTech adoption and [[Financial Inclusion]].
 
@@ -547,7 +547,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 #### Digital Euro Launch (2028-2030)
 
-- A successful [[Digital Euro]] launch would create the world's largest [[CBDCs]] by GDP coverage (€14 trillion economy, 340 million citizens), validating the two-tier intermediated architecture at G7 scale.
+- A successful [[Digital Euro]] launch would create the world's largest [[Central Bank Digital Currency]] by GDP coverage (€14 trillion economy, 340 million citizens), validating the two-tier intermediated architecture at G7 scale.
 - This would set international standards for [[Privacy]] (GDPR-compliant design), [[Financial Inclusion]] (universal merchant acceptance), and programmability boundaries.
 - Competitive pressure on the US Federal Reserve to advance retail CBDC development would increase substantially following a successful digital euro launch.
 - The [[Digital Euro]] would also provide a Western-aligned anchor for cross-border CBDC [[Interoperability]] complementing Project Agora for wholesale — creating a Western CBDC infrastructure bloc distinct from mBridge.
@@ -562,7 +562,7 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 #### ZKP Privacy Engineering Maturity
 
 - [[Zero Knowledge Proofs]] computational efficiency is improving rapidly — 10-50x improvement in proof generation speed between 2020 and 2025 across major ZKP systems (zk-SNARKs, STARKs, Bulletproofs).
-- By 2028, ZKP systems generating [[Privacy]]-preserving payment proofs in under 100 milliseconds are projected — enabling ZKP-based compliance verification in online retail [[CBDCs]] without unacceptable latency.
+- By 2028, ZKP systems generating [[Privacy]]-preserving payment proofs in under 100 milliseconds are projected — enabling ZKP-based compliance verification in online retail [[Central Bank Digital Currency]] without unacceptable latency.
 - This would resolve the core [[Privacy]]/compliance tension in retail CBDC architecture, enabling cash-equivalent [[Privacy]] whilst maintaining AML compliance for the first time at retail scale.
 
 #### Programmable Money Ecosystem
@@ -579,14 +579,14 @@ CBDC Frameworks are the integrated bodies of technical specifications, regulator
 
 - Trajectory will significantly shape international payment system structure.
 - Bifurcation risk: mBridge scales to include a large proportion of Global South central banks whilst Project Agora serves G7 currencies, creating parallel [[Cross Border Payments]] blocs with limited [[Interoperability]].
-- Counter-fragmentation effort: [[BIS]], [[IMF]], and G20 FSB are working through [[Interoperability]] standards — ISO 20022 harmonisation, API compatibility requirements — enabling cross-bloc CBDC settlement without shared infrastructure.
+- Counter-fragmentation effort: [[BIS]], [[International Monetary Fund]], and G20 FSB are working through [[Interoperability]] standards — ISO 20022 harmonisation, API compatibility requirements — enabling cross-bloc CBDC settlement without shared infrastructure.
 - Outcome depends on geopolitical dynamics beyond technical standard-setters' control: US-China relations, G7 sanctions regime evolution, and Global South monetary sovereignty priorities.
 
 #### Private Stablecoin Interaction
 
-- Regulatory frameworks for private stablecoins (GENIUS Act US, MiCA EU, UK FSMA 2023 provisions) will determine whether [[CBDCs]] and regulated stablecoins coexist, compete, or converge.
-- The [[IMF]] eMoney Prime concept bridges: regulated stablecoins operating under CBDC-equivalent standards ([[Central Bank]] oversight, [[Interoperability]] mandates, [[Privacy]] protections) could serve as de-facto private CBDC complements.
-- Particularly relevant for the US retail payment market under Trump administration retail CBDC opposition: eMoney Prime-grade regulated stablecoins may effectively substitute for US retail [[CBDCs]].
+- Regulatory frameworks for private stablecoins (GENIUS Act US, MiCA EU, UK FSMA 2023 provisions) will determine whether [[Central Bank Digital Currency]] and regulated stablecoins coexist, compete, or converge.
+- The [[International Monetary Fund]] eMoney Prime concept bridges: regulated stablecoins operating under CBDC-equivalent standards ([[Central Bank]] oversight, [[Interoperability]] mandates, [[Privacy]] protections) could serve as de-facto private CBDC complements.
+- Particularly relevant for the US retail payment market under Trump administration retail CBDC opposition: eMoney Prime-grade regulated stablecoins may effectively substitute for US retail [[Central Bank Digital Currency]].
 - Long-run convergence scenario: the distinction between retail CBDC and highly-regulated stablecoin may blur as stablecoin regulation tightens and CBDC design accommodates private intermediation — producing a hybrid public-private digital money ecosystem.
 
 ## Research and Literature

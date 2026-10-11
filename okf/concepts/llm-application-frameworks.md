@@ -4,12 +4,11 @@ type: Class
 title: LLM Application Frameworks
 resource: urn:ngm:class:llm-application-frameworks
 domain: ai
-description: General-purpose software frameworks for composing [[Large Language Models]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration — including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flo
+description: General-purpose software frameworks for composing [[Large Language Model]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration — including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flow
 maturity: emerging
 quality: 0.9
 is-a:
   - urn:ngm:class:agent-harness
-  - urn:ngm:class:workflow-automation
 hasPart:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-call-loop
@@ -18,7 +17,7 @@ hasPart:
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:information-retrieval
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:function-calling
   - urn:ngm:class:vector-database
@@ -40,7 +39,7 @@ dependsOn:
   - urn:ngm:class:function-calling
   - urn:ngm:class:orchestration
   - urn:ngm:class:vector-database
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:re-act-pattern
@@ -75,7 +74,7 @@ supports:
   - urn:ngm:class:swe-bench
 standardizedBy:
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:agent-development-sdks
   - urn:ngm:class:multi-agent-orchestration-frameworks
@@ -91,4 +90,4 @@ relatedTo:
 
 # LLM Application Frameworks
 
-General-purpose software frameworks for composing [[Large Language Models]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration — including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flowise — providing the integration, observability, and deployment infrastructure that connects model inference to real application data, external APIs, and human approval workflows.
+General-purpose software frameworks for composing [[Large Language Model]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration — including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flowise — providing the integration, observability, and deployment infrastructure that connects model inference to real application data, external APIs, and human approval workflows.

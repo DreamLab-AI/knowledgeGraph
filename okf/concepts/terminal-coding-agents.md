@@ -10,7 +10,7 @@ quality: 0.91
 is-a:
   - urn:ngm:class:agent-harness
   - urn:ngm:class:agentic-ai
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:autonomous-agent
 hasPart:
   - urn:ngm:class:agent-loop
@@ -25,7 +25,7 @@ hasPart:
   - urn:ngm:class:tool-registry
   - urn:ngm:class:observability
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
   - urn:ngm:class:agent-loop
   - urn:ngm:class:sandboxed-code-execution
@@ -34,7 +34,7 @@ requires:
   - urn:ngm:class:context-window
   - urn:ngm:class:state-persistence
 enables:
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:task-automation
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:workflow-orchestration
@@ -75,7 +75,7 @@ supports:
   - urn:ngm:class:ai-alignment
 standardizedBy:
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:agent-to-agent-protocol
 relatedTo:
   - urn:ngm:class:ide-coding-agents

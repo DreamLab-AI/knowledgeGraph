@@ -39,7 +39,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:uk-financial-regulatory-framework
 relatedTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:inflation-targeting
   - urn:ngm:class:systemic-risk

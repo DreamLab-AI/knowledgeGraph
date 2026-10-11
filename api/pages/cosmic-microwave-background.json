@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cosmic-microwave-background",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Leftover radiation from the hot early universe, the cosmic microwave background fills the whole Universe and is observed as a nearly uniform glow at microwave wavelengths.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

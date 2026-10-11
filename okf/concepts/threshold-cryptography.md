@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:decentralised-identity
 dependsOn:
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:access-control
   - urn:ngm:class:fault-tolerance

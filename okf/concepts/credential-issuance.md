@@ -32,18 +32,18 @@ bridgesTo:
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:credential-schema
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:selective-disclosure
 standardizedBy:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:sd-jwt-vc
 relatedTo:
   - urn:ngm:class:digital-wallet
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
 ---
 
 # Credential Issuance

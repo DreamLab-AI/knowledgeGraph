@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:cybersecurity
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:digital-twin
 supports:

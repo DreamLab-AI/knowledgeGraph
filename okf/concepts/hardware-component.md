@@ -48,7 +48,7 @@ standardizedBy:
   - urn:ngm:class:ieee-standards
   - urn:ngm:class:jedec
 partOf:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:edge-computing-node
   - urn:ngm:class:embedded-system
 relatedTo:

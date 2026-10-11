@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-application
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:recommender-systems
   - urn:ngm:class:predictive-personalization
   - urn:ngm:class:behavioural-ai
@@ -42,8 +42,8 @@ enables:
   - urn:ngm:class:customer-lifetime-value-optimisation
   - urn:ngm:class:next-best-action
 dependsOn:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vector-databases
   - urn:ngm:class:feature-engineering
   - urn:ngm:class:privacy-preserving
@@ -55,7 +55,7 @@ implements:
   - urn:ngm:class:neural-collaborative-filtering
   - urn:ngm:class:transformer-sequential-recommendation
   - urn:ngm:class:contextual-bandits
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
 contrastsWith:
   - urn:ngm:class:segment-based-marketing
   - urn:ngm:class:rules-based-personalisation
@@ -80,7 +80,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:gdpr
   - urn:ngm:class:ico-ai-guidance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:uk-data-use-and-access-act-2025
   - urn:ngm:class:iab-openrtb-protocol
 relatedTo:
@@ -93,8 +93,8 @@ relatedTo:
   - urn:ngm:class:data-layer
   - urn:ngm:class:deepfakes-and-fraudulent-content
   - urn:ngm:class:digital-society-surveillance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:foundation-model
 ---
 
 # Hyper personalisation

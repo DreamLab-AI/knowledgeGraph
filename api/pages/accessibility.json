@@ -24,10 +24,6 @@
       "label": "Human Factors"
     },
     {
-      "id": "urn:ngm:class:inclusive-design",
-      "label": "Inclusive Design"
-    },
-    {
       "id": "urn:ngm:class:non-functional-requirement",
       "label": "Non-Functional Requirement"
     }
@@ -346,11 +342,6 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:design-thinking",
-      "label": "Design Thinking",
-      "slug": "design-thinking"
-    },
-    {
       "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human Robot Interaction",
       "slug": "human-robot-interaction"
@@ -371,14 +362,14 @@
       "slug": "systems-engineering"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:knowledge-representation",
-      "label": "Knowledge Representation",
-      "slug": "knowledge-representation"
     },
     {
       "id": "urn:ngm:class:robotics",
@@ -389,11 +380,6 @@
       "id": "urn:ngm:class:roboticsdomain",
       "label": "RoboticsDomain",
       "slug": "roboticsdomain"
-    },
-    {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -409,6 +395,16 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -468,16 +464,16 @@
         "label": "Task Analysis"
       },
       {
-        "id": "urn:ngm:class:co-design",
-        "label": "Co-Design"
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
       },
       {
-        "id": "urn:ngm:class:participatory-design",
-        "label": "Participatory Design"
+        "id": "urn:ngm:class:safetymetrics",
+        "label": "SafetyMetrics"
       },
       {
-        "id": "urn:ngm:class:user-centred-design",
-        "label": "User Centred Design"
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
       }
     ],
     "enables": [
@@ -498,20 +494,20 @@
         "label": "User Acceptance"
       },
       {
-        "id": "urn:ngm:class:assistive-technology",
-        "label": "Assistive Technology"
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
       },
       {
-        "id": "urn:ngm:class:digital-technology-access-equity",
-        "label": "Digital Equity"
+        "id": "urn:ngm:class:safety-metrics",
+        "label": "Safety Metrics"
       },
       {
-        "id": "urn:ngm:class:inclusive-participation",
-        "label": "Inclusive Participation"
+        "id": "urn:ngm:class:safetymetrics",
+        "label": "SafetyMetrics"
       },
       {
-        "id": "urn:ngm:class:inclusive-xr-design",
-        "label": "Inclusive Xr Design"
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
       }
     ],
     "dependsOn": [
@@ -532,7 +528,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -544,21 +540,7 @@
         "label": "Programmable Logic Controllers"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:closed-world-assumption",
-        "label": "Closed World Assumption"
-      },
-      {
-        "id": "urn:ngm:class:open-world-assumption",
-        "label": "Open World Assumption"
-      }
-    ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:retrofitting",
-        "label": "Retrofitting"
-      },
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
@@ -580,12 +562,16 @@
         "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       },
       {
-        "id": "urn:ngm:class:sub-symbolic-ai",
-        "label": "Sub-Symbolic AI"
+        "id": "urn:ngm:class:hardware-engineering",
+        "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -602,51 +588,27 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:algorithmic-bias",
-        "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-interface",
+        "label": "Natural Language Interface"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human Computer Interaction"
-      },
-      {
-        "id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
-      },
-      {
-        "id": "urn:ngm:class:participatory-design",
-        "label": "Participatory Design"
-      },
-      {
-        "id": "urn:ngm:class:user-research",
-        "label": "User Research"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-systems-modality-design",
-        "label": "Collaborative Design"
-      },
-      {
-        "id": "urn:ngm:class:design-software",
-        "label": "Design Software"
-      },
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
@@ -654,6 +616,30 @@
       {
         "id": "urn:ngm:class:manipulator-arm",
         "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      },
+      {
+        "id": "urn:ngm:class:wireframing",
+        "label": "Wireframing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "supports": [
@@ -692,18 +678,6 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:european-accessibility-act",
-        "label": "European Accessibility Act"
-      },
-      {
-        "id": "urn:ngm:class:wai-aria",
-        "label": "WAI-ARIA"
-      },
-      {
-        "id": "urn:ngm:class:wcag-2-2",
-        "label": "WCAG"
-      },
-      {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
@@ -720,8 +694,20 @@
         "label": "Open Standard"
       },
       {
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
         "id": "urn:ngm:class:ieee-std-730",
         "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
       }
     ],
     "partOf": [
@@ -756,20 +742,20 @@
         "label": "Standards and Interoperability"
       },
       {
-        "id": "urn:ngm:class:accessibility-standard",
-        "label": "Accessibility Standard"
+        "id": "urn:ngm:class:cognitive-ergonomics",
+        "label": "Cognitive Ergonomics"
       },
       {
-        "id": "urn:ngm:class:design-thinking",
-        "label": "Design Thinking"
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
       },
       {
-        "id": "urn:ngm:class:digital-technology-access-equity",
-        "label": "Digital Technology Access Equity"
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
       },
       {
-        "id": "urn:ngm:class:accessible-design",
-        "label": "Accessible Design"
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
       }
     ]
   },

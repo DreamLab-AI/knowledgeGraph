@@ -8,7 +8,7 @@ description: Transaction authorisation is the process of verifying that a party 
 maturity: draft
 quality: 0.55
 is-a:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 ---
 
 # Transaction Authorisation

@@ -40,7 +40,7 @@ implements:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:value-alignment
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 contrastsWith:
   - urn:ngm:class:algorithmic-bias
   - urn:ngm:class:agentic-ai
@@ -56,8 +56,8 @@ supports:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:inclusive-growth
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:bletchley-declaration

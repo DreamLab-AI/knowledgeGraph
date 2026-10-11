@@ -20,14 +20,14 @@ enables:
   - urn:ngm:class:synthetic-media
   - urn:ngm:class:rapid-prototyping
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:dall-e-3
   - urn:ngm:class:adobe-firefly
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:virtual-production
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 uses:
   - urn:ngm:class:text-encoder
   - urn:ngm:class:latent-diffusion

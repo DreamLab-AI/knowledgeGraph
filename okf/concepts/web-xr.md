@@ -32,13 +32,13 @@ bridgesTo:
   - urn:ngm:class:web-platform
   - urn:ngm:class:spatial-computing-paradigm
 uses:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:pose-tracking
 supports:
   - urn:ngm:class:hand-tracking
   - urn:ngm:class:eye-tracking
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:three-js
   - urn:ngm:class:babylon-js

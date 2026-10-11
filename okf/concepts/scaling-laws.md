@@ -14,8 +14,8 @@ hasPart:
   - urn:ngm:class:token-count
   - urn:ngm:class:power-law-exponent
 enables:
-  - urn:ngm:class:pre-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:pretraining
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:capability-forecasting
   - urn:ngm:class:compute-optimal-training
 dependsOn:

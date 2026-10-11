@@ -15,10 +15,10 @@ hasPart:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:yield-farming
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:tokenization
   - urn:ngm:class:digital-asset-lending
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:blockchain-economics
 uses:
   - urn:ngm:class:cryptographic-commitment

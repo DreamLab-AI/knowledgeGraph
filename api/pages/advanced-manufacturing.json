@@ -95,8 +95,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:io-t",
-        "label": "IoT"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -116,14 +116,64 @@
       "slug": "cyber-physical-systems"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems",
-      "slug": "embedded-systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System",
+      "slug": "embedded-system"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
+    },
+    {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
     }
   ],
   "inheritedRelations": {
@@ -251,12 +301,16 @@
         "label": "Network Protocols"
       },
       {
-        "id": "urn:ngm:class:memory-management",
-        "label": "Memory Management"
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
       },
       {
-        "id": "urn:ngm:class:power-management",
-        "label": "Power Management"
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:rtos",
+        "label": "RTOS"
       }
     ],
     "implements": [
@@ -301,6 +355,14 @@
       {
         "id": "urn:ngm:class:general-purpose-computing",
         "label": "General-Purpose Computing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
       }
     ],
     "bridgesTo": [
@@ -325,7 +387,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -359,7 +421,7 @@
         "label": "Sensor"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -393,12 +455,16 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:over-the-air-update",
-        "label": "Over-the-Air Update"
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
       }
     ],
     "standardizedBy": [
@@ -439,6 +505,14 @@
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "relatedTo": [

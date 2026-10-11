@@ -96,8 +96,8 @@
         "label": "Advanced Manufacturing"
       },
       {
-        "id": "urn:ngm:class:fintech",
-        "label": "Fintech"
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
       }
     ],
     "standardizedBy": [],
@@ -164,8 +164,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

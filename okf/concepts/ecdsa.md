@@ -41,7 +41,7 @@ uses:
 supports:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:ethereum
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:code-signing
 standardizedBy:
   - urn:ngm:class:nist

@@ -17,7 +17,7 @@ BitTorrent is a peer-to-peer protocol for distributing files by splitting them i
 ### Applications
 
 - Efficient [[File Sharing]] and bulk [[Data Distribution]] for large datasets and software images.
-- Backing layers for [[Decentralized Storage]] and content-addressed systems like [[IPFS]].
+- Backing layers for [[Decentralised Storage]] and content-addressed systems like [[IPFS]].
 - Game and operating-system update delivery that offloads bandwidth from origin servers.
 - Resilient [[Replication]] of archives across volunteer or institutional peers.
 

@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:algorithm
   - urn:ngm:class:graph-theory
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:computational-geometry
 uses:

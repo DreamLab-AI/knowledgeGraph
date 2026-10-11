@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:partial-gravity",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Partial gravity is the reduced gravity of planetary bodies, treated in spaceflight research alongside weightlessness.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

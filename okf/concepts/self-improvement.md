@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:ai-technique
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:curriculum-learning
 relatedTo:

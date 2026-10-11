@@ -23,12 +23,12 @@ enables:
   - urn:ngm:class:synthetic-data-generation
   - urn:ngm:class:visual-effects
 dependsOn:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:gpu-computing
 implements:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 contrastsWith:
   - urn:ngm:class:image-recognition
   - urn:ngm:class:image-segmentation

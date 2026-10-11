@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-traffic-management",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space Traffic Management (STM) is the coordination of access to, operations in and return from space so that activities can be conducted safely and sustainably.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

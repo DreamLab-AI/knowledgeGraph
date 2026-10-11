@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:reference-architecture
 requires:
   - urn:ngm:class:coordinate-system
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:universal-scene-description
 enables:
   - urn:ngm:class:ar-interoperability

@@ -4,6 +4,7 @@ type: Class
 title: Propulsion Efficiency
 resource: urn:ngm:class:propulsion-efficiency
 domain: space-science-and-systems
+description: Propulsion efficiency is a measure of how much thrust a propulsion system obtains from its propellant, expressed for rockets as specific impulse, the equivalent exhaust velocity divided by standard gravitational acceleration, in seconds.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Propulsion Efficiency
+
+Propulsion efficiency is a measure of how much thrust a propulsion system obtains from its propellant, expressed for rockets as specific impulse, the equivalent exhaust velocity divided by standard gravitational acceleration, in seconds.[^1]

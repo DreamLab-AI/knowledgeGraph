@@ -19,7 +19,7 @@ standardizedBy:
   - urn:ngm:class:standards
 relatedTo:
   - urn:ngm:class:rendering-engine
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 ---
 
 # Virtual Environment Specification

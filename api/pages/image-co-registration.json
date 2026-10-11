@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:image-co-registration",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Image co-registration is the alignment of two or more images, or bands of one image, so that corresponding pixels refer to the same ground location [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

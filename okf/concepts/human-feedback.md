@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:preference-learning
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 dependsOn:
   - urn:ngm:class:large-language-model
 contrastsWith:

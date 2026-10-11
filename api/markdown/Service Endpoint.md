@@ -9,7 +9,7 @@ A Service Endpoint is a network-addressable location, typically expressed as a U
 ### Key aspects
 
 - It comprises [[Authentication]].
-- It requires [[TLS]].
+- It requires [[Transport Layer Security]].
 - It makes use of [[REST API]].
 - It makes use of [[HTTP]].
 

@@ -15,7 +15,7 @@ Rotary Position Embedding (RoPE) is a method for injecting positional informatio
 
 ### Applications
 
-- Positional encoding in modern decoder-only [[Large Language Models]].
+- Positional encoding in modern decoder-only [[Large Language Model]].
 - Long-context model variants with extended windows.
 - Multimodal and code models that inherit transformer attention.
 - Efficient attention kernels that fold rotation into the dot product.

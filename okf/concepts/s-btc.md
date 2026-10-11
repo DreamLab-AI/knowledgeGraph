@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-network
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:layer-2-scaling
 ---

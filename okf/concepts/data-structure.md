@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:cache-coherence
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:sparse-matrix
   - urn:ngm:class:computational-complexity-theory
 partOf:

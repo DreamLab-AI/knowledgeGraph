@@ -6,7 +6,7 @@ A REST API (Representational State Transfer Application Programming Interface) i
 - REST APIs matter because they:
   - Align naturally with the HTTP/TCP/IP stack ubiquitous in all internet infrastructure
   - Enable stateless, horizontally scalable server deployments favoured in [[Cloud Native Computing]]
-  - Are supported by vast tooling ecosystems: [[OpenAPI Specification]], Swagger UI, Postman, curl, and every programming language's HTTP client library
+  - Are supported by vast tooling ecosystems: [[OpenAPI]], Swagger UI, Postman, curl, and every programming language's HTTP client library
   - Provide a language-agnostic integration surface that allows polyglot microservices to interoperate without shared runtime dependencies
   - Form the default public API pattern for virtually all major cloud providers (AWS, Google Cloud, Azure) and AI service providers ([[LLM Inference API]]s)
 - The six Fieldingian constraints that define REST are:
@@ -48,7 +48,7 @@ A REST API (Representational State Transfer Application Programming Interface) i
   - [[JWT (JSON Web Token)]] — compact, self-contained tokens transmitted in `Authorization: Bearer` headers
   - [[mTLS (Mutual TLS)]] — certificate-based authentication at the transport layer for high-assurance service-to-service calls
 - **API Description Languages**
-  - [[OpenAPI Specification]] (formerly Swagger): the dominant machine-readable REST API description format; enables automatic SDK generation, interactive documentation (Swagger UI, Redoc), and contract-first development
+  - [[OpenAPI]] (formerly Swagger): the dominant machine-readable REST API description format; enables automatic SDK generation, interactive documentation (Swagger UI, Redoc), and contract-first development
   - [[RAML]]: REST API Modelling Language, a YAML-based alternative
   - [[API Blueprint]]: Markdown-based description language
 
@@ -89,7 +89,7 @@ A REST API (Representational State Transfer Application Programming Interface) i
 - **W3C**
   - [[CORS]] (Cross-Origin Resource Sharing) — W3C specification governing browser-initiated cross-origin REST requests
 - **OpenAPI Initiative (Linux Foundation)**
-  - [[OpenAPI Specification]] v3.1 (aligned with JSON Schema draft 2020-12) is the current standard for REST API description; governed by the OpenAPI Initiative under the Linux Foundation
+  - [[OpenAPI]] v3.1 (aligned with JSON Schema draft 2020-12) is the current standard for REST API description; governed by the OpenAPI Initiative under the Linux Foundation
 - **Industry de facto standards**
   - OpenAI Chat Completions API shape — widely adopted as a compatibility target for [[LLM Inference API]] providers
   - [[JSON:API]] (jsonapi.org) — a specification for REST APIs using JSON that prescribes document structure, compound documents, and HATEOAS linking

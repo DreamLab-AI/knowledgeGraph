@@ -4,6 +4,7 @@ type: Class
 title: Frame Reference Epoch
 resource: urn:ngm:class:frame-reference-epoch
 domain: earth-observation-and-geospatial-sensing
+description: Frame reference epoch is the epoch of coordinates that define a dynamic reference frame.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Frame Reference Epoch
+
+Frame reference epoch is the epoch of coordinates that define a dynamic reference frame.[^1]

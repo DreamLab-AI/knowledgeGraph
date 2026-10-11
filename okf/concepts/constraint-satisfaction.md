@@ -89,8 +89,8 @@ relatedTo:
   - urn:ngm:class:treewidth
   - urn:ngm:class:operations-research
   - urn:ngm:class:dynamic-programming
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:graph-colouring
   - urn:ngm:class:logic-programming
   - urn:ngm:class:genetic-algorithm

@@ -45,7 +45,7 @@ partOf:
   - urn:ngm:class:database-management-system
 relatedTo:
   - urn:ngm:class:rdf
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:transaction-processing
 ---
 

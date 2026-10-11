@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:parallel-computing
   - urn:ngm:class:tsmc
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:scientific-computing
   - urn:ngm:class:data-centre
   - urn:ngm:class:robotics

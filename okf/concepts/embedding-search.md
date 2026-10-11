@@ -11,7 +11,6 @@ is-a:
   - urn:ngm:class:semantic-search
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:neural-information-retrieval
-  - urn:ngm:class:dense-retrieval
 hasPart:
   - urn:ngm:class:embedding-model
   - urn:ngm:class:vector-index
@@ -87,7 +86,7 @@ relatedTo:
   - urn:ngm:class:cross-encoder-reranking
   - urn:ngm:class:reciprocal-rank-fusion
   - urn:ngm:class:knowledge-retrieval
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
 ---
 

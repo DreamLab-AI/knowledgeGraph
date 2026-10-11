@@ -11,14 +11,14 @@ is-a:
   - urn:ngm:class:sc-governance-and-safety
   - urn:ngm:class:security-architecture
 requires:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 enables:
   - urn:ngm:class:cross-platform-identity
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 uses:
   - urn:ngm:class:cryptographic-security
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 relatedTo:
   - urn:ngm:class:trust-framework
   - urn:ngm:class:trust-infrastructure

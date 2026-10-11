@@ -33,9 +33,9 @@ contrastsWith:
   - urn:ngm:class:proprietary-identification
 bridgesTo:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:barcode
   - urn:ngm:class:rfid

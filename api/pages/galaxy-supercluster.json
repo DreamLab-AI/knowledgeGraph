@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:galaxy-supercluster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A galaxy supercluster is an extended region with a high concentration of galaxies, a term that the Laniakea paper says is not precise.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

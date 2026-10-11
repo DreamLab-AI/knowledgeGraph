@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:immersive-experience
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:motion-capture
 relatedTo:
   - urn:ngm:class:digital-performance-capture

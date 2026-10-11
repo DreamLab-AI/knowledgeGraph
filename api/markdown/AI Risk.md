@@ -215,7 +215,7 @@ Published February 2023, this comprehensive international standard for [[AI Risk
 - Intellectual property infringement
 - Obscene content generation
 
-  This framework became essential for organizations deploying [[Large Language Models]], image generators, and multimodal systems.
+  This framework became essential for organizations deploying [[Large Language Model]], image generators, and multimodal systems.
 
   **Core Functions**:
   1. **GOVERN**: Establish governance and oversight
@@ -328,8 +328,8 @@ Published February 2023, this comprehensive international standard for [[AI Risk
 - [[AI Safety]]
 - [[AI Security]]
 - [[AIGovernance]]
-- [[NIST AI RMF]]
-- [[EU AI Act Regulatory Instrument]]
+- [[NIST AI Risk Management Framework]]
+- [[EU AI Act]]
 - [[ISO/IEC 23894]]
 - [[Algorithmic Bias]]
 - [[AI Ethics]]

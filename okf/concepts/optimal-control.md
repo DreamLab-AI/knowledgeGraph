@@ -16,10 +16,10 @@ requires:
   - urn:ngm:class:optimisation-algorithm
   - urn:ngm:class:system-dynamics-model
 enables:
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:motion-planning
   - urn:ngm:class:autonomous-vehicle-control
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
 dependsOn:
   - urn:ngm:class:control-theory
   - urn:ngm:class:optimization-theory
@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:pid-controller
 bridgesTo:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:linear-quadratic-regulator
   - urn:ngm:class:model-predictive-control

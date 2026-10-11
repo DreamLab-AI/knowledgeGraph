@@ -210,7 +210,7 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -296,7 +296,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -308,8 +308,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
@@ -435,10 +435,6 @@
       "label": "AI Governance"
     },
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "ai-policy",
       "label": "ai policy"
     },
@@ -513,10 +509,6 @@
     {
       "slug": "bc-0480-kyc-requirements",
       "label": "BC-0480-kyc-requirements"
-    },
-    {
-      "slug": "bc-0482-eu-mica-regulation",
-      "label": "BC-0482-eu-mica-regulation"
     },
     {
       "slug": "bc-0484-markets-in-crypto-assets",
@@ -649,6 +641,14 @@
     {
       "slug": "metadata-management",
       "label": "Metadata Management"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "non-repudiation",

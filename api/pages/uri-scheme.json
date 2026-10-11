@@ -20,12 +20,12 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:authentication",
@@ -46,8 +46,8 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "uses": [
@@ -62,8 +62,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "DID"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "standardizedBy": [
@@ -74,8 +74,8 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "relatedTo": [
@@ -225,7 +225,7 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -375,11 +375,11 @@
         "label": "Technical Committee"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -451,8 +451,8 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:metaverse-standards-forum",
@@ -523,8 +523,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     }
   ]
 }

@@ -32,7 +32,7 @@ bridgesTo:
 supports:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:permissioned-blockchain
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:permissionless-blockchain
 standardizedBy:
   - urn:ngm:class:international-organization-for-standardization

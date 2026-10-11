@@ -11,11 +11,11 @@ is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-entity
   - urn:ngm:class:network-component
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:sybil-attack
   - urn:ngm:class:peer-discovery
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 enables:
   - urn:ngm:class:double-spending
   - urn:ngm:class:selfish-mining

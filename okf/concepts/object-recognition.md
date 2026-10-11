@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:bounding-box-regression
   - urn:ngm:class:non-maximum-suppression
 requires:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
 enables:
   - urn:ngm:class:autonomous-driving
   - urn:ngm:class:augmented-reality

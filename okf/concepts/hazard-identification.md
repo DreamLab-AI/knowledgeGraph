@@ -12,8 +12,8 @@ is-a:
 hasPart:
   - urn:ngm:class:hazard-analysis
   - urn:ngm:class:fault-tree-analysis
-  - urn:ngm:class:fmea
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
+  - urn:ngm:class:failure-mode-and-effects-analysis
 requires:
   - urn:ngm:class:safety-engineering
 enables:

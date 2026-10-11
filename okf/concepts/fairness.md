@@ -30,8 +30,8 @@ dependsOn:
   - urn:ngm:class:representative-training-data
   - urn:ngm:class:explainability
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:bias
   - urn:ngm:class:harmful-bias

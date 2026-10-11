@@ -89,7 +89,7 @@
         "label": "Nostr Protocol"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -109,11 +109,11 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -264,12 +264,12 @@
         "label": "Computational Hardness Assumption"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:random-number-generator",
@@ -322,7 +322,7 @@
         "label": "Transaction Authorisation"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -458,8 +458,8 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "uses": [
@@ -506,8 +506,8 @@
         "label": "eIDAS QES"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:nostr",
@@ -526,8 +526,8 @@
         "label": "Smart Contract Authorisation"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "standardizedBy": [
@@ -596,8 +596,8 @@
         "label": "Certificate Transparency"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:verifiable-random-function",
@@ -632,12 +632,12 @@
       "label": "Cryptography Security and Privacy"
     },
     {
-      "slug": "decentralised-web",
-      "label": "Decentralised Web"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
     },
     {
       "slug": "digital-signature",

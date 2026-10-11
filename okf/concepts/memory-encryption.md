@@ -15,13 +15,13 @@ requires:
 enables:
   - urn:ngm:class:data-protection
 dependsOn:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 implements:
   - urn:ngm:class:encryption
 contrastsWith:
   - urn:ngm:class:homomorphic-encryption
 bridgesTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 uses:
   - urn:ngm:class:hardware-security-module
 supports:

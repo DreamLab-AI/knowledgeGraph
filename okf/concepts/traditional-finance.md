@@ -29,15 +29,15 @@ dependsOn:
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:central-banking
 contrastsWith:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cryptocurrency
 bridgesTo:
   - urn:ngm:class:tokenization
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:tokenised-real-world-assets
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:tokenised-real-world-assets
 relatedTo:
   - urn:ngm:class:asset-management

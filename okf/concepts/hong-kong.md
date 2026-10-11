@@ -22,13 +22,13 @@ enables:
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:tokenized-asset
 implements:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:one-country-two-systems
 contrastsWith:
   - urn:ngm:class:singapore
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:renminbi-internationalisation
 uses:
   - urn:ngm:class:distributed-ledger-technology

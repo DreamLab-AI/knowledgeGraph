@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:value-distribution
 dependsOn:
   - urn:ngm:class:digital-wallet
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:community-platform
 bridgesTo:
   - urn:ngm:class:virtual-economy

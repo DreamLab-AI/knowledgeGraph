@@ -35,7 +35,7 @@ uses:
 relatedTo:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:gaussian-process
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:neural-ordinary-differential-equation
   - urn:ngm:class:flow-matching

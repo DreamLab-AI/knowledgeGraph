@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:regulatory-compliance
 bridgesTo:
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
 ---
 
 # BC-0484-markets-in-crypto-assets

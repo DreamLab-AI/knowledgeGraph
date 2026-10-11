@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:deep-learning
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:reinforcement-learning
 requires:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radiation-shielding",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Radiation shielding is the use of material around spacecraft electronics and other components to absorb part of the particle radiation that would otherwise reach them.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

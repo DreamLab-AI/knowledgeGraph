@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:avatar-portability
   - urn:ngm:class:cross-platform-identity
 uses:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:vrm-format
 ---
 

@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:hypervisor
   - urn:ngm:class:container-runtime
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:zero-knowledge-proof
 uses:
   - urn:ngm:class:blockchain

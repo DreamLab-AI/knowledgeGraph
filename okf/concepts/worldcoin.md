@@ -21,9 +21,9 @@ enables:
   - urn:ngm:class:sybil-resistance
   - urn:ngm:class:proof-of-personhood
   - urn:ngm:class:universal-basic-income
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 contrastsWith:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:centralised-identity
 bridgesTo:
   - urn:ngm:class:artificial-intelligence

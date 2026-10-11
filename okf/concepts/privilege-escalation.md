@@ -18,7 +18,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:least-privilege
 relatedTo:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:authentication
   - urn:ngm:class:observability
 ---

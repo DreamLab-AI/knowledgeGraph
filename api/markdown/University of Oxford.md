@@ -30,7 +30,7 @@ The University of Oxford is a collegiate research university located in Oxford, 
 
 - Oxford engages with standards bodies and regulatory processes through its policy-facing institutes. The Oxford Internet Institute contributes to EU [[AI Act]] analysis, UK's AI Safety Institute deliberations, and broader multi-stakeholder governance of [[Artificial Intelligence]].
 - The university participates in the Partnership on AI and has contributed researchers to OECD AI policy advisory panels.
-- Oxford's research outputs frequently inform [[IEEE]], [[ISO]], and [[W3C]] technical standards in areas such as [[Machine Learning]] reproducibility, data quality, and model evaluation.
+- Oxford's research outputs frequently inform [[IEEE]], [[ISO]], and [[World Wide Web Consortium]] technical standards in areas such as [[Machine Learning]] reproducibility, data quality, and model evaluation.
 - As a member of the [[Russell Group]] and signatory to the Concordat to Support the Career Development of Researchers, Oxford adheres to UK-wide frameworks for research integrity and open data.
 
 ### Provenance

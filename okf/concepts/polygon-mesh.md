@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:rendering
   - urn:ngm:class:animation
 implements:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 contrastsWith:
   - urn:ngm:class:procedural-generation
 bridgesTo:

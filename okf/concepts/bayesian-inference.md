@@ -64,7 +64,7 @@ uses:
   - urn:ngm:class:hamiltonian-monte-carlo
   - urn:ngm:class:stochastic-gradient-langevin-dynamics
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -72,7 +72,7 @@ supports:
   - urn:ngm:class:robotics
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:graphical-model
   - urn:ngm:class:gaussian-process

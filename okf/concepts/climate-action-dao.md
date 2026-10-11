@@ -9,7 +9,7 @@ maturity: established
 quality: 0.5
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
-  - urn:ngm:class:decentralized-autonomous-organization
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:climatefinance
   - urn:ngm:class:collective-governance
   - urn:ngm:class:impactinvestment

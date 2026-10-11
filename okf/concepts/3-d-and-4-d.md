@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # 3D and 4D

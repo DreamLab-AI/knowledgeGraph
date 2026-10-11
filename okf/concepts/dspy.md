@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:copro
   - urn:ngm:class:dspy-metric-function
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:training-and-fine-tuning
@@ -35,9 +35,9 @@ enables:
   - urn:ngm:class:code-generation
   - urn:ngm:class:instruction-following
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:automatic-prompt-optimisation
   - urn:ngm:class:in-context-learning
@@ -51,11 +51,11 @@ uses:
   - urn:ngm:class:few-shot-prompting
   - urn:ngm:class:bayesian-optimisation
   - urn:ngm:class:in-context-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:meta-learning
 supports:
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:zero-shot-prompting
   - urn:ngm:class:hallucination
   - urn:ngm:class:model-optimisation-and-performance
@@ -65,7 +65,7 @@ standardizedBy:
   - urn:ngm:class:stanford-nlp-group
 relatedTo:
   - urn:ngm:class:llm-agents
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:lang-chain
   - urn:ngm:class:hallucination
   - urn:ngm:class:foundation-model

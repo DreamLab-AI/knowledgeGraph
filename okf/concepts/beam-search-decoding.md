@@ -42,7 +42,7 @@ dependsOn:
   - urn:ngm:class:beam-search
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:log-probability
   - urn:ngm:class:dynamic-programming
   - urn:ngm:class:large-language-model-training
@@ -59,8 +59,8 @@ contrastsWith:
   - urn:ngm:class:diverse-beam-search
   - urn:ngm:class:monte-carlo-tree-search
 uses:
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:kv-cache
@@ -72,7 +72,7 @@ uses:
   - urn:ngm:class:heuristic-methods
 supports:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:sequence-to-sequence-learning
   - urn:ngm:class:inference-compute
   - urn:ngm:class:process-reward-model

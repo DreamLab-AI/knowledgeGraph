@@ -13,13 +13,13 @@ requires:
   - urn:ngm:class:database
   - urn:ngm:class:user-interface
 enables:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 dependsOn:
   - urn:ngm:class:database
 contrastsWith:
   - urn:ngm:class:digital-asset-management
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:api
   - urn:ngm:class:rest-api

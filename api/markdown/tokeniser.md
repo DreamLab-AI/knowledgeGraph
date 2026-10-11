@@ -25,7 +25,7 @@ A tokeniser is a preprocessing component that segments raw text into a sequence 
 
 ### Applications and Use Cases
 
-- **[[Large Language Models]]** — every modern LLM (GPT-4, Claude, Gemini, LLaMA, Mistral) requires a tokeniser to convert user prompts into integer sequences before inference.
+- **[[Large Language Model]]** — every modern LLM (GPT-4, Claude, Gemini, LLaMA, Mistral) requires a tokeniser to convert user prompts into integer sequences before inference.
 - **[[Machine Translation]]** — sub-word tokenisation was first popularised for neural machine translation to handle open vocabularies across language pairs with different morphological typologies.
 - **[[Code Generation]]** — specialised tokenisers for programming languages preserve indentation semantics, string literals, and operator sequences that differ structurally from natural language.
 - **[[Speech Recognition]]** — models such as Whisper apply tokenisation to output text, while audio tokenisers (e.g. EnCodec, SoundStream) discretise audio waveforms into token sequences enabling language-model-style generation of speech.
@@ -37,7 +37,7 @@ A tokeniser is a preprocessing component that segments raw text into a sequence 
 ### Standards and Context
 
 - Tokenisation algorithms are not formally standardised by ISO or IEEE; de facto standards have emerged through open-source library adoption.
-- The **HuggingFace Tokenizers** library (Rust-backed, Python API) implements BPE, WordPiece, SentencePiece, and Unigram in a unified interface and is the dominant production implementation across open-source [[Large Language Models]].
+- The **HuggingFace Tokenizers** library (Rust-backed, Python API) implements BPE, WordPiece, SentencePiece, and Unigram in a unified interface and is the dominant production implementation across open-source [[Large Language Model]].
 - **SentencePiece** (Google) is the reference implementation for the Unigram and SentencePiece BPE algorithms, used in T5, ALBERT, and XLM-R.
 - **Tiktoken** (OpenAI, open-sourced 2023) provides fast BPE for the GPT-3.5/GPT-4 family and is the reference for OpenAI API token counting.
 - Vocabulary files are typically distributed as `vocab.json` + `merges.txt` (BPE) or `sentencepiece.model` (SentencePiece) and are a mandatory component of any reproducible model release.

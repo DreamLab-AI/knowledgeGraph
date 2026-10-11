@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radiation-dosimetry",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Radiation dosimetry is the measurement of exposure to ionising radiation in terms of defined quantities and units, such as the absorbed dose and dose equivalent reported for space missions.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

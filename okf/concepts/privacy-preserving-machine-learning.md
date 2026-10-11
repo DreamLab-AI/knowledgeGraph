@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:federated-learning
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:data-privacy
 bridgesTo:
@@ -21,7 +21,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:cryptography
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 supports:
   - urn:ngm:class:edge-computing
 partOf:

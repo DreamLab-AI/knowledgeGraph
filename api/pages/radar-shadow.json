@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar-shadow",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Radar shadow is the part of a radar image where the beam cannot illuminate the ground, so no energy is backscattered and the area appears dark.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -36,7 +36,7 @@
         "label": "SAR Terrain Correction"
       },
       {
-        "id": "urn:ngm:class:radar",
+        "id": "urn:ngm:class:synthetic-aperture-radar",
         "label": "Synthetic Aperture Radar"
       }
     ]

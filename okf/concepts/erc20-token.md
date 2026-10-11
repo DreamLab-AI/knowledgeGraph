@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:transaction
   - urn:ngm:class:wallet
 contrastsWith:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:nft
 uses:
   - urn:ngm:class:gas

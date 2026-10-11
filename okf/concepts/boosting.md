@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:ensemble-methods
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:training-data
 enables:
   - urn:ngm:class:overfitting

@@ -14,29 +14,40 @@ hasPart:
 requires:
   - urn:ngm:class:block-timestamp
   - urn:ngm:class:access-control-module
+  - urn:ngm:class:consensus
 enables:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:optimistic-governance
+  - urn:ngm:class:atomic-swap
 dependsOn:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:role-based-access-control
 implements:
   - urn:ngm:class:bitcoin-script
+contrastsWith:
+  - urn:ngm:class:multisignature
 bridgesTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:rollup
+  - urn:ngm:class:hashed-timelock-contract
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:cryptographic-hash
   - urn:ngm:class:multisignature
+  - urn:ngm:class:bitcoin-script
+  - urn:ngm:class:transaction
 partOf:
   - urn:ngm:class:dao-treasury
+  - urn:ngm:class:bitcoin-script
 relatedTo:
   - urn:ngm:class:htlc
   - urn:ngm:class:vesting-schedule
   - urn:ngm:class:escrow-system
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:governance-token
+  - urn:ngm:class:lightning-network
+  - urn:ngm:class:governance
 ---
 
 # Timelock

@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:probability-distribution
   - urn:ngm:class:graphical-model
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:artificial-intelligence
 relatedTo:

@@ -5,7 +5,7 @@ The Academy Software Foundation (ASWF) is a neutral, vendor-independent organisa
 - Modern production depends on a handful of widely shared libraries that no single studio wants to maintain alone; the ASWF gives them a vendor-neutral steward.
 - Projects under its umbrella include OpenColorIO, OpenEXR, OpenVDB, OpenTimelineIO, OpenImageIO and MaterialX, covering colour, imaging, volumes, editorial interchange and material description.
 - By pooling resources, the foundation reduces duplicated effort and fragmentation across the [[Visual Effects]] and [[Animation]] industries.
-- It complements format work such as [[USD]] by ensuring the surrounding ecosystem of tools stays interoperable.
+- It complements format work such as [[Universal Scene Description]] by ensuring the surrounding ecosystem of tools stays interoperable.
 
 ### Key aspects
 

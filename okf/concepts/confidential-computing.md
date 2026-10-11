@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:hardware-security
 hasPart:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:remote-attestation
 requires:
@@ -26,7 +26,7 @@ dependsOn:
 implements:
   - urn:ngm:class:zero-trust-architecture
 contrastsWith:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin

@@ -52,7 +52,7 @@
         "label": "Apache Kafka"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -121,11 +121,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
@@ -192,12 +187,12 @@
         "label": "Time Synchronisation"
       },
       {
-        "id": "urn:ngm:class:gpu-architecture",
-        "label": "GPU Architecture"
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       },
       {
-        "id": "urn:ngm:class:memory-bandwidth",
-        "label": "Memory Bandwidth"
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
       }
     ],
     "enables": [
@@ -226,12 +221,12 @@
         "label": "Horizontal Scalability"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning Training"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "dependsOn": [
@@ -262,10 +257,6 @@
       {
         "id": "urn:ngm:class:vector-clocks",
         "label": "Vector Clocks"
-      },
-      {
-        "id": "urn:ngm:class:cache-coherence",
-        "label": "Cache Coherence"
       }
     ],
     "implements": [
@@ -320,27 +311,11 @@
         "label": "Single-Machine Multiprocessing"
       },
       {
-        "id": "urn:ngm:class:sequential-computing",
-        "label": "Sequential Computing"
-      },
-      {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
       {
         "id": "urn:ngm:class:data",
         "label": "Data"
@@ -424,8 +399,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -452,12 +427,6 @@
         "label": "Open Standards"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
-      }
-    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cloud-native",
@@ -476,6 +445,10 @@
         "label": "High-Performance Computing"
       },
       {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Computing"
       },
@@ -486,10 +459,6 @@
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:infra-network-and-comms",
-        "label": "Network and Communication"
       }
     ]
   },

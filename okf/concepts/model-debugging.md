@@ -27,13 +27,13 @@ uses:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:model-interpretability
   - urn:ngm:class:root-cause-analysis
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
 supports:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:mlops
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 partOf:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
 relatedTo:
   - urn:ngm:class:observability
   - urn:ngm:class:testing

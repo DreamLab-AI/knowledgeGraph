@@ -8,7 +8,7 @@ description: Predictive modelling is the practice of building statistical or mac
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-modelling
 requires:
   - urn:ngm:class:model-training
@@ -25,10 +25,10 @@ uses:
 supports:
   - urn:ngm:class:anomaly-detection
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:predictive-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Predictive Modelling

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:large-language-model-training
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:language-modelling
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 hasPart:
   - urn:ngm:class:causal-attention
   - urn:ngm:class:autoregressive-decoding
@@ -26,9 +26,9 @@ requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:gpt
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:meta-llama-model-family
   - urn:ngm:class:foundation-model
   - urn:ngm:class:code-generation
@@ -49,7 +49,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:masked-language-modelling
   - urn:ngm:class:bert
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:diffusion-language-model
   - urn:ngm:class:state-space-model
 uses:

@@ -39,7 +39,7 @@ Monitoring is the systematic, continuous observation of computing systems, servi
 - **[[Kubernetes]] cluster operations** — kube-state-metrics, cAdvisor, and the Prometheus Operator are the standard stack for container-level and control-plane monitoring.
 - **Security monitoring** — Metric and log analysis for intrusion detection, lateral movement, and anomalous access patterns feeds [[Security Information and Event Management]] (SIEM) systems.
 - **[[Chaos Engineering]]** — Fault injection experiments require monitoring baselines before the experiment and real-time signal collection during it to validate system resilience hypotheses.
-- **[[Auto-Scaling]]** — Horizontal and vertical pod autoscalers in Kubernetes read monitoring metrics (CPU, custom HPA metrics) to dynamically adjust compute allocation.
+- **[[Autoscaling]]** — Horizontal and vertical pod autoscalers in Kubernetes read monitoring metrics (CPU, custom HPA metrics) to dynamically adjust compute allocation.
 - **[[Capacity Planning]]** — Trend analysis over monitoring data informs infrastructure procurement, quota requests, and cost optimisation decisions.
 - **Edge and IoT** — Lightweight agents (Telegraf, Vector) collect telemetry from resource-constrained edge nodes, enabling centralised visibility across heterogeneous fleets.
 - **AI/ML model serving** — Monitoring model inference latency, throughput, and prediction-distribution drift (data drift monitoring) is increasingly critical as ML systems enter production.

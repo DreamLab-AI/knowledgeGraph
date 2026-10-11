@@ -26,8 +26,8 @@ supports:
   - urn:ngm:class:observability
   - urn:ngm:class:incident-response
 standardizedBy:
-  - urn:ngm:class:cncf
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:monitoring
   - urn:ngm:class:observability

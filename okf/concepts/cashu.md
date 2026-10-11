@@ -68,7 +68,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:blind-signatures
   - urn:ngm:class:bolt-11
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:web-sockets
   - urn:ngm:class:lightning-invoices
   - urn:ngm:class:nfc-payments

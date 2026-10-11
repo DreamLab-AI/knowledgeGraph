@@ -28,11 +28,11 @@ hasPart:
   - urn:ngm:class:disability-bias
   - urn:ngm:class:age-bias
 requires:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:tokeniser
   - urn:ngm:class:training-data-composition
   - urn:ngm:class:pretraining-corpus
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:instruction-tuning-dataset
   - urn:ngm:class:human-rater-pool
 enables:
@@ -76,12 +76,12 @@ supports:
   - urn:ngm:class:responsible-ai-reporting
 standardizedBy:
   - urn:ngm:class:acl
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ico-ai-guidance
   - urn:ngm:class:iso-iec-tr-24027
   - urn:ngm:class:neur-ips
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ico-ai-guidance
   - urn:ngm:class:facct
   - urn:ngm:class:aies
@@ -93,7 +93,7 @@ relatedTo:
   - urn:ngm:class:ai-risks
   - urn:ngm:class:bias-detection-methods
   - urn:ngm:class:bias-mitigation-techniques
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:ai-fairness
 ---
 

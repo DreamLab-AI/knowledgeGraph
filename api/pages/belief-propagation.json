@@ -102,14 +102,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:bayesian-inference",
-      "label": "Bayesian Inference",
-      "slug": "bayesian-inference"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -125,26 +120,6 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:statistical-inference",
-      "label": "Statistical Inference",
-      "slug": "statistical-inference"
-    },
-    {
-      "id": "urn:ngm:class:statistics",
-      "label": "Statistics",
-      "slug": "statistics"
-    },
-    {
-      "id": "urn:ngm:class:probability-theory",
-      "label": "Probability Theory",
-      "slug": "probability-theory"
-    },
-    {
-      "id": "urn:ngm:class:measure-theory",
-      "label": "Measure Theory",
-      "slug": "measure-theory"
     }
   ],
   "inheritedRelations": {
@@ -178,8 +153,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "requires": [
@@ -200,20 +175,20 @@
         "label": "Probabilistic Model"
       },
       {
-        "id": "urn:ngm:class:bayes-theorem",
-        "label": "Bayes' Theorem"
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:conditional-probability",
-        "label": "Conditional Probability"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
-        "id": "urn:ngm:class:statistical-model",
-        "label": "Statistical Model"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -230,24 +205,24 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:anomaly-detection",
-        "label": "Anomaly Detection"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:bayesian-deep-learning",
-        "label": "Bayesian Deep Learning"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:bayesian-optimisation",
-        "label": "Bayesian Optimisation"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:continual-learning",
-        "label": "Continual Learning"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "dependsOn": [
@@ -264,42 +239,30 @@
         "label": "Probability Theory"
       },
       {
-        "id": "urn:ngm:class:conditional-probability",
-        "label": "Conditional Probability"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
-      },
-      {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:bayes-theorem",
-        "label": "Bayes' Theorem"
-      },
-      {
-        "id": "urn:ngm:class:posterior-approximation",
-        "label": "Posterior Approximation"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-programming",
-        "label": "Probabilistic Programming"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -316,6 +279,18 @@
       {
         "id": "urn:ngm:class:continual-learning",
         "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-driven-learning",
+        "label": "Data-Driven Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [
@@ -324,32 +299,16 @@
         "label": "Frequentist Inference"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:frequentist-statistics",
-        "label": "Frequentist Statistics"
-      },
-      {
-        "id": "urn:ngm:class:maximum-a-posteriori-estimation",
-        "label": "Maximum A Posteriori Estimation"
-      },
-      {
-        "id": "urn:ngm:class:maximum-likelihood-estimation",
-        "label": "Maximum Likelihood Estimation"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:deterministic-computation",
-        "label": "Deterministic Computation"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -370,20 +329,20 @@
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:decision-theory",
-        "label": "Decision Theory"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:minimum-description-length",
-        "label": "Minimum Description Length"
-      },
-      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
     "uses": [
@@ -396,28 +355,28 @@
         "label": "Posterior Distribution"
       },
       {
-        "id": "urn:ngm:class:expectation-maximisation",
-        "label": "Expectation Maximisation"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
-        "id": "urn:ngm:class:gaussian-process",
-        "label": "Gaussian Process"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:hamiltonian-monte-carlo",
-        "label": "Hamiltonian Monte Carlo"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:knowledge-representation",
-        "label": "Knowledge Representation"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:stochastic-gradient-langevin-dynamics",
-        "label": "Stochastic Gradient Langevin Dynamics"
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
       },
       {
-        "id": "urn:ngm:class:variational-inference",
-        "label": "Variational Inference"
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "supports": [
@@ -434,34 +393,34 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:scientific-computing",
-        "label": "Scientific Computing"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-22989-2022",
-        "label": "ISO/IEC 22989:2022"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -470,12 +429,8 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:statistics",
-        "label": "Statistics"
-      },
-      {
-        "id": "urn:ngm:class:measure-theory",
-        "label": "Measure Theory"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -504,12 +459,12 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:causal-inference",
-        "label": "Causal Inference"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:decision-theory",
-        "label": "Decision Theory"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ]
   },

@@ -34,7 +34,7 @@ Scaling Laws are empirical power-law relationships describing how the performanc
 
 - **Pre-training Budget Allocation**
   - Research labs use compute-optimal formulae derived from scaling laws to allocate GPU-hours between model size and training tokens before launching large training runs.
-  - Informs decisions such as the choice between training one large [[Foundation Models|foundation model]] or several smaller specialist models.
+  - Informs decisions such as the choice between training one large [[Foundation Model|foundation model]] or several smaller specialist models.
 - **Model Selection and Deployment**
   - Scaling law extrapolations guide decisions about whether a planned model will achieve target downstream performance at acceptable inference cost.
   - Supports trade-offs between [[Model Compression]] (distillation, quantisation) and further [[Pre-Training]].
@@ -47,7 +47,7 @@ Scaling Laws are empirical power-law relationships describing how the performanc
 - **Domain-Specific Extensions**
   - Vision: [[Vision Transformers]] obey similar N- and D-scaling laws, enabling principled scaling of image recognition and generation systems.
   - Code: Coding models show faster loss decay per parameter than natural language, suggesting domain-specific scaling coefficients.
-  - Multimodal: [[Multimodal Models]] exhibit compound scaling laws across modalities, with cross-modal interactions creating more complex Pareto frontiers.
+  - Multimodal: [[Multimodal Model]] exhibit compound scaling laws across modalities, with cross-modal interactions creating more complex Pareto frontiers.
   - Reinforcement Learning: Policy gradient methods and [[Reinforcement Learning from Human Feedback]] show scaling with environment interactions and reward model quality, though the functional forms are less settled.
 
 ### Standards and Context

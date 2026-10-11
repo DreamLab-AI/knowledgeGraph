@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:cross-validation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:cross-validation
   - urn:ngm:class:bagging

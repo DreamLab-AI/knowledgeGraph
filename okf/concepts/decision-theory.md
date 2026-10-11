@@ -9,7 +9,6 @@ maturity: mature
 quality: 0.9
 is-a:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:decision-making
   - urn:ngm:class:operations-research
   - urn:ngm:class:probability-theory
 hasPart:
@@ -53,7 +52,7 @@ supports:
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:risk-management
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:von-neumann-morgenstern-axioms
   - urn:ngm:class:savage-expected-utility
@@ -62,9 +61,10 @@ relatedTo:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:control-theory
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:cognitive-science
+  - urn:ngm:class:decision-making
 ---
 
 # Decision Theory

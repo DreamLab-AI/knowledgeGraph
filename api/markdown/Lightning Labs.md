@@ -50,7 +50,7 @@ Lightning Labs is a San Francisco-based technology company, founded in 2016 by E
 ### Applications and Use Cases
 
 - **Retail micropayments**: enabling sub-satoshi and satoshi-denominated payments for digital content, APIs, and streaming media without traditional payment processor fees.
-- **[[Streaming Payments]]**: continuous value transfer per unit of time (e.g. podcasting 2.0, pay-per-second content) built on lnd's keysend and AMP (Atomic Multipath Payments) primitives.
+- **[[Streaming Payment]]**: continuous value transfer per unit of time (e.g. podcasting 2.0, pay-per-second content) built on lnd's keysend and AMP (Atomic Multipath Payments) primitives.
 - **Exchange and wallet infrastructure**: major Bitcoin exchanges integrate lnd to offer Lightning deposits and withdrawals, reducing on-chain congestion and settlement latency.
 - **Lightning Service Providers (LSPs)**: businesses use Pool and Loop to offer managed liquidity services to end users, abstracting channel management complexity.
 - **Cross-border remittance**: instant final settlement in BTC or via Taproot Assets stablecoins enables low-cost international transfers.

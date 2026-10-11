@@ -9,10 +9,11 @@ maturity: mature
 quality: 0.74
 is-a:
   - urn:ngm:class:linked-data
+  - urn:ngm:class:serialisation-format
 requires:
   - urn:ngm:class:iri
-  - urn:ngm:class:json-data-interchange-format
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
+  - urn:ngm:class:json
 enables:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:ontology
@@ -22,8 +23,8 @@ enables:
 implements:
   - urn:ngm:class:linked-data
   - urn:ngm:class:rdf
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 contrastsWith:
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:turtle
@@ -31,16 +32,21 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:search-engine-optimisation
+  - urn:ngm:class:w3c-recommendation
+  - urn:ngm:class:schema-org
 uses:
   - urn:ngm:class:schema-org
   - urn:ngm:class:n-quads
+  - urn:ngm:class:json
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:sparql
   - urn:ngm:class:activity-pub
   - urn:ngm:class:owl
   - urn:ngm:class:shacl
+  - urn:ngm:class:rdf
+  - urn:ngm:class:semantic-web
 ---
 
 # JSON-LD

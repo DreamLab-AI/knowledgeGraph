@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ocean-world",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An ocean world is a planet or moon that holds substantial liquid water, a category NASA uses in its search for life beyond Earth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

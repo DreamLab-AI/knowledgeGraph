@@ -136,7 +136,7 @@
         "label": "Censorship Resistance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -206,7 +206,7 @@
         "label": "Self Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -240,8 +240,8 @@
         "label": "Hierarchical Deterministic Wallet"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:threshold-signature-scheme",
@@ -252,12 +252,12 @@
         "label": "Wallet"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
       }
     ],
     "supports": [
@@ -322,8 +322,8 @@
         "label": "Threshold Cryptography"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ]
   },

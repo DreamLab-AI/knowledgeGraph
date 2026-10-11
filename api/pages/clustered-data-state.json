@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:clustered-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A clustered data state is the condition of data that has been through a clustering process.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

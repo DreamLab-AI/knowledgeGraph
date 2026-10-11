@@ -34,6 +34,14 @@
       {
         "id": "urn:ngm:class:adjacency-matrix",
         "label": "Adjacency Matrix"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
       }
     ],
     "enables": [
@@ -60,6 +68,14 @@
       {
         "id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
     "dependsOn": [
@@ -90,12 +106,16 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:knowledge-graphing",
@@ -104,6 +124,22 @@
       {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-domain",
+        "label": "Deep Learning Domain"
       }
     ],
     "uses": [
@@ -126,6 +162,10 @@
       {
         "id": "urn:ngm:class:node-embedding",
         "label": "Node Embedding"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "supports": [
@@ -139,7 +179,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:transformer",
@@ -148,6 +193,14 @@
       {
         "id": "urn:ngm:class:graph-rag",
         "label": "GraphRAG"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
       }
     ]
   },
@@ -194,8 +247,8 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       }
     ],
     "requires": [
@@ -243,7 +296,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -302,10 +355,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
-      },
-      {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
       },
@@ -338,10 +387,6 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -501,6 +546,26 @@
     {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
     }
   ],
   "backlinks": [

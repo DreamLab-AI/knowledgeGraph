@@ -72,7 +72,7 @@ Telepresence is a suite of technologies and interaction paradigms that create a 
 - **IEEE 1918.1** — Tactile Internet standard addressing haptic communication latency requirements (sub-1 ms round-trip for closed-loop haptic control), critical for surgical and industrial telepresence.
 - **W3C WebXR Device API** — Browser interface for [[Extended Reality]] experiences enabling web-based telepresence applications.
 - **3GPP Release 17+** — 5G specifications including XR-optimised transport profiles reducing latency and packet loss for mobile telepresence.
-- Key industry bodies: [[ITU-T]], [[IETF]], [[IEEE]], [[ISO]], [[3GPP]], [[W3C]].
+- Key industry bodies: [[ITU-T]], [[IETF]], [[IEEE]], [[ISO]], [[3GPP]], [[World Wide Web Consortium]].
 
 ### Semantic Classification
 

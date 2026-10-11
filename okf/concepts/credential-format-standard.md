@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptographic-proofs
   - urn:ngm:class:standards-body
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:digital-signature
   - urn:ngm:class:issuer-infrastructure
 enables:
@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:trust-interoperability
 implements:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:sd-jwt
 contrastsWith:
   - urn:ngm:class:saml-assertion
@@ -30,14 +30,14 @@ bridgesTo:
   - urn:ngm:class:did-nostr-identity
   - urn:ngm:class:digital-identity-wallet
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:cbor
   - urn:ngm:class:linked-data
 supports:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:self-sovereign-identity
 relatedTo:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:identity-verification
   - urn:ngm:class:trust-framework
 ---

@@ -24,7 +24,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:resilience
   - urn:ngm:class:security
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
 bridgesTo:
   - urn:ngm:class:adversarial-machine-learning
   - urn:ngm:class:blockchain

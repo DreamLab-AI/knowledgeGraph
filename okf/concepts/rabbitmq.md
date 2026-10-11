@@ -21,7 +21,7 @@ contrastsWith:
   - urn:ngm:class:apache-kafka
 uses:
   - urn:ngm:class:message-queue
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 supports:
   - urn:ngm:class:event-driven-architecture
   - urn:ngm:class:microservices

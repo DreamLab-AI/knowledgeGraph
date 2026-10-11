@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-device",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A measurement device is a device used for making measurements, whether on its own or together with supplementary devices.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

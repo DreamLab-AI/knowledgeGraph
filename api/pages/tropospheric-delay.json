@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tropospheric-delay",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Tropospheric delay is the extra GNSS signal-path delay conventionally attributed to the electrically neutral lower atmosphere.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:provenance-tracking
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:secure-boot
 implements:
   - urn:ngm:class:supply-chain-security
@@ -25,7 +25,7 @@ bridgesTo:
   - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:asymmetric-cryptography
   - urn:ngm:class:x-509-certificate

@@ -31,11 +31,11 @@ Trezor is a line of hardware wallets developed by SatoshiLabs that store cryptoc
 
 - **Personal [[Self-Custody]] of [[Bitcoin]] and [[Ethereum]]**: Primary use case — individuals holding significant cryptocurrency balances use Trezor to eliminate exchange-custody and hot-wallet risk.
 - **[[Decentralised Finance]] (DeFi) Participation**: Via [[WalletConnect]] and MetaMask hardware-wallet mode, Trezor signs DeFi protocol transactions (lending, staking, swaps) without exposing keys to browser-based attack surfaces.
-- **[[Multi-Signature]] Schemes**: Trezor devices participate in m-of-n multisig configurations (e.g. 2-of-3) for institutional or high-security setups using [[Bitcoin Script]] or [[Ethereum]] smart-contract wallets.
+- **[[Multisignature]] Schemes**: Trezor devices participate in m-of-n multisig configurations (e.g. 2-of-3) for institutional or high-security setups using [[Bitcoin Script]] or [[Ethereum]] smart-contract wallets.
 - **Password Manager**: Trezor can encrypt and decrypt a [[Password Manager]] database (via SLIP-0016) so that credentials are only accessible when the physical device is present.
 - **SSH Authentication and GPG Signing**: Trezor can serve as a hardware token for SSH key pairs and [[GPG]] code-signing, bridging blockchain key management to general [[Public Key Infrastructure]] use cases.
 - **[[NFT]] and Token Management**: Trezor Suite integrates with [[ERC-20]] and [[ERC-721]] standards, enabling token and [[NFT]] management without leaving keys on a hot device.
-- **Corporate Treasury**: Organisations holding crypto reserves use Trezor combined with [[Multi-Signature]] smart contracts and [[Shamir Secret Sharing]] to distribute custodial risk across multiple key holders and geographies.
+- **Corporate Treasury**: Organisations holding crypto reserves use Trezor combined with [[Multisignature]] smart contracts and [[Shamir Secret Sharing]] to distribute custodial risk across multiple key holders and geographies.
 
 ### Standards and Context
 

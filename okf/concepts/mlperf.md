@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:hardware-accelerator
 supports:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:mlcommons
 partOf:

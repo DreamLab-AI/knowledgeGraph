@@ -61,7 +61,7 @@ uses:
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:ransac
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
   - urn:ngm:class:bag-of-words-model
 supports:
   - urn:ngm:class:assistive-robotics

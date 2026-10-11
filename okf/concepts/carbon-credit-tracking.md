@@ -66,12 +66,12 @@ bridgesTo:
   - urn:ngm:class:carbon-markets
 uses:
   - urn:ngm:class:chainlink-oracles
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:erc-20-tokens
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:hedera-hashgraph
   - urn:ngm:class:polygon
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:erc-721
   - urn:ngm:class:polygon
 supports:

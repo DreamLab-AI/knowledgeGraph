@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:software-defined-networking
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:network-component
   - urn:ngm:class:network-protocol
 requires:

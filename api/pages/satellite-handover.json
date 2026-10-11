@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-handover",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite handover is the transfer of a communications connection or service from one serving satellite to another, typically to maintain access as spacecraft visibility, link quality or network selection changes.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

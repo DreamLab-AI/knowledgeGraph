@@ -9,7 +9,7 @@ Smart contract security is the discipline of designing, reviewing, and verifying
 - Smart contracts encode financial logic that anyone can call, so the attack surface is exposed and the stakes are high.
 - The immutability that gives contracts their trust guarantees also means bugs cannot simply be patched after deployment.
 - Security therefore shifts left into design, coding standards, and verification before launch, supplemented by monitoring afterwards.
-- The discipline spans [[Ethereum]] and other EVM ecosystems and underpins the safety of [[Decentralized Finance]].
+- The discipline spans [[Ethereum]] and other EVM ecosystems and underpins the safety of [[Decentralised Finance]].
 
 ### Mechanisms
 

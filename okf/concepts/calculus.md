@@ -8,7 +8,7 @@ description: "Calculus is the branch of mathematics concerned with continuous ch
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:mathematical-science
   - urn:ngm:class:mathematics
   - urn:ngm:class:applied-mathematics
@@ -62,14 +62,14 @@ uses:
   - urn:ngm:class:automatic-differentiation
   - urn:ngm:class:computational-graphs
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:probability-theory
   - urn:ngm:class:statistics
   - urn:ngm:class:physics
   - urn:ngm:class:engineering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
 standardizedBy:
   - urn:ngm:class:ieee

@@ -8,7 +8,7 @@ description: Applied Machine Learning is the deployment-focused discipline of ad
 maturity: established
 quality: 0.92
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:feature-engineering

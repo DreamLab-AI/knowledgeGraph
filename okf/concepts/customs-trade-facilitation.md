@@ -35,11 +35,11 @@ requires:
   - urn:ngm:class:interoperability-standard
   - urn:ngm:class:risk-scoring-engine
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:interoperability-standards
   - urn:ngm:class:risk-scoring-engine
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
 enables:
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:carbon-border-adjustment
@@ -56,7 +56,7 @@ enables:
 dependsOn:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:corda
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:api-gateway
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:gs-1-standards
@@ -82,14 +82,14 @@ bridgesTo:
   - urn:ngm:class:trade-finance
 uses:
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:optical-character-recognition
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 supports:
   - urn:ngm:class:logistics-optimisation
   - urn:ngm:class:aml-kyc-compliance

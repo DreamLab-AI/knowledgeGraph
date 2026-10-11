@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:alpine-tundra",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Alpine tundra is a tundra ecosystem at high altitude where low temperatures and high winds stunt the vegetation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

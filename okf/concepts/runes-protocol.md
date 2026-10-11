@@ -23,11 +23,11 @@ implements:
 contrastsWith:
   - urn:ngm:class:brc-20
   - urn:ngm:class:ordinals
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:ordinals
   - urn:ngm:class:colored-coins
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract
 uses:
   - urn:ngm:class:bitcoin-proof-of-work-protocol
@@ -38,7 +38,7 @@ relatedTo:
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:tokenization
   - urn:ngm:class:proof-of-work
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 ---
 
 # Runes Protocol

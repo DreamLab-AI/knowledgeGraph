@@ -64,9 +64,9 @@ bridgesTo:
   - urn:ngm:class:ai-infrastructure
 uses:
   - urn:ngm:class:crowdsourcing
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
   - urn:ngm:class:vision-language-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vision-language-models
   - urn:ngm:class:expert-annotation
   - urn:ngm:class:adversarial-generation
@@ -82,9 +82,9 @@ standardizedBy:
   - urn:ngm:class:evaluation-harness
   - urn:ngm:class:iso-iec-23053
   - urn:ngm:class:mlcommons
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:uk-ai-safety-institute
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:stanford-crfm-helm
   - urn:ngm:class:evaluation-harness
 relatedTo:
@@ -92,7 +92,7 @@ relatedTo:
   - urn:ngm:class:alignment
   - urn:ngm:class:datasheets-for-datasets
   - urn:ngm:class:frontier-ai
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:ai-governance
   - urn:ngm:class:ai-safety
 ---

@@ -42,7 +42,7 @@ supports:
   - urn:ngm:class:optimisation
   - urn:ngm:class:uncertainty-quantification
 relatedTo:
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:statistical-inference
   - urn:ngm:class:deep-learning
 ---

@@ -19,8 +19,8 @@ enables:
   - urn:ngm:class:arbitrage
   - urn:ngm:class:financial-inclusion
 contrastsWith:
-  - urn:ngm:class:centralized-exchange
-  - urn:ngm:class:kyc
+  - urn:ngm:class:centralised-exchange
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:order-book
 bridgesTo:
   - urn:ngm:class:governance
@@ -31,7 +31,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain-wallet
 relatedTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:token-swapping
   - urn:ngm:class:permissionless-network
   - urn:ngm:class:uniswap

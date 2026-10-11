@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regridding",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Regridding is the process of changing the grid that underlies gridded data values, also called remapping or interpolation, while preserving the qualities of the original data.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

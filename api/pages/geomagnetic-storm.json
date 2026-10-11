@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geomagnetic-storm",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A geomagnetic storm is a major disturbance of Earth's magnetosphere that occurs when there is a very efficient exchange of energy from the solar wind into the space environment surrounding Earth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

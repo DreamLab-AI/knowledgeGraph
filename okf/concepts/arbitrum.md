@@ -11,13 +11,13 @@ is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-domain
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:rollup
   - urn:ngm:class:fraud-proof
   - urn:ngm:class:sequencer
   - urn:ngm:class:validator-node
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-finance-domain
 dependsOn:
   - urn:ngm:class:data-availability

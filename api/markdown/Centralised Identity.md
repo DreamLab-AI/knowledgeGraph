@@ -45,7 +45,7 @@ Centralised identity is a digital identity model in which a single authority —
 - **Social login** — large platforms act as central providers for third-party sites via OAuth/OIDC.
 - **Government digital identity** — national identity schemes centrally issue and verify citizen credentials for public services.
 - **Consumer platform accounts** — a single platform account governs access to its ecosystem of services.
-- **Comparison baseline** — centralised identity is the reference point against which [[Verifiable Credentials]] and decentralised models articulate their privacy and resilience benefits.
+- **Comparison baseline** — centralised identity is the reference point against which [[Verifiable Credential]] and decentralised models articulate their privacy and resilience benefits.
 
 ### Provenance
 

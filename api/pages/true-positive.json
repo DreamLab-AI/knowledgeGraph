@@ -118,9 +118,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -194,12 +194,12 @@
         "label": "Experiment Tracking"
       },
       {
-        "id": "urn:ngm:class:labelled-data",
-        "label": "Labelled Data"
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:labelled-data",
+        "label": "Labelled Data"
       }
     ],
     "enables": [
@@ -254,8 +254,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -322,12 +322,16 @@
         "label": "Model Training"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -394,8 +398,8 @@
         "label": "Test Dataset"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "supports": [
@@ -428,8 +432,8 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
@@ -438,8 +442,12 @@
         "label": "ISO-IEC 25059"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -458,6 +466,10 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

@@ -72,7 +72,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:digital-services-act
   - urn:ngm:class:online-safety-act-2023
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:digital-services-act
   - urn:ngm:class:council-of-europe-framework-convention-on-ai
   - urn:ngm:class:ico-age-appropriate-design-code

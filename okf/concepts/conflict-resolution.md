@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:trust-model
 enables:
   - urn:ngm:class:community-governance-model
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:trustless-coordination
 contrastsWith:
   - urn:ngm:class:adversarial-coordination

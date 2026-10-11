@@ -7,7 +7,7 @@ Hardware denotes the physical, tangible components of a computing system — pro
   - **Moore's Law scaling** — transistor density doubling roughly every two years, enabling ever-greater compute density on a fixed silicon die area.
   - **Heterogeneous integration** — combining CPUs, [[GPU Compute]], [[Neural Processing Unit]] dies, and I/O controllers on a single substrate (e.g. chiplet architectures) to exceed the limits of monolithic scaling.
   - **Specialisation** — domain-specific accelerators (DSAs) such as [[Hardware Acceleration]] units for matrix multiplication, video codec, and ray-tracing, delivering orders-of-magnitude efficiency improvements over general-purpose cores.
-  - **Edge deployment** — shrinking compute to battery-powered, thermally constrained form factors to reduce latency and preserve privacy, motivating [[On-Device Inference]] and [[Embedded Systems]] design.
+  - **Edge deployment** — shrinking compute to battery-powered, thermally constrained form factors to reduce latency and preserve privacy, motivating [[On-Device Inference]] and [[Embedded System]] design.
 - In [[Spatial Computing]] specifically, hardware constraints dominate the user experience: display resolution, refresh rate, field of view, wireless bandwidth, and compute budget collectively determine the presence and comfort of [[Virtual Reality]] and [[Augmented Reality]] systems.
 
 ### Key Components
@@ -55,7 +55,7 @@ Hardware denotes the physical, tangible components of a computing system — pro
 - **Data Centre and Cloud Infrastructure**
   - Rack-scale servers combining high-core-count CPUs, NVLink-connected GPU clusters, and high-bandwidth networking accelerate [[Artificial Intelligence]] training and rendering farms. Hardware reliability (ECC memory, redundant power, out-of-band management) is paramount.
 - **[[Edge Computing]] and IoT**
-  - Arm Cortex-M and RISC-V microcontrollers power constrained sensor nodes; [[Embedded Systems]] design trades compute for energy efficiency.
+  - Arm Cortex-M and RISC-V microcontrollers power constrained sensor nodes; [[Embedded System]] design trades compute for energy efficiency.
   - Industrial edge gateways run deterministic [[Real-Time Rendering]] and local control loops with sub-millisecond latency guarantees.
 - **[[Robotics]]**
   - Mobile robot platforms integrate SoC compute, LiDAR, stereo cameras, motor drivers, and [[Haptic Controller]]-class servo controllers into mechatronic systems requiring tight hardware-software co-design.
@@ -71,7 +71,7 @@ Hardware denotes the physical, tangible components of a computing system — pro
 - **[[IEEE]]** — IEEE standards govern bus protocols (PCIe, USB), wireless interfaces (802.11, 802.15.4), and hardware description languages (VHDL, SystemVerilog).
 - **[[JEDEC]]** — JEDEC standardises DRAM interface specifications (DDR4/5, LPDDR5, HBM3) and flash storage protocols (eMMC, UFS).
 - **OpenCL / Vulkan / Metal** — cross-vendor compute and graphics APIs that form the primary [[Hardware Abstraction]] layer for GPU and NPU workloads.
-- **RISC-V International** — open instruction-set architecture enabling royalty-free custom processor designs, increasingly adopted in [[Embedded Systems]] and AI accelerators.
+- **RISC-V International** — open instruction-set architecture enabling royalty-free custom processor designs, increasingly adopted in [[Embedded System]] and AI accelerators.
 - **Arm Architecture Licences** — dominant ISA for mobile, [[Edge Computing]], and wearable spatial-computing SoCs.
 - **PCIe / CXL** — high-bandwidth, cache-coherent interconnects enabling composable hardware architectures in data-centre and desktop platforms.
 - **OpenXR** — Khronos Group standard API abstracting over heterogeneous [[Head-Mounted Display]] hardware, reducing fragmentation for [[Spatial Computing]] developers.

@@ -30,14 +30,14 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:metaverse
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 supports:
   - urn:ngm:class:digital-inclusion
 standardizedBy:
   - urn:ngm:class:gdpr
   - urn:ngm:class:digital-services-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eidas-regulation
 relatedTo:
   - urn:ngm:class:security
   - urn:ngm:class:net-neutrality

@@ -4,7 +4,7 @@ type: Class
 title: Forward Error Correction
 resource: urn:ngm:class:forward-error-correction
 domain: infrastructure
-description: Forward error correction (FEC) is a channel-coding technique in which redundant information is added to a transmitted data stream so that the receiver can detect and correct errors introduced by the channel without requesting retransmission. FEC codes trade bandwidth or storage overhead for improved reliability over noisy or lossy channels, eliminating the round-trip latency penalty of automatic r
+description: Forward error correction (FEC) adds structured redundancy to transmitted data so that a receiver can detect and correct some channel errors without requesting retransmission.
 maturity: mature
 quality: 0.85
 is-a:
@@ -36,4 +36,4 @@ relatedTo:
 
 # Forward Error Correction
 
-Forward error correction (FEC) is a channel-coding technique in which redundant information is added to a transmitted data stream so that the receiver can detect and correct errors introduced by the channel without requesting retransmission. FEC codes trade bandwidth or storage overhead for improved reliability over noisy or lossy channels, eliminating the round-trip latency penalty of automatic repeat request (ARQ) schemes.
+Forward error correction (FEC) adds structured redundancy to transmitted data so that a receiver can detect and correct some channel errors without requesting retransmission.

@@ -47,7 +47,7 @@
         "label": "gRPC"
       },
       {
-        "id": "urn:ngm:class:protobuf",
+        "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       }
     ],
@@ -85,13 +85,13 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       }
     ],
@@ -245,10 +245,6 @@
       {
         "id": "urn:ngm:class:aiops",
         "label": "AIOps"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:mlops",

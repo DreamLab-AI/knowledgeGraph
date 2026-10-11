@@ -32,7 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:api
   - urn:ngm:class:user-interface-standard
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 ---
 
 # Web Application

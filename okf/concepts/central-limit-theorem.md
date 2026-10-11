@@ -71,7 +71,7 @@ relatedTo:
   - urn:ngm:class:data-analysis
   - urn:ngm:class:probability-theory
   - urn:ngm:class:uncertainty-quantification
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:law-of-large-numbers
   - urn:ngm:class:stochastic-gradient-descent
   - urn:ngm:class:markov-chain-monte-carlo

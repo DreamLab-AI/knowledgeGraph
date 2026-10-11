@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:social-token-economy
 relatedTo:
   - urn:ngm:class:agentic-ai
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:ai-agent-system
 ---
 

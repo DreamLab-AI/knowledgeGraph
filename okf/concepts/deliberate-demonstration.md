@@ -8,9 +8,9 @@ description: A paradigm for AI learning where users intentionally teach the syst
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:prompt-engineering
 ---

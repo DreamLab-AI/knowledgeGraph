@@ -79,7 +79,7 @@ supports:
   - urn:ngm:class:layer-2-solutions
   - urn:ngm:class:polkadot
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:lightning-network
   - urn:ngm:class:solana

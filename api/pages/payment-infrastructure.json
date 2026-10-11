@@ -84,8 +84,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
     "bridgesTo": [
@@ -150,7 +150,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -214,10 +214,6 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
@@ -240,6 +236,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -290,7 +290,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -370,12 +370,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
-      "slug": "central-bank-digital-currency-cbdc",
-      "label": "Central Bank Digital Currency (CBDC)"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     }
   ]
 }

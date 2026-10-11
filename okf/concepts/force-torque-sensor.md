@@ -34,7 +34,7 @@ contrastsWith:
   - urn:ngm:class:proximity-sensor
 bridgesTo:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:ether-cat
   - urn:ngm:class:sensor-fusion

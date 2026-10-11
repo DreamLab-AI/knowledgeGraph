@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 uses:
   - urn:ngm:class:stablecoin
   - urn:ngm:class:lightning-network
@@ -43,8 +43,8 @@ standardizedBy:
   - urn:ngm:class:iso-20022
   - urn:ngm:class:fatf-travel-rule
 relatedTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:fatf-travel-rule
   - urn:ngm:class:forex
 ---

@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:arweave
   - urn:ngm:class:creator-royalties
   - urn:ngm:class:erc1155-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:ipfs
   - urn:ngm:class:token-metadata
   - urn:ngm:class:transfer-event
@@ -47,7 +47,7 @@ enables:
   - urn:ngm:class:soulbound-tokens
   - urn:ngm:class:blockchain-gaming
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:ipfs
   - urn:ngm:class:gas-mechanism
@@ -58,7 +58,7 @@ implements:
   - urn:ngm:class:eip-2981
   - urn:ngm:class:eip-712
   - urn:ngm:class:erc1155-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc1155-standard
   - urn:ngm:class:eip-2981
   - urn:ngm:class:eip-5192-locking-standard
@@ -66,7 +66,7 @@ implements:
   - urn:ngm:class:lazy-minting
   - urn:ngm:class:batch-minting
 contrastsWith:
-  - urn:ngm:class:erc-20-tokens
+  - urn:ngm:class:erc20-token
   - urn:ngm:class:fungible-token
   - urn:ngm:class:centralised-database
   - urn:ngm:class:traditional-copyright-registration
@@ -94,11 +94,11 @@ standardizedBy:
   - urn:ngm:class:eip-2981
   - urn:ngm:class:eip-712
   - urn:ngm:class:erc-1155
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:eip-5192
   - urn:ngm:class:openzeppelin-token-standards
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-art
   - urn:ngm:class:blockchain-gaming
   - urn:ngm:class:blockchain-interoperability

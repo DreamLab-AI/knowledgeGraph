@@ -14,12 +14,12 @@ Suggested Reading Order is a curated navigation guide that sequences the princip
 - I originally started this [as a book.](https://arxiv.org/abs/2207.09460), so there **is** a natural reading order of sorts. I am still working on making this more of a "flow" so if it looks wrong just skip about. Some of these high level pages are dozens of pages each, and there are hundreds of such pages, with only a few highlighted here.
 - There's possibly around 1000 book equivalent pages overall.
   - [[Introduction to me]] explains my research at a very high level
-  - [[Semantic Web Linked Data Standard]]
+  - [[Semantic Web]]
   - [[Semantic Spatial Web Layer]]
   - [[Decentralised Web]]
   - [[AI Governance Law and Privacy]]
   - [[Blockchain]]
-  - [[Ethereum Smart Contract Platform]]
+  - [[Ethereum]]
   - [[Bitcoin Proof-of-Work Protocol]]
   - [[Lightning and Similar L2]]
   - [[BTC Layer 3]]

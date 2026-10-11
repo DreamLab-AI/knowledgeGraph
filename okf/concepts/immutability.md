@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:distributed-ledger-technology
@@ -21,12 +21,12 @@ enables:
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:smart-contract-execution
 dependsOn:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 contrastsWith:
   - urn:ngm:class:right-to-erasure
 bridgesTo:
   - urn:ngm:class:data-governance
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:merkle-tree

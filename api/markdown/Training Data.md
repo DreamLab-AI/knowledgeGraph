@@ -109,8 +109,8 @@ Training data encompasses all curated, collected, and pre-processed corpora of e
 
 ## About Training Data
 
-- **Training Data** is the empirical substrate of all modern [[Machine Learning Discipline]] — the curated, licensed, deduplicated, and annotated collection of examples over which a model's parameters are optimised through gradient descent or equivalent procedures.
-- In the contemporary era of trillion-parameter [[Large-Scale Pretrained Foundation Model]], training data decisions dominate model capability far more than architecture choices.
+- **Training Data** is the empirical substrate of all modern [[Machine Learning]] — the curated, licensed, deduplicated, and annotated collection of examples over which a model's parameters are optimised through gradient descent or equivalent procedures.
+- In the contemporary era of trillion-parameter [[Foundation Model]], training data decisions dominate model capability far more than architecture choices.
 - A model trained on a carefully filtered 15-trillion-token corpus will consistently outperform an equally large model trained on raw, noisy web text, as demonstrated by the FineWeb ablation studies (Penedo et al. 2024).
 - Conversely, training data contaminated by benchmark examples, adversarially poisoned samples, or legally infringing content creates compounding downstream risks spanning model quality, legal liability, and public trust.
 - Training data is not a passive repository: it embeds distributional assumptions about language, vision, and knowledge that the model will internalise as statistical regularities.

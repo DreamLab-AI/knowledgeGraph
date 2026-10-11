@@ -2,7 +2,7 @@ A trusted third party (TTP) is an intermediary that two or more parties rely upo
 
 - A [[Trusted Third Party]] is an intermediary relied upon to facilitate or settle an interaction so that the participants need not trust one another directly.
 - Classic instances include the [[Certificate Authority]], escrow and [[Custody]] providers, and clearing houses.
-- Decentralised designs such as the [[Smart Contract]], [[Decentralized Exchange]], and [[Self-Custody]] aim to minimise reliance on trusted third parties.
+- Decentralised designs such as the [[Smart Contract]], [[Decentralised Exchange]], and [[Self-Custody]] aim to minimise reliance on trusted third parties.
 
 ### Overview
 

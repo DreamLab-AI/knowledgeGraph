@@ -63,7 +63,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       },
       {
@@ -71,7 +71,7 @@
         "label": "Model Compression"
       },
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       }
     ],
@@ -92,7 +92,7 @@
         "label": "Voice User Interface"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {
@@ -236,8 +236,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",

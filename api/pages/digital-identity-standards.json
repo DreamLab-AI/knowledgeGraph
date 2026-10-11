@@ -22,12 +22,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:authentication-protocol",
@@ -44,7 +44,7 @@
         "label": "Standards Body"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -352,8 +352,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "implements": [
@@ -428,11 +428,11 @@
         "label": "Digital Certificate"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -504,16 +504,16 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
-      },
-      {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
       },
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "partOf": [
@@ -552,7 +552,7 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

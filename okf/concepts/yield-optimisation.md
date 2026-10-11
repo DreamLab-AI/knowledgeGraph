@@ -8,9 +8,9 @@ description: Yield optimisation is the automated process of allocating deposited
 maturity: established
 quality: 0.55
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:yield-aggregator
   - urn:ngm:class:curve-wars

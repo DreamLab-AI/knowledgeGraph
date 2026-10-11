@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bent-pipe-transponder",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A bent-pipe transponder is a transparent satellite relay that retransmits a received signal without decoding its user information and rebuilding it as a new link.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

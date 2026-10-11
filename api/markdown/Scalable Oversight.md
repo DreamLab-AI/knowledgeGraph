@@ -1,6 +1,6 @@
 Scalable oversight is the AI-safety research problem of reliably supervising, evaluating, and steering AI systems whose capabilities approach or exceed human ability on the tasks being judged. It seeks mechanisms that let limited human supervisors provide accurate training signal and verification even when they cannot directly check a model's outputs. Approaches decompose hard judgements, amplify human judgement with AI assistance, and use adversarial or recursive structures to surface errors.
 
-- Scalable oversight studies how humans can supervise AI systems that match or surpass human skill on the judged task. It is a subproblem of [[AI Alignment]] that relies on [[Human Feedback]], [[RLHF]], and structures such as [[Task Decomposition]] to extract reliable signal.
+- Scalable oversight studies how humans can supervise AI systems that match or surpass human skill on the judged task. It is a subproblem of [[AI Alignment]] that relies on [[Human Feedback]], [[Reinforcement Learning from Human Feedback]], and structures such as [[Task Decomposition]] to extract reliable signal.
 
 ### Overview
 

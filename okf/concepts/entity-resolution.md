@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:federated-learning
 uses:
   - urn:ngm:class:probabilistic-matching
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding
   - urn:ngm:class:graph-neural-network
 partOf:
@@ -37,7 +37,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:data-governance
   - urn:ngm:class:identity-resolution
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 ---
 
 # Entity Resolution

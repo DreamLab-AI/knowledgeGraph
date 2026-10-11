@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:payment-infrastructure
 enables:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:digital-payments
   - urn:ngm:class:cross-border-payments
 uses:

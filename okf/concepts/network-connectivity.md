@@ -39,7 +39,7 @@ bridgesTo:
 supports:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:software-defined-networking
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 standardizedBy:
   - urn:ngm:class:ieee-802-x
   - urn:ngm:class:ietf-rfc

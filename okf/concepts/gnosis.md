@@ -8,7 +8,7 @@ description: An Ethereum-based platform and chain known for prediction markets a
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 requires:
   - urn:ngm:class:smart-contract
 enables:

@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:fuzzy-logic
 bridgesTo:
   - urn:ngm:class:information-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 uses:
   - urn:ngm:class:set-theory

@@ -10,9 +10,9 @@ quality: 0.62
 is-a:
   - urn:ngm:class:financial-system
 hasPart:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:financial-stability-board
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
 requires:
   - urn:ngm:class:financial-regulation
 enables:
@@ -23,7 +23,7 @@ implements:
   - urn:ngm:class:macroprudential-policy
 bridgesTo:
   - urn:ngm:class:monetary-policy
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:macroprudential-policy
   - urn:ngm:class:financial-regulation

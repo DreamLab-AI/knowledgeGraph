@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:thruster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A thruster is a device that produces thrust on a spacecraft, and the NASA small-spacecraft survey treats it as one component of a complete propulsion system alongside feed systems, pressurisation, propellant management and power processing units.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

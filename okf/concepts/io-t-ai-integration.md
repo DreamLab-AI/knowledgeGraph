@@ -15,9 +15,9 @@ hasPart:
   - urn:ngm:class:edge-ai-system
 requires:
   - urn:ngm:class:internet-of-things
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:mqtt
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:industrial-io-t

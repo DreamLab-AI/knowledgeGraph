@@ -23,15 +23,15 @@
         "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "AML/CFT"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "AML/CFT"
       }
     ],
@@ -56,7 +56,7 @@
         "label": "Financial Services and Markets Act"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Money Laundering Regulations"
       },
       {
@@ -88,7 +88,7 @@
         "label": "Digital Asset Custody"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -99,7 +99,7 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {

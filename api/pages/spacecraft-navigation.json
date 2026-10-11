@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-navigation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft navigation estimates a spacecraft's state at a stated time and quantifies the uncertainty in that estimate.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -31,6 +31,16 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "spacecraft-guidance",
+      "label": "Spacecraft Guidance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spacecraft-guidance",
+      "label": "Spacecraft Guidance"
+    }
+  ]
 }

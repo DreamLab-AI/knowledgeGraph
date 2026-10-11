@@ -8,9 +8,9 @@ description: A method of securely sharing cryptographic keys using the principle
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 requires:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 enables:
   - urn:ngm:class:post-quantum-cryptography
 bridgesTo:

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:observability
 hasPart:
   - urn:ngm:class:metrics
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:distributed-tracing
 requires:
   - urn:ngm:class:code-profiling

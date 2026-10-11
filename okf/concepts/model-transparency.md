@@ -37,7 +37,7 @@ supports:
   - urn:ngm:class:responsible-ai
 standardizedBy:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-fairness
   - urn:ngm:class:ai-model-card

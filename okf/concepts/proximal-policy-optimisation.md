@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:reinforcement-learning
 enables:
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 dependsOn:
   - urn:ngm:class:reinforcement-learning-algorithm
 uses:

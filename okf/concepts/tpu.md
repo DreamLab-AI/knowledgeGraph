@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
 enables:
   - urn:ngm:class:distributed-training
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:model-training

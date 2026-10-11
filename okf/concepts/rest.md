@@ -29,7 +29,7 @@ bridgesTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:microservices
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:xml
   - urn:ngm:class:oauth
 supports:
@@ -38,9 +38,9 @@ supports:
   - urn:ngm:class:hateoas
 standardizedBy:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:api-design
   - urn:ngm:class:service-oriented-architecture
 ---

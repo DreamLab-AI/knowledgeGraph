@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:digital-trust
 dependsOn:
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
   - urn:ngm:class:adversarial-machine-learning
 bridgesTo:

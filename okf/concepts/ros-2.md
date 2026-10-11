@@ -26,14 +26,14 @@ implements:
   - urn:ngm:class:middleware
   - urn:ngm:class:hardware-abstraction-layer
 contrastsWith:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 bridgesTo:
   - urn:ngm:class:middleware
   - urn:ngm:class:industrial-automation
   - urn:ngm:class:autonomous-vehicle
 uses:
   - urn:ngm:class:communication-protocol
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:data-distribution-service
   - urn:ngm:class:publish-subscribe-pattern
 supports:

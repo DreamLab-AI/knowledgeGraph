@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:cryptocurrency
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:native-token
   - urn:ngm:class:on-chain-governance
 implements:
@@ -33,7 +33,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:supply-chain-traceability
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 relatedTo:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:layer-1-blockchain

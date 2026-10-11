@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:likelihood-function
   - urn:ngm:class:kullback-leibler-divergence
 enables:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:variational-inference
   - urn:ngm:class:latent-variable-model
   - urn:ngm:class:probabilistic-programming
@@ -56,7 +56,7 @@ uses:
   - urn:ngm:class:mean-field-approximation
   - urn:ngm:class:normalising-flows
 supports:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:generative-model
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:drug-discovery

@@ -43,7 +43,7 @@ supports:
 partOf:
   - urn:ngm:class:ai-infrastructure
 relatedTo:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:memory-bandwidth
   - urn:ngm:class:py-torch

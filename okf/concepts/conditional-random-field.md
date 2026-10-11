@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:probabilistic-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-extraction
 enables:
   - urn:ngm:class:named-entity-recognition
@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:convolutional-neural-network
 uses:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 relatedTo:
   - urn:ngm:class:natural-language-understanding
   - urn:ngm:class:named-entity

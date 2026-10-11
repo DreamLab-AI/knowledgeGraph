@@ -63,15 +63,15 @@ supports:
   - urn:ngm:class:model-training
   - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-governance
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:responsible-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:ai-model-card
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:mlcommons
 relatedTo:
   - urn:ngm:class:model-performance

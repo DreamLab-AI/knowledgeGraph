@@ -16,11 +16,11 @@ is-a:
   - urn:ngm:class:scientific-paradigm
 hasPart:
   - urn:ngm:class:connectionism
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:deep-learning
   - urn:ngm:class:expert-systems
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:transformer-architecture
@@ -51,7 +51,7 @@ implements:
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:backpropagation
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:turing-test
 contrastsWith:
@@ -70,7 +70,7 @@ supports:
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:robotics
 standardizedBy:

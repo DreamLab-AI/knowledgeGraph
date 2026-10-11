@@ -373,8 +373,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:transaction",
@@ -441,8 +441,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -475,8 +475,8 @@
         "label": "Workspace Tools"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       },
       {
         "id": "urn:ngm:class:state-synchronisation",
@@ -524,16 +524,16 @@
       "label": "Collaboration Tools"
     },
     {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
       "slug": "collaborative-whiteboard",
       "label": "Collaborative Whiteboard"
     },
     {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "label": "tc 0002 collaborative document editing"
     }
   ]
 }

@@ -26,7 +26,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:network-security
 relatedTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:network-security
   - urn:ngm:class:digital-signature
 ---

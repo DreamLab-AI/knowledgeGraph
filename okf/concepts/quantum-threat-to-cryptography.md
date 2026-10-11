@@ -13,7 +13,7 @@ contrastsWith:
   - urn:ngm:class:post-quantum-cryptography
 relatedTo:
   - urn:ngm:class:post-quantum-cryptography
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 ---
 
 # Quantum Threat to Cryptography

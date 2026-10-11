@@ -10,11 +10,11 @@ quality: 0.62
 is-a:
   - urn:ngm:class:access-control
 requires:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:authentication
   - urn:ngm:class:authorisation
 enables:
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:access-control
   - urn:ngm:class:defence-in-depth
 dependsOn:
@@ -30,8 +30,8 @@ supports:
   - urn:ngm:class:identity-and-access-management
 relatedTo:
   - urn:ngm:class:identity-and-access-management
-  - urn:ngm:class:authorization
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:authorisation
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:authorisation
   - urn:ngm:class:defence-in-depth
 ---

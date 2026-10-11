@@ -33,8 +33,8 @@ bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:token-economy
 supports:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
 standardizedBy:
   - urn:ngm:class:financial-stability-board
   - urn:ngm:class:basel-accords
@@ -42,7 +42,7 @@ relatedTo:
   - urn:ngm:class:economic-systems
   - urn:ngm:class:blockchain-economics
   - urn:ngm:class:financial-regulation
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Financial System

@@ -7,7 +7,7 @@ Sheffield is a metropolitan city in South Yorkshire, England, historically renow
   - **Research-led manufacturing** — the [[University of Sheffield]] and [[Sheffield Hallam University]] together form a dual-anchor research and skills base, with particular strengths in [[Materials Science]], [[Mechanical Engineering]], computer science, and [[Bioengineering]].
   - **AMRC ecosystem** — the [[Advanced Manufacturing Research Centre]] (AMRC), a Boeing-University of Sheffield joint venture founded in 2001 on the former Orgreave coking plant site, became a globally cited model for industry-academia collaboration in precision machining, composites, and aerospace manufacturing.
   - **Catapult network integration** — Sheffield hosts or co-hosts programmes linked to the [[High Value Manufacturing Catapult]], the [[Nuclear AMRC]] (for nuclear-grade component fabrication), and the [[UK Atomic Energy Authority]] supply-chain development.
-  - **Digital and data economy** — the city's technology sector has grown substantially since 2010, clustering around the Kelham Island and Krynkl innovation districts, with focus on SaaS, [[Fintech]], creative industries, and applied [[Artificial Intelligence]].
+  - **Digital and data economy** — the city's technology sector has grown substantially since 2010, clustering around the Kelham Island and Krynkl innovation districts, with focus on SaaS, [[Financial Technology]], creative industries, and applied [[Artificial Intelligence]].
 - Sheffield's economy today spans healthcare (NHS teaching hospital), higher education, retail, logistics, and a reviving cultural and creative sector anchored by the Crucible Theatre and Off The Shelf literary festival.
 - **Historical periodisation**
   - Pre-industrial (before ~1740): water-powered cutlery and grinding; cottage industry on River Sheaf tributaries.
@@ -65,7 +65,7 @@ Sheffield is a metropolitan city in South Yorkshire, England, historically renow
 - **Connectivity** — Sheffield lacks a direct mainline to London St Pancras (trains route via Midland Main Line or ECML interchange at Doncaster); the HS2/NPR debate materially affects its competitive position; the [[Integrated Rail Plan]] (2021) partially addressed this with a new Sheffield-Leeds-Manchester Transpennine route upgrade.
 - **Green industrial transition** — the steel and forging sector is a significant carbon emitter; transition to hydrogen-fired electric-arc furnace steelmaking (aligned with the UK's [[Green Steel]] agenda) is a strategic priority; the AMRC is developing low-energy machining processes.
 - **Ownership and supply-chain resilience** — Sheffield Forgemasters was acquired by the Ministry of Defence in 2021 to secure sovereign nuclear forging capability; Liberty Steel's financial instability demonstrated the risks of concentrated ownership in specialist metals.
-- **Smart city ambitions vs. capacity** — Sheffield's smart city pilots are smaller-scale than [[Manchester]]'s CityVerve programme; limited council budgets constrain deployment of city-wide [[IoT]] sensor networks and [[Open Data]] platforms.
+- **Smart city ambitions vs. capacity** — Sheffield's smart city pilots are smaller-scale than [[Manchester]]'s CityVerve programme; limited council budgets constrain deployment of city-wide [[Internet of Things]] sensor networks and [[Open Data]] platforms.
 
 ### Standards and Context
 
@@ -80,11 +80,11 @@ Sheffield is a metropolitan city in South Yorkshire, England, historically renow
 
 - **Technology cluster profile**
   - Sheffield's digital economy comprises several hundred businesses ranging from startup studios in Kelham Island to established SaaS providers serving national markets.
-  - Key sub-sectors: [[Fintech]] (payment processing, insurance technology), health tech, creative/games (Sumo Digital is the most prominent local studio), and [[EdTech]] platforms aligned with the university anchor.
+  - Key sub-sectors: [[Financial Technology]] (payment processing, insurance technology), health tech, creative/games (Sumo Digital is the most prominent local studio), and [[EdTech]] platforms aligned with the university anchor.
   - The Sheffield Business School at Sheffield Hallam runs an accelerator programme; the AMRC's Factory 2050 hosts spin-out manufacturing-tech ventures.
 - **Data infrastructure**
   - Sheffield City Region's data observatory aggregates economic, demographic, and skills data for policy planning; relevant to [[Open Data]] and [[Data Governance]].
-  - The Combined Authority has begun deploying [[IoT]] air quality and traffic sensors across the city-region as part of a smart-mobility study.
+  - The Combined Authority has begun deploying [[Internet of Things]] air quality and traffic sensors across the city-region as part of a smart-mobility study.
   - Partnerships with the Alan Turing Institute have produced projects on data-driven transport modelling and [[Predictive Analytics]] for NHS demand planning.
 - **AI and machine learning applications**
   - The University of Sheffield's [[Natural Language Processing]] (NLP) group (GATE — General Architecture for Text Engineering) is internationally prominent in information extraction and biomedical text mining.
@@ -110,7 +110,7 @@ Sheffield is a metropolitan city in South Yorkshire, England, historically renow
 ### Semantic Annotation Notes
 
 - This concept is classified as an [[Urban Innovation Cluster]] (subClassOf) rather than simply "City" to capture its functional role as a nexus of research, manufacturing, and digital innovation within the knowledge graph.
-- Sheffield's relevance to an [[Artificial Intelligence]] and [[Infrastructure]] knowledge graph derives from: (a) AMRC AI-in-manufacturing programmes; (b) GATE NLP research; (c) smart city and [[IoT]] deployments; (d) [[Digital Twin]] process simulation at Factory 2050; (e) regional data observatory and predictive analytics work.
+- Sheffield's relevance to an [[Artificial Intelligence]] and [[Infrastructure]] knowledge graph derives from: (a) AMRC AI-in-manufacturing programmes; (b) GATE NLP research; (c) smart city and [[Internet of Things]] deployments; (d) [[Digital Twin]] process simulation at Factory 2050; (e) regional data observatory and predictive analytics work.
 - Cross-domain bridges (bridgesTo relations) to [[Robotics]] and [[Artificial Intelligence]] reflect the AMRC's Factory 2050 robotic assembly programmes and the university's applied AI research.
 - The sameAs relation to [[Steel City]] captures the well-established popular synonym used in economic geography, journalism, and policy discourse.
 

@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:rsa-signature
   - urn:ngm:class:post-quantum-cryptography
 bridgesTo:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:blockchain-transaction
   - urn:ngm:class:decentralised-identifier
 uses:
@@ -39,7 +39,7 @@ relatedTo:
   - urn:ngm:class:ed25519
   - urn:ngm:class:schnorr-signature
   - urn:ngm:class:signature-scheme
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:wireguard
   - urn:ngm:class:openssh
 ---

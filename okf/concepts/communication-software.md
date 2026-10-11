@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:user-interface
   - urn:ngm:class:audio-visual-systems
 enables:
-  - urn:ngm:class:realtime-collaboration
+  - urn:ngm:class:real-time-collaboration
   - urn:ngm:class:virtual-meeting
   - urn:ngm:class:remote-communication
   - urn:ngm:class:real-time-collaboration

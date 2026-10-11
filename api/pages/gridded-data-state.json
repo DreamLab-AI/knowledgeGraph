@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gridded-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Gridded data state is the processing state of data that have been through a gridding process and are held on a regular grid [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

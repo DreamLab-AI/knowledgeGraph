@@ -13,7 +13,7 @@ uses:
   - urn:ngm:class:access-control
   - urn:ngm:class:threat-detection
 partOf:
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
 relatedTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:remote-work

@@ -16,10 +16,6 @@
       "label": "Decentralized Finance (DeFi)"
     },
     {
-      "id": "urn:ngm:class:market-making",
-      "label": "Market Making"
-    },
-    {
       "id": "urn:ngm:class:yield-generation",
       "label": "Yield Generation"
     },
@@ -88,15 +84,15 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:erc-20-tokens",
+        "id": "urn:ngm:class:erc20-token",
         "label": "ERC-20 Token"
       }
     ],
@@ -136,12 +132,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:erc-20-token-standard",
-        "label": "ERC-20 Token Standard"
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
       },
       {
         "id": "urn:ngm:class:solidity",
@@ -267,15 +263,15 @@
         "label": "EIP-1559"
       },
       {
-        "id": "urn:ngm:class:erc-20-token-standard",
-        "label": "ERC-20 Token Standard"
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
       },
       {
         "id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
         "label": "FATF DeFi Guidance"
       },
       {
-        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
       },
       {
@@ -355,9 +351,9 @@
       "slug": "cryptographic-protocols"
     },
     {
-      "id": "urn:ngm:class:de-fi",
-      "label": "DeFi",
-      "slug": "de-fi"
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance",
+      "slug": "decentralised-finance"
     },
     {
       "id": "urn:ngm:class:financial-technology",
@@ -450,6 +446,11 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-system",
       "label": "Distributed System",
       "slug": "distributed-system"
@@ -458,6 +459,11 @@
       "id": "urn:ngm:class:economic-systems",
       "label": "Economic Systems",
       "slug": "economic-systems"
+    },
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics",
+      "slug": "economics"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -475,14 +481,14 @@
       "slug": "multi-party-database"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:networked-systems",
       "label": "Networked Systems",
       "slug": "networked-systems"
-    },
-    {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
     },
     {
       "id": "urn:ngm:class:security",
@@ -495,14 +501,39 @@
       "slug": "state-machine-replication"
     },
     {
-      "id": "urn:ngm:class:token-economics",
-      "label": "Token Economics",
-      "slug": "token-economics"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science",
+      "slug": "complexity-science"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:governance",
       "label": "Governance",
       "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory",
+      "slug": "information-theory"
     },
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -520,9 +551,34 @@
       "slug": "sc-platform-and-environment"
     },
     {
+      "id": "urn:ngm:class:social-science",
+      "label": "Social Science",
+      "slug": "social-science"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:applied-mathematics",
+      "label": "Applied Mathematics",
+      "slug": "applied-mathematics"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -535,9 +591,9 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:human-computer-interaction",
@@ -545,14 +601,29 @@
       "slug": "human-computer-interaction"
     },
     {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area",
-      "slug": "ai-research-area"
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -566,12 +637,12 @@
         "label": "Blockchain Economics"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
@@ -600,8 +671,8 @@
         "label": "Cryptographic Oracle"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:gas-fee",
@@ -620,8 +691,8 @@
         "label": "Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:capital-allocation",
-        "label": "Capital Allocation"
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
       }
     ],
     "enables": [
@@ -654,8 +725,8 @@
         "label": "Yield Optimisation"
       },
       {
-        "id": "urn:ngm:class:liquidity",
-        "label": "Market Liquidity"
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "dependsOn": [
@@ -680,16 +751,16 @@
         "label": "Token Standards (ERC-20)"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:oracle",
         "label": "Oracle"
       },
       {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
       }
     ],
     "implements": [
@@ -748,12 +819,12 @@
         "label": "Traditional Finance"
       },
       {
-        "id": "urn:ngm:class:high-frequency-trading",
-        "label": "High-Frequency Trading"
-      },
-      {
         "id": "urn:ngm:class:obfuscation",
         "label": "Obfuscation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
       },
       {
         "id": "urn:ngm:class:monetary-policy",
@@ -766,22 +837,6 @@
         "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:automated-market-maker",
-        "label": "Automated Market Maker"
-      },
-      {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-exchange",
-        "label": "Decentralised Exchange"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
         "id": "urn:ngm:class:finance",
         "label": "Finance"
       },
@@ -792,6 +847,22 @@
       {
         "id": "urn:ngm:class:ai-agent-system",
         "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -850,8 +921,8 @@
         "label": "Carbon Credit Tracking"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:data-integrity",
@@ -892,18 +963,18 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:financial-markets",
-        "label": "Financial Markets"
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
       },
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
@@ -1329,12 +1400,12 @@
       "label": "Curve Wars"
     },
     {
-      "slug": "decentralized-exchange-dex",
-      "label": "Decentralized Exchange (DEX)"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
     },
     {
       "slug": "digital-asset-lending",

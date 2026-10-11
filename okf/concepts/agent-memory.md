@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:context-window
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:personalisation

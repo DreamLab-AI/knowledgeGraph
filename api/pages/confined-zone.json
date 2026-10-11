@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:confined-zone",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Confined zone is not a defined term in the retained hydrogeological sources, which describe confinement through confining units, confined aquifers and the confined condition of the potentiometric surface.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

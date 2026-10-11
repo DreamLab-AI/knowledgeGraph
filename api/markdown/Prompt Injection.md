@@ -44,7 +44,7 @@ Prompt injection is a class of adversarial attacks against large language model 
 - **RAG pipeline hardening**: organisations deploying [[Retrieval-Augmented Generation]] must audit document corpora for injected instructions before ingestion.
 - **Agentic workflow design**: architects of [[Agentic AI]] systems use prompt injection threat models to drive decisions about tool scoping, human approval gates, and audit logging.
 - **Model fine-tuning research**: training on adversarial examples (part of [[Adversarial Robustness]] work) attempts to reduce model susceptibility, though no fully robust defence exists.
-- **Regulatory impact assessment**: regulators and standards bodies reference prompt injection when classifying LLM deployment risks under frameworks such as the EU AI Act and [[NIST AI RMF]].
+- **Regulatory impact assessment**: regulators and standards bodies reference prompt injection when classifying LLM deployment risks under frameworks such as the EU AI Act and [[NIST AI Risk Management Framework]].
 
 ### Defences and Mitigations
 
@@ -60,7 +60,7 @@ Prompt injection is a class of adversarial attacks against large language model 
 ### Standards and Context
 
 - **OWASP LLM Top 10** — LLM01: Prompt Injection is listed as the primary vulnerability class for LLM applications. The OWASP working group maintains guidance on detection and mitigation patterns. See [[OWASP LLM Top 10]].
-- **NIST AI Risk Management Framework (AI RMF)** — addresses adversarial ML and input manipulation risks under the Govern, Map, Measure, Manage functions. Prompt injection falls under adversarial threat categories. See [[NIST AI RMF]].
+- **NIST AI Risk Management Framework (AI RMF)** — addresses adversarial ML and input manipulation risks under the Govern, Map, Measure, Manage functions. Prompt injection falls under adversarial threat categories. See [[NIST AI Risk Management Framework]].
 - **EU AI Act** — classifies high-risk AI systems and mandates robustness against adversarial inputs; prompt injection is cited in technical annexes as a relevant attack vector for systems deployed in regulated sectors.
 - **MITRE ATLAS** — the Adversarial Threat Landscape for Artificial-Intelligence Systems (ATLAS) catalogue includes prompt injection tactics mapped to the ATT&CK-style framework, providing standardised threat taxonomy for practitioners.
 - **ISO/IEC 42001** — the AI Management System standard references input manipulation controls relevant to prompt injection hardening.

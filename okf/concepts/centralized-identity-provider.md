@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:identity-verification-system
 bridgesTo:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Centralized Identity Provider

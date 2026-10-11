@@ -12,10 +12,10 @@ is-a:
 requires:
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:http2
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:distributed-system
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
   - urn:ngm:class:service-mesh
   - urn:ngm:class:microservices
 implements:
@@ -34,7 +34,7 @@ uses:
 supports:
   - urn:ngm:class:load-balancing
 standardizedBy:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 relatedTo:
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:api-standard

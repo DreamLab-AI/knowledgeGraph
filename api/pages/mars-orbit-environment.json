@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mars-orbit-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mars orbit environment is the set of gravitational, atmospheric, plasma, illumination, thermal and impactor conditions experienced by a spacecraft orbiting Mars.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

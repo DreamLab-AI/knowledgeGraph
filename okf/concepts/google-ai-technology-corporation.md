@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:enterprise-ai-platform
 dependsOn:
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 implements:
   - urn:ngm:class:transformer-architecture
@@ -37,9 +37,9 @@ contrastsWith:
   - urn:ngm:class:microsoft-ai
   - urn:ngm:class:amazon-web-services-ai
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:jax

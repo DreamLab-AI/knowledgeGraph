@@ -43,17 +43,17 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:web-of-things
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:api-gateway
 uses:
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:function-calling
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:protocol-buffer
-  - urn:ngm:class:json-ld
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:protocol-buffer
   - urn:ngm:class:g-rpc
   - urn:ngm:class:service-discovery
   - urn:ngm:class:message-passing

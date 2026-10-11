@@ -8,8 +8,8 @@
   "definition": "The fundamental unit of quantum information: a two-level quantum system whose state is a complex linear superposition \u03b1|0\u27e9 + \u03b2|1\u27e9 of computational basis states, capable of entanglement with other qubits and collapsing probabilistically on measurement; physically realised as superconducting transmon circuits, trapped-ion energy levels, photon polarisation, neutral-atom states or electron spins, and the resource whose coherence time, gate fidelity and count determine what a quantum computer can achieve.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computation Paradigm"
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
     }
   ],
   "entityType": "Class",
@@ -28,7 +28,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       }
     ],
@@ -138,16 +138,6 @@
         "label": "Robotics"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:quantum-mechanics",
-        "label": "Quantum Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:superconductivity",
-        "label": "Superconductivity"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:grovers-algorithm",
@@ -182,6 +172,10 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -191,14 +185,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-machine-learning",
-        "label": "Quantum Machine Learning"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -224,6 +210,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -232,8 +222,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -250,10 +240,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

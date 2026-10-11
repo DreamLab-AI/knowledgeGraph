@@ -40,7 +40,7 @@ supports:
   - urn:ngm:class:vasp-regulation
 relatedTo:
   - urn:ngm:class:fatf-travel-rule
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:sanctions-screening
   - urn:ngm:class:blockchain-compliance
   - urn:ngm:class:darknet-market

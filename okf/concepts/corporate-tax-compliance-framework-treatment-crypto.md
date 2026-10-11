@@ -21,7 +21,7 @@ relatedTo:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:regulatory-compliance
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Tax Treatment Crypto

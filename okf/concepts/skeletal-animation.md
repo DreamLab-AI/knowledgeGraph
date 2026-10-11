@@ -34,8 +34,8 @@ uses:
   - urn:ngm:class:forward-kinematics
   - urn:ngm:class:vertex-shader
 standardizedBy:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:gl-tf
 relatedTo:
   - urn:ngm:class:physics-based-animation
   - urn:ngm:class:procedural-animation

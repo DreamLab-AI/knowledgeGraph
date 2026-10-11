@@ -19,7 +19,7 @@ enables:
 implements:
   - urn:ngm:class:computational-model
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:simulation
   - urn:ngm:class:digital-twin

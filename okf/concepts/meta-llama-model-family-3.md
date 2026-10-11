@@ -8,7 +8,7 @@ description: Llama 3 is a family of open-weight large language models developed 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 requires:
   - urn:ngm:class:gpu-cluster
   - urn:ngm:class:distributed-training
@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:enterprise-ai
 uses:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:grouped-query-attention
@@ -39,7 +39,7 @@ relatedTo:
   - urn:ngm:class:model-weights
   - urn:ngm:class:benchmarks
   - urn:ngm:class:safety-and-alignment
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
   - urn:ngm:class:hugging-face
 ---
 

@@ -70,9 +70,9 @@ uses:
 supports:
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:generative-adversarial-networks
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:text-to-image
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:score-based-model
   - urn:ngm:class:flow-matching
   - urn:ngm:class:latent-variable-model

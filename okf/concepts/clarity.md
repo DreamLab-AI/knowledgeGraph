@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:verifiable-computation
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Clarity

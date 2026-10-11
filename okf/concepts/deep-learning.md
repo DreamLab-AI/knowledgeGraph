@@ -9,7 +9,7 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 hasPart:
   - urn:ngm:class:hidden-layer

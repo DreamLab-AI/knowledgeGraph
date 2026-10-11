@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:semantic-search
 uses:
   - urn:ngm:class:embeddings
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:autoencoder

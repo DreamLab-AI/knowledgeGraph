@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ice-sheet-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ice sheet monitoring is the repeated satellite observation of the Greenland and Antarctic ice sheets to track changes in their mass, extent and surface elevation.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

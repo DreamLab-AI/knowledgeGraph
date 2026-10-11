@@ -24,7 +24,7 @@ hasPart:
   - urn:ngm:class:planning-agent
   - urn:ngm:class:worker-agent
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:sandboxed-code-execution
   - urn:ngm:class:tool-schema
   - urn:ngm:class:function-calling

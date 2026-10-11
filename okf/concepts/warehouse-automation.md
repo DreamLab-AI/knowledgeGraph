@@ -41,7 +41,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:mobile-robot
   - urn:ngm:class:autonomous-navigation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 partOf:
   - urn:ngm:class:supply-chain-management

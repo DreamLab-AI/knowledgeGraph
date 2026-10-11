@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0
 is-a:
   - urn:ngm:class:ai-application
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:population-health-management
@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:governance
 uses:
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:time-series-analysis
   - urn:ngm:class:federated-learning
 standardizedBy:

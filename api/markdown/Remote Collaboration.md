@@ -35,7 +35,7 @@ Remote Collaboration encompasses the work practices, platforms, and coordination
 #### AI-Enhanced Capabilities
 
 - Automatic transcription and speaker diarisation — converts speech to searchable text, improving accessibility and reducing note-taking overhead.
-- Meeting summarisation — [[Large Language Models]] extract key decisions, action items, and open questions from transcripts, surfacing them for async consumption.
+- Meeting summarisation — [[Large Language Model]] extract key decisions, action items, and open questions from transcripts, surfacing them for async consumption.
 - Intelligent scheduling — AI optimises meeting times across time zones and personal calendars, minimising disruption to deep-work blocks.
 - Presence and wellness signals — behavioural analytics surface indicators of meeting overload, communication silos, or disengagement, prompting organisational interventions.
 

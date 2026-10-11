@@ -30,7 +30,7 @@ hasPart:
 requires:
   - urn:ngm:class:cryptographic-accumulator
   - urn:ngm:class:hyperledger-aries
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:steward-network
   - urn:ngm:class:genesis-pool-configuration
   - urn:ngm:class:secure-wallet-storage
@@ -76,7 +76,7 @@ contrastsWith:
   - urn:ngm:class:ion-sidetree-on-bitcoin
 uses:
   - urn:ngm:class:distributed-hash-table
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:python-3
   - urn:ngm:class:rocks-db
   - urn:ngm:class:rust-systems-programming-language
@@ -85,7 +85,7 @@ uses:
   - urn:ngm:class:python-3
   - urn:ngm:class:indy-plenum
   - urn:ngm:class:sovrin-token-deprecated
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:distributed-hash-table
 supports:
   - urn:ngm:class:data-minimisation
@@ -101,7 +101,7 @@ standardizedBy:
   - urn:ngm:class:did-method
   - urn:ngm:class:iso-iec-18013-5-m-dl
   - urn:ngm:class:trust-over-ip-stack
-  - urn:ngm:class:w-3-c-did-core-1-0
+  - urn:ngm:class:w3-c-did-core
   - urn:ngm:class:w-3-c-verifiable-credentials-data-model-v-2-0
   - urn:ngm:class:did-method
   - urn:ngm:class:did-sov-method-specification

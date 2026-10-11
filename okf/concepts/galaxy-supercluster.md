@@ -4,6 +4,7 @@ type: Class
 title: Galaxy Supercluster
 resource: urn:ngm:class:galaxy-supercluster
 domain: space-science-and-systems
+description: A galaxy supercluster is an extended region with a high concentration of galaxies, a term that the Laniakea paper says is not precise.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Galaxy Supercluster
+
+A galaxy supercluster is an extended region with a high concentration of galaxies, a term that the Laniakea paper says is not precise.[^1]

@@ -28,7 +28,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:intrusion-detection-system
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:intrusion-detection
 supports:
   - urn:ngm:class:security-operations

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-antenna-phase-centre",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS Antenna Phase Centre is the apparent source of radiation of a receiving or transmitting GNSS antenna, the point to which a GNSS measurement is referred, and it is not necessarily the geometric centre of the antenna.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

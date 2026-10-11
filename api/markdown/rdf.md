@@ -72,7 +72,7 @@ The Resource Description Framework (RDF) is a W3C-standardised graph data model 
 ### Standards and Context
 
 - **W3C RDF Working Group**
-  - [[W3C]] (World Wide Web Consortium) standardises RDF through dedicated working groups. Key specifications include RDF 1.1 Concepts and Abstract Syntax (2014), RDF 1.1 Turtle, RDF 1.1 JSON-LD 1.1 (2020), and SPARQL 1.1 (2013).
+  - [[World Wide Web Consortium]] (World Wide Web Consortium) standardises RDF through dedicated working groups. Key specifications include RDF 1.1 Concepts and Abstract Syntax (2014), RDF 1.1 Turtle, RDF 1.1 JSON-LD 1.1 (2020), and SPARQL 1.1 (2013).
 - **Related W3C Specifications**
   - [[OWL]] 2 (Web Ontology Language 2.0, 2009/2012) — description logic ontology language built on RDF.
   - [[SHACL]] (Shapes Constraint Language, 2017) — validation and shape constraints for RDF graphs.

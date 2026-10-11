@@ -26,9 +26,9 @@ contrastsWith:
   - urn:ngm:class:iso-iec-23894
   - urn:ngm:class:ieee-7000
 bridgesTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 supports:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-risk-management
@@ -36,7 +36,7 @@ supports:
   - urn:ngm:class:transparency
 standardizedBy:
   - urn:ngm:class:ai-governance-framework
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
 relatedTo:
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:compliance-framework

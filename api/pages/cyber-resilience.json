@@ -82,8 +82,8 @@
         "label": "Intrusion Detection System"
       },
       {
-        "id": "urn:ngm:class:defense-in-depth",
-        "label": "Defense In Depth"
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence In Depth"
       },
       {
         "id": "urn:ngm:class:intrusion-detection",
@@ -236,12 +236,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",

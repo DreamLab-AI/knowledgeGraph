@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:impact-crater",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An impact crater is a hole left in a planetary surface when an asteroid, meteoroid or comet strikes it.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

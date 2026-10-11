@@ -27,7 +27,7 @@ relatedTo:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:amm-algorithm
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:yield-generation
   - urn:ngm:class:token-pair
   - urn:ngm:class:price-oracle

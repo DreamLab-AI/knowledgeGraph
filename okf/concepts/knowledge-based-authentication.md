@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:identity-verification
 contrastsWith:
   - urn:ngm:class:biometric-authentication
-  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:zero-trust
 bridgesTo:
   - urn:ngm:class:multi-factor-authentication
 uses:

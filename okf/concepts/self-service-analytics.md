@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:data-visualisation
 dependsOn:
   - urn:ngm:class:data-warehouse
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 bridgesTo:
   - urn:ngm:class:data-governance
 uses:
@@ -29,7 +29,7 @@ supports:
 partOf:
   - urn:ngm:class:data-analytics
 relatedTo:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:metadata-management
   - urn:ngm:class:olap
 ---

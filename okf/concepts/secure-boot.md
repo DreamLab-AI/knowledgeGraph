@@ -22,7 +22,7 @@ dependsOn:
 implements:
   - urn:ngm:class:authentication
 contrastsWith:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 bridgesTo:
   - urn:ngm:class:supply-chain
 uses:

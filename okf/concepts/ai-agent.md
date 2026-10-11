@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:observation-interface
 requires:
   - urn:ngm:class:tool-use
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:memory-management
   - urn:ngm:class:reasoning-engine
   - urn:ngm:class:foundation-model
@@ -33,7 +33,7 @@ enables:
   - urn:ngm:class:task-automation
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:workflow-orchestration
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:autonomous-decision-making
 dependsOn:
   - urn:ngm:class:foundation-model
@@ -78,7 +78,7 @@ standardizedBy:
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:agent-to-agent-protocol
   - urn:ngm:class:agent-communication-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:reinforcement-learning

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:junge-aerosol-layer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "The Junge aerosol layer is the stratospheric aerosol layer, a distinct layer of primarily aqueous sulfuric acid aerosol first observed by Christian Junge and coworkers.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

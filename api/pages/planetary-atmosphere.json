@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planetary-atmosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planetary atmosphere is the envelope of gas held around a planet, whose composition and pressure differ from one planet to another.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

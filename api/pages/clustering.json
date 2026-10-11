@@ -12,7 +12,7 @@
       "label": "Unsupervised Learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     },
     {
@@ -371,9 +371,19 @@
       "slug": "knowledge-management"
     },
     {
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -395,25 +405,25 @@
         "label": "Dimensionality Reduction"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
@@ -423,6 +433,14 @@
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -435,14 +453,6 @@
       {
         "id": "urn:ngm:class:measure-theory",
         "label": "Measure Theory"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:statistics",
-        "label": "Statistics"
       }
     ],
     "enables": [
@@ -459,6 +469,10 @@
         "label": "Generative AI"
       },
       {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
@@ -473,20 +487,12 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
-      },
-      {
-        "id": "urn:ngm:class:model-selection",
-        "label": "Model Selection"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:big-data",
@@ -511,6 +517,10 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "implements": [
@@ -557,6 +567,14 @@
         "label": "Supervised Learning"
       },
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
@@ -569,16 +587,8 @@
         "label": "Overfitting"
       },
       {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
-      },
-      {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
       }
     ],
     "bridgesTo": [
@@ -599,20 +609,20 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-complexity",
         "label": "Algorithmic Complexity"
       },
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:overfitting",
-        "label": "Overfitting"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -621,8 +631,12 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -633,30 +647,30 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:hypothesis-testing",
-        "label": "Hypothesis Testing"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:cross-validation",
@@ -677,13 +691,17 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
@@ -695,9 +713,21 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:information-management",
         "label": "Information Management"

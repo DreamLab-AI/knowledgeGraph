@@ -115,7 +115,7 @@ Micropayments are electronic payment transactions with values typically below �
 - The central intellectual tension in the field is between **Nick Szabo's mental transaction cost thesis** — that cognitive evaluation overhead, not technical processing cost, sets the practical floor on viable payment granularity — and the **behavioural engineering hypothesis** that sufficiently well-designed automation and UX can suppress that cognitive overhead to near-zero.
 - The 2024–2026 agentic payment wave is the most serious empirical test of the latter hypothesis: [[Agents]] now routinely consume thousands of API calls per hour without user intervention, and the question is whether spending transparency and trust controls can be made legible enough that users delegate willingly.
 - Micropayments rest historically at the intersection of three intellectual traditions: cryptographic payment scheme design (Chaum 1982, Rivest and Shamir 1996), economic theory of friction (Szabo 1999, Odlyzko 2003), and network protocol design (Poon and Dryja 2016, BOLT specification suite). These traditions converge in the 2020–2026 literature on layer-2 protocols, ecash mints, and agentic finance frameworks.
-- The relationship to [[CBDCs]] is important: [[CBDC Frameworks]] represent the central-bank ambition to provide programmable micropayment rails within regulatory perimeters, directly competing with the permissionless [[Lightning and Similar L2]] and [[Cashu]] ecash stack for retail micropayment markets. BIS Project Agorá is the highest-profile intersection of these worlds.
+- The relationship to [[Central Bank Digital Currency]] is important: [[CBDC Frameworks]] represent the central-bank ambition to provide programmable micropayment rails within regulatory perimeters, directly competing with the permissionless [[Lightning and Similar L2]] and [[Cashu]] ecash stack for retail micropayment markets. BIS Project Agorá is the highest-profile intersection of these worlds.
 
 ## Components and Architecture
 
@@ -179,7 +179,7 @@ Micropayments are electronic payment transactions with values typically below �
   - Both protocols represent the Ethereum-native alternative to Lightning's micropayment streaming model, targeting use cases where ERC-20 token diversity and DeFi composability are more important than Bitcoin's base-layer security.
 - **BIS Project Agorá** (2024–2026): A central-bank interoperability experiment involving seven major central banks and dozens of commercial bank participants, exploring tokenised commercial-bank deposits on a unified programmable ledger to achieve micropayment-scale cross-border settlement within regulatory perimeters.
   - The Bank of England's participation as a founding member positions UK institutions at the centre of wholesale tokenised payment development.
-  - Distinct from retail [[CBDCs]]: Agorá targets bank-to-bank settlement, not consumer wallet payments — but the infrastructure creates the potential for atomic delivery-versus-payment at micropayment value thresholds.
+  - Distinct from retail [[Central Bank Digital Currency]]: Agorá targets bank-to-bank settlement, not consumer wallet payments — but the infrastructure creates the potential for atomic delivery-versus-payment at micropayment value thresholds.
   - The BIS has published quarterly working papers (2024) benchmarking Agorá's settlement times and costs against Lightning Network and stablecoin alternatives.
 
 ## Use Cases and Major Families

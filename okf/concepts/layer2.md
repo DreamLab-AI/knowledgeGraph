@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:sidechain
   - urn:ngm:class:lightning-network
   - urn:ngm:class:lightning-and-similar-l2
-  - urn:ngm:class:layer2-scaling
+  - urn:ngm:class:layer-2-scaling
 enables:
   - urn:ngm:class:blockchain-scalability
   - urn:ngm:class:blockchain-interoperability

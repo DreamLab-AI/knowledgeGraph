@@ -4,7 +4,7 @@ Conflict Resolution encompasses the structured methods, protocols, and mechanism
 
 - Conflict resolution has been studied as a formal discipline since the mid-twentieth century, drawing on [[Game Theory]], social psychology, and legal theory. Classic models distinguish between positional bargaining — where parties argue fixed positions — and interest-based negotiation, which seeks underlying needs and generates mutually acceptable solutions. Fisher and Ury's principled negotiation framework from the Harvard Negotiation Project remains a foundational reference, emphasising separating people from problems, focusing on interests rather than positions, and generating objective criteria.
 - The discipline matters for the knowledge graph because it appears simultaneously as:
-  - A human governance process underpinning [[Decentralized Governance]] and [[Community Governance Model]] structures
+  - A human governance process underpinning [[Decentralised Governance]] and [[Community Governance Model]] structures
   - An algorithmic primitive in [[Distributed Ledger Technology]], [[Consensus Mechanism]] design, and eventually-consistent databases
   - An emergent problem in [[Multi-Agent Systems]] where autonomous agents hold conflicting goals or beliefs
   - A target application domain for AI-assisted mediation using [[Natural Language Processing]] and behavioural analytics

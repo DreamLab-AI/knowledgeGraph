@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:distributed-consensus
   - urn:ngm:class:peer-to-peer-network
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:supply-chain-transparency
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-asset

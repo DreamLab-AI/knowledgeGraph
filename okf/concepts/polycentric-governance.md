@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:platform-governance
   - urn:ngm:class:climate-governance
 relatedTo:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:democratic-governance
   - urn:ngm:class:community-governance
   - urn:ngm:class:common-pool-resources

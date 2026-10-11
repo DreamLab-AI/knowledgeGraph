@@ -27,7 +27,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:security
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:linear-algebra
   - urn:ngm:class:measure-theory
 supports:

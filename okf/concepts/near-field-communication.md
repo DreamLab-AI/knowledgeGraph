@@ -16,7 +16,7 @@ enables:
 uses:
   - urn:ngm:class:hardware-security-module
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:io-t-sensor-network
   - urn:ngm:class:communication-interface
 ---

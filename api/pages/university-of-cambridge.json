@@ -49,7 +49,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -57,7 +57,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       }
     ],
@@ -169,8 +169,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -286,12 +286,12 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "decentralised-web",
-      "label": "Decentralised Web"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
     },
     {
       "slug": "graph-database",

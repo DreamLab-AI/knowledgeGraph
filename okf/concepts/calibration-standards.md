@@ -18,7 +18,7 @@ requires:
 enables:
   - urn:ngm:class:accuracy
   - urn:ngm:class:quality-assurance
-  - urn:ngm:class:accuracy
+  - urn:ngm:class:measurement-accuracy
   - urn:ngm:class:device-alignment
 bridgesTo:
   - urn:ngm:class:technical-standard

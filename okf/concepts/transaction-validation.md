@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:transaction
 uses:
   - urn:ngm:class:hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:ledger
   - urn:ngm:class:trustless-system

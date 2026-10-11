@@ -12,8 +12,8 @@ is-a:
 partOf:
   - urn:ngm:class:representation-learning
 relatedTo:
-  - urn:ngm:class:neural-network-latent-space
-  - urn:ngm:class:vae
+  - urn:ngm:class:latent-space
+  - urn:ngm:class:variational-autoencoder
 ---
 
 # Disentangled Representation

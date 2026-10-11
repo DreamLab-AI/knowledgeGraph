@@ -29,7 +29,7 @@ dependsOn:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:decentralised-storage
 implements:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:intellectual-property-rights
@@ -41,7 +41,7 @@ supports:
   - urn:ngm:class:tokenised-real-world-assets
   - urn:ngm:class:digital-rights-management
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-sovereign-identity
 ---
 

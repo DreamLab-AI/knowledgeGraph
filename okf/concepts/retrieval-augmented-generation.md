@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:enterprise-search
   - urn:ngm:class:knowledge-management
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:dense-retrieval
   - urn:ngm:class:transformer-architecture

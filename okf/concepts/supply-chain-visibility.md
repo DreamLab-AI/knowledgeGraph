@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:risk-management
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:supply-chain-traceability

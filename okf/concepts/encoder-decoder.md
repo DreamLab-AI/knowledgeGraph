@@ -9,16 +9,44 @@ maturity: mature
 quality: 0.8
 is-a:
   - urn:ngm:class:neural-network
+  - urn:ngm:class:ai-model-architecture
+hasPart:
+  - urn:ngm:class:self-attention
+  - urn:ngm:class:cross-attention
+  - urn:ngm:class:token-embedding
+  - urn:ngm:class:positional-encoding
+  - urn:ngm:class:feed-forward-network
+requires:
+  - urn:ngm:class:attention-mechanism
+  - urn:ngm:class:backpropagation
 enables:
   - urn:ngm:class:machine-translation
   - urn:ngm:class:speech-recognition
+  - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:text-summarisation
+  - urn:ngm:class:image-captioning
+implements:
+  - urn:ngm:class:transformer
+  - urn:ngm:class:large-language-model
+contrastsWith:
+  - urn:ngm:class:decoder-only-architecture
+  - urn:ngm:class:recurrent-neural-network
+bridgesTo:
+  - urn:ngm:class:multimodal-ai-architecture-ai
 uses:
   - urn:ngm:class:attention-mechanism
+  - urn:ngm:class:multi-head-attention
+  - urn:ngm:class:softmax-function
+  - urn:ngm:class:layer-normalisation
 partOf:
   - urn:ngm:class:acoustic-model
+  - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:transformer
   - urn:ngm:class:recurrent-neural-network
+  - urn:ngm:class:bert
+  - urn:ngm:class:t5-model
+  - urn:ngm:class:bart
 ---
 
 # Encoder-Decoder

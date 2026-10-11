@@ -68,7 +68,7 @@ uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:sat-solving
   - urn:ngm:class:graph-search
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:neural-network
 supports:

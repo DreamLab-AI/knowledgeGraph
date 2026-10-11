@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:smart-contract
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:public-key-cryptography
@@ -40,8 +40,8 @@ uses:
   - urn:ngm:class:key-management
   - urn:ngm:class:digital-signature
 supports:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
 partOf:
   - urn:ngm:class:blockchain
 relatedTo:

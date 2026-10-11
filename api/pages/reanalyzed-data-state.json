@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reanalyzed-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reanalyzed data state is the SWEET data-processing state of data that have been through a reanalysis process.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

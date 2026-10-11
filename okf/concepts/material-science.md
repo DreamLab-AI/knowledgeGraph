@@ -30,13 +30,13 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:materials-engineering
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:supply-chain
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-driven-discovery
 relatedTo:
   - urn:ngm:class:nanoscience

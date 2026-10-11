@@ -51,8 +51,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
-        "label": "TELE 050 neuralrenderingtelepresence"
+        "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+        "label": "Neural Rendering Telepresence"
       },
       {
         "id": "urn:ngm:class:mixed-reality",
@@ -98,8 +98,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

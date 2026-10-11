@@ -132,7 +132,7 @@
         "label": "Dataset"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -260,7 +260,7 @@
         "label": "NIST SP 1270"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -418,16 +418,16 @@
         "label": "Accountability"
       },
       {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
         "id": "urn:ngm:class:fairness",
         "label": "Fairness"
-      },
-      {
-        "id": "urn:ngm:class:transparency",
-        "label": "Transparency"
       }
     ],
     "enables": [
@@ -480,11 +480,11 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -510,6 +510,10 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       },
@@ -532,6 +536,10 @@
         "label": "Human Rights"
       },
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
       },
@@ -546,10 +554,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -650,6 +654,10 @@
         "label": "Algorithmic Accountability"
       },
       {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
       },
@@ -666,24 +674,20 @@
         "label": "Existential Risk"
       },
       {
-        "id": "urn:ngm:class:privacy-preserving-machine-learning",
-        "label": "Privacy-Preserving Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "ai-talent",
-      "label": "AI Talent"
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
     },
     {
-      "slug": "aiethics",
-      "label": "AIEthics"
+      "slug": "ai-talent",
+      "label": "AI Talent"
     }
   ]
 }

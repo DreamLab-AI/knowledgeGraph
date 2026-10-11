@@ -8,7 +8,7 @@ description: Behavioral Modeling is the application of machine learning and stat
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
   - urn:ngm:class:predictive-analytics
 hasPart:
@@ -64,7 +64,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:statistical-model
   - urn:ngm:class:hidden-markov-model

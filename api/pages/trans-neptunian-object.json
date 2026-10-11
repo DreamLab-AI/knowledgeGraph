@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trans-neptunian-object",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A trans-Neptunian object is a minor planet whose orbit has a semimajor axis beyond the orbit of Neptune, in the wording of the Minor Planet Center.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -46,7 +46,7 @@ relatedTo:
   - urn:ngm:class:industrial-automation
   - urn:ngm:class:functional-safety
   - urn:ngm:class:opc-ua
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:industrial-automation
 ---
 

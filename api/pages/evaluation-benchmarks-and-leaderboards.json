@@ -220,16 +220,16 @@
         "label": "Crowdsourcing"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       },
       {
         "id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:vision-language-models",
@@ -288,15 +288,15 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:uk-ai-safety-institute",
         "label": "UK AI Safety Institute"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -327,8 +327,8 @@
         "label": "Frontier AI"
       },
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:ai-governance",
@@ -432,6 +432,10 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:alignment-evaluation",
         "label": "Alignment Evaluation"
       },
@@ -442,10 +446,6 @@
       {
         "id": "urn:ngm:class:frontier-models",
         "label": "Frontier Model"
-      },
-      {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:sandbagging",
@@ -462,16 +462,16 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:ai-system",
@@ -504,7 +504,7 @@
         "label": "ELO Rating"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -642,7 +642,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -670,8 +670,8 @@
         "label": "Bias"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:prompt-sensitivity",
@@ -1171,8 +1171,8 @@
       "label": "Model Training"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "prompt-engineering",

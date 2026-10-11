@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:sql
   - urn:ngm:class:relational-database
 supports:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 partOf:
   - urn:ngm:class:data-engineering
 relatedTo:

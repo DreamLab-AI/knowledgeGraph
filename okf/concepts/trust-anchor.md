@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:key-management
   - urn:ngm:class:hardware-security-module
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:identity-federation
   - urn:ngm:class:trust
   - urn:ngm:class:x-509-certificate
@@ -21,8 +21,8 @@ enables:
 contrastsWith:
   - urn:ngm:class:web-of-trust
 bridgesTo:
-  - urn:ngm:class:decentralized-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:governance
 uses:
   - urn:ngm:class:digital-signature
@@ -37,7 +37,7 @@ relatedTo:
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:trust-framework-policy
   - urn:ngm:class:cryptographic-verification
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:root-certificate
   - urn:ngm:class:certificate-transparency
 ---

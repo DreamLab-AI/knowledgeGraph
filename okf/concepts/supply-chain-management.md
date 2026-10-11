@@ -28,14 +28,14 @@ contrastsWith:
   - urn:ngm:class:just-in-time-manufacturing
   - urn:ngm:class:value-chain-management
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ai-agent
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:rfid
   - urn:ngm:class:blockchain-technology
 standardizedBy:

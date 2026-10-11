@@ -27,8 +27,8 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "enables": [
@@ -189,11 +189,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
@@ -231,7 +226,7 @@
         "label": "Model Compression"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -245,7 +240,7 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -325,12 +320,12 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantisation"
-      },
-      {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:5g-core",
@@ -461,10 +456,6 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantisation"
-      },
-      {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
       },
@@ -475,6 +466,10 @@
       {
         "id": "urn:ngm:class:onnx",
         "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:tflite",
+        "label": "TFLite"
       }
     ],
     "supports": [
@@ -525,8 +520,8 @@
         "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee-1934-openfog",
@@ -553,10 +548,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [

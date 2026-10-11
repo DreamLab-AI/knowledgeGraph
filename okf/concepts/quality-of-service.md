@@ -21,7 +21,7 @@ enables:
 dependsOn:
   - urn:ngm:class:packet-switching
   - urn:ngm:class:routing-protocol
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 implements:
   - urn:ngm:class:differentiated-services
   - urn:ngm:class:integrated-services

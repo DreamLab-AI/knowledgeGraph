@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:software-framework
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:autonomous-system
-  - urn:ngm:class:workflow-engine
 hasPart:
   - urn:ngm:class:agent-runtime
   - urn:ngm:class:memory-store
@@ -25,7 +24,7 @@ hasPart:
   - urn:ngm:class:trace-logger
   - urn:ngm:class:evaluator-module
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:observability
   - urn:ngm:class:persistence-layer
   - urn:ngm:class:tool-use
@@ -75,12 +74,12 @@ uses:
   - urn:ngm:class:a2-a-protocol
   - urn:ngm:class:json-data-interchange-format-rpc
   - urn:ngm:class:model-control-protocols-like-mcp
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:server-sent-events
   - urn:ngm:class:function-calling
   - urn:ngm:class:model-control-protocols-like-mcp
   - urn:ngm:class:acp-protocol
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 supports:
   - urn:ngm:class:rag-pipeline
   - urn:ngm:class:workflow-automation
@@ -97,7 +96,7 @@ relatedTo:
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:tool-use
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:llm-evaluation
 ---

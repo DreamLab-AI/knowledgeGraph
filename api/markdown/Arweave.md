@@ -22,7 +22,7 @@ Arweave is a decentralised, blockweave-based storage protocol that enables perma
 - **Decentralised Application Front-Ends**: [[Decentralised Application]] developers deploy HTML, CSS, JavaScript, and other static assets to Arweave, allowing the application's user-facing layer to be served permanently without depending on a DNS domain or a hosted server. The ArDrive application is itself stored this way.
 - **Journalistic and Cultural Archiving**: News organisations and civil society groups use Arweave to publish articles, reports, and datasets that must remain accessible despite censorship or takedown pressure. The Internet Archive and similar bodies have explored Arweave integration for at-risk content.
 - **Protocol Governance Records**: Decentralised autonomous organisations ([[Decentralised Finance]] governance) use Arweave to make proposal text, voting records, and audit trails permanently verifiable, reducing governance manipulation risk.
-- **Verifiable Computation Logs**: The AO compute environment enables use cases in which the full trace of a computation — inputs, messages, state transitions — is permanently stored on Arweave, enabling any party to independently verify that a given output was produced by the claimed program. This bridges toward [[Data Provenance]] and [[Verifiable Credentials]] frameworks.
+- **Verifiable Computation Logs**: The AO compute environment enables use cases in which the full trace of a computation — inputs, messages, state transitions — is permanently stored on Arweave, enabling any party to independently verify that a given output was produced by the claimed program. This bridges toward [[Data Provenance]] and [[Verifiable Credential]] frameworks.
 - **AI Training Data Archival**: Datasets used to train machine learning models can be pinned permanently on Arweave, providing a stable, verifiable reference that allows others to reproduce experiments and audit training provenance — directly relevant to [[Knowledge Graph]] enrichment pipelines and AI governance.
 
 ### Comparison with Peer Systems
@@ -37,7 +37,7 @@ Arweave is a decentralised, blockweave-based storage protocol that enables perma
   - **Arweave Transaction Format**: The transaction schema (JSON with RSA-PSS signatures and base64url encoding) is documented in the Arweave protocol specification maintained by the core team.
   - **ANS (Arweave Name System) Standards**: Community-developed protocol extension proposals (ANS-110, ANS-104) standardise data item bundling formats and tagging conventions used by Bundlr/Irys.
   - **SmartWeave Protocol**: Documented informally through reference implementations (Warp, ArConnect). No formal ISO/W3C submission.
-  - **W3C Verifiable Credentials**: AO compute logs and SmartWeave audit trails are conceptually aligned with [[Verifiable Credentials]] but do not yet implement the W3C VC Data Model directly.
+  - **W3C Verifiable Credentials**: AO compute logs and SmartWeave audit trails are conceptually aligned with [[Verifiable Credential]] but do not yet implement the W3C VC Data Model directly.
   - **Content Integrity**: Arweave's content-addressing aligns with W3C Subresource Integrity (SRI) principles and the broader movement toward [[Data Provenance]] standards.
 
 ### Provenance

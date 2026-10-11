@@ -18,9 +18,9 @@ enables:
   - urn:ngm:class:whistleblowing
   - urn:ngm:class:censorship-resistance
 implements:
-  - urn:ngm:class:decentralized-identifier
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 contrastsWith:
   - urn:ngm:class:anonymity
   - urn:ngm:class:identity-disclosure

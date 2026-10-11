@@ -8,7 +8,7 @@ description: A graphical model is a probabilistic model that expresses the condi
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:probabilistic-model
 ---

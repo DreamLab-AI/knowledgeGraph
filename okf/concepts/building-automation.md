@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:actuators
   - urn:ngm:class:zigbee
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:access-control-system
 ---

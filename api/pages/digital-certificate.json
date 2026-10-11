@@ -36,7 +36,7 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -73,7 +73,7 @@
         "label": "X.509 Standard"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "TLS Protocol"
       }
     ],
@@ -83,8 +83,8 @@
         "label": "Self-Signed Certificate"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "bridgesTo": [
@@ -93,7 +93,7 @@
         "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -113,7 +113,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "SSL/TLS"
       },
       {

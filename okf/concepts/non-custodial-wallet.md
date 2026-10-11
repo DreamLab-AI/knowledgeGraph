@@ -22,12 +22,12 @@ implements:
 contrastsWith:
   - urn:ngm:class:custodial-wallet
 bridgesTo:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:digital-signature
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:account-abstraction
 relatedTo:
   - urn:ngm:class:hardware-wallet

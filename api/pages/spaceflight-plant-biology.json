@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-plant-biology",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight plant biology is the study of how plants grow and respond in the space environment, carried out on the International Space Station in growth systems such as Veggie and the Advanced Plant Habitat.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

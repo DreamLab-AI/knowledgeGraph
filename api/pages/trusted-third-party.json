@@ -25,8 +25,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:centralized-exchange",
-        "label": "Centralized Exchange"
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
       },
       {
         "id": "urn:ngm:class:custodial-wallet",
@@ -46,8 +46,8 @@
         "label": "Self-Custody"
       },
       {
-        "id": "urn:ngm:class:decentralized-exchange",
-        "label": "Decentralized Exchange"
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -66,7 +66,7 @@
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       }
     ],
@@ -88,8 +88,8 @@
         "label": "Multisig"
       },
       {
-        "id": "urn:ngm:class:centralized-exchange",
-        "label": "Centralized Exchange"
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
       }
     ]
   },
@@ -215,12 +215,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",

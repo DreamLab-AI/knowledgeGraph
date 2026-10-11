@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft
 resource: urn:ngm:class:spacecraft
 domain: space-science-and-systems
+description: A spacecraft is a device, crewed or uncrewed, designed to be placed into orbit about the Earth or onto a trajectory to another celestial body.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Spacecraft
+
+A spacecraft is a device, crewed or uncrewed, designed to be placed into orbit about the Earth or onto a trajectory to another celestial body.[^1]

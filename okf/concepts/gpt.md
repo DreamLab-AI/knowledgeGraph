@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:few-shot-learning
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:scaling-laws
 implements:
@@ -28,12 +28,12 @@ implements:
   - urn:ngm:class:causal-language-modelling
 contrastsWith:
   - urn:ngm:class:bert
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 bridgesTo:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:ai-safety
 uses:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:next-token-prediction

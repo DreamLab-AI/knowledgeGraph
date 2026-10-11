@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:developer-portal
 requires:
   - urn:ngm:class:identity-provider
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:api-integration
@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:service-discovery
 implements:
   - urn:ngm:class:zero-trust-architecture
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 contrastsWith:
   - urn:ngm:class:service-mesh
   - urn:ngm:class:enterprise-service-bus

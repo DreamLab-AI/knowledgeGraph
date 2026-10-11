@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:authentication
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:credential-issuer
   - urn:ngm:class:commitment-scheme
 enables:

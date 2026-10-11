@@ -22,8 +22,8 @@ dependsOn:
 implements:
   - urn:ngm:class:generative-model
 contrastsWith:
-  - urn:ngm:class:vae
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:variational-autoencoder
 bridgesTo:
   - urn:ngm:class:deep-learning
 uses:

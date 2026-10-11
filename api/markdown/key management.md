@@ -5,7 +5,7 @@ Key management is the discipline governing the complete lifecycle of cryptograph
 - Cryptographic algorithms derive their security from the secrecy and integrity of keys rather than the secrecy of the algorithm itself (Kerckhoffs's principle). Key management addresses this by treating keys as first-class operational assets requiring defined policies, controls, and audit trails throughout their useful lives.
 - The six canonical lifecycle phases recognised by [[NIST SP 800-57]] are:
   - **Generation** — keys must be produced with sufficient entropy; weak or predictable generation is a leading source of cryptographic failures.
-  - **Distribution** — transferring keys between parties without exposure, using protocols such as [[Diffie-Hellman Key Exchange]], [[TLS]] handshakes, or out-of-band ceremony.
+  - **Distribution** — transferring keys between parties without exposure, using protocols such as [[Diffie-Hellman Key Exchange]], [[Transport Layer Security]] handshakes, or out-of-band ceremony.
   - **Storage** — protecting key material at rest, ideally inside a [[Hardware Security Module]] or [[Trusted Execution Environment]] from which keys cannot be exported in plaintext.
   - **Use** — enforcing usage constraints such as algorithm type, data volume limits, and validity periods.
   - **Rotation** — periodically replacing keys to limit the blast radius of any single key compromise; automated rotation is preferred over manual.
@@ -20,7 +20,7 @@ Key management is the discipline governing the complete lifecycle of cryptograph
   - Network HSMs (e.g., Thales Luna, Entrust nShield) serve multiple applications; cloud HSMs (AWS CloudHSM, Google Cloud HSM) provide managed equivalents.
 - **[[Key Derivation Function]] (KDF)**
   - Deterministic algorithms (HKDF, PBKDF2, scrypt, Argon2) that derive cryptographically strong child keys from a parent secret or low-entropy password.
-  - HKDF (RFC 5869) is widely used within [[TLS]] 1.3 and [[Signal Protocol]] to derive session keys.
+  - HKDF (RFC 5869) is widely used within [[Transport Layer Security]] 1.3 and [[Signal Protocol]] to derive session keys.
   - [[BIP-32]] Hierarchical Deterministic wallets use [[HMAC-SHA512]]-based derivation to generate entire key trees from a single seed, enabling [[Cryptocurrency]] backup via mnemonic seed phrases.
 - **[[Envelope Encryption]]**
   - A two-level pattern in which a data encryption key (DEK) encrypts the plaintext, and a key encryption key (KEK) held in a KMS encrypts the DEK.
@@ -31,7 +31,7 @@ Key management is the discipline governing the complete lifecycle of cryptograph
   - Root keys are often held offline or in [[Air-Gapped]] HSMs and used only for key-signing ceremonies.
 - **[[Certificate Lifecycle Management]]**
   - A specialised subdomain covering issuance, renewal, and revocation of [[X.509 Certificate|X.509 certificates]] within a [[Public Key Infrastructure]].
-  - [[ACME Protocol]] (RFC 8555), implemented by [[Let's Encrypt]], automates certificate issuance and renewal for [[TLS]], dramatically reducing manual operational burden.
+  - [[ACME Protocol]] (RFC 8555), implemented by [[Let's Encrypt]], automates certificate issuance and renewal for [[Transport Layer Security]], dramatically reducing manual operational burden.
   - Certificate revocation is handled via [[Certificate Revocation List|CRLs]] or [[Online Certificate Status Protocol]] (OCSP).
 - **[[Secrets Management]]**
   - Closely related subdomain covering API tokens, database credentials, and service account secrets, handled by tools such as [[HashiCorp Vault]], AWS Secrets Manager, and [[Kubernetes Secrets]].
@@ -48,7 +48,7 @@ Key management is the discipline governing the complete lifecycle of cryptograph
 - **Cloud Infrastructure**
   - Cloud KMS services (AWS KMS, Google Cloud KMS, Azure Key Vault) integrate with storage, databases, and containerised workloads for transparent data-at-rest encryption.
   - Customer-managed keys (CMK) allow organisations to control key material that cloud providers cannot access, satisfying data residency and sovereignty requirements.
-- **[[TLS]] and Web PKI**
+- **[[Transport Layer Security]] and Web PKI**
   - Every HTTPS connection relies on key management: server certificates must be issued, renewed, and revoked correctly.
   - Automated issuance via [[ACME Protocol]] and [[Let's Encrypt]] has substantially reduced certificate expiry incidents; short-lived certificates (90-day or less) are the emerging norm.
 - **[[Blockchain]] and Cryptocurrency Self-Custody**

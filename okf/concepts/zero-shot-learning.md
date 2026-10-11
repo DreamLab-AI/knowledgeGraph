@@ -20,7 +20,7 @@ contrastsWith:
   - urn:ngm:class:few-shot-learning
   - urn:ngm:class:supervised-learning
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:representation-learning
   - urn:ngm:class:embedding

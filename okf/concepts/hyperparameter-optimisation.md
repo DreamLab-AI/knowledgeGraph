@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:objective-function
 enables:
   - urn:ngm:class:model-training
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:auto-ml
   - urn:ngm:class:model-selection
 dependsOn:

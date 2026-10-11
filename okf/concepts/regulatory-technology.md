@@ -10,8 +10,8 @@ quality: 0.73
 is-a:
   - urn:ngm:class:compliance-framework
 hasPart:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:regulatory-reporting
   - urn:ngm:class:risk-management
 requires:
@@ -29,16 +29,16 @@ contrastsWith:
   - urn:ngm:class:legal-technology
   - urn:ngm:class:manual-compliance
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ai-governance
   - urn:ngm:class:distributed-ledger-technology
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:application-programming-interface
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:data-protection-regulation
@@ -46,7 +46,7 @@ supports:
   - urn:ngm:class:open-banking
 relatedTo:
   - urn:ngm:class:governance-framework
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:algorithmic-auditing
 ---
 

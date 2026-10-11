@@ -17,7 +17,7 @@ implements:
   - urn:ngm:class:spatial-computing
 relatedTo:
   - urn:ngm:class:classification-system
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:web-standards
 ---
 

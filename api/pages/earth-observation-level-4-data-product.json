@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-4-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation Level 4 data product is model output or the result of analyses of lower-level data, such as variables derived from multiple measurements.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-data-product",

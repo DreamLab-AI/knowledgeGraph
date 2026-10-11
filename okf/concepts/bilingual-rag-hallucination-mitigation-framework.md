@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:software-engineering
 uses:
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:text-to-speech
   - urn:ngm:class:multi-agent-systems
 supports:

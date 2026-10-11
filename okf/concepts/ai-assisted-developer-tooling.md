@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:code-generation
   - urn:ngm:class:generative-ai
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-frameworks
 supports:
   - urn:ngm:class:software-engineering

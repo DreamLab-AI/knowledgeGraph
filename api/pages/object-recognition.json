@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Annotated Dataset"
       }
     ],

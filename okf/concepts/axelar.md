@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:layer-zero
 bridgesTo:
   - urn:ngm:class:cosmos-ibc
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 uses:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:consensus-mechanism
@@ -39,7 +39,7 @@ uses:
 supports:
   - urn:ngm:class:evm
   - urn:ngm:class:non-evm-chain
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 partOf:
   - urn:ngm:class:cosmos
 relatedTo:

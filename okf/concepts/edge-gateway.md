@@ -20,7 +20,7 @@ uses:
 relatedTo:
   - urn:ngm:class:edge-network
   - urn:ngm:class:edge-computing-architecture
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Edge Gateway

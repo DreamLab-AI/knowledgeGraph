@@ -1,6 +1,6 @@
 Enhanced due diligence (EDD) is a heightened level of customer scrutiny applied by regulated institutions to relationships and transactions that present elevated money-laundering, terrorist-financing, or sanctions risk. Going beyond standard customer due diligence, it requires deeper verification of identity and beneficial ownership, investigation of source of funds and wealth, and ongoing intensified monitoring. EDD is mandated for higher-risk categories such as politically exposed persons, customers in high-risk jurisdictions, and complex or unusually large transactions. It is a cornerstone of the risk-based approach embedded in anti-money-laundering and know-your-customer regulatory regimes.
 
-- Enhanced due diligence is the heightened scrutiny that regulated firms apply to higher-risk customers and transactions, going beyond standard [[Customer Due Diligence]]. It is a pillar of the [[Risk-Based Approach]] in [[AML]] and [[KYC]] regimes.
+- Enhanced due diligence is the heightened scrutiny that regulated firms apply to higher-risk customers and transactions, going beyond standard [[Customer Due Diligence]]. It is a pillar of the [[Risk-Based Approach]] in [[Anti-Money Laundering]] and [[Know Your Customer]] regimes.
 - It deepens identity and ownership verification, probes source of funds, and intensifies ongoing monitoring.
 
 ### Overview

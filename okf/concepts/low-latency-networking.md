@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:network-protocol
 uses:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:spatial-computing
 partOf:

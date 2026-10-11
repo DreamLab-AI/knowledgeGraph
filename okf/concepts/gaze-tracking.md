@@ -22,7 +22,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:spatial-computing
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:spatial-interaction
   - urn:ngm:class:accessibility

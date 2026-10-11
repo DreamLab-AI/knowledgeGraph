@@ -8,7 +8,7 @@ description: Systems Engineering is an interdisciplinary methodology for designi
 maturity: mature
 quality: 0.74
 is-a:
-  - urn:ngm:class:software-engineering
+  - urn:ngm:class:computer-science
 hasPart:
   - urn:ngm:class:requirements-engineering
   - urn:ngm:class:system-architecture

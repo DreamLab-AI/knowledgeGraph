@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:computational-intelligence
   - urn:ngm:class:optimisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:artificial-intelligence
 hasPart:
@@ -42,7 +42,7 @@ enables:
   - urn:ngm:class:representation-learning
   - urn:ngm:class:robotic-control
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:model-training
   - urn:ngm:class:autonomous-agent
 dependsOn:

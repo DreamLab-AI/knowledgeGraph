@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:keplerian-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A Keplerian orbit is a conic solution of the isolated Newtonian two-body problem.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

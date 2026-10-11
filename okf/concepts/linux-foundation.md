@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:standards-body
 hasPart:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:hyperledger-foundation
   - urn:ngm:class:kubernetes
   - urn:ngm:class:lf-ai-data-foundation
@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:ai-governance
 supports:
   - urn:ngm:class:linux-kernel
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:onnx
   - urn:ngm:class:open-source-security
 standardizedBy:

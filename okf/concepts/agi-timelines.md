@@ -28,7 +28,7 @@ enables:
   - urn:ngm:class:alignment-research
   - urn:ngm:class:compute-governance
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:compute-resources
   - urn:ngm:class:compute-cluster

@@ -23,7 +23,7 @@ Certificate Revocation is the process by which a Certificate Authority (CA) inva
 
 ### Applications
 
-- Web [[TLS]]/[[HTTPS]] certificate lifecycle management.
+- Web [[Transport Layer Security]]/[[HTTPS]] certificate lifecycle management.
 - [[Identity Management]] in enterprise PKI environments.
 - Code signing certificate revocation in software supply chains.
 - [[Incident Response]] procedures after credential compromise events.

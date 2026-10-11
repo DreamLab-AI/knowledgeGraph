@@ -15,7 +15,7 @@ contrastsWith:
   - urn:ngm:class:music-generation
 uses:
   - urn:ngm:class:signal-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:audio-processing
   - urn:ngm:class:audio-generation

@@ -21,7 +21,7 @@ contrastsWith:
   - urn:ngm:class:neural-processing-unit
 bridgesTo:
   - urn:ngm:class:infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:cuda
@@ -29,11 +29,11 @@ uses:
 supports:
   - urn:ngm:class:inference-hardware
   - urn:ngm:class:edge-computing-node
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:gpu-computing
   - urn:ngm:class:autonomous-mobile-robots
 ---

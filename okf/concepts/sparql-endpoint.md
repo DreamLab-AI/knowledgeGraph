@@ -22,10 +22,10 @@ bridgesTo:
 uses:
   - urn:ngm:class:sparql
   - urn:ngm:class:rdf
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 relatedTo:
   - urn:ngm:class:graph-database
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:database-query
   - urn:ngm:class:sparql-examples

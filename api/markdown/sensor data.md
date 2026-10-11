@@ -72,7 +72,7 @@ Sensor data comprises the raw or pre-processed digital measurements produced by 
 
 ### Standards & Context
 
-- **ROS Message Types** — the [[ROS]] ecosystem defines standardised message types for common sensor modalities: `sensor_msgs/Image`, `sensor_msgs/PointCloud2`, `sensor_msgs/Imu`, `sensor_msgs/NavSatFix`, `sensor_msgs/LaserScan`. These enable plug-and-play interoperability between sensor drivers and processing nodes.
+- **ROS Message Types** — the [[Robot Operating System]] ecosystem defines standardised message types for common sensor modalities: `sensor_msgs/Image`, `sensor_msgs/PointCloud2`, `sensor_msgs/Imu`, `sensor_msgs/NavSatFix`, `sensor_msgs/LaserScan`. These enable plug-and-play interoperability between sensor drivers and processing nodes.
 - **IEEE 1588 Precision Time Protocol** — the IEEE 1588 standard enables sub-microsecond clock synchronisation across networked devices, enabling hardware-level timestamping of multi-sensor data streams. Critical for high-speed sensor fusion in autonomous vehicles.
 - **MCAP** — an open-source container format for multi-channel time-series data optimised for robotics logging; supports arbitrary serialisation formats (ROS1, ROS2, Protobuf, JSON) with efficient indexed random access.
 - **HDF5** — the Hierarchical Data Format version 5 is widely used for storing large, heterogeneous scientific and sensor datasets with metadata; used in automotive (NuScenes, Waymo Open Dataset) and scientific instrumentation contexts.

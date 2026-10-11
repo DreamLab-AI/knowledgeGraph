@@ -73,8 +73,8 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:realtime-communication",
-        "label": "Realtime Communication"
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       },
       {
         "id": "urn:ngm:class:video-conferencing",
@@ -113,8 +113,8 @@
         "label": "Community Governance"
       },
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:open-source-development",
@@ -181,8 +181,8 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
@@ -253,8 +253,8 @@
         "label": "Workspace Tools"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
       }
     ]
   },

@@ -10,16 +10,30 @@ quality: 0.74
 is-a:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:foundation-model-layer
+  - urn:ngm:class:ai-model-architecture
+  - urn:ngm:class:neural-network
+  - urn:ngm:class:deep-learning
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:context-window
   - urn:ngm:class:embeddings
+  - urn:ngm:class:embedding
+  - urn:ngm:class:model-parameters
+  - urn:ngm:class:tokenization
+  - urn:ngm:class:training-data
+  - urn:ngm:class:transformer
 requires:
   - urn:ngm:class:pretraining
   - urn:ngm:class:training-data
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:gpu-computing
+  - urn:ngm:class:distributed-training
+  - urn:ngm:class:gpu-compute
+  - urn:ngm:class:large-scale-datasets
+  - urn:ngm:class:model-optimization
+  - urn:ngm:class:fine-tuning
 enables:
   - urn:ngm:class:text-generation
   - urn:ngm:class:code-generation
@@ -27,31 +41,45 @@ enables:
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:ai-agent
   - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:natural-language-understanding
+  - urn:ngm:class:question-answering
+  - urn:ngm:class:reasoning
+  - urn:ngm:class:translation
 dependsOn:
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:scaling-laws
+implements:
+  - urn:ngm:class:backpropagation
+  - urn:ngm:class:gradient-descent
+  - urn:ngm:class:multi-head-attention
+  - urn:ngm:class:positional-encoding
+  - urn:ngm:class:self-attention
 contrastsWith:
   - urn:ngm:class:recurrent-neural-network
   - urn:ngm:class:small-language-model
 bridgesTo:
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:l402-payment-protocol
+  - urn:ngm:class:lightning-network
+  - urn:ngm:class:autonomous-economic-agents
+  - urn:ngm:class:smart-contract
 uses:
   - urn:ngm:class:tokenization
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:prompt-engineering
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 relatedTo:
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:quantisation
   - urn:ngm:class:ai-safety
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:hallucination
   - urn:ngm:class:mixture-of-experts
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 ---
 
 # Large Language Model

@@ -17,7 +17,7 @@
     },
     {
       "id": "urn:ngm:class:fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "id": "urn:ngm:class:diffusion-model",
@@ -140,8 +140,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:diffusion-models",
@@ -200,11 +200,11 @@
         "label": "Generative Adversarial Networks"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora",
         "label": "LoRA"
       },
       {
@@ -285,11 +285,11 @@
         "label": "Inpainting"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
-        "label": "Lo RA"
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora",
         "label": "LoRA"
       }
     ],
@@ -354,8 +354,8 @@
         "label": "Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:adapter-modules",
@@ -385,9 +385,14 @@
       "slug": "deep-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training",
+      "slug": "model-training"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -398,6 +403,46 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation",
+      "slug": "optimisation"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations",
+      "slug": "mathematical-foundations"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science",
+      "slug": "mathematical-science"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     }
   ],
   "inheritedRelations": {
@@ -453,10 +498,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:noise-prediction-network",
         "label": "Noise Prediction Network"
       },
@@ -467,6 +508,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "enables": [
@@ -495,8 +540,8 @@
         "label": "Instruction Following"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -509,7 +554,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
@@ -615,8 +660,8 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Models"
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       },
       {
         "id": "urn:ngm:class:style-transfer",
@@ -645,8 +690,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:backpropagation",
@@ -699,12 +744,12 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       }
     ],
     "standardizedBy": [
@@ -725,14 +770,42 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:model-training-pipeline",
         "label": "Model Training Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "relatedTo": [
@@ -745,8 +818,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:foundation-model",
@@ -1195,7 +1268,7 @@
     },
     {
       "slug": "fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "slug": "image-generation",

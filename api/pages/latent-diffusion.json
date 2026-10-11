@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder"
       },
       {
@@ -34,13 +34,13 @@
         "label": "Noise Schedule"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -141,8 +141,8 @@
         "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:transformer",
@@ -215,9 +215,9 @@
       "slug": "generative-ai"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:probabilistic-model",
@@ -248,11 +248,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:probabilistic-inference",
@@ -311,7 +306,7 @@
         "label": "U-Net Backbone"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -329,10 +324,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:noise-prediction-network",
         "label": "Noise Prediction Network"
       },
@@ -347,6 +338,10 @@
       {
         "id": "urn:ngm:class:differentiable-architecture",
         "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
       }
     ],
     "enables": [
@@ -379,7 +374,7 @@
         "label": "Synthetic Data Generation"
       },
       {
-        "id": "urn:ngm:class:3-d-content-generation",
+        "id": "urn:ngm:class:3-d-generation",
         "label": "3D Generation"
       }
     ],
@@ -461,7 +456,7 @@
         "label": "Energy-Based Model"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -545,7 +540,7 @@
         "label": "U-Net"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -617,7 +612,7 @@
         "label": "NeurIPS"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -633,6 +628,10 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:statistics",
@@ -657,10 +656,6 @@
         "label": "Markov Chain"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
-        "label": "Multimodal Model"
-      },
-      {
         "id": "urn:ngm:class:multimodal-model",
         "label": "Multimodal Model"
       },
@@ -675,6 +670,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ]
   },

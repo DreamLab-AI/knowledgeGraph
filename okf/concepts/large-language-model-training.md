@@ -8,9 +8,9 @@ description: Large Language Model Training is the computational process of optim
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 hasPart:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:supervised-fine-tuning
   - urn:ngm:class:alignment
 requires:
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:data-parallelism
   - urn:ngm:class:direct-preference-optimisation
 relatedTo:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:synthetic-data-generation
 ---
 

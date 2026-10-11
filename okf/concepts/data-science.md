@@ -25,9 +25,9 @@ implements:
 contrastsWith:
   - urn:ngm:class:data-engineering
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:python
 supports:
   - urn:ngm:class:business-intelligence

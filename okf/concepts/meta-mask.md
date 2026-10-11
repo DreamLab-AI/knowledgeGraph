@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:web3
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:nft-trading
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:bip-32
   - urn:ngm:class:eip-1193
@@ -35,11 +35,11 @@ uses:
   - urn:ngm:class:seed-phrase
 supports:
   - urn:ngm:class:self-custody
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:hardware-wallet
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 relatedTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:gas-fee

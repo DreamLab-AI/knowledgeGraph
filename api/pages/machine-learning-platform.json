@@ -45,6 +45,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -126,12 +131,12 @@
         "label": "Virtualisation"
       },
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -256,16 +261,16 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
       }
     ],
     "uses": [
@@ -282,7 +287,7 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -312,8 +317,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cloud-platform",
@@ -350,8 +355,8 @@
         "label": "NIST Cloud Computing Definition"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

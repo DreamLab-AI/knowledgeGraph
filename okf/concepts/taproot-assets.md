@@ -87,7 +87,7 @@ uses:
   - urn:ngm:class:lightning-channels
   - urn:ngm:class:universe-servers
 supports:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:machine-to-machine-payments
   - urn:ngm:class:stablecoins-on-bitcoin
   - urn:ngm:class:tether-usdt-on-lightning

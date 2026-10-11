@@ -20,7 +20,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:data-augmentation-strategies
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Data Poisoning

@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:infrastructure
 uses:
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 supports:
   - urn:ngm:class:ros-2
   - urn:ngm:class:safety-critical-systems

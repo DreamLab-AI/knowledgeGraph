@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regridded-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Regridded data state is the SWEET data-processing state of data that have been moved from one grid to another by a regridding process.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

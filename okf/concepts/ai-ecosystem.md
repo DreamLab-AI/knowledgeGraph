@@ -8,10 +8,9 @@ description: The AI Ecosystem is the interconnected network of organisations, te
 maturity: established
 quality: 0.93
 is-a:
-  - urn:ngm:class:digital-asset-ecosystem
   - urn:ngm:class:digital-economy
 hasPart:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-inference
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:foundation-model
@@ -28,7 +27,7 @@ hasPart:
 requires:
   - urn:ngm:class:gpu-computing
   - urn:ngm:class:data-centre
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-centre
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transformer-architecture
@@ -49,13 +48,13 @@ dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
 implements:
   - urn:ngm:class:ai-policy
   - urn:ngm:class:national-ai-strategy
   - urn:ngm:class:ai-governance-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:sovereign-ai
   - urn:ngm:class:digital-asset-ecosystem
@@ -64,7 +63,7 @@ uses:
   - urn:ngm:class:ai-chips
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:agent-frameworks
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-inference
 supports:
   - urn:ngm:class:ai-governance
@@ -75,14 +74,14 @@ supports:
   - urn:ngm:class:sovereign-ai
   - urn:ngm:class:ai-standards
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-standards
   - urn:ngm:class:ai-governance-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 relatedTo:
   - urn:ngm:class:ai-policy
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:sovereign-ai
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:ai-startups

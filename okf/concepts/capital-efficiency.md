@@ -8,7 +8,7 @@ description: Capital efficiency is the degree to which deployed capital is put t
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:liquidity
   - urn:ngm:class:collateral
@@ -22,14 +22,14 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:market-microstructure
 uses:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 supports:
   - urn:ngm:class:market-maker
   - urn:ngm:class:trade-execution
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:liquidity
   - urn:ngm:class:risk-management
   - urn:ngm:class:collateral

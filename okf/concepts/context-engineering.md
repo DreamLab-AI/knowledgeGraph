@@ -26,10 +26,10 @@ hasPart:
   - urn:ngm:class:tool-schema
 requires:
   - urn:ngm:class:evaluation-harness
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:memory-store
   - urn:ngm:class:retrieval-system
-  - urn:ngm:class:tokenizer
+  - urn:ngm:class:tokeniser
   - urn:ngm:class:context-window
   - urn:ngm:class:large-language-model
 enables:

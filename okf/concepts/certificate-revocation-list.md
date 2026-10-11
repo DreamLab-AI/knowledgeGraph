@@ -30,7 +30,7 @@ standardizedBy:
   - urn:ngm:class:ietf
 partOf:
   - urn:ngm:class:cryptographic-infrastructure
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:certificate-transparency
   - urn:ngm:class:certificate-authority

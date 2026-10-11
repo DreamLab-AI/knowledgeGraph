@@ -16,12 +16,19 @@ hasPart:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:key-derivation-function
   - urn:ngm:class:random-number-generation
+  - urn:ngm:class:cryptographic-hash-function
+  - urn:ngm:class:public-key-cryptography
+  - urn:ngm:class:zero-knowledge-proof
+  - urn:ngm:class:merkle-tree
+  - urn:ngm:class:cryptographic-commitment
+  - urn:ngm:class:elliptic-curve-cryptography
 enables:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:blockchain
+  - urn:ngm:class:consensus-mechanism
 bridgesTo:
   - urn:ngm:class:cryptography
   - urn:ngm:class:ai-agent-system
@@ -36,6 +43,7 @@ relatedTo:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:proof-of-work
+  - urn:ngm:class:public-key-infrastructure
 ---
 
 # Cryptographic Primitive

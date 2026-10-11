@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:reasoning
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:symbolic-ai
 ---
 

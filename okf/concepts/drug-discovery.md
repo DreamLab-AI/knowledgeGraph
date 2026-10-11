@@ -41,7 +41,7 @@ dependsOn:
   - urn:ngm:class:protein-structure-prediction
   - urn:ngm:class:deep-learning
   - urn:ngm:class:molecular-dynamics-simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:computer-aided-drug-design
   - urn:ngm:class:structure-based-drug-design
@@ -59,7 +59,7 @@ uses:
   - urn:ngm:class:generative-model
   - urn:ngm:class:transformer
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:active-learning
   - urn:ngm:class:molecular-dynamics-simulation

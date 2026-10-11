@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:ethereum
 contrastsWith:
@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:ipfs
   - urn:ngm:class:wallet
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-autonomous-organisation
 partOf:

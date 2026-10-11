@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:owl-thing
 requires:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 bridgesTo:
   - urn:ngm:class:entropy
 ---

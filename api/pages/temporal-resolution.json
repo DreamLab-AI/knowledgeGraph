@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:temporal-resolution",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Temporal resolution is the ability of a remote sensing system to collect imagery of the same area of the Earth's surface at different times, and it is tied to the revisit period of the sensor.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

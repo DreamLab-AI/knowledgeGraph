@@ -84,7 +84,7 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -266,16 +266,16 @@
         "label": "Sigstore"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:openpgp",
@@ -347,8 +347,8 @@
         "label": "Certificate Transparency"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:verifiable-random-function",
@@ -414,32 +414,32 @@
         "label": "Asymmetric Encryption"
       },
       {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
         "id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
       },
       {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
         "id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
-      },
-      {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
-      },
-      {
-        "id": "urn:ngm:class:key-pair",
-        "label": "Key Pair"
-      },
-      {
-        "id": "urn:ngm:class:challenge-response-protocol",
-        "label": "Challenge-Response Protocol"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-credential-standard",
-        "label": "Credential"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
@@ -482,12 +482,16 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
       },
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-multi-party-computation",
@@ -502,12 +506,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
-      },
-      {
-        "id": "urn:ngm:class:authorisation",
-        "label": "Authorisation"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       }
     ],
     "dependsOn": [
@@ -540,7 +540,7 @@
         "label": "Secure Communication"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -639,10 +639,10 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -664,10 +664,6 @@
         "label": "One-Time Password"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -678,6 +674,10 @@
       {
         "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
       }
     ],
     "supports": [
@@ -796,12 +796,12 @@
         "label": "Proof Of Work"
       },
       {
-        "id": "urn:ngm:class:fido2",
-        "label": "FIDO2"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:session-management",
-        "label": "Session Management"
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
       }
     ]
   },
@@ -1099,7 +1099,7 @@
       "label": "ML-DSA"
     },
     {
-      "slug": "multi-signature",
+      "slug": "multisignature",
       "label": "Multi-Signature"
     },
     {
@@ -1283,7 +1283,7 @@
       "label": "Threshold Signature"
     },
     {
-      "slug": "tls",
+      "slug": "transport-layer-security",
       "label": "TLS"
     },
     {
@@ -1605,12 +1605,8 @@
       "label": "VERIFICATION"
     },
     {
-      "slug": "verifiable-credential-vc",
-      "label": "Verifiable Credential (VC)"
-    },
-    {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     },
     {
       "slug": "virtual-notary-service",
@@ -1629,8 +1625,8 @@
       "label": "blockchain core concepts"
     },
     {
-      "slug": "e-idas",
-      "label": "eIDAS"
+      "slug": "eidas-regulation",
+      "label": "eIDAS Regulation"
     }
   ]
 }

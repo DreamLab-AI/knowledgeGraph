@@ -33,7 +33,7 @@ dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:value-alignment
 implements:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:direct-preference-optimisation
 contrastsWith:
@@ -55,8 +55,8 @@ supports:
   - urn:ngm:class:risk-management
   - urn:ngm:class:ai-regulation
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:bletchley-declaration
 partOf:

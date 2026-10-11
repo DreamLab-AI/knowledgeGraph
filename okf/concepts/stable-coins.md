@@ -33,7 +33,7 @@ requires:
 enables:
   - urn:ngm:class:treasury-management
   - urn:ngm:class:cross-border-remittances
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:on-chain-settlement
   - urn:ngm:class:payments-infrastructure
   - urn:ngm:class:yield-generation
@@ -53,7 +53,7 @@ implements:
   - urn:ngm:class:algorithmic-stabilisation
   - urn:ngm:class:over-collateralisation
 contrastsWith:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:bitcoin-proof-of-work-protocol-as-money
   - urn:ngm:class:traditional-bank-deposits
   - urn:ngm:class:money
@@ -63,15 +63,15 @@ bridgesTo:
 uses:
   - urn:ngm:class:avalanche
   - urn:ngm:class:base
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:solana
   - urn:ngm:class:tron-network
   - urn:ngm:class:base
   - urn:ngm:class:multi-party-computation-custody
 supports:
   - urn:ngm:class:cross-border-remittances
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:trade-finance
   - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:metaverse-payments
@@ -80,7 +80,7 @@ standardizedBy:
   - urn:ngm:class:basel-iii
   - urn:ngm:class:stablecoin-regulation
   - urn:ngm:class:genius-act
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:genius-act
   - urn:ngm:class:stablecoin-regulation
   - urn:ngm:class:fasb-asc-350-60

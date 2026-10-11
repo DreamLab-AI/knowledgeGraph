@@ -24,7 +24,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:cryptocurrency
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:asset-management
 uses:
   - urn:ngm:class:tokenization

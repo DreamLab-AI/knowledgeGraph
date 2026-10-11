@@ -19,7 +19,7 @@ uses:
   - urn:ngm:class:learning-resources
 supports:
   - urn:ngm:class:education-technology
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:blockchain
 ---

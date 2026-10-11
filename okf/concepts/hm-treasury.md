@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:us-treasury
 bridgesTo:
   - urn:ngm:class:cryptoasset-regulation
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:open-banking
 uses:
   - urn:ngm:class:taxation
@@ -43,7 +43,7 @@ relatedTo:
   - urn:ngm:class:government-institution
   - urn:ngm:class:prudential-regulation-authority
   - urn:ngm:class:chancellor-of-the-exchequer
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # HM Treasury

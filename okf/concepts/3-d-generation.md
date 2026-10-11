@@ -40,7 +40,7 @@ enables:
 dependsOn:
   - urn:ngm:class:image-generation
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:point-cloud
   - urn:ngm:class:computer-vision

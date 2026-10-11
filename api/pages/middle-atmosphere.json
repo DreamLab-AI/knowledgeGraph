@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:middle-atmosphere",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Collectively, the stratosphere and the mesosphere taken together are termed the middle atmosphere.[^1][^2] UCAR says the two layers together are sometimes referred to by this name, and the draft ISO text says they span heights from approximately 10 km to 100 km.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:atmosphere-layer",

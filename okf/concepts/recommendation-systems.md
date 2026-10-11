@@ -8,7 +8,7 @@ description: "Recommendation Systems are information filtering systems that pred
 maturity: established
 quality: 0.75
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-application
 hasPart:
   - urn:ngm:class:collaborative-systems-modality-filtering
@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:nearest-neighbor-search
 relatedTo:
   - urn:ngm:class:recommendation-engine
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:filter-bubble
   - urn:ngm:class:algorithmic-amplification
 ---

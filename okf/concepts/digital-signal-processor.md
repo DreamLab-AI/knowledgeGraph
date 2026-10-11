@@ -26,7 +26,7 @@ supports:
   - urn:ngm:class:speech-recognition
 partOf:
   - urn:ngm:class:audio-system
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:energy-efficiency

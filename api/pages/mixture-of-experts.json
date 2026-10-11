@@ -10,18 +10,48 @@
     {
       "id": "urn:ngm:class:neural-network-architecture",
       "label": "Neural Network Architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-scaling",
         "label": "Model Scaling"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Training"
       }
     ],
     "dependsOn": [],
@@ -30,13 +60,36 @@
       {
         "id": "urn:ngm:class:monolithic-ai",
         "label": "Monolithic AI"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Learning"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -49,24 +102,27 @@
       {
         "id": "urn:ngm:class:attention-mechanisms",
         "label": "Attention Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Switch Transformer"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture",
-      "slug": "ai-model-architecture"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:model-architecture",
       "label": "Model Architecture",
       "slug": "model-architecture"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:system-architecture",
@@ -148,24 +204,24 @@
         "label": "Loss Function"
       },
       {
-        "id": "urn:ngm:class:computational-resources",
-        "label": "Computational Resource"
-      },
-      {
-        "id": "urn:ngm:class:optimisation-algorithm",
-        "label": "Optimisation Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resource"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       }
     ],
     "enables": [
@@ -178,28 +234,28 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      },
-      {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:ai-model-development",
-        "label": "AI Model Development"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:model-inference",
-        "label": "Model Inference"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
@@ -298,14 +354,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:hardware-accelerator",
-        "label": "Hardware Accelerator"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -320,6 +368,14 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:ai-safety",
@@ -400,8 +456,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -436,8 +492,8 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -452,8 +508,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -481,6 +537,18 @@
     {
       "slug": "monolithic-ai",
       "label": "Monolithic Ai"
+    },
+    {
+      "slug": "research",
+      "label": "research"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "natural language processing"
     }
   ],
   "backlinks": [

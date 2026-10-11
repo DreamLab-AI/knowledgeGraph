@@ -15,14 +15,14 @@ requires:
 dependsOn:
   - urn:ngm:class:authentication
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-regulation
 bridgesTo:
   - urn:ngm:class:traditional-finance
 uses:
   - urn:ngm:class:centralised-exchange
   - urn:ngm:class:custodial-wallet
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 supports:
   - urn:ngm:class:liquidity
 partOf:

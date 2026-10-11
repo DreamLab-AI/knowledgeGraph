@@ -205,10 +205,6 @@
         "label": "Machine Learning for Graphics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning for Graphics"
-      },
-      {
         "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
       },
@@ -227,6 +223,10 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [

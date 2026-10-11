@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:machine-learning-domain
 requires:
   - urn:ngm:class:shapley-value
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:cooperative-game-theory
 enables:
   - urn:ngm:class:model-interpretability

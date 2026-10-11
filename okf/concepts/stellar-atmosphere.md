@@ -4,6 +4,7 @@ type: Class
 title: Stellar Atmosphere
 resource: urn:ngm:class:stellar-atmosphere
 domain: space-science-and-systems
+description: A stellar atmosphere is the outer part of a star, beginning with the photosphere as its bottom layer.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Stellar Atmosphere
+
+A stellar atmosphere is the outer part of a star, beginning with the photosphere as its bottom layer.[^1]

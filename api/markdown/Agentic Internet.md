@@ -193,7 +193,7 @@ The computer-using agent (CUA) is the most visible end-user manifestation of the
 - **[[Bittensor]]**: subnet-based decentralised AI network; subnets host specialised agent capabilities (text generation, translation, prediction markets, validation) competing for TAO emissions.
 - **[[Ritual]]**: protocol for verifiable AI inference on-chain; partnerships with Polygon and EigenLayer.
 - **[[Gensyn]]** (UK, London/Edinburgh): decentralised compute marketplace for ML training; raised $43M Series A 2023 led by a16z. Demonstrates Northern UK academic-industrial pipeline (Edinburgh, Imperial alumni).
-- **[[Nostr]] + [[Bitcoin Proof-of-Work Protocol]] + [[Lightning Network]] stacks**: an alternative architecture (covered extensively in this page's earlier draft) that combines [[Decentralized Identity]] (DIDs over Nostr keypairs), [[censorship-resistant]] communication ([[Nostr relays]]) and [[programmable money]] ([[RGB Protocol]] on Bitcoin with [[client-side validation]]). Materially different trust model from the OAuth+fiat mainstream stack.
+- **[[Nostr]] + [[Bitcoin Proof-of-Work Protocol]] + [[Lightning Network]] stacks**: an alternative architecture (covered extensively in this page's earlier draft) that combines [[Decentralised Identity]] (DIDs over Nostr keypairs), [[censorship-resistant]] communication ([[Nostr relays]]) and [[programmable money]] ([[RGB Protocol]] on Bitcoin with [[client-side validation]]). Materially different trust model from the OAuth+fiat mainstream stack.
 
   ### Agentic Commerce Layer
 
@@ -469,7 +469,7 @@ By 2027 MCP+A2A or successor protocols are expected to consolidate to two-or-thr
 
 ### Agent Identity and Authorisation
 
-**[[Decentralized Identifiers]]** and **[[Verifiable Credentials]]** mature into the default identity primitives for agents acting across organisational boundaries. Trust over IP Foundation governance frameworks and eIDAS 2.0 EU Digital Identity Wallet provide compliance scaffolding. Anthropic, Google and Microsoft propose 'AgentVC' profile for delegated authority claims by 2027. Capability tokens — sub-OAuth-scope per-tool-call authorisations — emerge as a distinct primitive complementing OAuth scopes.
+**[[Decentralised Identifier]]** and **[[Verifiable Credential]]** mature into the default identity primitives for agents acting across organisational boundaries. Trust over IP Foundation governance frameworks and eIDAS 2.0 EU Digital Identity Wallet provide compliance scaffolding. Anthropic, Google and Microsoft propose 'AgentVC' profile for delegated authority claims by 2027. Capability tokens — sub-OAuth-scope per-tool-call authorisations — emerge as a distinct primitive complementing OAuth scopes.
 
 ### Agentic Commerce Maturation
 

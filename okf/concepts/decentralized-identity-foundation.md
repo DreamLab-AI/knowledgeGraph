@@ -15,13 +15,13 @@ hasPart:
   - urn:ngm:class:decentralized-web-node
   - urn:ngm:class:presentation-exchange
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-key-management
 enables:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:did-document
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 implements:
   - urn:ngm:class:w3-c-did-core
   - urn:ngm:class:w-3-c-verifiable-credentials-data-model

@@ -21,12 +21,12 @@ dependsOn:
   - urn:ngm:class:congestion-control
 supports:
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:latency
   - urn:ngm:class:network-latency
   - urn:ngm:class:quality-of-service
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Network Bandwidth

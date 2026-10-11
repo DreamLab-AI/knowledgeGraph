@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:federated-learning
   - urn:ngm:class:edge-ai
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 dependsOn:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:neural-network-architecture
@@ -40,9 +40,9 @@ supports:
   - urn:ngm:class:reproducibility
   - urn:ngm:class:reproducibility
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:osi-open-source-ai-definition
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:open-source-software
 relatedTo:

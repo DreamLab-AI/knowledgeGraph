@@ -25,7 +25,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:auto-scaling",
+        "id": "urn:ngm:class:autoscaling",
         "label": "Auto Scaling"
       },
       {

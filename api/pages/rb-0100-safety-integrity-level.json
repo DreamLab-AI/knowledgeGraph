@@ -111,24 +111,24 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:legal-framework",
-      "label": "Legal Framework",
-      "slug": "legal-framework"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory",
-      "slug": "infra-legal-and-regulatory"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework",
+      "slug": "legal-framework"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
@@ -274,7 +274,7 @@
         "label": "Speed Monitoring"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       },
       {
@@ -312,20 +312,8 @@
         "label": "Regulatory Arbitrage"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
       },
       {
         "id": "urn:ngm:class:application-layer",
@@ -380,7 +368,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -430,8 +418,8 @@
         "label": "Intellectual Property Law"
       },
       {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [
@@ -440,8 +428,8 @@
         "label": "Iso Standards"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:bank-for-international-settlements",

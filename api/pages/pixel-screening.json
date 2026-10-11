@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pixel-screening",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Pixel screening is the per-pixel assessment of observations, such as flags for missing data, saturation, cloud and cloud shadow, which lets users choose observations by their suitability for an application.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:robotic-arm
   - urn:ngm:class:sensor-system
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:motion-control
   - urn:ngm:class:collaborative-systems-modality-robotics
   - urn:ngm:class:humanoid-robots

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:parameter-efficient-fine-tuning",
       "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -34,6 +38,14 @@
       {
         "id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "enables": [
@@ -48,6 +60,10 @@
       {
         "id": "urn:ngm:class:multi-task-learning",
         "label": "Multi-Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
       }
     ],
     "dependsOn": [
@@ -78,6 +94,10 @@
       {
         "id": "urn:ngm:class:prefix-tuning",
         "label": "Prefix Tuning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
       }
     ],
     "bridgesTo": [
@@ -149,11 +169,6 @@
     ]
   },
   "inferredSuperClasses": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
@@ -245,12 +260,6 @@
         "label": "Gradient Descent"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:knowledge-distillation",
-        "label": "Knowledge Distillation"
-      }
-    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-ai",
@@ -287,10 +296,6 @@
       {
         "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -342,6 +347,10 @@
     {
       "slug": "https-github-com-microsoft-lo-ra",
       "label": "https://github.com/microsoft/LoRA"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
     }
   ],
   "backlinks": [

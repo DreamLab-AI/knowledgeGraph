@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ice-sheet",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An ice sheet is a glacier of land ice covering more than 50,000 square kilometres.[^1][^2] Its place as a kind of glacier matches the SWEET hierarchy, where the class sits below glacier.[^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:glacier",

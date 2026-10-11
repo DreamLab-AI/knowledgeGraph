@@ -118,7 +118,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -172,8 +172,8 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:tpu",

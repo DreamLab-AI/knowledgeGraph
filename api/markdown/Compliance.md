@@ -83,7 +83,7 @@ Compliance is the organisational practice of adhering to laws, regulations, stan
 - **EU AI Act (2024)** — first comprehensive AI regulation establishing risk-based compliance obligations; sets global precedent for AI governance regulation.
 - **FATF Recommendations** — international anti-money laundering and counter-terrorism financing standards implemented by member states through national AML/CFT legislation.
 - **Basel III/IV** — international banking regulatory standards governing capital adequacy, liquidity, and leverage; implemented via national banking regulation.
-- Standards bodies active in this space: [[ISO]], [[NIST]], [[AICPA]], [[ENISA]], [[W3C]] (for web accessibility compliance), and national regulators including the ICO (UK), CNIL (France), BaFin (Germany), and FCA (UK).
+- Standards bodies active in this space: [[ISO]], [[NIST]], [[AICPA]], [[ENISA]], [[World Wide Web Consortium]] (for web accessibility compliance), and national regulators including the ICO (UK), CNIL (France), BaFin (Germany), and FCA (UK).
 
 ### Design Considerations
 

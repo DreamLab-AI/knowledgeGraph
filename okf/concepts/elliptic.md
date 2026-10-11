@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:on-chain-data
   - urn:ngm:class:heuristic-clustering
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:transaction-monitoring
   - urn:ngm:class:sanctions-screening
   - urn:ngm:class:regulatory-compliance
@@ -30,7 +30,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:heuristic-clustering
   - urn:ngm:class:risk-scoring
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:entity-attribution
 supports:
   - urn:ngm:class:fatf-travel-rule
@@ -38,8 +38,8 @@ supports:
   - urn:ngm:class:bc-0456-virtual-asset-service-providers
   - urn:ngm:class:financial-institution
 relatedTo:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:dark-web-monitoring
 ---
 

@@ -30,14 +30,14 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:relational-database
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:data-governance
 uses:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:graph-database
   - urn:ngm:class:sparql
   - urn:ngm:class:embedding-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 standardizedBy:
   - urn:ngm:class:rdf
   - urn:ngm:class:owl

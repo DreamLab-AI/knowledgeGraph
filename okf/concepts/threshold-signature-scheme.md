@@ -16,7 +16,7 @@ requires:
 enables:
   - urn:ngm:class:key-management
   - urn:ngm:class:threshold-cryptography
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:mpc-wallet
   - urn:ngm:class:institutional-custody
 dependsOn:
@@ -25,11 +25,11 @@ dependsOn:
 implements:
   - urn:ngm:class:digital-signature
 contrastsWith:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:hardware-security-module
 bridgesTo:
-  - urn:ngm:class:tee
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:trusted-execution-environment
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:elliptic-curve-cryptography

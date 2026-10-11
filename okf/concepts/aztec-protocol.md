@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:aztec
 requires:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:zk-snark
   - urn:ngm:class:commitment-scheme
 enables:
@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:optimistic-rollup
 bridgesTo:
   - urn:ngm:class:security
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:aztec-network
 uses:
   - urn:ngm:class:homomorphic-encryption

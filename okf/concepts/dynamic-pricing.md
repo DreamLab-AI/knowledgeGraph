@@ -23,7 +23,7 @@ hasPart:
 requires:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:data-aggregation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:time-series-analysis
 enables:
@@ -35,7 +35,7 @@ enables:
   - urn:ngm:class:supply-chain-planning
 dependsOn:
   - urn:ngm:class:demand-forecasting
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:real-time-data-pipeline
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:predictive-analytics

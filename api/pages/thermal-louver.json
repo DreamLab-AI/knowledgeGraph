@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:thermal-louver",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A thermal louver is a thermally activated shutter assembly that regulates how much heat a covered surface can dissipate by changing the surface's effective emission.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

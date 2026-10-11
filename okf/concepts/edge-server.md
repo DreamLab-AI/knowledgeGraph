@@ -14,7 +14,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:origin-server
 partOf:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Edge Server

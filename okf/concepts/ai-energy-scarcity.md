@@ -13,7 +13,7 @@ contrastsWith:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-mining
 relatedTo:
   - urn:ngm:class:energy-and-power
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:competition-in-ai
 ---
 

@@ -72,7 +72,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:open-container-initiative
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:agent-development-sdks
   - urn:ngm:class:multi-agent-orchestration-frameworks

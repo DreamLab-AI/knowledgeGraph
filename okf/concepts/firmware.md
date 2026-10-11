@@ -8,7 +8,7 @@ description: Firmware is the low-level software stored in non-volatile memory th
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
   - urn:ngm:class:bootloader
   - urn:ngm:class:device-drivers

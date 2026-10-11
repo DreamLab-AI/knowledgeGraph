@@ -32,8 +32,8 @@
         "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [],
@@ -173,10 +173,6 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
         "id": "urn:ngm:class:real-time-inference",
         "label": "Real-Time Inference"
       },
@@ -199,6 +195,10 @@
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -321,8 +321,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:edge-computing",
@@ -347,8 +347,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

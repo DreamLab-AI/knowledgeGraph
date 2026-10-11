@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spot-beam",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spot beam is a relatively focused satellite antenna beam that illuminates a smaller surface region than a broader coverage beam in the same system.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

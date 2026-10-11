@@ -4,6 +4,7 @@ type: Class
 title: Time-domain Astronomy
 resource: urn:ngm:class:time-domain-astronomy
 domain: space-science-and-systems
+description: Time-domain astronomy is the study of how astronomical sources change with time, carried out through repeated observations of large areas of sky to find variable and transient phenomena.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Time-domain Astronomy
+
+Time-domain astronomy is the study of how astronomical sources change with time, carried out through repeated observations of large areas of sky to find variable and transient phenomena.[^1][^2]

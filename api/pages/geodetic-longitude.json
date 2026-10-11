@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geodetic-longitude",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geodetic longitude is the angle from the prime meridian plane to the meridian plane of a given point, with eastward treated as positive.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

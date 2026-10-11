@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:secure-systems
 dependsOn:
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:defence-in-depth

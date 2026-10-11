@@ -16,7 +16,7 @@ uses:
   - urn:ngm:class:ontology
   - urn:ngm:class:version-control
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Scholarly Manuscript Composition Process

@@ -28,7 +28,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:oracle
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
 supports:
   - urn:ngm:class:supply-chain-management
 partOf:

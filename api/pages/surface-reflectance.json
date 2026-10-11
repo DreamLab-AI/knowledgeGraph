@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:surface-reflectance",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Surface reflectance is the dimensionless reflectance of the land surface that remains after the atmospheric contribution has been removed from top-of-atmosphere measurements.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

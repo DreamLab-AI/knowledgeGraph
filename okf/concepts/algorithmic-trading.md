@@ -15,7 +15,7 @@ enables:
 dependsOn:
   - urn:ngm:class:latency
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-trading
   - urn:ngm:class:crypto-trading
 uses:

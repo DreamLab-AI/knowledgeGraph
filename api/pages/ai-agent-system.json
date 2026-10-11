@@ -439,8 +439,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
@@ -513,8 +513,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:adversarial-machine-learning",
@@ -1314,6 +1314,10 @@
       "label": "AI Ethics Checklist"
     },
     {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
       "slug": "ai-game-agent",
       "label": "AI Game Agent"
     },
@@ -1354,6 +1358,10 @@
       "label": "AI System (EU Definition)"
     },
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "ai-tri-sm",
       "label": "AI TRiSM"
     },
@@ -1380,14 +1388,6 @@
     {
       "slug": "aicafev6",
       "label": "AICafev6"
-    },
-    {
-      "slug": "aiethics",
-      "label": "AIEthics"
-    },
-    {
-      "slug": "aisystem",
-      "label": "AISystem"
     },
     {
       "slug": "albert",
@@ -1558,20 +1558,16 @@
       "label": "Cybersecurity Standard"
     },
     {
-      "slug": "dao",
-      "label": "DAO"
-    },
-    {
       "slug": "dc-servo-motor",
       "label": "DC Servo Motor"
     },
     {
-      "slug": "de-fi-protocol",
-      "label": "De Fi Protocol"
+      "slug": "defi-protocol",
+      "label": "DeFi Protocol"
     },
     {
-      "slug": "decentralized-autonomous-organization",
-      "label": "Decentralized Autonomous Organization"
+      "slug": "decentralised-autonomous-organisation",
+      "label": "decentralised autonomous organisation"
     },
     {
       "slug": "decentralized-swarm-control",

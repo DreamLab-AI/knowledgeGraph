@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:research-funding
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:probabilistic-programming
   - urn:ngm:class:robotics

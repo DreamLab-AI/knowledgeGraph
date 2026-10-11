@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:sensors
 enables:
   - urn:ngm:class:navigation
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:localisation
   - urn:ngm:class:robot-pose
 dependsOn:
   - urn:ngm:class:sensor-calibration
@@ -44,7 +44,7 @@ partOf:
   - urn:ngm:class:mobile-robotics
   - urn:ngm:class:autonomous-navigation
 relatedTo:
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:kalman-filter
   - urn:ngm:class:slam
 ---

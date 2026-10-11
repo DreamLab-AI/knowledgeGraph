@@ -8,14 +8,6 @@
   "definition": "A decision engine is a software component that encapsulates decision logic\u2014rules, models, policies, or heuristics\u2014and evaluates inputs against that logic to produce actionable outputs such as approvals, classifications, recommendations, or routing choices. Decision engines decouple business logic from application code, enabling non-developers to modify decision policies without code deployments, and support auditability by providing traceable reasoning paths for each decision. They range from rule-based expert systems to ML model inference services to hybrid architectures combining both. The emergence of large language model reasoning cores has extended the decision engine concept to unstructured input spaces, enabling complex multi-step decisioning with natural language explanation traces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:inference-engine",
-      "label": "Inference Engine"
-    },
-    {
-      "id": "urn:ngm:class:automated-reasoning",
-      "label": "Automated Reasoning"
-    },
-    {
       "id": "urn:ngm:class:expert-systems",
       "label": "Expert Systems"
     },
@@ -132,7 +124,7 @@
         "label": "Policy Engine"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -235,8 +227,8 @@
         "label": "Constraint Satisfaction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:symbolic-ai",
@@ -381,29 +373,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:inference",
-      "label": "Inference",
-      "slug": "inference"
-    },
-    {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation",
       "slug": "knowledge-representation"
-    },
-    {
-      "id": "urn:ngm:class:reasoning",
-      "label": "Reasoning",
-      "slug": "reasoning"
-    },
-    {
-      "id": "urn:ngm:class:symbolic-ai",
-      "label": "Symbolic AI",
-      "slug": "symbolic-ai"
-    },
-    {
-      "id": "urn:ngm:class:symbolic-reasoning",
-      "label": "Symbolic Reasoning",
-      "slug": "symbolic-reasoning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -411,386 +383,47 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:artificial-general-intelligence",
-      "label": "Artificial General Intelligence",
-      "slug": "artificial-general-intelligence"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:cognitive-ai",
-      "label": "Cognitive AI",
-      "slug": "cognitive-ai"
-    },
-    {
-      "id": "urn:ngm:class:formal-verification",
-      "label": "Formal Verification",
-      "slug": "formal-verification"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing",
-      "slug": "natural-language-processing"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:cognitive-architecture",
-      "label": "Cognitive Architecture",
-      "slug": "cognitive-architecture"
-    },
-    {
-      "id": "urn:ngm:class:cognitive-science",
-      "label": "Cognitive Science",
-      "slug": "cognitive-science"
-    },
-    {
-      "id": "urn:ngm:class:foundation-model-capability",
-      "label": "Foundation Model Capability",
-      "slug": "foundation-model-capability"
-    },
-    {
-      "id": "urn:ngm:class:frontier-ai",
-      "label": "Frontier AI",
-      "slug": "frontier-ai"
-    },
-    {
-      "id": "urn:ngm:class:general-intelligence",
-      "label": "General Intelligence",
-      "slug": "general-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:hybrid-ai",
-      "label": "Hybrid AI",
-      "slug": "hybrid-ai"
-    },
-    {
-      "id": "urn:ngm:class:neuro-symbolic-ai",
-      "label": "Neuro Symbolic Ai",
-      "slug": "neuro-symbolic-ai"
-    },
-    {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:agent",
-      "label": "Agent",
-      "slug": "agent"
-    },
-    {
-      "id": "urn:ngm:class:agent-based-modelling",
-      "label": "Agent-Based Modelling",
-      "slug": "agent-based-modelling"
-    },
-    {
-      "id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture",
-      "slug": "ai-model-architecture"
-    },
-    {
-      "id": "urn:ngm:class:foundation-model-layer",
-      "label": "Foundation Model Layer",
-      "slug": "foundation-model-layer"
-    },
-    {
-      "id": "urn:ngm:class:interdisciplinary-science",
-      "label": "Interdisciplinary Science",
-      "slug": "interdisciplinary-science"
-    },
-    {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:autonomous-system",
-      "label": "Autonomous System",
-      "slug": "autonomous-system"
-    },
-    {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain",
-      "slug": "blockchain"
-    },
-    {
-      "id": "urn:ngm:class:complex-systems-science",
-      "label": "Complex Systems Science",
-      "slug": "complex-systems-science"
-    },
-    {
-      "id": "urn:ngm:class:complexity-science",
-      "label": "Complexity Science",
-      "slug": "complexity-science"
-    },
-    {
-      "id": "urn:ngm:class:computational-modelling",
-      "label": "Computational Modelling",
-      "slug": "computational-modelling"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
-    },
-    {
-      "id": "urn:ngm:class:simulation",
-      "label": "Simulation",
-      "slug": "simulation"
-    },
-    {
-      "id": "urn:ngm:class:cryptographic-system",
-      "label": "Cryptographic System",
-      "slug": "cryptographic-system"
-    },
-    {
-      "id": "urn:ngm:class:digital-twin",
-      "label": "Digital Twin",
-      "slug": "digital-twin"
-    },
-    {
-      "id": "urn:ngm:class:distributed-data-structure",
-      "label": "Distributed Data Structure",
-      "slug": "distributed-data-structure"
-    },
-    {
-      "id": "urn:ngm:class:distributed-ledger",
-      "label": "Distributed Ledger",
-      "slug": "distributed-ledger"
-    },
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type",
-      "slug": "robo-robot-type"
-    },
-    {
-      "id": "urn:ngm:class:scientific-machine-learning",
-      "label": "Scientific Machine Learning",
-      "slug": "scientific-machine-learning"
-    },
-    {
-      "id": "urn:ngm:class:append-only-log",
-      "label": "Append-Only Log",
-      "slug": "append-only-log"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity",
-      "slug": "blockchain-entity"
-    },
-    {
-      "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "Cryptographic Primitive",
-      "slug": "cryptographic-primitive"
-    },
-    {
-      "id": "urn:ngm:class:data-structure",
-      "label": "Data Structure",
-      "slug": "data-structure"
-    },
-    {
-      "id": "urn:ngm:class:distributed-system",
-      "label": "Distributed System",
-      "slug": "distributed-system"
-    },
-    {
-      "id": "urn:ngm:class:multi-party-database",
-      "label": "Multi-Party Database",
-      "slug": "multi-party-database"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "Network Component",
-      "slug": "network-component"
-    },
-    {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
-    },
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
-      "id": "urn:ngm:class:scientific-discovery",
-      "label": "Scientific Discovery",
-      "slug": "scientific-discovery"
-    },
-    {
-      "id": "urn:ngm:class:state-machine-replication",
-      "label": "State Machine Replication",
-      "slug": "state-machine-replication"
-    },
-    {
-      "id": "urn:ngm:class:automation",
-      "label": "Automation",
-      "slug": "automation"
-    },
-    {
-      "id": "urn:ngm:class:cryptography",
-      "label": "Cryptography",
-      "slug": "cryptography"
-    },
-    {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing",
-      "slug": "distributed-computing"
-    },
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud",
-      "slug": "infra-computing-and-cloud"
-    },
-    {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing",
-      "slug": "concurrent-computing"
-    },
-    {
-      "id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems",
-      "slug": "coordination-systems"
-    },
-    {
-      "id": "urn:ngm:class:cryptographic-security",
-      "label": "Cryptographic Security",
-      "slug": "cryptographic-security"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication",
-      "slug": "infra-network-and-comms"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:networked-systems",
-      "label": "Networked Systems",
-      "slug": "networked-systems"
-    },
-    {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
-      "id": "urn:ngm:class:security",
-      "label": "Security",
-      "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:governance",
-      "label": "Governance",
-      "slug": "governance"
-    },
-    {
-      "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Security and Identity",
-      "slug": "infra-security-and-identity"
-    },
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Legal and Regulatory",
-      "slug": "infra-legal-and-regulatory"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:dynamic-batching",
-        "label": "Dynamic Batching"
-      },
-      {
-        "id": "urn:ngm:class:kernel-auto-tuning",
-        "label": "Kernel Auto-Tuning"
-      },
-      {
-        "id": "urn:ngm:class:operator-fusion",
-        "label": "Operator Fusion"
-      },
-      {
-        "id": "urn:ngm:class:quantisation",
-        "label": "Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:automated-theorem-proving",
-        "label": "Automated Theorem Proving"
-      },
-      {
-        "id": "urn:ngm:class:constraint-satisfaction",
-        "label": "Constraint Satisfaction"
-      },
-      {
-        "id": "urn:ngm:class:description-logic",
-        "label": "Description Logic"
-      },
-      {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:hardware-acceleration",
-        "label": "Hardware Acceleration"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-model",
-        "label": "Machine Learning Model"
-      },
-      {
-        "id": "urn:ngm:class:first-order-logic",
-        "label": "First-Order Logic"
-      },
-      {
-        "id": "urn:ngm:class:formal-logic",
-        "label": "Formal Logic"
-      },
-      {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
-      {
-        "id": "urn:ngm:class:inference-engine",
-        "label": "Inference Engine"
-      },
       {
         "id": "urn:ngm:class:production-rules",
         "label": "Production Rules"
@@ -798,63 +431,59 @@
       {
         "id": "urn:ngm:class:controlled-vocabulary",
         "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:ai-deployment",
-        "label": "AI Deployment"
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
       },
       {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Large Language Model Serving"
-      },
-      {
-        "id": "urn:ngm:class:real-time-inference-at-edge",
-        "label": "Real-Time Inference at Edge"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:expert-systems",
-        "label": "Expert Systems"
+        "label": "Expert System"
       },
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:program-synthesis",
-        "label": "Program Synthesis"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:inference-hardware",
-        "label": "Inference Hardware"
-      },
-      {
-        "id": "urn:ngm:class:tensor-processing-unit",
-        "label": "Tensor Processing Unit"
-      },
-      {
-        "id": "urn:ngm:class:first-order-logic",
-        "label": "First-Order Logic"
-      },
-      {
-        "id": "urn:ngm:class:inference-engine",
-        "label": "Inference Engine"
-      },
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
@@ -862,21 +491,9 @@
       {
         "id": "urn:ngm:class:logic-programming",
         "label": "Logic Programming"
-      },
-      {
-        "id": "urn:ngm:class:compute-resources",
-        "label": "Compute Resource"
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:logic-programming",
-        "label": "Logic Programming"
-      },
       {
         "id": "urn:ngm:class:backward-chaining",
         "label": "Backward Chaining"
@@ -892,35 +509,11 @@
       {
         "id": "urn:ngm:class:open-world-assumption",
         "label": "Open World Assumption"
-      },
-      {
-        "id": "urn:ngm:class:chain-of-thought",
-        "label": "Chain-of-Thought Prompting"
-      },
-      {
-        "id": "urn:ngm:class:monte-carlo-tree-search",
-        "label": "Monte Carlo Tree Search"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:eager-execution",
-        "label": "Eager Execution"
-      },
-      {
-        "id": "urn:ngm:class:training-framework",
-        "label": "Training Framework"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-reasoning",
-        "label": "Probabilistic Reasoning"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -928,19 +521,11 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:training",
-        "label": "Training"
+        "id": "urn:ngm:class:sub-symbolic-ai",
+        "label": "Sub-Symbolic AI"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
@@ -954,81 +539,53 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:spatial-ai",
-        "label": "Spatial AI"
-      },
-      {
         "id": "urn:ngm:class:database-schema",
         "label": "Database Schema"
       },
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:onnx",
-        "label": "ONNX"
-      },
-      {
-        "id": "urn:ngm:class:speculative-decoding",
-        "label": "Speculative Decoding"
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
       },
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
-      },
-      {
-        "id": "urn:ngm:class:fuzzy-logic",
-        "label": "Fuzzy Logic"
-      },
-      {
         "id": "urn:ngm:class:semantic-network",
         "label": "Semantic Network"
       },
       {
-        "id": "urn:ngm:class:hardware-acceleration",
-        "label": "Hardware Acceleration"
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert Systems"
-      },
-      {
-        "id": "urn:ngm:class:neuro-symbolic-ai",
-        "label": "Neuro Symbolic Ai"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
       {
         "id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
@@ -1036,108 +593,50 @@
       {
         "id": "urn:ngm:class:configuration-management",
         "label": "Configuration Management"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-iec-22989-2022",
-        "label": "ISO/IEC 22989"
       },
       {
-        "id": "urn:ngm:class:aime-benchmark",
-        "label": "AIME Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:arc-agi",
-        "label": "ARC-AGI"
-      },
-      {
-        "id": "urn:ngm:class:benchmarks",
-        "label": "Benchmarks"
-      },
-      {
-        "id": "urn:ngm:class:formal-verification",
-        "label": "Formal Verification"
-      },
-      {
-        "id": "urn:ngm:class:gpqa-benchmark",
-        "label": "GPQA Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:deepmind-levels-of-agi-framework",
-        "label": "DeepMind Levels of AGI Framework"
-      },
-      {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:ai-deployment",
-        "label": "AI Deployment"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:multi-agent-system",
-        "label": "Multi-Agent System"
-      },
-      {
-        "id": "urn:ngm:class:complex-systems-science",
-        "label": "Complex Systems Science"
-      },
-      {
-        "id": "urn:ngm:class:complexity-science",
-        "label": "Complexity Science"
-      },
-      {
-        "id": "urn:ngm:class:computational-social-science",
-        "label": "Computational Social Science"
-      },
-      {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:kv-cache",
-        "label": "KV Cache"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:latency",
-        "label": "Latency"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:model-compression",
-        "label": "Model Compression"
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:neural-processing-unit",
-        "label": "Neural Processing Unit"
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:throughput",
-        "label": "Throughput"
+        "id": "urn:ngm:class:neural-symbolic-integration",
+        "label": "Neural-Symbolic Integration"
       },
       {
-        "id": "urn:ngm:class:automatic-differentiation",
-        "label": "Automatic Differentiation"
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       },
       {
-        "id": "urn:ngm:class:logic-programming",
-        "label": "Logic Programming"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },

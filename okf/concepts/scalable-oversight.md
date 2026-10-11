@@ -21,7 +21,7 @@ uses:
   - urn:ngm:class:human-feedback
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:red-teaming
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 supports:
   - urn:ngm:class:ai-safety
 partOf:

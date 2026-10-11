@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:key-management
   - urn:ngm:class:cryptography
   - urn:ngm:class:random-number-generation
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:data-protection
   - urn:ngm:class:confidential-computing
@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:hash-function
   - urn:ngm:class:key-exchange
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:secure-multi-party-computation
 standardizedBy:

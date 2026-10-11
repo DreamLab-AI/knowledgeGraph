@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-biospecimen",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spaceflight biospecimen is a biological sample collected from an organism or experiment flown in space, or from associated ground studies, and kept for further research.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

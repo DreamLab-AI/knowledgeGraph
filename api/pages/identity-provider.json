@@ -92,7 +92,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -102,7 +102,7 @@
         "label": "Continuous Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Delegated Authorization"
       },
       {
@@ -130,7 +130,7 @@
         "label": "Zero Trust Architecture"
       },
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Delegated Authorization"
       },
       {
@@ -152,7 +152,7 @@
         "label": "JSON Web Token"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -283,8 +283,8 @@
         "label": "OpenID Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [],
@@ -555,10 +555,6 @@
         "label": "API Gateway"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
       },
@@ -573,6 +569,10 @@
       {
         "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptography",
@@ -639,7 +639,7 @@
         "label": "Passwordless Authentication"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -715,8 +715,8 @@
         "label": "Graph Database"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -775,8 +775,8 @@
         "label": "W3C WebAuthn"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

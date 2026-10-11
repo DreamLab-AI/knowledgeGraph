@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:seasonal-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Seasonal ice is sea ice that has formed over a single freezing season.[^1][^2] NSIDC uses the term for sea ice that melts away and reforms annually, and notes that almost all Antarctic sea ice is of this kind.[^2][^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

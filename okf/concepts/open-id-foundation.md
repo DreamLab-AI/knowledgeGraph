@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:w3-c-did
 bridgesTo:
   - urn:ngm:class:digital-wallet
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
 supports:
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:financial-grade-api

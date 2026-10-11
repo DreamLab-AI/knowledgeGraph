@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:sc-standards-and-interop
   - urn:ngm:class:standards
 requires:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:cryptography
 enables:
   - urn:ngm:class:identity-verification

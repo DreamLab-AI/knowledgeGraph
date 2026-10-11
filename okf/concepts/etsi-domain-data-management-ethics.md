@@ -41,11 +41,11 @@ dependsOn:
   - urn:ngm:class:consent-management
   - urn:ngm:class:audit-logging
   - urn:ngm:class:blockchain
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 implements:
   - urn:ngm:class:etsi-metaverse-domain-taxonomy
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:etsi-domain-data-management-ai
   - urn:ngm:class:etsi-domain-data-management-security
@@ -62,7 +62,7 @@ uses:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:zero-knowledge-proof
 supports:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:etsi-domain-taxonomy
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:data-governance
@@ -70,7 +70,7 @@ supports:
   - urn:ngm:class:responsible-data-handling
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:etsi-isg-ai
   - urn:ngm:class:iso-29184
 partOf:

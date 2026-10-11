@@ -206,10 +206,6 @@
       {
         "id": "urn:ngm:class:traditional-film-photography",
         "label": "Traditional Film Photography"
-      },
-      {
-        "id": "urn:ngm:class:image-processing",
-        "label": "Image Processing"
       }
     ],
     "bridgesTo": [],
@@ -530,7 +526,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

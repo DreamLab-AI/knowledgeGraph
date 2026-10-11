@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:consensus
   - urn:ngm:class:validator-set
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-application
 partOf:
   - urn:ngm:class:cosmos

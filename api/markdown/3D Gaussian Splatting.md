@@ -166,7 +166,7 @@ The technique trains by optimising Gaussian parameters (positions, colours, cova
 
   #### Related Concepts
 
-- [[TELE-050-neural-rendering-telepresence]]
+- [[Neural Rendering Telepresence]]
 - [[TELE-052-neural-radiance-fields]]
 - [[TELE-053-volumetric-video-conferencing]]
 - [[TELE-020-virtual-reality-telepresence]]

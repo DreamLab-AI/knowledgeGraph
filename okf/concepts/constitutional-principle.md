@@ -19,7 +19,7 @@ enables:
 supports:
   - urn:ngm:class:ai-governance-framework
 partOf:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 relatedTo:
   - urn:ngm:class:ai-governance-principle
   - urn:ngm:class:ai-ethics

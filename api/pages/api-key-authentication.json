@@ -65,8 +65,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "standardizedBy": [
@@ -90,8 +90,8 @@
         "label": "API"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ]
   },
@@ -149,16 +149,16 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:digital-certificate",
@@ -284,7 +284,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:data",
@@ -296,10 +296,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
       {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
@@ -315,6 +311,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:saml",

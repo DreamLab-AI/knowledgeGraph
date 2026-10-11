@@ -56,7 +56,7 @@
         "label": "Chain Rule of Probability"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
@@ -148,7 +148,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -182,7 +182,7 @@
         "label": "Protein Structure Prediction"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ],
@@ -327,24 +327,14 @@
       "slug": "generative-ai"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network",
-      "slug": "neural-network"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:ai-application",
@@ -411,8 +401,8 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:latent-diffusion",
@@ -423,7 +413,7 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -445,10 +435,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
       },
@@ -459,6 +445,10 @@
       {
         "id": "urn:ngm:class:computational-graph",
         "label": "Computational Graph"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
       }
     ],
     "enables": [
@@ -501,7 +491,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
@@ -511,10 +501,6 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
-      },
-      {
-        "id": "urn:ngm:class:latent-space",
-        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:computational-statistics",
@@ -527,6 +513,10 @@
       {
         "id": "urn:ngm:class:functional-analysis",
         "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model-theory",
+        "label": "Graphical Model Theory"
       }
     ],
     "implements": [
@@ -645,7 +635,7 @@
         "label": "Decoder Network"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder Architecture"
       },
       {
@@ -701,7 +691,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -741,6 +731,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:statistics",

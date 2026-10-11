@@ -100,7 +100,7 @@
         "label": "Bitcoin Improvement Proposal"
       },
       {
-        "id": "urn:ngm:class:eip",
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
         "label": "Ethereum Improvement Proposal"
       },
       {

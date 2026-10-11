@@ -8,7 +8,7 @@ description: A Blockchain Entity is the foundational abstract conceptual class r
 maturity: established
 quality: 0.5
 is-a:
-  - urn:ngm:class:network-component
+  - urn:ngm:class:blockchain-technology
 hasPart:
   - urn:ngm:class:cryptographic-keys
   - urn:ngm:class:block
@@ -31,6 +31,8 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin
+relatedTo:
+  - urn:ngm:class:network-component
 ---
 
 # Blockchain Entity

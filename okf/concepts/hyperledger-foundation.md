@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:decentralised-identity
 standardizedBy:
   - urn:ngm:class:linux-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:linux-foundation
 relatedTo:

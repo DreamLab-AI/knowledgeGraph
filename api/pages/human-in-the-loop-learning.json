@@ -1,6 +1,6 @@
 {
   "id": "urn:visionflow:page:d8b3a9066e1ea12f4fc0d4f50efeeeae4268244f42ba640c545b56935c452cd1",
-  "title": "Human-in-the- Loop Learning",
+  "title": "Human-in-the-Loop Learning",
   "slug": "human-in-the-loop-learning",
   "public": true,
   "classIri": "urn:ngm:class:human-in-the-loop-learning",
@@ -17,7 +17,16 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:interactive-learning",
@@ -44,8 +53,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "standardizedBy": [],
@@ -58,6 +67,10 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ]
   },
@@ -87,8 +100,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -188,6 +201,22 @@
     {
       "slug": "reinforcement-learning-from-human-feedback",
       "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "computer-science",
+      "label": "Computer Science"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
     }
   ],
   "backlinks": [

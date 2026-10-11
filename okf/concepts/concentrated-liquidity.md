@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:price-oracle
   - urn:ngm:class:fee-tier
 enables:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:yield-farming
   - urn:ngm:class:token-economics
   - urn:ngm:class:liquidity
@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:non-fungible-token
 relatedTo:
   - urn:ngm:class:uniswap
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:protocol-owned-liquidity
   - urn:ngm:class:perpetual-futures
 ---

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectrum",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A spectrum is the distribution of a quantity, such as radiant energy or signal amplitude, across wavelength or frequency [^1] [^2]. SWEET treats the spectrum as a kind of spectral analysis [^3].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

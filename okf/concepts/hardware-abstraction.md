@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:system-call-interface
   - urn:ngm:class:unified-extensible-firmware-interface
 supports:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:cloud-computing
 partOf:

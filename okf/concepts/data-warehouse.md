@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:data-mesh
 uses:
   - urn:ngm:class:sql
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 relatedTo:
   - urn:ngm:class:data-engineering
   - urn:ngm:class:lakehouse-architecture

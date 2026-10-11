@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:robot-kinematics
   - urn:ngm:class:point-cloud
 standardizedBy:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:denavit-hartenberg-parameters
 relatedTo:
   - urn:ngm:class:exteroceptive-sensor

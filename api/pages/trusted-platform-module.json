@@ -46,7 +46,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       }
     ],
@@ -172,16 +172,16 @@
         "label": "Code Signing"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
         "id": "urn:ngm:class:payment-security",
         "label": "Payment Security"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

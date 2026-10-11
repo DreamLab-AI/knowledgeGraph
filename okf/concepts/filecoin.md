@@ -8,15 +8,15 @@ description: "Filecoin is a decentralised storage network and blockchain protoco
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 requires:
   - urn:ngm:class:cryptographic-proof
   - urn:ngm:class:smart-contract
   - urn:ngm:class:staking
 enables:
-  - urn:ngm:class:decentralized-application
-  - urn:ngm:class:dao
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-application
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:nft-storage
   - urn:ngm:class:web3-storage
 implements:
@@ -39,9 +39,9 @@ uses:
 relatedTo:
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:blockchain-protocol
-  - urn:ngm:class:decentralized-autonomous-organization
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Filecoin

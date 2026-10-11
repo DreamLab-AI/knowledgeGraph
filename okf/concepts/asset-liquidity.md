@@ -8,7 +8,7 @@ description: Asset Liquidity is the degree to which a digital or tokenised asset
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 enables:
   - urn:ngm:class:nft-marketplace
   - urn:ngm:class:atomic-swap

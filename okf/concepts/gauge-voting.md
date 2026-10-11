@@ -20,14 +20,14 @@ enables:
   - urn:ngm:class:hidden-hand
   - urn:ngm:class:bribe-market
 dependsOn:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 implements:
   - urn:ngm:class:tokenomics
 contrastsWith:
   - urn:ngm:class:quadratic-voting
 bridgesTo:
   - urn:ngm:class:governance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenomics
 uses:
   - urn:ngm:class:smart-contract

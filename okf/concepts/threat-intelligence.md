@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:data-governance
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:graph-database
 supports:

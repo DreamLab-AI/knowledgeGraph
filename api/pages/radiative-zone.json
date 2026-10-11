@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radiative-zone",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A radiative zone is the region of the Sun between the core and the convection zone in which energy is carried outward by radiation.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-interior",

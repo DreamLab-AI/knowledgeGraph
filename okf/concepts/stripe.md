@@ -26,14 +26,14 @@ contrastsWith:
   - urn:ngm:class:square
   - urn:ngm:class:adyen
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:stablecoin
 uses:
   - urn:ngm:class:rest-api
   - urn:ngm:class:webhook
   - urn:ngm:class:tokenization
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:tokenization
 supports:
   - urn:ngm:class:stablecoin
   - urn:ngm:class:open-banking

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bidirectional-reflectance-distribution-function",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A bidirectional reflectance distribution function specifies how a surface scatters light into a given viewing direction as a function of the illumination geometry, the view geometry and the wavelength.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

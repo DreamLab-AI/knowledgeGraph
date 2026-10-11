@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:congelation-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Congelation ice is sea ice that grows on the underside of an existing ice sheet, producing columnar crystals as it thickens downwards.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

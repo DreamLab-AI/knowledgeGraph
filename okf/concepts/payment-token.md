@@ -19,7 +19,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-currency
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:lightning-network
   - urn:ngm:class:tokenomics
   - urn:ngm:class:transaction-fee

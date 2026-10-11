@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:data-schema
   - urn:ngm:class:linear-algebra
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-ledger
 dependsOn:
   - urn:ngm:class:data-schema

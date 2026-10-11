@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:compliance-monitoring
 hasPart:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:sanctions-screening
 requires:
   - urn:ngm:class:identity-verification
@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:compliance
   - urn:ngm:class:regtech

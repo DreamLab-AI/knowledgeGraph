@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-multipath",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS multipath is the reception of reflected copies of a satellite signal alongside its direct path, which changes the composite waveform and can bias the receiver\u2019s signal-tracking measurements.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

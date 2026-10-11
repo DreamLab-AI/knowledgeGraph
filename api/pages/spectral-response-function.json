@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-response-function",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A spectral response function is the sensitivity of an instrument band to radiation as a function of wavelength, used to define what a band measures.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

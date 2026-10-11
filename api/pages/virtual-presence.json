@@ -254,6 +254,10 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
@@ -276,16 +280,20 @@
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality",
-        "label": "Extended Reality"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
       },
       {
         "id": "urn:ngm:class:neural-rendering",
@@ -306,14 +314,6 @@
       {
         "id": "urn:ngm:class:conflict-free-replicated-data-type",
         "label": "Conflict-Free Replicated Data Type"
-      },
-      {
-        "id": "urn:ngm:class:end-to-end-encryption",
-        "label": "End-to-End Encryption"
-      },
-      {
-        "id": "urn:ngm:class:operational-transformation",
-        "label": "Operational Transformation"
       }
     ],
     "supports": [
@@ -388,6 +388,14 @@
         "label": "Standards and Interoperability"
       },
       {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
       },
@@ -396,16 +404,8 @@
         "label": "Presence Technology"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:computer-supported-cooperative-work",
-        "label": "Computer-Supported Cooperative Work"
-      },
-      {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
       }
     ]
   },

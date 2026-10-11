@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:imaging-spectrometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An imaging spectrometer is an instrument that records images in many narrow, contiguous spectral bands, so that each pixel has its own spectrum.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

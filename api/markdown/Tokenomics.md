@@ -27,7 +27,7 @@ Tokenomics is the study and design of the economic systems underpinning blockcha
 
 #### Utility & Demand Drivers
 
-- **Governance rights** — token holders vote on protocol upgrades, parameter changes, and treasury spending via [[DAO]] structures (see [[Governance Token]]).
+- **Governance rights** — token holders vote on protocol upgrades, parameter changes, and treasury spending via [[Decentralised Autonomous Organisation]] structures (see [[Governance Token]]).
 - **Fee payment** — tokens are required to pay for network services (gas fees, protocol fees), creating baseline demand tied to actual usage.
 - **Access and staking** — [[Staking]] tokens to unlock features, earn yield, or provide security (Proof-of-Stake validators must stake to participate).
 - **Collateral** — tokens used as collateral in lending and derivatives protocols within [[Decentralised Finance]] ecosystems.
@@ -49,9 +49,9 @@ Tokenomics is the study and design of the economic systems underpinning blockcha
 ### Applications / Use Cases
 
 - **Layer 1 protocol tokens** — ETH, SOL, ADA, and similar assets fund validator security, pay transaction fees, and underpin stablecoin collateral — a comprehensive tokenomic system covering all three functions.
-- **DeFi governance tokens** — protocols such as Uniswap (UNI) and Aave (AAVE) grant holders voting rights over protocol parameters via [[DAO]] governance, directly linking token value to protocol revenue and governance utility.
+- **DeFi governance tokens** — protocols such as Uniswap (UNI) and Aave (AAVE) grant holders voting rights over protocol parameters via [[Decentralised Autonomous Organisation]] governance, directly linking token value to protocol revenue and governance utility.
 - **Web3 gaming / [[Play-to-Earn]]** — games issue dual-token systems (utility token + governance token) to separate in-game spending from ownership rights, attempting to sustain player incentives without hyperinflationary collapse.
-- **Decentralised Autonomous Organisations** — treasury-funded [[DAO]] entities use tokenomic models to distribute grants, fund contributors, and coordinate collective action without a central authority.
+- **Decentralised Autonomous Organisations** — treasury-funded [[Decentralised Autonomous Organisation]] entities use tokenomic models to distribute grants, fund contributors, and coordinate collective action without a central authority.
 - **Stablecoins** — algorithmic and collateral-backed stablecoins (e.g. DAI, FRAX) rely on complex tokenomic mechanisms — stability fees, liquidation incentives, and peg arbitrage rewards — to maintain their peg.
 - **Data and compute marketplaces** — protocols such as Filecoin (storage) and Render (GPU compute) use tokens to price and incentivise decentralised resource provision, bridging blockchain coordination to real-world infrastructure; see [[Digital Economy]].
 - **NFT ecosystems** — royalty structures, secondary sale fees, and burn-to-mint mechanics within [[NFT]] platforms are tokenomic design choices that affect creator revenue and market liquidity.

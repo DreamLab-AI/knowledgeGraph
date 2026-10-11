@@ -4,6 +4,7 @@ type: Class
 title: Lander
 resource: urn:ngm:class:lander
 domain: space-science-and-systems
+description: A lander is a spacecraft designed to reach the surface of a planet and survive long enough to send data back to Earth.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Lander
+
+A lander is a spacecraft designed to reach the surface of a planet and survive long enough to send data back to Earth.[^1]

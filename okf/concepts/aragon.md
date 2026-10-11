@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:dao-tooling
 requires:
   - urn:ngm:class:decentralised-autonomous-organisation
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:token-weighted-voting
   - urn:ngm:class:access-control
@@ -29,7 +29,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:infrastructure
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:governance-token
   - urn:ngm:class:proxy-pattern

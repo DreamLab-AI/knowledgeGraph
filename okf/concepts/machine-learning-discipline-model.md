@@ -8,7 +8,7 @@ description: Computational algorithms trained on data to recognise patterns, mak
 maturity: draft
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:machine-learning-discipline-models
   - urn:ngm:class:artificial-intelligence
 hasPart:
@@ -40,6 +40,7 @@ uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:convolutional-neural-network
+  - urn:ngm:class:supervised-learning
 supports:
   - urn:ngm:class:model-inference
   - urn:ngm:class:edge-deployment
@@ -49,6 +50,8 @@ relatedTo:
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:federated-learning
   - urn:ngm:class:transfer-learning
+  - urn:ngm:class:neural-network
+  - urn:ngm:class:deep-learning
 ---
 
 # Machine Learning Model

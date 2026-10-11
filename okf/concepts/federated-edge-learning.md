@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:gradient-descent
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:privacy-utility-tradeoffs
   - urn:ngm:class:autonomous-robot

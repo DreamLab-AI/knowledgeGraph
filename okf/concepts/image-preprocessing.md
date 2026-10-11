@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:facial-recognition
   - urn:ngm:class:image-segmentation
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:feature-extraction
 supports:

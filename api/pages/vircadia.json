@@ -259,7 +259,7 @@
         "label": "Bullet Physics"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF Format"
       },
       {
@@ -343,7 +343,7 @@
         "label": "WebXR Device API"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF Specification"
       },
       {
@@ -378,7 +378,7 @@
         "label": "Social VR"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -418,6 +418,11 @@
       "slug": "virtual-reality"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:extended-reality-xr",
       "label": "Extended Reality (XR)",
       "slug": "extended-reality-xr"
@@ -433,14 +438,14 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:semantic-spatial-web-layer",
       "label": "Semantic Spatial Web Layer",
       "slug": "semantic-spatial-web-layer"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -451,11 +456,6 @@
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology",
       "slug": "immersive-technology"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -581,12 +581,12 @@
         "label": "Voice Chat"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:client-application",
         "label": "Client Application"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:infrastructure",
@@ -661,12 +661,12 @@
         "label": "Monolithic Architecture"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
       }
     ],
     "bridgesTo": [
@@ -705,8 +705,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:non-fungible-token",
@@ -777,8 +777,8 @@
         "label": "Open Source Initiative"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

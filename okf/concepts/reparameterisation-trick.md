@@ -8,12 +8,12 @@ description: The reparameterisation trick is a technique for obtaining low-varia
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 requires:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:probability-distribution
 enables:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:generative-model
 dependsOn:
   - urn:ngm:class:gradient-descent
@@ -25,11 +25,11 @@ supports:
   - urn:ngm:class:latent-variable-model
   - urn:ngm:class:stochastic-optimisation
 partOf:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 relatedTo:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Reparameterisation Trick

@@ -21,7 +21,7 @@ contrastsWith:
   - urn:ngm:class:shadow-mapping
 bridgesTo:
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:physically-based-rendering
   - urn:ngm:class:ray-tracing

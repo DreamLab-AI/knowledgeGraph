@@ -19,9 +19,9 @@ hasPart:
   - urn:ngm:class:cognitive-feedback-interface
   - urn:ngm:class:emotional-analytics-engine
 requires:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:data-labelling
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:annotated-dataset
   - urn:ngm:class:sensor-fusion
 enables:
@@ -33,7 +33,7 @@ enables:
   - urn:ngm:class:empathetic-ai
   - urn:ngm:class:intelligent-tutoring
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-labelling
   - urn:ngm:class:physiological-signal-processing
 contrastsWith:

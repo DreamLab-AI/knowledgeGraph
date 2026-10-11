@@ -29,13 +29,13 @@ contrastsWith:
   - urn:ngm:class:implicit-surface
 bridgesTo:
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:vertex-shader
   - urn:ngm:class:photogrammetry
   - urn:ngm:class:lidar
 standardizedBy:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:khronos-group
 relatedTo:
   - urn:ngm:class:point-cloud

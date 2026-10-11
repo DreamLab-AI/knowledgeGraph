@@ -38,7 +38,7 @@
         "label": "Data Annotation"
       },
       {
-        "id": "urn:ngm:class:ground-truth-labels",
+        "id": "urn:ngm:class:ground-truth",
         "label": "Ground Truth"
       },
       {
@@ -120,7 +120,7 @@
         "label": "Data Annotation"
       },
       {
-        "id": "urn:ngm:class:ground-truth-labels",
+        "id": "urn:ngm:class:ground-truth",
         "label": "Ground Truth"
       },
       {
@@ -159,7 +159,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:ground-truth-labels",
+        "id": "urn:ngm:class:ground-truth",
         "label": "Ground Truth"
       },
       {
@@ -198,7 +198,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -223,7 +223,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -390,19 +390,14 @@
       "slug": "knowledge-representation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:scientific-machine-learning",
       "label": "Scientific Machine Learning",
       "slug": "scientific-machine-learning"
-    },
-    {
-      "id": "urn:ngm:class:simulation",
-      "label": "Simulation",
-      "slug": "simulation"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -420,14 +415,19 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:digital-twin",
-      "label": "Digital Twin",
-      "slug": "digital-twin"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:scientific-discovery",
@@ -440,38 +440,17 @@
       "slug": "system-architecture"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
       "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture",
       "slug": "software-architecture"
-    },
-    {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
       {
         "id": "urn:ngm:class:annotation-pipelines",
         "label": "Annotation Pipelines"
@@ -485,12 +464,12 @@
         "label": "Leaderboards"
       },
       {
-        "id": "urn:ngm:class:held-out-test-sets",
-        "label": "Held-Out Test Sets"
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
       },
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
+        "id": "urn:ngm:class:held-out-test-sets",
+        "label": "Held-Out Test Sets"
       },
       {
         "id": "urn:ngm:class:leaderboard",
@@ -499,10 +478,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:data-record",
-        "label": "Data Record"
       }
     ],
     "requires": [
@@ -535,8 +510,8 @@
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:data-cleaning",
-        "label": "Data Cleaning"
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
       }
     ],
     "enables": [
@@ -681,7 +656,7 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -719,6 +694,10 @@
         "label": "Evaluation Metric"
       },
       {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
       },
@@ -737,10 +716,6 @@
       {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
-      },
-      {
-        "id": "urn:ngm:class:data-augmentation",
-        "label": "Data Augmentation"
       }
     ],
     "supports": [
@@ -787,8 +762,8 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:spec",
@@ -807,7 +782,7 @@
         "label": "Data Governance Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       }
     ],
@@ -855,6 +830,10 @@
         "label": "Adversarial Testing"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:annotation-pipelines",
         "label": "Annotation Pipelines"
       },
@@ -873,10 +852,6 @@
       {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ]
   },

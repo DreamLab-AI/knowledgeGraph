@@ -59,7 +59,7 @@ contrastsWith:
   - urn:ngm:class:remote-control
 uses:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:planning-module
   - urn:ngm:class:behavioral-modeling
   - urn:ngm:class:neural-network
@@ -75,7 +75,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso-8373
   - urn:ngm:class:ieee-p-7009
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:sae-j-3016
 relatedTo:
   - urn:ngm:class:agentic-ai

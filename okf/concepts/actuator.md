@@ -29,7 +29,7 @@ enables:
 dependsOn:
   - urn:ngm:class:encoder
   - urn:ngm:class:pid-controller
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:passive-mechanism

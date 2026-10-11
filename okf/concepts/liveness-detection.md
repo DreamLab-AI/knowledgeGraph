@@ -21,9 +21,9 @@ uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:convolutional-neural-network
 supports:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:multi-factor-authentication
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 partOf:
   - urn:ngm:class:biometric-authentication
   - urn:ngm:class:identity-verification

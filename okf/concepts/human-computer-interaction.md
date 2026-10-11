@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
 supports:
   - urn:ngm:class:explainable-ai

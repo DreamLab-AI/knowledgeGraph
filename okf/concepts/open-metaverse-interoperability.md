@@ -14,10 +14,10 @@ enables:
   - urn:ngm:class:data-portability
   - urn:ngm:class:cross-platform
 dependsOn:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:identity-portability
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 implements:
   - urn:ngm:class:open-standards
   - urn:ngm:class:interoperability-standard

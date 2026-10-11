@@ -114,7 +114,7 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -176,6 +176,10 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       },
       {
         "id": "urn:ngm:class:explainable-ai",
@@ -242,11 +246,19 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
@@ -328,6 +340,10 @@
         "label": "Ai Transparency Framework"
       },
       {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
       },
@@ -342,10 +358,6 @@
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:privacy-preserving-machine-learning",
-        "label": "Privacy-Preserving Machine Learning"
       }
     ]
   },
@@ -365,10 +377,6 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "global-explanation",
       "label": "Global Explanation"
     },
@@ -379,6 +387,10 @@
     {
       "slug": "intrinsic-interpretability",
       "label": "Intrinsic Interpretability"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "model-interpretability",

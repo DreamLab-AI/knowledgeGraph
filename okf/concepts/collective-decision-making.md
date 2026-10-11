@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:community-governance
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:participatory-democracy
   - urn:ngm:class:protocol-upgrade
 dependsOn:

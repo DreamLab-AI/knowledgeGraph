@@ -87,7 +87,7 @@ relatedTo:
   - urn:ngm:class:reinforcement-learning-for-robotics
   - urn:ngm:class:whole-body-control
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Proprioceptive Sensor

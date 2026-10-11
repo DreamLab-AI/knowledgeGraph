@@ -39,15 +39,15 @@ uses:
   - urn:ngm:class:context-window
   - urn:ngm:class:tokenization
   - urn:ngm:class:byte-pair-encoding
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:inference
   - urn:ngm:class:language-modeling
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:prompt-engineering
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:quantisation
   - urn:ngm:class:mixture-of-experts
 ---

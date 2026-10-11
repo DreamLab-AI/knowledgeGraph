@@ -8,9 +8,9 @@ description: Large language models whose weights and architecture are publicly a
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:open-source
 ---
 

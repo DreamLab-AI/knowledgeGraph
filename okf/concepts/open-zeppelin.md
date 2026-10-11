@@ -11,8 +11,8 @@ is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:smart-contract-framework
 hasPart:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
   - urn:ngm:class:access-control
   - urn:ngm:class:proxy-pattern
@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:solidity
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:token-contract
@@ -31,7 +31,7 @@ dependsOn:
   - urn:ngm:class:smart-contract
 implements:
   - urn:ngm:class:token-standard
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 contrastsWith:
   - urn:ngm:class:solmate
   - urn:ngm:class:dapptools

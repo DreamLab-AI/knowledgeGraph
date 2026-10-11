@@ -50,7 +50,7 @@ dependsOn:
   - urn:ngm:class:graph-theory
   - urn:ngm:class:linear-programming
   - urn:ngm:class:stochastic-optimization
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:edge-computing
   - urn:ngm:class:io-t-integration

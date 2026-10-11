@@ -17,7 +17,7 @@ bridgesTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:data-catalogue
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 supports:
   - urn:ngm:class:institutional-repository
   - urn:ngm:class:open-data

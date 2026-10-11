@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:consensus-mechanism
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:prediction-markets
   - urn:ngm:class:parametric-insurance
   - urn:ngm:class:cross-chain-bridge
@@ -47,7 +47,7 @@ supports:
 partOf:
   - urn:ngm:class:middleware
 relatedTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:zero-knowledge-proof
 ---
 

@@ -25,13 +25,13 @@ bridgesTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:ipfs
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:linked-data
   - urn:ngm:class:digital-signatures
 standardizedBy:
   - urn:ngm:class:world-wide-web-consortium
 relatedTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # ActivityPub

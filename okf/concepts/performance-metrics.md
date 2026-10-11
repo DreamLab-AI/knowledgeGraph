@@ -30,7 +30,7 @@ enables:
 dependsOn:
   - urn:ngm:class:observability
   - urn:ngm:class:audit-logging
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
 contrastsWith:
   - urn:ngm:class:model-evaluation-results
   - urn:ngm:class:qualitative-assessment

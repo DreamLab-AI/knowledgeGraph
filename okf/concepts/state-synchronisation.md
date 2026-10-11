@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:synchronization-protocol
 enables:
   - urn:ngm:class:replication-system
-  - urn:ngm:class:realtime-collaboration
+  - urn:ngm:class:real-time-collaboration
   - urn:ngm:class:distributed-databases
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:user-experience

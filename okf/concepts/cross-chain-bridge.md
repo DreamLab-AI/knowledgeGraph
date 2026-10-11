@@ -67,9 +67,9 @@ contrastsWith:
   - urn:ngm:class:notary-scheme
 uses:
   - urn:ngm:class:fraud-proof
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:threshold-signature-scheme
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:zk-snarks
   - urn:ngm:class:zk-snark
   - urn:ngm:class:decentralised-verifier-network

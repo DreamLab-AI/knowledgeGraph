@@ -16,7 +16,7 @@ requires:
 enables:
   - urn:ngm:class:photorealistic-rendering
 uses:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:cloud-infrastructure
 ---
 

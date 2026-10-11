@@ -42,7 +42,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso-iec-5338-2023
   - urn:ngm:class:iso-iec-42001-2023
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-23053
 relatedTo:
   - urn:ngm:class:continuous-integration

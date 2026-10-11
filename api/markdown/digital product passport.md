@@ -23,7 +23,7 @@ A Digital Product Passport (DPP) is a standardised, machine-readable digital rec
   - Warranty and compliance documentation
   - End-of-life instructions (disassembly, recyclability ratings, material recovery pathways)
 - **Data Storage and Access Layer** — an API-accessible registry or distributed storage system from which the record can be retrieved. Options range from centralised registries (e.g. managed by brand owners or national authorities) to decentralised solutions using [[Blockchain]] or [[Distributed Ledger Technology]]
-- **Trust and Integrity Layer** — cryptographic mechanisms ensuring the record has not been tampered with, including [[Verifiable Credentials]] and [[Decentralised Identifier]]s following W3C standards, or blockchain-anchored hashes
+- **Trust and Integrity Layer** — cryptographic mechanisms ensuring the record has not been tampered with, including [[Verifiable Credential]] and [[Decentralised Identifier]]s following W3C standards, or blockchain-anchored hashes
 - **Access Control Model** — role-based access distinguishing public-facing consumer data from sensitive commercial or B2B data, reflecting the tiered data model in ESPR guidance
 - **Interoperability Framework** — compliance with shared data models (e.g. [[GS1 Standards]] EPCIS, FIWARE Smart Data Models, IEC CDD) so that passports issued by different manufacturers can be queried and processed by a common ecosystem of software tools
 
@@ -31,7 +31,7 @@ A Digital Product Passport (DPP) is a standardised, machine-readable digital rec
 
 - **Data Lifecycle** — data is populated at manufacture, updated at each custody transfer, augmented during repair or refurbishment, and read at end-of-life. This mirrors the concept of a [[Digital Twin]] at product-instance level, though DPPs are normative records rather than simulation models
 - **Distributed Ledger Anchoring** — [[Blockchain]] or [[Distributed Ledger Technology]] can be used to anchor record hashes or event logs (e.g. EPCIS 2.0 events on-chain) so that any tampering with the off-chain record is detectable. This is the key use case being explored in the EU Battery Passport pilot (CIRPASS-2 project)
-- **Verifiable Credentials** — sustainability claims (e.g. recycled content percentages, carbon intensity) can be issued as W3C [[Verifiable Credentials]] by authorised third parties (testing labs, auditors), enabling selective disclosure and zero-knowledge proof applications
+- **Verifiable Credentials** — sustainability claims (e.g. recycled content percentages, carbon intensity) can be issued as W3C [[Verifiable Credential]] by authorised third parties (testing labs, auditors), enabling selective disclosure and zero-knowledge proof applications
 - **IoT Integration** — [[IoT Sensor]]s on manufacturing lines or logistics assets can populate DPP data fields automatically (e.g. temperature records, batch quality metrics), reducing manual data entry and improving reliability
 - **[[Provenance Tracking]]** — each actor who handles the product appends an authenticated event record, creating an immutable chain of custody visible to downstream verifiers
 - **[[Data Interoperability]]** — standards such as GS1 EPCIS 2.0 (JSON-LD serialisation), IEC 61360 Common Data Dictionary, and the Asset Administration Shell (AAS) from Plattform Industrie 4.0 are candidate technical formats for expressing DPP data in an interoperable way
@@ -51,7 +51,7 @@ A Digital Product Passport (DPP) is a standardised, machine-readable digital rec
 
 - **EU Ecodesign for Sustainable Products Regulation (ESPR)** — the primary legislative mandate for DPPs across the EU single market, establishing data requirements, access rights, and interoperability obligations by product category. Delegated acts will progressively extend DPP requirements across 30+ product categories through 2030.
 - **EU Battery Regulation (2023/1542)** — the first sectoral instrument with binding DPP requirements. Specifies data fields, actor access levels, and technical standards for batteries above 2 kWh.
-- **GS1 EPCIS 2.0 / CBV 2.0** — the leading candidate standard for encoding supply-chain events in DPPs. The JSON-LD serialisation of EPCIS 2.0 aligns directly with [[Semantic Web]] and [[Verifiable Credentials]] tooling.
+- **GS1 EPCIS 2.0 / CBV 2.0** — the leading candidate standard for encoding supply-chain events in DPPs. The JSON-LD serialisation of EPCIS 2.0 aligns directly with [[Semantic Web]] and [[Verifiable Credential]] tooling.
 - **W3C Decentralised Identifiers (DID) v1.0** — provides the identifier substrate for product-level unique IDs that are resolvable without reliance on a single registry.
 - **W3C Verifiable Credentials Data Model** — enables third-party attestations (auditor certifications, test lab results) to be embedded in or linked from DPP records in a cryptographically verifiable way.
 - **IEC 61360 / Common Data Dictionary (CDD)** — a standardised vocabulary for product properties, enabling semantic interoperability between DPP implementations from different manufacturers and sectors.

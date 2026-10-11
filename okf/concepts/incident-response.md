@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:threat-hunting
 bridgesTo:
   - urn:ngm:class:anomaly-detection
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:anomaly-detection
 uses:
   - urn:ngm:class:digital-forensics-framework

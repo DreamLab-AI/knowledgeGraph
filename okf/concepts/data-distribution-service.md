@@ -24,12 +24,12 @@ uses:
   - urn:ngm:class:message-broker
 supports:
   - urn:ngm:class:real-time-communication
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:interoperability
 partOf:
   - urn:ngm:class:distributed-systems
 relatedTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:robot-control
   - urn:ngm:class:sensor-fusion
 ---

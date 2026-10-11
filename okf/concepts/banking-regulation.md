@@ -10,7 +10,7 @@ quality: 0.7
 is-a:
   - urn:ngm:class:infra-legal-and-regulatory
 relatedTo:
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
 ---
 
 # Banking Regulation

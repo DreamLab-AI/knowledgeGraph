@@ -23,7 +23,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:london
 bridgesTo:
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:data-centre
   - urn:ngm:class:ai-research-cluster
 supports:

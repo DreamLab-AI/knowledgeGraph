@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-weather-forecasting",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space weather forecasting is the prediction of conditions in space, driven by the Sun and the solar wind, that can affect Earth's magnetic field, upper atmosphere, radio systems and spacecraft.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

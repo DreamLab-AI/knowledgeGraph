@@ -113,11 +113,6 @@
       "slug": "cognitive-science"
     },
     {
-      "id": "urn:ngm:class:decision-theory",
-      "label": "Decision Theory",
-      "slug": "decision-theory"
-    },
-    {
       "id": "urn:ngm:class:operations-research",
       "label": "Operations Research",
       "slug": "operations-research"
@@ -138,19 +133,9 @@
       "slug": "optimisation"
     },
     {
-      "id": "urn:ngm:class:probability-theory",
-      "label": "Probability Theory",
-      "slug": "probability-theory"
-    },
-    {
       "id": "urn:ngm:class:mathematical-foundations",
       "label": "Mathematical Foundations",
       "slug": "mathematical-foundations"
-    },
-    {
-      "id": "urn:ngm:class:measure-theory",
-      "label": "Measure Theory",
-      "slug": "measure-theory"
     },
     {
       "id": "urn:ngm:class:mathematical-science",
@@ -158,19 +143,19 @@
       "slug": "mathematical-science"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -273,7 +258,7 @@
       },
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
-        "label": "Intelligent Tutoring Systems"
+        "label": "Intelligent Tutoring System"
       }
     ],
     "dependsOn": [
@@ -306,8 +291,8 @@
         "label": "Psychology"
       },
       {
-        "id": "urn:ngm:class:utility-theory",
-        "label": "Utility Theory"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "implements": [
@@ -336,12 +321,12 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
-      {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "contrastsWith": [
@@ -362,10 +347,6 @@
         "label": "Connectionism"
       },
       {
-        "id": "urn:ngm:class:game-theory",
-        "label": "Game Theory"
-      },
-      {
         "id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic Methods"
       },
@@ -376,6 +357,10 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -422,7 +407,7 @@
         "label": "Heuristics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -476,13 +461,13 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -490,16 +475,12 @@
         "label": "ISO 31000"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:savage-expected-utility",
-        "label": "Savage Expected Utility"
-      },
-      {
-        "id": "urn:ngm:class:von-neumann-morgenstern-axioms",
-        "label": "Von Neumann-Morgenstern Axioms"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -512,8 +493,8 @@
         "label": "Mathematical Foundations"
       },
       {
-        "id": "urn:ngm:class:measure-theory",
-        "label": "Measure Theory"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -526,8 +507,8 @@
         "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

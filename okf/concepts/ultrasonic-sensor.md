@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:piezoelectric-transducer
 requires:
   - urn:ngm:class:microcontroller
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:obstacle-avoidance
   - urn:ngm:class:autonomous-navigation
@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:radar-sensor
 bridgesTo:
   - urn:ngm:class:sensor
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:robotics

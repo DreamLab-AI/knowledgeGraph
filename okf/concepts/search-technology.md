@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:enterprise-search
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 bridgesTo:
   - urn:ngm:class:knowledge-graph
 uses:

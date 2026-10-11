@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:autonomous-robot
   - urn:ngm:class:digital-twin
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:inference-hardware
   - urn:ngm:class:neuromorphic-computing
   - urn:ngm:class:edge-ai-security

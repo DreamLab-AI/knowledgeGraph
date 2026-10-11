@@ -56,7 +56,7 @@ dependsOn:
   - urn:ngm:class:planning-algorithms
   - urn:ngm:class:probabilistic-reasoning
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
 implements:
   - urn:ngm:class:search-algorithm

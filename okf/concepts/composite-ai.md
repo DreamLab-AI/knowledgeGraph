@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:ai-research-area
 hasPart:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:symbolic-reasoning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing

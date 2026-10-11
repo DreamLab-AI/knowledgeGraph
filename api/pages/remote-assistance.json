@@ -93,10 +93,6 @@
         "label": "Asynchronous Communication"
       },
       {
-        "id": "urn:ngm:class:collaborative-systems-modality",
-        "label": "Collaborative Document Editing"
-      },
-      {
         "id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Collaborative Document Editing"
       },
@@ -113,12 +109,16 @@
         "label": "Haptic Feedback"
       },
       {
-        "id": "urn:ngm:class:spatial-audio",
-        "label": "Spatial Audio"
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
       },
       {
-        "id": "urn:ngm:class:volumetric-capture",
-        "label": "Volumetric Capture"
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
       }
     ],
     "requires": [
@@ -191,12 +191,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:5-g-network",
@@ -263,16 +263,16 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
       {
         "id": "urn:ngm:class:ai-assisted-collaboration",
         "label": "AI-Assisted Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
@@ -297,16 +297,16 @@
         "label": "Augmented Reality"
       },
       {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
         "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
-      },
-      {
-        "id": "urn:ngm:class:point-cloud",
-        "label": "Point Cloud"
-      },
-      {
-        "id": "urn:ngm:class:teleoperation",
-        "label": "Teleoperation"
       }
     ],
     "supports": [
@@ -377,6 +377,14 @@
         "label": "Presence Awareness"
       },
       {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
       },
@@ -385,16 +393,8 @@
         "label": "Presence Technology"
       },
       {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:groupware",
-        "label": "Groupware"
-      },
-      {
-        "id": "urn:ngm:class:social-software",
-        "label": "Social Software"
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
       }
     ]
   },

@@ -4,6 +4,7 @@ type: Class
 title: Normalised Burn Ratio
 resource: urn:ngm:class:normalised-burn-ratio
 domain: earth-observation-and-geospatial-sensing
+description: The Normalised Burn Ratio is a normalised difference of near-infrared and shortwave-infrared reflectance designed to highlight burnt areas in large fire zones.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Normalised Burn Ratio
+
+The Normalised Burn Ratio is a normalised difference of near-infrared and shortwave-infrared reflectance designed to highlight burnt areas in large fire zones.[^1][^2]

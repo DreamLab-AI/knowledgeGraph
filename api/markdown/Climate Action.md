@@ -5,7 +5,7 @@ Climate action refers to coordinated efforts to mitigate climate change by reduc
 ### Overview
 
 - Mitigation reduces the greenhouse gases driving warming through [[Decarbonisation]], [[Renewable Energy]] and efficiency, aiming toward [[Net Zero]] and [[Carbon Neutrality]]. Adaptation builds resilience in cities, agriculture and ecosystems against impacts that are already locked in.
-- Action operates across scales, from international frameworks like the [[Paris Agreement]] to corporate strategies grounded in [[Carbon Accounting]] and [[Lifecycle Assessment]]. Credibility depends on measurable targets, transparent reporting and avoidance of greenwashing.
+- Action operates across scales, from international frameworks like the [[Paris Agreement]] to corporate strategies grounded in [[Carbon Accounting]] and [[Life Cycle Assessment]]. Credibility depends on measurable targets, transparent reporting and avoidance of greenwashing.
 
 ### Key aspects
 

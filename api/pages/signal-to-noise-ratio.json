@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:signal-to-noise-ratio",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Signal-to-noise ratio in Earth observation is the ratio of the energy reflected or emitted from the surface to the noise contributed by the instrument itself or by external interference.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

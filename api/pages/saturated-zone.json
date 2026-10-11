@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:saturated-zone",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Below the water table, the saturated zone is the part of the subsurface in which the voids are completely filled with water.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

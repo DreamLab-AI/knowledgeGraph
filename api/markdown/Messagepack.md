@@ -17,7 +17,7 @@ MessagePack is a binary data serialisation format that encodes structured data c
 - High-throughput [[Message Queue]] and pub/sub systems reducing payload size.
 - In-memory caches and key-value stores serialising structured values.
 - Inter-service RPC where JSON overhead is prohibitive.
-- Constrained [[Internet of Things]] and [[Embedded Systems]] communication.
+- Constrained [[Internet of Things]] and [[Embedded System]] communication.
 
 ### Provenance
 

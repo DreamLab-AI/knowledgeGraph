@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:lightning
 enables:
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
 bridgesTo:
   - urn:ngm:class:lightning-service-provider
 ---

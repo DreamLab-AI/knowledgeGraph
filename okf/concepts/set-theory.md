@@ -22,7 +22,7 @@ contrastsWith:
   - urn:ngm:class:type-theory
 bridgesTo:
   - urn:ngm:class:formal-verification
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology
 supports:
   - urn:ngm:class:ontology

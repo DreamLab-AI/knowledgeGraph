@@ -42,7 +42,7 @@ uses:
 relatedTo:
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:payment-system
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:adaptor-signature
 ---

@@ -24,7 +24,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:fiat-currency
 uses:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:fiat-currency
 supports:
   - urn:ngm:class:liquidity

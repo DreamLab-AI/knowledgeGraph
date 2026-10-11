@@ -42,7 +42,7 @@ enables:
   - urn:ngm:class:cli-multi-agent-systems
   - urn:ngm:class:node-based-diffusion-pipeline-interface-client
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:http
   - urn:ngm:class:attention
   - urn:ngm:class:agents

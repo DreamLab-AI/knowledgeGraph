@@ -193,10 +193,6 @@
         "label": "Graphical User Interface"
       },
       {
-        "id": "urn:ngm:class:user-interface",
-        "label": "User Interface"
-      },
-      {
         "id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"
       },
@@ -239,7 +235,7 @@
         "label": "Sensor Input"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {
@@ -287,7 +283,7 @@
         "label": "Accessibility Standard"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       },
       {

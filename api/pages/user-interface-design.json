@@ -120,14 +120,14 @@
       "slug": "spatial-computing"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -255,10 +255,6 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
       },
@@ -269,14 +265,6 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
       }
     ],
     "bridgesTo": [
@@ -371,14 +359,6 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
-      },
-      {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
       }
     ],
     "standardizedBy": [
@@ -411,8 +391,8 @@
         "label": "WebXR"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       }
     ],
     "relatedTo": [

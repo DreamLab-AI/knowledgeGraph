@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:data-centre
   - urn:ngm:class:internet-exchange-point
 requires:

@@ -52,7 +52,7 @@ relatedTo:
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:data-governance
   - urn:ngm:class:zero-trust-architecture
-  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:zero-trust
 ---
 
 # Audit

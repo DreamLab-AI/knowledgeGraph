@@ -97,7 +97,7 @@
         "label": "Securities Exchange"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -193,7 +193,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -219,7 +219,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -229,10 +229,6 @@
       {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:tokenised-real-world-assets",
@@ -245,6 +241,10 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "uses": [
@@ -257,7 +257,7 @@
         "label": "Interbank Settlement"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -271,7 +271,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -315,7 +315,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {

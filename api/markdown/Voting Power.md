@@ -6,7 +6,7 @@ Voting power is the quantified influence a participant can exert over a collecti
 
 ## Definition
 
-**Voting power** measures how much weight a participant's ballot carries in a collective decision. In decentralised governance it is the central unit of account: proposals in a [[DAO]] pass or fail according to the aggregate voting power cast for each option, and thresholds such as [[Quorum]] are defined over total voting power rather than the number of voters. The concept therefore sits at the join between token economics and political design — it converts an asset position into decision-making authority.
+**Voting power** measures how much weight a participant's ballot carries in a collective decision. In decentralised governance it is the central unit of account: proposals in a [[Decentralised Autonomous Organisation]] pass or fail according to the aggregate voting power cast for each option, and thresholds such as [[Quorum]] are defined over total voting power rather than the number of voters. The concept therefore sits at the join between token economics and political design — it converts an asset position into decision-making authority.
 
 The dominant model is token-weighted voting, where one governance token confers one vote. Because tokens are transferable, this makes voting power a market-priced commodity: it can be bought, borrowed, or delegated. [[Snapshot Governance]] systems record balances at a specific block height so that voting power cannot be inflated mid-vote by flash-loaned tokens, while [[On-chain Governance]] frameworks such as Compound's Governor contracts read delegated balances directly from the token contract at proposal creation.
 

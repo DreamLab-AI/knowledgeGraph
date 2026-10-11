@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar-altimetry",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Radar altimetry is a form of active microwave remote sensing in which a downward-looking radar transmits short pulses and measures the round-trip delay to determine distance to a surface.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:active-remote-sensing",

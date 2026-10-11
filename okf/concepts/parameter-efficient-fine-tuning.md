@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:low-rank-decomposition
   - urn:ngm:class:neural-network-quantisation
 supports:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 partOf:

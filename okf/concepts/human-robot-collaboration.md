@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:exoskeleton
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:exoskeleton
 standardizedBy:

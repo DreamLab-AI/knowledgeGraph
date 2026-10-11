@@ -13,8 +13,8 @@ enables:
   - urn:ngm:class:knowledge-management
   - urn:ngm:class:data-annotation
 uses:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:knowledge-management-system
 ---

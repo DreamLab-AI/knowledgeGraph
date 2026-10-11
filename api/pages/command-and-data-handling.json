@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:command-and-data-handling",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Command and data handling is the spacecraft function, usually provided by an onboard computer and its associated units, that receives and stores commands, processes and packages data, and prepares telemetry for transmission to the ground.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

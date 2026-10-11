@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:voting-mechanism
   - urn:ngm:class:treasury-management
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:protocol-upgrade
 dependsOn:
   - urn:ngm:class:smart-contracts
@@ -36,13 +36,13 @@ bridgesTo:
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:governance-token
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:timelock-controller
   - urn:ngm:class:timelock-controller
 supports:
   - urn:ngm:class:decentralised-autonomous-organisation
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:upgradeable-proxy
 relatedTo:
   - urn:ngm:class:quorum

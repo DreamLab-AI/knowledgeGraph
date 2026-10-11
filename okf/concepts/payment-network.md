@@ -27,9 +27,9 @@ enables:
   - urn:ngm:class:programmable-money
 dependsOn:
   - urn:ngm:class:internet-infrastructure
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:barter-system
 bridgesTo:
   - urn:ngm:class:agentic-ai
@@ -47,7 +47,7 @@ relatedTo:
   - urn:ngm:class:lightning-network
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Payment Network

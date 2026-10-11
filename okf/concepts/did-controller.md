@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:cryptographic-key
   - urn:ngm:class:key-management
 partOf:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 relatedTo:
   - urn:ngm:class:did-document
   - urn:ngm:class:decentralised-identity

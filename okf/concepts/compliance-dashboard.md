@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:real-time-monitoring
   - urn:ngm:class:regulatory-reporting
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:risk-visualization
 dependsOn:
   - urn:ngm:class:smart-contract
@@ -39,7 +39,7 @@ bridgesTo:
   - urn:ngm:class:security
 uses:
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:financial-compliance
 partOf:

@@ -45,7 +45,7 @@ implements:
   - urn:ngm:class:ordinary-differential-equation
   - urn:ngm:class:neural-odes
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:state-space-control
 contrastsWith:
   - urn:ngm:class:static-model
@@ -58,7 +58,7 @@ uses:
   - urn:ngm:class:physics-simulation-engine
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:gaussian-process
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 supports:
   - urn:ngm:class:autonomous-driving
   - urn:ngm:class:legged-locomotion

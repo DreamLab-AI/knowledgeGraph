@@ -12,13 +12,13 @@ is-a:
 hasPart:
   - urn:ngm:class:public-key
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:asymmetric-cryptography
   - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:authentication
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:mutual-tls
   - urn:ngm:class:secure-email
   - urn:ngm:class:code-signing
@@ -31,8 +31,8 @@ contrastsWith:
   - urn:ngm:class:self-signed-certificate
   - urn:ngm:class:web-of-trust
 bridgesTo:
-  - urn:ngm:class:decentralized-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:digital-signature
 standardizedBy:
   - urn:ngm:class:itu-t

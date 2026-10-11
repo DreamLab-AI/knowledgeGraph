@@ -158,7 +158,7 @@ where odds_θ(y|x) = P_θ(y|x) / (1 − P_θ(y|x)). ORPO eliminates the referenc
 
 ### Constitutional AI
 
-[[Constitutional AI Training Methodology]] (CAI, Bai et al. 2022, Anthropic) replaces human preference annotation for harmlessness training with a set of explicit ethical principles ("the constitution") from which AI-generated preference data is synthesised:
+[[Constitutional AI]] (CAI, Bai et al. 2022, Anthropic) replaces human preference annotation for harmlessness training with a set of explicit ethical principles ("the constitution") from which AI-generated preference data is synthesised:
 
 1. **Supervised Constitutional Revision (SCC)**: Sample red-team prompts, generate an initial response, then prompt the model to critique and revise the response against constitution principles. Use revised responses as SFT examples.
 2. **RLAIF**: Train a preference model on (original, revised) response pairs using the model's own constitutional scoring rather than human preference judgements. Apply PPO or DPO using this AI-generated reward signal.

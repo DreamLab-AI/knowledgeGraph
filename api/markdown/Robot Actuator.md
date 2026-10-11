@@ -58,7 +58,7 @@ A robot actuator is an electromechanical, pneumatic, hydraulic, or shape-memory 
   - [[Soft Robotics]] grippers use pneumatic bellows or SMA wires to achieve delicate, adaptive grasping of fragile objects without rigid contact.
   - [[Robot End-Effector]] designs span rigid parallel grippers, underactuated adaptive hands, and fully soft continuum manipulators.
 - **Space and Extreme Environments**
-  - NASA and ESA rover actuators must operate across extreme temperature ranges (−120 °C to +70 °C on Mars surface) with radiation-hardened [[Embedded Systems]] and brushless motors for long service life.
+  - NASA and ESA rover actuators must operate across extreme temperature ranges (−120 °C to +70 °C on Mars surface) with radiation-hardened [[Embedded System]] and brushless motors for long service life.
 - **Micro and Nano Robotics**
   - [[Piezoelectric Actuator]] stacks enable sub-micron positioning in atomic force microscopes, electron-beam lithography systems, and MEMS-scale fabrication.
 

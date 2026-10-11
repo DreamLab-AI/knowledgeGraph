@@ -25,7 +25,7 @@ requires:
   - urn:ngm:class:http-protocol
   - urn:ngm:class:rdf-data-model
   - urn:ngm:class:turtle
-  - urn:ngm:class:webid-decentralised-identity-uri
+  - urn:ngm:class:web-id
   - urn:ngm:class:turtle
 enables:
   - urn:ngm:class:data-sovereignty

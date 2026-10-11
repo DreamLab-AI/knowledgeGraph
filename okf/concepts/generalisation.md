@@ -8,7 +8,7 @@ description: Generalisation is the capacity of a machine-learning model to perfo
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-research-area
 requires:
   - urn:ngm:class:regularisation
@@ -26,9 +26,9 @@ uses:
 supports:
   - urn:ngm:class:model-evaluation
 relatedTo:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:model-performance
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 ---
 
 # Generalisation

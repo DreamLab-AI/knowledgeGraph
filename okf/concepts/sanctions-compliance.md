@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:regulatory-compliance
 uses:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 supports:
   - urn:ngm:class:risk-assessment
 relatedTo:

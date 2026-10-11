@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:crew-active-dosimeter",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A crew-worn active dosimeter based on direct ion storage technology, the Crew Active Dosimeter is designed for use by spacecraft crewmembers.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:sc-standards-and-interop
   - urn:ngm:class:3-d-file-format
 requires:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:3-d-file-format
 enables:
   - urn:ngm:class:avatar-interoperability

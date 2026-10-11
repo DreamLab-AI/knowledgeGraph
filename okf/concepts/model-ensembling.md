@@ -14,9 +14,9 @@ enables:
   - urn:ngm:class:accuracy
 contrastsWith:
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:overfitting

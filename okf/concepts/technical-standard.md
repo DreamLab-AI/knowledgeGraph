@@ -41,7 +41,7 @@ standardizedBy:
   - urn:ngm:class:iso
   - urn:ngm:class:ieee
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:open-standard
   - urn:ngm:class:protocol

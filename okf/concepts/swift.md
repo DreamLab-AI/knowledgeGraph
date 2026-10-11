@@ -29,12 +29,12 @@ implements:
   - urn:ngm:class:message-format
 contrastsWith:
   - urn:ngm:class:ripple-net
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:payment-systems-domain
   - urn:ngm:class:iso-20022
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:sanctions-compliance
 standardizedBy:
   - urn:ngm:class:bank-for-international-settlements

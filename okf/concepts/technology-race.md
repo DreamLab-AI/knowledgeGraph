@@ -8,7 +8,7 @@ description: A technology race is a competitive dynamic in which multiple actors
 maturity: emerging
 quality: 0
 is-a:
-  - urn:ngm:class:competition-in-ai
+  - urn:ngm:class:geopolitics
 ---
 
 # Technology Race

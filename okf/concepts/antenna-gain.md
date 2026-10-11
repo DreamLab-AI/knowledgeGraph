@@ -4,6 +4,7 @@ type: Class
 title: Antenna Gain
 resource: urn:ngm:class:antenna-gain
 domain: space-science-and-systems
+description: Antenna gain is the directional radiation or reception ratio of an antenna relative to a stated reference antenna.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Antenna Gain
+
+Antenna gain is the directional radiation or reception ratio of an antenna relative to a stated reference antenna.

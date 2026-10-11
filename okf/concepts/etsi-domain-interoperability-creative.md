@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:metaverse-content-pipeline
   - urn:ngm:class:3-d-asset-standard
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 requires:
   - urn:ngm:class:interoperability-framework
   - urn:ngm:class:interoperability-standard

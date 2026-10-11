@@ -40,9 +40,9 @@ partOf:
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:regulatory-compliance
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Monero

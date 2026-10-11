@@ -4,6 +4,7 @@ type: Class
 title: GNSS Ephemeris
 resource: urn:ngm:class:gnss-ephemeris
 domain: space-science-and-systems
+description: GNSS broadcast ephemeris is satellite-specific orbit information used to compute that satellite's position at a stated time.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # GNSS Ephemeris
+
+GNSS broadcast ephemeris is satellite-specific orbit information used to compute that satellite's position at a stated time.

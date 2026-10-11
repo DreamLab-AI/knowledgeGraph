@@ -9,7 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:transaction-validation
   - urn:ngm:class:blockchain-ledger
@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:distributed-systems
 supports:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:censorship-resistance
 partOf:
   - urn:ngm:class:node

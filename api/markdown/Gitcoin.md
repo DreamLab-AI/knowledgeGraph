@@ -6,7 +6,7 @@ Gitcoin is a blockchain-based public goods funding platform founded in 2017 that
 - Traditional funding routes — corporate sponsorship, foundation grants, venture capital — each impose constraints that skew incentives away from the commons. Corporate sponsors steer projects toward proprietary interests; foundation grants are slow and opaque; [[Venture Capital]] optimises for extractable returns rather than shared infrastructure.
 - Gitcoin's approach applies [[Mechanism Design]] from public economics to a blockchain coordination substrate, making grant allocation rules transparent, programmable, and resistant to capture.
 - Since its 2017 launch, Gitcoin has run multiple rounds of grants each year, primarily within the [[Ethereum]] ecosystem, distributing funding through a combination of direct contributions and matching pools sourced from protocol treasuries, foundations, and corporate donors.
-- The platform transitioned to a [[DAO]] model in 2021, launching the GTC governance token, which gave the community control over protocol parameters, matching pool rules, and treasury allocation. This shift made Gitcoin itself an experiment in [[On-Chain Governance]].
+- The platform transitioned to a [[Decentralised Autonomous Organisation]] model in 2021, launching the GTC governance token, which gave the community control over protocol parameters, matching pool rules, and treasury allocation. This shift made Gitcoin itself an experiment in [[On-Chain Governance]].
 
 ### Key Mechanisms
 
@@ -38,7 +38,7 @@ Gitcoin is a blockchain-based public goods funding platform founded in 2017 that
 
 ### Standards and Context
 
-- Gitcoin Passport implements the W3C [[Verifiable Credentials]] Data Model, enabling interoperability with other credential issuers and verifiers across the decentralised identity stack.
+- Gitcoin Passport implements the W3C [[Verifiable Credential]] Data Model, enabling interoperability with other credential issuers and verifiers across the decentralised identity stack.
 - GTC token governance follows established ERC-20 and EIP standards on [[Ethereum]], with delegation mechanics drawing on OpenZeppelin governance contract patterns.
 - Grant round contracts have evolved through multiple versions (cGrants → Grants Stack / Allo Protocol), with the Allo Protocol v2 providing a generalised on-chain grants infrastructure that other projects can instantiate.
 - Gitcoin participates in EIP processes and broader Ethereum standards discourse, particularly around identity attestations (EAS — Ethereum Attestation Service) and on-chain credentialing.

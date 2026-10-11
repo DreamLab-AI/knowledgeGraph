@@ -10,10 +10,10 @@ quality: 0
 is-a:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
   - urn:ngm:class:edge-ai-accelerator
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:sensor
   - urn:ngm:class:neural-processing-unit
   - urn:ngm:class:iot-gateway
@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:model-compression-for-edge
   - urn:ngm:class:real-time-inference-at-edge
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedded-ai-frameworks
 enables:
   - urn:ngm:class:autonomous-system
@@ -39,11 +39,11 @@ enables:
   - urn:ngm:class:natural-language-processing
 dependsOn:
   - urn:ngm:class:edge-computing-architecture
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network-quantisation
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:cloud-computing
 implements:
   - urn:ngm:class:federated-learning

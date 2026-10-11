@@ -8,7 +8,7 @@ description: The study and design of economic mechanisms governing blockchain ne
 maturity: emerging
 quality: 0
 is-a:
-  - urn:ngm:class:token-economics
+  - urn:ngm:class:economics
 hasPart:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:governance-token
@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:game-theory
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-market
   - urn:ngm:class:proof-of-stake
 dependsOn:

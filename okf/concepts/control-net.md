@@ -45,7 +45,7 @@ enables:
 dependsOn:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:noise-schedule
@@ -55,7 +55,7 @@ implements:
   - urn:ngm:class:zero-initialisation-protocol
   - urn:ngm:class:weighted-feature-addition
 contrastsWith:
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:generative-adversarial-network
@@ -72,9 +72,9 @@ uses:
   - urn:ngm:class:u-net
   - urn:ngm:class:zero-convolution
   - urn:ngm:class:classifier-free-guidance
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:open-pose
   - urn:ngm:class:depth-estimation
   - urn:ngm:class:edge-detection
@@ -110,7 +110,7 @@ relatedTo:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:u-net
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:generative-ai
 ---
 

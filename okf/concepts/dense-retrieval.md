@@ -62,7 +62,7 @@ uses:
   - urn:ngm:class:nearest-neighbor-search
 supports:
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agentic-rag
   - urn:ngm:class:question-answering
   - urn:ngm:class:cross-encoder-reranking

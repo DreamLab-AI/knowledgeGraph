@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:audio-codec
   - urn:ngm:class:spectrogram
   - urn:ngm:class:residual-vector-quantisation
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 enables:
   - urn:ngm:class:text-to-speech
   - urn:ngm:class:speech-synthesis
@@ -44,9 +44,9 @@ contrastsWith:
   - urn:ngm:class:video-generation
   - urn:ngm:class:audio-processing
 bridgesTo:
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:ethical-ai
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:multimodal-ai-architecture-ai
 uses:
   - urn:ngm:class:diffusion-model
@@ -55,15 +55,15 @@ uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:neural-vocoder
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:flow-matching
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:residual-vector-quantisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:feature-extraction
 supports:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:extended-reality
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:speech-recognition

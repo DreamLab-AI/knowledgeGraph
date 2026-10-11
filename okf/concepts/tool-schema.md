@@ -24,7 +24,7 @@ dependsOn:
   - urn:ngm:class:inference-compute
   - urn:ngm:class:inference-compute
 implements:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:model-context-protocol
 contrastsWith:
   - urn:ngm:class:fine-tuning

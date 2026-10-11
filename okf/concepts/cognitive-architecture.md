@@ -27,7 +27,7 @@ hasPart:
 requires:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:ontology
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:production-rules
 enables:
   - urn:ngm:class:agentic-ai
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:computational-neuroscience
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:cognitive-psychology
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:neuro-symbolic-ai
   - urn:ngm:class:global-workspace-theory
   - urn:ngm:class:decision-making

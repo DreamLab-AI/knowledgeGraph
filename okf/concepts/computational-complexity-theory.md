@@ -8,7 +8,7 @@ description: The mathematical study of the resources — principally time and me
 maturity: established
 quality: 0.9
 is-a:
-  - urn:ngm:class:computer-science
+  - urn:ngm:class:theoretical-computer-science
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:mathematical-logic
   - urn:ngm:class:owl-thing
@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:automata-theory
   - urn:ngm:class:boolean-algebra
 enables:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:cryptographic-hardness-assumption
   - urn:ngm:class:sat-solving
   - urn:ngm:class:approximation-algorithms
@@ -61,14 +61,14 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:cryptography
   - urn:ngm:class:quantum-information
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:data-science
 uses:
   - urn:ngm:class:reduction
   - urn:ngm:class:oracle
-  - urn:ngm:class:cryptographic-proof-system
+  - urn:ngm:class:proof-system
   - urn:ngm:class:probability-theory
 supports:
   - urn:ngm:class:knowledge-representation
@@ -76,7 +76,7 @@ supports:
   - urn:ngm:class:ontology
   - urn:ngm:class:formal-verification
   - urn:ngm:class:cryptography
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ontology
   - urn:ngm:class:description-logic
   - urn:ngm:class:constraint-satisfaction-problem
@@ -85,7 +85,7 @@ standardizedBy:
   - urn:ngm:class:clay-mathematics-institute
 relatedTo:
   - urn:ngm:class:information-theory
-  - urn:ngm:class:computer-science
+  - urn:ngm:class:theoretical-computer-science
   - urn:ngm:class:coding-theory
   - urn:ngm:class:constraint-satisfaction
   - urn:ngm:class:knowledge-graph

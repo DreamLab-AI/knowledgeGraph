@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:equatorial-coordinate-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Equatorial coordinate systems locate a position on the celestial sphere by declination, its angular distance north or south of the extended equatorial plane, and right ascension, its angular distance measured eastward along the equator from a reference point.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

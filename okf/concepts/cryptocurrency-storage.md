@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:blockchain
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 bridgesTo:
   - urn:ngm:class:blockchain
 uses:

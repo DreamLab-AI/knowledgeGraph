@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:ethereum
   - urn:ngm:class:proof-of-stake
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-currency
   - urn:ngm:class:block-reward
 uses:

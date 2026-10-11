@@ -30,8 +30,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -351,6 +351,10 @@
       "label": "AI Energy Optimisation"
     },
     {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
       "slug": "ai-fairness",
       "label": "AI Fairness"
     },
@@ -395,6 +399,10 @@
       "label": "AI Security"
     },
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },
@@ -407,24 +415,8 @@
       "label": "AI-Augmented Software Engineering"
     },
     {
-      "slug": "aiapplications",
-      "label": "AIApplications"
-    },
-    {
-      "slug": "aiapplications",
-      "label": "AIApplications"
-    },
-    {
-      "slug": "aiethics",
-      "label": "AIEthics"
-    },
-    {
       "slug": "aiops",
       "label": "AIOps"
-    },
-    {
-      "slug": "aisystem",
-      "label": "AISystem"
     },
     {
       "slug": "action-recognition",
@@ -840,7 +832,7 @@
     },
     {
       "slug": "fine-tuning",
-      "label": "Fine Tuning"
+      "label": "Fine-Tuning"
     },
     {
       "slug": "fuzzy-logic",
@@ -891,8 +883,8 @@
       "label": "Human Robot Interaction"
     },
     {
-      "slug": "humaninthe-loop-learning",
-      "label": "Humaninthe Loop Learning"
+      "slug": "human-in-the-loop-learning",
+      "label": "Human-in-the-Loop Learning"
     },
     {
       "slug": "identification-system",
@@ -927,8 +919,8 @@
       "label": "Knowledge Graph Construction"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "layer-normalisation",
@@ -959,11 +951,7 @@
       "label": "Loss Function"
     },
     {
-      "slug": "machine-learning-discipline",
-      "label": "Machine Learning Discipline"
-    },
-    {
-      "slug": "machine-learning-discipline-model",
+      "slug": "machine-learning-model",
       "label": "Machine Learning Model"
     },
     {
@@ -973,6 +961,10 @@
     {
       "slug": "machine-learning-technique",
       "label": "Machine Learning Technique"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
     },
     {
       "slug": "machine-translation",
@@ -1076,7 +1068,7 @@
     },
     {
       "slug": "multimodal-ai",
-      "label": "Multimodal Artificial Intelligence"
+      "label": "Multimodal AI"
     },
     {
       "slug": "multimodal-understanding",
@@ -1171,20 +1163,20 @@
       "label": "Policy Update Magnitude"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pre-trained-model",
+      "label": "Pre-Trained Model"
     },
     {
       "slug": "predictive-personalization",
       "label": "Predictive Personalization"
     },
     {
-      "slug": "pretrained-model",
-      "label": "Pretrained Model"
-    },
-    {
       "slug": "pretrained-weights",
       "label": "Pretrained Weights"
+    },
+    {
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "private-blockchain",

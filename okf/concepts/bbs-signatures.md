@@ -31,9 +31,9 @@ uses:
   - urn:ngm:class:commitment-scheme
 supports:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
 relatedTo:
   - urn:ngm:class:digital-identity

@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:interface-layer
 bridgesTo:
   - urn:ngm:class:rest
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 ---
 
 # APILayer

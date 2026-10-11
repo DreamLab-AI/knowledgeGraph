@@ -14,7 +14,7 @@ did:nostr is a W3C DID Core-conformant decentralised identifier method that repr
 
 - Logging in to a [[Solid]] pod via [[Solid-OIDC]] using a Nostr key — the resolution path behind the DreamLab SSO stack and [[JavaScript Solid Server]].
 - [[Single Sign-On]] across web services that understand DIDs.
-- Anchoring [[W3C Verifiable Credentials]] to a self-sovereign identifier.
+- Anchoring [[W3C Verifiable Credentials Data Model]] to a self-sovereign identifier.
 - Identifying parties and autonomous agents in [[Web Contracts]] and [[Block Trails]] (same secp256k1 key controls identity and on-chain state).
 
 ### Provenance

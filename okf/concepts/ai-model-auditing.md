@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-safety-research
 relatedTo:
   - urn:ngm:class:interpretability
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:frontier-model-evaluation
 ---
 

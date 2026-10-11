@@ -178,7 +178,7 @@ Whilst the early 2010s public discourse conflated DLT with cryptocurrency specul
 
 The relationship between **DLT** and **blockchain** is hierarchical, not synonymous:
 
-**Blockchain ⊂ DLT**: Every blockchain is a DLT, but not every DLT is a blockchain. Blockchain specifically denotes a DLT in which transactions are batched into time-ordered blocks linked by cryptographic hash pointers forming a chain, with the chain maintained under a single global total order. Examples: [[Bitcoin Proof-of-Work Protocol]] (chain of 1 MB blocks every ~10 minutes), [[Ethereum Smart Contract Platform]] (chain of variable-size blocks every ~12 seconds post-Merge proof-of-stake), Litecoin, Bitcoin Cash, Solana (chain with parallel execution).
+**Blockchain ⊂ DLT**: Every blockchain is a DLT, but not every DLT is a blockchain. Blockchain specifically denotes a DLT in which transactions are batched into time-ordered blocks linked by cryptographic hash pointers forming a chain, with the chain maintained under a single global total order. Examples: [[Bitcoin Proof-of-Work Protocol]] (chain of 1 MB blocks every ~10 minutes), [[Ethereum]] (chain of variable-size blocks every ~12 seconds post-Merge proof-of-stake), Litecoin, Bitcoin Cash, Solana (chain with parallel execution).
 
 **Non-Blockchain DLTs** include:
 
@@ -250,7 +250,7 @@ Across all DLT implementations a common conceptual stack appears, with implement
 
 **[[Bitcoin Proof-of-Work Protocol]]** (2009): First DLT deployed at scale. UTXO model, ~10-minute block time, SHA-256 proof-of-work consensus, ~700K-1M active nodes globally, 21M fixed supply. Primary use case: censorship-resistant digital store of value. Approximately $1.5-2T market capitalisation by 2026. The defining DLT for monetary applications.
 
-**[[Ethereum Smart Contract Platform]]** (2015): Account model, ~12-second block time post-Merge (September 2022) proof-of-stake. ~1M validators, ~10K full nodes. Primary use case: programmable smart contracts, DeFi infrastructure, tokenisation host (BlackRock BUIDL, Ondo, hundreds of stablecoins). Approximately $400-600B market capitalisation by 2026.
+**[[Ethereum]]** (2015): Account model, ~12-second block time post-Merge (September 2022) proof-of-stake. ~1M validators, ~10K full nodes. Primary use case: programmable smart contracts, DeFi infrastructure, tokenisation host (BlackRock BUIDL, Ondo, hundreds of stablecoins). Approximately $400-600B market capitalisation by 2026.
 
 **Layer-1 alternatives**: Solana (parallel execution, ~400ms block times, ~$80-150B market cap), Avalanche (subnet architecture), Polkadot (parachain shared security), Cosmos (sovereign chains with IBC), Cardano (UTXO + smart contracts via Plutus), Algorand (pure proof-of-stake), Near Protocol (sharded).
 

@@ -28,7 +28,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:css
   - urn:ngm:class:web-browser
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:progressive-web-app
 ---
 

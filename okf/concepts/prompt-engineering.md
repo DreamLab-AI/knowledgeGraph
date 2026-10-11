@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:ai-application
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:human-computer-interaction
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:instruction-following
   - urn:ngm:class:applied-artificial-intelligence
@@ -34,9 +34,9 @@ hasPart:
   - urn:ngm:class:prompt-injection-defence
 requires:
   - urn:ngm:class:instruction-following
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:attention
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:transformer-architecture
@@ -51,12 +51,12 @@ enables:
   - urn:ngm:class:code-generation
   - urn:ngm:class:reasoning
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:attention
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:context-window
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:artificial-general-intelligence
 implements:
   - urn:ngm:class:automatic-prompt-optimisation
@@ -69,7 +69,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:training-and-fine-tuning
   - urn:ngm:class:model-optimisation-and-performance
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:active-learning
 uses:
   - urn:ngm:class:dspy
@@ -78,7 +78,7 @@ uses:
   - urn:ngm:class:node-based-diffusion-pipeline-interface
   - urn:ngm:class:lang-chain
   - urn:ngm:class:reasoning
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 supports:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:agent-frameworks

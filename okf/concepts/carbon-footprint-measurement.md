@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:satellite-monitoring
   - urn:ngm:class:verification
   - urn:ngm:class:scope-classification
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:verification
   - urn:ngm:class:boundary-setting
   - urn:ngm:class:emission-inventory
@@ -69,8 +69,8 @@ uses:
   - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:remote-sensing
   - urn:ngm:class:blockchain
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:ai
   - urn:ngm:class:satellite-data
 supports:

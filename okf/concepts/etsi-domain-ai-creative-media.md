@@ -41,7 +41,7 @@ dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:computer-vision
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:c2-pa
   - urn:ngm:class:generative-content-classification
@@ -56,7 +56,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-model
   - urn:ngm:class:clip
   - urn:ngm:class:latent-space
@@ -68,7 +68,7 @@ supports:
   - urn:ngm:class:digital-twin
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:cen-cenelec
   - urn:ngm:class:3-gpp
 partOf:

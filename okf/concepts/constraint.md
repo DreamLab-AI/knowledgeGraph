@@ -57,7 +57,7 @@ uses:
   - urn:ngm:class:smt-solver
   - urn:ngm:class:gradient-descent
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:fairness
   - urn:ngm:class:ontology
   - urn:ngm:class:explainability

@@ -15,7 +15,7 @@ A DID Document is a JSON-LD resource resolved from a Decentralised Identifier (D
   - Common key types: [[Ed25519]] (signatures), [[X25519]] (key agreement), [[ECDSA]] over P-256 (broad compatibility), [[BLS12-381]] (selective disclosure in BBS+ signatures).
 - **Verification Relationships** — properties that reference verification methods by id or embed them inline:
   - `authentication` — keys proving control of the DID; used during [[Decentralised Authentication]].
-  - `assertionMethod` — keys used to sign [[Verifiable Credentials]] or other claims.
+  - `assertionMethod` — keys used to sign [[Verifiable Credential]] or other claims.
   - `keyAgreement` — keys for [[Key Agreement Protocol]] (e.g. ECDH-ES for encrypted messaging).
   - `capabilityInvocation` — keys authorised to invoke capabilities on services (relevant to [[Object Capabilities]]).
   - `capabilityDelegation` — keys that may delegate capabilities to third parties.
@@ -41,7 +41,7 @@ A DID Document is a JSON-LD resource resolved from a Decentralised Identifier (D
 
 ### Applications and Use Cases
 
-- **[[Verifiable Credentials]] ecosystem** — Issuers publish DID Documents so holders and verifiers can retrieve the issuer's assertion method keys and validate credential signatures; holders publish DID Documents (optionally) so verifiers can confirm presentations. The entire [[W3C Verifiable Credentials Data Model]] v2.0 trust triangle depends on DID Document resolution.
+- **[[Verifiable Credential]] ecosystem** — Issuers publish DID Documents so holders and verifiers can retrieve the issuer's assertion method keys and validate credential signatures; holders publish DID Documents (optionally) so verifiers can confirm presentations. The entire [[W3C Verifiable Credentials Data Model]] v2.0 trust triangle depends on DID Document resolution.
 - **[[DIDComm]] messaging** — Agents discover each other's encrypted messaging endpoints from DID Documents, enabling secure, asynchronous, transport-agnostic communication without any central broker.
 - **[[OpenID for Verifiable Credentials]] (OID4VC)** — DID Documents underpin issuer and verifier discovery in OID4VC and OpenID for Verifiable Presentations (OID4VP) flows, bridging W3C standards with OAuth/OIDC infrastructure.
 - **[[Decentralised Access Control]]** — `capabilityInvocation` and `capabilityDelegation` relationships enable [[Object Capabilities]]-based authorisation, allowing fine-grained, delegatable permissions without central policy stores.

@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-model-architecture
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:parametric-model
   - urn:ngm:class:differentiable-programming
@@ -44,7 +44,7 @@ dependsOn:
 implements:
   - urn:ngm:class:multilayer-perceptron
   - urn:ngm:class:swi-glu
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:residual-connection
   - urn:ngm:class:multilayer-perceptron
   - urn:ngm:class:position-wise-ffn
@@ -73,12 +73,12 @@ standardizedBy:
   - urn:ngm:class:neur-ips
 relatedTo:
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:variational-autoencoders
   - urn:ngm:class:autoencoder
   - urn:ngm:class:transformer
   - urn:ngm:class:large-language-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 ---
 
 # Feed Forward Network

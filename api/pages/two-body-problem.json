@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:two-body-problem",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A gravitational two-body problem models two masses interacting only through their mutual attraction.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

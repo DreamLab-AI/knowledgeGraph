@@ -29,7 +29,7 @@ uses:
 partOf:
   - urn:ngm:class:unsupervised-learning
 relatedTo:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:information-theory
   - urn:ngm:class:entropy
 ---

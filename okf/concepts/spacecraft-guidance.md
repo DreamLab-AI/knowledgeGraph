@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Guidance
 resource: urn:ngm:class:spacecraft-guidance
 domain: space-science-and-systems
+description: Spacecraft guidance converts a mission objective into feasible commanded motion for a spacecraft.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Spacecraft Guidance
+
+Spacecraft guidance converts a mission objective into feasible commanded motion for a spacecraft.

@@ -4,6 +4,7 @@ type: Class
 title: Fast Ice
 resource: urn:ngm:class:fast-ice
 domain: earth-observation-and-geospatial-sensing
+description: Fast ice is sea ice that forms along a coast and stays attached to the shore, to an ice wall, to an ice front, or between shoals or grounded icebergs.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Fast Ice
+
+Fast ice is sea ice that forms along a coast and stays attached to the shore, to an ice wall, to an ice front, or between shoals or grounded icebergs.[^1][^2]

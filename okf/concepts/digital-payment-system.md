@@ -28,9 +28,9 @@ enables:
 contrastsWith:
   - urn:ngm:class:traditional-banking
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:metaverse
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin

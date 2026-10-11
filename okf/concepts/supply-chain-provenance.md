@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:sensor-data
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 supports:
   - urn:ngm:class:provenance-verification
   - urn:ngm:class:esg-reporting

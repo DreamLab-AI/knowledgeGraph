@@ -87,7 +87,7 @@ Blockchain security is the multidisciplinary field concerned with protecting dis
 ### Governance and Security
 
 - Blockchain protocol upgrades are themselves a security surface: governance mechanisms (on-chain voting, timelocks, multi-sig councils) that control parameter changes or code upgrades must be secured against vote-buying, flash-loan governance attacks, and low-participation capture.
-- **Decentralised Autonomous Organisations ([[DAO]])**: DAO treasuries and voting mechanisms are attractive targets; the 2016 DAO hack and subsequent Beanstalk governance flash-loan attack illustrate how on-chain governance introduces attack vectors absent in centralised systems.
+- **Decentralised Autonomous Organisations ([[Decentralised Autonomous Organisation]])**: DAO treasuries and voting mechanisms are attractive targets; the 2016 DAO hack and subsequent Beanstalk governance flash-loan attack illustrate how on-chain governance introduces attack vectors absent in centralised systems.
 - **Upgrade proxy patterns**: transparent, UUPS, and Beacon proxies allow smart contract logic to be replaced while preserving state and address. Each pattern carries specific security risks around who can trigger upgrades and whether storage layouts are preserved correctly.
 - **Timelocks**: enforcing a mandatory delay between a governance decision and its on-chain execution gives users opportunity to exit positions or coordinate emergency responses if a malicious upgrade is proposed.
 - Effective [[Decentralised Finance]] security therefore requires security engineering across both technical code layers and social/governance layers, with clear incident response authority that does not itself become a centralisation vector.

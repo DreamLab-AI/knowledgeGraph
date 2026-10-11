@@ -140,14 +140,14 @@
       "slug": "digital-infrastructure"
     },
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud",
-      "slug": "infra-computing-and-cloud"
-    },
-    {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
     }
   ],
   "inheritedRelations": {
@@ -161,28 +161,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "requires": [
@@ -229,8 +229,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -383,8 +383,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -421,20 +421,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
       {
         "id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

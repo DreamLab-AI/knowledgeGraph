@@ -20,7 +20,7 @@ contrastsWith:
   - urn:ngm:class:apache-flink
 bridgesTo:
   - urn:ngm:class:apache-kafka
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:in-memory-computing
   - urn:ngm:class:distributed-computing

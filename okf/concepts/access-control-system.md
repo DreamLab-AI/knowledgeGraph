@@ -44,7 +44,7 @@ enables:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:risk-assessment
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:directory-service
   - urn:ngm:class:cryptography
   - urn:ngm:class:secure-logging
@@ -61,7 +61,7 @@ contrastsWith:
   - urn:ngm:class:capability-based-security
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:passwordless-authentication
 bridgesTo:
   - urn:ngm:class:training-data

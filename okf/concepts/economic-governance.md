@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:artificial-intelligence
 bridgesTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
   - urn:ngm:class:governance
   - urn:ngm:class:tokenomics

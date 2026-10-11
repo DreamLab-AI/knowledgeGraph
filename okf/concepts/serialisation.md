@@ -23,9 +23,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:message-passing
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:protocol-buffer
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 supports:
   - urn:ngm:class:api
   - urn:ngm:class:interoperability

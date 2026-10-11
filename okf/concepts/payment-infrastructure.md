@@ -29,7 +29,7 @@ implements:
   - urn:ngm:class:iso-20022
   - urn:ngm:class:swift-messaging
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-collaboration

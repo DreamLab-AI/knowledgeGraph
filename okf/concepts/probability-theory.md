@@ -38,7 +38,7 @@ bridgesTo:
   - urn:ngm:class:conformal-prediction
   - urn:ngm:class:financial-mathematics
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:graphical-model
   - urn:ngm:class:bayesian-networks
   - urn:ngm:class:graphical-model

@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:3-d-engine
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:robotics
   - urn:ngm:class:physics-simulation-engine
 uses:

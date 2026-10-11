@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:normalized-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "In the SWEET ontology, the class named \u201cNormalized\u201d is a data state: a subclass of DataState whose members have undergone a process that the ontology calls \u201cNormalization\u201d.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

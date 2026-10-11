@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gamma-ray-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Gamma-ray astronomy is the study of cosmic sources through their gamma rays, which have the smallest wavelengths and the most energy of any wave in the electromagnetic spectrum.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

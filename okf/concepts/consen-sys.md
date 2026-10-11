@@ -20,9 +20,9 @@ requires:
 enables:
   - urn:ngm:class:web3
   - urn:ngm:class:decentralised-application
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:zk-rollup
 contrastsWith:
   - urn:ngm:class:coinbase

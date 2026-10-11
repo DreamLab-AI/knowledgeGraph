@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0.9
 is-a:
   - urn:ngm:class:mlops
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:ai-lifecycle
 hasPart:
   - urn:ngm:class:model-training-pipeline
@@ -91,7 +91,7 @@ relatedTo:
   - urn:ngm:class:statistical-process-control
   - urn:ngm:class:model-decay
   - urn:ngm:class:feature-engineering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 

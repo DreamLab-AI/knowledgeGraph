@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:magnetospheric-ring-current",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A population of medium-energy charged particles drifts around Earth to form the magnetospheric ring current, with protons drifting in one direction and electrons in the opposite direction.[^1] Because the two species drift oppositely, the population forms a ring of current around the planet.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

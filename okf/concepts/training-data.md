@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:data-governance
   - urn:ngm:class:dataset
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-management
   - urn:ngm:class:knowledge-representation
 hasPart:
@@ -38,7 +38,7 @@ enables:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:code-generation
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:model-training
   - urn:ngm:class:reinforcement-learning-from-human-feedback
@@ -75,14 +75,14 @@ supports:
   - urn:ngm:class:code-generation
   - urn:ngm:class:computer-vision
   - urn:ngm:class:diffusion-models
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:speech-recognition
 standardizedBy:
   - urn:ngm:class:cdla
   - urn:ngm:class:creative-commons
   - urn:ngm:class:open-rail
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:us-copyright-office
   - urn:ngm:class:uk-ipo
 relatedTo:

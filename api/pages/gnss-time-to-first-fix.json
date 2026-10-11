@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-time-to-first-fix",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS time to first fix is the time elapsed from switching on a GNSS receiver until it outputs a navigation solution within a stated performance level.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

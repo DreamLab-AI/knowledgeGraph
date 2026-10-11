@@ -36,7 +36,7 @@ enables:
 dependsOn:
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:speech-recognition
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:neural-xr-interfaces
   - urn:ngm:class:real-time-processing
 implements:
@@ -51,7 +51,7 @@ uses:
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:accessibility-audit-tool
   - urn:ngm:class:speech-recognition
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:multimodal-ai-architecture-ai
@@ -69,7 +69,7 @@ relatedTo:
   - urn:ngm:class:accessibility-standard
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:inclusive-design
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:digital-equity
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:khronos-open-xr

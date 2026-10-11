@@ -8,7 +8,7 @@
   "definition": "The reparameterisation trick is a technique for obtaining low-variance gradient estimates of an expectation over a random variable by expressing that variable as a deterministic, differentiable function of the distribution parameters and an independent noise source. By moving the stochasticity outside the computation graph, gradients can flow through a sampling step via backpropagation, enabling end-to-end training of models with latent random variables. It is foundational to variational autoencoders and to many stochastic optimisation methods in deep learning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:vae",
+      "id": "urn:ngm:class:variational-autoencoder",
       "label": "Variational Autoencoder"
     }
   ],
@@ -29,7 +29,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -73,7 +73,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -87,12 +87,17 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:autoencoder",
+      "label": "Autoencoder",
+      "slug": "autoencoder"
+    },
     {
       "id": "urn:ngm:class:deep-generative-model",
       "label": "Deep Generative Model",
@@ -124,9 +129,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -154,10 +159,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Model"
       },
@@ -172,6 +173,10 @@
       {
         "id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
       }
     ],
     "requires": [
@@ -182,6 +187,10 @@
       {
         "id": "urn:ngm:class:kl-divergence",
         "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
       },
       {
         "id": "urn:ngm:class:variational-inference",
@@ -196,10 +205,6 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
       },
@@ -210,12 +215,20 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
         "id": "urn:ngm:class:data-augmentation",
         "label": "Data Augmentation"
       },
       {
         "id": "urn:ngm:class:disentangled-representation",
         "label": "Disentangled Representation"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
       },
       {
         "id": "urn:ngm:class:image-generation",
@@ -230,16 +243,8 @@
         "label": "Representation Learning"
       },
       {
-        "id": "urn:ngm:class:audio-synthesis",
-        "label": "Audio Synthesis"
-      },
-      {
-        "id": "urn:ngm:class:drug-discovery",
-        "label": "Drug Discovery"
-      },
-      {
-        "id": "urn:ngm:class:model-based-reinforcement-learning",
-        "label": "Model-Based Reinforcement Learning"
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       }
     ],
     "dependsOn": [
@@ -272,11 +277,23 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Nonlinear Dimensionality Reduction"
+      },
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
@@ -296,18 +313,6 @@
       {
         "id": "urn:ngm:class:unsupervised-learning",
         "label": "Unsupervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:audio-generation",
-        "label": "Audio Generation"
-      },
-      {
-        "id": "urn:ngm:class:code-generation",
-        "label": "Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:image-generation",
-        "label": "Image Generation"
       }
     ],
     "contrastsWith": [
@@ -324,6 +329,14 @@
         "label": "Generative Adversarial Network"
       },
       {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
         "id": "urn:ngm:class:classifier",
         "label": "Classifier"
       },
@@ -334,24 +347,32 @@
       {
         "id": "urn:ngm:class:shallow-machine-learning",
         "label": "Shallow Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       },
       {
         "id": "urn:ngm:class:governance",
@@ -360,22 +381,6 @@
       {
         "id": "urn:ngm:class:privacy-preserving-machine-learning",
         "label": "Privacy-Preserving Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:synthetic-media",
-        "label": "Synthetic Media"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-validation",
-        "label": "Blockchain Validation"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-ai",
-        "label": "Decentralized AI"
-      },
-      {
-        "id": "urn:ngm:class:lightning-network",
-        "label": "Lightning Network"
       }
     ],
     "uses": [
@@ -392,24 +397,24 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
-      },
-      {
-        "id": "urn:ngm:class:decoder-network",
-        "label": "Decoder Network"
-      },
-      {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder-Decoder Architecture"
-      },
-      {
-        "id": "urn:ngm:class:score-matching",
-        "label": "Score Matching"
       }
     ],
     "supports": [
@@ -434,21 +439,21 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
-      },
-      {
         "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -464,6 +469,14 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -476,6 +489,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -488,28 +505,28 @@
         "label": "Hierarchical VAE"
       },
       {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
         "id": "urn:ngm:class:vq-vae",
         "label": "VQ-VAE"
       },
       {
-        "id": "urn:ngm:class:consistency-distillation",
-        "label": "Consistency Distillation"
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:density-estimation",
-        "label": "Density Estimation"
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:flow-matching",
-        "label": "Flow Matching"
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Model"
-      },
-      {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
       }
     ]
   },

@@ -22,7 +22,7 @@ requires:
 enables:
   - urn:ngm:class:micropayments
   - urn:ngm:class:instant-settlement
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:atomic-swap
 dependsOn:
   - urn:ngm:class:utxo-model
@@ -36,7 +36,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:bc-defi-and-economics
   - urn:ngm:class:liquid-network
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:payment-systems-domain
 uses:
   - urn:ngm:class:cryptographic-hash-function

@@ -79,11 +79,6 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:behavioural-economics",
-      "label": "Behavioural Economics",
-      "slug": "behavioural-economics"
-    },
-    {
       "id": "urn:ngm:class:complexity-science",
       "label": "Complexity Science",
       "slug": "complexity-science"
@@ -94,24 +89,9 @@
       "slug": "information-theory"
     },
     {
-      "id": "urn:ngm:class:institutional-economics",
-      "label": "Institutional Economics",
-      "slug": "institutional-economics"
-    },
-    {
-      "id": "urn:ngm:class:political-economy",
-      "label": "Political Economy",
-      "slug": "political-economy"
-    },
-    {
       "id": "urn:ngm:class:scientific-machine-learning",
       "label": "Scientific Machine Learning",
       "slug": "scientific-machine-learning"
-    },
-    {
-      "id": "urn:ngm:class:simulation",
-      "label": "Simulation",
-      "slug": "simulation"
     },
     {
       "id": "urn:ngm:class:social-science",
@@ -124,19 +104,19 @@
       "slug": "applied-mathematics"
     },
     {
-      "id": "urn:ngm:class:digital-twin",
-      "label": "Digital Twin",
-      "slug": "digital-twin"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:scientific-discovery",
       "label": "Scientific Discovery",
       "slug": "scientific-discovery"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -147,26 +127,6 @@
       "id": "urn:ngm:class:mathematical-science",
       "label": "Mathematical Science",
       "slug": "mathematical-science"
-    },
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -414,7 +374,7 @@
         "label": "Agent-Based Modelling"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -486,8 +446,8 @@
         "label": "UK HM Treasury"
       },
       {
-        "id": "urn:ngm:class:imf",
-        "label": "IMF"
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
       },
       {
         "id": "urn:ngm:class:oecd",
@@ -512,12 +472,12 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:decision-science",
-        "label": "Decision Science"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

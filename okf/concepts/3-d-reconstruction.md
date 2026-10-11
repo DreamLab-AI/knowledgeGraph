@@ -32,7 +32,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:photogrammetry
   - urn:ngm:class:digital-twin
 uses:

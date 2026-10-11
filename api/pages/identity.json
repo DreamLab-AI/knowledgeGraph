@@ -44,7 +44,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -123,7 +123,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "partOf": [],
@@ -317,12 +317,8 @@
       "label": "DID Nostr Identity"
     },
     {
-      "slug": "decentralised-identifiers",
-      "label": "Decentralised Identifiers"
-    },
-    {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "digital-identity-wallet",
@@ -361,8 +357,8 @@
       "label": "Sovereign Keyset"
     },
     {
-      "slug": "verifiable-credentials",
-      "label": "Verifiable Credentials"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

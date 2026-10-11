@@ -8,8 +8,8 @@
   "definition": "A reversible, unitary operation applied to a small number of qubits that transforms their joint quantum state, serving as the fundamental building block of quantum circuits in the gate-based model of quantum computation. Quantum gates are the analogue of classical logic gates but, being unitary matrices acting on complex state vectors, they can create superposition and entanglement, and any quantum algorithm can be decomposed into sequences drawn from a small universal gate set.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computation Paradigm"
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
     }
   ],
   "entityType": "Class",
@@ -42,8 +42,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "relatedTo": []
@@ -147,12 +147,6 @@
         "label": "Robotics"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:superconductivity",
-        "label": "Superconductivity"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:grovers-algorithm",
@@ -187,6 +181,10 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -196,14 +194,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-machine-learning",
-        "label": "Quantum Machine Learning"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -229,6 +219,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -237,8 +231,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -255,10 +249,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

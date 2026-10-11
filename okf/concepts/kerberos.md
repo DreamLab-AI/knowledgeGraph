@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:cryptographic-protocols
 uses:
   - urn:ngm:class:aes-encryption
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:active-directory
   - urn:ngm:class:ldap

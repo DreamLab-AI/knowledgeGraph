@@ -12,7 +12,7 @@ is-a:
 dependsOn:
   - urn:ngm:class:distributed-ledger
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenomics
 uses:
   - urn:ngm:class:blockchain

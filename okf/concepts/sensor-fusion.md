@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-perception
 hasPart:
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:imu
 requires:
   - urn:ngm:class:lidar

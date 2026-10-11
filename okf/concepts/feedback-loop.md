@@ -89,7 +89,7 @@ relatedTo:
   - urn:ngm:class:cybernetics
   - urn:ngm:class:homeostasis
   - urn:ngm:class:model-collapse
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:systems-dynamics
   - urn:ngm:class:autopoiesis

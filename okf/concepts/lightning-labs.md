@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:payment-channel
   - urn:ngm:class:micropayment
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
 implements:
   - urn:ngm:class:lightning-network
   - urn:ngm:class:bolt-specifications
@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:mu-sig-2
 supports:
   - urn:ngm:class:layer-2-scaling
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:core-lightning
   - urn:ngm:class:eclair

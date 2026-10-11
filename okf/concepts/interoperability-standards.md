@@ -26,9 +26,9 @@ enables:
   - urn:ngm:class:federated-system
 implements:
   - urn:ngm:class:communication-protocols
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:open-standards
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 contrastsWith:
   - urn:ngm:class:proprietary-protocol
   - urn:ngm:class:vendor-lock-in
@@ -47,7 +47,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:iso
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ieee
 relatedTo:
   - urn:ngm:class:application-programming-interface

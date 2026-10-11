@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:spatial-calibration
   - urn:ngm:class:storage-infrastructure
 enables:
-  - urn:ngm:class:3-d-content-generation
+  - urn:ngm:class:3-d-generation
   - urn:ngm:class:visual-representation
   - urn:ngm:class:digital-twin-creation
   - urn:ngm:class:3-d-generation

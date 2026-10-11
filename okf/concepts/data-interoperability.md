@@ -35,10 +35,10 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
   - urn:ngm:class:oasis
 relatedTo:

@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:reference-policy
 requires:
   - urn:ngm:class:preference-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:supervised-fine-tuning
   - urn:ngm:class:human-preference
   - urn:ngm:class:cross-entropy-loss
@@ -49,21 +49,21 @@ uses:
   - urn:ngm:class:kl-divergence
   - urn:ngm:class:adam-optimiser
   - urn:ngm:class:gradient-accumulation
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:mixed-precision-training
 supports:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:human-feedback
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 standardizedBy:
   - urn:ngm:class:iclr
   - urn:ngm:class:icml
   - urn:ngm:class:neur-ips
 relatedTo:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:kto
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 
 # Direct Preference Optimisation

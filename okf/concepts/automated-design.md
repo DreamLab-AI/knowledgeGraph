@@ -36,7 +36,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:parametric-design-methodology-modeling
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:algorithm
   - urn:ngm:class:simulation
   - urn:ngm:class:evolutionary-algorithm
@@ -45,7 +45,7 @@ uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:surrogate-model
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:transfer-learning
 supports:
@@ -59,7 +59,7 @@ relatedTo:
   - urn:ngm:class:cad-software
   - urn:ngm:class:constraint-based-design
   - urn:ngm:class:additive-manufacturing
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:generative-design
   - urn:ngm:class:ai-safety
   - urn:ngm:class:agentic-ai

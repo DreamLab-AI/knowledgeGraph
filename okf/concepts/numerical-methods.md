@@ -36,7 +36,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:error-analysis
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:physics-simulation
 relatedTo:
   - urn:ngm:class:parallel-computing

@@ -45,7 +45,7 @@ Open standards are publicly available, transparently developed technical specifi
 
 ### Standards Bodies and Context
 
-- **[[W3C]] (World Wide Web Consortium)** — stewards web platform standards; operates a royalty-free patent policy. Key outputs: HTML, CSS, WebXR, DIDs, Verifiable Credentials.
+- **[[World Wide Web Consortium]] (World Wide Web Consortium)** — stewards web platform standards; operates a royalty-free patent policy. Key outputs: HTML, CSS, WebXR, DIDs, Verifiable Credentials.
 - **[[IETF]] (Internet Engineering Task Force)** — open, volunteer-driven body producing internet [[Protocol]] standards via [[Request for Comments]]. Key outputs: TCP/IP, HTTP/3 (QUIC), TLS 1.3.
 - **[[IEEE]] (Institute of Electrical and Electronics Engineers)** — formal standards body covering networking (Wi-Fi, Ethernet), power, and emerging technologies.
 - **[[ISO]] (International Organisation for Standardisation)** — broad international coverage; collaborates with IEC on IT through JTC 1. Key outputs: C++ language standard, MPEG codecs, cryptographic hash standards.

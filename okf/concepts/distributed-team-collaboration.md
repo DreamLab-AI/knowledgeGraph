@@ -25,7 +25,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:asynchronous-communication
   - urn:ngm:class:collaboration-platform
-  - urn:ngm:class:realtime-communication
+  - urn:ngm:class:real-time-communication
   - urn:ngm:class:version-control
   - urn:ngm:class:video-conferencing
   - urn:ngm:class:project-management-software

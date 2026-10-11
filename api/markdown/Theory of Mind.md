@@ -10,7 +10,7 @@ The cognitive capacity to attribute mental states — beliefs, desires, intentio
 
 ToM is layered. First-order attribution ("she believes X") extends to higher orders ("he thinks that she believes X"), and full competence spans belief, desire, intention, knowledge and ignorance, emotion, and pretence. In cognitive science it is variously explained by *theory-theory* (an intuitive folk psychology), *simulation theory* (running one's own cognitive machinery offline in the other's place), and Bayesian inverse-planning accounts that recover goals and beliefs as the latent causes best explaining observed behaviour.
 
-For artificial agents, ToM is a load-bearing part of [[Common Sense Reasoning]] about people and a prerequisite for fluent [[Social Interaction]]: a system that cannot track what its interlocutor knows will over-explain, under-explain, or mispredict their actions. In [[Social Robotics]] and human-robot teaming, machine ToM supports intention recognition, legible motion, and knowing when a human collaborator holds a stale or false belief that the robot should correct.
+For artificial agents, ToM is a load-bearing part of [[Commonsense Reasoning]] about people and a prerequisite for fluent [[Social Interaction]]: a system that cannot track what its interlocutor knows will over-explain, under-explain, or mispredict their actions. In [[Social Robotics]] and human-robot teaming, machine ToM supports intention recognition, legible motion, and knowing when a human collaborator holds a stale or false belief that the robot should correct.
 
 ## Current Landscape
 

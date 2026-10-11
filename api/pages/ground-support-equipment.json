@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-support-equipment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ground support equipment is the equipment on the ground used to build, test, handle and prepare a spacecraft and its payload before and during launch operations.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

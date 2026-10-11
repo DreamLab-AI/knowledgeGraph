@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:standards-body
 relatedTo:
   - urn:ngm:class:cryptography-security-and-privacy
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # ISO/IEC JTC 1/SC 27

@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:virtual-environment
   - urn:ngm:class:package-manager
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:data-science
   - urn:ngm:class:scientific-computing
@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:smart-contract
 uses:
   - urn:ngm:class:numpy
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:scikit-learn
   - urn:ngm:class:jupyter-notebook
@@ -43,11 +43,11 @@ supports:
   - urn:ngm:class:infrastructure-as-code
   - urn:ngm:class:web-framework
 relatedTo:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:machine-learning-discipline-framework
   - urn:ngm:class:ai-infrastructure
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
 ---
 
 # Python

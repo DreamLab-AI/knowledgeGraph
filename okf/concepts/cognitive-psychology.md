@@ -63,7 +63,7 @@ supports:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:cognitive-architecture
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:affective-computing
 standardizedBy:
   - urn:ngm:class:american-psychological-association
@@ -76,7 +76,7 @@ relatedTo:
   - urn:ngm:class:decision-making
   - urn:ngm:class:behavioural-economics
   - urn:ngm:class:computational-linguistics
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:cognitive-ai
   - urn:ngm:class:knowledge-graphs
   - urn:ngm:class:information-theory

@@ -29,7 +29,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:open-source
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data
 relatedTo:
   - urn:ngm:class:data-science

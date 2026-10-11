@@ -74,9 +74,9 @@
       "slug": "model-evaluation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -213,12 +213,12 @@
         "label": "Logging"
       },
       {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability"
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
-        "label": "Machine Learning Pipeline"
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
       }
     ],
     "implements": [
@@ -371,8 +371,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:model-training",
@@ -393,7 +393,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -405,8 +405,12 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -421,6 +425,10 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

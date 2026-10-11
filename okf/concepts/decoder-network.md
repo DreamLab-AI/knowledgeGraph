@@ -9,7 +9,7 @@ maturity: established
 quality: 0.9
 is-a:
   - urn:ngm:class:neural-network
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 hasPart:
   - urn:ngm:class:upsampling
   - urn:ngm:class:transposed-convolution
@@ -46,13 +46,13 @@ uses:
   - urn:ngm:class:pixel-shuffle
   - urn:ngm:class:kv-cache
 supports:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:natural-language-processing
 partOf:
   - urn:ngm:class:autoencoder
-  - urn:ngm:class:vae
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:sequence-to-sequence-model
 relatedTo:
   - urn:ngm:class:deep-learning

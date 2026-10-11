@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:confusion-matrix-slice
   - urn:ngm:class:f1-score
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:classifier
   - urn:ngm:class:probability-calibration
@@ -89,8 +89,8 @@ supports:
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:mhra-samd-guidance
   - urn:ngm:class:iso-iec-23053
 relatedTo:

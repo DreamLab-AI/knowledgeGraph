@@ -11,12 +11,12 @@ is-a:
   - urn:ngm:class:ai-application
   - urn:ngm:class:deep-learning
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:gan
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-models
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:neural-network
   - urn:ngm:class:training-data
 requires:
@@ -40,7 +40,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:nft
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:lightning-network
 ---
 

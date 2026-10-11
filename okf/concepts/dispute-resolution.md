@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:legal-compliance
   - urn:ngm:class:oracle
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:dao-legal-structures
 relatedTo:

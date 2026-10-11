@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:cryptocurrency
 enables:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:value
   - urn:ngm:class:liquidity-mining
   - urn:ngm:class:staking
@@ -33,7 +33,7 @@ implements:
   - urn:ngm:class:deflationary-token
 contrastsWith:
   - urn:ngm:class:fiat-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:behavioural-economics
   - urn:ngm:class:regulatory-compliance
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:utility-token
   - urn:ngm:class:mev
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:proof-of-stake
 partOf:
   - urn:ngm:class:blockchain-economics

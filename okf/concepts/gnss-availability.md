@@ -4,6 +4,7 @@ type: Class
 title: GNSS Availability
 resource: urn:ngm:class:gnss-availability
 domain: space-science-and-systems
+description: GNSS availability is the percentage of time that the services of a navigation system are usable by the navigator.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # GNSS Availability
+
+GNSS availability is the percentage of time that the services of a navigation system are usable by the navigator.[^1]

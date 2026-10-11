@@ -136,7 +136,7 @@ The [[Snapshot Management]] capability addresses the reproducibility gap directl
 
 **Update Manager** — polls installed node repositories (via `git fetch` + `git log ORIG_HEAD..HEAD --oneline`) to detect new commits since the installed version and surfaces a per-node update status in the UI. Batch update via "Update All" triggers the pre-update snapshot save before applying all updates.
 
-**Model Downloader** — integrates with [[Hugging Face Hub]] (via the Hub Python client API) and [[CivitAI]] (via CivitAI's REST API with optional API key authentication) to browse model files — [[Model Checkpoint|checkpoints]], [[LoRA]] adapters, [[VAE]] decoders, [[ControlNet]] weights — and download them directly into the correct [[ComfyUI]] model subdirectory (`models/checkpoints/`, `models/loras/`, etc.) without manual file placement.
+**Model Downloader** — integrates with [[Hugging Face Hub]] (via the Hub Python client API) and [[CivitAI]] (via CivitAI's REST API with optional API key authentication) to browse model files — [[Model Checkpoint|checkpoints]], [[LoRA]] adapters, [[Variational Autoencoder]] decoders, [[ControlNet]] weights — and download them directly into the correct [[ComfyUI]] model subdirectory (`models/checkpoints/`, `models/loras/`, etc.) without manual file placement.
 
 **Snapshot Export / Import** — serialises the installed environment to `<USER_DIRECTORY>/default/ComfyUI-Manager/snapshots/<timestamp>.json`. A snapshot records: ComfyUI version, Manager version, each installed custom node's repository URL and commit hash, and (v3.38+) a pip requirements hash. Import applies the snapshot by checking out the pinned commits and running dependency installs, supporting cross-machine environment parity.
 

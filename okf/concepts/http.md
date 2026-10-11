@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:api
   - urn:ngm:class:restful-api
   - urn:ngm:class:web-browser
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 implements:
   - urn:ngm:class:network-protocol
   - urn:ngm:class:request-response-pattern
@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:network-protocol
   - urn:ngm:class:communication-protocols
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:http-header
   - urn:ngm:class:http-status-code
 supports:
@@ -39,7 +39,7 @@ supports:
   - urn:ngm:class:graph-ql
 standardizedBy:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:communication-protocols
   - urn:ngm:class:http2

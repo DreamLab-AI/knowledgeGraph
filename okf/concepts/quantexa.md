@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:fraud-detection
 bridgesTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Quantexa

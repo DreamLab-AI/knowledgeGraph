@@ -12,7 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:model-architecture
   - urn:ngm:class:model-capacity
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # AI Model Portfolio

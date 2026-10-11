@@ -32,7 +32,7 @@ uses:
 relatedTo:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Neural Network Architecture

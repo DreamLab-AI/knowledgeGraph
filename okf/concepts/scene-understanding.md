@@ -38,7 +38,7 @@ partOf:
   - urn:ngm:class:perception-system
   - urn:ngm:class:autonomous-system
 relatedTo:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
 ---
 
 # Scene Understanding

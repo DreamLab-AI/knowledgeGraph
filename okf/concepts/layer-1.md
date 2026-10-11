@@ -25,17 +25,17 @@ enables:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:layer-2-networks
   - urn:ngm:class:sidechain
   - urn:ngm:class:centralised-database
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-identity
   - urn:ngm:class:data-provenance
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals
   - urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals
 partOf:

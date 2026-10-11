@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:securities-regulation
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:security-token
 partOf:

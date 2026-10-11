@@ -44,7 +44,7 @@ System Integration is the engineering discipline of connecting and orchestrating
 
 ### Standards and Context
 
-- **[[OpenAPI Specification]]** (OAS 3.x) — the de facto standard for describing synchronous HTTP APIs; enables code generation, documentation, and contract testing.
+- **[[OpenAPI]]** (OAS 3.x) — the de facto standard for describing synchronous HTTP APIs; enables code generation, documentation, and contract testing.
 - **[[AsyncAPI]]** 2.x / 3.x — extends API-description concepts to asynchronous and event-driven channels (Kafka topics, AMQP queues, WebSockets).
 - **HL7 FHIR** — the dominant interoperability standard for healthcare data exchange, built on RESTful APIs and structured JSON/XML resources.
 - **OASIS AMQP** — open wire protocol for message-oriented middleware, implemented by RabbitMQ and Azure Service Bus.

@@ -9,9 +9,9 @@ maturity: emerging
 quality: 0.35
 is-a:
   - urn:ngm:class:ai-research-area
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 supports:
   - urn:ngm:class:algorithm

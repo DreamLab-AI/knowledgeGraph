@@ -29,8 +29,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cbdc-frameworks",
@@ -175,7 +175,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -193,16 +193,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -223,6 +219,10 @@
       {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
       }
     ],
     "uses": [
@@ -239,7 +239,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -333,8 +333,8 @@
       "label": "CBDC Frameworks"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     }
   ]
 }

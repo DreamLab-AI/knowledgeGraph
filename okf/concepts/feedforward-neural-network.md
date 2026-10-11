@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:activation-function
 enables:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:recurrent-neural-network
   - urn:ngm:class:transformer-architecture

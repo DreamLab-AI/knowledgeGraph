@@ -34,7 +34,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:fiat-currency
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
   - urn:ngm:class:regulatory-compliance
 uses:

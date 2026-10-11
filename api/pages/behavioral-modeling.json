@@ -8,8 +8,8 @@
   "definition": "Behavioral Modeling is the application of machine learning and statistical methods to represent, predict, and simulate how agents (humans, robots, or software entities) act under varying conditions. It underpins applications ranging from user-behaviour analytics and fraud detection to reinforcement learning policies and autonomous agent control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     },
     {
       "id": "urn:ngm:class:ai-technique",
@@ -220,7 +220,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -390,6 +390,14 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -412,14 +420,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ],
     "requires": [
@@ -428,20 +428,24 @@
         "label": "AI Infrastructure"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
         "id": "urn:ngm:class:historical-data",
         "label": "Historical Data"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:statistical-modelling",
         "label": "Statistical Modelling"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -450,13 +454,13 @@
       {
         "id": "urn:ngm:class:dataset-curation",
         "label": "Dataset Curation"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -478,26 +482,18 @@
         "label": "Predictive Analytics"
       },
       {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
-      },
-      {
-        "id": "urn:ngm:class:demand-forecasting",
-        "label": "Demand Forecasting"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -522,6 +518,10 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
       }
     ],
     "implements": [
@@ -578,6 +578,14 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
         "id": "urn:ngm:class:spatial-analytics",
         "label": "Spatial Analytics"
       },
@@ -596,6 +604,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
@@ -608,6 +620,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
         "id": "urn:ngm:class:classification",
         "label": "Classification"
       },
@@ -618,24 +634,16 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:ensemble-methods",
-        "label": "Ensemble Methods"
-      },
-      {
-        "id": "urn:ngm:class:model-training",
-        "label": "Model Training"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -663,6 +671,14 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"

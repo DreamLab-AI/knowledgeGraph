@@ -50,7 +50,7 @@
         "label": "Trustless System"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -94,7 +94,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
+        "id": "urn:ngm:class:multisignature",
         "label": "Multi-Signature Scheme"
       },
       {
@@ -102,7 +102,7 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
+        "id": "urn:ngm:class:multisignature",
         "label": "Multi-Signature Scheme"
       }
     ],
@@ -274,12 +274,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-communication",

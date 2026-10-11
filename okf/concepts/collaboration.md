@@ -41,7 +41,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:ieee
   - urn:ngm:class:ieee
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:computer-supported-cooperative-work
   - urn:ngm:class:social-network

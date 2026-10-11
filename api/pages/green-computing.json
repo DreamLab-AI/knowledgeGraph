@@ -22,8 +22,8 @@
         "label": "Carbon-Aware Computing"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       }
     ],
     "requires": [

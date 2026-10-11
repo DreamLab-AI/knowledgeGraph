@@ -31,7 +31,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics
 uses:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:neural-network-architecture
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:convolutional-neural-network

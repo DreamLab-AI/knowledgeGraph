@@ -24,8 +24,8 @@ dependsOn:
   - urn:ngm:class:ai-transparency-framework
   - urn:ngm:class:threat-modelling
 implements:
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:cybersecurity-risk-management

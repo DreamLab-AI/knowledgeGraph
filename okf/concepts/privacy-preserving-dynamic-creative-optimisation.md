@@ -19,7 +19,7 @@ dependsOn:
   - urn:ngm:class:multimodal-ai-architecture
 uses:
   - urn:ngm:class:nostr-protocol
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:hardware-and-edge
 ---
 

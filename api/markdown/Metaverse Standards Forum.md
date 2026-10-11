@@ -3,14 +3,14 @@ The Metaverse Standards Forum (MSF) is an industry consortium hosted by the Khro
 ### Overview
 
 - The MSF emerged from a widely shared diagnosis in the industry: the primary risk to an [[Open Metaverse]] is not technical impossibility but fragmentation into proprietary walled gardens where avatars, assets, and identities created on one platform cannot migrate to another. By coordinating rather than competing with existing standards bodies the Forum aims to prevent this outcome.
-- Hosted by the [[Khronos Group]] — the consortium behind [[OpenXR]], [[glTF]], and [[Vulkan]] — the MSF benefits from Khronos's infrastructure and credibility while remaining open to organisations beyond the Khronos membership, including the [[W3C]], [[ISO]], and independent companies of all sizes.
+- Hosted by the [[Khronos Group]] — the consortium behind [[OpenXR]], [[glTF]], and [[Vulkan]] — the MSF benefits from Khronos's infrastructure and credibility while remaining open to organisations beyond the Khronos membership, including the [[World Wide Web Consortium]], [[ISO]], and independent companies of all sizes.
 - Membership encompasses several hundred organisations across the spectrum: platform incumbents ([[Meta Platform]], [[Microsoft]], [[Apple]]), hardware vendors ([[NVIDIA]], [[Qualcomm]], [[Sony]]), game engine providers ([[Epic Games]], [[Unity Technologies]]), and standards bodies. This breadth is intentional; pre-competitive alignment expands the total market for all participants rather than merely redistributing share.
 - The Forum's distinctive model separates gap analysis and prototyping (MSF domain working groups) from normative specification (delegated to appropriate authoring bodies). This avoids jurisdictional conflicts, reduces duplicated effort, and respects the long-standing processes of ISO, W3C, and Khronos.
 
 ### Key Components
 
 - **Domain Working Groups** — the primary organisational unit; each targets a concrete interoperability problem
-  - *3D Asset Interoperability* — alignment between [[glTF]], [[USD]] (Universal Scene Description), [[OpenUSD]], and [[FBX]] formats for asset portability across engines and platforms
+  - *3D Asset Interoperability* — alignment between [[glTF]], [[Universal Scene Description]] (Universal Scene Description), [[OpenUSD]], and [[FBX]] formats for asset portability across engines and platforms
   - *Avatar and Identity* — standards for portable [[Cross-Platform Avatar]] representations, linking to [[Decentralised Identity]] and [[Verifiable Credential]] frameworks
   - *Real-World Digital Twins* — interoperability between [[Digital Twin]] platforms and geospatial data standards such as [[OGC CityGML]] and [[IFC]]
   - *Network Scene Synchronisation* — protocols for transmitting [[Scene Description]] across networked [[Virtual World]] instances
@@ -18,13 +18,13 @@ The Metaverse Standards Forum (MSF) is an industry consortium hosted by the Khro
   - *Digital Fashion* — interoperable [[Wearable NFT]] and digital clothing representations across virtual environments
 - **Gap Analysis Reports** — each working group publishes structured analyses identifying where missing or competing standards create fragmentation, serving as input to existing authoring bodies
 - **Exploratory Prototypes** — proof-of-concept implementations demonstrating interoperability between distinct platforms; not normative but evidential, demonstrating feasibility to authoring bodies
-- **Liaison Relationships** — formal links to [[W3C]], [[Khronos Group]], [[ISO]], [[IEEE]], [[IETF]], [[OGC]], and national standards bodies ensuring outputs are routed to the right venue
+- **Liaison Relationships** — formal links to [[World Wide Web Consortium]], [[Khronos Group]], [[ISO]], [[IEEE]], [[IETF]], [[OGC]], and national standards bodies ensuring outputs are routed to the right venue
 - **Public Member Directory** — an open roster that signals the breadth of industry alignment, used as a coordination signal for enterprise procurement and regulatory engagement
 
 ### Applications and Use Cases
 
 - **Cross-Platform Asset Portability** — a 3D garment or vehicle model created by a brand can be exported once and used across multiple social [[Virtual World]] platforms without bespoke conversion, enabled by MSF-aligned [[3D Asset Interchange]] standards such as [[glTF]] and [[OpenUSD]]
-- **Portable Digital Identity** — a user's verified identity and reputation, anchored by [[Decentralised Identity]] frameworks such as [[DID]] and [[Verifiable Credential]] standards, can accompany them across platforms without re-verification, reducing friction and improving safety
+- **Portable Digital Identity** — a user's verified identity and reputation, anchored by [[Decentralised Identity]] frameworks such as [[Decentralised Identifier]] and [[Verifiable Credential]] standards, can accompany them across platforms without re-verification, reducing friction and improving safety
 - **Interoperable Digital Twins** — manufacturing, urban planning, and infrastructure operators building [[Digital Twin]] systems benefit from common scene description formats ensuring that a twin built on one engine can be consumed by another, relevant to [[Industry 4.0]] and [[Smart City]] contexts
 - **XR Hardware Agnosticism** — [[OpenXR]] alignment championed through MSF means that an [[Augmented Reality]] or [[Virtual Reality]] application runs across headsets from multiple vendors without hardware-specific porting, lowering developer cost
 - **Regulatory Readiness** — by producing documented gap analyses and engaging with ISO and national bodies the MSF positions the industry to provide technically grounded input to immersive-technology legislation being developed in the EU, UK, and elsewhere, particularly regarding [[Data Governance]] and [[Consumer Protection]]
@@ -37,7 +37,7 @@ The Metaverse Standards Forum (MSF) is an industry consortium hosted by the Khro
   - [[glTF]] — the Khronos transmission format for [[3D Asset]], widely adopted by browsers, game engines, and AR platforms; MSF's 3D working group aligns derivative profiles
   - [[OpenUSD]] — Pixar's Universal Scene Description, adopted by [[Apple]], [[NVIDIA]], and others; MSF works toward convergence with glTF for scene-level interoperability
   - [[WebXR]] — the W3C API for browser-based XR; MSF liaises to align runtime and content interoperability across the web stack
-  - [[DID]] (Decentralised Identifiers) — the W3C standard underpinning portable digital identity; MSF's avatar working group evaluates its applicability to cross-platform user identity
+  - [[Decentralised Identifier]] (Decentralised Identifiers) — the W3C standard underpinning portable digital identity; MSF's avatar working group evaluates its applicability to cross-platform user identity
   - [[Verifiable Credential]] — the W3C credential standard for portable, machine-verifiable attributes; relevant to avatar reputation and access control across virtual spaces
   - [[OGC CityGML]] and [[IFC]] — geospatial and built-environment standards relevant to the MSF's digital-twin working group
 - The Forum co-exists with other coordination bodies including the [[Open Metaverse Alliance for Web3]] (OMA3) which focuses on [[Blockchain]]-anchored ownership and [[Smart Contract]] governance, and the [[XR Association]] which advocates on policy. MSF's distinct niche is technical interoperability at the protocol and format layer, independent of any particular blockchain or monetisation model.

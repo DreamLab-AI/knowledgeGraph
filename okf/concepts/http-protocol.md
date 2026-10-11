@@ -31,7 +31,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:ai-agent
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:communication-protocol
   - urn:ngm:class:tcp-ip
   - urn:ngm:class:quic
@@ -40,7 +40,7 @@ standardizedBy:
   - urn:ngm:class:ietf
 relatedTo:
   - urn:ngm:class:graph-ql
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:caching
   - urn:ngm:class:load-balancer
 ---

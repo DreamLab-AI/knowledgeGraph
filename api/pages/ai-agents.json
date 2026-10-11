@@ -64,8 +64,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:tool-use",
@@ -89,7 +89,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:context-window",
@@ -110,7 +110,7 @@
         "label": "Workflow Automation"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -280,7 +280,7 @@
         "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -526,8 +526,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -594,8 +594,8 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:sc-display-and-rendering",
@@ -891,8 +891,8 @@
       "label": "Call Centres"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "dspy",

@@ -21,9 +21,9 @@ enables:
   - urn:ngm:class:open-metaverse
   - urn:ngm:class:digital-property-rights
 dependsOn:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:runtime-api
 contrastsWith:
   - urn:ngm:class:vendor-lock-in

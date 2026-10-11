@@ -97,7 +97,7 @@ uses:
 supports:
   - urn:ngm:class:ai-agent-coordination
   - urn:ngm:class:asset-interoperability
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:privacy-preserving
   - urn:ngm:class:bitcoin-layer-3-ecosystem
   - urn:ngm:class:privacy-preserving

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-saturation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Sensor saturation is the condition in which the radiance reaching a sensor band exceeds the range the band can record, so that its output no longer varies in step with the true signal.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

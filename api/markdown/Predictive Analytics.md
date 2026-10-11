@@ -83,7 +83,7 @@ Predictive Analytics is the discipline of extracting patterns from historical da
 - The EU [[AI Act]] classifies certain high-risk predictive applications (credit scoring, healthcare risk stratification, employment screening) under mandatory conformity assessment requirements.
 - [[Fairness in Machine Learning]] frameworks (IBM AI Fairness 360, Aequitas) address bias measurement and mitigation in predictive models used in consequential decisions.
 - [[Explainable AI]] (XAI) requirements are increasingly mandated for regulated domains; SHAP, LIME, and counterfactual explanation methods are standard tooling.
-- [[Model Cards]] and [[Datasheets for Datasets]] provide documentation standards supporting transparency and reproducibility.
+- [[Model Card]] and [[Datasheets for Datasets]] provide documentation standards supporting transparency and reproducibility.
 
 ### Distinguishing Concepts
 

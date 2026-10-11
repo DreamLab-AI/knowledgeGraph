@@ -427,9 +427,9 @@
       "slug": "ai-infrastructure"
     },
     {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing",
-      "slug": "distributed-computing"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:embedded-system",
@@ -452,14 +452,9 @@
       "slug": "spatial-computing"
     },
     {
-      "id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing",
-      "slug": "concurrent-computing"
-    },
-    {
-      "id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems",
-      "slug": "coordination-systems"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:digital-infrastructure",
@@ -477,19 +472,9 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication",
-      "slug": "infra-network-and-comms"
-    },
-    {
       "id": "urn:ngm:class:multiverse",
       "label": "Multiverse",
       "slug": "multiverse"
-    },
-    {
-      "id": "urn:ngm:class:networked-systems",
-      "label": "Networked Systems",
-      "slug": "networked-systems"
     },
     {
       "id": "urn:ngm:class:real-time-control",
@@ -527,11 +512,6 @@
       "slug": "semantic-spatial-web-layer"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
       "id": "urn:ngm:class:feedback-systems",
       "label": "Feedback Systems",
       "slug": "feedback-systems"
@@ -555,11 +535,6 @@
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -691,46 +666,30 @@
         "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:byzantine-generals-problem",
-        "label": "Byzantine Generals Problem"
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
       },
       {
-        "id": "urn:ngm:class:cap-theorem",
-        "label": "CAP Theorem"
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:actor-model",
-        "label": "Actor Model"
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:bulk-synchronous-parallel",
-        "label": "Bulk Synchronous Parallel"
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
       },
       {
-        "id": "urn:ngm:class:crdt",
-        "label": "CRDT"
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
       },
       {
-        "id": "urn:ngm:class:map-reduce",
-        "label": "MapReduce"
-      },
-      {
-        "id": "urn:ngm:class:mapreduce",
-        "label": "MapReduce"
-      },
-      {
-        "id": "urn:ngm:class:paxos",
-        "label": "Paxos"
-      },
-      {
-        "id": "urn:ngm:class:pbft",
-        "label": "PBFT"
-      },
-      {
-        "id": "urn:ngm:class:raft",
-        "label": "Raft"
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "contrastsWith": [
@@ -763,8 +722,8 @@
         "label": "General-Purpose Computing"
       },
       {
-        "id": "urn:ngm:class:centralised-computing",
-        "label": "Centralised Computing"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "bridgesTo": [
@@ -793,7 +752,7 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -875,32 +834,32 @@
         "label": "SIGGRAPH"
       },
       {
-        "id": "urn:ngm:class:apache-software-foundation",
-        "label": "Apache Software Foundation"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
-      },
-      {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC Specification"
-      },
-      {
-        "id": "urn:ngm:class:mpi-forum",
-        "label": "MPI Forum"
-      },
-      {
-        "id": "urn:ngm:class:open-telemetry",
-        "label": "OpenTelemetry"
-      },
-      {
-        "id": "urn:ngm:class:quic",
-        "label": "IETF QUIC"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       },
       {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
       }
     ],
     "partOf": [

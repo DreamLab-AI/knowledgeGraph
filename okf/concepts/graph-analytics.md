@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:graph-database
   - urn:ngm:class:sparse-matrix
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 relatedTo:
   - urn:ngm:class:social-network-analysis

@@ -4,6 +4,7 @@ type: Class
 title: Lunar Orbit Radiation Environment
 resource: urn:ngm:class:lunar-orbit-radiation-environment
 domain: space-science-and-systems
+description: Lunar orbit radiation environment is the time-varying particle and photon field encountered by a spacecraft orbiting the Moon, together with the shielding that modifies that field.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Lunar Orbit Radiation Environment
+
+Lunar orbit radiation environment is the time-varying particle and photon field encountered by a spacecraft orbiting the Moon, together with the shielding that modifies that field.

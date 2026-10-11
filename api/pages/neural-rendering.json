@@ -448,6 +448,10 @@
       "label": "Gaussian Splatting"
     },
     {
+      "slug": "neural-rendering-telepresence",
+      "label": "Neural Rendering Telepresence"
+    },
+    {
       "slug": "onnx-standard",
       "label": "ONNX Standard"
     },
@@ -466,10 +470,6 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
-    },
-    {
-      "slug": "tele-050-neural-rendering-telepresence",
-      "label": "TELE-050-neural-rendering-telepresence"
     },
     {
       "slug": "tele-060-instant-ngp",

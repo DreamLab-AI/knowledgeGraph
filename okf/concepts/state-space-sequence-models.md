@@ -10,17 +10,17 @@ quality: 0
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
 hasPart:
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:recurrent-neural-network
 contrastsWith:
   - urn:ngm:class:transformer
   - urn:ngm:class:transformer-architecture
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:neural-rendering
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # State Space Sequence Models

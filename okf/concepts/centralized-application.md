@@ -12,7 +12,7 @@ is-a:
 dependsOn:
   - urn:ngm:class:cloud-computing
 contrastsWith:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:blockchain-application
   - urn:ngm:class:decentralised-application
 uses:

@@ -28,7 +28,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:proof-of-stake
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:consensus
 relatedTo:
   - urn:ngm:class:governance

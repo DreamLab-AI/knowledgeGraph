@@ -35,7 +35,7 @@ supports:
   - urn:ngm:class:decentralised-web
   - urn:ngm:class:self-sovereign-identity
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso
 relatedTo:
   - urn:ngm:class:decentralised-web

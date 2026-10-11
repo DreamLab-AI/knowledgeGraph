@@ -21,14 +21,14 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:deep-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reinforcement-learning
 supports:
   - urn:ngm:class:cognitive-architecture
 relatedTo:
   - urn:ngm:class:neural-network
   - urn:ngm:class:cognitive-science
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Computational Neuroscience

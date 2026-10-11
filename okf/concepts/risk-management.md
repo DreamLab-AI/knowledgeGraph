@@ -28,7 +28,7 @@ dependsOn:
   - urn:ngm:class:threat-modelling
   - urn:ngm:class:threat-modelling
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-23894
   - urn:ngm:class:iso-iec-23894
 bridgesTo:
@@ -43,8 +43,8 @@ supports:
   - urn:ngm:class:stakeholder-trust
 standardizedBy:
   - urn:ngm:class:iso-31000
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:enterprise-risk-management

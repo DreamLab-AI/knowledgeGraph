@@ -8,7 +8,7 @@ description: Power electronics is the engineering discipline concerned with the 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:embedded-systems-domain
 hasPart:
   - urn:ngm:class:inverter
@@ -49,7 +49,7 @@ standardizedBy:
   - urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems
   - urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems
 partOf:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:energy-harvesting
   - urn:ngm:class:microcontroller

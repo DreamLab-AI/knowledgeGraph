@@ -60,14 +60,14 @@
       "slug": "general-intelligence"
     },
     {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
       "id": "urn:ngm:class:foundation-model-layer",
       "label": "Foundation Model Layer",
       "slug": "foundation-model-layer"
-    },
-    {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -75,24 +75,39 @@
       "slug": "ai-model-architecture"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -110,8 +125,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -216,8 +231,8 @@
         "label": "Pretraining"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -238,16 +253,16 @@
         "label": "Chain-of-Thought Reasoning"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:inference-compute",
         "label": "Inference-Time Compute"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
-        "label": "Mixture-of-Experts Architecture"
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-learning",
@@ -258,12 +273,12 @@
         "label": "Scaling Hypothesis"
       },
       {
-        "id": "urn:ngm:class:active-learning",
-        "label": "Active Learning"
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       },
       {
-        "id": "urn:ngm:class:attention-mechanism",
-        "label": "Attention Mechanism"
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "contrastsWith": [
@@ -290,6 +305,14 @@
       {
         "id": "urn:ngm:class:edge-ai",
         "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -310,20 +333,20 @@
         "label": "Telecollaboration"
       },
       {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
-      },
-      {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       }
     ],
     "uses": [
@@ -386,12 +409,12 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
       }
     ],
     "standardizedBy": [
@@ -400,16 +423,16 @@
         "label": "DeepMind Levels of AGI Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:openai-charter",
@@ -420,8 +443,26 @@
         "label": "Frontier Model Forum"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -442,10 +483,6 @@
         "label": "Frontier AI"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
-      },
-      {
         "id": "urn:ngm:class:recursive-self-improvement",
         "label": "Recursive Self-Improvement"
       },
@@ -456,6 +493,10 @@
       {
         "id": "urn:ngm:class:transformative-ai",
         "label": "Transformative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },

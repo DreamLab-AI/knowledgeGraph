@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:post-hoc-explanation
   - urn:ngm:class:surrogate-model
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-model
 enables:
   - urn:ngm:class:ai-governance

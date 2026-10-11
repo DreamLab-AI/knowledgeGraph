@@ -8,7 +8,7 @@ description: "Model complexity is a measure of the capacity of a machine-learnin
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:number-of-parameters
@@ -29,7 +29,7 @@ uses:
 supports:
   - urn:ngm:class:generalisation
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:bias-variance-tradeoff
   - urn:ngm:class:model-interpretability

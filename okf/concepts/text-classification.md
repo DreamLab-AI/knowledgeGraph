@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:tokenization
   - urn:ngm:class:feature-engineering
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 requires:
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:model-training

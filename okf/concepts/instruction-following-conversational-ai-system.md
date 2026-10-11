@@ -27,15 +27,15 @@ contrastsWith:
   - urn:ngm:class:chatbot
   - urn:ngm:class:dialogue-system
 bridgesTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:human-computer-interaction
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 uses:
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:instruction-tuning
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:fine-tuning
 supports:
   - urn:ngm:class:code-generation

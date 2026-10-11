@@ -21,7 +21,7 @@ A non-custodial wallet is a cryptocurrency wallet in which the user, rather than
 
 ### Applications
 
-- Interacting with [[Decentralized Finance]] protocols and decentralised exchanges.
+- Interacting with [[Decentralised Finance]] protocols and decentralised exchanges.
 - Holding assets independently of any exchange or custodian.
 - Signing into Web3 applications and authorising on-chain governance votes.
 - Self-sovereign asset management aligned with [[Self-Sovereign Identity]] principles.

@@ -29,7 +29,7 @@ requires:
   - urn:ngm:class:data-labelling
   - urn:ngm:class:data-provenance
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:reinforcement-learning
@@ -67,14 +67,14 @@ uses:
 supports:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:feature-engineering
 standardizedBy:
   - urn:ngm:class:data-governance
   - urn:ngm:class:data-governance-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:computational-modelling
   - urn:ngm:class:data-quality
@@ -84,7 +84,7 @@ relatedTo:
   - urn:ngm:class:regulation
   - urn:ngm:class:overfitting
   - urn:ngm:class:imbalanced-data
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-centric-ai
   - urn:ngm:class:data-ethics
 ---

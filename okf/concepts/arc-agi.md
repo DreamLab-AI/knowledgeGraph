@@ -33,18 +33,18 @@ enables:
   - urn:ngm:class:ai-safety-research
 dependsOn:
   - urn:ngm:class:cognitive-science
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:programme-synthesis
 implements:
   - urn:ngm:class:benchmark-standard
   - urn:ngm:class:benchmark-dataset
   - urn:ngm:class:evaluation-metric
 contrastsWith:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transfer-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:benchmark-dataset

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:post-quantum-cryptography",
   "domain": "infrastructure",
-  "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
+  "definition": "Postquantum Cryptography (PQC) is the class of cryptographic algorithms designed to remain secure against adversaries equipped with large-scale quantum computers, replacing public-key schemes such as RSA and elliptic-curve cryptography that are broken by Shor's algorithm. PQC families include lattice-based, hash-based, code-based, and isogeny-based constructions, several of which NIST standardised in 2024 (e.g. CRYSTALS-Kyber, CRYSTALS-Dilithium).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -58,6 +58,10 @@
       {
         "id": "urn:ngm:class:algorithm",
         "label": "Algorithm Implementation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
       }
     ],
     "enables": [
@@ -80,6 +84,18 @@
       {
         "id": "urn:ngm:class:long-term-data-protection",
         "label": "Long-Term Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
       }
     ],
     "dependsOn": [
@@ -93,9 +109,31 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
@@ -108,7 +146,24 @@
         "label": "Security Protocol"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      }
+    ]
   },
   "inferredSuperClasses": [
     {
@@ -248,10 +303,6 @@
         "label": "Public-Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
       },
@@ -353,6 +404,10 @@
     {
       "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
     }
   ],
   "backlinks": [

@@ -53,7 +53,7 @@ dependsOn:
   - urn:ngm:class:metal
   - urn:ngm:class:python
   - urn:ngm:class:vex-scripting
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:signed-distance-function
   - urn:ngm:class:gaussian-splatting

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-nucleosynthesis",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Stellar nucleosynthesis is the formation of heavier atomic nuclei from lighter ones by nuclear fusion inside stars and in stellar explosions.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

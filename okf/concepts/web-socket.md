@@ -33,9 +33,9 @@ bridgesTo:
   - urn:ngm:class:inference-serving
   - urn:ngm:class:inference-serving
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:protocol-buffer
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
   - urn:ngm:class:message-framing
 supports:
   - urn:ngm:class:message-queue

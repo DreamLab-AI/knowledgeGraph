@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:regulatory-compliance",
       "label": "Regulatory Compliance"
+    },
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
     }
   ],
   "entityType": "Class",
@@ -34,12 +38,16 @@
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:suspicious-activity-report",
         "label": "Suspicious Activity Reporting"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       }
     ],
     "requires": [
@@ -58,6 +66,14 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:risk-scoring",
+        "label": "Risk Scoring"
       }
     ],
     "enables": [
@@ -68,6 +84,14 @@
       {
         "id": "urn:ngm:class:asset-recovery",
         "label": "Asset Recovery"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
@@ -84,6 +108,14 @@
       {
         "id": "urn:ngm:class:financial-privacy",
         "label": "Financial Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
       }
     ],
     "bridgesTo": [
@@ -94,6 +126,10 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -110,8 +146,12 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       }
     ],
     "supports": [],
@@ -147,6 +187,18 @@
       {
         "id": "urn:ngm:class:regtech",
         "label": "RegTech"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ]
   },
@@ -162,9 +214,34 @@
       "slug": "ai-governance-principle"
     },
     {
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -194,12 +271,12 @@
         "label": "GDPR Compliance"
       },
       {
-        "id": "urn:ngm:class:ai-alignment",
-        "label": "AI Alignment"
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
       },
       {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
       }
     ],
     "requires": [
@@ -216,27 +293,43 @@
         "label": "Human Oversight"
       },
       {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
       },
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
@@ -252,22 +345,6 @@
       {
         "id": "urn:ngm:class:national-ai-strategy",
         "label": "National AI Strategy"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
-      },
-      {
-        "id": "urn:ngm:class:trustworthy-ai",
-        "label": "Trustworthy AI"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -294,7 +371,7 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -308,18 +385,46 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      },
+      {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
       },
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -332,9 +437,25 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
       {
         "id": "urn:ngm:class:ai-impact-assessment",
         "label": "AI Impact Assessment"
@@ -350,6 +471,10 @@
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "supports": [
@@ -372,15 +497,31 @@
       {
         "id": "urn:ngm:class:inclusive-growth",
         "label": "Inclusive Growth"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:psd2",
+        "label": "PSD2"
+      },
       {
         "id": "urn:ngm:class:bletchley-declaration",
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -392,12 +533,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD AI Principles"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "relatedTo": [
@@ -414,6 +551,14 @@
         "label": "Data Protection"
       },
       {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
@@ -424,23 +569,24 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:digital-rights",
-        "label": "Digital Rights"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": [
+  "wikilinks": [
     {
-      "slug": "aml",
-      "label": "AML"
+      "slug": "classification",
+      "label": "Classification"
     },
+    {
+      "slug": "anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    },
+    {
+      "slug": "financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "backlinks": [
     {
       "slug": "bc-0480-kyc-requirements",
       "label": "BC-0480-kyc-requirements"
@@ -450,8 +596,8 @@
       "label": "Blockchain Compliance"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "compliance-monitoring",
@@ -470,6 +616,10 @@
       "label": "Cryptocurrency Regulation"
     },
     {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
       "slug": "elliptic",
       "label": "Elliptic"
     },
@@ -480,10 +630,6 @@
     {
       "slug": "fatf-recommendations",
       "label": "FATF Recommendations"
-    },
-    {
-      "slug": "fatfrecommendations",
-      "label": "FATFRecommendations"
     },
     {
       "slug": "graph-database",
@@ -498,12 +644,16 @@
       "label": "JPMorgan"
     },
     {
-      "slug": "kyc",
-      "label": "KYC"
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
     },
     {
       "slug": "privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
     },
     {
       "slug": "quantexa",
@@ -514,8 +664,16 @@
       "label": "Regulatory Reporting"
     },
     {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
       "slug": "travel-rule",
       "label": "Travel Rule"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
     }
   ]
 }

@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:ai-system
   - urn:ngm:class:data-analytics
   - urn:ngm:class:data-storage
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-systems
 enables:
   - urn:ngm:class:data-processing

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mission-operations",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mission operations are the activities that run a spacecraft and its payload during flight, including commanding, monitoring and data handling by a ground team.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

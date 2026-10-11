@@ -8,7 +8,7 @@ description: Scikit-learn is an open-source Python library providing a unified, 
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-infrastructure
 requires:
   - urn:ngm:class:python
@@ -36,7 +36,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:open-source
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:keras
   - urn:ngm:class:feature-engineering

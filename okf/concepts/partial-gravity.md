@@ -4,6 +4,7 @@ type: Class
 title: Partial Gravity
 resource: urn:ngm:class:partial-gravity
 domain: space-science-and-systems
+description: Partial gravity is the reduced gravity of planetary bodies, treated in spaceflight research alongside weightlessness.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Partial Gravity
+
+Partial gravity is the reduced gravity of planetary bodies, treated in spaceflight research alongside weightlessness.[^1]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gravitational-wave",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A gravitational wave is a ripple in the fabric of space-time produced by systems such as binary white dwarfs and merging massive black holes.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

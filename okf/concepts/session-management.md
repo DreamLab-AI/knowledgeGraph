@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:api
   - urn:ngm:class:multi-user-systems
 dependsOn:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:key-management
 contrastsWith:
   - urn:ngm:class:stateless-architecture

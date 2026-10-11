@@ -74,12 +74,12 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "contrastsWith": [],
@@ -687,8 +687,8 @@
       "label": "Metadata Management"
     },
     {
-      "slug": "model-cards",
-      "label": "Model Cards"
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "oxford-internet-institute",

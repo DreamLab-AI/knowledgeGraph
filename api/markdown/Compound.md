@@ -46,7 +46,7 @@ Compound is an algorithmic, autonomous interest-rate protocol built on Ethereum 
 
 ### Standards and Governance Context
 
-- Smart contracts are deployed on [[Ethereum]], currently a proof-of-stake chain governed by [[EIP]] upgrade proposals. Compound's contracts are audited open-source Solidity code; the protocol does not rely on any off-chain services for core settlement.
+- Smart contracts are deployed on [[Ethereum]], currently a proof-of-stake chain governed by [[Ethereum Improvement Proposal]] upgrade proposals. Compound's contracts are audited open-source Solidity code; the protocol does not rely on any off-chain services for core settlement.
 - The [[COMP]] token implements the [[ERC-20]] standard and confers voting rights; delegation is supported so passive holders can assign votes to active delegates.
 - [[Compound Governor Bravo]] implements a standard on-chain governance pattern subsequently forked by dozens of protocols ([[Uniswap]] governance, [[Gitcoin]] governance, and others). The pattern is sometimes called the "Compound governance standard."
 - Interest rate mathematics follows the standard continuous compounding approximation used across DeFi lending protocols; rates are expressed as per-block values and converted to APY for display.

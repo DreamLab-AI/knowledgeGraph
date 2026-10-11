@@ -32,7 +32,7 @@ supports:
 partOf:
   - urn:ngm:class:internet-of-things
 relatedTo:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:network-topology
 ---
 

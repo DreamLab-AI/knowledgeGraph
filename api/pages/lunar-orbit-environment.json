@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lunar-orbit-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Lunar orbit environment is the set of gravitational, illumination, thermal, particle, plasma and dust conditions experienced by a spacecraft while it orbits the Moon.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iceberg",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An iceberg is a piece of ice that has broken off from the end of a glacier that terminates in water.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

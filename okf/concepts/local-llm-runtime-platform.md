@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:function-calling
   - urn:ngm:class:prompt-engineering
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:knowledge-graphing
 ---

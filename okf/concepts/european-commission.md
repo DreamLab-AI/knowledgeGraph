@@ -18,13 +18,13 @@ enables:
   - urn:ngm:class:digital-markets-act
   - urn:ngm:class:digital-services-act
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-protection-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-act
   - urn:ngm:class:data-protection-regulation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger-technology
 uses:

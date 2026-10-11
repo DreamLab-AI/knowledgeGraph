@@ -39,7 +39,7 @@ partOf:
   - urn:ngm:class:inference-engine
 relatedTo:
   - urn:ngm:class:context-window
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:grouped-query-attention
 ---
 

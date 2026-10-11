@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:microwave-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Microwave remote sensing is the acquisition of information about the Earth's surface, without contact, by sensing reflected or emitted energy in the microwave part of the spectrum.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

@@ -8,7 +8,7 @@ description: A model training pipeline is the orchestrated sequence of stages th
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-training
 hasPart:
   - urn:ngm:class:feature-engineering
@@ -29,7 +29,7 @@ supports:
   - urn:ngm:class:mlops
 partOf:
   - urn:ngm:class:mlops
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:deep-learning

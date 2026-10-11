@@ -204,8 +204,8 @@
         "label": "Spatial Audio Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cloud-anchor-infrastructure",
@@ -399,8 +399,8 @@
         "label": "W3C WebXR Device API"
       },
       {
-        "id": "urn:ngm:class:openxr-standard",
-        "label": "OpenXR Standard"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:iso-tc-159-ergonomics",
@@ -672,7 +672,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

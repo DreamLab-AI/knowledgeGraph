@@ -32,11 +32,11 @@ enables:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 dependsOn:
   - urn:ngm:class:existential-risk
   - urn:ngm:class:ai-alignment
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 implements:
   - urn:ngm:class:ai-safety
@@ -57,8 +57,8 @@ supports:
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:deep-learning
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ai-safety-institute
   - urn:ngm:class:aisi-frontier-ai-safety-framework
 relatedTo:
@@ -69,7 +69,7 @@ relatedTo:
   - urn:ngm:class:compute-governance
   - urn:ngm:class:ai-existential-risk-probability-estimate
   - urn:ngm:class:bletchley-declaration
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:ai-governance-law-and-privacy
 ---

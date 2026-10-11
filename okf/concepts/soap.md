@@ -29,7 +29,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:service-oriented-architecture
   - urn:ngm:class:remote-procedure-call
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 ---
 
 # SOAP

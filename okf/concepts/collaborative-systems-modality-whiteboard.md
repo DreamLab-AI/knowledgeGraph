@@ -36,7 +36,7 @@ hasPart:
 requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:cloud-storage
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:operational-transformation
   - urn:ngm:class:web-gl
   - urn:ngm:class:web-socket
@@ -58,7 +58,7 @@ dependsOn:
   - urn:ngm:class:real-time-synchronisation
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:web-socket
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:identity-management
   - urn:ngm:class:hybrid-logical-clock
 implements:
@@ -80,11 +80,11 @@ uses:
   - urn:ngm:class:rest-api
   - urn:ngm:class:web-gl
   - urn:ngm:class:web-socket
-  - urn:ngm:class:json-data-interchange-format
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:json
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:canvas-api
   - urn:ngm:class:svg
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:sentence-transformers
 supports:
   - urn:ngm:class:design-thinking

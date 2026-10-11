@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:cryptographic-proof
 supports:
   - urn:ngm:class:proof-of-stake
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 relatedTo:
   - urn:ngm:class:consensus
   - urn:ngm:class:validator

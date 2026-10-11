@@ -15,14 +15,14 @@ requires:
 enables:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:linked-data
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:code-generation
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:distributed-collaboration
 uses:
   - urn:ngm:class:rdf
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:sparql
   - urn:ngm:class:xml-schema-definition
   - urn:ngm:class:protocol-buffer
@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:contract-testing
   - urn:ngm:class:schema-registry
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
 relatedTo:
   - urn:ngm:class:ontology

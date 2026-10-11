@@ -22,10 +22,10 @@ enables:
 uses:
   - urn:ngm:class:deep-learning
 relatedTo:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:generative-model
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:model-interpretability
 ---
 

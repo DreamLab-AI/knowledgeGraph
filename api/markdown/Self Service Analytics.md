@@ -23,7 +23,7 @@ Self-service analytics is an approach that empowers business users to explore da
 - Letting business teams build their own [[Data Visualisation]] dashboards and reports.
 - Accelerating [[Decision Support]] without queuing requests to central analysts.
 - Combining with [[Olap]] exploration over a curated [[Data Warehouse]].
-- Relying on a [[Data Catalog]] and [[Metadata Management]] for safe discovery.
+- Relying on a [[Data Catalogue]] and [[Metadata Management]] for safe discovery.
 
 ### Provenance
 

@@ -29,7 +29,7 @@ A curated personal contact and collaboration index tracking domain experts, indu
 - Electricity use micro grids
 - Amonia
 - [Contact – Microturbine Developments](https://microturbinedevelopments.elementor.cloud/contact/)
-- Make him a bespoke microgrid proposal for [[Education and AI]] using [[Large Language Models]]
+- Make him a bespoke microgrid proposal for [[Education and AI]] using [[Large Language Model]]
 - Consider David Leitch at Peak AI for approaching [[Epistemic Modality Marker]]
 
 ## Intelligent Ultrasound

@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:network-component
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:full-node
   - urn:ngm:class:archival-node
@@ -38,7 +38,7 @@ bridgesTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:distributed-systems
 supports:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:fault-tolerance
 partOf:
   - urn:ngm:class:blockchain-network

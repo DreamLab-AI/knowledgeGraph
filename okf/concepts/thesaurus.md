@@ -21,7 +21,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:ontology
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:vocabulary
   - urn:ngm:class:classification

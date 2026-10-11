@@ -70,9 +70,9 @@ supports:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:ai-governance
   - urn:ngm:class:online-safety-act-2023
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:etsi-gr-arf-010
   - urn:ngm:class:online-safety-act-2023
 partOf:
@@ -84,7 +84,7 @@ relatedTo:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:synthetic-media
   - urn:ngm:class:ai-safety
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:online-safety-act-2023
   - urn:ngm:class:telecollaboration
   - urn:ngm:class:reinforcement-learning-from-human-feedback

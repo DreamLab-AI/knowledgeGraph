@@ -10,8 +10,8 @@ quality: 0.75
 is-a:
   - urn:ngm:class:ai-research-area
 requires:
-  - urn:ngm:class:quantum-computation-paradigm
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:quantum-computing
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:algorithm
 enables:
   - urn:ngm:class:optimisation-algorithm

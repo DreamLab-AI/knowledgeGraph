@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:annotation-pipelines
   - urn:ngm:class:datasets
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
 requires:
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:ground-truth-labels
@@ -49,7 +49,7 @@ bridgesTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:hardware-performance
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 uses:
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:performance-metrics
@@ -67,17 +67,17 @@ standardizedBy:
   - urn:ngm:class:mlcommons
   - urn:ngm:class:spec
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:scientific-method
   - urn:ngm:class:empirical-research
   - urn:ngm:class:machine-learning-research-infrastructure
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:benchmark-standard
   - urn:ngm:class:software-testing
   - urn:ngm:class:adversarial-testing
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:bias-and-fairness
   - urn:ngm:class:overfitting
   - urn:ngm:class:benign-overfitting

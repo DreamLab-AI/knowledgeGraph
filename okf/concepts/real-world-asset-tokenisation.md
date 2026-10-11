@@ -21,7 +21,7 @@ requires:
   - urn:ngm:class:digital-identity
 enables:
   - urn:ngm:class:liquidity-provision
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:fractional-ownership
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:on-chain-collateral
@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:asset-management
   - urn:ngm:class:trade-finance
 uses:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:erc-3643
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:zero-knowledge-proof

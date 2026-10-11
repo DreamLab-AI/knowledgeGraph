@@ -30,7 +30,7 @@ uses:
   - urn:ngm:class:shader
 supports:
   - urn:ngm:class:web-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 relatedTo:
   - urn:ngm:class:three-js
   - urn:ngm:class:real-time-rendering

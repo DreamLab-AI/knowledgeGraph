@@ -21,7 +21,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:personalised-learning
   - urn:ngm:class:intelligent-tutoring-system

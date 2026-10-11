@@ -32,10 +32,10 @@ requires:
   - urn:ngm:class:mathematical-logic
   - urn:ngm:class:formal-language
 enables:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:blockchain
   - urn:ngm:class:automation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing
@@ -69,12 +69,12 @@ partOf:
   - urn:ngm:class:computational-model
   - urn:ngm:class:algorithmic-framework
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:algorithmic-framework
   - urn:ngm:class:algorithmic-bias
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:algorithmic-accountability
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 ---
 
 # Algorithm

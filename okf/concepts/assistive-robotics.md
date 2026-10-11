@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:robotic-prosthesis
 requires:
   - urn:ngm:class:actuator
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:human-robot-interaction
   - urn:ngm:class:sensor-fusion
 enables:
@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:independent-living
   - urn:ngm:class:motor-rehabilitation
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:real-time-control
   - urn:ngm:class:battery-management-system
   - urn:ngm:class:battery-management-system

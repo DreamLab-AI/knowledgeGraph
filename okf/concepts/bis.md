@@ -32,16 +32,16 @@ bridgesTo:
 uses:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 supports:
   - urn:ngm:class:central-bank
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:financial-system
   - urn:ngm:class:systemic-risk-management
 relatedTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-regulation
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:financial-technology
   - urn:ngm:class:payment-system
   - urn:ngm:class:world-bank

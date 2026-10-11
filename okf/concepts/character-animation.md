@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:facial-animation
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:robotics
 uses:
   - urn:ngm:class:inverse-kinematics
@@ -31,7 +31,7 @@ uses:
   - urn:ngm:class:skeletal-animation
   - urn:ngm:class:keyframe-animation
 standardizedBy:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:open-xr
 relatedTo:
   - urn:ngm:class:animation-retargeting

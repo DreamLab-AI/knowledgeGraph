@@ -24,13 +24,13 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:vendor-lock-in
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:hash-time-locked-contracts
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:multi-chain-ecosystem
 standardizedBy:
   - urn:ngm:class:cosmos-ibc
@@ -39,7 +39,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:data-standards
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Interoperability

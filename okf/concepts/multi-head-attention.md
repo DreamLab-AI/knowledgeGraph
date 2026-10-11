@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:feed-forward-network
 partOf:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 relatedTo:
   - urn:ngm:class:self-attention
   - urn:ngm:class:cross-attention

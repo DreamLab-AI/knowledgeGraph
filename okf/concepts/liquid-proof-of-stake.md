@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:epoch
 enables:
   - urn:ngm:class:tokenomics-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:staking-reward
 dependsOn:
@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:delegated-proof-of-stake
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:governance
 uses:
   - urn:ngm:class:token-economics

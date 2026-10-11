@@ -8,11 +8,11 @@ description: A proposal distribution is an auxiliary distribution used in Monte 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:monte-carlo-methods
 relatedTo:
   - urn:ngm:class:sampling
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 ---
 
 # Proposal Distribution

@@ -25,13 +25,13 @@ hasPart:
   - urn:ngm:class:kinematic-constraint-model
   - urn:ngm:class:confidence-estimator
 requires:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:camera-sensor
   - urn:ngm:class:depth-sensor
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:real-time-processing
   - urn:ngm:class:calibration-data
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
 enables:
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:teleoperation

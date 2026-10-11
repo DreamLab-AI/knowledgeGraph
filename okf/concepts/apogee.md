@@ -4,6 +4,7 @@ type: Class
 title: Apogee
 resource: urn:ngm:class:apogee
 domain: space-science-and-systems
+description: Apogee is the Earth-specific apoapsis, where an Earth-centred orbit or trajectory reaches its greatest geocentric distance.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Apogee
+
+Apogee is the Earth-specific apoapsis, where an Earth-centred orbit or trajectory reaches its greatest geocentric distance.

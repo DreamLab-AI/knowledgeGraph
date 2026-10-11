@@ -29,9 +29,9 @@ uses:
 supports:
   - urn:ngm:class:perpetual-futures
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:risk-management
   - urn:ngm:class:smart-contract
 ---

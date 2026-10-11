@@ -2,16 +2,16 @@ QUIC is a general-purpose transport layer protocol standardised as RFC 9000 by t
 
 ### Overview
 
-- QUIC was developed at Google circa 2012 as "Quick UDP Internet Connections" to overcome the latency and head-of-line blocking limitations inherent in [[TCP]] and the layered [[TLS]] handshake. Google deployed it experimentally in Chrome and its own infrastructure before bringing it to the [[IETF]] for standardisation.
+- QUIC was developed at Google circa 2012 as "Quick UDP Internet Connections" to overcome the latency and head-of-line blocking limitations inherent in [[TCP]] and the layered [[Transport Layer Security]] handshake. Google deployed it experimentally in Chrome and its own infrastructure before bringing it to the [[IETF]] for standardisation.
 - The IETF QUIC working group produced RFC 9000 (QUIC transport), RFC 9001 (QUIC-TLS), RFC 9002 (loss detection and [[Congestion Control]]), and RFC 9114 ([[HTTP/3]]) in May 2021, marking QUIC as the transport foundation for the next generation of the web.
 - Unlike [[TCP]], where a single byte-stream means a lost segment stalls all data behind it, QUIC encapsulates data in independent streams. A single [[UDP]] datagram can carry frames from multiple streams; packet loss only blocks the stream whose data is missing.
-- QUIC's cryptographic design means all payload data is always encrypted and authenticated — there is no plaintext QUIC in the wild, unlike [[HTTP/1.1]] or opportunistic [[TLS]] upgrades.
+- QUIC's cryptographic design means all payload data is always encrypted and authenticated — there is no plaintext QUIC in the wild, unlike [[HTTP/1.1]] or opportunistic [[Transport Layer Security]] upgrades.
 - The protocol is designed to be deployable through existing [[NAT]] and [[Firewall]] infrastructure that already passes [[UDP]], making it more practical than alternative approaches such as [[SCTP]].
 
 ### Key Mechanisms
 
 - **Connection Establishment and 0-RTT**
-  - A new QUIC connection performs a single round-trip (1-RTT) combining [[TLS]] 1.3 ClientHello and transport parameters. For returning clients, session tickets allow [[Zero-RTT Resumption]] (0-RTT), sending application data before receiving any server response.
+  - A new QUIC connection performs a single round-trip (1-RTT) combining [[Transport Layer Security]] 1.3 ClientHello and transport parameters. For returning clients, session tickets allow [[Zero-RTT Resumption]] (0-RTT), sending application data before receiving any server response.
   - Connection IDs decouple the logical connection from the underlying 4-tuple (src/dst IP + port), enabling [[Connection Migration]] when a mobile device switches between Wi-Fi and cellular without interrupting the session.
 - **[[Stream Multiplexing]]**
   - Applications open multiple independent streams within one QUIC connection. Streams are independently flow-controlled, acknowledged, and retransmitted. Loss of a packet carrying stream-3 data does not prevent stream-1 or stream-2 data from being delivered.
@@ -20,7 +20,7 @@ QUIC is a general-purpose transport layer protocol standardised as RFC 9000 by t
   - QUIC uses packet number spaces (Initial, Handshake, Application Data) to avoid acknowledgement ambiguity present in [[TCP]] retransmission. Each retransmitted packet carries a new packet number, so the sender can unambiguously determine whether an acknowledgement refers to the original or the retransmit.
   - The default [[Congestion Control]] algorithm is NewReno-compatible, but the design allows pluggable algorithms (e.g. CUBIC, BBR) at the application layer, independent of OS kernel updates.
 - **Integrated [[Encryption]]**
-  - All QUIC packets — including handshake data — are encrypted. The Initial packets use keys derived from a publicly known salt, protecting against trivial injection but providing no confidentiality; subsequent packets use full [[TLS]] 1.3 keys. This makes deep packet inspection and middlebox interference substantially harder.
+  - All QUIC packets — including handshake data — are encrypted. The Initial packets use keys derived from a publicly known salt, protecting against trivial injection but providing no confidentiality; subsequent packets use full [[Transport Layer Security]] 1.3 keys. This makes deep packet inspection and middlebox interference substantially harder.
 - **[[Flow Control]]**
   - QUIC provides two levels of [[Flow Control]]: per-stream credits and per-connection credits, both expressed as byte offsets. This prevents fast senders from overwhelming slow receivers while allowing fine-grained backpressure.
 - **[[Packet Acknowledgement]] and ACK Ranges**
@@ -39,12 +39,12 @@ QUIC is a general-purpose transport layer protocol standardised as RFC 9000 by t
 - **[[Content Delivery Network]] Optimisation**
   - CDNs use QUIC to reduce time-to-first-byte (TTFB) for end users, especially in high-latency or high-loss environments such as satellite links or congested mobile networks.
 - **DNS over QUIC (DoQ)**
-  - RFC 9250 defines DNS over QUIC, offering confidential DNS resolution with lower latency than DNS over [[TLS]] (DoT) for subsequent queries due to 0-RTT resumption.
+  - RFC 9250 defines DNS over QUIC, offering confidential DNS resolution with lower latency than DNS over [[Transport Layer Security]] (DoT) for subsequent queries due to 0-RTT resumption.
 
 ### Standards and Context
 
 - **RFC 9000** — QUIC: A UDP-Based Multiplexed and Secure Transport (May 2021). The core transport specification defining connection establishment, streams, flow control, and migration.
-- **RFC 9001** — Using TLS to Secure QUIC. Defines how [[TLS]] 1.3 handshake messages are carried in QUIC packets and how keys are derived.
+- **RFC 9001** — Using TLS to Secure QUIC. Defines how [[Transport Layer Security]] 1.3 handshake messages are carried in QUIC packets and how keys are derived.
 - **RFC 9002** — QUIC Loss Detection and [[Congestion Control]]. Specifies packet number spaces, ACK processing, and loss recovery.
 - **RFC 9114** — [[HTTP/3]]. Defines the HTTP semantics layer over QUIC, replacing [[HTTP/2]]'s TCP-based framing.
 - **RFC 9221** — An Unreliable Datagram Extension to QUIC. Provides unreliable delivery for latency-sensitive data.

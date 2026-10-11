@@ -39,7 +39,7 @@ relatedTo:
   - urn:ngm:class:knowledge-management
   - urn:ngm:class:linked-data
   - urn:ngm:class:distributed-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:complex-systems
 ---
 

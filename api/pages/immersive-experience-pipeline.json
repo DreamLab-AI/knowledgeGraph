@@ -170,12 +170,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "contrastsWith": [

@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:network-component
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-application
 uses:
   - urn:ngm:class:private-key

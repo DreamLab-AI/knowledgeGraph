@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:bulletproof
 bridgesTo:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:machine-learning-privacy
 uses:
   - urn:ngm:class:polynomial-commitment

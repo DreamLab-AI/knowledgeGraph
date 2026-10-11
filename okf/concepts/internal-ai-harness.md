@@ -37,7 +37,7 @@ enables:
 dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-inference
 implements:
   - urn:ngm:class:tool-use

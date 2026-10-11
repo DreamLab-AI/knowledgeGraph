@@ -5,7 +5,7 @@ The Hypertext Transfer Protocol (HTTP) is an application-layer, request-response
 - HTTP defines how clients ask for resources and how servers respond, using a small set of methods and a rich header model.
 - It is stateless by design: each request is independent, with state layered on top via cookies and tokens.
 - Successive versions improved performance through persistent connections, multiplexing, and header compression.
-- HTTPS adds confidentiality and integrity by running HTTP over a [[TLS]] channel.
+- HTTPS adds confidentiality and integrity by running HTTP over a [[Transport Layer Security]] channel.
 
 ### Mechanisms
 

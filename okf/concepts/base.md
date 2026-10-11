@@ -14,12 +14,12 @@ hasPart:
   - urn:ngm:class:fraud-proof
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:optimism
   - urn:ngm:class:op-stack
   - urn:ngm:class:optimistic-rollup
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:erc-20-tokens
 dependsOn:
   - urn:ngm:class:coinbase

@@ -9,7 +9,6 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:network-component
-  - urn:ngm:class:cross-chain-communication
   - urn:ngm:class:distributed-systems-protocol
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:network-interoperability
@@ -69,7 +68,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:hash-time-locked-contract
   - urn:ngm:class:multi-party-computation
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:optimistic-oracle
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:zk-snarks

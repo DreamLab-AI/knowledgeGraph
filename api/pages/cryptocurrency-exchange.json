@@ -66,8 +66,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "KYC"
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       },
       {
         "id": "urn:ngm:class:fiat-currency",
@@ -145,7 +145,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -333,7 +333,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -407,8 +407,8 @@
       "label": "Crypto Asset Service Provider"
     },
     {
-      "slug": "fatfrecommendations",
-      "label": "FATFRecommendations"
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
     },
     {
       "slug": "licensing-requirements",

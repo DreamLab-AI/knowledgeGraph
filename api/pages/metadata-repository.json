@@ -45,6 +45,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
@@ -114,24 +119,24 @@
         "label": "Data Storage"
       },
       {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
         "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
       {
         "id": "urn:ngm:class:low-latency",
         "label": "Low Latency"
-      },
-      {
-        "id": "urn:ngm:class:real-time-rendering",
-        "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:sensor-fusion",
-        "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
       }
     ],
     "enables": [
@@ -144,34 +149,38 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:immersive-computing",
-        "label": "Immersive Computing"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:metaverse",
-        "label": "Metaverse"
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:scene-understanding",
-        "label": "Scene Understanding"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
@@ -192,6 +201,14 @@
         "label": "Metaverse Technology"
       },
       {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
@@ -206,14 +223,6 @@
       {
         "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality",
-        "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -246,7 +255,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -262,6 +271,18 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -286,6 +307,14 @@
         "label": "GDPR"
       },
       {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
         "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
@@ -304,7 +333,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -324,8 +353,8 @@
         "label": "Information Management"
       },
       {
-        "id": "urn:ngm:class:affective-computing",
-        "label": "Affective Computing"
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
       }
     ]
   },

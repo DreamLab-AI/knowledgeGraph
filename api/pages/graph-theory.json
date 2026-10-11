@@ -179,8 +179,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -324,8 +324,8 @@
       "label": "Graph Database"
     },
     {
-      "slug": "graph-neural-networks",
-      "label": "Graph Neural Networks"
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
     },
     {
       "slug": "knowledge-graphing",

@@ -109,32 +109,32 @@
         "label": "Haptic Feedback"
       },
       {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:video-conferencing",
-        "label": "Video Conferencing"
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
       },
       {
-        "id": "urn:ngm:class:volumetric-capture",
-        "label": "Volumetric Capture"
-      },
-      {
-        "id": "urn:ngm:class:asynchronous-collaboration",
-        "label": "Asynchronous Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:presence-mechanism",
-        "label": "Presence Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:shared-workspace",
-        "label": "Shared Workspace"
-      },
-      {
-        "id": "urn:ngm:class:synchronous-collaboration",
-        "label": "Synchronous Collaboration"
+        "id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
       }
     ],
     "requires": [
@@ -239,6 +239,10 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
@@ -265,6 +269,10 @@
         "label": "Augmented Reality"
       },
       {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
         "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
       },
@@ -287,10 +295,6 @@
       {
         "id": "urn:ngm:class:end-to-end-encryption",
         "label": "End-to-End Encryption"
-      },
-      {
-        "id": "urn:ngm:class:operational-transformation",
-        "label": "Operational Transformation"
       }
     ],
     "supports": [
@@ -337,12 +341,24 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
       },
       {
         "id": "urn:ngm:class:presence-technology",
         "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -355,10 +371,6 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
-      },
-      {
-        "id": "urn:ngm:class:social-software",
-        "label": "Social Software"
       }
     ]
   },

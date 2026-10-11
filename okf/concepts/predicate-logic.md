@@ -28,7 +28,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:logical-inference
 supports:
-  - urn:ngm:class:semantic-reasoning-engine
+  - urn:ngm:class:semantic-reasoning
   - urn:ngm:class:ontology
 standardizedBy:
   - urn:ngm:class:formal-verification

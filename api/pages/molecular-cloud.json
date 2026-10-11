@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:molecular-cloud",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Molecular clouds are large, cold clouds of gas and dust in which stars form.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

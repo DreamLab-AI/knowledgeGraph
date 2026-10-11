@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:oracle-network
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:audit-trail
@@ -41,11 +41,11 @@ supports:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:intellectual-property-rights
 standardizedBy:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:gs1-epcis
 relatedTo:
   - urn:ngm:class:interplanetary-file-system
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Blockchain Provenance

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astronomical-body",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An astronomical body is an individual object studied in astronomy, such as a planet, star or black hole.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

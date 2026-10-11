@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:swath",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A swath is the area of the surface imaged by a satellite sensor as the satellite moves along its orbit.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

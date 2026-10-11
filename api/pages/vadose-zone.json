@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vadose-zone",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Vadose zone, also called the unsaturated zone, is the subsurface zone between the land surface and the water table.[^1][^2] SWEET records the two names as equivalent classes.[^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

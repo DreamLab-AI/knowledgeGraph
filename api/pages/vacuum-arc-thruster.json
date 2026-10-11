@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vacuum-arc-thruster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A vacuum arc thruster is a pulsed plasma thruster in which one electrode is sacrificial and supplies the propellant.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:thruster",

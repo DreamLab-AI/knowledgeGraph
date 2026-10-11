@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:ai-technique
 hasPart:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 requires:
   - urn:ngm:class:training-data
 enables:
@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:neural-network
   - urn:ngm:class:lstm
 implements:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 contrastsWith:
   - urn:ngm:class:recurrent-neural-network
 bridgesTo:

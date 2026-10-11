@@ -4,6 +4,7 @@ type: Class
 title: Satellite Downlink
 resource: urn:ngm:class:satellite-downlink
 domain: space-science-and-systems
+description: A satellite downlink is a transmission from a satellite towards an Earth station or terminal.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Satellite Downlink
+
+A satellite downlink is a transmission from a satellite towards an Earth station or terminal.

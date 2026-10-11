@@ -35,14 +35,14 @@ requires:
   - urn:ngm:class:neural-network
   - urn:ngm:class:gpu-computing
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:protein-structure-prediction
   - urn:ngm:class:game-ai
   - urn:ngm:class:scientific-discovery-acceleration
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:scientific-research
   - urn:ngm:class:drug-discovery
-  - urn:ngm:class:ai-energy-optimisation
+  - urn:ngm:class:energy-optimization
   - urn:ngm:class:game-ai
   - urn:ngm:class:robotics-control
   - urn:ngm:class:mathematical-reasoning
@@ -69,7 +69,7 @@ bridgesTo:
   - urn:ngm:class:computational-biology
   - urn:ngm:class:ai-energy-optimisation
   - urn:ngm:class:materials-science-ai
-  - urn:ngm:class:ai-energy-optimisation
+  - urn:ngm:class:energy-optimization
   - urn:ngm:class:nuclear-fusion
   - urn:ngm:class:weather-prediction
   - urn:ngm:class:combinatorial-optimisation
@@ -84,7 +84,7 @@ supports:
   - urn:ngm:class:artificial-general-intelligence
   - urn:ngm:class:materials-science-ai
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:uk-ai-opportunities-action-plan-jan-2025
 partOf:
   - urn:ngm:class:ai-ecosystem

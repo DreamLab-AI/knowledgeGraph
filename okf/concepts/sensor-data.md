@@ -26,21 +26,21 @@ enables:
   - urn:ngm:class:state-estimation
   - urn:ngm:class:spatial-mapping
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:synthetic-data
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:annotated-dataset
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:perception-system
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:data-pipeline
 supports:
   - urn:ngm:class:autonomous-navigation

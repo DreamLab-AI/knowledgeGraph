@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:elliptical-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An elliptical orbit is a bound conic orbit with eccentricity from zero to less than one in the ideal two-body model.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

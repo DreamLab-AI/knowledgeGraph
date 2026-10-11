@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-immune-response",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight immune response is the altered functioning of the human immune system during spaceflight. One review reports persistent dysregulation during a six-month orbital flight.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -43,7 +43,7 @@ The Financial Conduct Authority (FCA) is the independent conduct and prudential 
 - **Sustainable Finance**
   - The FCA mandates [[Sustainability Disclosure Requirements]] (SDR) and investment labels for UK funds, and has adopted the [[Task Force on Climate-related Financial Disclosures]] (TCFD) framework for premium-listed issuers and large asset managers.
 - **RegTech Integration**
-  - The FCA's TechSprint programme convenes industry participants to develop [[RegTech]] solutions covering regulatory reporting automation, KYC/identity verification, and [[AML]] transaction monitoring using [[Machine Learning]] and graph analytics.
+  - The FCA's TechSprint programme convenes industry participants to develop [[RegTech]] solutions covering regulatory reporting automation, KYC/identity verification, and [[Anti-Money Laundering]] transaction monitoring using [[Machine Learning]] and graph analytics.
 
 ### Standards and Regulatory Context
 

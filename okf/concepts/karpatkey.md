@@ -8,13 +8,13 @@ description: Karpatkey is an organisation that provides treasury management and 
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 requires:
   - urn:ngm:class:treasury-management
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:yield-farming
 ---
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sar-terrain-correction",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "SAR terrain correction is the use of a digital elevation model to remove the geometric distortions, and in its radiometric form the brightness effects, that terrain and the side-looking imaging geometry impose on a SAR image, so that pixels sit close to their true ground positions.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:edge-ai
   - urn:ngm:class:real-time-systems
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:autoregressive-generation
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:kv-cache
@@ -47,7 +47,7 @@ relatedTo:
   - urn:ngm:class:context-window
   - urn:ngm:class:sampling
   - urn:ngm:class:model-compression-for-edge
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:sampling
 ---

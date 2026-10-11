@@ -4,6 +4,7 @@ type: Class
 title: Maximum Valid Data Value
 resource: urn:ngm:class:maximum-valid-data-value
 domain: earth-observation-and-geospatial-sensing
+description: Maximum valid data value is the upper limit of the range of values accepted as valid for a variable [^1].
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Maximum Valid Data Value
+
+Maximum valid data value is the upper limit of the range of values accepted as valid for a variable [^1].

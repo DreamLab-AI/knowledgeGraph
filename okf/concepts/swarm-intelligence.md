@@ -29,7 +29,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:decentralized-swarm-control
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:positive-feedback
 supports:

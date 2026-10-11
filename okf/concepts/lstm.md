@@ -41,10 +41,10 @@ partOf:
   - urn:ngm:class:sequence-modelling
 relatedTo:
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:vanishing-gradient-problem
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 ---
 
 # LSTM

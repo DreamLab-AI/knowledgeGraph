@@ -24,7 +24,7 @@ hasPart:
   - urn:ngm:class:statistical-learning-theory
 enables:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:data-science

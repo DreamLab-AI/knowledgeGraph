@@ -19,7 +19,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:near-field-communication
   - urn:ngm:class:zigbee
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Bluetooth LE

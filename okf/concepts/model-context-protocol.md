@@ -39,7 +39,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:infra-network-and-comms
   - urn:ngm:class:agent-communication-protocol
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:nostr-protocol
   - urn:ngm:class:solid-pod
   - urn:ngm:class:web-assembly

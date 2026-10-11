@@ -92,7 +92,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -388,7 +388,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -544,8 +544,8 @@
       "label": "Neural 3D Generation"
     },
     {
-      "slug": "openxr-standard",
-      "label": "OpenXR Standard"
+      "slug": "open-xr",
+      "label": "OpenXR"
     },
     {
       "slug": "pose-estimation",

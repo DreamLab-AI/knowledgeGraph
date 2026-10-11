@@ -8,9 +8,9 @@ description: Asset recovery is the process of identifying, tracing, freezing, an
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:audit
 enables:
   - urn:ngm:class:regulatory-compliance
@@ -25,12 +25,12 @@ supports:
   - urn:ngm:class:compliance
   - urn:ngm:class:governance
 partOf:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
   - urn:ngm:class:finance
   - urn:ngm:class:financial-services
   - urn:ngm:class:risk-management
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Asset Recovery

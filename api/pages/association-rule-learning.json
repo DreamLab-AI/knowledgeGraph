@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:association-rule-learning",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

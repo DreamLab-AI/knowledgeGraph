@@ -28,7 +28,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:escrow-system
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cryptographic-commitment
   - urn:ngm:class:bitcoin-script
 uses:

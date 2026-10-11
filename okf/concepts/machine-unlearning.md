@@ -8,7 +8,7 @@ description: A family of techniques for removing the influence of specific train
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:right-to-erasure
   - urn:ngm:class:data-privacy

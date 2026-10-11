@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:digital-technology-access-equity
   - urn:ngm:class:assistive-technology
 implements:
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
 contrastsWith:
   - urn:ngm:class:retrofitting
 bridgesTo:

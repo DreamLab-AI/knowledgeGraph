@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:financial-regulation
 relatedTo:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:bitcoin-proof-of-work-protocol-as-money
 ---
 

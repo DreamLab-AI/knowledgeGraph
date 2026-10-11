@@ -8,7 +8,6 @@ description: Cybernetics is the transdisciplinary science of regulatory systems,
 maturity: established
 quality: 0.9
 is-a:
-  - urn:ngm:class:control-theory
   - urn:ngm:class:systems-theory
 hasPart:
   - urn:ngm:class:negative-feedback
@@ -64,7 +63,7 @@ relatedTo:
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:emergence
   - urn:ngm:class:complex-adaptive-systems
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:evolutionary-computation
   - urn:ngm:class:collective-intelligence
   - urn:ngm:class:self-organised-criticality

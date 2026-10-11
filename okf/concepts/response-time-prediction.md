@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:latency-aware-edge-ai
   - urn:ngm:class:edge-computing
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:anomaly-detection
 ---
 

@@ -21,7 +21,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:distributed-collaboration
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:biomedical-informatics
 supports:

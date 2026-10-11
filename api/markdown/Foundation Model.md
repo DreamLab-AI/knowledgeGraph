@@ -21,7 +21,7 @@ A Foundation Model is a large-scale machine learning model trained on broad, div
 #### Adaptation Mechanisms
 
 - [[Instruction Tuning]]: Supervised fine-tuning on curated instruction-response pairs transforms a raw language model into an instruction-following assistant capable of following natural-language task descriptions.
-- [[RLHF]] (Reinforcement Learning from Human Feedback): Human preference labels train a reward model used to further fine-tune the foundation model towards outputs rated as more helpful, honest, and harmless.
+- [[Reinforcement Learning from Human Feedback]] (Reinforcement Learning from Human Feedback): Human preference labels train a reward model used to further fine-tune the foundation model towards outputs rated as more helpful, honest, and harmless.
 - [[In-Context Learning]]: At inference time, the model conditions on a few labelled examples embedded in the prompt to generalise to a new task without gradient updates — a distinctively emergent property of scale.
 - [[Few-Shot Learning]]: A related capability in which minimal examples suffice for high-quality task performance, eliminating the need for large labelled datasets in many practical settings.
 - [[LoRA Fine-Tuning]] and other parameter-efficient fine-tuning methods (PEFT) allow task-specific adaptation at low computational cost by updating only a small subset of parameters or low-rank adapter matrices.
@@ -36,8 +36,8 @@ A Foundation Model is a large-scale machine learning model trained on broad, div
 
 ### Taxonomy and Variants
 
-- **[[Large Language Models]]**: Text-dominant foundation models trained on web-scale corpora (GPT series, Claude, Gemini, Llama). Primary output modality is text; capabilities include reasoning, coding, summarisation, dialogue, and tool use.
-- **[[Multimodal Models]]**: Foundation models trained on paired or interleaved text-image (and increasingly text-image-audio-video) data. Examples include GPT-4 (vision), Gemini, Flamingo, and [[Vision-Language-Action Models]] for robotics.
+- **[[Large Language Model]]**: Text-dominant foundation models trained on web-scale corpora (GPT series, Claude, Gemini, Llama). Primary output modality is text; capabilities include reasoning, coding, summarisation, dialogue, and tool use.
+- **[[Multimodal Model]]**: Foundation models trained on paired or interleaved text-image (and increasingly text-image-audio-video) data. Examples include GPT-4 (vision), Gemini, Flamingo, and [[Vision-Language-Action Models]] for robotics.
 - **[[Diffusion Model]] families**: Generative foundation models trained on image (Stable Diffusion, DALL-E), video (Sora), and audio (AudioLDM) data using denoising objectives, achieving state-of-the-art generative quality.
 - **Code foundation models**: Specialised on source code corpora, enabling [[Code Generation]], code completion, bug detection, and software synthesis (Codex, AlphaCode, DeepSeek-Coder).
 - **Scientific foundation models**: Domain-adapted models for biology (protein language models such as ESMFold), chemistry, climate modelling, and medical imaging, adapting the foundation model paradigm to structured scientific data.
@@ -56,7 +56,7 @@ A Foundation Model is a large-scale machine learning model trained on broad, div
 
 ### Standards and Governance Context
 
-- **[[AI Safety]] and alignment**: Foundation models are the primary subject of contemporary [[AI Safety]] research, including interpretability, scalable oversight, [[RLHF]], and [[AI Alignment]] methodology, given that their emergent capabilities and broad deployment surface require novel alignment approaches.
+- **[[AI Safety]] and alignment**: Foundation models are the primary subject of contemporary [[AI Safety]] research, including interpretability, scalable oversight, [[Reinforcement Learning from Human Feedback]], and [[AI Alignment]] methodology, given that their emergent capabilities and broad deployment surface require novel alignment approaches.
 - **EU AI Act**: Classifies providers of general-purpose AI models (the EU's regulatory term encompassing foundation models) with systemic risk characteristics — defined by training compute thresholds — as subject to heightened obligations including capability evaluations, incident reporting, and adversarial testing.
 - **UK AI Safety Institute**: Conducts frontier model evaluations — pre-deployment assessments of foundation model capability and risk — targeting the largest foundation models from major AI labs.
 - **Responsible Scaling Policies**: Labs including Anthropic publish [[Responsible Scaling Policy]] documents committing to capability-gated safety evaluations before scaling foundation models above defined thresholds.

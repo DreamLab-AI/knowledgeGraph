@@ -60,7 +60,7 @@ uses:
   - urn:ngm:class:curriculum-learning
   - urn:ngm:class:domain-randomisation
   - urn:ngm:class:self-play
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:proximal-policy-optimisation
   - urn:ngm:class:domain-randomisation
   - urn:ngm:class:generative-agents

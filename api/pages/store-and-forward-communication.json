@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:store-and-forward-communication",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Store-and-forward communication holds a message or data unit at an intermediate node until an onward link becomes available, then forwards it towards its destination.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

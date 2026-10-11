@@ -33,8 +33,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:common-sense-reasoning",
-        "label": "Common Sense Reasoning"
+        "id": "urn:ngm:class:commonsense-reasoning",
+        "label": "Commonsense Reasoning"
       }
     ],
     "relatedTo": [
@@ -141,7 +141,7 @@
       },
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
-        "label": "Intelligent Tutoring Systems"
+        "label": "Intelligent Tutoring System"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -228,8 +228,8 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:neuromorphic-computing",
@@ -276,7 +276,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -347,8 +347,8 @@
   ],
   "backlinks": [
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "empathetic-ai",

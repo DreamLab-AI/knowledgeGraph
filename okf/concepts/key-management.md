@@ -36,12 +36,12 @@ uses:
   - urn:ngm:class:cryptography
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:key-derivation-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 standardizedBy:
   - urn:ngm:class:nist-sp-800-57
   - urn:ngm:class:iso-iec-27001
 relatedTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:multi-party-computation
   - urn:ngm:class:threshold-cryptography
 ---

@@ -15,7 +15,7 @@ uses:
 supports:
   - urn:ngm:class:optimal-control
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Value Function

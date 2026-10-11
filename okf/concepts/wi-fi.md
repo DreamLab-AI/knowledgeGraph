@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:communication-protocol
 uses:
   - urn:ngm:class:orthogonal-frequency-division-multiplexing
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 supports:
   - urn:ngm:class:smart-home
   - urn:ngm:class:edge-computing

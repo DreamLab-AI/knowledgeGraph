@@ -236,8 +236,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
       },
       {
         "id": "urn:ngm:class:metaverse",
@@ -294,7 +294,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -326,11 +326,11 @@
         "label": "Digital Services Act"
       },
       {
-        "id": "urn:ngm:class:e-idas",
-        "label": "eIDAS"
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

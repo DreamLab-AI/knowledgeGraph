@@ -19,7 +19,7 @@ A data structure is an organizational scheme for efficiently storing, accessing,
   #### Related Concepts
 
 - [[Tensor Operations]]
-- [[Graph Neural Networks]]
+- [[Graph Neural Network]]
 - [[Sparse Matrices]]
 - [[Memory Optimization]]
 

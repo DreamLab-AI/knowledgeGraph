@@ -12,9 +12,9 @@ is-a:
   - urn:ngm:class:machine-learning-discipline-infrastructure
   - urn:ngm:class:generative-ai
   - urn:ngm:class:open-source-software
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:ai-ecosystem
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 hasPart:
   - urn:ngm:class:civitai
   - urn:ngm:class:hugging-face-hub
@@ -28,7 +28,7 @@ hasPart:
   - urn:ngm:class:meta-llama-model-family-3
   - urn:ngm:class:mistral-ai-open-weight-model-family
   - urn:ngm:class:local-llm-runtime-platform
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:hugging-face-hub
   - urn:ngm:class:inference
 requires:
@@ -63,10 +63,10 @@ implements:
   - urn:ngm:class:flash-attention
   - urn:ngm:class:grouped-query-attention
   - urn:ngm:class:quantisation
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:diffusion-models
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:positional-encoding
 contrastsWith:

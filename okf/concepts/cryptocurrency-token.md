@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:cryptographic-key
   - urn:ngm:class:digital-wallet
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:staking
 dependsOn:
@@ -32,7 +32,7 @@ implements:
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:supply-chain
@@ -42,10 +42,10 @@ uses:
   - urn:ngm:class:automated-market-maker
 standardizedBy:
   - urn:ngm:class:token-standard
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-economy
 relatedTo:
   - urn:ngm:class:token-economics

@@ -18,13 +18,13 @@ requires:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:regulatory-compliance
 enables:
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:financial-inclusion
   - urn:ngm:class:data-sharing
 dependsOn:
   - urn:ngm:class:financial-regulation
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:oauth
   - urn:ngm:class:rest-api

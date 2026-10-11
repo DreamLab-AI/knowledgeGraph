@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:receiver-autonomous-integrity-monitoring",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Receiver Autonomous Integrity Monitoring, or RAIM, is a user-side algorithm that determines the integrity of a GNSS position solution using the GNSS measurements themselves.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

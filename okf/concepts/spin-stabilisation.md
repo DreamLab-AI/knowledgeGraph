@@ -4,6 +4,7 @@ type: Class
 title: Spin Stabilisation
 resource: urn:ngm:class:spin-stabilisation
 domain: space-science-and-systems
+description: Spin stabilisation is a method of holding a spacecraft's attitude by setting the whole vehicle spinning so that the gyroscopic action of the rotating mass acts as the stabilising mechanism.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Spin Stabilisation
+
+Spin stabilisation is a method of holding a spacecraft's attitude by setting the whole vehicle spinning so that the gyroscopic action of the rotating mass acts as the stabilising mechanism.[^1]

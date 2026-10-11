@@ -26,17 +26,17 @@ enables:
   - urn:ngm:class:sustainability-reporting
 dependsOn:
   - urn:ngm:class:enterprise-resource-planning
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:data-integration
 contrastsWith:
   - urn:ngm:class:demand-chain
 bridgesTo:
   - urn:ngm:class:supply-chain-blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 standardizedBy:
   - urn:ngm:class:gs-1-standards
   - urn:ngm:class:iso-28000

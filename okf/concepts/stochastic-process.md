@@ -91,7 +91,7 @@ relatedTo:
   - urn:ngm:class:control-theory
   - urn:ngm:class:deep-learning
   - urn:ngm:class:diffusion-models
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Stochastic Process

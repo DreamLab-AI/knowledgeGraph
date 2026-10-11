@@ -75,7 +75,7 @@ uses:
   - urn:ngm:class:regtech
   - urn:ngm:class:legal-entity-structure
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:data-protection
   - urn:ngm:class:eu-digital-single-market
   - urn:ngm:class:financial-stability

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bit-error-rate",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Bit error rate (BER) is the number of erroneous recovered bits divided by the total number of bits assessed at a specified point in a test or operating interval.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:social-interaction
 partOf:
-  - urn:ngm:class:common-sense-reasoning
+  - urn:ngm:class:commonsense-reasoning
 relatedTo:
   - urn:ngm:class:social-robotics
 ---

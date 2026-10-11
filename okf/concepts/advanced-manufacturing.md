@@ -31,7 +31,7 @@ supports:
 partOf:
   - urn:ngm:class:infrastructure
 relatedTo:
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:digital-twin
 ---
 

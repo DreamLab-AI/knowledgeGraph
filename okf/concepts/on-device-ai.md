@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:model-compression
   - urn:ngm:class:hardware-acceleration
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:privacy-preserving-machine-learning
   - urn:ngm:class:inference

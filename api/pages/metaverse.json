@@ -310,8 +310,8 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:interoperability-standard",
@@ -322,7 +322,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -338,8 +338,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:web3",
@@ -400,7 +400,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -653,6 +653,10 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
       "slug": "ai-impact-assessment",
       "label": "AI Impact Assessment"
     },
@@ -685,6 +689,10 @@
       "label": "AI System (EU Definition)"
     },
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "ai-tri-sm",
       "label": "AI TRiSM"
     },
@@ -699,14 +707,6 @@
     {
       "slug": "ai-user",
       "label": "AI User"
-    },
-    {
-      "slug": "aiethics",
-      "label": "AIEthics"
-    },
-    {
-      "slug": "aisystem",
-      "label": "AISystem"
     },
     {
       "slug": "albert",
@@ -1133,8 +1133,8 @@
       "label": "Confusion Matrix"
     },
     {
-      "slug": "constitutional-ai-training-methodology",
-      "label": "Constitutional AI Training Methodology"
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
     },
     {
       "slug": "content-moderation-standards",
@@ -1233,8 +1233,8 @@
       "label": "De BER Ta"
     },
     {
-      "slug": "decentralized-storage",
-      "label": "Decentralized Storage"
+      "slug": "decentralised-storage",
+      "label": "Decentralised Storage"
     },
     {
       "slug": "decoder",
@@ -1593,8 +1593,8 @@
       "label": "Emotion Aware Interaction"
     },
     {
-      "slug": "encoder-decoder-architecture",
-      "label": "Encoder Decoder Architecture"
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
     },
     {
       "slug": "encoder",
@@ -1719,10 +1719,6 @@
     {
       "slug": "global-metaverse-operations",
       "label": "Global Metaverse Operations"
-    },
-    {
-      "slug": "gltf-standard",
-      "label": "Gltf Standard"
     },
     {
       "slug": "governance-architecture",
@@ -2009,8 +2005,8 @@
       "label": "Language Modeling"
     },
     {
-      "slug": "layer2-scaling",
-      "label": "Layer2Scaling"
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
     },
     {
       "slug": "learning-analytics",
@@ -2057,10 +2053,6 @@
       "label": "Limited Risk AI"
     },
     {
-      "slug": "lo-ra",
-      "label": "Lo RA"
-    },
-    {
       "slug": "local-explanation",
       "label": "Local Explanation"
     },
@@ -2073,6 +2065,10 @@
       "label": "Long Term Archival"
     },
     {
+      "slug": "low-rank-adaptation",
+      "label": "Low-Rank Adaptation"
+    },
+    {
       "slug": "machine-learning-framework",
       "label": "Machine Learning Framework"
     },
@@ -2081,7 +2077,7 @@
       "label": "Machine Learning Infrastructure"
     },
     {
-      "slug": "machine-learning-discipline-model",
+      "slug": "machine-learning-model",
       "label": "Machine Learning Model"
     },
     {
@@ -2221,8 +2217,8 @@
       "label": "Mixed Reality"
     },
     {
-      "slug": "mixture-of-experts-architecture",
-      "label": "Mixture-of-Experts Architecture"
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
     },
     {
       "slug": "mixup",
@@ -2281,7 +2277,7 @@
       "label": "Multi Task Learning"
     },
     {
-      "slug": "multimodal-ai-architecture-ai",
+      "slug": "multimodal-ai",
       "label": "Multimodal AI"
     },
     {
@@ -2549,12 +2545,8 @@
       "label": "Post Hoc Explanation"
     },
     {
-      "slug": "postquantum-cryptography",
-      "label": "Postquantum Cryptography"
-    },
-    {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
     },
     {
       "slug": "precision-medicine",
@@ -2571,6 +2563,10 @@
     {
       "slug": "prefix-tuning",
       "label": "Prefix Tuning"
+    },
+    {
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "privacy-architecture",
@@ -3635,6 +3631,10 @@
     {
       "slug": "blockchain-core-concepts",
       "label": "blockchain core concepts"
+    },
+    {
+      "slug": "gl-tf",
+      "label": "glTF"
     },
     {
       "slug": "implementation-examples",

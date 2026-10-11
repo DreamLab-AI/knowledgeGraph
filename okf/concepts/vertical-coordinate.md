@@ -4,6 +4,7 @@ type: Class
 title: Vertical Coordinate
 resource: urn:ngm:class:vertical-coordinate
 domain: earth-observation-and-geospatial-sensing
+description: A vertical coordinate is a value in a one-dimensional coordinate system used for gravity-related height or depth measurements.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Vertical Coordinate
+
+A vertical coordinate is a value in a one-dimensional coordinate system used for gravity-related height or depth measurements.[^1]

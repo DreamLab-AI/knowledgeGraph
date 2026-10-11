@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:tensor-flow
   - urn:ngm:class:compiler
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network-inference
   - urn:ngm:class:transformer

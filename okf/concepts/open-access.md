@@ -14,12 +14,12 @@ enables:
   - urn:ngm:class:knowledge-transfer
 dependsOn:
   - urn:ngm:class:intellectual-property-rights
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 implements:
   - urn:ngm:class:open-data
 contrastsWith:
   - urn:ngm:class:intellectual-property-rights
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 bridgesTo:
   - urn:ngm:class:academic-research
 uses:

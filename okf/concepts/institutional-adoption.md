@@ -22,14 +22,14 @@ enables:
 dependsOn:
   - urn:ngm:class:regulatory-clarity
   - urn:ngm:class:settlement
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:settlement
 contrastsWith:
   - urn:ngm:class:retail-adoption
   - urn:ngm:class:speculative-investment
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:enterprise-ai
 uses:
   - urn:ngm:class:smart-contract
@@ -40,8 +40,8 @@ supports:
   - urn:ngm:class:capital-markets
 relatedTo:
   - urn:ngm:class:tokenised-securities
-  - urn:ngm:class:de-fi-protocol
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:defi-protocol
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:stablecoin
 ---
 

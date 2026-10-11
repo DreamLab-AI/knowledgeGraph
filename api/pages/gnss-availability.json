@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-availability",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS availability is the percentage of time that the services of a navigation system are usable by the navigator.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

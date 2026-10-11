@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A space radiation environment is the field of high-energy ionised particles present in space, which affects spacecraft, components and biological systems.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

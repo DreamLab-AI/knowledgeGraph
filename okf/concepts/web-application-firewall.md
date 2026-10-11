@@ -21,7 +21,7 @@ contrastsWith:
   - urn:ngm:class:firewall
 bridgesTo:
   - urn:ngm:class:api-gateway
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:http
   - urn:ngm:class:access-control

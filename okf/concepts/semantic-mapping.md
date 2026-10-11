@@ -22,7 +22,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:data-integration
 uses:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:vector-embedding
 supports:
   - urn:ngm:class:linked-data

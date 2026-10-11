@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:public-key
   - urn:ngm:class:asymmetric-encryption
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:cryptography
 partOf:
   - urn:ngm:class:symmetric-encryption

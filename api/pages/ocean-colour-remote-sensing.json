@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ocean-colour-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ocean colour remote sensing is the measurement of the colour of sunlit sea water from satellite sensors in order to estimate constituents such as phytoplankton chlorophyll.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

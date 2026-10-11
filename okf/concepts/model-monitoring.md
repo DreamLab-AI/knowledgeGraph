@@ -33,7 +33,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:observability
   - urn:ngm:class:model-serving
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Model Monitoring

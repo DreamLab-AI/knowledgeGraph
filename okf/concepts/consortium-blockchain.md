@@ -27,7 +27,7 @@ hasPart:
 requires:
   - urn:ngm:class:byzantine-fault-tolerance
   - urn:ngm:class:identity-management-system
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:smart-contract-platform
   - urn:ngm:class:multi-party-governance
   - urn:ngm:class:network-membership-agreement
@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:trade-finance-digitisation
   - urn:ngm:class:atomic-delivery-versus-payment
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:threshold-cryptography
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:digital-signature
@@ -63,7 +63,7 @@ contrastsWith:
   - urn:ngm:class:permissionless-blockchain
   - urn:ngm:class:private-blockchain
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:traditional-edi
   - urn:ngm:class:swift-messaging
 bridgesTo:
@@ -101,7 +101,7 @@ standardizedBy:
   - urn:ngm:class:interwork-alliance-token-taxonomy
   - urn:ngm:class:ethtrust-security-levels
 relatedTo:
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:trade-finance
   - urn:ngm:class:blockchain-interoperability
@@ -110,7 +110,7 @@ relatedTo:
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Consortium Blockchain

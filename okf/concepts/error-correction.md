@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:fault-tolerance-system
   - urn:ngm:class:distributed-storage
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:data-compression
   - urn:ngm:class:cryptographic-hash

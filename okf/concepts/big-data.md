@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:apache-spark
   - urn:ngm:class:nosql-database
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-mining
 relatedTo:
   - urn:ngm:class:data-warehouse

@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:vulkan
 supports:
   - urn:ngm:class:gpu-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:computer-hardware
 relatedTo:

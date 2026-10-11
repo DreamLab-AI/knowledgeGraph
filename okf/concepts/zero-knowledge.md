@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:cryptography
   - urn:ngm:class:cryptographic-protocol
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:zero-knowledge-machine-learning
 ---
 

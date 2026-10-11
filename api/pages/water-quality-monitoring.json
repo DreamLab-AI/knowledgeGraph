@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:water-quality-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Water quality monitoring is the repeated observation of the constituents of water that determine its suitability for particular uses, with satellite data supplying indicators such as chlorophyll and ocean colour.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -108,7 +108,7 @@ A black-box model is a predictive system whose internal decision logic is opaque
 - **Ensemble Methods**: [[Random Forest]] (Breiman, 2001) aggregates hundreds of decision trees; gradient-boosted ensembles (XGBoost: Chen and Guestrin, 2016; LightGBM: Ke et al., 2017; CatBoost: Prokhorenkova et al., 2018) sequentially fit residuals. Individual trees are interpretable; their combination is not. Permutation [[Feature Importance]] and [[SHAP]] TreeExplainer provide post-hoc approximations.
 - **Support Vector Machines with Non-Linear Kernels**: SVMs with RBF or polynomial kernels map data to high-dimensional spaces where class boundaries are linear; the back-projection to input space is opaque, though kernel SHAP can approximate feature attributions.
 - **Bayesian Neural Networks**: Add uncertainty quantification to opacity; outputs include calibrated confidence intervals but internal mechanisms remain inaccessible.
-- **Large Foundation Models**: [[Large Language Models]] (GPT-4, Claude, Gemini, Llama, Mistral) and vision-language models represent extreme-scale black boxes where even model developers cannot fully characterise all emergent behaviours; [[Mechanistic Interpretability]] research (Anthropic's circuits work, Elhage et al.) attempts to reverse-engineer specific computations.
+- **Large Foundation Models**: [[Large Language Model]] (GPT-4, Claude, Gemini, Llama, Mistral) and vision-language models represent extreme-scale black boxes where even model developers cannot fully characterise all emergent behaviours; [[Mechanistic Interpretability]] research (Anthropic's circuits work, Elhage et al.) attempts to reverse-engineer specific computations.
 
 ## Post-Hoc Explanation Methods
 
@@ -417,7 +417,7 @@ A black-box model is a predictive system whose internal decision logic is opaque
   - Architecture: neural network with distributions over weights (variational inference, Monte Carlo dropout)
   - Opacity source: inherits neural network opacity; adds probabilistic uncertainty output
   - Common use cases: risk-sensitive prediction, medical AI, scientific applications requiring uncertainty
-- **[[Large Language Models]]**
+- **[[Large Language Model]]**
   - Architecture: very large autoregressive transformer decoder (billions to trillions of parameters)
   - Opacity source: emergent behaviours from scale, opaque in-context reasoning, polysemantic neurons
   - Common use cases: text generation, summarisation, question answering, code generation, agent tasks

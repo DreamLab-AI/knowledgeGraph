@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:smart-contracts
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:cryptography
   - urn:ngm:class:digital-signatures
@@ -38,7 +38,7 @@ bridgesTo:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:tendermint
 supports:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:immutability
   - urn:ngm:class:sybil-resistance
 relatedTo:

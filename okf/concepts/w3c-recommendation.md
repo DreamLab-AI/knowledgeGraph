@@ -10,12 +10,12 @@ quality: 0.62
 is-a:
   - urn:ngm:class:web-standard
 enables:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 contrastsWith:
   - urn:ngm:class:open-standards
 bridgesTo:
-  - urn:ngm:class:json-ld
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 supports:
   - urn:ngm:class:web-authn
   - urn:ngm:class:verifiable-credentials

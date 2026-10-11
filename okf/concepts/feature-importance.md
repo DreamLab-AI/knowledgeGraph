@@ -27,7 +27,7 @@ bridgesTo:
   - urn:ngm:class:data-governance
 uses:
   - urn:ngm:class:dimensionality-reduction
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:random-forest
   - urn:ngm:class:boosting
 supports:

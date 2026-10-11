@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:magnetic-pole",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A magnetic pole is a place on Earth's surface where the geomagnetic field is vertical, so that a dip needle stands upright and the horizontal field intensity is zero.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

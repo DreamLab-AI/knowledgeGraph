@@ -219,7 +219,7 @@ Carbon Credit Tracking is the application of Blockchain and distributed ledger t
 
 ### Smart Contract Lifecycle Engine
 
-- [[Smart Contracts]] deployed on [[Ethereum Smart Contract Platform]] mainnet (for highest-value institutional credits), [[Polygon]] (for high-volume lower-cost retail and DeFi integration), Celo (for mobile-first emerging market access), or [[Hedera Hashgraph]] (for enterprise permissioned deployments via Verra's Guardian integration) govern the full credit lifecycle.
+- [[Smart Contracts]] deployed on [[Ethereum]] mainnet (for highest-value institutional credits), [[Polygon]] (for high-volume lower-cost retail and DeFi integration), Celo (for mobile-first emerging market access), or [[Hedera Hashgraph]] (for enterprise permissioned deployments via Verra's Guardian integration) govern the full credit lifecycle.
 - Issuance contracts mint new tokens conditioned on oracle-attested MRV threshold satisfaction, rejecting minting attempts where monitoring data indicates project underperformance.
 - Transfer contracts enforce ownership changes with embedded fee splits funding permanence buffer pools and registry overhead.
 - Retirement contracts implement irrevocable burns that simultaneously write a public retirement certificate to chain and trigger API calls to the underlying registry to mark the credit as claimed — creating bidirectional provenance between on-chain token and off-chain registry record.
@@ -255,7 +255,7 @@ Carbon Credit Tracking is the application of Blockchain and distributed ledger t
 ### Energy Consumption and Climate Irony
 
 - Early implementations on proof-of-work Ethereum mainnet faced substantive criticism that per-transaction energy consumption negated a meaningful fraction of the climate benefits of credits being traded.
-- Migration to proof-of-stake [[Ethereum Smart Contract Platform]] (The Merge, September 2022) reduced energy consumption by ~99.95%; [[Polygon]], Celo, and [[Hedera Hashgraph]] operate with carbon-neutral or net-negative profiles, substantively addressing this concern.
+- Migration to proof-of-stake [[Ethereum]] (The Merge, September 2022) reduced energy consumption by ~99.95%; [[Polygon]], Celo, and [[Hedera Hashgraph]] operate with carbon-neutral or net-negative profiles, substantively addressing this concern.
 - The "blockchain = high energy" perception narrative persists among non-technical policymakers, creating adoption friction despite the actual energy data.
 
 ### Regulatory Uncertainty and Legal Status

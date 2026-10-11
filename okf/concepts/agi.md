@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
 relatedTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:autonomous-system
 ---
 

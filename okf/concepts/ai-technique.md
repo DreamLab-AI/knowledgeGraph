@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:artificial-intelligence
 hasPart:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:natural-language-processing

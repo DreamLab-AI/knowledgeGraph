@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:asymmetric-cryptography
 enables:
   - urn:ngm:class:digital-certificate
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:code-signing
   - urn:ngm:class:encryption
 contrastsWith:
@@ -31,9 +31,9 @@ contrastsWith:
   - urn:ngm:class:self-sovereign-identity
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:authentication
   - urn:ngm:class:identity-management
@@ -45,7 +45,7 @@ standardizedBy:
   - urn:ngm:class:rfc-5280
   - urn:ngm:class:webtrust
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:trust-hierarchy
 relatedTo:
   - urn:ngm:class:certificate-transparency

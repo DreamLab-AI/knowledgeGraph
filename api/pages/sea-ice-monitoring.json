@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sea-ice-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Sea ice monitoring is the satellite observation of the extent, concentration and age of frozen sea water in polar regions, mainly by microwave sensors.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

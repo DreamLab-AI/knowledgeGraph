@@ -29,7 +29,7 @@ implements:
   - urn:ngm:class:first-order-logic
   - urn:ngm:class:rule-based-systems
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:connectionism

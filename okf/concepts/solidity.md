@@ -15,8 +15,8 @@ requires:
   - urn:ngm:class:compiler
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:nft
   - urn:ngm:class:token
 dependsOn:
@@ -25,8 +25,8 @@ dependsOn:
   - urn:ngm:class:evm
 implements:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:vyper
@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:oracle
 uses:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:opcodes
   - urn:ngm:class:ethereum
   - urn:ngm:class:application-binary-interface

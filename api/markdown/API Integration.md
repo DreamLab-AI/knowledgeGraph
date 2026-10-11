@@ -52,7 +52,7 @@ API Integration is the discipline of connecting disparate software systems, serv
 
 ### Standards and Governance Context
 
-- **[[OpenAPI Specification]]** (OAS 3.x, formerly Swagger) is the de facto standard for documenting and contract-testing synchronous REST APIs. Machine-readable specs enable code generation, mocking, and automated compatibility checks.
+- **[[OpenAPI]]** (OAS 3.x, formerly Swagger) is the de facto standard for documenting and contract-testing synchronous REST APIs. Machine-readable specs enable code generation, mocking, and automated compatibility checks.
 - **[[AsyncAPI]]** extends the same design-first philosophy to event-driven and message-based APIs (Kafka topics, AMQP channels, WebSocket streams), providing a unified documentation model across integration styles.
 - **OAuth 2.0 / OpenID Connect** (IETF RFC 6749 / OpenID Foundation) standardise delegated authorisation and identity assertion at API boundaries, underpinning [[Authentication Service]] implementations across public and enterprise APIs.
 - **HL7 FHIR** (healthcare), **PSD2 / Open Banking** (finance), and **GS1** (supply chain) are domain-specific API mandates that impose integration conformance on regulated industries.

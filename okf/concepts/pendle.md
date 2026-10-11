@@ -8,7 +8,7 @@ description: Pendle is a decentralised finance protocol that tokenises future yi
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:yield-farming

@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:financial-conduct-authority
 bridgesTo:
   - urn:ngm:class:digital-asset-regulation
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:bitcoin-proof-of-work-protocol-etf
 uses:
   - urn:ngm:class:enforcement-mechanism
@@ -39,7 +39,7 @@ relatedTo:
   - urn:ngm:class:securities-regulation
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:digital-asset-risks
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:howey-test
 ---
 

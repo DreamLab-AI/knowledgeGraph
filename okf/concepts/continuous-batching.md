@@ -26,7 +26,7 @@ requires:
 enables:
   - urn:ngm:class:throughput
   - urn:ngm:class:gpu-utilisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multi-tenant-inference
   - urn:ngm:class:inference-serving
   - urn:ngm:class:retrieval-augmented-generation

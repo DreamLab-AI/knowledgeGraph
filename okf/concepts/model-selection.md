@@ -24,12 +24,12 @@ uses:
   - urn:ngm:class:accuracy
   - urn:ngm:class:auc
 supports:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:feature-engineering
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 partOf:
   - urn:ngm:class:model-evaluation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:overfitting
   - urn:ngm:class:deep-learning

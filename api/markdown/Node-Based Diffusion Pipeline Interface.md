@@ -5,7 +5,7 @@ A node-based diffusion pipeline interface is a visual programming environment th
 - Node-based interfaces for diffusion pipelines emerged as practitioners needed finer control over the multi-stage inference process than form-based tools such as [[Automatic1111 WebUI]] provide. Rather than treating the pipeline as a black box exposed through sliders and dropdowns, the node paradigm makes every tensor operation visible and reconnectable.
 - The key insight is that a [[Latent Diffusion Model]] inference run is naturally a dataflow graph: text is encoded, noise is initialised, a sampler iterates denoising steps, the result is decoded, and the image may then pass through further conditioning or upscaling stages. A [[Node Graph Editor]] maps this structure one-to-one.
 - Workflows serialised as JSON are portable: they can be stored in version control, shared across teams, embedded in API calls, or consumed by headless automation servers without modification. This makes the format attractive not just for individual artists but for studios integrating AI generation into production pipelines.
-- Adoption accelerated when the node model proved capable of composing heterogeneous architectures — connecting [[Stable Diffusion Image Model]], [[ControlNet]], [[LoRA Adapter]], [[IP-Adapter]], and [[AnimateDiff]] in a single graph — that would have required bespoke scripting in any linear interface.
+- Adoption accelerated when the node model proved capable of composing heterogeneous architectures — connecting [[Stable Diffusion]], [[ControlNet]], [[LoRA Adapter]], [[IP-Adapter]], and [[AnimateDiff]] in a single graph — that would have required bespoke scripting in any linear interface.
 
 ### Key Components
 

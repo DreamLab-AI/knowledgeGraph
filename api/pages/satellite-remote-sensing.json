@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Satellite remote sensing is remote sensing carried out from a satellite, in which a sensor outside the atmosphere acquires information about the Earth's surface without contact by recording reflected or emitted energy.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

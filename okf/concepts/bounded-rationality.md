@@ -84,11 +84,11 @@ relatedTo:
   - urn:ngm:class:utility-theory
   - urn:ngm:class:risk-assessment
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:operations-research
   - urn:ngm:class:neuroscience
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Bounded Rationality

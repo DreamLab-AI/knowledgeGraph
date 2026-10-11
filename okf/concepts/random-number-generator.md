@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:software-development
 relatedTo:
   - urn:ngm:class:sampling
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 ---
 
 # Random Number Generator

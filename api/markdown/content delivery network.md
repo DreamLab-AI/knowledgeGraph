@@ -14,7 +14,7 @@ A Content Delivery Network (CDN) is a geographically distributed system of edge 
 
 - **Points of Presence (PoPs)**
   - Facilities housing clusters of [[Edge Server]]s, co-located at or near major IXPs.
-  - Each PoP terminates user connections, applies [[TLS]] handshakes, and serves cached responses.
+  - Each PoP terminates user connections, applies [[Transport Layer Security]] handshakes, and serves cached responses.
   - Larger CDN operators maintain hundreds of PoPs globally; smaller operators use fewer, strategically placed nodes.
 - **Anycast Routing**
   - CDNs advertise the same IP prefix from multiple PoPs via [[BGP]], so the internet's routing fabric steers users to the topologically nearest announcement.
@@ -26,7 +26,7 @@ A Content Delivery Network (CDN) is a geographically distributed system of edge 
   - Serverless [[Edge Computing]] environments (e.g., Cloudflare Workers, Fastly Compute, AWS Lambda@Edge, Akamai EdgeWorkers) run JavaScript or [[WebAssembly]] at PoPs.
   - Enables personalisation, A/B testing, authentication, and [[API Gateway]] logic without origin round-trips.
 - **TLS Termination**
-  - [[TLS]] is terminated at the PoP, enabling OCSP stapling, session resumption, and certificate lifecycle management across the fleet.
+  - [[Transport Layer Security]] is terminated at the PoP, enabling OCSP stapling, session resumption, and certificate lifecycle management across the fleet.
   - Reduces TLS handshake latency by eliminating the distance penalty; supports HTTP/2 and [[HTTP/3 QUIC]].
 - **Load Balancer**
   - [[Load Balancer]]s within each PoP distribute requests across local caching nodes, with health checking and consistent hashing for cache key locality.

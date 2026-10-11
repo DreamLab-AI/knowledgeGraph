@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:precession",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Precession is the slow motion of Earth's rotation axis, which traces a circle over about 26,000 years.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:nostr-protocol
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:did-nostr-identity
 uses:
   - urn:ngm:class:web-socket-protocol

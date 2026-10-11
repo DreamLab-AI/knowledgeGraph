@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:stablecoin
 bridgesTo:
   - urn:ngm:class:virtual-economy
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:ai-agent-system
 uses:

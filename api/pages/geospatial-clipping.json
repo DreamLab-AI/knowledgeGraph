@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-clipping",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Geospatial clipping is the extraction of the part of a dataset that falls inside a boundary of another dataset, leaving the remainder out.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:troposphere",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Troposphere is the lowest layer of the atmosphere, extending from the surface to the tropopause, in which air generally becomes colder with increasing altitude.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:atmosphere-layer",

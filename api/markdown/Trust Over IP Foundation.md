@@ -4,9 +4,9 @@ The Trust over IP (ToIP) Foundation is a Linux Foundation project established in
 
 - ToIP was chartered in 2020 under the [[Linux Foundation]] to address a practical gap: cryptographic protocols for [[Decentralised Identity]] had matured, but there was no consistent meta-standard telling organisations how to govern credential ecosystems — which issuers to trust, how to express assurance levels, how to handle liability, and how to link technical proof to legal authority.
 - The foundation's primary output is the **ToIP Dual Stack**, a four-layer reference architecture:
-  - **Layer 1 (Public Utilities)** — [[Decentralised Identifiers]] anchored on verifiable data registries (blockchains, distributed ledgers, or web-hosted documents).
+  - **Layer 1 (Public Utilities)** — [[Decentralised Identifier]] anchored on verifiable data registries (blockchains, distributed ledgers, or web-hosted documents).
   - **Layer 2 (Peer-to-Peer Protocol)** — [[DIDComm Messaging]] enabling encrypted, authenticated channels between agents without a central server.
-  - **Layer 3 (Data Exchange Protocol)** — [[Verifiable Credentials]] issuance, presentation, and revocation using [[W3C Verifiable Credentials]] and related protocols such as [[OpenID for Verifiable Credentials]].
+  - **Layer 3 (Data Exchange Protocol)** — [[Verifiable Credential]] issuance, presentation, and revocation using [[W3C Verifiable Credentials Data Model]] and related protocols such as [[OpenID for Verifiable Credentials]].
   - **Layer 4 (Application Ecosystems)** — complete deployable ecosystems combining a technical stack instance with a [[Governance Framework]] that defines participants, rules, assurance levels, and [[Trust Registry]] entries.
 - The governance stack (layers 3 and 4) is what distinguishes ToIP from lower-level identity standards: it provides templates and schemas that governance authorities complete rather than mandating specific legal text, making the architecture reusable across healthcare, finance, education, and government contexts.
 - ToIP publishes a growing portfolio of **Governance Framework Templates**, **Trust Registry specifications**, and interoperability **Design Principles** through its working groups.
@@ -19,12 +19,12 @@ The Trust over IP (ToIP) Foundation is a Linux Foundation project established in
 - **[[DIDComm Messaging]]** — the ToIP-championed peer-to-peer messaging protocol for secure, private agent-to-agent communication independent of centralised message brokers.
 - **ToIP Stack Working Groups** — the foundation organises work via specialised working groups covering technology, governance, concepts and terminology, and utility foundry.
 - **Concepts and Terminology Working Group** — produces shared definitions for the SSI community including authoritative descriptions of roles such as issuer, holder, verifier, and trust anchor.
-- **Utility Foundry Working Group** — evaluates and catalogs Layer 1 utilities ([[Decentralised Identifiers|DID methods]]) for use within ToIP-aligned ecosystems.
+- **Utility Foundry Working Group** — evaluates and catalogs Layer 1 utilities ([[Decentralised Identifier|DID methods]]) for use within ToIP-aligned ecosystems.
 - **Authentic Chained Data Containers (ACDC)** — a proposed credential container format championed within ToIP working groups offering chained provenance and selective disclosure.
 
 ### Mechanisms
 
-- **Cryptographic Binding** — each identity subject controls one or more [[DID Document|DID Documents]] that bind their decentralised identifier to [[Cryptographic Key Management|cryptographic keys]], enabling verification of signatures on [[Verifiable Credentials]] without querying a central directory.
+- **Cryptographic Binding** — each identity subject controls one or more [[DID Document|DID Documents]] that bind their decentralised identifier to [[Cryptographic Key Management|cryptographic keys]], enabling verification of signatures on [[Verifiable Credential]] without querying a central directory.
 - **Trust Chain Resolution** — a verifier resolves the issuer's DID to its public key material, checks revocation status via the issuer's registry endpoint, and validates the credential against the governance framework's accepted issuers list in the relevant [[Trust Registry]].
 - **Governance Scope Declaration** — each Layer 4 ecosystem publishes a machine-readable governance framework document declaring its DID, accepted credential schemas, assurance level definitions, and the URI of its trust registry, allowing automated policy checking.
 - **Holder Binding** — the credential holder's wallet (a [[Digital Wallet]]) stores credentials linked to their own DID, and constructs presentations that prove possession without revealing unnecessary attributes — optionally using [[Zero Knowledge Proof]] techniques for selective disclosure.
@@ -42,7 +42,7 @@ The Trust over IP (ToIP) Foundation is a Linux Foundation project established in
 
 ### Standards & Context
 
-- **W3C DID Core 1.0** — the foundational specification for [[Decentralised Identifiers]] on which ToIP's technical stack builds; ToIP working groups contributed substantially to its development.
+- **W3C DID Core 1.0** — the foundational specification for [[Decentralised Identifier]] on which ToIP's technical stack builds; ToIP working groups contributed substantially to its development.
 - **W3C Verifiable Credentials Data Model** — the Layer 3 data format used for credential issuance and presentation; ToIP governance frameworks define permissible credential types and schemas built on this standard.
 - **DIF Presentation Exchange** — a [[Decentralized Identity Foundation]] specification for expressing which credentials a verifier requires; used within ToIP Layer 3 exchanges to define proof requests.
 - **[[OpenID for Verifiable Credentials]] (OID4VC)** — an emerging OIDF specification that maps verifiable credential issuance and presentation onto OpenID Connect flows; ToIP working groups have engaged with OID4VC as a pragmatic interoperability bridge to existing OAuth infrastructure.

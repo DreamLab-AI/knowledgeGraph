@@ -48,7 +48,7 @@ implements:
   - urn:ngm:class:iso-21827
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:singapore-model-ai-governance-framework
 contrastsWith:
   - urn:ngm:class:ad-hoc-ai-deployment
@@ -76,7 +76,7 @@ standardizedBy:
   - urn:ngm:class:cmmi-institute
   - urn:ngm:class:iso-21827
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:ai-governance

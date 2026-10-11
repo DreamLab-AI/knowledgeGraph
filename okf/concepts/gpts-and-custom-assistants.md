@@ -17,17 +17,17 @@ is-a:
 hasPart:
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:model-configuration
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:system-prompt
   - urn:ngm:class:tool-definition
   - urn:ngm:class:vector-store
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:conversation-starter
   - urn:ngm:class:visibility-setting
 requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:embedding-model
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:context-window
   - urn:ngm:class:function-calling
   - urn:ngm:class:foundation-model
@@ -39,9 +39,9 @@ enables:
   - urn:ngm:class:document-q-a
   - urn:ngm:class:bot-marketplaces
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vector-database
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:oauth-2-0
 implements:
@@ -51,7 +51,7 @@ implements:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:function-calling
 contrastsWith:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:fine-tuned-models
   - urn:ngm:class:agents
   - urn:ngm:class:rule-based-chatbots
@@ -75,9 +75,9 @@ standardizedBy:
   - urn:ngm:class:anthropic-agent-skills-open-standard
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:oauth-2-0
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 relatedTo:
   - urn:ngm:class:google-ai-technology-corporation-gemini
   - urn:ngm:class:agent-frameworks

@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:biometric-authentication
   - urn:ngm:class:access-control
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:voice-activity-detection

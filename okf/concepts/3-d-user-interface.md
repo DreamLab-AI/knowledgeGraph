@@ -29,7 +29,6 @@ enables:
   - urn:ngm:class:intuitive-interaction
   - urn:ngm:class:accessible-immersion
 contrastsWith:
-  - urn:ngm:class:user-interface
   - urn:ngm:class:graphical-user-interface
 bridgesTo:
   - urn:ngm:class:interaction-design
@@ -44,7 +43,7 @@ uses:
   - urn:ngm:class:real-time-rendering
 supports:
   - urn:ngm:class:accessibility-standard
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
 partOf:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:extended-reality

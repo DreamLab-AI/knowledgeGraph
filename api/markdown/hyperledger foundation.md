@@ -6,7 +6,7 @@ The Hyperledger Foundation is an open-source collaborative initiative hosted by 
 - The Foundation acts as a neutral convener: it hosts code, governs project lifecycles (Incubation → Graduated → Dormant), organises working groups, and ensures intellectual-property clarity under Apache 2.0 licensing.
 - Membership spans technology companies (IBM, Intel, SAP), financial institutions (JPMorgan, Deutsche Bank, American Express), consulting firms (Accenture, Deloitte), and national governments, giving the Foundation unusual breadth for an open-source body.
 - Unlike a single product, Hyperledger is a federated ecosystem: each sub-project has its own maintainer community, Technical Steering Committee representation, and release cadence.
-- The Foundation's work is closely aligned with standards from [[W3C]] (DIDs, Verifiable Credentials) and the [[Internet Engineering Task Force]] (TLS, gRPC transport) to maximise interoperability.
+- The Foundation's work is closely aligned with standards from [[World Wide Web Consortium]] (DIDs, Verifiable Credentials) and the [[Internet Engineering Task Force]] (TLS, gRPC transport) to maximise interoperability.
 
 ### Key Components
 
@@ -21,7 +21,7 @@ The Hyperledger Foundation is an open-source collaborative initiative hosted by 
   - Bridges enterprise organisations into the broader Ethereum ecosystem while retaining permissioning controls via enterprise plugins (EEA compliant).
   - Relevant to organisations needing [[Smart Contracts]] compatible with the Ethereum Virtual Machine (EVM) in a compliant, access-controlled deployment.
 - **Hyperledger Aries**
-  - A [[Decentralised Identity]] and [[Verifiable Credentials]] framework implementing W3C DID specifications and the DIDComm v2 messaging protocol.
+  - A [[Decentralised Identity]] and [[Verifiable Credential]] framework implementing W3C DID specifications and the DIDComm v2 messaging protocol.
   - Provides agent frameworks, wallets, and credential exchange protocols enabling [[Self Sovereign Identity]] without central identity providers.
   - Underpins real-world deployments for national digital identity (British Columbia's Verifiable Organisations Network), academic credentialing, and healthcare credentialing.
   - Works alongside Hyperledger AnonCreds (now a standalone project) for privacy-preserving ZKP-based credential presentation.
@@ -47,7 +47,7 @@ The Hyperledger Foundation is an open-source collaborative initiative hosted by 
   - Fabric-based systems manage consent for patient data sharing across health networks, providing an immutable audit trail aligned with GDPR and HIPAA requirements.
   - Pharmaceutical supply-chain serialisation (track-and-trace) for drug anti-counterfeiting leverages Fabric's private data collections.
 - **Digital Identity and Credentials**
-  - Governments and universities deploy [[Hyperledger Aries]] stacks for issuing verifiable diplomas, professional licences, and national identity attributes as [[Verifiable Credentials]].
+  - Governments and universities deploy [[Hyperledger Aries]] stacks for issuing verifiable diplomas, professional licences, and national identity attributes as [[Verifiable Credential]].
   - The British Columbia government's OrgBook and Verifiable Organisations Network represent a large-scale production deployment.
 - **Financial Services Infrastructure**
   - Central banks exploring wholesale CBDC settlement layers have evaluated Hyperledger Besu for its Ethereum-compatibility and enterprise permissioning, enabling integration with existing EVM toolchains.

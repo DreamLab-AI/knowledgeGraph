@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Autonomy
 resource: urn:ngm:class:spacecraft-autonomy
 domain: space-science-and-systems
+description: Spacecraft autonomy is the capability of a robotic spacecraft to monitor and control itself to some degree without waiting for ground teams, which NASA describes for fault protection and for onboard navigation.[^1][^2]
 maturity: draft
 quality: 0
 bridgesTo:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Spacecraft Autonomy
+
+Spacecraft autonomy is the capability of a robotic spacecraft to monitor and control itself to some degree without waiting for ground teams, which NASA describes for fault protection and for onboard navigation.[^1][^2]

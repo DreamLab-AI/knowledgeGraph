@@ -10,11 +10,9 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:sequential-decision-making
   - urn:ngm:class:policy-learning
-  - urn:ngm:class:supervised-learning
-  - urn:ngm:class:learning-from-demonstration
 hasPart:
   - urn:ngm:class:decoder
   - urn:ngm:class:training-dataset
@@ -98,7 +96,7 @@ relatedTo:
   - urn:ngm:class:self-supervised-learning
   - urn:ngm:class:sim-to-real-transfer
   - urn:ngm:class:vision-language-action-models
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 ---
 
 # Imitation Learning

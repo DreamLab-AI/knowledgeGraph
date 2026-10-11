@@ -8,11 +8,11 @@ description: Self-Sovereign Identity (SSI) is an identity model in which individ
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 dependsOn:
   - urn:ngm:class:privacy-preserving-identity
 uses:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 relatedTo:
   - urn:ngm:class:hyperledger-indy

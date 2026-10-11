@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:observation-campaign",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An observation campaign is a coordinated effort in which a set of sensors is deployed to make observations for a shared purpose.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

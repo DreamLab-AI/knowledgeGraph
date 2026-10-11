@@ -37,6 +37,10 @@
       {
         "id": "urn:ngm:class:preference-learning",
         "label": "Preference Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "enables": [
@@ -45,8 +49,8 @@
         "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:instruction-following",
@@ -55,6 +59,10 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
       }
     ],
     "dependsOn": [],
@@ -72,6 +80,14 @@
       {
         "id": "urn:ngm:class:reward-modelling",
         "label": "Rule-Based Reward Modelling"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:rlaif",
+        "label": "RLAIF"
       }
     ],
     "bridgesTo": [
@@ -82,6 +98,14 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
       }
     ],
     "uses": [
@@ -100,11 +124,31 @@
       {
         "id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient Methods"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "id": "urn:ngm:class:preference-data",
+        "label": "Preference Data"
+      },
+      {
+        "id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
+      },
+      {
+        "id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -117,7 +161,12 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-alignment-pipeline",
+        "label": "Model Alignment Pipeline"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:instruct-gpt",
@@ -130,6 +179,22 @@
       {
         "id": "urn:ngm:class:human-in-the-loop",
         "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:instructgpt",
+        "label": "InstructGPT"
       }
     ]
   },
@@ -153,7 +218,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -269,7 +334,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -383,7 +448,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -391,8 +456,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -456,8 +521,16 @@
       "label": "AI Companies"
     },
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
       "slug": "ai-model-development",
       "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
     },
     {
       "slug": "ai-safety-research",
@@ -470,6 +543,10 @@
     {
       "slug": "ai-talent-war",
       "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
     },
     {
       "slug": "ai-companions",
@@ -508,6 +585,14 @@
       "label": "anthropic"
     },
     {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
       "slug": "attention-mechanisms",
       "label": "Attention Mechanisms"
     },
@@ -540,8 +625,20 @@
       "label": "Claude"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "code-generation",
       "label": "Code Generation"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "competition-in-ai",
@@ -550,6 +647,10 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
     },
     {
       "slug": "content-generation",
@@ -566,6 +667,10 @@
     {
       "slug": "corrigibility",
       "label": "Corrigibility"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
     },
     {
       "slug": "creative-ai",
@@ -592,12 +697,28 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
     {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
       "slug": "human-in-the-loop-learning",
-      "label": "Human-in-the- Loop Learning"
+      "label": "Human-in-the-Loop Learning"
     },
     {
       "slug": "hyper-personalisation",
@@ -608,16 +729,52 @@
       "label": "Jailbreaking"
     },
     {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "machine-learning-techniques-survey",
+      "label": "Machine Learning Techniques Survey"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
       "slug": "prime-intellect",
       "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
     },
     {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
     },
     {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
     },
     {
       "slug": "training-data",

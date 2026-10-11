@@ -34,7 +34,7 @@
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -64,7 +64,7 @@
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -128,7 +128,7 @@
         "label": "CLIP Encoder"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -152,8 +152,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:midjourney-text-to-image-service",
@@ -196,7 +196,7 @@
         "label": "CLIP Encoder"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -311,9 +311,9 @@
       "slug": "image-generation"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -392,12 +392,12 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -452,10 +452,6 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Latent Space"
-      },
-      {
         "id": "urn:ngm:class:unsupervised-learning",
         "label": "Unsupervised Learning"
       },
@@ -466,6 +462,10 @@
       {
         "id": "urn:ngm:class:batch-normalisation",
         "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "implements": [
@@ -546,6 +546,10 @@
         "label": "C2PA"
       },
       {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
@@ -564,10 +568,6 @@
       {
         "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
-      },
-      {
-        "id": "urn:ngm:class:synthetic-data",
-        "label": "Synthetic Data"
       }
     ],
     "uses": [
@@ -600,7 +600,7 @@
         "label": "Decoder Network"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder Architecture"
       }
     ],
@@ -634,13 +634,13 @@
         "label": "Open Generative AI tools"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -656,6 +656,14 @@
         "label": "NIST AI Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -668,6 +676,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -677,18 +689,18 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:kohya-dreambooth-and-similar",
         "label": "DreamBooth"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora",
         "label": "LoRA"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {

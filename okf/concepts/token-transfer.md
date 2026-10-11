@@ -12,10 +12,10 @@ is-a:
 requires:
   - urn:ngm:class:consensus
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:gas
@@ -23,7 +23,7 @@ implements:
   - urn:ngm:class:token
 uses:
   - urn:ngm:class:token-standard
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:wallet
 supports:
   - urn:ngm:class:token-economics

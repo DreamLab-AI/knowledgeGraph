@@ -54,7 +54,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       }
     ],
@@ -272,8 +272,8 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
@@ -284,8 +284,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:computer-vision",
@@ -358,7 +358,7 @@
         "label": "Deepfake"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "id": "urn:ngm:class:intellectual-property",
         "label": "Intellectual Property"
       }
     ]

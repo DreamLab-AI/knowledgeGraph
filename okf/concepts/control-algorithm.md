@@ -86,12 +86,12 @@ standardizedBy:
   - urn:ngm:class:iso-26262
 relatedTo:
   - urn:ngm:class:dynamics
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:formal-verification
   - urn:ngm:class:safety-critical-systems
   - urn:ngm:class:control-theory
   - urn:ngm:class:kinematics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Control Algorithm

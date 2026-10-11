@@ -48,9 +48,9 @@ supports:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:game-development
 standardizedBy:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:obj-format
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 partOf:
   - urn:ngm:class:asset-pipeline
 relatedTo:

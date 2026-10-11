@@ -64,7 +64,7 @@ bridgesTo:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:smart-grid
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:digital-twin
   - urn:ngm:class:distributed-control-system
@@ -78,8 +78,8 @@ supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:fault-tolerant-control
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:functional-safety
   - urn:ngm:class:iec-61508
   - urn:ngm:class:sae-j-3016

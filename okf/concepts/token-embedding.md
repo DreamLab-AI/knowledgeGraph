@@ -35,7 +35,7 @@ supports:
   - urn:ngm:class:fine-tuning
 partOf:
   - urn:ngm:class:transformer
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:self-attention

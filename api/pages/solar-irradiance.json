@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-irradiance",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Solar irradiance is the solar energy arriving at the top of Earth's atmosphere, with total solar irradiance being the spectrally integrated value at a base mean distance of one astronomical unit from the Sun.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

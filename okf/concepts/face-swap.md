@@ -47,13 +47,13 @@ dependsOn:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:generative-adversarial-networks
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:autoencoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
   - urn:ngm:class:transformer
 implements:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:identity-disentanglement
   - urn:ngm:class:attribute-preservation
   - urn:ngm:class:cross-attention-conditioning
@@ -70,10 +70,10 @@ uses:
   - urn:ngm:class:control-net
   - urn:ngm:class:gfpgan
   - urn:ngm:class:ip-adapter
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:cosface
   - urn:ngm:class:stylegan2
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:xseg
   - urn:ngm:class:adaptive-instance-normalisation
 supports:

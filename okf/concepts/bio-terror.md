@@ -14,7 +14,6 @@ is-a:
   - urn:ngm:class:dual-use-research
   - urn:ngm:class:weapons-of-mass-destruction
   - urn:ngm:class:global-catastrophic-risk
-  - urn:ngm:class:pandemic-preparedness
 hasPart:
   - urn:ngm:class:agroterrorism
   - urn:ngm:class:biological-toxin
@@ -67,7 +66,7 @@ uses:
   - urn:ngm:class:crispr-gene-editing
   - urn:ngm:class:gain-of-function-research
   - urn:ngm:class:synthetic-biology
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:biodefence-research
   - urn:ngm:class:intelligence-surveillance-reconnaissance
@@ -91,7 +90,7 @@ relatedTo:
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:embodied-minds
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:ukhsa
   - urn:ngm:class:dstl-porton-down
   - urn:ngm:class:national-biosecurity-centre-harlow
@@ -106,7 +105,7 @@ relatedTo:
   - urn:ngm:class:who
   - urn:ngm:class:unoda
   - urn:ngm:class:australia-group
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-scrapers
   - urn:ngm:class:cdc-biowatch-programme
   - urn:ngm:class:ukhsa-genomic-surveillance

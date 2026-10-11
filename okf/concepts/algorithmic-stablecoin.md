@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:price-oracle
 implements:
@@ -22,7 +22,7 @@ uses:
 supports:
   - urn:ngm:class:peg
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:tether
   - urn:ngm:class:dai

@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:masked-image-modelling
 enables:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:zero-shot-learning
@@ -29,8 +29,8 @@ bridgesTo:
   - urn:ngm:class:spatial-ai
 uses:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:pretrained-model
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:pre-trained-model
+  - urn:ngm:class:encoder-decoder
 supports:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing

@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:model-adaptation
@@ -18,13 +18,13 @@ is-a:
 hasPart:
   - urn:ngm:class:adapter-tuning
   - urn:ngm:class:do-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:ly-coris
   - urn:ngm:class:prefix-tuning
   - urn:ngm:class:prompt-tuning
   - urn:ngm:class:qlo-ra
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:vera
   - urn:ngm:class:galore
   - urn:ngm:class:ia3
@@ -32,7 +32,7 @@ hasPart:
   - urn:ngm:class:x-lora
 requires:
   - urn:ngm:class:low-rank-decomposition
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:task-specific-dataset
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:transformer-architecture
@@ -48,7 +48,7 @@ enables:
   - urn:ngm:class:on-device-training
 dependsOn:
   - urn:ngm:class:transformers
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:py-torch
   - urn:ngm:class:cuda
   - urn:ngm:class:hugging-face-peft
@@ -79,7 +79,7 @@ supports:
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 standardizedBy:
   - urn:ngm:class:hugging-face
   - urn:ngm:class:meta-ai

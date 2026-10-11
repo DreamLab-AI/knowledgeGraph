@@ -30,7 +30,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:consumer-iot
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:edge-computing

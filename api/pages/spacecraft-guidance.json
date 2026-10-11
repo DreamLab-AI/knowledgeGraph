@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-guidance",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft guidance converts a mission objective into feasible commanded motion for a spacecraft.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -31,6 +31,16 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "spacecraft-navigation",
+      "label": "Spacecraft Navigation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spacecraft-navigation",
+      "label": "Spacecraft Navigation"
+    }
+  ]
 }

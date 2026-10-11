@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:robustness
   - urn:ngm:class:trustworthy-ai
 implements:
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
   - urn:ngm:class:adversarial-training
 contrastsWith:
   - urn:ngm:class:risk-acceptance
@@ -35,7 +35,7 @@ uses:
 supports:
   - urn:ngm:class:human-oversight
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-23894
 partOf:
   - urn:ngm:class:risk-management

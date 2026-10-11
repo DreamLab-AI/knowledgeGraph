@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:automated-reasoning
 uses:
   - urn:ngm:class:chain-of-thought
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:tree-of-thoughts
   - urn:ngm:class:tool-use
 partOf:

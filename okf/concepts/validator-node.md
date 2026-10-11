@@ -9,7 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:slashing-condition
   - urn:ngm:class:bls-signature
@@ -29,14 +29,14 @@ contrastsWith:
   - urn:ngm:class:full-node
 bridgesTo:
   - urn:ngm:class:distributed-system
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 uses:
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:schnorr-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:network-security
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 partOf:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:validator-set

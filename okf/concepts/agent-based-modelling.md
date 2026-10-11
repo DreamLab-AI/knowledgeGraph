@@ -54,7 +54,7 @@ bridgesTo:
   - urn:ngm:class:swarm-intelligence
   - urn:ngm:class:digital-twin
   - urn:ngm:class:multi-agent-reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:cellular-automata
@@ -63,7 +63,7 @@ uses:
   - urn:ngm:class:sensitivity-analysis
   - urn:ngm:class:parallel-computing
   - urn:ngm:class:network-science
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:economic-model
   - urn:ngm:class:policy-simulation
@@ -79,8 +79,8 @@ partOf:
 relatedTo:
   - urn:ngm:class:game-theory
   - urn:ngm:class:network-science
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:agent-based-models
   - urn:ngm:class:swarm-intelligence
   - urn:ngm:class:collective-intelligence

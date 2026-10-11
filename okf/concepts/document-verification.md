@@ -8,7 +8,7 @@ description: Document verification is the process of confirming that an identity
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 hasPart:
   - urn:ngm:class:fraud-detection
 requires:
@@ -20,18 +20,18 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:digital-signature
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:compliance
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 partOf:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:onboarding
 relatedTo:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 ---
 
 # Document Verification

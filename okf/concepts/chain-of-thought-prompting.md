@@ -26,13 +26,13 @@ hasPart:
 requires:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:emergent-capabilities
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:transformer-architecture
 enables:
   - urn:ngm:class:mathematical-reasoning
   - urn:ngm:class:multi-step-reasoning
-  - urn:ngm:class:common-sense-reasoning
+  - urn:ngm:class:commonsense-reasoning
   - urn:ngm:class:symbolic-reasoning
   - urn:ngm:class:ai-agent
   - urn:ngm:class:commonsense-reasoning
@@ -42,7 +42,7 @@ enables:
 dependsOn:
   - urn:ngm:class:emergent-capabilities
   - urn:ngm:class:model-scale
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:in-context-learning
 implements:
   - urn:ngm:class:reasoning
@@ -59,7 +59,7 @@ bridgesTo:
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:automated-reasoning
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:in-context-learning
   - urn:ngm:class:few-shot-prompting
   - urn:ngm:class:autoregressive-model

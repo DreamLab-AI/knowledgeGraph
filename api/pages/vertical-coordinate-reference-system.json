@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertical-coordinate-reference-system",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A vertical coordinate reference system is a one-dimensional coordinate reference system based on a vertical reference frame.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:coordinate-reference-system",
@@ -48,6 +48,11 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -69,16 +74,20 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
       },
       {
-        "id": "urn:ngm:class:data-quality",
-        "label": "Data Quality"
-      },
-      {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "requires": [
@@ -109,6 +118,10 @@
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       }
     ],
     "enables": [
@@ -163,6 +176,10 @@
       {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -189,6 +206,14 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
@@ -217,6 +242,18 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -239,6 +276,14 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [

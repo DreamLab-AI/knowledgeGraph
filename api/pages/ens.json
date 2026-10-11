@@ -80,11 +80,11 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -102,7 +102,7 @@
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:erc-721-standard",
+        "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
       },
       {
@@ -124,8 +124,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:dao",
-        "label": "DAO"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:wallet-address",
@@ -166,15 +166,23 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:decentralized-identifier",
-        "label": "Decentralized Identifier"
+        "id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -182,26 +190,22 @@
         "label": "Decentralised Identifier"
       },
       {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
         "id": "urn:ngm:class:verifiable-claim",
         "label": "Verifiable Claim"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-credential-standard",
-        "label": "Credential"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
       },
       {
         "id": "urn:ngm:class:did-method",
@@ -216,10 +220,6 @@
         "label": "Credential Storage"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
@@ -228,14 +228,22 @@
         "label": "Privacy Controls"
       },
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:cross-border-authentication",
+        "label": "Cross-Border Authentication"
+      },
+      {
         "id": "urn:ngm:class:digital-identity",
         "label": "Cross-Border Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
       },
       {
         "id": "urn:ngm:class:privacy-preserving-authentication",
@@ -254,16 +262,8 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:authorization",
-        "label": "Authorization"
-      },
-      {
-        "id": "urn:ngm:class:digital-presence",
-        "label": "Digital Presence"
-      },
-      {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
       }
     ],
     "dependsOn": [
@@ -284,6 +284,10 @@
       {
         "id": "urn:ngm:class:openid-for-verifiable-credentials",
         "label": "OpenID for Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "Verifiable Credentials Data Model"
       },
       {
         "id": "urn:ngm:class:w3-c-did-specification",
@@ -312,6 +316,10 @@
         "label": "Federated Identity"
       },
       {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
         "id": "urn:ngm:class:anonymity",
         "label": "Anonymity"
       },
@@ -334,12 +342,20 @@
         "label": "AI Agent Identity"
       },
       {
-        "id": "urn:ngm:class:did-nostr-identity",
-        "label": "DID Nostr Identity"
+        "id": "urn:ngm:class:iot-device-authentication",
+        "label": "IoT Device Authentication"
       },
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -348,17 +364,17 @@
       {
         "id": "urn:ngm:class:ai-agent",
         "label": "AI Agent"
-      },
-      {
-        "id": "urn:ngm:class:avatar",
-        "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:data",
-        "label": "Data"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
       {
         "id": "urn:ngm:class:did-document",
         "label": "DID Document"
@@ -368,28 +384,20 @@
         "label": "Digital Identity Wallet"
       },
       {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:biometric-authentication",
-        "label": "Biometric Authentication"
-      },
-      {
-        "id": "urn:ngm:class:open-id-connect",
-        "label": "OpenID Connect"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
+        "label": "Verifiable Credential"
       }
     ],
     "supports": [
@@ -420,20 +428,20 @@
         "label": "OpenID Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
       },
       {
         "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials",
-        "label": "W3C Verifiable Credentials"
-      },
-      {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:w3-c-did-core",
@@ -456,8 +464,16 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
         "id": "urn:ngm:class:credential-schema",
         "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
       },
       {
         "id": "urn:ngm:class:federated-identity",
@@ -472,20 +488,12 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "KYC Know Your Customer"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:identity-management",
-        "label": "Identity Management"
       }
     ]
   },
@@ -500,12 +508,12 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "decentralised-web",
-      "label": "Decentralised Web"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
     },
     {
       "slug": "delegate-democracy",

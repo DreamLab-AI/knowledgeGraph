@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Thermal Coating
 resource: urn:ngm:class:spacecraft-thermal-coating
 domain: space-science-and-systems
+description: A spacecraft thermal coating is a paint, film, surface finish or adhesive tape applied to an exterior surface to set its solar absorptivity and infrared emissivity, and so how it exchanges heat with the Sun and space.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Spacecraft Thermal Coating
+
+A spacecraft thermal coating is a paint, film, surface finish or adhesive tape applied to an exterior surface to set its solar absorptivity and infrared emissivity, and so how it exchanges heat with the Sun and space.[^1]

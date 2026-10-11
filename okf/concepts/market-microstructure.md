@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:prediction-markets
 bridgesTo:
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 ---
 
 # Market Microstructure

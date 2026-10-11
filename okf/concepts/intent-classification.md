@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:nlptask
 requires:
   - urn:ngm:class:natural-language-understanding
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
 enables:
   - urn:ngm:class:dialogue-system
   - urn:ngm:class:conversational-ai

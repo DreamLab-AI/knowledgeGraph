@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:payment-network
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 enables:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:cross-border-payments
@@ -33,12 +33,12 @@ contrastsWith:
   - urn:ngm:class:apple-pay
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:tokenization
   - urn:ngm:class:fraud-detection
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:tokenization
 supports:
   - urn:ngm:class:stablecoin
   - urn:ngm:class:open-banking
@@ -46,7 +46,7 @@ standardizedBy:
   - urn:ngm:class:pci-dss
   - urn:ngm:class:financial-regulation
 partOf:
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:e-commerce
 relatedTo:
   - urn:ngm:class:remittances

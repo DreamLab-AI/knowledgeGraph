@@ -50,7 +50,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:control-theory
   - urn:ngm:class:multi-agent-systems
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:digital-twin
 uses:
   - urn:ngm:class:feedback-loop

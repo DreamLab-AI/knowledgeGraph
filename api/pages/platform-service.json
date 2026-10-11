@@ -152,11 +152,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       }
     ],
@@ -223,8 +223,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [

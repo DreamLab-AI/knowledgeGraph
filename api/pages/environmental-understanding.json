@@ -274,7 +274,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {

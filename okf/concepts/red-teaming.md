@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:threat-modelling
   - urn:ngm:class:vulnerability-assessment
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:adversarial-testing
 enables:
   - urn:ngm:class:ai-safety

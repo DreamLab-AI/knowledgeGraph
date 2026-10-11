@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:real-time-monitoring
   - urn:ngm:class:demand-response
   - urn:ngm:class:scada
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:ai-energy-scarcity
   - urn:ngm:class:carbon-markets

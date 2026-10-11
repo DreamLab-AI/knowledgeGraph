@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:ai-infrastructure
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
 ---
 

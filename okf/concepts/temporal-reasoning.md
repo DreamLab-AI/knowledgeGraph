@@ -14,7 +14,7 @@ requires:
 uses:
   - urn:ngm:class:temporal-logic
 partOf:
-  - urn:ngm:class:common-sense-reasoning
+  - urn:ngm:class:commonsense-reasoning
 relatedTo:
   - urn:ngm:class:automated-planning
   - urn:ngm:class:planning

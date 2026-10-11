@@ -8,7 +8,7 @@ description: A learning setting in which a model is required to generalise to a 
 maturity: growing
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:transfer-learning
@@ -27,7 +27,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 uses:
   - urn:ngm:class:prototypical-networks
   - urn:ngm:class:model-agnostic-meta-learning

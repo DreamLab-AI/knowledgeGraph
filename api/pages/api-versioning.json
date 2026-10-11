@@ -52,8 +52,8 @@
         "label": "Semantic Versioning"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       }
     ],
     "supports": [
@@ -68,8 +68,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       }
     ],
     "partOf": [
@@ -155,7 +155,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "TLS/SSL"
       },
       {
@@ -217,8 +217,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:zero-trust-architecture",

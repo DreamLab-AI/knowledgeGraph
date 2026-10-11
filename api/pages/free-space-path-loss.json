@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:free-space-path-loss",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Free-space path loss is the ideal propagation loss between isotropic antennas in a perfect free-space reference environment.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

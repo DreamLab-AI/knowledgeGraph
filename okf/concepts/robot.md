@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:sensor
   - urn:ngm:class:robot-controller
   - urn:ngm:class:end-effector
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 requires:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:kinematics
@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:industrial-automation
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:power-systems
   - urn:ngm:class:embedded-system
   - urn:ngm:class:power-systems
@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:internet-of-things
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
   - urn:ngm:class:simultaneous-localisation-and-mapping
 standardizedBy:

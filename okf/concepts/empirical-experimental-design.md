@@ -18,7 +18,7 @@ relatedTo:
   - urn:ngm:class:research-methods
   - urn:ngm:class:scientific-discovery
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Empirical Experimental Design

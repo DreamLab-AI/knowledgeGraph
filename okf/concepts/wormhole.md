@@ -40,7 +40,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:cross-chain-interoperability
   - urn:ngm:class:blockchain-interoperability
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:oracle-network
   - urn:ngm:class:governance-token
 ---

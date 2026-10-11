@@ -50,7 +50,7 @@ Server-Sent Events (SSE) is a W3C and WHATWG-standardised unidirectional server-
 ### Standards and Context
 
 - The SSE specification is maintained by the [[WHATWG]] as part of the HTML Living Standard (section on "Server-sent events"), originally proposed by Ian Hickson.
-- The [[W3C]] HTML5 specification historically cross-referenced the SSE protocol, establishing it as a first-class web platform feature alongside [[WebSocket]] and [[XMLHttpRequest]].
+- The [[World Wide Web Consortium]] HTML5 specification historically cross-referenced the SSE protocol, establishing it as a first-class web platform feature alongside [[WebSocket]] and [[XMLHttpRequest]].
 - SSE is defined under the MIME type `text/event-stream` registered with [[IANA]].
 - The [[Model Context Protocol]] (published by Anthropic, 2024) formally adopts SSE as its HTTP transport, accelerating SSE adoption in the AI infrastructure ecosystem.
 - [[CORS]] (Cross-Origin Resource Sharing) policies apply to EventSource connections, governed by the [[Fetch Standard]].

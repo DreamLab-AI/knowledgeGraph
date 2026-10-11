@@ -34,20 +34,20 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:xml
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:rdf
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 supports:
   - urn:ngm:class:master-data-management
   - urn:ngm:class:data-catalogue
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
 partOf:
   - urn:ngm:class:data-governance

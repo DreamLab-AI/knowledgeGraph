@@ -41,7 +41,7 @@ enables:
   - urn:ngm:class:algorithmic-impact-assessment
   - urn:ngm:class:explainability
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:data-governance
   - urn:ngm:class:statistical-hypothesis-testing
@@ -82,7 +82,7 @@ standardizedBy:
   - urn:ngm:class:ieee-p-7003-2021
   - urn:ngm:class:iso-iec-tr-24027
   - urn:ngm:class:nist-sp-1270
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:algorithmic-accountability
   - urn:ngm:class:ai-ethics

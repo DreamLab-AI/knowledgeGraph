@@ -24,7 +24,7 @@ implements:
   - urn:ngm:class:bitcoin-protocol
 contrastsWith:
   - urn:ngm:class:monetary-policy-implementation
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:fiat-currency
   - urn:ngm:class:quantitative-easing
   - urn:ngm:class:fractional-reserve-banking

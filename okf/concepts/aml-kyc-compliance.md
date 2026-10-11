@@ -113,7 +113,7 @@ standardizedBy:
   - urn:ngm:class:fatf-travel-rule
   - urn:ngm:class:iso-20022
   - urn:ngm:class:uk-mlr-2017
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:fatf-recommendations
   - urn:ngm:class:fatf-travel-rule
   - urn:ngm:class:eu-amlr-2024-1624

@@ -11,11 +11,11 @@ is-a:
   - urn:ngm:class:infra-computing-and-cloud
 requires:
   - urn:ngm:class:artificial-general-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:artificial-intelligence
 supports:
-  - urn:ngm:class:aiethics
+  - urn:ngm:class:ai-ethics
 relatedTo:
   - urn:ngm:class:singularity
   - urn:ngm:class:ai-risks

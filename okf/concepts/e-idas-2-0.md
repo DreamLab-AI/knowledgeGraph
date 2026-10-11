@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:qualified-electronic-attestation-of-attributes
   - urn:ngm:class:architecture-and-reference-framework
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:standards-conformance-testing
   - urn:ngm:class:standards-conformance-testing
@@ -30,7 +30,7 @@ dependsOn:
   - urn:ngm:class:digital-infrastructure
 implements:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:open-id-connect
 contrastsWith:
   - urn:ngm:class:federated-identity
@@ -38,7 +38,7 @@ contrastsWith:
   - urn:ngm:class:centralized-identity-provider
   - urn:ngm:class:centralized-identity-provider
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:artificial-intelligence-act
 uses:
   - urn:ngm:class:zero-knowledge-proof
@@ -52,7 +52,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:european-commission
   - urn:ngm:class:etsi
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:eu-digital-single-market
   - urn:ngm:class:digital-regulation

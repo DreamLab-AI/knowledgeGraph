@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:c2pa-trust-list
 requires:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
 enables:
   - urn:ngm:class:provenance-verification
@@ -47,7 +47,7 @@ supports:
   - urn:ngm:class:media-integrity
 relatedTo:
   - urn:ngm:class:open-media-alliance
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:joint-development-foundation
 ---
 

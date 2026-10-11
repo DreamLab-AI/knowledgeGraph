@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:digital-payment-system
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:lightning-network

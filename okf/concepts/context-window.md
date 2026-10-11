@@ -34,7 +34,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
 partOf:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:hyperparameter
   - urn:ngm:class:language-modeling

@@ -27,7 +27,7 @@ bridgesTo:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:order-book
   - urn:ngm:class:limit-order

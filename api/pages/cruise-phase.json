@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cruise-phase",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Cruise phase is the part of a planetary mission bounded by the launch phase at the start and the encounter phase at the end.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mission-phase",

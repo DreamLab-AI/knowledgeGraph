@@ -14,10 +14,10 @@ enables:
   - urn:ngm:class:latency-management-protocol
 uses:
   - urn:ngm:class:data-compression
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:network-latency
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 ---
 
 # Bandwidth Optimization

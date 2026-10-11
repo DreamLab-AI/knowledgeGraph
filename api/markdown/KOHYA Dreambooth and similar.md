@@ -147,9 +147,9 @@ Ecosystem of open-source toolchains, training modologies, dataset-preparation pi
 
 - ## About KOHYA Dreambooth and Similar
 - **KOHYA Dreambooth and similar** designates a loosely federated but practically coherent ecosystem of open-source diffusion fine-tuning tools, training methodologies, dataset-preparation pipelines, and community infrastructure that emerged between late 2022 and 2026 to democratise personalised [[Generative AI]] image synthesis.
-- The ecosystem enables anyone with a consumer GPU and a small curated image collection to adapt billion-parameter [[Stable Diffusion Image Model]] or [[FLUX.1]] models to specific subjects, artistic styles, or novel concepts — transforming what was previously a compute-intensive research procedure into an accessible local workflow completing in under an hour on a single RTX 3090 or 4090.
+- The ecosystem enables anyone with a consumer GPU and a small curated image collection to adapt billion-parameter [[Stable Diffusion]] or [[FLUX.1]] models to specific subjects, artistic styles, or novel concepts — transforming what was previously a compute-intensive research procedure into an accessible local workflow completing in under an hour on a single RTX 3090 or 4090.
 - The origin traces to the convergence of two developments in August–September 2022:
-  - The public release of [[Stable Diffusion Image Model]] 1.4 by Stability AI / CompVis / RunwayML / LAION (August 22 2022), the first freely redistributable billion-parameter text-to-image model.
+  - The public release of [[Stable Diffusion]] 1.4 by Stability AI / CompVis / RunwayML / LAION (August 22 2022), the first freely redistributable billion-parameter text-to-image model.
   - The preprint of "DreamBooth" (Ruiz et al., CVPR 2023) demonstrating few-shot subject personalisation via unique trigger tokens and class-preservation loss.
 - Kohya Shintaro began releasing training scripts in late 2022, initially targeting SD 1.x Dreambooth, then rapidly adding LoRA support.
 - Brad Maltais produced the bmaltais/kohya_ss Gradio GUI in early 2023, dramatically expanding accessibility to users without command-line comfort.
@@ -285,7 +285,7 @@ Ecosystem of open-source toolchains, training modologies, dataset-preparation pi
 
 ### LoRA (Low-Rank Adaptation)
 
-- Introduced by Hu et al. (NeurIPS 2021 workshop, ICLR 2022) for [[Large Language Models]]; adapted to diffusion model cross-attention by the kohya community in early 2023.
+- Introduced by Hu et al. (NeurIPS 2021 workshop, ICLR 2022) for [[Large Language Model]]; adapted to diffusion model cross-attention by the kohya community in early 2023.
 - **Mathematical premise**: fine-tuned weight updates ΔW tend toward low intrinsic rank.
 - LoRA constrains updates: ΔW = BA, B ∈ ℝ^(m×r), A ∈ ℝ^(r×n), r ≪ min(m,n).
 - W₀ is frozen; A ~ Gaussian(0,σ), B = 0 (ensures ΔW=0 at training start).

@@ -59,7 +59,7 @@
         "label": "Object Recognition"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ]
@@ -136,9 +136,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -156,13 +156,22 @@
       "slug": "artificial-intelligence-core"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
       {
         "id": "urn:ngm:class:annotation-pipelines",
         "label": "Annotation Pipelines"
@@ -186,10 +195,6 @@
       {
         "id": "urn:ngm:class:held-out-test-sets",
         "label": "Held-Out Test Sets"
-      },
-      {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
       },
       {
         "id": "urn:ngm:class:elo-rating-system",
@@ -372,7 +377,7 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -478,8 +483,8 @@
         "label": "MLCommons"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:spec",
@@ -518,6 +523,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -528,6 +537,10 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:annotation-pipelines",
@@ -548,10 +561,6 @@
       {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ]
   },

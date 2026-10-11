@@ -10,7 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:human-robot-interaction
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:control-system
 enables:
   - urn:ngm:class:teleoperation

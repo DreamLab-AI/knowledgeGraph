@@ -164,9 +164,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -278,7 +278,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -320,16 +320,8 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -464,8 +456,8 @@
         "label": "SWEBOK"
       },
       {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       }
     ],
     "partOf": [
@@ -479,10 +471,6 @@
       },
       {
         "id": "urn:ngm:class:embedded-system",
-        "label": "Embedded System"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],

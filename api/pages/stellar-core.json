@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-core",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A stellar core is the central region of a star in which nuclear fusion releases the energy that supports the star.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-interior",

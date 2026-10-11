@@ -325,7 +325,7 @@ Computer Vision is the field of artificial intelligence concerned with enabling 
 
 ## See Also
 
-- [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+- [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 
 ## Apple Vision Pro
 
@@ -336,7 +336,7 @@ Computer Vision is the field of artificial intelligence concerned with enabling 
 
 ## See Also
 
-- [[Stable Diffusion Image Model]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
+- [[Stable Diffusion]] is a text-to-image [[deep learning]] model that uses diffusion processes to generate high-quality images from textual descriptions, serving as the foundation for many [[computer vision]] applications
 
 ##### Tracking Technologies
 

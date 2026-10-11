@@ -103,9 +103,9 @@
       "slug": "systems-engineering"
     },
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -119,6 +119,10 @@
         "label": "Logging"
       },
       {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
         "id": "urn:ngm:class:metrics",
         "label": "Metrics"
       },
@@ -127,20 +131,16 @@
         "label": "Accelerated Life Testing"
       },
       {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode And Effects Analysis"
+      },
+      {
         "id": "urn:ngm:class:fault-tree-analysis",
         "label": "Fault Tree Analysis"
       },
       {
-        "id": "urn:ngm:class:fmea",
-        "label": "FMEA"
-      },
-      {
         "id": "urn:ngm:class:reliability-block-diagram",
         "label": "Reliability Block Diagram"
-      },
-      {
-        "id": "urn:ngm:class:interface-management",
-        "label": "Interface Management"
       }
     ],
     "requires": [
@@ -173,8 +173,8 @@
         "label": "Stakeholder Analysis"
       },
       {
-        "id": "urn:ngm:class:agile-software-development",
-        "label": "Agile Methodology"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       }
     ],
     "enables": [
@@ -259,14 +259,6 @@
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -275,8 +267,8 @@
         "label": "Anomaly Detection"
       },
       {
-        "id": "urn:ngm:class:machine-learning-operations",
-        "label": "Machine Learning Operations"
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       },
       {
         "id": "urn:ngm:class:ai-safety",
@@ -365,7 +357,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
         "label": "Cloud Native Computing Foundation"
       },
       {
@@ -393,8 +385,8 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       }
     ],
     "partOf": [

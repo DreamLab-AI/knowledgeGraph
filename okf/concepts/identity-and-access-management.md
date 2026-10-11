@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:saml
   - urn:ngm:class:ldap
   - urn:ngm:class:multi-factor-authentication
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 standardizedBy:
   - urn:ngm:class:iso-iec-27001
   - urn:ngm:class:nist-sp-800-53

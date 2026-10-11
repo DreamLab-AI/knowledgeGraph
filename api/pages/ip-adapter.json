@@ -30,8 +30,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -50,7 +50,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       }
     ],
     "bridgesTo": [],
@@ -82,7 +82,7 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:inpainting",
@@ -149,7 +149,7 @@
     "requires": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:pre-trained-model",
@@ -236,7 +236,7 @@
         "label": "Full Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora",
         "label": "LoRA"
       },
       {
@@ -318,8 +318,8 @@
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",

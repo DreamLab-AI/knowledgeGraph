@@ -27,7 +27,7 @@ enables:
   - urn:ngm:class:social-licence-for-ai
 implements:
   - urn:ngm:class:ethical-ai
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 contrastsWith:
   - urn:ngm:class:algorithmic-bias
@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:human-rights
   - urn:ngm:class:corporate-governance
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
 partOf:
   - urn:ngm:class:ai-governance

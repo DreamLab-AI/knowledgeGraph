@@ -4,6 +4,7 @@ type: Class
 title: Geospatial Buffering
 resource: urn:ngm:class:geospatial-buffering
 domain: earth-observation-and-geospatial-sensing
+description: Geospatial buffering is the construction of a zone of a stated distance around input geometries, producing polygons that cover everything within that distance.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Geospatial Buffering
+
+Geospatial buffering is the construction of a zone of a stated distance around input geometries, producing polygons that cover everything within that distance.[^1][^2]

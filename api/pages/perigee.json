@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:perigee",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Perigee is the Earth-specific periapsis, where an Earth-centred orbit or trajectory reaches its least geocentric distance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:periapsis",

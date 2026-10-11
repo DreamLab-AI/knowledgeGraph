@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:identity-and-access-management
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:metaverse-commerce
   - urn:ngm:class:user-generated-content
 dependsOn:

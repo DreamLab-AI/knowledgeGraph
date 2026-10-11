@@ -31,8 +31,8 @@ requires:
   - urn:ngm:class:cuda
   - urn:ngm:class:py-torch
   - urn:ngm:class:python-runtime
-  - urn:ngm:class:stable-diffusion-image-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:cuda
   - urn:ngm:class:gradio-framework
   - urn:ngm:class:gpu-with-4-8gb-vram
@@ -48,9 +48,9 @@ enables:
   - urn:ngm:class:face-swap
   - urn:ngm:class:ai-art-generation
 dependsOn:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
   - urn:ngm:class:text-encoder
   - urn:ngm:class:control-net

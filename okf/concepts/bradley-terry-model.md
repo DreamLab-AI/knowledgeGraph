@@ -8,7 +8,7 @@ description: "The Bradley-Terry model is a probabilistic model for paired compar
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:reward-modelling
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:statistical-model
@@ -51,8 +51,8 @@ contrastsWith:
   - urn:ngm:class:kahneman-tversky-optimisation
   - urn:ngm:class:identity-preference-optimisation
 bridgesTo:
-  - urn:ngm:class:rlhf
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:rlaif
   - urn:ngm:class:simpo
   - urn:ngm:class:ipo
@@ -67,9 +67,9 @@ uses:
 supports:
   - urn:ngm:class:reward-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:process-reward-model
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 standardizedBy:
   - urn:ngm:class:biometrika
   - urn:ngm:class:icml

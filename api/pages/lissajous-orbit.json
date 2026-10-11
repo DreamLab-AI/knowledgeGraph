@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lissajous-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A Lissajous orbit is a generally quasi-periodic trajectory near a libration point, formed by combining oscillations in different directions whose frequencies do not usually share one period.[^1356][^1357]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

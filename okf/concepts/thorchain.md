@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:interoperability
 bridgesTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:automated-market-maker
 ---
 

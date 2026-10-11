@@ -4,6 +4,7 @@ type: Class
 title: Radiometric Calibration
 resource: urn:ngm:class:radiometric-calibration
 domain: earth-observation-and-geospatial-sensing
+description: Radiometric calibration is the calibration of an Earth observation sensor's radiometric response, so that its recorded values can be traced to a reference standard and reported with a stated uncertainty.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Radiometric Calibration
+
+Radiometric calibration is the calibration of an Earth observation sensor's radiometric response, so that its recorded values can be traced to a reference standard and reported with a stated uncertainty.[^1][^2]

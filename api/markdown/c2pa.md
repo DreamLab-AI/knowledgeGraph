@@ -58,7 +58,7 @@ C2PA (Coalition for Content Provenance and Authenticity) is a cross-industry ope
 - **ISO/IEC 19566-5 (JUMBF)** — the container format underlying C2PA manifests; a published international standard that ensures codec-neutral embedding.
 - **RFC 8152 (COSE)** — the IETF standard used for claim signing; provides algorithm agility (ECDSA, RSA-PSS) and compact CBOR serialisation suited to constrained environments such as camera hardware.
 - **RFC 3161 (TSA)** — trusted timestamping used to anchor the signing time independently of certificate validity period.
-- **[[W3C Verifiable Credentials]]** — a conceptually related W3C standard for cryptographically verifiable claims; C2PA intentionally does not adopt the VC data model but shares design goals. The two ecosystems are being evaluated for interoperability.
+- **[[W3C Verifiable Credentials Data Model]]** — a conceptually related W3C standard for cryptographically verifiable claims; C2PA intentionally does not adopt the VC data model but shares design goals. The two ecosystems are being evaluated for interoperability.
 - **[[PROV-O]]** — the W3C Provenance Ontology informs the semantic model of C2PA assertions; C2PA assertion vocabulary maps onto PROV concepts of Entity, Activity, and Agent.
 - **EU AI Act (2024)** — Article 50 mandates disclosure of AI-generated content; C2PA is cited as a candidate technical mechanism for compliance.
 - **US National Security Memorandum / EO on AI (2023–2024)** — directs NIST and federal agencies to advance content provenance standards; C2PA is referenced in NIST AI RMF guidance.

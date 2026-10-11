@@ -20,15 +20,15 @@ enables:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:authentication
 contrastsWith:
-  - urn:ngm:class:tee
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
+  - urn:ngm:class:trusted-execution-environment
 uses:
   - urn:ngm:class:encryption
 supports:
   - urn:ngm:class:self-custody
 partOf:
   - urn:ngm:class:hardware-wallet
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 relatedTo:
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:trusted-platform-module

@@ -4,7 +4,7 @@ A vesting schedule is a contractually or programmatically enforced timetable tha
 
 - Vesting schedules originate in traditional corporate equity compensation, where employees receive stock options or restricted stock units that unlock over time, typically contingent on continued employment. The same logic was adopted by the [[Blockchain]] industry to manage how [[Token Allocation]] flows to founders, core teams, early investors, and advisors.
 - The primary rationale is **commitment signalling**: locking tokens over time demonstrates that insiders cannot immediately dump their holdings on secondary markets, protecting the [[Supply Schedule]] and reducing sell pressure. Vesting schedules also act as a retention mechanism — a team member who resigns early forfeits unvested tokens, aligning individual incentives with project longevity.
-- Schedules are usually disclosed in a project's whitepaper or [[Tokenomics Governance]] documentation, audited by third parties, and enforced on-chain via a [[Smart Contract]]. The parameters chosen — cliff, duration, cadence, and revocation — are key inputs to [[Treasury Management]] modelling and are scrutinised by investors and [[DAO]] participants before committing capital.
+- Schedules are usually disclosed in a project's whitepaper or [[Tokenomics Governance]] documentation, audited by third parties, and enforced on-chain via a [[Smart Contract]]. The parameters chosen — cliff, duration, cadence, and revocation — are key inputs to [[Treasury Management]] modelling and are scrutinised by investors and [[Decentralised Autonomous Organisation]] participants before committing capital.
 
 ### Key Components
 
@@ -12,7 +12,7 @@ A vesting schedule is a contractually or programmatically enforced timetable tha
 
 - The initial locked window, commonly 6–12 months, during which zero tokens are released.
 - Serves as a minimum commitment threshold; if a recipient leaves before the cliff, they vest nothing.
-- See: [[Cliff Period]], [[Time Lock]]
+- See: [[Cliff Period]], [[Timelock]]
 
 #### Linear Release
 
@@ -41,7 +41,7 @@ A vesting schedule is a contractually or programmatically enforced timetable tha
 - **Founders & Core Team**: longest vesting horizons, steepest cliffs.
 - **Investors (seed/private)**: often shorter cliffs but lock-up periods mandated by securities regulators.
 - **Advisors**: lighter tranches, shorter durations.
-- **Ecosystem/Community Funds**: may vest over multi-year schedules to fund grants or [[DAO]] operations.
+- **Ecosystem/Community Funds**: may vest over multi-year schedules to fund grants or [[Decentralised Autonomous Organisation]] operations.
 - See: [[Token Distribution]], [[Governance Token]]
 
 ### Mechanisms
@@ -83,7 +83,7 @@ A vesting schedule is a contractually or programmatically enforced timetable tha
 #### Ecosystem and Grant Funds
 
 - Blockchain foundations distribute grants to developers and ecosystem projects with milestone-gated or time-based vesting to ensure deliverable completion.
-- See: [[DAO]], [[Treasury Management]]
+- See: [[Decentralised Autonomous Organisation]], [[Treasury Management]]
 
 #### Protocol Emission Schedules
 

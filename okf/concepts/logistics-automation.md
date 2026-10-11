@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:warehouse-automation
   - urn:ngm:class:autonomous-vehicle
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:mobile-robotics
 ---

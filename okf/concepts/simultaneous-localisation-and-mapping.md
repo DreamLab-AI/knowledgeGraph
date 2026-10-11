@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:neural-radiance-field
 uses:
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:lidar
   - urn:ngm:class:factor-graph
   - urn:ngm:class:inertial-measurement-unit

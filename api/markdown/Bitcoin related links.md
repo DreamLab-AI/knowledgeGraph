@@ -9,7 +9,7 @@ Bitcoin Related Links is a curated reference collection aggregating news, techni
 - [#107: The Bitcoin Debate (w/ Doomberg)](https://open.spotify.com/episode/0peXEbr4D9CHZCogy9O0j9?si=PC0KkPk1RzGei4UySd6ymA) - Comprehensive debate on Bitcoin's role in macro economics
 - [HSBC vs Binance: Juxtaposition of the Money Laundering Scandals | by ez | Jan, 2024 | DataDrivenInvestor](https://medium.datadriveninvestor.com/hsbc-vs-binance-juxtaposition-of-the-money-laundering-scandals-56b08c44ca5a) - Financial regulation comparison with [[Compliance]]
 - [$12M in 'Satoshi Era' Bitcoins Move: 21 Block Rewards from 2010 Spent After a Decade of Slumber – Bitcoin News](https://news.bitcoin.com/12m-in-satoshi-era-bitcoins-move-21-block-rewards-from-2010-spent-after-a-decade-of-slumber) - Early Bitcoin whale activity and [[Satoshi Nakamoto]] holdings
-- ['Crypto IS Macro Now': Raoul Pal on Bitcoin, DeFi and the Transformation of Power](https://open.spotify.com/episode/639Nk9MPyFeqCDuXfedt79?dl_branch=1&si=MAFYYL7TTnihhzrFhBe4xw) - Macro-economic impact of [[Cryptocurrency]] and [[DeFi]] with investment analyst [[Raoul Pal]]
+- ['Crypto IS Macro Now': Raoul Pal on Bitcoin, DeFi and the Transformation of Power](https://open.spotify.com/episode/639Nk9MPyFeqCDuXfedt79?dl_branch=1&si=MAFYYL7TTnihhzrFhBe4xw) - Macro-economic impact of [[Cryptocurrency]] and [[Decentralised Finance]] with investment analyst [[Raoul Pal]]
 - ['Green' bitcoin alternative Chia is leading to hard disc shortages](https://www.newscientist.com/article/2277076-green-bitcoin-alternative-chia-is-leading-to-hard-disc-shortages) - Analysis of [[Environmental Impact]] and mining alternatives
 - [Bitcoin 𝕵ack 🐐 (@BTC_JackSparrow) on X - Twitter Archive](https://twitter.com/BTC_JackSparrow/) - Community perspectives and [[Bitcoin Culture]]
 
@@ -261,7 +261,7 @@ Bitcoin Related Links is a curated reference collection aggregating news, techni
 - [Bitcoin 2021 Livestream - Day 1](https://www.youtube.com/watch?v=Zp43Ktm3wos) - Annual conference
 - [Bitcoin 2022 Conference - Mining Stage - General Admission Day 2](https://www.youtube.com/watch?v=oZLChfkJm10) - Industry gathering
 - [MIT Bitcoin Expo | Longest-running Blockchain Conference | Cambridge](https://mitbitcoinexpo.org/) - Academic conference
-- [Bitcoin DeFi | What is Decentralized Finance on Bitcoin?](https://www.youtube.com/watch?feature=youtu.be&v=Zj7-LEsCbJM) - [[DeFi]] explanation
+- [Bitcoin DeFi | What is Decentralized Finance on Bitcoin?](https://www.youtube.com/watch?feature=youtu.be&v=Zj7-LEsCbJM) - [[Decentralised Finance]] explanation
 - [Bitcoin: The Greatest Money System with Darin Feinstein](https://www.youtube.com/watch?t=2s&v=MuysA_WzskM) - [[Philosophy]]
 - [From the Petrodollar to a Bitcoin Standard with Alex Gladstein & Nic Carter](https://www.youtube.com/watch?v=_KaeR_2JxNc) - Macro shift analysis
 - [The OC Bitcoin Network Presents - The Bitcoin Full Node Deep-Dive into the Raspiblitz](https://www.youtube.com/watch?feature=youtu.be&t=2914&v=QXUGg45CWLo) - Full node setup
@@ -279,7 +279,7 @@ Bitcoin Related Links is a curated reference collection aggregating news, techni
   ## 💻 Development & Technical
 
 - [AndreasGassmann/bip85: JavaScript implementation of Bitcoin BIP85](https://github.com/AndreasGassmann/bip85#readme) - [[BIP85]] protocol
-- [decentralized-identity/ion: The Identity Overlay Network (ION) using Bitcoin](https://github.com/decentralized-identity/ion) - [[DID]] solution
+- [decentralized-identity/ion: The Identity Overlay Network (ION) using Bitcoin](https://github.com/decentralized-identity/ion) - [[Decentralised Identifier]] solution
 - [raspiblitz/raspiblitz: Get your own Bitcoin & Lightning Node running on a RaspberryPi](https://github.com/rootzoll/raspiblitz) - Full node hardware
 - [bitpaint/bitcoin-gources: Bitcoin related gources](https://github.com/bitpaint/bitcoin-gources) - Visualization tool
 - [Hardware Documentation](https://github.com/fort-nix/nix-bitcoin/blob/master/docs/hardware.md) - Node setup guide

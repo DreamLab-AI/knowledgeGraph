@@ -9,6 +9,7 @@ maturity: established
 quality: 0.76
 is-a:
   - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:technical-standard
 hasPart:
   - urn:ngm:class:did-document
   - urn:ngm:class:did-method
@@ -18,6 +19,7 @@ requires:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:cryptographic-signature
   - urn:ngm:class:did-resolver
+  - urn:ngm:class:world-wide-web-consortium
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:verifiable-credentials
@@ -36,7 +38,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-identity
   - urn:ngm:class:internet-of-things
 uses:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:distributed-ledger-technology
 supports:

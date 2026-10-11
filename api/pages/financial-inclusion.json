@@ -133,11 +133,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -145,8 +145,8 @@
         "label": "Remittance"
       },
       {
-        "id": "urn:ngm:class:fintech",
-        "label": "Fintech"
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
       },
       {
         "id": "urn:ngm:class:remittances",
@@ -291,7 +291,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -309,16 +309,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -339,6 +335,10 @@
       {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
       }
     ],
     "uses": [
@@ -355,7 +355,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -465,14 +465,6 @@
       "label": "CBDC Frameworks"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
-      "slug": "central-bank-digital-currency-cbdc",
-      "label": "Central Bank Digital Currency (CBDC)"
-    },
-    {
       "slug": "central-bank-digital-currency",
       "label": "Central Bank Digital Currency"
     },
@@ -481,8 +473,8 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "distributed-identity",

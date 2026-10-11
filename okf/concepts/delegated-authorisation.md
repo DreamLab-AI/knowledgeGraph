@@ -15,10 +15,10 @@ enables:
   - urn:ngm:class:single-sign-on
   - urn:ngm:class:federated-identity
 dependsOn:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:identity-provider
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:authentication
 bridgesTo:
@@ -33,7 +33,7 @@ relatedTo:
   - urn:ngm:class:oauth
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:token
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 ---
 
 # Delegated Authorisation

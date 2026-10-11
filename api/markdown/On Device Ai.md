@@ -11,7 +11,7 @@ On-device AI is the execution of machine-learning inference, and increasingly so
 
 - Local inference with minimal or no dependence on the network.
 - Model shrinking through compression, pruning and quantisation.
-- Exploitation of on-device accelerators and [[Embedded Systems]].
+- Exploitation of on-device accelerators and [[Embedded System]].
 - Privacy by design: sensitive data never leaves the device.
 - Energy and thermal budgeting for sustained operation.
 

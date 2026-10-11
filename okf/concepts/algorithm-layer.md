@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:scalability
   - urn:ngm:class:algorithmic-fairness
   - urn:ngm:class:training-layer
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:probabilistic-programming
 dependsOn:
@@ -69,7 +69,7 @@ uses:
   - urn:ngm:class:monte-carlo-methods
   - urn:ngm:class:dynamic-programming
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:model-training
   - urn:ngm:class:probabilistic-programming

@@ -40,7 +40,7 @@ contrastsWith:
   - urn:ngm:class:file-system
   - urn:ngm:class:memory-store
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:knowledge-graphs
 uses:
   - urn:ngm:class:indexing

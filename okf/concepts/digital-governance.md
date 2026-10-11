@@ -28,9 +28,9 @@ dependsOn:
   - urn:ngm:class:institutional-capacity
 implements:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:digital-services-act
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:deregulation
   - urn:ngm:class:techno-solutionism

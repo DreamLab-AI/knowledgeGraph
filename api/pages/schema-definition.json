@@ -37,8 +37,8 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       },
       {
         "id": "urn:ngm:class:code-generation",
@@ -64,7 +64,7 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -100,8 +100,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -200,7 +200,7 @@
         "label": "Validation Tools"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -328,7 +328,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -336,8 +336,8 @@
         "label": "MaterialX"
       },
       {
-        "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       },
       {
         "id": "urn:ngm:class:metaverse",
@@ -410,11 +410,11 @@
         "label": "JSON Serialisation"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -518,7 +518,7 @@
         "label": "OpenUSD"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Scene Description Language"
       },
       {

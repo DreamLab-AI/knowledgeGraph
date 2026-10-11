@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:maximum-valid-data-value",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Maximum valid data value is the upper limit of the range of values accepted as valid for a variable [^1].",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-value",

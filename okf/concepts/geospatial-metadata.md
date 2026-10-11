@@ -4,6 +4,7 @@ type: Class
 title: Geospatial Metadata
 resource: urn:ngm:class:geospatial-metadata
 domain: earth-observation-and-geospatial-sensing
+description: Geospatial metadata is information describing maps, Geographic Information Systems files, imagery and other location-based data resources.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Geospatial Metadata
+
+Geospatial metadata is information describing maps, Geographic Information Systems files, imagery and other location-based data resources.[^1]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:positioning-navigation-and-timing",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Positioning, navigation and timing (PNT) are three related service functions: determining location and orientation; determining a current position and supporting movement towards a desired position; and acquiring or maintaining accurate time against a reference.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

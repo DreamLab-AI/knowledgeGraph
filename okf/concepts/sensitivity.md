@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:parameter
   - urn:ngm:class:ground-truth-labels
   - urn:ngm:class:classification
-  - urn:ngm:class:ground-truth-labels
+  - urn:ngm:class:ground-truth
 enables:
   - urn:ngm:class:robustness
   - urn:ngm:class:uncertainty-quantification

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-safety
 relatedTo:
   - urn:ngm:class:direct-preference-optimisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Language Model Alignment

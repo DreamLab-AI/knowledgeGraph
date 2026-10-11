@@ -27,7 +27,7 @@ bridgesTo:
   - urn:ngm:class:commons-governance
   - urn:ngm:class:impact-investing
 uses:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:treasury-management
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:on-chain-governance

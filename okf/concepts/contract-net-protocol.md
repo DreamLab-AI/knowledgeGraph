@@ -27,14 +27,14 @@ bridgesTo:
 uses:
   - urn:ngm:class:agent
 supports:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 standardizedBy:
   - urn:ngm:class:standards
 relatedTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:automation
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 ---
 
 # Contract Net Protocol

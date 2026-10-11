@@ -110,9 +110,9 @@
       "slug": "data-architecture"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -145,16 +145,6 @@
       "slug": "scientific-machine-learning"
     },
     {
-      "id": "urn:ngm:class:simulation",
-      "label": "Simulation",
-      "slug": "simulation"
-    },
-    {
-      "id": "urn:ngm:class:digital-twin",
-      "label": "Digital Twin",
-      "slug": "digital-twin"
-    },
-    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
@@ -175,24 +165,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment",
-      "slug": "sc-platform-and-environment"
-    },
-    {
       "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture",
       "slug": "software-architecture"
-    },
-    {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing",
-      "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:human-computer-interaction",
-      "label": "Human Computer Interaction",
-      "slug": "human-computer-interaction"
     }
   ],
   "inheritedRelations": {
@@ -236,6 +211,10 @@
         "label": "Experiment Tracking"
       },
       {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
         "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       },
@@ -258,10 +237,6 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:data-labelling",
-        "label": "Data Labelling"
       }
     ],
     "enables": [
@@ -430,8 +405,8 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       }
     ],
     "uses": [
@@ -494,8 +469,8 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -512,7 +487,7 @@
         "label": "Data Governance Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       },
       {
@@ -520,20 +495,20 @@
         "label": "SIAM"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
-      },
-      {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
-      },
-      {
-        "id": "urn:ngm:class:ietf",
-        "label": "IETF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
@@ -546,11 +521,15 @@
         "label": "Information Architecture"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
         "id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

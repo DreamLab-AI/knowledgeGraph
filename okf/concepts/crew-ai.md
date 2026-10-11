@@ -63,7 +63,7 @@ relatedTo:
   - urn:ngm:class:auto-gen
   - urn:ngm:class:lang-graph
   - urn:ngm:class:prompt-injection
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # CrewAI

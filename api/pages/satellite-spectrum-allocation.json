@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-spectrum-allocation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite spectrum allocation is the international designation of a frequency band for use by one or more radiocommunication services under specified conditions.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

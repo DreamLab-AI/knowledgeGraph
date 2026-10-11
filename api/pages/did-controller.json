@@ -37,8 +37,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:decentralized-identifiers",
-        "label": "Decentralized Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       }
     ],
     "relatedTo": [
@@ -349,8 +349,8 @@
   ],
   "backlinks": [
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     }
   ]
 }

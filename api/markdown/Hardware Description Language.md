@@ -2,7 +2,7 @@ A hardware description language (HDL) is a specialised programming language used
 
 - A [[Hardware Description Language]] (HDL) is a specialised language for describing the structure and behaviour of digital circuits, sitting between abstract logic and physical [[FPGA]] or [[ASIC]] implementations.
 - HDLs capture concurrency and timing, distinguishing them from sequential software languages, and feed into synthesis flows that target reconfigurable or fixed silicon.
-- They underpin the entire digital design pipeline, from specification through simulation to fabrication, supporting [[Embedded Systems]] and [[Hardware Accelerator]] development.
+- They underpin the entire digital design pipeline, from specification through simulation to fabrication, supporting [[Embedded System]] and [[Hardware Accelerator]] development.
 
 ### Overview
 
@@ -23,7 +23,7 @@ A hardware description language (HDL) is a specialised programming language used
 - Configuring [[FPGA]] devices for low-latency AI inference, signal processing and prototyping.
 - Designing [[ASIC]] and [[System-on-Chip]] products for high-volume, power-efficient deployment.
 - Building custom [[Hardware Accelerator]] datapaths for cryptography, networking and machine learning.
-- Developing [[Embedded Systems]] control logic where deterministic timing is required.
+- Developing [[Embedded System]] control logic where deterministic timing is required.
 
 ### Provenance
 

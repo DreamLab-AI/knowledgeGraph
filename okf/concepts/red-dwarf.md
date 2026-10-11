@@ -4,6 +4,7 @@ type: Class
 title: Red Dwarf
 resource: urn:ngm:class:red-dwarf
 domain: space-science-and-systems
+description: A red dwarf is the smallest and coolest kind of main-sequence star, a fraction of the Sun’s size and mass.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Red Dwarf
+
+A red dwarf is the smallest and coolest kind of main-sequence star, a fraction of the Sun’s size and mass.[^1]

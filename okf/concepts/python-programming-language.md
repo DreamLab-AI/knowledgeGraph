@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:data-modelling
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:statistical-analysis
 uses:

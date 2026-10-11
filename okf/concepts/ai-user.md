@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:fairness
   - urn:ngm:class:explainability
 dependsOn:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-ai
 relatedTo:
   - urn:ngm:class:ai-provider

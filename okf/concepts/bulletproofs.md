@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:pedersen-commitment
 supports:
   - urn:ngm:class:monero
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:privacy-preserving-blockchain
   - urn:ngm:class:multi-party-computation

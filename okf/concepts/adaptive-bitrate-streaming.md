@@ -16,14 +16,14 @@ requires:
 enables:
   - urn:ngm:class:video-streaming
 dependsOn:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 implements:
   - urn:ngm:class:video-compression
 contrastsWith:
   - urn:ngm:class:lossless-compression
 uses:
   - urn:ngm:class:video-compression
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:network-protocol
 partOf:

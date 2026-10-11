@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:load-balancing
   - urn:ngm:class:service-discovery
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
 requires:
   - urn:ngm:class:containerisation
   - urn:ngm:class:container-runtime

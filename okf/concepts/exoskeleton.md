@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:occupational-safety
 dependsOn:
   - urn:ngm:class:human-robot-interaction
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:prosthetics
 bridgesTo:

@@ -28,7 +28,7 @@ partOf:
   - urn:ngm:class:edge-computing
 relatedTo:
   - urn:ngm:class:internet-of-things
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:neuromorphic-computing
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing

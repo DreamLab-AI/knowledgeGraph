@@ -21,7 +21,7 @@ implements:
   - urn:ngm:class:computation-graph
   - urn:ngm:class:compiler
 contrastsWith:
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 uses:
   - urn:ngm:class:optimisation
   - urn:ngm:class:convex-optimisation

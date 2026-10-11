@@ -23,7 +23,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:governance
   - urn:ngm:class:sustainability-reporting
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
 supports:
   - urn:ngm:class:esg-compliant-blockchain
   - urn:ngm:class:renewable-energy-tracking

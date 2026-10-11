@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asteroid",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An asteroid is a rocky remnant of the formation of the solar system, sometimes called a minor planet.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

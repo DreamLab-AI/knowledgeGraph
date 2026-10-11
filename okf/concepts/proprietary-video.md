@@ -10,12 +10,12 @@ quality: 0.52
 is-a:
   - urn:ngm:class:infra-network-and-comms
   - urn:ngm:class:infra-legal-and-regulatory
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:video-codec-standards
   - urn:ngm:class:digital-rights-management
   - urn:ngm:class:streaming-protocols
   - urn:ngm:class:broadcast-standards
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:patent
 hasPart:
   - urn:ngm:class:arm-trust-zone
@@ -37,13 +37,13 @@ hasPart:
   - urn:ngm:class:common-encryption
 requires:
   - urn:ngm:class:arm-trust-zone
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:encryption
   - urn:ngm:class:frand-licensing
   - urn:ngm:class:hardware-security
   - urn:ngm:class:key-management
   - urn:ngm:class:patent
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:hardware-and-edge
   - urn:ngm:class:patent
 enables:
@@ -62,7 +62,7 @@ dependsOn:
   - urn:ngm:class:patent-pools
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:arm-trust-zone
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:encryption
   - urn:ngm:class:key-management
   - urn:ngm:class:codec-licensing
@@ -92,7 +92,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:arm-trust-zone
   - urn:ngm:class:av1-codec
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:encryption
   - urn:ngm:class:h-264
   - urn:ngm:class:hevc
@@ -124,7 +124,7 @@ standardizedBy:
   - urn:ngm:class:itu-t
   - urn:ngm:class:microsoft
   - urn:ngm:class:mpeg
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:apple-inc-technology-corporation
   - urn:ngm:class:google-ai-technology-corporation
   - urn:ngm:class:atsc
@@ -133,7 +133,7 @@ standardizedBy:
   - urn:ngm:class:dolby-laboratories
 relatedTo:
   - urn:ngm:class:advertising-and-marketing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:digital-cinema
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:ai-video

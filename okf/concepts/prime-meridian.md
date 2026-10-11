@@ -4,6 +4,7 @@ type: Class
 title: Prime Meridian
 resource: urn:ngm:class:prime-meridian
 domain: earth-observation-and-geospatial-sensing
+description: A prime meridian is the meridian of a reference ellipsoid that is chosen to carry zero longitude, from which the longitude of other points is measured.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Prime Meridian
+
+A prime meridian is the meridian of a reference ellipsoid that is chosen to carry zero longitude, from which the longitude of other points is measured.[^1]

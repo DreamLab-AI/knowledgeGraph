@@ -4,6 +4,7 @@ type: Class
 title: Periapsis
 resource: urn:ngm:class:periapsis
 domain: space-science-and-systems
+description: Periapsis is the point or event at which an orbiting or passing body is closest to its selected central body.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Periapsis
+
+Periapsis is the point or event at which an orbiting or passing body is closest to its selected central body.

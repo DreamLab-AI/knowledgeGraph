@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:revisit-time",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Revisit time is the interval after which a remote sensing system can again observe the same area of the Earth's surface.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

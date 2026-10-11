@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:field-programmable-gate-array
   - urn:ngm:class:graphics-processing-unit
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:real-time-systems
 partOf:
   - urn:ngm:class:signal-processing

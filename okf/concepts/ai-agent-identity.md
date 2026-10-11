@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:verifiable-credentials
 requires:
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:multi-agent-system
@@ -23,11 +23,11 @@ contrastsWith:
   - urn:ngm:class:human-identity
 bridgesTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:accountability
 relatedTo:

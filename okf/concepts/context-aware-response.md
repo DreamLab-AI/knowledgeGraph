@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
 requires:
   - urn:ngm:class:context-awareness-system
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 enables:
   - urn:ngm:class:personalized-interaction

@@ -61,7 +61,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:reciprocal-rank-fusion
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:hybrid-retrieval
 ---
 

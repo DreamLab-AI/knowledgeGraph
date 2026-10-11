@@ -17,13 +17,13 @@ hasPart:
   - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:weight-decomposition
 requires:
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:backpropagation
   - urn:ngm:class:gradient-descent
 enables:
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vision-language-model
   - urn:ngm:class:model-adaptation
   - urn:ngm:class:task-specific-fine-tuning
@@ -38,7 +38,6 @@ implements:
   - urn:ngm:class:column-wise-normalisation
 contrastsWith:
   - urn:ngm:class:full-fine-tuning
-  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:prompt-tuning
   - urn:ngm:class:adapter-modules
 uses:
@@ -46,7 +45,7 @@ uses:
   - urn:ngm:class:py-torch
   - urn:ngm:class:hugging-face-peft
   - urn:ngm:class:qlo-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
 supports:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -59,7 +58,7 @@ relatedTo:
   - urn:ngm:class:transformer
   - urn:ngm:class:qdora
   - urn:ngm:class:dvora
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:qlo-ra
   - urn:ngm:class:ia3
   - urn:ngm:class:adapter-modules

@@ -16,12 +16,12 @@ requires:
   - urn:ngm:class:token-economics
 enables:
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:decentralized-exchange
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-exchange
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:protocol-bootstrapping
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ethereum
 contrastsWith:
   - urn:ngm:class:proof-of-work

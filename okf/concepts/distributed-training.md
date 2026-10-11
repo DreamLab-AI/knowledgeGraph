@@ -9,7 +9,7 @@ maturity: established
 quality: 0.74
 is-a:
   - urn:ngm:class:ai-infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:high-performance-computing
 hasPart:
   - urn:ngm:class:data-parallelism
@@ -29,7 +29,7 @@ enables:
   - urn:ngm:class:large-language-model-training
   - urn:ngm:class:foundation-model
   - urn:ngm:class:model-scaling
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:scientific-machine-learning
 dependsOn:
@@ -51,7 +51,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:cloud-computing
 uses:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:jax
   - urn:ngm:class:py-torch
   - urn:ngm:class:nvidia-nccl

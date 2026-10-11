@@ -8,13 +8,13 @@ description: Uncertainty Quantification (UQ) is a discipline concerned with char
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:probabilistic-model
+  - urn:ngm:class:statistics
 enables:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:risk-assessment
   - urn:ngm:class:model-robustness
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:adversarial-robustness
 uses:

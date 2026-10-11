@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:network-protocol
 supports:
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 partOf:
   - urn:ngm:class:distributed-systems
 relatedTo:

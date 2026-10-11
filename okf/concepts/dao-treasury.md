@@ -8,7 +8,7 @@ description: A DAO treasury is the pool of on-chain assets collectively owned an
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 hasPart:
   - urn:ngm:class:governance-token
   - urn:ngm:class:multisig
@@ -20,11 +20,11 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:treasury-management
 supports:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:liquidity
 partOf:
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-governance
 relatedTo:
   - urn:ngm:class:tokenomics
   - urn:ngm:class:token

@@ -4,6 +4,7 @@ type: Class
 title: Aquiclude
 resource: urn:ngm:class:aquiclude
 domain: earth-observation-and-geospatial-sensing
+description: An aquiclude is a hydrogeologic unit that can hold water in its pores but does not pass it on at rates useful to a well or spring.[^1][^2] The British Geological Survey glossary gives the same two-part test of storage without significant transmission.[^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Aquiclude
+
+An aquiclude is a hydrogeologic unit that can hold water in its pores but does not pass it on at rates useful to a well or spring.[^1][^2] The British Geological Survey glossary gives the same two-part test of storage without significant transmission.[^2]

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-perception
 relatedTo:
   - urn:ngm:class:bayes-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 ---
 
 # Observation Model

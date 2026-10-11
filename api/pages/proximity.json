@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proximity",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Proximity is the geospatial analysis of how near features are to one another, expressed as nearest features, distances between features or zones within a set distance.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

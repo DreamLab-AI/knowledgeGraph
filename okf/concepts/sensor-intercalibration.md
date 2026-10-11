@@ -4,6 +4,7 @@ type: Class
 title: Sensor Intercalibration
 resource: urn:ngm:class:sensor-intercalibration
 domain: earth-observation-and-geospatial-sensing
+description: Sensor intercalibration is the post-launch comparison and adjustment of one satellite sensor's radiometric response against other sensors or a common reference so that their measurements agree.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -15,3 +16,5 @@ relatedTo:
 ---
 
 # Sensor Intercalibration
+
+Sensor intercalibration is the post-launch comparison and adjustment of one satellite sensor's radiometric response against other sensors or a common reference so that their measurements agree.[^1][^2]

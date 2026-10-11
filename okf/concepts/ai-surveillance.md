@@ -12,7 +12,7 @@ is-a:
 uses:
   - urn:ngm:class:facial-recognition
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:digital-society-surveillance
 relatedTo:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tabular-iceberg",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A tabular iceberg is an iceberg with a flat upper surface that has detached from an ice shelf, ice tongue or floating tidewater glacier.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:iceberg",

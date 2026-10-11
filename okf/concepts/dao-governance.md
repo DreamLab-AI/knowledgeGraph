@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0.68
 is-a:
   - urn:ngm:class:community-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
 hasPart:
   - urn:ngm:class:token-weighted-voting
   - urn:ngm:class:quadratic-voting
@@ -20,9 +21,11 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:governance-token
   - urn:ngm:class:blockchain
+  - urn:ngm:class:governance
 enables:
   - urn:ngm:class:decentralised-decision-making
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
+  - urn:ngm:class:quadratic-voting
 dependsOn:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:cryptographic-signature
@@ -35,6 +38,8 @@ bridgesTo:
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:distributed-collaboration
   - urn:ngm:class:blockchain
+  - urn:ngm:class:decentralised-governance
+  - urn:ngm:class:token
 uses:
   - urn:ngm:class:soulbound-tokens
   - urn:ngm:class:reputation-system
@@ -42,7 +47,7 @@ uses:
 partOf:
   - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:token-economics
 ---
 

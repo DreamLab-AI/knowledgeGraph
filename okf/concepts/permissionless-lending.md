@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:bc-defi-and-economics
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralized-finance-de-fi
 ---
 

@@ -33,7 +33,7 @@ supports:
   - urn:ngm:class:accessibility
   - urn:ngm:class:user-experience
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:khronos-group
 relatedTo:
   - urn:ngm:class:cross-platform-interoperability

@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:ai-policy
   - urn:ngm:class:ethics
 uses:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:scalable-oversight
 supports:

@@ -32,7 +32,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:cryptographic-commitment
   - urn:ngm:class:hash-function

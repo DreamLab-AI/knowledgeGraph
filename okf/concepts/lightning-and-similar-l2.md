@@ -17,12 +17,12 @@ hasPart:
 requires:
   - urn:ngm:class:blockchain-protocol
   - urn:ngm:class:consensus-mechanism
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:onion-routing
 enables:
   - urn:ngm:class:micropayments
   - urn:ngm:class:blockchain-scalability
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
 dependsOn:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:utxo

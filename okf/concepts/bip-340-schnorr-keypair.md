@@ -26,7 +26,7 @@ contrastsWith:
   - urn:ngm:class:ecdsa
 bridgesTo:
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:x-only-public-key

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:ai-technique
 hasPart:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -42,7 +42,7 @@ enables:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:agentic-workflow
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:benchmark-evaluation
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:autonomous-agent
@@ -85,7 +85,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:alan-turing-institute
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:symbolic-ai

@@ -35,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:tracing-system
 bridgesTo:
   - urn:ngm:class:aiops
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:model-drift-detection
   - urn:ngm:class:mlops
 uses:

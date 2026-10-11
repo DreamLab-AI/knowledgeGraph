@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:inference
   - urn:ngm:class:ai-deployment
 dependsOn:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:inference-hardware
 contrastsWith:
   - urn:ngm:class:federated-learning

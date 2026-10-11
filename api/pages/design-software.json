@@ -80,11 +80,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:bim-virtual-model",
+        "id": "urn:ngm:class:building-information-modelling",
         "label": "Building Information Modelling"
       }
     ],
@@ -353,7 +353,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

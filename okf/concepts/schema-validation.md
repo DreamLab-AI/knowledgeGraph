@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:asyncapi
 uses:
   - urn:ngm:class:json-data-interchange-format-schema
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 supports:
   - urn:ngm:class:api-specification
   - urn:ngm:class:data-contracts
@@ -36,7 +36,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:json-data-interchange-format-schema
 relatedTo:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:data-quality
 ---
 

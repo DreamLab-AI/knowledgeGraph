@@ -6,7 +6,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 
 ## Layer 2 Definition & Core Architecture
 
-- **Layer 2 (L2)** represents a category of [[blockchain]] [[scaling-solutions]] that operate as secondary frameworks built atop [[Layer1]] base chains like [[Ethereum Smart Contract Platform]], [[Bitcoin Proof-of-Work Protocol]], or [[Polygon]], executing transactions off the main chain while leveraging the security and finality of the underlying Layer 1.
+- **Layer 2 (L2)** represents a category of [[blockchain]] [[scaling-solutions]] that operate as secondary frameworks built atop [[Layer1]] base chains like [[Ethereum]], [[Bitcoin Proof-of-Work Protocol]], or [[Polygon]], executing transactions off the main chain while leveraging the security and finality of the underlying Layer 1.
 
 ### Fundamental Architecture Principles
 
@@ -18,16 +18,16 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 
 ### Why Layer 2 Solutions Are Essential
 
-- **Scalability Bottleneck**: [[Ethereum Smart Contract Platform]] processes ~15-30 TPS, [[Bitcoin Proof-of-Work Protocol]] ~7 TPS - insufficient for global-scale adoption
+- **Scalability Bottleneck**: [[Ethereum]] processes ~15-30 TPS, [[Bitcoin Proof-of-Work Protocol]] ~7 TPS - insufficient for global-scale adoption
 - **High Transaction Costs**: During network congestion, [[gas-fees]] on Ethereum can exceed $50-200 per transaction
 - **User Experience**: Slow confirmation times (10-15 minutes for Bitcoin, 12-15 seconds for Ethereum) hinder real-time applications
 - **Environmental Impact**: Layer 1 [[Proof-of-Work]] and [[Proof-of-Stake]] consume significant energy; L2 amortizes this across thousands of transactions
-- **Economic Efficiency**: L2 enables [[micropayments]], [[NFT]] minting, [[DeFi]] operations, and [[gaming]] at fraction of Layer 1 costs
+- **Economic Efficiency**: L2 enables [[micropayments]], [[NFT]] minting, [[Decentralised Finance]] operations, and [[gaming]] at fraction of Layer 1 costs
 
 ### Layer 2 vs Layer 1 Fundamental Differences
 
 - **Execution Environment**: L1 = every node validates every transaction; L2 = centralized or semi-decentralized sequencers batch transactions
-- **Security Model**: L1 = direct consensus; L2 = derived security through [[fraud-proofs]], [[validity-proofs]], or [[multi-signature]] schemes
+- **Security Model**: L1 = direct consensus; L2 = derived security through [[fraud-proofs]], [[validity-proofs]], or [[Multisignature]] schemes
 - **Finality**: L1 = probabilistic (Bitcoin) or deterministic (Ethereum); L2 = soft finality (instant) + hard finality (after L1 settlement)
 - **Decentralization Trade-off**: Most L2s sacrifice some decentralization for performance, though [[decentralized-sequencers]] are emerging
 
@@ -79,7 +79,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 ### 2. State Channels
 
 - **Definition**: Multi-party off-chain agreements secured by on-chain [[smart-contracts]], enabling unlimited transactions with only 2 on-chain txs (open/close)
-- **Security Model**: [[cryptoeconomic-security]] through [[multi-signature]] and punishment mechanisms
+- **Security Model**: [[cryptoeconomic-security]] through [[Multisignature]] and punishment mechanisms
 - **Use Cases**: High-frequency bidirectional payments, [[gaming]] state updates, [[streaming-payments]]
 - **Limitations**: Require online participation from all parties, capital lockup, complex channel management
 
@@ -192,7 +192,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 
 - **Unique Challenges**: Bitcoin's [[UTXO]] model, limited [[Script]] functionality, and [[Proof-of-Work]] consensus create different constraints than Ethereum
 - **Security Philosophy**: Bitcoin L2s prioritize inheriting Bitcoin's unmatched security over rapid innovation
-- **Market Opportunity**: Bitcoin holds $1.2 trillion market cap but lacks native [[smart-contract]] and [[DeFi]] capabilities
+- **Market Opportunity**: Bitcoin holds $1.2 trillion market cap but lacks native [[smart-contract]] and [[Decentralised Finance]] capabilities
 
 ### 1. Lightning Network (Premier Bitcoin L2)
 
@@ -235,7 +235,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 - **Use Cases**:
   - **[[Fungible-Assets]]**: Issue tokens (RGB20 standard, similar to ERC-20)
   - **[[NFTs]]**: Collectibles and digital art (RGB21 standard)
-  - **[[DeFi]]**: Decentralized exchanges, lending protocols
+  - **[[Decentralised Finance]]**: Decentralized exchanges, lending protocols
   - **[[Stablecoins]]**: USDT considering RGB for Bitcoin-native issuance
 - **Technical Features**:
   - **[[Turing-complete]] contracts**: More expressive than Bitcoin Script
@@ -272,7 +272,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
   - **$140 million TVL** (post-sBTC launch estimate)
   - **300+ dApps** including [[ALEX]], [[Arkadiko]], [[Gamma]]
   - **$180 million** market cap of STX token
-- **Use Cases**: [[DeFi]], [[NFTs]] ([[Bitcoin-Ordinals]] integration), [[DAOs]]
+- **Use Cases**: [[Decentralised Finance]], [[NFTs]] ([[Bitcoin-Ordinals]] integration), [[DAOs]]
 - **[[Nakamoto-Release]]** (2024): 5-second block times, 100% Bitcoin finality
 
 ### 5. Rootstock (RSK) - Bitcoin EVM Sidechain
@@ -640,7 +640,7 @@ Secondary protocols built atop Layer 1 blockchains that process transactions off
 
   #### Related Concepts
 
-- **Core Infrastructure**: [[Layer1]], [[Ethereum Smart Contract Platform]], [[Bitcoin Proof-of-Work Protocol]], [[Consensus-Mechanisms]], [[Blockchain-Trilemma]]
+- **Core Infrastructure**: [[Layer1]], [[Ethereum]], [[Bitcoin Proof-of-Work Protocol]], [[Consensus-Mechanisms]], [[Blockchain-Trilemma]]
 - **Scaling Technologies**: [[Rollup]], [[StateChannel]], [[Sidechain]], [[Plasma]], [[Validium]], [[Volition]]
 - **Proof Systems**: [[fraud-proofs]], [[validity-proofs]], [[zkSNARK]], [[zkSTARK]], [[PLONK]], [[Groth16]]
 - **Cross-Chain**: [[Bridge]], [[cross-chain-messaging]], [[LayerZero]], [[Chainlink-CCIP]], [[Wormhole]]

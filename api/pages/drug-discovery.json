@@ -136,7 +136,7 @@
         "label": "Molecular Dynamics Simulation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -200,7 +200,7 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -317,11 +317,6 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:bioinformatics",
-      "label": "Bioinformatics",
-      "slug": "bioinformatics"
     },
     {
       "id": "urn:ngm:class:biology",
@@ -502,8 +497,8 @@
         "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:computational-biology",
-        "label": "Computational Biology"
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
       }
     ],
     "implements": [
@@ -536,11 +531,15 @@
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:genome-assembly",
-        "label": "Genome Assembly"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
       {
         "id": "urn:ngm:class:classical-genetics",
         "label": "Classical Genetics"
@@ -572,7 +571,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -596,8 +595,8 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:biology",
-        "label": "Biology"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "uses": [
@@ -606,8 +605,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:alphafold",
@@ -630,8 +629,8 @@
         "label": "Hidden Markov Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [
@@ -686,20 +685,20 @@
         "label": "Wellcome Sanger Institute"
       },
       {
-        "id": "urn:ngm:class:pdb",
-        "label": "PDB"
-      },
-      {
-        "id": "urn:ngm:class:uniprot",
-        "label": "UniProt"
-      },
-      {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -718,8 +717,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:alphafold",

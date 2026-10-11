@@ -15,10 +15,10 @@ hasPart:
   - urn:ngm:class:unified-canvas
   - urn:ngm:class:model-manager
 requires:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:python-runtime
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 enables:
   - urn:ngm:class:text-to-image
   - urn:ngm:class:image-to-image
@@ -38,7 +38,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora-adapter
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:text-encoder
   - urn:ngm:class:text-encoder

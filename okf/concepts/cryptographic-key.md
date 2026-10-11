@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:data-integrity
   - urn:ngm:class:secure-communication
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 dependsOn:
   - urn:ngm:class:cryptographic-algorithm
   - urn:ngm:class:entropy-source
@@ -40,14 +40,14 @@ bridgesTo:
 uses:
   - urn:ngm:class:elliptic-curve-cryptography
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:zero-knowledge-proof
 standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:ietf
 partOf:
   - urn:ngm:class:key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:key-exchange
 ---

@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:prompt-sensitivity
   - urn:ngm:class:ai-model-card
 enables:
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:scalable-oversight
   - urn:ngm:class:alignment-evaluation
   - urn:ngm:class:frontier-models
@@ -34,8 +34,8 @@ enables:
   - urn:ngm:class:eval-factsheet
   - urn:ngm:class:sandbagging
 dependsOn:
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:reward-model
 implements:
   - urn:ngm:class:elo-rating
@@ -69,7 +69,7 @@ relatedTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:bias
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-benchmark-epistemological-critique
   - urn:ngm:class:prompt-sensitivity
   - urn:ngm:class:task-complexity

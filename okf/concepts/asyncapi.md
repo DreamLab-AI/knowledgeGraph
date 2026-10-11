@@ -17,7 +17,7 @@ enables:
 dependsOn:
   - urn:ngm:class:json-data-interchange-format-schema
 contrastsWith:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:rest-api
 bridgesTo:
   - urn:ngm:class:api-gateway
@@ -30,7 +30,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:interoperability-standard
 relatedTo:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:event-driven-architecture
 ---
 

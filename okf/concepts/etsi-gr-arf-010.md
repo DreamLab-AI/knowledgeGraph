@@ -39,7 +39,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:open-xr
   - urn:ngm:class:3-gpp
-  - urn:ngm:class:semantic-spatial-web-layer
+  - urn:ngm:class:spatial-web
   - urn:ngm:class:etsi-gs-arf-003
   - urn:ngm:class:xr-architecture
 ---

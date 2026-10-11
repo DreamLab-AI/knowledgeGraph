@@ -20,7 +20,7 @@ bridgesTo:
   - urn:ngm:class:governance
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Transparent Governance

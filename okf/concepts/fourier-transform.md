@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:linear-algebra
   - urn:ngm:class:tensor-computation
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-modelling
 implements:
   - urn:ngm:class:signal-processing

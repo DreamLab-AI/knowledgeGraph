@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:regulatory-compliance
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:narrow-ai
 ---
 

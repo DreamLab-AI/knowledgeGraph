@@ -4,6 +4,7 @@ type: Class
 title: Earth Observation Collection
 resource: urn:ngm:class:earth-observation-collection
 domain: earth-observation-and-geospatial-sensing
+description: An Earth observation collection is a set of data items that share the same properties and higher-level metadata, typically coming from one sensor or constellation.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Earth Observation Collection
+
+An Earth observation collection is a set of data items that share the same properties and higher-level metadata, typically coming from one sensor or constellation.[^1]

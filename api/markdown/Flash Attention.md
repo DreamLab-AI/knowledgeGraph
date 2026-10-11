@@ -13,19 +13,19 @@ Flash Attention is an IO-aware, exact attention algorithm that exploits the GPU 
 - **Online Softmax** — Stable, incremental softmax computation using a running maximum and normalisation sum, pioneered by Milakov & Gimelshein (2018). Flash Attention applies this per tile so that global softmax can be computed without ever storing the full N×N score matrix.
 - **Kernel Fusion** — The entire attention forward pass (QK^T matmul, scale, optional mask, softmax, dropout, V matmul) is fused into a single [[CUDA]] kernel, eliminating intermediate HBM round-trips and the kernel-launch overhead of separate ops.
 - **Backward Recomputation** — During the backward pass, the attention matrix is not stored from the forward pass; it is recomputed on-the-fly from Q, K, V, reducing the memory footprint of training long sequences.
-- **Causal Masking** — Autoregressive [[Large Language Models]] require causal (lower-triangular) attention masks. Flash Attention handles this efficiently by skipping upper-triangular tile pairs entirely, roughly halving FLOPs for decoder-only models.
+- **Causal Masking** — Autoregressive [[Large Language Model]] require causal (lower-triangular) attention masks. Flash Attention handles this efficiently by skipping upper-triangular tile pairs entirely, roughly halving FLOPs for decoder-only models.
 - **Multi-Head Support** — Each head of [[Multi-Head Attention]] is processed independently in parallel, allowing the tiling strategy to scale with the number of attention heads.
 
 ### Versions and Evolution
 
-- **FlashAttention v1 (2022)** — Original Dao et al. paper. Demonstrated 2–4× end-to-end training speedup on [[Large Language Models]] with O(N) memory scaling. Supported A100 and V100 GPUs.
+- **FlashAttention v1 (2022)** — Original Dao et al. paper. Demonstrated 2–4× end-to-end training speedup on [[Large Language Model]] with O(N) memory scaling. Supported A100 and V100 GPUs.
 - **FlashAttention-2 (2023)** — Rewrote the CUDA kernel to better exploit GPU parallelism: improved work partitioning across thread blocks and warps, reduced non-matmul operations in the inner loop, and added explicit support for [[Multi-Query Attention]] and [[Grouped Query Attention]]. Achieved near-peak FP16 throughput on A100.
 - **FlashAttention-3 (2024)** — Targeted NVIDIA Hopper (H100) architecture features: warp specialisation for overlapping computation and memory transfers, asynchronous data movement using the TMA unit, and [[Mixed Precision Training]] with FP8. Pushed utilisation above 75% of theoretical FP16 peak and above 1.2 PFLOPs/s on H100.
 - Vendor libraries including cuDNN (NVIDIA), ROCm/HIP (AMD), and XLA (Google) have incorporated Flash Attention kernels or equivalent IO-aware implementations.
 
 ### Applications and Use Cases
 
-- **Foundation Model Training** — Flash Attention is used in training of GPT-4, Llama 2 and 3, Mistral, Falcon, Gemma, and virtually every frontier [[Large Language Models]] released since 2023. It enables practical training on sequences of 4k–128k tokens.
+- **Foundation Model Training** — Flash Attention is used in training of GPT-4, Llama 2 and 3, Mistral, Falcon, Gemma, and virtually every frontier [[Large Language Model]] released since 2023. It enables practical training on sequences of 4k–128k tokens.
 - **Long-Context Modelling** — The sub-linear memory growth of Flash Attention is the primary enabler of [[Long Context Modelling]] (32k–1M token context windows) without prohibitive memory cost. Models like Claude 3, Gemini 1.5 Pro, and GPT-4o exploit this.
 - **[[Inference]] Serving** — Flash Attention accelerates prefill (processing the input prompt) in LLM serving stacks like vLLM, TGI, and TensorRT-LLM. Combined with [[KV Cache]] management and [[Paged Attention]], it underpins high-throughput [[Continuous Batching]] inference.
 - **Multimodal Models** — Vision transformers (ViT) and multimodal architectures (CLIP, Flamingo, LLaVA) also benefit from Flash Attention for image patch sequences, particularly at high resolutions.

@@ -21,7 +21,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:fiat-currency
 bridgesTo:
   - urn:ngm:class:digital-asset
@@ -36,8 +36,8 @@ partOf:
   - urn:ngm:class:virtual-economy
   - urn:ngm:class:financial-system
 relatedTo:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:financial-regulation
 ---
 

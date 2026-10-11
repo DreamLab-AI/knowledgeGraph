@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:policy-framework
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 dependsOn:
   - urn:ngm:class:authentication
   - urn:ngm:class:cryptographic-verification

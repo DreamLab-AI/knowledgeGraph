@@ -27,8 +27,8 @@ An open standard is a publicly accessible specification for a technology, protoc
 
 - **Ballot-based ratification** (ISO, IEEE): national bodies cast votes; supermajority required for approval.
 - **Rough consensus** ([[IETF]]): working groups reach broad agreement documented in RFCs; no formal vote.
-- **Member-driven working groups** ([[W3C]], [[Khronos Group]]): member organisations contribute engineers who draft, review, and ratify specifications.
-- **Community group / incubation** ([[W3C]] CGs): lightweight track for early-stage exploration before formal standardisation.
+- **Member-driven working groups** ([[World Wide Web Consortium]], [[Khronos Group]]): member organisations contribute engineers who draft, review, and ratify specifications.
+- **Community group / incubation** ([[World Wide Web Consortium]] CGs): lightweight track for early-stage exploration before formal standardisation.
 - **FRAND licensing commitments**: patent holders declare they will license essential patents on FRAND terms, enabling independent implementations.
 - **Royalty-free pledges**: stricter than FRAND; patent holders commit to zero royalties, enabling truly open ecosystems (common in web standards).
 
@@ -36,20 +36,20 @@ An open standard is a publicly accessible specification for a technology, protoc
 
 - **[[Spatial Computing]] and the [[Metaverse]]**
   - [[glTF]] (GL Transmission Format, Khronos): royalty-free format for 3D asset transmission; the "JPEG of 3D".
-  - [[USD]] (Universal Scene Description, Pixar/AOUSD): open format for complex scene interchange with layering and composition.
+  - [[Universal Scene Description]] (Universal Scene Description, Pixar/AOUSD): open format for complex scene interchange with layering and composition.
   - [[OpenXR]] (Khronos): cross-platform [[XR]] application runtime API, abstracting headsets and controllers from application code.
   - [[WebXR]] Device API (W3C): browser-native API for immersive experiences on the open web.
 - **Networking and the Web**
-  - [[TCP-IP]], [[HTTP]], [[TLS]], [[DNS]]: open IETF standards underpinning internet connectivity.
+  - [[TCP-IP]], [[HTTP]], [[Transport Layer Security]], [[DNS]]: open IETF standards underpinning internet connectivity.
   - [[HTML]], [[CSS]], [[JavaScript]]: W3C/WHATWG open standards for the web platform.
   - [[WebAssembly]] (Wasm): W3C standard for portable, near-native execution in browsers and beyond.
 - **Data and [[Interoperability]]**
   - [[JSON-LD]], [[RDF]], [[OWL]]: W3C semantic web standards enabling machine-readable linked data.
-  - [[OpenAPI Specification]]: de-facto open standard for describing RESTful [[API]]s.
+  - [[OpenAPI]]: de-facto open standard for describing RESTful [[API]]s.
   - [[FHIR]] (HL7): open standard for health data exchange.
 - **[[Distributed Systems]] and [[Blockchain]]**
   - [[Ethereum]] [[ERC]] token standards: community-ratified interface standards for smart contracts.
-  - [[DID]] (Decentralised Identifiers, W3C): open standard for self-sovereign identity.
+  - [[Decentralised Identifier]] (Decentralised Identifiers, W3C): open standard for self-sovereign identity.
   - [[ActivityPub]] (W3C): federated social networking protocol powering the [[Fediverse]].
 - **[[Artificial Intelligence]]**
   - [[ONNX]] (Open Neural Network Exchange): open format for AI model portability across frameworks.
@@ -58,7 +58,7 @@ An open standard is a publicly accessible specification for a technology, protoc
 
 ### Standards Bodies and Context
 
-- **[[W3C]]** (World Wide Web Consortium) — governs web platform standards including HTML, CSS, WebXR, JSON-LD, DID. Uses royalty-free patent policy.
+- **[[World Wide Web Consortium]]** (World Wide Web Consortium) — governs web platform standards including HTML, CSS, WebXR, JSON-LD, DID. Uses royalty-free patent policy.
 - **[[IETF]]** (Internet Engineering Task Force) — governs internet protocols (TCP/IP, HTTP, TLS, DNS, QUIC) via RFC process and rough-consensus model.
 - **[[ISO]]** (International Organisation for Standardisation) — ballot-based body; covers broad range including document formats (ISO 32000 for PDF), management systems, and measurement.
 - **[[IEEE]]** — covers electrical engineering, wireless (802.11 Wi-Fi, 802.3 Ethernet), and computing standards.

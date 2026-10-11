@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:compliance-carbon-market
   - urn:ngm:class:emissions-trading-scheme
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-carbon-tokens
   - urn:ngm:class:digital-mrvs
 uses:

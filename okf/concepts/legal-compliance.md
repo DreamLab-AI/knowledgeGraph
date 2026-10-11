@@ -43,15 +43,15 @@ supports:
   - urn:ngm:class:consumer-protection
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:bias-and-fairness
   - urn:ngm:class:liability
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 ---
 
 # Legal Compliance

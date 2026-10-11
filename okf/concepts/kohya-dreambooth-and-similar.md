@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:parameter-efficient-fine-tuning
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transfer-learning
 hasPart:
   - urn:ngm:class:hugging-face-accelerate
@@ -23,8 +23,8 @@ hasPart:
   - urn:ngm:class:resolution-bucketing
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:wd14-tagger
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
+  - urn:ngm:class:lora
   - urn:ngm:class:kohya-dreambooth-and-similar
   - urn:ngm:class:dataset-captioner
   - urn:ngm:class:noise-schedule
@@ -34,7 +34,7 @@ requires:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:py-torch
   - urn:ngm:class:training-dataset
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:base-model
   - urn:ngm:class:caption-files
   - urn:ngm:class:python-environment
@@ -59,7 +59,7 @@ dependsOn:
   - urn:ngm:class:cuda
   - urn:ngm:class:hugging-face-accelerate
   - urn:ngm:class:bitsandbytes
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:sdxl
   - urn:ngm:class:flux-1
   - urn:ngm:class:hidream-i1
@@ -102,7 +102,7 @@ uses:
   - urn:ngm:class:simpletuner
   - urn:ngm:class:ly-coris
   - urn:ngm:class:hcp-diffusion
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:kohya-dreambooth-and-similar
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:do-ra
@@ -132,7 +132,7 @@ relatedTo:
   - urn:ngm:class:flux-1
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:midjourney-text-to-image-service
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:text-to-image
   - urn:ngm:class:generative-models
   - urn:ngm:class:wd14-tagger

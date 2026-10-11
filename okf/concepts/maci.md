@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:zero-knowledge-proof
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 bridgesTo:
   - urn:ngm:class:quadratic-voting
 ---

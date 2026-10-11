@@ -27,11 +27,11 @@ supports:
   - urn:ngm:class:microcontroller
   - urn:ngm:class:edge-computing
 partOf:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 relatedTo:
   - urn:ngm:class:memory
   - urn:ngm:class:energy-efficiency
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:reliability
 ---
 

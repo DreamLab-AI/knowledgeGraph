@@ -482,10 +482,6 @@
       {
         "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded System"
       }
     ],
     "relatedTo": [

@@ -17,8 +17,8 @@ enables:
   - urn:ngm:class:policy-layer
   - urn:ngm:class:custody-layer
 bridgesTo:
-  - urn:ngm:class:cryptographic-infrastructure
-  - urn:ngm:class:did
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Identity Layer

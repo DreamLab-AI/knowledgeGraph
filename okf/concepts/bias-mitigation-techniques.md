@@ -40,9 +40,9 @@ enables:
   - urn:ngm:class:trustworthy-ai
 dependsOn:
   - urn:ngm:class:algorithmic-bias
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-engineering
 implements:
   - urn:ngm:class:fairness-constraints
@@ -72,8 +72,8 @@ supports:
   - urn:ngm:class:algorithmic-auditing
 standardizedBy:
   - urn:ngm:class:ieee-p-7003-2021
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-tr-24027
 partOf:
   - urn:ngm:class:responsible-ai
@@ -84,7 +84,7 @@ relatedTo:
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:bias-detection-methods
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:bias-in-large-language-models
   - urn:ngm:class:algorithmic-transparency
   - urn:ngm:class:model-evaluation

@@ -15,8 +15,6 @@ is-a:
   - urn:ngm:class:realm
   - urn:ngm:class:drqa
   - urn:ngm:class:orqa
-  - urn:ngm:class:colbert
-  - urn:ngm:class:splade
   - urn:ngm:class:bge-m3
   - urn:ngm:class:ance
   - urn:ngm:class:e5-embedding
@@ -97,7 +95,7 @@ standardizedBy:
   - urn:ngm:class:natural-questions
 relatedTo:
   - urn:ngm:class:embedding-search
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:language-model
   - urn:ngm:class:transformer-architecture

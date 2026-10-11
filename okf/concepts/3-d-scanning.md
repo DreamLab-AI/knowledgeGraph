@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:structured-light
   - urn:ngm:class:time-of-flight-sensor
 supports:
-  - urn:ngm:class:bim-virtual-model
+  - urn:ngm:class:building-information-modelling
   - urn:ngm:class:quality-inspection
   - urn:ngm:class:augmented-reality
 relatedTo:

@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:ethereum-smart-contract-platform-smart-contracts
   - urn:ngm:class:ordinals
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-management
 uses:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-network

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-heater",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft heater is an electrical resistance element used as active thermal control to keep components above their lower temperature limits.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

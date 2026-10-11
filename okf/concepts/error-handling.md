@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:retry-logic
   - urn:ngm:class:circuit-breaker
 requires:
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:observability
 enables:
   - urn:ngm:class:graceful-degradation

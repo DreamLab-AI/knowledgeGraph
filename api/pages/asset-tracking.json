@@ -131,8 +131,16 @@
         "label": "Actuator"
       },
       {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
         "id": "urn:ngm:class:iot-gateway",
         "label": "IoT Gateway"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
       },
       {
         "id": "urn:ngm:class:sensor-data",
@@ -149,14 +157,6 @@
       {
         "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
-      },
-      {
-        "id": "urn:ngm:class:replication",
-        "label": "Replication"
-      },
-      {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
       }
     ],
     "requires": [
@@ -165,35 +165,39 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:device-identity",
+        "label": "Device Identity"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:firmware-update",
+        "label": "Firmware Update"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:clock-synchronization",
-        "label": "Clock Synchronisation"
-      },
-      {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       },
       {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
+      },
+      {
         "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
-      },
-      {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
-      },
-      {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
@@ -201,6 +205,10 @@
       {
         "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
       },
       {
         "id": "urn:ngm:class:predictive-maintenance",
@@ -211,20 +219,12 @@
         "label": "Smart City"
       },
       {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
         "id": "urn:ngm:class:telemetry-and-analytics",
         "label": "Telemetry & Analytics"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:high-availability",
-        "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:horizontal-scalability",
-        "label": "Horizontal Scalability"
       }
     ],
     "dependsOn": [
@@ -253,6 +253,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
         "id": "urn:ngm:class:traditional-scada",
         "label": "Traditional SCADA"
       },
@@ -279,8 +283,12 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:decentralised-governance",
@@ -289,10 +297,6 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:spatial-computing",
-        "label": "Spatial Computing"
       },
       {
         "id": "urn:ngm:class:data",
@@ -309,6 +313,14 @@
         "label": "CoAP"
       },
       {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      },
+      {
         "id": "urn:ngm:class:microcontroller",
         "label": "Microcontroller"
       },
@@ -321,20 +333,12 @@
         "label": "Sensor"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:wireless-communication",
         "label": "Wireless Communication"
-      },
-      {
-        "id": "urn:ngm:class:remote-procedure-call",
-        "label": "Remote Procedure Call"
-      },
-      {
-        "id": "urn:ngm:class:service-discovery",
-        "label": "Service Discovery"
       }
     ],
     "supports": [
@@ -385,8 +389,8 @@
         "label": "ITU"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ietf",
@@ -419,20 +423,20 @@
         "label": "Fog Computing"
       },
       {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      },
+      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ]
   },

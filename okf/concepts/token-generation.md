@@ -20,7 +20,7 @@ dependsOn:
   - urn:ngm:class:transformer
   - urn:ngm:class:tokenization
   - urn:ngm:class:gpu-acceleration
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:encoder-model
 uses:

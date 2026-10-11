@@ -23,7 +23,7 @@ dependsOn:
 uses:
   - urn:ngm:class:public-key-cryptography
 supports:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:secure-boot
 relatedTo:
   - urn:ngm:class:intel-sgx

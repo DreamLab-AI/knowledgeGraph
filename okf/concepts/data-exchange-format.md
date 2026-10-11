@@ -26,7 +26,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:interoperability
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:xml
 supports:
   - urn:ngm:class:api
@@ -38,7 +38,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:data-standards
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 ---
 
 # Data Exchange Format

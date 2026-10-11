@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:edge-cloud-collaboration
   - urn:ngm:class:devops
 standardizedBy:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:open-container-initiative
 relatedTo:
   - urn:ngm:class:distributed-systems

@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:computer-vision
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:generative-ai
   - urn:ngm:class:ai-technique

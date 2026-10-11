@@ -55,7 +55,7 @@ implements:
   - urn:ngm:class:nist-cybersecurity-framework
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:policy-as-code
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:secure-software-development-lifecycle
 contrastsWith:
   - urn:ngm:class:manual-security-audit
@@ -81,7 +81,7 @@ supports:
   - urn:ngm:class:cybersecurity-policy
 standardizedBy:
   - urn:ngm:class:nist-cybersecurity-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:slsa-framework
   - urn:ngm:class:ncsc-cybersecurity-framework
   - urn:ngm:class:cybersecurity-standard

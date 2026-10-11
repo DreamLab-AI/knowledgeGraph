@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lunar-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Lunar radiation environment is the natural radiation environment on or in the vicinity of the Moon, made up of free space radiation, radiation produced by its interaction with the lunar surface, and radiation from naturally radioactive elements in the lunar crust.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-radiation-environment",

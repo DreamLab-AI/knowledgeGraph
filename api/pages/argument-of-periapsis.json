@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:argument-of-periapsis",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Argument of periapsis is the in-plane angle from the ascending node to periapsis, measured in the direction of orbital motion.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

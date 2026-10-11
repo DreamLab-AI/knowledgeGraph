@@ -112,7 +112,7 @@ A structured survey of the principal paradigms and architectures in machine lear
 
 #### 2️⃣ Deep Learning
 
-#### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
+#### 3️⃣ Reinforcement Learning from Human Feedback [[Reinforcement Learning from Human Feedback]]
 
 #### 4️⃣ Direct Preference Optimisation [[Direct Preference Optimisation]]
 

@@ -17,7 +17,7 @@ dependsOn:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:blockchain
 implements:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
 contrastsWith:
   - urn:ngm:class:fungible-token
 bridgesTo:
@@ -25,7 +25,7 @@ bridgesTo:
   - urn:ngm:class:non-fungible-token
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 supports:
   - urn:ngm:class:fractional-ownership
   - urn:ngm:class:digital-asset

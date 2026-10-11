@@ -4,6 +4,7 @@ type: Class
 title: Sun Sensor
 resource: urn:ngm:class:sun-sensor
 domain: space-science-and-systems
+description: A sun sensor measures the direction of the Sun relative to a spacecraft.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Sun Sensor
+
+A sun sensor measures the direction of the Sun relative to a spacecraft.

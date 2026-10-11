@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptographic-verification
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
 enables:
   - urn:ngm:class:deepfake-detection

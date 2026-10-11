@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:presentation-attack-detection
 enables:
   - urn:ngm:class:biometric-authentication
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:access-control
   - urn:ngm:class:identity-proofing
 contrastsWith:
@@ -25,7 +25,7 @@ bridgesTo:
   - urn:ngm:class:distributed-collaboration
 uses:
   - urn:ngm:class:biometric-binding-mechanism
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:liveness-detection
   - urn:ngm:class:feature-extraction
 supports:

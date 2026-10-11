@@ -21,7 +21,7 @@ The foundational theoretical constructs and abstract principles underlying artif
 - [[Artificial Intelligence]]
 - [[Cognitive Architecture]]
 - [[Knowledge Representation]]
-- [[Machine Learning Discipline]]
+- [[Machine Learning]]
 
   #### References
 

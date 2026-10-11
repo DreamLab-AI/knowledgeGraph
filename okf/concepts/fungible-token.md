@@ -19,23 +19,23 @@ enables:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:token-swapping
 implements:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:spl-token
 contrastsWith:
   - urn:ngm:class:nft
   - urn:ngm:class:semi-fungible-token
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:digital-currency
 uses:
   - urn:ngm:class:wallet
   - urn:ngm:class:public-key-cryptography
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:stablecoin
   - urn:ngm:class:initial-coin-offering
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:deflationary-token

@@ -72,7 +72,7 @@ standardizedBy:
   - urn:ngm:class:beir-benchmark
   - urn:ngm:class:sts-benchmark
 relatedTo:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:feature-extraction
   - urn:ngm:class:bert
   - urn:ngm:class:nearest-neighbor-search

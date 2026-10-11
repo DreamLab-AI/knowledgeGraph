@@ -8,7 +8,7 @@ description: Any machine learning model that captures dependencies across ordere
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 uses:
   - urn:ngm:class:beam-search
 relatedTo:

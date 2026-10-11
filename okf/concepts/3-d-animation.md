@@ -27,7 +27,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:animation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:generative-ai
 uses:
   - urn:ngm:class:inverse-kinematics
@@ -38,8 +38,8 @@ supports:
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:extended-reality
 standardizedBy:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:iso-iec-jtc-1-sc-24
 partOf:
   - urn:ngm:class:sc-content-and-assets

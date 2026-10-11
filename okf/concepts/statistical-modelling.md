@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:time-series-analysis
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
 partOf:
   - urn:ngm:class:data-analysis

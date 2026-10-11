@@ -17,7 +17,7 @@ uses:
 relatedTo:
   - urn:ngm:class:nft-ownership-proof
   - urn:ngm:class:nft
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:digital-rights-management
   - urn:ngm:class:royalty-mechanism
   - urn:ngm:class:blockchain-economics

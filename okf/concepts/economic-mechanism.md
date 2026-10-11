@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:token
 enables:
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:liquidity-mining
 dependsOn:
   - urn:ngm:class:smart-contract
@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:automated-market-maker
 supports:
   - urn:ngm:class:network-security
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 partOf:
   - urn:ngm:class:tokenomics
 relatedTo:

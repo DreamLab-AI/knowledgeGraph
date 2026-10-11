@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:encryption
 bridgesTo:
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:hash-function

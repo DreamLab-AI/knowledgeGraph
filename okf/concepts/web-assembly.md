@@ -40,7 +40,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:blockchain
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:open-xr
   - urn:ngm:class:model-context-protocol
 uses:

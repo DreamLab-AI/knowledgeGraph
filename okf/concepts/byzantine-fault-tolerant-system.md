@@ -36,7 +36,7 @@ contrastsWith:
   - urn:ngm:class:paxos
 bridgesTo:
   - urn:ngm:class:smart-contract-platform
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 supports:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:permissioned-blockchain

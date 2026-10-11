@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@2f5684dc9e823fab77f90eaa3759610024541b46
+generation: visionGraph@ede50b895a401b1169ca1c810dfb39a3aa2273e2
 vocabulary_version: 1
-concept_count: 9354
+concept_count: 9242
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-9354 concepts, exported from generation `visionGraph@2f5684dc9e823fab77f90eaa3759610024541b46`.
+9242 concepts, exported from generation `visionGraph@ede50b895a401b1169ca1c810dfb39a3aa2273e2`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -382,7 +382,7 @@ concept_count: 9354
 - [AI Model Architecture](concepts/ai-model-architecture.md) — `urn:ngm:class:ai-model-architecture`
 - [AI Model Auditing](concepts/ai-model-auditing.md) — `urn:ngm:class:ai-model-auditing`
 - [AI Model Benchmarking](concepts/ai-model-benchmarking.md) — `urn:ngm:class:ai-model-benchmarking`
-- [AI Model Card](concepts/ai-model-card.md) — `urn:ngm:class:ai-model-card`
+- [Model Card](concepts/ai-model-card.md) — `urn:ngm:class:ai-model-card`
 - [AI Model Competition](concepts/ai-model-competition.md) — `urn:ngm:class:ai-model-competition`
 - [AI Model Development](concepts/ai-model-development.md) — `urn:ngm:class:ai-model-development`
 - [AI Model Inference Engine](concepts/ai-model-inference-engine.md) — `urn:ngm:class:ai-model-inference-engine`
@@ -474,17 +474,15 @@ concept_count: 9354
 - [AI Wearables](concepts/ai-wearables.md) — `urn:ngm:class:ai-wearables`
 - [AI Workflow Automation](concepts/ai-workflow-automation.md) — `urn:ngm:class:ai-workflow-automation`
 - [AI Workforce Impact](concepts/ai-workforce-impact.md) — `urn:ngm:class:ai-workforce-impact`
-- [AIApplications](concepts/aiapplications.md) — `urn:ngm:class:aiapplications`
 - [AICafev6](concepts/aicafev6.md) — `urn:ngm:class:aicafev6`
-- [AIEthics](concepts/aiethics.md) — `urn:ngm:class:aiethics`
 - [AIOps](concepts/aiops.md) — `urn:ngm:class:aiops`
 - [Air Gap](concepts/air-gap.md) — `urn:ngm:class:air-gap`
 - [Air Quality Monitoring](concepts/air-quality-monitoring.md) — `urn:ngm:class:air-quality-monitoring`
 - [Airborne Remote Sensing](concepts/airborne-remote-sensing.md) — `urn:ngm:class:airborne-remote-sensing`
+- [Airbus Defence and Space](concepts/airbus-defence-and-space.md) — `urn:ngm:class:airbus-defence-and-space`
 - [Airdrop](concepts/airdrop.md) — `urn:ngm:class:airdrop`
 - [AISI](concepts/aisi.md) — `urn:ngm:class:aisi`
 - [AISI Frontier AI Safety Framework](concepts/aisi-frontier-ai-safety-framework.md) — `urn:ngm:class:aisi-frontier-ai-safety-framework`
-- [AISystem](concepts/aisystem.md) — `urn:ngm:class:aisystem`
 - [Alan Turing Institute](concepts/alan-turing-institute.md) — `urn:ngm:class:alan-turing-institute`
 - [ALBERT](concepts/albert.md) — `urn:ngm:class:albert`
 - [Aleo](concepts/aleo.md) — `urn:ngm:class:aleo`
@@ -524,7 +522,6 @@ concept_count: 9354
 - [Ambient Occlusion](concepts/ambient-occlusion.md) — `urn:ngm:class:ambient-occlusion`
 - [Ambisonics](concepts/ambisonics.md) — `urn:ngm:class:ambisonics`
 - [Amd Sev](concepts/amd-sev.md) — `urn:ngm:class:amd-sev`
-- [AML](concepts/aml.md) — `urn:ngm:class:aml`
 - [AML KYC Compliance](concepts/aml-kyc-compliance.md) — `urn:ngm:class:aml-kyc-compliance`
 - [AMM Algorithm](concepts/amm-algorithm.md) — `urn:ngm:class:amm-algorithm`
 - [AMQP](concepts/amqp.md) — `urn:ngm:class:amqp`
@@ -545,7 +542,6 @@ concept_count: 9354
 - [Animation State Machine](concepts/animation-state-machine.md) — `urn:ngm:class:animation-state-machine`
 - [Animation Technique](concepts/animation-technique.md) — `urn:ngm:class:animation-technique`
 - [Annotated Dataset](concepts/annotated-dataset.md) — `urn:ngm:class:annotated-dataset`
-- [Annotated Training Data](concepts/annotated-training-data.md) — `urn:ngm:class:annotated-training-data`
 - [Anoma](concepts/anoma.md) — `urn:ngm:class:anoma`
 - [Anomaly Detection](concepts/anomaly-detection.md) — `urn:ngm:class:anomaly-detection`
 - [AnonCreds](concepts/anon-creds.md) — `urn:ngm:class:anon-creds`
@@ -782,10 +778,8 @@ concept_count: 9354
 - [Authoring Tool](concepts/authoring-tool.md) — `urn:ngm:class:authoring-tool`
 - [Authorisation](concepts/authorisation.md) — `urn:ngm:class:authorisation`
 - [Authorised Representative](concepts/authorised-representative.md) — `urn:ngm:class:authorised-representative`
-- [Authorization](concepts/authorization.md) — `urn:ngm:class:authorization`
 - [AutoGen](concepts/auto-gen.md) — `urn:ngm:class:auto-gen`
 - [AutoML](concepts/auto-ml.md) — `urn:ngm:class:auto-ml`
-- [Auto-Scaling](concepts/auto-scaling.md) — `urn:ngm:class:auto-scaling`
 - [Autoencoder](concepts/autoencoder.md) — `urn:ngm:class:autoencoder`
 - [Automata Theory](concepts/automata-theory.md) — `urn:ngm:class:automata-theory`
 - [Automated Code Review](concepts/automated-code-review.md) — `urn:ngm:class:automated-code-review`
@@ -872,6 +866,7 @@ concept_count: 9354
 - [Backup and Recovery](concepts/backup-and-recovery.md) — `urn:ngm:class:backup-and-recovery`
 - [Backward Chaining](concepts/backward-chaining.md) — `urn:ngm:class:backward-chaining`
 - [Backward Compatibility](concepts/backward-compatibility.md) — `urn:ngm:class:backward-compatibility`
+- [BAE Systems](concepts/bae-systems.md) — `urn:ngm:class:bae-systems`
 - [Bagging](concepts/bagging.md) — `urn:ngm:class:bagging`
 - [Balance of Payments](concepts/balance-of-payments.md) — `urn:ngm:class:balance-of-payments`
 - [Balancer](concepts/balancer.md) — `urn:ngm:class:balancer`
@@ -921,12 +916,9 @@ concept_count: 9354
 - [BC-0442-certification-and-compliance](concepts/bc-0442-certification-and-compliance.md) — `urn:ngm:class:bc-0442-certification-and-compliance`
 - [BC-0456-virtual-asset-service-providers](concepts/bc-0456-virtual-asset-service-providers.md) — `urn:ngm:class:bc-0456-virtual-asset-service-providers`
 - [BC-0480-kyc-requirements](concepts/bc-0480-kyc-requirements.md) — `urn:ngm:class:bc-0480-kyc-requirements`
-- [BC-0482-eu-mica-regulation](concepts/bc-0482-eu-mica-regulation.md) — `urn:ngm:class:bc-0482-eu-mica-regulation`
 - [BC-0484-markets-in-crypto-assets](concepts/bc-0484-markets-in-crypto-assets.md) — `urn:ngm:class:bc-0484-markets-in-crypto-assets`
-- [Cryptographic Primitive (Blockchain)](concepts/bc-cryptographic-primitive.md) — `urn:ngm:class:bc-cryptographic-primitive`
 - [DeFi and Economics](concepts/bc-defi-and-economics.md) — `urn:ngm:class:bc-defi-and-economics`
 - [Governance and Regulation](concepts/bc-governance-and-regulation.md) — `urn:ngm:class:bc-governance-and-regulation`
-- [Network Component (Blockchain)](concepts/bc-network-component.md) — `urn:ngm:class:bc-network-component`
 - [Protocol and Consensus](concepts/bc-protocol-and-consensus.md) — `urn:ngm:class:bc-protocol-and-consensus`
 - [Token and Asset](concepts/bc-token-and-asset.md) — `urn:ngm:class:bc-token-and-asset`
 - [BDI Model](concepts/bdi-model.md) — `urn:ngm:class:bdi-model`
@@ -1147,7 +1139,6 @@ concept_count: 9354
 - [BOLT11](concepts/bolt-11.md) — `urn:ngm:class:bolt-11`
 - [BOLT12](concepts/bolt-12.md) — `urn:ngm:class:bolt-12`
 - [BOLT Specifications](concepts/bolt-specifications.md) — `urn:ngm:class:bolt-specifications`
-- [BOLT12 Offers](concepts/bolt12-offers.md) — `urn:ngm:class:bolt12-offers`
 - [Boosting](concepts/boosting.md) — `urn:ngm:class:boosting`
 - [Bootstrap Node](concepts/bootstrap-node.md) — `urn:ngm:class:bootstrap-node`
 - [Boston Dynamics Spot](concepts/boston-dynamics-spot.md) — `urn:ngm:class:boston-dynamics-spot`
@@ -1289,7 +1280,6 @@ concept_count: 9354
 - [Cash App](concepts/cash-app.md) — `urn:ngm:class:cash-app`
 - [Cashu](concepts/cashu.md) — `urn:ngm:class:cashu`
 - [Casper Ffg](concepts/casper-ffg.md) — `urn:ngm:class:casper-ffg`
-- [AI Infrastructure (Artificial Intelligence)](concepts/cat-ai-infrastructure.md) — `urn:ngm:class:cat-ai-infrastructure`
 - [Catastrophic Risk Assessment](concepts/catastrophic-risk-assessment.md) — `urn:ngm:class:catastrophic-risk-assessment`
 - [Catastrophic Risk Reduction](concepts/catastrophic-risk-reduction.md) — `urn:ngm:class:catastrophic-risk-reduction`
 - [Category Hierarchies](concepts/category-hierarchies.md) — `urn:ngm:class:category-hierarchies`
@@ -1300,13 +1290,11 @@ concept_count: 9354
 - [CBDC Cross-Border Settlement](concepts/cbdc-cross-border-settlement.md) — `urn:ngm:class:cbdc-cross-border-settlement`
 - [CBDC Frameworks](concepts/cbdc-frameworks.md) — `urn:ngm:class:cbdc-frameworks`
 - [CBDC Infrastructure](concepts/cbdc-infrastructure.md) — `urn:ngm:class:cbdc-infrastructure`
-- [CBDCs](concepts/cbdcs.md) — `urn:ngm:class:cbdcs`
 - [CBECI](concepts/cbeci.md) — `urn:ngm:class:cbeci`
 - [CBECI Methodology](concepts/cbeci-methodology.md) — `urn:ngm:class:cbeci-methodology`
 - [CBOR](concepts/cbor.md) — `urn:ngm:class:cbor`
 - [CCPA](concepts/ccpa.md) — `urn:ngm:class:ccpa`
 - [CDLA](concepts/cdla.md) — `urn:ngm:class:cdla`
-- [CDN](concepts/cdn.md) — `urn:ngm:class:cdn`
 - [CE Marking](concepts/ce-marking.md) — `urn:ngm:class:ce-marking`
 - [Celestia](concepts/celestia.md) — `urn:ngm:class:celestia`
 - [Celestial Mechanics](concepts/celestial-mechanics.md) — `urn:ngm:class:celestial-mechanics`
@@ -1318,7 +1306,6 @@ concept_count: 9354
 - [Censorship Resistant Payments](concepts/censorship-resistant-payments.md) — `urn:ngm:class:censorship-resistant-payments`
 - [Central Bank](concepts/central-bank.md) — `urn:ngm:class:central-bank`
 - [Central Bank Digital Currency](concepts/central-bank-digital-currency.md) — `urn:ngm:class:central-bank-digital-currency`
-- [Central Bank Digital Currency (CBDC)](concepts/central-bank-digital-currency-cbdc.md) — `urn:ngm:class:central-bank-digital-currency-cbdc`
 - [Central Bank Infrastructure](concepts/central-bank-infrastructure.md) — `urn:ngm:class:central-bank-infrastructure`
 - [Central Banking](concepts/central-banking.md) — `urn:ngm:class:central-banking`
 - [Central Limit Theorem](concepts/central-limit-theorem.md) — `urn:ngm:class:central-limit-theorem`
@@ -1333,7 +1320,6 @@ concept_count: 9354
 - [Centralised Identifier](concepts/centralised-identifier.md) — `urn:ngm:class:centralised-identifier`
 - [Centralised Identity](concepts/centralised-identity.md) — `urn:ngm:class:centralised-identity`
 - [Centralised Application](concepts/centralized-application.md) — `urn:ngm:class:centralized-application`
-- [Centralized Exchange](concepts/centralized-exchange.md) — `urn:ngm:class:centralized-exchange`
 - [Centralized Identity Provider](concepts/centralized-identity-provider.md) — `urn:ngm:class:centralized-identity-provider`
 - [Centralized Swarm Control](concepts/centralized-swarm-control.md) — `urn:ngm:class:centralized-swarm-control`
 - [Centrifuge](concepts/centrifuge.md) — `urn:ngm:class:centrifuge`
@@ -1468,7 +1454,6 @@ concept_count: 9354
 - [Clustered Data State](concepts/clustered-data-state.md) — `urn:ngm:class:clustered-data-state`
 - [Clustering](concepts/clustering.md) — `urn:ngm:class:clustering`
 - [CNC Machining](concepts/cnc-machining.md) — `urn:ngm:class:cnc-machining`
-- [CNCF](concepts/cncf.md) — `urn:ngm:class:cncf`
 - [CoAP](concepts/co-ap.md) — `urn:ngm:class:co-ap`
 - [Co-creation](concepts/co-creation.md) — `urn:ngm:class:co-creation`
 - [Co-Presence](concepts/co-presence.md) — `urn:ngm:class:co-presence`
@@ -1517,7 +1502,6 @@ concept_count: 9354
 - [Collaborative Operation](concepts/collaborative-systems-modality-operation.md) — `urn:ngm:class:collaborative-systems-modality-operation`
 - [Collaborative Robot](concepts/collaborative-systems-modality-robot.md) — `urn:ngm:class:collaborative-systems-modality-robot`
 - [Collaborative Robotics](concepts/collaborative-systems-modality-robotics.md) — `urn:ngm:class:collaborative-systems-modality-robotics`
-- [Collaborative Robots](concepts/collaborative-systems-modality-robots.md) — `urn:ngm:class:collaborative-systems-modality-robots`
 - [Collaborative Simulation](concepts/collaborative-systems-modality-simulation.md) — `urn:ngm:class:collaborative-systems-modality-simulation`
 - [Collaborative Technology](concepts/collaborative-systems-modality-technology.md) — `urn:ngm:class:collaborative-systems-modality-technology`
 - [Collaborative Whiteboard](concepts/collaborative-systems-modality-whiteboard.md) — `urn:ngm:class:collaborative-systems-modality-whiteboard`
@@ -1552,7 +1536,6 @@ concept_count: 9354
 - [Commodity Money](concepts/commodity-money.md) — `urn:ngm:class:commodity-money`
 - [Common Crawl](concepts/common-crawl.md) — `urn:ngm:class:common-crawl`
 - [Common Pool Resources](concepts/common-pool-resources.md) — `urn:ngm:class:common-pool-resources`
-- [Common Sense Reasoning](concepts/common-sense-reasoning.md) — `urn:ngm:class:common-sense-reasoning`
 - [Commons-Based Peer Production](concepts/commons-based-peer-production.md) — `urn:ngm:class:commons-based-peer-production`
 - [Commons Governance](concepts/commons-governance.md) — `urn:ngm:class:commons-governance`
 - [Commons Stack](concepts/commons-stack.md) — `urn:ngm:class:commons-stack`
@@ -1715,7 +1698,6 @@ concept_count: 9354
 - [Conspiratorial Thinking in Technology Communities](concepts/conspiratorial-thinking-in-technology-communities.md) — `urn:ngm:class:conspiratorial-thinking-in-technology-communities`
 - [Constant Product Formula](concepts/constant-product-formula.md) — `urn:ngm:class:constant-product-formula`
 - [Constitutional AI](concepts/constitutional-ai.md) — `urn:ngm:class:constitutional-ai`
-- [Constitutional AI Training Methodology](concepts/constitutional-ai-training-methodology.md) — `urn:ngm:class:constitutional-ai-training-methodology`
 - [Constitutional AI Language Model Family](concepts/constitutional-ai-training-methodology-language-model-family.md) — `urn:ngm:class:constitutional-ai-training-methodology-language-model-family`
 - [Constitutional Principle](concepts/constitutional-principle.md) — `urn:ngm:class:constitutional-principle`
 - [Constrained Decoding](concepts/constrained-decoding.md) — `urn:ngm:class:constrained-decoding`
@@ -2066,14 +2048,12 @@ concept_count: 9354
 - [DALL-E 3](concepts/dall-e-3.md) — `urn:ngm:class:dall-e-3`
 - [Dama Dmbok](concepts/dama-dmbok.md) — `urn:ngm:class:dama-dmbok`
 - [Danksharding](concepts/danksharding.md) — `urn:ngm:class:danksharding`
-- [DAO](concepts/dao.md) — `urn:ngm:class:dao`
 - [DAO Analytics](concepts/dao-analytics.md) — `urn:ngm:class:dao-analytics`
 - [DAO Governance](concepts/dao-governance.md) — `urn:ngm:class:dao-governance`
 - [DAO Governance for Telecollaboration](concepts/dao-governance-for-telecollaboration.md) — `urn:ngm:class:dao-governance-for-telecollaboration`
 - [DAO Legal Structures](concepts/dao-legal-structures.md) — `urn:ngm:class:dao-legal-structures`
 - [DAO Tooling](concepts/dao-tooling.md) — `urn:ngm:class:dao-tooling`
 - [Dao Treasury](concepts/dao-treasury.md) — `urn:ngm:class:dao-treasury`
-- [DAOGovernance](concepts/daogovernance.md) — `urn:ngm:class:daogovernance`
 - [DApp](concepts/dapp.md) — `urn:ngm:class:dapp`
 - [Dark Energy](concepts/dark-energy.md) — `urn:ngm:class:dark-energy`
 - [Dark Matter](concepts/dark-matter.md) — `urn:ngm:class:dark-matter`
@@ -2095,7 +2075,6 @@ concept_count: 9354
 - [Data Breach](concepts/data-breach.md) — `urn:ngm:class:data-breach`
 - [Data Breach Notification](concepts/data-breach-notification.md) — `urn:ngm:class:data-breach-notification`
 - [Data Brokers](concepts/data-brokers.md) — `urn:ngm:class:data-brokers`
-- [Data Catalog](concepts/data-catalog.md) — `urn:ngm:class:data-catalog`
 - [Data Catalogue](concepts/data-catalogue.md) — `urn:ngm:class:data-catalogue`
 - [Data Center Infrastructure](concepts/data-center-infrastructure.md) — `urn:ngm:class:data-center-infrastructure`
 - [Data Center Moratorium](concepts/data-center-moratorium.md) — `urn:ngm:class:data-center-moratorium`
@@ -2224,14 +2203,11 @@ concept_count: 9354
 - [Communication Technology](concepts/dc-communication.md) — `urn:ngm:class:dc-communication`
 - [Protocol and Infrastructure](concepts/dc-protocol-and-infra.md) — `urn:ngm:class:dc-protocol-and-infra`
 - [DC Servo Motor](concepts/dc-servo-motor.md) — `urn:ngm:class:dc-servo-motor`
-- [Telepresence (Distributed Collaboration)](concepts/dc-telepresence.md) — `urn:ngm:class:dc-telepresence`
 - [Workspace Tools](concepts/dc-workspace-tools.md) — `urn:ngm:class:dc-workspace-tools`
 - [DDoS Mitigation](concepts/ddos-mitigation.md) — `urn:ngm:class:ddos-mitigation`
 - [DDS](concepts/dds.md) — `urn:ngm:class:dds`
 - [DDS Middleware](concepts/dds-middleware.md) — `urn:ngm:class:dds-middleware`
 - [De BER Ta](concepts/de-ber-ta.md) — `urn:ngm:class:de-ber-ta`
-- [DeFi](concepts/de-fi.md) — `urn:ngm:class:de-fi`
-- [De Fi Protocol](concepts/de-fi-protocol.md) — `urn:ngm:class:de-fi-protocol`
 - [De Fi Services](concepts/de-fi-services.md) — `urn:ngm:class:de-fi-services`
 - [Dead Reckoning](concepts/dead-reckoning.md) — `urn:ngm:class:dead-reckoning`
 - [Deanonymisation](concepts/deanonymisation.md) — `urn:ngm:class:deanonymisation`
@@ -2254,30 +2230,18 @@ concept_count: 9354
 - [Decentralised Finance](concepts/decentralised-finance.md) — `urn:ngm:class:decentralised-finance`
 - [Decentralised Governance](concepts/decentralised-governance.md) — `urn:ngm:class:decentralised-governance`
 - [Decentralised Identifier](concepts/decentralised-identifier.md) — `urn:ngm:class:decentralised-identifier`
-- [Decentralised Identifiers](concepts/decentralised-identifiers.md) — `urn:ngm:class:decentralised-identifiers`
 - [Decentralised Identity](concepts/decentralised-identity.md) — `urn:ngm:class:decentralised-identity`
 - [Decentralised Network](concepts/decentralised-network.md) — `urn:ngm:class:decentralised-network`
 - [Decentralised Storage](concepts/decentralised-storage.md) — `urn:ngm:class:decentralised-storage`
 - [Decentralised Trust](concepts/decentralised-trust.md) — `urn:ngm:class:decentralised-trust`
 - [Decentralised Web](concepts/decentralised-web.md) — `urn:ngm:class:decentralised-web`
-- [Decentralization](concepts/decentralization.md) — `urn:ngm:class:decentralization`
 - [Decentralization Layer](concepts/decentralization-layer.md) — `urn:ngm:class:decentralization-layer`
-- [Decentralized Application](concepts/decentralized-application.md) — `urn:ngm:class:decentralized-application`
-- [Decentralized Authentication](concepts/decentralized-authentication.md) — `urn:ngm:class:decentralized-authentication`
-- [Decentralized Autonomous Organization](concepts/decentralized-autonomous-organization.md) — `urn:ngm:class:decentralized-autonomous-organization`
 - [Decentralized Control](concepts/decentralized-control.md) — `urn:ngm:class:decentralized-control`
-- [Decentralized Exchange](concepts/decentralized-exchange.md) — `urn:ngm:class:decentralized-exchange`
 - [Decentralized Exchange (DEX)](concepts/decentralized-exchange-dex.md) — `urn:ngm:class:decentralized-exchange-dex`
-- [Decentralized Finance](concepts/decentralized-finance.md) — `urn:ngm:class:decentralized-finance`
 - [Decentralized Finance (DeFi)](concepts/decentralized-finance-de-fi.md) — `urn:ngm:class:decentralized-finance-de-fi`
-- [Decentralized Governance](concepts/decentralized-governance.md) — `urn:ngm:class:decentralized-governance`
-- [Decentralized Identifier](concepts/decentralized-identifier.md) — `urn:ngm:class:decentralized-identifier`
-- [Decentralized Identifiers](concepts/decentralized-identifiers.md) — `urn:ngm:class:decentralized-identifiers`
-- [Decentralized Identity](concepts/decentralized-identity.md) — `urn:ngm:class:decentralized-identity`
 - [Decentralized Identity (DID)](concepts/decentralized-identity-did.md) — `urn:ngm:class:decentralized-identity-did`
 - [Decentralized Identity Foundation](concepts/decentralized-identity-foundation.md) — `urn:ngm:class:decentralized-identity-foundation`
 - [Decentralized Key Storage](concepts/decentralized-key-storage.md) — `urn:ngm:class:decentralized-key-storage`
-- [Decentralized Storage](concepts/decentralized-storage.md) — `urn:ngm:class:decentralized-storage`
 - [Decentralized Swarm Control](concepts/decentralized-swarm-control.md) — `urn:ngm:class:decentralized-swarm-control`
 - [Decentralized Trading](concepts/decentralized-trading.md) — `urn:ngm:class:decentralized-trading`
 - [Decision Engine](concepts/decision-engine.md) — `urn:ngm:class:decision-engine`
@@ -2307,7 +2271,6 @@ concept_count: 9354
 - [Deepfakes and fraudulent content](concepts/deepfakes-and-fraudulent-content.md) — `urn:ngm:class:deepfakes-and-fraudulent-content`
 - [Defect Detection](concepts/defect-detection.md) — `urn:ngm:class:defect-detection`
 - [Defence In Depth](concepts/defence-in-depth.md) — `urn:ngm:class:defence-in-depth`
-- [Defense In Depth](concepts/defense-in-depth.md) — `urn:ngm:class:defense-in-depth`
 - [Deferred Rendering](concepts/deferred-rendering.md) — `urn:ngm:class:deferred-rendering`
 - [DeFi Infrastructure](concepts/defi-infrastructure.md) — `urn:ngm:class:defi-infrastructure`
 - [DeFi Protocol](concepts/defi-protocol.md) — `urn:ngm:class:defi-protocol`
@@ -2386,7 +2349,6 @@ concept_count: 9354
 - [Dialogue System](concepts/dialogue-system.md) — `urn:ngm:class:dialogue-system`
 - [Dialogue Systems](concepts/dialogue-systems.md) — `urn:ngm:class:dialogue-systems`
 - [DICOM](concepts/dicom.md) — `urn:ngm:class:dicom`
-- [DID](concepts/did.md) — `urn:ngm:class:did`
 - [DID Controller](concepts/did-controller.md) — `urn:ngm:class:did-controller`
 - [DID Document](concepts/did-document.md) — `urn:ngm:class:did-document`
 - [DID Method](concepts/did-method.md) — `urn:ngm:class:did-method`
@@ -2693,7 +2655,6 @@ concept_count: 9354
 - [Dynamics](concepts/dynamics.md) — `urn:ngm:class:dynamics`
 - [E-Commerce](concepts/e-commerce.md) — `urn:ngm:class:e-commerce`
 - [E-Contract Arbitration](concepts/e-contract-arbitration.md) — `urn:ngm:class:e-contract-arbitration`
-- [eIDAS](concepts/e-idas.md) — `urn:ngm:class:e-idas`
 - [eIDAS 2.0](concepts/e-idas-2-0.md) — `urn:ngm:class:e-idas-2-0`
 - [E-Waste](concepts/e-waste.md) — `urn:ngm:class:e-waste`
 - [Early Stopping](concepts/early-stopping.md) — `urn:ngm:class:early-stopping`
@@ -2804,7 +2765,6 @@ concept_count: 9354
 - [Efficiency AI](concepts/efficiency-ai.md) — `urn:ngm:class:efficiency-ai`
 - [eIDAS Regulation](concepts/eidas-regulation.md) — `urn:ngm:class:eidas-regulation`
 - [EigenLayer](concepts/eigen-layer.md) — `urn:ngm:class:eigen-layer`
-- [EIP](concepts/eip.md) — `urn:ngm:class:eip`
 - [EIP-1271](concepts/eip-1271.md) — `urn:ngm:class:eip-1271`
 - [EIP-1559](concepts/eip-1559.md) — `urn:ngm:class:eip-1559`
 - [EIP-2981](concepts/eip-2981.md) — `urn:ngm:class:eip-2981`
@@ -2841,7 +2801,6 @@ concept_count: 9354
 - [Embankment](concepts/embankment.md) — `urn:ngm:class:embankment`
 - [Embedded AI Frameworks](concepts/embedded-ai-frameworks.md) — `urn:ngm:class:embedded-ai-frameworks`
 - [Embedded System](concepts/embedded-system.md) — `urn:ngm:class:embedded-system`
-- [Embedded Systems](concepts/embedded-systems.md) — `urn:ngm:class:embedded-systems`
 - [Embedding](concepts/embedding.md) — `urn:ngm:class:embedding`
 - [Embedding Layer](concepts/embedding-layer.md) — `urn:ngm:class:embedding-layer`
 - [Embedding Model](concepts/embedding-model.md) — `urn:ngm:class:embedding-model`
@@ -2879,7 +2838,6 @@ concept_count: 9354
 - [EN 301 549](concepts/en-301-549.md) — `urn:ngm:class:en-301-549`
 - [Encoder](concepts/encoder.md) — `urn:ngm:class:encoder`
 - [Encoder-Decoder](concepts/encoder-decoder.md) — `urn:ngm:class:encoder-decoder`
-- [Encoder Decoder Architecture](concepts/encoder-decoder-architecture.md) — `urn:ngm:class:encoder-decoder-architecture`
 - [Encrypted Storage](concepts/encrypted-storage.md) — `urn:ngm:class:encrypted-storage`
 - [Encryption](concepts/encryption.md) — `urn:ngm:class:encryption`
 - [Encryption Protocol](concepts/encryption-protocol.md) — `urn:ngm:class:encryption-protocol`
@@ -2975,7 +2933,6 @@ concept_count: 9354
 - [ERC-1155](concepts/erc-1155.md) — `urn:ngm:class:erc-1155`
 - [ERC-1400](concepts/erc-1400.md) — `urn:ngm:class:erc-1400`
 - [ERC-20](concepts/erc-20.md) — `urn:ngm:class:erc-20`
-- [ERC-20 Token Standard](concepts/erc-20-token-standard.md) — `urn:ngm:class:erc-20-token-standard`
 - [ERC-20 Tokens](concepts/erc-20-tokens.md) — `urn:ngm:class:erc-20-tokens`
 - [ERC-20 Votes](concepts/erc-20-votes.md) — `urn:ngm:class:erc-20-votes`
 - [ERC-2612 Permit](concepts/erc-2612-permit.md) — `urn:ngm:class:erc-2612-permit`
@@ -2986,21 +2943,16 @@ concept_count: 9354
 - [ERC-4337 Account Abstraction](concepts/erc-4337-account-abstraction.md) — `urn:ngm:class:erc-4337-account-abstraction`
 - [ERC-4626](concepts/erc-4626.md) — `urn:ngm:class:erc-4626`
 - [ERC-721](concepts/erc-721.md) — `urn:ngm:class:erc-721`
-- [ERC-721 Standard](concepts/erc-721-standard.md) — `urn:ngm:class:erc-721-standard`
 - [ERC-7540](concepts/erc-7540.md) — `urn:ngm:class:erc-7540`
 - [ERC-7683](concepts/erc-7683.md) — `urn:ngm:class:erc-7683`
 - [ERC1155 Standard](concepts/erc1155-standard.md) — `urn:ngm:class:erc1155-standard`
 - [ERC1155 Token](concepts/erc1155-token.md) — `urn:ngm:class:erc1155-token`
 - [ERC1400 Standard](concepts/erc1400-standard.md) — `urn:ngm:class:erc1400-standard`
 - [ERC1400 Token](concepts/erc1400-token.md) — `urn:ngm:class:erc1400-token`
-- [ERC20](concepts/erc20.md) — `urn:ngm:class:erc20`
-- [ERC20 Standard](concepts/erc20-standard.md) — `urn:ngm:class:erc20-standard`
 - [ERC20 Token](concepts/erc20-token.md) — `urn:ngm:class:erc20-token`
 - [ERC20Votes Standard](concepts/erc20-votes-standard.md) — `urn:ngm:class:erc20-votes-standard`
 - [ERC3643 Standard](concepts/erc3643-standard.md) — `urn:ngm:class:erc3643-standard`
 - [ERC3643 Token](concepts/erc3643-token.md) — `urn:ngm:class:erc3643-token`
-- [ERC721](concepts/erc721.md) — `urn:ngm:class:erc721`
-- [ERC721 Standard](concepts/erc721-standard.md) — `urn:ngm:class:erc721-standard`
 - [ERC721 Token](concepts/erc721-token.md) — `urn:ngm:class:erc721-token`
 - [Ergodic Theory](concepts/ergodic-theory.md) — `urn:ngm:class:ergodic-theory`
 - [Ergodicity](concepts/ergodicity.md) — `urn:ngm:class:ergodicity`
@@ -3025,7 +2977,6 @@ concept_count: 9354
 - [Ethereum](concepts/ethereum.md) — `urn:ngm:class:ethereum`
 - [Ethereum Account](concepts/ethereum-account.md) — `urn:ngm:class:ethereum-account`
 - [Ethereum Improvement Proposal](concepts/ethereum-improvement-proposal.md) — `urn:ngm:class:ethereum-improvement-proposal`
-- [Ethereum Smart Contract Platform](concepts/ethereum-smart-contract-platform.md) — `urn:ngm:class:ethereum-smart-contract-platform`
 - [Ethereum Attestation Service](concepts/ethereum-smart-contract-platform-attestation-service.md) — `urn:ngm:class:ethereum-smart-contract-platform-attestation-service`
 - [Ethereum Classic](concepts/ethereum-smart-contract-platform-classic.md) — `urn:ngm:class:ethereum-smart-contract-platform-classic`
 - [Ethereum Foundation](concepts/ethereum-smart-contract-platform-foundation.md) — `urn:ngm:class:ethereum-smart-contract-platform-foundation`
@@ -3099,7 +3050,6 @@ concept_count: 9354
 - [Etsi Metaverse Domain Taxonomy](concepts/etsi-metaverse-domain-taxonomy.md) — `urn:ngm:class:etsi-metaverse-domain-taxonomy`
 - [ETSIDomainClassification](concepts/etsidomain-classification.md) — `urn:ngm:class:etsidomain-classification`
 - [EU AI Act](concepts/eu-ai-act.md) — `urn:ngm:class:eu-ai-act`
-- [EU AI Act Regulatory Instrument](concepts/eu-ai-act-regulatory-instrument.md) — `urn:ngm:class:eu-ai-act-regulatory-instrument`
 - [EU AI Act Article 50](concepts/eu-ai-act-regulatory-instrument-article-50.md) — `urn:ngm:class:eu-ai-act-regulatory-instrument-article-50`
 - [EU AI Act Article 53](concepts/eu-ai-act-regulatory-instrument-article-53.md) — `urn:ngm:class:eu-ai-act-regulatory-instrument-article-53`
 - [EU Digital Finance Strategy](concepts/eu-digital-finance-strategy.md) — `urn:ngm:class:eu-digital-finance-strategy`
@@ -3160,7 +3110,6 @@ concept_count: 9354
 - [Expected Utility Theory](concepts/expected-utility-theory.md) — `urn:ngm:class:expected-utility-theory`
 - [Experience Layer](concepts/experience-layer.md) — `urn:ngm:class:experience-layer`
 - [Experiential Learning](concepts/experiential-learning.md) — `urn:ngm:class:experiential-learning`
-- [ML Experiment Tracking](concepts/experiment-tracking.md) — `urn:ngm:class:experiment-tracking`
 - [Experimental Design](concepts/experimental-design.md) — `urn:ngm:class:experimental-design`
 - [Expert Parallelism](concepts/expert-parallelism.md) — `urn:ngm:class:expert-parallelism`
 - [Expert Systems](concepts/expert-systems.md) — `urn:ngm:class:expert-systems`
@@ -3225,7 +3174,6 @@ concept_count: 9354
 - [FATF Recommendation 16](concepts/fatf-recommendation-16.md) — `urn:ngm:class:fatf-recommendation-16`
 - [FATF Recommendations](concepts/fatf-recommendations.md) — `urn:ngm:class:fatf-recommendations`
 - [FATF Travel Rule](concepts/fatf-travel-rule.md) — `urn:ngm:class:fatf-travel-rule`
-- [FATFRecommendations](concepts/fatfrecommendations.md) — `urn:ngm:class:fatfrecommendations`
 - [Fault Detection Isolation and Recovery](concepts/fault-detection-isolation-and-recovery.md) — `urn:ngm:class:fault-detection-isolation-and-recovery`
 - [Fault Tolerance](concepts/fault-tolerance.md) — `urn:ngm:class:fault-tolerance`
 - [Fault Tolerance System](concepts/fault-tolerance-system.md) — `urn:ngm:class:fault-tolerance-system`
@@ -3321,12 +3269,11 @@ concept_count: 9354
 - [Financial Technology](concepts/financial-technology.md) — `urn:ngm:class:financial-technology`
 - [Financial Trading](concepts/financial-trading.md) — `urn:ngm:class:financial-trading`
 - [Financial Transactions](concepts/financial-transactions.md) — `urn:ngm:class:financial-transactions`
-- [Fine Tuning](concepts/fine-tuning.md) — `urn:ngm:class:fine-tuning`
+- [Fine-Tuning](concepts/fine-tuning.md) — `urn:ngm:class:fine-tuning`
 - [Finite Element Analysis](concepts/finite-element-analysis.md) — `urn:ngm:class:finite-element-analysis`
 - [Finite Field](concepts/finite-field.md) — `urn:ngm:class:finite-field`
 - [Finite Field Arithmetic](concepts/finite-field-arithmetic.md) — `urn:ngm:class:finite-field-arithmetic`
 - [Finite State Machine](concepts/finite-state-machine.md) — `urn:ngm:class:finite-state-machine`
-- [Fintech](concepts/fintech.md) — `urn:ngm:class:fintech`
 - [FIPA](concepts/fipa.md) — `urn:ngm:class:fipa`
 - [FIPA ACL](concepts/fipa-acl.md) — `urn:ngm:class:fipa-acl`
 - [FIPS 140-3](concepts/fips-140-3.md) — `urn:ngm:class:fips-140-3`
@@ -3357,7 +3304,6 @@ concept_count: 9354
 - [Fluid Power Device](concepts/fluid-power-device.md) — `urn:ngm:class:fluid-power-device`
 - [Fluid Simulation](concepts/fluid-simulation.md) — `urn:ngm:class:fluid-simulation`
 - [Flux.1](concepts/flux-1.md) — `urn:ngm:class:flux-1`
-- [FMEA](concepts/fmea.md) — `urn:ngm:class:fmea`
 - [Fog Computing](concepts/fog-computing.md) — `urn:ngm:class:fog-computing`
 - [Food Safety](concepts/food-safety.md) — `urn:ngm:class:food-safety`
 - [Food Safety Blockchain](concepts/food-safety-blockchain.md) — `urn:ngm:class:food-safety-blockchain`
@@ -3394,7 +3340,6 @@ concept_count: 9354
 - [Forward Secrecy](concepts/forward-secrecy.md) — `urn:ngm:class:forward-secrecy`
 - [Foundation Model](concepts/foundation-model.md) — `urn:ngm:class:foundation-model`
 - [Foundation Model Layer](concepts/foundation-model-layer.md) — `urn:ngm:class:foundation-model-layer`
-- [Foundation Models](concepts/foundation-models.md) — `urn:ngm:class:foundation-models`
 - [Foundry](concepts/foundry.md) — `urn:ngm:class:foundry`
 - [Fourier Analysis](concepts/fourier-analysis.md) — `urn:ngm:class:fourier-analysis`
 - [Fourier Transform](concepts/fourier-transform.md) — `urn:ngm:class:fourier-transform`
@@ -3603,7 +3548,6 @@ concept_count: 9354
 - [Global Trade](concepts/global-trade.md) — `urn:ngm:class:global-trade`
 - [Glossary Index](concepts/glossary-index.md) — `urn:ngm:class:glossary-index`
 - [GLSL](concepts/glsl.md) — `urn:ngm:class:glsl`
-- [Gltf Standard](concepts/gltf-standard.md) — `urn:ngm:class:gltf-standard`
 - [GLUE Benchmark](concepts/glue-benchmark.md) — `urn:ngm:class:glue-benchmark`
 - [GMX](concepts/gmx.md) — `urn:ngm:class:gmx`
 - [Gnosis](concepts/gnosis.md) — `urn:ngm:class:gnosis`
@@ -3716,7 +3660,6 @@ concept_count: 9354
 - [Graph Databases](concepts/graph-databases.md) — `urn:ngm:class:graph-databases`
 - [Graph Embedding](concepts/graph-embedding.md) — `urn:ngm:class:graph-embedding`
 - [Graph Neural Network](concepts/graph-neural-network.md) — `urn:ngm:class:graph-neural-network`
-- [Graph Neural Networks](concepts/graph-neural-networks.md) — `urn:ngm:class:graph-neural-networks`
 - [Graph Optimisation](concepts/graph-optimisation.md) — `urn:ngm:class:graph-optimisation`
 - [GraphQL](concepts/graph-ql.md) — `urn:ngm:class:graph-ql`
 - [Graph Query Language](concepts/graph-query-language.md) — `urn:ngm:class:graph-query-language`
@@ -3855,7 +3798,6 @@ concept_count: 9354
 - [Healthcare Technology](concepts/healthcare-technology.md) — `urn:ngm:class:healthcare-technology`
 - [Heartbeat Mechanism](concepts/heartbeat-mechanism.md) — `urn:ngm:class:heartbeat-mechanism`
 - [Heat Pipe](concepts/heat-pipe.md) — `urn:ngm:class:heat-pipe`
-- [Heatmap Regression (Keypoint Localisation)](concepts/heatmap-regression.md) — `urn:ngm:class:heatmap-regression`
 - [Hedera Hashgraph](concepts/hedera-hashgraph.md) — `urn:ngm:class:hedera-hashgraph`
 - [Hedging](concepts/hedging.md) — `urn:ngm:class:hedging`
 - [Heliopause](concepts/heliopause.md) — `urn:ngm:class:heliopause`
@@ -3958,7 +3900,7 @@ concept_count: 9354
 - [Human Factors](concepts/human-factors.md) — `urn:ngm:class:human-factors`
 - [Human Feedback](concepts/human-feedback.md) — `urn:ngm:class:human-feedback`
 - [Human in the Loop](concepts/human-in-the-loop.md) — `urn:ngm:class:human-in-the-loop`
-- [Human-in-the- Loop Learning](concepts/human-in-the-loop-learning.md) — `urn:ngm:class:human-in-the-loop-learning`
+- [Human-in-the-Loop Learning](concepts/human-in-the-loop-learning.md) — `urn:ngm:class:human-in-the-loop-learning`
 - [Human Interface Device](concepts/human-interface-device.md) — `urn:ngm:class:human-interface-device`
 - [Human Interface Layer (HIL)](concepts/human-interface-layer-hil.md) — `urn:ngm:class:human-interface-layer-hil`
 - [Human on the Loop](concepts/human-on-the-loop.md) — `urn:ngm:class:human-on-the-loop`
@@ -3969,7 +3911,6 @@ concept_count: 9354
 - [Human Rights Law](concepts/human-rights-law.md) — `urn:ngm:class:human-rights-law`
 - [Human-Robot Collaboration](concepts/human-robot-collaboration.md) — `urn:ngm:class:human-robot-collaboration`
 - [Human Robot Interaction](concepts/human-robot-interaction.md) — `urn:ngm:class:human-robot-interaction`
-- [Humaninthe Loop Learning](concepts/humaninthe-loop-learning.md) — `urn:ngm:class:humaninthe-loop-learning`
 - [Humanities Last Exam](concepts/humanities-last-exam.md) — `urn:ngm:class:humanities-last-exam`
 - [Humanity Attestation](concepts/humanity-attestation.md) — `urn:ngm:class:humanity-attestation`
 - [Humanoid Robot](concepts/humanoid-robot.md) — `urn:ngm:class:humanoid-robot`
@@ -4122,7 +4063,6 @@ concept_count: 9354
 - [Image to Image Translation](concepts/image-to-image-translation.md) — `urn:ngm:class:image-to-image-translation`
 - [Imaging Parameters](concepts/imaging-parameters.md) — `urn:ngm:class:imaging-parameters`
 - [Imaging Spectrometer](concepts/imaging-spectrometer.md) — `urn:ngm:class:imaging-spectrometer`
-- [IMF](concepts/imf.md) — `urn:ngm:class:imf`
 - [IMF CBDC Framework](concepts/imf-cbdc-framework.md) — `urn:ngm:class:imf-cbdc-framework`
 - [IMF Crypto Asset Classification Framework](concepts/imf-crypto-asset-classification-framework.md) — `urn:ngm:class:imf-crypto-asset-classification-framework`
 - [Imitation Learning](concepts/imitation-learning.md) — `urn:ngm:class:imitation-learning`
@@ -4251,11 +4191,9 @@ concept_count: 9354
 - [Informed decision-making](concepts/informed-decision-making.md) — `urn:ngm:class:informed-decision-making`
 - [Informed Search](concepts/informed-search.md) — `urn:ngm:class:informed-search`
 - [Computing and Cloud](concepts/infra-computing-and-cloud.md) — `urn:ngm:class:infra-computing-and-cloud`
-- [Data Management (Infrastructure)](concepts/infra-data-management.md) — `urn:ngm:class:infra-data-management`
 - [Legal and Regulatory](concepts/infra-legal-and-regulatory.md) — `urn:ngm:class:infra-legal-and-regulatory`
 - [Network and Communication](concepts/infra-network-and-comms.md) — `urn:ngm:class:infra-network-and-comms`
 - [Security and Identity](concepts/infra-security-and-identity.md) — `urn:ngm:class:infra-security-and-identity`
-- [Software Engineering (Infrastructure)](concepts/infra-software-engineering.md) — `urn:ngm:class:infra-software-engineering`
 - [Infrared Astronomy](concepts/infrared-astronomy.md) — `urn:ngm:class:infrared-astronomy`
 - [Infrared Camera](concepts/infrared-camera.md) — `urn:ngm:class:infrared-camera`
 - [Infrared Illuminator](concepts/infrared-illuminator.md) — `urn:ngm:class:infrared-illuminator`
@@ -4326,7 +4264,6 @@ concept_count: 9354
 - [Intelligent Systems](concepts/intelligent-systems.md) — `urn:ngm:class:intelligent-systems`
 - [Intelligent Ticket Routing](concepts/intelligent-ticket-routing.md) — `urn:ngm:class:intelligent-ticket-routing`
 - [Intelligent Tutoring System](concepts/intelligent-tutoring-system.md) — `urn:ngm:class:intelligent-tutoring-system`
-- [Intelligent Tutoring Systems](concepts/intelligent-tutoring-systems.md) — `urn:ngm:class:intelligent-tutoring-systems`
 - [Intelligent Virtual Entity](concepts/intelligent-virtual-entity.md) — `urn:ngm:class:intelligent-virtual-entity`
 - [Intent Classification](concepts/intent-classification.md) — `urn:ngm:class:intent-classification`
 - [Intent Recognition](concepts/intent-recognition.md) — `urn:ngm:class:intent-recognition`
@@ -4408,7 +4345,6 @@ concept_count: 9354
 - [Investor Protection](concepts/investor-protection.md) — `urn:ngm:class:investor-protection`
 - [InvokeAI](concepts/invoke-ai.md) — `urn:ngm:class:invoke-ai`
 - [Inworld AI](concepts/inworld-ai.md) — `urn:ngm:class:inworld-ai`
-- [IoT](concepts/io-t.md) — `urn:ngm:class:io-t`
 - [IoT AI Integration](concepts/io-t-ai-integration.md) — `urn:ngm:class:io-t-ai-integration`
 - [IoT Infrastructure](concepts/io-t-infrastructure.md) — `urn:ngm:class:io-t-infrastructure`
 - [IoT Integration](concepts/io-t-integration.md) — `urn:ngm:class:io-t-integration`
@@ -4503,7 +4439,6 @@ concept_count: 9354
 - [ISO-IEC 23247](concepts/iso-iec-23247.md) — `urn:ngm:class:iso-iec-23247`
 - [ISO-IEC 23257 2021](concepts/iso-iec-23257-2021.md) — `urn:ngm:class:iso-iec-23257-2021`
 - [ISO-IEC 23894](concepts/iso-iec-23894.md) — `urn:ngm:class:iso-iec-23894`
-- [ISO-IEC 23894 2023](concepts/iso-iec-23894-2023.md) — `urn:ngm:class:iso-iec-23894-2023`
 - [ISO-IEC 24760](concepts/iso-iec-24760.md) — `urn:ngm:class:iso-iec-24760`
 - [ISO-IEC 25010](concepts/iso-iec-25010.md) — `urn:ngm:class:iso-iec-25010`
 - [ISO-IEC 25024](concepts/iso-iec-25024.md) — `urn:ngm:class:iso-iec-25024`
@@ -4522,9 +4457,8 @@ concept_count: 9354
 - [ISO/IEC JTC 1/SC 17](concepts/iso-iec-jtc-1-sc-17.md) — `urn:ngm:class:iso-iec-jtc-1-sc-17`
 - [ISO-IEC JTC 1-SC 24](concepts/iso-iec-jtc-1-sc-24.md) — `urn:ngm:class:iso-iec-jtc-1-sc-24`
 - [ISO/IEC JTC 1/SC 27](concepts/iso-iec-jtc-1-sc-27.md) — `urn:ngm:class:iso-iec-jtc-1-sc-27`
-- [ISO/IEC JTC 1/SC 42](concepts/iso-iec-jtc-1-sc-42.md) — `urn:ngm:class:iso-iec-jtc-1-sc-42`
+- [ISO-IEC JTC 1 SC 42](concepts/iso-iec-jtc-1-sc-42.md) — `urn:ngm:class:iso-iec-jtc-1-sc-42`
 - [ISO/IEC JTC 1/SC 29](concepts/iso-iec-jtc1-sc29.md) — `urn:ngm:class:iso-iec-jtc1-sc29`
-- [ISO IEC JTC1 SC42](concepts/iso-iec-jtc1-sc42.md) — `urn:ngm:class:iso-iec-jtc1-sc42`
 - [ISO-IEC TR 24027](concepts/iso-iec-tr-24027.md) — `urn:ngm:class:iso-iec-tr-24027`
 - [ISO/IEC TR 24028](concepts/iso-iec-tr-24028.md) — `urn:ngm:class:iso-iec-tr-24028`
 - [ISO-IEC TR 24029-1 2021](concepts/iso-iec-tr-24029-1-2021.md) — `urn:ngm:class:iso-iec-tr-24029-1-2021`
@@ -4560,7 +4494,6 @@ concept_count: 9354
 - [Journey Mapping](concepts/journey-mapping.md) — `urn:ngm:class:journey-mapping`
 - [JPMorgan](concepts/jpmorgan.md) — `urn:ngm:class:jpmorgan`
 - [JSON](concepts/json.md) — `urn:ngm:class:json`
-- [JSON Data Interchange Format](concepts/json-data-interchange-format.md) — `urn:ngm:class:json-data-interchange-format`
 - [JSON-LD](concepts/json-data-interchange-format-ld.md) — `urn:ngm:class:json-data-interchange-format-ld`
 - [JSON-LD 1.1](concepts/json-data-interchange-format-ld-1-1.md) — `urn:ngm:class:json-data-interchange-format-ld-1-1`
 - [JSON-LD 1.1 Standard](concepts/json-data-interchange-format-ld-1-1-standard.md) — `urn:ngm:class:json-data-interchange-format-ld-1-1-standard`
@@ -4570,7 +4503,6 @@ concept_count: 9354
 - [JSON Schema](concepts/json-data-interchange-format-schema.md) — `urn:ngm:class:json-data-interchange-format-schema`
 - [JSON Serialisation](concepts/json-data-interchange-format-serialisation.md) — `urn:ngm:class:json-data-interchange-format-serialisation`
 - [JSON Web Token](concepts/json-data-interchange-format-web-token.md) — `urn:ngm:class:json-data-interchange-format-web-token`
-- [JSON-LD Serialisation](concepts/json-ld.md) — `urn:ngm:class:json-ld`
 - [Julian Date](concepts/julian-date.md) — `urn:ngm:class:julian-date`
 - [Jumio](concepts/jumio.md) — `urn:ngm:class:jumio`
 - [Junge Aerosol Layer](concepts/junge-aerosol-layer.md) — `urn:ngm:class:junge-aerosol-layer`
@@ -4659,7 +4591,6 @@ concept_count: 9354
 - [Kuiper Belt Object](concepts/kuiper-belt-object.md) — `urn:ngm:class:kuiper-belt-object`
 - [Kullback-Leibler Divergence](concepts/kullback-leibler-divergence.md) — `urn:ngm:class:kullback-leibler-divergence`
 - [KV Cache](concepts/kv-cache.md) — `urn:ngm:class:kv-cache`
-- [KYC](concepts/kyc.md) — `urn:ngm:class:kyc`
 - [KYC/AML](concepts/kyc-aml.md) — `urn:ngm:class:kyc-aml`
 - [KYC/AML Compliance](concepts/kyc-aml-compliance.md) — `urn:ngm:class:kyc-aml-compliance`
 - [Kyoto Protocol](concepts/kyoto-protocol.md) — `urn:ngm:class:kyoto-protocol`
@@ -4696,11 +4627,9 @@ concept_count: 9354
 - [Laplace Transform](concepts/laplace-transform.md) — `urn:ngm:class:laplace-transform`
 - [Large Language Model](concepts/large-language-model.md) — `urn:ngm:class:large-language-model`
 - [Large Language Model Training](concepts/large-language-model-training.md) — `urn:ngm:class:large-language-model-training`
-- [Large Language Models](concepts/large-language-models.md) — `urn:ngm:class:large-language-models`
 - [Large-Scale Compute](concepts/large-scale-compute.md) — `urn:ngm:class:large-scale-compute`
 - [Large-Scale Corpus](concepts/large-scale-corpus.md) — `urn:ngm:class:large-scale-corpus`
 - [Large-Scale Datasets](concepts/large-scale-datasets.md) — `urn:ngm:class:large-scale-datasets`
-- [Large-Scale Pretrained Foundation Model](concepts/large-scale-pretrained-foundation-model.md) — `urn:ngm:class:large-scale-pretrained-foundation-model`
 - [Large-Scale Pretraining](concepts/large-scale-pretraining.md) — `urn:ngm:class:large-scale-pretraining`
 - [Large-Scale Training](concepts/large-scale-training.md) — `urn:ngm:class:large-scale-training`
 - [Laser Altimetry](concepts/laser-altimetry.md) — `urn:ngm:class:laser-altimetry`
@@ -4733,10 +4662,8 @@ concept_count: 9354
 - [Layer 2 Solutions](concepts/layer-2-solutions.md) — `urn:ngm:class:layer-2-solutions`
 - [Layer 3](concepts/layer-3.md) — `urn:ngm:class:layer-3`
 - [Layer Normalisation](concepts/layer-normalisation.md) — `urn:ngm:class:layer-normalisation`
-- [Layer Normalization](concepts/layer-normalization.md) — `urn:ngm:class:layer-normalization`
 - [LayerZero](concepts/layer-zero.md) — `urn:ngm:class:layer-zero`
 - [Layer2](concepts/layer2.md) — `urn:ngm:class:layer2`
-- [Layer2Scaling](concepts/layer2-scaling.md) — `urn:ngm:class:layer2-scaling`
 - [Layout Algorithm](concepts/layout-algorithm.md) — `urn:ngm:class:layout-algorithm`
 - [Layout Engine](concepts/layout-engine.md) — `urn:ngm:class:layout-engine`
 - [LDAP](concepts/ldap.md) — `urn:ngm:class:ldap`
@@ -4776,7 +4703,6 @@ concept_count: 9354
 - [Legged Robot](concepts/legged-robot.md) — `urn:ngm:class:legged-robot`
 - [Legged Robotics](concepts/legged-robotics.md) — `urn:ngm:class:legged-robotics`
 - [Legitimacy](concepts/legitimacy.md) — `urn:ngm:class:legitimacy`
-- [LEI System](concepts/lei-system.md) — `urn:ngm:class:lei-system`
 - [Lender Of Last Resort](concepts/lender-of-last-resort.md) — `urn:ngm:class:lender-of-last-resort`
 - [Lending Protocol](concepts/lending-protocol.md) — `urn:ngm:class:lending-protocol`
 - [Length Normalisation](concepts/length-normalisation.md) — `urn:ngm:class:length-normalisation`
@@ -4801,7 +4727,6 @@ concept_count: 9354
 - [Life Cycle Assessment](concepts/life-cycle-assessment.md) — `urn:ngm:class:life-cycle-assessment`
 - [Life Science AI](concepts/life-science-ai.md) — `urn:ngm:class:life-science-ai`
 - [Life Support System](concepts/life-support-system.md) — `urn:ngm:class:life-support-system`
-- [Lifecycle Assessment](concepts/lifecycle-assessment.md) — `urn:ngm:class:lifecycle-assessment`
 - [Lifecycle Hook](concepts/lifecycle-hook.md) — `urn:ngm:class:lifecycle-hook`
 - [Lifecycle Management](concepts/lifecycle-management.md) — `urn:ngm:class:lifecycle-management`
 - [Light Client](concepts/light-client.md) — `urn:ngm:class:light-client`
@@ -4873,7 +4798,6 @@ concept_count: 9354
 - [LLM Token Expenditure Index](concepts/llm-token-expenditure-index.md) — `urn:ngm:class:llm-token-expenditure-index`
 - [LND](concepts/lnd.md) — `urn:ngm:class:lnd`
 - [LNP-BP Standards Association](concepts/lnp-bp-standards-association.md) — `urn:ngm:class:lnp-bp-standards-association`
-- [Lo RA](concepts/lo-ra.md) — `urn:ngm:class:lo-ra`
 - [LoRa Alliance](concepts/lo-ra-alliance.md) — `urn:ngm:class:lo-ra-alliance`
 - [LoRA DoRA etc](concepts/lo-ra-do-ra-etc.md) — `urn:ngm:class:lo-ra-do-ra-etc`
 - [LoRA Fine-Tuning](concepts/lo-ra-fine-tuning.md) — `urn:ngm:class:lo-ra-fine-tuning`
@@ -4893,6 +4817,7 @@ concept_count: 9354
 - [Location Based Service](concepts/location-based-service.md) — `urn:ngm:class:location-based-service`
 - [Lock-and-Mint Bridge](concepts/lock-and-mint-bridge.md) — `urn:ngm:class:lock-and-mint-bridge`
 - [Lock and Mint Mechanism](concepts/lock-and-mint-mechanism.md) — `urn:ngm:class:lock-and-mint-mechanism`
+- [Lockheed Martin Space](concepts/lockheed-martin-space.md) — `urn:ngm:class:lockheed-martin-space`
 - [Locking Script](concepts/locking-script.md) — `urn:ngm:class:locking-script`
 - [Locomotion](concepts/locomotion.md) — `urn:ngm:class:locomotion`
 - [Log Aggregation](concepts/log-aggregation.md) — `urn:ngm:class:log-aggregation`
@@ -4966,7 +4891,6 @@ concept_count: 9354
 - [Machine Learning](concepts/machine-learning.md) — `urn:ngm:class:machine-learning`
 - [Machine Learning Accelerator](concepts/machine-learning-accelerator.md) — `urn:ngm:class:machine-learning-accelerator`
 - [Machine Learning Classifier](concepts/machine-learning-classifier.md) — `urn:ngm:class:machine-learning-classifier`
-- [Machine Learning Discipline](concepts/machine-learning-discipline.md) — `urn:ngm:class:machine-learning-discipline`
 - [Machine Learning Framework](concepts/machine-learning-discipline-framework.md) — `urn:ngm:class:machine-learning-discipline-framework`
 - [Machine Learning Infrastructure](concepts/machine-learning-discipline-infrastructure.md) — `urn:ngm:class:machine-learning-discipline-infrastructure`
 - [Machine Learning Model](concepts/machine-learning-discipline-model.md) — `urn:ngm:class:machine-learning-discipline-model`
@@ -4975,8 +4899,6 @@ concept_count: 9354
 - [Machine Learning Platform](concepts/machine-learning-discipline-platform.md) — `urn:ngm:class:machine-learning-discipline-platform`
 - [Machine Learning Technique](concepts/machine-learning-discipline-technique.md) — `urn:ngm:class:machine-learning-discipline-technique`
 - [Machine Learning Techniques Survey](concepts/machine-learning-discipline-techniques-survey.md) — `urn:ngm:class:machine-learning-discipline-techniques-survey`
-- [Machine Learning Model (Artefact)](concepts/machine-learning-model.md) — `urn:ngm:class:machine-learning-model`
-- [Machine Learning Operations](concepts/machine-learning-operations.md) — `urn:ngm:class:machine-learning-operations`
 - [Machine Learning Research](concepts/machine-learning-research.md) — `urn:ngm:class:machine-learning-research`
 - [Machine Learning Software](concepts/machine-learning-software.md) — `urn:ngm:class:machine-learning-software`
 - [Machine to Machine Payments](concepts/machine-to-machine-payments.md) — `urn:ngm:class:machine-to-machine-payments`
@@ -5290,7 +5212,6 @@ concept_count: 9354
 - [Mixed Reality (MR)](concepts/mixed-reality-mr.md) — `urn:ngm:class:mixed-reality-mr`
 - [Mixed Reality Platform](concepts/mixed-reality-platform.md) — `urn:ngm:class:mixed-reality-platform`
 - [Mixture of Experts](concepts/mixture-of-experts.md) — `urn:ngm:class:mixture-of-experts`
-- [Mixture-of-Experts Architecture](concepts/mixture-of-experts-architecture.md) — `urn:ngm:class:mixture-of-experts-architecture`
 - [Mixup](concepts/mixup.md) — `urn:ngm:class:mixup`
 - [MLCommons](concepts/mlcommons.md) — `urn:ngm:class:mlcommons`
 - [MLflow](concepts/mlflow.md) — `urn:ngm:class:mlflow`
@@ -5318,7 +5239,6 @@ concept_count: 9354
 - [Model Benchmarking](concepts/model-benchmarking.md) — `urn:ngm:class:model-benchmarking`
 - [Model Calibration](concepts/model-calibration.md) — `urn:ngm:class:model-calibration`
 - [Model Capacity](concepts/model-capacity.md) — `urn:ngm:class:model-capacity`
-- [Model Cards](concepts/model-cards.md) — `urn:ngm:class:model-cards`
 - [Model Checking](concepts/model-checking.md) — `urn:ngm:class:model-checking`
 - [Model Checkpoint](concepts/model-checkpoint.md) — `urn:ngm:class:model-checkpoint`
 - [Model Collapse](concepts/model-collapse.md) — `urn:ngm:class:model-collapse`
@@ -5333,14 +5253,12 @@ concept_count: 9354
 - [Model Deployment](concepts/model-deployment.md) — `urn:ngm:class:model-deployment`
 - [Model Deprecation](concepts/model-deprecation.md) — `urn:ngm:class:model-deprecation`
 - [Model Depth](concepts/model-depth.md) — `urn:ngm:class:model-depth`
-- [Model Distillation](concepts/model-distillation.md) — `urn:ngm:class:model-distillation`
 - [Model Distillation Artifacts](concepts/model-distillation-artifacts.md) — `urn:ngm:class:model-distillation-artifacts`
 - [Model Documentation](concepts/model-documentation.md) — `urn:ngm:class:model-documentation`
 - [Model Ensembling](concepts/model-ensembling.md) — `urn:ngm:class:model-ensembling`
 - [Model Evaluation](concepts/model-evaluation.md) — `urn:ngm:class:model-evaluation`
 - [Model Evaluation Results](concepts/model-evaluation-results.md) — `urn:ngm:class:model-evaluation-results`
 - [Model Extraction](concepts/model-extraction.md) — `urn:ngm:class:model-extraction`
-- [Model Fine-Tuning](concepts/model-fine-tuning.md) — `urn:ngm:class:model-fine-tuning`
 - [Model Generalisation](concepts/model-generalisation.md) — `urn:ngm:class:model-generalisation`
 - [Model Governance](concepts/model-governance.md) — `urn:ngm:class:model-governance`
 - [Model Inference](concepts/model-inference.md) — `urn:ngm:class:model-inference`
@@ -5358,7 +5276,6 @@ concept_count: 9354
 - [Model Property](concepts/model-property.md) — `urn:ngm:class:model-property`
 - [Model Pruning](concepts/model-pruning.md) — `urn:ngm:class:model-pruning`
 - [Model Pruning for Edge Deployment](concepts/model-pruning-for-edge-deployment.md) — `urn:ngm:class:model-pruning-for-edge-deployment`
-- [Model Quantization](concepts/model-quantization.md) — `urn:ngm:class:model-quantization`
 - [Model Registry](concepts/model-registry.md) — `urn:ngm:class:model-registry`
 - [Model Retraining](concepts/model-retraining.md) — `urn:ngm:class:model-retraining`
 - [Model Robustness](concepts/model-robustness.md) — `urn:ngm:class:model-robustness`
@@ -5468,7 +5385,6 @@ concept_count: 9354
 - [Multi-Robot Coordination](concepts/multi-robot-coordination.md) — `urn:ngm:class:multi-robot-coordination`
 - [Multi-Robot Systems](concepts/multi-robot-systems.md) — `urn:ngm:class:multi-robot-systems`
 - [Multi Sig Governance](concepts/multi-sig-governance.md) — `urn:ngm:class:multi-sig-governance`
-- [Multi-Signature](concepts/multi-signature.md) — `urn:ngm:class:multi-signature`
 - [Multi-Signature Wallet](concepts/multi-signature-wallet.md) — `urn:ngm:class:multi-signature-wallet`
 - [Multi-Stakeholder Governance](concepts/multi-stakeholder-governance.md) — `urn:ngm:class:multi-stakeholder-governance`
 - [Multi-Step Reasoning](concepts/multi-step-reasoning.md) — `urn:ngm:class:multi-step-reasoning`
@@ -5486,11 +5402,9 @@ concept_count: 9354
 - [Multilayer Insulation](concepts/multilayer-insulation.md) — `urn:ngm:class:multilayer-insulation`
 - [Multilayer Perceptron](concepts/multilayer-perceptron.md) — `urn:ngm:class:multilayer-perceptron`
 - [Multimedia Processing](concepts/multimedia-processing.md) — `urn:ngm:class:multimedia-processing`
-- [Multimodal Artificial Intelligence](concepts/multimodal-ai.md) — `urn:ngm:class:multimodal-ai`
 - [Multimodal AI Architecture](concepts/multimodal-ai-architecture.md) — `urn:ngm:class:multimodal-ai-architecture`
 - [Multimodal AI](concepts/multimodal-ai-architecture-ai.md) — `urn:ngm:class:multimodal-ai-architecture-ai`
 - [Multimodal Learning](concepts/multimodal-ai-architecture-learning.md) — `urn:ngm:class:multimodal-ai-architecture-learning`
-- [Multimodal Models](concepts/multimodal-ai-architecture-models.md) — `urn:ngm:class:multimodal-ai-architecture-models`
 - [Multimodal Reasoning](concepts/multimodal-ai-architecture-reasoning.md) — `urn:ngm:class:multimodal-ai-architecture-reasoning`
 - [Multimodal Understanding](concepts/multimodal-ai-architecture-understanding.md) — `urn:ngm:class:multimodal-ai-architecture-understanding`
 - [Multimodal Interaction](concepts/multimodal-interaction.md) — `urn:ngm:class:multimodal-interaction`
@@ -5598,7 +5512,6 @@ concept_count: 9354
 - [Network Theory](concepts/network-theory.md) — `urn:ngm:class:network-theory`
 - [Network Topology](concepts/network-topology.md) — `urn:ngm:class:network-topology`
 - [Network Transport](concepts/network-transport.md) — `urn:ngm:class:network-transport`
-- [Networkcomponent](concepts/networkcomponent.md) — `urn:ngm:class:networkcomponent`
 - [Networking](concepts/networking.md) — `urn:ngm:class:networking`
 - [Networking Infrastructure](concepts/networking-infrastructure.md) — `urn:ngm:class:networking-infrastructure`
 - [Networking Layer](concepts/networking-layer.md) — `urn:ngm:class:networking-layer`
@@ -5615,9 +5528,8 @@ concept_count: 9354
 - [Neural Network Architecture](concepts/neural-network-architecture.md) — `urn:ngm:class:neural-network-architecture`
 - [Neural Network Component](concepts/neural-network-component.md) — `urn:ngm:class:neural-network-component`
 - [Neural Network Inference](concepts/neural-network-inference.md) — `urn:ngm:class:neural-network-inference`
-- [Neural Network Latent Space](concepts/neural-network-latent-space.md) — `urn:ngm:class:neural-network-latent-space`
 - [Neural Network Layer](concepts/neural-network-layer.md) — `urn:ngm:class:neural-network-layer`
-- [Neural Network Quantisation](concepts/neural-network-quantisation.md) — `urn:ngm:class:neural-network-quantisation`
+- [Model Quantisation](concepts/neural-network-quantisation.md) — `urn:ngm:class:neural-network-quantisation`
 - [Neural Network Text Tokenisation](concepts/neural-network-text-tokenisation.md) — `urn:ngm:class:neural-network-text-tokenisation`
 - [Neural Network Training](concepts/neural-network-training.md) — `urn:ngm:class:neural-network-training`
 - [Neural Networking](concepts/neural-networking.md) — `urn:ngm:class:neural-networking`
@@ -5656,7 +5568,6 @@ concept_count: 9354
 - [NIST](concepts/nist.md) — `urn:ngm:class:nist`
 - [NIST 800-63](concepts/nist-800-63.md) — `urn:ngm:class:nist-800-63`
 - [NIST AI Risk Management Framework](concepts/nist-ai-risk-management-framework.md) — `urn:ngm:class:nist-ai-risk-management-framework`
-- [NIST AI RMF](concepts/nist-ai-rmf.md) — `urn:ngm:class:nist-ai-rmf`
 - [NIST AI Standards](concepts/nist-ai-standards.md) — `urn:ngm:class:nist-ai-standards`
 - [NIST Blockchain Technology Overview](concepts/nist-blockchain-technology-overview.md) — `urn:ngm:class:nist-blockchain-technology-overview`
 - [NIST Cryptographic Standards](concepts/nist-cryptographic-standards.md) — `urn:ngm:class:nist-cryptographic-standards`
@@ -5711,7 +5622,6 @@ concept_count: 9354
 - [Non Maximum Suppression](concepts/non-maximum-suppression.md) — `urn:ngm:class:non-maximum-suppression`
 - [Non Player Character](concepts/non-player-character.md) — `urn:ngm:class:non-player-character`
 - [Non-Repudiation](concepts/non-repudiation.md) — `urn:ngm:class:non-repudiation`
-- [Non Verbal Communication](concepts/non-verbal-communication.md) — `urn:ngm:class:non-verbal-communication`
 - [Non Volatile Memory](concepts/non-volatile-memory.md) — `urn:ngm:class:non-volatile-memory`
 - [Nonce](concepts/nonce.md) — `urn:ngm:class:nonce`
 - [Nonverbal Communication](concepts/nonverbal-communication.md) — `urn:ngm:class:nonverbal-communication`
@@ -5796,6 +5706,7 @@ concept_count: 9354
 - [Offline Reinforcement Learning](concepts/offline-reinforcement-learning.md) — `urn:ngm:class:offline-reinforcement-learning`
 - [Offline Rendering](concepts/offline-rendering.md) — `urn:ngm:class:offline-rendering`
 - [Offline Verification](concepts/offline-verification.md) — `urn:ngm:class:offline-verification`
+- [OHB](concepts/ohb.md) — `urn:ngm:class:ohb`
 - [Olap](concepts/olap.md) — `urn:ngm:class:olap`
 - [Olympus DAO](concepts/olympus-dao.md) — `urn:ngm:class:olympus-dao`
 - [OMA3](concepts/oma-3.md) — `urn:ngm:class:oma-3`
@@ -5846,7 +5757,6 @@ concept_count: 9354
 - [OPC UA](concepts/opc-ua.md) — `urn:ngm:class:opc-ua`
 - [Opcodes](concepts/opcodes.md) — `urn:ngm:class:opcodes`
 - [Open Access](concepts/open-access.md) — `urn:ngm:class:open-access`
-- [OpenAPI Specification](concepts/open-api-specification.md) — `urn:ngm:class:open-api-specification`
 - [Open Banking](concepts/open-banking.md) — `urn:ngm:class:open-banking`
 - [Open Bridge Standard](concepts/open-bridge-standard.md) — `urn:ngm:class:open-bridge-standard`
 - [Open Container Initiative](concepts/open-container-initiative.md) — `urn:ngm:class:open-container-initiative`
@@ -5918,7 +5828,6 @@ concept_count: 9354
 - [Openapi Initiative](concepts/openapi-initiative.md) — `urn:ngm:class:openapi-initiative`
 - [OpenCL](concepts/opencl.md) — `urn:ngm:class:opencl`
 - [OpenMP](concepts/openmp.md) — `urn:ngm:class:openmp`
-- [OpenXR Standard](concepts/openxr-standard.md) — `urn:ngm:class:openxr-standard`
 - [Operating System](concepts/operating-system.md) — `urn:ngm:class:operating-system`
 - [Operational Efficiency](concepts/operational-efficiency.md) — `urn:ngm:class:operational-efficiency`
 - [Operational Layer](concepts/operational-layer.md) — `urn:ngm:class:operational-layer`
@@ -6339,7 +6248,6 @@ concept_count: 9354
 - [Post Training Quantisation](concepts/post-training-quantisation.md) — `urn:ngm:class:post-training-quantisation`
 - [Posterior Distribution](concepts/posterior-distribution.md) — `urn:ngm:class:posterior-distribution`
 - [PostgreSQL](concepts/postgre-sql.md) — `urn:ngm:class:postgre-sql`
-- [Postquantum Cryptography](concepts/postquantum-cryptography.md) — `urn:ngm:class:postquantum-cryptography`
 - [Potential Field Method](concepts/potential-field-method.md) — `urn:ngm:class:potential-field-method`
 - [Potentiometric Surface](concepts/potentiometric-surface.md) — `urn:ngm:class:potentiometric-surface`
 - [Poverty Reduction](concepts/poverty-reduction.md) — `urn:ngm:class:poverty-reduction`
@@ -6362,7 +6270,6 @@ concept_count: 9354
 - [Pre Production](concepts/pre-production.md) — `urn:ngm:class:pre-production`
 - [Pre Trained Language Model](concepts/pre-trained-language-model.md) — `urn:ngm:class:pre-trained-language-model`
 - [Pre-Trained Model](concepts/pre-trained-model.md) — `urn:ngm:class:pre-trained-model`
-- [Pre Training](concepts/pre-training.md) — `urn:ngm:class:pre-training`
 - [Precession](concepts/precession.md) — `urn:ngm:class:precession`
 - [Precipitation Retrieval](concepts/precipitation-retrieval.md) — `urn:ngm:class:precipitation-retrieval`
 - [Precise Point Positioning](concepts/precise-point-positioning.md) — `urn:ngm:class:precise-point-positioning`
@@ -6394,12 +6301,12 @@ concept_count: 9354
 - [Presentation Exchange](concepts/presentation-exchange.md) — `urn:ngm:class:presentation-exchange`
 - [Presentation Layer](concepts/presentation-layer.md) — `urn:ngm:class:presentation-layer`
 - [Pressure Sensor](concepts/pressure-sensor.md) — `urn:ngm:class:pressure-sensor`
-- [Pretrained Model](concepts/pretrained-model.md) — `urn:ngm:class:pretrained-model`
 - [Pretrained Weights](concepts/pretrained-weights.md) — `urn:ngm:class:pretrained-weights`
 - [Pretraining](concepts/pretraining.md) — `urn:ngm:class:pretraining`
 - [Price Discovery](concepts/price-discovery.md) — `urn:ngm:class:price-discovery`
 - [Price Oracle](concepts/price-oracle.md) — `urn:ngm:class:price-oracle`
 - [Price Stability](concepts/price-stability.md) — `urn:ngm:class:price-stability`
+- [Prime Contractor](concepts/prime-contractor.md) — `urn:ngm:class:prime-contractor`
 - [Prime Intellect](concepts/prime-intellect.md) — `urn:ngm:class:prime-intellect`
 - [Prime Meridian](concepts/prime-meridian.md) — `urn:ngm:class:prime-meridian`
 - [Principal-Agent Problem](concepts/principal-agent-problem.md) — `urn:ngm:class:principal-agent-problem`
@@ -6581,7 +6488,6 @@ concept_count: 9354
 - [Protein Structure Prediction](concepts/protein-structure-prediction.md) — `urn:ngm:class:protein-structure-prediction`
 - [Proteus Effect](concepts/proteus-effect.md) — `urn:ngm:class:proteus-effect`
 - [Proto-Danksharding](concepts/proto-danksharding.md) — `urn:ngm:class:proto-danksharding`
-- [Protobuf](concepts/protobuf.md) — `urn:ngm:class:protobuf`
 - [Protocol](concepts/protocol.md) — `urn:ngm:class:protocol`
 - [Protocol Buffer](concepts/protocol-buffer.md) — `urn:ngm:class:protocol-buffer`
 - [Protocol Compatibility](concepts/protocol-compatibility.md) — `urn:ngm:class:protocol-compatibility`
@@ -6594,7 +6500,6 @@ concept_count: 9354
 - [Protocol Stack](concepts/protocol-stack.md) — `urn:ngm:class:protocol-stack`
 - [Protocol Sustainability](concepts/protocol-sustainability.md) — `urn:ngm:class:protocol-sustainability`
 - [Protocol Upgrade](concepts/protocol-upgrade.md) — `urn:ngm:class:protocol-upgrade`
-- [Protocol Upgrades](concepts/protocol-upgrades.md) — `urn:ngm:class:protocol-upgrades`
 - [Protostar](concepts/protostar.md) — `urn:ngm:class:protostar`
 - [Prototyping](concepts/prototyping.md) — `urn:ngm:class:prototyping`
 - [Provenance](concepts/provenance.md) — `urn:ngm:class:provenance`
@@ -6653,12 +6558,12 @@ concept_count: 9354
 - [Python](concepts/python.md) — `urn:ngm:class:python`
 - [Python 3](concepts/python-3.md) — `urn:ngm:class:python-3`
 - [Python Programming Language](concepts/python-programming-language.md) — `urn:ngm:class:python-programming-language`
-- [Python PyTorch Deep Learning Stack](concepts/python-pytorch-deep-learning-stack.md) — `urn:ngm:class:python-pytorch-deep-learning-stack`
 - [Python Runtime](concepts/python-runtime.md) — `urn:ngm:class:python-runtime`
 - [Python Sample1](concepts/python-sample1.md) — `urn:ngm:class:python-sample1`
 - [Python Sample2](concepts/python-sample2.md) — `urn:ngm:class:python-sample2`
 - [Q Learning](concepts/q-learning.md) — `urn:ngm:class:q-learning`
 - [QBFT](concepts/qbft.md) — `urn:ngm:class:qbft`
+- [QinetiQ](concepts/qinetiq.md) — `urn:ngm:class:qinetiq`
 - [QLoRA](concepts/qlo-ra.md) — `urn:ngm:class:qlo-ra`
 - [QR Code](concepts/qr-code.md) — `urn:ngm:class:qr-code`
 - [Qt Framework](concepts/qt-framework.md) — `urn:ngm:class:qt-framework`
@@ -6681,7 +6586,6 @@ concept_count: 9354
 - [Quantitative Easing](concepts/quantitative-easing.md) — `urn:ngm:class:quantitative-easing`
 - [Quantitative Finance](concepts/quantitative-finance.md) — `urn:ngm:class:quantitative-finance`
 - [Quantum AI](concepts/quantum-ai.md) — `urn:ngm:class:quantum-ai`
-- [Quantum Computation Paradigm](concepts/quantum-computation-paradigm.md) — `urn:ngm:class:quantum-computation-paradigm`
 - [Quantum Computing](concepts/quantum-computing.md) — `urn:ngm:class:quantum-computing`
 - [Quantum Cryptography](concepts/quantum-cryptography.md) — `urn:ngm:class:quantum-cryptography`
 - [Quantum Error Correction](concepts/quantum-error-correction.md) — `urn:ngm:class:quantum-error-correction`
@@ -6844,9 +6748,7 @@ concept_count: 9354
 - [rb 0104 hand guiding](concepts/rb-0104-hand-guiding.md) — `urn:ngm:class:rb-0104-hand-guiding`
 - [rb 0105 speed and separation monitoring](concepts/rb-0105-speed-and-separation-monitoring.md) — `urn:ngm:class:rb-0105-speed-and-separation-monitoring`
 - [RB 1002 closedloopcontrol](concepts/rb-1002-closedloopcontrol.md) — `urn:ngm:class:rb-1002-closedloopcontrol`
-- [RB-1007-trajectory-generation](concepts/rb-1007-trajectory-generation.md) — `urn:ngm:class:rb-1007-trajectory-generation`
 - [RB-1008-odometry](concepts/rb-1008-odometry.md) — `urn:ngm:class:rb-1008-odometry`
-- [RB 1013 localization](concepts/rb-1013-localization.md) — `urn:ngm:class:rb-1013-localization`
 - [RB 1016 pathplanning](concepts/rb-1016-pathplanning.md) — `urn:ngm:class:rb-1016-pathplanning`
 - [RDF](concepts/rdf.md) — `urn:ngm:class:rdf`
 - [RDF Data Model](concepts/rdf-data-model.md) — `urn:ngm:class:rdf-data-model`
@@ -6877,7 +6779,7 @@ concept_count: 9354
 - [Real-Time Animation](concepts/real-time-animation.md) — `urn:ngm:class:real-time-animation`
 - [Real-Time Captioning](concepts/real-time-captioning.md) — `urn:ngm:class:real-time-captioning`
 - [Real Time Character Animation](concepts/real-time-character-animation.md) — `urn:ngm:class:real-time-character-animation`
-- [Real Time Collaboration](concepts/real-time-collaboration.md) — `urn:ngm:class:real-time-collaboration`
+- [Real-Time Collaboration](concepts/real-time-collaboration.md) — `urn:ngm:class:real-time-collaboration`
 - [Real-Time Collaborative Editing](concepts/real-time-collaborative-editing.md) — `urn:ngm:class:real-time-collaborative-editing`
 - [Real-Time Communication](concepts/real-time-communication.md) — `urn:ngm:class:real-time-communication`
 - [Real-Time Computation](concepts/real-time-computation.md) — `urn:ngm:class:real-time-computation`
@@ -6920,8 +6822,6 @@ concept_count: 9354
 - [Reality.eth](concepts/reality-eth.md) — `urn:ngm:class:reality-eth`
 - [Reality ETH Oracle](concepts/reality-eth-oracle.md) — `urn:ngm:class:reality-eth-oracle`
 - [Reality Virtuality Continuum](concepts/reality-virtuality-continuum.md) — `urn:ngm:class:reality-virtuality-continuum`
-- [Realtime Collaboration](concepts/realtime-collaboration.md) — `urn:ngm:class:realtime-collaboration`
-- [Realtime Communication](concepts/realtime-communication.md) — `urn:ngm:class:realtime-communication`
 - [Reanalysis](concepts/reanalysis.md) — `urn:ngm:class:reanalysis`
 - [Reanalyzed Data State](concepts/reanalyzed-data-state.md) — `urn:ngm:class:reanalyzed-data-state`
 - [Reasoning](concepts/reasoning.md) — `urn:ngm:class:reasoning`
@@ -7174,7 +7074,6 @@ concept_count: 9354
 - [Risk Treatment](concepts/risk-treatment.md) — `urn:ngm:class:risk-treatment`
 - [Risk Weighted Assets](concepts/risk-weighted-assets.md) — `urn:ngm:class:risk-weighted-assets`
 - [Ritual Artifact](concepts/ritual-artifact.md) — `urn:ngm:class:ritual-artifact`
-- [RLHF](concepts/rlhf.md) — `urn:ngm:class:rlhf`
 - [RMSNorm](concepts/rmsnorm.md) — `urn:ngm:class:rmsnorm`
 - [RMSProp](concepts/rmsprop.md) — `urn:ngm:class:rmsprop`
 - [RoBERTa](concepts/ro-berta.md) — `urn:ngm:class:ro-berta`
@@ -7245,7 +7144,6 @@ concept_count: 9354
 - [Root Certificate](concepts/root-certificate.md) — `urn:ngm:class:root-certificate`
 - [Root Mean Square Error](concepts/root-mean-square-error.md) — `urn:ngm:class:root-mean-square-error`
 - [Rootstock](concepts/rootstock.md) — `urn:ngm:class:rootstock`
-- [ROS](concepts/ros.md) — `urn:ngm:class:ros`
 - [ROS 2](concepts/ros-2.md) — `urn:ngm:class:ros-2`
 - [ROS-Industrial](concepts/ros-industrial.md) — `urn:ngm:class:ros-industrial`
 - [ROS Navigation Stack](concepts/ros-navigation-stack.md) — `urn:ngm:class:ros-navigation-stack`
@@ -7546,7 +7444,6 @@ concept_count: 9354
 - [Semantic Spatial Web Layer](concepts/semantic-spatial-web-layer.md) — `urn:ngm:class:semantic-spatial-web-layer`
 - [Semantic Versioning](concepts/semantic-versioning.md) — `urn:ngm:class:semantic-versioning`
 - [Semantic Web](concepts/semantic-web.md) — `urn:ngm:class:semantic-web`
-- [Semantic Web Linked Data Standard](concepts/semantic-web-linked-data-standard.md) — `urn:ngm:class:semantic-web-linked-data-standard`
 - [Semantic Web Infrastructure](concepts/semantic-web-linked-data-standard-infrastructure.md) — `urn:ngm:class:semantic-web-linked-data-standard-infrastructure`
 - [Semantic Web Standards](concepts/semantic-web-linked-data-standard-standards.md) — `urn:ngm:class:semantic-web-linked-data-standard-standards`
 - [Semi-Fungible Token](concepts/semi-fungible-token.md) — `urn:ngm:class:semi-fungible-token`
@@ -7795,7 +7692,6 @@ concept_count: 9354
 - [Software-Defined Networking](concepts/software-defined-networking.md) — `urn:ngm:class:software-defined-networking`
 - [Software Delivery Lifecycle](concepts/software-delivery-lifecycle.md) — `urn:ngm:class:software-delivery-lifecycle`
 - [Software Development](concepts/software-development.md) — `urn:ngm:class:software-development`
-- [Software Development Automation](concepts/software-development-automation.md) — `urn:ngm:class:software-development-automation`
 - [Software Development Kit](concepts/software-development-kit.md) — `urn:ngm:class:software-development-kit`
 - [Software Development Process](concepts/software-development-process.md) — `urn:ngm:class:software-development-process`
 - [Software Engineering](concepts/software-engineering.md) — `urn:ngm:class:software-engineering`
@@ -7844,6 +7740,7 @@ concept_count: 9354
 - [Space Medicine](concepts/space-medicine.md) — `urn:ngm:class:space-medicine`
 - [Space Physiology](concepts/space-physiology.md) — `urn:ngm:class:space-physiology`
 - [Space Plasma](concepts/space-plasma.md) — `urn:ngm:class:space-plasma`
+- [Space Prime](concepts/space-prime.md) — `urn:ngm:class:space-prime`
 - [Space Probe](concepts/space-probe.md) — `urn:ngm:class:space-probe`
 - [Space Radiation](concepts/space-radiation.md) — `urn:ngm:class:space-radiation`
 - [Space Radiation Environment](concepts/space-radiation-environment.md) — `urn:ngm:class:space-radiation-environment`
@@ -7855,7 +7752,9 @@ concept_count: 9354
 - [Space Segment](concepts/space-segment.md) — `urn:ngm:class:space-segment`
 - [Space Situational Awareness](concepts/space-situational-awareness.md) — `urn:ngm:class:space-situational-awareness`
 - [Space Station](concepts/space-station.md) — `urn:ngm:class:space-station`
+- [Space Supply Chain](concepts/space-supply-chain.md) — `urn:ngm:class:space-supply-chain`
 - [Space Systems Engineering](concepts/space-systems-engineering.md) — `urn:ngm:class:space-systems-engineering`
+- [Space Systems Integrator](concepts/space-systems-integrator.md) — `urn:ngm:class:space-systems-integrator`
 - [Space-to-ground Link](concepts/space-to-ground-link.md) — `urn:ngm:class:space-to-ground-link`
 - [Space-to-space Link](concepts/space-to-space-link.md) — `urn:ngm:class:space-to-space-link`
 - [Space Traffic Management](concepts/space-traffic-management.md) — `urn:ngm:class:space-traffic-management`
@@ -8026,7 +7925,6 @@ concept_count: 9354
 - [Stability Analysis](concepts/stability-analysis.md) — `urn:ngm:class:stability-analysis`
 - [Stable Coins](concepts/stable-coins.md) — `urn:ngm:class:stable-coins`
 - [Stable Diffusion](concepts/stable-diffusion.md) — `urn:ngm:class:stable-diffusion`
-- [Stable Diffusion Image Model](concepts/stable-diffusion-image-model.md) — `urn:ngm:class:stable-diffusion-image-model`
 - [Stable Swap Invariant](concepts/stable-swap-invariant.md) — `urn:ngm:class:stable-swap-invariant`
 - [Stablecoin](concepts/stablecoin.md) — `urn:ngm:class:stablecoin`
 - [Stablecoin Regulation](concepts/stablecoin-regulation.md) — `urn:ngm:class:stablecoin-regulation`
@@ -8151,7 +8049,6 @@ concept_count: 9354
 - [Stream Cipher](concepts/stream-cipher.md) — `urn:ngm:class:stream-cipher`
 - [Stream Processing](concepts/stream-processing.md) — `urn:ngm:class:stream-processing`
 - [Streaming Payment](concepts/streaming-payment.md) — `urn:ngm:class:streaming-payment`
-- [Streaming Payments](concepts/streaming-payments.md) — `urn:ngm:class:streaming-payments`
 - [Stress Testing](concepts/stress-testing.md) — `urn:ngm:class:stress-testing`
 - [Strict Encoding](concepts/strict-encoding.md) — `urn:ngm:class:strict-encoding`
 - [Strict Types](concepts/strict-types.md) — `urn:ngm:class:strict-types`
@@ -8225,6 +8122,7 @@ concept_count: 9354
 - [Surgical Robot](concepts/surgical-robot.md) — `urn:ngm:class:surgical-robot`
 - [Surgical Robotics](concepts/surgical-robotics.md) — `urn:ngm:class:surgical-robotics`
 - [Surgical Simulation](concepts/surgical-simulation.md) — `urn:ngm:class:surgical-simulation`
+- [Surrey Satellite Technology Limited](concepts/surrey-satellite-technology-limited.md) — `urn:ngm:class:surrey-satellite-technology-limited`
 - [Surrogate Model](concepts/surrogate-model.md) — `urn:ngm:class:surrogate-model`
 - [Surveillance](concepts/surveillance.md) — `urn:ngm:class:surveillance`
 - [Surveillance Capitalism](concepts/surveillance-capitalism.md) — `urn:ngm:class:surveillance-capitalism`
@@ -8318,7 +8216,7 @@ concept_count: 9354
 - [Task Specific Model](concepts/task-specific-model.md) — `urn:ngm:class:task-specific-model`
 - [Taxation](concepts/taxation.md) — `urn:ngm:class:taxation`
 - [Taxonomy](concepts/taxonomy.md) — `urn:ngm:class:taxonomy`
-- [tc 0002 collaborative document editing](concepts/tc-0002-collaborative-document-editing.md) — `urn:ngm:class:tc-0002-collaborative-document-editing`
+- [Collaborative Document Editing](concepts/tc-0002-collaborative-document-editing.md) — `urn:ngm:class:tc-0002-collaborative-document-editing`
 - [tc 0003 telepresence robot](concepts/tc-0003-telepresence-robot.md) — `urn:ngm:class:tc-0003-telepresence-robot`
 - [TC-0080-Team-Coordination](concepts/tc-0080-team-coordination.md) — `urn:ngm:class:tc-0080-team-coordination`
 - [TCFD](concepts/tcfd.md) — `urn:ngm:class:tcfd`
@@ -8353,14 +8251,12 @@ concept_count: 9354
 - [Technology Sector Landscape Analysis](concepts/technology-sector-landscape-analysis.md) — `urn:ngm:class:technology-sector-landscape-analysis`
 - [Technology Stack](concepts/technology-stack.md) — `urn:ngm:class:technology-stack`
 - [Technology Transfer](concepts/technology-transfer.md) — `urn:ngm:class:technology-transfer`
-- [TEE](concepts/tee.md) — `urn:ngm:class:tee`
 - [TELE 001 telepresence](concepts/tele-001-telepresence.md) — `urn:ngm:class:tele-001-telepresence`
 - [TELE-005-common-ground-theory](concepts/tele-005-common-ground-theory.md) — `urn:ngm:class:tele-005-common-ground-theory`
 - [TELE-025-microsoft-hololens](concepts/tele-025-microsoft-hololens.md) — `urn:ngm:class:tele-025-microsoft-hololens`
 - [TELE-026-microsoft-mesh](concepts/tele-026-microsoft-mesh.md) — `urn:ngm:class:tele-026-microsoft-mesh`
 - [TELE-027-spatial-platform](concepts/tele-027-spatial-platform.md) — `urn:ngm:class:tele-027-spatial-platform`
-- [TELE-050-neural-rendering-telepresence](concepts/tele-050-neural-rendering-telepresence.md) — `urn:ngm:class:tele-050-neural-rendering-telepresence`
-- [TELE 050 neuralrenderingtelepresence](concepts/tele-050-neuralrenderingtelepresence.md) — `urn:ngm:class:tele-050-neuralrenderingtelepresence`
+- [Neural Rendering Telepresence](concepts/tele-050-neural-rendering-telepresence.md) — `urn:ngm:class:tele-050-neural-rendering-telepresence`
 - [TELE-053-volumetric-video-conferencing](concepts/tele-053-volumetric-video-conferencing.md) — `urn:ngm:class:tele-053-volumetric-video-conferencing`
 - [TELE-060-instant-ngp](concepts/tele-060-instant-ngp.md) — `urn:ngm:class:tele-060-instant-ngp`
 - [TELE-102-codec-avatars](concepts/tele-102-codec-avatars.md) — `urn:ngm:class:tele-102-codec-avatars`
@@ -8452,6 +8348,7 @@ concept_count: 9354
 - [Texture Sampling](concepts/texture-sampling.md) — `urn:ngm:class:texture-sampling`
 - [Tezos](concepts/tezos.md) — `urn:ngm:class:tezos`
 - [TF-IDF](concepts/tf-idf.md) — `urn:ngm:class:tf-idf`
+- [Thales Alenia Space](concepts/thales-alenia-space.md) — `urn:ngm:class:thales-alenia-space`
 - [The Bitter Lesson](concepts/the-bitter-lesson.md) — `urn:ngm:class:the-bitter-lesson`
 - [The Sandbox](concepts/the-sandbox.md) — `urn:ngm:class:the-sandbox`
 - [Theorem Proving](concepts/theorem-proving.md) — `urn:ngm:class:theorem-proving`
@@ -8503,7 +8400,6 @@ concept_count: 9354
 - [Tim Reutermann Decentralised Governance Thinker](concepts/tim-reutermann-decentralised-governance-thinker.md) — `urn:ngm:class:tim-reutermann-decentralised-governance-thinker`
 - [Time Dilution of Precision](concepts/time-dilution-of-precision.md) — `urn:ngm:class:time-dilution-of-precision`
 - [Time-domain Astronomy](concepts/time-domain-astronomy.md) — `urn:ngm:class:time-domain-astronomy`
-- [Time Lock](concepts/time-lock.md) — `urn:ngm:class:time-lock`
 - [Time Of Flight](concepts/time-of-flight.md) — `urn:ngm:class:time-of-flight`
 - [Time-of-Flight Sensor](concepts/time-of-flight-sensor.md) — `urn:ngm:class:time-of-flight-sensor`
 - [Time-Sensitive Networking](concepts/time-sensitive-networking.md) — `urn:ngm:class:time-sensitive-networking`
@@ -8522,7 +8418,6 @@ concept_count: 9354
 - [Timestamp Service](concepts/timestamp-service.md) — `urn:ngm:class:timestamp-service`
 - [Timestamping Service](concepts/timestamping-service.md) — `urn:ngm:class:timestamping-service`
 - [TinyML](concepts/tiny-ml.md) — `urn:ngm:class:tiny-ml`
-- [TLS](concepts/tls.md) — `urn:ngm:class:tls`
 - [TLS 1.3](concepts/tls-1-3.md) — `urn:ngm:class:tls-1-3`
 - [TLS Encryption](concepts/tls-encryption.md) — `urn:ngm:class:tls-encryption`
 - [Tls Handshake](concepts/tls-handshake.md) — `urn:ngm:class:tls-handshake`
@@ -8561,7 +8456,6 @@ concept_count: 9354
 - [Tokenization](concepts/tokenization.md) — `urn:ngm:class:tokenization`
 - [Tokenization System](concepts/tokenization-system.md) — `urn:ngm:class:tokenization-system`
 - [Tokenized Asset](concepts/tokenized-asset.md) — `urn:ngm:class:tokenized-asset`
-- [Tokenizer](concepts/tokenizer.md) — `urn:ngm:class:tokenizer`
 - [Tokenomics](concepts/tokenomics.md) — `urn:ngm:class:tokenomics`
 - [Tokenomics Governance](concepts/tokenomics-governance.md) — `urn:ngm:class:tokenomics-governance`
 - [Tone Mapping](concepts/tone-mapping.md) — `urn:ngm:class:tone-mapping`
@@ -8773,6 +8667,7 @@ concept_count: 9354
 - [UK National AI Strategy](concepts/uk-national-ai-strategy.md) — `urn:ngm:class:uk-national-ai-strategy`
 - [UK Online Safety Act](concepts/uk-online-safety-act.md) — `urn:ngm:class:uk-online-safety-act`
 - [Uk Research And Innovation](concepts/uk-research-and-innovation.md) — `urn:ngm:class:uk-research-and-innovation`
+- [UK Space Prime](concepts/uk-space-prime.md) — `urn:ngm:class:uk-space-prime`
 - [UK Tech Ecosystem](concepts/uk-tech-ecosystem.md) — `urn:ngm:class:uk-tech-ecosystem`
 - [ULMFiT](concepts/ulmfi-t.md) — `urn:ngm:class:ulmfi-t`
 - [Ultra-Low Latency](concepts/ultra-low-latency.md) — `urn:ngm:class:ultra-low-latency`
@@ -8846,7 +8741,6 @@ concept_count: 9354
 - [Usage-Based Consumption](concepts/usage-based-consumption.md) — `urn:ngm:class:usage-based-consumption`
 - [Usage-Based Pricing](concepts/usage-based-pricing.md) — `urn:ngm:class:usage-based-pricing`
 - [USB Interface](concepts/usb-interface.md) — `urn:ngm:class:usb-interface`
-- [USD](concepts/usd.md) — `urn:ngm:class:usd`
 - [USD Pipeline](concepts/usd-pipeline.md) — `urn:ngm:class:usd-pipeline`
 - [USDC](concepts/usdc.md) — `urn:ngm:class:usdc`
 - [USDT](concepts/usdt.md) — `urn:ngm:class:usdt`
@@ -8896,7 +8790,6 @@ concept_count: 9354
 - [V2X Communication](concepts/v2x-communication.md) — `urn:ngm:class:v2x-communication`
 - [Vacuum Arc Thruster](concepts/vacuum-arc-thruster.md) — `urn:ngm:class:vacuum-arc-thruster`
 - [Vadose Zone](concepts/vadose-zone.md) — `urn:ngm:class:vadose-zone`
-- [VAE](concepts/vae.md) — `urn:ngm:class:vae`
 - [Validated Data State](concepts/validated-data-state.md) — `urn:ngm:class:validated-data-state`
 - [Validation Constraints](concepts/validation-constraints.md) — `urn:ngm:class:validation-constraints`
 - [Validation Dataset](concepts/validation-dataset.md) — `urn:ngm:class:validation-dataset`
@@ -8954,8 +8847,7 @@ concept_count: 9354
 - [Verifiable Computation](concepts/verifiable-computation.md) — `urn:ngm:class:verifiable-computation`
 - [Verifiable Credential Standard](concepts/verifiable-credential-standard.md) — `urn:ngm:class:verifiable-credential-standard`
 - [Verifiable Credential Surface](concepts/verifiable-credential-surface.md) — `urn:ngm:class:verifiable-credential-surface`
-- [Verifiable Credential (VC)](concepts/verifiable-credential-vc.md) — `urn:ngm:class:verifiable-credential-vc`
-- [Verifiable Credentials](concepts/verifiable-credentials.md) — `urn:ngm:class:verifiable-credentials`
+- [Verifiable Credential](concepts/verifiable-credentials.md) — `urn:ngm:class:verifiable-credentials`
 - [Verifiable Data Registry](concepts/verifiable-data-registry.md) — `urn:ngm:class:verifiable-data-registry`
 - [Verifiable Inference](concepts/verifiable-inference.md) — `urn:ngm:class:verifiable-inference`
 - [Verifiable Random Function](concepts/verifiable-random-function.md) — `urn:ngm:class:verifiable-random-function`
@@ -9155,7 +9047,6 @@ concept_count: 9354
 - [Vyper](concepts/vyper.md) — `urn:ngm:class:vyper`
 - [W3C 2022 DID Core 1.0 Recommendation](concepts/w-3-c-2022-did-core-1-0-recommendation.md) — `urn:ngm:class:w-3-c-2022-did-core-1-0-recommendation`
 - [W3C Cognitive AI Community Group](concepts/w-3-c-cognitive-ai-community-group.md) — `urn:ngm:class:w-3-c-cognitive-ai-community-group`
-- [W3C DID Core 1.0](concepts/w-3-c-did-core-1-0.md) — `urn:ngm:class:w-3-c-did-core-1-0`
 - [W3C DID Core Specification](concepts/w-3-c-did-core-specification.md) — `urn:ngm:class:w-3-c-did-core-specification`
 - [W3C DID Working Group](concepts/w-3-c-did-working-group.md) — `urn:ngm:class:w-3-c-did-working-group`
 - [W3C Linked Data Platform](concepts/w-3-c-linked-data-platform.md) — `urn:ngm:class:w-3-c-linked-data-platform`
@@ -9172,12 +9063,10 @@ concept_count: 9354
 - [W3C Vocabulary](concepts/w-3-c-vocabulary.md) — `urn:ngm:class:w-3-c-vocabulary`
 - [W3C WebXR](concepts/w-3-c-web-xr.md) — `urn:ngm:class:w-3-c-web-xr`
 - [W3C WebXR Device API](concepts/w-3-c-web-xr-device-api.md) — `urn:ngm:class:w-3-c-web-xr-device-api`
-- [W3C](concepts/w3-c.md) — `urn:ngm:class:w3-c`
 - [W3C DID](concepts/w3-c-did.md) — `urn:ngm:class:w3-c-did`
 - [W3C DID Core](concepts/w3-c-did-core.md) — `urn:ngm:class:w3-c-did-core`
 - [W3C DID Specification](concepts/w3-c-did-specification.md) — `urn:ngm:class:w3-c-did-specification`
 - [W3C PROV](concepts/w3-c-prov.md) — `urn:ngm:class:w3-c-prov`
-- [W3C Verifiable Credentials](concepts/w3-c-verifiable-credentials.md) — `urn:ngm:class:w3-c-verifiable-credentials`
 - [W3C Web Speech API](concepts/w3-c-web-speech-api.md) — `urn:ngm:class:w3-c-web-speech-api`
 - [W3C Recommendation](concepts/w3c-recommendation.md) — `urn:ngm:class:w3c-recommendation`
 - [WAI-ARIA](concepts/wai-aria.md) — `urn:ngm:class:wai-aria`
@@ -9243,7 +9132,6 @@ concept_count: 9354
 - [Web3 Wallet](concepts/web3-wallet.md) — `urn:ngm:class:web3-wallet`
 - [WebGPU](concepts/webgpu.md) — `urn:ngm:class:webgpu`
 - [Webhook](concepts/webhook.md) — `urn:ngm:class:webhook`
-- [WebID Decentralised Identity URI](concepts/webid-decentralised-identity-uri.md) — `urn:ngm:class:webid-decentralised-identity-uri`
 - [Webinar Broadcast](concepts/webinar-broadcast.md) — `urn:ngm:class:webinar-broadcast`
 - [Weight Decay](concepts/weight-decay.md) — `urn:ngm:class:weight-decay`
 - [Weight Initialisation](concepts/weight-initialisation.md) — `urn:ngm:class:weight-initialisation`

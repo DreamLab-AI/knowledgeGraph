@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:universal-time-1",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Universal Time 1 is the angle of the Earth's rotation about the CIP axis, defined by a conventional linear relation to the Earth Rotation Angle, and it can be regarded as a time determined by the rotation of the Earth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

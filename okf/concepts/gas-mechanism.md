@@ -8,13 +8,13 @@ description: The system in a blockchain such as Ethereum that meters and prices 
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 requires:
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
 enables:
   - urn:ngm:class:smart-contract
 bridgesTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # Gas Mechanism

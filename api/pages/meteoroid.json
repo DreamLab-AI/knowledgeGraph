@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meteoroid",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A meteoroid is a rock in space, ranging in size from dust grains to small asteroids.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

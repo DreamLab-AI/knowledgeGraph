@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:data-analytics
 uses:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:lidar
   - urn:ngm:class:unmanned-aerial-vehicle
   - urn:ngm:class:robotic-arm

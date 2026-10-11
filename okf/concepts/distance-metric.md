@@ -8,7 +8,7 @@ description: "A distance metric is a function that quantifies how dissimilar two
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
   - urn:ngm:class:statistics
   - urn:ngm:class:mathematical-analysis
@@ -64,7 +64,7 @@ standardizedBy:
   - urn:ngm:class:beir-benchmark
   - urn:ngm:class:faiss
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:cosine-similarity
   - urn:ngm:class:clustering

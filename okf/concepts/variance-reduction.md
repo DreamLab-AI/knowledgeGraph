@@ -22,7 +22,7 @@ uses:
   - urn:ngm:class:sampling
 supports:
   - urn:ngm:class:stochastic-gradient-descent
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:monte-carlo-integration
 relatedTo:

@@ -8,7 +8,7 @@ description: A JSON-LD Context is the machine-readable document or inline object
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 enables:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:semantic-interoperability
@@ -22,7 +22,7 @@ relatedTo:
   - urn:ngm:class:linked-data
   - urn:ngm:class:rdf
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # JSON-LD Context

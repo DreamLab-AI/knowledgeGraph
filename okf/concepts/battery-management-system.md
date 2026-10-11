@@ -8,7 +8,7 @@ description: A Battery Management System (BMS) is an embedded electronic system 
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
   - urn:ngm:class:current-sensor
   - urn:ngm:class:monitoring-system
@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:predictive-maintenance
   - urn:ngm:class:thermal-management
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:cloud-computing
 uses:

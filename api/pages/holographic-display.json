@@ -282,8 +282,8 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       }
     ],
     "dependsOn": [
@@ -292,7 +292,7 @@
         "label": "Semiconductor Manufacturing"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Embedded System-on-Chip"
       },
       {
@@ -356,7 +356,7 @@
         "label": "Neural Processing Unit"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -442,8 +442,8 @@
         "label": "Display Industry Standards"
       },
       {
-        "id": "urn:ngm:class:openxr-standard",
-        "label": "OpenXR Standard"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -452,10 +452,6 @@
       {
         "id": "urn:ngm:class:jedec",
         "label": "JEDEC"
-      },
-      {
-        "id": "urn:ngm:class:open-xr",
-        "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:web-xr",

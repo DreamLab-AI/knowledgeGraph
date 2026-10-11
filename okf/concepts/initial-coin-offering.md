@@ -27,7 +27,7 @@ bridgesTo:
   - urn:ngm:class:initial-dex-offering
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 supports:
   - urn:ngm:class:utility-token
   - urn:ngm:class:protocol-bootstrapping

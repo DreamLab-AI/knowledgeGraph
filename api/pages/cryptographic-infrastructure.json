@@ -22,7 +22,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -153,12 +153,12 @@
         "label": "Hash-Function"
       },
       {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:cryptographic-key-management",
-        "label": "Cryptographic Key Management"
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
       }
     ],
     "enables": [
@@ -209,6 +209,10 @@
         "label": "Hardware Security Module"
       },
       {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:secure-boot",
         "label": "Secure Boot"
       },
@@ -233,6 +237,10 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "contrastsWith": [
@@ -279,7 +287,7 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -287,7 +295,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
@@ -315,7 +323,11 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {
@@ -341,10 +353,6 @@
       {
         "id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application"
-      },
-      {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
       }
     ],
     "standardizedBy": [

@@ -24,7 +24,7 @@ supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:ai-safety
 relatedTo:
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:fairness
   - urn:ngm:class:human-computer-interaction
 ---

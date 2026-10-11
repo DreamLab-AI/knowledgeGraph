@@ -35,7 +35,7 @@
         "label": "Classification"
       },
       {
-        "id": "urn:ngm:class:ground-truth-labels",
+        "id": "urn:ngm:class:ground-truth",
         "label": "Ground Truth"
       }
     ],
@@ -150,9 +150,9 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -265,12 +265,12 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:alignment-evaluation",
-        "label": "Alignment Evaluation"
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
       },
       {
-        "id": "urn:ngm:class:eval-factsheet",
-        "label": "Eval Factsheet"
+        "id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
       }
     ],
     "dependsOn": [
@@ -283,16 +283,16 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:ai-system",
@@ -325,7 +325,7 @@
         "label": "ELO Rating"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -405,8 +405,8 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       }
     ],
     "uses": [
@@ -483,7 +483,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -491,8 +491,12 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
@@ -503,6 +507,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

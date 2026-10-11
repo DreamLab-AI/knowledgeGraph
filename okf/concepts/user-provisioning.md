@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:directory-service
 supports:
   - urn:ngm:class:access-control
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:compliance
 standardizedBy:
   - urn:ngm:class:scim

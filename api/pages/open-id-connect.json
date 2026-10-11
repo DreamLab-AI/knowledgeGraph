@@ -46,7 +46,7 @@
         "label": "JSON Web Key Set"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       }
     ],
@@ -81,7 +81,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:digital-identity-wallet",
@@ -132,7 +132,7 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -228,10 +228,6 @@
         "label": "Cross-Domain SSO"
       },
       {
-        "id": "urn:ngm:class:decentralized-identity",
-        "label": "Decentralized Identity"
-      },
-      {
         "id": "urn:ngm:class:multi-organization-access",
         "label": "Multi-Organization Access"
       },
@@ -250,6 +246,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [
@@ -368,8 +368,8 @@
       "label": "Agent Identity"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "digital-identity-wallet",

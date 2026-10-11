@@ -27,7 +27,7 @@ uses:
   - urn:ngm:class:tpu
   - urn:ngm:class:gpu
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding
 partOf:
   - urn:ngm:class:linear-algebra

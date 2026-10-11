@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:intent-classification
   - urn:ngm:class:real-time-transcription
   - urn:ngm:class:cloud-infrastructure
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:identity-verification
@@ -49,7 +49,7 @@ enables:
 dependsOn:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:speech-recognition
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:telephony-infrastructure
@@ -113,7 +113,7 @@ relatedTo:
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:digital-transformation
   - urn:ngm:class:knowledge-management
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:sentiment-analysis

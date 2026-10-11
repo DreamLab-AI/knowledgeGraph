@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:remote-sensing-platform",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A remote sensing platform is the stable structure that carries a sensor at a distance from the target, such as a ground installation, an aircraft or balloon, or a spacecraft or satellite outside the atmosphere.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:video-streaming
   - urn:ngm:class:3-d-asset
 uses:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:level-of-detail
 relatedTo:
   - urn:ngm:class:asset-management

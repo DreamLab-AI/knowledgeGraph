@@ -4,7 +4,7 @@ The capability for seamless migration of digital assets, identities, and experie
 
 ### Content
 
-- Capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges. Portability eliminates vendor lock-in by enabling users to transfer avatars, digital goods, and social connections across platforms, exemplified by [[Decentraland]] [[NFT]] portability and VRM-based cross-platform avatar systems. Standards-based interoperability reduces switching costs and encourages multi-platform presence, supporting user agency and ecosystem composability.
+- Capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[Universal Scene Description]]), metadata schemas, and blockchain bridges. Portability eliminates vendor lock-in by enabling users to transfer avatars, digital goods, and social connections across platforms, exemplified by [[Decentraland]] [[NFT]] portability and VRM-based cross-platform avatar systems. Standards-based interoperability reduces switching costs and encourages multi-platform presence, supporting user agency and ecosystem composability.
   ## Academic Context
 - Brief contextual overview
 - Portability in the metaverse refers to the ability for users to transfer digital assets, identities, and experiences across platforms, services, and virtual environments

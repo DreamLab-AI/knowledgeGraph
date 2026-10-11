@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:cyber-physical-systems
   - urn:ngm:class:model-predictive-control
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:artificial-intelligence
 uses:
@@ -37,7 +37,7 @@ partOf:
   - urn:ngm:class:ieee
 relatedTo:
   - urn:ngm:class:model-based-control
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:safety-critical-systems
 ---
 

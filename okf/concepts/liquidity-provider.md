@@ -37,7 +37,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:impermanent-loss
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:total-value-locked
   - urn:ngm:class:slippage
   - urn:ngm:class:governance-token

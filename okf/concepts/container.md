@@ -70,7 +70,7 @@ supports:
   - urn:ngm:class:microservices-architecture
 standardizedBy:
   - urn:ngm:class:open-container-initiative
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:cloud-native
@@ -86,9 +86,9 @@ relatedTo:
   - urn:ngm:class:gpu-computing
   - urn:ngm:class:kubeflow
   - urn:ngm:class:v-llm
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
 ---
 
 # Container

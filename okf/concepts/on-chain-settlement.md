@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:blockchain
   - urn:ngm:class:gas-fee
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
 dependsOn:
   - urn:ngm:class:consensus-mechanism

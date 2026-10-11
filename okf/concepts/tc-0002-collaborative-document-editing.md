@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: tc 0002 collaborative document editing
+title: Collaborative Document Editing
 resource: urn:ngm:class:tc-0002-collaborative-document-editing
 domain: distributed-collaboration
 description: Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
@@ -25,6 +25,6 @@ bridgesTo:
   - urn:ngm:class:remote-collaboration
 ---
 
-# tc 0002 collaborative document editing
+# Collaborative Document Editing
 
 Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.

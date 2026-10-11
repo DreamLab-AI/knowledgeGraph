@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:model-context-protocol
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:large-language-model

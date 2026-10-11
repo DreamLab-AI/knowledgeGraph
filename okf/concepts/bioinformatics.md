@@ -8,7 +8,6 @@ description: Bioinformatics is the interdisciplinary field that develops computa
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:computational-biology
   - urn:ngm:class:data-science
   - urn:ngm:class:scientific-computing
 hasPart:
@@ -46,11 +45,12 @@ implements:
 contrastsWith:
   - urn:ngm:class:wet-laboratory-biology
   - urn:ngm:class:experimental-biochemistry
+  - urn:ngm:class:computational-biology
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:biology
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistics
   - urn:ngm:class:data-science
   - urn:ngm:class:deep-learning
@@ -72,7 +72,7 @@ relatedTo:
   - urn:ngm:class:alphafold
   - urn:ngm:class:computational-biology
   - urn:ngm:class:bert
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:data-science
   - urn:ngm:class:scientific-machine-learning
 ---

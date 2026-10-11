@@ -19,11 +19,11 @@ requires:
   - urn:ngm:class:network-protocol
 enables:
   - urn:ngm:class:e-commerce
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:microtransaction
 contrastsWith:
   - urn:ngm:class:barter-system
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:ai-driven-finance

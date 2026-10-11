@@ -47,7 +47,7 @@ uses:
 supports:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:supervised-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
@@ -61,7 +61,7 @@ relatedTo:
   - urn:ngm:class:kullback-leibler-divergence
   - urn:ngm:class:variational-inference
   - urn:ngm:class:attention-mechanism
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 
 # Cost Function

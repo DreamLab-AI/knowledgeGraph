@@ -20,7 +20,7 @@ contrastsWith:
   - urn:ngm:class:swift
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:compiler
   - urn:ngm:class:type-system

@@ -17,9 +17,9 @@ hasPart:
   - urn:ngm:class:push-notification
   - urn:ngm:class:batch-processing
 requires:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:network-transport
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 enables:
   - urn:ngm:class:tool-use
   - urn:ngm:class:function-calling
@@ -38,7 +38,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:web-socket
   - urn:ngm:class:http
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 supports:
   - urn:ngm:class:language-server-protocol
   - urn:ngm:class:model-context-protocol

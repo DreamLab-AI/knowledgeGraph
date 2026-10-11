@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:utxo-model
 bridgesTo:
   - urn:ngm:class:digital-identity
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 supports:
   - urn:ngm:class:gas-mechanism
 partOf:

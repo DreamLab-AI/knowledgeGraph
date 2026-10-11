@@ -31,7 +31,7 @@ requires:
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:api-gateway
   - urn:ngm:class:cryptographic-protocol
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:risk-assessment
 enables:
   - urn:ngm:class:federated-identity
@@ -44,7 +44,7 @@ enables:
   - urn:ngm:class:user-lifecycle-management
 dependsOn:
   - urn:ngm:class:cryptographic-protocol
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:graph-database
   - urn:ngm:class:api-gateway
   - urn:ngm:class:metadata-management
@@ -65,7 +65,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:audit-trail
   - urn:ngm:class:graph-database
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:metadata-management
   - urn:ngm:class:risk-assessment
 supports:
@@ -81,7 +81,7 @@ standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:oasis
   - urn:ngm:class:open-id-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:access-control-system
   - urn:ngm:class:blockchain-network

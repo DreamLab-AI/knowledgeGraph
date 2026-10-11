@@ -17,7 +17,7 @@ enables:
 uses:
   - urn:ngm:class:slam
   - urn:ngm:class:sensor-fusion
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 partOf:
   - urn:ngm:class:robotics
   - urn:ngm:class:mobile-robot

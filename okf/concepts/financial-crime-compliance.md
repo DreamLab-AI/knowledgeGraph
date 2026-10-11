@@ -15,9 +15,9 @@ hasPart:
   - urn:ngm:class:suspicious-activity-report
 requires:
   - urn:ngm:class:risk-based-approach
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 bridgesTo:
   - urn:ngm:class:finance
 uses:
@@ -29,8 +29,8 @@ supports:
 partOf:
   - urn:ngm:class:regulatory-compliance
 relatedTo:
-  - urn:ngm:class:aml
-  - urn:ngm:class:kyc
+  - urn:ngm:class:anti-money-laundering
+  - urn:ngm:class:know-your-customer
 ---
 
 # Financial Crime Compliance

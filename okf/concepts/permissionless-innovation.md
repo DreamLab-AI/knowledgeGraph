@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:governance
 enables:
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 bridgesTo:
   - urn:ngm:class:web3
 ---

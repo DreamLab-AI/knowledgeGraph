@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ecliptic-latitude",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ecliptic latitude is the angular distance of a position on the celestial sphere north or south of the ecliptic, the projection of the plane of the Earth's orbit on that sphere.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

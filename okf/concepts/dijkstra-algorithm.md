@@ -13,7 +13,6 @@ is-a:
   - urn:ngm:class:path-planning
   - urn:ngm:class:graph-search
   - urn:ngm:class:graph-search-algorithm
-  - urn:ngm:class:a-star-algorithm
   - urn:ngm:class:bellman-ford-algorithm
 requires:
   - urn:ngm:class:non-negative-weights

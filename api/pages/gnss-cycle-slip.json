@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-cycle-slip",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS cycle slip is a discontinuity in a carrier-phase observation that changes its integer ambiguity by one or more whole cycles.[^1][^2][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

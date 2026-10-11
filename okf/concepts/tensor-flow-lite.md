@@ -14,9 +14,9 @@ hasPart:
   - urn:ngm:class:tflite-converter
   - urn:ngm:class:tflite-interpreter
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:edge-inference
   - urn:ngm:class:on-device-learning
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:neural-network
   - urn:ngm:class:flatbuffers
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 supports:
   - urn:ngm:class:android
   - urn:ngm:class:ios

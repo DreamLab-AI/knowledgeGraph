@@ -40,8 +40,8 @@
         "label": "Energy Efficiency"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       }
     ],
     "enables": [
@@ -111,7 +111,7 @@
         "label": "OECD AI Principles"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -343,7 +343,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

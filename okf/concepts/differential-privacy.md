@@ -55,9 +55,9 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:stochastic-gradient-descent
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-query-model
   - urn:ngm:class:random-noise
 supports:
@@ -75,7 +75,7 @@ relatedTo:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:synthetic-data
   - urn:ngm:class:apple-differential-privacy
   - urn:ngm:class:u-s-census-2020

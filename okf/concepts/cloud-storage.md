@@ -28,14 +28,14 @@ contrastsWith:
   - urn:ngm:class:content-addressed-storage
   - urn:ngm:class:on-premises-storage
 bridgesTo:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:hybrid-cloud
 uses:
   - urn:ngm:class:encryption
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:erasure-coding
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:vector-database
   - urn:ngm:class:data-management
 standardizedBy:

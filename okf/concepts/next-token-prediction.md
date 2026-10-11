@@ -8,7 +8,7 @@ description: "Next token prediction is the autoregressive language-modelling obj
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 hasPart:
   - urn:ngm:class:cross-entropy-loss
 requires:
@@ -30,7 +30,7 @@ uses:
 supports:
   - urn:ngm:class:gpt
 partOf:
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 relatedTo:
   - urn:ngm:class:language-model
   - urn:ngm:class:representation-learning

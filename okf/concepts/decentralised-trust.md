@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:trustless-settlement
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:permissionless-participation
 dependsOn:
@@ -23,7 +23,7 @@ dependsOn:
   - urn:ngm:class:hash-function
 contrastsWith:
   - urn:ngm:class:certificate-authority
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 bridgesTo:
   - urn:ngm:class:digital-governance
   - urn:ngm:class:supply-chain-provenance

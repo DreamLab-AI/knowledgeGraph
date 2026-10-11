@@ -8,7 +8,7 @@ description: The process of applying a trained machine learning model to a colle
 maturity: established
 quality: 0.93
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-serving
   - urn:ngm:class:ai-infrastructure
 hasPart:
@@ -32,7 +32,7 @@ enables:
 dependsOn:
   - urn:ngm:class:machine-learning-discipline-infrastructure
   - urn:ngm:class:gpu-computing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:inference-pipeline
   - urn:ngm:class:model-deployment
@@ -56,12 +56,12 @@ partOf:
   - urn:ngm:class:mlops
 relatedTo:
   - urn:ngm:class:throughput-optimisation
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:distributed-training
   - urn:ngm:class:latency
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:tensor-parallelism
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 ---
 
 # Batch Inference

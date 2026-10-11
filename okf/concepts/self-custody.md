@@ -17,19 +17,19 @@ requires:
 enables:
   - urn:ngm:class:financial-sovereignty
   - urn:ngm:class:censorship-resistance
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 contrastsWith:
   - urn:ngm:class:custodial-exchange
   - urn:ngm:class:qualified-custodian
   - urn:ngm:class:third-party-custody
 bridgesTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:wallet
   - urn:ngm:class:hardware-wallet
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:cryptography
   - urn:ngm:class:hierarchical-deterministic-wallet

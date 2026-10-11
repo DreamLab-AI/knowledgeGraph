@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:restricted-three-body-problem",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Restricted three-body problem is an idealised gravitational model in which two massive primaries move under their mutual gravity while a third, negligible-mass body moves under their attraction without changing the primaries\u2019 motion.[^1345]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

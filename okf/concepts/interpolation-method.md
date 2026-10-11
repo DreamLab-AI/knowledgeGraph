@@ -4,6 +4,7 @@ type: Class
 title: Interpolation Method
 resource: urn:ngm:class:interpolation-method
 domain: earth-observation-and-geospatial-sensing
+description: An interpolation method is an algorithm for estimating values at unsampled locations from values at known locations, and SWEET models it as a kind of Algorithm tied to the Interpolation data service.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Interpolation Method
+
+An interpolation method is an algorithm for estimating values at unsampled locations from values at known locations, and SWEET models it as a kind of Algorithm tied to the Interpolation data service.[^1][^2]

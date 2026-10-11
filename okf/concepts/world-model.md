@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:knowledge-representation
 hasPart:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:reward-model
 requires:
   - urn:ngm:class:state-representation
@@ -32,12 +32,12 @@ uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:scene-understanding
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 relatedTo:
   - urn:ngm:class:embodied-ai-simulation
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:physics-simulation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:simulation
 ---
 

@@ -28,7 +28,7 @@
         "label": "Policy Framework"
       },
       {
-        "id": "urn:ngm:class:authorization",
+        "id": "urn:ngm:class:authorisation",
         "label": "Fine-Grained Authorization"
       }
     ],
@@ -75,7 +75,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:open-policy-agent",
@@ -267,16 +267,16 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:directory-service",
         "label": "Directory Service"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-logging",
@@ -335,7 +335,7 @@
         "label": "Self-Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {

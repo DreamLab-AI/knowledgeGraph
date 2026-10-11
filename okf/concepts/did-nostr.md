@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:solid-oidc
   - urn:ngm:class:single-sign-on
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:self-sovereign-identity
 dependsOn:
   - urn:ngm:class:did-resolution
@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:did-web
 bridgesTo:
   - urn:ngm:class:solid
-  - urn:ngm:class:webid-decentralised-identity-uri
+  - urn:ngm:class:web-id
   - urn:ngm:class:javascript-solid-server
   - urn:ngm:class:block-trails
 uses:

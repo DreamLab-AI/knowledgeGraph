@@ -164,12 +164,8 @@
         "label": "Compute-Optimal Training"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
         "id": "urn:ngm:class:autonomous-system",
@@ -186,6 +182,10 @@
       {
         "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [

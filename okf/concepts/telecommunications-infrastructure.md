@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
 supports:
   - urn:ngm:class:latency-management-protocol
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:distributed-systems
 standardizedBy:

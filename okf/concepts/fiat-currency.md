@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:government-authority
 enables:
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:fractional-reserve-banking
   - urn:ngm:class:international-trade
 dependsOn:
@@ -31,9 +31,9 @@ contrastsWith:
   - urn:ngm:class:gold-standard
 bridgesTo:
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 uses:
   - urn:ngm:class:swift
   - urn:ngm:class:real-time-gross-settlement
@@ -43,7 +43,7 @@ relatedTo:
   - urn:ngm:class:inflation
   - urn:ngm:class:exchange-rate
   - urn:ngm:class:foreign-exchange-market
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:reserve-currency
 ---
 

@@ -42,7 +42,7 @@ dependsOn:
   - urn:ngm:class:orchestration-layer
   - urn:ngm:class:agent-runtime
   - urn:ngm:class:memory-management
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:security-architecture
 implements:
   - urn:ngm:class:re-act-pattern
@@ -61,7 +61,7 @@ uses:
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:agent-communication-protocol
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:chain-of-thought
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:containerisation

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:leap-second",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A leap second is a second added to Coordinated Universal Time to keep it synchronised with astronomical time.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -18,8 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -98,8 +98,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -213,11 +213,11 @@
       "label": "TransparencyRequirements"
     },
     {
-      "slug": "aiethics",
+      "slug": "ai-ethics",
       "label": "AIEthics"
     },
     {
-      "slug": "aisystem",
+      "slug": "ai-system",
       "label": "AISystem"
     },
     {

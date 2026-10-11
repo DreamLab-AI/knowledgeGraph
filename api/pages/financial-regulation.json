@@ -26,7 +26,7 @@
         "label": "Securities Regulation"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -44,7 +44,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -93,7 +93,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -101,7 +101,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -400,16 +400,12 @@
       "label": "CBDC Frameworks"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
       "slug": "cftc",
       "label": "CFTC"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "compliance-monitoring",
@@ -476,8 +472,8 @@
       "label": "Investor Protection"
     },
     {
-      "slug": "kyc",
-      "label": "KYC"
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
     },
     {
       "slug": "knowledge-graphing",

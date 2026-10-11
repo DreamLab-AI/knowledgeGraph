@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatiotemporal-asset-catalogue",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A spatiotemporal asset catalogue is an index of files that represent information about the Earth captured in a certain space and time, organised so that they can be searched by location and time.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:standards-body
 hasPart:
   - urn:ngm:class:nist-cybersecurity-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:nist-privacy-framework
   - urn:ngm:class:nist-sp-800-series
 enables:

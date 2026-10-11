@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0.55
 is-a:
   - urn:ngm:class:software-engineering
+  - urn:ngm:class:software-development
 requires:
   - urn:ngm:class:agent-harness
 enables:
@@ -16,6 +17,9 @@ enables:
   - urn:ngm:class:terminal-coding-agents
 partOf:
   - urn:ngm:class:software-engineering
+relatedTo:
+  - urn:ngm:class:agents
+  - urn:ngm:class:computer-use-and-browser-agents
 ---
 
 # Software Engineering Automation

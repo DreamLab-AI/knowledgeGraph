@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:byzantine-fault-tolerance
 bridgesTo:
   - urn:ngm:class:digital-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 partOf:
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:blockchain-security

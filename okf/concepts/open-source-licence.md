@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:free-software
 bridgesTo:
   - urn:ngm:class:intellectual-property-rights
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 supports:
   - urn:ngm:class:licence-compliance
 standardizedBy:

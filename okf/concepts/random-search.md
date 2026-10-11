@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:model-selection
 dependsOn:
   - urn:ngm:class:search-space
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:hyperparameter-tuning
 contrastsWith:

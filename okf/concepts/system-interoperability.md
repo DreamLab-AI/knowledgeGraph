@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:spatial-computing
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:iso-iec
 relatedTo:
   - urn:ngm:class:microservices-architecture

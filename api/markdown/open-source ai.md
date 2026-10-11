@@ -23,7 +23,7 @@ Open-Source AI denotes artificial intelligence systems—including model weights
 - **Inference engines**
   - Optimised runtimes (llama.cpp, vLLM, Ollama, TensorRT-LLM) that run open model weights efficiently on consumer or server hardware. See [[Inference Engine]] and [[Model Quantisation]].
 - **Fine-tuning frameworks**
-  - Tools (LoRA, QLoRA, PEFT, Axolotl) enabling adaptation of a base model to downstream tasks without full retraining. Central to the [[Fine Tuning]] ecosystem that open weights unlock.
+  - Tools (LoRA, QLoRA, PEFT, Axolotl) enabling adaptation of a base model to downstream tasks without full retraining. Central to the [[Fine-Tuning]] ecosystem that open weights unlock.
 - **Licences**
   - Legal instruments governing use and redistribution. Permissive licences (Apache 2.0, MIT) contrast with use-restricted licences (LLaMA community licence, Gemma Terms of Service) that limit commercial or governmental use. See [[Open Source Licence]].
 - **Model cards and datasheets**

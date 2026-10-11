@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fill-value",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A fill value is a reserved data value written into a variable to stand for undefined or missing data.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:human-robot-collaboration
   - urn:ngm:class:companion-robotics
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:sensor-fusion
 contrastsWith:
   - urn:ngm:class:industrial-robotics

@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:linear-algebra
   - urn:ngm:class:feature-normalisation
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:clustering
   - urn:ngm:class:nearest-neighbor-search
   - urn:ngm:class:anomaly-detection

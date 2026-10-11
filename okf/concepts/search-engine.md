@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:metaverse
 uses:
   - urn:ngm:class:vector-search
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:large-language-model
   - urn:ngm:class:pagerank
 partOf:

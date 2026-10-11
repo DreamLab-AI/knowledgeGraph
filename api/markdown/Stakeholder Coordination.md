@@ -14,7 +14,7 @@ Effective stakeholder coordination is what separates resilient decentralised org
 
 ## Current Landscape
 
-Contemporary approaches blend several mechanisms. Token-weighted voting remains the default in [[DAO]] governance, but its plutocratic tendencies have prompted experimentation with quadratic voting, conviction voting, delegated "protocol politician" models, and citizen-house structures such as Optimism's bicameral design. Off-chain, coordination increasingly relies on structured deliberation platforms (Discourse, Snapshot for gasless signalling) and professional delegate ecosystems.
+Contemporary approaches blend several mechanisms. Token-weighted voting remains the default in [[Decentralised Autonomous Organisation]] governance, but its plutocratic tendencies have prompted experimentation with quadratic voting, conviction voting, delegated "protocol politician" models, and citizen-house structures such as Optimism's bicameral design. Off-chain, coordination increasingly relies on structured deliberation platforms (Discourse, Snapshot for gasless signalling) and professional delegate ecosystems.
 
 Research in this area draws on political science, mechanism design, and organisational theory. Open challenges include voter apathy (participation in most DAOs is below 10% of eligible tokens), information asymmetry between core teams and communities, and the difficulty of coordinating across chains and jurisdictions. Tokenomics design — vesting schedules, staking incentives, retroactive funding — is itself a coordination instrument, aligning long-term stakeholder behaviour with protocol health.
 

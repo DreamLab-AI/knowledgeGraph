@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:robotics
   - urn:ngm:class:ai-adoption
   - urn:ngm:class:algorithmic-management
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:task-automation
 supports:
   - urn:ngm:class:democratic-governance

@@ -310,7 +310,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       }
     ]
@@ -347,9 +347,9 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -457,8 +457,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:power-management",
@@ -503,16 +503,8 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
         "id": "urn:ngm:class:hardware-engineering",
         "label": "Hardware Engineering"
-      },
-      {
-        "id": "urn:ngm:class:project-management",
-        "label": "Project Management"
       }
     ],
     "bridgesTo": [
@@ -521,7 +513,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -579,7 +571,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -619,8 +611,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ros",
-        "label": "ROS"
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       },
       {
         "id": "urn:ngm:class:ieee-standards",
@@ -666,10 +658,6 @@
       },
       {
         "id": "urn:ngm:class:embedded-system",
-        "label": "Embedded System"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],

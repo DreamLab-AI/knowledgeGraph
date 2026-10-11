@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:safety-certification
   - urn:ngm:class:probabilistic-risk-assessment
 contrastsWith:
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
 bridgesTo:
   - urn:ngm:class:robotics
   - urn:ngm:class:artificial-intelligence

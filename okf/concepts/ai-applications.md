@@ -10,7 +10,8 @@ quality: 0.88
 is-a:
   - urn:ngm:class:ai-application
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:artificial-intelligence
 hasPart:
   - urn:ngm:class:image-recognition
   - urn:ngm:class:recommendation-system
@@ -27,7 +28,7 @@ requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:gdpr
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001-2023
 enables:
   - urn:ngm:class:autonomous-robot
@@ -38,6 +39,7 @@ enables:
   - urn:ngm:class:autonomous-decision-making
   - urn:ngm:class:quality-control
   - urn:ngm:class:supply-chain-optimisation
+  - urn:ngm:class:predictive-analytics
 dependsOn:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
@@ -48,16 +50,19 @@ implements:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:generative-ai
+  - urn:ngm:class:ai-capability
 contrastsWith:
   - urn:ngm:class:ai-risk
   - urn:ngm:class:ai-ethics
+bridgesTo:
+  - urn:ngm:class:industry-vertical
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
   - urn:ngm:class:deep-learning
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
   - urn:ngm:class:transformer
   - urn:ngm:class:neural-network
@@ -71,9 +76,11 @@ supports:
   - urn:ngm:class:surveillance-systems
   - urn:ngm:class:robotics-perception
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001-2023
   - urn:ngm:class:gdpr
+partOf:
+  - urn:ngm:class:artificial-intelligence
 relatedTo:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:digital-asset
@@ -84,6 +91,9 @@ relatedTo:
   - urn:ngm:class:hyperparameter-tuning
   - urn:ngm:class:model-deployment
   - urn:ngm:class:transfer-learning
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:generative-ai
+  - urn:ngm:class:natural-language-processing
 ---
 
 # AI Applications

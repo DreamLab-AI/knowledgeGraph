@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:tensor-parallelism
   - urn:ngm:class:kv-cache
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 partOf:
   - urn:ngm:class:mlops
   - urn:ngm:class:ai-infrastructure

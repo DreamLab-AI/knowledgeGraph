@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:nesterov-momentum
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:gradient-descent
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:bandwidth-optimization
 enables:
   - urn:ngm:class:decentralised-ai
@@ -38,7 +38,7 @@ enables:
   - urn:ngm:class:decentralised-science
   - urn:ngm:class:internet-scale-training
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:collective-communication

@@ -13,10 +13,10 @@ is-a:
   - urn:ngm:class:open-source-software
 hasPart:
   - urn:ngm:class:sampling
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:textual-inversion
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:hypernetwork
   - urn:ngm:class:control-net
   - urn:ngm:class:gradio
@@ -25,7 +25,7 @@ hasPart:
 requires:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:gpu-acceleration
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:clip
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:python
@@ -45,7 +45,7 @@ dependsOn:
   - urn:ngm:class:gradio
   - urn:ngm:class:py-torch
   - urn:ngm:class:cuda
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 implements:
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:denoising-diffusion-probabilistic-models
@@ -61,17 +61,17 @@ uses:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:gpu-acceleration
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:clip
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:u-net
   - urn:ngm:class:sampling
 supports:
   - urn:ngm:class:sdxl
-  - urn:ngm:class:stable-diffusion-image-model
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:stable-diffusion
+  - urn:ngm:class:lora
   - urn:ngm:class:control-net
   - urn:ngm:class:textual-inversion
   - urn:ngm:class:civitai
@@ -86,7 +86,7 @@ relatedTo:
   - urn:ngm:class:open-source-software
   - urn:ngm:class:comfy-ui
   - urn:ngm:class:control-net
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:generative-ai
   - urn:ngm:class:black-forest-labs
   - urn:ngm:class:stable-diffusion-3

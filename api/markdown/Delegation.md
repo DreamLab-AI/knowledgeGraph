@@ -19,7 +19,7 @@ Delegation in blockchain systems is the act of assigning one's stake or voting r
 ### Applications
 
 - Securing proof-of-stake networks via delegated staking.
-- Treasury and protocol decisions in a [[DAO]].
+- Treasury and protocol decisions in a [[Decentralised Autonomous Organisation]].
 - Representative voting in protocol governance.
 - Liquid-democracy experiments combining direct and delegated votes.
 

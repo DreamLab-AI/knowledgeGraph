@@ -36,7 +36,7 @@ dependsOn:
   - urn:ngm:class:embedding
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:coreference-resolution
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:nearest-neighbor-search
 implements:
   - urn:ngm:class:named-entity-disambiguation
@@ -48,7 +48,7 @@ contrastsWith:
   - urn:ngm:class:record-linkage
   - urn:ngm:class:word-sense-disambiguation
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
   - urn:ngm:class:knowledge-discovery
 uses:

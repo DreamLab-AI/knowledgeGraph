@@ -301,7 +301,7 @@ Understanding the quantitative performance envelope of major blockchain networks
 
 **Bitcoin**: ~3.5–7 TPS on-chain (limited by 1 MB block weight target and 10-minute average inter-block time). Transaction confirmation is probabilistic: 1 confirmation (~10 minutes) provides ~99.5% confidence against reversal with <10% adversarial hash rate; 6 confirmations (~60 minutes) is the standard for high-value settlement. Block propagation latency averages 40–80 ms to 50% of hash rate and 300–700 ms to 99% of hash rate with Compact Block Relay (pre-BIP 152 this was 4,000–10,000 ms). Erlay (BIP 330), when fully deployed, is expected to reduce transaction relay bandwidth by ~40% by replacing flood gossip with set reconciliation.
 
-**Ethereum**: ~15–30 TPS execution throughput (post-Merge). Slot time fixed at 12 seconds; blocks produced every slot (rarely missed, <1% miss rate in practice). Casper FFG finality achieved in two epochs (~12.8 minutes under normal conditions). EIP-1559 base fee burned per block; priority fee (tip) to validators. Post-EIP-4844 (Dencun, March 2024), each block carries up to 6 blob sidecars of 128 KB each, providing ~0.75 MB/block of temporary data availability for rollups—targeted to grow to 64 blobs per block under full Danksharding. The [[Ethereum Smart Contract Platform]] network's Layer-2 ecosystem collectively processes 100–500 TPS, with Arbitrum and Base each exceeding 50 TPS individually.
+**Ethereum**: ~15–30 TPS execution throughput (post-Merge). Slot time fixed at 12 seconds; blocks produced every slot (rarely missed, <1% miss rate in practice). Casper FFG finality achieved in two epochs (~12.8 minutes under normal conditions). EIP-1559 base fee burned per block; priority fee (tip) to validators. Post-EIP-4844 (Dencun, March 2024), each block carries up to 6 blob sidecars of 128 KB each, providing ~0.75 MB/block of temporary data availability for rollups—targeted to grow to 64 blobs per block under full Danksharding. The [[Ethereum]] network's Layer-2 ecosystem collectively processes 100–500 TPS, with Arbitrum and Base each exceeding 50 TPS individually.
 
 **Solana**: Design target 65,000 TPS; practical sustained throughput 2,000–4,000 TPS in load conditions. 400ms slot time. Tower BFT (PBFT-derived) consensus with ~2/3 stake supermajority. Turbine block propagation uses Reed-Solomon erasure coding and fanout tree dissemination (analogous to BitTorrent's tit-for-tat), enabling validators to verify blocks before fully downloading them. Historically plagued by network halts under load (multiple 4–18 hour outages 2021–2023); QUIC transport migration and fee market reforms (priority fee queue) improved stability through 2024–2025.
 
@@ -512,23 +512,23 @@ Based on current adoption trajectories and protocol upgrade roadmaps:
 |---------|------|-----------|
 | [[Bitcoin Proof-of-Work Protocol]] | 2009 | Genesis block; initial P2P flood gossip |
 | [[Bitcoin Proof-of-Work Protocol]] | 2015 | Compact Block Relay (BIP 152) reduces propagation to ~100ms |
-| [[Ethereum Smart Contract Platform]] | 2015 | Frontier launch; devP2P RLPx execution layer gossip |
-| [[Ethereum Smart Contract Platform]] | 2020 | Beacon Chain launch; libp2p + GossipSub consensus layer |
-| [[Ethereum Smart Contract Platform]] | 2022 | The Merge; execution and consensus P2P stacks unified under Engine API |
+| [[Ethereum]] | 2015 | Frontier launch; devP2P RLPx execution layer gossip |
+| [[Ethereum]] | 2020 | Beacon Chain launch; libp2p + GossipSub consensus layer |
+| [[Ethereum]] | 2022 | The Merge; execution and consensus P2P stacks unified under Engine API |
 | [[Bitcoin Proof-of-Work Protocol]] | 2023 | BIP 324 v2 encrypted transport merged into Bitcoin Core v26 |
-| [[Ethereum Smart Contract Platform]] | 2024 | Dencun upgrade; EIP-4844 blob sidecars, new GossipSub topics |
-| [[Ethereum Smart Contract Platform]] | 2025 | Pectra upgrade; EIP-7251 max balance 32→2048 ETH, validator consolidation |
+| [[Ethereum]] | 2024 | Dencun upgrade; EIP-4844 blob sidecars, new GossipSub topics |
+| [[Ethereum]] | 2025 | Pectra upgrade; EIP-7251 max balance 32→2048 ETH, validator consolidation |
 | [[Bitcoin Proof-of-Work Protocol]] | 2025 | Bitcoin Knots reaches 19% node share; client diversity milestone |
-| [[Ethereum Smart Contract Platform]] | 2025 | September exit queue event; 46-day wait, 2.5M ETH queued |
-| [[Ethereum Smart Contract Platform]] | 2026–27 | Osaka upgrade; Verkle trees, stateless client support targeted |
-| [[Ethereum Smart Contract Platform]] | 2027–28 | Full Danksharding; DAS, 128 blobs/block, Portal Network |
+| [[Ethereum]] | 2025 | September exit queue event; 46-day wait, 2.5M ETH queued |
+| [[Ethereum]] | 2026–27 | Osaka upgrade; Verkle trees, stateless client support targeted |
+| [[Ethereum]] | 2027–28 | Full Danksharding; DAS, 128 blobs/block, Portal Network |
 
 ### Comparative Consensus and Network Properties
 
 | Network | Consensus | Finality | Base TPS | Peer Count | Key P2P Stack |
 |---------|-----------|----------|----------|------------|----------------|
 | [[Bitcoin Proof-of-Work Protocol]] | Nakamoto PoW | Probabilistic (6 conf. ≈ 60 min) | 3.5–7 | ~24,000 reachable | devP2P (INV/GETDATA, BIP 324) |
-| [[Ethereum Smart Contract Platform]] | Gasper (LMD-GHOST + Casper FFG) | ~12.8 min (2 epochs) | 15–30 | ~8,000 exec + 1.1M validators | devP2P + libp2p/GossipSub |
+| [[Ethereum]] | Gasper (LMD-GHOST + Casper FFG) | ~12.8 min (2 epochs) | 15–30 | ~8,000 exec + 1.1M validators | devP2P + libp2p/GossipSub |
 | [[Solana]] | Tower BFT | ~2 seconds | 2,000–4,000 | ~4,500 | Gulf Stream + Turbine (custom) |
 | [[Polkadot]] | BABE + GRANDPA | 1–2 seconds | ~1,000 (relay) | ~300 validators | libp2p |
 | [[Hyperledger Fabric]] | Raft / BFT | <1 second | 3,000–20,000 | Permissioned (PKI) | gRPC + gossip |

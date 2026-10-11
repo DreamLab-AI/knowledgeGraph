@@ -4,6 +4,7 @@ type: Class
 title: Main-sequence Star
 resource: urn:ngm:class:main-sequence-star
 domain: space-science-and-systems
+description: A main-sequence star is a star that is fusing hydrogen to helium in its core.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Main-sequence Star
+
+A main-sequence star is a star that is fusing hydrogen to helium in its core.[^1]

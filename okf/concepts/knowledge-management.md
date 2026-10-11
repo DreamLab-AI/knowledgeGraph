@@ -8,7 +8,7 @@ description: Knowledge Management (KM) is the systematic discipline of identifyi
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:data-management
+  - urn:ngm:class:information-management
 hasPart:
   - urn:ngm:class:community-of-practice
 requires:
@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:data-management
   - urn:ngm:class:document-management
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:large-language-model
   - urn:ngm:class:distributed-collaboration
 uses:

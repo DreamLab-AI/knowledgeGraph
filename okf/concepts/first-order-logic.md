@@ -22,7 +22,7 @@ contrastsWith:
   - urn:ngm:class:propositional-logic
   - urn:ngm:class:description-logic
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:logical-inference
 supports:

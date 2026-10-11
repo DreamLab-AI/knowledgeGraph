@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-filtering",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spectral filtering is the removal or retention of selected frequency components of a series or image, usually by transforming it into the frequency domain, reweighting the components and transforming back.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

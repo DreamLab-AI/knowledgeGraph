@@ -14,6 +14,7 @@ requires:
   - urn:ngm:class:fairness
   - urn:ngm:class:transparency
   - urn:ngm:class:accountability
+  - urn:ngm:class:ai-governance-and-ethics
 enables:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:trustworthy-ai
@@ -21,10 +22,12 @@ enables:
 contrastsWith:
   - urn:ngm:class:algorithmic-bias
   - urn:ngm:class:surveillance-capitalism
+  - urn:ngm:class:artificial-superintelligence-theory
 bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-rights
   - urn:ngm:class:data-governance
+  - urn:ngm:class:ai-agent-system
 uses:
   - urn:ngm:class:bias-mitigation-techniques
   - urn:ngm:class:algorithmic-impact-assessment
@@ -43,6 +46,8 @@ relatedTo:
   - urn:ngm:class:existential-risk
   - urn:ngm:class:bias-mitigation-techniques
   - urn:ngm:class:compliance-framework
+  - urn:ngm:class:ai-risk
+  - urn:ngm:class:governance
 ---
 
 # AI Ethics

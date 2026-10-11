@@ -40,11 +40,11 @@
         "label": "Deep Learning Framework"
       },
       {
-        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE Image Encoding"
       },
       {
@@ -52,7 +52,7 @@
         "label": "PyTorch"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE Image Encoding"
       }
     ],
@@ -131,8 +131,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       },
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -151,7 +151,7 @@
         "label": "ControlNet"
       },
       {
-        "id": "urn:ngm:class:lo-ra",
+        "id": "urn:ngm:class:lora-adapter",
         "label": "LoRA Adapter"
       },
       {
@@ -300,8 +300,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -314,8 +314,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },

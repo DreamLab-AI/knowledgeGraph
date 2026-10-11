@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:instant-value-settlement
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:digital-asset-infrastructure
   - urn:ngm:class:distributed-ledger-technology

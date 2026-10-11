@@ -10,7 +10,7 @@ quality: 0.75
 is-a:
   - urn:ngm:class:authentication-mechanism
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:access-control
@@ -23,7 +23,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:saml-assertion
 bridgesTo:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:cryptographic-signature

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:celestial-reference-frame",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A celestial reference frame is a realisation of a celestial reference system through catalogued source positions that fix its axes, and the International Celestial Reference Frame is the realisation adopted by the IAU.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

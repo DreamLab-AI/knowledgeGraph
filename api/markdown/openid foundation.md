@@ -15,7 +15,7 @@ The OpenID Foundation (OIDF) is an international, member-driven, non-profit stan
 
 - **Connect Working Group** — maintains [[OpenID Connect]] Core, Discovery, Dynamic Registration, and Session Management specifications; the most active and longest-running group.
 - **FAPI Working Group** — develops the [[Financial-grade API]] security profiles (FAPI 1.0, FAPI 2.0) targeting high-assurance use cases such as [[Open Banking]], health data exchange, and regulated payment initiation.
-- **Digital Credentials Working Group** — extends OIDC to support [[Verifiable Credentials]], mobile driver's licences (ISO/IEC 18013-5), and wallet-based identity flows, bridging to [[Self-Sovereign Identity]] paradigms.
+- **Digital Credentials Working Group** — extends OIDC to support [[Verifiable Credential]], mobile driver's licences (ISO/IEC 18013-5), and wallet-based identity flows, bridging to [[Self-Sovereign Identity]] paradigms.
 - **MODRNA Working Group** — Mobile Connect and operator network identity, enabling mobile network operators to act as [[Identity Provider]]s using SIM-based authentication signals.
 - **eKYC & Identity Assurance Working Group** — defines claims and verification methods for electronic Know-Your-Customer processes and identity proofing levels.
 - **SSF/CAEP Working Group** — Shared Signals Framework and Continuous Access Evaluation Protocol, enabling real-time security event propagation between [[Identity Provider]]s and relying parties.
@@ -24,12 +24,12 @@ The OpenID Foundation (OIDF) is an international, member-driven, non-profit stan
 
 - The Foundation operates a self-certification programme backed by open-source conformance test suites (the OpenID Certification tool suite hosted at openid.net/certification).
 - Certified implementations are listed on a public registry, providing trust signals to regulators, enterprises, and integrators.
-- [[FAPI]] certification is mandated or strongly recommended by open banking regulatory frameworks in the UK (FCA/Open Banking Ltd), EU (PSD2/[[eIDAS]]), Brazil, Australia, and several other jurisdictions.
+- [[FAPI]] certification is mandated or strongly recommended by open banking regulatory frameworks in the UK (FCA/Open Banking Ltd), EU (PSD2/[[eIDAS Regulation]]), Brazil, Australia, and several other jurisdictions.
 - Certification covers profiles including Basic OP, Implicit OP, Hybrid OP, Form Post Response Mode, FAPI RW, CIBA (Client-Initiated Backchannel Authentication), and JARM.
 
 #### Intellectual Property Framework
 
-- The OIDF Contribution Agreement requires all contributors to licence contributions under royalty-free terms, consistent with [[W3C]] and [[IETF]] patent policy norms.
+- The OIDF Contribution Agreement requires all contributors to licence contributions under royalty-free terms, consistent with [[World Wide Web Consortium]] and [[IETF]] patent policy norms.
 - This policy prevents participants from asserting patents against conformant implementations, a critical requirement for widespread deployment in regulated industries.
 
 ### Applications and Use Cases
@@ -52,7 +52,7 @@ The OpenID Foundation (OIDF) is an international, member-driven, non-profit stan
 #### Digital Government and eID
 
 - The Digital Credentials Working Group is actively shaping how government-issued credentials (national IDs, driving licences, health cards) are presented via OIDC flows, interoperating with [[eIDAS 2.0]] wallets in the EU and similar schemes globally.
-- The Foundation collaborates with [[W3C]] Verifiable Credentials and ISO mobile document standards (mDL) to bridge bearer-token identity with cryptographically-signed credential presentation.
+- The Foundation collaborates with [[World Wide Web Consortium]] Verifiable Credentials and ISO mobile document standards (mDL) to bridge bearer-token identity with cryptographically-signed credential presentation.
 
 #### Healthcare and Regulated Data Sharing
 
@@ -70,7 +70,7 @@ The OpenID Foundation (OIDF) is an international, member-driven, non-profit stan
   - **CIBA (Client-Initiated Backchannel Authentication)** — decoupled authentication flow for IoT, call-centre, and consent-by-device scenarios.
   - **JARM (JWT Secured Authorization Response Mode)** — tamper-evident authorisation responses.
   - **OpenID for Verifiable Credential Issuance (OID4VCI)** and **OpenID for Verifiable Presentations (OID4VP)** — wallet credential exchange flows.
-- The OIDF coordinates with [[W3C]] (on [[Verifiable Credentials]] and [[Decentralised Identifiers]]), [[ISO]] (on mDL/ISO 18013-5), [[ETSI]] and [[European Commission]] (on [[eIDAS 2.0]] architectural reference framework), and national standards bodies.
+- The OIDF coordinates with [[World Wide Web Consortium]] (on [[Verifiable Credential]] and [[Decentralised Identifier]]), [[ISO]] (on mDL/ISO 18013-5), [[ETSI]] and [[European Commission]] (on [[eIDAS 2.0]] architectural reference framework), and national standards bodies.
 - Regulatory alignment: the UK's [[Open Banking]] Implementation Entity (OBIE), Brazil's Open Finance specification, and Australia's Consumer Data Right (CDR) all mandate FAPI profiles certified through OIDF processes.
 - The Foundation's governance model includes a Board of Directors elected by member organisations, with tiered membership (Corporate, Non-Profit, Individual) ensuring inclusive participation from both large enterprises and civil society.
 

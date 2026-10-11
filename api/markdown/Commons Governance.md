@@ -1,7 +1,7 @@
 Commons governance is the set of institutions, rules and collective practices through which a community manages a shared resource so that it remains productive and is not depleted by individual self-interest. Drawing on Elinor Ostrom's design principles, it relies on clearly defined boundaries, participatory rule-making, monitoring and graduated sanctions rather than pure markets or central control. In blockchain contexts it is expressed through DAOs and public-goods funding that coordinate stewardship of shared digital infrastructure.
 
 - [[Commons Governance]] is the set of institutions and collective practices through which a community stewards a shared resource so it stays productive and is not over-exploited. It is a form of [[Governance]] rooted in Ostrom's design principles.
-- In blockchain it is expressed through [[DAO]]s, [[Governance Token]]s and [[Retroactive Public Goods Funding]] that coordinate care of shared digital infrastructure.
+- In blockchain it is expressed through [[Decentralised Autonomous Organisation]]s, [[Governance Token]]s and [[Retroactive Public Goods Funding]] that coordinate care of shared digital infrastructure.
 
 ### Overview
 

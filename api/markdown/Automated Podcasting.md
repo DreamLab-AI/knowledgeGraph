@@ -1261,7 +1261,7 @@ Convergence of inference acceleration and streaming TTS will enable listener-int
 - **Domain**: artificial-intelligence (corrected from `infrastructure` — automated podcasting is a creative AI application domain, not an infrastructure concept; IRI, URI, owl-class, same-as, legacy-term-id updated accordingly)
 - **Legacy Term ID**: AI-2041
 - **Ontology Family**: Creative AI Applications, Generative Media Production, Synthetic Audio
-- **Primary Relationships**: [[Generative AI]], [[Speech Synthesis]], [[Large Language Models]], [[Audio Signal Processing]], [[Natural Language Processing]], [[AI Video]], [[Speech and Voice]]
+- **Primary Relationships**: [[Generative AI]], [[Speech Synthesis]], [[Large Language Model]], [[Audio Signal Processing]], [[Natural Language Processing]], [[AI Video]], [[Speech and Voice]]
 - **Validator Status**: production-ready
 - **Enrichment Worker**: claude-sonnet-4-6 (Phase 6 bulk run, 2026-05-17)
 - **Enrichment Date**: 2026-05-17T09:00:00Z

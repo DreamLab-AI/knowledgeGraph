@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:regulatory-compliance
 dependsOn:
   - urn:ngm:class:dataset
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:automated-decision-making
   - urn:ngm:class:data-governance
   - urn:ngm:class:model-evaluation
@@ -75,7 +75,7 @@ standardizedBy:
   - urn:ngm:class:ieee-p-7003-2021
   - urn:ngm:class:iso-iec-tr-24027
   - urn:ngm:class:nist-sp-1270
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:responsible-ai
 relatedTo:

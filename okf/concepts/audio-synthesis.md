@@ -42,7 +42,7 @@ dependsOn:
 implements:
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:gan
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:score-based-model
   - urn:ngm:class:latent-diffusion
 contrastsWith:
@@ -50,7 +50,7 @@ contrastsWith:
   - urn:ngm:class:source-separation
 bridgesTo:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
 uses:
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:deep-learning

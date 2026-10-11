@@ -4,6 +4,7 @@ type: Class
 title: Sample Return
 resource: urn:ngm:class:sample-return
 domain: space-science-and-systems
+description: Sample return is the practice of bringing material collected from a body in the solar system back to Earth for laboratory study.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Sample Return
+
+Sample return is the practice of bringing material collected from a body in the solar system back to Earth for laboratory study.[^1]

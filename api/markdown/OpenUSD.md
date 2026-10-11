@@ -45,7 +45,7 @@ OpenUSD (Universal Scene Description) is an open-source framework, scene-graph d
 
 - **Alliance for OpenUSD (AOUSD)**: The governance body formed in 2023 by Pixar, Apple, Autodesk, NVIDIA, and Adobe. It maintains the specification, conformance test suite, and reference implementation at `openusd.org`.
 - **ISO/IEC 22886**: The international standardisation track for USD as a universal 3D scene exchange format, developed under JTC 1/SC 24 (Computer Graphics, Image Processing).
-- **Relationship to glTF**: [[glTF Standard]] (Khronos Group) optimises for compact, runtime-ready delivery of individual assets; OpenUSD optimises for composable, production-pipeline scene description. They are complementary: glTF handles the "last mile" delivery; USD handles the production master. The AOUSD and Khronos have published interoperability guidance.
+- **Relationship to glTF**: [[glTF]] (Khronos Group) optimises for compact, runtime-ready delivery of individual assets; OpenUSD optimises for composable, production-pipeline scene description. They are complementary: glTF handles the "last mile" delivery; USD handles the production master. The AOUSD and Khronos have published interoperability guidance.
 - **Relationship to MaterialX**: [[MaterialX]] (Academy Software Foundation) is the preferred material and shader definition language within the USD ecosystem for cross-renderer portability, replacing vendor-specific MDL in many pipelines.
 - **VFX Reference Platform**: The annual [[VFX Reference Platform]] specifies USD versions alongside Python, OpenEXR, and other DCC dependencies to ensure binary compatibility across Linux-based VFX studios.
 

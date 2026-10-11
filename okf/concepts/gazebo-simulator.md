@@ -40,13 +40,13 @@ implements:
   - urn:ngm:class:gz-transport-message-protocol
   - urn:ngm:class:ros2-control-hardware-interface
 bridgesTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:open-xr
   - urn:ngm:class:auto-ml
   - urn:ngm:class:web-assembly
 partOf:
   - urn:ngm:class:sim-to-real-transfer
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sim-to-real-transfer
 ---
 

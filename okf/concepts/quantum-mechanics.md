@@ -8,7 +8,7 @@ description: Quantum mechanics is the physical theory describing matter and ener
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 hasPart:
   - urn:ngm:class:qubit
   - urn:ngm:class:linear-algebra
@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:linear-algebra
   - urn:ngm:class:probability-distribution
 enables:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:quantum-cryptography
 dependsOn:
   - urn:ngm:class:linear-algebra

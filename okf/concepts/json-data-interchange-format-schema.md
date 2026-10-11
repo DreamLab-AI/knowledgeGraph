@@ -10,9 +10,9 @@ quality: 0.72
 is-a:
   - urn:ngm:class:data-management
 requires:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:schema-validation
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 enables:
   - urn:ngm:class:rest-api
   - urn:ngm:class:credential-schema
@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:xml-schema-definition
   - urn:ngm:class:apache-avro
   - urn:ngm:class:protocol-buffer
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 bridgesTo:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:infrastructure-as-code
@@ -37,15 +37,15 @@ uses:
   - urn:ngm:class:regular-expression
   - urn:ngm:class:uri-reference
 supports:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:asyncapi
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:kubernetes
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 relatedTo:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:data-format
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:graphql-schema
 ---
 

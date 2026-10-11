@@ -34,7 +34,7 @@ partOf:
   - urn:ngm:class:model-compression
 relatedTo:
   - urn:ngm:class:model-compression-for-edge
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 ---
 
 # Post Training Quantisation

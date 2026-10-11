@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:magnetar",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A magnetar is a neutron star with an ultra-strong magnetic field, much stronger than that of an ordinary neutron star.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:neutron-star",

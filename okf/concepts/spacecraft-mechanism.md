@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Mechanism
 resource: urn:ngm:class:spacecraft-mechanism
 domain: space-science-and-systems
+description: A spacecraft mechanism is a mechanical device that deploys assemblies after launch or provides motion on a spacecraft.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Spacecraft Mechanism
+
+A spacecraft mechanism is a mechanical device that deploys assemblies after launch or provides motion on a spacecraft.[^1][^2]

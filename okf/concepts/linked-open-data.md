@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:uri
   - urn:ngm:class:sparql
 supports:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:open-data
 partOf:
   - urn:ngm:class:artificial-intelligence

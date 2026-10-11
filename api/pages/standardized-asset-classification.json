@@ -204,7 +204,7 @@
         "label": "Self-Custody"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -242,7 +242,7 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -250,8 +250,8 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
       }
     ],
     "uses": [
@@ -284,7 +284,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

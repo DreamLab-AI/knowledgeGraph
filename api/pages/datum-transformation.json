@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:datum-transformation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A datum transformation is a common name for a coordinate transformation, an operation that changes coordinates from a source coordinate reference system to a target one when the two systems are based on different datums.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

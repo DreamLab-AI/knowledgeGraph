@@ -11,11 +11,11 @@ is-a:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:mlops
   - urn:ngm:class:data-versioning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:data-versioning
   - urn:ngm:class:data-pipeline
-  - urn:ngm:class:experiment-tracking
+  - urn:ngm:class:empirical-experimental-design-tracking
   - urn:ngm:class:artifact-metadata
   - urn:ngm:class:data-lineage
   - urn:ngm:class:empirical-experimental-design-tracking
@@ -68,7 +68,7 @@ relatedTo:
   - urn:ngm:class:weights-and-biases
   - urn:ngm:class:model-registry
   - urn:ngm:class:checkpoints
-  - urn:ngm:class:experiment-tracking
+  - urn:ngm:class:empirical-experimental-design-tracking
   - urn:ngm:class:pachyderm
   - urn:ngm:class:kubeflow
   - urn:ngm:class:lakefs

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:hardware
 enables:
   - urn:ngm:class:intel-sgx
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 bridgesTo:
   - urn:ngm:class:information-security
 ---

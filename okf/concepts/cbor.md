@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:internet-of-things
 enables:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:credential-format-standard
   - urn:ngm:class:remote-attestation
 implements:
@@ -30,7 +30,7 @@ standardizedBy:
   - urn:ngm:class:internet-engineering-task-force
   - urn:ngm:class:iso-iec-18013-5-m-dl
 relatedTo:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:data-format-standard
   - urn:ngm:class:messagepack

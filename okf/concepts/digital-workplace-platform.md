@@ -26,7 +26,7 @@ hasPart:
   - urn:ngm:class:workflow-automation
   - urn:ngm:class:video-conferencing
   - urn:ngm:class:unified-messaging
-  - urn:ngm:class:collaborative-systems-modality
+  - urn:ngm:class:tc-0002-collaborative-document-editing
   - urn:ngm:class:workflow-automation
   - urn:ngm:class:domain-expert-contact-index
   - urn:ngm:class:api-integration

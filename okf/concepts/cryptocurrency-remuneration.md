@@ -30,7 +30,7 @@ relatedTo:
   - urn:ngm:class:telecollaboration
   - urn:ngm:class:blockchain-collaboration
   - urn:ngm:class:smart-contract-coordination
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Cryptocurrency Remuneration

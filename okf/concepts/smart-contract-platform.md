@@ -21,7 +21,7 @@ requires:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:cryptographic-hash-function
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-application

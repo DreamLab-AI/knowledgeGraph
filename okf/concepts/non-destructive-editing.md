@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:sc-content-and-assets
 relatedTo:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:3-d-scene-exchange-protocol-sxp
 ---
 

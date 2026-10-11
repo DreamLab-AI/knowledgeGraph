@@ -21,14 +21,14 @@ contrastsWith:
   - urn:ngm:class:intrusion-detection
 uses:
   - urn:ngm:class:siem
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:anomaly-detection
 supports:
   - urn:ngm:class:security-operations-centre
   - urn:ngm:class:threat-intelligence
 relatedTo:
   - urn:ngm:class:alerting
-  - urn:ngm:class:defense-in-depth
+  - urn:ngm:class:defence-in-depth
 ---
 
 # Security Monitoring

@@ -20,7 +20,7 @@ dependsOn:
   - urn:ngm:class:monetary-system
   - urn:ngm:class:financial-system
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:forward-guidance
   - urn:ngm:class:quantitative-easing

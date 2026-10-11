@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:revocation-check
 requires:
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:revocation-registry
   - urn:ngm:class:trust-anchor
 enables:
@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:trust-establishment
 dependsOn:
   - urn:ngm:class:credential-schema
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:certificate-authority
 contrastsWith:
   - urn:ngm:class:credential-issuance
@@ -40,16 +40,16 @@ uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:digital-signature
 standardizedBy:
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:open-id4-vc
   - urn:ngm:class:x-509-certificate
 partOf:
   - urn:ngm:class:authentication
 relatedTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-identity
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:mobile-driving-licence
 ---
 

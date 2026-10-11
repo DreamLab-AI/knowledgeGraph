@@ -25,10 +25,10 @@ uses:
 supports:
   - urn:ngm:class:distributed-ledger
 partOf:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 relatedTo:
-  - urn:ngm:class:decentralized-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:snapshot-voting
   - urn:ngm:class:token-weighted-voting
 ---

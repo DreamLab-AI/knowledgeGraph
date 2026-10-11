@@ -8,7 +8,7 @@ description: ENS DAO is the decentralised autonomous organisation that governs t
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 enables:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:blockchain-governance
@@ -21,7 +21,7 @@ uses:
 relatedTo:
   - urn:ngm:class:ens
   - urn:ngm:class:on-chain-governance
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-identity
 ---
 

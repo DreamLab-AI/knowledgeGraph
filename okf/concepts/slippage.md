@@ -8,7 +8,7 @@ description: Slippage is the difference between the expected price of a trade an
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 requires:
   - urn:ngm:class:trade-execution
 enables:
@@ -27,7 +27,7 @@ supports:
 partOf:
   - urn:ngm:class:trade-execution
 relatedTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:liquidity
   - urn:ngm:class:trade-execution
   - urn:ngm:class:mev

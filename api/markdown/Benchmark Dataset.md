@@ -152,7 +152,7 @@ SubClassOf(ai:BenchmarkDataset
 - **Validation split**: An intermediate partition available to model developers for hyperparameter selection and model selection during development; using the test set for this purpose constitutes test leakage.
 - **i.i.d. evaluation**: Evaluation under the assumption that test examples are drawn independently from the same distribution as the training data; violated by domain shift or temporal drift.
 - **Zero-shot evaluation**: Model is applied to benchmark tasks without any task-specific training examples in the prompt; tests out-of-the-box generalisation.
-- **Few-shot evaluation**: Model is provided k labelled examples in the prompt before each test item; typically k=1, 5, or 32 for [[Large Language Models]].
+- **Few-shot evaluation**: Model is provided k labelled examples in the prompt before each test item; typically k=1, 5, or 32 for [[Large Language Model]].
 - **Leaderboard saturation**: The state where top-performing models cluster so tightly near the performance ceiling that the benchmark cannot reliably discriminate between them; the primary trigger for benchmark succession.
 - **Benchmark contamination**: The presence of benchmark test items — or near-duplicates thereof — in a model's pre-training corpus, causing inflated evaluation scores that do not generalise to genuinely unseen inputs.
 - **Inter-annotator agreement (IAA)**: A statistical measure of consistency between independent annotators assigning labels to the same data items; low IAA indicates that the task specification or annotation guidelines need revision.
@@ -240,7 +240,7 @@ SubClassOf(ai:BenchmarkDataset
 - **Size**: 14,042 test questions across 57 academic subjects
 - **Task**: Multiple-choice question answering at high school to professional level
 - **Annotation**: Sourced from publicly available professional practice exam questions; no crowdsourcing
-- **Impact**: Became the primary [[Large Language Models]] capability benchmark 2021–2024
+- **Impact**: Became the primary [[Large Language Model]] capability benchmark 2021–2024
 - **Saturation**: Top models clustered ~90%+ by 2024; retired from frontier comparison
 - **Contamination**: Johns Hopkins study (2024) found 29.1% of items show contamination signals
 - **Successor**: MMLU-Pro (10-choice, 12K questions, graduate-level), which itself approaches saturation by 2026

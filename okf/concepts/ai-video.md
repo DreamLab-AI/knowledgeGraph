@@ -42,7 +42,7 @@ enables:
 dependsOn:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:transformer
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip
   - urn:ngm:class:optical-flow
   - urn:ngm:class:probability-theory
@@ -65,15 +65,15 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:synthetic-media
 uses:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:adam-optimiser
   - urn:ngm:class:control-net
   - urn:ngm:class:convolution
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:cross-attention
   - urn:ngm:class:self-attention
-  - urn:ngm:class:vae
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:lora-adapter
 supports:
   - urn:ngm:class:accessibility-captioning
   - urn:ngm:class:advertising
@@ -87,7 +87,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:c2-pa
   - urn:ngm:class:online-safety-act-2023
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:sag-aftra-tv-theatrical-contract
   - urn:ngm:class:bbc-generative-ai-principles
   - urn:ngm:class:vbench
@@ -100,7 +100,7 @@ relatedTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:generative-adversarial-networks
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 ---
 
 # AI Video

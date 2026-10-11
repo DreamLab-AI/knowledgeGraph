@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:orchestration-engine
   - urn:ngm:class:schema-registry
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:business-intelligence
@@ -69,7 +69,7 @@ uses:
   - urn:ngm:class:snowflake
   - urn:ngm:class:sql
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin

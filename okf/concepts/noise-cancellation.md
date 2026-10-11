@@ -21,7 +21,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:passive-noise-isolation
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
 supports:

@@ -22,7 +22,7 @@ dependsOn:
   - urn:ngm:class:logic
   - urn:ngm:class:set-theory
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:inference
   - urn:ngm:class:reasoning

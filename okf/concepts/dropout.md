@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:monte-carlo-methods
 standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:regularisation
   - urn:ngm:class:model-training-pipeline

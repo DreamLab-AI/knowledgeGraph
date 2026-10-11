@@ -15,8 +15,8 @@ Arbitrage is the practice of simultaneously buying and selling an asset across d
 
 ### Applications
 
-- Aligning token prices across [[Decentralized Exchange]] and [[DEX]] liquidity pools.
-- Strengthening [[Price Discovery]] and [[Market Efficiency]] in [[Decentralized Finance]].
+- Aligning token prices across [[Decentralised Exchange]] and [[DEX]] liquidity pools.
+- Strengthening [[Price Discovery]] and [[Market Efficiency]] in [[Decentralised Finance]].
 - Stabilising stablecoin pegs and derivative pricing.
 - Informing [[Risk Management]] and [[Liquidity]] provision strategies.
 

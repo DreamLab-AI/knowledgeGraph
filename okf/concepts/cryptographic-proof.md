@@ -26,13 +26,13 @@ enables:
   - urn:ngm:class:verifiable-computation
   - urn:ngm:class:digital-identity
 contrastsWith:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:multi-party-computation
 bridgesTo:
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:ai-model-attestation
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:merkle-tree

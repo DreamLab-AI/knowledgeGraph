@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coordinated-universal-time",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Coordinated Universal Time is the time scale produced by the BIPM that runs at the same rate as International Atomic Time and differs from it only by a whole number of seconds, and that serves as the basis of civil time in most countries.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

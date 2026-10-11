@@ -35,9 +35,9 @@ enables:
   - urn:ngm:class:algorithmic-accountability
   - urn:ngm:class:algorithmic-transparency
 dependsOn:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ieee-7001
   - urn:ngm:class:c2-pa-standard
   - urn:ngm:class:online-safety-act-2023
@@ -62,7 +62,7 @@ relatedTo:
   - urn:ngm:class:synthetic-media
   - urn:ngm:class:deepfake-detection
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # AI-Generated Content Disclosure

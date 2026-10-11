@@ -15,7 +15,7 @@ Filecoin is a decentralised storage network and blockchain protocol developed by
 - **Sectors and Deals**
   - Data is aggregated into fixed-size sectors (e.g. 32 GiB or 64 GiB). Storage deals are negotiated off-chain via the Boost client and then published on-chain. Sector sealing is computationally intensive, creating a natural rate-limiting mechanism that discourages frivolous storage commitments.
 - **Filecoin Virtual Machine (FVM)**
-  - Launched in 2023, the FVM brings EVM-compatible [[Smart Contract]] execution to Filecoin, enabling programmable storage deals, [[Data DAO]] structures, data bounties, perpetual storage endowments, and integration with other [[Decentralized Application]] ecosystems via cross-chain bridges.
+  - Launched in 2023, the FVM brings EVM-compatible [[Smart Contract]] execution to Filecoin, enabling programmable storage deals, [[Data DAO]] structures, data bounties, perpetual storage endowments, and integration with other [[Decentralised Application]] ecosystems via cross-chain bridges.
 - **Retrieval Market**
   - Distinct from the storage market, the retrieval market incentivises nodes to serve data quickly. The Saturn CDN network and Lassie retrieval client aim to provide competitive latency, moving Filecoin toward hot-storage use cases alongside its established archival role.
 - **Content Addressing via IPFS**
@@ -34,7 +34,7 @@ Filecoin is a decentralised storage network and blockchain protocol developed by
 - **Data DAOs**
   - The FVM enables [[Data DAO]] patterns in which on-chain governance controls access to, funding for, and distribution of shared datasets. Contributors earn tokens for adding valuable data; curators vote on dataset quality and access policies.
 - **Decentralised CDN**
-  - The Saturn network incentivises cache nodes to serve Filecoin-resident content with CDN-like latency, bridging the gap between archival cold storage and hot data serving requirements for [[Decentralized Application]] frontends.
+  - The Saturn network incentivises cache nodes to serve Filecoin-resident content with CDN-like latency, bridging the gap between archival cold storage and hot data serving requirements for [[Decentralised Application]] frontends.
 - **Scientific Data and Open Datasets**
   - Research institutions use Filecoin for open-access publication of large experimental datasets, benefiting from permanent addressability via CID and independence from institutional infrastructure lifetimes.
 - **Backup and Disaster Recovery**

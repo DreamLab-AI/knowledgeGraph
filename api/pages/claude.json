@@ -16,8 +16,8 @@
       "label": "Proprietary Large Language Models"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
     },
     {
       "id": "urn:ngm:class:foundation-model",
@@ -34,8 +34,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:model-context-protocol",
@@ -50,12 +50,12 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
         "id": "urn:ngm:class:direct-preference-optimisation",
@@ -64,12 +64,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -132,8 +132,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:pre-training",
-        "label": "Pre Training"
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
       },
       {
         "id": "urn:ngm:class:human-feedback",
@@ -167,11 +167,11 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:responsible-scaling-policy",
@@ -232,11 +232,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF"
       },
       {
@@ -307,8 +307,8 @@
         "label": "Anthropic"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:ai-safety",
@@ -399,19 +399,14 @@
       "slug": "generative-ai"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
     },
     {
       "id": "urn:ngm:class:natural-language-processing",
@@ -422,6 +417,11 @@
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network",
       "slug": "neural-network"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
     },
     {
       "id": "urn:ngm:class:transformer-architecture",
@@ -487,6 +487,16 @@
       "id": "urn:ngm:class:hybrid-ai",
       "label": "Hybrid AI",
       "slug": "hybrid-ai"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
     },
     {
       "id": "urn:ngm:class:neuro-symbolic-ai",
@@ -639,9 +649,19 @@
       "slug": "automation"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -669,9 +689,19 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -689,6 +719,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -704,19 +744,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -727,6 +762,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -745,28 +785,28 @@
         "label": "Context Window"
       },
       {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:model-parameters",
+        "label": "Model Parameters"
       },
       {
-        "id": "urn:ngm:class:api-gateway",
-        "label": "API Gateway"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
       },
       {
-        "id": "urn:ngm:class:attention",
-        "label": "Attention"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:safety-evaluation",
-        "label": "Safety Evaluation"
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       }
     ],
     "requires": [
@@ -775,32 +815,32 @@
         "label": "Compute Infrastructure"
       },
       {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:pretraining",
-        "label": "Pretraining"
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
       },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:inference-infrastructure",
-        "label": "Inference Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:large-scale-compute",
-        "label": "Large-Scale Compute"
-      },
-      {
-        "id": "urn:ngm:class:red-teaming",
-        "label": "Red Teaming"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       }
     ],
     "enables": [
@@ -813,28 +853,28 @@
         "label": "Natural Language Processing"
       },
       {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
       },
       {
+        "id": "urn:ngm:class:translation",
+        "label": "Translation"
+      },
+      {
         "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
-      },
-      {
-        "id": "urn:ngm:class:agentic-internet",
-        "label": "Agentic Internet"
-      },
-      {
-        "id": "urn:ngm:class:ai-adoption",
-        "label": "AI Adoption"
-      },
-      {
-        "id": "urn:ngm:class:ai-companions",
-        "label": "AI companions"
-      },
-      {
-        "id": "urn:ngm:class:ai-diagram-tools",
-        "label": "AI Diagram Tools"
       }
     ],
     "dependsOn": [
@@ -863,8 +903,8 @@
         "label": "Supervised Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:tokenizer",
-        "label": "Tokenizer"
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
       },
       {
         "id": "urn:ngm:class:transformer-architecture",
@@ -872,6 +912,26 @@
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
       {
         "id": "urn:ngm:class:attention",
         "label": "Attention"
@@ -883,26 +943,6 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal AI Architecture"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:retrieval-augmented-generation",
-        "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "id": "urn:ngm:class:supervised-fine-tuning",
-        "label": "Supervised Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:tool-use",
-        "label": "Tool Use"
-      },
-      {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
       }
     ],
     "contrastsWith": [
@@ -941,20 +981,16 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:autonomous-economic-agents",
+        "label": "Autonomous Economic Agents"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:multi-agent-system",
-        "label": "Multi-Agent System"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-economic-agents",
-        "label": "Autonomous Economic Agents"
       },
       {
         "id": "urn:ngm:class:l402-payment-protocol",
@@ -963,6 +999,10 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -975,16 +1015,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
-        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:tokenization",
@@ -1005,6 +1037,14 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
       }
     ],
     "supports": [
@@ -1051,16 +1091,16 @@
         "label": "California AI bill"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
-        "label": "EU AI Act Regulatory Instrument"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:uk-ai-safety-institute",
@@ -1093,30 +1133,30 @@
         "label": "Computational Social Science"
       },
       {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
         "id": "urn:ngm:class:multi-agent-system",
         "label": "Multi-Agent System"
       },
       {
         "id": "urn:ngm:class:ai-system",
         "label": "AI System"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-environment",
-        "label": "Intelligent Environment"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:hallucination",
@@ -1124,10 +1164,6 @@
       },
       {
         "id": "urn:ngm:class:mixture-of-experts",
-        "label": "Mixture of Experts"
-      },
-      {
-        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
@@ -1141,6 +1177,10 @@
       {
         "id": "urn:ngm:class:ai-liability",
         "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
       }
     ]
   },
@@ -1194,7 +1234,7 @@
       "label": "Direct Preference Optimisation"
     },
     {
-      "slug": "rlhf",
+      "slug": "reinforcement-learning-from-human-feedback",
       "label": "RLHF"
     },
     {

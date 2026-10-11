@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:communication-protocol
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:real-time-control
   - urn:ngm:class:motor-driver

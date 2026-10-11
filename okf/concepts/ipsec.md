@@ -22,7 +22,7 @@ dependsOn:
 implements:
   - urn:ngm:class:authentication
 contrastsWith:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:vpn
 uses:

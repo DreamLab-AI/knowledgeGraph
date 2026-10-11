@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft guidance, navigation and control is the feedback architecture that estimates vehicle state, chooses commanded motion and drives actuators to achieve it.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

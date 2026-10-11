@@ -8,7 +8,7 @@ description: The degree to which an asset can be bought or sold quickly without 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:order-book
@@ -19,7 +19,7 @@ requires:
   - urn:ngm:class:liquidity-pool
 enables:
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:price-discovery
   - urn:ngm:class:token-swapping
 dependsOn:

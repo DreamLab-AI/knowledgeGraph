@@ -10,15 +10,15 @@ quality: 0.62
 is-a:
   - urn:ngm:class:reverse-proxy
 hasPart:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:http
   - urn:ngm:class:http
 implements:
   - urn:ngm:class:network-security
 uses:
-  - urn:ngm:class:tls
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:cryptography
 supports:
   - urn:ngm:class:infrastructure
@@ -28,7 +28,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:load-balancer
   - urn:ngm:class:caching
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:edge-computing
   - urn:ngm:class:http
 ---

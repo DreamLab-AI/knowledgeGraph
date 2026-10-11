@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-radio-occultation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "GNSS radio occultation is a satellite remote sensing technique that uses GNSS signals received by a low Earth orbit satellite to profile the atmosphere and ionosphere.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

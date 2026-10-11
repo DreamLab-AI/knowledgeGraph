@@ -50,11 +50,6 @@
       "slug": "infra-legal-and-regulatory"
     },
     {
-      "id": "urn:ngm:class:regulatory-framework",
-      "label": "Regulatory Framework",
-      "slug": "regulatory-framework"
-    },
-    {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
@@ -137,16 +132,16 @@
         "label": "Regulatory Framework"
       },
       {
-        "id": "urn:ngm:class:aml",
-        "label": "Anti-Money Laundering"
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
       },
       {
-        "id": "urn:ngm:class:kyc",
-        "label": "Know Your Customer"
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
       },
       {
-        "id": "urn:ngm:class:licensing",
-        "label": "Licensing"
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "enables": [
@@ -179,22 +174,14 @@
         "label": "Privacy Framework"
       },
       {
-        "id": "urn:ngm:class:consumer-protection",
-        "label": "Consumer Protection"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:jurisdiction",
         "label": "Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:legal-jurisdiction",
-        "label": "Legal Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:supervisory-authority",
-        "label": "Supervisory Authority"
       }
     ],
     "implements": [
@@ -209,24 +196,12 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security Obligations"
-      },
-      {
-        "id": "urn:ngm:class:eu-mi-ca-regulation",
-        "label": "EU MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:genius-act",
-        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-arbitrage",
-        "label": "Regulatory Arbitrage"
       },
       {
         "id": "urn:ngm:class:pervasive-computing",
@@ -255,14 +230,6 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
-        "label": "Central Bank Digital Currency"
-      },
-      {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
-      },
-      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
@@ -273,6 +240,14 @@
       {
         "id": "urn:ngm:class:extended-reality-xr",
         "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
     "uses": [
@@ -305,7 +280,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -341,24 +316,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:bank-for-international-settlements",
-        "label": "Bank for International Settlements"
-      },
-      {
-        "id": "urn:ngm:class:financial-action-task-force",
-        "label": "Financial Action Task Force"
-      },
-      {
-        "id": "urn:ngm:class:international-organization-of-securities-commissions",
-        "label": "International Organization of Securities Commissions"
       },
       {
         "id": "urn:ngm:class:open-xr",
@@ -371,6 +334,10 @@
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [

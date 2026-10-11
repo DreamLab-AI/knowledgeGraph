@@ -85,7 +85,7 @@ Text summarisation is the NLP task of producing concise, coherent summaries that
 - [(2047) Discord | #💡-announcement | XLabs AI](https://discord.com/channels/1271080914692341801/1271086905743638591)
 - whatever this mad thing is [[FLUX] Diagram of UNET / DiT and exotic merging methods (v8.01) | Civitai](https://civitai.com/articles/3409/flux-diagram-of-unet-dit-and-exotic-merging-methods-v7)
 - [XLabs-AI/x-flux-comfyui (github.com)](https://github.com/XLabs-AI/x-flux-comfyui) [[Flux.1]] [[Node-Based Diffusion Pipeline Interface]]
-- https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion Image Model]] [[ControlNet and Similar Spatial Conditioning Systems]]
+- https://www.reddit.com/r/StableDiffusion/comments/1er8q13/an_updated_flux_canny_controlnet_released_by/ [[Flux.1]] [[Stable Diffusion]] [[ControlNet and Similar Spatial Conditioning Systems]]
 - https://huggingface.co/kudzueye/boreal-flux-dev-v2 [[Flux.1]] [[LoRA DoRA etc]]
 - https://github.com/camenduru/comfyui-colab/blob/main/workflow/flux_image_to_image.json [[flux]] [[ComfyWorkFlows]]
 - [Text Guided Flux Inpainting - a Hugging Face Space by Gradio-Community](https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting) [[Segmentation and Identification]]

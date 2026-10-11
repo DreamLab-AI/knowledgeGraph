@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:verified-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A verified data state is the processing state of a dataset that has passed through a verification process.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

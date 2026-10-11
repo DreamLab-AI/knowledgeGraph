@@ -18,12 +18,12 @@ dependsOn:
   - urn:ngm:class:high-performance-computing
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:transformers
   - urn:ngm:class:attention
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:graph-neural-networks
+  - urn:ngm:class:graph-neural-network
 relatedTo:
   - urn:ngm:class:transformers
   - urn:ngm:class:attention

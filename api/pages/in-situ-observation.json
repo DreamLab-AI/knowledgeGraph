@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:in-situ-observation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "In situ observation, in Earth observation practice, is ground-based or near-surface measurement used to calibrate and validate satellite data and the products derived from them.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

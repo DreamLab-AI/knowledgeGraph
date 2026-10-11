@@ -41,15 +41,15 @@ uses:
 standardizedBy:
   - urn:ngm:class:ietf
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:data-standards
   - urn:ngm:class:data-architecture
 relatedTo:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:apache-parquet
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 ---
 
 # Data Format

@@ -30,7 +30,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:virtual-reality
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:sensor-input
   - urn:ngm:class:computer-vision

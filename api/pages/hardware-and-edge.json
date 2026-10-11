@@ -24,8 +24,8 @@
       "label": "AI Accelerator"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System"
     },
     {
       "id": "urn:ngm:class:neural-processing-unit",
@@ -108,7 +108,7 @@
         "label": "Thermal Design Power"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       }
     ],
@@ -270,8 +270,8 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -327,8 +327,8 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:proprietary-large-language-models",
@@ -397,14 +397,29 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
     },
     {
       "id": "urn:ngm:class:computer-hardware",
       "label": "Computer Hardware",
       "slug": "computer-hardware"
+    },
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System",
+      "slug": "control-system"
     },
     {
       "id": "urn:ngm:class:distributed-systems",
@@ -442,14 +457,44 @@
       "slug": "digital-infrastructure"
     },
     {
+      "id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems",
+      "slug": "feedback-systems"
+    },
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control",
+      "slug": "robo-actuation-and-control"
+    },
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System",
+      "slug": "robotic-system"
+    },
+    {
       "id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering",
       "slug": "sc-display-and-rendering"
     },
     {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -498,8 +543,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -682,7 +727,7 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -780,8 +825,8 @@
         "label": "Apache Software Foundation"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:g-rpc",
@@ -818,6 +863,14 @@
         "label": "GPU Cluster"
       },
       {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
       },
@@ -832,14 +885,6 @@
       {
         "id": "urn:ngm:class:internet-infrastructure",
         "label": "Internet Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning System"
       }
     ],
     "relatedTo": [
@@ -872,8 +917,8 @@
         "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-network",
-        "label": "Peer-to-Peer Computing"
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
       }
     ]
   },

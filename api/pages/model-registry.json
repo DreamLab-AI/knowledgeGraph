@@ -12,8 +12,8 @@
       "label": "MLOps"
     },
     {
-      "id": "urn:ngm:class:machine-learning-operations",
-      "label": "Machine Learning Operations"
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
     }
   ],
   "entityType": "Class",
@@ -77,8 +77,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data-catalog",
-        "label": "Data Catalog"
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
       },
       {
         "id": "urn:ngm:class:asset-management",
@@ -151,24 +151,14 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:digital-infrastructure",
-      "label": "Digital Infrastructure",
-      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:ai-technique",
@@ -179,6 +169,16 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -299,10 +299,6 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
@@ -311,8 +307,12 @@
         "label": "Data Centre"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -371,12 +371,16 @@
         "label": "Application Layer"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -385,16 +389,16 @@
         "label": "Data Engineering"
       },
       {
-        "id": "urn:ngm:class:platform-engineering",
-        "label": "Platform Engineering"
-      },
-      {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
       },
       {
         "id": "urn:ngm:class:decentralised-ai",
@@ -431,16 +435,16 @@
         "label": "Container"
       },
       {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
         "id": "urn:ngm:class:workflow-orchestration",
         "label": "Workflow Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:continuous-integration",
-        "label": "Continuous Integration"
       },
       {
         "id": "urn:ngm:class:containerisation",
@@ -461,10 +465,6 @@
         "label": "Reproducibility"
       },
       {
-        "id": "urn:ngm:class:model-governance",
-        "label": "Model Governance"
-      },
-      {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
       },
@@ -473,12 +473,16 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ],
     "standardizedBy": [
@@ -491,12 +495,20 @@
         "label": "Open Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -511,6 +523,10 @@
       {
         "id": "urn:ngm:class:ai-lifecycle",
         "label": "AI Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -523,12 +539,12 @@
         "label": "Data Drift"
       },
       {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
-      },
-      {
         "id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
       },
       {
         "id": "urn:ngm:class:model-training",

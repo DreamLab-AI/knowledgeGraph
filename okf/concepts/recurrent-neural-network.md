@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:long-short-term-memory
   - urn:ngm:class:gated-recurrent-unit
   - urn:ngm:class:hidden-state
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:cell-state
 requires:
   - urn:ngm:class:backpropagation-through-time

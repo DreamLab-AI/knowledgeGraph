@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:human-ai-collaboration
   - urn:ngm:class:algorithmic-auditing
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:shap
   - urn:ngm:class:lime

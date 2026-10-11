@@ -60,7 +60,7 @@ relatedTo:
   - urn:ngm:class:mathematical-optimisation
   - urn:ngm:class:multi-objective-optimisation
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:constraint-solver
 ---
 

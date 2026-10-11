@@ -36,7 +36,7 @@ relatedTo:
   - urn:ngm:class:systemic-risk
   - urn:ngm:class:risk-management-framework
   - urn:ngm:class:compliance-framework
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:central-bank
 ---
 

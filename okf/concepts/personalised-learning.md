@@ -17,13 +17,13 @@ enables:
   - urn:ngm:class:intelligent-tutoring-system
   - urn:ngm:class:formative-assessment
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:data-governance
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:federated-learning
   - urn:ngm:class:item-response-theory

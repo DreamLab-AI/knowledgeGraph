@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nutation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Nutation is a small nodding motion of Earth's axis that is superimposed on the long-period precession.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

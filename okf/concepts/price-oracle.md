@@ -33,14 +33,14 @@ contrastsWith:
   - urn:ngm:class:centralised-exchange-feed
   - urn:ngm:class:price-discovery
 bridgesTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:financial-data-api
 supports:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:defi-infrastructure
 relatedTo:
   - urn:ngm:class:flash-loan

@@ -9,7 +9,6 @@ maturity: emerging
 quality: 0.7
 is-a:
   - urn:ngm:class:infra-legal-and-regulatory
-  - urn:ngm:class:regulatory-framework
 hasPart:
   - urn:ngm:class:data-protection-regulation
   - urn:ngm:class:ai-regulation
@@ -42,7 +41,7 @@ supports:
   - urn:ngm:class:trust-framework
 standardizedBy:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:consent-management
   - urn:ngm:class:audit-trail

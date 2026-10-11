@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:lending-protocol
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Aave Companies

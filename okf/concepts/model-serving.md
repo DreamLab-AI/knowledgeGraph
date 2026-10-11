@@ -29,7 +29,7 @@ dependsOn:
   - urn:ngm:class:feature-store
 implements:
   - urn:ngm:class:g-rpc
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 contrastsWith:
   - urn:ngm:class:model-training
 bridgesTo:
@@ -39,7 +39,7 @@ bridgesTo:
   - urn:ngm:class:latency
 uses:
   - urn:ngm:class:gpu-computing
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 supports:
   - urn:ngm:class:a-b-testing
   - urn:ngm:class:canary-deployment

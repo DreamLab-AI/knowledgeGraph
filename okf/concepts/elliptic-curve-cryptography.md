@@ -36,7 +36,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:modular-arithmetic
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:ieee-2418-1
@@ -46,7 +46,7 @@ relatedTo:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:cryptographic-security
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 ---
 
 # Elliptic Curve Cryptography

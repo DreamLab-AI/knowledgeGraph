@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-bus",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft bus is the part of a spacecraft that provides essential services to the payload.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Communications
 resource: urn:ngm:class:spacecraft-communications
 domain: space-science-and-systems
+description: Spacecraft communications is the exchange of information between a spacecraft and other endpoints through space and ground communication systems.
 maturity: draft
 quality: 0
 bridgesTo:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Spacecraft Communications
+
+Spacecraft communications is the exchange of information between a spacecraft and other endpoints through space and ground communication systems.

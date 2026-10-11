@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:cross-border-payments
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:stablecoin
 ---
 

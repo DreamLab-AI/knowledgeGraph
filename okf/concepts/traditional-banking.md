@@ -24,21 +24,21 @@ enables:
   - urn:ngm:class:monetary-policy-transmission
   - urn:ngm:class:trade-finance
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:shadow-banking
   - urn:ngm:class:neobank
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:open-banking
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:payment-system
   - urn:ngm:class:interbank-settlement
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:credit-scoring
 relatedTo:
   - urn:ngm:class:systemic-risk
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:financial-inclusion
 ---
 

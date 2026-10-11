@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-junction-spacecraft-solar-cell",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A multi-junction spacecraft solar cell is a photovoltaic cell made of stacked semiconductor layers, each tuned to absorb a different part of the solar spectrum.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft-solar-cell",

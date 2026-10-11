@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:verifiable-credential-standard
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:self-sovereign-identity
 uses:
   - urn:ngm:class:digital-signature

@@ -10,24 +10,24 @@ quality: 0.62
 is-a:
   - urn:ngm:class:standards-body
 requires:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:compliance
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 dependsOn:
   - urn:ngm:class:regulatory-framework
 implements:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:travel-rule
 bridgesTo:
   - urn:ngm:class:governance
 supports:
   - urn:ngm:class:financial-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 standardizedBy:
   - urn:ngm:class:regulatory-framework
 relatedTo:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:compliance
   - urn:ngm:class:travel-rule
 ---

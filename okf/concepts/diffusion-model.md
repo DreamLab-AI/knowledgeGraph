@@ -21,11 +21,11 @@ hasPart:
   - urn:ngm:class:u-net-backbone
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:latent-encoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 requires:
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-compute
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:latent-space
   - urn:ngm:class:backpropagation
   - urn:ngm:class:stochastic-gradient-descent
@@ -54,7 +54,7 @@ implements:
   - urn:ngm:class:denoising-objective
 contrastsWith:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:autoregressive-model
   - urn:ngm:class:energy-based-model
@@ -69,7 +69,7 @@ uses:
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:classifier-free-guidance
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:control-net
   - urn:ngm:class:text-encoder
   - urn:ngm:class:rectified-flow
@@ -85,7 +85,7 @@ relatedTo:
   - urn:ngm:class:stochastic-differential-equation
   - urn:ngm:class:markov-chain
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
   - urn:ngm:class:multimodal-model
   - urn:ngm:class:large-language-model
   - urn:ngm:class:flow-matching

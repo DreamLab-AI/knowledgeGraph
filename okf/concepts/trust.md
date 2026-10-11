@@ -37,9 +37,9 @@ supports:
   - urn:ngm:class:governance
   - urn:ngm:class:human-ai-collaboration
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:trust-and-safety
   - urn:ngm:class:trust-architecture

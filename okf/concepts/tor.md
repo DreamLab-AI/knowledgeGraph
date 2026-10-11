@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:network-security
 uses:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 relatedTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:dark-web

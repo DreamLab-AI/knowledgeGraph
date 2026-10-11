@@ -124,16 +124,16 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:vector-databases",
@@ -199,8 +199,8 @@
         "label": "Human Evaluation"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -247,7 +247,7 @@
         "label": "Model Context Protocol Specification"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Voice Browser Working Group"
       },
       {
@@ -255,7 +255,7 @@
         "label": "ISO 30401"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Voice Browser Working Group"
       },
       {
@@ -422,10 +422,6 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -452,6 +448,10 @@
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
       }
     ],
     "implements": [
@@ -558,8 +558,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -578,8 +578,8 @@
         "label": "In-Context Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -622,7 +622,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -652,8 +652,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",

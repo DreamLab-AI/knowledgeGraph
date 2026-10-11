@@ -20,7 +20,7 @@ bridgesTo:
   - urn:ngm:class:immersive-technology
   - urn:ngm:class:medical-ai
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
   - urn:ngm:class:logseq
 supports:
@@ -30,7 +30,7 @@ partOf:
   - urn:ngm:class:personal-knowledge-management
 relatedTo:
   - urn:ngm:class:education-and-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:collaboration
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:network-effects

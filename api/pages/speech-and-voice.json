@@ -24,8 +24,8 @@
       "label": "Audio Processing"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     },
     {
       "id": "urn:ngm:class:conversational-ai",
@@ -164,8 +164,8 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "implements": [
@@ -322,6 +322,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -345,11 +350,6 @@
       "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing",
       "slug": "signal-processing"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
@@ -379,8 +379,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -439,8 +439,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -469,7 +469,7 @@
         "label": "Fourier Analysis"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -485,8 +485,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
@@ -541,6 +541,10 @@
         "label": "Image Processing"
       },
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Data Processing"
       },
@@ -551,10 +555,6 @@
       {
         "id": "urn:ngm:class:scripted-chatbot",
         "label": "Scripted Chatbot"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -605,6 +605,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       },
@@ -619,10 +623,6 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
-      },
-      {
-        "id": "urn:ngm:class:word-embeddings",
-        "label": "Word Embeddings"
       }
     ],
     "supports": [
@@ -655,8 +655,8 @@
         "label": "Telecommunications"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
@@ -669,7 +669,15 @@
         "label": "Opus Codec"
       },
       {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
       },
       {
@@ -677,7 +685,7 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C Voice Browser Working Group"
       },
       {
@@ -693,6 +701,10 @@
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -709,8 +721,12 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -723,10 +739,6 @@
       {
         "id": "urn:ngm:class:audio-generation",
         "label": "Audio Generation"
-      },
-      {
-        "id": "urn:ngm:class:audio-processing-system",
-        "label": "Audio Processing System"
       }
     ]
   },

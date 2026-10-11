@@ -8,7 +8,7 @@ description: GMX is a decentralised spot and perpetual-futures exchange deployed
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:decentralised-finance-domain
 hasPart:
   - urn:ngm:class:liquidity-pool
@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:oracle
   - urn:ngm:class:liquidation-mechanism
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:uniswap
   - urn:ngm:class:decentralised-exchange

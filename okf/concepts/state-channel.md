@@ -37,12 +37,12 @@ uses:
   - urn:ngm:class:lightning-network
   - urn:ngm:class:raiden-network
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:machine-to-machine-payments
 partOf:
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:off-chain-scaling
-  - urn:ngm:class:layer-2-solutions
+  - urn:ngm:class:layer2
 relatedTo:
   - urn:ngm:class:connext
   - urn:ngm:class:zero-knowledge-proof

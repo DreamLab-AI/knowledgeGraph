@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:brain-computer-interfaces
   - urn:ngm:class:eye-tracking
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:brain-computer-interfaces
   - urn:ngm:class:cognitive-model
 enables:

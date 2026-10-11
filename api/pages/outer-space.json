@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:outer-space",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Outer space is the region beyond Earth's atmosphere, which the exosphere separates from the rest of the atmosphere.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -123,8 +123,8 @@
         "label": "IEEE"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [],
@@ -173,8 +173,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:serverless-architecture",
@@ -286,7 +286,7 @@
   },
   "wikilinks": [
     {
-      "slug": "cncf",
+      "slug": "cloud-native-computing-foundation",
       "label": "CNCF"
     },
     {
@@ -324,8 +324,8 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
     },
     {
       "slug": "component",

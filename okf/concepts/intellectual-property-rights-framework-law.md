@@ -8,7 +8,7 @@ description: The body of statute and case law granting creators exclusive rights
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 hasPart:
   - urn:ngm:class:copyright
 enables:

@@ -42,19 +42,19 @@ dependsOn:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:representation-learning
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:evolutionary-algorithm
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:conceptual-blending
 contrastsWith:
   - urn:ngm:class:rule-based-systems
@@ -69,7 +69,7 @@ uses:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:cognitive-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:optimisation
   - urn:ngm:class:reinforcement-learning
 supports:
@@ -82,7 +82,7 @@ supports:
   - urn:ngm:class:game-development
   - urn:ngm:class:scientific-discovery
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:c2pa-provenance-standard
 relatedTo:
   - urn:ngm:class:cognitive-science
@@ -90,8 +90,8 @@ relatedTo:
   - urn:ngm:class:ai-in-games
   - urn:ngm:class:representation-learning
   - urn:ngm:class:synthetic-data
-  - urn:ngm:class:intellectual-property-rights-framework
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:intellectual-property
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:cognitive-architecture
   - urn:ngm:class:affective-computing
 ---

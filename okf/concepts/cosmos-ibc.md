@@ -48,7 +48,7 @@ uses:
   - urn:ngm:class:commitment-scheme
 supports:
   - urn:ngm:class:layer-2-interop
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:cosmos
 ---

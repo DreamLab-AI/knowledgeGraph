@@ -17,7 +17,7 @@ requires:
 enables:
   - urn:ngm:class:continuous-deployment
   - urn:ngm:class:reproducibility
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
 dependsOn:
   - urn:ngm:class:idempotency
 implements:

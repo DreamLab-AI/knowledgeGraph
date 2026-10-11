@@ -14,7 +14,7 @@ is-a:
 hasPart:
   - urn:ngm:class:ml-pipeline-classification
   - urn:ngm:class:intelligent-analytics-categorization
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:feature-store
   - urn:ngm:class:data-governance
   - urn:ngm:class:data-lineage
@@ -30,7 +30,7 @@ enables:
   - urn:ngm:class:ml-pipeline-classification
   - urn:ngm:class:intelligent-analytics-categorization
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:feature-store
   - urn:ngm:class:data-lineage
   - urn:ngm:class:ai-driven-data-governance
@@ -44,7 +44,7 @@ dependsOn:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:database-systems
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:etsi-isg-eni
   - urn:ngm:class:ml-bill-of-materials
@@ -58,7 +58,7 @@ bridgesTo:
   - urn:ngm:class:computer-vision
 uses:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analytics
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
@@ -72,14 +72,14 @@ supports:
   - urn:ngm:class:content-recommendation
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:3-gpp
   - urn:ngm:class:cen-cenelec
 partOf:
   - urn:ngm:class:etsi-domain-taxonomy
   - urn:ngm:class:etsi-domain-ai
 relatedTo:
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:data-governance
   - urn:ngm:class:mlops
   - urn:ngm:class:feature-engineering

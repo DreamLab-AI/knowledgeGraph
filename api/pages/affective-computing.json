@@ -56,7 +56,7 @@
         "label": "Emotion Recognition"
       },
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Annotated Dataset"
       },
       {
@@ -120,7 +120,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -284,7 +284,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -323,7 +323,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -572,13 +572,13 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -588,6 +588,10 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       },
       {
         "id": "urn:ngm:class:brain-computer-interface",
@@ -604,10 +608,6 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
-      },
-      {
-        "id": "urn:ngm:class:neuroimaging",
-        "label": "Neuroimaging"
       }
     ],
     "supports": [
@@ -624,7 +624,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -642,8 +642,8 @@
         "label": "Conversational AI"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",

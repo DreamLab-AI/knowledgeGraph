@@ -11,20 +11,20 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:neural-network
   - urn:ngm:class:optimisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:neural-network
 hasPart:
   - urn:ngm:class:data-curation
   - urn:ngm:class:gradient-checkpointing
   - urn:ngm:class:kto
   - urn:ngm:class:policy-optimisation
-  - urn:ngm:class:rlhf
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:mixed-precision-training
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:reward-model
   - urn:ngm:class:supervised-fine-tuning
 requires:
@@ -42,8 +42,8 @@ enables:
   - urn:ngm:class:emergent-capabilities
   - urn:ngm:class:instruction-following
   - urn:ngm:class:code-generation
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reasoning
 dependsOn:
   - urn:ngm:class:scaling-laws
@@ -77,7 +77,7 @@ uses:
   - urn:ngm:class:py-torch
   - urn:ngm:class:checkpoints
   - urn:ngm:class:cognitive-ai
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 supports:
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agents
@@ -90,7 +90,7 @@ standardizedBy:
   - urn:ngm:class:aisi-frontier-ai-safety-framework
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:responsible-scaling-policy
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:responsible-scaling-policy
 relatedTo:

@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:web-accessibility-initiative",
         "label": "Web Accessibility Initiative"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
       }
     ],
     "requires": [
@@ -40,6 +48,18 @@
       {
         "id": "urn:ngm:class:web-accessibility",
         "label": "Web Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
       }
     ],
     "dependsOn": [],
@@ -57,12 +77,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:did",
-        "label": "Decentralised Identifiers"
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       }
     ],
     "uses": [
@@ -73,6 +93,14 @@
       {
         "id": "urn:ngm:class:rdf",
         "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
       }
     ],
     "supports": [
@@ -81,7 +109,7 @@
         "label": "Web Standards"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       }
     ],
@@ -105,6 +133,26 @@
       {
         "id": "urn:ngm:class:digital-identity-standards",
         "label": "Digital Identity Standards"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
       }
     ]
   },
@@ -179,10 +227,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:interoperability",
-        "label": "Interoperability"
-      },
-      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
       },
@@ -209,6 +253,10 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "dependsOn": [
@@ -350,6 +398,10 @@
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
     {
       "slug": "web-of-things",
       "label": "Web of Things"

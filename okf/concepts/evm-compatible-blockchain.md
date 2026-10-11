@@ -13,8 +13,8 @@ is-a:
 requires:
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:decentralized-application
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:decentralised-application
+  - urn:ngm:class:erc-20
 dependsOn:
   - urn:ngm:class:ethereum
 uses:

@@ -22,7 +22,7 @@ requires:
 enables:
   - urn:ngm:class:staking
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:governance
   - urn:ngm:class:tokenomics
@@ -30,8 +30,8 @@ dependsOn:
   - urn:ngm:class:ethereum
   - urn:ngm:class:cryptographic-hash-function
 implements:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:cryptocurrency
@@ -45,7 +45,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:stablecoin
   - urn:ngm:class:automated-market-maker
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Token

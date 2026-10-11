@@ -8,7 +8,7 @@ description: Automated Market Maker (AMM) is a decentralized exchange protocol t
 maturity: draft
 quality: 0.7
 is-a:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 hasPart:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:lp-token
@@ -26,12 +26,12 @@ enables:
   - urn:ngm:class:price-discovery
   - urn:ngm:class:token-swaps
 implements:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 contrastsWith:
   - urn:ngm:class:order-book-exchange
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:virtual-economy
   - urn:ngm:class:blockchain
 uses:

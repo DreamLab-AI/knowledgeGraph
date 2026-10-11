@@ -10,10 +10,10 @@ quality: 0.72
 is-a:
   - urn:ngm:class:open-id-connect
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-signature
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:privacy-preserving-authentication
   - urn:ngm:class:holder-binding
   - urn:ngm:class:cross-platform-authentication
@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:saml
   - urn:ngm:class:centralized-identity-provider
 bridgesTo:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:zero-knowledge-proof
 uses:
   - urn:ngm:class:oauth-2-0
@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:presentation-exchange
   - urn:ngm:class:sd-jwt
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
 supports:
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:iso-iec-18013-5-m-dl
@@ -41,7 +41,7 @@ standardizedBy:
   - urn:ngm:class:open-id-foundation
 relatedTo:
   - urn:ngm:class:open-id4-vci
-  - urn:ngm:class:w3-c-verifiable-credentials
+  - urn:ngm:class:w-3-c-verifiable-credentials-data-model
   - urn:ngm:class:e-idas-2-0
 ---
 

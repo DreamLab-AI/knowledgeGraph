@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-satellite",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation satellite is a spacecraft that carries instruments for observing the planet, which ESA says can stay in place for long periods and so show gradual environmental change.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -83,8 +83,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -173,8 +173,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

@@ -292,7 +292,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -1945,7 +1945,7 @@
       "label": "rolling shutter"
     },
     {
-      "slug": "ros",
+      "slug": "robot-operating-system",
       "label": "ROS"
     },
     {
@@ -2305,7 +2305,7 @@
       "label": "USC"
     },
     {
-      "slug": "usd",
+      "slug": "universal-scene-description",
       "label": "USD"
     },
     {

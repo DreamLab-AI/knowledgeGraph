@@ -197,7 +197,7 @@ A family of formal knowledge representation languages used to describe concepts,
 - The Whelk reasoner (Dagstuhl TGDK 2.2.7, 2024) extends EL+RL support to new use cases including federated reasoning.
 
   ## Current Landscape (2026)
-  By mid-2026, Description Logics occupy a distinctive position at the intersection of classical [[Knowledge Representation]], the [[Semantic Web Linked Data Standard]] infrastructure, and the emerging [[Neuro-Symbolic AI]] paradigm.
+  By mid-2026, Description Logics occupy a distinctive position at the intersection of classical [[Knowledge Representation]], the [[Semantic Web]] infrastructure, and the emerging [[Neuro-Symbolic AI]] paradigm.
 
   **OWL 2 and biomedical deployment**: The [[OWL]] 2 standard continues its role as the lingua franca of formal ontologies. The 2025 NHS England mandate for SNOMED CT in all NHS Trusts' electronic patient record systems drives industrial-scale EL reasoning in clinical settings. BioPortal hosts over 1,000 OWL ontologies as of 2026. The OBO Foundry celebrated its 20th anniversary in 2025 with over 175 registered ontologies — a testament to the sustained productivity of DL-grounded biomedical knowledge engineering.
 

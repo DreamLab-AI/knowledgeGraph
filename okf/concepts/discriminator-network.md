@@ -56,7 +56,7 @@ implements:
   - urn:ngm:class:spectral-normalisation
 contrastsWith:
   - urn:ngm:class:generator-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:normalising-flow
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:autoregressive-model

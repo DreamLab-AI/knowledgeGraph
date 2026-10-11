@@ -7,7 +7,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 ### Content
 
 - A **private blockchain** is a permissioned [[distributed ledger]] technology where network access, transaction validation, and data visibility are restricted to authorized participants, offering enterprises enhanced privacy, control, and performance compared to [[PublicBlockchain]] networks.
-- Unlike [[PublicBlockchain]] systems that enable open participation, private blockchains implement strict [[AccessControl]] mechanisms through [[IdentityManagement]] systems, [[KYC]] (Know Your Customer) verification, and role-based permissions.
+- Unlike [[PublicBlockchain]] systems that enable open participation, private blockchains implement strict [[AccessControl]] mechanisms through [[IdentityManagement]] systems, [[Know Your Customer]] (Know Your Customer) verification, and role-based permissions.
 
 ### Core Definition & Characteristics
 
@@ -24,7 +24,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Role-Based Access Control (RBAC)**: Participants assigned specific roles (administrator, validator, observer, auditor) with corresponding permissions and capabilities.
   - **Multi-Tier Permissions**: Granular control over who can read, write, validate, and govern different aspects of the blockchain network.
 - **Identity Management Systems**
-  - **[[KYC]]/[[AML]] Integration**: Mandatory identity verification processes ensuring all participants are known, vetted, and compliant with regulatory requirements.
+  - **[[Know Your Customer]]/[[Anti-Money Laundering]] Integration**: Mandatory identity verification processes ensuring all participants are known, vetted, and compliant with regulatory requirements.
   - **[[DigitalCertificate]] Infrastructure**: [[PublicKeyInfrastructure]] (PKI) systems issue and manage digital certificates for participant authentication and authorization.
   - **Federated Identity**: Integration with enterprise [[IdentityManagement]] systems (Active Directory, LDAP, OAuth) for seamless authentication.
   - **Privacy-Preserving Identity**: Techniques like selective disclosure and [[ZeroKnowledgeProof]] enable identity verification without revealing unnecessary personal information.
@@ -35,7 +35,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Validator Selection**: Pre-approved, trusted validators (authorities) with verified identities responsible for block creation and validation.
   - **Reputation-Based Trust**: Validators stake their reputation rather than [[Cryptocurrency]] tokens, with identities publicly disclosed to ensure accountability.
   - **Performance Benefits**: Achieves 1,000-10,000+ [[TransactionsPerSecond]] (TPS) with sub-second block times and minimal energy consumption.
-  - **Use Cases**: [[Ethereum Smart Contract Platform]]-compatible networks, test networks, consortium blockchains requiring high throughput and known validators.
+  - **Use Cases**: [[Ethereum]]-compatible networks, test networks, consortium blockchains requiring high throughput and known validators.
   - **Examples**: [[VeChain]], [[POANetwork]], [[xDai]] chain implementations.
 - **[[PBFT]] (Practical Byzantine Fault Tolerance)**
   - **Byzantine Fault Tolerance**: Tolerates up to (n-1)/3 faulty or malicious nodes in a network of n validators, ensuring consensus despite failures.
@@ -50,7 +50,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Best for Single-Organization Blockchains**: Ideal when all nodes are controlled by one entity and Byzantine fault tolerance isn't required.
   - **Implementations**: [[Hyperledger Fabric]] ordering service option, [[Quorum]] RAFT consensus mode.
 - **Istanbul Byzantine Fault Tolerance (IBFT)**
-  - **Enhanced PBFT Variant**: Optimized for [[Ethereum Smart Contract Platform]]-based private networks with improved performance and simplified implementation.
+  - **Enhanced PBFT Variant**: Optimized for [[Ethereum]]-based private networks with improved performance and simplified implementation.
   - **Immediate Finality**: Blocks are finalized immediately after consensus, preventing forks and ensuring transaction certainty.
   - **Used By**: [[Quorum]], [[Hyperledger Besu]], [[Polygon]] (previously), providing enterprise-grade consensus for EVM-compatible chains.
 
@@ -71,7 +71,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Notable Deployments**: [[SWIFT]] blockchain integration, [[JPMorgan]] Interbank Information Network (IIN), HQLAx securities lending platform.
   - **Unique Features**: Point-to-point communication, notary services for consensus, legal contract integration, flow framework for complex workflows.
 - **[[Quorum]] (ConsenSys)**
-  - **Enterprise [[Ethereum Smart Contract Platform]]**: Permissioned version of Ethereum developed by JPMorgan Chase (now maintained by ConsenSys), adding privacy and performance enhancements.
+  - **Enterprise [[Ethereum]]**: Permissioned version of Ethereum developed by JPMorgan Chase (now maintained by ConsenSys), adding privacy and performance enhancements.
   - **Privacy Mechanisms**: Transaction privacy through private state management (Tessera) and [[ZeroKnowledgeProof]] integration (ZSL - Zerocash Security Layer).
   - **Consensus Options**: Supports [[RAFT]] (crash fault tolerant) and IBFT (Byzantine fault tolerant) consensus mechanisms for different trust requirements.
   - **[[EVM]] Compatibility**: Full compatibility with Ethereum [[SmartContract]] tooling, [[Solidity]] language, and [[DApp]] development frameworks.
@@ -115,7 +115,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 | **Characteristic** | **Private Blockchain** | **[[PublicBlockchain]]** |
 |-------------------|----------------------|----------------------|
 | **Access Control** | Permissioned, restricted to authorized entities | Permissionless, open to anyone |
-| **Identity** | Known participants, [[KYC]]/[[AML]] verified | [[Pseudonymous]] or anonymous participants |
+| **Identity** | Known participants, [[Know Your Customer]]/[[Anti-Money Laundering]] verified | [[Pseudonymous]] or anonymous participants |
 | **Consensus** | [[PBFT]], [[RAFT]], [[ProofOfAuthority]] | [[ProofOfWork]], [[ProofOfStake]], [[DelegatedProofOfStake]] |
 | **Transaction Speed** | 1,000-20,000+ TPS, sub-second finality | 7-65 TPS (Bitcoin/Ethereum), 3-10 second blocks |
 | **Energy Efficiency** | Minimal energy consumption (no mining) | High energy use in PoW networks |
@@ -126,8 +126,8 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 | **Transparency** | Limited to authorized participants | Fully transparent to all network participants |
 | **Immutability** | Can be modified by governance body | Extremely difficult to alter (requires majority control) |
 | **Decentralization** | Low to medium (10-100s validators) | High (1,000s-10,000s of nodes) |
-| **Use Cases** | Enterprise, B2B, regulated industries | [[Cryptocurrency]], [[DeFi]], public applications |
-| **Examples** | [[Hyperledger Fabric]], [[R3Corda]], [[Quorum]] | [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], [[Solana]], [[Cardano]] |
+| **Use Cases** | Enterprise, B2B, regulated industries | [[Cryptocurrency]], [[Decentralised Finance]], public applications |
+| **Examples** | [[Hyperledger Fabric]], [[R3Corda]], [[Quorum]] | [[Bitcoin Proof-of-Work Protocol]], [[Ethereum]], [[Solana]], [[Cardano]] |
 
 ### Consortium Blockchains
 
@@ -163,7 +163,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Private Channels**: Hyperledger Fabric's channel architecture enables confidential multi-party workflows invisible to other network participants.
   - **Encrypted Data**: Business logic, transaction amounts, and participant identities encrypted and accessible only to authorized parties.
 - **Regulatory Compliance**
-  - **[[KYC]]/[[AML]] Integration**: Built-in identity verification ensures all participants meet regulatory requirements for financial services, healthcare, etc.
+  - **[[Know Your Customer]]/[[Anti-Money Laundering]] Integration**: Built-in identity verification ensures all participants meet regulatory requirements for financial services, healthcare, etc.
   - **Audit Trails**: Immutable transaction history with fine-grained access controls supports regulatory audits and legal discovery.
   - **Data Sovereignty**: Deploy in specific geographic regions to comply with data residency requirements ([[GDPR]], local data protection laws).
   - **Reversibility Options**: Governance bodies can implement mechanisms to correct errors, comply with court orders, or handle exceptional circumstances.
@@ -202,7 +202,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 - **Definition**: Architectural approaches combining private blockchain benefits (performance, privacy, control) with public blockchain advantages (transparency, decentralization, immutability).
 - **Public Anchoring (Dual-Layer Architecture)**
   - **Private Operations Layer**: Day-to-day transactions execute on high-performance private blockchain with confidentiality and efficiency.
-  - **Public Verification Layer**: Periodic commitment of private chain state (Merkle roots, state hashes) to public blockchain ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]]) for tamper-proof verification.
+  - **Public Verification Layer**: Periodic commitment of private chain state (Merkle roots, state hashes) to public blockchain ([[Bitcoin Proof-of-Work Protocol]], [[Ethereum]]) for tamper-proof verification.
   - **Benefits**: Maintains transaction privacy and speed while gaining public blockchain's immutability and auditability.
   - **Examples**: [[LiquidNetwork]] (Bitcoin sidechain), [[PlasmaChain]] architectures, [[Polygon]] enterprise solutions.
 - **Selective Transparency**
@@ -210,9 +210,9 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - **Public Disclosure on Demand**: Specific data points (compliance certificates, audit summaries, aggregate statistics) published to public blockchain.
   - **Use Cases**: Supply chain provenance (private supplier details, public product authenticity), financial reporting (private transactions, public compliance proof).
 - **Cross-Chain Bridges**
-  - **Asset Portability**: Enable token transfers between private enterprise blockchains and public [[DeFi]] ecosystems via [[AtomicSwap]], [[HashTimeLock]] contracts.
+  - **Asset Portability**: Enable token transfers between private enterprise blockchains and public [[Decentralised Finance]] ecosystems via [[AtomicSwap]], [[HashTimeLock]] contracts.
   - **[[Interoperability]] Protocols**: [[Polkadot]] parachains, [[Cosmos]] IBC, [[Chainlink]] CCIP enable message passing and state sharing across heterogeneous blockchains.
-  - **Enterprise-DeFi Integration**: Enterprises access public [[DeFi]] liquidity, [[Stablecoin]] payment rails, and decentralized oracle networks while maintaining private operations.
+  - **Enterprise-DeFi Integration**: Enterprises access public [[Decentralised Finance]] liquidity, [[Stablecoin]] payment rails, and decentralized oracle networks while maintaining private operations.
 - **Hybrid Governance**
   - **Internal Private Governance**: Consortium members govern day-to-day operations, network rules, and participant permissions.
   - **Public Accountability Mechanisms**: Governance decisions, rule changes, and major network events published to public blockchain for transparency.
@@ -257,11 +257,11 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 - Private blockchains are widely adopted across industries requiring secure, efficient, and compliant data sharing among known, trusted parties with established business relationships.
 - Notable implementations span financial services (payments, securities settlement, trade finance), healthcare (medical records, drug traceability), supply chain (provenance, quality assurance), and government sectors (digital identity, land registries) where privacy and regulatory control are paramount.
 - [[ConsortiumBlockchain]] networks, a collaborative variant of private blockchains, enable multiple organizations to share infrastructure and governance while maintaining access controls and confidentiality.
-- In the UK, enterprises increasingly deploy private blockchains to address data fragmentation, streamline multi-party workflows, and meet regulatory demands, with particular focus on [[GDPR]] compliance, [[AML]] requirements, and digital trust frameworks.
+- In the UK, enterprises increasingly deploy private blockchains to address data fragmentation, streamline multi-party workflows, and meet regulatory demands, with particular focus on [[GDPR]] compliance, [[Anti-Money Laundering]] requirements, and digital trust frameworks.
 - North England hosts growing blockchain initiatives, particularly in Manchester's fintech cluster and Leeds' financial services sector, where startups and established institutions leverage private blockchains for secure transactions, provenance tracking, and regulatory reporting.
 - Technical capabilities include high throughput (1,000-20,000+ TPS), low latency (sub-second finality), and fine-grained [[AccessControl]], but limitations persist in [[Interoperability]] with public blockchains, standardization across competing platforms, and broader ecosystem network effects.
 - Standards and frameworks such as [[Hyperledger Fabric]], [[R3Corda]], [[Quorum]], and [[Hyperledger Besu]] dominate private blockchain development, supported by evolving governance models, [[Interoperability]] protocols ([[Polkadot]], [[Cosmos]] IBC), and enterprise-grade security features.
-- [[RegulatoryCompliance]] capabilities including [[KYC]]/[[AML]] integration, audit trail management, and data sovereignty controls make private blockchains attractive for regulated industries navigating complex legal environments.
+- [[RegulatoryCompliance]] capabilities including [[Know Your Customer]]/[[Anti-Money Laundering]] integration, audit trail management, and data sovereignty controls make private blockchains attractive for regulated industries navigating complex legal environments.
 
   #### Academic Context
 
@@ -276,14 +276,14 @@ A private blockchain is a permissioned distributed ledger in which access, parti
 - The UK government and private sector actively support blockchain innovation through funding programs (Innovate UK), regulatory sandboxes ([[FCA]], [[ICO]]), and industry working groups, fostering enterprise adoption of private blockchain solutions.
 - North England innovation hubs in Manchester and Leeds have emerged as centers for blockchain startups focusing on fintech, supply chain transparency, digital identity, and regulatory technology (RegTech) applications.
 - Sheffield and Newcastle contribute through academic research (University of Sheffield Blockchain Lab, Newcastle University Centre for Cybercrime and Computer Security) and pilot projects integrating private blockchains into advanced manufacturing, healthcare data sharing, and energy grid management.
-- Regional case studies highlight collaborations between universities and industry, such as the University of Manchester's blockchain research group partnering with local fintech firms to develop private ledger solutions for secure financial transactions, [[KYC]] sharing, and fraud prevention.
+- Regional case studies highlight collaborations between universities and industry, such as the University of Manchester's blockchain research group partnering with local fintech firms to develop private ledger solutions for secure financial transactions, [[Know Your Customer]] sharing, and fraud prevention.
 - UK financial institutions (Barclays, HSBC, Lloyds) participate in international blockchain consortiums ([[R3]], [[SWIFT]], [[JPMorgan]] IIN) while exploring domestic applications for mortgages, trade finance, and payment infrastructure.
 - One might say the North is quietly building the backbone of the UK's blockchain future—no need for a flashy [[PublicBlockchain]] when you have a private one that keeps your business secrets safe and regulators happy.
 
   #### Future Directions
 
 - Emerging trends include:
-  - Integration of private blockchains with [[ArtificialIntelligence]] and [[IoT]] for automated, secure data exchange in smart cities, Industry 4.0 manufacturing, and autonomous vehicle ecosystems.
+  - Integration of private blockchains with [[ArtificialIntelligence]] and [[Internet of Things]] for automated, secure data exchange in smart cities, Industry 4.0 manufacturing, and autonomous vehicle ecosystems.
   - Development of hybrid blockchain models combining private operational efficiency with public blockchain anchoring for transparency, leveraging [[Rollup]] technology and cross-chain bridges.
   - Increased focus on [[RegulatoryCompliance]] automation, especially with evolving UK data protection laws post-Brexit, [[DigitalPound]] infrastructure, and [[CBDC]] frameworks.
   - [[Interoperability]] standards maturation through [[Polkadot]] parachains, [[Cosmos]] IBC, [[Chainlink]] CCIP, and enterprise-focused middleware enabling seamless multi-chain operations.
@@ -312,7 +312,7 @@ A private blockchain is a permissioned distributed ledger in which access, parti
   - Advanced privacy-preserving techniques including [[ZeroKnowledgeProof]] (zk-SNARKs, zk-STARKs), secure multi-party computation, and homomorphic encryption within permissioned environments.
   - Governance frameworks balancing operational efficiency with [[Decentralized]] principles, investigating voting mechanisms, dispute resolution, and regulatory alignment.
   - [[Scalability]] improvements through sharding, layer-2 solutions, and optimized [[ConsensusAlgorithm]] designs targeting 50,000-100,000 TPS.
-  - Integration with emerging technologies including [[ArtificialIntelligence]] for anomaly detection, [[IoT]] for device management, and [[QuantumComputing]] resistance.
+  - Integration with emerging technologies including [[ArtificialIntelligence]] for anomaly detection, [[Internet of Things]] for device management, and [[QuantumComputing]] resistance.
 
     #### References
     1. Cachin, C. (2016). Architecture of the Hyperledger Blockchain Fabric. *Workshop on Distributed Cryptocurrencies and Consensus Ledgers*. DOI:10.1145/2994581.2994590

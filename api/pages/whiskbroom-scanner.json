@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:whiskbroom-scanner",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A whiskbroom scanner is an imaging instrument in which an oscillating scan mirror sweeps back and forth across the field of view, roughly perpendicular to the direction of travel, so that the motion of the platform builds the image strip by strip.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

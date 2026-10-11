@@ -21,12 +21,12 @@ requires:
   - urn:ngm:class:network-node
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-provenance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:centralised-database
   - urn:ngm:class:traditional-financial-system

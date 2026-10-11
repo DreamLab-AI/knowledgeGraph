@@ -10,7 +10,7 @@ quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
 relatedTo:
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-models
   - urn:ngm:class:ai-hardware
 ---
 

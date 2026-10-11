@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:access-control
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:interoperability
   - urn:ngm:class:data-portability
@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:encryption
   - urn:ngm:class:privacy-by-design
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 standardizedBy:
   - urn:ngm:class:hl7-fhir
   - urn:ngm:class:hipaa

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:electrospray-thruster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An electrospray thruster is an electric propulsion device that produces thrust by electrostatically extracting and accelerating ions or droplets from a low-vapour-pressure, electrically conductive liquid propellant.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:thruster",

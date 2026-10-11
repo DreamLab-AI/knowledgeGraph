@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sunspot",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A sunspot is a cooler, darker region on the Sun's photosphere associated with a concentration of magnetic field lines.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

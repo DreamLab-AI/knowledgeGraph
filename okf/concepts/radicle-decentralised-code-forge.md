@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:network-component
 enables:
   - urn:ngm:class:open-source-software
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 uses:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:version-control

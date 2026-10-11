@@ -8,13 +8,13 @@ description: Power management is the discipline of regulating, distributing, mon
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
   - urn:ngm:class:battery-management-system
   - urn:ngm:class:dc-dc-converter
   - urn:ngm:class:power-distribution-unit
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:thermal-management
 enables:

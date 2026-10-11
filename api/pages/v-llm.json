@@ -31,8 +31,8 @@
         "label": "GPU"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "enables": [
@@ -85,8 +85,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:latency",
@@ -136,6 +136,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -176,14 +181,9 @@
       "slug": "mlops"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -191,14 +191,14 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:artificial-intelligence-core",
-      "label": "Artificial Intelligence Core",
-      "slug": "artificial-intelligence-core"
-    },
-    {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique",
       "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core",
+      "slug": "artificial-intelligence-core"
     }
   ],
   "inheritedRelations": {
@@ -262,12 +262,12 @@
         "label": "Networking Fabric"
       },
       {
-        "id": "urn:ngm:class:cooling-system",
-        "label": "Cooling Systems"
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:ngm:class:power-grid",
-        "label": "Power Grid"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -292,16 +292,16 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:orchestration",
-        "label": "Orchestration"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
       }
     ],
     "dependsOn": [
@@ -352,8 +352,12 @@
         "label": "gRPC"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -366,10 +370,6 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
-      },
-      {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
       }
     ],
     "contrastsWith": [
@@ -398,12 +398,12 @@
         "label": "DevOps"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -428,26 +428,22 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:model-serving",
-        "label": "Model Serving"
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:quantisation",
-        "label": "Quantisation"
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:kv-cache",
         "label": "KV Cache"
-      },
-      {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:neural-network-quantisation",
@@ -472,6 +468,10 @@
       {
         "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
       }
     ],
     "supports": [
@@ -484,8 +484,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -510,8 +510,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -530,6 +530,14 @@
         "label": "Open Standards"
       },
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       }
@@ -546,6 +554,10 @@
       {
         "id": "urn:ngm:class:ai-lifecycle",
         "label": "AI Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

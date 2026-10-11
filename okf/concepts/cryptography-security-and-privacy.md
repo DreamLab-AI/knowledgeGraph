@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:key-exchange
   - urn:ngm:class:message-authentication-code
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:digital-signature
   - urn:ngm:class:hash-function
@@ -88,7 +88,7 @@ uses:
   - urn:ngm:class:polynomial-commitments
   - urn:ngm:class:constant-time-programming
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:privacy-preserving-machine-learning
   - urn:ngm:class:secure-messaging
   - urn:ngm:class:zero-trust-architecture

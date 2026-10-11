@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interplanetary-magnetic-field",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Interplanetary magnetic field refers to the solar magnetic field carried outward through interplanetary space by the solar wind.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

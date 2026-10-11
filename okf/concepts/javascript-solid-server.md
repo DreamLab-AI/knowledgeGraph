@@ -26,7 +26,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:did-nostr
   - urn:ngm:class:nostr
-  - urn:ngm:class:webid-decentralised-identity-uri
+  - urn:ngm:class:web-id
   - urn:ngm:class:rdf
   - urn:ngm:class:linked-data
   - urn:ngm:class:web-authn

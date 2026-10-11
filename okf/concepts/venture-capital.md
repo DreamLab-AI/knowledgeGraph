@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:risk-management
 enables:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:liquidity
 contrastsWith:
@@ -32,7 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:token-distribution
   - urn:ngm:class:web3
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Venture Capital

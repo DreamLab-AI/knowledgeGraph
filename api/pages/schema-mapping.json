@@ -118,6 +118,11 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -147,12 +152,12 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:data-lineage",
-        "label": "Data Lineage"
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:data-quality",
-        "label": "Data Quality"
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
       }
     ],
     "requires": [
@@ -175,6 +180,18 @@
       {
         "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
       }
     ],
     "enables": [
@@ -203,8 +220,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -229,6 +246,10 @@
       {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
@@ -247,16 +268,20 @@
       {
         "id": "urn:ngm:class:metaverse-technology",
         "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
-      },
-      {
-        "id": "urn:ngm:class:data-catalog",
-        "label": "Data Catalog"
       },
       {
         "id": "urn:ngm:class:data-catalogue",
@@ -283,6 +308,18 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
@@ -301,6 +338,14 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
@@ -319,6 +364,22 @@
       {
         "id": "urn:ngm:class:information-management",
         "label": "Information Management"
+      },
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ]
   },

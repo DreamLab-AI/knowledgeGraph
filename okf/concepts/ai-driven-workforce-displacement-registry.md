@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:software-engineering
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
 relatedTo:
   - urn:ngm:class:artificial-intelligence

@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:cryptography
   - urn:ngm:class:cryptographic-protocol
 implements:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:public-key-cryptography
 uses:
@@ -31,7 +31,7 @@ uses:
 supports:
   - urn:ngm:class:forward-secrecy
 standardizedBy:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 partOf:
   - urn:ngm:class:secure-communication
 relatedTo:

@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:structured-data
 enables:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:open-data
   - urn:ngm:class:federated-query
 bridgesTo:
@@ -22,14 +22,14 @@ uses:
   - urn:ngm:class:rdf
   - urn:ngm:class:linked-data
   - urn:ngm:class:sparql
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:entity-resolution
 supports:
   - urn:ngm:class:question-answering
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:natural-language-processing
 partOf:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 relatedTo:
   - urn:ngm:class:ontology
   - urn:ngm:class:semantic-search

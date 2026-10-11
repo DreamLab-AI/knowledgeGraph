@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:py-torch
   - urn:ngm:class:python-runtime
   - urn:ngm:class:node-based-diffusion-pipeline-interface
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 enables:
   - urn:ngm:class:control-net-conditioning
   - urn:ngm:class:image-to-image
@@ -49,7 +49,7 @@ enables:
   - urn:ngm:class:latent-upscaling
   - urn:ngm:class:batch-image-processing
 dependsOn:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:flux-1
   - urn:ngm:class:sdxl
   - urn:ngm:class:diffusion-model
@@ -88,8 +88,8 @@ supports:
   - urn:ngm:class:temporal-motion-diffusion-adapter
   - urn:ngm:class:inpainting
   - urn:ngm:class:ip-adapter
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
+  - urn:ngm:class:lora
   - urn:ngm:class:wan2-1-video
   - urn:ngm:class:real-esrgan
   - urn:ngm:class:gfpgan
@@ -109,7 +109,7 @@ relatedTo:
   - urn:ngm:class:image-generation
   - urn:ngm:class:inpainting
   - urn:ngm:class:ip-adapter
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 ---
 
 # ComfyUI Workflows

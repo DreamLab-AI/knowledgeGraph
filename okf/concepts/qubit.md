@@ -8,9 +8,9 @@ description: "The fundamental unit of quantum information: a two-level quantum s
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 partOf:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 relatedTo:
   - urn:ngm:class:information-theory
 ---

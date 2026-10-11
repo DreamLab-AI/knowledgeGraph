@@ -8,10 +8,10 @@ description: A qualified electronic signature (QES) is the highest-assurance cla
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
 requires:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:identity-verification
 enables:
   - urn:ngm:class:authentication
@@ -23,7 +23,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:digital-identity
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptography
   - urn:ngm:class:certificate-authority
 supports:
@@ -31,10 +31,10 @@ supports:
 standardizedBy:
   - urn:ngm:class:eidas-regulation
 partOf:
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
 relatedTo:
   - urn:ngm:class:eidas-regulation
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
   - urn:ngm:class:digital-signature
 ---
 

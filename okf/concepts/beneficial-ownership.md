@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:sanctions-screening
 requires:
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:financial-inclusion
 dependsOn:
@@ -25,9 +25,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:identity-management
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 partOf:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 relatedTo:
   - urn:ngm:class:financial-services
   - urn:ngm:class:financial-system

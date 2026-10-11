@@ -2,9 +2,9 @@ Liquidity mining is a decentralised finance incentive mechanism in which partici
 
 ### Overview
 
-- Liquidity mining emerged in 2020 as a transformative bootstrapping technique within [[Decentralized Finance]], popularised by the Compound protocol's distribution of COMP governance tokens to its users. The core insight is that a protocol without liquidity is worthless, so token emissions can act as a subsidy that jumpstarts a two-sided market. By rewarding depositors with tokens, protocols rapidly attract capital that enables competitive swap prices and lending rates, creating a network effect that can become self-sustaining.
+- Liquidity mining emerged in 2020 as a transformative bootstrapping technique within [[Decentralised Finance]], popularised by the Compound protocol's distribution of COMP governance tokens to its users. The core insight is that a protocol without liquidity is worthless, so token emissions can act as a subsidy that jumpstarts a two-sided market. By rewarding depositors with tokens, protocols rapidly attract capital that enables competitive swap prices and lending rates, creating a network effect that can become self-sustaining.
 - The mechanism is distinct from traditional [[Market Making]], which relies on professional firms with capital and risk-management infrastructure. Liquidity mining democratises market making, allowing any token holder to participate and earn yield, while protocols avoid paying large up-front fees to centralised market makers.
-- Because reward tokens often carry governance rights over the protocol, liquidity mining simultaneously distributes ownership and aligns incentives: participants who profit from the protocol have a stake in its long-term success and are incentivised to vote constructively in the [[Decentralized Autonomous Organization]].
+- Because reward tokens often carry governance rights over the protocol, liquidity mining simultaneously distributes ownership and aligns incentives: participants who profit from the protocol have a stake in its long-term success and are incentivised to vote constructively in the [[Decentralised Autonomous Organisation]].
 
 ### Key Mechanisms
 

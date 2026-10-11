@@ -13,7 +13,7 @@ is-a:
   - urn:ngm:class:control-theory
   - urn:ngm:class:industrial-automation
   - urn:ngm:class:mechatronics
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 hasPart:
   - urn:ngm:class:ether-cat
   - urn:ngm:class:feedforward-control
@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:servo-drive
   - urn:ngm:class:encoder
   - urn:ngm:class:impedance-control
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:motion-control
   - urn:ngm:class:cnc
   - urn:ngm:class:plc
@@ -96,7 +96,7 @@ relatedTo:
   - urn:ngm:class:model-predictive-control
   - urn:ngm:class:adaptive-control
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Motion Control

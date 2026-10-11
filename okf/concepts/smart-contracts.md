@@ -18,10 +18,10 @@ requires:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:blockchain-oracle
 enables:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:tokenization
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:non-fungible-token
 dependsOn:
   - urn:ngm:class:ethereum
@@ -39,10 +39,10 @@ supports:
   - urn:ngm:class:supply-chain-automation
   - urn:ngm:class:parametric-insurance
 partOf:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:decentralized-finance-de-fi
 relatedTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:reentrancy-attack
   - urn:ngm:class:decentralized-finance-de-fi
 ---

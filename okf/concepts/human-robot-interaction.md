@@ -35,7 +35,7 @@ enables:
   - urn:ngm:class:collaborative-systems-modality-robot
   - urn:ngm:class:safetymetrics
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
 contrastsWith:
   - urn:ngm:class:autonomous-robot

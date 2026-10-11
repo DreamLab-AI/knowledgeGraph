@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:edge-computing
   - urn:ngm:class:ai-accelerator
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:neural-processing-unit
 hasPart:
   - urn:ngm:class:edge-ai-accelerator
@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:power-management
   - urn:ngm:class:thermal-design-power
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
 enables:
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:industrial-automation
@@ -77,7 +77,7 @@ supports:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:agents
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:speech-recognition
 standardizedBy:
@@ -92,7 +92,7 @@ relatedTo:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:ai-adoption
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:proprietary-large-language-models
   - urn:ngm:class:autonomous-system
 ---

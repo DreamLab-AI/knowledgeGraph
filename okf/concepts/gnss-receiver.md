@@ -4,6 +4,7 @@ type: Class
 title: GNSS Receiver
 resource: urn:ngm:class:gnss-receiver
 domain: space-science-and-systems
+description: A GNSS receiver is user equipment that processes one or more satellite navigation signals to form measurements or estimate position, velocity and time.
 maturity: draft
 quality: 0
 is-a:
@@ -15,3 +16,5 @@ relatedTo:
 ---
 
 # GNSS Receiver
+
+A GNSS receiver is user equipment that processes one or more satellite navigation signals to form measurements or estimate position, velocity and time.

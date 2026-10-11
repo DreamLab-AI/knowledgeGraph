@@ -33,7 +33,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:audit-trail
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 supports:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:digital-forensics

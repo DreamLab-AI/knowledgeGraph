@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:reward-model
 uses:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:ai-safety
 relatedTo:

@@ -6,7 +6,7 @@ Quantum mechanics is the physical theory describing matter and energy at atomic 
 
 - The theory replaced deterministic trajectories with probability amplitudes, so that a system can exist in a superposition of states until measurement projects it onto a definite outcome.
 - Entanglement links the states of separate systems so strongly that no local description suffices, a feature with no classical analogue and central to quantum information.
-- These principles are not merely interpretive: they are engineering resources that the [[Quantum Computation Paradigm]] and [[Quantum Cryptography]] exploit to outperform classical methods on specific tasks.
+- These principles are not merely interpretive: they are engineering resources that the [[Quantum Computing]] and [[Quantum Cryptography]] exploit to outperform classical methods on specific tasks.
 
 ### Key aspects
 
@@ -19,7 +19,7 @@ Quantum mechanics is the physical theory describing matter and energy at atomic 
 ### Applications
 
 - Defining the [[Qubit]] and the operations of a [[Quantum Gate]].
-- Grounding the [[Quantum Computation Paradigm]] and its algorithms.
+- Grounding the [[Quantum Computing]] and its algorithms.
 - Securing communication through [[Quantum Cryptography]] key distribution.
 - Motivating [[Post-Quantum Cryptography]] against future quantum attacks.
 

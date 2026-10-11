@@ -15,7 +15,7 @@ implements:
   - urn:ngm:class:technology-infrastructure
 relatedTo:
   - urn:ngm:class:identity-management
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:verifiable-credentials
 ---
 

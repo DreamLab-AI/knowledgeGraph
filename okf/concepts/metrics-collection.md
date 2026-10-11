@@ -30,7 +30,7 @@ supports:
 partOf:
   - urn:ngm:class:observability
 relatedTo:
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:distributed-tracing
   - urn:ngm:class:infrastructure
 ---

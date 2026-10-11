@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:human-robot-interaction
 dependsOn:
   - urn:ngm:class:transducer
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:actuator

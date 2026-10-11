@@ -29,7 +29,7 @@ partOf:
   - urn:ngm:class:optimisation
 relatedTo:
   - urn:ngm:class:numerical-methods
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:gradient-descent
 ---
 

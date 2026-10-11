@@ -16,14 +16,14 @@ hasPart:
 requires:
   - urn:ngm:class:subnet-mask
 enables:
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
   - urn:ngm:class:packet-switching
 dependsOn:
   - urn:ngm:class:network-protocol
 contrastsWith:
   - urn:ngm:class:domain-name-system
 bridgesTo:
-  - urn:ngm:class:routing-protocol
+  - urn:ngm:class:routing
 uses:
   - urn:ngm:class:dns
 supports:

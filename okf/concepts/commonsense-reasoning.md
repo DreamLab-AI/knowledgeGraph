@@ -10,6 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:reasoning
   - urn:ngm:class:automated-reasoning
+  - urn:ngm:class:natural-language-understanding
 hasPart:
   - urn:ngm:class:non-monotonic-reasoning
   - urn:ngm:class:default-logic
@@ -19,12 +20,20 @@ hasPart:
   - urn:ngm:class:temporal-reasoning
   - urn:ngm:class:spatial-reasoning
   - urn:ngm:class:theory-of-mind
+  - urn:ngm:class:naive-physics
+  - urn:ngm:class:causal-reasoning
+  - urn:ngm:class:spatial-reasoning
+  - urn:ngm:class:non-monotonic-reasoning
+  - urn:ngm:class:default-logic
+  - urn:ngm:class:frame-semantics
 requires:
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:world-model
   - urn:ngm:class:inference
   - urn:ngm:class:grounding
   - urn:ngm:class:knowledge-representation
+  - urn:ngm:class:grounding
+  - urn:ngm:class:knowledge-base
 enables:
   - urn:ngm:class:natural-language-understanding
   - urn:ngm:class:question-answering
@@ -35,6 +44,7 @@ enables:
   - urn:ngm:class:dialogue-management
   - urn:ngm:class:ai-agents
   - urn:ngm:class:robotics
+  - urn:ngm:class:ai-agents
 dependsOn:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:semantic-network
@@ -45,12 +55,20 @@ implements:
   - urn:ngm:class:neural-symbolic-integration
   - urn:ngm:class:grounding
   - urn:ngm:class:retrieval-augmented-generation
+  - urn:ngm:class:chain-of-thought-prompting
+  - urn:ngm:class:neuro-symbolic-ai
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:neuro-symbolic-ai
 contrastsWith:
   - urn:ngm:class:symbolic-reasoning
   - urn:ngm:class:formal-logic
   - urn:ngm:class:logic-programming
   - urn:ngm:class:expert-systems
+  - urn:ngm:class:symbolic-ai
+  - urn:ngm:class:formal-reasoning
+  - urn:ngm:class:description-logic
 bridgesTo:
   - urn:ngm:class:world-model
   - urn:ngm:class:embodied-ai
@@ -59,7 +77,7 @@ uses:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:neural-symbolic-integration
   - urn:ngm:class:chain-of-thought
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:fine-tuning
@@ -68,6 +86,8 @@ uses:
   - urn:ngm:class:conceptnet
   - urn:ngm:class:wordnet
   - urn:ngm:class:transformer-architecture
+  - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:ai-safety
@@ -93,13 +113,16 @@ relatedTo:
   - urn:ngm:class:multi-modal-learning
   - urn:ngm:class:generative-ai
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-agent
   - urn:ngm:class:inference-engine
   - urn:ngm:class:collective-intelligence
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:word-sense-disambiguation
+  - urn:ngm:class:ai-safety
+  - urn:ngm:class:evaluation-benchmarks-and-leaderboards
+  - urn:ngm:class:expert-systems
 ---
 
 # Commonsense Reasoning

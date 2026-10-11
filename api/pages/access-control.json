@@ -289,12 +289,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -522,6 +522,10 @@
       "label": "Biometric Binding Mechanism"
     },
     {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
       "slug": "community-governance-model",
       "label": "Community Governance Model"
     },
@@ -616,10 +620,6 @@
     {
       "slug": "user-agreement-compliance",
       "label": "User Agreement Compliance"
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "label": "tc 0002 collaborative document editing"
     }
   ]
 }

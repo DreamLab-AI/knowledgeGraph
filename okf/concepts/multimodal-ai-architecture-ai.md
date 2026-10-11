@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0.75
 is-a:
   - urn:ngm:class:ai-research-area
+  - urn:ngm:class:artificial-intelligence
 hasPart:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:natural-language-processing
@@ -23,9 +24,11 @@ uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:feature-extraction
+  - urn:ngm:class:transformer
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:sensor-fusion
+  - urn:ngm:class:neural-network
 ---
 
 # Multimodal AI

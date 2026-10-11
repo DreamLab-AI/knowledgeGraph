@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:tokenization
 contrastsWith:
   - urn:ngm:class:nft
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:smart-contract
 bridgesTo:
   - urn:ngm:class:metaverse

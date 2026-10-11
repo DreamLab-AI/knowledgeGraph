@@ -23,14 +23,14 @@ enables:
   - urn:ngm:class:crypto-trading
   - urn:ngm:class:digital-asset-custody
   - urn:ngm:class:staking
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:crypto-trading
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:proof-of-stake
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 contrastsWith:
   - urn:ngm:class:binance
   - urn:ngm:class:decentralised-exchange

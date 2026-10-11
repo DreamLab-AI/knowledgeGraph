@@ -27,19 +27,19 @@ contrastsWith:
   - urn:ngm:class:unstoppable-domains
 bridgesTo:
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:nft
   - urn:ngm:class:ethereum
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:ipfs
 partOf:
   - urn:ngm:class:ethereum
   - urn:ngm:class:ethereum
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:wallet-address
   - urn:ngm:class:governance-token
   - urn:ngm:class:name-registry

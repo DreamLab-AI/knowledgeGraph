@@ -8,9 +8,8 @@ description: Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, fi
 maturity: established
 quality: 0.52
 is-a:
-  - urn:ngm:class:chatbots
   - urn:ngm:class:retrieval-augmented-generation-rag
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:web-dev-and-consumer-tooling
 hasPart:
@@ -19,12 +18,12 @@ hasPart:
   - urn:ngm:class:local-llm-runtime-platform
   - urn:ngm:class:openai-research-organisation-whisper
   - urn:ngm:class:retrieval-augmented-generation-rag
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:local-llm-runtime-platform
 requires:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:docker-containerisation-platform
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:local-llm-runtime-platform
   - urn:ngm:class:local-llm-runtime-platform
 enables:
@@ -34,7 +33,7 @@ enables:
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:reasoning
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:docker-containerisation-platform
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:edge-computing
@@ -55,7 +54,7 @@ uses:
   - urn:ngm:class:flux-1
   - urn:ngm:class:local-llm-runtime-platform
   - urn:ngm:class:openai-research-organisation-whisper
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:local-llm-runtime-platform
 supports:
   - urn:ngm:class:agent-frameworks
@@ -68,7 +67,7 @@ standardizedBy:
   - urn:ngm:class:model-control-protocols-like-mcp
 relatedTo:
   - urn:ngm:class:cli-multi-agent-systems
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:hardware-and-edge
   - urn:ngm:class:meta-llama-model-family-3
   - urn:ngm:class:mistral-ai-open-weight-model-family

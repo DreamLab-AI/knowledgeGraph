@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gridding",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Gridding is a geospatial service that places data onto a regular grid, producing gridded data [^1].",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

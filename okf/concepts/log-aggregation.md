@@ -10,14 +10,14 @@ quality: 0.62
 is-a:
   - urn:ngm:class:observability
 hasPart:
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
   - urn:ngm:class:indexing
 requires:
   - urn:ngm:class:indexing
 enables:
   - urn:ngm:class:monitoring
 dependsOn:
-  - urn:ngm:class:audit-logging
+  - urn:ngm:class:logging
 uses:
   - urn:ngm:class:full-text-search
 supports:

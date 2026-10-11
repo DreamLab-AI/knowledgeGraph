@@ -8,7 +8,7 @@ description: A decentralised exchange and automated market maker built in the Co
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 hasPart:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:governance-token
@@ -18,13 +18,13 @@ requires:
   - urn:ngm:class:inter-blockchain-communication
   - urn:ngm:class:liquidity-pool
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-chain-swap
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:yield-farming
 contrastsWith:
   - urn:ngm:class:uniswap
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-systems
@@ -36,11 +36,11 @@ uses:
   - urn:ngm:class:cosmos-sdk
 supports:
   - urn:ngm:class:token-swapping
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 partOf:
   - urn:ngm:class:cosmos
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-interoperability
 ---
 

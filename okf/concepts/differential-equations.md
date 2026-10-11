@@ -36,7 +36,7 @@ enables:
   - urn:ngm:class:physics-informed-neural-network
   - urn:ngm:class:continuous-normalizing-flow
   - urn:ngm:class:signal-processing
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 dependsOn:
   - urn:ngm:class:calculus
   - urn:ngm:class:functional-analysis

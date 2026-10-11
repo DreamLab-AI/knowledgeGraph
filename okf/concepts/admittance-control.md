@@ -45,7 +45,7 @@ dependsOn:
   - urn:ngm:class:dynamic-modeling
   - urn:ngm:class:signal-processing
 implements:
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:second-order-mechanical-system
   - urn:ngm:class:virtual-damper-spring-mass
   - urn:ngm:class:force-to-motion-mapping

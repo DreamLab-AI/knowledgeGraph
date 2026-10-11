@@ -101,7 +101,7 @@
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       }
     ],

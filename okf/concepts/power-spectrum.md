@@ -4,6 +4,7 @@ type: Class
 title: Power Spectrum
 resource: urn:ngm:class:power-spectrum
 domain: earth-observation-and-geospatial-sensing
+description: A power spectrum describes how the power of a signal, or the variance of a time series, is distributed over frequency.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Power Spectrum
+
+A power spectrum describes how the power of a signal, or the variance of a time series, is distributed over frequency.[^1][^2]

@@ -22,15 +22,15 @@ enables:
   - urn:ngm:class:real-time-captioning
   - urn:ngm:class:clinical-documentation
 dependsOn:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:model-compression
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
 contrastsWith:
   - urn:ngm:class:speaker-recognition
   - urn:ngm:class:voice-activity-detection
 bridgesTo:
   - urn:ngm:class:voice-user-interface
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:accessibility
   - urn:ngm:class:accessibility
 uses:

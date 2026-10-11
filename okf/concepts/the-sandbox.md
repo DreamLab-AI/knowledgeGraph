@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:land-nft
 requires:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:smart-contract
   - urn:ngm:class:cryptocurrency-wallet
   - urn:ngm:class:non-fungible-token
@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:digital-asset
 uses:
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:metaverse
 relatedTo:

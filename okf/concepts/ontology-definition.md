@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:data-governance
 uses:
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 supports:
   - urn:ngm:class:metaverse-ontology
   - urn:ngm:class:identity-management

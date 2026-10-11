@@ -48,7 +48,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:facial-action-coding-system
   - urn:ngm:class:deepfake-detection
   - urn:ngm:class:data-protection

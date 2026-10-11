@@ -14,7 +14,7 @@ is-a:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:knowledge-intensive-nlp
   - urn:ngm:class:open-domain-question-answering
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 hasPart:
   - urn:ngm:class:chunking
   - urn:ngm:class:document-store
@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:text-embeddings
   - urn:ngm:class:vector-database
   - urn:ngm:class:attention
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformers
   - urn:ngm:class:data-preprocessing
 enables:
@@ -75,7 +75,7 @@ uses:
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:function-calling
   - urn:ngm:class:model-control-protocols-like-mcp
 supports:

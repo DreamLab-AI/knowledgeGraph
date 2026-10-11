@@ -68,7 +68,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       }
     ],
@@ -101,8 +101,8 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:fido-alliance",
@@ -192,12 +192,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-channel",
@@ -338,10 +338,6 @@
         "label": "Self Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
-      },
-      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -364,10 +360,6 @@
         "label": "One-Time Password"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
@@ -382,6 +374,10 @@
       {
         "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "supports": [

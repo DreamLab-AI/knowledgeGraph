@@ -36,8 +36,8 @@
         "label": "Bitcoin Network"
       },
       {
-        "id": "urn:ngm:class:multi-signature",
-        "label": "Multi-Signature"
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
       },
       {
         "id": "urn:ngm:class:hash-time-locked-contract",
@@ -58,7 +58,7 @@
         "label": "Instant Payment"
       },
       {
-        "id": "urn:ngm:class:streaming-payments",
+        "id": "urn:ngm:class:streaming-payment",
         "label": "Streaming Payment"
       }
     ],
@@ -81,7 +81,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -206,6 +206,11 @@
       "slug": "data-structure"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-ledger-technology",
       "label": "Distributed Ledger Technology",
       "slug": "distributed-ledger-technology"
@@ -219,6 +224,11 @@
       "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database",
       "slug": "multi-party-database"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:peer-to-peer-network",
@@ -241,14 +251,19 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:atomic-broadcast",
       "label": "Atomic Broadcast",
       "slug": "atomic-broadcast"
     },
     {
-      "id": "urn:ngm:class:byzantine-fault-tolerance",
-      "label": "Byzantine Fault Tolerance",
-      "slug": "byzantine-fault-tolerance"
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
     },
     {
       "id": "urn:ngm:class:coordination-protocol",
@@ -271,6 +286,11 @@
       "slug": "distributed-algorithm"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
@@ -291,19 +311,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:networkcomponent",
-      "label": "Networkcomponent",
-      "slug": "networkcomponent"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:communication-protocol",
       "label": "Communication Protocol",
       "slug": "communication-protocol"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -326,19 +351,9 @@
       "slug": "cryptographic-security"
     },
     {
-      "id": "urn:ngm:class:dc-protocol-and-infra",
-      "label": "Protocol and Infrastructure",
-      "slug": "dc-protocol-and-infra"
-    },
-    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:distributed-agreement",
-      "label": "Distributed Agreement",
-      "slug": "distributed-agreement"
     },
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -356,29 +371,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:communication-infrastructure",
       "label": "Communication Infrastructure",
       "slug": "communication-infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "Distributed Collaboration",
-      "slug": "distributed-collaboration"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -434,12 +434,12 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bolt-specifications",
-        "label": "BOLT Specifications"
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
       },
       {
-        "id": "urn:ngm:class:bolt12-offers",
-        "label": "BOLT12 Offers"
+        "id": "urn:ngm:class:bolt-specifications",
+        "label": "BOLT Specifications"
       },
       {
         "id": "urn:ngm:class:hash-time-locked-contract",
@@ -484,10 +484,6 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:multisignature",
-        "label": "Multisignature"
-      },
-      {
         "id": "urn:ngm:class:timelock",
         "label": "Timelock"
       },
@@ -498,6 +494,10 @@
       {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
       }
     ],
     "enables": [
@@ -530,7 +530,7 @@
         "label": "Taproot Assets"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       }
     ],
@@ -564,18 +564,18 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:bolt-specifications",
-        "label": "BOLT Specifications"
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
       },
       {
-        "id": "urn:ngm:class:bolt12-offers",
-        "label": "BOLT12 Offers"
+        "id": "urn:ngm:class:bolt-specifications",
+        "label": "BOLT Specifications"
       },
       {
         "id": "urn:ngm:class:channel-factory",
@@ -616,8 +616,8 @@
         "label": "CBDC Frameworks"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       },
       {
         "id": "urn:ngm:class:traditional-payment-systems",
@@ -628,7 +628,7 @@
         "label": "Account Model"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -662,12 +662,12 @@
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:ngm:class:finance",
-        "label": "Finance"
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
       }
     ],
     "uses": [
@@ -718,8 +718,8 @@
         "label": "Bitcoin Value Proposition"
       },
       {
-        "id": "urn:ngm:class:cbdcs",
-        "label": "CBDCs"
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:financial-infrastructure",
@@ -786,8 +786,16 @@
         "label": "Blockchain Network"
       },
       {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
       },
       {
         "id": "urn:ngm:class:distributed-ledger",
@@ -796,14 +804,6 @@
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
       }
     ],
     "relatedTo": [

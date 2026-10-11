@@ -23,15 +23,15 @@ contrastsWith:
   - urn:ngm:class:object-detection-and-tracking
 uses:
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:computer-vision-system
   - urn:ngm:class:real-time-ai-inference
 relatedTo:
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:bounding-volume
   - urn:ngm:class:bounding-volume-hierarchy
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
 ---
 
 # Non Maximum Suppression

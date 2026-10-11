@@ -20,8 +20,6 @@ enables:
   - urn:ngm:class:blockchain-scalability
   - urn:ngm:class:scalability
   - urn:ngm:class:rollup
-contrastsWith:
-  - urn:ngm:class:blockchain
 bridgesTo:
   - urn:ngm:class:celestia
   - urn:ngm:class:cosmos

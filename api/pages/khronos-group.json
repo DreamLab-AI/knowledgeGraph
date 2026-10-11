@@ -34,7 +34,7 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -46,7 +46,7 @@
         "label": "WebGL"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -384,7 +384,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -422,7 +422,7 @@
         "label": "Platform and Environment"
       },
       {
-        "id": "urn:ngm:class:usd",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       },
       {
@@ -482,8 +482,8 @@
       "label": "Mixed Reality"
     },
     {
-      "slug": "openxr-standard",
-      "label": "OpenXR Standard"
+      "slug": "open-xr",
+      "label": "OpenXR"
     },
     {
       "slug": "procedural-and-hybrid-4-d",

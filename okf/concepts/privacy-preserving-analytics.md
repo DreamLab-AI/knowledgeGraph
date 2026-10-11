@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:data-analysis
   - urn:ngm:class:privacy-enhancing-technologies
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-computing
   - urn:ngm:class:information-security
 hasPart:
@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:cryptographic-primitive
   - urn:ngm:class:data-governance-framework
   - urn:ngm:class:sensitivity-analysis
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:cryptographic-primitive
   - urn:ngm:class:noise-calibration
 enables:
@@ -86,10 +86,10 @@ standardizedBy:
   - urn:ngm:class:ietf
   - urn:ngm:class:iso-iec-27701
   - urn:ngm:class:nist-privacy-framework
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:gdpr
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:algorithmic-fairness
   - urn:ngm:class:ai-ethics

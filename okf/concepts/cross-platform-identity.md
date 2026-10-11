@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:federation
 requires:
   - urn:ngm:class:trust
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:multi-factor-authentication
 enables:
   - urn:ngm:class:federated-identity-system
@@ -34,7 +34,7 @@ contrastsWith:
   - urn:ngm:class:siloed-identity
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:saml

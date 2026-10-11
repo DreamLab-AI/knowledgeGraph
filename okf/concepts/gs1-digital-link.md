@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:uri
 supports:
   - urn:ngm:class:interoperability
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 standardizedBy:
   - urn:ngm:class:gs1
 partOf:

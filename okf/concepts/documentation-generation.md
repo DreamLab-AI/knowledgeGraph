@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:docstring-style-convention
   - urn:ngm:class:staleness-detection
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:code-corpus
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:static-analysis
@@ -58,9 +58,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:ontology-engineering
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:text-generation
   - urn:ngm:class:code-generation
   - urn:ngm:class:transformer
@@ -81,7 +81,7 @@ supports:
   - urn:ngm:class:technical-debt-reduction
 standardizedBy:
   - urn:ngm:class:ieee-software-engineering-standards
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:docstring-conventions
   - urn:ngm:class:asyncapi-specification
 partOf:

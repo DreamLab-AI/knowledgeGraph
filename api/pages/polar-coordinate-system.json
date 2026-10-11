@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:polar-coordinate-system",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A polar coordinate system locates a point in a plane by its distance from a fixed point, the pole, and by an angle measured from a reference ray.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

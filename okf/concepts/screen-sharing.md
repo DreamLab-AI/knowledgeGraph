@@ -44,7 +44,7 @@ enables:
 dependsOn:
   - urn:ngm:class:video-conferencing
   - urn:ngm:class:peer-to-peer-network
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:operating-system-graphics-apis
   - urn:ngm:class:network-address-translation-traversal
 implements:

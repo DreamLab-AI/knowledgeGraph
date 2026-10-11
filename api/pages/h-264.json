@@ -46,14 +46,19 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:encoder-decoder-architecture",
-      "label": "Encoder Decoder Architecture",
-      "slug": "encoder-decoder-architecture"
+      "id": "urn:ngm:class:encoder-decoder",
+      "label": "Encoder-Decoder",
+      "slug": "encoder-decoder"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -114,16 +119,20 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -160,16 +169,6 @@
         "label": "Text Summarisation"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -178,6 +177,14 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:universal-function-approximation",
+        "label": "Universal Function Approximation"
       }
     ],
     "contrastsWith": [
@@ -196,11 +203,19 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -210,6 +225,14 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -222,10 +245,6 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
       }
     ],
     "uses": [
@@ -238,6 +257,10 @@
         "label": "Quantization"
       },
       {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
         "id": "urn:ngm:class:layer-normalisation",
         "label": "Layer Normalisation"
       },
@@ -248,12 +271,20 @@
       {
         "id": "urn:ngm:class:softmax-function",
         "label": "Softmax Function"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:video-conferencing",
@@ -262,14 +293,6 @@
       {
         "id": "urn:ngm:class:video-streaming",
         "label": "Video Streaming"
-      },
-      {
-        "id": "urn:ngm:class:autoregressive-generation",
-        "label": "Autoregressive Generation"
-      },
-      {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
       }
     ],
     "standardizedBy": [
@@ -283,6 +306,10 @@
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
@@ -306,20 +333,20 @@
         "label": "BERT"
       },
       {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
         "id": "urn:ngm:class:t5-model",
         "label": "T5 Model"
       },
       {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
       }
     ]
   },

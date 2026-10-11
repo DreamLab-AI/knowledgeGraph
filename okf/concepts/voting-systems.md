@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:blockchain-governance
 enables:
   - urn:ngm:class:on-chain-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:zero-knowledge-proof

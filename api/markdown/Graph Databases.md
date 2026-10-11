@@ -79,7 +79,7 @@ Graph databases are database management systems that represent and store data as
 
 ### Connections to Machine Learning
 
-- [[Graph Neural Networks]] (GNNs) operate directly on graph-structured data; graph databases serve as the storage and feature-extraction layer feeding GNN pipelines.
+- [[Graph Neural Network]] (GNNs) operate directly on graph-structured data; graph databases serve as the storage and feature-extraction layer feeding GNN pipelines.
 - [[Knowledge Graphs]] stored in graph databases act as structured external memory for large language models via retrieval-augmented generation (RAG).
 - Node embedding methods (Node2Vec, GraphSAGE, TransE) produce vector representations of graph entities, bridging graph databases and [[Semantic Search]] via vector indices.
 

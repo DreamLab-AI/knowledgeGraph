@@ -24,7 +24,7 @@ supports:
 partOf:
   - urn:ngm:class:calculus
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Real Analysis

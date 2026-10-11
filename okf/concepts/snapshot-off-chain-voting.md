@@ -8,12 +8,12 @@ description: A gasless governance platform that records votes off-chain by havin
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 requires:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:token
 enables:
-  - urn:ngm:class:daogovernance
+  - urn:ngm:class:dao-governance
 bridgesTo:
   - urn:ngm:class:governance
   - urn:ngm:class:quadratic-voting

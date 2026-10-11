@@ -20,7 +20,7 @@ implements:
   - urn:ngm:class:regulation
 supports:
   - urn:ngm:class:access-control
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 partOf:
   - urn:ngm:class:governance-framework
 relatedTo:

@@ -10,11 +10,11 @@ quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:knowledge-representation
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:graph-databases
   - urn:ngm:class:information-retrieval
   - urn:ngm:class:ontology-engineering
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-engineering
   - urn:ngm:class:artificial-general-intelligence
 hasPart:
@@ -56,7 +56,7 @@ dependsOn:
   - urn:ngm:class:graph-theory
   - urn:ngm:class:description-logic
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:information-extraction
   - urn:ngm:class:transformers
   - urn:ngm:class:attention
@@ -93,7 +93,7 @@ uses:
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:lang-chain
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformers
 supports:
   - urn:ngm:class:drug-discovery
@@ -131,7 +131,7 @@ relatedTo:
   - urn:ngm:class:metaverse-ontology
   - urn:ngm:class:multi-agent-rag-architecture-compendium
   - urn:ngm:class:ai-assisted-ontology-elicitation-method
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Knowledge Graphing

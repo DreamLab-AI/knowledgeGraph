@@ -24,7 +24,7 @@ relatedTo:
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:distributed-system
   - urn:ngm:class:ai-agent-system
-  - urn:ngm:class:aisystem
+  - urn:ngm:class:ai-system
 ---
 
 # System

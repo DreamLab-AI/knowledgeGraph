@@ -8,13 +8,16 @@ description: MLOps (Machine Learning Operations) is the set of practices, tools,
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-infrastructure
+  - urn:ngm:class:infrastructure
 hasPart:
   - urn:ngm:class:model-registry
   - urn:ngm:class:feature-store
   - urn:ngm:class:empirical-experimental-design-tracking
   - urn:ngm:class:machine-learning-discipline-pipeline
+  - urn:ngm:class:model-deployment
+  - urn:ngm:class:model-monitoring
 requires:
   - urn:ngm:class:version-control
   - urn:ngm:class:data-versioning
@@ -26,14 +29,20 @@ enables:
   - urn:ngm:class:model-training
   - urn:ngm:class:continuous-training
   - urn:ngm:class:model-monitoring
+  - urn:ngm:class:model-serving
+  - urn:ngm:class:model-versioning
 dependsOn:
   - urn:ngm:class:data-governance
   - urn:ngm:class:ai-monitoring
+implements:
+  - urn:ngm:class:devops
 contrastsWith:
   - urn:ngm:class:devops
 bridgesTo:
   - urn:ngm:class:data-engineering
   - urn:ngm:class:platform-engineering
+  - urn:ngm:class:devops
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:kubernetes
@@ -41,6 +50,8 @@ uses:
   - urn:ngm:class:workflow-orchestration
   - urn:ngm:class:ci-cd-automation
   - urn:ngm:class:ci-cd
+  - urn:ngm:class:continuous-integration
+  - urn:ngm:class:feature-store
 supports:
   - urn:ngm:class:explainability
   - urn:ngm:class:ai-governance
@@ -52,6 +63,8 @@ relatedTo:
   - urn:ngm:class:data-drift
   - urn:ngm:class:a-b-testing
   - urn:ngm:class:model-serving
+  - urn:ngm:class:model-training
+  - urn:ngm:class:model-deployment
 ---
 
 # MLOps

@@ -87,7 +87,7 @@ relatedTo:
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:ontology
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:question-answering
   - urn:ngm:class:knowledge-graphs

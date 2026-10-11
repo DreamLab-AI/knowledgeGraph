@@ -1,6 +1,6 @@
 On chain settlement is the process by which the transfer of value or assets between parties is recorded directly on a distributed ledger and becomes economically irreversible according to the ledger's consensus rules. Unlike off-chain or netting arrangements that defer ledger updates, on chain settlement writes each transaction's final state into the canonical chain, removing the need for a trusted central clearing intermediary. Settlement is considered complete once the relevant transaction attains the chain's finality guarantee, after which reversal requires violating consensus. It underpins payment, securities, and decentralised finance flows on public and permissioned blockchains.
 
-- On chain settlement records the final transfer of value directly on a [[Distributed Ledger]], achieving economic irreversibility through [[Consensus Mechanism]] rather than a central clearing house. It is a specialisation of [[Settlement Finality]] applied to [[Blockchain]] systems, and is central to [[Decentralized Finance]].
+- On chain settlement records the final transfer of value directly on a [[Distributed Ledger]], achieving economic irreversibility through [[Consensus Mechanism]] rather than a central clearing house. It is a specialisation of [[Settlement Finality]] applied to [[Blockchain]] systems, and is central to [[Decentralised Finance]].
 
 ### Overview
 
@@ -19,7 +19,7 @@ On chain settlement is the process by which the transfer of value or assets betw
 
 - Stablecoin payments and remittance corridors using [[Stablecoin]] rails.
 - Tokenised securities and real-world-asset transfer via [[Tokenization]].
-- Decentralised exchange trade settlement and lending liquidations in [[Decentralized Finance]].
+- Decentralised exchange trade settlement and lending liquidations in [[Decentralised Finance]].
 - Cross-institution interbank settlement on permissioned ledgers.
 
 ### Provenance

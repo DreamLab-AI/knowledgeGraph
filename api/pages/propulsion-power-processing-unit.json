@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:propulsion-power-processing-unit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A propulsion power processing unit is a component of an electric propulsion system that the NASA small-spacecraft survey counts alongside thrusters, feed systems and propellant management, separate from the spacecraft electric power supply.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

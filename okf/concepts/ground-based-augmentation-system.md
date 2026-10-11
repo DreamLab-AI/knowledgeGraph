@@ -4,6 +4,7 @@ type: Class
 title: Ground-based Augmentation System
 resource: urn:ngm:class:ground-based-augmentation-system
 domain: space-science-and-systems
+description: A Ground-based Augmentation System (GBAS) is an airport-local aviation system that broadcasts GNSS corrections, integrity information and approach data to suitably equipped aircraft.[^1][^4]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Ground-based Augmentation System
+
+A Ground-based Augmentation System (GBAS) is an airport-local aviation system that broadcasts GNSS corrections, integrity information and approach data to suitably equipped aircraft.[^1][^4]

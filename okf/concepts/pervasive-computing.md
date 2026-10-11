@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:context-aware-computing
   - urn:ngm:class:wearable-computing-platform
 uses:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:io-t-sensor-network
 relatedTo:
   - urn:ngm:class:context-awareness

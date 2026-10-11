@@ -88,7 +88,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF Pipeline"
       },
       {
@@ -104,7 +104,7 @@
         "label": "Pretraining Corpus"
       },
       {
-        "id": "urn:ngm:class:rlhf",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "RLHF Pipeline"
       },
       {
@@ -267,7 +267,7 @@
         "label": "ACL"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act Article 10"
       },
       {
@@ -283,11 +283,11 @@
         "label": "NeurIPS"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act Article 10"
       },
       {
@@ -334,8 +334,8 @@
         "label": "Bias Mitigation Techniques"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
-        "label": "Constitutional AI Training Methodology"
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       },
       {
         "id": "urn:ngm:class:ai-fairness",
@@ -515,7 +515,7 @@
         "label": "Data Collection"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -529,7 +529,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -609,6 +609,10 @@
         "label": "Smart Contract"
       },
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
@@ -623,10 +627,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "uses": [

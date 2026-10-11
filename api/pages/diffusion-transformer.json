@@ -68,7 +68,7 @@
         "label": "Denoising Score Matching"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -188,7 +188,7 @@
         "label": "Self Attention"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -290,9 +290,9 @@
       "slug": "latent-variable-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:markov-chain-model",
@@ -313,6 +313,11 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -345,11 +350,6 @@
       "slug": "ai-application"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
       "id": "urn:ngm:class:bayesian-inference",
       "label": "Bayesian Inference",
       "slug": "bayesian-inference"
@@ -358,11 +358,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:probabilistic-inference",
@@ -409,8 +404,8 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:latent-diffusion",
@@ -421,7 +416,7 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
@@ -477,6 +472,10 @@
         "label": "Text Generation"
       },
       {
+        "id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
         "id": "urn:ngm:class:image-editing",
         "label": "Image Editing"
       },
@@ -487,15 +486,11 @@
       {
         "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
-      },
-      {
-        "id": "urn:ngm:class:super-resolution",
-        "label": "Super Resolution"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
@@ -523,8 +518,8 @@
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:latent-space",
-        "label": "Latent Space"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "implements": [
@@ -587,7 +582,7 @@
         "label": "Normalising Flow"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -711,7 +706,7 @@
         "label": "ICML"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -727,8 +722,8 @@
         "label": "MLCommons MLPerf"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       }
     ],
     "partOf": [
@@ -747,6 +742,10 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:statistics",

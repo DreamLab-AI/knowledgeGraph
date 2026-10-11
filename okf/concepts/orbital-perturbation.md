@@ -4,6 +4,7 @@ type: Class
 title: Orbital Perturbation
 resource: urn:ngm:class:orbital-perturbation
 domain: space-science-and-systems
+description: An orbital perturbation is a force or dynamical effect that causes an orbit to depart over time from an ideal two-body Keplerian trajectory.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Orbital Perturbation
+
+An orbital perturbation is a force or dynamical effect that causes an orbit to depart over time from an ideal two-body Keplerian trajectory.

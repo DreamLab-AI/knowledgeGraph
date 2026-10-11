@@ -4,6 +4,7 @@ type: Class
 title: Earth Observation
 resource: urn:ngm:class:earth-observation
 domain: earth-observation-and-geospatial-sensing
+description: Earth observation is the gathering of data about the planet from space-based sensors, which ESA says gives coverage across both space and time.[^1][^2]
 maturity: draft
 quality: 0
 bridgesTo:
@@ -17,3 +18,5 @@ partOf:
 ---
 
 # Earth Observation
+
+Earth observation is the gathering of data about the planet from space-based sensors, which ESA says gives coverage across both space and time.[^1][^2]

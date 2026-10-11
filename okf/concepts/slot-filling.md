@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:voice-assistant
   - urn:ngm:class:workflow-automation
 dependsOn:
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
 contrastsWith:
   - urn:ngm:class:relation-extraction
 bridgesTo:

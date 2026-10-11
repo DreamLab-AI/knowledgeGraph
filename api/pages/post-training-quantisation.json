@@ -55,7 +55,7 @@
       },
       {
         "id": "urn:ngm:class:neural-network-quantisation",
-        "label": "Neural Network Quantisation"
+        "label": "Model Quantisation"
       }
     ],
     "contrastsWith": [
@@ -98,8 +98,8 @@
         "label": "Model Compression for Edge"
       },
       {
-        "id": "urn:ngm:class:model-quantization",
-        "label": "Model Quantization"
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
       }
     ]
   },
@@ -142,8 +142,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

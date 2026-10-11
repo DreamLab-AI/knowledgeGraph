@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:artificial-intelligence
 uses:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:evolutionary-algorithm
   - urn:ngm:class:stigmergy
   - urn:ngm:class:consensus-algorithm

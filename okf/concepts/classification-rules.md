@@ -21,7 +21,7 @@ requires:
   - urn:ngm:class:formal-logic
   - urn:ngm:class:knowledge-base
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:expert-systems
   - urn:ngm:class:clinical-decision-support
   - urn:ngm:class:explainability
@@ -39,7 +39,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:neural-network
   - urn:ngm:class:ensemble-methods
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:decision-tree
 uses:
   - urn:ngm:class:ontology
@@ -63,7 +63,7 @@ relatedTo:
   - urn:ngm:class:rdf
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:decision-tree
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:artificial-intelligence
 ---
 

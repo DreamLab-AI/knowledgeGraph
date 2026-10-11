@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:software-engineering
 hasPart:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:blockchain
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:ai-frontier-capability-survey

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:generative-ai
 hasPart:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:motion-estimation
   - urn:ngm:class:classifier-free-guidance
   - urn:ngm:class:temporal-attention
@@ -39,8 +39,8 @@ uses:
   - urn:ngm:class:convolution
   - urn:ngm:class:cross-attention
   - urn:ngm:class:optical-flow
-  - urn:ngm:class:vae
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:convolution
 partOf:
   - urn:ngm:class:generative-ai

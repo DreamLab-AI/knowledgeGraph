@@ -22,7 +22,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:virtual-reality
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:creative-ai
   - urn:ngm:class:image-generation

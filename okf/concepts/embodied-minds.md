@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:sensors
   - urn:ngm:class:sensorimotor-coupling
 enables:
-  - urn:ngm:class:common-sense-reasoning
+  - urn:ngm:class:commonsense-reasoning
   - urn:ngm:class:grounded-language-understanding
   - urn:ngm:class:locomotion
   - urn:ngm:class:tool-use
@@ -89,11 +89,11 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:cognitive-robotics
   - urn:ngm:class:developmental-robotics
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:world-models
   - urn:ngm:class:neuromorphic-computing
   - urn:ngm:class:soft-robotics
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:phenomenology-of-perception
 ---
 

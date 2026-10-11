@@ -11,8 +11,8 @@ is-a:
   - urn:ngm:class:technical-standard
 hasPart:
   - urn:ngm:class:open-xr
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:web-xr
 requires:
   - urn:ngm:class:protocol-specification
@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:virtual-reality
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 partOf:
   - urn:ngm:class:open-standards
 relatedTo:

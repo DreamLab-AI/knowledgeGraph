@@ -37,7 +37,7 @@ The WebSocket Protocol is a standardised full-duplex communication protocol defi
 ### Applications and Use Cases
 
 - **Financial Data Feeds**: Stock tickers, order book updates, and trade execution notifications require sub-second delivery to browser clients; WebSocket's persistent channel eliminates the per-message HTTP overhead of polling approaches.
-- **Collaborative Editing**: Tools such as Figma, Notion, and Google Docs use WebSocket (or [[WebRTC]] data channels) to synchronise document state across collaborating users in real time, enabling [[Realtime Collaboration]] at scale.
+- **Collaborative Editing**: Tools such as Figma, Notion, and Google Docs use WebSocket (or [[WebRTC]] data channels) to synchronise document state across collaborating users in real time, enabling [[Real-Time Collaboration]] at scale.
 - **Gaming**: Browser-based and mobile games use WebSocket for player state synchronisation, chat, and matchmaking, leveraging the low-latency bidirectional channel for responsive multiplayer experiences.
 - **AI Streaming Interfaces**: The OpenAI Realtime API and similar [[Large Language Model]] streaming endpoints deliver token-by-token output over WebSocket, enabling streaming text and voice interfaces. The bidirectional nature allows clients to send audio input while simultaneously receiving audio output, supporting voice [[Agent Event Stream]] scenarios.
 - **IoT and Telemetry**: WebSocket is used as a browser-accessible bridge for IoT sensor data, often alongside [[MQTT]] (which runs natively over WebSocket via MQTT-over-WebSocket). Devices publish to an [[MQTT]] broker; browser dashboards subscribe via WebSocket.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-flare",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A solar flare is a large eruption of electromagnetic radiation from the Sun lasting from minutes to hours.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

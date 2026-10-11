@@ -580,12 +580,12 @@ Language Modeling is the fundamental NLP task of learning probability distributi
 
 ## See Also
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[Google AI Technology Corporation]]
 
 ## See Also
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[OpenAI Research Organisation]]
 - [[Google AI Technology Corporation]]
 
@@ -801,7 +801,7 @@ Language Modeling is the fundamental NLP task of learning probability distributi
 
 ## See Also
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[OpenAI Research Organisation]]
 - [[Google AI Technology Corporation]]
 

@@ -33,7 +33,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:healthcare-ai
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cloud-computing
 standardizedBy:
   - urn:ngm:class:hl7-fhir

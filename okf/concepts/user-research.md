@@ -22,7 +22,7 @@ contrastsWith:
   - urn:ngm:class:market-research
 bridgesTo:
   - urn:ngm:class:data-analysis
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:eye-tracking
   - urn:ngm:class:avatar

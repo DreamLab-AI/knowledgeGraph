@@ -6,7 +6,7 @@ Financial inclusion is the policy objective and market condition in which indivi
 - The condition of financial exclusion is correlated with poverty, informality of employment, gender inequality, rural geography, and lack of recognised identity documentation.
 - Inclusion is not merely a development objective; it is an economic efficiency concern — informal economies with high cash use incur transaction costs and fraud exposure that retard growth and tax collection.
 - The World Bank's [[Global Findex]] database, published every three years, is the authoritative measurement framework for account ownership, payment behaviour, saving patterns, and credit access across 140+ economies.
-- [[Fintech]] companies and mobile network operators have driven significant progress by decoupling financial services from branch-based banking, reaching users through mobile phones already embedded in daily life.
+- [[Financial Technology]] companies and mobile network operators have driven significant progress by decoupling financial services from branch-based banking, reaching users through mobile phones already embedded in daily life.
 - [[Sustainable Development Goals]] — specifically SDG 1 (No Poverty), SDG 8 (Decent Work), SDG 10 (Reduced Inequalities) — each contain financial inclusion targets, establishing international political commitment.
 
 ### Key Components
@@ -33,7 +33,7 @@ Financial inclusion is the policy objective and market condition in which indivi
   - [[Biometric Authentication]] (fingerprint, iris, face) provides a mechanism for identity verification in low-literacy contexts.
 - **Regulatory Enablers**
   - Tiered [[KYC/AML]] frameworks allow simplified due-diligence for low-value accounts, reducing onboarding cost while maintaining proportionate financial crime controls.
-  - Regulatory sandboxes allow [[Fintech]] innovators to test novel products under supervisory oversight before full licensing, accelerating responsible innovation.
+  - Regulatory sandboxes allow [[Financial Technology]] innovators to test novel products under supervisory oversight before full licensing, accelerating responsible innovation.
   - [[Open Banking]] mandates (PSD2 in Europe, CDR in Australia, guidelines from the Reserve Bank of India) require banks to expose APIs, enabling third-party providers to build inclusive products on existing account data.
   - [[Financial Action Task Force]] Recommendation 1 (risk-based approach) and its specific guidance on financial inclusion instruct supervisors to avoid disproportionate de-risking that cuts off correspondent banking for developing-country institutions.
 
@@ -53,7 +53,7 @@ Financial inclusion is the policy objective and market condition in which indivi
   - [[Central Bank Digital Currency]] architectures explicitly designed for offline use and feature phones are being piloted as government payment infrastructure for remote populations.
 - **Small and Medium Enterprise Finance**
   - SMEs in emerging markets face a documented "missing middle" — too large for microfinance, too small for commercial bank loans. Digital transaction data from point-of-sale or e-commerce platforms provides cash-flow evidence for lending.
-  - Invoice financing, supply chain finance, and receivables discounting via [[Fintech]] platforms extend working capital to SMEs without requiring fixed-asset collateral.
+  - Invoice financing, supply chain finance, and receivables discounting via [[Financial Technology]] platforms extend working capital to SMEs without requiring fixed-asset collateral.
 - **Insurance and Health Finance**
   - Community-based health insurance schemes and National Health Insurance platforms now onboard members via mobile money, automatically collecting premiums from digital wallets.
   - Agricultural index insurance tied to satellite rainfall data has scaled to millions of smallholders in sub-Saharan Africa and South Asia without requiring per-claim field visits.

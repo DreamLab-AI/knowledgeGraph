@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:data-efficient-learning
   - urn:ngm:class:interactive-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:human-in-the-loop-learning
 hasPart:

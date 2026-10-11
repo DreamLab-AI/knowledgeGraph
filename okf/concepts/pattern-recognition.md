@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:biometric-identification
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:signal-processing
 contrastsWith:
   - urn:ngm:class:rule-based-systems
@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:classification
   - urn:ngm:class:dimensionality-reduction
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:natural-language-processing
 ---

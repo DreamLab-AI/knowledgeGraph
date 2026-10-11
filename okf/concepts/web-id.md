@@ -8,15 +8,23 @@ description: WebID is a decentralised identity mechanism in which a person or ag
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:network-component
 enables:
   - urn:ngm:class:federated-identity
 uses:
   - urn:ngm:class:rdf
   - urn:ngm:class:linked-data
+  - urn:ngm:class:authentication
+  - urn:ngm:class:access-control
 relatedTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:solid
+  - urn:ngm:class:solid-pod
+  - urn:ngm:class:decentralized-identity-did
+  - urn:ngm:class:rdf
+  - urn:ngm:class:linked-data
 ---
 
 # WebID

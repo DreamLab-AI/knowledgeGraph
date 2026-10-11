@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:model
 relatedTo:
   - urn:ngm:class:ai-coding-agents
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # AI Coding Assistants

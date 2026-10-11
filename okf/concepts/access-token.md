@@ -18,7 +18,7 @@ enables:
 dependsOn:
   - urn:ngm:class:oauth
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:refresh-token
 bridgesTo:
@@ -33,7 +33,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:token
   - urn:ngm:class:oauth
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:session-management
 ---
 

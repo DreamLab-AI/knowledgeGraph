@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gravitational-microlensing",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Gravitational microlensing is the temporary magnification of light from a distant star when a foreground star passes very close to the line of sight and acts as a lens.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:digital-content
   - urn:ngm:class:customer-data-platform
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:brand-identity
   - urn:ngm:class:user-experience

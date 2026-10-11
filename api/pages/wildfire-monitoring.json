@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:wildfire-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Wildfire monitoring is the use of satellite observations, including thermal anomaly products, to follow conditions before a fire starts, track active fires and assess their effects after a burn.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

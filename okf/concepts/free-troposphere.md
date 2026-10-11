@@ -4,6 +4,7 @@ type: Class
 title: Free Troposphere
 resource: urn:ngm:class:free-troposphere
 domain: earth-observation-and-geospatial-sensing
+description: Free troposphere is the part of the troposphere that lies above the planetary boundary layer, where air is no longer directly shaped by the Earth's surface.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Free Troposphere
+
+Free troposphere is the part of the troposphere that lies above the planetary boundary layer, where air is no longer directly shaped by the Earth's surface.[^1][^2]

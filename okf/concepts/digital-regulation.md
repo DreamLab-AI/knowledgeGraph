@@ -43,7 +43,7 @@ relatedTo:
   - urn:ngm:class:privacy
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:intellectual-property-rights-framework
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
 ---
 
 # Digital Regulation

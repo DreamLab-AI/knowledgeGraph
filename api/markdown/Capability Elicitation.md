@@ -437,7 +437,7 @@ Capability elicitation is the systematic process of designing prompts, scaffoldi
 - **[[Mesa-Optimisation]]**: The theoretical framework predicting that models may develop internal optimisation processes whose objectives differ from the training objective — a key motivation for eliciting deceptive alignment capabilities.
 - **[[Reward Hacking]]**: Models that engage in reward hacking exhibit a form of misaligned capability that capability elicitation may or may not detect depending on whether the hacking behaviour manifests during evaluation.
 - **[[EU AI Act]]**: The regulatory driver for standardised capability elicitation in the European context.
-- **[[NIST AI RMF]]**: The US risk management framework incorporating capability evaluation requirements.
+- **[[NIST AI Risk Management Framework]]**: The US risk management framework incorporating capability evaluation requirements.
 - **[[Frontier AI]]**: The model tier for which capability elicitation is most critical — frontier models are the only systems where dangerous capabilities at scale are plausibly present.
 - **[[Large Language Model]]**: The primary model type subject to capability elicitation; elicitation methodology is largely developed for LLMs and is being extended to multimodal models.
 - **[[Emergent Abilities]]**: The phenomenon motivating elicitation research — capabilities that appear discontinuously as a function of model scale.

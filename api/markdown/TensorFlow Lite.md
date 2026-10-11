@@ -44,7 +44,7 @@ TensorFlow Lite (now rebranded as LiteRT) is Google's open-source deep learning 
 - **Mobile Camera Features**: [[Image Classification]], [[Object Detection]], [[Pose Estimation]], and [[Semantic Segmentation]] run on-device in real time in Android camera apps, Google Lens, and third-party photography apps.
 - **Voice Interfaces**: [[Keyword Spotting]] ("Ok Google") and on-device [[Speech Recognition]] using models such as RNN-T deployed via TFLite Micro on always-on DSP cores.
 - **[[Augmented Reality]]**: AR frameworks such as [[MediaPipe]] (Google's perception pipeline) ship TFLite models for hand tracking, face mesh, and body pose, bridging [[Machine Learning]] to the [[Spatial Computing]] domain.
-- **Health and Wearables**: heart-rate estimation, fall detection, and ECG anomaly detection on [[IoT]] wearables where cloud connectivity is unreliable or privacy-sensitive.
+- **Health and Wearables**: heart-rate estimation, fall detection, and ECG anomaly detection on [[Internet of Things]] wearables where cloud connectivity is unreliable or privacy-sensitive.
 - **Industrial [[Edge Computing]]**: predictive maintenance models deployed on Raspberry Pi or [[Coral Edge TPU]]-equipped gateways performing [[Anomaly Detection]] without sending sensor data to the cloud.
 - **[[Federated Learning]] clients**: TFLite serves as the local inference and update-computation runtime in Google's federated learning deployments (e.g. next-word prediction on Gboard), where model updates are aggregated without centralising private user data.
 - **Robotics**: lightweight [[Object Detection]] and [[Depth Estimation]] models deployed on embedded [[Robotics]] compute boards (Jetson Nano, BeagleBone AI) for autonomous navigation without cloud round-trips.

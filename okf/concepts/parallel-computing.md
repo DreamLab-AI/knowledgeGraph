@@ -8,7 +8,7 @@ description: Parallel computing executes many operations simultaneously across m
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:distributed-computing
+  - urn:ngm:class:computer-science
 hasPart:
   - urn:ngm:class:data-parallelism
   - urn:ngm:class:task-parallelism
@@ -29,7 +29,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:sequential-computing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:cuda
   - urn:ngm:class:gpu-computing
@@ -43,6 +43,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:concurrency
   - urn:ngm:class:load-balancing
+  - urn:ngm:class:distributed-computing
 ---
 
 # Parallel Computing

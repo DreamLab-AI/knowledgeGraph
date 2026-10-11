@@ -8,7 +8,7 @@ description: The vanishing gradient problem is a difficulty in training deep or 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 requires:
   - urn:ngm:class:activation-function

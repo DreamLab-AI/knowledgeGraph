@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:traffic-shaping
 bridgesTo:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:sliding-window-protocol
 supports:

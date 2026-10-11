@@ -17,7 +17,7 @@ standardizedBy:
   - urn:ngm:class:ieee-standards-association
 relatedTo:
   - urn:ngm:class:internet-of-things
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Bluetooth SIG

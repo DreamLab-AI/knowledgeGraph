@@ -40,13 +40,13 @@ requires:
   - urn:ngm:class:consistency-protocols
 enables:
   - urn:ngm:class:data-analytics
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:data-lake
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:disaster-recovery
   - urn:ngm:class:lakehouse-architecture
   - urn:ngm:class:vector-search
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-lake
   - urn:ngm:class:data-analytics
   - urn:ngm:class:content-delivery-networks

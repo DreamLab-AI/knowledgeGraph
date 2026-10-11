@@ -29,23 +29,23 @@ requires:
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:network-security
   - urn:ngm:class:cryptographic-key-management
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:continuous-authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:federated-identity
   - urn:ngm:class:identity-and-access-management
   - urn:ngm:class:passkey-authentication
   - urn:ngm:class:privileged-access-management
   - urn:ngm:class:single-sign-on
   - urn:ngm:class:zero-trust-architecture
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:identity-and-access-management
 dependsOn:
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:json-data-interchange-format-web-token
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:directory-service
 implements:
   - urn:ngm:class:fido2
@@ -80,7 +80,7 @@ standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:oasis
   - urn:ngm:class:open-id-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:cross-platform-identity

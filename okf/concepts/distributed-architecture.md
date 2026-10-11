@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:geographic-distribution
   - urn:ngm:class:high-availability
   - urn:ngm:class:scalability
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
   - urn:ngm:class:fault-tolerance
 dependsOn:
   - urn:ngm:class:peer-to-peer-network

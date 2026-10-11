@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cislunar-space-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Cislunar space radiation environment is the radiation environment of a cislunar space environment, as defined in NASA's Space Life Sciences Ontology.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-radiation-environment",

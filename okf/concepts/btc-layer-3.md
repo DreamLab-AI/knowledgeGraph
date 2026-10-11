@@ -41,7 +41,7 @@ requires:
 enables:
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:bitcoin-proof-of-work-protocol-de-fi
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:stablecoins-on-bitcoin
@@ -110,7 +110,7 @@ standardizedBy:
   - urn:ngm:class:lnp-bp-standards-association
 relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-standard
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:layer-2-solutions
   - urn:ngm:class:scalability-solutions
   - urn:ngm:class:state-channel

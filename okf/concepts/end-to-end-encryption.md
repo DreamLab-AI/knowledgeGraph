@@ -20,15 +20,15 @@ enables:
 dependsOn:
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:authentication
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 contrastsWith:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:post-quantum-cryptography
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:secure-multi-party-computation
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:key-management
   - urn:ngm:class:signal-protocol
   - urn:ngm:class:asymmetric-cryptography

@@ -58,7 +58,7 @@ bridgesTo:
   - urn:ngm:class:robotics
   - urn:ngm:class:ai-safety
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:arxiv-preprint
   - urn:ngm:class:openreview

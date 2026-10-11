@@ -36,14 +36,6 @@
       "label": "ORQA"
     },
     {
-      "id": "urn:ngm:class:colbert",
-      "label": "ColBERT"
-    },
-    {
-      "id": "urn:ngm:class:splade",
-      "label": "SPLADE"
-    },
-    {
       "id": "urn:ngm:class:bge-m3",
       "label": "BGE-M3"
     },
@@ -350,7 +342,7 @@
         "label": "Embedding Search"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
       },
       {
@@ -402,11 +394,6 @@
       "slug": "ai-application"
     },
     {
-      "id": "urn:ngm:class:dense-retrieval",
-      "label": "Dense Retrieval",
-      "slug": "dense-retrieval"
-    },
-    {
       "id": "urn:ngm:class:knowledge-retrieval",
       "label": "Knowledge Retrieval",
       "slug": "knowledge-retrieval"
@@ -430,11 +417,6 @@
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:embedding-search",
-      "label": "Embedding Search",
-      "slug": "embedding-search"
     }
   ],
   "inheritedRelations": {
@@ -474,10 +456,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:text-representation",
         "label": "Text Representation"
       },
@@ -504,6 +482,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
@@ -532,12 +514,12 @@
         "label": "AI Search"
       },
       {
-        "id": "urn:ngm:class:agentic-rag",
-        "label": "Agentic RAG"
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:cross-modal-retrieval",
-        "label": "Cross-Modal Retrieval"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
@@ -562,16 +544,12 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:embedding-model",
-        "label": "Embedding Model"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
       },
       {
-        "id": "urn:ngm:class:hnsw-index",
-        "label": "HNSW Index"
-      },
-      {
-        "id": "urn:ngm:class:vector-database",
-        "label": "Vector Database"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "implements": [
@@ -598,14 +576,6 @@
       {
         "id": "urn:ngm:class:reciprocal-rank-fusion",
         "label": "Reciprocal Rank Fusion"
-      },
-      {
-        "id": "urn:ngm:class:embedding-search",
-        "label": "Embedding Search"
-      },
-      {
-        "id": "urn:ngm:class:nearest-neighbor-search",
-        "label": "Approximate Nearest Neighbour Search"
       }
     ],
     "contrastsWith": [
@@ -634,12 +604,12 @@
         "label": "TF-IDF Retrieval"
       },
       {
-        "id": "urn:ngm:class:cross-encoder-reranking",
-        "label": "Cross-Encoder Reranking"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
       },
       {
-        "id": "urn:ngm:class:inverted-index",
-        "label": "Inverted Index"
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -730,18 +700,6 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
-      },
-      {
-        "id": "urn:ngm:class:agentic-rag",
-        "label": "Agentic RAG"
-      },
-      {
-        "id": "urn:ngm:class:cross-encoder-reranking",
-        "label": "Cross-Encoder Reranking"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-retrieval",
-        "label": "Hybrid Retrieval"
       }
     ],
     "standardizedBy": [
@@ -756,10 +714,6 @@
       {
         "id": "urn:ngm:class:trec",
         "label": "TREC"
-      },
-      {
-        "id": "urn:ngm:class:mteb-leaderboard",
-        "label": "MTEB Leaderboard"
       }
     ],
     "partOf": [
@@ -774,7 +728,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -790,16 +744,16 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
       }
     ]
   },

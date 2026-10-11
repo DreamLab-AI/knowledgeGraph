@@ -24,8 +24,8 @@ requires:
   - urn:ngm:class:token
   - urn:ngm:class:token
 enables:
-  - urn:ngm:class:dao
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:payment-system
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:play-to-earn-p2-e

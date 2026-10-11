@@ -16,7 +16,7 @@ is-a:
   - urn:ngm:class:supervisory-technology
 hasPart:
   - urn:ngm:class:incident-reporting
-  - urn:ngm:class:lei-system
+  - urn:ngm:class:legal-entity-identifier
   - urn:ngm:class:suspicious-activity-report
   - urn:ngm:class:transaction-reporting
   - urn:ngm:class:xbrl
@@ -26,7 +26,7 @@ hasPart:
   - urn:ngm:class:regulatory-data-model
 requires:
   - urn:ngm:class:data-quality-management
-  - urn:ngm:class:lei-system
+  - urn:ngm:class:legal-entity-identifier
   - urn:ngm:class:trade-repository
   - urn:ngm:class:xbrl
   - urn:ngm:class:aml-kyc-compliance
@@ -53,7 +53,7 @@ implements:
   - urn:ngm:class:fatf-recommendations
   - urn:ngm:class:mi-fid-ii
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:mifid-ii
   - urn:ngm:class:eu-mi-ca-regulation
 contrastsWith:
@@ -66,12 +66,12 @@ uses:
   - urn:ngm:class:blockchain-analytics
   - urn:ngm:class:fix-protocol
   - urn:ngm:class:iso-20022
-  - urn:ngm:class:lei-system
+  - urn:ngm:class:legal-entity-identifier
   - urn:ngm:class:rest-api
   - urn:ngm:class:sftp
   - urn:ngm:class:xbrl
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:capital-adequacy
   - urn:ngm:class:financial-stability
   - urn:ngm:class:investor-protection

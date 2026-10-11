@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interferometric-phase",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Interferometric phase is the pixel-by-pixel phase difference between two coregistered SAR acquisitions of the same area, which an interferogram records.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

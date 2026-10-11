@@ -8,7 +8,7 @@ description: CBDC cross-border settlement refers to the use of central bank digi
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 requires:
   - urn:ngm:class:settlement
 enables:

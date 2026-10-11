@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:reasoning-engine
 contrastsWith:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:hardcoded-logic
 bridgesTo:
   - urn:ngm:class:ai-decision-system

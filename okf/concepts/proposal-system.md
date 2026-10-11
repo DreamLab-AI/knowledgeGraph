@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:vote-delegation
 enables:
   - urn:ngm:class:on-chain-voting
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:treasury-management
   - urn:ngm:class:on-chain-voting
 dependsOn:
@@ -29,7 +29,7 @@ dependsOn:
   - urn:ngm:class:ipfs
 implements:
   - urn:ngm:class:compound-governor-bravo
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 contrastsWith:
   - urn:ngm:class:corporate-governance
 bridgesTo:
@@ -41,7 +41,7 @@ uses:
 supports:
   - urn:ngm:class:community-participation
 partOf:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:dao-governance
 relatedTo:
   - urn:ngm:class:sybil-resistance

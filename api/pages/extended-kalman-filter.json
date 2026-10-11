@@ -65,7 +65,7 @@
         "label": "Unscented Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
       }
     ],
@@ -353,6 +353,10 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Particle Filter"
+      },
+      {
         "id": "urn:ngm:class:batch-optimisation",
         "label": "Batch Optimisation"
       },
@@ -379,10 +383,6 @@
       {
         "id": "urn:ngm:class:open-loop-control",
         "label": "Open-Loop Control"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ],
     "bridgesTo": [
@@ -425,16 +425,16 @@
         "label": "RB-1002-closed-loop-control"
       },
       {
+        "id": "urn:ngm:class:localisation",
+        "label": "RB-1013-localization"
+      },
+      {
         "id": "urn:ngm:class:mean-squared-error",
         "label": "Mean Squared Error"
       },
       {
         "id": "urn:ngm:class:rb-1008-odometry",
         "label": "RB-1008-odometry"
-      },
-      {
-        "id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB-1013-localization"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -483,7 +483,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -505,8 +505,8 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -529,8 +529,8 @@
         "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB 1013 localization"
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
       },
       {
         "id": "urn:ngm:class:signal-processing",

@@ -164,10 +164,6 @@
         "label": "Dijkstra Algorithm"
       },
       {
-        "id": "urn:ngm:class:search-algorithm",
-        "label": "Best-First Search"
-      },
-      {
         "id": "urn:ngm:class:uniform-cost-search",
         "label": "Uniform Cost Search"
       }
@@ -566,7 +562,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -684,8 +680,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:neural-network",

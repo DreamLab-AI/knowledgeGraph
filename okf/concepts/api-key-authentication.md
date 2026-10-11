@@ -25,14 +25,14 @@ bridgesTo:
 uses:
   - urn:ngm:class:token
 supports:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 standardizedBy:
   - urn:ngm:class:standards
 relatedTo:
   - urn:ngm:class:oauth
   - urn:ngm:class:token
   - urn:ngm:class:api
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 ---
 
 # Api Key Authentication

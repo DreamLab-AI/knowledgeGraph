@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:validator-node
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:token-issuance
 dependsOn:

@@ -2,7 +2,7 @@ The process of combining individual preferences, rankings, or utility functions 
 
 ### Overview
 
-- From ancient Athenian voting to modern [[Decentralized Autonomous Organization]] governance, the challenge of combining disparate preferences into binding group choices has driven rich theoretical and practical innovation.
+- From ancient Athenian voting to modern [[Decentralised Autonomous Organisation]] governance, the challenge of combining disparate preferences into binding group choices has driven rich theoretical and practical innovation.
 - Classical methods include plurality voting, Borda count, Condorcet methods, and approval voting, each with distinct strategic properties.
 - Computational social choice applies algorithmic methods to aggregation at scale, enabling [[Mechanism Design]] for large, heterogeneous populations.
 - AI systems increasingly assist preference aggregation by learning latent preference structures from behavioural data.

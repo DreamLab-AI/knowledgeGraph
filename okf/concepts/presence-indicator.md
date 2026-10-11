@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:calendar-api
   - urn:ngm:class:network-latency
   - urn:ngm:class:device-sensors
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:privacy-regulation
 implements:
   - urn:ngm:class:microsoft-graph-api

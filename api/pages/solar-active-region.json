@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-active-region",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A solar active region is an area of intense and complex magnetic field on the Sun that is a source of solar eruptions.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-active-region",

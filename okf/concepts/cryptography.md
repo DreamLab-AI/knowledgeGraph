@@ -32,14 +32,14 @@ dependsOn:
   - urn:ngm:class:computational-complexity-theory
 implements:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 contrastsWith:
   - urn:ngm:class:steganography
 bridgesTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:post-quantum-cryptography
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:quantum-computing
 supports:
   - urn:ngm:class:data-privacy
   - urn:ngm:class:access-control

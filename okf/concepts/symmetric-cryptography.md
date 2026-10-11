@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:encryption
 relatedTo:
   - urn:ngm:class:cryptographic-primitive
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 ---
 
 # Symmetric Cryptography

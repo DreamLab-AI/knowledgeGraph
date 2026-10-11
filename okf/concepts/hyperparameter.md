@@ -8,7 +8,7 @@ description: A configuration variable set before training that controls the lear
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 hasPart:
   - urn:ngm:class:batch-size

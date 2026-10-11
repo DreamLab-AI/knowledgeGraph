@@ -16,14 +16,14 @@ hasPart:
   - urn:ngm:class:neural-processing-unit
   - urn:ngm:class:federated-learning
   - urn:ngm:class:hardware-acceleration
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:edge-deployment
 requires:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:neural-processing-unit
   - urn:ngm:class:model-compression
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
 enables:
   - urn:ngm:class:real-time-inference-at-edge
@@ -39,7 +39,7 @@ dependsOn:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:neural-architecture-search
 implements:
@@ -63,7 +63,7 @@ uses:
   - urn:ngm:class:onnx
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:neural-architecture-search
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:tflite
   - urn:ngm:class:mlops
 supports:

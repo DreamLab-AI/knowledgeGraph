@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:posted-price-mechanism
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:reinforcement-learning
 uses:

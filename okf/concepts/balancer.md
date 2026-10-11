@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:asset-liquidity
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 contrastsWith:
   - urn:ngm:class:constant-product-amm
   - urn:ngm:class:order-book-exchange

@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:validator-node
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:digital-asset
 implements:

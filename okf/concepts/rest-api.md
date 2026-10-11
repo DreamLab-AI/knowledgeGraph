@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:cloud-native
 implements:
   - urn:ngm:class:http
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:hateoas
   - urn:ngm:class:representational-state-transfer
 contrastsWith:
@@ -33,11 +33,11 @@ bridgesTo:
   - urn:ngm:class:model-serving
   - urn:ngm:class:federated-learning
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:xml
   - urn:ngm:class:oauth-2-0
-  - urn:ngm:class:tls
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:transport-layer-security
+  - urn:ngm:class:json
 supports:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:rate-limiting

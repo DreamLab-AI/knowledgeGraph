@@ -17,7 +17,7 @@ is-a:
 hasPart:
   - urn:ngm:class:6-do-f-estimation
   - urn:ngm:class:smpl-body-model
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:keypoint-detection
   - urn:ngm:class:mesh-recovery
   - urn:ngm:class:temporal-smoothing
@@ -74,7 +74,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:differentiable-rendering
   - urn:ngm:class:direct-coordinate-regression
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:perspective-n-point
   - urn:ngm:class:smpl-body-model
   - urn:ngm:class:vi-t-backbone

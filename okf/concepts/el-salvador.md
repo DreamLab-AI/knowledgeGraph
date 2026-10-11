@@ -22,10 +22,10 @@ implements:
   - urn:ngm:class:bitcoin
   - urn:ngm:class:legal-tender-law
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:fiat-currency
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-identity
 uses:
@@ -40,8 +40,8 @@ relatedTo:
   - urn:ngm:class:monetary-policy
   - urn:ngm:class:remittances
   - urn:ngm:class:dollarisation
-  - urn:ngm:class:imf
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:international-monetary-fund
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:crypto-regulation
   - urn:ngm:class:remittances
 ---

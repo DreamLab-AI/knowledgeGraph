@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:large-language-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:machine-learning-domain
 hasPart:
   - urn:ngm:class:meta-llama-model-family-3

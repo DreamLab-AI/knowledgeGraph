@@ -26,7 +26,7 @@ implements:
   - urn:ngm:class:audit-trail
 contrastsWith:
   - urn:ngm:class:self-custody
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:securities-regulation
 uses:

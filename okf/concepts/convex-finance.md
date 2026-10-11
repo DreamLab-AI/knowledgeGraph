@@ -8,7 +8,7 @@ description: Convex Finance is a decentralised finance (DeFi) meta-protocol buil
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:ethereum
@@ -40,10 +40,10 @@ partOf:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:curve-wars
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:total-value-locked
   - urn:ngm:class:frax-finance
-  - urn:ngm:class:decentralized-autonomous-organization
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Convex Finance

@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:edge-computing
 relatedTo:
   - urn:ngm:class:edge-ai-accelerator
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:inference-hardware
 ---
 

@@ -29,14 +29,14 @@ dependsOn:
   - urn:ngm:class:smart-contract
 contrastsWith:
   - urn:ngm:class:centralised-oracle
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 bridgesTo:
   - urn:ngm:class:io-t-sensor-network
   - urn:ngm:class:data-marketplace
   - urn:ngm:class:ai-agent
 supports:
   - urn:ngm:class:smart-contract-execution
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:prediction-markets
   - urn:ngm:class:real-world-asset-tokenisation
   - urn:ngm:class:prediction-markets

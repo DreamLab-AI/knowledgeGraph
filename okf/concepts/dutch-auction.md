@@ -18,7 +18,7 @@ enables:
 implements:
   - urn:ngm:class:auction-mechanism
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:smart-contract
 supports:
@@ -27,7 +27,7 @@ supports:
 partOf:
   - urn:ngm:class:auction-mechanism
 relatedTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:price-discovery
   - urn:ngm:class:nft-marketplace
 ---

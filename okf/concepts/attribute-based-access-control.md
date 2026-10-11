@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:access-control
 hasPart:
   - urn:ngm:class:access-control-policy
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 requires:
   - urn:ngm:class:authentication
 enables:
@@ -20,7 +20,7 @@ enables:
 dependsOn:
   - urn:ngm:class:identity-and-access-management
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:role-based-access-control
 bridgesTo:

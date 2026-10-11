@@ -15,7 +15,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:prompt-engineering
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:chain-of-thought
 ---
 

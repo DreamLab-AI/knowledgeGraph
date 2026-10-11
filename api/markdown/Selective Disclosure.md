@@ -60,7 +60,7 @@ Selective disclosure is a cryptographic capability that allows the holder of a v
 - **IETF SD-JWT** (draft-ietf-oauth-selective-disclosure-jwt) — specifies the hash-based selective disclosure extension to [[JSON Web Token]]. Widely adopted for OpenID4VC profiles.
 - **IETF BBS Signatures** (draft-irtf-cfrg-bbs-signatures) — cryptographic specification for the BBS+ signature scheme, published via the IETF Crypto Forum Research Group (CFRG).
 - **W3C DID Core** (Decentralised Identifiers) — the [[Decentralised Identifier]] spec provides the subject identifier infrastructure that anchors selective disclosure credentials.
-- **OpenID for Verifiable Credentials (OID4VC)** — an OpenID Foundation suite of protocols (OID4VCI, OID4VP) that defines how [[Verifiable Credentials]] are issued and presented, including selective disclosure during presentation.
+- **OpenID for Verifiable Credentials (OID4VC)** — an OpenID Foundation suite of protocols (OID4VCI, OID4VP) that defines how [[Verifiable Credential]] are issued and presented, including selective disclosure during presentation.
 - **EU Architecture Reference Framework (ARF)** — the technical specification for the EU Digital Identity Wallet (EUDIW) mandates SD-JWT VC and mdoc/ISO 18013-5 as mandatory formats, both supporting selective disclosure.
 - **ISO/IEC 18013-5 (mDL)** — the mobile driving licence standard uses a selective disclosure mechanism (DeviceResponse) for attribute presentation.
 - **Hyperledger Aries / AnonCreds** — an open-source SSI stack that has implemented Camenisch-Lysyanskaya (CL) signatures for selective disclosure since 2017, the longest-deployed production selective disclosure scheme.

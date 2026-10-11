@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-ethics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-governance
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:existential-risk-research
@@ -19,11 +19,11 @@ hasPart:
   - urn:ngm:class:debate
   - urn:ngm:class:mechanistic-interpretability
   - urn:ngm:class:reward-modelling
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:scalable-oversight
   - urn:ngm:class:sparse-autoencoders
   - urn:ngm:class:weak-to-strong-generalisation
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:red-teaming
   - urn:ngm:class:dangerous-capability-evaluations
 requires:
@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:responsible-scaling
 dependsOn:
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:decision-theory
@@ -51,7 +51,7 @@ implements:
   - urn:ngm:class:red-teaming
   - urn:ngm:class:mechanistic-interpretability
   - urn:ngm:class:weak-to-strong-generalisation
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:debate-protocol
@@ -71,15 +71,15 @@ uses:
 supports:
   - urn:ngm:class:ai-safety-institute
   - urn:ngm:class:bletchley-declaration
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:responsible-scaling-policy
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:seoul-ai-summit
 standardizedBy:
   - urn:ngm:class:bletchley-declaration
   - urn:ngm:class:iso-42001
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:uk-aisi-evaluation-protocols
 relatedTo:
   - urn:ngm:class:agents

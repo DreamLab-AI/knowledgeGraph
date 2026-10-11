@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-atmosphere",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A stellar atmosphere is the outer part of a star, beginning with the photosphere as its bottom layer.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-realm",

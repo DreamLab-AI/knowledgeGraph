@@ -33,7 +33,7 @@ contrastsWith:
   - urn:ngm:class:direct-air-capture
 bridgesTo:
   - urn:ngm:class:blockchain-tokenisation
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contract
 uses:
   - urn:ngm:class:satellite-monitoring

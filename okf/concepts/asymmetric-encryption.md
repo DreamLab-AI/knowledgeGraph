@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:key-management
 enables:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:key-exchange
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:zero-knowledge-proof
@@ -41,10 +41,10 @@ supports:
   - urn:ngm:class:authentication
   - urn:ngm:class:data-confidentiality
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:certificate-authority
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 ---
 
 # Asymmetric Encryption

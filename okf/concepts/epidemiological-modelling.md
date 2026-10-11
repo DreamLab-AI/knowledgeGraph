@@ -65,7 +65,7 @@ uses:
   - urn:ngm:class:monte-carlo-simulation
   - urn:ngm:class:network-analysis
   - urn:ngm:class:graph-theory
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:sensitivity-analysis
   - urn:ngm:class:surrogate-model

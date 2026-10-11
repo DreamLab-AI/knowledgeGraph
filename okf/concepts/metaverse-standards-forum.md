@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:digital-twin
 dependsOn:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 implements:
   - urn:ngm:class:coordination-layer
 contrastsWith:
@@ -32,11 +32,11 @@ bridgesTo:
   - urn:ngm:class:web3
   - urn:ngm:class:artificial-intelligence
 uses:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:open-xr
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:web-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 supports:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:extended-reality

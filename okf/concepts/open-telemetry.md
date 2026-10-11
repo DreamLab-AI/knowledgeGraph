@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:root-cause-analysis
 dependsOn:
   - urn:ngm:class:g-rpc
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 bridgesTo:
   - urn:ngm:class:observability
   - urn:ngm:class:ai-monitoring
@@ -29,9 +29,9 @@ supports:
   - urn:ngm:class:kubernetes
   - urn:ngm:class:prometheus
 standardizedBy:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 relatedTo:
   - urn:ngm:class:real-time-monitoring
   - urn:ngm:class:performance-metrics

@@ -1,7 +1,7 @@
 Composability is the property by which independent components can be combined into larger systems whose behaviour is predictable from the behaviour of the parts. In blockchain and decentralised finance it describes how permissionless smart contracts can call and build upon one another so that protocols interlock like building blocks, often called money legos. Composability accelerates innovation but couples systems together, propagating both functionality and risk across the stack.
 
 - [[Composability]] is the property that independent components can be combined into larger systems whose behaviour follows from the parts. In [[Blockchain]] it describes how permissionless [[Smart Contract]]s call and build on one another.
-- It is the foundation of "money legos" in [[Decentralized Finance]], where protocols interlock to create new financial primitives, and it is closely tied to [[Interoperability]].
+- It is the foundation of "money legos" in [[Decentralised Finance]], where protocols interlock to create new financial primitives, and it is closely tied to [[Interoperability]].
 
 ### Overview
 
@@ -22,7 +22,7 @@ Composability is the property by which independent components can be combined in
 - Yield aggregators that route capital across lending and exchange protocols.
 - Structured products assembled from primitive swaps, loans and derivatives.
 - On-chain governance and treasury tools built atop token standards.
-- Cross-protocol [[Decentralized Exchange]] routing and aggregation.
+- Cross-protocol [[Decentralised Exchange]] routing and aggregation.
 
 ### Provenance
 

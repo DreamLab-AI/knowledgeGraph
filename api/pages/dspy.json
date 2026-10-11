@@ -60,8 +60,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:foundation-model",
@@ -112,15 +112,15 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -171,8 +171,8 @@
         "label": "In-Context Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -185,7 +185,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -222,7 +222,7 @@
         "label": "LLM Agents"
       },
       {
-        "id": "urn:ngm:class:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
@@ -263,14 +263,14 @@
       "slug": "ai-technique"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models",
-      "slug": "large-language-models"
+      "id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model",
+      "slug": "large-language-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:model-optimisation-and-performance",
@@ -338,6 +338,16 @@
       "slug": "digital-infrastructure"
     },
     {
+      "id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model",
+      "slug": "foundation-model"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer",
+      "slug": "foundation-model-layer"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction",
       "slug": "human-computer-interaction"
@@ -353,11 +363,6 @@
       "slug": "instruction-following"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
-    },
-    {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps",
       "slug": "mlops"
@@ -369,7 +374,7 @@
     },
     {
       "id": "urn:ngm:class:neural-network-quantisation",
-      "label": "Neural Network Quantisation",
+      "label": "Model Quantisation",
       "slug": "neural-network-quantisation"
     },
     {
@@ -383,29 +388,14 @@
       "slug": "ai-safety"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
-    },
-    {
-      "id": "urn:ngm:class:meta-learning",
-      "label": "Meta-Learning",
-      "slug": "meta-learning"
-    },
-    {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics",
-      "slug": "ai-governance-and-ethics"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -413,9 +403,54 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "slug": "machine-learning-discipline-model"
+    },
+    {
+      "id": "urn:ngm:class:meta-learning",
+      "label": "Meta-Learning",
+      "slug": "meta-learning"
+    },
+    {
+      "id": "urn:ngm:class:model-compression",
+      "label": "Model Compression",
+      "slug": "model-compression"
+    },
+    {
+      "id": "urn:ngm:class:pre-trained-model",
+      "label": "Pre-Trained Model",
+      "slug": "pre-trained-model"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "slug": "machine-learning-discipline-models"
+    },
+    {
       "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique",
       "slug": "machine-learning-discipline-technique"
+    },
+    {
+      "id": "urn:ngm:class:model",
+      "label": "Model",
+      "slug": "model"
+    },
+    {
+      "id": "urn:ngm:class:model-optimization",
+      "label": "Model Optimization",
+      "slug": "model-optimization"
+    },
+    {
+      "id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment",
+      "slug": "model-deployment"
     }
   ],
   "inheritedRelations": {
@@ -475,16 +510,16 @@
         "label": "Networking Fabric"
       },
       {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:gpu-compute",
-        "label": "GPU Compute"
+        "label": "Fine-Tuning"
       }
     ],
     "enables": [
@@ -543,16 +578,16 @@
         "label": "Data Centre"
       },
       {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:cuda-programming-model",
-        "label": "CUDA Programming Model"
       }
     ],
     "implements": [
@@ -607,20 +642,20 @@
         "label": "General-Purpose Computing"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       },
       {
-        "id": "urn:ngm:class:dense-inference",
-        "label": "Dense Inference"
+        "id": "urn:ngm:class:small-language-model",
+        "label": "Small Language Model"
       },
       {
-        "id": "urn:ngm:class:eager-execution",
-        "label": "Eager Execution"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:full-precision-training",
-        "label": "Full-Precision Training"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -641,20 +676,20 @@
         "label": "Autonomous Economic Agents"
       },
       {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
         "id": "urn:ngm:class:l402-payment-protocol",
         "label": "L402 Payment Protocol"
       },
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ],
     "uses": [
@@ -683,12 +718,12 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:feature-engineering",
-        "label": "Feature Engineering"
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "supports": [
@@ -717,18 +752,26 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation Benchmarks and Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:khronos-nnapi",
@@ -749,17 +792,13 @@
       {
         "id": "urn:ngm:class:openxla",
         "label": "OpenXLA"
-      },
-      {
-        "id": "urn:ngm:class:agent-frameworks",
-        "label": "Agent Frameworks"
-      },
-      {
-        "id": "urn:ngm:class:ai-technology-skills-curriculum",
-        "label": "AI Technology Skills Curriculum"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:ai-governance-and-ethics",
         "label": "AI Governance and Ethics"
@@ -777,8 +816,16 @@
         "label": "AI Lifecycle"
       },
       {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
       }
     ],
     "relatedTo": [

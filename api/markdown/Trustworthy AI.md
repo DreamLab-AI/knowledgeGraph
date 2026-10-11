@@ -4,7 +4,7 @@ Trustworthy AI denotes artificial intelligence systems designed, developed, and 
 
 - Trustworthy AI emerged as a governance concept in the late 2010s in response to growing concerns about opaque decision-making, discriminatory outcomes, and misuse of AI systems in high-stakes domains such as healthcare, criminal justice, and employment.
 - The EU's 2019 "Ethics Guidelines for Trustworthy AI" published by the [[EU High-Level Expert Group on AI]] provided the first internationally influential structured treatment, identifying seven non-negotiable requirements that AI systems must satisfy to earn societal trust.
-- The concept is simultaneously a technical standard (requiring specific engineering properties), an ethical commitment (to fairness, non-maleficence, and human dignity), and a regulatory instrument (providing the normative backbone of the [[EU AI Act]] and informing the [[NIST AI RMF]]).
+- The concept is simultaneously a technical standard (requiring specific engineering properties), an ethical commitment (to fairness, non-maleficence, and human dignity), and a regulatory instrument (providing the normative backbone of the [[EU AI Act]] and informing the [[NIST AI Risk Management Framework]]).
 - Unlike narrower notions of [[AI Safety]] (which focuses on preventing catastrophic failures) or [[Responsible AI]] (often limited to ethical guidelines), trustworthy AI encompasses the full spectrum from technical reliability to democratic accountability.
 - It applies across the AI system lifecycle: from problem framing and [[Training Data]] curation, through model development and validation, to deployment monitoring, decommissioning, and redress mechanisms.
 - Growing AI deployment in critical infrastructure, financial services, and public administration has made trustworthy AI a practical necessity rather than an aspirational ideal, driving regulatory mandates in the EU, UK, and increasingly the US.
@@ -27,14 +27,14 @@ Trustworthy AI denotes artificial intelligence systems designed, developed, and 
 - **[[Bias Mitigation]]**: Pre-processing techniques (re-weighting, re-sampling), in-processing constraints (fairness regularisation, adversarial debiasing), and post-processing corrections (threshold adjustment, calibration) address disparate impact across protected characteristics.
 - **[[Robustness Testing]]**: Adversarial robustness evaluation (e.g., using PGD or AutoAttack), distributional shift testing, stress testing under out-of-distribution inputs, and formal verification for safety-critical components.
 - **Privacy-preserving techniques**: [[Differential Privacy]] for training data protection, [[Federated Learning]] for decentralised model training without raw data sharing, and [[Homomorphic Encryption]] for privacy-preserving inference.
-- **[[Model Cards]]**: Structured documentation artefacts (originating from Google, now widely adopted) that record training data, evaluation results, intended uses, limitations, and ethical considerations for individual models.
+- **[[Model Card]]**: Structured documentation artefacts (originating from Google, now widely adopted) that record training data, evaluation results, intended uses, limitations, and ethical considerations for individual models.
 - **[[AI Impact Assessment]]**: Structured pre-deployment analysis frameworks analogous to [[Environmental Impact Assessment]] or [[Data Protection Impact Assessment]], identifying risks before deployment in high-stakes contexts.
 - **Monitoring and logging**: Continuous post-deployment monitoring for distributional drift, performance degradation, and emergent biases; audit logging to support after-the-fact accountability.
 
 ### Governance Instruments
 
 - **[[EU AI Act]]**: The world's first comprehensive AI regulation, enacted in 2024, classifies AI systems by risk level (unacceptable, high, limited, minimal) and mandates technical and governance requirements for high-risk systems including conformity assessments, registration, and incident reporting.
-- **[[NIST AI RMF]]**: The US National Institute of Standards and Technology's AI Risk Management Framework (published 2023) provides a voluntary, flexible structure for organisations to identify, assess, and manage AI risks across four functions: Govern, Map, Measure, Manage.
+- **[[NIST AI Risk Management Framework]]**: The US National Institute of Standards and Technology's AI Risk Management Framework (published 2023) provides a voluntary, flexible structure for organisations to identify, assess, and manage AI risks across four functions: Govern, Map, Measure, Manage.
 - **[[ISO/IEC 42001]]**: The international standard for AI management systems (published 2023), providing certifiable requirements for organisations establishing responsible AI governance.
 - **[[ISO/IEC JTC1 SC42]]**: The international standardisation committee developing the family of AI standards (42xxx series) addressing terminology, bias, robustness, and trustworthiness.
 - **[[Algorithmic Auditing]]**: Independent third-party assessment of AI systems' behaviour, including [[Red Teaming]], conformance testing, and impact auditing; increasingly mandated for high-risk deployments.
@@ -54,7 +54,7 @@ Trustworthy AI denotes artificial intelligence systems designed, developed, and 
 
 - **EU Ethics Guidelines for Trustworthy AI (2019)**: The foundational policy document from the [[EU High-Level Expert Group on AI]], establishing the seven-requirements framework; influenced AI policy globally.
 - **[[EU AI Act]] (2024)**: Translates trustworthy AI principles into binding legal obligations for AI system providers and deployers operating in the EU market; introduces the Conformity Assessment procedure for high-risk AI.
-- **[[NIST AI RMF]] (2023)**: US voluntary framework for AI risk management; widely adopted by US federal agencies and private sector; complements but does not conflict with EU frameworks.
+- **[[NIST AI Risk Management Framework]] (2023)**: US voluntary framework for AI risk management; widely adopted by US federal agencies and private sector; complements but does not conflict with EU frameworks.
 - **[[ISO/IEC 42001]] (2023)**: First internationally harmonised AI management system standard; enables [[AI Certification]] against certifiable requirements.
 - **IEEE 7000 series**: Standards addressing ethically aligned design, algorithmic bias considerations, and transparency of autonomous systems; complement the ISO/IEC family.
 - **UK AI Safety Institute**: The UK government's body for advanced AI safety evaluation; its testing frameworks inform trustworthy AI assessment methodologies.

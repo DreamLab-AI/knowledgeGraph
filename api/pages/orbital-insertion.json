@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-insertion",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital insertion is the launch-vehicle phase or spacecraft manoeuvre that establishes a vehicle in a specified target orbit around a named body.[^nasa-navigation][^esa-flight-dynamics]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

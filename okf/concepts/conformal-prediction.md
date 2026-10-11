@@ -10,7 +10,7 @@ quality: 0.9
 is-a:
   - urn:ngm:class:machine-learning-discipline-technique
   - urn:ngm:class:uncertainty-quantification
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-learning-theory
 hasPart:
   - urn:ngm:class:nonconformity-score
@@ -68,7 +68,7 @@ supports:
   - urn:ngm:class:object-detection
   - urn:ngm:class:reinforcement-learning
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:bayesian-inference

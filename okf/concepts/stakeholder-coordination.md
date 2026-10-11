@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:governance
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 partOf:
   - urn:ngm:class:blockchain-governance
 relatedTo:

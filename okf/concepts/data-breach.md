@@ -32,7 +32,7 @@ enables:
   - urn:ngm:class:risk-assessment
 dependsOn:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:adversarial-attack
 implements:
   - urn:ngm:class:risk-management

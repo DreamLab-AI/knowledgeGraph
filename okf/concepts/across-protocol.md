@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:cross-chain-asset-transfer
   - urn:ngm:class:cross-chain-interoperability
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:layer-2-solutions
 uses:
   - urn:ngm:class:liquidity-pool

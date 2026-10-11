@@ -31,7 +31,7 @@ Custody infrastructure refers to the integrated technological, operational, and 
 
 #### Multi-Party Authorisation
 
-- [[Multi-Signature]] schemes require M-of-N independent signatories to co-sign a transaction before it is broadcast, distributing trust so no single person can act unilaterally.
+- [[Multisignature]] schemes require M-of-N independent signatories to co-sign a transaction before it is broadcast, distributing trust so no single person can act unilaterally.
 - [[Multi-Party Computation]] (MPC) and [[Threshold Signature Scheme]] (TSS) approaches achieve equivalent security without on-chain visibility of the multi-party nature, improving privacy and reducing transaction fees.
 - [[Multi-Party Computation]] custody has become the dominant paradigm for institutional providers as of 2024, with major platforms including Fireblocks, Copper, and Qredo building on MPC-TSS foundations.
 

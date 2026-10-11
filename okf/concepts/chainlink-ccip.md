@@ -32,7 +32,7 @@ uses:
 relatedTo:
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:oracle-network
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:token-bridge
 ---
 

@@ -47,7 +47,7 @@ enables:
   - urn:ngm:class:low-cost-transaction-processing
 dependsOn:
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:verifiable-random-functions
   - urn:ngm:class:peer-to-peer-gossip-protocol
   - urn:ngm:class:tokenomics-design
@@ -83,7 +83,7 @@ uses:
   - urn:ngm:class:storage-proofs
 supports:
   - urn:ngm:class:crypto-climate-accord
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:green-finance
   - urn:ngm:class:smart-contract-platform
   - urn:ngm:class:carbon-credit-tracking
@@ -99,7 +99,7 @@ standardizedBy:
   - urn:ngm:class:cosmos-ibc
   - urn:ngm:class:bis-green-finance-standards
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:esg-investing
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues

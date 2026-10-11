@@ -4,7 +4,7 @@ Security Assertion Markup Language 2.0 (SAML 2.0) is an OASIS open standard rati
 
 - SAML 2.0 was ratified by [[OASIS]] in March 2005. It merged and superseded SAML 1.0/1.1, the Liberty Alliance Identity Federation Framework 1.2, and [[Shibboleth]] 1.3 — aligning previously divergent enterprise federation efforts into a single interoperable standard.
 - The core problem it solves is [[Cross-Domain Authentication]]: when a user authenticates once at a trusted [[Identity Provider]], that IdP issues a digitally signed XML assertion which downstream [[Service Provider]] systems can verify without a separate login, implementing true [[Single Sign-On]] across organisational and domain boundaries.
-- SAML 2.0 relies on [[XML Digital Signature]] (XMLDSig) and [[XML Encryption]] (XMLEnc) for integrity and confidentiality, and on [[TLS]] (HTTPS) for transport-layer security. The [[Public Key Infrastructure]] supporting X.509 certificates is therefore a hard dependency.
+- SAML 2.0 relies on [[XML Digital Signature]] (XMLDSig) and [[XML Encryption]] (XMLEnc) for integrity and confidentiality, and on [[Transport Layer Security]] (HTTPS) for transport-layer security. The [[Public Key Infrastructure]] supporting X.509 certificates is therefore a hard dependency.
 - The standard is widely regarded as mature, having been in production deployment for over two decades in enterprises, universities, government agencies, and cloud SaaS platforms. It is mandated or strongly recommended in numerous national [[e-Government]] frameworks.
 
 ### Key Components

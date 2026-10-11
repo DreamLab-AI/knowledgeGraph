@@ -12,21 +12,21 @@ A Web Standard is a formally published technical specification developed by reco
 
 #### Core Document & Style Standards
 
-- [[HTML]] — the structural markup language; maintained as a Living Standard by the [[WHATWG]] and mirrored at the [[W3C]].
+- [[HTML]] — the structural markup language; maintained as a Living Standard by the [[WHATWG]] and mirrored at the [[World Wide Web Consortium]].
 - [[CSS]] — the cascade-based styling language, published as a modular family of Level 3 and Level 4 specifications (e.g. CSS Grid, CSS Flexbox, CSS Custom Properties).
 - [[DOM]] (Document Object Model) — the programmatic tree representation of an HTML or XML document; the primary target of [[JavaScript]] manipulation.
 
 #### Scripting & Execution Standards
 
 - [[JavaScript]] (ECMAScript) — specified by [[ECMA International]] as ECMA-262; new editions released annually under TC39.
-- [[WebAssembly]] — a compact binary instruction format enabling near-native execution in the browser; maintained jointly by the [[W3C]] WebAssembly Working Group and the [[WHATWG]].
+- [[WebAssembly]] — a compact binary instruction format enabling near-native execution in the browser; maintained jointly by the [[World Wide Web Consortium]] WebAssembly Working Group and the [[WHATWG]].
 - [[Web Worker]] and [[Service Worker]] — background thread primitives that extend JavaScript into concurrent and offline execution patterns.
 
 #### Networking & Protocol Standards
 
 - [[HTTP]] (Hypertext Transfer Protocol) — defined by the [[IETF]] (RFC 9110 for HTTP semantics, RFC 9114 for HTTP/3 over QUIC).
 - [[WebSocket]] — a full-duplex, persistent TCP channel over HTTP Upgrade; standardised by IETF RFC 6455 and exposed via [[Web API]].
-- [[WebRTC]] — peer-to-peer audio, video, and data channels; defined jointly by [[IETF]] and [[W3C]].
+- [[WebRTC]] — peer-to-peer audio, video, and data channels; defined jointly by [[IETF]] and [[World Wide Web Consortium]].
 - [[CORS]] (Cross-Origin Resource Sharing) — a browser security mechanism governing cross-origin HTTP requests, specified in Fetch Standard.
 
 #### Graphics & Immersive Standards
@@ -52,7 +52,7 @@ A Web Standard is a formally published technical specification developed by reco
 - **Vendor Implementation** — browser vendors (Chromium/Blink, Firefox/Gecko, Safari/WebKit) implement specifications in their [[Browser Engine]], filing test results in the web-platform-tests (WPT) suite to demonstrate interoperability.
 - **Extensible Web Manifesto Pattern** — modern standards expose low-level primitives first (e.g. Streams API, Encoding API) so the developer community can build high-level abstractions, reducing standards latency.
 - **Living Standards** — the [[WHATWG]] HTML and URL standards update continuously, with fixes and new features landing incrementally rather than in versioned snapshots, accelerating implementation cycles.
-- **Royalty-Free Patent Commitment** — [[W3C]] Royalty-Free Licensing requirements ensure that implementors can ship conformant browsers without patent exposure, sustaining the open ecosystem.
+- **Royalty-Free Patent Commitment** — [[World Wide Web Consortium]] Royalty-Free Licensing requirements ensure that implementors can ship conformant browsers without patent exposure, sustaining the open ecosystem.
 
 ### Applications
 
@@ -84,7 +84,7 @@ A Web Standard is a formally published technical specification developed by reco
 
 #### Principal Bodies
 
-- **[[W3C]]** (World Wide Web Consortium) — the primary standards development organisation for the web, founded by Tim Berners-Lee in 1994; publishes Recommendations covering HTML (co-maintained with WHATWG), CSS, SVG, WebAssembly, WAI-ARIA, WCAG, WebAuthn, WebGPU, WebXR, and hundreds of other specifications.
+- **[[World Wide Web Consortium]]** (World Wide Web Consortium) — the primary standards development organisation for the web, founded by Tim Berners-Lee in 1994; publishes Recommendations covering HTML (co-maintained with WHATWG), CSS, SVG, WebAssembly, WAI-ARIA, WCAG, WebAuthn, WebGPU, WebXR, and hundreds of other specifications.
 - **[[WHATWG]]** (Web Hypertext Application Technology Working Group) — founded in 2004 by Apple, Mozilla, and Opera in response to the W3C's XHTML direction; maintains Living Standards for HTML, DOM, Fetch, URL, Encoding, Streams, and Storage.
 - **[[IETF]]** (Internet Engineering Task Force) — publishes RFCs governing network-layer protocols used by the web: HTTP/1.1 (RFC 7230–7235), HTTP/2 (RFC 7540), HTTP/3 (RFC 9114), WebSocket (RFC 6455), TLS (RFC 8446), WebRTC media transport.
 - **[[ECMA International]]** — maintains ECMA-262 (ECMAScript/JavaScript), updated annually by TC39, and ECMA-404 (JSON data interchange format).

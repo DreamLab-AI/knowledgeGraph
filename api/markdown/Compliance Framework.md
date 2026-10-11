@@ -75,7 +75,7 @@ A Compliance Framework is a structured set of policies, controls, procedures, an
 - **Cross-Jurisdictional Operations**
   - Multinational organisations use unified compliance frameworks with jurisdiction-specific annexes to satisfy EU, US, UK, and APAC regulatory requirements without managing entirely separate programmes
 - **Responsible AI Programmes**
-  - Technology companies implement internal [[Responsible AI]] compliance frameworks (often referencing [[NIST AI RMF]] Govern/Map/Measure/Manage functions) to operationalise ethics commitments into enforceable controls
+  - Technology companies implement internal [[Responsible AI]] compliance frameworks (often referencing [[NIST AI Risk Management Framework]] Govern/Map/Measure/Manage functions) to operationalise ethics commitments into enforceable controls
 - **Government and Public Sector**
   - Public bodies deploying AI in benefits administration or law enforcement are required in many jurisdictions to conduct [[Algorithmic Impact Assessment]] as part of a statutory compliance framework
 

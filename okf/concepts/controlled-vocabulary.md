@@ -32,7 +32,7 @@ contrastsWith:
   - urn:ngm:class:ontology
 bridgesTo:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:thesaurus
   - urn:ngm:class:taxonomy

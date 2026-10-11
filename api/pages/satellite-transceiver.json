@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-transceiver",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite transceiver is an electronic unit or subsystem that both transmits and receives signals for a satellite communications link.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:data-augmentation
 contrastsWith:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:diffusion-model
 bridgesTo:
   - urn:ngm:class:scientific-computing

@@ -8,7 +8,7 @@ description: The glTF 2.0 specification is the Khronos Group standard defining t
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 enables:
   - urn:ngm:class:3-d-asset
 bridgesTo:

@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:agent-memory
   - urn:ngm:class:task-planning
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
   - urn:ngm:class:memory-management
   - urn:ngm:class:task-planning
@@ -30,9 +30,9 @@ enables:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:workflow-automation
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:agentic-rag
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:agentic-workflow
   - urn:ngm:class:ai-agent-payments
 dependsOn:
@@ -75,9 +75,9 @@ supports:
   - urn:ngm:class:prompt-injection
 standardizedBy:
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:agent-frameworks
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:ai-agents
   - urn:ngm:class:orchestration

@@ -246,8 +246,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -272,10 +272,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
@@ -286,6 +282,10 @@
       {
         "id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-primitive",
@@ -338,8 +338,8 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ],
     "relatedTo": [
@@ -368,8 +368,8 @@
         "label": "Threshold Cryptography"
       },
       {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS"
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
       },
       {
         "id": "urn:ngm:class:confidential-computing",

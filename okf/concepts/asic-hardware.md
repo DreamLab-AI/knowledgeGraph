@@ -16,7 +16,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:fpga
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # ASIC Hardware

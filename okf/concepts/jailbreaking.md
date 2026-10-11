@@ -11,9 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:adversarial-machine-learning
-  - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-risks
-  - urn:ngm:class:ai-alignment
 hasPart:
   - urn:ngm:class:prompt-injection
   - urn:ngm:class:persona-attack
@@ -25,7 +23,7 @@ hasPart:
   - urn:ngm:class:skeleton-key-attack
 requires:
   - urn:ngm:class:instruction-tuning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:safety-training
 enables:
@@ -40,8 +38,8 @@ dependsOn:
   - urn:ngm:class:chain-of-thought-reasoning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 implements:
-  - urn:ngm:class:rlhf
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:constitutional-classifiers
   - urn:ngm:class:llama-guard
   - urn:ngm:class:guardrails-ai
@@ -49,7 +47,7 @@ contrastsWith:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:ai-safety
   - urn:ngm:class:responsible-ai
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 bridgesTo:
   - urn:ngm:class:adversarial-machine-learning
 uses:
@@ -66,8 +64,8 @@ supports:
 standardizedBy:
   - urn:ngm:class:aisi
   - urn:ngm:class:mitre-atlas
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agentic-internet

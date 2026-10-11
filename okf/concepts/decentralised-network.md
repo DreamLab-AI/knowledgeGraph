@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:censorship-resistance
   - urn:ngm:class:fault-tolerance
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 dependsOn:
   - urn:ngm:class:node
 contrastsWith:

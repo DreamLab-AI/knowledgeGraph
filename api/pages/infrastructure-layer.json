@@ -22,8 +22,8 @@
         "label": "5G Network"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -135,8 +135,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:serverless-architecture",
@@ -252,7 +252,7 @@
       "label": "5G Network"
     },
     {
-      "slug": "cdn",
+      "slug": "content-delivery-network",
       "label": "CDN"
     },
     {

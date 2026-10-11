@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uncrewed-spacecraft",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An uncrewed spacecraft is a spacecraft that operates without a crew on board, and NASA's spacecraft classification chapter describes the robotic kind as specially designed and constructed systems that can function in specific hostile environments.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -78,8 +78,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -164,8 +164,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

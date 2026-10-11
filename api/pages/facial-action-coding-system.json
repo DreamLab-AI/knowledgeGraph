@@ -169,7 +169,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -267,10 +267,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
-        "label": "Annotated Dataset"
-      },
-      {
         "id": "urn:ngm:class:data-labelling",
         "label": "Data Labelling"
       },
@@ -297,6 +293,10 @@
       {
         "id": "urn:ngm:class:computational-modelling",
         "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
     "enables": [
@@ -347,7 +347,7 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -517,7 +517,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -527,7 +527,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

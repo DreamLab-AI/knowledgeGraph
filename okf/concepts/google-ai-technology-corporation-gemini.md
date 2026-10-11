@@ -8,7 +8,7 @@ description: Google Gemini is a family of natively multimodal large language mod
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:gpts-and-custom-assistants
   - urn:ngm:class:agentic-internet

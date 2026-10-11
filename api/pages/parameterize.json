@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:parameterize",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Parameterize is the act of representing a process that a model cannot treat explicitly by a small set of parameters, as the meteorological and climate-modelling literature uses the term.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

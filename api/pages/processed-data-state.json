@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:processed-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A processed data state is the condition of data that have been transformed after acquisition, as distinct from the raw instrument record.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

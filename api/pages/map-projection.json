@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:map-projection",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A map projection is a systematic transformation of the latitudes and longitudes of locations on a sphere or an ellipsoid into locations on a plane.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

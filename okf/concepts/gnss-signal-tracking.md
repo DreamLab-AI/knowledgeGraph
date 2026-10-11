@@ -4,6 +4,7 @@ type: Class
 title: GNSS Signal Tracking
 resource: urn:ngm:class:gnss-signal-tracking
 domain: space-science-and-systems
+description: GNSS signal tracking is the continuing receiver process that follows an acquired signal's code delay, carrier phase and carrier frequency.
 maturity: draft
 quality: 0
 bridgesTo:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # GNSS Signal Tracking
+
+GNSS signal tracking is the continuing receiver process that follows an acquired signal's code delay, carrier phase and carrier frequency.

@@ -27,7 +27,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       }
     ],
@@ -124,11 +124,6 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
@@ -151,32 +146,32 @@
         "label": "Haptic Feedback"
       },
       {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:video-conferencing",
-        "label": "Video Conferencing"
-      },
-      {
-        "id": "urn:ngm:class:volumetric-capture",
-        "label": "Volumetric Capture"
-      },
-      {
-        "id": "urn:ngm:class:data-aggregation",
-        "label": "Data Aggregation"
-      },
-      {
-        "id": "urn:ngm:class:edge-ai-accelerator",
-        "label": "Edge AI Accelerator"
-      },
-      {
-        "id": "urn:ngm:class:edge-application-server",
-        "label": "Edge Application Server"
-      },
-      {
-        "id": "urn:ngm:class:edge-gateway",
-        "label": "Edge Gateway"
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
       }
     ],
     "requires": [
@@ -355,6 +350,10 @@
         "label": "Metaverse"
       },
       {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      },
+      {
         "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
@@ -377,16 +376,20 @@
       {
         "id": "urn:ngm:class:ai-assisted-collaboration",
         "label": "AI-Assisted Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
       },
       {
         "id": "urn:ngm:class:neural-rendering",
@@ -407,14 +410,6 @@
       {
         "id": "urn:ngm:class:container-image",
         "label": "Container Image"
-      },
-      {
-        "id": "urn:ngm:class:gpu-acceleration",
-        "label": "GPU Acceleration"
-      },
-      {
-        "id": "urn:ngm:class:kubeedge",
-        "label": "KubeEdge"
       }
     ],
     "supports": [
@@ -439,7 +434,7 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -465,8 +460,8 @@
         "label": "3GPP"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:etsi-mec",
@@ -501,13 +496,17 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
       }
     ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
       {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
@@ -515,6 +514,10 @@
       {
         "id": "urn:ngm:class:presence-technology",
         "label": "Presence Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -527,18 +530,6 @@
       {
         "id": "urn:ngm:class:6g",
         "label": "6G"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
       }
     ]
   },

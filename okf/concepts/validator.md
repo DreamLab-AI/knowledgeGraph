@@ -38,7 +38,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:tokenomics
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:governance
 ---
 

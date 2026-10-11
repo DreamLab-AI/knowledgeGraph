@@ -10,7 +10,7 @@ quality: 0.4
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
 requires:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
 enables:
   - urn:ngm:class:public-goods-funding

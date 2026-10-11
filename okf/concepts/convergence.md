@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:platform-economy
   - urn:ngm:class:digital-twin
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:ai-and-blockchain
   - urn:ngm:class:spatial-computing-paradigm
@@ -46,7 +46,7 @@ enables:
   - urn:ngm:class:singularity
   - urn:ngm:class:autonomous-system
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:semiconductor-fabrication
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:synthetic-biology
@@ -66,8 +66,8 @@ uses:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:blockchain
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:quantum-computing
 supports:
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:industry-4-0
@@ -78,8 +78,8 @@ supports:
 standardizedBy:
   - urn:ngm:class:ieee-standards-association
   - urn:ngm:class:iso-iec-jtc-1
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-sti-directorate
 relatedTo:
   - urn:ngm:class:emerging-technologies

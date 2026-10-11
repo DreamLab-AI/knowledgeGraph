@@ -24,7 +24,7 @@ hasPart:
   - urn:ngm:class:personal-agent-runtimes
   - urn:ngm:class:progressive-disclosure-harnesses
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tool-use
   - urn:ngm:class:function-calling
   - urn:ngm:class:agent-loop
@@ -34,7 +34,7 @@ requires:
 enables:
   - urn:ngm:class:autonomous-agent
   - urn:ngm:class:workflow-orchestration
-  - urn:ngm:class:software-development-automation
+  - urn:ngm:class:software-engineering-automation
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:task-automation
@@ -74,7 +74,7 @@ supports:
   - urn:ngm:class:human-in-the-loop
 standardizedBy:
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:agent-to-agent-protocol
 relatedTo:
   - urn:ngm:class:terminal-coding-agents

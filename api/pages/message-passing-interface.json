@@ -75,7 +75,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -111,34 +111,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:distributed-computing",
-      "label": "Distributed Computing",
-      "slug": "distributed-computing"
-    },
-    {
-      "id": "urn:ngm:class:concurrent-computing",
-      "label": "Concurrent Computing",
-      "slug": "concurrent-computing"
-    },
-    {
-      "id": "urn:ngm:class:coordination-systems",
-      "label": "Coordination Systems",
-      "slug": "coordination-systems"
-    },
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud",
-      "slug": "infra-computing-and-cloud"
-    },
-    {
-      "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication",
-      "slug": "infra-network-and-comms"
-    },
-    {
-      "id": "urn:ngm:class:networked-systems",
-      "label": "Networked Systems",
-      "slug": "networked-systems"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -198,16 +173,12 @@
         "label": "Memory Bandwidth"
       },
       {
-        "id": "urn:ngm:class:fault-tolerance",
-        "label": "Partial Failure Tolerance"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       },
       {
-        "id": "urn:ngm:class:identity-and-naming",
-        "label": "Identity and Naming"
-      },
-      {
-        "id": "urn:ngm:class:message-passing",
-        "label": "Message Passing"
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
@@ -252,64 +223,6 @@
       {
         "id": "urn:ngm:class:synchronisation-primitive",
         "label": "Synchronisation Primitive"
-      },
-      {
-        "id": "urn:ngm:class:byzantine-generals-problem",
-        "label": "Byzantine Generals Problem"
-      },
-      {
-        "id": "urn:ngm:class:cap-theorem",
-        "label": "CAP Theorem"
-      },
-      {
-        "id": "urn:ngm:class:flp-impossibility",
-        "label": "FLP Impossibility"
-      },
-      {
-        "id": "urn:ngm:class:lamport-timestamps",
-        "label": "Lamport Timestamps"
-      },
-      {
-        "id": "urn:ngm:class:pacelc",
-        "label": "PACELC"
-      },
-      {
-        "id": "urn:ngm:class:two-generals-problem",
-        "label": "Two Generals Problem"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:actor-model",
-        "label": "Actor Model"
-      },
-      {
-        "id": "urn:ngm:class:bulk-synchronous-parallel",
-        "label": "Bulk Synchronous Parallel"
-      },
-      {
-        "id": "urn:ngm:class:crdt",
-        "label": "CRDT"
-      },
-      {
-        "id": "urn:ngm:class:map-reduce",
-        "label": "MapReduce"
-      },
-      {
-        "id": "urn:ngm:class:mapreduce",
-        "label": "MapReduce"
-      },
-      {
-        "id": "urn:ngm:class:paxos",
-        "label": "Paxos"
-      },
-      {
-        "id": "urn:ngm:class:pbft",
-        "label": "PBFT"
-      },
-      {
-        "id": "urn:ngm:class:raft",
-        "label": "Raft"
       }
     ],
     "contrastsWith": [
@@ -320,22 +233,6 @@
       {
         "id": "urn:ngm:class:sequential-computing",
         "label": "Sequential Computing"
-      },
-      {
-        "id": "urn:ngm:class:centralised-computing",
-        "label": "Centralised Computing"
-      },
-      {
-        "id": "urn:ngm:class:embarrassingly-parallel-batch",
-        "label": "Embarrassingly Parallel Batch"
-      },
-      {
-        "id": "urn:ngm:class:mainframe-computing",
-        "label": "Mainframe Computing"
-      },
-      {
-        "id": "urn:ngm:class:single-machine-multiprocessing",
-        "label": "Single-Machine Multiprocessing"
       }
     ],
     "bridgesTo": [
@@ -356,12 +253,20 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -378,24 +283,12 @@
         "label": "OpenCL"
       },
       {
-        "id": "urn:ngm:class:apache-flink",
-        "label": "Apache Flink"
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
       },
       {
-        "id": "urn:ngm:class:apache-kafka",
-        "label": "Apache Kafka"
-      },
-      {
-        "id": "urn:ngm:class:apache-spark",
-        "label": "Apache Spark"
-      },
-      {
-        "id": "urn:ngm:class:etcd",
-        "label": "etcd"
-      },
-      {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC"
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
       }
     ],
     "supports": [
@@ -410,26 +303,6 @@
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-consensus",
-        "label": "Blockchain Consensus"
-      },
-      {
-        "id": "urn:ngm:class:cloud-computing",
-        "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:distributed-ai-training",
-        "label": "Distributed AI Training"
-      },
-      {
-        "id": "urn:ngm:class:distributed-databases",
-        "label": "Distributed Databases"
-      },
-      {
-        "id": "urn:ngm:class:microservices",
-        "label": "Microservices"
       }
     ],
     "standardizedBy": [
@@ -442,24 +315,12 @@
         "label": "Open Standards"
       },
       {
-        "id": "urn:ngm:class:apache-software-foundation",
-        "label": "Apache Software Foundation"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
-      },
-      {
-        "id": "urn:ngm:class:g-rpc",
-        "label": "gRPC Specification"
-      },
-      {
-        "id": "urn:ngm:class:open-telemetry",
-        "label": "OpenTelemetry"
-      },
-      {
-        "id": "urn:ngm:class:quic",
-        "label": "IETF QUIC"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "partOf": [
@@ -486,20 +347,20 @@
         "label": "Concurrency"
       },
       {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
         "id": "urn:ngm:class:load-balancing",
         "label": "Load Balancing"
       },
       {
-        "id": "urn:ngm:class:cloud-native",
-        "label": "Cloud Native"
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-computing",
-        "label": "High-Performance Computing"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },

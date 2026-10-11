@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:model-pruning
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:neural-architecture-search
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:mixed-precision-training
   - urn:ngm:class:gradient-checkpointing
   - urn:ngm:class:flash-attention
@@ -71,7 +71,7 @@ supports:
   - urn:ngm:class:environmental-sustainability
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:transformers

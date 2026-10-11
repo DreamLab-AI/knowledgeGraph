@@ -1,6 +1,6 @@
 Attribute-Based Access Control (ABAC) is an authorisation model that grants or denies access by evaluating policies against attributes of the subject, resource, action, and environment rather than against static role assignments. Decisions are computed dynamically from these attributes at request time, enabling fine-grained, context-aware control. ABAC is a cornerstone of zero-trust architectures because it can express rich conditional rules without proliferating roles.
 
-- Attribute-Based Access Control evaluates [[Access Control Policy]] rules against attributes of the subject, resource, action and environment to reach an [[Authorization]] decision at request time.
+- Attribute-Based Access Control evaluates [[Access Control Policy]] rules against attributes of the subject, resource, action and environment to reach an [[Authorisation]] decision at request time.
 - It generalises older models by computing access dynamically, and forms a key building block of [[Zero Trust Architecture]] and modern [[Identity and Access Management]].
 
 ### Overview
@@ -22,7 +22,7 @@ Attribute-Based Access Control (ABAC) is an authorisation model that grants or d
 
 - Policy decision and enforcement points separate the rule evaluation from the gate that allows or blocks the request.
 - Attribute providers supply trusted, freshly resolved values, depending on prior [[Authentication]].
-- Policy languages express boolean combinations of attribute predicates, implementing [[Authorization]].
+- Policy languages express boolean combinations of attribute predicates, implementing [[Authorisation]].
 - Continuous evaluation re-checks attributes per request, enabling [[Data Minimisation]] and least-exposure access.
 
 ### Applications

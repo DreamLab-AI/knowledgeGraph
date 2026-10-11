@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-and-geospatial-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation and geospatial sensing is the domain covering satellite observation of the planet and the use of the resulting data, as set out for satellite Earth observation in the CEOS handbook.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

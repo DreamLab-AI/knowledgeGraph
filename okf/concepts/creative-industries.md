@@ -45,7 +45,7 @@ uses:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:creative-software
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:foundation-model
   - urn:ngm:class:automated-design
   - urn:ngm:class:text-to-image

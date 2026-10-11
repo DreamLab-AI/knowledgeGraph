@@ -20,10 +20,10 @@ requires:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:parallel-computing
 enables:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:bert
   - urn:ngm:class:gpt
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:in-context-learning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:foundation-model
@@ -41,8 +41,8 @@ standardizedBy:
   - urn:ngm:class:iso-iec-22989-2022
   - urn:ngm:class:nist-ai-600-1
 relatedTo:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:self-attention
   - urn:ngm:class:neural-scaling-law

@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:linked-data
   - urn:ngm:class:rdf
 enables:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 bridgesTo:
   - urn:ngm:class:web-standards
   - urn:ngm:class:knowledge-graphs

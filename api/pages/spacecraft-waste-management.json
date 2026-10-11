@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-waste-management",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft waste management is the collection, handling and disposal or processing of crew and vehicle waste as one function of a life support system.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

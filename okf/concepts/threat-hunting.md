@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:intrusion-detection-system
 uses:
   - urn:ngm:class:behavioural-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:endpoint-detection-and-response
 supports:
   - urn:ngm:class:zero-trust-architecture

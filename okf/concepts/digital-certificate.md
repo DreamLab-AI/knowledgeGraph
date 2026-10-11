@@ -15,7 +15,7 @@ hasPart:
 requires:
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:cryptographic-keys
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:secure-communication
@@ -25,19 +25,19 @@ enables:
   - urn:ngm:class:non-repudiation
 implements:
   - urn:ngm:class:x509-standard
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 contrastsWith:
   - urn:ngm:class:self-signed-certificate
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 bridgesTo:
   - urn:ngm:class:did-nostr-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:blockchain-identity
 uses:
   - urn:ngm:class:asymmetric-encryption
   - urn:ngm:class:hash-function
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:code-signing
 standardizedBy:
   - urn:ngm:class:ietf

@@ -21,7 +21,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:nft
   - urn:ngm:class:nft-marketplace
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 relatedTo:
   - urn:ngm:class:virtual-economy-infrastructure
 ---

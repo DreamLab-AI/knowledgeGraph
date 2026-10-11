@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:infra-computing-and-cloud
   - urn:ngm:class:operating-system
   - urn:ngm:class:safety-critical-systems
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:operating-system
   - urn:ngm:class:control-system
   - urn:ngm:class:cyber-physical-systems

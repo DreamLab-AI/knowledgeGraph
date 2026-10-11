@@ -108,7 +108,7 @@ SubClassOf(ai:EdgeAI
 - Edge AI resolves this mismatch by pushing inference computation to the device itself, accepting harder constraints on model size and computational budget in exchange for reduced latency, preserved privacy, and resilience to connectivity loss.
 - Edge AI sits at the convergence of three historically separate disciplines:
   - [[Deep Learning]] — the training pipelines, loss functions, and model architectures that provide intelligence, developed primarily for GPU-class hardware.
-  - [[Embedded Systems]] engineering — the hardware design, power management, real-time operating systems, and firmware development that make silicon usable in constrained environments.
+  - [[Embedded System]] engineering — the hardware design, power management, real-time operating systems, and firmware development that make silicon usable in constrained environments.
   - [[Edge Computing]] infrastructure — the network topology design, device orchestration frameworks, over-the-air management platforms, and distributed data pipelines that make large-scale edge deployments operable.
 - The value proposition of Edge AI rests on four architectural pillars:
   - **Latency reduction**: inference in microseconds to low milliseconds rather than hundreds of milliseconds including cloud round-trip — decisive for real-time safety and interactive applications.

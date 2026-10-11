@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:control-system
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:control-system
 ---
 

@@ -31,7 +31,7 @@ requires:
   - urn:ngm:class:content-licensing
   - urn:ngm:class:embedding-model
   - urn:ngm:class:inference-infrastructure
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:tokeniser
   - urn:ngm:class:vector-database
   - urn:ngm:class:web-crawler
@@ -88,13 +88,13 @@ standardizedBy:
   - urn:ngm:class:c2-pa-content-credentials
   - urn:ngm:class:eu-ai-act-regulatory-instrument-article-50
   - urn:ngm:class:ico-ai-guidance
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:uk-online-safety-act
   - urn:ngm:class:uk-online-safety-act
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:trec-rag-track
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:vector-database
   - urn:ngm:class:web-search
   - urn:ngm:class:generative-ai

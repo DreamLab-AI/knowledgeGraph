@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:layer-normalisation
 partOf:
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:attention-mechanism
 relatedTo:
   - urn:ngm:class:large-language-model

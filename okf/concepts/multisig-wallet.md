@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-signature
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:custody
 relatedTo:
   - urn:ngm:class:on-chain-governance

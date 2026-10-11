@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-doppler-measurement",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS Doppler measurement is an estimate of the received carrier-frequency shift caused chiefly by satellite-receiver line-of-sight motion and modified by clock-frequency error.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

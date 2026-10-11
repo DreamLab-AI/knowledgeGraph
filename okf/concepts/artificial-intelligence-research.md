@@ -32,7 +32,7 @@ enables:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:artificial-general-intelligence
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:alignment-research
@@ -57,7 +57,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:applied-machine-learning
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:applied-machine-learning
   - urn:ngm:class:natural-language-processing
@@ -73,7 +73,7 @@ uses:
   - urn:ngm:class:alan-turing-institute
 supports:
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:alignment-research

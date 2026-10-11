@@ -399,6 +399,10 @@
         "label": "Cybersecurity"
       },
       {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
@@ -417,10 +421,6 @@
       {
         "id": "urn:ngm:class:multi-stakeholder-governance",
         "label": "Multi-Stakeholder Governance"
-      },
-      {
-        "id": "urn:ngm:class:public-administration",
-        "label": "Public Administration"
       }
     ]
   },
@@ -435,8 +435,8 @@
       "label": "Death of the Internet"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "digital-identity-wallet",

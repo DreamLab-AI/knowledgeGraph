@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:network-component
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:gossip-protocol
   - urn:ngm:class:peer-discovery
@@ -36,7 +36,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:client-server-architecture
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:federated-learning
 uses:

@@ -51,7 +51,7 @@ relatedTo:
   - urn:ngm:class:emotion-recognition
   - urn:ngm:class:empathetic-ai
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:multimodal-ai-architecture-ai

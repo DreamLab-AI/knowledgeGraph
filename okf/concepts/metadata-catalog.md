@@ -8,7 +8,7 @@ description: A metadata catalog is a centralised, searchable inventory of an org
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 hasPart:
   - urn:ngm:class:metadata-management
   - urn:ngm:class:data-lineage
@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:data-management
   - urn:ngm:class:data-quality
 partOf:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
 relatedTo:
   - urn:ngm:class:master-data-management
   - urn:ngm:class:data-quality

@@ -4,6 +4,7 @@ type: Class
 title: Differential Interferometric SAR
 resource: urn:ngm:class:differential-interferometric-sar
 domain: earth-observation-and-geospatial-sensing
+description: Differential interferometric SAR is a technique that compares the phase of radar images of the same area acquired at different times to measure small changes in the position of the ground surface.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Differential Interferometric SAR
+
+Differential interferometric SAR is a technique that compares the phase of radar images of the same area acquired at different times to measure small changes in the position of the ground surface.[^1][^2]

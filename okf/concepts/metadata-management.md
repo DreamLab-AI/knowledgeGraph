@@ -15,7 +15,7 @@ is-a:
   - urn:ngm:class:information-architecture
   - urn:ngm:class:enterprise-architecture
 hasPart:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:data-contracts
   - urn:ngm:class:data-discovery
   - urn:ngm:class:data-lineage
@@ -54,13 +54,13 @@ dependsOn:
   - urn:ngm:class:owl
 implements:
   - urn:ngm:class:apache-atlas
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:open-lineage
   - urn:ngm:class:open-metadata
   - urn:ngm:class:datahub
   - urn:ngm:class:openmetadata
   - urn:ngm:class:unity-catalog
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:microsoft-purview
 contrastsWith:
   - urn:ngm:class:data-silo
@@ -71,26 +71,26 @@ bridgesTo:
   - urn:ngm:class:enterprise-architecture
 uses:
   - urn:ngm:class:apache-kafka
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:owl
   - urn:ngm:class:rdf
   - urn:ngm:class:rest-api
   - urn:ngm:class:sparql
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
 supports:
   - urn:ngm:class:business-intelligence
   - urn:ngm:class:data-engineering
   - urn:ngm:class:data-mesh
   - urn:ngm:class:mlops
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:apache-atlas
   - urn:ngm:class:dcat
   - urn:ngm:class:dublin-core
   - urn:ngm:class:open-lineage
-  - urn:ngm:class:provenance-standard
+  - urn:ngm:class:w3-c-prov
   - urn:ngm:class:iso-gql
   - urn:ngm:class:datahub-metadata-model
 relatedTo:

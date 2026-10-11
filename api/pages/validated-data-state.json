@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validated-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A validated data state is a SWEET data state reached after a validation process has acted on the data.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

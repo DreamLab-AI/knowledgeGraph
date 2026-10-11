@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptography
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 bridgesTo:
   - urn:ngm:class:privacy
 ---

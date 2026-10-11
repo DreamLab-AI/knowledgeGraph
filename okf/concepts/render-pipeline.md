@@ -44,7 +44,7 @@ uses:
   - urn:ngm:class:physically-based-rendering
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:physics-engine

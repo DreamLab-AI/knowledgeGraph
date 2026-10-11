@@ -8,7 +8,7 @@ description: Quantum error correction is the set of techniques that protect quan
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 hasPart:
   - urn:ngm:class:qubit
   - urn:ngm:class:quantum-gate
@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:qubit
   - urn:ngm:class:linear-algebra
 enables:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:quantum-cryptography
 dependsOn:
   - urn:ngm:class:qubit
@@ -30,9 +30,9 @@ supports:
   - urn:ngm:class:quantum-gate
   - urn:ngm:class:error-correction
 partOf:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 relatedTo:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:infrastructure
 ---
 

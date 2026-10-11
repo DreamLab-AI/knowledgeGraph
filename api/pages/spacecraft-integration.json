@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-integration",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spacecraft integration is the work of bringing a spacecraft's hardware and on-board systems together and making the assembled spacecraft compatible with its launch vehicle.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

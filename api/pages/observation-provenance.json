@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:observation-provenance",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Observation provenance is information about the entities, activities and people involved in producing an observation, which can be used to assess its quality, reliability or trustworthiness.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

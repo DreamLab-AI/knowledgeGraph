@@ -57,8 +57,8 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:io-t",
-        "label": "IoT"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       },
       {
         "id": "urn:ngm:class:infrastructure",

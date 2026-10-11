@@ -18,7 +18,7 @@ is-a:
 hasPart:
   - urn:ngm:class:biometric-authentication
   - urn:ngm:class:secure-enclave
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:private-key-store
   - urn:ngm:class:biometric-authentication
@@ -30,8 +30,8 @@ requires:
   - urn:ngm:class:cryptographic-library
   - urn:ngm:class:network-connectivity
   - urn:ngm:class:secure-element
-  - urn:ngm:class:tee
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:trusted-execution-environment
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:mobile-operating-system
   - urn:ngm:class:trust-anchor-list
 enables:
@@ -46,7 +46,7 @@ enables:
 dependsOn:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:elliptic-curve-cryptography
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:trust-frameworks
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:biometric-authentication
@@ -92,7 +92,7 @@ standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:open-id-foundation
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:european-commission-eudi-arf
 relatedTo:
   - urn:ngm:class:government-digital-identity

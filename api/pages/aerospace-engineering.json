@@ -48,8 +48,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -74,7 +74,7 @@
         "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -107,9 +107,9 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     }
   ],
   "inheritedRelations": {
@@ -173,12 +173,12 @@
         "label": "Stakeholder Analysis"
       },
       {
-        "id": "urn:ngm:class:agile-software-development",
-        "label": "Agile Methodology"
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
       },
       {
-        "id": "urn:ngm:class:code-review",
-        "label": "Code Review"
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
       }
     ],
     "enables": [
@@ -227,14 +227,6 @@
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -259,12 +251,8 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:machine-learning-engineering",
-        "label": "Machine Learning Engineering"
-      },
-      {
-        "id": "urn:ngm:class:security-engineering",
-        "label": "Security Engineering"
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
@@ -281,20 +269,8 @@
         "label": "Software Engineering"
       },
       {
-        "id": "urn:ngm:class:containerisation",
-        "label": "Containerisation"
-      },
-      {
-        "id": "urn:ngm:class:infrastructure-as-code",
-        "label": "Infrastructure as Code"
-      },
-      {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability"
-      },
-      {
-        "id": "urn:ngm:class:static-analysis",
-        "label": "Static Analysis"
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
       }
     ],
     "supports": [
@@ -341,16 +317,12 @@
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "relatedTo": [
@@ -379,12 +351,12 @@
         "label": "Systems Thinking"
       },
       {
-        "id": "urn:ngm:class:domain-driven-design",
-        "label": "Domain-Driven Design"
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
       },
       {
-        "id": "urn:ngm:class:refactoring",
-        "label": "Refactoring"
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },

@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:transaction
   - urn:ngm:class:block-header
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:nft-bridging
   - urn:ngm:class:cross-chain-liquidity
 relatedTo:

@@ -102,12 +102,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:iso-iec-tr-24028",
@@ -277,10 +277,6 @@
       "label": "AI Impact Assessment"
     },
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "ai-policy",
       "label": "ai policy"
     },
@@ -353,8 +349,8 @@
       "label": "Integrity Council for the Voluntary Carbon Market"
     },
     {
-      "slug": "model-cards",
-      "label": "Model Cards"
+      "slug": "model-card",
+      "label": "Model Card"
     },
     {
       "slug": "regulatory-clarity",

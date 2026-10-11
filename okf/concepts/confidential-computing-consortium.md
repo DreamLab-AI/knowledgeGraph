@@ -19,13 +19,13 @@ uses:
   - urn:ngm:class:attestation
 supports:
   - urn:ngm:class:confidential-computing
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 standardizedBy:
   - urn:ngm:class:standards-documentation
 partOf:
   - urn:ngm:class:standards-documentation
 relatedTo:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:homomorphic-encryption
 ---
 

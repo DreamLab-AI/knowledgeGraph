@@ -8,7 +8,7 @@ description: A large multimodal language model released by OpenAI in 2023, capab
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 requires:
   - urn:ngm:class:transformer
   - urn:ngm:class:openai-research-organisation
@@ -34,7 +34,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:prompt-engineering
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
 relatedTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:scaling-laws

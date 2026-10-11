@@ -10,7 +10,7 @@ quality: 0.7
 is-a:
   - urn:ngm:class:bc-token-and-asset
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Token Sale

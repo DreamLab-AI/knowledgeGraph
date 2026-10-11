@@ -19,7 +19,7 @@ enables:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:bdi-model
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:goal
   - urn:ngm:class:objective

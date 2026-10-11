@@ -28,8 +28,8 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:cash-transaction
 bridgesTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:metaverse
 uses:
   - urn:ngm:class:blockchain

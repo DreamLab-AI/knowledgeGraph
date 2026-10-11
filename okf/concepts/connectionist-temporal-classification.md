@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:real-time-translation
 dependsOn:
   - urn:ngm:class:deep-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:sequence-to-sequence
   - urn:ngm:class:speech-to-text

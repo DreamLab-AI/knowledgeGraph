@@ -4,6 +4,7 @@ type: Class
 title: Asteroid
 resource: urn:ngm:class:asteroid
 domain: space-science-and-systems
+description: An asteroid is a rocky remnant of the formation of the solar system, sometimes called a minor planet.[^1][^2]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Asteroid
+
+An asteroid is a rocky remnant of the formation of the solar system, sometimes called a minor planet.[^1][^2]

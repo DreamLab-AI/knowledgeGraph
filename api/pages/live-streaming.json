@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -57,8 +57,8 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "supports": [
@@ -121,7 +121,7 @@
         "label": "Volumetric Video"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {

@@ -37,7 +37,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:trade-finance

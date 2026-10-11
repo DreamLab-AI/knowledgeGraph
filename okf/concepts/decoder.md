@@ -31,10 +31,10 @@ uses:
   - urn:ngm:class:feed-forward-network
   - urn:ngm:class:positional-encoding
 partOf:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:transformer
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:gpt
   - urn:ngm:class:speculative-decoding
   - urn:ngm:class:causal-language-modelling

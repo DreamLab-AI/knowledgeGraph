@@ -4,6 +4,7 @@ type: Class
 title: Infrared Astronomy
 resource: urn:ngm:class:infrared-astronomy
 domain: space-science-and-systems
+description: Infrared astronomy is the study of astronomical objects through their infrared radiation, which has longer wavelengths than visible light.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Infrared Astronomy
+
+Infrared astronomy is the study of astronomical objects through their infrared radiation, which has longer wavelengths than visible light.[^1]

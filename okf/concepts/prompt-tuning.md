@@ -23,7 +23,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:prefix-tuning
   - urn:ngm:class:adapter-modules
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:full-fine-tuning
 bridgesTo:
   - urn:ngm:class:prompt-engineering
@@ -41,7 +41,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
 ---
 
 # Prompt Tuning

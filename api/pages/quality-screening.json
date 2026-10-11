@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-screening",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Quality screening is the application of quality checks and flags to Earth observation products so that users can exclude or weight observations according to their suitability.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

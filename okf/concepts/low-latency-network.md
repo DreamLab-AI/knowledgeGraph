@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:latency
 uses:
   - urn:ngm:class:network-protocol
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 supports:
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:real-time-communication

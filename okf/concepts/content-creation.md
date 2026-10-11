@@ -34,7 +34,7 @@ enables:
   - urn:ngm:class:knowledge-management
 dependsOn:
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:natural-language-processing

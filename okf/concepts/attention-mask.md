@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:ai-model-architecture
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:albert
 bridgesTo:
   - urn:ngm:class:telecollaboration

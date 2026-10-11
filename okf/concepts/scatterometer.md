@@ -4,6 +4,7 @@ type: Class
 title: Scatterometer
 resource: urn:ngm:class:scatterometer
 domain: earth-observation-and-geospatial-sensing
+description: A scatterometer is a generally non-imaging active microwave sensor used to make precise quantitative measurements of the amount of energy backscattered from targets.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -12,3 +13,5 @@ relatedTo:
 ---
 
 # Scatterometer
+
+A scatterometer is a generally non-imaging active microwave sensor used to make precise quantitative measurements of the amount of energy backscattered from targets.[^1]

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:cryptographic-protocol
 relatedTo:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:self-sovereign-identity
 ---
 

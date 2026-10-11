@@ -33,7 +33,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:mempool
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:layer-2-scaling
 partOf:

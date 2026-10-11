@@ -14,7 +14,7 @@ is-a:
 hasPart:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:model-pruning
-  - urn:ngm:class:model-quantization
+  - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:knowledge-distillation
   - urn:ngm:class:neural-architecture-search
   - urn:ngm:class:inference-engine
@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:neural-network-quantisation
   - urn:ngm:class:hardware-accelerator
   - urn:ngm:class:neural-processing-unit
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:model-compression
   - urn:ngm:class:hardware-acceleration
   - urn:ngm:class:tensor-flow-lite
@@ -46,7 +46,7 @@ enables:
   - urn:ngm:class:healthcare-ai
   - urn:ngm:class:industrial-io-t
 dependsOn:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:neural-processing-unit
   - urn:ngm:class:edge-computing
   - urn:ngm:class:deep-learning
@@ -89,7 +89,7 @@ standardizedBy:
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:onnx
   - urn:ngm:class:iso-26262
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:tiny-ml

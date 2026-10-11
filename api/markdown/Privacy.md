@@ -670,7 +670,7 @@ Implement appropriate safeguards:
 
 ### Web things
 
-- [[Semantic Web Linked Data Standard]]
+- [[Semantic Web]]
 - [[Semantic Spatial Web Layer]]
 - [[Decentralised Web]]
 - [[AI Governance Law and Privacy]]

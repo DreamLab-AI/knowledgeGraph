@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tachocline",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Tachocline is the name for the thin rotational shear layer near the base of the Sun's convection zone, where the differential rotation of the convective envelope gives way to the nearly uniform rotation of the radiative interior.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-interior",

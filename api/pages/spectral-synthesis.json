@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spectral-synthesis",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Spectral synthesis, in the SWEET ontology, is a data analysis service that sits beside spectral analysis rather than beneath it [^1]. It is best read as the inverse of spectral analysis, rebuilding a signal from its spectral components.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

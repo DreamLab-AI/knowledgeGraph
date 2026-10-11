@@ -43,7 +43,7 @@ The InterPlanetary File System (IPFS) is a peer-to-peer, content-addressed hyper
 - **Multiformats** — A collection of self-describing protocol standards (Multihash, Multiaddr, Multicodec, Multibase) that underpin CID construction and make IPFS interoperable with future hash algorithms and transports.
 - **IPLD Specifications** — Define the data model, codecs (dag-pb, dag-cbor, dag-json, raw), and traversal selectors used across IPFS, Filecoin, and compatible projects.
 - **libp2p Specifications** — Network layer standards maintained separately, now used by Ethereum (post-Merge consensus layer), Polkadot, and other ecosystems beyond IPFS.
-- **W3C / Distributed Web** — IPFS intersects with W3C's work on [[Decentralised Identifiers]] (DIDs) and [[Verifiable Credentials]] (VCs) where content integrity proofs anchor to IPFS CIDs.
+- **W3C / Distributed Web** — IPFS intersects with W3C's work on [[Decentralised Identifier]] (DIDs) and [[Verifiable Credential]] (VCs) where content integrity proofs anchor to IPFS CIDs.
 - Protocol Labs is a member of the InterPlanetary Alliance and contributes to [[Decentralised Web]] standards forums such as the Decentralised Web Summit.
 
 ### Semantic Classification

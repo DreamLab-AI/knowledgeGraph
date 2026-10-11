@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:economic-mechanism
 relatedTo:
   - urn:ngm:class:liquidity-provision
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 ---
 
 # Stable Swap Invariant

@@ -150,7 +150,7 @@ Liquidity Provision is the decentralised financial mechanism whereby cryptocurre
 
 - **Liquidity Provision** democratises market-making—the activity of quoting continuous two-sided prices to facilitate asset exchange—transforming what was historically an institutional prerogative requiring large capital bases, co-location infrastructure, regulatory authorisation, and relationships with exchange operators into a permissionless activity accessible to any wallet holder with paired token assets.
 
-  The mechanism emerged from Vitalik Buterin's 2016 blog post sketching on-chain prediction-market-style DEX design, crystallised in Hayden Adams' November 2018 Uniswap V1 deployment on [[Ethereum Smart Contract Platform]] mainnet, and evolved through rapid protocol iteration into a fundamental pillar of the [[Decentralized Finance (DeFi)]] ecosystem managing $85–120B in total value locked (TVL) as of mid-2025.
+  The mechanism emerged from Vitalik Buterin's 2016 blog post sketching on-chain prediction-market-style DEX design, crystallised in Hayden Adams' November 2018 Uniswap V1 deployment on [[Ethereum]] mainnet, and evolved through rapid protocol iteration into a fundamental pillar of the [[Decentralized Finance (DeFi)]] ecosystem managing $85–120B in total value locked (TVL) as of mid-2025.
 
   At its mathematical core, an [[Automated Market Maker]] (AMM) defines a pricing function over token reserves. Uniswap V2's constant-product invariant x·y = k guarantees that any trade moving reserves from (x, y) to (x + Δx, y − Δy) satisfies (x + Δx)(y − Δy) = k absent fee capture, yielding execution price Δy/Δx ≈ y/x for infinitesimal trades and increasingly adverse prices for larger trades as the marginal price traces the hyperbolic curve.
 

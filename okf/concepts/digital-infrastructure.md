@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
 hasPart:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:edge-computing
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:data-centre
@@ -40,7 +40,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:ietf
   - urn:ngm:class:ieee
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
 relatedTo:
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:data-governance

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:viewing-geometry",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Viewing geometry is the set of angles that describe the directions from an observed point on the Earth to the sensor and to the sun, such as the viewing zenith angle and the solar zenith angle.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

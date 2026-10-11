@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:artificial-intelligence
 relatedTo:
   - urn:ngm:class:frontier-model-evaluation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # AI Benchmarking

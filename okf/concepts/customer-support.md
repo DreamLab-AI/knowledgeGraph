@@ -39,7 +39,7 @@ dependsOn:
 implements:
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:retrieval-augmented-generation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 contrastsWith:
   - urn:ngm:class:manual-customer-service
   - urn:ngm:class:unstructured-help-desk
@@ -47,7 +47,7 @@ uses:
   - urn:ngm:class:chatbots
   - urn:ngm:class:dialogue-system
   - urn:ngm:class:information-retrieval
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:crm
   - urn:ngm:class:speech-recognition

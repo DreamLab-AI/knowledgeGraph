@@ -16,10 +16,10 @@ hasPart:
   - urn:ngm:class:version-control
   - urn:ngm:class:communication-protocol
 uses:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 relatedTo:
   - urn:ngm:class:dc-workspace-tools
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:collaboration-platform
   - urn:ngm:class:asynchronous-collaboration
 ---

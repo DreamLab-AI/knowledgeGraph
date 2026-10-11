@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:audio-processing
 relatedTo:
   - urn:ngm:class:music-information-retrieval
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 ---
 
 # Music Generation

@@ -149,7 +149,7 @@ A humanoid robot is an autonomous or semi-autonomous mechanical system whose ove
 
 ## About Humanoid Robots
 
-- **Humanoid robots** represent the most technically ambitious class of autonomous systems: embodied agents whose physical form deliberately reproduces the human musculoskeletal schema to exploit the ergonomic affordances of a world designed for human anatomy. The defining constraint—simultaneous real-time bipedal balance and dexterous task execution—places humanoid robotics at the intersection of [[Control Theory]], [[Rigid Body Dynamics]], [[Machine Learning Discipline]], and [[Embodied AI]].
+- **Humanoid robots** represent the most technically ambitious class of autonomous systems: embodied agents whose physical form deliberately reproduces the human musculoskeletal schema to exploit the ergonomic affordances of a world designed for human anatomy. The defining constraint—simultaneous real-time bipedal balance and dexterous task execution—places humanoid robotics at the intersection of [[Control Theory]], [[Rigid Body Dynamics]], [[Machine Learning]], and [[Embodied AI]].
 - The anthropomorphic form factor is not aesthetic convention. Warehouses, factories, kitchens, care homes, and offices share a common design vocabulary: stairs, doorways approximately 800 mm wide, work surfaces at 850-950 mm height, hand-tools sized for human grip, keyboards and touchscreens positioned for seated operators. A robot that matches this envelope can deploy into existing infrastructure without costly retrofit—the core economic thesis behind the 2024-2026 commercialisation wave.
 
 ### Biomechanical Foundation and the Stability Problem

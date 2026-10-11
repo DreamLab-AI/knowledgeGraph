@@ -8,7 +8,7 @@ description: A liquidation mechanism is the automated process by which a decentr
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:price-oracle
   - urn:ngm:class:over-collateralisation

@@ -8,7 +8,7 @@
   "definition": "TLS 1.3 (Transport Layer Security version 1.3, standardised in RFC 8446, August 2018) is the current major version of the TLS protocol, redesigned to eliminate legacy cryptographic weaknesses, reduce handshake round-trips from two to one (zero for session resumption), mandate forward secrecy on every connection, and restrict the cipher suite to a small set of authenticated encryption algorithms. It replaces TLS 1.2 as the baseline secure transport for HTTPS, QUIC, and virtually all authenticated internet communications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:tls",
+      "id": "urn:ngm:class:transport-layer-security",
       "label": "Transport Layer Security"
     },
     {
@@ -23,7 +23,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -52,10 +52,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:tls",
-        "label": "TLS 1.2"
-      },
       {
         "id": "urn:ngm:class:ssl",
         "label": "SSL"
@@ -173,6 +169,14 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      },
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      },
+      {
         "id": "urn:ngm:class:authentication-protocol",
         "label": "Authentication Protocol"
       },
@@ -195,20 +199,20 @@
       {
         "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:symmetric-encryption",
-        "label": "Symmetric Encryption"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
       {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
         "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
       },
       {
         "id": "urn:ngm:class:digital-signature",
@@ -229,24 +233,32 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
-      },
-      {
-        "id": "urn:ngm:class:hardware-security-module",
-        "label": "Hardware Security Module"
-      },
-      {
-        "id": "urn:ngm:class:random-number-generation",
-        "label": "Random Number Generation"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
       {
         "id": "urn:ngm:class:mutual-tls",
         "label": "Mutual TLS"
       },
       {
         "id": "urn:ngm:class:secure-communication",
-        "label": "Encrypted Communication"
+        "label": "Secure Communication"
       },
       {
         "id": "urn:ngm:class:blockchain-security",
@@ -255,22 +267,6 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
-      },
-      {
-        "id": "urn:ngm:class:privacy-preservation",
-        "label": "Privacy Preservation"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:authentication",
-        "label": "Authentication"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
       }
     ],
     "dependsOn": [
@@ -291,12 +287,12 @@
         "label": "Number Theory"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -333,7 +329,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -381,6 +377,10 @@
         "label": "Federated Learning"
       },
       {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
         "id": "urn:ngm:class:multi-party-computation",
         "label": "Multi-Party Computation"
       },
@@ -389,20 +389,16 @@
         "label": "Post-Quantum-Cryptography"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:ai-governance-law-and-privacy",
-        "label": "AI Governance Law and Privacy"
       }
     ],
     "uses": [
@@ -415,6 +411,10 @@
         "label": "Diffie-Hellman Key Exchange"
       },
       {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
         "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
       },
@@ -423,20 +423,16 @@
         "label": "HKDF"
       },
       {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
-      },
-      {
-        "id": "urn:ngm:class:ed-dsa",
-        "label": "EdDSA"
-      },
-      {
-        "id": "urn:ngm:class:hmac",
-        "label": "HMAC"
-      },
-      {
-        "id": "urn:ngm:class:schnorr-signature",
-        "label": "Schnorr Signature"
       }
     ],
     "supports": [
@@ -445,12 +441,12 @@
         "label": "API Security"
       },
       {
-        "id": "urn:ngm:class:service-mesh",
-        "label": "Service Mesh"
+        "id": "urn:ngm:class:http",
+        "label": "HTTPS"
       },
       {
-        "id": "urn:ngm:class:zero-trust-architecture",
-        "label": "Zero Trust Security"
+        "id": "urn:ngm:class:secure-email",
+        "label": "Secure Email"
       },
       {
         "id": "urn:ngm:class:digital-asset",
@@ -474,6 +470,10 @@
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
       {
         "id": "urn:ngm:class:nist-post-quantum-cryptography",
         "label": "NIST Post-Quantum Cryptography"
@@ -501,10 +501,6 @@
       {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
       }
     ],
     "partOf": [
@@ -523,8 +519,16 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      },
+      {
         "id": "urn:ngm:class:encrypted-client-hello",
         "label": "Encrypted Client Hello"
+      },
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
       },
       {
         "id": "urn:ngm:class:public-key-cryptography",
@@ -545,14 +549,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:homomorphic-encryption",
-        "label": "Homomorphic Encryption"
       }
     ]
   },

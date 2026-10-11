@@ -95,7 +95,7 @@ relatedTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:data-privacy
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Competency Based Education

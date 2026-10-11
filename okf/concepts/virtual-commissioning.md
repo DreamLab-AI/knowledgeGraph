@@ -20,7 +20,7 @@ uses:
   - urn:ngm:class:control-system
   - urn:ngm:class:simulation-software
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Virtual Commissioning

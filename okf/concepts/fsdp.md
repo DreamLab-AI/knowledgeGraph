@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:distributed-training
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:data-parallelism
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:all-gather-collective
   - urn:ngm:class:reduce-scatter-collective
@@ -24,7 +24,7 @@ requires:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:collective-communication
   - urn:ngm:class:gradient-synchronisation
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:py-torch
   - urn:ngm:class:nvidia-nccl
   - urn:ngm:class:mixed-precision-training
@@ -33,7 +33,7 @@ enables:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:model-scaling
   - urn:ngm:class:checkpoint-resharding
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:distributed-inference
@@ -58,7 +58,7 @@ contrastsWith:
   - urn:ngm:class:horovod
   - urn:ngm:class:pipeline-parallelism
 uses:
-  - urn:ngm:class:python-pytorch-deep-learning-stack
+  - urn:ngm:class:py-torch
   - urn:ngm:class:gradient-checkpointing
   - urn:ngm:class:mixed-precision-training
   - urn:ngm:class:safetensors
@@ -71,7 +71,7 @@ supports:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:checkpoints
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 standardizedBy:
   - urn:ngm:class:pytorch-foundation
   - urn:ngm:class:meta-ai

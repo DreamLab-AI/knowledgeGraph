@@ -9,16 +9,31 @@ maturity: mature
 quality: 0.8
 is-a:
   - urn:ngm:class:diffusion-model
+  - urn:ngm:class:text-to-image
 enables:
   - urn:ngm:class:text-to-image-generation
   - urn:ngm:class:concept-art
+  - urn:ngm:class:ip-adapter
+  - urn:ngm:class:control-net
+  - urn:ngm:class:fine-tuning
+  - urn:ngm:class:style-transfer
 implements:
   - urn:ngm:class:latent-diffusion
+contrastsWith:
+  - urn:ngm:class:diffusion-models
+uses:
+  - urn:ngm:class:transformer
+  - urn:ngm:class:cross-attention
+  - urn:ngm:class:attention-mechanism
 partOf:
   - urn:ngm:class:generative-ai
 relatedTo:
   - urn:ngm:class:automatic1111
   - urn:ngm:class:image-generation
+  - urn:ngm:class:latent-diffusion
+  - urn:ngm:class:generative-model
+  - urn:ngm:class:text-to-image
+  - urn:ngm:class:inpainting
 ---
 
 # Stable Diffusion

@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:ecmascript
   - urn:ngm:class:web-standards
 contrastsWith:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 bridgesTo:
   - urn:ngm:class:user-interface-standard
 uses:
@@ -27,7 +27,7 @@ partOf:
   - urn:ngm:class:standards
 relatedTo:
   - urn:ngm:class:iso
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
   - urn:ngm:class:standards-organization
 ---

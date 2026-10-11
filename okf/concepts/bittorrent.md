@@ -13,10 +13,10 @@ requires:
   - urn:ngm:class:bandwidth
   - urn:ngm:class:network-protocol
 enables:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:replication
 contrastsWith:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 uses:
   - urn:ngm:class:distributed-hash-table
   - urn:ngm:class:content-addressing

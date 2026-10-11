@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-omics",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight omics is the generation and analysis of genomic, transcriptomic, proteomic and metabolomic data from spaceflight and related experiments. NASA's GeneLab is an open-access repository for storing, sharing and analysing the data.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

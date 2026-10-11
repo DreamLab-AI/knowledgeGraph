@@ -42,8 +42,8 @@
         "label": "Incident Reporting"
       },
       {
-        "id": "urn:ngm:class:lei-system",
-        "label": "LEI System"
+        "id": "urn:ngm:class:legal-entity-identifier",
+        "label": "Legal Entity Identifier"
       },
       {
         "id": "urn:ngm:class:suspicious-activity-report",
@@ -80,7 +80,7 @@
         "label": "Data Quality Management"
       },
       {
-        "id": "urn:ngm:class:lei-system",
+        "id": "urn:ngm:class:legal-entity-identifier",
         "label": "Legal Entity Identifier"
       },
       {
@@ -182,7 +182,7 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
       },
       {
@@ -228,8 +228,8 @@
         "label": "ISO 20022"
       },
       {
-        "id": "urn:ngm:class:lei-system",
-        "label": "LEI System"
+        "id": "urn:ngm:class:legal-entity-identifier",
+        "label": "Legal Entity Identifier"
       },
       {
         "id": "urn:ngm:class:rest-api",
@@ -246,7 +246,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -532,7 +532,7 @@
         "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -544,7 +544,7 @@
         "label": "Value Alignment"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -552,13 +552,13 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -578,30 +578,26 @@
         "label": "Data Anarchy"
       },
       {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
-      },
-      {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
       },
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-guidelines",
+        "label": "Voluntary Guidelines"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
         "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
-        "label": "Tokenisation"
       },
       {
         "id": "urn:ngm:class:smart-contracts",
@@ -616,12 +612,16 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ],
     "uses": [
@@ -638,7 +638,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -722,7 +722,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],

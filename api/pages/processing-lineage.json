@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:processing-lineage",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Processing lineage is the record of the entities, activities and processing steps that produced a data product, held as provenance information that can be used to assess its quality and trustworthiness.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

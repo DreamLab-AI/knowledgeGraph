@@ -50,6 +50,10 @@
       {
         "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
       }
     ],
     "enables": [
@@ -72,6 +76,14 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
       }
     ],
     "dependsOn": [
@@ -133,6 +145,14 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
       }
     ],
     "supports": [],
@@ -171,6 +191,14 @@
       {
         "id": "urn:ngm:class:separation-of-duties",
         "label": "Separation of Duties"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       }
     ]
   },
@@ -250,10 +278,6 @@
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
-      },
-      {
         "id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modelling"
       },
@@ -268,13 +292,13 @@
       {
         "id": "urn:ngm:class:stakeholder-participation",
         "label": "Stakeholder Participation"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:compliance",
-        "label": "Compliance"
-      },
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
@@ -296,22 +320,26 @@
         "label": "Data Integrity"
       },
       {
-        "id": "urn:ngm:class:privacy",
-        "label": "Privacy"
-      },
-      {
         "id": "urn:ngm:class:trust",
         "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:ngm:class:coordination",
+        "label": "Coordination"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -544,6 +572,14 @@
       "label": "Authentication Service"
     },
     {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },
@@ -554,6 +590,10 @@
     {
       "slug": "trust-infrastructure",
       "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
     }
   ]
 }

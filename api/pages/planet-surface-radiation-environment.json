@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planet-surface-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planet surface radiation environment is the natural radiation environment of a region of a planetary surface.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:surface-radiation-environment",

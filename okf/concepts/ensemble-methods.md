@@ -8,9 +8,9 @@ description: Machine learning techniques that combine multiple base models (weak
 maturity: draft
 quality: 0.72
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:bagging
   - urn:ngm:class:boosting

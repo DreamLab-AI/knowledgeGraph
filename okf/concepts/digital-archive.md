@@ -45,7 +45,7 @@ partOf:
   - urn:ngm:class:knowledge-management-system
 relatedTo:
   - urn:ngm:class:records-management
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Digital Archive

@@ -16,7 +16,7 @@ Multi-agent systems (MAS) are computational architectures in which multiple auto
 - **[[Belief-Desire-Intention]] (BDI) agents**: deliberative agents whose cognition is modelled as beliefs (world state), desires (goals), and intentions (committed plans). Prominent in classical MAS (PRS, JACK, Jadex).
 - **[[Reactive Agents]]**: stimulus-response agents without internal symbolic state; suited to fast, resource-constrained environments (Brooks' subsumption architecture).
 - **Hybrid architectures**: layered designs combining a reactive layer for real-time response with a deliberative layer for strategic planning.
-- **LLM-based agents**: modern instantiation using [[Large Language Models]] as the reasoning core, augmented with tool use, [[Memory]], and reflection loops (ReAct, Reflexion, Tree-of-Thought).
+- **LLM-based agents**: modern instantiation using [[Large Language Model]] as the reasoning core, augmented with tool use, [[Memory]], and reflection loops (ReAct, Reflexion, Tree-of-Thought).
 
 #### Communication & Coordination
 

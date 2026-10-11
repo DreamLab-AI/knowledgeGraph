@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:highly-elliptical-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A highly elliptical orbit is a bound elliptical orbit with high eccentricity and distinct perigee and apogee altitudes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:elliptical-orbit",

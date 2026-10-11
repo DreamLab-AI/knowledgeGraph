@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:securities-regulation
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 dependsOn:
   - urn:ngm:class:compliance
 implements:

@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:data-processing
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:training-data
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-analysis
 dependsOn:
   - urn:ngm:class:data-governance

@@ -3,18 +3,18 @@ Retrieval-Augmented Generation (RAG) is an AI inference architecture that augmen
 ### Overview
 
 - **What it is.** RAG separates the factual memory of an AI system into two components: a frozen generative model that handles language understanding and fluent text production, and a mutable non-parametric memory that stores factual knowledge in a searchable corpus. At inference time the retriever fetches relevant passages and the reader (the language model) conditions its output on those passages plus the original query.
-- **Why it matters.** [[Large Language Models]] memorise facts in their weights during [[Model Pre-training]], but this knowledge becomes stale and cannot easily be corrected. RAG allows practitioners to update the knowledge corpus independently of the model—swapping in new document collections, removing outdated content, or restricting retrieval to proprietary data—making it the preferred strategy for enterprise deployments where accuracy, freshness, and source traceability are non-negotiable.
+- **Why it matters.** [[Large Language Model]] memorise facts in their weights during [[Model Pre-training]], but this knowledge becomes stale and cannot easily be corrected. RAG allows practitioners to update the knowledge corpus independently of the model—swapping in new document collections, removing outdated content, or restricting retrieval to proprietary data—making it the preferred strategy for enterprise deployments where accuracy, freshness, and source traceability are non-negotiable.
 - **How it works.** The canonical RAG pipeline has three phases:
   - **Indexing.** Documents are split into overlapping chunks via [[Document Chunking]], each chunk is converted into a dense vector by an [[Embedding Model]] (e.g., a bi-encoder such as sentence-transformers), and vectors are stored in a [[Vector Database]] supporting [[Approximate Nearest Neighbour Search]].
   - **Retrieval.** The user query is embedded with the same encoder, and the top-k nearest-neighbour chunks are retrieved from the index—optionally re-ranked by a cross-encoder for precision.
-  - **Generation.** Retrieved chunks are prepended as grounding context to the prompt, and the [[Large Language Models|large language model]] generates a response conditioned on that augmented context.
+  - **Generation.** Retrieved chunks are prepended as grounding context to the prompt, and the [[Large Language Model|large language model]] generates a response conditioned on that augmented context.
 
 ### Key Components
 
 - **Retriever Component** — embeds queries and documents; comprises the [[Embedding Model]] (bi-encoder for recall) and an optional cross-encoder or [[Reranking]] step for precision.
 - **Vector Database** — stores pre-computed [[Dense Retrieval|dense embeddings]] and serves [[Approximate Nearest Neighbour Search]] queries at low latency; examples include FAISS, Weaviate, Pinecone, Qdrant, Milvus, and pgvector.
 - **Document Chunking** — splits source documents into semantically coherent segments; chunk size, overlap, and splitting strategy (sentence, paragraph, semantic) critically affect retrieval quality.
-- **Reader / Generator** — the [[Large Language Models|LLM]] that conditions on the retrieved context and the query to produce the final response.
+- **Reader / Generator** — the [[Large Language Model|LLM]] that conditions on the retrieved context and the query to produce the final response.
 - **Context Window Management** — strategies for fitting top-k retrieved chunks within the [[Transformer Architecture|transformer]] context limit, including truncation, summarisation, and hierarchical compression.
 - **Orchestration Layer** — coordinates retrieval and generation calls; implemented by frameworks such as LangChain, LlamaIndex, and Haystack.
 

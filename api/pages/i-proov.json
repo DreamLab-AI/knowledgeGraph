@@ -46,7 +46,7 @@
         "label": "Identity Verification System"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
@@ -100,7 +100,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -125,8 +125,8 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:e-idas",
-        "label": "eIDAS"
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
       },
       {
         "id": "urn:ngm:class:iso-30107",
@@ -205,16 +205,16 @@
         "label": "Privacy By Design"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:digital-certificate",
@@ -335,7 +335,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -352,7 +352,7 @@
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
-        "label": "Verifiable Credentials"
+        "label": "Verifiable Credential"
       },
       {
         "id": "urn:ngm:class:data",
@@ -385,16 +385,16 @@
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
       }
     ],
     "supports": [
@@ -504,8 +504,8 @@
       "label": "AML KYC Compliance"
     },
     {
-      "slug": "decentralized-identifiers",
-      "label": "Decentralized Identifiers"
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
     },
     {
       "slug": "identity-verification-system",

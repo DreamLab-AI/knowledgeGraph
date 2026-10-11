@@ -21,7 +21,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:anomaly-detection
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:statistics
   - urn:ngm:class:signal-processing

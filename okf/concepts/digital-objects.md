@@ -37,7 +37,7 @@ enables:
   - urn:ngm:class:citation
   - urn:ngm:class:royalty-automation
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:blockchain
   - urn:ngm:class:distributed-hash-table
   - urn:ngm:class:dns
@@ -46,9 +46,9 @@ dependsOn:
 implements:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals
   - urn:ngm:class:erc-1155
-  - urn:ngm:class:erc-721-standard
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:erc-721
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:handle-system-protocol
   - urn:ngm:class:gl-tf
   - urn:ngm:class:universal-scene-description

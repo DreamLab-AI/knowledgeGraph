@@ -17,8 +17,8 @@ dependsOn:
 implements:
   - urn:ngm:class:standards
 bridgesTo:
-  - urn:ngm:class:cncf
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
+  - urn:ngm:class:cloud-native-computing-foundation
 uses:
   - urn:ngm:class:open-source
 supports:

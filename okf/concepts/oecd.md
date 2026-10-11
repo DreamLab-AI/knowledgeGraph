@@ -29,7 +29,7 @@ implements:
   - urn:ngm:class:global-minimum-tax
 contrastsWith:
   - urn:ngm:class:world-trade-organization
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
 bridgesTo:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:blockchain-regulation
@@ -50,9 +50,9 @@ partOf:
   - urn:ngm:class:international-governance-institutions
 relatedTo:
   - urn:ngm:class:fatf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:financial-stability-board
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 ---
 
 # OECD

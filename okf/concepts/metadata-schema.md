@@ -27,18 +27,18 @@ dependsOn:
   - urn:ngm:class:xml-schema
 implements:
   - urn:ngm:class:dublin-core
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:schema-org
   - urn:ngm:class:owl-2-web-ontology-language
 contrastsWith:
   - urn:ngm:class:data-dictionary
 bridgesTo:
   - urn:ngm:class:data-standards
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
 supports:
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:provenance-tracking
 standardizedBy:
   - urn:ngm:class:dublin-core

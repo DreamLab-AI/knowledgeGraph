@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cis-mars-space-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Cis-Mars space radiation environment is the natural radiation environment of a cis-Mars space environment, as defined in NASA's Space Life Sciences Ontology.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-radiation-environment",

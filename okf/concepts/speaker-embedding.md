@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:automatic-speech-recognition
   - urn:ngm:class:real-time-ai
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:embedding-model
 implements:
   - urn:ngm:class:automatic-speech-recognition

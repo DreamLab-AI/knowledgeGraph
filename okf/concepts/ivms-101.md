@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:digital-identity-standards
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:regulatory-compliance
 relatedTo:
   - urn:ngm:class:fatf-travel-rule

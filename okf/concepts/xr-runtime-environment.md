@@ -40,7 +40,7 @@ supports:
   - urn:ngm:class:eye-tracking
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 ---
 
 # XR Runtime Environment

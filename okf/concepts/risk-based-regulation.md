@@ -34,7 +34,7 @@ standardizedBy:
   - urn:ngm:class:iso-31000
 relatedTo:
   - urn:ngm:class:risk-management
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:policy
   - urn:ngm:class:proportionality-principle
 ---

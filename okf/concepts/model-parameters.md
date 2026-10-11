@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:neural-network
   - urn:ngm:class:training
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:ai-technique
 relatedTo:

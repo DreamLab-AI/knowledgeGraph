@@ -21,7 +21,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:image-compression
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:optical-flow

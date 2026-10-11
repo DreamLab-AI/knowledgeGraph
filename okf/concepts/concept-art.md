@@ -41,7 +41,7 @@ enables:
 dependsOn:
   - urn:ngm:class:art-direction
   - urn:ngm:class:pre-production
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:copyright
   - urn:ngm:class:creative-commons
   - urn:ngm:class:prompt-engineering
@@ -62,10 +62,10 @@ contrastsWith:
   - urn:ngm:class:final-art-production
 uses:
   - urn:ngm:class:midjourney-text-to-image-service
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:adobe-firefly
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:adobe-creative-cloud
@@ -73,7 +73,7 @@ uses:
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:control-net-conditioning
 supports:
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:content-production-workflow
   - urn:ngm:class:creative-ai
   - urn:ngm:class:virtual-production-workflow
@@ -83,10 +83,10 @@ standardizedBy:
   - urn:ngm:class:creative-industries
 relatedTo:
   - urn:ngm:class:midjourney-text-to-image-service
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:adobe-firefly
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:prompt-engineering
   - urn:ngm:class:synthetic-media
   - urn:ngm:class:procedural-content-generation

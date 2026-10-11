@@ -234,8 +234,8 @@
         "label": "Collective Intelligence System"
       },
       {
-        "id": "urn:ngm:class:realtime-collaboration",
-        "label": "Realtime Collaboration"
+        "id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
       }
     ],
     "dependsOn": [
@@ -252,8 +252,8 @@
         "label": "Game Theory"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:network-infrastructure",
@@ -492,8 +492,8 @@
       "label": "Blockchain Governance"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "community-governance-model",

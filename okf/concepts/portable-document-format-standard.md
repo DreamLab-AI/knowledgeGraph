@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:software-engineering
 enables:
   - urn:ngm:class:knowledge-base
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:knowledge-management
   - urn:ngm:class:documentation-standards

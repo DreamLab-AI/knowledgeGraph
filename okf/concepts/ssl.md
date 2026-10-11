@@ -19,7 +19,7 @@ dependsOn:
 implements:
   - urn:ngm:class:encryption
 contrastsWith:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 bridgesTo:
   - urn:ngm:class:network-security
 uses:
@@ -28,9 +28,9 @@ uses:
 supports:
   - urn:ngm:class:authentication
 standardizedBy:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 relatedTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:digital-signature
   - urn:ngm:class:certificate-authority
 ---

@@ -8,7 +8,7 @@ description: Arweave is a decentralised, blockweave-based storage protocol that 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
 hasPart:
   - urn:ngm:class:smartweave
   - urn:ngm:class:ao-compute
@@ -44,7 +44,7 @@ uses:
 relatedTo:
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:web3
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 ---
 
 # Arweave

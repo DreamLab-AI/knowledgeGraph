@@ -25,7 +25,7 @@ implements:
 contrastsWith:
   - urn:ngm:class:algorithmic-stablecoin
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:arbitrage
   - urn:ngm:class:collateral

@@ -29,7 +29,7 @@ relatedTo:
   - urn:ngm:class:tether
   - urn:ngm:class:usdc
   - urn:ngm:class:digital-asset-custody
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:reserve-asset
 ---

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:model-interpretability
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:black-box-model
 enables:
   - urn:ngm:class:explainable-ai

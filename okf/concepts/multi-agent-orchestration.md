@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:microservices-architecture
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-frameworks
   - urn:ngm:class:agent-runtime
   - urn:ngm:class:model-context-protocol

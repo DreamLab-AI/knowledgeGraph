@@ -27,8 +27,8 @@ supports:
   - urn:ngm:class:telemetry
   - urn:ngm:class:api-gateway
 standardizedBy:
-  - urn:ngm:class:cncf
-  - urn:ngm:class:cncf
+  - urn:ngm:class:cloud-native-computing-foundation
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:service-mesh
 relatedTo:

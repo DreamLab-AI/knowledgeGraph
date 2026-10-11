@@ -38,7 +38,7 @@
         "label": "Virtual Workspace"
       },
       {
-        "id": "urn:ngm:class:collaborative-systems-modality",
+        "id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Collaborative Document Editing"
       }
     ],
@@ -76,7 +76,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       }
     ],
@@ -332,6 +332,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
       "slug": "collaborative-learning",
       "label": "Collaborative Learning"
     },
@@ -350,10 +354,6 @@
     {
       "slug": "tele-252-dao-governance-telecollaboration",
       "label": "TELE-252-dao-governance-telecollaboration"
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "label": "tc 0002 collaborative document editing"
     },
     {
       "slug": "tc-0003-telepresence-robot",

@@ -47,7 +47,7 @@ dependsOn:
   - urn:ngm:class:audit-trail
 implements:
   - urn:ngm:class:iso-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:uk-corporate-governance-code
   - urn:ngm:class:cobit-framework
   - urn:ngm:class:itil-framework
@@ -66,11 +66,11 @@ supports:
   - urn:ngm:class:ai-governance-maturity-model
   - urn:ngm:class:community-governance-model
   - urn:ngm:class:compliance-monitoring
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:digital-regulation
 standardizedBy:
   - urn:ngm:class:oecd-guidelines
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-standards
   - urn:ngm:class:companies-act
 relatedTo:

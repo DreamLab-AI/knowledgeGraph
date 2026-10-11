@@ -8,8 +8,8 @@
   "definition": "Transaction authorisation is the process of verifying that a party has the right to initiate a given transaction and that the transaction has been approved according to defined rules before it is executed. It typically relies on cryptographic proofs such as digital signatures to bind approval to a specific transaction payload, preventing tampering or replay. In financial and blockchain systems, transaction authorisation is a prerequisite gate that must pass before settlement or state change occurs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:authorization",
-      "label": "Authorization"
+      "id": "urn:ngm:class:authorisation",
+      "label": "Authorisation"
     }
   ],
   "entityType": "Class",
@@ -64,6 +64,22 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:access-control",
+        "label": "Policy-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:relationship-based-access-control",
+        "label": "Relationship-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
         "id": "urn:ngm:class:audit-logging",
         "label": "Audit Logging"
       },
@@ -78,22 +94,6 @@
       {
         "id": "urn:ngm:class:identity-and-access-management",
         "label": "Permission Management"
-      },
-      {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
       }
     ],
     "requires": [
@@ -106,12 +106,16 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
-      },
-      {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:cryptographic-key-management",
@@ -124,54 +128,62 @@
       {
         "id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modelling"
-      },
-      {
-        "id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanism"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:privacy",
-        "label": "Privacy"
-      },
-      {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
       },
       {
         "id": "urn:ngm:class:least-privilege",
         "label": "Least Privilege"
       },
       {
-        "id": "urn:ngm:class:security",
-        "label": "System Security"
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
       },
       {
-        "id": "urn:ngm:class:separation-of-duties",
-        "label": "Separation of Duties"
+        "id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Controls"
       },
       {
-        "id": "urn:ngm:class:cybersecurity",
-        "label": "Cybersecurity"
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
       },
       {
-        "id": "urn:ngm:class:data-integrity",
-        "label": "Data Integrity"
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:secure-token-service",
+        "label": "Secure Token Service"
       },
       {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -210,6 +222,14 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
         "id": "urn:ngm:class:open-access",
         "label": "Open Access"
       },
@@ -232,16 +252,12 @@
       {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
-      },
-      {
-        "id": "urn:ngm:class:application-layer",
-        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cryptography",
-        "label": "Cryptography"
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",
@@ -250,6 +266,10 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
       },
       {
         "id": "urn:ngm:class:ai-governance-law-and-privacy",
@@ -266,13 +286,29 @@
       {
         "id": "urn:ngm:class:ai-governance-and-ethics",
         "label": "AI Governance and Ethics"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
       {
         "id": "urn:ngm:class:policy-decision-point",
         "label": "Policy Decision Point"
@@ -284,22 +320,6 @@
       {
         "id": "urn:ngm:class:access-control-list",
         "label": "Access Control List"
-      },
-      {
-        "id": "urn:ngm:class:identity-and-access-management",
-        "label": "Identity and Access Management"
-      },
-      {
-        "id": "urn:ngm:class:privileged-access-management",
-        "label": "Privileged Access Management"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
-      },
-      {
-        "id": "urn:ngm:class:digital-certificate",
-        "label": "Digital Certificate"
       }
     ],
     "supports": [
@@ -334,6 +354,18 @@
         "label": "ISO/IEC 27001"
       },
       {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
         "id": "urn:ngm:class:nist-sp-800-53",
         "label": "NIST SP 800-53"
       },
@@ -348,24 +380,28 @@
       {
         "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO-IEC 38500"
-      },
-      {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
-      },
-      {
-        "id": "urn:ngm:class:open-standards",
-        "label": "Open Standards"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:audit",
         "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      },
+      {
+        "id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
       },
       {
         "id": "urn:ngm:class:zero-trust-architecture",
@@ -378,22 +414,6 @@
       {
         "id": "urn:ngm:class:network-security",
         "label": "Network Security"
-      },
-      {
-        "id": "urn:ngm:class:security",
-        "label": "Security Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:confidential-computing",
-        "label": "Confidential Computing"
-      },
-      {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:zero-knowledge-proof",
-        "label": "Zero-Knowledge Proof"
       }
     ]
   },

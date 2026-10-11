@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:machine-learning-discipline-pipeline
 dependsOn:
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:model-training
 contrastsWith:
   - urn:ngm:class:federated-learning

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:digital-identity
 relatedTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # Portable Identity

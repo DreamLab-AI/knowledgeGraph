@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:real-time-monitoring
   - urn:ngm:class:edge-computing
   - urn:ngm:class:io-t-sensor-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 supports:
   - urn:ngm:class:supply-chain

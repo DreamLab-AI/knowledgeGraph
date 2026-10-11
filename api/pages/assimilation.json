@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:assimilation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Assimilation is the combination of observations with a model forecast to produce an updated estimate of the state of a system, and in Earth observation it is the step that brings satellite and other measurements into a numerical model.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

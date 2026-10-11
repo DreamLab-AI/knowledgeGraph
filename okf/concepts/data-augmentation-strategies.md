@@ -9,7 +9,7 @@ maturity: emerging
 quality: 0.5
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:training-data
 enables:

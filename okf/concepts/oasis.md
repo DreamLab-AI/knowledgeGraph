@@ -19,7 +19,7 @@ implements:
   - urn:ngm:class:saml
   - urn:ngm:class:xacml
 contrastsWith:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
 bridgesTo:
   - urn:ngm:class:access-control
@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:enterprise-security
 relatedTo:
   - urn:ngm:class:iso-iec
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:iso-standards
   - urn:ngm:class:cybersecurity-standard
   - urn:ngm:class:ietf

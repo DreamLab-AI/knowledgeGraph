@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:julian-date",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Julian date is a numerical time system that counts days, so that the interval in days between two epochs is easy to compute.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

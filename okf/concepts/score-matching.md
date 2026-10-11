@@ -8,7 +8,7 @@ description: Score matching is a method for fitting probability models by matchi
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:probability-theory

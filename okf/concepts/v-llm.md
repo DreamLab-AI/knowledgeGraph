@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:kv-cache
   - urn:ngm:class:gpu
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 enables:
   - urn:ngm:class:model-serving
   - urn:ngm:class:inference-serving
@@ -29,7 +29,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:latency
 uses:
   - urn:ngm:class:tensor-parallelism

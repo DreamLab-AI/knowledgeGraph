@@ -22,7 +22,7 @@ requires:
 enables:
   - urn:ngm:class:collective-decision-making
   - urn:ngm:class:commons-stack
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:commons-stack
   - urn:ngm:class:protocol-upgrade
 dependsOn:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-based-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ground-based remote sensing is remote sensing in which the instrument is carried on the ground or on a ground-level support such as a vehicle, tower or tethered balloon, rather than on an aircraft or satellite.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

@@ -27,7 +27,7 @@ uses:
   - urn:ngm:class:xml
   - urn:ngm:class:data-format
 supports:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-graph
 standardizedBy:
   - urn:ngm:class:standards

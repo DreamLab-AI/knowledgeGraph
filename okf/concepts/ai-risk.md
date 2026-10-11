@@ -21,10 +21,10 @@ enables:
   - urn:ngm:class:ai-risk-assessment
   - urn:ngm:class:ai-incident
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:high-risk-ai-system
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-23894
 contrastsWith:
   - urn:ngm:class:ai-safety
@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:ai-trustworthiness
   - urn:ngm:class:ai-ethics
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:gdpr
 partOf:
   - urn:ngm:class:ai-governance-and-ethics

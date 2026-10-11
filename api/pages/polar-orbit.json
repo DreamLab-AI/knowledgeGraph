@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:polar-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A polar orbit is an orbit whose plane passes close to both poles of the body being orbited; for an Earth-equatorial reference plane, an ideal polar orbit has an inclination of 90\u00b0.[^nasa-orbits][^esa-orbit-types]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

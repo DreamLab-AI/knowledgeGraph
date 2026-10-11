@@ -48,7 +48,7 @@
         "label": "Classification Rules"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning (optional)"
       },
       {
@@ -60,7 +60,7 @@
         "label": "Regular Expressions"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning (optional)"
       }
     ],

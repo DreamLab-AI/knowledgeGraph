@@ -38,7 +38,7 @@ uses:
   - urn:ngm:class:fca-handbook
   - urn:ngm:class:supervisory-technology
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:market-abuse-regulation
   - urn:ngm:class:financial-crime-prevention
 standardizedBy:

@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:deterministic-scheduling
   - urn:ngm:class:interrupt-handling
 enables:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:industrial-automation
   - urn:ngm:class:control-system

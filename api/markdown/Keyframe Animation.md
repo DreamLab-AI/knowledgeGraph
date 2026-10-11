@@ -28,7 +28,7 @@ Keyframe animation is a technique in which an animator specifies an object's pro
 - Authoring character and object motion in games and XR scenes.
 - Driving [[Skeletal Animation]] by keying bone transforms.
 - Camera moves, UI transitions, and cinematic sequences.
-- Interchange of animated assets through formats such as [[USD]].
+- Interchange of animated assets through formats such as [[Universal Scene Description]].
 
 ### Provenance
 

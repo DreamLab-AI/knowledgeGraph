@@ -8,8 +8,8 @@
   "definition": "Applied Machine Learning is the deployment-focused discipline of adapting and operationalising machine-learning methods to solve concrete real-world problems under domain constraints of latency, cost, reliability, and compliance. It spans the full lifecycle from problem framing and data acquisition through feature engineering, model selection, rigorous evaluation using cross-validation and holdout sets, and sustained production monitoring via MLOps practices. Unlike theoretical ML research, which focuses on novel algorithmic contributions, Applied ML prioritises practical impact: models must generalise reliably to unseen data, behave predictably under distribution shift, and be maintainable by engineering teams across months or years of operation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -261,6 +261,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -269,15 +274,18 @@
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
     }
   ],
   "inheritedRelations": {
     "hasPart": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
@@ -301,14 +309,6 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety",
-        "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
       }
     ],
     "requires": [
@@ -317,12 +317,16 @@
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
-      },
-      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       },
       {
         "id": "urn:ngm:class:neural-network",
@@ -339,13 +343,13 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -361,10 +365,6 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
       },
       {
         "id": "urn:ngm:class:decision-support",
@@ -385,8 +385,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -441,12 +441,16 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -457,6 +461,14 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -477,6 +489,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
       },
@@ -489,6 +505,10 @@
         "label": "Neural Network"
       },
       {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
       },
@@ -499,24 +519,20 @@
       {
         "id": "urn:ngm:class:information-theory",
         "label": "Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:probability-theory",
-        "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:scientific-method",
-        "label": "Scientific Method"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -537,16 +553,26 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -567,20 +593,20 @@
         "label": "Responsible AI"
       },
       {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:adversarial-machine-learning",
         "label": "Adversarial Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:ai-agent-system",
-        "label": "AI Agent System"
-      },
-      {
-        "id": "urn:ngm:class:ai-research",
-        "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:artificial-general-intelligence",
-        "label": "Artificial General Intelligence"
       }
     ]
   },

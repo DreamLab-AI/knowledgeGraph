@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:eccentric-anomaly",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Eccentric anomaly is an auxiliary angle that connects time and position on a Keplerian ellipse.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

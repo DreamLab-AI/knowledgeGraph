@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-surface-model",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A digital surface model is a gridded elevation model of the Earth's surface that includes buildings, infrastructure and vegetation.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

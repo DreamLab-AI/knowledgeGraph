@@ -10,7 +10,7 @@ quality: 0.4
 is-a:
   - urn:ngm:class:ai-research-area
 hasPart:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
   - urn:ngm:class:generative-ai
   - urn:ngm:class:reinforcement-learning

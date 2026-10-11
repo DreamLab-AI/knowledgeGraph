@@ -9,14 +9,14 @@ The Internet Engineering Task Force (IETF) is an open, volunteer-driven standard
 ### Key aspects
 
 - Working groups specify protocols incrementally through draft and RFC stages.
-- Core specifications cover IP, TCP, [[HTTP]], [[TLS]] and [[DNS]].
+- Core specifications cover IP, TCP, [[HTTP]], [[Transport Layer Security]] and [[DNS]].
 - It coordinates with the Internet Architecture Board on long-term direction.
 - Open participation lets any contributor join the standards process.
 
 ### Applications
 
 - Specification of transport and application [[Network Protocol]] standards.
-- Security protocols including [[TLS]] and authorisation frameworks like [[OAuth]].
+- Security protocols including [[Transport Layer Security]] and authorisation frameworks like [[OAuth]].
 - Naming and addressing standards such as [[DNS]].
 - Foundational [[Web Standards]] enabling global [[Interoperability]].
 

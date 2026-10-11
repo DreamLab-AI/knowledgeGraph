@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:distributed-ledger-technology-dlt
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:document-authentication
   - urn:ngm:class:legal-compliance

@@ -3,7 +3,7 @@ MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe me
 ### Overview
 
 - MQTT was originally designed in 1999 by Andy Stanford-Clark (IBM) and Arlen Nipper (Cirrus Link) for monitoring oil pipelines via satellite links with limited bandwidth and intermittent connectivity. Its binary-encoded fixed header can be as small as two bytes, making it far more bandwidth-efficient than HTTP-based polling for high-frequency [[Telemetry and Analytics]] from large numbers of concurrent sensors.
-- The broker architecture fundamentally decouples producers from consumers: an [[Embedded Systems]] sensor publishing temperature readings need not know which cloud services, dashboards, or analytics engines consume that data. This decoupling is the core advantage over point-to-point [[REST API]] or [[HTTP]] approaches in [[Distributed Systems]] contexts.
+- The broker architecture fundamentally decouples producers from consumers: an [[Embedded System]] sensor publishing temperature readings need not know which cloud services, dashboards, or analytics engines consume that data. This decoupling is the core advantage over point-to-point [[REST API]] or [[HTTP]] approaches in [[Distributed Systems]] contexts.
 - MQTT operates primarily over [[TCP-IP]] for reliable delivery, with [[WebSockets]] transport enabling browser-based clients. [[TLS/SSL]] wraps the connection for security. MQTT 5.0 (2019) extended the protocol with user-defined properties, subscription identifiers, message expiry intervals, shared subscriptions, and reason codes for error diagnostics—capabilities absent in the widely deployed MQTT 3.1.1.
 - The protocol is now standardised by [[OASIS Open]] and adopted by [[ISO/IEC 20922]], cementing its position as the canonical lightweight messaging layer in [[Internet of Things]] architecture.
 
@@ -17,7 +17,7 @@ MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe me
   - QoS 2 — "exactly once": four-part handshake; guaranteed single delivery; highest overhead.
 - **Retained Messages** — the broker stores the last published message on a topic and immediately delivers it to new subscribers, enabling devices to receive the current state on first connect without waiting for the next publish cycle.
 - **Last Will and Testament (LWT)** — a message pre-registered with the broker that is published automatically if a client disconnects unexpectedly, enabling presence detection and fault alerting in [[Internet of Things]] fleets.
-- **Persistent Sessions** — the broker buffers QoS 1/2 messages for offline clients and delivers them upon reconnection, critical for intermittently connected [[Embedded Systems]] devices.
+- **Persistent Sessions** — the broker buffers QoS 1/2 messages for offline clients and delivers them upon reconnection, critical for intermittently connected [[Embedded System]] devices.
 - **MQTT 5.0 Enhancements** — session expiry intervals, message expiry, topic aliases, request/response patterns, shared subscriptions, and flow control via receive maximum property.
 - **Authentication & Authorisation** — username/password at connect time (MQTT 3.1.1), enhanced authentication via SASL-like exchange (MQTT 5.0), [[TLS/SSL]] mutual authentication, and broker-level ACL (access control list) per topic.
 

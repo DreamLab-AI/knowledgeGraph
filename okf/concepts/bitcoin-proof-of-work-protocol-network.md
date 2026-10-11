@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:lightning-network
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-asset-custody
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:merkle-tree
@@ -36,7 +36,7 @@ contrastsWith:
   - urn:ngm:class:ethereum
 bridgesTo:
   - urn:ngm:class:financial-infrastructure
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:nakamoto-consensus

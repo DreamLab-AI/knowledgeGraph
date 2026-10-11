@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:service-mesh
 bridgesTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:microservices
 uses:

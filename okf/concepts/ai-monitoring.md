@@ -41,9 +41,9 @@ supports:
   - urn:ngm:class:bias
 standardizedBy:
   - urn:ngm:class:iso-iec-42001-2023
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:iso-iec-23894-2023
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:iso-iec-23894
 partOf:
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:ai-governance

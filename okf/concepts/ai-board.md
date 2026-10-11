@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:ai-governance-framework
 supports:
   - urn:ngm:class:ai-office
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-risk-management
   - urn:ngm:class:general-purpose-ai-model

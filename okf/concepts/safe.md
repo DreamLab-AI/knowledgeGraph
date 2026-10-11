@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:multi-signature-wallet
 requires:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:account-abstraction
 bridgesTo:

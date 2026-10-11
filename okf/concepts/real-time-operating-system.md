@@ -46,8 +46,8 @@ supports:
 partOf:
   - urn:ngm:class:operating-system
 relatedTo:
-  - urn:ngm:class:embedded-systems
-  - urn:ngm:class:ros
+  - urn:ngm:class:embedded-system
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:freertos
   - urn:ngm:class:zephyr-rtos
 ---

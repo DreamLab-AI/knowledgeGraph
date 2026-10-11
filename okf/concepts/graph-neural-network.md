@@ -15,6 +15,8 @@ hasPart:
 requires:
   - urn:ngm:class:graph-structured-data
   - urn:ngm:class:adjacency-matrix
+  - urn:ngm:class:message-passing
+  - urn:ngm:class:graph-theory
 enables:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:anomaly-detection
@@ -22,6 +24,8 @@ enables:
   - urn:ngm:class:node-classification
   - urn:ngm:class:graph-classification
   - urn:ngm:class:recommendation-system
+  - urn:ngm:class:knowledge-graph
+  - urn:ngm:class:recommendation-systems
 dependsOn:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:gradient-descent
@@ -31,22 +35,32 @@ implements:
 contrastsWith:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:recurrent-neural-network
+  - urn:ngm:class:transformer
 bridgesTo:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-graphing
   - urn:ngm:class:fraud-detection
+  - urn:ngm:class:social-network-analysis
+  - urn:ngm:class:drug-discovery
+  - urn:ngm:class:supply-chain-optimisation
+  - urn:ngm:class:deep-learning-domain
 uses:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:deep-learning
   - urn:ngm:class:message-passing
   - urn:ngm:class:graph-attention-mechanism
   - urn:ngm:class:node-embedding
+  - urn:ngm:class:backpropagation
 supports:
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:social-network-analysis
+partOf:
+  - urn:ngm:class:deep-learning
 relatedTo:
   - urn:ngm:class:transformer
   - urn:ngm:class:graph-rag
+  - urn:ngm:class:knowledge-graph-embedding
+  - urn:ngm:class:semi-supervised-learning
 ---
 
 # Graph Neural Network

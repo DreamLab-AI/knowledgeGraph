@@ -50,8 +50,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:question-answering",
@@ -171,8 +171,8 @@
         "label": "Knowledge Graph Construction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -560,10 +560,6 @@
       "label": "Common Crawl"
     },
     {
-      "slug": "common-sense-reasoning",
-      "label": "Common Sense Reasoning"
-    },
-    {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
     },
@@ -792,8 +788,8 @@
       "label": "Language Modeling"
     },
     {
-      "slug": "large-language-models",
-      "label": "Large Language Models"
+      "slug": "large-language-model",
+      "label": "Large Language Model"
     },
     {
       "slug": "learning-algorithm",
@@ -820,8 +816,8 @@
       "label": "Mistral"
     },
     {
-      "slug": "mixture-of-experts-architecture",
-      "label": "Mixture-of-Experts Architecture"
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
     },
     {
       "slug": "model-parameters",
@@ -856,8 +852,8 @@
       "label": "Personal Agent Runtimes"
     },
     {
-      "slug": "pre-training",
-      "label": "Pre Training"
+      "slug": "pretraining",
+      "label": "Pretraining"
     },
     {
       "slug": "probabilistic-model",

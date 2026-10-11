@@ -8,7 +8,7 @@ description: Non-transferable tokens bound to a single account that represent cr
 maturity: emerging
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 requires:
   - urn:ngm:class:token-standard
 enables:

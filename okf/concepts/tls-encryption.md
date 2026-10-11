@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:hash-function
 implements:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 contrastsWith:
   - urn:ngm:class:ssl
   - urn:ngm:class:ipsec
@@ -33,13 +33,13 @@ uses:
   - urn:ngm:class:symmetric-encryption
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:certificate-authority
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:elliptic-curve-diffie-hellman
 supports:
   - urn:ngm:class:mutual-authentication
   - urn:ngm:class:data-integrity
 relatedTo:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:cryptographic-key-management
   - urn:ngm:class:key-derivation-function
   - urn:ngm:class:certificate-transparency

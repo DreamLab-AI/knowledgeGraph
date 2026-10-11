@@ -57,7 +57,7 @@ dependsOn:
   - urn:ngm:class:iec-62061
   - urn:ngm:class:iso-13849
   - urn:ngm:class:product-liability
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:nis2-directive
   - urn:ngm:class:regulation
 implements:
@@ -127,7 +127,7 @@ relatedTo:
   - urn:ngm:class:iso-9283
   - urn:ngm:class:iso-sae-21434
   - urn:ngm:class:ros-industrial
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:niosh-guidelines
   - urn:ngm:class:iec-80601-2-78
   - urn:ngm:class:iso-13855
@@ -148,7 +148,7 @@ relatedTo:
   - urn:ngm:class:functional-safety
   - urn:ngm:class:ontology-engineering
   - urn:ngm:class:human-robot-interaction
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:risk-assessment
   - urn:ngm:class:rb-0101-performance-level
   - urn:ngm:class:safety-integrity-level

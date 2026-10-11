@@ -4,6 +4,7 @@ type: Class
 title: Alpine Tundra
 resource: urn:ngm:class:alpine-tundra
 domain: earth-observation-and-geospatial-sensing
+description: Alpine tundra is a tundra ecosystem at high altitude where low temperatures and high winds stunt the vegetation.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Alpine Tundra
+
+Alpine tundra is a tundra ecosystem at high altitude where low temperatures and high winds stunt the vegetation.[^1][^2]

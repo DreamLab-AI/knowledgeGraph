@@ -9,7 +9,7 @@ An Active Research Projects Registry is a structured, queryable catalogue that m
   - **Queryability** — humans and agents can enumerate, filter, and reason over the corpus of projects.
   - **Provenance** — a record of when each entry was created or last modified, by whom.
 - In a [[Knowledge Graph]] context, each project node in the registry becomes a first-class ontological entity with typed relations to people, tools, datasets, publications, and other projects, enabling automated reasoning over the portfolio.
-- The registry is conceptually distinct from a [[Data Catalog]] (which inventories datasets) and from [[Experiment Tracking]] (which records ML run configurations and metrics). It operates at the project level, not the experiment or dataset level.
+- The registry is conceptually distinct from a [[Data Catalogue]] (which inventories datasets) and from [[Experiment Tracking]] (which records ML run configurations and metrics). It operates at the project level, not the experiment or dataset level.
 
 ### Key Components
 
@@ -18,7 +18,7 @@ An Active Research Projects Registry is a structured, queryable catalogue that m
 - **Status Taxonomy** — a controlled vocabulary for project state (e.g. Proposed, Active, On-Hold, Completed, Archived) enabling consistent filtering.
 - **Dependency Graph** — typed edges between project records indicating which projects depend on, block, or complement others, supporting [[Automated Planning]] and scheduling.
 - **Ownership & Attribution** — role assignments (PI, contributor, sponsor) linked to agent or person nodes, enabling [[Collaboration]] governance.
-- **Artefact Links** — references to code repositories ([[Version Control]]), datasets ([[Data Catalog]]), publications ([[Knowledge Graph Publication Classifier]]), and deployed systems.
+- **Artefact Links** — references to code repositories ([[Version Control]]), datasets ([[Data Catalogue]]), publications ([[Knowledge Graph Publication Classifier]]), and deployed systems.
 - **Timeline & Milestones** — structured date fields and milestone markers that integrate with [[Agile Software Development]] sprint cadences or research phase gates.
 - **Priority & Resource Allocation** — fields or inferred scores supporting portfolio-level prioritisation and capacity planning.
 - **Search & Discovery Interface** — query layer (SPARQL, structured search, or semantic retrieval) that makes the registry navigable, often surfaced via a [[Collaboration Platform]] or [[Knowledge Management System]].

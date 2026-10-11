@@ -10,7 +10,7 @@ quality: 0.35
 is-a:
   - urn:ngm:class:model
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agentic-ai
 ---
 

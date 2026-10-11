@@ -36,14 +36,14 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
-        "label": "Stable Diffusion Image Model"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
       }
     ],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "VAE"
       },
       {
@@ -126,9 +126,9 @@
       "slug": "generative-ai"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:probabilistic-model",
@@ -166,11 +166,6 @@
       "slug": "statistical-learning-theory"
     },
     {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
-    },
-    {
       "id": "urn:ngm:class:probabilistic-inference",
       "label": "Probabilistic Inference",
       "slug": "probabilistic-inference"
@@ -203,7 +198,7 @@
         "label": "Denoising Score Matching"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder",
         "label": "Encoder-Decoder"
       },
       {
@@ -241,7 +236,7 @@
         "label": "U-Net"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -283,7 +278,7 @@
         "label": "Video Generation"
       },
       {
-        "id": "urn:ngm:class:3-d-content-generation",
+        "id": "urn:ngm:class:3-d-generation",
         "label": "3D Generation"
       },
       {
@@ -389,7 +384,7 @@
         "label": "Generative Adversarial Networks"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -525,7 +520,7 @@
         "label": "NeurIPS"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -555,6 +550,10 @@
         "label": "Probabilistic Model"
       },
       {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
       },
@@ -577,10 +576,6 @@
         "label": "Latent Space"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
-      },
-      {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
       },
@@ -595,6 +590,10 @@
       {
         "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
       }
     ]
   },

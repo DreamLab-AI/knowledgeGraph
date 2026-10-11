@@ -40,17 +40,17 @@ supports:
   - urn:ngm:class:decentralised-autonomous-organisation
 standardizedBy:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:khronos-group
   - urn:ngm:class:ieee
 relatedTo:
   - urn:ngm:class:interoperability-framework
   - urn:ngm:class:communication-protocol
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:verifiable-credentials
 ---
 
 # Interoperability Protocol

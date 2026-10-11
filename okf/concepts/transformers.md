@@ -13,12 +13,12 @@ is-a:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:deep-learning
   - urn:ngm:class:sequence-modelling
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 hasPart:
   - urn:ngm:class:kv-cache
-  - urn:ngm:class:layer-normalization
+  - urn:ngm:class:layer-normalisation
   - urn:ngm:class:feed-forward-network
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:multi-head-attention
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:residual-connection
@@ -31,7 +31,7 @@ requires:
   - urn:ngm:class:tokenization
   - urn:ngm:class:training-data
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-learning
   - urn:ngm:class:protein-structure-prediction
   - urn:ngm:class:vision-transformer
@@ -64,7 +64,7 @@ contrastsWith:
   - urn:ngm:class:rwkv
 uses:
   - urn:ngm:class:adam-optimiser
-  - urn:ngm:class:layer-normalization
+  - urn:ngm:class:layer-normalisation
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:dropout
   - urn:ngm:class:mixed-precision-training

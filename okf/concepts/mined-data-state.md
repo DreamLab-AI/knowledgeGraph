@@ -4,6 +4,7 @@ type: Class
 title: Mined Data State
 resource: urn:ngm:class:mined-data-state
 domain: earth-observation-and-geospatial-sensing
+description: A mined data state is the condition of data that have been through a mining process, meaning the application of data analysis and discovery algorithms that produce patterns over the data.[^1] SWEET defines its mined class as a data state restricted by a had-process relation to a mining process.[^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Mined Data State
+
+A mined data state is the condition of data that have been through a mining process, meaning the application of data analysis and discovery algorithms that produce patterns over the data.[^1] SWEET defines its mined class as a data state restricted by a had-process relation to a mining process.[^2]

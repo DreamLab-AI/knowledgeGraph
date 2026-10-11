@@ -22,8 +22,8 @@ enables:
 dependsOn:
   - urn:ngm:class:risk-management
 bridgesTo:
-  - urn:ngm:class:fintech
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:financial-technology
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:financial-instruments
   - urn:ngm:class:data-analytics
@@ -35,7 +35,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:investment-management
   - urn:ngm:class:financial-services
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
 ---
 
 # Portfolio Management

@@ -21,8 +21,8 @@ requires:
   - urn:ngm:class:feedback-mechanism
   - urn:ngm:class:stability
 enables:
-  - urn:ngm:class:rb-1007-trajectory-generation
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:trajectory-generation
+  - urn:ngm:class:localisation
   - urn:ngm:class:disturbance-rejection
   - urn:ngm:class:accuracy
 dependsOn:

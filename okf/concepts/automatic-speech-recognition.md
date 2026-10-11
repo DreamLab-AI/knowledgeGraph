@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:speech-processing
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:audio-signal-processing
 hasPart:
   - urn:ngm:class:acoustic-model
@@ -34,7 +34,7 @@ enables:
   - urn:ngm:class:spoken-language-understanding
   - urn:ngm:class:real-time-captioning
   - urn:ngm:class:machine-translation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transformer-architecture

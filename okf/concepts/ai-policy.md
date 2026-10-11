@@ -39,9 +39,9 @@ dependsOn:
   - urn:ngm:class:data-governance
   - urn:ngm:class:regulatory-compliance
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 contrastsWith:
   - urn:ngm:class:self-regulation
@@ -67,9 +67,9 @@ supports:
 standardizedBy:
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:ai-ethics
@@ -77,7 +77,7 @@ relatedTo:
   - urn:ngm:class:intellectual-property-rights-framework
   - urn:ngm:class:competition-policy
   - urn:ngm:class:technology-policy
-  - urn:ngm:class:intellectual-property-rights-framework
+  - urn:ngm:class:intellectual-property
   - urn:ngm:class:ai-research
   - urn:ngm:class:generative-ai
   - urn:ngm:class:foundation-model

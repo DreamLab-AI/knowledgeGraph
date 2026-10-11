@@ -16,7 +16,7 @@ enables:
 dependsOn:
   - urn:ngm:class:model-training
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 uses:
   - urn:ngm:class:neural-network-architecture
   - urn:ngm:class:deep-learning

@@ -23,12 +23,12 @@ dependsOn:
 implements:
   - urn:ngm:class:payment-request
 contrastsWith:
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:on-chain-transaction
 bridgesTo:
   - urn:ngm:class:finance
   - urn:ngm:class:distributed-systems
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
 uses:
   - urn:ngm:class:secp256k1
   - urn:ngm:class:sha-256

@@ -48,7 +48,7 @@ implements:
   - urn:ngm:class:sox
   - urn:ngm:class:do-ra
   - urn:ngm:class:nis2
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 bridgesTo:
   - urn:ngm:class:telecollaboration
 supports:
@@ -56,7 +56,7 @@ supports:
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 partOf:
   - urn:ngm:class:governance-infrastructure
   - urn:ngm:class:compliance-framework

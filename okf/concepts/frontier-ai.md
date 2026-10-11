@@ -8,10 +8,10 @@ description: Frontier AI denotes the most capable and computationally intensive 
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:foundation-model-layer
 hasPart:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:emergent-capabilities
 requires:
@@ -42,8 +42,8 @@ supports:
   - urn:ngm:class:ai-governance
 standardizedBy:
   - urn:ngm:class:frontier-model-forum
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:existential-risk

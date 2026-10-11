@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:trusted-third-party
 bridgesTo:
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-custody
 uses:
   - urn:ngm:class:public-key-cryptography
@@ -38,7 +38,7 @@ relatedTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:differential-privacy
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 ---
 
 # Multi-Party Computation

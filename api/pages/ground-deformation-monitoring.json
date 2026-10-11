@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-deformation-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ground deformation monitoring is the measurement of changes in the position of the land surface over time, here by repeated satellite radar observations.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

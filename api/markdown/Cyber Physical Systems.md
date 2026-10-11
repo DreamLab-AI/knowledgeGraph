@@ -2,7 +2,7 @@ Cyber Physical Systems (CPS) are engineered systems in which computational eleme
 
 ### Overview
 
-- CPS emerged as a research agenda formalised by Helen Gill at the US National Science Foundation around 2006, building on decades of prior work in [[Embedded Systems]], [[Control Theory]], and [[Real-Time Computing]].
+- CPS emerged as a research agenda formalised by Helen Gill at the US National Science Foundation around 2006, building on decades of prior work in [[Embedded System]], [[Control Theory]], and [[Real-Time Computing]].
 - The core idea is that computation and physical dynamics are inseparable: the software cannot be reasoned about without the physics, and the physics cannot be engineered without the software.
 - Unlike traditional IT systems, CPS failures can directly harm people, infrastructure, or the environment — making correctness, timing guarantees, and safety certification non-negotiable.
 - Scale ranges from a single microcontroller regulating a pacemaker to continent-spanning power grid management systems coordinating millions of nodes.
@@ -20,7 +20,7 @@ Cyber Physical Systems (CPS) are engineered systems in which computational eleme
 #### Computation Layer
 
 - [[Real-Time Operating System|Real-Time Operating Systems]] (RTOS) such as FreeRTOS, QNX, and VxWorks provide deterministic scheduling guarantees.
-- [[Embedded Systems]] run on microcontrollers (ARM Cortex-M, RISC-V) through to multi-core SoCs and GPUs for perception tasks.
+- [[Embedded System]] run on microcontrollers (ARM Cortex-M, RISC-V) through to multi-core SoCs and GPUs for perception tasks.
 - [[Edge Computing]] pushes computation closer to the physical process, reducing latency and dependence on cloud connectivity.
 
 #### Communication Layer

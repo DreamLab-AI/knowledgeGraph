@@ -29,7 +29,7 @@ requires:
   - urn:ngm:class:audio-signal-processing
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:text-to-speech
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:speech-recognition
   - urn:ngm:class:cloud-computing
@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:real-time-content-conversion
 dependsOn:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:speech-and-voice
   - urn:ngm:class:audio-signal-processing
   - urn:ngm:class:attention

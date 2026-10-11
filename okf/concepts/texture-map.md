@@ -31,7 +31,7 @@ supports:
   - urn:ngm:class:xr
   - urn:ngm:class:virtual-reality
 standardizedBy:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:3-d-asset-standard
 partOf:
   - urn:ngm:class:3-d-asset

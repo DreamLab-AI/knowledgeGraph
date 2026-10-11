@@ -4,6 +4,7 @@ type: Class
 title: Reference Ellipsoid
 resource: urn:ngm:class:reference-ellipsoid
 domain: earth-observation-and-geospatial-sensing
+description: A reference ellipsoid is a smooth, bi-axial surface defined to approximate the surface of the Earth.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Reference Ellipsoid
+
+A reference ellipsoid is a smooth, bi-axial surface defined to approximate the surface of the Earth.[^1]

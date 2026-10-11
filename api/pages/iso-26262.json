@@ -74,11 +74,11 @@
         "label": "Self Driving Car"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Automotive Embedded System"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
+        "id": "urn:ngm:class:embedded-system",
         "label": "Automotive Embedded System"
       }
     ],
@@ -114,8 +114,8 @@
         "label": "MISRA C"
       },
       {
-        "id": "urn:ngm:class:fmea",
-        "label": "FMEA"
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode And Effects Analysis"
       },
       {
         "id": "urn:ngm:class:fault-tree-analysis",
@@ -259,7 +259,7 @@
         "label": "Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -325,7 +325,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "AI Act"
       },
       {
@@ -381,12 +381,12 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
-        "label": "Decentralized Finance"
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -459,8 +459,8 @@
         "label": "Iso Standards"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       },
       {
         "id": "urn:ngm:class:bank-for-international-settlements",
@@ -475,7 +475,7 @@
         "label": "International Organization of Securities Commissions"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {

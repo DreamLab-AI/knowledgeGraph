@@ -30,7 +30,7 @@ supports:
 partOf:
   - urn:ngm:class:stablecoin
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:algorithmic-stablecoin
 ---

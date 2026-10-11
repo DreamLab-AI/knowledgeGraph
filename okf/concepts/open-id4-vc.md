@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:digital-identity
 relatedTo:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
 ---
 
 # OpenID4VC

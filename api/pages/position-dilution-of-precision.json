@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:position-dilution-of-precision",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Position Dilution of Precision (PDOP) is the three-dimensional position component of the conventional DOP covariance, excluding the receiver-clock diagonal component.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dilution-of-precision",

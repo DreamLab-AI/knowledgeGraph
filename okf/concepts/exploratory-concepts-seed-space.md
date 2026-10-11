@@ -11,10 +11,10 @@ is-a:
   - urn:ngm:class:software-engineering
 bridgesTo:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:agents
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Exploratory Concepts Seed Space

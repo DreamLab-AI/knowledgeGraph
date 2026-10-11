@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:ai-governance-framework
 supports:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-board
 relatedTo:
   - urn:ngm:class:general-purpose-ai-model

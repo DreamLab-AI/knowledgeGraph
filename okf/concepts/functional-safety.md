@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:safety-engineering
   - urn:ngm:class:robotics
 hasPart:
-  - urn:ngm:class:fmea
+  - urn:ngm:class:failure-mode-and-effects-analysis
   - urn:ngm:class:safety-instrumented-system
   - urn:ngm:class:redundancy
 requires:

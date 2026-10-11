@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:gauge-voting
 bridgesTo:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 ---
 
 # Curve

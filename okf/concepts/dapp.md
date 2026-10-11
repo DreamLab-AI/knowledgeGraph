@@ -8,13 +8,13 @@ description: A decentralised application whose backend logic runs on a blockchai
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
 requires:
   - urn:ngm:class:smart-contract
 enables:
   - urn:ngm:class:web3
 bridgesTo:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
 ---
 
 # DApp

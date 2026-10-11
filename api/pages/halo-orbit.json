@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:halo-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A halo orbit is a three-dimensional periodic trajectory near a collinear Lagrange point in a restricted three-body model, usually described in the frame rotating with the two primaries.[^1345][^1356]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

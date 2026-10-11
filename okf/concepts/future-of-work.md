@@ -23,7 +23,7 @@ bridgesTo:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:accountability
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:knowledge-management
 relatedTo:

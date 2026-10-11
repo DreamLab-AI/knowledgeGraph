@@ -17,10 +17,10 @@ dependsOn:
   - urn:ngm:class:memory-encryption
   - urn:ngm:class:hardware-security
 implements:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 contrastsWith:
   - urn:ngm:class:intel-sgx
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 uses:
   - urn:ngm:class:memory-encryption
   - urn:ngm:class:attestation

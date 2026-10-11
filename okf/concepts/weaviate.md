@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:semantic-search
   - urn:ngm:class:retrieval-augmented-generation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # Weaviate

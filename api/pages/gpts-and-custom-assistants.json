@@ -46,7 +46,7 @@
         "label": "Model Configuration"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI Schema"
       },
       {
@@ -62,7 +62,7 @@
         "label": "Vector Store"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI Schema"
       },
       {
@@ -84,8 +84,8 @@
         "label": "Embedding Model"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:context-window",
@@ -128,16 +128,16 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:json-data-interchange-format-schema",
@@ -172,8 +172,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:fine-tuned-models",
@@ -263,7 +263,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI 3.0"
       },
       {
@@ -271,7 +271,7 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
+        "id": "urn:ngm:class:openapi",
         "label": "OpenAPI 3.0"
       }
     ],
@@ -409,8 +409,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "relatedTo": [
@@ -423,8 +423,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },

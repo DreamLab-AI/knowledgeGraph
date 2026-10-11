@@ -9,7 +9,7 @@ maturity: mature
 quality: 0.9
 is-a:
   - urn:ngm:class:unsupervised-learning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-technique
   - urn:ngm:class:data-mining
   - urn:ngm:class:statistical-learning-theory

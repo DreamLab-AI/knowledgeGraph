@@ -8,7 +8,7 @@ description: A base learner is an individual model trained as one member of an e
 maturity: established
 quality: 0
 is-a:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 ---
 
 # Base Learner

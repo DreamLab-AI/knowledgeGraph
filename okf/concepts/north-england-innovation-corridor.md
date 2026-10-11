@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:cloud-computing
 supports:
   - urn:ngm:class:advanced-manufacturing
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
 partOf:
   - urn:ngm:class:uk-tech-ecosystem
   - urn:ngm:class:northern-powerhouse

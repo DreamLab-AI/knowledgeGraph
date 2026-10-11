@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:mlops
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
 hasPart:
   - urn:ngm:class:metadata
 requires:
@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:container-registry
   - urn:ngm:class:package-repository
 bridgesTo:
-  - urn:ngm:class:data-catalog
+  - urn:ngm:class:data-catalogue
   - urn:ngm:class:asset-management
   - urn:ngm:class:mlops
   - urn:ngm:class:feature-store

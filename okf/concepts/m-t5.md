@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:information-retrieval
 dependsOn:
-  - urn:ngm:class:pretrained-model
+  - urn:ngm:class:pre-trained-model
   - urn:ngm:class:embedding-model
 bridgesTo:
   - urn:ngm:class:fine-tuning
@@ -22,8 +22,8 @@ uses:
   - urn:ngm:class:transfer-learning
 relatedTo:
   - urn:ngm:class:transformer
-  - urn:ngm:class:encoder-decoder-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:encoder-decoder
+  - urn:ngm:class:large-language-model
 ---
 
 # mT5

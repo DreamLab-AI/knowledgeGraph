@@ -8,7 +8,7 @@ description: Learning from demonstration is an approach in which an agent acquir
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:imitation-learning
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:imitation-learning
 enables:

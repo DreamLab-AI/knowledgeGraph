@@ -21,7 +21,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:ai-infrastructure
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:biometric-binding-mechanism
   - urn:ngm:class:deep-learning
 relatedTo:

@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:diffusion-process
   - urn:ngm:class:noise-schedule
   - urn:ngm:class:denoising-score-matching
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:deep-learning
 enables:
   - urn:ngm:class:image-generation
@@ -56,7 +56,7 @@ uses:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:self-attention
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:adaptive-layer-normalisation
   - urn:ngm:class:patch-embedding
   - urn:ngm:class:flow-matching

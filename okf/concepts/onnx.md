@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:computation-graph
-  - urn:ngm:class:protobuf
+  - urn:ngm:class:protocol-buffer
 enables:
   - urn:ngm:class:model-deployment
   - urn:ngm:class:hardware-acceleration

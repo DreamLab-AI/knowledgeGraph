@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:smart-contract
   - urn:ngm:class:aml-kyc-compliance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:securities-regulation
 relatedTo:

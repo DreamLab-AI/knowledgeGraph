@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-manoeuvre",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An orbital manoeuvre is a deliberate propulsive action that changes or maintains a spacecraft trajectory.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

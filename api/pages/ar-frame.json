@@ -568,8 +568,8 @@
         "label": "Service Oriented Architecture"
       },
       {
-        "id": "urn:ngm:class:openxr-standard",
-        "label": "OpenXR Standard"
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
       },
       {
         "id": "urn:ngm:class:design-pattern",
@@ -734,16 +734,16 @@
         "label": "AsyncAPI"
       },
       {
-        "id": "urn:ngm:class:open-api-specification",
-        "label": "OpenAPI Specification"
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
       },
       {
         "id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",

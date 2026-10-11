@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:content-addressed-storage
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:machine-learning-discipline-pipeline
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 implements:
   - urn:ngm:class:s3-api
 contrastsWith:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reformatted-data-state",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Reformatted data state is the SWEET data-processing state of data that have been through a reformatting process, meaning a conversion from one data format to another.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

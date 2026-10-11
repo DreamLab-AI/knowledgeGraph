@@ -8,7 +8,7 @@ description: AI Inference is the operational phase of a machine learning system 
 maturity: mature
 quality: 0.91
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 hasPart:
   - urn:ngm:class:kv-cache

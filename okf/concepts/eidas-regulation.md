@@ -9,23 +9,37 @@ maturity: mature
 quality: 0.62
 is-a:
   - urn:ngm:class:regulatory-compliance
+  - urn:ngm:class:regulatory-framework
 requires:
   - urn:ngm:class:certificate-authority
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:pki
+  - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:digital-identity
   - urn:ngm:class:qualified-electronic-signature
+  - urn:ngm:class:identity-verification
+  - urn:ngm:class:cross-border-authentication
+  - urn:ngm:class:timestamp
 implements:
-  - urn:ngm:class:digital-signature-verification
+  - urn:ngm:class:electronic-signature
   - urn:ngm:class:trust-framework
+  - urn:ngm:class:eu-digital-single-market
 contrastsWith:
   - urn:ngm:class:gdpr
+  - urn:ngm:class:fido2
+  - urn:ngm:class:self-sovereign-identity
 bridgesTo:
   - urn:ngm:class:qualified-electronic-signature
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:blockchain-identity
+  - urn:ngm:class:certificate-authority
 uses:
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
+  - urn:ngm:class:x-509-certificate
+  - urn:ngm:class:qualified-electronic-signature
 supports:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:digital-identity
@@ -38,6 +52,7 @@ relatedTo:
   - urn:ngm:class:gdpr
   - urn:ngm:class:digital-identity
   - urn:ngm:class:certificate-authority
+  - urn:ngm:class:know-your-customer
 ---
 
 # eIDAS Regulation

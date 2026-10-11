@@ -53,7 +53,7 @@ enables:
 dependsOn:
   - urn:ngm:class:json-format
   - urn:ngm:class:binary-encoding
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:usd-framework
   - urn:ngm:class:material-x
   - urn:ngm:class:draco-compression

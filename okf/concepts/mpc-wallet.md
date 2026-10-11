@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:secret-sharing
   - urn:ngm:class:private-key
 supports:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
 relatedTo:
   - urn:ngm:class:digital-wallet
 ---

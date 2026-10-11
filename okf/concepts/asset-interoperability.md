@@ -21,20 +21,20 @@ dependsOn:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:provenance-tracking
 implements:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:vendor-lock-in
   - urn:ngm:class:walled-garden
 bridgesTo:
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:interoperability-protocol
   - urn:ngm:class:digital-asset-standards
   - urn:ngm:class:bridge-contract
   - urn:ngm:class:wrapped-token
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 standardizedBy:
   - urn:ngm:class:metaverse-standards-forum
   - urn:ngm:class:khronos-group

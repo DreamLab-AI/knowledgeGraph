@@ -15,7 +15,7 @@ A sensor is a transducer or measurement device that detects, converts, and quant
 - **[[Analog-to-Digital Converter]]** — quantises the conditioned analogue signal into discrete digital words at a defined sample rate and bit depth.
 - **Calibration & Compensation** — stored coefficients (in EEPROM or OTP memory) correct for offset, gain drift, and temperature-dependent errors.
 - **Communication Interface** — I²C, SPI, UART, CAN, RS-485, or Ethernet binds the sensor to a host microcontroller, FPGA, or network gateway.
-- **[[Embedded Systems]] Runtime** — firmware or RTOS task that services sensor interrupts, applies calibration, and publishes measurements.
+- **[[Embedded System]] Runtime** — firmware or RTOS task that services sensor interrupts, applies calibration, and publishes measurements.
 - **Power Supply & Management** — sensors may operate in continuous, burst, or ultra-low-power sleep modes to extend battery life in wireless nodes.
 
 ### Sensor Taxonomy

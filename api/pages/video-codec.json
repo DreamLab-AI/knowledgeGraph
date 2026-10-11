@@ -8,8 +8,8 @@
   "definition": "A video codec (coder-decoder) is an algorithm or hardware implementation that compresses and decompresses digital video by exploiting spatial redundancy within frames (intra-prediction), temporal redundancy across frames (inter-prediction with motion compensation), and transform coding of residuals, enabling practical storage and transmission of video at bitrates orders of magnitude lower than uncompressed formats whilst maintaining perceptual quality.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:encoder-decoder-architecture",
-      "label": "Encoder Decoder Architecture"
+      "id": "urn:ngm:class:encoder-decoder",
+      "label": "Encoder-Decoder"
     }
   ],
   "entityType": "Class",
@@ -76,7 +76,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -104,8 +104,8 @@
         "label": "Video Conferencing"
       },
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "CDN"
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "standardizedBy": [
@@ -135,6 +135,11 @@
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture",
       "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network",
+      "slug": "neural-network"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -187,16 +192,24 @@
         "label": "Backpropagation"
       },
       {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
         "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:training-data",
-        "label": "Training Data"
       }
     ],
     "enables": [
@@ -222,25 +235,15 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
-        "label": "Autonomous System"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "implements": [
@@ -251,6 +254,14 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:universal-function-approximation",
+        "label": "Universal Function Approximation"
       }
     ],
     "contrastsWith": [
@@ -261,12 +272,28 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -287,6 +314,10 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
         "id": "urn:ngm:class:layer-normalisation",
         "label": "Layer Normalisation"
       },
@@ -297,19 +328,29 @@
       {
         "id": "urn:ngm:class:softmax-function",
         "label": "Softmax Function"
-      }
-    ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:autoregressive-generation",
-        "label": "Autoregressive Generation"
       },
       {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
@@ -325,8 +366,16 @@
         "label": "BERT"
       },
       {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
         "id": "urn:ngm:class:t5-model",
         "label": "T5 Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -337,12 +386,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ]
   },

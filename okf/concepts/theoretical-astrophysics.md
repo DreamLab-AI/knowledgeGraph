@@ -4,6 +4,7 @@ type: Class
 title: Theoretical Astrophysics
 resource: urn:ngm:class:theoretical-astrophysics
 domain: space-science-and-systems
+description: Theoretical astrophysics is the branch of astrophysics that builds mathematical and computational models of astronomical systems to explain observations and to predict phenomena not yet observed.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Theoretical Astrophysics
+
+Theoretical astrophysics is the branch of astrophysics that builds mathematical and computational models of astronomical systems to explain observations and to predict phenomena not yet observed.[^1]

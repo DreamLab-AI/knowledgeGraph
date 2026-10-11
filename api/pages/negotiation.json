@@ -122,11 +122,6 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:regulatory-framework",
-      "label": "Regulatory Framework",
-      "slug": "regulatory-framework"
     }
   ],
   "inheritedRelations": {
@@ -204,8 +199,8 @@
         "label": "Community Governance Model"
       },
       {
-        "id": "urn:ngm:class:decentralized-governance",
-        "label": "Decentralized Governance"
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
       },
       {
         "id": "urn:ngm:class:trustless-coordination",
@@ -244,14 +239,6 @@
       {
         "id": "urn:ngm:class:jurisdiction",
         "label": "Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:legal-jurisdiction",
-        "label": "Legal Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:supervisory-authority",
-        "label": "Supervisory Authority"
       }
     ],
     "implements": [
@@ -266,14 +253,6 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security Obligations"
-      },
-      {
-        "id": "urn:ngm:class:eu-mi-ca-regulation",
-        "label": "EU MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:genius-act",
-        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
@@ -292,10 +271,6 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-arbitrage",
-        "label": "Regulatory Arbitrage"
       }
     ],
     "bridgesTo": [
@@ -382,7 +357,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -396,18 +371,6 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
-      },
-      {
-        "id": "urn:ngm:class:bank-for-international-settlements",
-        "label": "Bank for International Settlements"
-      },
-      {
-        "id": "urn:ngm:class:financial-action-task-force",
-        "label": "Financial Action Task Force"
-      },
-      {
-        "id": "urn:ngm:class:international-organization-of-securities-commissions",
-        "label": "International Organization of Securities Commissions"
       }
     ],
     "partOf": [

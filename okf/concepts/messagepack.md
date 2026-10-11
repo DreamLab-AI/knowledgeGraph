@@ -13,11 +13,11 @@ requires:
   - urn:ngm:class:binary-encoding
 enables:
   - urn:ngm:class:message-queue
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 implements:
   - urn:ngm:class:data-serialization
 contrastsWith:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:protocol-buffer
 bridgesTo:
   - urn:ngm:class:infrastructure
@@ -28,7 +28,7 @@ supports:
 partOf:
   - urn:ngm:class:data-serialization
 relatedTo:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:cbor
   - urn:ngm:class:protocol-buffer
 ---

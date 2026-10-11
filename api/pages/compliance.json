@@ -399,12 +399,12 @@
       "label": "Cross Border Compliance"
     },
     {
-      "slug": "fatfrecommendations",
-      "label": "FATFRecommendations"
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
     },
     {
-      "slug": "kyc",
-      "label": "KYC"
+      "slug": "know-your-customer",
+      "label": "Know Your Customer"
     },
     {
       "slug": "meeting-recording",

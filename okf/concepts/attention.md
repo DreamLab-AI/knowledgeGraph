@@ -35,7 +35,7 @@ requires:
 enables:
   - urn:ngm:class:cross-modal-conditioning
   - urn:ngm:class:in-context-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:context-window
   - urn:ngm:class:neural-machine-translation
   - urn:ngm:class:vision-transformer
@@ -73,7 +73,7 @@ uses:
   - urn:ngm:class:flash-attention
 supports:
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:multimodal-ai-architecture-reasoning
   - urn:ngm:class:protein-structure-prediction
   - urn:ngm:class:code-generation
@@ -89,7 +89,7 @@ standardizedBy:
   - urn:ngm:class:openai-triton
 relatedTo:
   - urn:ngm:class:graph-neural-network
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:memory-augmented-neural-network
   - urn:ngm:class:pointer-network
   - urn:ngm:class:neural-turing-machine

@@ -26,13 +26,13 @@ contrastsWith:
   - urn:ngm:class:fraud-proof
 bridgesTo:
   - urn:ngm:class:distributed-collaboration
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:hash-function
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:commitment-scheme
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:blockchain
   - urn:ngm:class:rollup

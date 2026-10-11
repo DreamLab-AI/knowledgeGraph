@@ -14,7 +14,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:technology-infrastructure
   - urn:ngm:class:search-engine
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
 ---
 

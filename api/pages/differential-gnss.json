@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:differential-gnss",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Differential GNSS (DGNSS) is a family of positioning methods in which one or more reference receivers at known coordinates provide observations, corrections or other information for a rover\u2019s GNSS solution.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

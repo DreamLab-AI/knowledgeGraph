@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:remote-sensing-image-segmentation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Remote sensing image segmentation is image segmentation applied to aerial and orbital imagery, commonly treated as a classification problem at pixel level.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:image-segmentation",
@@ -81,9 +81,9 @@
       "slug": "artificial-intelligence"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:perception-system",
@@ -107,8 +107,8 @@
         "label": "Atrous Convolution"
       },
       {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
       },
       {
         "id": "urn:ngm:class:feature-pyramid-network",
@@ -133,7 +133,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       },
       {
@@ -297,8 +297,8 @@
         "label": "Object Recognition"
       },
       {
-        "id": "urn:ngm:class:end-to-end-learning",
-        "label": "End-to-End Learning"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -399,8 +399,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "standardizedBy": [
@@ -433,8 +433,8 @@
         "label": "NIST AI Standards"
       },
       {
-        "id": "urn:ngm:class:iso-21448",
-        "label": "ISO 21448"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       }
     ],
     "partOf": [
@@ -445,6 +445,10 @@
       {
         "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:ai-agent-system",
@@ -465,12 +469,12 @@
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:keypoint-detection",
-        "label": "Keypoint Detection"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
       },
       {
         "id": "urn:ngm:class:multi-modal-learning",

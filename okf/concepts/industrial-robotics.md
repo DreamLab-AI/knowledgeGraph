@@ -26,7 +26,7 @@ dependsOn:
   - urn:ngm:class:logic
   - urn:ngm:class:communication-protocols
 implements:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:iso-10218
 contrastsWith:
   - urn:ngm:class:service-robotics
@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:control-theory
 uses:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:digital-twin
 supports:
   - urn:ngm:class:supply-chain-automation

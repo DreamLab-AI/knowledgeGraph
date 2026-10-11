@@ -43,7 +43,7 @@ partOf:
   - urn:ngm:class:computing-infrastructure
   - urn:ngm:class:cloud-computing
 relatedTo:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:cost-optimisation
   - urn:ngm:class:devops
 ---

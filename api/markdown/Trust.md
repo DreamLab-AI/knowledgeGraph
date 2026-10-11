@@ -45,7 +45,7 @@ Trust is a cognitive, relational, and institutional disposition in which an agen
 
 #### Cryptographic Trust
 
-- [[Decentralised Identity]] and [[Verifiable Credentials]] systems allow parties to verify claims (identity, credential, attribute) without trusting any single intermediary.
+- [[Decentralised Identity]] and [[Verifiable Credential]] systems allow parties to verify claims (identity, credential, attribute) without trusting any single intermediary.
 - [[Authentication]] protocols (OAuth 2.0, OpenID Connect, FIDO2) operationalise trust establishment in digital services.
 - Public Key Infrastructure (PKI) and certificate authority hierarchies encode hierarchical trust into TLS/HTTPS.
 - The [[Trust Over IP Foundation]] proposes a four-layer trust stack (utility, DID, data exchange, application) for decentralised, interoperable trust infrastructure.
@@ -80,13 +80,13 @@ Trust is a cognitive, relational, and institutional disposition in which an agen
 #### Decentralised Systems
 
 - Blockchain consensus protocols embed trust in game-theoretic incentives and cryptographic verification, reducing reliance on trusted intermediaries.
-- Self-sovereign identity projects use [[Decentralised Identity]] and [[Verifiable Credentials]] to allow individuals to control and selectively disclose verified attributes without depending on centralised identity providers.
+- Self-sovereign identity projects use [[Decentralised Identity]] and [[Verifiable Credential]] to allow individuals to control and selectively disclose verified attributes without depending on centralised identity providers.
 - Cross-border data sharing frameworks (EU Data Spaces, Gaia-X) rely on trust frameworks to establish interoperable governance across jurisdictions.
 
 #### AI Governance and Regulation
 
 - The EU AI Act mandates transparency, [[Accountability]], and human oversight for high-risk AI systems, directly addressing institutional trust in AI.
-- [[NIST AI RMF]] (Risk Management Framework) provides a structured approach to governing AI trustworthiness through Map, Measure, Manage, and Govern functions.
+- [[NIST AI Risk Management Framework]] (Risk Management Framework) provides a structured approach to governing AI trustworthiness through Map, Measure, Manage, and Govern functions.
 - [[ISO/IEC 42001]] establishes an AI management system standard addressing organisational accountability and trustworthiness.
 - Independent AI auditing firms and sandbox regulators (FCA, Ofcom, FDA AI action plans) represent institutional mechanisms for building public trust in AI deployments.
 

@@ -8,7 +8,7 @@ description: A surrogate model (or metamodel) is an inexpensive, data-driven app
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:bayesian-optimisation
 requires:
   - urn:ngm:class:feature-engineering
@@ -27,7 +27,7 @@ supports:
   - urn:ngm:class:bayesian-optimisation
   - urn:ngm:class:hyperparameter-optimisation
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:gaussian-process
   - urn:ngm:class:hyperparameter-optimisation

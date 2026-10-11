@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:sc-interaction
   - urn:ngm:class:digital-twin
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:simultaneous-localisation-and-mapping
 supports:
   - urn:ngm:class:virtual-production

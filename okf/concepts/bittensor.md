@@ -30,9 +30,9 @@ requires:
 enables:
   - urn:ngm:class:distributed-computing
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:large-language-models
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:large-language-model
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:permissionless-ai-training
 dependsOn:
   - urn:ngm:class:blockchain
@@ -58,16 +58,16 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:digital-asset
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:open-source-ai
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 standardizedBy:
   - urn:ngm:class:opentensor-foundation
 relatedTo:
   - urn:ngm:class:token-economics
   - urn:ngm:class:blockchain
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ethereum
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:ai-agent-system

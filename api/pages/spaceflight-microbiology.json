@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-microbiology",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Spaceflight microbiology is the study and monitoring of microorganisms carried by spacecraft, cargo and crew, including their possible effects on crew health and on onboard systems.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

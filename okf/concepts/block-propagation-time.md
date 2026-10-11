@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:bc-protocol-and-consensus
   - urn:ngm:class:blockchain-entity
   - urn:ngm:class:network-component
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:block-propagation
 requires:

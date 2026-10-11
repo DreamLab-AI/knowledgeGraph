@@ -86,7 +86,7 @@ A Certificate Authority (CA) is a trusted third-party organisation that issues, 
 - **RFC 8555** — Automatic Certificate Management Environment (ACME) protocol for automated issuance.
 - **RFC 6962 / RFC 9162** — Certificate Transparency v1 and v2; append-only log requirements.
 - **CA/Browser Forum Baseline Requirements** — Policy rules for public TLS CAs: maximum validity periods, validation procedures, key algorithm requirements.
-- **ETSI EN 319 401 / 411** — European standards for trust service providers under [[eIDAS]] regulation.
+- **ETSI EN 319 401 / 411** — European standards for trust service providers under [[eIDAS Regulation]] regulation.
 - **FIPS 140-2 / 140-3** — US federal standards governing [[Hardware Security Module]] approval for key protection.
 - **WebTrust for CAs** — Annual audit programme conducted by licensed CPA firms verifying CA compliance; required for inclusion in major root stores.
 - **Mozilla Root Store Policy** — Mozilla publishes explicit inclusion criteria; non-compliance has led to distrust events (e.g., Symantec 2018, TrustCor 2022).

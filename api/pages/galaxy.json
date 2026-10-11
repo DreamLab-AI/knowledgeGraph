@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:galaxy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A galaxy is a large group of stars, gas and dust bound together by gravity.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

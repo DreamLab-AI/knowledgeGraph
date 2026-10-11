@@ -28,7 +28,7 @@ enables:
   - urn:ngm:class:warehouse-automation
 dependsOn:
   - urn:ngm:class:localisation
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 contrastsWith:
   - urn:ngm:class:manipulator
   - urn:ngm:class:manipulator
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:lidar
   - urn:ngm:class:inertial-measurement-unit
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 standardizedBy:
   - urn:ngm:class:iso-8373-2021
   - urn:ngm:class:ansi-ria-r15-08

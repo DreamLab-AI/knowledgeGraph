@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:fbx
 uses:
   - urn:ngm:class:fbx
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:hlsl
 supports:
   - urn:ngm:class:spatial-computing

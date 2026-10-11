@@ -49,7 +49,7 @@ enables:
   - urn:ngm:class:population-level-tracking
 dependsOn:
   - urn:ngm:class:internet-infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:facial-recognition
   - urn:ngm:class:cryptography
   - urn:ngm:class:data-brokers
@@ -96,7 +96,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:gdpr
   - urn:ngm:class:uk-data-protection-act-2018
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:fisa
   - urn:ngm:class:uk-investigatory-powers-act-2016
   - urn:ngm:class:un-special-rapporteur-on-privacy

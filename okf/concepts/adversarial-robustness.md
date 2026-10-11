@@ -36,7 +36,7 @@ supports:
   - urn:ngm:class:ai-governance
   - urn:ngm:class:risk-management
 standardizedBy:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-tr-24029-1-2021
 partOf:
   - urn:ngm:class:trustworthy-ai

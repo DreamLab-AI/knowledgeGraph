@@ -62,7 +62,7 @@ ETSI GR ARF 010 is a Group Report produced by the ETSI Industry Specification Gr
   - [[3GPP]] TS 26.928 — Extended Reality and 5G; ARF 010 references 3GPP network requirements
   - [[ISO/IEC 18023]] — MPEG-I scene description, relevant to content encoding within ARF pipelines
   - [[W3C Spatial Data on the Web]] — geo-reference alignment
-- **Positioning**: ETSI ARF occupies the service and interoperability layer of the [[Spatial Computing]] stack, addressing gaps that device-layer standards ([[OpenXR]], [[ARKit]], [[ARCore]]) and content standards ([[glTF]], [[USD]]) leave open — specifically, how services broker spatial anchors and content across organisational boundaries.
+- **Positioning**: ETSI ARF occupies the service and interoperability layer of the [[Spatial Computing]] stack, addressing gaps that device-layer standards ([[OpenXR]], [[ARKit]], [[ARCore]]) and content standards ([[glTF]], [[Universal Scene Description]]) leave open — specifically, how services broker spatial anchors and content across organisational boundaries.
 - **Industry context**: The ARF initiative was launched in response to market fragmentation identified by operators, enterprise AR vendors, and platform providers. It complements [[W3C Immersive Web]] and [[Open AR Cloud]] community efforts by providing a formal ETSI standardisation track.
 - **Regulatory relevance**: As [[XR Architecture]] and [[Spatial Web]] deployments expand in regulated sectors (healthcare, manufacturing, transport), ARF 010 provides a standards reference that supports [[CE Marking]] and procurement compliance in European markets.
 

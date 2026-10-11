@@ -26,10 +26,10 @@ uses:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:cryptographic-proof
 supports:
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 standardizedBy:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 partOf:
   - urn:ngm:class:did-document
 relatedTo:

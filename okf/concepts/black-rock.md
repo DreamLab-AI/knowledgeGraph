@@ -32,11 +32,11 @@ bridgesTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-etf
   - urn:ngm:class:tokenization
   - urn:ngm:class:esg
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:esg
 uses:
   - urn:ngm:class:quantitative-finance
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-infrastructure
   - urn:ngm:class:risk-analytics
 supports:

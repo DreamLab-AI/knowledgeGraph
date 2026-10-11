@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cosmic-web",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Large-scale structures across the universe, the cosmic web is a network of clusters, filaments, walls and voids in which matter and galaxies are arranged.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -54,7 +54,7 @@
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -69,8 +69,8 @@
         "label": "Ethereum Yellow Paper"
       },
       {
-        "id": "urn:ngm:class:eip",
-        "label": "EIP"
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
       }
     ],
     "contrastsWith": [
@@ -301,7 +301,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -419,16 +419,16 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "decentralized-exchange",
-      "label": "Decentralized Exchange"
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
     },
     {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
     },
     {
-      "slug": "erc20",
-      "label": "ERC20"
+      "slug": "erc-20",
+      "label": "erc-20"
     },
     {
       "slug": "gnosis-chain",

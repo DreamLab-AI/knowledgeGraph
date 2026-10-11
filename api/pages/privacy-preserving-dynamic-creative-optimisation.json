@@ -52,8 +52,8 @@
         "label": "Nostr Protocol"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
       },
       {
         "id": "urn:ngm:class:hardware-and-edge",
@@ -117,19 +117,24 @@
       "slug": "network-component"
     },
     {
-      "id": "urn:ngm:class:networkcomponent",
-      "label": "Networkcomponent",
-      "slug": "networkcomponent"
-    },
-    {
       "id": "urn:ngm:class:protocol",
       "label": "Protocol",
       "slug": "protocol"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure",
       "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:open-standards",
@@ -142,9 +147,19 @@
       "slug": "systems-theory"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
       "id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration",
       "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
     },
     {
       "id": "urn:ngm:class:software-engineering",
@@ -157,6 +172,21 @@
       "slug": "standards"
     },
     {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse",
       "slug": "metaverse"
@@ -167,9 +197,9 @@
       "slug": "sc-standards-and-interop"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:multiverse",
@@ -200,11 +230,6 @@
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     }
   ],
   "inheritedRelations": {
@@ -238,8 +263,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -252,10 +277,6 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
@@ -266,6 +287,10 @@
       {
         "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:self-sovereign-identity",
@@ -438,7 +463,7 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -490,10 +515,6 @@
         "label": "Decentralised Storage"
       },
       {
-        "id": "urn:ngm:class:decentralized-storage",
-        "label": "Decentralized Storage"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graphs",
         "label": "Open Knowledge Graphs"
       },
@@ -512,6 +533,10 @@
       {
         "id": "urn:ngm:class:tokenised-economics",
         "label": "Tokenised Economics"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [
@@ -544,8 +569,8 @@
         "label": "Trust Over IP Foundation"
       },
       {
-        "id": "urn:ngm:class:w3-c",
-        "label": "W3C"
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
       }
     ],
     "partOf": [
@@ -554,12 +579,12 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
       },
       {
         "id": "urn:ngm:class:telecommunications-infrastructure",
@@ -570,16 +595,16 @@
         "label": "Open Standards"
       },
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      },
+      {
         "id": "urn:ngm:class:standards",
         "label": "Standards Ecosystem"
       },
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:multiverse",
-        "label": "Multiverse"
       }
     ],
     "relatedTo": [

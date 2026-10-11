@@ -38,7 +38,7 @@ standardizedBy:
   - urn:ngm:class:iso-iec-23257-2021
   - urn:ngm:class:x-509-certificate
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:asymmetric-key-pair
 relatedTo:
   - urn:ngm:class:digital-signature

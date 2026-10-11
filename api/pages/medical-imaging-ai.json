@@ -40,8 +40,8 @@
         "label": "DICOM"
       },
       {
-        "id": "urn:ngm:class:annotated-training-data",
-        "label": "Annotated Training Data"
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
       },
       {
         "id": "urn:ngm:class:gpu-computing",
@@ -356,8 +356,8 @@
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -422,8 +422,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:financial-technology",

@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:spot-trading
   - urn:ngm:class:derivatives-trading
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:staking
   - urn:ngm:class:staking
 dependsOn:
@@ -33,7 +33,7 @@ contrastsWith:
   - urn:ngm:class:kraken
   - urn:ngm:class:decentralised-exchange
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:digital-identity
 uses:
@@ -45,7 +45,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:cryptocurrency
   - urn:ngm:class:digital-asset
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:web3
 ---

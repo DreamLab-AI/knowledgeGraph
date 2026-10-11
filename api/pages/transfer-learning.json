@@ -8,7 +8,7 @@
   "definition": "Transfer learning is a machine learning paradigm in which knowledge encoded in a model trained on a source task or domain is systematically reused to improve learning efficiency and performance on a different but related target task or domain. By exploiting shared representations \u2014 such as low-level feature detectors, syntactic structures, or visual hierarchies \u2014 the technique drastically reduces the labelled data, compute, and training time required for downstream tasks. It is foundational to modern deep learning practice, underpinning pre-trained large language models, vision transformers, and multi-modal systems that are subsequently adapted via fine-tuning, prompt tuning, or adapter layers. The paradigm bridges the gap between data-rich source domains and data-scarce target settings, enabling deployment in low-resource clinical, scientific, and industrial contexts.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     },
     {
@@ -23,7 +23,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
       },
       {
         "id": "urn:ngm:class:domain-adaptation",
@@ -54,8 +54,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:few-shot-learning",
@@ -71,7 +71,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       }
     ],
     "dependsOn": [
@@ -170,6 +170,14 @@
   "inheritedRelations": {
     "hasPart": [
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
@@ -192,20 +200,20 @@
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
-      },
-      {
-        "id": "urn:ngm:class:hidden-layer",
-        "label": "Hidden Layer"
-      },
-      {
-        "id": "urn:ngm:class:loss-function",
-        "label": "Loss Function"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
         "id": "urn:ngm:class:training-data",
@@ -226,17 +234,13 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
-      },
-      {
-        "id": "urn:ngm:class:model-architecture",
-        "label": "Model Architecture"
-      },
-      {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -258,16 +262,12 @@
         "label": "Predictive Analytics"
       },
       {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
         "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
-      },
-      {
-        "id": "urn:ngm:class:large-language-model",
-        "label": "Large Language Model"
-      },
-      {
-        "id": "urn:ngm:class:object-detection",
-        "label": "Object Detection"
       }
     ],
     "dependsOn": [
@@ -276,8 +276,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -340,16 +340,20 @@
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
       {
         "id": "urn:ngm:class:shallow-machine-learning",
         "label": "Shallow Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:expert-systems",
-        "label": "Expert System"
       }
     ],
     "bridgesTo": [
@@ -360,6 +364,14 @@
       {
         "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       },
       {
         "id": "urn:ngm:class:blockchain-validation",
@@ -376,17 +388,13 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
@@ -394,6 +402,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
       },
       {
         "id": "urn:ngm:class:cognitive-science",
@@ -410,24 +422,20 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
-      },
-      {
-        "id": "urn:ngm:class:scientific-method",
-        "label": "Scientific Method"
-      },
-      {
-        "id": "urn:ngm:class:statistical-learning-theory",
-        "label": "Statistical Learning"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:decentralized-ai",
@@ -448,13 +456,17 @@
       {
         "id": "urn:ngm:class:ai-research",
         "label": "AI Research"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-research",
-        "label": "AI Safety Research"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
       {
         "id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO/IEC 22989:2022"
@@ -466,6 +478,12 @@
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [

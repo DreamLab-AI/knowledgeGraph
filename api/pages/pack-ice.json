@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pack-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Pack ice is a drift ice mass with an ice concentration at or above 7/10, which covers 70% or more of a given area of a water body.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:drift-ice",

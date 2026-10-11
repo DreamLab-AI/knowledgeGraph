@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:non-fungible-token
 bridgesTo:
   - urn:ngm:class:wallet
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 ---
 
 # Rainbow Wallet

@@ -4,6 +4,7 @@ type: Class
 title: Astronomical Body
 resource: urn:ngm:class:astronomical-body
 domain: space-science-and-systems
+description: An astronomical body is an individual object studied in astronomy, such as a planet, star or black hole.[^1][^2][^3]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Astronomical Body
+
+An astronomical body is an individual object studied in astronomy, such as a planet, star or black hole.[^1][^2][^3]

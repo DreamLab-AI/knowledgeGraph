@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:generative-ai
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:large-language-model
   - urn:ngm:class:microsoft-graph

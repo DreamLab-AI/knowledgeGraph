@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mars-surface-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mars surface radiation environment is the natural radiation on or adjacent to the surface of Mars, shaped by free space radiation that the planet partly shields and the atmosphere modulates, albedo radiation from the crust and decay of radioactive elements in the crust.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mars-radiation-environment",

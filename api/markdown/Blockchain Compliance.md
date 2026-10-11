@@ -158,7 +158,7 @@ The framework of regulatory requirements, technical controls, and operational pr
 - [[Anti-Money Laundering]]
 - [[Blockchain Analytics]]
 - [[Regulatory Technology]]
-- [[Decentralized Identity]]
+- [[Decentralised Identity]]
 
   #blockchain #compliance #aml #kyc #regulation
 

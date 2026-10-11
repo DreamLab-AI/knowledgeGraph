@@ -315,8 +315,8 @@
         "label": "Localization"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:monte-carlo-tree-search",
@@ -413,8 +413,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -715,8 +715,8 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -743,10 +743,6 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
-        "label": "Particle Filter"
-      },
-      {
         "id": "urn:ngm:class:statistical-inference",
         "label": "Statistical Inference"
       },
@@ -761,6 +757,10 @@
       {
         "id": "urn:ngm:class:pomdp",
         "label": "POMDP"
+      },
+      {
+        "id": "urn:ngm:class:smoothing-and-mapping",
+        "label": "Smoothing And Mapping"
       }
     ]
   },

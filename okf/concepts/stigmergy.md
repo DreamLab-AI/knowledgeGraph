@@ -20,7 +20,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:robotics
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 ---
 
 # Stigmergy

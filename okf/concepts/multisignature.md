@@ -9,28 +9,38 @@ maturity: established
 quality: 0.74
 is-a:
   - urn:ngm:class:cryptographic-signature
+  - urn:ngm:class:signature-scheme
 requires:
   - urn:ngm:class:private-key
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:quorum-threshold
+  - urn:ngm:class:key-management
+  - urn:ngm:class:digital-signature
 enables:
   - urn:ngm:class:multi-signature-wallet
   - urn:ngm:class:self-custody
   - urn:ngm:class:treasury-management
   - urn:ngm:class:institutional-custody
   - urn:ngm:class:treasury-management
+  - urn:ngm:class:multi-sig-governance
+  - urn:ngm:class:dao-governance
+  - urn:ngm:class:cross-chain-bridge
 dependsOn:
   - urn:ngm:class:bitcoin-script
   - urn:ngm:class:smart-contract
 implements:
   - urn:ngm:class:access-control
   - urn:ngm:class:distributed-trust
+  - urn:ngm:class:threshold-cryptography
 contrastsWith:
   - urn:ngm:class:single-key-wallet
   - urn:ngm:class:custodial-wallet
+  - urn:ngm:class:mpc-wallet
+  - urn:ngm:class:single-signature
 bridgesTo:
   - urn:ngm:class:decentralised-governance
   - urn:ngm:class:zero-knowledge-proof
+  - urn:ngm:class:decentralised-identity
 uses:
   - urn:ngm:class:digital-signatures
   - urn:ngm:class:threshold-cryptography
@@ -38,12 +48,20 @@ uses:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:schnorr-signature
   - urn:ngm:class:hash-function
+  - urn:ngm:class:cryptographic-keys
+  - urn:ngm:class:smart-contract
+  - urn:ngm:class:public-key-cryptography
 relatedTo:
   - urn:ngm:class:multi-sig-governance
   - urn:ngm:class:multi-party-computation
   - urn:ngm:class:account-abstraction
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:secret-sharing
+  - urn:ngm:class:threshold-signature-scheme
+  - urn:ngm:class:schnorr-signature
+  - urn:ngm:class:ecdsa
+  - urn:ngm:class:pay-to-script-hash
+  - urn:ngm:class:key-ceremony
 ---
 
 # Multisignature

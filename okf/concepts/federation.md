@@ -29,10 +29,10 @@ implements:
   - urn:ngm:class:oauth-2-0
 bridgesTo:
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:identity-management
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:directory-service
 supports:
   - urn:ngm:class:distributed-collaboration

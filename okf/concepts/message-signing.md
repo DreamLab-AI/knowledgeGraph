@@ -20,7 +20,7 @@ uses:
 relatedTo:
   - urn:ngm:class:secp256k1
   - urn:ngm:class:cryptographic-hash-function
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 ---
 
 # Message Signing

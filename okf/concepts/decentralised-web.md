@@ -36,7 +36,7 @@ requires:
   - urn:ngm:class:distributed-hash-table
   - urn:ngm:class:content-addressing
   - urn:ngm:class:peer-discovery
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:self-sovereign-identity
 enables:
   - urn:ngm:class:archive-permanence
@@ -86,7 +86,7 @@ uses:
   - urn:ngm:class:web-rtc
   - urn:ngm:class:schnorr-signatures
 supports:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:knowledge-graphs
   - urn:ngm:class:permanent-archives
   - urn:ngm:class:self-sovereign-identity
@@ -101,7 +101,7 @@ standardizedBy:
   - urn:ngm:class:internet-archive
   - urn:ngm:class:open-sats
   - urn:ngm:class:trust-over-ip-foundation
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:protocol-labs
   - urn:ngm:class:opensats
 relatedTo:
@@ -111,7 +111,7 @@ relatedTo:
   - urn:ngm:class:open-source-software
   - urn:ngm:class:agentic-internet
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:web3
   - urn:ngm:class:cryptographic-privacy-activist
 ---

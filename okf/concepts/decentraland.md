@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:cryptocurrency-wallet
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:asset-tokenisation
   - urn:ngm:class:social-vr
@@ -24,8 +24,8 @@ enables:
   - urn:ngm:class:user-generated-content
   - urn:ngm:class:play-to-earn-p2-e
 implements:
-  - urn:ngm:class:dao
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:erc-721
 contrastsWith:
   - urn:ngm:class:the-sandbox
   - urn:ngm:class:roblox
@@ -33,9 +33,9 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:digital-twin
   - urn:ngm:class:distributed-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 uses:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:ipfs
 partOf:
   - urn:ngm:class:open-metaverse

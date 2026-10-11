@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planet",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A planet is, in the International Astronomical Union definition reported by NASA, a celestial body in orbit around the Sun that is massive enough to have a nearly round shape and has cleared the neighbourhood around its orbit.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:astronomical-body",

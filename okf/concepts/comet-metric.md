@@ -69,7 +69,7 @@ relatedTo:
   - urn:ngm:class:post-editing
   - urn:ngm:class:bleu-score
   - urn:ngm:class:flores-200
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:mqm-annotation
   - urn:ngm:class:llm-as-judge
   - urn:ngm:class:post-editing-workflow

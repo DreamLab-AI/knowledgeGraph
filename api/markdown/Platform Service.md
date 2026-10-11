@@ -49,7 +49,7 @@ A managed, API-exposed capability unit delivered by a cloud or middleware platfo
 
 ### Standards and Governance
 
-- **[[OpenAPI Specification]]** (OAS 3.x) — the de facto standard for describing RESTful platform service interfaces; consumers use generated SDKs derived from OAS documents
+- **[[OpenAPI]]** (OAS 3.x) — the de facto standard for describing RESTful platform service interfaces; consumers use generated SDKs derived from OAS documents
 - **[[Cloud Native Computing Foundation]]** (CNCF) — stewards key platform service infrastructure: Kubernetes (orchestration), Envoy (service mesh), Prometheus (observability), Argo (workflow)
 - **OAuth2 / OIDC** (RFC 6749 / OpenID Foundation) — token-based authorisation flows universally adopted by platform service auth boundaries
 - **gRPC / Protocol Buffers** — binary RPC framework from Google, increasingly the internal transport for high-throughput platform service communication

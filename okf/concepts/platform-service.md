@@ -48,8 +48,8 @@ supports:
   - urn:ngm:class:horizontal-scalability
   - urn:ngm:class:horizontal-scalability
 standardizedBy:
-  - urn:ngm:class:open-api-specification
-  - urn:ngm:class:cncf
+  - urn:ngm:class:openapi
+  - urn:ngm:class:cloud-native-computing-foundation
 partOf:
   - urn:ngm:class:platform-as-a-service
   - urn:ngm:class:cloud-computing

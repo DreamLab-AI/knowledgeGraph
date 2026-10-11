@@ -73,7 +73,7 @@ uses:
   - urn:ngm:class:agents
   - urn:ngm:class:ai-scrapers
   - urn:ngm:class:deepfakes-and-fraudulent-content
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:social-media-platform-infrastructure
 supports:
   - urn:ngm:class:activity-pub
@@ -89,8 +89,8 @@ standardizedBy:
   - urn:ngm:class:ietf
   - urn:ngm:class:ofcom
   - urn:ngm:class:uk-online-safety-act
-  - urn:ngm:class:w3-c
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:world-wide-web-consortium
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:dsa
 relatedTo:
   - urn:ngm:class:agentic-internet
@@ -101,7 +101,7 @@ relatedTo:
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:global-inequality
   - urn:ngm:class:human-ai-capability-complementarity
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:traditional-mass-media-institution
   - urn:ngm:class:trust-and-safety
   - urn:ngm:class:traditional-mass-media-institution
@@ -111,8 +111,8 @@ relatedTo:
   - urn:ngm:class:solid
   - urn:ngm:class:digital-society-surveillance
   - urn:ngm:class:deepfakes-and-fraudulent-content
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-companions
   - urn:ngm:class:surveillance-capitalism
   - urn:ngm:class:carbon-footprint-measurement

@@ -10,7 +10,7 @@ quality: 0.35
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
 uses:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 relatedTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:user-interface

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inversion-layer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An inversion layer is a layer of the atmosphere in which temperature increases with height, the reverse of the usual fall of temperature with altitude.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:atmosphere-layer",

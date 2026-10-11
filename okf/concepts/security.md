@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:trust
   - urn:ngm:class:data-integrity
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-boot
   - urn:ngm:class:hardware-security-module
 contrastsWith:

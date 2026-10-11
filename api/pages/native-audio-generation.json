@@ -8,7 +8,7 @@
   "definition": "The capability of a multimodal generative model to synthesize synchronized audio tracks simultaneously with video or image content.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:multimodal-ai",
+      "id": "urn:ngm:class:multimodal-ai-architecture-ai",
       "label": "Multimodal AI"
     }
   ],
@@ -40,6 +40,11 @@
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence",
       "slug": "artificial-intelligence"
@@ -52,24 +57,32 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       }
     ],
     "requires": [
@@ -87,6 +100,18 @@
       }
     ],
     "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
       {
         "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -106,12 +131,6 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
       }
     ],
     "bridgesTo": [
@@ -134,14 +153,50 @@
     ],
     "uses": [
       {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ]
   },

@@ -12,10 +12,6 @@
       "label": "Agent Harness"
     },
     {
-      "id": "urn:ngm:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
       "id": "urn:ngm:class:agentic-ai",
       "label": "Agentic AI"
     },
@@ -338,11 +334,6 @@
       "slug": "autonomous-agent"
     },
     {
-      "id": "urn:ngm:class:autonomous-system",
-      "label": "Autonomous System",
-      "slug": "autonomous-system"
-    },
-    {
       "id": "urn:ngm:class:cognitive-architecture",
       "label": "Cognitive Architecture",
       "slug": "cognitive-architecture"
@@ -363,29 +354,14 @@
       "slug": "instruction-following"
     },
     {
-      "id": "urn:ngm:class:llm-orchestration",
-      "label": "LLM Orchestration",
-      "slug": "llm-orchestration"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing",
       "slug": "natural-language-processing"
-    },
-    {
-      "id": "urn:ngm:class:software-framework",
-      "label": "Software Framework",
-      "slug": "software-framework"
-    },
-    {
-      "id": "urn:ngm:class:workflow-engine",
-      "label": "Workflow Engine",
-      "slug": "workflow-engine"
     },
     {
       "id": "urn:ngm:class:agent",
@@ -443,19 +419,9 @@
       "slug": "goal-directed-system"
     },
     {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models",
-      "slug": "large-language-models"
-    },
-    {
       "id": "urn:ngm:class:meta-learning",
       "label": "Meta-Learning",
       "slug": "meta-learning"
-    },
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type",
-      "slug": "robo-robot-type"
     },
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -468,24 +434,19 @@
       "slug": "simulation"
     },
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
-    },
-    {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics",
       "slug": "ai-governance-and-ethics"
     },
     {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System",
+      "slug": "autonomous-system"
+    },
+    {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain",
       "slug": "blockchain"
-    },
-    {
-      "id": "urn:ngm:class:deep-learning",
-      "label": "Deep Learning",
-      "slug": "deep-learning"
     },
     {
       "id": "urn:ngm:class:digital-twin",
@@ -498,24 +459,9 @@
       "slug": "infra-computing-and-cloud"
     },
     {
-      "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-      "label": "Large-Scale Pretrained Foundation Model",
-      "slug": "large-scale-pretrained-foundation-model"
-    },
-    {
       "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique",
       "slug": "machine-learning-discipline-technique"
-    },
-    {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network",
-      "slug": "neural-network"
-    },
-    {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
     },
     {
       "id": "urn:ngm:class:scientific-machine-learning",
@@ -526,16 +472,6 @@
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing",
       "slug": "spatial-computing"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
-      "id": "urn:ngm:class:automation",
-      "label": "Automation",
-      "slug": "automation"
     },
     {
       "id": "urn:ngm:class:cryptographic-system",
@@ -558,9 +494,9 @@
       "slug": "infrastructure"
     },
     {
-      "id": "urn:ngm:class:machine-learning-model",
-      "label": "Machine Learning Model (Artefact)",
-      "slug": "machine-learning-model"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type",
+      "slug": "robo-robot-type"
     },
     {
       "id": "urn:ngm:class:scientific-discovery",
@@ -603,9 +539,24 @@
       "slug": "network-component"
     },
     {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
       "id": "urn:ngm:class:state-machine-replication",
       "label": "State Machine Replication",
       "slug": "state-machine-replication"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
     },
     {
       "id": "urn:ngm:class:cryptography",
@@ -613,9 +564,29 @@
       "slug": "cryptography"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -633,6 +604,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -643,14 +624,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -717,24 +698,24 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:inference-endpoint",
-        "label": "Inference Endpoint"
-      },
-      {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability Stack"
-      },
-      {
-        "id": "urn:ngm:class:persistence-layer",
-        "label": "Persistence Layer"
-      },
-      {
         "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "enables": [
@@ -755,7 +736,7 @@
         "label": "Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -767,8 +748,8 @@
         "label": "Workflow Orchestration"
       },
       {
-        "id": "urn:ngm:class:computer-use",
-        "label": "Computer Use"
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
       }
     ],
     "dependsOn": [
@@ -797,12 +778,12 @@
         "label": "Embedding Model"
       },
       {
-        "id": "urn:ngm:class:function-calling",
-        "label": "Function Calling"
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
       },
       {
-        "id": "urn:ngm:class:inference",
-        "label": "LLM Inference"
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
     "implements": [
@@ -823,20 +804,20 @@
         "label": "Reflexion Pattern"
       },
       {
-        "id": "urn:ngm:class:mesh-topology",
-        "label": "Mesh Topology"
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:network-topology",
-        "label": "Hierarchical Topology"
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:self-consistency",
-        "label": "Self-Consistency"
+        "id": "urn:ngm:class:automatic-prompt-optimisation",
+        "label": "Automatic Prompt Optimisation"
       },
       {
-        "id": "urn:ngm:class:toolformer-pattern",
-        "label": "Toolformer Pattern"
+        "id": "urn:ngm:class:dspy",
+        "label": "DSPy"
       }
     ],
     "contrastsWith": [
@@ -853,35 +834,27 @@
         "label": "Workflow Engine"
       },
       {
-        "id": "urn:ngm:class:bpmn-orchestration",
-        "label": "BPMN Orchestration"
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
       },
       {
-        "id": "urn:ngm:class:deterministic-dag-pipeline",
-        "label": "Deterministic DAG Pipeline"
+        "id": "urn:ngm:class:reactive-systems",
+        "label": "Reactive System"
       },
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
       },
       {
-        "id": "urn:ngm:class:rule-based-expert-system",
-        "label": "Rule-Based Expert System"
+        "id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
       },
       {
-        "id": "urn:ngm:class:conversational-ai",
-        "label": "Conversational AI"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-infrastructure",
-        "label": "AI Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:workflow-engine",
-        "label": "Workflow Engine"
-      },
       {
         "id": "urn:ngm:class:agent-based-modelling",
         "label": "Agent-Based Modelling"
@@ -899,12 +872,20 @@
         "label": "Robotic Process Automation"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multi-agent-reinforcement-learning",
         "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
       }
     ],
     "uses": [
@@ -933,12 +914,12 @@
         "label": "Sandboxed Code Execution"
       },
       {
-        "id": "urn:ngm:class:a2-a-protocol",
-        "label": "A2A Protocol"
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:acp-protocol",
-        "label": "ACP Protocol"
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
       }
     ],
     "supports": [
@@ -963,16 +944,16 @@
         "label": "Human-in-the-Loop"
       },
       {
-        "id": "urn:ngm:class:coding-assistant",
-        "label": "Coding Assistant"
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
       },
       {
-        "id": "urn:ngm:class:customer-service-agent",
-        "label": "Customer Service Agent"
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:data-analysis-agent",
-        "label": "Data Analysis Agent"
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
       }
     ],
     "standardizedBy": [
@@ -981,20 +962,12 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:agent-communication-protocol",
-        "label": "Agent Communication Protocol"
-      },
-      {
-        "id": "urn:ngm:class:agntcy-collective",
-        "label": "AGNTCY Collective"
-      },
-      {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:ai-technology-skills-curriculum",
@@ -1007,6 +980,14 @@
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Research Organisation"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
       }
     ],
     "partOf": [
@@ -1069,12 +1050,12 @@
         "label": "Temporal"
       },
       {
-        "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
-        "label": "Large-Scale Pretrained Foundation Model"
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
       },
       {
-        "id": "urn:ngm:class:llm-evaluation",
-        "label": "LLM Evaluation"
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
       }
     ]
   },

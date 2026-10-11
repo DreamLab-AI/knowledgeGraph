@@ -51,8 +51,8 @@ implements:
   - urn:ngm:class:norm-setting
   - urn:ngm:class:summit-diplomacy
 contrastsWith:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:binding-regulation
   - urn:ngm:class:treaty-obligation
   - urn:ngm:class:hard-law
@@ -97,7 +97,7 @@ relatedTo:
   - urn:ngm:class:aisi-frontier-ai-safety-framework
   - urn:ngm:class:frontier-model-forum
   - urn:ngm:class:ai-alignment
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:interpretability
   - urn:ngm:class:black-box-model
   - urn:ngm:class:foundation-model

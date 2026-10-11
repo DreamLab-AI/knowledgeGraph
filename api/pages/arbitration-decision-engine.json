@@ -121,11 +121,6 @@
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure",
       "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:regulatory-framework",
-      "label": "Regulatory Framework",
-      "slug": "regulatory-framework"
     }
   ],
   "inheritedRelations": {
@@ -251,14 +246,6 @@
       {
         "id": "urn:ngm:class:jurisdiction",
         "label": "Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:legal-jurisdiction",
-        "label": "Legal Jurisdiction"
-      },
-      {
-        "id": "urn:ngm:class:supervisory-authority",
-        "label": "Supervisory Authority"
       }
     ],
     "implements": [
@@ -273,14 +260,6 @@
       {
         "id": "urn:ngm:class:security",
         "label": "Security Obligations"
-      },
-      {
-        "id": "urn:ngm:class:eu-mi-ca-regulation",
-        "label": "EU MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:genius-act",
-        "label": "GENIUS Act"
       }
     ],
     "contrastsWith": [
@@ -299,10 +278,6 @@
       {
         "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-arbitrage",
-        "label": "Regulatory Arbitrage"
       }
     ],
     "bridgesTo": [
@@ -361,7 +336,7 @@
         "label": "Oracle"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -417,7 +392,7 @@
         "label": "WebXR"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -431,14 +406,6 @@
       {
         "id": "urn:ngm:class:open-standards",
         "label": "Open Standards"
-      },
-      {
-        "id": "urn:ngm:class:bank-for-international-settlements",
-        "label": "Bank for International Settlements"
-      },
-      {
-        "id": "urn:ngm:class:financial-action-task-force",
-        "label": "Financial Action Task Force"
       }
     ],
     "partOf": [

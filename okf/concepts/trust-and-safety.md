@@ -38,14 +38,14 @@ enables:
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:reputation-system
 dependsOn:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:transformers
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
   - urn:ngm:class:instruction-following-conversational-ai-system
 implements:
   - urn:ngm:class:digital-society-surveillance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:identity-verification
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:risk-assessment
@@ -58,7 +58,7 @@ uses:
   - urn:ngm:class:deepfakes-and-fraudulent-content
   - urn:ngm:class:distributed-identity
   - urn:ngm:class:knowledge-graphing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:self-sovereign-identity
 supports:
   - urn:ngm:class:ai-adoption
@@ -71,7 +71,7 @@ standardizedBy:
   - urn:ngm:class:california-ai-bill
   - urn:ngm:class:consumer-protection
   - urn:ngm:class:cross-border-compliance
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:ai-scrapers
   - urn:ngm:class:aml-kyc-compliance

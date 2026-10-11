@@ -10,7 +10,7 @@ quality: 0.68
 is-a:
   - urn:ngm:class:ai-safety
 requires:
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:threat-model
 enables:
   - urn:ngm:class:bias-detection-methods
@@ -18,7 +18,7 @@ dependsOn:
   - urn:ngm:class:model-evaluation
   - urn:ngm:class:benchmark-dataset
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:security-testing
 contrastsWith:
   - urn:ngm:class:unit-testing

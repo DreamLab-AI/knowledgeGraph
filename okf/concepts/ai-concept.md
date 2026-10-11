@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:knowledge-representation
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 relatedTo:
   - urn:ngm:class:neural-network

@@ -19,7 +19,7 @@ supports:
   - urn:ngm:class:trustworthy-ai
   - urn:ngm:class:value-alignment
 relatedTo:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 ---
 

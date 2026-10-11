@@ -45,7 +45,7 @@ dependsOn:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:geopolitics
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
 implements:
   - urn:ngm:class:antitrust-oversight
   - urn:ngm:class:benchmark-evaluation
@@ -64,8 +64,8 @@ bridgesTo:
 uses:
   - urn:ngm:class:agentic-ai-systems
   - urn:ngm:class:inference-optimisation
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:reinforcement-learning-from-human-feedback
 supports:
   - urn:ngm:class:ai-policy
@@ -75,10 +75,10 @@ supports:
   - urn:ngm:class:ai-adoption
 standardizedBy:
   - urn:ngm:class:ieee-standards-association
-  - urn:ngm:class:iso-iec-jtc1-sc42
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:ai-chips
   - urn:ngm:class:ai-investment

@@ -23,7 +23,7 @@ enables:
 dependsOn:
   - urn:ngm:class:risk-management
 implements:
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 bridgesTo:
   - urn:ngm:class:gdpr
   - urn:ngm:class:environmental-assessment
@@ -37,8 +37,8 @@ supports:
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
   - urn:ngm:class:iso-iec-42001-2023
-  - urn:ngm:class:iso-iec-23894-2023
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:iso-iec-23894
+  - urn:ngm:class:eu-ai-act
 partOf:
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:ai-governance

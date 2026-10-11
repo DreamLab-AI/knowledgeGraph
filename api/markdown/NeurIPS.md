@@ -14,7 +14,7 @@ NeurIPS (Neural Information Processing Systems) is the premier annual internatio
 - **Workshop Programme**
   - Dozens of focused [[Workshop]] events run alongside the main conference on the first and last days. Workshops are independently organised by community members and cover specialised sub-fields such as ML for health, [[AI Ethics]], [[Fairness in Machine Learning]], causal inference, and emerging methodologies. Workshops often serve as incubators for ideas that later become main-track papers.
 - **Tutorials**
-  - Half-day or full-day [[Tutorial]] sessions delivered by leading researchers provide deep dives into established or rapidly evolving sub-fields. Topics span foundational methods (e.g., [[Gaussian Processes]]) to cutting-edge applications (e.g., [[Diffusion Models]], [[Large Language Models]]).
+  - Half-day or full-day [[Tutorial]] sessions delivered by leading researchers provide deep dives into established or rapidly evolving sub-fields. Topics span foundational methods (e.g., [[Gaussian Processes]]) to cutting-edge applications (e.g., [[Diffusion Models]], [[Large Language Model]]).
 - **Competitions and Datasets**
   - The NeurIPS competition track hosts ML challenges with novel datasets and evaluation frameworks, driving community progress on specific benchmarks. Past competitions introduced influential datasets in areas such as [[Computer Vision]], [[Reinforcement Learning]], and healthcare prediction. These directly feed [[Evaluation Benchmarks and Leaderboards]] infrastructure.
 - **Broader Impact and Ethics Review**
@@ -29,7 +29,7 @@ NeurIPS (Neural Information Processing Systems) is the premier annual internatio
   - **Variational Autoencoders (2013/2014)** — Kingma and Welling presented the [[Variational Autoencoder]], a foundational [[Latent Space Representation]] model.
   - **word2vec (2013)** — Mikolov et al. presented distributed [[Word Embeddings]] that became standard in [[Natural Language Processing]].
   - **AlexNet workshop (2012)** — Krizhevsky et al. demonstrated GPU-accelerated deep [[Convolutional Neural Networks]] dominating [[ImageNet]], starting the deep learning era.
-  - **RLHF (2017)** — Christiano et al. introduced [[Reinforcement Learning from Human Feedback]], later foundational to [[Large Language Models]] alignment.
+  - **RLHF (2017)** — Christiano et al. introduced [[Reinforcement Learning from Human Feedback]], later foundational to [[Large Language Model]] alignment.
   - **Attention mechanisms** — Early formulations influencing [[Transformer Architecture]] appeared in NeurIPS proceedings.
   - **Neural Turing Machines, [[Neural Architecture Search]], [[Dropout Regularisation]], [[Batch Normalisation]]** variants — numerous foundational components trace back to NeurIPS papers.
 

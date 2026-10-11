@@ -31,7 +31,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:block-trails
   - urn:ngm:class:did-nostr
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:sha-256
   - urn:ngm:class:json-data-interchange-format-schema
 relatedTo:

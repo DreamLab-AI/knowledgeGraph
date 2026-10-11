@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optical-instrument",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An optical instrument is a sensing device that measures light in the visible, near-infrared or shortwave infrared parts of the spectrum.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-instrument",

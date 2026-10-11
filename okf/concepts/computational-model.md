@@ -20,7 +20,7 @@ enables:
 implements:
   - urn:ngm:class:algorithm
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:algorithm
 supports:

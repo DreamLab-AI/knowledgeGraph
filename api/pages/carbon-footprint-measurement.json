@@ -66,8 +66,8 @@
         "label": "Scope Classification"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:verification",
@@ -243,12 +243,12 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:lifecycle-assessment",
-        "label": "Lifecycle Assessment"
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
       },
       {
         "id": "urn:ngm:class:ai",

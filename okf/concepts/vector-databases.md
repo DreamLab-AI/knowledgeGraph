@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:semantic-search
   - urn:ngm:class:recommendation-systems
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-storage
 contrastsWith:
   - urn:ngm:class:relational-database
@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:euclidean-distance
   - urn:ngm:class:hnsw-index
 supports:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:multimodal-ai-architecture-ai
 relatedTo:
   - urn:ngm:class:knowledge-graphs

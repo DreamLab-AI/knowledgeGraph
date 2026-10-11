@@ -10,12 +10,12 @@ quality: 0.8
 is-a:
   - urn:ngm:class:credential-issuance
 requires:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:credential-issuer-metadata
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:digital-identity-wallet
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:credential-verification
   - urn:ngm:class:self-sovereign-identity
 implements:
@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:json-data-interchange-format-web-token
   - urn:ngm:class:sd-jwt
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 supports:
   - urn:ngm:class:e-idas-2-0
   - urn:ngm:class:eudi-wallet

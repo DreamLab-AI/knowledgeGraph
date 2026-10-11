@@ -8,9 +8,9 @@ description: A decentralised community and DAO that issues the Honey community c
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 requires:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:governance-token
 enables:
   - urn:ngm:class:quadratic-funding

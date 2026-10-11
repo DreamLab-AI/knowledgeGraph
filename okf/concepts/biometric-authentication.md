@@ -27,7 +27,7 @@ contrastsWith:
   - urn:ngm:class:password-authentication
   - urn:ngm:class:token-based-authentication
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:on-device-inference
 uses:
   - urn:ngm:class:biometric-verification

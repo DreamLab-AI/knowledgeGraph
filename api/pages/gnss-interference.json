@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-interference",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS interference is radio-frequency energy that disrupts the reception or use of GNSS signals, and it ranges from jamming, which overpowers authentic signals, to spoofing, which transmits a false signal mimicking an authentic one.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

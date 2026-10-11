@@ -30,7 +30,7 @@ A language model is a probabilistic model of natural language that assigns a pro
 
 #### Fine-Tuning and Alignment
 
-- Supervised [[Fine Tuning]] (SFT) on curated instruction-response pairs adapts a pretrained base model to instruction-following behaviour.
+- Supervised [[Fine-Tuning]] (SFT) on curated instruction-response pairs adapts a pretrained base model to instruction-following behaviour.
 - [[Reinforcement Learning from Human Feedback]] (RLHF) further aligns outputs to human preferences via a reward model trained on preference data, used to update the policy via proximal policy optimisation (PPO) or direct preference optimisation (DPO).
 - Parameter-efficient methods (LoRA, prefix-tuning, adapters) reduce fine-tuning cost by updating a small fraction of weights.
 

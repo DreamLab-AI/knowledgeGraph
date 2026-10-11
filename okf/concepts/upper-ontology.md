@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:data-interoperability
 bridgesTo:
   - urn:ngm:class:domain-ontology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 uses:
   - urn:ngm:class:owl
   - urn:ngm:class:rdf

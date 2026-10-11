@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:evapotranspiration-estimation",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Evapotranspiration estimation is the quantification of water lost to the atmosphere by evaporation from soil and transpiration from vegetation, here from satellite and related observations.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

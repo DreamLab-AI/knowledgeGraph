@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
       "label": "DeFi and Economics"
+    },
+    {
+      "id": "urn:ngm:class:programmable-money",
+      "label": "Programmable Money"
     }
   ],
   "entityType": "Class",
@@ -21,7 +25,16 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:pay-per-use",
@@ -42,6 +55,10 @@
       {
         "id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine-to-Machine Payment"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
       }
     ],
     "dependsOn": [
@@ -58,7 +75,12 @@
         "label": "Smart Contract"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:batch-payment",
@@ -71,8 +93,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ],
     "uses": [
@@ -83,6 +109,18 @@
       {
         "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ],
     "supports": [
@@ -108,16 +146,24 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:streaming-payments",
-        "label": "Streaming Payments"
-      },
-      {
         "id": "urn:ngm:class:iot-payments",
         "label": "IoT Payments"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:superfluid",
+        "label": "Superfluid"
+      },
+      {
+        "id": "urn:ngm:class:sablier",
+        "label": "Sablier"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
       }
     ]
   },
@@ -126,6 +172,11 @@
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System",
       "slug": "cryptographic-system"
+    },
+    {
+      "id": "urn:ngm:class:digital-currency",
+      "label": "Digital Currency",
+      "slug": "digital-currency"
     },
     {
       "id": "urn:ngm:class:distributed-data-structure",
@@ -163,6 +214,11 @@
       "slug": "distributed-system"
     },
     {
+      "id": "urn:ngm:class:financial-technology",
+      "label": "Financial Technology",
+      "slug": "financial-technology"
+    },
+    {
       "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database",
       "slug": "multi-party-database"
@@ -178,9 +234,24 @@
       "slug": "state-machine-replication"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy",
+      "slug": "digital-economy"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -193,9 +264,24 @@
       "slug": "infra-computing-and-cloud"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -213,6 +299,21 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
+      "id": "urn:ngm:class:economic-systems",
+      "label": "Economic Systems",
+      "slug": "economic-systems"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -228,19 +329,19 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -253,9 +354,34 @@
       "slug": "infra-security-and-identity"
     },
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory",
       "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
     }
   ],
   "inheritedRelations": {
@@ -307,24 +433,24 @@
         "label": "Peer-to-Peer Network"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:replication-protocol",
-        "label": "Replication Protocol"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:byzantine-fault-tolerance",
-        "label": "Byzantine Fault Tolerance"
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitive",
-        "label": "Cryptographic Primitive"
-      },
-      {
-        "id": "urn:ngm:class:digital-signatures",
-        "label": "Digital Signatures"
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
       }
     ],
     "enables": [
@@ -333,7 +459,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -349,19 +475,35 @@
         "label": "Token Economics"
       },
       {
-        "id": "urn:ngm:class:blockchain-network",
-        "label": "Blockchain Network"
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
       },
       {
-        "id": "urn:ngm:class:cryptographic-verification",
-        "label": "Cryptographic Verification"
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
       },
       {
-        "id": "urn:ngm:class:blockchain-scalability",
-        "label": "Blockchain Scalability"
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
       }
     ],
     "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
       {
         "id": "urn:ngm:class:cap-theorem",
         "label": "CAP Theorem"
@@ -375,27 +517,15 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
-      },
-      {
         "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
-      },
-      {
-        "id": "urn:ngm:class:network-connectivity",
-        "label": "Network Connectivity"
-      },
-      {
-        "id": "urn:ngm:class:node-operators",
-        "label": "Node Operators"
-      },
-      {
-        "id": "urn:ngm:class:public-key-cryptography",
-        "label": "Public Key Cryptography"
       }
     ],
     "implements": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
       {
         "id": "urn:ngm:class:data-partitioning",
         "label": "Data Partitioning"
@@ -423,13 +553,21 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree Structure"
-      },
-      {
-        "id": "urn:ngm:class:notary-service",
-        "label": "Notary Validation Pattern"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Electronic Money"
+      },
       {
         "id": "urn:ngm:class:centralised-database",
         "label": "Centralized Database"
@@ -449,18 +587,6 @@
       {
         "id": "urn:ngm:class:cloud-database",
         "label": "Cloud Database"
-      },
-      {
-        "id": "urn:ngm:class:federated-database",
-        "label": "Federated Database"
-      },
-      {
-        "id": "urn:ngm:class:traditional-database",
-        "label": "Traditional Database"
-      },
-      {
-        "id": "urn:ngm:class:centralised-system",
-        "label": "Centralised System"
       }
     ],
     "bridgesTo": [
@@ -481,20 +607,20 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
       },
       {
-        "id": "urn:ngm:class:distributed-collaboration",
-        "label": "Distributed Collaboration"
+        "id": "urn:ngm:class:machine-economy",
+        "label": "Machine Economy"
       },
       {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
       }
     ],
     "uses": [
@@ -533,8 +659,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:decentralized-application",
-        "label": "Decentralized Application"
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -567,6 +693,10 @@
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
         "id": "urn:ngm:class:eu-dlt-pilot-regime",
         "label": "EU DLT Pilot Regime"
       },
@@ -593,13 +723,13 @@
       {
         "id": "urn:ngm:class:iso-tr-23244",
         "label": "ISO TR 23244"
-      },
-      {
-        "id": "urn:ngm:class:iso-ts-23258",
-        "label": "ISO TS 23258"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
@@ -621,16 +751,12 @@
         "label": "Computer Science"
       },
       {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:digital-infrastructure",
-        "label": "Digital Infrastructure"
       }
     ],
     "relatedTo": [
@@ -647,24 +773,24 @@
         "label": "Smart Contract"
       },
       {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralized Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
         "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-protocol",
-        "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-security",
-        "label": "Cryptographic Security"
-      },
-      {
-        "id": "urn:ngm:class:merkle-tree",
-        "label": "Merkle Tree"
-      },
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
       }
     ]
   },

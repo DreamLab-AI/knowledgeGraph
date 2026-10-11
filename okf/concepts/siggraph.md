@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:neural-radiance-field
   - urn:ngm:class:gpu-programming
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics
   - urn:ngm:class:augmented-reality

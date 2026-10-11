@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:distributed-hash-table
   - urn:ngm:class:kzg-commitment
 supports:
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:distributed-storage
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:version-control

@@ -8,7 +8,7 @@ description: Customer due diligence (CDD) is the set of regulated procedures by 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 hasPart:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:beneficial-ownership
@@ -30,10 +30,10 @@ supports:
 standardizedBy:
   - urn:ngm:class:fatf
 partOf:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
   - urn:ngm:class:transaction-monitoring
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # Customer Due Diligence

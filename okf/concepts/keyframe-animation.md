@@ -31,7 +31,7 @@ partOf:
   - urn:ngm:class:animation
 relatedTo:
   - urn:ngm:class:motion-capture
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:spatial-computing
 ---
 

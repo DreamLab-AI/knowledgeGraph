@@ -38,7 +38,7 @@ enables:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:robot-control
   - urn:ngm:class:teleoperation
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:visual-servoing
   - urn:ngm:class:calibration
   - urn:ngm:class:impedance-control
@@ -65,7 +65,7 @@ uses:
   - urn:ngm:class:drake
   - urn:ngm:class:gazebo-simulator
   - urn:ngm:class:mu-jo-co
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sdf
   - urn:ngm:class:urdf
   - urn:ngm:class:pinocchio-library

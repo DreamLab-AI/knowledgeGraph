@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:regulatory-compliance
 bridgesTo:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:privacy
 ---
 

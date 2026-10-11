@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:privacy
   - urn:ngm:class:federated-learning
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:secure-multi-party-computation
 supports:
   - urn:ngm:class:data-protection

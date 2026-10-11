@@ -4,6 +4,7 @@ type: Class
 title: Kuiper Belt Object
 resource: urn:ngm:class:kuiper-belt-object
 domain: space-science-and-systems
+description: A Kuiper Belt object is an icy body in the Kuiper Belt, a doughnut-shaped region beyond the orbit of Neptune.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Kuiper Belt Object
+
+A Kuiper Belt object is an icy body in the Kuiper Belt, a doughnut-shaped region beyond the orbit of Neptune.[^1]

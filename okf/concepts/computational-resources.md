@@ -40,7 +40,7 @@ supports:
   - urn:ngm:class:rendering-engine
   - urn:ngm:class:simulation
   - urn:ngm:class:distributed-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:resource-scheduling
   - urn:ngm:class:load-balancing

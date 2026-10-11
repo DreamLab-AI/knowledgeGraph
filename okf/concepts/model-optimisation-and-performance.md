@@ -10,7 +10,7 @@ quality: 0.52
 is-a:
   - urn:ngm:class:mlops
   - urn:ngm:class:ai-infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:systems-engineering
   - urn:ngm:class:computational-efficiency
   - urn:ngm:class:neural-network-quantisation
@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:quantisation
   - urn:ngm:class:speculative-decoding
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:flash-attention
   - urn:ngm:class:paged-attention
 requires:
@@ -77,7 +77,7 @@ supports:
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:code-generation
   - urn:ngm:class:conversational-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:medical-ai
   - urn:ngm:class:robotics
   - urn:ngm:class:autonomous-system

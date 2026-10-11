@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:terrain-aspect",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Terrain aspect is the compass direction that the downhill slope of a surface faces at a location, usually derived for each cell of an elevation raster.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

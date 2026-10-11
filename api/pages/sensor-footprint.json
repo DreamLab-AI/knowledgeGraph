@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-footprint",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A sensor footprint is the area on the Earth's surface that a sensor views or illuminates at one instant.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:authentication
 requires:
   - urn:ngm:class:identity-provider
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:trust-framework
 enables:

@@ -19,7 +19,7 @@ hasPart:
 requires:
   - urn:ngm:class:privacy-protection
   - urn:ngm:class:sensor-data
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:real-time-processing
   - urn:ngm:class:sensor-data
 enables:

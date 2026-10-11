@@ -37,8 +37,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:defense-in-depth",
-        "label": "Defense In Depth"
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence In Depth"
       }
     ],
     "relatedTo": [
@@ -184,12 +184,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:secure-communication",

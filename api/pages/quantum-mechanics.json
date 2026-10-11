@@ -8,8 +8,8 @@
   "definition": "Quantum mechanics is the physical theory describing matter and energy at atomic and subatomic scales, where observable quantities are discrete and systems are represented by state vectors in a complex Hilbert space evolving under unitary dynamics. Core principles such as superposition, entanglement, measurement collapse and the uncertainty relation depart sharply from classical intuition. It provides the foundational substrate for quantum computing, quantum cryptography and the engineering of qubit-based information systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:quantum-computation-paradigm",
-      "label": "Quantum Computation Paradigm"
+      "id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
     }
   ],
   "entityType": "Class",
@@ -38,8 +38,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       },
       {
         "id": "urn:ngm:class:quantum-cryptography",
@@ -191,12 +191,6 @@
         "label": "Robotics"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:superconductivity",
-        "label": "Superconductivity"
-      }
-    ],
     "implements": [
       {
         "id": "urn:ngm:class:grovers-algorithm",
@@ -231,6 +225,10 @@
         "label": "Blockchain"
       },
       {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
         "id": "urn:ngm:class:data",
         "label": "Data"
       },
@@ -240,14 +238,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:post-quantum-cryptography",
-        "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:quantum-machine-learning",
-        "label": "Quantum Machine Learning"
-      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -273,6 +263,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity Theory"
+      },
+      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
@@ -281,8 +275,8 @@
         "label": "Distributed Systems"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -299,10 +293,6 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
-      },
-      {
-        "id": "urn:ngm:class:edge-computing",
-        "label": "Edge Computing"
       }
     ]
   },

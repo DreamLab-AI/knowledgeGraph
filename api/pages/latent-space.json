@@ -5,19 +5,53 @@
   "public": true,
   "classIri": "urn:ngm:class:latent-space",
   "domain": "machine-learning",
-  "definition": "Latent space is a learned, typically lower-dimensional continuous space in which a model represents its inputs as vectors, positioning semantically similar inputs closer together. It is produced by an encoder or embedding process and is where operations such as interpolation, arithmetic and sampling are performed before a decoder network reconstructs or generates output in the original data space. Creative AI systems exploit structure in latent space to generate novel, coherent outputs by sampling or navigating it directly.",
+  "definition": "A neural network latent space is a continuous, lower-dimensional manifold that a neural network learns to construct from high-dimensional input data, representing the data's underlying generative factors as geometric relationships between points. Encoder networks compress inputs into latent vectors that capture semantically meaningful structure, while decoder networks reconstruct outputs from those vectors; the resulting geometry encodes similarity such that interpolation along geodesics yields semantically coherent transitions. Architectures including variational autoencoders, generative adversarial networks, and diffusion models exploit structured latent spaces to enable sampling, conditional generation, and disentangled attribute control through vector arithmetic operations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:representation-learning",
       "label": "Representation Learning"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.55,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-vector",
+        "label": "Latent Vector"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "id": "urn:ngm:class:latent-code",
+        "label": "Latent Code"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:creative-ai",
@@ -26,48 +60,136 @@
       {
         "id": "urn:ngm:class:decoder-network",
         "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:disentangled-representation",
+        "label": "Disentangled Representation"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Explicit Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Explicit Knowledge Representation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "3D Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-representation",
+        "label": "Spatial Data Representation"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "3D Scene Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Semantic Embedding"
+      },
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Semantic Embedding"
+      },
+      {
+        "id": "urn:ngm:class:manifold-hypothesis",
+        "label": "Manifold Hypothesis"
+      }
+    ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
     {
       "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique",
       "slug": "machine-learning-discipline-technique"
     },
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area",
       "slug": "ai-research-area"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence-core",
@@ -82,32 +204,32 @@
         "label": "Embedding Model"
       },
       {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:backpropagation",
-        "label": "Backpropagation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:gradient-descent",
-        "label": "Gradient Descent"
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:reinforcement-learning",
-        "label": "Reinforcement Learning"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:supervised-learning",
-        "label": "Supervised Learning"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:transfer-learning",
-        "label": "Transfer Learning"
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
       }
     ],
     "requires": [
@@ -120,12 +242,16 @@
         "label": "Training Data"
       },
       {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
         "id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure"
       },
       {
-        "id": "urn:ngm:class:computational-infrastructure",
-        "label": "Computational Infrastructure"
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
       },
       {
         "id": "urn:ngm:class:dataset-curation",
@@ -138,10 +264,6 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:information-theory",
-        "label": "Information Theory"
       }
     ],
     "enables": [
@@ -170,12 +292,12 @@
         "label": "Zero-Shot Learning"
       },
       {
-        "id": "urn:ngm:class:ai-fairness",
-        "label": "AI Fairness"
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -184,8 +306,8 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:mlops",
-        "label": "MLOps"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       },
       {
         "id": "urn:ngm:class:active-learning",
@@ -252,12 +374,12 @@
         "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       }
     ],
     "bridgesTo": [
@@ -268,14 +390,6 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
-      },
-      {
-        "id": "urn:ngm:class:data-governance",
-        "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai",
-        "label": "Responsible AI"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -292,6 +406,14 @@
       {
         "id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "uses": [
@@ -312,12 +434,12 @@
         "label": "Embeddings"
       },
       {
-        "id": "urn:ngm:class:neural-network-latent-space",
-        "label": "Neural Network Latent Space"
-      },
-      {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -330,12 +452,16 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ai-governance",
-        "label": "AI Governance"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support System"
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       },
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -356,16 +482,26 @@
       {
         "id": "urn:ngm:class:alignment-research",
         "label": "Alignment Research"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-evaluation",
-        "label": "Benchmark Evaluation"
       }
     ],
     "standardizedBy": [
       {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ],
     "relatedTo": [
@@ -386,20 +522,20 @@
         "label": "Word Embedding"
       },
       {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
         "id": "urn:ngm:class:bagging",
         "label": "Bagging"
-      },
-      {
-        "id": "urn:ngm:class:boosting",
-        "label": "Boosting"
-      },
-      {
-        "id": "urn:ngm:class:deep-learning",
-        "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:semi-supervised-learning",
-        "label": "Semi-Supervised Learning"
       }
     ]
   },
@@ -450,8 +586,8 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "machine-learning-discipline",
-      "label": "Machine Learning Discipline"
+      "slug": "machine-learning",
+      "label": "Machine Learning"
     },
     {
       "slug": "patent",

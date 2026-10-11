@@ -11,8 +11,8 @@ is-a:
   - urn:ngm:class:ai-model-architecture
   - urn:ngm:class:general-purpose-ai-model
   - urn:ngm:class:proprietary-large-language-models
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
   - urn:ngm:class:generative-model
 hasPart:
@@ -22,7 +22,7 @@ hasPart:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:knowledge-distillation
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:multi-head-attention
   - urn:ngm:class:multimodal-ai-architecture-ai
 requires:
@@ -31,7 +31,7 @@ requires:
   - urn:ngm:class:curriculum-learning
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:model-training
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:training-and-fine-tuning
 enables:
   - urn:ngm:class:ai-deployment
@@ -87,7 +87,7 @@ supports:
   - urn:ngm:class:npu
 standardizedBy:
   - urn:ngm:class:ai-model-card
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:responsible-ai-principles
 relatedTo:
@@ -97,7 +97,7 @@ relatedTo:
   - urn:ngm:class:bias-in-large-language-models
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:ethical-ai
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:responsible-ai
 ---
 

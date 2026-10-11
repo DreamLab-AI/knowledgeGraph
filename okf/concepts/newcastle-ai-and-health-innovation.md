@@ -24,7 +24,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:ai-monitoring
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-analytics
 relatedTo:
   - urn:ngm:class:north-england-innovation-corridor

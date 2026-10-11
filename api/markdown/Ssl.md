@@ -1,6 +1,6 @@
 SSL (Secure Sockets Layer) is a deprecated cryptographic protocol for establishing encrypted, authenticated connections between networked applications, and its name remains in common use as a colloquial label for its successor, TLS. SSL introduced the handshake model in which peers negotiate cipher suites, authenticate via certificates and derive symmetric session keys to protect subsequent traffic. All SSL versions are now considered insecure and have been superseded by Transport Layer Security. The term persists in product naming, certificates and developer vocabulary even though modern deployments use TLS.
 
-- SSL (Secure Sockets Layer) is a deprecated [[Cryptographic Protocol]] for encrypted, authenticated connections, whose name is still used colloquially for its successor [[TLS]]. It relies on [[Cryptography]], [[Encryption]] and a [[Certificate Authority]] to provide [[Secure Communication]].
+- SSL (Secure Sockets Layer) is a deprecated [[Cryptographic Protocol]] for encrypted, authenticated connections, whose name is still used colloquially for its successor [[Transport Layer Security]]. It relies on [[Cryptography]], [[Encryption]] and a [[Certificate Authority]] to provide [[Secure Communication]].
 
 ### Overview
 
@@ -24,7 +24,7 @@ SSL (Secure Sockets Layer) is a deprecated cryptographic protocol for establishi
 
 - Historic basis for HTTPS and other secured application protocols.
 - Certificates still labelled "SSL certificates" in common usage.
-- Conceptual foundation for understanding modern [[Network Security]] and [[TLS]].
+- Conceptual foundation for understanding modern [[Network Security]] and [[Transport Layer Security]].
 
 ### Provenance
 

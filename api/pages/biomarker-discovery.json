@@ -31,11 +31,6 @@
   },
   "inferredSuperClasses": [
     {
-      "id": "urn:ngm:class:computational-biology",
-      "label": "Computational Biology",
-      "slug": "computational-biology"
-    },
-    {
       "id": "urn:ngm:class:data-science",
       "label": "Data Science",
       "slug": "data-science"
@@ -44,16 +39,6 @@
       "id": "urn:ngm:class:scientific-computing",
       "label": "Scientific Computing",
       "slug": "scientific-computing"
-    },
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence",
-      "slug": "artificial-intelligence"
-    },
-    {
-      "id": "urn:ngm:class:biology",
-      "label": "Biology",
-      "slug": "biology"
     },
     {
       "id": "urn:ngm:class:data-analytics",
@@ -117,8 +102,8 @@
         "label": "Transcriptomics"
       },
       {
-        "id": "urn:ngm:class:bioinformatics",
-        "label": "Bioinformatics"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "requires": [
@@ -147,12 +132,12 @@
         "label": "Proteomics"
       },
       {
-        "id": "urn:ngm:class:algorithm",
-        "label": "Algorithm"
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
       },
       {
-        "id": "urn:ngm:class:biology",
-        "label": "Biology"
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
       }
     ],
     "enables": [
@@ -181,12 +166,12 @@
         "label": "Systems Biology"
       },
       {
-        "id": "urn:ngm:class:agricultural-genomics",
-        "label": "Agricultural Genomics"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:cancer-genomics",
-        "label": "Cancer Genomics"
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [
@@ -207,20 +192,20 @@
         "label": "Statistics"
       },
       {
-        "id": "urn:ngm:class:data-science",
-        "label": "Data Science"
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
       },
       {
-        "id": "urn:ngm:class:linear-algebra",
-        "label": "Linear Algebra"
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
       },
       {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "implements": [
@@ -241,23 +226,15 @@
         "label": "Variant Calling"
       },
       {
-        "id": "urn:ngm:class:bayesian-inference",
-        "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:expectation-maximisation",
-        "label": "Expectation Maximisation"
-      },
-      {
-        "id": "urn:ngm:class:markov-chain-monte-carlo",
-        "label": "Markov Chain Monte Carlo"
-      },
-      {
-        "id": "urn:ngm:class:molecular-dynamics",
-        "label": "Molecular Dynamics"
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
       }
     ],
     "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
       {
         "id": "urn:ngm:class:experimental-biochemistry",
         "label": "Experimental Biochemistry"
@@ -265,10 +242,6 @@
       {
         "id": "urn:ngm:class:wet-laboratory-biology",
         "label": "Wet Laboratory Biology"
-      },
-      {
-        "id": "urn:ngm:class:classical-genetics",
-        "label": "Classical Genetics"
       },
       {
         "id": "urn:ngm:class:data-engineering",
@@ -289,32 +262,32 @@
         "label": "Biology"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:scientific-computing",
-        "label": "Scientific Computing"
       },
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:telecollaboration",
-        "label": "Telecollaboration"
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
       }
     ],
     "uses": [
@@ -331,7 +304,7 @@
         "label": "Graph Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -347,8 +320,8 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:alphafold",
-        "label": "AlphaFold"
+        "id": "urn:ngm:class:python",
+        "label": "Python"
       }
     ],
     "supports": [
@@ -373,16 +346,16 @@
         "label": "Systems Biology"
       },
       {
-        "id": "urn:ngm:class:cancer-genomics",
-        "label": "Cancer Genomics"
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:clinical-genomics",
-        "label": "Clinical Genomics"
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
       },
       {
-        "id": "urn:ngm:class:drug-discovery",
-        "label": "Drug Discovery"
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
       }
     ],
     "standardizedBy": [
@@ -403,20 +376,20 @@
         "label": "UniProt"
       },
       {
-        "id": "urn:ngm:class:global-alliance-for-genomics-and-health",
-        "label": "Global Alliance for Genomics and Health"
-      },
-      {
-        "id": "urn:ngm:class:wellcome-sanger-institute",
-        "label": "Wellcome Sanger Institute"
-      },
-      {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
       },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "partOf": [
@@ -443,20 +416,20 @@
         "label": "Data Science"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:scientific-machine-learning",
         "label": "Scientific Machine Learning"
       },
       {
-        "id": "urn:ngm:class:bioinformatics",
-        "label": "Bioinformatics"
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
       },
       {
-        "id": "urn:ngm:class:drug-discovery",
-        "label": "Drug Discovery"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ]
   },

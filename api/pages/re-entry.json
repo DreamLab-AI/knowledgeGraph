@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:re-entry",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Re-entry is the passage of an orbital object into sufficiently dense atmosphere, where drag and heating alter its trajectory and may cause ablation, fragmentation and impact.[^esa-reentry-prediction][^esa-reentry-safety]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

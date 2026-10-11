@@ -51,8 +51,8 @@
         "label": "TELE020virtualrealitytelepresence"
       },
       {
-        "id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
-        "label": "TELE 050 neuralrenderingtelepresence"
+        "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+        "label": "Neural Rendering Telepresence"
       },
       {
         "id": "urn:ngm:class:avatar",
@@ -259,7 +259,7 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],

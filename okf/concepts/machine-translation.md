@@ -10,7 +10,7 @@ quality: 0.65
 is-a:
   - urn:ngm:class:natural-language-processing
 hasPart:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:beam-search-decoding
 requires:
@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:protocol-translation
 uses:
   - urn:ngm:class:transformer
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:byte-pair-encoding
 partOf:

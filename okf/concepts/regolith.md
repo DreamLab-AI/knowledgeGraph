@@ -4,6 +4,7 @@ type: Class
 title: Regolith
 resource: urn:ngm:class:regolith
 domain: space-science-and-systems
+description: Regolith is the layer of loose dust and rocky debris covering a planetary surface, and NASA applies the term to the Moon and to Martian soil.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Regolith
+
+Regolith is the layer of loose dust and rocky debris covering a planetary surface, and NASA applies the term to the Moon and to Martian soil.[^1][^2]

@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:ipfs
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:dao-treasury
 relatedTo:
   - urn:ngm:class:decentralised-autonomous-organisation

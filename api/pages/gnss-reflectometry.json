@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-reflectometry",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "GNSS reflectometry is a remote sensing technique in which a receiver records a GNSS satellite signal after it has reflected from the Earth\u2019s surface, in addition to the direct signal, so that the satellite acts as the transmitter of a bistatic radar.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:remote-sensing",

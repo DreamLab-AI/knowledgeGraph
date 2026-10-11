@@ -18,7 +18,7 @@ Natural Language Processing (NLP) is the subfield of AI focused on enabling comp
 
   #### Related Concepts
 
-- [[Large Language Models]]
+- [[Large Language Model]]
 - [[Transformers]]
 - [[Text Generation]]
 - [[Machine Translation]]

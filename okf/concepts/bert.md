@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:self-attention
 requires:
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:large-scale-corpus
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:attention-mechanism
@@ -39,11 +39,11 @@ dependsOn:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:backpropagation
   - urn:ngm:class:large-scale-corpus
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:masked-language-modelling
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 contrastsWith:
   - urn:ngm:class:gpt
   - urn:ngm:class:autoregressive-model
@@ -53,7 +53,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:knowledge-graph-embedding
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:attention-mechanism

@@ -18,7 +18,7 @@ requires:
   - urn:ngm:class:camera-hardware
 enables:
   - urn:ngm:class:identity-verification-system
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
   - urn:ngm:class:digital-onboarding
   - urn:ngm:class:remote-authentication
 contrastsWith:
@@ -33,14 +33,14 @@ uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:neural-network
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:digital-wallet
   - urn:ngm:class:electronic-identity
 partOf:
   - urn:ngm:class:identity-orchestration
 relatedTo:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:iso-30107
 ---
 

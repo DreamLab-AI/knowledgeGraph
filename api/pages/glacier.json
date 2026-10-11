@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:glacier",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A glacier is an accumulation of ice and snow that slowly flows over land under its own weight.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

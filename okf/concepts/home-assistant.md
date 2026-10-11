@@ -140,7 +140,7 @@ relatedTo:
   - urn:ngm:class:smart-grid
   - urn:ngm:class:voice-assistant
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:local-ai
 ---
 

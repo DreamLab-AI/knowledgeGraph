@@ -73,7 +73,7 @@ contrastsWith:
   - urn:ngm:class:nvidia-corporation-omniverse-platform
 uses:
   - urn:ngm:class:bullet-physics
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:open-gl
   - urn:ngm:class:open-vr
   - urn:ngm:class:qt-framework
@@ -95,7 +95,7 @@ standardizedBy:
   - urn:ngm:class:metaverse-standards-forum
   - urn:ngm:class:open-metaverse-interoperability-group
   - urn:ngm:class:w-3-c-web-xr-device-api
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:w-3-c-web-xr-device-api
 relatedTo:
   - urn:ngm:class:metaverse-standards-forum
@@ -104,7 +104,7 @@ relatedTo:
   - urn:ngm:class:metaverse
   - urn:ngm:class:mixed-reality
   - urn:ngm:class:social-vr
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:philip-rosedale
   - urn:ngm:class:high-fidelity
 ---

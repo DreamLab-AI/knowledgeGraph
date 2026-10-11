@@ -14,11 +14,11 @@ is-a:
   - urn:ngm:class:supervised-learning
 hasPart:
   - urn:ngm:class:non-maximum-suppression
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:feature-pyramid-network
   - urn:ngm:class:anchor-box
   - urn:ngm:class:iou-loss
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:roi-pooling
   - urn:ngm:class:giou-loss
   - urn:ngm:class:ciou-loss
@@ -43,7 +43,7 @@ enables:
   - urn:ngm:class:3d-object-detection
 dependsOn:
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:backpropagation
   - urn:ngm:class:training-data
   - urn:ngm:class:gradient-descent
@@ -56,9 +56,9 @@ implements:
   - urn:ngm:class:region-proposal-network
 contrastsWith:
   - urn:ngm:class:regression-testing
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:semantic-segmentation
-  - urn:ngm:class:heatmap-regression
+  - urn:ngm:class:risk-intensity-heatmap-regression
   - urn:ngm:class:image-classification
   - urn:ngm:class:panoptic-segmentation
 uses:

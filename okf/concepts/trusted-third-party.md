@@ -12,25 +12,25 @@ is-a:
 requires:
   - urn:ngm:class:custody
 enables:
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
   - urn:ngm:class:custodial-wallet
 dependsOn:
   - urn:ngm:class:custody
 contrastsWith:
   - urn:ngm:class:self-custody
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:smart-contract
 bridgesTo:
   - urn:ngm:class:smart-contract
 uses:
   - urn:ngm:class:certificate-authority
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 supports:
   - urn:ngm:class:custody
 relatedTo:
   - urn:ngm:class:oracle
   - urn:ngm:class:multisig
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
 ---
 
 # Trusted Third Party

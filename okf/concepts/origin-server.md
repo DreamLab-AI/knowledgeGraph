@@ -8,14 +8,14 @@ description: An origin server is the authoritative source of truth for web conte
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 hasPart:
   - urn:ngm:class:caching
 requires:
   - urn:ngm:class:http
   - urn:ngm:class:infrastructure
 enables:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:caching
 dependsOn:
   - urn:ngm:class:http
@@ -27,10 +27,10 @@ uses:
   - urn:ngm:class:http
   - urn:ngm:class:reverse-proxy
 supports:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:load-balancer
 partOf:
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 relatedTo:
   - urn:ngm:class:reverse-proxy
   - urn:ngm:class:edge-server

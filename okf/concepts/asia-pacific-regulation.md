@@ -64,13 +64,13 @@ implements:
   - urn:ngm:class:hiroshima-ai-process
   - urn:ngm:class:frontier-ai-safety-commitments
 contrastsWith:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:us-executive-action-on-ai
   - urn:ngm:class:uk-ai-regulation-white-paper
   - urn:ngm:class:brazil-ai-bill-pl-2338
   - urn:ngm:class:canada-aida
 uses:
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:regulatory-sandbox
   - urn:ngm:class:self-regulatory-organisation
   - urn:ngm:class:standard-contractual-clauses
@@ -88,7 +88,7 @@ supports:
   - urn:ngm:class:international-ai-safety-report
   - urn:ngm:class:foundation-model-governance
 standardizedBy:
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:cyberspace-administration-of-china
   - urn:ngm:class:meti
   - urn:ngm:class:ai-verify-foundation

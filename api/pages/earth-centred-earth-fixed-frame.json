@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-centred-earth-fixed-frame",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "The Earth-centred Earth-fixed frame is a terrestrial coordinate frame whose origin is the Earth's centre of mass and which rotates with the Earth, so that points fixed to the crust keep nearly constant coordinates.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

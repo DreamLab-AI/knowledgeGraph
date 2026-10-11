@@ -18,7 +18,7 @@ enables:
 dependsOn:
   - urn:ngm:class:oauth
 implements:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 contrastsWith:
   - urn:ngm:class:bearer-token
 bridgesTo:

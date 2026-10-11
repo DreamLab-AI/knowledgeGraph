@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:social-vr
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 standardizedBy:
   - urn:ngm:class:etsi-domain-identity-and-trust
   - urn:ngm:class:etsi-domain-security-and-privacy

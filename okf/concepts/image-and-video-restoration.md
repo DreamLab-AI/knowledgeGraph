@@ -49,11 +49,11 @@ implements:
   - urn:ngm:class:code-former
   - urn:ngm:class:gfpgan
   - urn:ngm:class:real-esrgan
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:swinir
   - urn:ngm:class:nafnet
   - urn:ngm:class:lama-inpainting
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:dncnn
   - urn:ngm:class:stablesr
   - urn:ngm:class:difface

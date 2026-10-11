@@ -63,7 +63,7 @@ A consensus mechanism requiring network participants to expend significant compu
 - **Application**: Fundamental blockchain functionality for [[Bitcoin Proof-of-Work Protocol]], [[Litecoin]], [[Monero]]
 - **Example**: Practical implementation in major blockchains securing hundreds of billions in value
 - **Requirements**: Technical prerequisites - [[ASIC]] hardware, [[electricity]], [[internet connectivity]]
-- **Benefits**: Value provided to blockchain systems - [[decentralization]], [[security]], [[immutability]]
+- **Benefits**: Value provided to blockchain systems - [[Decentralisation]], [[security]], [[immutability]]
 
 ### Standards & References
 
@@ -73,7 +73,7 @@ A consensus mechanism requiring network participants to expend significant compu
 
 ## 2024-2025: Network Growth, Efficiency Gains, and the Ongoing Energy Debate [Updated 2025]
 
-The years 2024 and 2025 witnessed **dramatic growth in Bitcoin's computational power** alongside **significant efficiency improvements** in mining hardware, even as **the energy consumption debate intensified**. [[Bitcoin Proof-of-Work Protocol]]'s network [[Network Hash Rate|hash rate]] reached unprecedented levels exceeding **1.4 ZH/s (zettahash per second)**, whilst **next-generation 3nm ASIC chips** improved efficiency to **2.5-3.0 J/TH** (joules per terahash), and [[Ethereum Smart Contract Platform]]'s successful [[Proof of Stake]] transition continued to vindicate alternative consensus mechanisms—crystallising a **bifurcated consensus landscape** where Proof of Work persists primarily within Bitcoin's specific security model.
+The years 2024 and 2025 witnessed **dramatic growth in Bitcoin's computational power** alongside **significant efficiency improvements** in mining hardware, even as **the energy consumption debate intensified**. [[Bitcoin Proof-of-Work Protocol]]'s network [[Network Hash Rate|hash rate]] reached unprecedented levels exceeding **1.4 ZH/s (zettahash per second)**, whilst **next-generation 3nm ASIC chips** improved efficiency to **2.5-3.0 J/TH** (joules per terahash), and [[Ethereum]]'s successful [[Proof of Stake]] transition continued to vindicate alternative consensus mechanisms—crystallising a **bifurcated consensus landscape** where Proof of Work persists primarily within Bitcoin's specific security model.
 
 ### Bitcoin Network Hash Rate: Record-Breaking Computational Power [Updated 2025]
 
@@ -161,7 +161,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 
   ### Ethereum's Proof-of-Stake Vindication: The Counterexample [Updated 2025]
 
-  [[Ethereum Smart Contract Platform]]'s September 15, 2022 transition from Proof of Work to [[Proof of Stake]] (PoS)—**"The Merge"**—continued demonstrating viability through 2024-2025:
+  [[Ethereum]]'s September 15, 2022 transition from Proof of Work to [[Proof of Stake]] (PoS)—**"The Merge"**—continued demonstrating viability through 2024-2025:
 
   **Sustained Energy Reduction:**
 
@@ -252,7 +252,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 
   **Pro-Proof-of-Stake Arguments:**
 
-- **[[Ethereum Smart Contract Platform]] vindication**: 2.5+ years post-Merge securing $200-300 billion with 99.9% less energy
+- **[[Ethereum]] vindication**: 2.5+ years post-Merge securing $200-300 billion with 99.9% less energy
 - **[[Economic security]] sufficiency**: [[Opportunity cost of capital]] staked plus [[slashing risk]] provides equivalent security to PoW energy expenditure
 - **Scalability**: PoS enables higher throughput and faster finality without energy constraints
 - **Climate necessity**: Climate crisis urgency renders PoW's energy consumption ethically indefensible
@@ -301,7 +301,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 ## Academic Context
 
 - [[Proof of Work]] (PoW) is a [[consensus mechanism]] originally conceptualized in 1993 by [[Cynthia Dwork]] and [[Moni Naor]] to combat email spam ([[Hashcash]]) and later adapted to secure [[blockchain]] networks by requiring participants ([[Mining|miners]]) to expend computational effort to validate [[transactions]].
-- It underpins the security and [[decentralization]] of early and prominent blockchains, most notably [[Bitcoin Proof-of-Work Protocol]] ([[Satoshi Nakamoto]], 2008).
+- It underpins the security and [[Decentralisation]] of early and prominent blockchains, most notably [[Bitcoin Proof-of-Work Protocol]] ([[Satoshi Nakamoto]], 2008).
 - PoW's academic foundations lie in [[cryptographic puzzles]] and [[distributed consensus]], ensuring that altering [[transaction history]] demands prohibitive computational resources ([[51 Percent Attack]] resistance).
 - Key developments include its role in pioneering [[decentralized trust]] and its influence on subsequent consensus algorithms like [[Proof of Stake]] (PoS).
 
@@ -325,9 +325,9 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 
 ## Current Landscape (2025) [Updated 2025]
 
-- PoW remains the [[consensus mechanism]] securing [[Bitcoin Proof-of-Work Protocol]] and several other cryptocurrencies such as [[Litecoin]] and [[Monero]], though [[Ethereum Smart Contract Platform]] transitioned away from PoW to [[Proof of Stake]] in September 2022 ([[The Merge]]) to address energy and scalability concerns.
+- PoW remains the [[consensus mechanism]] securing [[Bitcoin Proof-of-Work Protocol]] and several other cryptocurrencies such as [[Litecoin]] and [[Monero]], though [[Ethereum]] transitioned away from PoW to [[Proof of Stake]] in September 2022 ([[The Merge]]) to address energy and scalability concerns.
 - [[Mining|Miners]] compete by solving complex mathematical puzzles ([[CryptographicHash|cryptographic hash]] functions) using specialized hardware ([[ASIC]] miners), earning [[Block Reward (Mining Incentive)|block rewards]] and [[transaction fees]] upon success.
-- Despite its robustness in providing [[network security]] and [[decentralization]], PoW is criticized for:
+- Despite its robustness in providing [[network security]] and [[Decentralisation]], PoW is criticized for:
   - **High [[energy consumption]]**: 120-150 TWh annually for Bitcoin (2025)
   - **Limited [[transaction throughput]]**: ~7 transactions per second for Bitcoin base layer
   - **[[Geographic centralization]]**: 45-50% of hash rate concentrated in the United States
@@ -387,7 +387,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 - Emerging trends include the development of more energy-efficient PoW algorithms and [[hybrid consensus mechanisms]] combining PoW with [[Proof of Stake]] or other protocols.
 - Anticipated challenges:
   - **Environmental footprint**: Addressing climate impacts whilst maintaining security guarantees
-  - **Scalability**: Improving [[transaction throughput]] without compromising [[decentralization]]
+  - **Scalability**: Improving [[transaction throughput]] without compromising [[Decentralisation]]
   - **Regulatory compliance**: Navigating evolving international environmental and financial regulations
   - **Hardware evolution**: Continued ASIC efficiency improvements approaching physical limits
 - Research directions:
@@ -413,7 +413,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 - [[Double Spending]]
 - [[Difficulty Adjustment]]
 - [[Halving]]
-- [[Ethereum Smart Contract Platform]]
+- [[Ethereum]]
 - [[The Merge]]
 - [[Selfish Mining]]
 - [[MEV]]

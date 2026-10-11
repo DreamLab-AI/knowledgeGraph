@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:calibration
 requires:
   - urn:ngm:class:algorithmic-bias
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:multi-objective-optimisation
 enables:

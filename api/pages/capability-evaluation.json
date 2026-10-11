@@ -202,6 +202,10 @@
         "label": "AI Ethics"
       },
       {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      },
+      {
         "id": "urn:ngm:class:alignment-evaluation",
         "label": "Alignment Evaluation"
       },
@@ -212,10 +216,6 @@
       {
         "id": "urn:ngm:class:frontier-models",
         "label": "Frontier Model"
-      },
-      {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:sandbagging",
@@ -232,16 +232,16 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:rlhf",
-        "label": "RLHF"
       },
       {
         "id": "urn:ngm:class:ai-system",
@@ -274,7 +274,7 @@
         "label": "ELO Rating"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
@@ -412,7 +412,7 @@
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -420,8 +420,8 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
@@ -448,10 +448,6 @@
         "label": "Bias"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
-      },
-      {
         "id": "urn:ngm:class:prompt-sensitivity",
         "label": "Prompt Sensitivity"
       },
@@ -462,6 +458,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
       }
     ]
   },

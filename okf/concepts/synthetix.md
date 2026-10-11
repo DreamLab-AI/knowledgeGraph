@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:token
   - urn:ngm:class:governance-token
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain
 relatedTo:
   - urn:ngm:class:decentralised-autonomous-organisation

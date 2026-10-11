@@ -17,7 +17,7 @@ uses:
   - urn:ngm:class:spatial-audio
   - urn:ngm:class:haptic-feedback
 relatedTo:
-  - urn:ngm:class:tele-050-neuralrenderingtelepresence
+  - urn:ngm:class:tele-050-neural-rendering-telepresence
   - urn:ngm:class:mixed-reality
 ---
 

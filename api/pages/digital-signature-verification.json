@@ -35,7 +35,7 @@
         "label": "Asymmetric Cryptography"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -212,7 +212,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:tee",
+        "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
       },
       {
@@ -266,7 +266,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential-vc",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -284,10 +284,6 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
-        "label": "Public Key Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
@@ -298,6 +294,10 @@
       {
         "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       },
       {
         "id": "urn:ngm:class:cryptographic-primitive",
@@ -358,7 +358,7 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:tls",
+        "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
       },
       {

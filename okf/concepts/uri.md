@@ -27,7 +27,7 @@ supports:
 partOf:
   - urn:ngm:class:web-standard
 relatedTo:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:solid
 ---
 

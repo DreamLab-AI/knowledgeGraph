@@ -10,14 +10,14 @@ quality: 0.68
 is-a:
   - urn:ngm:class:network-component
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:network-protocol
 enables:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:censorship-resistance
   - urn:ngm:class:network-resilience
-  - urn:ngm:class:decentralization
+  - urn:ngm:class:decentralisation
 dependsOn:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:network-topology

@@ -15,7 +15,7 @@ hasPart:
 enables:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:neural-network
 ---

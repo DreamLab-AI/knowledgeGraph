@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:ai-impact-assessment
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-governance-framework
 relatedTo:
   - urn:ngm:class:ai-operator

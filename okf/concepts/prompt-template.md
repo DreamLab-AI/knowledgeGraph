@@ -18,7 +18,7 @@ uses:
   - urn:ngm:class:context-window
   - urn:ngm:class:instruction-following
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:system-prompt
   - urn:ngm:class:chain-of-thought
   - urn:ngm:class:instruction-tuning

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:habitable-zone",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Habitability depends on distance from a star at which liquid water could exist on the surfaces of orbiting planets; this distance range is the habitable zone.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

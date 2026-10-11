@@ -208,7 +208,7 @@
     },
     {
       "slug": "heatmap-regression",
-      "label": "Heatmap Regression (Keypoint Localisation)"
+      "label": "Heatmap Regression"
     },
     {
       "slug": "image-segmentation",

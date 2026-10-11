@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:real-time-rendering
 dependsOn:
   - urn:ngm:class:cloud-infrastructure
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:distributed-collaboration

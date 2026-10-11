@@ -23,7 +23,7 @@ enables:
   - urn:ngm:class:semantic-segmentation
   - urn:ngm:class:instance-segmentation
 implements:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:feature-pyramid-network
 contrastsWith:
   - urn:ngm:class:feature-pyramid-network

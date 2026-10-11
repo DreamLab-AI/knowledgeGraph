@@ -60,7 +60,7 @@ relatedTo:
   - urn:ngm:class:random-matrix-theory
   - urn:ngm:class:cost-function
   - urn:ngm:class:regularisation
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:signal-processing
   - urn:ngm:class:data-preprocessing
 ---

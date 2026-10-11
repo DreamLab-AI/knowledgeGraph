@@ -32,7 +32,7 @@ enables:
   - urn:ngm:class:llm-pretraining
   - urn:ngm:class:neural-network-training
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 dependsOn:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:backpropagation

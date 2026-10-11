@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:identity-provider
   - urn:ngm:class:trust-framework
 enables:
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
 dependsOn:
   - urn:ngm:class:authentication
 implements:

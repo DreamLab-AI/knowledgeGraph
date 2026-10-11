@@ -19,7 +19,7 @@ supports:
   - urn:ngm:class:virtual-production
 relatedTo:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:open-xr
   - urn:ngm:class:vulkan
   - urn:ngm:class:physically-based-rendering

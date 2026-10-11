@@ -20,7 +20,7 @@ hasPart:
 requires:
   - urn:ngm:class:data-aggregation
   - urn:ngm:class:io-t-infrastructure
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:3d-visualisation
 enables:
   - urn:ngm:class:collaborative-systems-modality-design

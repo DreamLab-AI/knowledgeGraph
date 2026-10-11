@@ -35,8 +35,8 @@ enables:
   - urn:ngm:class:multi-platform-gaming
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:decentralized-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:smart-contract
   - urn:ngm:class:interoperability-standard
 partOf:

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:trust-architecture
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:identity-verification
   - urn:ngm:class:cryptographic-verification
 enables:
@@ -32,7 +32,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:digital-signature-verification
   - urn:ngm:class:humanity-attestation
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identifier
 standardizedBy:
   - urn:ngm:class:trust-framework

@@ -4,6 +4,7 @@ type: Class
 title: Delta-v
 resource: urn:ngm:class:delta-v
 domain: space-science-and-systems
+description: Delta-v is a change in velocity, represented as a vector with a magnitude, direction, reference frame and epoch.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Delta-v
+
+Delta-v is a change in velocity, represented as a vector with a magnitude, direction, reference frame and epoch.

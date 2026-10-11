@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:software-testing
   - urn:ngm:class:runtime-monitoring
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:neural-network-verification
 uses:
   - urn:ngm:class:satisfiability-solver

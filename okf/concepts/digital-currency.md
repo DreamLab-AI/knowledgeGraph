@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:financial-technology
 hasPart:
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:stablecoin
 requires:
   - urn:ngm:class:security-infrastructure
@@ -35,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:fiat-currency
 bridgesTo:
   - urn:ngm:class:financial-technology
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:metaverse-economy
 standardizedBy:
   - urn:ngm:class:financial-regulation

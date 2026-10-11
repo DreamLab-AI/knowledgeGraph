@@ -35,7 +35,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues
   - urn:ngm:class:energy-consumption
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:energy-consumption
 uses:
   - urn:ngm:class:proof-of-work
@@ -45,7 +45,7 @@ uses:
 supports:
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:sustainable-finance
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 partOf:
   - urn:ngm:class:cambridge-judge-business-school
 relatedTo:

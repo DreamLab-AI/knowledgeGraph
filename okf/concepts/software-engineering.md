@@ -8,7 +8,8 @@ description: "Software Engineering is the disciplined application of systematic,
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:systems-engineering
+  - urn:ngm:class:computer-science
+  - urn:ngm:class:infrastructure
 hasPart:
   - urn:ngm:class:software-architecture
   - urn:ngm:class:software-testing
@@ -16,6 +17,12 @@ hasPart:
   - urn:ngm:class:devops
   - urn:ngm:class:continuous-integration
   - urn:ngm:class:software-design-patterns
+  - urn:ngm:class:software-development-process
+  - urn:ngm:class:version-control
+  - urn:ngm:class:testing-process
+  - urn:ngm:class:microservices-architecture
+  - urn:ngm:class:code-generation
+  - urn:ngm:class:programming-language
 requires:
   - urn:ngm:class:version-control
   - urn:ngm:class:agile-software-development
@@ -26,8 +33,9 @@ enables:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:platform-engineering
   - urn:ngm:class:microservices-architecture
+  - urn:ngm:class:api-gateway
+  - urn:ngm:class:testing-infrastructure
 contrastsWith:
-  - urn:ngm:class:computer-science
   - urn:ngm:class:hardware-engineering
 bridgesTo:
   - urn:ngm:class:machine-learning-engineering
@@ -46,6 +54,9 @@ relatedTo:
   - urn:ngm:class:domain-driven-design
   - urn:ngm:class:test-driven-development
   - urn:ngm:class:refactoring
+  - urn:ngm:class:infra-legal-and-regulatory
+  - urn:ngm:class:cloud-infrastructure
+  - urn:ngm:class:distributed-system
 ---
 
 # Software Engineering

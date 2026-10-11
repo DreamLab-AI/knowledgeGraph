@@ -19,13 +19,13 @@ requires:
 enables:
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:transfer-learning
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:gradient-descent
 relatedTo:
-  - urn:ngm:class:pretrained-model
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:pre-trained-model
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-engineering
 ---
 

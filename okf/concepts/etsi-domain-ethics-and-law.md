@@ -37,13 +37,13 @@ dependsOn:
   - urn:ngm:class:gdpr
   - urn:ngm:class:digital-services-act
   - urn:ngm:class:content-moderation-standards
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:oecd-ai-principles
 implements:
   - urn:ngm:class:ethical-ai
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:self-regulation
   - urn:ngm:class:unregulated-virtual-spaces

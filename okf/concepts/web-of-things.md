@@ -14,7 +14,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:agent-to-agent-protocol
 uses:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:rest-api
 relatedTo:
   - urn:ngm:class:world-wide-web-consortium

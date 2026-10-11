@@ -37,7 +37,7 @@ supports:
   - urn:ngm:class:responsible-ai
 standardizedBy:
   - urn:ngm:class:ieee-p-7003-2021
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-tr-24027
 relatedTo:
   - urn:ngm:class:ai-fairness

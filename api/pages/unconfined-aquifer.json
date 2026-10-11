@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:unconfined-aquifer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An unconfined aquifer is an aquifer whose upper boundary is the water table, so that its water is at atmospheric pressure at that surface.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:aquifer",

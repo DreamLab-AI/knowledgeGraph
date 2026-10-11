@@ -6,10 +6,10 @@ The set of software boundaries, interaction surfaces, and protocol contracts thr
 
 # Node based
 
-- [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Human-Agent Interaction Surfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large Language Models]]
-- [[Node-Graph Visual Programming Interface]] is a  [[Human-Agent Interaction Surfaces]] for [[Large Language Models]] which is open source and [locally hosted.](https://github.com/FlowiseAI/Flowise) also see [[Langflow]]
-- [[Langflow]] [[Human-Agent Interaction Surfaces]] for [[Large Language Models]] builder, with slightly more features than [[Node-Graph Visual Programming Interface]] which is another one I need to try soon from their [github](https://github.com/logspace-ai/langflow)
-- ComfyUI is a [[Human-Agent Interaction Surfaces]] for [[Stable Diffusion Image Model]]. It allows very high levels of control over Diffusion Models by leveraging open source extensions and a vibrant developer and creator community. The tool's flexibility and efficiency comes from its innovative design philosophy, that prioritizes user customization and interaction.
+- [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Human-Agent Interaction Surfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large Language Model]]
+- [[Node-Graph Visual Programming Interface]] is a  [[Human-Agent Interaction Surfaces]] for [[Large Language Model]] which is open source and [locally hosted.](https://github.com/FlowiseAI/Flowise) also see [[Langflow]]
+- [[Langflow]] [[Human-Agent Interaction Surfaces]] for [[Large Language Model]] builder, with slightly more features than [[Node-Graph Visual Programming Interface]] which is another one I need to try soon from their [github](https://github.com/logspace-ai/langflow)
+- ComfyUI is a [[Human-Agent Interaction Surfaces]] for [[Stable Diffusion]]. It allows very high levels of control over Diffusion Models by leveraging open source extensions and a vibrant developer and creator community. The tool's flexibility and efficiency comes from its innovative design philosophy, that prioritizes user customization and interaction.
 
 # LLM and multimodal local
 

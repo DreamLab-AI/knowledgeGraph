@@ -12,10 +12,10 @@ is-a:
 hasPart:
   - urn:ngm:class:pixel-classification
   - urn:ngm:class:feature-extraction
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 requires:
   - urn:ngm:class:convolutional-neural-network
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:gpu-computing
 enables:
   - urn:ngm:class:scene-understanding

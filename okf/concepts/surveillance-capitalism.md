@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:data-collection
   - urn:ngm:class:behavioural-analytics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:targeted-advertising
   - urn:ngm:class:algorithmic-accountability
@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:privacy-preserving-computation
 bridgesTo:
   - urn:ngm:class:smart-city
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:data-brokers
   - urn:ngm:class:third-party-cookies

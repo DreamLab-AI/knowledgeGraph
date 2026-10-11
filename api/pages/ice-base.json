@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ice-base",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Ice Base is the lower boundary of an ice mass, where grounded ice meets the bed or floating ice meets the water beneath it.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -40,7 +40,7 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:neural-network-text-tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -68,7 +68,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       },
       {
@@ -76,7 +76,7 @@
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:ngm:class:annotated-training-data",
+        "id": "urn:ngm:class:annotated-dataset",
         "label": "Labelled Training Data"
       }
     ],
@@ -107,8 +107,8 @@
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:word-embeddings",
@@ -213,8 +213,8 @@
         "label": "Information Extraction"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:named-entity-recognition",
@@ -368,6 +368,10 @@
       "label": "Classification"
     },
     {
+      "slug": "collaborative-document-editing",
+      "label": "Collaborative Document Editing"
+    },
+    {
       "slug": "computational-linguistics",
       "label": "Computational Linguistics"
     },
@@ -434,10 +438,6 @@
     {
       "slug": "translation",
       "label": "Translation"
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "label": "tc 0002 collaborative document editing"
     }
   ]
 }

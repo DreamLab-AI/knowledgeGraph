@@ -98,11 +98,6 @@
       "slug": "blockchain"
     },
     {
-      "id": "urn:ngm:class:byzantine-fault-tolerance",
-      "label": "Byzantine Fault Tolerance",
-      "slug": "byzantine-fault-tolerance"
-    },
-    {
       "id": "urn:ngm:class:coordination-protocol",
       "label": "Coordination Protocol",
       "slug": "coordination-protocol"
@@ -126,11 +121,6 @@
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System",
       "slug": "cryptographic-system"
-    },
-    {
-      "id": "urn:ngm:class:distributed-agreement",
-      "label": "Distributed Agreement",
-      "slug": "distributed-agreement"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -233,19 +223,24 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:infrastructure",
@@ -256,6 +251,11 @@
       "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System",
       "slug": "knowledge-organization-system"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:robotics",
@@ -273,9 +273,24 @@
       "slug": "software-engineering"
     },
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
       "id": "urn:ngm:class:automation",
       "label": "Automation",
       "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:cryptographic-security",
@@ -283,14 +298,19 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -509,8 +529,8 @@
         "label": "Byzantine Generals Problem"
       },
       {
-        "id": "urn:ngm:class:crash-fault-tolerance",
-        "label": "Crash Fault Tolerance"
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
       }
     ],
     "bridgesTo": [
@@ -539,12 +559,12 @@
         "label": "Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
+        "id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Agent Framework"
       },
       {
-        "id": "urn:ngm:class:multi-agent-systems",
-        "label": "Multi-Agent Systems"
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       }
     ],
     "uses": [
@@ -595,7 +615,7 @@
         "label": "Data Availability"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -625,7 +645,7 @@
         "label": "Cosmos ICS Standards"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum EIPs"
       },
       {
@@ -651,10 +671,6 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
-      },
-      {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
       },
@@ -665,6 +681,10 @@
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
       {
         "id": "urn:ngm:class:computer-science",
@@ -679,8 +699,8 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:network-infrastructure",
-        "label": "Network Infrastructure"
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
       }
     ],
     "relatedTo": [

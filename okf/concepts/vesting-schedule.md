@@ -22,14 +22,14 @@ enables:
   - urn:ngm:class:supply-schedule
 dependsOn:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:time-lock
+  - urn:ngm:class:timelock
 implements:
   - urn:ngm:class:token
 contrastsWith:
   - urn:ngm:class:airdrop
   - urn:ngm:class:immediate-token-release
 bridgesTo:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:equity-vesting
 uses:
   - urn:ngm:class:escrow-system
@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:escrow-system
 supports:
   - urn:ngm:class:governance-token
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 partOf:
   - urn:ngm:class:tokenomics
 relatedTo:

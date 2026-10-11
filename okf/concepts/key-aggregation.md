@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:digital-signature
 enables:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:schnorr-signature
 dependsOn:
   - urn:ngm:class:public-key-cryptography
@@ -22,12 +22,12 @@ implements:
 contrastsWith:
   - urn:ngm:class:key-management
 bridgesTo:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 uses:
   - urn:ngm:class:schnorr-signature
   - urn:ngm:class:cryptography
 supports:
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:bitcoin
 partOf:
   - urn:ngm:class:cryptographic-protocol

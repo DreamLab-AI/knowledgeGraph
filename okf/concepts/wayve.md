@@ -10,7 +10,7 @@ quality: 0.6
 is-a:
   - urn:ngm:class:autonomous-driving
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:computer-vision
 enables:
   - urn:ngm:class:autonomous-vehicle

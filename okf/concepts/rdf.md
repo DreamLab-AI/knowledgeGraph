@@ -18,11 +18,11 @@ requires:
   - urn:ngm:class:iri
   - urn:ngm:class:namespace
 enables:
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:federated-query
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontological-reasoning
 implements:
   - urn:ngm:class:web-standard
@@ -32,11 +32,11 @@ contrastsWith:
   - urn:ngm:class:relational-database
   - urn:ngm:class:property-graph
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:turtle
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:sparql
   - urn:ngm:class:rdfs
 supports:
@@ -44,7 +44,7 @@ supports:
   - urn:ngm:class:shacl
   - urn:ngm:class:triple-store
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:ontology
   - urn:ngm:class:schema-org

@@ -9,9 +9,8 @@ maturity: mature
 quality: 0.9
 is-a:
   - urn:ngm:class:mathematical-logic
-  - urn:ngm:class:computational-complexity-theory
   - urn:ngm:class:proof-theory
-  - urn:ngm:class:computer-science
+  - urn:ngm:class:theoretical-computer-science
 hasPart:
   - urn:ngm:class:automata-theory
   - urn:ngm:class:formal-language
@@ -88,7 +87,7 @@ relatedTo:
   - urn:ngm:class:formal-language
   - urn:ngm:class:information-theory
   - urn:ngm:class:kolmogorov-complexity
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:godel-incompleteness
   - urn:ngm:class:type-theory
   - urn:ngm:class:descriptive-complexity
@@ -96,10 +95,10 @@ relatedTo:
   - urn:ngm:class:post-correspondence-problem
   - urn:ngm:class:programming-language-theory
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:set-theory
   - urn:ngm:class:oracle-computation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:neural-network
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:deep-learning

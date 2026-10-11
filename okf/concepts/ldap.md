@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:network-protocol
 requires:
   - urn:ngm:class:tcp-ip
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:identity-management

@@ -1,6 +1,6 @@
 The Contract Net Protocol is a task-sharing interaction pattern for multi-agent systems in which a manager agent announces a task, soliciting bids from potential contractor agents, evaluates the responses, and awards the task to the most suitable bidder. It decomposes distributed problem solving into the phases of announcement, bidding, awarding, and result reporting, treating the agent population as a market for negotiating the allocation of work. The protocol provides a decentralised mechanism for dynamic task allocation without a fixed assignment table.
 
-- The [[Contract Net Protocol]] is a task-sharing negotiation pattern in which an [[Agent]] acting as manager announces work and contractor agents bid, with the manager awarding the task by evaluating bids. It supports [[Decentralization]] of control across a population of agents and underpins [[Automation]] of work allocation in [[Distributed Systems]].
+- The [[Contract Net Protocol]] is a task-sharing negotiation pattern in which an [[Agent]] acting as manager announces work and contractor agents bid, with the manager awarding the task by evaluating bids. It supports [[Decentralisation]] of control across a population of agents and underpins [[Automation]] of work allocation in [[Distributed Systems]].
 
 ### Overview
 

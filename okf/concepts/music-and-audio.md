@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-application
   - urn:ngm:class:creative-ai
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:audio-signal-processing
   - urn:ngm:class:deep-learning
   - urn:ngm:class:multimodal-ai-architecture-ai
@@ -48,7 +48,7 @@ enables:
   - urn:ngm:class:procedural-audio-generator
   - urn:ngm:class:ai-mastering
 dependsOn:
-  - urn:ngm:class:large-scale-pretrained-foundation-model
+  - urn:ngm:class:foundation-model
   - urn:ngm:class:model-training
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:audio-signal-processing
@@ -63,7 +63,7 @@ implements:
   - urn:ngm:class:transformers
   - urn:ngm:class:contrastive-language-audio-pre-training
   - urn:ngm:class:residual-vector-quantisation
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 contrastsWith:
   - urn:ngm:class:traditional-music-composition
   - urn:ngm:class:digital-audio-workstation
@@ -93,7 +93,7 @@ supports:
   - urn:ngm:class:film-and-television
 standardizedBy:
   - urn:ngm:class:c2-pa-standard
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:riaa-copyright-framework
   - urn:ngm:class:audioseal-watermarking
   - urn:ngm:class:synthid-audio

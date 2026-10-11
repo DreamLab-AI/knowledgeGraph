@@ -74,7 +74,7 @@ uses:
   - urn:ngm:class:sharding
   - urn:ngm:class:vector-embedding
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:drug-discovery
   - urn:ngm:class:master-data-management
@@ -88,10 +88,10 @@ standardizedBy:
   - urn:ngm:class:iso-iec
   - urn:ngm:class:w-3-c-owl-2
   - urn:ngm:class:w-3-c-rdf-1-1
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:w-3-c-sparql-1-1
   - urn:ngm:class:iso-iec
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:apache-tinkerpop
 relatedTo:
   - urn:ngm:class:linked-data
@@ -99,7 +99,7 @@ relatedTo:
   - urn:ngm:class:network-science
   - urn:ngm:class:ontology
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Graph Database

@@ -8,7 +8,7 @@ description: Voice input is an interaction modality in which spoken language is 
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
 hasPart:
   - urn:ngm:class:speech-recognition
 requires:
@@ -25,12 +25,12 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
 uses:
   - urn:ngm:class:speech-recognition
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:immersive-interface
   - urn:ngm:class:spatial-interaction
 partOf:
-  - urn:ngm:class:multimodal-ai-architecture
+  - urn:ngm:class:multimodal-interaction
   - urn:ngm:class:human-computer-interaction
 relatedTo:
   - urn:ngm:class:gesture-recognition

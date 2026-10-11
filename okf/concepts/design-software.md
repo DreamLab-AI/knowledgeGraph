@@ -27,8 +27,8 @@ enables:
 contrastsWith:
   - urn:ngm:class:game-engine
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:bim-virtual-model
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:building-information-modelling
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:3-d-rendering-engine

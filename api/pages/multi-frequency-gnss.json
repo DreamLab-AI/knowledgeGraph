@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-frequency-gnss",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Multi-frequency GNSS is the reception of signals from the same navigation satellites on more than one carrier frequency, so that a receiver can combine the observables and reduce or estimate frequency-dependent effects such as ionospheric delay.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

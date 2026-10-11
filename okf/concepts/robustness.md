@@ -21,7 +21,7 @@ dependsOn:
   - urn:ngm:class:out-of-distribution-detection
 implements:
   - urn:ngm:class:iso-iec-tr-24029-1-2021
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 contrastsWith:
   - urn:ngm:class:adversarial-attack
   - urn:ngm:class:overfitting
@@ -32,7 +32,7 @@ supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:ai-governance-and-ethics
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-23894
 partOf:
   - urn:ngm:class:ai-trustworthiness

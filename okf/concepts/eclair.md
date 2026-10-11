@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:lnd
   - urn:ngm:class:core-lightning
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:onion-routing
   - urn:ngm:class:gossip-protocol

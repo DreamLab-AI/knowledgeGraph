@@ -8,7 +8,7 @@ description: Pairwise comparison is a method of evaluation in which items are ju
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:model-performance
 requires:
   - urn:ngm:class:human-feedback
@@ -29,7 +29,7 @@ supports:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:recommendation-system
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:reward-model

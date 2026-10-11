@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:scientific-computing
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:biology
-  - urn:ngm:class:bioinformatics
 hasPart:
   - urn:ngm:class:bioinformatics
   - urn:ngm:class:systems-biology
@@ -49,7 +48,7 @@ enables:
 dependsOn:
   - urn:ngm:class:statistics
   - urn:ngm:class:biology
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-science
   - urn:ngm:class:scientific-computing
   - urn:ngm:class:linear-algebra
@@ -67,8 +66,9 @@ contrastsWith:
   - urn:ngm:class:experimental-biochemistry
   - urn:ngm:class:wet-laboratory-biology
   - urn:ngm:class:classical-genetics
+  - urn:ngm:class:bioinformatics
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:scientific-computing
 uses:
@@ -76,15 +76,15 @@ uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:statistics
   - urn:ngm:class:graph-neural-network
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:bayesian-inference
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:probabilistic-modelling
   - urn:ngm:class:differential-equations
   - urn:ngm:class:hidden-markov-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:neural-network
   - urn:ngm:class:sequence-alignment
   - urn:ngm:class:dynamic-programming

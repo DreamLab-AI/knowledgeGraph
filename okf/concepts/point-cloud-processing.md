@@ -29,7 +29,7 @@ dependsOn:
   - urn:ngm:class:photogrammetry
   - urn:ngm:class:lidar-scanning
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:robotics-perception
 uses:
   - urn:ngm:class:lidar
@@ -40,7 +40,7 @@ uses:
   - urn:ngm:class:iterative-closest-point
   - urn:ngm:class:octree-spatial-index
 relatedTo:
-  - urn:ngm:class:bim-virtual-model
+  - urn:ngm:class:building-information-modelling
   - urn:ngm:class:geospatial-data
   - urn:ngm:class:3d-object-detection
 ---

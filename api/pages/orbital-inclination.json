@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-inclination",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital inclination is the angle between an orbital plane and a defined reference plane.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

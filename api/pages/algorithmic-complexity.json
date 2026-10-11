@@ -97,19 +97,24 @@
       "slug": "ai-research-area"
     },
     {
-      "id": "urn:ngm:class:computer-science",
-      "label": "Computer Science",
-      "slug": "computer-science"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:mathematical-logic",
       "label": "Mathematical Logic",
       "slug": "mathematical-logic"
+    },
+    {
+      "id": "urn:ngm:class:theoretical-computer-science",
+      "label": "Theoretical Computer Science",
+      "slug": "theoretical-computer-science"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -122,29 +127,19 @@
       "slug": "artificial-intelligence-core"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:logic",
       "label": "Logic",
       "slug": "logic"
     },
     {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique",
-      "slug": "ai-technique"
-    },
-    {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation",
       "slug": "knowledge-representation"
-    },
-    {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
     }
   ],
   "inheritedRelations": {
@@ -340,16 +335,16 @@
         "label": "Heuristic Search"
       },
       {
-        "id": "urn:ngm:class:symbolic-ai",
-        "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning"
-      },
-      {
         "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
       }
     ],
     "bridgesTo": [
@@ -374,7 +369,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -388,10 +383,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:cryptographic-proof-system",
-        "label": "Proof System"
-      },
-      {
         "id": "urn:ngm:class:oracle",
         "label": "Oracle"
       },
@@ -400,16 +391,16 @@
         "label": "Probability Theory"
       },
       {
+        "id": "urn:ngm:class:proof-system",
+        "label": "Proof System"
+      },
+      {
         "id": "urn:ngm:class:reduction",
         "label": "Reduction"
       },
       {
-        "id": "urn:ngm:class:formal-methods",
-        "label": "Formal Methods"
-      },
-      {
-        "id": "urn:ngm:class:type-theory",
-        "label": "Type Theory"
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:feature-engineering",
@@ -418,6 +409,10 @@
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -460,35 +455,31 @@
         "label": "Clay Mathematics Institute"
       },
       {
-        "id": "urn:ngm:class:acm",
-        "label": "ACM"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:ieee",
-        "label": "IEEE"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
       },
       {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:computer-science",
         "label": "Computer Science"
@@ -512,10 +503,6 @@
         "label": "Coding Theory"
       },
       {
-        "id": "urn:ngm:class:computer-science",
-        "label": "Theoretical Computer Science"
-      },
-      {
         "id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Satisfaction"
       },
@@ -530,6 +517,10 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:theoretical-computer-science",
+        "label": "Theoretical Computer Science"
       }
     ]
   },

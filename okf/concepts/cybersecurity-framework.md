@@ -33,7 +33,7 @@ partOf:
   - urn:ngm:class:security-framework
 relatedTo:
   - urn:ngm:class:nist-cybersecurity-framework
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 ---
 
 # Cybersecurity Framework

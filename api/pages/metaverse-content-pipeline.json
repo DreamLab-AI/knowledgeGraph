@@ -72,7 +72,7 @@
         "label": "Asset Management System"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -116,8 +116,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:gltf-standard",
-        "label": "glTF Standard"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       },
       {
         "id": "urn:ngm:class:usd-format",
@@ -286,12 +286,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:cdn",
-        "label": "Content Delivery Network"
-      },
-      {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
       }
     ],
     "contrastsWith": [

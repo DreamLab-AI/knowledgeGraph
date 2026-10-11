@@ -33,7 +33,7 @@ requires:
   - urn:ngm:class:py-torch
   - urn:ngm:class:python-runtime
   - urn:ngm:class:web-socket
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:http-api
   - urn:ngm:class:node-graph-visual-programming-interface
 enables:
@@ -49,12 +49,12 @@ enables:
   - urn:ngm:class:lora-application
   - urn:ngm:class:control-net-conditioning
 dependsOn:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:flux-1
   - urn:ngm:class:sdxl
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:text-encoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:ksampler
   - urn:ngm:class:unet-architecture
   - urn:ngm:class:python
@@ -79,15 +79,15 @@ uses:
   - urn:ngm:class:rest-api
   - urn:ngm:class:type-script
   - urn:ngm:class:web-socket
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:litegraph-js
   - urn:ngm:class:vue-js
   - urn:ngm:class:vite
   - urn:ngm:class:electron
   - urn:ngm:class:aiohttp
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 supports:
-  - urn:ngm:class:3-d-content-generation
+  - urn:ngm:class:3-d-generation
   - urn:ngm:class:control-net
   - urn:ngm:class:image-to-image
   - urn:ngm:class:node-based-diffusion-pipeline-interface-workflows
@@ -111,12 +111,12 @@ relatedTo:
   - urn:ngm:class:flux-1
   - urn:ngm:class:generative-ai
   - urn:ngm:class:image-generation
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:low-rank-adaptation
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:runpod
   - urn:ngm:class:replicate
   - urn:ngm:class:node-graph-visual-programming-interface
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
 ---
 
 # ComfyUI Client

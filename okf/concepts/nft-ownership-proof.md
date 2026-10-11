@@ -18,10 +18,10 @@ enables:
   - urn:ngm:class:access-control
   - urn:ngm:class:provenance-tracking
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:distributed-ledger
 implements:
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
   - urn:ngm:class:erc-1155
 contrastsWith:
   - urn:ngm:class:fungible-token
@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:merkle-tree
   - urn:ngm:class:wallet-address
 standardizedBy:
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
 relatedTo:
   - urn:ngm:class:non-fungible-token-nft
   - urn:ngm:class:nft-marketplace

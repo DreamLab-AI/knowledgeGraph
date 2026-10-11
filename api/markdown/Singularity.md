@@ -211,9 +211,9 @@ The conceptual architecture of Singularity discourse can be decomposed into the 
 
 **2. Transition Mechanism**: The causal chain from crossing the capability threshold to superintelligence. Options include recursive algorithmic self-improvement (changing one's own training objective, architecture, or data curation), hardware-accelerated training (using gained resources to purchase more compute), agentic research loops (running parallel copies of the system to conduct research), and whole-brain emulation cascades (copying biological neurons at increasing fidelity and speed).
 
-**3. Alignment Quality**: The degree to which the first superintelligent system's values and goals correspond to human welfare. Alignment quality determines whether the Singularity is beneficial, neutral, or catastrophic. This is the domain of [[AI Alignment]], [[Safety and Alignment]], and [[RLHF]].
+**3. Alignment Quality**: The degree to which the first superintelligent system's values and goals correspond to human welfare. Alignment quality determines whether the Singularity is beneficial, neutral, or catastrophic. This is the domain of [[AI Alignment]], [[Safety and Alignment]], and [[Reinforcement Learning from Human Feedback]].
 
-**4. Governance Structure**: The institutional, legal, and geopolitical context in which the transition occurs. Governance determines who controls the first superintelligent system, what constraints operate on its deployment, and whether diverse actors have input into its values. This is the domain of AI governance frameworks including the [[EU AI Act Regulatory Instrument]], proposed US AI legislation, and international coordination mechanisms.
+**4. Governance Structure**: The institutional, legal, and geopolitical context in which the transition occurs. Governance determines who controls the first superintelligent system, what constraints operate on its deployment, and whether diverse actors have input into its values. This is the domain of AI governance frameworks including the [[EU AI Act]], proposed US AI legislation, and international coordination mechanisms.
 
 **5. Economic Integration**: The rate at which post-Singularity capabilities diffuse through the economy. Slow economic integration may limit near-term disruption even if a Singularity technically occurs; rapid integration amplifies both benefits and risks.
 
@@ -503,7 +503,7 @@ The Technological Singularity concept is interconnected with a wide set of adjac
 **Enabling concepts** (the Singularity depends on these becoming real):
 
 - [[Artificial General Intelligence]] — the prerequisite capability threshold whose crossing initiates the intelligence explosion
-- [[Large-Scale Pretrained Foundation Model]] — the current empirical trajectory toward AGI; transformer-based models as first candidates for AGI precursors
+- [[Foundation Model]] — the current empirical trajectory toward AGI; transformer-based models as first candidates for AGI precursors
 - [[Reasoning]] — the specific cognitive capability most critical for recursive self-improvement; chain-of-thought and inference-time compute as 2024–2026 advances
 - [[Agents]] — the deployment mechanism through which AI capability translates into real-world impact; agentic AI as proto-RSI
 - [[Compute Infrastructure]] — the physical substrate of intelligence growth; datacenter scaling, chip design, energy as binding constraints
@@ -514,7 +514,7 @@ The Technological Singularity concept is interconnected with a wide set of adjac
 - [[Safety and Alignment]] — the field whose urgency is defined by Singularity-adjacent risk assessments
 - [[AI Risks]] — the near-term and long-term harm taxonomy; Singularity as extreme tail of AI risk distribution
 - [[Existential Risk]] — the broader category of civilisation-ending risks; AI is now assessed as largest contributor by many longtermist researchers
-- [[EU AI Act Regulatory Instrument]] — first binding regulation explicitly targeting transformative AI risks
+- [[EU AI Act]] — first binding regulation explicitly targeting transformative AI risks
 - [[Competition in AI]] — US-China race dynamics that create structural pressure toward faster, less safe development timelines
 
   **Philosophical and cognitive concepts**:

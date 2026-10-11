@@ -8,7 +8,7 @@ description: The capability of a multimodal generative model to synthesize synch
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:multimodal-ai
+  - urn:ngm:class:multimodal-ai-architecture-ai
 relatedTo:
   - urn:ngm:class:video-generation
   - urn:ngm:class:generative-ai

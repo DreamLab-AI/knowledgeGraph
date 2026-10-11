@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sar-coherence",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "SAR coherence is the interferometric coherence between two complex SAR images, a measure of their complex correlation that serves as an index of the interference quality of the image pair.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

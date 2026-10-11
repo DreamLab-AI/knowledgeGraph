@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:image-segmentation
 requires:
   - urn:ngm:class:dicom
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:gpu-computing
 enables:
   - urn:ngm:class:clinical-decision-support

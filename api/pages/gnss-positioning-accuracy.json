@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-positioning-accuracy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS positioning accuracy is the degree of conformance of an estimated position with the true position, expressed as a statistical measure of solution error.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -32,7 +32,7 @@
         "label": "GNSS Positioning Error"
       },
       {
-        "id": "urn:ngm:class:accuracy",
+        "id": "urn:ngm:class:measurement-accuracy",
         "label": "Measurement Accuracy"
       }
     ]

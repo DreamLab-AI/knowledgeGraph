@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:python-programming-language
   - urn:ngm:class:statistical-analysis
 enables:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:signal-processing
 dependsOn:
   - urn:ngm:class:infrastructure

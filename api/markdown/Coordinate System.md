@@ -13,7 +13,7 @@ A coordinate system is a mathematical framework that assigns a unique ordered tu
 - **Origin** — the distinguished reference point (coordinates all zero) from which all positions are measured; see [[Origin]].
 - **Basis Vectors** — a linearly independent set of unit vectors that span the space; in 3D Cartesian systems these are conventionally labelled X, Y, Z; see [[Basis Vector]].
 - **Handedness** — right-handed systems (most physics and OpenXR) vs. left-handed (Direct3D, Unity default); a mismatch silently mirrors geometry.
-- **Axis Convention** — Y-up (OpenGL, [[OpenXR]], most XR runtimes) vs. Z-up ([[ROS]], [[Geographic Information System]]); see [[Rotation Representation]].
+- **Axis Convention** — Y-up (OpenGL, [[OpenXR]], most XR runtimes) vs. Z-up ([[Robot Operating System]], [[Geographic Information System]]); see [[Rotation Representation]].
 - **Unit of Measure** — metres are the SI standard; mixing units without explicit scale factors is a common error source.
 - **Transformation Matrix** — a 4×4 [[Transformation Matrix]] in homogeneous coordinates encodes rotation and translation as a single linear map, enabling efficient composition by matrix multiplication.
 - **Quaternion Representation** — [[Quaternion]]s represent rotations compactly (4 floats vs. 9), avoid gimbal lock, and interpolate smoothly via SLERP; see [[Rotation Representation]].

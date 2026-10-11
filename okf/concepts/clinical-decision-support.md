@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:rule-based-systems
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:evidence-based-medicine
   - urn:ngm:class:patient-safety

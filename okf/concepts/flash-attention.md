@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:transformer-architecture
 enables:
   - urn:ngm:class:long-context-modelling
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:inference
   - urn:ngm:class:multi-head-attention
 dependsOn:

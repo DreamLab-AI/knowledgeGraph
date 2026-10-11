@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:digital-signature-verification
   - urn:ngm:class:authentication
 uses:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:key-management
 relatedTo:
   - urn:ngm:class:distributed-ledger-technology

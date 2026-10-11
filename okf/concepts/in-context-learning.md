@@ -27,7 +27,7 @@ bridgesTo:
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:agent-reasoning
 uses:
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:demonstration-selection
 partOf:

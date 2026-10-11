@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:governance-token
   - urn:ngm:class:voting
 enables:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 dependsOn:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:ethereum
@@ -27,10 +27,10 @@ uses:
   - urn:ngm:class:snapshot
   - urn:ngm:class:delegation
 supports:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 partOf:
   - urn:ngm:class:on-chain-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 relatedTo:
   - urn:ngm:class:voting-mechanism
   - urn:ngm:class:governance-framework

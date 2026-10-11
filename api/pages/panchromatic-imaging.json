@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:panchromatic-imaging",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Panchromatic imaging records a broad range of visible light in a single band, giving a grey-scale image.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

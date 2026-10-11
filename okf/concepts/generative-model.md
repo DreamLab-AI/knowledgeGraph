@@ -8,16 +8,16 @@ description: A class of machine learning models that learn the underlying probab
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-model-architecture
 hasPart:
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:autoencoder
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:deep-generative-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:normalising-flow
 requires:
   - urn:ngm:class:training-data
@@ -32,7 +32,7 @@ enables:
 dependsOn:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:unsupervised-learning
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
 contrastsWith:
   - urn:ngm:class:discriminative-model
   - urn:ngm:class:supervised-learning

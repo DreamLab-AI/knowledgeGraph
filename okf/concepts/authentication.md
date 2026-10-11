@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptography
   - urn:ngm:class:identity-verification
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:access-control
   - urn:ngm:class:single-sign-on

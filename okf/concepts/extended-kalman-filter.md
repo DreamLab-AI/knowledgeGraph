@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:target-tracking
 contrastsWith:
   - urn:ngm:class:unscented-kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 bridgesTo:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:augmented-reality-tracking

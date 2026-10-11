@@ -30,14 +30,14 @@ uses:
   - urn:ngm:class:clip
   - urn:ngm:class:text-encoder
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 partOf:
   - urn:ngm:class:generative-ai-engineering
   - urn:ngm:class:multimodal-ai-architecture-ai
 relatedTo:
   - urn:ngm:class:image-generation
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:fine-tuning
 ---

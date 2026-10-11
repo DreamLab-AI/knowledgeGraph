@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:web3
 requires:
   - urn:ngm:class:dns
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:tcp-ip
 enables:
   - urn:ngm:class:decentralised-identity
@@ -32,20 +32,20 @@ contrastsWith:
   - urn:ngm:class:centralised-cloud
 bridgesTo:
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:rest-api
   - urn:ngm:class:graph-ql
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:ietf
   - urn:ngm:class:whatwg
 relatedTo:
   - urn:ngm:class:web-browser
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:web-server
 ---
 

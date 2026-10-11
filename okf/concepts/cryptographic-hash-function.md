@@ -29,9 +29,9 @@ contrastsWith:
   - urn:ngm:class:checksums
 bridgesTo:
   - urn:ngm:class:post-quantum-cryptography
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:sha-256
   - urn:ngm:class:keccak-256
@@ -39,7 +39,7 @@ uses:
   - urn:ngm:class:sha-3
 supports:
   - urn:ngm:class:blockchain
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:password-hashing
   - urn:ngm:class:content-addressed-storage
 standardizedBy:

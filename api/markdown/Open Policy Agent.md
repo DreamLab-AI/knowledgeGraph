@@ -23,7 +23,7 @@ Open Policy Agent (OPA) is an open-source, general-purpose policy engine that de
 - [[Kubernetes]] admission control enforcing security and configuration guardrails.
 - Fine-grained authorisation in [[Microservices]] and at the [[API Gateway]].
 - Infrastructure-as-code and CI/CD policy checks before deployment.
-- Enterprise [[Authorization]] services centralising entitlement decisions.
+- Enterprise [[Authorisation]] services centralising entitlement decisions.
 
 ### Provenance
 

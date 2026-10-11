@@ -28,7 +28,7 @@ bridgesTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:federated-learning
 uses:
-  - urn:ngm:class:decentralized-identifiers
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:access-control
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:end-to-end-encryption

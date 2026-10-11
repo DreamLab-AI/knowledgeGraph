@@ -10,6 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:industrial-robot
   - urn:ngm:class:robotics
+  - urn:ngm:class:industrial-robotics
 hasPart:
   - urn:ngm:class:force-torque-sensor
   - urn:ngm:class:end-effector
@@ -21,6 +22,8 @@ requires:
   - urn:ngm:class:force-torque-sensor
   - urn:ngm:class:safety-controller
   - urn:ngm:class:iso-ts-15066
+  - urn:ngm:class:sensors
+  - urn:ngm:class:actuators
 enables:
   - urn:ngm:class:human-robot-collaboration
   - urn:ngm:class:flexible-assembly
@@ -35,8 +38,9 @@ bridgesTo:
   - urn:ngm:class:telecollaboration
   - urn:ngm:class:digital-twin
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:control-theory
 uses:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:machine-vision
   - urn:ngm:class:sensor-fusion
 standardizedBy:

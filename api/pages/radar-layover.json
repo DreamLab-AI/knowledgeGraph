@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radar-layover",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Radar layover is the displacement of the top of a tall feature towards the sensor in a side-looking radar image, because the return from the top arrives before the return from the base.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -36,7 +36,7 @@
         "label": "SAR Terrain Correction"
       },
       {
-        "id": "urn:ngm:class:radar",
+        "id": "urn:ngm:class:synthetic-aperture-radar",
         "label": "Synthetic Aperture Radar"
       }
     ]

@@ -534,16 +534,16 @@
       "label": "Multiverse"
     },
     {
-      "slug": "network-protocol",
-      "label": "Network Protocol"
+      "slug": "network-component",
+      "label": "Network Component"
     },
     {
       "slug": "network-protocol",
       "label": "Network Protocol"
     },
     {
-      "slug": "networkcomponent",
-      "label": "Networkcomponent"
+      "slug": "network-protocol",
+      "label": "Network Protocol"
     },
     {
       "slug": "networking-layer",

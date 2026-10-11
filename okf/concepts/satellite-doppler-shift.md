@@ -4,6 +4,7 @@ type: Class
 title: Satellite Doppler Shift
 resource: urn:ngm:class:satellite-doppler-shift
 domain: space-science-and-systems
+description: Satellite Doppler shift is the change in received carrier frequency caused by relative line-of-sight motion between a satellite and another endpoint.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Satellite Doppler Shift
+
+Satellite Doppler shift is the change in received carrier frequency caused by relative line-of-sight motion between a satellite and another endpoint.

@@ -15,7 +15,7 @@ enables:
 uses:
   - urn:ngm:class:automatic-speech-recognition
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:audio-processing-system
   - urn:ngm:class:audio-technology

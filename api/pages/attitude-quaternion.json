@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:attitude-quaternion",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An attitude quaternion is a four-component representation of a three-dimensional rotation. For spacecraft work it normally expresses the orientation of one declared reference frame relative to another at an epoch. The four components are constrained to unit norm, so they contain three independent degrees of freedom. A quaternion without its frames, rotation direction, component order and time context is not a complete attitude state.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -31,6 +31,16 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "spacecraft-attitude",
+      "label": "Spacecraft Attitude"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "spacecraft-attitude",
+      "label": "Spacecraft Attitude"
+    }
+  ]
 }

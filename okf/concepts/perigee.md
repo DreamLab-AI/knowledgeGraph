@@ -4,6 +4,7 @@ type: Class
 title: Perigee
 resource: urn:ngm:class:perigee
 domain: space-science-and-systems
+description: Perigee is the Earth-specific periapsis, where an Earth-centred orbit or trajectory reaches its least geocentric distance.
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Perigee
+
+Perigee is the Earth-specific periapsis, where an Earth-centred orbit or trajectory reaches its least geocentric distance.

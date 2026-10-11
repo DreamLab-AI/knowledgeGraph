@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geoid",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "In geodesy the geoid is the equipotential surface of the Earth's gravity field that is perpendicular to the direction of gravity and best fits mean sea level, either locally, regionally or globally.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

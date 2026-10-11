@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:key-management
   - urn:ngm:class:access-control
   - urn:ngm:class:identity-provider
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 requires:
   - urn:ngm:class:network-layer
   - urn:ngm:class:physical-layer

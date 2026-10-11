@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:minimum-valid-data-value",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A minimum valid data value is the smallest value of a variable that generic applications should treat as valid data.[^1] Values below it are not valid data, and the convention offers a valid range attribute that gives the minimum and maximum together.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:measurement-value",

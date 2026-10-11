@@ -35,7 +35,7 @@ enables:
 dependsOn:
   - urn:ngm:class:computationandintelligencedomain
   - urn:ngm:class:etsi-domain-taxonomy
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:technical-committee
 implements:
   - urn:ngm:class:ai-standardisation
@@ -43,15 +43,15 @@ implements:
   - urn:ngm:class:classification-framework
 contrastsWith:
   - urn:ngm:class:iso-iec-42001
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:ieee-standards
   - urn:ngm:class:oecd-ai-principles
 bridgesTo:
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
   - urn:ngm:class:data-governance
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
@@ -59,23 +59,23 @@ uses:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:controlled-vocabulary
   - urn:ngm:class:ontology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 supports:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:harmonised-standards
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:interoperability
   - urn:ngm:class:ai-regulation
 standardizedBy:
   - urn:ngm:class:etsi
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
 partOf:
   - urn:ngm:class:etsi-domain-taxonomy
   - urn:ngm:class:european-ai-standards-ecosystem
 relatedTo:
   - urn:ngm:class:etsi-mec
   - urn:ngm:class:etsi-gs-mec
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:cen-cenelec
   - urn:ngm:class:ai-governance
   - urn:ngm:class:federated-learning

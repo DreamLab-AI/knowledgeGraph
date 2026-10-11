@@ -36,7 +36,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-data-structure
   - urn:ngm:class:robotics
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:surface-area-heuristic
   - urn:ngm:class:depth-first-search

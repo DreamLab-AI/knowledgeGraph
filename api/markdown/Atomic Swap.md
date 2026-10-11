@@ -48,7 +48,7 @@ Trustless peer-to-peer cryptocurrency exchange mechanism across different blockc
   ## Examples
 
 - [[Bitcoin Proof-of-Work Protocol]] <-> [[Litecoin]] atomic swaps
-- [[Ethereum Smart Contract Platform]] <-> [[ERC-20 Token]] swaps
+- [[Ethereum]] <-> [[ERC-20 Token]] swaps
 - [[Lightning Network]] cross-chain swaps
 - [[Polkadot]] parachain swaps
 
@@ -101,7 +101,7 @@ Trustless peer-to-peer cryptocurrency exchange mechanism across different blockc
 
 - [[Hash Time-Locked Contract]]
 - [[Cross-Chain Bridge]]
-- [[Decentralized Exchange]]
+- [[Decentralised Exchange]]
 - [[Payment Channel]]
 
   #blockchain #atomic-swap #interoperability #cross-chain

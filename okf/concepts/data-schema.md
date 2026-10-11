@@ -28,7 +28,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:json-data-interchange-format-schema
   - urn:ngm:class:rdf
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:xml-schema-definition
   - urn:ngm:class:shacl
   - urn:ngm:class:owl

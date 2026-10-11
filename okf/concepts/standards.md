@@ -30,8 +30,8 @@ bridgesTo:
   - urn:ngm:class:web3
   - urn:ngm:class:artificial-intelligence
 uses:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:web-xr
 supports:
   - urn:ngm:class:spatial-computing

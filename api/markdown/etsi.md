@@ -23,7 +23,7 @@ ETSI (European Telecommunications Standards Institute) is a not-for-profit, inde
   - ISG ZSM: Zero-touch Network and Service Management — defines an end-to-end [[Network Automation]] framework for autonomous service lifecycle management.
   - ISG SAI: Securing Artificial Intelligence — addresses adversarial ML, data poisoning, and security requirements for AI systems, intersecting with [[AI Trustworthiness]] concerns.
 - **Electronic Signature Standards (EN 319 Series)**
-  - Defines the formats CAdES (CMS Advanced Electronic Signatures), XAdES (XML), PAdES (PDF), and JAdES (JSON), all mandated under the [[eIDAS]] regulation for qualified electronic signatures across the EU.
+  - Defines the formats CAdES (CMS Advanced Electronic Signatures), XAdES (XML), PAdES (PDF), and JAdES (JSON), all mandated under the [[eIDAS Regulation]] regulation for qualified electronic signatures across the EU.
   - Specifies trust service provider requirements, timestamping authorities, and validation procedures that underpin EU digital identity infrastructure.
 - **ETSI Plugtests**
   - Organised interoperability events where vendors test implementations of ETSI specifications against each other, producing test reports that inform conformance certification under EU regulatory schemes.
@@ -55,7 +55,7 @@ ETSI (European Telecommunications Standards Institute) is a not-for-profit, inde
   - **TS (Technical Specification)**: faster-cycle outputs suitable for rapidly evolving domains; often precursors to full ENs.
   - **TR (Technical Report)**: informational documents providing landscape analysis, gap assessments, and architectural guidance.
 - Key specification series:
-  - **ETSI EN 319 series**: electronic signatures and trust services — the legal backbone of [[eIDAS]].
+  - **ETSI EN 319 series**: electronic signatures and trust services — the legal backbone of [[eIDAS Regulation]].
   - **ETSI GS NFV series**: 40+ specifications defining [[Network Functions Virtualisation]] architecture, interfaces, and information models.
   - **ETSI GS MEC series**: [[Multi-Access Edge Computing]] platform APIs, reference architecture, and use case specifications.
   - **ETSI EN 303 645**: consumer IoT cybersecurity baseline, feeding directly into the EU Cyber Resilience Act and UK PSTI Act.

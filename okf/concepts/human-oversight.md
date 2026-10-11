@@ -38,8 +38,8 @@ supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:algorithmic-accountability
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001
 relatedTo:
   - urn:ngm:class:ai-alignment

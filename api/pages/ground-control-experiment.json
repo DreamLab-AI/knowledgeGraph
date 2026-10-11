@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-control-experiment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A ground control experiment is a control run on the ground alongside a spaceflight experiment, designed to duplicate the flight environment except for effects such as microgravity and radiation.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

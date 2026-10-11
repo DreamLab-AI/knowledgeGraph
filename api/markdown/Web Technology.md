@@ -2,7 +2,7 @@ Web Technology encompasses the protocols, standards, frameworks, and distributed
 
 ### Overview
 
-- The Web is a layered system built atop the internet's packet-switching substrate ([[TCP-IP]]). Each layer adds abstraction: [[TLS]] secures the channel, [[HTTP]] structures request-response semantics, [[DNS]] resolves human-readable names to IP addresses, and HTML/CSS/JavaScript compose the rendered document experience.
+- The Web is a layered system built atop the internet's packet-switching substrate ([[TCP-IP]]). Each layer adds abstraction: [[Transport Layer Security]] secures the channel, [[HTTP]] structures request-response semantics, [[DNS]] resolves human-readable names to IP addresses, and HTML/CSS/JavaScript compose the rendered document experience.
 - Web Technology is broadly divided into three generations:
   - **Web 1.0** — static, read-only hypertext documents served from centralised origins; dominated by HTML, FTP, and early [[HTTP]] versions.
   - **Web 2.0** — dynamic, read-write platforms; introduced [[AJAX]], [[REST API]], [[JavaScript]] frameworks, [[Content Delivery Network]] edge caching, and cloud-hosted databases enabling participatory social media and SaaS.
@@ -14,7 +14,7 @@ Web Technology encompasses the protocols, standards, frameworks, and distributed
 #### Transport and Addressing Protocols
 
 - [[HTTP]] / HTTP/2 / HTTP/3 (QUIC) — stateless request-response protocols defining methods (GET, POST, PUT, DELETE) and status codes.
-- [[HTTPS]] — HTTP over [[TLS]]; provides encryption, server authentication, and integrity protection via X.509 certificates.
+- [[HTTPS]] — HTTP over [[Transport Layer Security]]; provides encryption, server authentication, and integrity protection via X.509 certificates.
 - [[DNS]] — hierarchical name resolution translating domain labels (e.g. `example.com`) to IP addresses; a foundational dependency of the Web.
 - [[TCP-IP]] — the underlying packet-switched transport on which all Web protocols operate.
 - WebSocket — full-duplex persistent connection over a single TCP connection, enabling [[Real-Time Communication]] without polling.
@@ -42,12 +42,12 @@ Web Technology encompasses the protocols, standards, frameworks, and distributed
 - [[ENS]] (Ethereum Name Service) — on-chain hierarchical naming system mapping human-readable `.eth` names to Ethereum addresses, IPFS content hashes, and metadata via resolver contracts.
 - [[Decentralised Identity]] / [[DIDs]] — W3C specification for self-sovereign identifiers resolvable without centralised registries; paired with Verifiable Credentials for privacy-preserving attestations.
 - [[Smart Contract]] — self-executing code on blockchain VMs (EVM, Solana's SVM) that governs decentralised application logic, token economics, and DAO governance without intermediaries.
-- [[Decentralized Storage]] — broad category encompassing IPFS, Filecoin, Arweave, Storj, and Sia; contrasts with centralised [[Centralised Cloud]] object stores.
+- [[Decentralised Storage]] — broad category encompassing IPFS, Filecoin, Arweave, Storj, and Sia; contrasts with centralised [[Centralised Cloud]] object stores.
 - WalletConnect / Web3Modal — protocols enabling [[Web Browser]]-based dApps to communicate with hardware and mobile wallets via QR-code-paired encrypted relay channels.
 
 #### Security and Identity
 
-- [[TLS]] (Transport Layer Security) — cryptographic protocol securing the channel between client and server; TLS 1.3 is the current standard.
+- [[Transport Layer Security]] (Transport Layer Security) — cryptographic protocol securing the channel between client and server; TLS 1.3 is the current standard.
 - CORS (Cross-Origin Resource Sharing) — browser-enforced policy restricting cross-origin HTTP requests; mitigates data-exfiltration attacks.
 - Content Security Policy (CSP) — HTTP header restricting resource origins permitted by a page; reduces XSS attack surface.
 - OAuth 2.0 / OpenID Connect — federated authentication and authorisation protocols enabling Single Sign-On across services.
@@ -66,9 +66,9 @@ Web Technology encompasses the protocols, standards, frameworks, and distributed
 
 ### Standards and Governance
 
-- **[[W3C]]** (World Wide Web Consortium) — primary standards body for HTML, CSS, WebAssembly, SVG, accessibility guidelines (WCAG), WebXR, and decentralised identity (DIDs, Verifiable Credentials).
+- **[[World Wide Web Consortium]]** (World Wide Web Consortium) — primary standards body for HTML, CSS, WebAssembly, SVG, accessibility guidelines (WCAG), WebXR, and decentralised identity (DIDs, Verifiable Credentials).
 - **[[WHATWG]]** (Web Hypertext Application Technology Working Group) — maintains the HTML Living Standard and the Fetch, URL, Encoding, and Streams specifications collaboratively with browser vendors.
-- **[[IETF]]** (Internet Engineering Task Force) — publishes RFCs governing HTTP (RFC 9110–9114 for HTTP/3), [[TLS]], [[DNS]], WebSocket (RFC 6455), and related transport protocols.
+- **[[IETF]]** (Internet Engineering Task Force) — publishes RFCs governing HTTP (RFC 9110–9114 for HTTP/3), [[Transport Layer Security]], [[DNS]], WebSocket (RFC 6455), and related transport protocols.
 - **TC39** — Ecma International technical committee standardising ECMAScript (JavaScript); follows a staged proposal process with annual release cadence.
 - **WHATWG / W3C Convergence (2019)** — W3C and WHATWG agreed a single HTML and DOM specification, ending the parallel HTML5 / HTML Living Standard duplication.
 - **Web Accessibility Initiative (WAI)** — W3C programme producing WCAG, ARIA, and ATAG; accessibility compliance is legally required in many jurisdictions (EU Accessibility Act, ADA in the US).
@@ -77,7 +77,7 @@ Web Technology encompasses the protocols, standards, frameworks, and distributed
 ### Evolution and Historical Context
 
 - **1989–1991** — Tim Berners-Lee proposes and implements the first [[HTTP]] server and [[HTML]] browser at CERN; the Web launches as a hypertext document system.
-- **1994** — W3C founded; Netscape Navigator popularises the graphical Web; SSL (predecessor to [[TLS]]) introduced for secure commerce.
+- **1994** — W3C founded; Netscape Navigator popularises the graphical Web; SSL (predecessor to [[Transport Layer Security]]) introduced for secure commerce.
 - **1995–2000** — [[JavaScript]] introduced by Netscape (1995); browser wars accelerate proprietary extensions; dot-com boom drives rapid adoption.
 - **2004–2008** — AJAX coined; Web 2.0 era begins; Gmail and Google Maps demonstrate dynamic single-page applications; Web 2.0 frameworks (jQuery, Prototype) emerge.
 - **2009–2015** — Node.js brings [[JavaScript]] server-side; responsive design and CSS media queries address the mobile shift; HTML5 canvas, WebGL, and WebSocket standardised.

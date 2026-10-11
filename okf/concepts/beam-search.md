@@ -43,7 +43,7 @@ dependsOn:
   - urn:ngm:class:dynamic-programming
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:transformer-architecture
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 implements:
   - urn:ngm:class:search-algorithm
   - urn:ngm:class:breadth-first-search
@@ -63,7 +63,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:language-model
   - urn:ngm:class:heuristic-methods
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:log-probability
   - urn:ngm:class:length-normalisation
   - urn:ngm:class:probability-distribution
@@ -72,7 +72,7 @@ uses:
   - urn:ngm:class:vocabulary
   - urn:ngm:class:kv-cache
 supports:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:robotics
   - urn:ngm:class:autoregressive-model

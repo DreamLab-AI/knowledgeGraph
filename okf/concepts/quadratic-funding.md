@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:smart-contract
 enables:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:dao-governance
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:open-source-sustainability

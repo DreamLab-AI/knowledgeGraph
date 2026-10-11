@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:cryptographic-proof
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:cross-chain-liquidity
 partOf:
   - urn:ngm:class:interoperability-protocol

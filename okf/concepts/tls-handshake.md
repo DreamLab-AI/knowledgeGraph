@@ -8,7 +8,7 @@ description: "The TLS handshake is the negotiation phase of the Transport Layer 
 maturity: mature
 quality: 0.62
 is-a:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 hasPart:
   - urn:ngm:class:nonce
 requires:
@@ -28,7 +28,7 @@ supports:
   - urn:ngm:class:encryption
   - urn:ngm:class:authentication
 partOf:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 relatedTo:
   - urn:ngm:class:security
 ---

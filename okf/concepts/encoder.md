@@ -31,7 +31,7 @@ contrastsWith:
   - urn:ngm:class:decoder
   - urn:ngm:class:recurrent-neural-network
 bridgesTo:
-  - urn:ngm:class:multimodal-ai-architecture-models
+  - urn:ngm:class:multimodal-model
   - urn:ngm:class:speech-recognition
 uses:
   - urn:ngm:class:self-attention
@@ -43,7 +43,7 @@ supports:
   - urn:ngm:class:classification
   - urn:ngm:class:named-entity-recognition
 partOf:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:transformer-architecture
 relatedTo:
   - urn:ngm:class:bert

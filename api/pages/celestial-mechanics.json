@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:celestial-mechanics",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Celestial mechanics is the study of the motions of celestial bodies under gravity.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

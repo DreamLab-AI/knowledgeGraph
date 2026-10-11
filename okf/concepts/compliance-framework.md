@@ -21,9 +21,9 @@ enables:
   - urn:ngm:class:organisational-trust
 implements:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
 contrastsWith:
   - urn:ngm:class:voluntary-guidelines
 bridgesTo:

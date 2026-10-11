@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:predictive-maintenance
   - urn:ngm:class:simulation
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:data-integration
 implements:
   - urn:ngm:class:iso-23247

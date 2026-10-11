@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:cryptography
   - urn:ngm:class:digital-signatures
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:media-authentication
   - urn:ngm:class:disinformation-detection

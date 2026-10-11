@@ -4,6 +4,7 @@ type: Class
 title: Fill Value
 resource: urn:ngm:class:fill-value
 domain: earth-observation-and-geospatial-sensing
+description: A fill value is a reserved data value written into a variable to stand for undefined or missing data.[^1][^2]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Fill Value
+
+A fill value is a reserved data value written into a variable to stand for undefined or missing data.[^1][^2]

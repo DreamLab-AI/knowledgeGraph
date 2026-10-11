@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-spoofing",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "GNSS spoofing is the broadcasting of counterfeit satellite-like signals to deceive a GNSS receiver into producing incorrect position, navigation or timing data.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -52,8 +52,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:gltf-standard",
-        "label": "Gltf Standard"
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
       },
       {
         "id": "urn:ngm:class:vrm-format",
@@ -166,7 +166,7 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:non-verbal-communication",
+        "id": "urn:ngm:class:nonverbal-communication",
         "label": "Non-Verbal Communication"
       },
       {
@@ -202,7 +202,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF/GLB"
       },
       {

@@ -29,7 +29,7 @@ hasPart:
   - urn:ngm:class:analytics-dashboard
 requires:
   - urn:ngm:class:cryptographic-signature
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:multi-signature-wallet
   - urn:ngm:class:oracle-network
   - urn:ngm:class:blockchain-network
@@ -76,12 +76,12 @@ bridgesTo:
   - urn:ngm:class:dc-communication
 uses:
   - urn:ngm:class:delegated-voting
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
   - urn:ngm:class:optimistic-oracle
   - urn:ngm:class:timelock-controller
   - urn:ngm:class:token-weighted-voting
   - urn:ngm:class:zero-knowledge-proof
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 supports:
   - urn:ngm:class:creator-compensation
   - urn:ngm:class:cross-chain-governance
@@ -100,7 +100,7 @@ standardizedBy:
   - urn:ngm:class:erc-721votes
   - urn:ngm:class:erc-7390
 relatedTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:liquid-democracy
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:public-goods-funding

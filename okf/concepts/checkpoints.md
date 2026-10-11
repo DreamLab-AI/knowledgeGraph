@@ -9,7 +9,7 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:training
   - urn:ngm:class:model-serialisation
   - urn:ngm:class:fault-tolerance
@@ -69,7 +69,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:federated-learning
   - urn:ngm:class:reinforcement-learning
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 uses:
   - urn:ngm:class:dvc
   - urn:ngm:class:fsdp
@@ -87,8 +87,8 @@ supports:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:diffusion-models
   - urn:ngm:class:fine-tuning
-  - urn:ngm:class:large-scale-pretrained-foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:foundation-model
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning
 standardizedBy:
   - urn:ngm:class:deep-speed
@@ -108,10 +108,10 @@ relatedTo:
   - urn:ngm:class:quantisation
   - urn:ngm:class:py-torch
   - urn:ngm:class:weights-and-biases
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:low-rank-adaptation
   - urn:ngm:class:hugging-face-hub
   - urn:ngm:class:py-torch
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
 ---
 
 # Checkpoints

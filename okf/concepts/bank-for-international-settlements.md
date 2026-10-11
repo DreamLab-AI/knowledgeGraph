@@ -20,7 +20,7 @@ enables:
 implements:
   - urn:ngm:class:banking-regulation
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:economic-research
 supports:
@@ -31,7 +31,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:international-financial-system
 relatedTo:
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:financial-stability-board
   - urn:ngm:class:swift
 ---

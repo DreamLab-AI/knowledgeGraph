@@ -27,7 +27,7 @@ dependsOn:
   - urn:ngm:class:transport-layer
   - urn:ngm:class:identity-and-access-management
 implements:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:rest
 contrastsWith:
   - urn:ngm:class:proprietary-interface
@@ -36,14 +36,14 @@ bridgesTo:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:spatial-computing-runtime
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:http-protocol
 supports:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:developer-portal
 standardizedBy:
   - urn:ngm:class:ietf
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:etsi
 relatedTo:
   - urn:ngm:class:service-mesh

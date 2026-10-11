@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:neural-network
   - urn:ngm:class:representation-learning
 hasPart:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:pooling-layer
   - urn:ngm:class:latent-space
   - urn:ngm:class:embedding-layer
@@ -39,7 +39,7 @@ dependsOn:
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:backpropagation
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:dense-retrieval
   - urn:ngm:class:bi-encoder
@@ -60,7 +60,7 @@ uses:
   - urn:ngm:class:nearest-neighbor-search
   - urn:ngm:class:tokenization
   - urn:ngm:class:nearest-neighbor-search
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:cosine-similarity
   - urn:ngm:class:representation-learning
 supports:

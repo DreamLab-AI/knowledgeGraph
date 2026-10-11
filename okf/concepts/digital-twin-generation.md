@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:3-d-reconstruction
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:3-d-reconstruction
 enables:
   - urn:ngm:class:training

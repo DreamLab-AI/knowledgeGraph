@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tidal-heating",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Tidal heating is the warming of a body's interior by the gravitational pull of a nearby larger body, as NASA describes for Jupiter's moons Europa and Io.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

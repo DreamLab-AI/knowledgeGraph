@@ -20,7 +20,7 @@ implements:
   - urn:ngm:class:generative-model
 contrastsWith:
   - urn:ngm:class:generative-adversarial-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 bridgesTo:
   - urn:ngm:class:flow-matching
   - urn:ngm:class:markov-chain-monte-carlo

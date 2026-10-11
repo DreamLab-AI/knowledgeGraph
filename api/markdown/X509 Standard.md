@@ -19,11 +19,11 @@ The X.509 standard defines the format of public-key certificates that bind a pub
 - A [[Certificate Authority]] signs the certificate so its authenticity can be cryptographically verified.
 - Verification recomputes and checks signatures along the path to a trusted anchor.
 - [[Cryptography]] provides the digital signatures and key material that bind identity to key.
-- During a [[TLS]] handshake the server presents its X.509 chain for the client to validate.
+- During a [[Transport Layer Security]] handshake the server presents its X.509 chain for the client to validate.
 
 ### Applications
 
-- Server and client authentication in [[TLS]]-secured web and API traffic.
+- Server and client authentication in [[Transport Layer Security]]-secured web and API traffic.
 - Digitally signed and encrypted email and document signing.
 - Device and machine identity in enterprise and IoT deployments.
 - Identity material in permissioned blockchains and federated [[Trust Infrastructure]].

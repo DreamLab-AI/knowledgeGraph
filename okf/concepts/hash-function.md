@@ -73,10 +73,10 @@ supports:
   - urn:ngm:class:code-signing
   - urn:ngm:class:git
   - urn:ngm:class:ipfs
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:post-quantum-cryptography
   - urn:ngm:class:zero-knowledge-proof
 standardizedBy:
@@ -91,7 +91,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:bloom-filter
   - urn:ngm:class:side-channel-attack
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:cryptanalysis
   - urn:ngm:class:birthday-attack
   - urn:ngm:class:length-extension-attack

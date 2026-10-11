@@ -1,7 +1,7 @@
 A liquid staking token (LST) is a transferable token issued to a user in exchange for assets staked through a liquid-staking protocol, representing a claim on the underlying stake plus accrued rewards. It frees staked capital from the usual lock-up by remaining tradable and composable across decentralised-finance applications while the principal continues to secure the network. The token's value tracks the staked position, accruing yield either through a rising exchange rate or a growing balance.
 
 - A Liquid Staking Token is a tradable claim issued through [[Liquid Staking]] in exchange for [[Staking|staked]] assets, representing principal plus rewards while a [[Validator Node]] continues to secure a [[Proof of Stake]] network.
-- It restores [[Liquidity]] to otherwise locked stake and stays composable across [[DeFi]].
+- It restores [[Liquidity]] to otherwise locked stake and stays composable across [[Decentralised Finance]].
 
 ### Overview
 

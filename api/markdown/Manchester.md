@@ -3,7 +3,7 @@ Manchester is a major metropolitan city in North West England and the economic c
 ### Overview
 
 - Manchester occupies a central position in the UK's regional economic landscape, hosting the headquarters of the [[Greater Manchester Combined Authority]] (GMCA) — the UK's first directly elected mayoral combined authority, established as a devolution model for regional governance.
-- The city's economy spans [[FinTech]], [[MediaTech]], [[Advanced Manufacturing]], [[Biomedical Research]], and [[Digital Infrastructure]], with a particular concentration in the [[MediaCityUK]] development at nearby [[Salford]] hosting BBC, ITV, and major digital media operations.
+- The city's economy spans [[Financial Technology]], [[MediaTech]], [[Advanced Manufacturing]], [[Biomedical Research]], and [[Digital Infrastructure]], with a particular concentration in the [[MediaCityUK]] development at nearby [[Salford]] hosting BBC, ITV, and major digital media operations.
 - Manchester Airport provides the region's primary international connectivity, linking northern England to global trade and investment networks.
 - The University of Manchester is the birthplace of [[Graphene]] — a landmark discovery positioning the city at the frontier of materials science and advanced technology applications.
 - Manchester's devolved governance model is increasingly cited in discussions of [[Smart City]] administration, as the GMCA has piloted [[Open Data]] platforms, transport data APIs, and [[Urban Data Platform]] initiatives.
@@ -21,7 +21,7 @@ Manchester is a major metropolitan city in North West England and the economic c
 
 #### Economic Sectors
 
-- [[FinTech]] — Manchester hosts one of the UK's largest fintech clusters outside London, including payments, insurtech, and regulatory technology firms
+- [[Financial Technology]] — Manchester hosts one of the UK's largest fintech clusters outside London, including payments, insurtech, and regulatory technology firms
 - [[AI Research Cluster]] — concentration of machine learning, NLP, and computer vision firms, supported by university spin-outs
 - [[Data Centre]] — significant colocation and hyperscale data centre presence in the broader Greater Manchester area
 - [[Advanced Manufacturing]] — legacy industrial expertise repurposed into aerospace, robotics, and precision engineering
@@ -40,7 +40,7 @@ Manchester is a major metropolitan city in North West England and the economic c
 - **AI and Research Commercialisation**: University of Manchester spin-outs operate in [[Machine Learning]], materials discovery, and health informatics, illustrating pathways from academic [[AI Research Cluster]] to commercial [[Digital Economy]] integration.
 - **Devolution as Governance Model**: Greater Manchester's combined authority model is studied internationally as a template for metropolitan [[Distributed Collaboration]] and public sector digital transformation.
 - **MediaTech Ecosystem**: [[MediaCityUK]] at Salford demonstrates how public broadcaster relocation can catalyse a regional [[Creative Industries]] and digital production cluster, a model replicated in other UK regions.
-- **Financial Services Technology**: Manchester's legal and professional services sector has spawned a significant [[FinTech]] and [[RegTech]] cluster, particularly around payments, lending platforms, and compliance automation.
+- **Financial Services Technology**: Manchester's legal and professional services sector has spawned a significant [[Financial Technology]] and [[RegTech]] cluster, particularly around payments, lending platforms, and compliance automation.
 
 ### Standards and Context
 
@@ -63,7 +63,7 @@ Manchester is a major metropolitan city in North West England and the economic c
 - **National Graphene Institute** — purpose-built research facility at the University of Manchester; focal point of UK [[Graphene]] commercialisation strategy
 - **The Cooperative Group** — headquartered in Manchester; one of the world's largest consumer cooperatives; illustrates the city's tradition of economic innovation and [[Distributed Collaboration]] models
 - **Manchester Digital** — industry body representing the city's digital and tech sector; advocacy, skills, and networking for the [[Digital Economy]] cluster
-- **Barclays Eagle Lab Manchester** — innovation hub supporting startup and scaleup companies in [[FinTech]] and deep tech
+- **Barclays Eagle Lab Manchester** — innovation hub supporting startup and scaleup companies in [[Financial Technology]] and deep tech
 - **Bruntwood SciTech** — major property and innovation ecosystem operator across Manchester's science and technology campuses
 
 ### Provenance

@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:ai-safety
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 ---
 
 # MITRE ATLAS

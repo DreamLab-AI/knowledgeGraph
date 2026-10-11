@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:strategic-planning
   - urn:ngm:class:digital-transformation
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:generative-ai-engineering
 relatedTo:

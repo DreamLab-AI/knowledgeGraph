@@ -30,7 +30,7 @@ partOf:
   - urn:ngm:class:motion-planning
 relatedTo:
   - urn:ngm:class:path-planning
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 ---
 
 # Rapidly Exploring Random Tree

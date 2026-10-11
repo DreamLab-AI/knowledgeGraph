@@ -35,7 +35,7 @@ bridgesTo:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:digital-twin
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:head-mounted-display
   - urn:ngm:class:depth-sensor
 supports:

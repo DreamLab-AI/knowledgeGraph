@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:sustainability
 hasPart:
   - urn:ngm:class:carbon-aware-computing
-  - urn:ngm:class:lifecycle-assessment
+  - urn:ngm:class:life-cycle-assessment
 requires:
   - urn:ngm:class:energy-efficiency
 enables:

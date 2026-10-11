@@ -15,9 +15,9 @@ hasPart:
 requires:
   - urn:ngm:class:regulatory-compliance
 enables:
-  - urn:ngm:class:dao
-  - urn:ngm:class:decentralized-governance
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:decentralised-governance
+  - urn:ngm:class:decentralised-autonomous-organisation
 bridgesTo:
   - urn:ngm:class:strategic-planning
 uses:

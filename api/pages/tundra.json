@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tundra",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Tundra is a vegetated area of cold, treeless land that forms part of a tundra ecosystem and typically overlies frozen ground.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

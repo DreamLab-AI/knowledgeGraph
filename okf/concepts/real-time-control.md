@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:state-estimation
 relatedTo:
   - urn:ngm:class:feedback-control
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:determinism
   - urn:ngm:class:worst-case-execution-time

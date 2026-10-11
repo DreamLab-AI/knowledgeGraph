@@ -36,8 +36,8 @@ uses:
   - urn:ngm:class:sparql
   - urn:ngm:class:description-logic
 partOf:
-  - urn:ngm:class:semantic-web-linked-data-standard
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
+  - urn:ngm:class:semantic-web
 relatedTo:
   - urn:ngm:class:linked-data
   - urn:ngm:class:knowledge-representation

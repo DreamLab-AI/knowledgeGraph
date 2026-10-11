@@ -10,15 +10,15 @@ quality: 0.8
 is-a:
   - urn:ngm:class:blockchain-protocol
 enables:
-  - urn:ngm:class:de-fi-protocol
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:defi-protocol
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:layer-2-scaling
 uses:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:validator-node
   - urn:ngm:class:cryptographic-protocol
 relatedTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:validator-economics
   - urn:ngm:class:liquid-proof-of-stake
 ---

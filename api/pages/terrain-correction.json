@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:terrain-correction",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Terrain correction is the processing of synthetic aperture radar imagery that uses a digital elevation model to remove geometric distortions caused by terrain and to place the image in a map coordinate system.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

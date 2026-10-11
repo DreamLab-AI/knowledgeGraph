@@ -19,12 +19,15 @@ requires:
   - urn:ngm:class:authentication
   - urn:ngm:class:identity-management
   - urn:ngm:class:policy-engine
+  - urn:ngm:class:identity-and-access-management
 enables:
   - urn:ngm:class:privacy-controls
   - urn:ngm:class:audit-trail
   - urn:ngm:class:compliance-monitoring
   - urn:ngm:class:least-privilege
   - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:privacy
+  - urn:ngm:class:compliance
 dependsOn:
   - urn:ngm:class:cryptography
   - urn:ngm:class:digital-identity
@@ -42,6 +45,8 @@ uses:
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:open-policy-agent
   - urn:ngm:class:compliance-framework
+  - urn:ngm:class:policy-decision-point
+  - urn:ngm:class:role-based-access-control
 standardizedBy:
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:open-id-connect
@@ -52,6 +57,8 @@ relatedTo:
   - urn:ngm:class:data-governance
   - urn:ngm:class:privilege-escalation
   - urn:ngm:class:separation-of-duties
+  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:audit
 ---
 
 # Authorisation

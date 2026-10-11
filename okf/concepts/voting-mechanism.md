@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:dao-governance
   - urn:ngm:class:decentralised-decision-making
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:protocol-upgrade
 contrastsWith:
   - urn:ngm:class:governance

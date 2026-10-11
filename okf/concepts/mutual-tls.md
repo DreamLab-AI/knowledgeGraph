@@ -8,7 +8,7 @@ description: Mutual TLS is a configuration of the Transport Layer Security proto
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 requires:
   - urn:ngm:class:x-509-certificate
   - urn:ngm:class:certificate-authority
@@ -16,7 +16,7 @@ enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:zero-trust-architecture
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:encryption
 implements:
   - urn:ngm:class:mutual-authentication

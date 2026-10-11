@@ -9,7 +9,7 @@ maturity: established
 quality: 0.62
 is-a:
   - urn:ngm:class:robotics
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 requires:
   - urn:ngm:class:forward-kinematics
   - urn:ngm:class:robot-control
@@ -23,7 +23,7 @@ bridgesTo:
   - urn:ngm:class:autonomous-vehicle
 uses:
   - urn:ngm:class:programming-language
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
 supports:
   - urn:ngm:class:robot-control
   - urn:ngm:class:robotic-manipulation
@@ -31,7 +31,7 @@ supports:
 partOf:
   - urn:ngm:class:robotics
 relatedTo:
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:simulation
   - urn:ngm:class:digital-twin
 ---

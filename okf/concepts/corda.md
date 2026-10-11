@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:permissioned-blockchain
 requires:
   - urn:ngm:class:distributed-ledger
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:notary-service
 enables:
   - urn:ngm:class:smart-contract
@@ -29,8 +29,8 @@ contrastsWith:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:public-blockchain
 bridgesTo:
-  - urn:ngm:class:de-fi
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:central-bank-digital-currency
 uses:
   - urn:ngm:class:utxo-model
   - urn:ngm:class:jvm-runtime

@@ -24,7 +24,7 @@ hasPart:
   - urn:ngm:class:ai-literacy-curriculum
 requires:
   - urn:ngm:class:curriculum
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:pedagogical-theory
   - urn:ngm:class:student-data
   - urn:ngm:class:teacher-oversight
@@ -41,7 +41,7 @@ enables:
   - urn:ngm:class:differentiated-instruction
 dependsOn:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:cognitive-science
   - urn:ngm:class:learning-sciences
   - urn:ngm:class:constructivism

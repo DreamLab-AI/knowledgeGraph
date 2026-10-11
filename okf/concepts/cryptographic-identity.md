@@ -8,12 +8,12 @@ description: Cryptographic identity is an identity model in which an actor is re
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 requires:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:digital-signature
 enables:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:authentication
 dependsOn:
   - urn:ngm:class:key-management
@@ -31,10 +31,10 @@ supports:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:wallet
 partOf:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:digital-identity
 relatedTo:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:trust
 ---
 

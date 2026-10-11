@@ -8,7 +8,7 @@ description: Multi-chain DeFi refers to decentralised finance applications and l
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:blockchain-interoperability

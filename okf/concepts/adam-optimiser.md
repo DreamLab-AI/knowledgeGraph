@@ -78,7 +78,7 @@ relatedTo:
   - urn:ngm:class:amsgrad
   - urn:ngm:class:vanishing-gradient-problem
   - urn:ngm:class:batch-normalisation
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:generalisation
 ---
 

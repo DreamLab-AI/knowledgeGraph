@@ -14,7 +14,7 @@ requires:
 enables:
   - urn:ngm:class:convergence
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:optimiser
 contrastsWith:
@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:loss-function
 supports:
   - urn:ngm:class:optimiser
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:convex-optimisation
 relatedTo:

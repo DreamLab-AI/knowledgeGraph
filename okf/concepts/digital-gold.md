@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-etf
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:digital-currency
 relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-standard

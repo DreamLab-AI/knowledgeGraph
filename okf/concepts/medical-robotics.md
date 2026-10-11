@@ -23,7 +23,7 @@ uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:haptic-feedback
   - urn:ngm:class:motion-planning
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:minimally-invasive-surgery
   - urn:ngm:class:rehabilitation

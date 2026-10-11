@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:carrier-to-noise-ratio",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Carrier-to-noise ratio (C/N) is carrier power divided by noise power within a stated noise bandwidth and at a stated receiver reference plane.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

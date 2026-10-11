@@ -66,7 +66,7 @@ supports:
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:combinatorial-optimisation
   - urn:ngm:class:agentic-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
 standardizedBy:
   - urn:ngm:class:markov-decision-process
@@ -81,7 +81,7 @@ relatedTo:
   - urn:ngm:class:sample-efficiency
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:domain-randomisation
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:multi-agent-reinforcement-learning
   - urn:ngm:class:computer-vision

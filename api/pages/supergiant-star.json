@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:supergiant-star",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A supergiant star is a very luminous, evolved star of high initial mass, a class that includes the red supergiants identified as progenitors of some supernovae.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:star",

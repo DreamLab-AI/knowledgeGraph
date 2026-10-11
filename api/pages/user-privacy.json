@@ -180,7 +180,7 @@
         "label": "Data Interoperability"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -228,10 +228,6 @@
       {
         "id": "urn:ngm:class:data-anarchy",
         "label": "Data Anarchy"
-      },
-      {
-        "id": "urn:ngm:class:data-management",
-        "label": "Data Management"
       },
       {
         "id": "urn:ngm:class:application-layer",

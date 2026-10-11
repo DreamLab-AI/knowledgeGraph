@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:multisig
 requires:
   - urn:ngm:class:trust
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 enables:
   - urn:ngm:class:asset-management
   - urn:ngm:class:proof-of-reserves
@@ -32,7 +32,7 @@ uses:
   - urn:ngm:class:multisig
 supports:
   - urn:ngm:class:tether
-  - urn:ngm:class:centralized-exchange
+  - urn:ngm:class:centralised-exchange
   - urn:ngm:class:stablecoin
 standardizedBy:
   - urn:ngm:class:regulation
@@ -42,7 +42,7 @@ partOf:
   - urn:ngm:class:digital-asset-custody
 relatedTo:
   - urn:ngm:class:audit
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:transparency
   - urn:ngm:class:audit
 ---

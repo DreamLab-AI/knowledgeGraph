@@ -9,15 +9,19 @@ maturity: mature
 quality: 0.62
 is-a:
   - urn:ngm:class:resource-management
+  - urn:ngm:class:scalability
 hasPart:
   - urn:ngm:class:monitoring
   - urn:ngm:class:load-balancing
+  - urn:ngm:class:resource-allocation
 requires:
   - urn:ngm:class:monitoring
   - urn:ngm:class:capacity-planning
+  - urn:ngm:class:observability
 enables:
   - urn:ngm:class:high-availability
   - urn:ngm:class:scalability
+  - urn:ngm:class:fault-tolerance
 dependsOn:
   - urn:ngm:class:cloud-computing
 implements:
@@ -28,6 +32,8 @@ uses:
   - urn:ngm:class:kubernetes
   - urn:ngm:class:container-orchestration
   - urn:ngm:class:observability
+  - urn:ngm:class:load-balancing
+  - urn:ngm:class:monitoring
 supports:
   - urn:ngm:class:performance-optimization
   - urn:ngm:class:cloud-native
@@ -37,7 +43,8 @@ partOf:
 relatedTo:
   - urn:ngm:class:microservices
   - urn:ngm:class:load-balancing
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:orchestration
+  - urn:ngm:class:cloud-computing
 ---
 
 # Autoscaling

@@ -16,7 +16,7 @@ is-a:
   - urn:ngm:class:distributed-ledger
 hasPart:
   - urn:ngm:class:bolt-specifications
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:channel-factory
   - urn:ngm:class:hash-time-locked-contract
   - urn:ngm:class:lightning-service-provider
@@ -36,7 +36,7 @@ requires:
 enables:
   - urn:ngm:class:instant-transactions
   - urn:ngm:class:machine-to-machine-payments
-  - urn:ngm:class:streaming-payments
+  - urn:ngm:class:streaming-payment
   - urn:ngm:class:cross-border-compliance
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:micropayments
@@ -52,7 +52,7 @@ dependsOn:
   - urn:ngm:class:schnorr-signatures
 implements:
   - urn:ngm:class:bolt-specifications
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:channel-factory
   - urn:ngm:class:hash-time-locked-contract
   - urn:ngm:class:onion-routing
@@ -61,7 +61,7 @@ implements:
   - urn:ngm:class:multi-path-payments
   - urn:ngm:class:lnurl-protocol
 contrastsWith:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:traditional-payment-systems
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cbdc-frameworks
@@ -78,7 +78,7 @@ uses:
 supports:
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:bitcoin-proof-of-work-protocol-as-money
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:global-inequality
   - urn:ngm:class:micropayments

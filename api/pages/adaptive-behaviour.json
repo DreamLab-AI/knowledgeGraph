@@ -200,7 +200,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -321,14 +321,9 @@
       "slug": "blockchain"
     },
     {
-      "id": "urn:ngm:class:control-theory",
-      "label": "Control Theory",
-      "slug": "control-theory"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:systems-theory",
@@ -336,24 +331,9 @@
       "slug": "systems-theory"
     },
     {
-      "id": "urn:ngm:class:applied-mathematics",
-      "label": "Applied Mathematics",
-      "slug": "applied-mathematics"
-    },
-    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence Core",
       "slug": "artificial-intelligence-core"
-    },
-    {
-      "id": "urn:ngm:class:control-engineering",
-      "label": "Control Engineering",
-      "slug": "control-engineering"
-    },
-    {
-      "id": "urn:ngm:class:control-system",
-      "label": "Control System",
-      "slug": "control-system"
     },
     {
       "id": "urn:ngm:class:cryptographic-system",
@@ -371,16 +351,6 @@
       "slug": "distributed-ledger"
     },
     {
-      "id": "urn:ngm:class:dynamical-systems-theory",
-      "label": "Dynamical Systems Theory",
-      "slug": "dynamical-systems-theory"
-    },
-    {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control",
-      "slug": "robo-actuation-and-control"
-    },
-    {
       "id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type",
       "slug": "robo-robot-type"
@@ -391,11 +361,6 @@
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:append-only-log",
       "label": "Append-Only Log",
       "slug": "append-only-log"
@@ -404,6 +369,11 @@
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity",
       "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:cryptographic-primitive",
@@ -421,19 +391,9 @@
       "slug": "distributed-system"
     },
     {
-      "id": "urn:ngm:class:feedback-systems",
-      "label": "Feedback Systems",
-      "slug": "feedback-systems"
-    },
-    {
-      "id": "urn:ngm:class:mathematical-physics",
-      "label": "Mathematical Physics",
-      "slug": "mathematical-physics"
-    },
-    {
-      "id": "urn:ngm:class:mathematical-science",
-      "label": "Mathematical Science",
-      "slug": "mathematical-science"
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:multi-party-database",
@@ -444,11 +404,6 @@
       "id": "urn:ngm:class:network-component",
       "label": "Network Component",
       "slug": "network-component"
-    },
-    {
-      "id": "urn:ngm:class:robotic-system",
-      "label": "Robotic System",
-      "slug": "robotic-system"
     },
     {
       "id": "urn:ngm:class:robotics",
@@ -466,9 +421,19 @@
       "slug": "automation"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -479,6 +444,16 @@
       "id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud",
       "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -496,14 +471,19 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
-    },
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
     },
     {
       "id": "urn:ngm:class:networked-systems",
@@ -511,14 +491,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -529,6 +509,11 @@
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity",
       "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -661,16 +646,16 @@
         "label": "Statistical Mechanics"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
-        "id": "urn:ngm:class:convex-optimisation",
-        "label": "Convex Optimisation"
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:hamilton-jacobi-bellman-equation",
-        "label": "Hamilton-Jacobi-Bellman Equation"
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "implements": [
@@ -699,12 +684,12 @@
         "label": "Statistical Mechanics"
       },
       {
-        "id": "urn:ngm:class:adaptive-control",
-        "label": "Adaptive Control"
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       },
       {
-        "id": "urn:ngm:class:backstepping",
-        "label": "Backstepping"
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "contrastsWith": [
@@ -729,16 +714,16 @@
         "label": "Teleoperated System"
       },
       {
-        "id": "urn:ngm:class:ai-without-dynamics-models",
-        "label": "AI Without Dynamics Models"
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
       },
       {
-        "id": "urn:ngm:class:classical-optimisation-without-feedback",
-        "label": "Classical Optimisation Without Feedback"
+        "id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:model-free-heuristic-tuning",
-        "label": "Model-Free Heuristic Tuning"
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralized Database"
       }
     ],
     "bridgesTo": [
@@ -861,20 +846,20 @@
         "label": "SAE Levels of Driving Automation"
       },
       {
-        "id": "urn:ngm:class:arp4754-a",
-        "label": "ARP4754A"
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
-        "id": "urn:ngm:class:do-178-c",
-        "label": "DO-178C Avionics"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:iec-61131-3",
-        "label": "IEC 61131-3"
+        "id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
       },
       {
-        "id": "urn:ngm:class:iec-61508",
-        "label": "IEC 61508 Functional Safety"
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
       }
     ],
     "partOf": [
@@ -887,7 +872,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

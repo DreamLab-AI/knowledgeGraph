@@ -60,9 +60,9 @@
       "slug": "knowledge-management"
     },
     {
-      "id": "urn:ngm:class:data-management",
-      "label": "Data Management",
-      "slug": "data-management"
+      "id": "urn:ngm:class:information-management",
+      "label": "Information Management",
+      "slug": "information-management"
     },
     {
       "id": "urn:ngm:class:organizational-change",
@@ -70,14 +70,24 @@
       "slug": "organizational-change"
     },
     {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management",
+      "slug": "data-management"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -215,8 +225,8 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -249,12 +259,12 @@
         "label": "Document Management"
       },
       {
-        "id": "urn:ngm:class:data-hoarding",
-        "label": "Data Hoarding"
-      },
-      {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-hoarding",
+        "label": "Data Hoarding"
       }
     ],
     "bridgesTo": [
@@ -321,8 +331,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "supports": [
@@ -355,13 +365,13 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -373,8 +383,8 @@
         "label": "ISO 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:dama-dmbok",
@@ -425,8 +435,8 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:enterprise-architecture",

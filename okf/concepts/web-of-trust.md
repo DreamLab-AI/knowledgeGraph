@@ -20,7 +20,7 @@ contrastsWith:
   - urn:ngm:class:certificate-authority
 bridgesTo:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:trust-anchor
 supports:

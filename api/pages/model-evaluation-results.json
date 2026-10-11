@@ -59,7 +59,7 @@
     "partOf": [
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       }
     ],
     "relatedTo": [
@@ -141,8 +141,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -423,8 +423,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       },
       {
         "id": "urn:ngm:class:ieee",
@@ -496,16 +496,16 @@
   ],
   "backlinks": [
     {
-      "slug": "ai-model-card",
-      "label": "AI Model Card"
-    },
-    {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
     },
     {
       "slug": "benchmark-evaluation",
       "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
     }
   ]
 }

@@ -14,10 +14,10 @@ requires:
   - urn:ngm:class:goal-configuration
   - urn:ngm:class:start-configuration
   - urn:ngm:class:mapping
-  - urn:ngm:class:rb-1013-localization
+  - urn:ngm:class:localisation
   - urn:ngm:class:configuration-space
 enables:
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:navigation
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:autonomous-vehicle

@@ -29,7 +29,7 @@ requires:
   - urn:ngm:class:industrial-network
   - urn:ngm:class:safety-standard
   - urn:ngm:class:motion-planning
-  - urn:ngm:class:ros
+  - urn:ngm:class:robot-operating-system
   - urn:ngm:class:safety-standards
 enables:
   - urn:ngm:class:flexible-manufacturing
@@ -39,10 +39,10 @@ enables:
   - urn:ngm:class:collaborative-automation
 dependsOn:
   - urn:ngm:class:servo-motor
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:real-time-operating-system
   - urn:ngm:class:digital-twin
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 implements:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:force-control

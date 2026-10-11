@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:programming-language
 enables:
   - urn:ngm:class:web-assembly
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:high-performance-computing
 uses:
   - urn:ngm:class:distributed-systems

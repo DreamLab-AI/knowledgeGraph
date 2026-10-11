@@ -36,7 +36,7 @@ uses:
   - urn:ngm:class:geospatial-engine
   - urn:ngm:class:coordinate-reference-system
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 supports:
   - urn:ngm:class:environmental-monitoring
   - urn:ngm:class:supply-chain-management

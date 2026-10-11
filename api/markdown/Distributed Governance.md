@@ -1,7 +1,7 @@
 Distributed governance is a model of collective decision-making in which authority over a protocol, network or organisation is spread across many independent participants rather than held by a central body. In blockchain systems it is typically enacted through on-chain mechanisms such as token-weighted or quadratic voting, proposals and treasury control, allowing stakeholders to direct upgrades, parameters and resource allocation. It aims to align incentives, resist capture and make governance transparent and verifiable.
 
 - Distributed governance spreads decision authority across many independent participants, enacted on blockchains through [[Consensus Mechanism]] and [[Governance Token]] voting rather than central control.
-- It enables [[Decentralized Autonomous Organization]] structures and bridges to [[Decentralised Governance]].
+- It enables [[Decentralised Autonomous Organisation]] structures and bridges to [[Decentralised Governance]].
 
 ### Overview
 
@@ -24,7 +24,7 @@ Distributed governance is a model of collective decision-making in which authori
 ### Applications
 
 - Protocol upgrades and parameter changes in DeFi.
-- Treasury and grant allocation in [[Decentralized Finance]] communities.
+- Treasury and grant allocation in [[Decentralised Finance]] communities.
 - Standards and policy setting in open networks.
 - Community-owned products and public-goods funding.
 

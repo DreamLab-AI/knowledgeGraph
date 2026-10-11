@@ -21,7 +21,7 @@ bridgesTo:
   - urn:ngm:class:ieee
 supports:
   - urn:ngm:class:http
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:dns
   - urn:ngm:class:network-protocol
 standardizedBy:

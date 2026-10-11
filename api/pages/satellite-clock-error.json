@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-clock-error",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Satellite clock error is the residual offset between a satellite\u2019s clock and the relevant GNSS system time after the user applies the broadcast clock correction.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

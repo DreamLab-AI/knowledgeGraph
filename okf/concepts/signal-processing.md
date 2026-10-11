@@ -35,7 +35,7 @@ uses:
   - urn:ngm:class:kalman-filter
   - urn:ngm:class:compressed-sensing
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:telecommunications
   - urn:ngm:class:motion-capture
 relatedTo:

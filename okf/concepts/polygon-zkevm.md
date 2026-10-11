@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:cryptography
 supports:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
   - urn:ngm:class:layer-2-scaling
 relatedTo:

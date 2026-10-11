@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:decentralised-identifier
 enables:
   - urn:ngm:class:verifiable-credentials
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:selective-disclosure
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:interoperability
@@ -33,12 +33,12 @@ bridgesTo:
   - urn:ngm:class:data-governance
 uses:
   - urn:ngm:class:json-data-interchange-format-schema
-  - urn:ngm:class:json-ld
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:json-data-interchange-format-ld
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:distributed-ledger-technology
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:open-id-foundation
   - urn:ngm:class:hyperledger-aries
 partOf:

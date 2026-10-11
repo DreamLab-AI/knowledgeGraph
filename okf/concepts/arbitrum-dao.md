@@ -8,7 +8,7 @@ description: Arbitrum DAO is the decentralised autonomous organisation that gove
 maturity: emerging
 quality: 0.8
 is-a:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 enables:
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:dao-governance
@@ -17,7 +17,7 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:layer-2-scaling
 relatedTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:on-chain-voting
 ---
 

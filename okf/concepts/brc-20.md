@@ -23,20 +23,20 @@ dependsOn:
   - urn:ngm:class:ordinals-indexer
   - urn:ngm:class:bitcoin-node
 contrastsWith:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:spl-token
   - urn:ngm:class:runes-protocol
   - urn:ngm:class:src-20
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 uses:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:satoshi
   - urn:ngm:class:inscription
   - urn:ngm:class:utxo-model
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
 partOf:
   - urn:ngm:class:bitcoin
 relatedTo:

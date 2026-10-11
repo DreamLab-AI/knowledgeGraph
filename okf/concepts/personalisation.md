@@ -30,7 +30,7 @@ uses:
 supports:
   - urn:ngm:class:customer-data-platform
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:identity-resolution
 ---
 

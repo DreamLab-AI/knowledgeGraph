@@ -34,8 +34,8 @@ supports:
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:regulatory-compliance
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-tr-24028
 relatedTo:
   - urn:ngm:class:fairness

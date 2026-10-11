@@ -30,7 +30,7 @@ implements:
 bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:robotics
-  - urn:ngm:class:bim-virtual-model
+  - urn:ngm:class:building-information-modelling
 uses:
   - urn:ngm:class:mesh-data
   - urn:ngm:class:3-d-file-format

@@ -8,7 +8,7 @@ description: A high-bandwidth interconnect is a communication link or fabric eng
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 requires:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:data-centre

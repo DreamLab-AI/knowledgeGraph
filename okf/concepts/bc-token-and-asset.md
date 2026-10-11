@@ -20,8 +20,8 @@ hasPart:
 uses:
   - urn:ngm:class:blockchain-transaction
 relatedTo:
-  - urn:ngm:class:erc-20-token-standard
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-20
+  - urn:ngm:class:erc-721
   - urn:ngm:class:digital-asset
   - urn:ngm:class:asset-tokenisation
 ---

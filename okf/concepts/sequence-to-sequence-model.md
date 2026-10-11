@@ -14,7 +14,7 @@ enables:
   - urn:ngm:class:text-summarisation
   - urn:ngm:class:speech-recognition
 implements:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:recurrent-neural-network
 contrastsWith:
   - urn:ngm:class:transformer

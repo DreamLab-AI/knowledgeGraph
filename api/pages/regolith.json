@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regolith",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Regolith is the layer of loose dust and rocky debris covering a planetary surface, and NASA applies the term to the Moon and to Martian soil.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

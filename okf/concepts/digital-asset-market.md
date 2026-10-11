@@ -21,12 +21,12 @@ requires:
   - urn:ngm:class:price-discovery
 enables:
   - urn:ngm:class:tokenised-securities
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:custodial-settlement
   - urn:ngm:class:digital-wallet
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:distributed-ledger-technology
 uses:
   - urn:ngm:class:automated-market-maker
@@ -34,7 +34,7 @@ uses:
   - urn:ngm:class:cryptographic-token
 supports:
   - urn:ngm:class:market-surveillance
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 standardizedBy:
   - urn:ngm:class:travel-rule
 partOf:

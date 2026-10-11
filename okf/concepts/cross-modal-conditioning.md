@@ -42,7 +42,7 @@ dependsOn:
   - urn:ngm:class:latent-space
   - urn:ngm:class:u-net
   - urn:ngm:class:neural-network
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 implements:
   - urn:ngm:class:multimodal-ai-architecture-learning
   - urn:ngm:class:generative-ai
@@ -50,11 +50,11 @@ contrastsWith:
   - urn:ngm:class:self-attention
 uses:
   - urn:ngm:class:clip
-  - urn:ngm:class:vae
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:variational-autoencoder
+  - urn:ngm:class:lora
   - urn:ngm:class:fine-tuning
   - urn:ngm:class:self-attention
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
 supports:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:spatial-computing
@@ -66,12 +66,12 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:clip
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:foundation-model
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:lora
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:large-language-model
   - urn:ngm:class:adapter-tuning
 ---

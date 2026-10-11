@@ -15,7 +15,7 @@ requires:
   - urn:ngm:class:proof-of-stake
 enables:
   - urn:ngm:class:smart-contract
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:on-chain-governance
   - urn:ngm:class:digital-asset-custody
@@ -40,7 +40,7 @@ relatedTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:cryptographic-token
   - urn:ngm:class:staking
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:decentralised-application
   - urn:ngm:class:protocol-upgrade
 ---

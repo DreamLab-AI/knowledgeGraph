@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:look-angle",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Look angle is the angle between the direction in which a radar antenna is pointing and the nadir.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

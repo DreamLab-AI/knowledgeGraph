@@ -23,16 +23,16 @@ dependsOn:
   - urn:ngm:class:data-governance
   - urn:ngm:class:market-surveillance
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-17000
 contrastsWith:
   - urn:ngm:class:self-certification
   - urn:ngm:class:voluntary-disclosure
 bridgesTo:
   - urn:ngm:class:federated-learning
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
 uses:
   - urn:ngm:class:explainability
   - urn:ngm:class:model-evaluation
@@ -43,7 +43,7 @@ supports:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:consumer-protection
 standardizedBy:
-  - urn:ngm:class:iso-iec-jtc1-sc42
+  - urn:ngm:class:iso-iec-jtc-1-sc-42
   - urn:ngm:class:etsi
   - urn:ngm:class:nist
 relatedTo:

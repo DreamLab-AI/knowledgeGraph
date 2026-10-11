@@ -16,7 +16,7 @@ A Web3 wallet is a software or hardware tool that manages a user's cryptographic
 
 ### Applications
 
-- Interacting with [[DeFi]] protocols for lending, swapping and yield without surrendering custody.
+- Interacting with [[Decentralised Finance]] protocols for lending, swapping and yield without surrendering custody.
 - Minting, holding and transferring an [[NFT]] across marketplaces.
 - Authenticating to dapps via signature challenges instead of passwords.
 - Coordinating shared treasuries through a [[Multisig Wallet]] requiring multiple approvals.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:land-ice",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Land ice is any part of the seasonal or perennial ice cover that has formed over land, principally by the freezing of precipitation.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

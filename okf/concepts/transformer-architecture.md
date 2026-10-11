@@ -14,13 +14,13 @@ hasPart:
   - urn:ngm:class:multi-head-attention
   - urn:ngm:class:positional-encoding
   - urn:ngm:class:feed-forward-network
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:layer-normalisation
 requires:
   - urn:ngm:class:parallel-computing
   - urn:ngm:class:gpu-computing
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:multimodal-ai-architecture-learning
@@ -41,7 +41,7 @@ supports:
 relatedTo:
   - urn:ngm:class:bert
   - urn:ngm:class:gpt
-  - urn:ngm:class:mixture-of-experts-architecture
+  - urn:ngm:class:mixture-of-experts
   - urn:ngm:class:retrieval-augmented-generation
 ---
 

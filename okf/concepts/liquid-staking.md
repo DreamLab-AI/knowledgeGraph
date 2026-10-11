@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:liquidity-pool
 dependsOn:
   - urn:ngm:class:blockchain-network
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 implements:
   - urn:ngm:class:governance-token
 contrastsWith:
@@ -26,7 +26,7 @@ uses:
   - urn:ngm:class:staking
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:tokenization
 relatedTo:
   - urn:ngm:class:lido

@@ -32,7 +32,7 @@ bridgesTo:
   - urn:ngm:class:cryptography
 supports:
   - urn:ngm:class:decentralized-key-storage
-  - urn:ngm:class:multi-signature
+  - urn:ngm:class:multisignature
 relatedTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:verifiable-secret-sharing

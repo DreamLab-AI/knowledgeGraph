@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:sensor
 bridgesTo:
   - urn:ngm:class:spatial-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:calibration-target
   - urn:ngm:class:coordinate-transformation

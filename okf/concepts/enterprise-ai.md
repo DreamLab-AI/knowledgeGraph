@@ -44,7 +44,7 @@ dependsOn:
   - urn:ngm:class:human-in-the-loop
 implements:
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-agents
   - urn:ngm:class:retrieval-augmented-generation
 contrastsWith:
@@ -69,8 +69,8 @@ supports:
   - urn:ngm:class:institutional-adoption
   - urn:ngm:class:business-intelligence
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-42001
   - urn:ngm:class:gdpr
 relatedTo:

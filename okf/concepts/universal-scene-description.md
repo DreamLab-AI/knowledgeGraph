@@ -14,6 +14,8 @@ is-a:
   - urn:ngm:class:scene-graph
   - urn:ngm:class:open-standard
   - urn:ngm:class:interoperability
+  - urn:ngm:class:fiat-currency
+  - urn:ngm:class:money
 hasPart:
   - urn:ngm:class:serialisation-format
   - urn:ngm:class:material-x
@@ -31,6 +33,8 @@ requires:
   - urn:ngm:class:scene-graph
   - urn:ngm:class:schema-registry
   - urn:ngm:class:layer-resolution
+  - urn:ngm:class:central-bank
+  - urn:ngm:class:monetary-policy
 enables:
   - urn:ngm:class:collaborative-systems-modality
   - urn:ngm:class:interoperability
@@ -43,6 +47,9 @@ enables:
   - urn:ngm:class:spatial-computing-paradigm
   - urn:ngm:class:interoperability
   - urn:ngm:class:collaborative-systems-modality
+  - urn:ngm:class:usdc
+  - urn:ngm:class:usdt
+  - urn:ngm:class:stablecoin
 dependsOn:
   - urn:ngm:class:layer-composition-algorithm
   - urn:ngm:class:schema-system
@@ -58,11 +65,18 @@ implements:
   - urn:ngm:class:openpbr-material-model
   - urn:ngm:class:variant-selection
 contrastsWith:
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
   - urn:ngm:class:fbx
   - urn:ngm:class:alembic
   - urn:ngm:class:obj
   - urn:ngm:class:collada
+  - urn:ngm:class:bitcoin
+  - urn:ngm:class:central-bank-digital-currency
+bridgesTo:
+  - urn:ngm:class:digital-currency
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:cross-border-payments
+  - urn:ngm:class:store-of-value
 uses:
   - urn:ngm:class:glsl
   - urn:ngm:class:open-gl
@@ -92,6 +106,8 @@ relatedTo:
   - urn:ngm:class:houdini
   - urn:ngm:class:autodesk-maya
   - urn:ngm:class:aousd
+  - urn:ngm:class:money
+  - urn:ngm:class:inflation
 ---
 
 # Universal Scene Description

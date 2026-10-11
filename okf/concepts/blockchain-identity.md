@@ -8,18 +8,18 @@ description: Blockchain Identity is an approach to digital identity in which ide
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 hasPart:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:distributed-ledger
 enables:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:single-sign-on
 dependsOn:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 contrastsWith:
   - urn:ngm:class:identity-management
 bridgesTo:
@@ -33,7 +33,7 @@ supports:
   - urn:ngm:class:access-control
   - urn:ngm:class:privacy
 partOf:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 relatedTo:
   - urn:ngm:class:digital-identity
 ---

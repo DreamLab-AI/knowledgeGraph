@@ -18,7 +18,7 @@ enables:
   - urn:ngm:class:remote-procedure-call
   - urn:ngm:class:message-passing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:distributed-systems
 uses:
   - urn:ngm:class:data-schema
@@ -29,9 +29,9 @@ supports:
   - urn:ngm:class:event-streaming
 standardizedBy:
   - urn:ngm:class:internet-engineering-task-force
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
 relatedTo:
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
   - urn:ngm:class:protocol-buffer
   - urn:ngm:class:schema-registry
   - urn:ngm:class:data-format-standard

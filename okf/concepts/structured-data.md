@@ -35,7 +35,7 @@ partOf:
   - urn:ngm:class:data-model
 relatedTo:
   - urn:ngm:class:rdf
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:ontology
 ---
 

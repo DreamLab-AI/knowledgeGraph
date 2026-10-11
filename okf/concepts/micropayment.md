@@ -30,16 +30,16 @@ enables:
 dependsOn:
   - urn:ngm:class:blockchain-infrastructure
   - urn:ngm:class:lightning-network
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 contrastsWith:
   - urn:ngm:class:traditional-banking
 bridgesTo:
   - urn:ngm:class:virtual-economy
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:digital-currency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 standardizedBy:
   - urn:ngm:class:w3c-payment-request-api
   - urn:ngm:class:iso-20022

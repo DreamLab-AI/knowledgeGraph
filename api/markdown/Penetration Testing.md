@@ -50,7 +50,7 @@ Penetration testing is an authorised, structured simulation of real-world advers
 - **Merger and Acquisition Due Diligence** — assessing the security posture of an acquisition target surfaces hidden liabilities.
 - **Supplier and Third-Party Assurance** — organisations test critical SaaS or supply-chain partners to validate security commitments.
 - **Security Control Validation** — confirming that SIEM rules, EDR, and [[Intrusion Detection Systems]] actually detect expected attack techniques.
-- **AI and ML System Testing** — emerging practice applying penetration testing methodology to [[AI Security]], including prompt injection, model extraction, and adversarial input attacks against [[Large Language Models]] and ML inference APIs. This bridges traditional penetration testing with [[AI Security]] concerns.
+- **AI and ML System Testing** — emerging practice applying penetration testing methodology to [[AI Security]], including prompt injection, model extraction, and adversarial input attacks against [[Large Language Model]] and ML inference APIs. This bridges traditional penetration testing with [[AI Security]] concerns.
 
 ### Standards & Context
 

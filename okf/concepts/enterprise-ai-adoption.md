@@ -38,7 +38,7 @@ dependsOn:
 implements:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:foundation-model
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ai-agents
 contrastsWith:
   - urn:ngm:class:consumer-ai
@@ -55,8 +55,8 @@ supports:
   - urn:ngm:class:decision-support
   - urn:ngm:class:customer-experience
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-42001
 relatedTo:
   - urn:ngm:class:ai-companies

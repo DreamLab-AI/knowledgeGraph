@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-to-space-link",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A space-to-space link is a communications hop between two space-borne endpoints.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

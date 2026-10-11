@@ -8,7 +8,7 @@ description: An Implicit Neural Representation (INR) is a method of encoding con
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:ai-model-architecture
 requires:
   - urn:ngm:class:differentiable-rendering

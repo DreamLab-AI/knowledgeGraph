@@ -16,7 +16,7 @@ implements:
   - urn:ngm:class:transformer
   - urn:ngm:class:language-modeling
 contrastsWith:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 bridgesTo:
   - urn:ngm:class:language-modeling
   - urn:ngm:class:computer-vision

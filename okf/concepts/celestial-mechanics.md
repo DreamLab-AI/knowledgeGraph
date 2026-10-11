@@ -4,6 +4,7 @@ type: Class
 title: Celestial Mechanics
 resource: urn:ngm:class:celestial-mechanics
 domain: space-science-and-systems
+description: Celestial mechanics is the study of the motions of celestial bodies under gravity.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Celestial Mechanics
+
+Celestial mechanics is the study of the motions of celestial bodies under gravity.

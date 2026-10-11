@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:equator",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An imaginary line around the middle of a planet or other celestial body, halfway between its north and south poles at zero degrees latitude, defines the equator.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

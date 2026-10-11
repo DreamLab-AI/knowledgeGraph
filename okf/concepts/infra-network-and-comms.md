@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:distributed-system
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:internet-of-things
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:latency
   - urn:ngm:class:network-topology
 relatedTo:

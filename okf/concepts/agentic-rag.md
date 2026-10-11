@@ -21,7 +21,7 @@ hasPart:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:evidence-accumulator
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:agent-loop
   - urn:ngm:class:vector-database
@@ -72,9 +72,9 @@ supports:
   - urn:ngm:class:source-attribution
   - urn:ngm:class:hallucination-reduction
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:model-context-protocol
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
 relatedTo:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:rag-pipeline

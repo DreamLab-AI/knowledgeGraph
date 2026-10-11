@@ -9,6 +9,7 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:tokenization
 hasPart:
   - urn:ngm:class:byte-pair-encoding
   - urn:ngm:class:word-piece
@@ -18,10 +19,11 @@ requires:
   - urn:ngm:class:unicode-normalisation
   - urn:ngm:class:text-preprocessing
 enables:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:language-modeling
   - urn:ngm:class:machine-translation
   - urn:ngm:class:multimodal-ai-architecture-learning
+  - urn:ngm:class:natural-language-processing
 contrastsWith:
   - urn:ngm:class:character-level-model
   - urn:ngm:class:word-level-tokenisation
@@ -37,14 +39,16 @@ supports:
   - urn:ngm:class:code-generation
 partOf:
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
   - urn:ngm:class:natural-language-processing
-  - urn:ngm:class:pre-training
+  - urn:ngm:class:pretraining
 relatedTo:
   - urn:ngm:class:embedding-model
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:tokeniser-fertility
   - urn:ngm:class:context-window
+  - urn:ngm:class:deep-learning
+  - urn:ngm:class:machine-learning
 ---
 
 # Tokeniser

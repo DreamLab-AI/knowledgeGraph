@@ -8,9 +8,9 @@ description: Language models with significantly fewer parameters than frontier m
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:model-capacity
 ---
 

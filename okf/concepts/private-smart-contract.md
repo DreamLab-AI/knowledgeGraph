@@ -13,7 +13,7 @@ requires:
   - urn:ngm:class:privacy-preserving-computation
 enables:
   - urn:ngm:class:transaction-privacy
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 implements:
   - urn:ngm:class:zero-knowledge-rollup
 uses:

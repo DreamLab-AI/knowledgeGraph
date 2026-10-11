@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:microscope",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A microscope is an instrument designed to produce magnified visual or photographic images of objects too small to be seen with the naked eye.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:optical-instrument",

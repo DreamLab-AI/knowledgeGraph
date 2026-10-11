@@ -8,9 +8,9 @@ description: A paradigm for AI learning where the system passively acquires know
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:ai-privacy
 ---

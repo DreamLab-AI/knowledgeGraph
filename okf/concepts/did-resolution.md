@@ -8,21 +8,21 @@ description: DID Resolution is the process of dereferencing a Decentralised Iden
 maturity: established
 quality: 0.75
 is-a:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
 hasPart:
   - urn:ngm:class:did-document
   - urn:ngm:class:did-resolution-metadata
   - urn:ngm:class:did-document-metadata
 requires:
-  - urn:ngm:class:decentralized-identifier
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:did-method
   - urn:ngm:class:verifiable-data-registry
 enables:
   - urn:ngm:class:identity-verification-system
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:decentralized-authentication
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:decentralised-authentication
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
 implements:
   - urn:ngm:class:w-3-c-did-core-specification
 contrastsWith:
@@ -34,7 +34,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
 uses:
   - urn:ngm:class:did-resolver
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-key-management
 standardizedBy:
   - urn:ngm:class:world-wide-web-consortium

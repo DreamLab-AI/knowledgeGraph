@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:economic-mechanism
 relatedTo:
   - urn:ngm:class:cbdc-frameworks
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Two-Tier Distribution Model

@@ -32,7 +32,7 @@ requires:
   - urn:ngm:class:cryptographic-primitive
 enables:
   - urn:ngm:class:atomic-settlement
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:immutable-record
   - urn:ngm:class:programmable-money
@@ -40,7 +40,7 @@ enables:
   - urn:ngm:class:state-synchronisation
   - urn:ngm:class:transaction-history
   - urn:ngm:class:neural-network-text-tokenisation
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 dependsOn:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:public-key-cryptography
@@ -91,15 +91,15 @@ standardizedBy:
   - urn:ngm:class:iso-tr-23244
   - urn:ngm:class:iso-ts-23258
 relatedTo:
-  - urn:ngm:class:cbdcs
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:atomic-swap
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:web3
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 ---
 
 # Distributed Ledger

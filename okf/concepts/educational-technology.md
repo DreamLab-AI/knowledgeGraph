@@ -26,7 +26,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:traditional-classroom-instruction
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:data-governance
 uses:

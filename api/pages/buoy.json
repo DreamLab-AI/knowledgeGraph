@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:buoy",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A buoy is a floating platform that carries sensors to observe conditions at the sea surface and in the air above it.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

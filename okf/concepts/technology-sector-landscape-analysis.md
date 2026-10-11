@@ -10,12 +10,12 @@ quality: 0.35
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 partOf:
   - urn:ngm:class:infra-computing-and-cloud
 relatedTo:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Technology Sector Landscape Analysis

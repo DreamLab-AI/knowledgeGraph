@@ -39,8 +39,8 @@ standardizedBy:
   - urn:ngm:class:european-commission
 relatedTo:
   - urn:ngm:class:regulatory-framework
-  - urn:ngm:class:bc-0482-eu-mica-regulation
-  - urn:ngm:class:aml
+  - urn:ngm:class:mi-ca-regulation
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # EBA

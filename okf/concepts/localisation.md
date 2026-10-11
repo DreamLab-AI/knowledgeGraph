@@ -37,7 +37,7 @@ bridgesTo:
   - urn:ngm:class:indoor-positioning-system
 uses:
   - urn:ngm:class:lidar
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
   - urn:ngm:class:kalman-filter
   - urn:ngm:class:inertial-measurement-unit
   - urn:ngm:class:point-cloud
@@ -60,6 +60,8 @@ relatedTo:
   - urn:ngm:class:uncertainty
   - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:map-matching
+  - urn:ngm:class:localisation
+  - urn:ngm:class:visual-odometry
 ---
 
 # Localisation

@@ -59,7 +59,7 @@ Manipulation is the capability of robotic or autonomous systems to physically in
 - [[Reinforcement Learning]] applied to manipulation trains policies end-to-end in simulation (MuJoCo, Isaac Sim) then transfers to real hardware via domain randomisation.
 - [[Imitation Learning]] (behaviour cloning, DAgger) bootstraps from human teleoperation demonstrations; drastically reduces sample complexity relative to RL from scratch.
 - [[Diffusion Policy]] and related generative-model approaches model the action distribution directly, capturing multi-modal behaviour in complex manipulation tasks.
-- [[Foundation Models]] (large vision-language models) are increasingly used as high-level task planners that decompose manipulation goals into sub-skills.
+- [[Foundation Model]] (large vision-language models) are increasingly used as high-level task planners that decompose manipulation goals into sub-skills.
 - Sim-to-real transfer remains a central challenge: simulation cannot perfectly model friction, deformable contacts, and sensor noise.
 
 ### Applications

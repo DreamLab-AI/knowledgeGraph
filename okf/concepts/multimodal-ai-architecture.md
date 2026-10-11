@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:ai-model-architecture
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:computer-vision
 enables:
   - urn:ngm:class:image-generation

@@ -28,7 +28,7 @@ A Material System is an engineered assembly of two or more distinct materials �
   - Functionally graded layers avoid sharp property discontinuities that cause stress concentration.
 - **Boundary Conditions and Loading**
   - Operational environment (temperature range, cyclic stress amplitude, chemical exposure) defines service requirements that constrain material system specification.
-  - [[Lifecycle Assessment]] incorporates manufacturing, use-phase, and end-of-life environmental costs.
+  - [[Life Cycle Assessment]] incorporates manufacturing, use-phase, and end-of-life environmental costs.
 
 ### Mechanisms
 
@@ -71,7 +71,7 @@ A Material System is an engineered assembly of two or more distinct materials �
 - **Materials Genome Initiative (MGI)** — US federal programme launched to accelerate materials discovery via high-throughput computation and data sharing; material system databases (AFLOW, Materials Project) are key outputs linking to [[Digital Twin]] and [[Machine Learning]] approaches.
 - **Integrated Computational Materials Engineering (ICME)** — the paradigm integrating [[Multi-Scale Modelling]], process simulation, and performance modelling into a unified design workflow; standardised by ASM International and TMS community guidelines.
 - **Digital Thread** — emerging industrial practice connecting material system specification, manufacturing process data, quality control records, and in-service monitoring into a continuous data thread, enabling [[Digital Twin]] lifecycle management.
-- **Sustainability and Circular Economy** — regulations (EU End-of-Life Vehicle directive, aerospace recycling targets) drive requirement to design material systems for disassembly, recyclability, and reduced embodied carbon, linking to [[Lifecycle Assessment]] frameworks (ISO 14040/14044).
+- **Sustainability and Circular Economy** — regulations (EU End-of-Life Vehicle directive, aerospace recycling targets) drive requirement to design material systems for disassembly, recyclability, and reduced embodied carbon, linking to [[Life Cycle Assessment]] frameworks (ISO 14040/14044).
 
 ### Relationship to AI and Digital Technologies
 

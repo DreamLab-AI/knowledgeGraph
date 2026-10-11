@@ -301,10 +301,6 @@
       {
         "id": "urn:ngm:class:edge-computing-node",
         "label": "Edge Computing Node"
-      },
-      {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded System"
       }
     ],
     "relatedTo": [

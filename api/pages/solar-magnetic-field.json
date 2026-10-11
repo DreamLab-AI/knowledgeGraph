@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-magnetic-field",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Concentrated in sunspots and active regions of the Sun, the magnetic field is carried outward into interplanetary space by the solar wind.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

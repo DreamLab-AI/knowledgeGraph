@@ -99,7 +99,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -175,7 +175,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:algorithmic-transparency-index",
@@ -225,7 +225,7 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:algorithmic-transparency-index",
@@ -238,7 +238,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -250,8 +250,8 @@
         "label": "IEEE P2976 (XAI)"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [],
@@ -274,14 +274,14 @@
       },
       {
         "id": "urn:ngm:class:ai-model-card",
-        "label": "AI Model Card"
+        "label": "Model Card"
       },
       {
         "id": "urn:ngm:class:stakeholder-engagement-in-ai",
         "label": "Stakeholder Engagement in AI"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -415,16 +415,16 @@
         "label": "Accountability"
       },
       {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
         "id": "urn:ngm:class:fairness",
         "label": "Fairness"
       },
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
       }
     ],
     "enables": [
@@ -481,11 +481,11 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -511,6 +511,10 @@
         "label": "Algorithmic Bias"
       },
       {
+        "id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
         "id": "urn:ngm:class:surveillance-capitalism",
         "label": "Surveillance Capitalism"
       },
@@ -533,6 +537,10 @@
         "label": "Human Rights"
       },
       {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
       },
@@ -547,10 +555,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
       }
     ],
     "uses": [
@@ -667,12 +671,12 @@
         "label": "Explainability"
       },
       {
-        "id": "urn:ngm:class:algorithmic-fairness",
-        "label": "Algorithmic Fairness"
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
       },
       {
-        "id": "urn:ngm:class:bias-mitigation-techniques",
-        "label": "Bias Mitigation Techniques"
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
       }
     ]
   },

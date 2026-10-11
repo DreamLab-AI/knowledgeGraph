@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:credential-store
 requires:
   - urn:ngm:class:cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 enables:
   - urn:ngm:class:authorisation
   - urn:ngm:class:single-sign-on

@@ -51,9 +51,9 @@
       "slug": "bayesian-inference"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:optimisation",
@@ -91,11 +91,6 @@
       "slug": "mathematical-foundations"
     },
     {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network",
-      "slug": "neural-network"
-    },
-    {
       "id": "urn:ngm:class:probabilistic-inference",
       "label": "Probabilistic Inference",
       "slug": "probabilistic-inference"
@@ -109,11 +104,6 @@
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -216,7 +206,7 @@
         "label": "AutoML"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -440,7 +430,7 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -462,8 +452,12 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23053-2022",
+        "label": "ISO-IEC 23053 2022"
       },
       {
         "id": "urn:ngm:class:aistats",
@@ -476,16 +470,16 @@
       {
         "id": "urn:ngm:class:journal-of-machine-learning-research",
         "label": "Journal of Machine Learning Research"
-      },
-      {
-        "id": "urn:ngm:class:journal-of-the-american-statistical-association",
-        "label": "Journal of the American Statistical Association"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:model-configuration",
         "label": "Model Configuration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       },
       {
         "id": "urn:ngm:class:mathematical-foundations",

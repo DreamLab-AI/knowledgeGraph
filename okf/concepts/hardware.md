@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:device-drivers
 enables:
   - urn:ngm:class:hardware-acceleration
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
   - urn:ngm:class:edge-computing
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:on-device-inference
@@ -35,7 +35,7 @@ contrastsWith:
   - urn:ngm:class:software
 bridgesTo:
   - urn:ngm:class:neural-processing-unit
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 supports:
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:augmented-reality

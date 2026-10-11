@@ -8,14 +8,15 @@ description: A DeFi Protocol is a set of immutable or upgradeable smart contract
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
+  - urn:ngm:class:bc-defi-and-economics
 hasPart:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:governance-token
 requires:
   - urn:ngm:class:blockchain-oracle
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:token-standard
 enables:
   - urn:ngm:class:yield-farming
@@ -23,19 +24,23 @@ enables:
   - urn:ngm:class:flash-loan
 dependsOn:
   - urn:ngm:class:composability
+implements:
+  - urn:ngm:class:blockchain
 contrastsWith:
   - urn:ngm:class:traditional-finance
 bridgesTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:cross-chain-bridge
+  - urn:ngm:class:ai-agent-system
+  - urn:ngm:class:virtual-economy
 uses:
   - urn:ngm:class:stablecoin
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:price-oracle
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:mev
   - urn:ngm:class:impermanent-loss
   - urn:ngm:class:blockchain-security

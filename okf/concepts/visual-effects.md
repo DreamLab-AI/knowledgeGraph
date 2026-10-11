@@ -29,7 +29,7 @@ contrastsWith:
   - urn:ngm:class:in-camera-vfx
   - urn:ngm:class:practical-effects
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-rendering
   - urn:ngm:class:generative-ai
   - urn:ngm:class:machine-learning

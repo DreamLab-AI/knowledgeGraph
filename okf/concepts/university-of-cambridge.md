@@ -18,9 +18,9 @@ enables:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:computer-vision
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:spatial-computing

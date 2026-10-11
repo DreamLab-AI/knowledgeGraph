@@ -179,7 +179,7 @@ Digital twin collaboration has matured from niche simulation tools to mainstream
 - [[TELE-301-virtual-office-spaces]]
 - [[TELE-302-shared-whiteboards]]
 - [[DigitalTwin]]
-- [[IoT]]
+- [[Internet of Things]]
 - [[IndustryFourPointZero]]
 
   #### References

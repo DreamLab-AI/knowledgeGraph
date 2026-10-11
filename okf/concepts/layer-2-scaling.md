@@ -9,6 +9,7 @@ maturity: established
 quality: 0.75
 is-a:
   - urn:ngm:class:blockchain-scalability
+  - urn:ngm:class:network-component
 hasPart:
   - urn:ngm:class:zk-rollup
   - urn:ngm:class:optimistic-rollup
@@ -20,12 +21,13 @@ requires:
   - urn:ngm:class:data-availability
   - urn:ngm:class:merkle-tree
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:cross-chain-asset-transfer
   - urn:ngm:class:micropayment
   - urn:ngm:class:gas-optimization
   - urn:ngm:class:gas-optimization
+  - urn:ngm:class:highthroughputtransaction
 dependsOn:
   - urn:ngm:class:ethereum
   - urn:ngm:class:consensus-mechanism
@@ -40,6 +42,8 @@ uses:
   - urn:ngm:class:fraud-proof
   - urn:ngm:class:sequencer
   - urn:ngm:class:hash-time-locked-contract
+  - urn:ngm:class:cryptographic-proof
+  - urn:ngm:class:cryptographic-proof
 relatedTo:
   - urn:ngm:class:data-availability-sampling
   - urn:ngm:class:eip-4844

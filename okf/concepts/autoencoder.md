@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:encoder
   - urn:ngm:class:decoder-network
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
 requires:
   - urn:ngm:class:backpropagation
 enables:
@@ -29,7 +29,7 @@ bridgesTo:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:signal-processing
 uses:
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:gradient-descent
 relatedTo:

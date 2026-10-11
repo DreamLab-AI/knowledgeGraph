@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:signature-algorithm
   - urn:ngm:class:public-key
   - urn:ngm:class:asymmetric-cryptography
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:cryptographic-hash-function
 enables:
   - urn:ngm:class:non-repudiation

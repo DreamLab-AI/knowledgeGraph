@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:grasp-planning
   - urn:ngm:class:end-effector
   - urn:ngm:class:force-control
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
 requires:
   - urn:ngm:class:motion-planning
   - urn:ngm:class:inverse-kinematics

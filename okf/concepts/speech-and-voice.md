@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:audio-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:conversational-ai
 hasPart:
   - urn:ngm:class:automatic-speech-recognition
@@ -48,7 +48,7 @@ dependsOn:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:linguistics
   - urn:ngm:class:information-theory
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 implements:
   - urn:ngm:class:state-space-models
   - urn:ngm:class:wave-net

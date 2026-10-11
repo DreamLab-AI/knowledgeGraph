@@ -2,7 +2,7 @@ Prometheus is an open-source monitoring and alerting system that collects time-s
 
 - [[Prometheus]] is an open-source [[Monitoring]] and alerting system that scrapes time-series [[Telemetry]] metrics from instrumented targets.
 - It stores samples locally, queries them with PromQL, and feeds [[Observability]] and [[Incident Response]] workflows.
-- A graduated [[Cloud Native Computing Foundation]] ([[CNCF]]) project, it integrates tightly with [[Kubernetes]] via [[Service Discovery]].
+- A graduated [[Cloud Native Computing Foundation]] ([[Cloud Native Computing Foundation]]) project, it integrates tightly with [[Kubernetes]] via [[Service Discovery]].
 
 ### Overview
 

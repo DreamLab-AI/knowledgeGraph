@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:backward-compatibility
   - urn:ngm:class:data-validation
 implements:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
   - urn:ngm:class:rest-api
 uses:
   - urn:ngm:class:semantic-versioning
@@ -28,7 +28,7 @@ supports:
   - urn:ngm:class:microservices
   - urn:ngm:class:api-gateway
 standardizedBy:
-  - urn:ngm:class:open-api-specification
+  - urn:ngm:class:openapi
 partOf:
   - urn:ngm:class:api-design
 relatedTo:

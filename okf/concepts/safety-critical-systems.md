@@ -21,7 +21,7 @@ standardizedBy:
   - urn:ngm:class:iso-26262
   - urn:ngm:class:do-178-c
 relatedTo:
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 ---
 
 # Safety-Critical Systems

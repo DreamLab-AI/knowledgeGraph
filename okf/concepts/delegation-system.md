@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:governance-framework
 relatedTo:
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:tokenomics-governance
 ---
 

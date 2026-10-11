@@ -5,7 +5,7 @@ A symmetric key is a single shared secret used by both the sender and receiver t
 ### Overview
 
 - Symmetric cryptography is efficient because the same operation, run in reverse with the same key, recovers the plaintext. The cost is the key-distribution problem: the secret must reach both parties without interception, which is why symmetric keys are commonly established through [[Key Exchange]] protocols or wrapped by [[Asymmetric Encryption]].
-- In real systems such as [[TLS]], asymmetric techniques negotiate a fresh symmetric session key, and that key then protects the bulk of the traffic, combining the security of public-key exchange with the speed of symmetric ciphers.
+- In real systems such as [[Transport Layer Security]], asymmetric techniques negotiate a fresh symmetric session key, and that key then protects the bulk of the traffic, combining the security of public-key exchange with the speed of symmetric ciphers.
 
 ### Key aspects
 
@@ -17,7 +17,7 @@ A symmetric key is a single shared secret used by both the sender and receiver t
 
 ### Applications
 
-- Bulk confidentiality of data in transit within [[TLS]] sessions.
+- Bulk confidentiality of data in transit within [[Transport Layer Security]] sessions.
 - Encryption of data at rest on disks and databases.
 - Session protection after a [[Key Exchange]] handshake.
 - Authenticated encryption when combined with a [[Hash Function]].

@@ -31,7 +31,7 @@ Fraud detection is the automated or semi-automated identification of deceptive, 
 - **[[Anomaly Detection]]**: autoencoders, isolation forests, one-class SVM — used when labelled fraud examples are scarce or entirely absent
 - **[[Supervised Learning]]** classifiers: trained on labelled fraud/non-fraud pairs; require high-quality [[Data Labelling]]
 - **Sequence models**: LSTM and Transformer architectures over ordered transaction histories, capturing temporal dependencies indicative of progressive account compromise
-- **[[Graph Neural Networks]]**: model multi-relational networks of accounts, beneficiaries, and devices to detect synthetic identity clusters and money-mule networks invisible to row-level models
+- **[[Graph Neural Network]]**: model multi-relational networks of accounts, beneficiaries, and devices to detect synthetic identity clusters and money-mule networks invisible to row-level models
 
 #### Class Imbalance Handling
 

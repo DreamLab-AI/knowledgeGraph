@@ -18,7 +18,7 @@ hasPart:
   - urn:ngm:class:observability
   - urn:ngm:class:credential-management
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:agent-memory
   - urn:ngm:class:authentication-system
 enables:

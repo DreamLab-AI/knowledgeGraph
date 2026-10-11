@@ -23,7 +23,7 @@ requires:
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:peer-to-peer-network
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:micropayments
   - urn:ngm:class:blockchain-interoperability

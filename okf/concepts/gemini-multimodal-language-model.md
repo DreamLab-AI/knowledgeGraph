@@ -28,7 +28,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 ---
 
 # Gemini Multimodal Language Model

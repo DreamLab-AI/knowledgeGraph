@@ -72,10 +72,10 @@ implements:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-standard
 contrastsWith:
   - urn:ngm:class:fiat-currency
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:gold
-  - urn:ngm:class:ethereum-smart-contract-platform
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:ethereum
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:traditional-banking
   - urn:ngm:class:inflation
   - urn:ngm:class:monetary-debasement

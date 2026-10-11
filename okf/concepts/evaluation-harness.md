@@ -23,7 +23,7 @@ hasPart:
 requires:
   - urn:ngm:class:benchmarks
   - urn:ngm:class:evaluation-metric
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:ground-truth-labels
   - urn:ngm:class:held-out-test-sets
 enables:
@@ -35,11 +35,11 @@ enables:
   - urn:ngm:class:mlops
   - urn:ngm:class:frontier-model-evaluation
 dependsOn:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:benchmarks
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:datasets
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:benchmark-standard
   - urn:ngm:class:scoring-protocol
@@ -52,11 +52,11 @@ contrastsWith:
   - urn:ngm:class:red-teaming
 uses:
   - urn:ngm:class:benchmarks
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:prompt-template
   - urn:ngm:class:few-shot-learning
-  - urn:ngm:class:chain-of-thought
+  - urn:ngm:class:chain-of-thought-prompting
 supports:
   - urn:ngm:class:model-selection
   - urn:ngm:class:mlops
@@ -80,7 +80,7 @@ relatedTo:
   - urn:ngm:class:frontier-model-evaluation
   - urn:ngm:class:ai-benchmark-epistemological-critique
   - urn:ngm:class:benchmark-dataset
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
 ---
 
 # Evaluation Harness

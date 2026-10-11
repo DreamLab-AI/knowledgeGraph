@@ -15,7 +15,7 @@ enables:
   - urn:ngm:class:ai-augmented-software-engineering
 uses:
   - urn:ngm:class:logic-programming
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:symbolic-ai
   - urn:ngm:class:software-engineering

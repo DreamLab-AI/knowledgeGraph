@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:fatf-recommendations
 enables:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
   - urn:ngm:class:travel-rule
   - urn:ngm:class:fatf-travel-rule

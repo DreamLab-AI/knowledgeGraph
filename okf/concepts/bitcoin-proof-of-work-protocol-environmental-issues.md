@@ -58,7 +58,7 @@ implements:
   - urn:ngm:class:digital-flare-mitigation
 contrastsWith:
   - urn:ngm:class:proof-of-stake
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:traditional-financial-infrastructure-energy
   - urn:ngm:class:gold-mining-energy
   - urn:ngm:class:data-center-energy
@@ -86,7 +86,7 @@ standardizedBy:
   - urn:ngm:class:fasb-asu-2023-08
   - urn:ngm:class:iso-14040
   - urn:ngm:class:sustainable-bitcoin-protocol
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:eu-mi-ca-regulation
   - urn:ngm:class:iso-14040
 relatedTo:

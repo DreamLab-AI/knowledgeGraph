@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:suborbital-spaceflight-vehicle",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A suborbital spaceflight vehicle is a craft used or designed to carry out a flight that does not complete an Earth orbit.[^1430][^1437][^1453]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -78,8 +78,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -168,8 +168,8 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:aisystem",
-        "label": "AISystem"
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",

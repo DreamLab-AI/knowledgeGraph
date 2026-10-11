@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:dc-protocol-and-infra
 enables:
   - urn:ngm:class:community-governance
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
 supports:
   - urn:ngm:class:collaboration
   - urn:ngm:class:governance-model

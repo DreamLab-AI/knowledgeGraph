@@ -26,7 +26,7 @@ requires:
   - urn:ngm:class:bandwidth
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:libp2p
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:disk-storage
 enables:
   - urn:ngm:class:data-sovereignty
@@ -48,7 +48,7 @@ implements:
   - urn:ngm:class:bitswap-protocol
 contrastsWith:
   - urn:ngm:class:object-storage
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
   - urn:ngm:class:centralised-file-server
   - urn:ngm:class:network-attached-storage
 uses:
@@ -58,10 +58,10 @@ uses:
   - urn:ngm:class:car-file
   - urn:ngm:class:ucan
 supports:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:decentralised-web
   - urn:ngm:class:nft
-  - urn:ngm:class:decentralized-storage
+  - urn:ngm:class:decentralised-storage
   - urn:ngm:class:decentralized-web
   - urn:ngm:class:ai-dataset-distribution
 standardizedBy:
@@ -71,7 +71,7 @@ standardizedBy:
   - urn:ngm:class:ipld
   - urn:ngm:class:ucan-working-group
 relatedTo:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:smart-contract
   - urn:ngm:class:tokenomics

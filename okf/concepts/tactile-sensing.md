@@ -25,7 +25,7 @@ contrastsWith:
   - urn:ngm:class:proximity-sensing
 bridgesTo:
   - urn:ngm:class:neuromorphic-computing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:force-torque-sensor
   - urn:ngm:class:pressure-sensor

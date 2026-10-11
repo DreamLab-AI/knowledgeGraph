@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stellar-active-region",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A stellar active region is a region of a star's surface and overlying atmosphere with intense, complex magnetic fields, of which sunspots are the visible component in the case of the Sun.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:stellar-realm",

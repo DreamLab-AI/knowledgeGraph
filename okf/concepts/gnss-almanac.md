@@ -4,6 +4,7 @@ type: Class
 title: GNSS Almanac
 resource: urn:ngm:class:gnss-almanac
 domain: space-science-and-systems
+description: A GNSS almanac is a reduced-precision set of orbit and status information for multiple satellites in a constellation.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # GNSS Almanac
+
+A GNSS almanac is a reduced-precision set of orbit and status information for multiple satellites in a constellation.

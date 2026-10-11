@@ -12,7 +12,7 @@ is-a:
 hasPart:
   - urn:ngm:class:model-validation
   - urn:ngm:class:model-documentation
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
 requires:
   - urn:ngm:class:model-monitoring
   - urn:ngm:class:audit-trail

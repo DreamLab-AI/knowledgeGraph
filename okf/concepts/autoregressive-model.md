@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:probabilistic-model
   - urn:ngm:class:tokenization
   - urn:ngm:class:chain-rule-of-probability
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
   - urn:ngm:class:training-data
   - urn:ngm:class:gpu-computing
 enables:
@@ -45,7 +45,7 @@ implements:
   - urn:ngm:class:next-token-prediction
 contrastsWith:
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:masked-language-modelling
   - urn:ngm:class:flow-based-model
   - urn:ngm:class:generative-adversarial-network
@@ -54,7 +54,7 @@ bridgesTo:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:multimodal-ai-architecture-ai
   - urn:ngm:class:protein-structure-prediction
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 uses:
   - urn:ngm:class:transformer
   - urn:ngm:class:self-attention

@@ -12,7 +12,6 @@ is-a:
   - urn:ngm:class:distributed-algorithm
   - urn:ngm:class:coordination-protocol
   - urn:ngm:class:state-machine-replication
-  - urn:ngm:class:byzantine-fault-tolerance
   - urn:ngm:class:atomic-broadcast
 hasPart:
   - urn:ngm:class:block-proposal
@@ -85,7 +84,7 @@ uses:
 supports:
   - urn:ngm:class:cross-chain-bridge
   - urn:ngm:class:data-availability
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:layer-2-solutions
   - urn:ngm:class:smart-contract-execution
@@ -94,12 +93,12 @@ supports:
 standardizedBy:
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:cosmos
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:ietf
   - urn:ngm:class:iso-tc-307-blockchain-standards
   - urn:ngm:class:nist-post-quantum-cryptography
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:cosmos
   - urn:ngm:class:nist-post-quantum-cryptography
   - urn:ngm:class:ietf

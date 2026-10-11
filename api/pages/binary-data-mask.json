@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:binary-data-mask",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A binary data mask is a per-pixel raster layer in which each value takes one of two states, such as cloud present or absent, used to include or exclude pixels from an analysis.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

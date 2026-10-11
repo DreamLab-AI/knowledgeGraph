@@ -4,6 +4,7 @@ type: Class
 title: Orbital Inclination
 resource: urn:ngm:class:orbital-inclination
 domain: space-science-and-systems
+description: Orbital inclination is the angle between an orbital plane and a defined reference plane.
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Orbital Inclination
+
+Orbital inclination is the angle between an orbital plane and a defined reference plane.

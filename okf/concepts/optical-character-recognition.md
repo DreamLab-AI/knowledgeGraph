@@ -41,7 +41,7 @@ standardizedBy:
   - urn:ngm:class:unicode-standard
   - urn:ngm:class:pdf-ua
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:named-entity-recognition
 ---
 

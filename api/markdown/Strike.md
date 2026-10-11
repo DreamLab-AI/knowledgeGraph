@@ -34,7 +34,7 @@ Strike is a financial technology company founded by Jack Mallers that uses the B
 - Versus [[Decentralised Finance]] platforms, Strike is deliberately centralised at the application layer, accepting regulatory friction in exchange for accessibility and fiat interoperability.
 - Versus [[Open Banking]] rails such as SEPA Instant or FedNow, Strike's advantage is global reach in corridors where domestic faster-payment rails are absent or unconnected, and in cross-currency flows where [[Correspondent Banking]] fees remain high.
 - The [[Financial Inclusion]] dimension is significant: Strike accounts are accessible to individuals without a traditional bank account, provided they have a mobile device, offering a pathway into the global payments system for underbanked populations.
-- Competition includes other Lightning-native payment processors (BitPay, OpenNode), as well as [[FinTech]] remittance platforms (Wise, Remitly), though Strike's direct Lightning routing and edge-conversion architecture differentiates it on cost in specific corridors.
+- Competition includes other Lightning-native payment processors (BitPay, OpenNode), as well as [[Financial Technology]] remittance platforms (Wise, Remitly), though Strike's direct Lightning routing and edge-conversion architecture differentiates it on cost in specific corridors.
 
 ### Standards and Regulatory Context
 

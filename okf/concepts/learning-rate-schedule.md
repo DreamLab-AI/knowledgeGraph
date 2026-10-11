@@ -10,7 +10,7 @@ quality: 0
 is-a:
   - urn:ngm:class:sc-content-and-assets
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
 enables:
   - urn:ngm:class:training-and-fine-tuning

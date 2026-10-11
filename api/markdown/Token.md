@@ -341,22 +341,22 @@ Whilst **ERC-20** remained the "golden standard" for fungible token issuance (de
 - [[Smart Contract]], [[ERC-20]], [[ERC-721]], [[ERC-1155]], [[RGB Protocol]], [[Taproot Assets]]
 - [[BRC-20]], [[Runes Protocol]], [[Ordinals]], [[SPL Token]], [[Metaplex]]
   **DeFi Ecosystem**:
-- [[DeFi]], [[Decentralized Exchange]], [[Liquidity Pool]], [[Automated Market Maker]]
+- [[Decentralised Finance]], [[Decentralised Exchange]], [[Liquidity Pool]], [[Automated Market Maker]]
 - [[Yield Farming]], [[Staking]], [[Lending Protocol]], [[Bridge]]
   **Token Economics**:
 - [[Tokenomics]], [[Token Distribution]], [[Token Burn]], [[Vesting Schedule]], [[Liquidity Mining]]
   **Governance & DAOs**:
-- [[DAO]], [[Governance]], [[Proposal]], [[Voting]], [[veTokenomics]]
+- [[Decentralised Autonomous Organisation]], [[Governance]], [[Proposal]], [[Voting]], [[veTokenomics]]
   **Bitcoin Ecosystem**:
 - [[Bitcoin Proof-of-Work Protocol]], [[Lightning Network]], [[Taproot]], [[UTXO]], [[Satoshi]]
   **Platforms**:
-- [[Ethereum Smart Contract Platform]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
+- [[Ethereum]], [[Solana]], [[Polygon]], [[Arbitrum]], [[Optimism]], [[Avalanche]], [[Polkadot]], [[Cosmos]]
   **NFT Ecosystem**:
 - [[NFT]], [[NFT Marketplace]], [[Metadata]], [[IPFS]], [[Royalties]]
   **Notable Projects**:
 - [[Uniswap]], [[Aave]], [[MakerDAO]], [[Curve Finance]], [[Compound]], [[Chainlink]], [[Lido]], [[OpenSea]]
   **Regulatory**:
-- [[KYC]], [[AML]], [[SEC]], [[MiCA]], [[Howey Test]]
+- [[Know Your Customer]], [[Anti-Money Laundering]], [[SEC]], [[MiCA]], [[Howey Test]]
 
 ### Standards & References
 

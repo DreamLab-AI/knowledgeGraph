@@ -21,8 +21,8 @@ implements:
   - urn:ngm:class:open-standard
   - urn:ngm:class:node-graph-visual-programming-interface
 bridgesTo:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
 uses:
   - urn:ngm:class:xml
   - urn:ngm:class:procedural-texture

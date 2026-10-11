@@ -38,7 +38,7 @@ supports:
   - urn:ngm:class:key-management
   - urn:ngm:class:wallet-security
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:hierarchical-deterministic-wallet
 relatedTo:
   - urn:ngm:class:pbkdf2

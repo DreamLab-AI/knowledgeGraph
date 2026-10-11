@@ -9,6 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:digital-infrastructure
+  - urn:ngm:class:artificial-intelligence
 hasPart:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:edge-computing
@@ -38,10 +39,10 @@ uses:
   - urn:ngm:class:gpu-computing
   - urn:ngm:class:gpu-computing
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning
   - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:model-registry

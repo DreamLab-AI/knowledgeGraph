@@ -8,14 +8,14 @@ description: A reversible, unitary operation applied to a small number of qubits
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 enables:
   - urn:ngm:class:quantum-error-correction
 dependsOn:
   - urn:ngm:class:quantum-mechanics
   - urn:ngm:class:linear-algebra
 partOf:
-  - urn:ngm:class:quantum-computation-paradigm
+  - urn:ngm:class:quantum-computing
 ---
 
 # Quantum Gate

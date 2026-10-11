@@ -18,10 +18,10 @@ hasPart:
   - urn:ngm:class:redaction-engine
 requires:
   - urn:ngm:class:classification-rules
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:privacy-policy
   - urn:ngm:class:regular-expressions
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 enables:
   - urn:ngm:class:gdpr-compliance
   - urn:ngm:class:privacy-preservation

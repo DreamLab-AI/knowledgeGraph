@@ -30,7 +30,7 @@ bridgesTo:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:zero-knowledge-proof
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:fairness-oecd
 partOf:

@@ -10,7 +10,7 @@ quality: 0.72
 is-a:
   - urn:ngm:class:infra-network-and-comms
   - urn:ngm:class:blockchain-entity
-  - urn:ngm:class:networkcomponent
+  - urn:ngm:class:network-component
 requires:
   - urn:ngm:class:peer-discovery
 enables:

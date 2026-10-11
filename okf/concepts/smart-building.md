@@ -25,7 +25,7 @@ dependsOn:
   - urn:ngm:class:industrial-io-t
 bridgesTo:
   - urn:ngm:class:smart-city
-  - urn:ngm:class:bim-virtual-model
+  - urn:ngm:class:building-information-modelling
 uses:
   - urn:ngm:class:io-t-sensor-network
   - urn:ngm:class:iot-device
@@ -36,7 +36,7 @@ supports:
   - urn:ngm:class:smart-home
 relatedTo:
   - urn:ngm:class:smart-home-automation
-  - urn:ngm:class:io-t
+  - urn:ngm:class:internet-of-things
   - urn:ngm:class:cyber-physical-systems
 ---
 

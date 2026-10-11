@@ -20,7 +20,7 @@ hasPart:
   - urn:ngm:class:smoothgrad
   - urn:ngm:class:permutation-importance
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:backpropagation
   - urn:ngm:class:loss-function
   - urn:ngm:class:neural-network
@@ -60,7 +60,7 @@ supports:
 standardizedBy:
   - urn:ngm:class:ieee-p2976-xai
   - urn:ngm:class:iso-iec-22989-2022
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
 relatedTo:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:deep-learning

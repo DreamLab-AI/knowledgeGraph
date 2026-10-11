@@ -21,7 +21,7 @@ requires:
 enables:
   - urn:ngm:class:inflation-control
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:price-stability
 dependsOn:
   - urn:ngm:class:economics
@@ -42,11 +42,11 @@ supports:
   - urn:ngm:class:full-employment
 standardizedBy:
   - urn:ngm:class:bank-for-international-settlements
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
 partOf:
   - urn:ngm:class:economic-governance
 relatedTo:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:exchange-rate-policy
   - urn:ngm:class:banking-regulation
 ---

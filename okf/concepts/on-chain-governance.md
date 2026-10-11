@@ -16,7 +16,7 @@ requires:
 enables:
   - urn:ngm:class:dao-governance
   - urn:ngm:class:voting-mechanism
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:treasury-management
   - urn:ngm:class:parameter-governance
   - urn:ngm:class:protocol-upgrade

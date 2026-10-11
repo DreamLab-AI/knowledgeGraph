@@ -27,7 +27,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:staking
 ---
 

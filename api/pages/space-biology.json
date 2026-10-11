@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-biology",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space biology is research into how spaceflight affects living systems, whether in spacecraft such as the International Space Station or in ground-based experiments that mimic aspects of spaceflight.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

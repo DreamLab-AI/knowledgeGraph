@@ -10,7 +10,7 @@ quality: 0.5
 is-a:
   - urn:ngm:class:infra-computing-and-cloud
 hasPart:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:computer-vision
 enables:
   - urn:ngm:class:agentic-ai
@@ -20,7 +20,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:computer-vision
 ---

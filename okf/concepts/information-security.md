@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:trust
 dependsOn:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-communication
 implements:
   - urn:ngm:class:zero-trust-architecture

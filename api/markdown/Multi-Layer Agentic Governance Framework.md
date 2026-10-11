@@ -50,7 +50,7 @@ Agentic Mycelia is a multi-layered framework of specialised AI agents—scene ag
 - [[Google AI Technology Corporation]] [[Gemini Multimodal Language Model]] 1.5 did the heavy lifting here but Claude 3 Opus did the final pass and expanded the text, which I then adapted.
 - I uploaded the public pages of this knowledge graph, which represent a decent proportion of my thinking into the million token context of Gemini.
 - This was how I started the conversation with Gemini. The full text is available on request but it is non-deterministic and quite messy, representing the way I interact with these conversational systems more than a systematic approach.
-  - I build [[Chain of Thought]] scaffolds in [[Large Language Models]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
+  - I build [[Chain of Thought]] scaffolds in [[Large Language Model]] using [[Diagrams as Code]], and this methodology  reflects my [[Prompt Engineering]] approach.
     - Current large language models benefit greatly from being asked to create diagrams as code, in a guided manner.
     - These complex code structures can convey meaning and linkages, creating knowledge graphs which implicitly contain their own logical checks.
     - Human comprehension is radically increased during the co-creations.

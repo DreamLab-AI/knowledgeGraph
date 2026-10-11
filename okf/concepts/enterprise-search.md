@@ -60,7 +60,7 @@ uses:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:text-embeddings
   - urn:ngm:class:bm25
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:nearest-neighbor-search
 supports:

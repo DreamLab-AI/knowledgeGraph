@@ -39,7 +39,7 @@ supports:
 relatedTo:
   - urn:ngm:class:federated-system
   - urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-cash
 ---
 

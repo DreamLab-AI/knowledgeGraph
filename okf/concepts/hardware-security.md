@@ -12,7 +12,7 @@ is-a:
 requires:
   - urn:ngm:class:computer-hardware
 enables:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 bridgesTo:
   - urn:ngm:class:hardware-security-module
   - urn:ngm:class:cryptography

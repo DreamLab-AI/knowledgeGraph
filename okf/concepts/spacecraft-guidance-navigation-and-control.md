@@ -4,6 +4,7 @@ type: Class
 title: Spacecraft Guidance Navigation and Control
 resource: urn:ngm:class:spacecraft-guidance-navigation-and-control
 domain: space-science-and-systems
+description: Spacecraft guidance, navigation and control is the feedback architecture that estimates vehicle state, chooses commanded motion and drives actuators to achieve it.
 maturity: draft
 quality: 0
 bridgesTo:
@@ -11,3 +12,5 @@ bridgesTo:
 ---
 
 # Spacecraft Guidance Navigation and Control
+
+Spacecraft guidance, navigation and control is the feedback architecture that estimates vehicle state, chooses commanded motion and drives actuators to achieve it.

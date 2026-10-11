@@ -152,7 +152,7 @@
         "label": "WebRTC"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -203,7 +203,7 @@
         "label": "Transmission Delay"
       },
       {
-        "id": "urn:ngm:class:cdn",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
@@ -321,8 +321,8 @@
         "label": "Packet Switching"
       },
       {
-        "id": "urn:ngm:class:power-infrastructure",
-        "label": "Power Infrastructure"
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
       }
     ],
     "implements": [

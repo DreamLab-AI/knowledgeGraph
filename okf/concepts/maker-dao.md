@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:dutch-auction
   - urn:ngm:class:collateralised-debt-position
 relatedTo:
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:tokenomics

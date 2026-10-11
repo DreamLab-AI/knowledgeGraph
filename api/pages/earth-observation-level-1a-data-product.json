@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-level-1a-data-product",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation Level 1A data product is reconstructed, unprocessed instrument data at full resolution that is time-referenced and annotated with ancillary information.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:earth-observation-data-product",

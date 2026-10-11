@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orthometric-height",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Orthometric height is a gravity-related height that approximates the distance of a point above mean sea level.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

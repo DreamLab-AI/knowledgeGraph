@@ -233,7 +233,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:digital-signature-verification",
+        "id": "urn:ngm:class:electronic-signature",
         "label": "Electronic Signature"
       },
       {

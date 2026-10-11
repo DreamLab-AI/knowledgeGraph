@@ -261,7 +261,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -315,7 +315,7 @@
         "label": "W3C RDF 1.1"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C SHACL"
       },
       {
@@ -327,7 +327,7 @@
         "label": "ISO/IEC 39075:2024 GQL"
       },
       {
-        "id": "urn:ngm:class:w3-c",
+        "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C SHACL"
       },
       {
@@ -358,8 +358,8 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ]
   },
@@ -386,28 +386,28 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:caching",
-        "label": "Caching"
-      },
-      {
-        "id": "urn:ngm:class:persistence",
-        "label": "Persistence"
-      },
-      {
-        "id": "urn:ngm:class:sql",
-        "label": "SQL"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "requires": [
@@ -454,8 +454,8 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -598,20 +598,20 @@
         "label": "Information Management"
       },
       {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
       },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:data-quality",
-        "label": "Data Quality"
-      },
-      {
-        "id": "urn:ngm:class:observability",
-        "label": "Observability"
       }
     ]
   },

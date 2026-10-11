@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:solar-radiation-pressure",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Solar radiation pressure is the non-gravitational force on a spacecraft produced by sunlight striking its surfaces, which perturbs the orbit.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

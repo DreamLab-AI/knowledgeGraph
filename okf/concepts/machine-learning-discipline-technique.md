@@ -9,7 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 hasPart:
   - urn:ngm:class:supervised-learning
   - urn:ngm:class:unsupervised-learning

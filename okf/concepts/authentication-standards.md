@@ -36,10 +36,10 @@ uses:
   - urn:ngm:class:biometric-verification
   - urn:ngm:class:challenge-response-protocol
 supports:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
   - urn:ngm:class:single-sign-on
 standardizedBy:
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:fido-alliance
 partOf:
   - urn:ngm:class:identity-and-access-management

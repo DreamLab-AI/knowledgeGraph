@@ -125,7 +125,7 @@ Embedding search is a retrieval paradigm in which queries and documents are enco
   ## Use Cases
   Embedding search underpins a diverse range of production applications:
 
-- **RAG Pipelines:** The primary use case as of 2026. An embedding search retrieval stage finds semantically relevant chunks from a knowledge base to prepend to the prompt of a [[Large Language Models|large language model]], grounding generation in external facts.
+- **RAG Pipelines:** The primary use case as of 2026. An embedding search retrieval stage finds semantically relevant chunks from a knowledge base to prepend to the prompt of a [[Large Language Model|large language model]], grounding generation in external facts.
 - **Enterprise Document Search:** Employees query HR policies, technical documentation, and internal wikis using natural language; embedding search surfaces relevant sections regardless of vocabulary differences between author and querier.
 - **E-Commerce Product Discovery:** Search queries such as "comfortable shoes for standing all day" retrieve relevant products even without keyword overlap with product descriptions.
 - **Biomedical Literature Search:** Clinicians and researchers query PubMed, clinical trial registries, and drug databases using clinical terminology that differs from the language used in publications.

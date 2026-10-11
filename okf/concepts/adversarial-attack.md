@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:membership-inference
 requires:
   - urn:ngm:class:threat-model
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 enables:
   - urn:ngm:class:adversarial-robustness
   - urn:ngm:class:red-teaming

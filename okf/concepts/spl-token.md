@@ -20,7 +20,7 @@ implements:
   - urn:ngm:class:token-standard
   - urn:ngm:class:fungible-token
 contrastsWith:
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:brc-20
 bridgesTo:
   - urn:ngm:class:blockchain

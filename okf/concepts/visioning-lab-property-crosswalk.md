@@ -10,9 +10,9 @@ quality: 0.5
 is-a:
   - urn:ngm:class:sc-standards-and-interop
 relatedTo:
-  - urn:ngm:class:json-ld
+  - urn:ngm:class:json-data-interchange-format-ld
   - urn:ngm:class:linked-data
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
   - urn:ngm:class:knowledge-graph
 ---
 

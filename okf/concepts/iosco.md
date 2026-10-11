@@ -24,7 +24,7 @@ contrastsWith:
   - urn:ngm:class:fatf
   - urn:ngm:class:bis
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:algorithmic-trading
   - urn:ngm:class:ai-governance
 uses:
@@ -43,7 +43,7 @@ relatedTo:
   - urn:ngm:class:financial-stability-board
   - urn:ngm:class:g20
   - urn:ngm:class:basel-committee
-  - urn:ngm:class:imf
+  - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:world-bank
 ---
 

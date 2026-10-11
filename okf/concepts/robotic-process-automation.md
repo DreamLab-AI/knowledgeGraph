@@ -27,8 +27,8 @@ contrastsWith:
   - urn:ngm:class:ai-agents
   - urn:ngm:class:business-process-automation
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:large-language-model
 uses:
   - urn:ngm:class:workflow-automation
   - urn:ngm:class:computer-vision

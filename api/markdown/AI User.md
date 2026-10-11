@@ -517,8 +517,8 @@ sequenceDiagram
 
 ### Cloud-Based Latent Space
 
-- Fine-tuned product variations are stored in a cloud-based [[Neural Network Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
-- This [[Neural Network Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
+- Fine-tuned product variations are stored in a cloud-based [[Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
+- This [[Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
 
 ### Interaction Flow
 
@@ -1927,8 +1927,8 @@ sequenceDiagram
 
 ### Cloud-Based Latent Space
 
-- Fine-tuned product variations are stored in a cloud-based [[Neural Network Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
-- This [[Neural Network Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
+- Fine-tuned product variations are stored in a cloud-based [[Latent Space]] , a high-dimensional vector space where each point represents a specific product variation.
+- This [[Latent Space]] is organised and indexed for efficient retrieval based on user preferences.
 
 ### Interaction Flow
 

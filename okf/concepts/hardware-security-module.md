@@ -13,14 +13,14 @@ requires:
   - urn:ngm:class:hardware-root-of-trust
   - urn:ngm:class:tamper-resistance
 enables:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:key-management
   - urn:ngm:class:code-signing
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:secure-boot
   - urn:ngm:class:payment-security
 contrastsWith:
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:trusted-platform-module
   - urn:ngm:class:software-keystore

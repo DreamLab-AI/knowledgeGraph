@@ -8,7 +8,7 @@ description: Crowdfunding is a financing model in which a project or venture rai
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 requires:
   - urn:ngm:class:tokenomics
 enables:
@@ -26,14 +26,14 @@ uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:tokenomics
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 partOf:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:venture-capital
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:ico
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
 ---
 
 # Crowdfunding

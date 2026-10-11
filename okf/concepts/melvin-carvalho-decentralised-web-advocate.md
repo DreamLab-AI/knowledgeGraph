@@ -8,14 +8,14 @@ description: Melvin Carvalho is a developer and advocate active in decentralised
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 requires:
   - urn:ngm:class:linked-data
 enables:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 bridgesTo:
   - urn:ngm:class:solid
-  - urn:ngm:class:semantic-web-linked-data-standard
+  - urn:ngm:class:semantic-web
 ---
 
 # Melvin Carvalho Decentralised Web Advocate

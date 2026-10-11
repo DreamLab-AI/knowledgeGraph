@@ -16,17 +16,17 @@ requires:
   - urn:ngm:class:anomaly-detection
 enables:
   - urn:ngm:class:fraud-detection
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 dependsOn:
   - urn:ngm:class:data
 implements:
   - urn:ngm:class:risk-management
 uses:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:predictive-analytics
   - urn:ngm:class:feature-engineering
 supports:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 relatedTo:
   - urn:ngm:class:compliance
   - urn:ngm:class:regulatory-compliance

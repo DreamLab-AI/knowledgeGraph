@@ -14,7 +14,7 @@ requires:
   - urn:ngm:class:nvidia-corporation
 enables:
   - urn:ngm:class:model-deployment
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
 dependsOn:
   - urn:ngm:class:gpu-acceleration
 implements:

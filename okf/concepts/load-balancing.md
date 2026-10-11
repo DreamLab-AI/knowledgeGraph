@@ -35,12 +35,12 @@ uses:
   - urn:ngm:class:session-persistence
 supports:
   - urn:ngm:class:microservices-architecture
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 partOf:
   - urn:ngm:class:distributed-architecture
   - urn:ngm:class:service-mesh
 relatedTo:
-  - urn:ngm:class:auto-scaling
+  - urn:ngm:class:autoscaling
   - urn:ngm:class:traffic-management
 ---
 

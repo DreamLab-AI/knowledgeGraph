@@ -37,7 +37,7 @@ Authentication is the security process of verifying that a claimed identity of a
   - Liveness detection counters presentation attacks (photographs, 3D masks).
 - **Decentralised / Self-Sovereign Authentication**
   - [[Decentralised Identity]] (DID) documents anchor public keys in blockchains or distributed ledgers without a central IdP.
-  - [[Verifiable Credentials]] allow users to present cryptographic attestations from issuers (governments, employers) that relying parties verify without contacting the issuer.
+  - [[Verifiable Credential]] allow users to present cryptographic attestations from issuers (governments, employers) that relying parties verify without contacting the issuer.
   - Supports selective disclosure via zero-knowledge proofs — privacy-preserving authentication where minimal identity information is revealed.
 
 ### Authentication Factors (Classification)

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ice-shelf",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An ice shelf is an extension of thick land ice that flows out over a cold coastal ocean.[^1] SWEET sets four conditions: it is attached to the coast, at least 2 metres thick, forms where a glacier or ice mass flows onto the ocean surface, and grows by snow accumulation or the seaward extension of land glaciers.[^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

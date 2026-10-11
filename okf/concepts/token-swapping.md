@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:decentralized-finance-de-fi
 enables:
   - urn:ngm:class:yield-farming
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 uses:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:liquidity-pool

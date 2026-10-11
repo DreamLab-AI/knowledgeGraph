@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:heliopause",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Heliopause, the boundary where the tenuous, hot solar wind meets the cold, dense interstellar medium, marks this limit.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

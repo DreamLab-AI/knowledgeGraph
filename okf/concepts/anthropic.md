@@ -11,13 +11,13 @@ is-a:
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:frontier-ai
 hasPart:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:responsible-scaling-policy
   - urn:ngm:class:mechanistic-interpretability
   - urn:ngm:class:model-context-protocol
   - urn:ngm:class:claude
 requires:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:foundation-model
   - urn:ngm:class:frontier-model-training
@@ -32,32 +32,32 @@ enables:
   - urn:ngm:class:ai-safety
 dependsOn:
   - urn:ngm:class:reinforcement-learning-from-human-feedback
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:instruction-tuning
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:scalable-oversight
 implements:
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
   - urn:ngm:class:responsible-scaling-policy
   - urn:ngm:class:frontier-model-evaluation
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
 contrastsWith:
   - urn:ngm:class:openai-research-organisation
   - urn:ngm:class:google-ai-technology-corporation-deep-mind
   - urn:ngm:class:meta-ai
 bridgesTo:
   - urn:ngm:class:ai-regulation
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:ai-safety-institute
   - urn:ngm:class:compute-governance
 uses:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:red-teaming
   - urn:ngm:class:direct-preference-optimisation
   - urn:ngm:class:mechanistic-interpretability
-  - urn:ngm:class:constitutional-ai-training-methodology
+  - urn:ngm:class:constitutional-ai
 supports:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:scalable-oversight
@@ -79,7 +79,7 @@ relatedTo:
   - urn:ngm:class:ai-safety-research
   - urn:ngm:class:ai-governance
   - urn:ngm:class:responsible-scaling-policy
-  - urn:ngm:class:rlhf
+  - urn:ngm:class:reinforcement-learning-from-human-feedback
   - urn:ngm:class:agentic-workflow
 ---
 

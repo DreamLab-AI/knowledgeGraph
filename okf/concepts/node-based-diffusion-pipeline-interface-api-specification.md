@@ -47,7 +47,7 @@ enables:
 dependsOn:
   - urn:ngm:class:comfy-ui
   - urn:ngm:class:diffusion-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:model-checkpoint
   - urn:ngm:class:latent-diffusion-pipeline
 implements:
@@ -72,12 +72,12 @@ uses:
   - urn:ngm:class:python-runtime
 supports:
   - urn:ngm:class:control-net
-  - urn:ngm:class:lo-ra
+  - urn:ngm:class:lora
   - urn:ngm:class:ip-adapter
   - urn:ngm:class:sdxl
   - urn:ngm:class:flux-1
   - urn:ngm:class:animatediff
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip
   - urn:ngm:class:ksampler
   - urn:ngm:class:checkpointloader
@@ -97,7 +97,7 @@ relatedTo:
   - urn:ngm:class:openart-workflow-registry
   - urn:ngm:class:civitai-workflow-sharing
   - urn:ngm:class:node-based-visual-programming
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:generative-ai
   - urn:ngm:class:open-source-software
   - urn:ngm:class:content-production-workflow

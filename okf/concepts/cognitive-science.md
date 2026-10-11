@@ -55,7 +55,7 @@ bridgesTo:
   - urn:ngm:class:knowledge-graphs
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:neuromorphic-computing
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:cognitive-load
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:information-processing
@@ -68,7 +68,7 @@ uses:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:brain-computer-interface
 supports:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:user-experience-design
   - urn:ngm:class:representation-learning

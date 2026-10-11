@@ -15,7 +15,7 @@ hasPart:
   - urn:ngm:class:asynchronous-communication
   - urn:ngm:class:tc-0002-collaborative-document-editing
   - urn:ngm:class:virtual-workspace
-  - urn:ngm:class:collaborative-systems-modality
+  - urn:ngm:class:tc-0002-collaborative-document-editing
 requires:
   - urn:ngm:class:network-connectivity
   - urn:ngm:class:identity-and-access-management
@@ -26,7 +26,7 @@ enables:
   - urn:ngm:class:remote-work
 dependsOn:
   - urn:ngm:class:cloud-computing
-  - urn:ngm:class:cdn
+  - urn:ngm:class:content-delivery-network
 contrastsWith:
   - urn:ngm:class:co-located-collaboration
   - urn:ngm:class:synchronous-communication

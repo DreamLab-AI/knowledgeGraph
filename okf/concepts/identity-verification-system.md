@@ -18,13 +18,13 @@ requires:
   - urn:ngm:class:optical-character-recognition
   - urn:ngm:class:database-lookup
 enables:
-  - urn:ngm:class:kyc
-  - urn:ngm:class:aml
+  - urn:ngm:class:know-your-customer
+  - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:digital-onboarding
   - urn:ngm:class:access-control
 dependsOn:
-  - urn:ngm:class:machine-learning-discipline
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:public-key-infrastructure
 implements:
   - urn:ngm:class:identity-proofing
 contrastsWith:
@@ -32,8 +32,8 @@ contrastsWith:
   - urn:ngm:class:authorisation
 bridgesTo:
   - urn:ngm:class:decentralised-identity
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:facial-recognition
   - urn:ngm:class:natural-language-processing

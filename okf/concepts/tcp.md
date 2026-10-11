@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:congestion-control
   - urn:ngm:class:packet-switching
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 partOf:
   - urn:ngm:class:osi-model
 relatedTo:

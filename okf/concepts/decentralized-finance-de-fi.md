@@ -15,7 +15,7 @@ is-a:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:cryptographic-protocols
 hasPart:
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:flash-loan
   - urn:ngm:class:lending-protocol
   - urn:ngm:class:liquidity-mining
@@ -35,7 +35,7 @@ requires:
   - urn:ngm:class:cryptographic-oracle
   - urn:ngm:class:gas-fee
   - urn:ngm:class:liquidity-provider
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:public-blockchain
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:gas-fee
@@ -48,7 +48,7 @@ enables:
   - urn:ngm:class:trustless-trading
   - urn:ngm:class:yield-optimisation
 dependsOn:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:layer-2-networks
   - urn:ngm:class:blockchain-oracle
   - urn:ngm:class:cryptographic-proofs
@@ -85,12 +85,12 @@ supports:
   - urn:ngm:class:blockchain-as-a-service
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:carbon-credit-tracking
-  - urn:ngm:class:cbdcs
+  - urn:ngm:class:central-bank-digital-currency
 standardizedBy:
   - urn:ngm:class:eip-1559
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
   - urn:ngm:class:fatf-guidance-on-virtual-assets
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:iosco-defi-report-2023
 relatedTo:
   - urn:ngm:class:asset-registry

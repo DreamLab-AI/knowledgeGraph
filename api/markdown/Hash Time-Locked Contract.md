@@ -57,7 +57,7 @@ A Hash Time-Locked Contract (HTLC) is a type of smart contract that conditionall
 
 - **Lightning Network payment routing** — HTLCs are the primary mechanism by which [[Bitcoin]] payments are routed across multi-hop payment channels in the Lightning Network, enabling near-instant [[Micropayments]] with minimal on-chain footprint.
 - **Cross-chain atomic swaps** — Trustless, non-custodial exchange of assets between independent blockchains (e.g. Bitcoin↔Litecoin, Bitcoin↔Ethereum) without requiring a centralised exchange. Demonstrated in practice as early as 2017 between Bitcoin and Litecoin.
-- **Decentralised exchanges (DEX)** — HTLCs underpin order-matching protocols that allow trustless peer-to-peer trading of cryptocurrencies, contributing to the [[DeFi]] ecosystem.
+- **Decentralised exchanges (DEX)** — HTLCs underpin order-matching protocols that allow trustless peer-to-peer trading of cryptocurrencies, contributing to the [[Decentralised Finance]] ecosystem.
 - **Submarine swaps** — A technique using HTLCs to move funds between on-chain Bitcoin and Lightning Network balances without custodial intermediaries, enabling channel rebalancing and on-chain-to-Lightning conversions.
 - **Watchtower services** — Third-party services that monitor the blockchain on behalf of offline Lightning Network participants to ensure HTLC timelocks are enforced correctly, compensating for the monitoring requirement.
 - **Payment channel networks beyond Bitcoin** — The HTLC pattern has been adapted for [[Ethereum]], [[Stellar]], [[Ripple]] (ILP), and other programmable ledgers, enabling multi-hop routing across heterogeneous networks.

@@ -4,6 +4,7 @@ type: Class
 title: Polar Orbit
 resource: urn:ngm:class:polar-orbit
 domain: space-science-and-systems
+description: A polar orbit is an orbit whose plane passes close to both poles of the body being orbited; for an Earth-equatorial reference plane, an ideal polar orbit has an inclination of 90°.[^nasa-orbits][^esa-orbit-types]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Polar Orbit
+
+A polar orbit is an orbit whose plane passes close to both poles of the body being orbited; for an Earth-equatorial reference plane, an ideal polar orbit has an inclination of 90°.[^nasa-orbits][^esa-orbit-types]

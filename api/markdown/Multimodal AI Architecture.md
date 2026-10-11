@@ -20,7 +20,7 @@ Multimodal AI refers to artificial intelligence systems that process, fuse, and 
 - Gemini is a multimodal LLM capable of inputting and outputting text, understanding images, and generating images.
 - While specific architecture details are scarce, it represents a leap in LLMs interacting with multiple data types.
 - **Introduction:**
-  - [[Large Language Models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
+  - [[Large Language Model]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
   - Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
 - **Core Concepts:**
   - **LLMs for Text:**
@@ -59,7 +59,7 @@ F -->|Decoded| G[Output Image & Text]
 ### Multi-Modal Large Language Models (LLMs)
 
 - Some random links
-- Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+- Apple Ferret is a [[Multimodal]] [[Large Language Model]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
 - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
 - [moondream
   - a tiny vision language model](https://moondream.ai/)

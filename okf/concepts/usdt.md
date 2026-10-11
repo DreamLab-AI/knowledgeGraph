@@ -10,12 +10,12 @@ quality: 0.72
 is-a:
   - urn:ngm:class:stablecoin
 requires:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:custody-infrastructure
   - urn:ngm:class:tether
 enables:
   - urn:ngm:class:cross-border-payments
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:crypto-trading
 dependsOn:
   - urn:ngm:class:blockchain
@@ -23,7 +23,7 @@ dependsOn:
 contrastsWith:
   - urn:ngm:class:usdc
   - urn:ngm:class:dai
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
   - urn:ngm:class:payment-system
   - urn:ngm:class:finance
@@ -32,10 +32,10 @@ uses:
   - urn:ngm:class:ethereum
   - urn:ngm:class:tron-blockchain
   - urn:ngm:class:solana
-  - urn:ngm:class:erc-20-token-standard
+  - urn:ngm:class:erc-20
 partOf:
   - urn:ngm:class:stablecoin
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 relatedTo:
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:automated-market-maker

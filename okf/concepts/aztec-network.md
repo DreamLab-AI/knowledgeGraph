@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:aztec
 requires:
   - urn:ngm:class:aztec-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
 enables:
   - urn:ngm:class:privacy
 bridgesTo:

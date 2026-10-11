@@ -16,7 +16,7 @@ requires:
   - urn:ngm:class:automated-market-maker
   - urn:ngm:class:on-chain-data
 enables:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 dependsOn:
   - urn:ngm:class:on-chain-data
 contrastsWith:
@@ -29,7 +29,7 @@ uses:
   - urn:ngm:class:liquidity-pool
   - urn:ngm:class:smart-contract
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:dex
 partOf:
   - urn:ngm:class:price-oracle

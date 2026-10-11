@@ -29,7 +29,7 @@ dependsOn:
   - urn:ngm:class:system-on-chip
   - urn:ngm:class:simultaneous-localisation-and-mapping
 implements:
-  - urn:ngm:class:openxr-standard
+  - urn:ngm:class:open-xr
 contrastsWith:
   - urn:ngm:class:holographic-display
 bridgesTo:

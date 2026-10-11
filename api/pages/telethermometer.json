@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telethermometer",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A telethermometer is a class of thermometer in the SWEET instrument ontology.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:thermometer",

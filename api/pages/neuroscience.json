@@ -46,7 +46,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
@@ -186,7 +186,7 @@
       },
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
-        "label": "Intelligent Tutoring Systems"
+        "label": "Intelligent Tutoring System"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -269,8 +269,8 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
@@ -317,7 +317,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

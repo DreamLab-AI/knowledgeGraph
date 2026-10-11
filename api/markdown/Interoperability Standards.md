@@ -10,8 +10,8 @@ Interoperability standards are formally agreed specifications — including data
   - Application protocol layer ([[Communication Protocols]] such as HTTP, MQTT, gRPC)
   - Data format layer ([[Data Exchange]] formats: JSON, XML, Protobuf, CBOR)
   - Semantic layer ([[Ontology]], [[Semantic Web]], RDF, OWL, JSON-LD)
-  - Identity and authorisation layer ([[Digital Identity]], OAuth 2.0, [[Verifiable Credentials]])
-- **Lifecycle**: Standards pass through proposal, working-draft, public-review, ratification, and maintenance phases. Bodies such as [[IETF]], [[W3C]], [[ISO]], and [[IEEE]] manage these processes. Successful standards attract reference implementations that accelerate adoption.
+  - Identity and authorisation layer ([[Digital Identity]], OAuth 2.0, [[Verifiable Credential]])
+- **Lifecycle**: Standards pass through proposal, working-draft, public-review, ratification, and maintenance phases. Bodies such as [[IETF]], [[World Wide Web Consortium]], [[ISO]], and [[IEEE]] manage these processes. Successful standards attract reference implementations that accelerate adoption.
 
 ### Key Components
 
@@ -36,7 +36,7 @@ Interoperability standards are formally agreed specifications — including data
 - **Web and Internet** — HTTP, TLS, HTML, and DNS standards underpin the entire public web. Without them, every website would require a unique client. See [[Network Protocols]].
 - **Healthcare** — [[HL7 FHIR]] enables hospitals, insurers, and patient apps to exchange clinical records without custom ETL pipelines. ISO 13606 standardises the Electronic Health Record.
 - **Financial Services** — ISO 20022 defines a common message model for global payments and securities clearing, enabling [[Data Exchange]] across hundreds of banks and central banks.
-- **Decentralised Identity** — W3C Decentralised Identifiers (DID) and Verifiable Credentials (VC) allow [[Digital Identity]] assertions to be issued by one party and verified by any other without a central registry. See [[Verifiable Credentials]].
+- **Decentralised Identity** — W3C Decentralised Identifiers (DID) and Verifiable Credentials (VC) allow [[Digital Identity]] assertions to be issued by one party and verified by any other without a central registry. See [[Verifiable Credential]].
 - **Cross-Chain Blockchain** — [[Cross-Chain Communication]] standards such as IBC (Inter-Blockchain Communication Protocol) and CCIP allow [[Blockchain]] networks to exchange assets and messages, removing the need for centralised bridges.
 - **AI Systems** — Emerging standards such as the W3C MCP (Model Context Protocol) and ONNX define how [[AI Model Interoperability|AI models]] and agents exchange context and model artefacts. See [[AI Model Interoperability]].
 - **Spatial Computing and XR** — OpenXR (Khronos Group) standardises interfaces between XR runtimes and [[Spatial Computing]] applications, ensuring headset portability. glTF standardises 3D asset exchange.
@@ -47,7 +47,7 @@ Interoperability standards are formally agreed specifications — including data
 ### Standards Bodies and Key Specifications
 
 - **[[IETF]]** (Internet Engineering Task Force) — produces RFCs: HTTP/1.1–3, TLS, OAuth 2.0, CBOR, CoAP, QUIC.
-- **[[W3C]]** (World Wide Web Consortium) — HTML, CSS, RDF, OWL, SPARQL, JSON-LD, DID, Verifiable Credentials, WebXR, WASM.
+- **[[World Wide Web Consortium]]** (World Wide Web Consortium) — HTML, CSS, RDF, OWL, SPARQL, JSON-LD, DID, Verifiable Credentials, WebXR, WASM.
 - **[[ISO]]** — ISO 8601 (datetime), ISO 20022 (financial messaging), ISO 27001 (information security management), ISO 13606 (EHR).
 - **[[IEEE]]** — IEEE 802 (Ethernet/Wi-Fi/Bluetooth), IEEE 1588 (Precision Time Protocol), IEEE 2413 (IoT architecture).
 - **Khronos Group** — OpenGL, Vulkan, OpenXR, glTF, NNEF; key for [[Spatial Computing]] and graphics interoperability.

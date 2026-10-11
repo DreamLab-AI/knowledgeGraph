@@ -13,7 +13,7 @@ is-a:
 requires:
   - urn:ngm:class:api-integration
   - urn:ngm:class:interoperability-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:interoperability-standards
 enables:
   - urn:ngm:class:collaborative-systems-modality-simulation

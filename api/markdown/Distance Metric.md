@@ -325,7 +325,7 @@ A production distance metric system comprises several interconnected layers, eac
 
   **Guidance distances in diffusion sampling:** Classifier-free guidance in diffusion models modifies the score function during denoising by interpolating between conditional and unconditional score estimates: s_guided = s_unconditional + w × (s_conditional - s_unconditional). This interpolation is effectively a metric operation in score space; the guidance weight w controls the trade-off between image quality (strong guidance → low diversity but high FID on held-out sets) and prompt adherence. DDPM-based [[Nearest Neighbor Search]] for nearest-neighbour image generation (kNN diffusion, Blattmann et al. 2022) uses CLIP distance to retrieve training images similar to a text prompt and conditions generation on these retrieved neighbours, combining metric retrieval with generative modelling.
 
-  **Reward model distances:** Reinforcement learning from human feedback for [[Large Language Models]] (RLHF) trains a reward model that assigns scalar rewards to model outputs based on their quality relative to human preferences. The reward model's output can be viewed as a learned quasi-distance from the generated text to the distribution of human-preferred outputs; policy gradient updates move the policy toward lower effective reward-distance. Direct Preference Optimisation (DPO, Rafailov et al. 2023) bypasses explicit reward models by directly optimising a classification objective on preferred vs. rejected pairs, implicitly learning a metric on the space of language model outputs.
+  **Reward model distances:** Reinforcement learning from human feedback for [[Large Language Model]] (RLHF) trains a reward model that assigns scalar rewards to model outputs based on their quality relative to human preferences. The reward model's output can be viewed as a learned quasi-distance from the generated text to the distribution of human-preferred outputs; policy gradient updates move the policy toward lower effective reward-distance. Direct Preference Optimisation (DPO, Rafailov et al. 2023) bypasses explicit reward models by directly optimising a classification objective on preferred vs. rejected pairs, implicitly learning a metric on the space of language model outputs.
 
   ## Distance Metrics in Robotics and Spatial Computing
 
@@ -467,7 +467,7 @@ The following pages in this knowledge graph are directly related to Distance Met
 - [[Knowledge Graph Embedding]] — applies distance metrics (TransE L1/L2, RotatE cosine) to score knowledge base triple plausibility; metric choice encodes structural assumptions about the knowledge graph
 - [[Machine Learning]] — the broad discipline within which distance metrics are foundational; metric-based methods span supervised, unsupervised, and semi-supervised learning
 - [[Dimensionality Reduction]] — preprocessing step that applies before distance computation to alleviate the curse of dimensionality; PCA, UMAP, and t-SNE are common precursors
-- [[Retrieval-Augmented Generation]] — production AI application where distance metric (cosine over dense embeddings) determines retrieved context quality for [[Large Language Models]]
+- [[Retrieval-Augmented Generation]] — production AI application where distance metric (cosine over dense embeddings) determines retrieved context quality for [[Large Language Model]]
 
 ### Provenance
 

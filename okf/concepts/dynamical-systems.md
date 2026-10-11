@@ -71,7 +71,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:control-theory
   - urn:ngm:class:signal-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:optimisation
   - urn:ngm:class:stochastic-processes
   - urn:ngm:class:computational-complexity-theory

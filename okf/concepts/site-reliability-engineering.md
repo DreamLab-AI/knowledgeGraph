@@ -30,7 +30,7 @@ contrastsWith:
   - urn:ngm:class:itil
 bridgesTo:
   - urn:ngm:class:aiops
-  - urn:ngm:class:machine-learning-operations
+  - urn:ngm:class:mlops
 uses:
   - urn:ngm:class:infrastructure-as-code
   - urn:ngm:class:continuous-deployment

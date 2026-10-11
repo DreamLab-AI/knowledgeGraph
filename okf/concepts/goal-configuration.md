@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robo-navigation-and-planning
 relatedTo:
   - urn:ngm:class:path-planning
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
 ---
 
 # Goal Configuration

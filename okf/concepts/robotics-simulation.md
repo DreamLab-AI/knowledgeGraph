@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:robotics
   - urn:ngm:class:simulation
 relatedTo:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:procedural-and-hybrid-4-d
 ---
 

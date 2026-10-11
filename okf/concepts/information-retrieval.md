@@ -16,7 +16,7 @@ hasPart:
 requires:
   - urn:ngm:class:tokenization
   - urn:ngm:class:text-representation
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 enables:
   - urn:ngm:class:retrieval-augmented-generation
   - urn:ngm:class:search-engine
@@ -41,7 +41,7 @@ uses:
 partOf:
   - urn:ngm:class:natural-language-processing
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:large-language-model
   - urn:ngm:class:nearest-neighbor-search
   - urn:ngm:class:nearest-neighbor-search

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-applications",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Earth observation applications are uses of Earth observation data to inform decisions and evidence needs in fields such as agriculture, disasters, water, wildfires, conservation and health.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

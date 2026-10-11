@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interplanetary-space-radiation-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Interplanetary space radiation environment is the natural radiation environment of a region of interplanetary space.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-radiation-environment",

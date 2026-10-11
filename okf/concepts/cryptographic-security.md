@@ -17,7 +17,7 @@ hasPart:
   - urn:ngm:class:key-management
   - urn:ngm:class:message-authentication-code
 requires:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:random-number-generation
   - urn:ngm:class:hardware-security-module
 enables:
@@ -35,7 +35,7 @@ supports:
   - urn:ngm:class:blockchain
   - urn:ngm:class:privacy-framework
   - urn:ngm:class:decentralised-application
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
 standardizedBy:
   - urn:ngm:class:nist
   - urn:ngm:class:ietf

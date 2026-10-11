@@ -9,33 +9,46 @@ maturity: emerging
 quality: 0.62
 is-a:
   - urn:ngm:class:authentication-protocol
+  - urn:ngm:class:authentication
 requires:
   - urn:ngm:class:did-document
   - urn:ngm:class:trust-anchor
+  - urn:ngm:class:cryptography
+  - urn:ngm:class:verifiable-credentials
 enables:
   - urn:ngm:class:self-sovereign-identity-ssi
   - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:self-sovereign-identity
+  - urn:ngm:class:decentralised-identity
 dependsOn:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
 implements:
   - urn:ngm:class:authentication-protocol
 contrastsWith:
   - urn:ngm:class:centralised-identity
   - urn:ngm:class:user-authentication
+  - urn:ngm:class:single-sign-on
+  - urn:ngm:class:oauth
 bridgesTo:
   - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:zero-knowledge-proof
 uses:
-  - urn:ngm:class:did
+  - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:did-method
+  - urn:ngm:class:public-key-cryptography
+  - urn:ngm:class:digital-signature
 supports:
   - urn:ngm:class:multi-factor-authentication
   - urn:ngm:class:web-authn
 partOf:
   - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:authentication
 relatedTo:
   - urn:ngm:class:blockchain-identity
   - urn:ngm:class:oauth-2-0
+  - urn:ngm:class:identity-provider
+  - urn:ngm:class:digital-identity
 ---
 
 # Decentralised Authentication

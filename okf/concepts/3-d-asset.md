@@ -32,13 +32,13 @@ bridgesTo:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:non-fungible-token
 uses:
-  - urn:ngm:class:gltf-standard
-  - urn:ngm:class:usd
+  - urn:ngm:class:gl-tf
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:digital-asset-management
   - urn:ngm:class:texture-compression
 standardizedBy:
   - urn:ngm:class:khronos-group
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:academy-software-foundation
 relatedTo:
   - urn:ngm:class:scene-graph

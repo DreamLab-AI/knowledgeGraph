@@ -28,7 +28,7 @@ standardizedBy:
   - urn:ngm:class:iso
 relatedTo:
   - urn:ngm:class:css
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:api
 ---
 

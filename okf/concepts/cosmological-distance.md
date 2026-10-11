@@ -4,6 +4,7 @@ type: Class
 title: Cosmological Distance
 resource: urn:ngm:class:cosmological-distance
 domain: space-science-and-systems
+description: Cosmological distance is the distance to far-off galaxies and other extragalactic sources, which astronomers infer from calibrated measurements such as the period and brightness of Cepheid stars and the redshift of galaxy light.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Cosmological Distance
+
+Cosmological distance is the distance to far-off galaxies and other extragalactic sources, which astronomers infer from calibrated measurements such as the period and brightness of Cepheid stars and the redshift of galaxy light.[^1]

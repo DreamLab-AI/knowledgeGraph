@@ -20,10 +20,10 @@ dependsOn:
   - urn:ngm:class:price-discovery
 uses:
   - urn:ngm:class:flash-loan
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:dex
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:digital-asset-trading
 relatedTo:
   - urn:ngm:class:mev

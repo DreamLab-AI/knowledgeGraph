@@ -8,7 +8,7 @@ description: The Curve Wars refers to the competitive dynamic among decentralise
 maturity: established
 quality: 0.74
 is-a:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 hasPart:
   - urn:ngm:class:gauge-voting
   - urn:ngm:class:gauge-voting

@@ -9,7 +9,7 @@ maturity: draft
 quality: 0.72
 is-a:
   - urn:ngm:class:ai-model-architecture
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
 hasPart:
   - urn:ngm:class:neural-network

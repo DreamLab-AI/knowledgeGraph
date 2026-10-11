@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geometric-dilution-of-precision",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Geometric Dilution of Precision (GDOP) is the conventional combined position-and-receiver-clock geometry factor for a basic three-dimensional pseudorange solution.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dilution-of-precision",

@@ -8,7 +8,7 @@ description: Scientific machine learning is the discipline that fuses data-drive
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:scientific-discovery
 hasPart:
   - urn:ngm:class:neural-network
@@ -28,9 +28,9 @@ supports:
   - urn:ngm:class:scientific-computing
   - urn:ngm:class:differential-equations
 partOf:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:neural-network
 ---
 

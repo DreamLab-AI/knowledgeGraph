@@ -21,9 +21,9 @@ implements:
   - urn:ngm:class:financial-regulation
 contrastsWith:
   - urn:ngm:class:sec
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-asset-custody
   - urn:ngm:class:stablecoin
@@ -40,7 +40,7 @@ partOf:
   - urn:ngm:class:eu-digital-finance-strategy
 relatedTo:
   - urn:ngm:class:gdpr
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 ---
 
 # EU MiCA Regulation

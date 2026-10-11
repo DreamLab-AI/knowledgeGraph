@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dynamic-range",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Dynamic range is the span of signal levels over which an Earth observation sensor can record useful measurements, from the faintest distinguishable signal to the brightest it can represent.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

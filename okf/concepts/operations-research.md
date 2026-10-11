@@ -25,7 +25,7 @@ enables:
 contrastsWith:
   - urn:ngm:class:heuristic-methods
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:supply-chain
   - urn:ngm:class:artificial-intelligence
 uses:

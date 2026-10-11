@@ -20,7 +20,7 @@ requires:
   - urn:ngm:class:stakeholder-participation
 enables:
   - urn:ngm:class:decentralised-decision-making
-  - urn:ngm:class:protocol-upgrades
+  - urn:ngm:class:protocol-upgrade
   - urn:ngm:class:community-coordination
 dependsOn:
   - urn:ngm:class:blockchain

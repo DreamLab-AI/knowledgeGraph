@@ -12,7 +12,7 @@ Greenwashing is the practice of making misleading, exaggerated, or unsubstantiat
 ### Key Mechanisms
 
 - **Vague and Unqualified Claims** — broad environmental descriptors ('sustainable', 'eco-friendly', 'green', 'clean') applied without evidential basis or qualification, exploiting the absence of standardised definitions.
-- **Hidden Trade-offs** — emphasising one environmental attribute (e.g., recyclable packaging) while omitting larger harms in manufacturing, transport, or end-of-life phases; requires [[Lifecycle Assessment]] to detect.
+- **Hidden Trade-offs** — emphasising one environmental attribute (e.g., recyclable packaging) while omitting larger harms in manufacturing, transport, or end-of-life phases; requires [[Life Cycle Assessment]] to detect.
 - **False or Misleading Certifications** — use of invented or misrepresented ecolabels and self-declared standards that consumers may mistake for [[Third-Party Certification]] by credible bodies (e.g., ISO [[ISO 14021]], FSC, EU Ecolabel).
 - **Selective Disclosure** — reporting only favourable environmental metrics in [[Sustainability Reporting]] documents while omitting scope 3 emissions, biodiversity impacts, or supply chain harms; contrastsWith [[Environmental Disclosure]] best practice.
 - **Irrelevance** — truthful but immaterial claims, such as marketing a product as 'CFC-free' when CFCs have been globally banned and no product in the category uses them.

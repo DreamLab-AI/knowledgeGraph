@@ -30,7 +30,7 @@ uses:
   - urn:ngm:class:pid-controller
   - urn:ngm:class:linear-quadratic-regulator
 relatedTo:
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
   - urn:ngm:class:path-planning
   - urn:ngm:class:whole-body-control
   - urn:ngm:class:robust-control

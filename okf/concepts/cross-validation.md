@@ -25,7 +25,7 @@ requires:
   - urn:ngm:class:labelled-dataset
   - urn:ngm:class:resampling
   - urn:ngm:class:performance-metrics
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:performance-metrics
   - urn:ngm:class:loss-function
 enables:
@@ -46,7 +46,7 @@ implements:
   - urn:ngm:class:statistical-inference
   - urn:ngm:class:resampling
 contrastsWith:
-  - urn:ngm:class:annotated-training-data
+  - urn:ngm:class:annotated-dataset
   - urn:ngm:class:holdout-validation
   - urn:ngm:class:benign-overfitting
 bridgesTo:

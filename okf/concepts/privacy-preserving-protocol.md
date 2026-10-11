@@ -12,7 +12,7 @@ is-a:
 enables:
   - urn:ngm:class:secure-communication
 contrastsWith:
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 uses:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:pedersen-commitment

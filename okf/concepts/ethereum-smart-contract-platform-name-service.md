@@ -20,15 +20,15 @@ enables:
   - urn:ngm:class:human-readable-address
 implements:
   - urn:ngm:class:erc-137
-  - urn:ngm:class:erc-721-standard
+  - urn:ngm:class:erc-721
 contrastsWith:
   - urn:ngm:class:domain-name-system
   - urn:ngm:class:unstoppable-domains
   - urn:ngm:class:handshake-protocol
 bridgesTo:
   - urn:ngm:class:self-sovereign-identity
-  - urn:ngm:class:verifiable-credential-vc
-  - urn:ngm:class:verifiable-credential-vc
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:verifiable-credentials
 uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:namehash-algorithm
@@ -39,7 +39,7 @@ relatedTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:ipfs
   - urn:ngm:class:decentralised-identifier
-  - urn:ngm:class:eip
+  - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:reverse-resolution
 ---
 

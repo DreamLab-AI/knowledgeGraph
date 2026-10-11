@@ -4,6 +4,7 @@ type: Class
 title: Subsurface Ocean
 resource: urn:ngm:class:subsurface-ocean
 domain: space-science-and-systems
+description: A subsurface ocean is a body of liquid water beneath the solid surface of a planetary body, most often beneath an ice shell on an icy moon.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Subsurface Ocean
+
+A subsurface ocean is a body of liquid water beneath the solid surface of a planetary body, most often beneath an ice shell on an icy moon.[^1]

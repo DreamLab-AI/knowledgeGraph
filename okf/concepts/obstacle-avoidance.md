@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:collision-free-motion
 dependsOn:
   - urn:ngm:class:path-planning
-  - urn:ngm:class:rb-1007-trajectory-generation
+  - urn:ngm:class:trajectory-generation
 contrastsWith:
   - urn:ngm:class:planning
 bridgesTo:

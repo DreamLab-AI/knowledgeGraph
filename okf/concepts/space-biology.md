@@ -4,6 +4,7 @@ type: Class
 title: Space Biology
 resource: urn:ngm:class:space-biology
 domain: space-science-and-systems
+description: Space biology is research into how spaceflight affects living systems, whether in spacecraft such as the International Space Station or in ground-based experiments that mimic aspects of spaceflight.[^1]
 maturity: draft
 quality: 0
 relatedTo:
@@ -11,3 +12,5 @@ relatedTo:
 ---
 
 # Space Biology
+
+Space biology is research into how spaceflight affects living systems, whether in spacecraft such as the International Space Station or in ground-based experiments that mimic aspects of spaceflight.[^1]

@@ -10,7 +10,7 @@ A software or hardware interface that stores cryptographic private keys and enab
 
   ### Hot Wallets vs Cold Wallets
 
-- **[[Hot Wallets]]** are internet-connected wallets providing convenient access for daily [[transactions]]. They include [[software wallets]], [[mobile wallets]], [[web wallets]], and [[browser extensions]]. Popular examples include [[MetaMask]] (100M+ users), [[Phantom]], [[Trust Wallet]], and [[Exodus]]. Hot wallets prioritize accessibility and user experience, making them ideal for active trading and [[DeFi]] interactions.
+- **[[Hot Wallets]]** are internet-connected wallets providing convenient access for daily [[transactions]]. They include [[software wallets]], [[mobile wallets]], [[web wallets]], and [[browser extensions]]. Popular examples include [[MetaMask]] (100M+ users), [[Phantom]], [[Trust Wallet]], and [[Exodus]]. Hot wallets prioritize accessibility and user experience, making them ideal for active trading and [[Decentralised Finance]] interactions.
 - **[[Cold Wallets]]** are offline storage solutions providing maximum [[security]] for long-term holdings. Types include [[hardware wallets]], [[paper wallets]], and [[air-gapped]] computers. Leading hardware wallets include [[Ledger]] (5M+ users), [[Trezor]], [[Coldcard]], and [[BitBox02]]. Cold storage is essential for securing large amounts of [[cryptocurrency]] against online threats.
 - The security-convenience tradeoff means users typically maintain both hot wallets for daily use and cold wallets for savings, following the "[[cold storage]]" principle for majority holdings.
 
@@ -56,11 +56,11 @@ A software or hardware interface that stores cryptographic private keys and enab
 
   ### Multi-Chain & DeFi Wallets
 
-- **[[MetaMask]]** dominates [[Ethereum Smart Contract Platform]] ecosystem with 100M+ users. Browser extension and mobile app support [[EVM-compatible]] chains, [[token]] management, [[NFTs]], and [[DApp]] browsing. [[MetaMask Snaps]] enable extensibility and [[Bitcoin Proof-of-Work Protocol]] integration.
-- **[[Phantom]]** leads on [[Solana]] with clean interface, [[NFT]] gallery, and integrated [[token swaps]]. Expanding to [[Ethereum Smart Contract Platform]], [[Polygon]], and [[Bitcoin Proof-of-Work Protocol]] support in 2025.
+- **[[MetaMask]]** dominates [[Ethereum]] ecosystem with 100M+ users. Browser extension and mobile app support [[EVM-compatible]] chains, [[token]] management, [[NFTs]], and [[DApp]] browsing. [[MetaMask Snaps]] enable extensibility and [[Bitcoin Proof-of-Work Protocol]] integration.
+- **[[Phantom]]** leads on [[Solana]] with clean interface, [[NFT]] gallery, and integrated [[token swaps]]. Expanding to [[Ethereum]], [[Polygon]], and [[Bitcoin Proof-of-Work Protocol]] support in 2025.
 - **[[Exodus]]** provides beautiful desktop and mobile wallet supporting 260+ assets. Built-in [[exchange]] integration and [[staking]] for multiple chains. Focus on user experience for crypto beginners.
 - **[[Trust Wallet]]** by [[Binance]] offers mobile-first experience with [[DApp browser]], [[staking]], and support for 70+ blockchains. Open source with [[WalletConnect]] integration.
-- **[[Rainbow Wallet]]** (Ethereum) features innovative [[ENS]]-first design and beautiful [[NFT]] showcase. Mobile-focused with emphasis on [[DeFi]] accessibility.
+- **[[Rainbow Wallet]]** (Ethereum) features innovative [[ENS]]-first design and beautiful [[NFT]] showcase. Mobile-focused with emphasis on [[Decentralised Finance]] accessibility.
 
   ## Key Management Standards
 
@@ -81,7 +81,7 @@ A software or hardware interface that stores cryptographic private keys and enab
 - Nested SegWit (P2SH-P2WPKH): `m/49'/0'/0'/0/0`
 - Native SegWit (P2WPKH): `m/84'/0'/0'/0/0`
 - Taproot (P2TR): `m/86'/0'/0'/0/0`
-- [[Coin type]] index (second level) identifies [[cryptocurrency]]: 0 for [[Bitcoin Proof-of-Work Protocol]], 1 for testnet, 60 for [[Ethereum Smart Contract Platform]], 2301 for [[Litecoin]].
+- [[Coin type]] index (second level) identifies [[cryptocurrency]]: 0 for [[Bitcoin Proof-of-Work Protocol]], 1 for testnet, 60 for [[Ethereum]], 2301 for [[Litecoin]].
 - [[Account]] index enables multiple wallets from same seed, [[change]] index separates receiving (0) from change (1) addresses, [[address index]] generates sequential addresses.
 
   ### Seed Phrase Security
@@ -127,7 +127,7 @@ A software or hardware interface that stores cryptographic private keys and enab
   ### RGB Protocol Integration
 
 - **[[RGB]]** is [[Bitcoin Proof-of-Work Protocol]] [[Layer 2]] protocol for [[smart contracts]] and asset issuance, using [[client-side validation]]. [[RGB-compatible wallets]] emerging in 2025 include specialized builds of [[Electrum]] and new [[mobile wallets]].
-- [[RGB]] enables [[NFTs]], [[stablecoins]], and [[DeFi]] on Bitcoin without blockchain bloat. [[RGB-20]] standard for fungible tokens, [[RGB-21]] for NFTs.
+- [[RGB]] enables [[NFTs]], [[stablecoins]], and [[Decentralised Finance]] on Bitcoin without blockchain bloat. [[RGB-20]] standard for fungible tokens, [[RGB-21]] for NFTs.
 - Integration requires [[Lightning Network]] support as RGB transfers happen through Lightning channels. Watch for [[RGB-enabled Lightning wallets]] in 2025-2026.
 
   ### Privacy-Focused Wallets
@@ -174,9 +174,9 @@ A software or hardware interface that stores cryptographic private keys and enab
 
   ### Wallet Interoperability
 
-- **[[WalletConnect]]** protocol enables mobile wallets to connect with [[DApps]] via [[QR code]] scanning. Supports [[Ethereum Smart Contract Platform]], [[Polygon]], [[BSC]], and 100+ chains.
+- **[[WalletConnect]]** protocol enables mobile wallets to connect with [[DApps]] via [[QR code]] scanning. Supports [[Ethereum]], [[Polygon]], [[BSC]], and 100+ chains.
 - **[[Web3 Modal]]** provides unified wallet connection interface for [[DApps]], supporting [[MetaMask]], [[WalletConnect]], [[Coinbase Wallet]], and others.
-- **[[Account Abstraction]]** ([[EIP-4337]]) introduces [[smart contract wallets]] on [[Ethereum Smart Contract Platform]], enabling [[social recovery]], [[gasless transactions]], and [[transaction batching]].
+- **[[Account Abstraction]]** ([[EIP-4337]]) introduces [[smart contract wallets]] on [[Ethereum]], enabling [[social recovery]], [[gasless transactions]], and [[transaction batching]].
 - **[[Lightning Address]]** creates email-style payment addresses for [[Lightning Network]] (user@domain.com), simplifying Lightning payments without invoices.
 
   ### Emerging Technologies

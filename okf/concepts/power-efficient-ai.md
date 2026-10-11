@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:ai-technique
 requires:
   - urn:ngm:class:edge-computing
-  - urn:ngm:class:embedded-systems
+  - urn:ngm:class:embedded-system
 enables:
   - urn:ngm:class:edge-ai-system
   - urn:ngm:class:embedded-ai-frameworks

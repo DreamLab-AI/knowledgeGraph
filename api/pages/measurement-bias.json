@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-bias",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Measurement bias is an estimate of a systematic measurement error.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

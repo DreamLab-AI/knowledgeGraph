@@ -19,11 +19,11 @@ enables:
   - urn:ngm:class:remote-access
   - urn:ngm:class:privacy
 contrastsWith:
-  - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:zero-trust
 uses:
   - urn:ngm:class:encryption
   - urn:ngm:class:ipsec
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:authentication
 supports:
   - urn:ngm:class:security

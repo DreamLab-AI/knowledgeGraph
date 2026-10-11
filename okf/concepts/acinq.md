@@ -28,7 +28,7 @@ contrastsWith:
   - urn:ngm:class:lnd
   - urn:ngm:class:core-lightning
 bridgesTo:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:peer-to-peer-network
 uses:
   - urn:ngm:class:htlc
@@ -44,7 +44,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2
   - urn:ngm:class:channel-liquidity
-  - urn:ngm:class:bolt12-offers
+  - urn:ngm:class:bolt-12
   - urn:ngm:class:routing-node
   - urn:ngm:class:bolt-12
 ---

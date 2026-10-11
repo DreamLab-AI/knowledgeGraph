@@ -9,7 +9,6 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:bayesian-inference
 hasPart:
   - urn:ngm:class:variational-inference
   - urn:ngm:class:markov-chain-monte-carlo

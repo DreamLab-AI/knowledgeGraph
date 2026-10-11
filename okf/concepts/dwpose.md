@@ -51,12 +51,12 @@ uses:
   - urn:ngm:class:onnx
   - urn:ngm:class:mmpose
   - urn:ngm:class:coco-wholebody
-  - urn:ngm:class:stable-diffusion-image-model
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:diffusion-transformer
   - urn:ngm:class:hugging-face-hub
 supports:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:animatediff
   - urn:ngm:class:animateanyone
   - urn:ngm:class:digital-human-technology

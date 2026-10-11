@@ -20,7 +20,7 @@ Knowledge Representation in AI involves the formal encoding of information about
 
 - [[Knowledge Graph]]
 - [[Ontology]]
-- [[Semantic Web Linked Data Standard]]
+- [[Semantic Web]]
 - [[Reasoning Systems]]
 
   #### References

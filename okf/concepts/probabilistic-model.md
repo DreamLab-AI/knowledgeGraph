@@ -9,11 +9,9 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:ai-technique
-  - urn:ngm:class:neural-network
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:statistical-learning-theory
   - urn:ngm:class:bayesian-inference
-  - urn:ngm:class:uncertainty-quantification
   - urn:ngm:class:generative-model
 hasPart:
   - urn:ngm:class:acquisition-function
@@ -70,8 +68,8 @@ uses:
   - urn:ngm:class:hamiltonian-monte-carlo
   - urn:ngm:class:normalising-flows
   - urn:ngm:class:variational-autoencoders
-  - urn:ngm:class:monte-carlo-localization
-  - urn:ngm:class:vae
+  - urn:ngm:class:particle-filter
+  - urn:ngm:class:variational-autoencoder
 supports:
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:climate-modelling
@@ -96,6 +94,7 @@ relatedTo:
   - urn:ngm:class:normalising-flows
   - urn:ngm:class:causal-model
   - urn:ngm:class:score-based-diffusion
+  - urn:ngm:class:uncertainty-quantification
 ---
 
 # Probabilistic Model

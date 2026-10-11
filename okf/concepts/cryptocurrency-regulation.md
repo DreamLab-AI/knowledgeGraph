@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:financial-regulation
 hasPart:
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 dependsOn:
   - urn:ngm:class:cryptocurrency
 relatedTo:

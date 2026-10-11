@@ -14,9 +14,9 @@ hasPart:
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:homomorphic-encryption
   - urn:ngm:class:secure-multi-party-computation
-  - urn:ngm:class:tee
+  - urn:ngm:class:trusted-execution-environment
 requires:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cryptography
   - urn:ngm:class:data-governance
 enables:

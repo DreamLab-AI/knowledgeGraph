@@ -29,7 +29,7 @@ enables:
   - urn:ngm:class:access-control
   - urn:ngm:class:fraud-detection
   - urn:ngm:class:digital-identity-verification
-  - urn:ngm:class:kyc
+  - urn:ngm:class:know-your-customer
 contrastsWith:
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:self-supervised-learning
@@ -59,7 +59,7 @@ relatedTo:
   - urn:ngm:class:biometric-data
   - urn:ngm:class:transformer-architecture
   - urn:ngm:class:explainable-ai
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-protection
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:neural-network-architecture

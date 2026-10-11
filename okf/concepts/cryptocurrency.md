@@ -60,7 +60,7 @@ implements:
   - urn:ngm:class:cryptographic-ownership
   - urn:ngm:class:hard-money
 contrastsWith:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:money
   - urn:ngm:class:bank-deposit
   - urn:ngm:class:tokenised-deposit
@@ -76,7 +76,7 @@ uses:
   - urn:ngm:class:schnorr-signature
   - urn:ngm:class:sha-256
 supports:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin
@@ -85,22 +85,22 @@ supports:
   - urn:ngm:class:depin
 standardizedBy:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:fasb-asu-2023-08
   - urn:ngm:class:fatf-travel-rule
   - urn:ngm:class:iso-24165
-  - urn:ngm:class:bc-0482-eu-mica-regulation
+  - urn:ngm:class:mi-ca-regulation
   - urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:fca-cryptoasset-promotions-regime-ps23-6
   - urn:ngm:class:iso-24165
 relatedTo:
   - urn:ngm:class:centralised-exchange
-  - urn:ngm:class:decentralized-exchange
+  - urn:ngm:class:decentralised-exchange
   - urn:ngm:class:real-world-asset
   - urn:ngm:class:spot-bitcoin-etf
   - urn:ngm:class:bitcoin-proof-of-work-protocol
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:micro-strategy
   - urn:ngm:class:smart-contract
   - urn:ngm:class:stablecoin

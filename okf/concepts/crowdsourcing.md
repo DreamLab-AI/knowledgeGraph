@@ -17,7 +17,7 @@ requires:
   - urn:ngm:class:reputation-system
 enables:
   - urn:ngm:class:training
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 dependsOn:
   - urn:ngm:class:distributed-computing
 contrastsWith:

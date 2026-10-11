@@ -20,7 +20,7 @@ Regulatory frameworks are structured, hierarchical systems comprising primary le
 - **[[Enforcement Mechanisms]]** — the range of tools available to supervisors including warnings, fines, licence revocation, criminal prosecution, and civil remedies.
 - **[[Compliance Obligations]]** — internal processes, controls, and reporting duties that regulated entities must maintain to demonstrate adherence.
 - **[[Risk Assessment]]** — processes used by both regulators and regulated entities to identify, quantify, and prioritise regulatory risks.
-- **Regulatory sandboxes and innovation paths** — controlled environments allowing novel products or services to be tested under modified regulatory conditions; closely related to [[AI Governance]] and [[Fintech]].
+- **Regulatory sandboxes and innovation paths** — controlled environments allowing novel products or services to be tested under modified regulatory conditions; closely related to [[AI Governance]] and [[Financial Technology]].
 - **[[Audit]] and inspection regimes** — structured reviews of regulated entities' records, systems, and practices to verify compliance.
 - **Redress and appeals mechanisms** — rights of regulated entities and affected parties to challenge regulatory decisions before tribunals or courts.
 

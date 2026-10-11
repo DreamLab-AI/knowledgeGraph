@@ -20,10 +20,10 @@ requires:
 enables:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:cross-chain-interoperability
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:tokenization
   - urn:ngm:class:decentralised-application
-  - urn:ngm:class:neural-network-text-tokenisation
+  - urn:ngm:class:tokenization
 implements:
   - urn:ngm:class:byzantine-fault-tolerance
   - urn:ngm:class:avalanche-consensus
@@ -41,7 +41,7 @@ uses:
   - urn:ngm:class:proof-of-stake
   - urn:ngm:class:smart-contract
 relatedTo:
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:layer-1-blockchain
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:warp-messaging

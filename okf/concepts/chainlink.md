@@ -42,7 +42,7 @@ uses:
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:decentralized-computing
 supports:
-  - urn:ngm:class:de-fi-protocol
+  - urn:ngm:class:defi-protocol
   - urn:ngm:class:non-fungible-token
   - urn:ngm:class:tokenization
 partOf:
@@ -50,7 +50,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:blockchain-interoperability
   - urn:ngm:class:cross-chain-messaging
-  - urn:ngm:class:dao
+  - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralised-autonomous-organisation
 ---
 

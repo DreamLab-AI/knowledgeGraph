@@ -21,7 +21,7 @@ partOf:
   - urn:ngm:class:privacy-disclosure
 relatedTo:
   - urn:ngm:class:accountability
-  - urn:ngm:class:aiethics
+  - urn:ngm:class:ai-ethics
 ---
 
 # Transparency Notice

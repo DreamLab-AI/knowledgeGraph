@@ -25,7 +25,7 @@ uses:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:federated-identity
 supports:
-  - urn:ngm:class:decentralized-identity
+  - urn:ngm:class:decentralised-identity
 partOf:
   - urn:ngm:class:identity-management
 relatedTo:

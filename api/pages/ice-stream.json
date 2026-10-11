@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ice-stream",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An ice stream is a current of ice within an ice sheet or ice cap that flows faster than the surrounding ice.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

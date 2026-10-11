@@ -85,7 +85,7 @@ uses:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:computer-vision
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
 supports:
   - urn:ngm:class:climate-tech
   - urn:ngm:class:economic-growth
@@ -102,7 +102,7 @@ standardizedBy:
   - urn:ngm:class:iso-iec-42001-ai-management-system
   - urn:ngm:class:matter-protocol
   - urn:ngm:class:uk-ai-opportunities-action-plan
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:open-xr
   - urn:ngm:class:iso-iec-42001-ai-management-system
   - urn:ngm:class:matter-protocol

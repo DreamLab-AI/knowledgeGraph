@@ -1,6 +1,6 @@
 Non-volatile memory (NVM) is computer storage that retains its data after power is removed, in contrast to volatile memory such as DRAM and SRAM. It encompasses technologies including NAND and NOR flash, EEPROM, and emerging persistent-memory devices that combine byte-addressability with durability. NVM is fundamental to firmware storage, embedded systems, solid-state drives, and the bootstrapping of computing platforms.
 
-- Non-volatile memory (NVM) is a [[Hardware]] component that retains stored data when power is removed, distinguishing it from volatile [[Memory]] technologies such as [[SRAM]]. It is the durable substrate on which [[Firmware]] and boot images live, and underpins persistent storage in [[Embedded Systems]] across the computing stack.
+- Non-volatile memory (NVM) is a [[Hardware]] component that retains stored data when power is removed, distinguishing it from volatile [[Memory]] technologies such as [[SRAM]]. It is the durable substrate on which [[Firmware]] and boot images live, and underpins persistent storage in [[Embedded System]] across the computing stack.
 
 ### Overview
 
@@ -18,9 +18,9 @@ Non-volatile memory (NVM) is computer storage that retains its data after power 
 
 ### Applications
 
-- Firmware and bootloader storage in [[Microcontroller]] and [[Embedded Systems]] designs.
+- Firmware and bootloader storage in [[Microcontroller]] and [[Embedded System]] designs.
 - Solid-state drives and removable media for bulk persistent storage.
-- Configuration and calibration data retention in [[IoT]] sensors and devices.
+- Configuration and calibration data retention in [[Internet of Things]] sensors and devices.
 - Local caching and checkpointing for [[Edge Computing]] workloads.
 
 ### Provenance

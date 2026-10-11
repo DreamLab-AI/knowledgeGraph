@@ -8,7 +8,7 @@ description: The ONNX standard defines an open format for representing machine l
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:open-standard
 requires:
   - urn:ngm:class:onnx

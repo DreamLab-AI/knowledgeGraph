@@ -11,12 +11,12 @@ is-a:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:diffusion-models
 hasPart:
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
   - urn:ngm:class:denoising-score-matching
   - urn:ngm:class:noise-schedule
-  - urn:ngm:class:encoder-decoder-architecture
+  - urn:ngm:class:encoder-decoder
 requires:
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:u-net
   - urn:ngm:class:cross-attention
 enables:
@@ -44,7 +44,7 @@ partOf:
   - urn:ngm:class:diffusion-model
 relatedTo:
   - urn:ngm:class:generative-model
-  - urn:ngm:class:neural-network-latent-space
+  - urn:ngm:class:latent-space
   - urn:ngm:class:transformer
   - urn:ngm:class:foundation-model
   - urn:ngm:class:latent-space

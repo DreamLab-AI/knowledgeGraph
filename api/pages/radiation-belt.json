@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radiation-belt",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Two donut-shaped regions encircle Earth as the radiation belts, in which high-energy particles, mostly electrons and ions, are trapped by Earth's magnetic field.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

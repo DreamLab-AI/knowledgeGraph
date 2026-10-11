@@ -19,7 +19,7 @@ hasPart:
   - urn:ngm:class:trust-service-provider
   - urn:ngm:class:trusted-timestamping
   - urn:ngm:class:digital-signature
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:evidence-token
   - urn:ngm:class:revocation-service
 requires:
@@ -43,7 +43,7 @@ enables:
 dependsOn:
   - urn:ngm:class:elliptic-curve-cryptography
   - urn:ngm:class:cryptographic-hash
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:trusted-third-party
   - urn:ngm:class:key-management
@@ -71,19 +71,19 @@ uses:
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:distributed-ledger
-  - urn:ngm:class:ethereum-smart-contract-platform
+  - urn:ngm:class:ethereum
   - urn:ngm:class:crl-certificate-revocation
 supports:
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:audit-trail
   - urn:ngm:class:smart-contract-enforcement
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:esignature-law
   - urn:ngm:class:audit-trail
   - urn:ngm:class:blockchain-transaction-integrity
 standardizedBy:
-  - urn:ngm:class:e-idas
+  - urn:ngm:class:eidas-regulation
   - urn:ngm:class:etsi
   - urn:ngm:class:fips-186-5
   - urn:ngm:class:iso-iec-7498-2

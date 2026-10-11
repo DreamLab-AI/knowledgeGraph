@@ -22,7 +22,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -106,7 +106,7 @@
         "label": "Financial Technology"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -179,7 +179,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -247,7 +247,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -317,8 +317,16 @@
         "label": "Artificial Intelligence"
       },
       {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       },
       {
         "id": "urn:ngm:class:supply-chain-finance",
@@ -335,14 +343,6 @@
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality",
-        "label": "Extended Reality"
-      },
-      {
-        "id": "urn:ngm:class:extended-reality-xr",
-        "label": "Extended Reality (XR)"
       }
     ],
     "uses": [
@@ -359,8 +359,12 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -373,10 +377,6 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:geospatial-technology",
-        "label": "Geospatial Technology"
       }
     ],
     "supports": [
@@ -415,7 +415,25 @@
         "label": "WebXR"
       }
     ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
       {
         "id": "urn:ngm:class:insurtech",
         "label": "InsurTech"
@@ -435,18 +453,6 @@
       {
         "id": "urn:ngm:class:open-banking",
         "label": "Open Banking"
-      },
-      {
-        "id": "urn:ngm:class:platform-economy",
-        "label": "Platform Economy"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-economics",
-        "label": "Blockchain Economics"
-      },
-      {
-        "id": "urn:ngm:class:dao-governance",
-        "label": "DAO Governance"
       }
     ]
   },
@@ -494,10 +500,6 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "cbdcs",
-      "label": "CBDCs"
-    },
-    {
       "slug": "central-bank-digital-currency",
       "label": "Central Bank Digital Currency"
     },
@@ -506,8 +508,8 @@
       "label": "Identity Management System"
     },
     {
-      "slug": "usd",
-      "label": "USD"
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
     },
     {
       "slug": "value-transfer",

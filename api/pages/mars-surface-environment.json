@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mars-surface-environment",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Mars surface environment is the set of physical conditions at the surface of Mars, a cold, dusty desert world with a very thin atmosphere.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:space-environment",

@@ -42,7 +42,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -400,8 +400,8 @@
       "label": "Trust Score Metric"
     },
     {
-      "slug": "verifiable-credential-vc",
-      "label": "Verifiable Credential (VC)"
+      "slug": "verifiable-credential",
+      "label": "Verifiable Credential"
     }
   ]
 }

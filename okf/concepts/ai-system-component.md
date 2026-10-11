@@ -14,7 +14,7 @@ hasPart:
   - urn:ngm:class:machine-learning-discipline-pipeline
 uses:
   - urn:ngm:class:microservices-architecture
-  - urn:ngm:class:machine-learning-model
+  - urn:ngm:class:machine-learning-discipline-model
 supports:
   - urn:ngm:class:ai-lifecycle
   - urn:ngm:class:ai-infrastructure

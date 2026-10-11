@@ -19,7 +19,7 @@ enables:
 dependsOn:
   - urn:ngm:class:signal-processing
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:control-theory
 uses:
   - urn:ngm:class:sensor-fusion

@@ -5,15 +5,11 @@
   "public": true,
   "classIri": "urn:ngm:class:llm-application-frameworks",
   "domain": "ai",
-  "definition": "General-purpose software frameworks for composing [[Large Language Models]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration \u2014 including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flowise \u2014 providing the integration, observability, and deployment infrastructure that connects model inference to real application data, external APIs, and human approval workflows.",
+  "definition": "General-purpose software frameworks for composing [[Large Language Model]] capabilities into production applications through chains, retrievers, [[Tool Use]], [[Retrieval-Augmented Generation]] pipelines, stateful workflows, and [[Multi-Agent Systems]] orchestration \u2014 including LangChain, LangGraph, LlamaIndex, Semantic Kernel, Microsoft Agent Framework, Mastra, Agno, n8n, Dify, Langflow, and Flowise \u2014 providing the integration, observability, and deployment infrastructure that connects model inference to real application data, external APIs, and human approval workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:agent-harness",
       "label": "Agent Harness"
-    },
-    {
-      "id": "urn:ngm:class:workflow-automation",
-      "label": "Workflow Automation"
     }
   ],
   "entityType": "Class",
@@ -48,12 +44,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:function-calling",
@@ -117,7 +113,7 @@
       },
       {
         "id": "urn:ngm:class:foundation-model",
-        "label": "Foundation Models"
+        "label": "Foundation Model"
       },
       {
         "id": "urn:ngm:class:function-calling",
@@ -132,8 +128,8 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "implements": [
@@ -260,7 +256,7 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       }
     ],
@@ -320,11 +316,6 @@
       "slug": "ai-agent-system"
     },
     {
-      "id": "urn:ngm:class:ai-application",
-      "label": "AI Application",
-      "slug": "ai-application"
-    },
-    {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure",
       "slug": "ai-infrastructure"
@@ -343,6 +334,11 @@
       "id": "urn:ngm:class:ai-agents",
       "label": "AI Agents",
       "slug": "ai-agents"
+    },
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application",
+      "slug": "ai-application"
     },
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -470,9 +466,9 @@
       "slug": "distributed-ledger"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -535,9 +531,19 @@
       "slug": "automation"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
     },
     {
       "id": "urn:ngm:class:distributed-computing",
@@ -545,9 +551,19 @@
       "slug": "distributed-computing"
     },
     {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -565,6 +581,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -575,19 +601,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -654,14 +675,6 @@
         "label": "Tool Use"
       },
       {
-        "id": "urn:ngm:class:data-pipeline",
-        "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:event-streaming",
-        "label": "Event Streaming"
-      },
-      {
         "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
       },
@@ -672,6 +685,14 @@
       {
         "id": "urn:ngm:class:action-space",
         "label": "Action Space"
+      },
+      {
+        "id": "urn:ngm:class:api-access",
+        "label": "API Access"
+      },
+      {
+        "id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
       }
     ],
     "enables": [
@@ -684,7 +705,7 @@
         "label": "Durable Execution"
       },
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -696,16 +717,16 @@
         "label": "Workflow Orchestration"
       },
       {
-        "id": "urn:ngm:class:business-process-management",
-        "label": "Business Process Management"
+        "id": "urn:ngm:class:ai-agent-payments",
+        "label": "AI Agent Payments"
       },
       {
-        "id": "urn:ngm:class:hyperautomation",
-        "label": "Hyperautomation"
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
       },
       {
-        "id": "urn:ngm:class:intelligent-automation",
-        "label": "Intelligent Process Automation"
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
       }
     ],
     "dependsOn": [
@@ -738,8 +759,8 @@
         "label": "Tool Registry"
       },
       {
-        "id": "urn:ngm:class:idempotency",
-        "label": "Idempotency"
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
       }
     ],
     "implements": [
@@ -790,14 +811,6 @@
         "label": "Workflow Engine"
       },
       {
-        "id": "urn:ngm:class:batch-processing",
-        "label": "Batch Processing"
-      },
-      {
-        "id": "urn:ngm:class:manual-processing",
-        "label": "Manual Processing"
-      },
-      {
         "id": "urn:ngm:class:conversational-ai",
         "label": "Conversational AI"
       },
@@ -808,17 +821,17 @@
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:decentralised-autonomous-organisation",
-        "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract",
-        "label": "Smart Contract"
-      },
       {
         "id": "urn:ngm:class:agent-based-modelling",
         "label": "Agent-Based Modelling"
@@ -842,6 +855,14 @@
       {
         "id": "urn:ngm:class:autonomous-economic-agent",
         "label": "Autonomous Economic Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
       }
     ],
     "uses": [
@@ -870,12 +891,12 @@
         "label": "Sandboxed Code Execution"
       },
       {
-        "id": "urn:ngm:class:agentic-ai",
-        "label": "Agentic AI"
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:event-driven-architecture",
-        "label": "Event Driven Architecture"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "supports": [
@@ -900,8 +921,8 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -918,20 +939,12 @@
         "label": "Agent-to-Agent Protocol"
       },
       {
-        "id": "urn:ngm:class:bpmn",
-        "label": "BPMN"
-      },
-      {
-        "id": "urn:ngm:class:dmn",
-        "label": "DMN"
-      },
-      {
         "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:agent-communication-protocol",
@@ -944,6 +957,14 @@
       {
         "id": "urn:ngm:class:darpa-xai-programme",
         "label": "DARPA XAI Programme"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p7001",
+        "label": "IEEE P7001"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
       }
     ],
     "partOf": [
@@ -1010,8 +1031,8 @@
         "label": "Temporal"
       },
       {
-        "id": "urn:ngm:class:integration-platform-as-a-service",
-        "label": "Integration Platform as a Service"
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
       }
     ]
   },

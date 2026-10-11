@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:nft-marketplace
 uses:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:procedural-generation

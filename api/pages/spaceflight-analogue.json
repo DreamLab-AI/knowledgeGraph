@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spaceflight-analogue",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spaceflight analogue is a ground-based facility or mission that reproduces selected conditions of spaceflight so that they can be studied without leaving Earth.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

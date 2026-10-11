@@ -51,24 +51,14 @@
       "slug": "generative-model"
     },
     {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
-    },
-    {
-      "id": "urn:ngm:class:neural-network",
-      "label": "Neural Network",
-      "slug": "neural-network"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory",
       "slug": "statistical-learning-theory"
-    },
-    {
-      "id": "urn:ngm:class:uncertainty-quantification",
-      "label": "Uncertainty Quantification",
-      "slug": "uncertainty-quantification"
     },
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -373,15 +363,15 @@
         "label": "Hamiltonian Monte Carlo"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-localization",
-        "label": "Particle Filter"
-      },
-      {
         "id": "urn:ngm:class:normalising-flows",
         "label": "Normalising Flows"
       },
       {
-        "id": "urn:ngm:class:vae",
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
@@ -453,11 +443,15 @@
         "label": "ISO/IEC 22989:2022"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
       {
         "id": "urn:ngm:class:statistics",
         "label": "Statistics"
@@ -497,8 +491,8 @@
         "label": "Score-Based Diffusion"
       },
       {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
       }
     ]
   },

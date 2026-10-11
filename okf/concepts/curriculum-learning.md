@@ -37,7 +37,7 @@ uses:
   - urn:ngm:class:data-ordering
 relatedTo:
   - urn:ngm:class:training-strategy
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:active-learning

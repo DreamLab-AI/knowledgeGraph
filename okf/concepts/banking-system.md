@@ -23,7 +23,7 @@ enables:
 dependsOn:
   - urn:ngm:class:infrastructure
 contrastsWith:
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
 supports:
   - urn:ngm:class:economic-stability
   - urn:ngm:class:financial-inclusion
@@ -31,7 +31,7 @@ standardizedBy:
   - urn:ngm:class:basel-framework
 relatedTo:
   - urn:ngm:class:open-banking
-  - urn:ngm:class:fintech
+  - urn:ngm:class:financial-technology
   - urn:ngm:class:digital-currency
 ---
 

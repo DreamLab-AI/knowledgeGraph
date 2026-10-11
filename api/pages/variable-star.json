@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:variable-star",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A variable star is a star whose observed brightness changes, and the General Catalogue of Variable Stars sorts such stars into types by the astrophysical reason for the change.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:star",

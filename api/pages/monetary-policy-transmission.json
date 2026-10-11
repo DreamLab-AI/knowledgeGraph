@@ -55,7 +55,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -163,7 +163,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -221,8 +221,8 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:dao",
-        "label": "Decentralized Autonomous Organization"
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       },
       {
         "id": "urn:ngm:class:blockchain",
@@ -271,7 +271,7 @@
         "label": "Bank for International Settlements"
       },
       {
-        "id": "urn:ngm:class:imf",
+        "id": "urn:ngm:class:international-monetary-fund",
         "label": "International Monetary Fund"
       }
     ],
@@ -287,7 +287,7 @@
         "label": "Banking Regulation"
       },
       {
-        "id": "urn:ngm:class:de-fi-protocol",
+        "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"
       },
       {
@@ -321,10 +321,6 @@
     {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
-    },
-    {
-      "slug": "cbdcs",
-      "label": "CBDCs"
     },
     {
       "slug": "central-bank-digital-currency",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-pseudorange",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS pseudorange is a code-derived apparent distance between a receiver and a satellite that includes clock offsets and other measurement biases.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

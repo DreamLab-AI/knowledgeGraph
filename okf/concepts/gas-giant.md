@@ -4,6 +4,7 @@ type: Class
 title: Gas Giant
 resource: urn:ngm:class:gas-giant
 domain: space-science-and-systems
+description: A gas giant is a large planet mostly composed of helium and/or hydrogen.[^1]
 maturity: draft
 quality: 0
 is-a:
@@ -13,3 +14,5 @@ relatedTo:
 ---
 
 # Gas Giant
+
+A gas giant is a large planet mostly composed of helium and/or hydrogen.[^1]

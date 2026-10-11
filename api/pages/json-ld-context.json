@@ -8,7 +8,7 @@
   "definition": "A JSON-LD Context is the machine-readable document or inline object that maps the shorthand terms and prefixes used in a JSON-LD document to their fully qualified IRIs in a target vocabulary or ontology. It serves as the bridge between the compact, human-readable JSON representation and the globally unambiguous RDF data model, enabling semantic interoperability across disparate systems. Contexts may be embedded inline within a document, referenced by URL, or composed from multiple context documents. The JSON-LD 1.1 specification extends context capabilities with scoped contexts, type-scoped and property-scoped contexts, and protected terms that resist accidental overriding. Correct context design is foundational to knowledge graph compilation and Linked Data publication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:json-ld",
+      "id": "urn:ngm:class:json-data-interchange-format-ld",
       "label": "JSON-LD"
     }
   ],
@@ -68,12 +68,17 @@
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:semantic-web-linked-data-standard",
-        "label": "Semantic Web Linked Data Standard"
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ]
   },
   "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data",
+      "slug": "linked-data"
+    },
     {
       "id": "urn:ngm:class:serialisation-format",
       "label": "Serialisation Format",
@@ -83,6 +88,11 @@
       "id": "urn:ngm:class:data-management",
       "label": "Data Management",
       "slug": "data-management"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
     }
   ],
   "inheritedRelations": {
@@ -96,19 +106,51 @@
         "label": "Data Governance"
       },
       {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
         "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       },
       {
         "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:ngm:class:metadata-management",
-        "label": "Metadata Management"
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
       }
     ],
     "requires": [
+      {
+        "id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
@@ -124,56 +166,148 @@
     ],
     "enables": [
       {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
         "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
-      },
-      {
-        "id": "urn:ngm:class:federated-learning",
-        "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:five-star-data",
+        "label": "Five-Star Data"
+      },
+      {
+        "id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
       }
     ],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:rdf-xml",
+        "label": "RDF/XML"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:data-silo",
+        "label": "Data Silo"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
         "id": "urn:ngm:class:data-hoarding",
         "label": "Data Hoarding"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
       }
     ],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
         "id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
       },
       {
         "id": "urn:ngm:class:w3c-recommendation",
         "label": "W3C Recommendation"
       },
       {
-        "id": "urn:ngm:class:blockchain",
-        "label": "Blockchain"
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
       },
       {
-        "id": "urn:ngm:class:metaverse-technology",
-        "label": "Metaverse Technology"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-data-interchange-format",
+        "id": "urn:ngm:class:json",
         "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:n-quads",
+        "label": "N-Quads"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
       }
     ],
     "supports": [
@@ -188,9 +322,29 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
       }
     ],
     "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      },
       {
         "id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
@@ -198,32 +352,48 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:checkpoints",
-        "label": "Checkpoints"
+        "id": "urn:ngm:class:activity-pub",
+        "label": "ActivityPub"
       },
       {
-        "id": "urn:ngm:class:distributed-computing",
-        "label": "Distributed Computing"
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
       },
       {
-        "id": "urn:ngm:class:data-architecture",
-        "label": "Data Architecture"
+        "id": "urn:ngm:class:shacl",
+        "label": "SHACL"
       },
       {
-        "id": "urn:ngm:class:distributed-system",
-        "label": "Distributed System"
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:etl-pipeline",
-        "label": "ETL"
+        "id": "urn:ngm:class:dbpedia",
+        "label": "DBpedia"
       },
       {
-        "id": "urn:ngm:class:information-management",
-        "label": "Information Management"
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
       }
     ]
   },

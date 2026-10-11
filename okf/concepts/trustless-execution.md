@@ -10,7 +10,7 @@ quality: 0.8
 is-a:
   - urn:ngm:class:decentralisation
 enables:
-  - urn:ngm:class:decentralized-application
+  - urn:ngm:class:decentralised-application
   - urn:ngm:class:conditional-payment
   - urn:ngm:class:atomic-swap
 dependsOn:

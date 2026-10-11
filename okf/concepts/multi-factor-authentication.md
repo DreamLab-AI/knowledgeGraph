@@ -25,7 +25,7 @@ enables:
   - urn:ngm:class:privileged-access-management
 dependsOn:
   - urn:ngm:class:cryptographic-keys
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:secure-channel
 contrastsWith:
   - urn:ngm:class:password-authentication

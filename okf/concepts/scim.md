@@ -11,7 +11,7 @@ is-a:
   - urn:ngm:class:identity-management
 requires:
   - urn:ngm:class:authentication
-  - urn:ngm:class:authorization
+  - urn:ngm:class:authorisation
   - urn:ngm:class:authorisation
 enables:
   - urn:ngm:class:access-control

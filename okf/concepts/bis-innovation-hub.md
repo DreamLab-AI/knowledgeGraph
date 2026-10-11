@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:project-nexus
   - urn:ngm:class:project-m-bridge
 enables:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:wholesale-cbdc
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:tokenization

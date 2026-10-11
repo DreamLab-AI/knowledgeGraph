@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:observation-model
 supports:
   - urn:ngm:class:kalman-filter
-  - urn:ngm:class:monte-carlo-localization
+  - urn:ngm:class:particle-filter
 partOf:
   - urn:ngm:class:state-estimation
   - urn:ngm:class:sensor-fusion

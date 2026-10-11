@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:measurement-uncertainty",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Measurement uncertainty is a non-negative parameter characterising the dispersion of the quantity values being attributed to a measurand, based on the information used.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

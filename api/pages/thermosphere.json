@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:thermosphere",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Thermosphere is the layer of the atmosphere above the mesosphere, in which temperature rises with increasing altitude.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:atmosphere-layer",

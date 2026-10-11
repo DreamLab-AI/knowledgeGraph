@@ -46,8 +46,8 @@ uses:
   - urn:ngm:class:web-socket
   - urn:ngm:class:schnorr-signature
   - urn:ngm:class:secp256k1
-  - urn:ngm:class:json-data-interchange-format
-  - urn:ngm:class:json-data-interchange-format
+  - urn:ngm:class:json
+  - urn:ngm:class:json
 relatedTo:
   - urn:ngm:class:did-nostr-identity
   - urn:ngm:class:peer-to-peer-network

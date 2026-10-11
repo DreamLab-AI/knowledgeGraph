@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:financial-regulation",
       "label": "Financial Regulation"
+    },
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
     }
   ],
   "entityType": "Class",
@@ -29,6 +33,10 @@
       {
         "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
       }
     ],
     "enables": [
@@ -39,6 +47,10 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
@@ -89,16 +101,31 @@
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform",
-        "label": "Ethereum Smart Contract Platform"
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ]
   },
   "inferredSuperClasses": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics",
+      "slug": "ai-governance-and-ethics"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle",
+      "slug": "ai-governance-principle"
+    },
+    {
       "id": "urn:ngm:class:governance",
       "label": "Governance",
       "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
     },
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -114,7 +141,7 @@
   "inheritedRelations": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:aml",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
       {
@@ -134,16 +161,16 @@
         "label": "Stablecoin Regulation"
       },
       {
-        "id": "urn:ngm:class:accountability",
-        "label": "Accountability"
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:policy",
-        "label": "Policy"
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance",
-        "label": "Regulatory Compliance"
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
       }
     ],
     "requires": [
@@ -152,32 +179,32 @@
         "label": "Capital Adequacy"
       },
       {
-        "id": "urn:ngm:class:kyc",
+        "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       },
       {
-        "id": "urn:ngm:class:enforcement-mechanism",
-        "label": "Enforcement Mechanism"
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
       },
       {
-        "id": "urn:ngm:class:institutional-trust",
-        "label": "Institutional Trust"
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       },
       {
-        "id": "urn:ngm:class:stakeholder-participation",
-        "label": "Stakeholder Participation"
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       },
       {
-        "id": "urn:ngm:class:data-centre",
-        "label": "Data Center"
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:hardware",
-        "label": "Hardware"
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       },
       {
-        "id": "urn:ngm:class:operating-system",
-        "label": "Operating System"
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "enables": [
@@ -190,28 +217,28 @@
         "label": "Market Integrity"
       },
       {
-        "id": "urn:ngm:class:collective-action",
-        "label": "Collective Action"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:coordination",
-        "label": "Coordination"
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:legitimacy",
-        "label": "Legitimacy"
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:compliance-verification",
-        "label": "Compliance Verification"
+        "id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
       },
       {
-        "id": "urn:ngm:class:privacy-framework",
-        "label": "Privacy Framework"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
     "dependsOn": [
@@ -224,12 +251,46 @@
         "label": "Supervisory Authority"
       },
       {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
         "id": "urn:ngm:class:information-asymmetry",
         "label": "Information Asymmetry"
       },
       {
         "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
       }
     ],
     "contrastsWith": [
@@ -240,6 +301,14 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
       },
       {
         "id": "urn:ngm:class:anarchy",
@@ -256,11 +325,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:de-fi",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
@@ -288,7 +357,45 @@
         "label": "Internet Governance"
       }
     ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
     "supports": [
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-growth",
+        "label": "Inclusive Growth"
+      },
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
@@ -324,16 +431,16 @@
         "label": "IOSCO"
       },
       {
-        "id": "urn:ngm:class:iso-iec-38500",
-        "label": "ISO-IEC 38500"
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:ngm:class:oecd-ai-principles",
-        "label": "OECD Principles on AI"
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:iso-iec",
-        "label": "ISO/IEC"
+        "id": "urn:ngm:class:g7-hiroshima-ai-process",
+        "label": "G7 Hiroshima AI Process"
       }
     ],
     "relatedTo": [
@@ -350,33 +457,42 @@
         "label": "Systemic Risk"
       },
       {
-        "id": "urn:ngm:class:algorithmic-accountability",
-        "label": "Algorithmic Accountability"
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:corporate-governance",
-        "label": "Corporate Governance"
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
       },
       {
-        "id": "urn:ngm:class:multi-stakeholder-governance",
-        "label": "Multi-Stakeholder Governance"
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
       },
       {
-        "id": "urn:ngm:class:public-administration",
-        "label": "Public Administration"
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
       },
       {
-        "id": "urn:ngm:class:compliance-monitoring",
-        "label": "Compliance Monitoring"
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": [
+  "wikilinks": [
     {
-      "slug": "bc-0482-eu-mica-regulation",
-      "label": "BC-0482-eu-mica-regulation"
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
     },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "label": "MiCA Regulation"
+    }
+  ],
+  "backlinks": [
     {
       "slug": "bc-0484-markets-in-crypto-assets",
       "label": "BC-0484-markets-in-crypto-assets"

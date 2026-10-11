@@ -40,13 +40,13 @@ uses:
   - urn:ngm:class:symmetric-encryption
   - urn:ngm:class:asymmetric-encryption
 supports:
-  - urn:ngm:class:tls
+  - urn:ngm:class:transport-layer-security
   - urn:ngm:class:secure-communication
 standardizedBy:
   - urn:ngm:class:nist-cryptographic-standards
   - urn:ngm:class:fips-140-3
 partOf:
-  - urn:ngm:class:cryptographic-infrastructure
+  - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:hardware-security-module

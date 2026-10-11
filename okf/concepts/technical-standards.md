@@ -12,7 +12,7 @@ is-a:
   - urn:ngm:class:standards
 hasPart:
   - urn:ngm:class:web-xr
-  - urn:ngm:class:gltf-standard
+  - urn:ngm:class:gl-tf
 requires:
   - urn:ngm:class:standards-conformance-testing
   - urn:ngm:class:reference-implementation
@@ -31,11 +31,11 @@ standardizedBy:
   - urn:ngm:class:interoperability-standard
   - urn:ngm:class:3-d-asset-standard
   - urn:ngm:class:ieee-standards-association
-  - urn:ngm:class:w3-c
+  - urn:ngm:class:world-wide-web-consortium
   - urn:ngm:class:khronos-group
   - urn:ngm:class:iso
 relatedTo:
-  - urn:ngm:class:usd
+  - urn:ngm:class:universal-scene-description
   - urn:ngm:class:3-d-file-format
   - urn:ngm:class:metaverse-standards-forum
   - urn:ngm:class:open-standard

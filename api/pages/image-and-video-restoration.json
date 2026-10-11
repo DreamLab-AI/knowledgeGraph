@@ -166,7 +166,7 @@
         "label": "Real-ESRGAN"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion Inpaint"
       },
       {
@@ -182,7 +182,7 @@
         "label": "LaMa Inpainting"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion Inpaint"
       },
       {
@@ -377,8 +377,8 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -511,10 +511,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:image-processing",
-        "label": "Image Processing"
-      },
-      {
         "id": "urn:ngm:class:optics",
         "label": "Optics"
       },
@@ -617,7 +613,7 @@
         "label": "Smartphone"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {

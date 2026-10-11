@@ -23,7 +23,7 @@ contrastsWith:
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:loss-function
 bridgesTo:
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
 uses:
   - urn:ngm:class:gradient-descent
 supports:

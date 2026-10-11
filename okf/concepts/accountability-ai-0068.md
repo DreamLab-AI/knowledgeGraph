@@ -17,20 +17,20 @@ is-a:
   - urn:ngm:class:governance-framework
 hasPart:
   - urn:ngm:class:ai-audit
-  - urn:ngm:class:model-cards
+  - urn:ngm:class:ai-model-card
   - urn:ngm:class:model-registry
   - urn:ngm:class:incident-response
   - urn:ngm:class:ai-impact-assessment
   - urn:ngm:class:ai-model-card
   - urn:ngm:class:human-oversight
   - urn:ngm:class:redress-mechanism
-  - urn:ngm:class:ai-documentation-standards
+  - urn:ngm:class:ai-documentation
   - urn:ngm:class:conformity-assessment
 requires:
   - urn:ngm:class:explainable-ai
   - urn:ngm:class:transparency
   - urn:ngm:class:human-oversight
-  - urn:ngm:class:ai-documentation-standards
+  - urn:ngm:class:ai-documentation
   - urn:ngm:class:human-in-the-loop
   - urn:ngm:class:data-governance
   - urn:ngm:class:ai-monitoring
@@ -51,8 +51,8 @@ dependsOn:
   - urn:ngm:class:data-governance
   - urn:ngm:class:transparency
 implements:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:eu-ai-act
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:iso-iec-42001-2023
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:gdpr
@@ -78,9 +78,9 @@ supports:
   - urn:ngm:class:algorithmic-accountability
   - urn:ngm:class:ai-ethics
 standardizedBy:
-  - urn:ngm:class:eu-ai-act-regulatory-instrument
+  - urn:ngm:class:eu-ai-act
   - urn:ngm:class:iso-iec-42001-2023
-  - urn:ngm:class:nist-ai-rmf
+  - urn:ngm:class:nist-ai-risk-management-framework
   - urn:ngm:class:oecd-ai-principles
   - urn:ngm:class:iso-iec-42005
 relatedTo:

@@ -9,29 +9,45 @@ maturity: established
 quality: 0.62
 is-a:
   - urn:ngm:class:communication-theory
+  - urn:ngm:class:immersive-communication
+hasPart:
+  - urn:ngm:class:gesture-recognition
+  - urn:ngm:class:proxemics
 requires:
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:eye-tracking
+  - urn:ngm:class:gaze-tracking
 enables:
   - urn:ngm:class:presence
   - urn:ngm:class:social-vr
   - urn:ngm:class:telepresence
+  - urn:ngm:class:social-presence
+  - urn:ngm:class:co-presence
 dependsOn:
   - urn:ngm:class:avatar
+contrastsWith:
+  - urn:ngm:class:emotion-recognition
 bridgesTo:
   - urn:ngm:class:human-computer-interaction
+  - urn:ngm:class:gesture-recognition
 uses:
   - urn:ngm:class:affective-computing
   - urn:ngm:class:spatial-audio
+  - urn:ngm:class:emotion-recognition
+  - urn:ngm:class:haptic-feedback
+  - urn:ngm:class:avatar
 supports:
   - urn:ngm:class:social-presence-theory
   - urn:ngm:class:embodied-interaction
 partOf:
   - urn:ngm:class:communication-theory
+  - urn:ngm:class:immersive-communication
 relatedTo:
   - urn:ngm:class:social-presence-theory
   - urn:ngm:class:proxemics
   - urn:ngm:class:gesture-recognition
+  - urn:ngm:class:avatar
+  - urn:ngm:class:social-presence
 ---
 
 # Nonverbal Communication

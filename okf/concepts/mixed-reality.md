@@ -58,7 +58,7 @@ dependsOn:
   - urn:ngm:class:inertial-measurement-unit
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:spatial-audio-processing
-  - urn:ngm:class:machine-learning-discipline
+  - urn:ngm:class:machine-learning
   - urn:ngm:class:cloud-anchor-infrastructure
   - urn:ngm:class:slam-algorithms
   - urn:ngm:class:depth-estimation
@@ -109,7 +109,7 @@ standardizedBy:
   - urn:ngm:class:open-xr
   - urn:ngm:class:open-usd
   - urn:ngm:class:w-3-c-web-xr-device-api
-  - urn:ngm:class:openxr-standard
+  - urn:ngm:class:open-xr
   - urn:ngm:class:iso-tc-159-ergonomics
   - urn:ngm:class:open-usd
   - urn:ngm:class:openxr-scene-understanding-extension

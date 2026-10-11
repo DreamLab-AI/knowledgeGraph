@@ -13,7 +13,7 @@ uses:
   - urn:ngm:class:machine-learning-discipline-framework
   - urn:ngm:class:python
 supports:
-  - urn:ngm:class:large-language-models
+  - urn:ngm:class:large-language-model
   - urn:ngm:class:model-training
 relatedTo:
   - urn:ngm:class:runtime-environment

@@ -20,8 +20,8 @@
       "label": "Safety-Critical Systems"
     },
     {
-      "id": "urn:ngm:class:embedded-systems",
-      "label": "Embedded Systems"
+      "id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System"
     },
     {
       "id": "urn:ngm:class:operating-system",
@@ -355,6 +355,11 @@
       "slug": "infrastructure"
     },
     {
+      "id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control",
+      "slug": "real-time-control"
+    },
+    {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control",
       "slug": "robo-actuation-and-control"
@@ -365,9 +370,24 @@
       "slug": "robotic-system"
     },
     {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
       "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering",
       "slug": "systems-engineering"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -375,19 +395,9 @@
       "slug": "robo-robot-type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics",
-      "slug": "robotics"
-    },
-    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering",
       "slug": "software-engineering"
-    },
-    {
-      "id": "urn:ngm:class:automation",
-      "label": "Automation",
-      "slug": "automation"
     }
   ],
   "inheritedRelations": {
@@ -421,8 +431,8 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
-        "label": "Quantum Computation Paradigm"
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ],
     "requires": [
@@ -473,12 +483,16 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
       },
       {
         "id": "urn:ngm:class:edge-ai",
@@ -487,20 +501,20 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:memory-management",
-        "label": "Memory Management"
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
       },
       {
-        "id": "urn:ngm:class:power-management",
-        "label": "Power Management"
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:rtos",
+        "label": "RTOS"
       },
       {
         "id": "urn:ngm:class:communication-protocol",
@@ -521,10 +535,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:network-protocol",
-        "label": "Network Protocols"
       }
     ],
     "implements": [
@@ -589,7 +599,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ros",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       },
       {
@@ -605,7 +615,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
@@ -651,8 +661,8 @@
         "label": "Interrupt Controller"
       },
       {
-        "id": "urn:ngm:class:sensor",
-        "label": "Sensor"
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
       }
     ],
     "supports": [
@@ -669,12 +679,12 @@
         "label": "Security Isolation"
       },
       {
-        "id": "urn:ngm:class:functional-safety",
-        "label": "Functional Safety"
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:over-the-air-update",
-        "label": "Over-the-Air Update"
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",
@@ -690,10 +700,6 @@
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:misra-c",
-        "label": "MISRA C"
-      },
       {
         "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC"
@@ -711,16 +717,30 @@
         "label": "Open Standard"
       },
       {
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
         "id": "urn:ngm:class:ieee-std-730",
         "label": "IEEE Std 730"
       },
       {
         "id": "urn:ngm:class:iso-iec-12207",
         "label": "ISO/IEC 12207"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
       },
       {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ],
     "relatedTo": [
@@ -749,8 +769,8 @@
         "label": "Resource Management"
       },
       {
-        "id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
       },
       {
         "id": "urn:ngm:class:control-system",

@@ -14,7 +14,7 @@ is-a:
   - urn:ngm:class:generative-ai
 hasPart:
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip-encoder
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:diffusion-model
@@ -22,7 +22,7 @@ requires:
   - urn:ngm:class:diffusion-model
   - urn:ngm:class:language-model
   - urn:ngm:class:latent-diffusion
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:clip-encoder
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:clip
@@ -39,14 +39,14 @@ dependsOn:
   - urn:ngm:class:clip
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:clip-encoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
 implements:
   - urn:ngm:class:latent-diffusion-model-training
   - urn:ngm:class:text-to-image-generation
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:contrastive-learning
 contrastsWith:
-  - urn:ngm:class:stable-diffusion-image-model
+  - urn:ngm:class:stable-diffusion
   - urn:ngm:class:midjourney-text-to-image-service
   - urn:ngm:class:generative-adversarial-network
   - urn:ngm:class:generative-adversarial-networks
@@ -58,7 +58,7 @@ bridgesTo:
 uses:
   - urn:ngm:class:vision-transformer
   - urn:ngm:class:clip-encoder
-  - urn:ngm:class:vae
+  - urn:ngm:class:variational-autoencoder
   - urn:ngm:class:latent-diffusion
   - urn:ngm:class:contrastive-learning
   - urn:ngm:class:deep-generative-model

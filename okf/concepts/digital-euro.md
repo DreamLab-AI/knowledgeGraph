@@ -8,7 +8,7 @@ description: The digital euro is a prospective retail central bank digital curre
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 enables:
   - urn:ngm:class:programmable-money
   - urn:ngm:class:financial-inclusion
@@ -28,7 +28,7 @@ uses:
   - urn:ngm:class:settlement
 supports:
   - urn:ngm:class:monetary-policy-transmission
-  - urn:ngm:class:aml
+  - urn:ngm:class:anti-money-laundering
 standardizedBy:
   - urn:ngm:class:european-parliament
   - urn:ngm:class:ecb-digital-euro-regulation

@@ -16,7 +16,7 @@
       "label": "Agentic AI"
     },
     {
-      "id": "urn:ngm:class:software-development-automation",
+      "id": "urn:ngm:class:software-engineering-automation",
       "label": "Software Engineering Automation"
     },
     {
@@ -76,8 +76,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:tool-use",
@@ -110,7 +110,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:software-development-automation",
+        "id": "urn:ngm:class:software-engineering-automation",
         "label": "Software Engineering Automation"
       },
       {
@@ -263,7 +263,7 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "id": "urn:ngm:class:eu-ai-act",
         "label": "EU AI Act"
       },
       {
@@ -353,6 +353,11 @@
       "slug": "software-development"
     },
     {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
       "id": "urn:ngm:class:agent",
       "label": "Agent",
       "slug": "agent"
@@ -388,6 +393,11 @@
       "slug": "computational-modelling"
     },
     {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure",
       "slug": "digital-infrastructure"
@@ -398,14 +408,14 @@
       "slug": "goal-directed-system"
     },
     {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
       "id": "urn:ngm:class:simulation",
       "label": "Simulation",
       "slug": "simulation"
-    },
-    {
-      "id": "urn:ngm:class:software-engineering",
-      "label": "Software Engineering",
-      "slug": "software-engineering"
     },
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -453,11 +463,6 @@
       "slug": "scientific-machine-learning"
     },
     {
-      "id": "urn:ngm:class:systems-engineering",
-      "label": "Systems Engineering",
-      "slug": "systems-engineering"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System",
       "slug": "cryptographic-system"
@@ -473,14 +478,9 @@
       "slug": "distributed-ledger"
     },
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure",
-      "slug": "infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:machine-learning-discipline",
-      "label": "Machine Learning Discipline",
-      "slug": "machine-learning-discipline"
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning",
+      "slug": "machine-learning"
     },
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -543,14 +543,29 @@
       "slug": "automation"
     },
     {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography",
       "slug": "cryptography"
     },
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing",
       "slug": "distributed-computing"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
     },
     {
       "id": "urn:ngm:class:concurrent-computing",
@@ -568,6 +583,16 @@
       "slug": "cryptographic-security"
     },
     {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
       "id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication",
       "slug": "infra-network-and-comms"
@@ -578,14 +603,14 @@
       "slug": "networked-systems"
     },
     {
-      "id": "urn:ngm:class:parallel-computing",
-      "label": "Parallel Computing",
-      "slug": "parallel-computing"
-    },
-    {
       "id": "urn:ngm:class:security",
       "label": "Security",
       "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
     },
     {
       "id": "urn:ngm:class:governance",
@@ -652,6 +677,10 @@
         "label": "Task Planning"
       },
       {
+        "id": "urn:ngm:class:agent-harness",
+        "label": "Agent Harness"
+      },
+      {
         "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
       },
@@ -666,10 +695,6 @@
       {
         "id": "urn:ngm:class:discrete-event-simulation",
         "label": "Discrete Event Simulation"
-      },
-      {
-        "id": "urn:ngm:class:scientific-computing",
-        "label": "Scientific Computing"
       }
     ],
     "enables": [
@@ -694,16 +719,16 @@
         "label": "Workflow Automation"
       },
       {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
         "id": "urn:ngm:class:autonomous-behavior",
         "label": "Autonomous Behavior"
       },
       {
         "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
-      },
-      {
-        "id": "urn:ngm:class:decision-support",
-        "label": "Decision Support"
       }
     ],
     "dependsOn": [
@@ -830,8 +855,8 @@
         "label": "Autonomous Robot"
       },
       {
-        "id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       },
       {
         "id": "urn:ngm:class:multi-agent-reinforcement-learning",
@@ -916,8 +941,8 @@
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:ngm:class:nist-ai-rmf",
-        "label": "NIST AI RMF"
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
       },
       {
         "id": "urn:ngm:class:agent-communication-protocol",
@@ -932,19 +957,23 @@
         "label": "IEEE P7001"
       },
       {
-        "id": "urn:ngm:class:alan-turing-institute",
-        "label": "Alan Turing Institute"
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
       },
       {
-        "id": "urn:ngm:class:siam",
-        "label": "SIAM"
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
       },
       {
-        "id": "urn:ngm:class:cncf",
-        "label": "CNCF"
+        "id": "urn:ngm:class:swebok",
+        "label": "SWEBOK"
       }
     ],
     "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
       {
         "id": "urn:ngm:class:ai-system",
         "label": "AI System"
@@ -972,10 +1001,6 @@
       {
         "id": "urn:ngm:class:computational-social-science",
         "label": "Computational Social Science"
-      },
-      {
-        "id": "urn:ngm:class:software-engineering",
-        "label": "Software Engineering"
       }
     ],
     "relatedTo": [

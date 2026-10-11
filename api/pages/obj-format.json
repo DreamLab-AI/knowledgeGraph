@@ -51,13 +51,13 @@
         "label": "FBX"
       },
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:gltf-standard",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       }
     ],
@@ -241,8 +241,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:usd",
-        "label": "USD"
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
       }
     ],
     "contrastsWith": [

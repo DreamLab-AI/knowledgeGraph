@@ -24,7 +24,7 @@ uses:
   - urn:ngm:class:community-standards
 relatedTo:
   - urn:ngm:class:virtual-world-platform
-  - urn:ngm:class:decentralized-governance
+  - urn:ngm:class:decentralised-governance
   - urn:ngm:class:cross-metaverse-commerce
 ---
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-navigation-message",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS navigation message is structured data encoded onto one or more satellite signal components for reception and interpretation by user equipment.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

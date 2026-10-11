@@ -22,7 +22,7 @@ enables:
   - urn:ngm:class:price-stability
   - urn:ngm:class:value-transfer
   - urn:ngm:class:virtual-commerce
-  - urn:ngm:class:de-fi
+  - urn:ngm:class:decentralised-finance
   - urn:ngm:class:remittances
   - urn:ngm:class:cross-border-transactions
 dependsOn:
@@ -35,9 +35,9 @@ implements:
   - urn:ngm:class:fiat-backed-token
 contrastsWith:
   - urn:ngm:class:cryptocurrency
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
 bridgesTo:
-  - urn:ngm:class:central-bank-digital-currency-cbdc
+  - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:payment-system
   - urn:ngm:class:foreign-exchange-market
 uses:
