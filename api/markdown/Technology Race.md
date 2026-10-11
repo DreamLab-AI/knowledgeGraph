@@ -1,2 +1,0 @@
-A technology race is a competitive dynamic in which multiple actors, such as companies, nations, or research labs, accelerate investment and development in a given technology to secure strategic, economic, or military advantage ahead of rivals.
-

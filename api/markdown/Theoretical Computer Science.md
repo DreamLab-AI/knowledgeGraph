@@ -1,2 +1,0 @@
-Theoretical computer science is the branch of computer science concerned with the mathematical foundations of computation, including computability, computational complexity, formal languages, and algorithm analysis.
-
