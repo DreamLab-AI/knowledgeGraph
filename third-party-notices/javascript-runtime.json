@@ -1,0 +1,994 @@
+[
+  {
+    "name": "@dreamlab-ai/ontomark-graph",
+    "version": "0.1.0",
+    "license": "MIT OR Apache-2.0",
+    "repository": "https://github.com/DreamLab-AI/ontomark",
+    "source": "https://github.com/DreamLab-AI/ontomark/releases/download/ontomark-graph-v0.1.0/dreamlab-ai-ontomark-graph-0.1.0.tgz",
+    "noticeFiles": [
+      "LICENSE-APACHE",
+      "LICENSE-MIT",
+      "NOTICE"
+    ]
+  },
+  {
+    "name": "@dreamlab-ai/vowl-wasm",
+    "version": "0.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/DreamLab-AI/vowl-wasm",
+    "source": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.0/vowl-wasm-0.2.0-pkg.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "@remix-run/router",
+    "version": "1.23.4",
+    "license": "MIT",
+    "repository": "https://github.com/remix-run/react-router",
+    "source": "https://registry.npmjs.org/@remix-run/router/-/router-1.23.4.tgz",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "name": "@tanstack/query-core",
+    "version": "5.90.10",
+    "license": "MIT",
+    "repository": "https://github.com/TanStack/query",
+    "source": "https://registry.npmjs.org/@tanstack/query-core/-/query-core-5.90.10.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "@tanstack/react-query",
+    "version": "5.90.10",
+    "license": "MIT",
+    "repository": "https://github.com/TanStack/query",
+    "source": "https://registry.npmjs.org/@tanstack/react-query/-/react-query-5.90.10.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "@ungap/structured-clone",
+    "version": "1.3.0",
+    "license": "ISC",
+    "repository": "https://github.com/ungap/structured-clone",
+    "source": "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.3.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "bail",
+    "version": "2.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/bail",
+    "source": "https://registry.npmjs.org/bail/-/bail-2.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "ccount",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/ccount",
+    "source": "https://registry.npmjs.org/ccount/-/ccount-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "clsx",
+    "version": "2.1.1",
+    "license": "MIT",
+    "repository": "https://github.com/lukeed/clsx",
+    "source": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "comma-separated-tokens",
+    "version": "2.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/comma-separated-tokens",
+    "source": "https://registry.npmjs.org/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "decode-named-character-reference",
+    "version": "1.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/decode-named-character-reference",
+    "source": "https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.2.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "devlop",
+    "version": "1.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/devlop",
+    "source": "https://registry.npmjs.org/devlop/-/devlop-1.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "entities",
+    "version": "6.0.1",
+    "license": "BSD-2-Clause",
+    "repository": "https://github.com/fb55/entities",
+    "source": "https://registry.npmjs.org/entities/-/entities-6.0.1.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "escape-string-regexp",
+    "version": "5.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/sindresorhus/escape-string-regexp",
+    "source": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "estree-util-is-identifier-name",
+    "version": "3.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/estree-util-is-identifier-name",
+    "source": "https://registry.npmjs.org/estree-util-is-identifier-name/-/estree-util-is-identifier-name-3.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "extend",
+    "version": "3.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/justmoon/node-extend",
+    "source": "https://registry.npmjs.org/extend/-/extend-3.0.2.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "fuse.js",
+    "version": "7.1.0",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/krisk/Fuse",
+    "source": "https://registry.npmjs.org/fuse.js/-/fuse.js-7.1.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "hast-util-from-parse5",
+    "version": "8.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-from-parse5",
+    "source": "https://registry.npmjs.org/hast-util-from-parse5/-/hast-util-from-parse5-8.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hast-util-parse-selector",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-parse-selector",
+    "source": "https://registry.npmjs.org/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hast-util-raw",
+    "version": "9.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-raw",
+    "source": "https://registry.npmjs.org/hast-util-raw/-/hast-util-raw-9.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hast-util-to-jsx-runtime",
+    "version": "2.3.6",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-to-jsx-runtime",
+    "source": "https://registry.npmjs.org/hast-util-to-jsx-runtime/-/hast-util-to-jsx-runtime-2.3.6.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hast-util-to-parse5",
+    "version": "8.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-to-parse5",
+    "source": "https://registry.npmjs.org/hast-util-to-parse5/-/hast-util-to-parse5-8.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hast-util-whitespace",
+    "version": "3.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hast-util-whitespace",
+    "source": "https://registry.npmjs.org/hast-util-whitespace/-/hast-util-whitespace-3.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "hastscript",
+    "version": "9.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/hastscript",
+    "source": "https://registry.npmjs.org/hastscript/-/hastscript-9.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "html-url-attributes",
+    "version": "3.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/rehypejs/rehype-minify/tree/main/packages/html-url-attributes",
+    "source": "https://registry.npmjs.org/html-url-attributes/-/html-url-attributes-3.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "html-void-elements",
+    "version": "3.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/html-void-elements",
+    "source": "https://registry.npmjs.org/html-void-elements/-/html-void-elements-3.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "inline-style-parser",
+    "version": "0.2.7",
+    "license": "MIT",
+    "repository": "https://github.com/remarkablemark/inline-style-parser",
+    "source": "https://registry.npmjs.org/inline-style-parser/-/inline-style-parser-0.2.7.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "is-plain-obj",
+    "version": "4.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/sindresorhus/is-plain-obj",
+    "source": "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-4.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "longest-streak",
+    "version": "3.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/longest-streak",
+    "source": "https://registry.npmjs.org/longest-streak/-/longest-streak-3.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "markdown-table",
+    "version": "3.0.4",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/markdown-table",
+    "source": "https://registry.npmjs.org/markdown-table/-/markdown-table-3.0.4.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-find-and-replace",
+    "version": "3.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-find-and-replace",
+    "source": "https://registry.npmjs.org/mdast-util-find-and-replace/-/mdast-util-find-and-replace-3.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-from-markdown",
+    "version": "2.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-from-markdown",
+    "source": "https://registry.npmjs.org/mdast-util-from-markdown/-/mdast-util-from-markdown-2.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm-autolink-literal",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm-autolink-literal",
+    "source": "https://registry.npmjs.org/mdast-util-gfm-autolink-literal/-/mdast-util-gfm-autolink-literal-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm-footnote",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm-footnote",
+    "source": "https://registry.npmjs.org/mdast-util-gfm-footnote/-/mdast-util-gfm-footnote-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm-strikethrough",
+    "version": "2.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm-strikethrough",
+    "source": "https://registry.npmjs.org/mdast-util-gfm-strikethrough/-/mdast-util-gfm-strikethrough-2.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm-table",
+    "version": "2.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm-table",
+    "source": "https://registry.npmjs.org/mdast-util-gfm-table/-/mdast-util-gfm-table-2.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm-task-list-item",
+    "version": "2.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm-task-list-item",
+    "source": "https://registry.npmjs.org/mdast-util-gfm-task-list-item/-/mdast-util-gfm-task-list-item-2.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-gfm",
+    "version": "3.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-gfm",
+    "source": "https://registry.npmjs.org/mdast-util-gfm/-/mdast-util-gfm-3.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-phrasing",
+    "version": "4.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-phrasing",
+    "source": "https://registry.npmjs.org/mdast-util-phrasing/-/mdast-util-phrasing-4.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-to-hast",
+    "version": "13.2.1",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-to-hast",
+    "source": "https://registry.npmjs.org/mdast-util-to-hast/-/mdast-util-to-hast-13.2.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-to-markdown",
+    "version": "2.1.2",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-to-markdown",
+    "source": "https://registry.npmjs.org/mdast-util-to-markdown/-/mdast-util-to-markdown-2.1.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "mdast-util-to-string",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/mdast-util-to-string",
+    "source": "https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-4.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-core-commonmark",
+    "version": "2.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-core-commonmark",
+    "source": "https://registry.npmjs.org/micromark-core-commonmark/-/micromark-core-commonmark-2.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm-autolink-literal",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm-autolink-literal",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm-autolink-literal/-/micromark-extension-gfm-autolink-literal-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm-footnote",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm-footnote",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm-footnote/-/micromark-extension-gfm-footnote-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm-strikethrough",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm-strikethrough",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm-strikethrough/-/micromark-extension-gfm-strikethrough-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm-table",
+    "version": "2.1.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm-table",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm-table/-/micromark-extension-gfm-table-2.1.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm-task-list-item",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm-task-list-item",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm-task-list-item/-/micromark-extension-gfm-task-list-item-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-extension-gfm",
+    "version": "3.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark-extension-gfm",
+    "source": "https://registry.npmjs.org/micromark-extension-gfm/-/micromark-extension-gfm-3.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-factory-destination",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-factory-destination",
+    "source": "https://registry.npmjs.org/micromark-factory-destination/-/micromark-factory-destination-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-factory-label",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-factory-label",
+    "source": "https://registry.npmjs.org/micromark-factory-label/-/micromark-factory-label-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-factory-space",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-factory-space",
+    "source": "https://registry.npmjs.org/micromark-factory-space/-/micromark-factory-space-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-factory-title",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-factory-title",
+    "source": "https://registry.npmjs.org/micromark-factory-title/-/micromark-factory-title-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-factory-whitespace",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-factory-whitespace",
+    "source": "https://registry.npmjs.org/micromark-factory-whitespace/-/micromark-factory-whitespace-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-character",
+    "version": "2.1.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-character",
+    "source": "https://registry.npmjs.org/micromark-util-character/-/micromark-util-character-2.1.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-chunked",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-chunked",
+    "source": "https://registry.npmjs.org/micromark-util-chunked/-/micromark-util-chunked-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-classify-character",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-classify-character",
+    "source": "https://registry.npmjs.org/micromark-util-classify-character/-/micromark-util-classify-character-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-combine-extensions",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-combine-extensions",
+    "source": "https://registry.npmjs.org/micromark-util-combine-extensions/-/micromark-util-combine-extensions-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-decode-numeric-character-reference",
+    "version": "2.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-numeric-character-reference",
+    "source": "https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/-/micromark-util-decode-numeric-character-reference-2.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-decode-string",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-string",
+    "source": "https://registry.npmjs.org/micromark-util-decode-string/-/micromark-util-decode-string-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-html-tag-name",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-html-tag-name",
+    "source": "https://registry.npmjs.org/micromark-util-html-tag-name/-/micromark-util-html-tag-name-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-normalize-identifier",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-normalize-identifier",
+    "source": "https://registry.npmjs.org/micromark-util-normalize-identifier/-/micromark-util-normalize-identifier-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-resolve-all",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-resolve-all",
+    "source": "https://registry.npmjs.org/micromark-util-resolve-all/-/micromark-util-resolve-all-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-sanitize-uri",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-sanitize-uri",
+    "source": "https://registry.npmjs.org/micromark-util-sanitize-uri/-/micromark-util-sanitize-uri-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark-util-subtokenize",
+    "version": "2.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark-util-subtokenize",
+    "source": "https://registry.npmjs.org/micromark-util-subtokenize/-/micromark-util-subtokenize-2.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "micromark",
+    "version": "4.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/micromark/micromark/tree/main/packages/micromark",
+    "source": "https://registry.npmjs.org/micromark/-/micromark-4.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "parse5",
+    "version": "7.3.0",
+    "license": "MIT",
+    "repository": "https://github.com/inikulin/parse5",
+    "source": "https://registry.npmjs.org/parse5/-/parse5-7.3.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "property-information",
+    "version": "6.5.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/property-information",
+    "source": "https://registry.npmjs.org/property-information/-/property-information-6.5.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "property-information",
+    "version": "7.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/property-information",
+    "source": "https://registry.npmjs.org/property-information/-/property-information-7.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "react-dom",
+    "version": "19.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "source": "https://registry.npmjs.org/react-dom/-/react-dom-19.2.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "react-markdown",
+    "version": "10.1.0",
+    "license": "MIT",
+    "repository": "https://github.com/remarkjs/react-markdown",
+    "source": "https://registry.npmjs.org/react-markdown/-/react-markdown-10.1.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "react-router-dom",
+    "version": "6.30.6",
+    "license": "MIT",
+    "repository": "https://github.com/remix-run/react-router",
+    "source": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.6.tgz",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "name": "react-router",
+    "version": "6.30.6",
+    "license": "MIT",
+    "repository": "https://github.com/remix-run/react-router",
+    "source": "https://registry.npmjs.org/react-router/-/react-router-6.30.6.tgz",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "name": "react",
+    "version": "19.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "source": "https://registry.npmjs.org/react/-/react-19.2.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "rehype-raw",
+    "version": "7.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/rehypejs/rehype-raw",
+    "source": "https://registry.npmjs.org/rehype-raw/-/rehype-raw-7.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "remark-gfm",
+    "version": "4.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/remarkjs/remark-gfm",
+    "source": "https://registry.npmjs.org/remark-gfm/-/remark-gfm-4.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "remark-parse",
+    "version": "11.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/remarkjs/remark/tree/main/packages/remark-parse",
+    "source": "https://registry.npmjs.org/remark-parse/-/remark-parse-11.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "remark-rehype",
+    "version": "11.1.2",
+    "license": "MIT",
+    "repository": "https://github.com/remarkjs/remark-rehype",
+    "source": "https://registry.npmjs.org/remark-rehype/-/remark-rehype-11.1.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "scheduler",
+    "version": "0.27.0",
+    "license": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.27.0.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "space-separated-tokens",
+    "version": "2.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/space-separated-tokens",
+    "source": "https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-2.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "style-to-js",
+    "version": "1.1.21",
+    "license": "MIT",
+    "repository": "https://github.com/remarkablemark/style-to-js",
+    "source": "https://registry.npmjs.org/style-to-js/-/style-to-js-1.1.21.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "style-to-object",
+    "version": "1.0.14",
+    "license": "MIT",
+    "repository": "https://github.com/remarkablemark/style-to-object",
+    "source": "https://registry.npmjs.org/style-to-object/-/style-to-object-1.0.14.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "tailwind-merge",
+    "version": "3.6.0",
+    "license": "MIT",
+    "repository": "https://github.com/dcastil/tailwind-merge",
+    "source": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-3.6.0.tgz",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "name": "three",
+    "version": "0.181.1",
+    "license": "MIT",
+    "repository": "https://github.com/mrdoob/three.js",
+    "source": "https://registry.npmjs.org/three/-/three-0.181.1.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "trim-lines",
+    "version": "3.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/trim-lines",
+    "source": "https://registry.npmjs.org/trim-lines/-/trim-lines-3.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "trough",
+    "version": "2.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/trough",
+    "source": "https://registry.npmjs.org/trough/-/trough-2.2.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unified",
+    "version": "11.0.5",
+    "license": "MIT",
+    "repository": "https://github.com/unifiedjs/unified",
+    "source": "https://registry.npmjs.org/unified/-/unified-11.0.5.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unist-util-is",
+    "version": "6.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/unist-util-is",
+    "source": "https://registry.npmjs.org/unist-util-is/-/unist-util-is-6.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unist-util-position",
+    "version": "5.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/unist-util-position",
+    "source": "https://registry.npmjs.org/unist-util-position/-/unist-util-position-5.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unist-util-stringify-position",
+    "version": "4.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/unist-util-stringify-position",
+    "source": "https://registry.npmjs.org/unist-util-stringify-position/-/unist-util-stringify-position-4.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unist-util-visit-parents",
+    "version": "6.0.2",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/unist-util-visit-parents",
+    "source": "https://registry.npmjs.org/unist-util-visit-parents/-/unist-util-visit-parents-6.0.2.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "unist-util-visit",
+    "version": "5.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/syntax-tree/unist-util-visit",
+    "source": "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-5.0.0.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "vfile-location",
+    "version": "5.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/vfile/vfile-location",
+    "source": "https://registry.npmjs.org/vfile-location/-/vfile-location-5.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "vfile-message",
+    "version": "4.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/vfile/vfile-message",
+    "source": "https://registry.npmjs.org/vfile-message/-/vfile-message-4.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "vfile",
+    "version": "6.0.3",
+    "license": "MIT",
+    "repository": "https://github.com/vfile/vfile",
+    "source": "https://registry.npmjs.org/vfile/-/vfile-6.0.3.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "vite",
+    "version": "6.4.3",
+    "license": "MIT",
+    "repository": "https://github.com/vitejs/vite",
+    "source": "https://registry.npmjs.org/vite/-/vite-6.4.3.tgz",
+    "noticeFiles": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "name": "web-namespaces",
+    "version": "2.0.1",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/web-namespaces",
+    "source": "https://registry.npmjs.org/web-namespaces/-/web-namespaces-2.0.1.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  },
+  {
+    "name": "zustand",
+    "version": "5.0.8",
+    "license": "MIT",
+    "repository": "https://github.com/pmndrs/zustand",
+    "source": "https://registry.npmjs.org/zustand/-/zustand-5.0.8.tgz",
+    "noticeFiles": [
+      "LICENSE"
+    ]
+  },
+  {
+    "name": "zwitch",
+    "version": "2.0.4",
+    "license": "MIT",
+    "repository": "https://github.com/wooorm/zwitch",
+    "source": "https://registry.npmjs.org/zwitch/-/zwitch-2.0.4.tgz",
+    "noticeFiles": [
+      "license"
+    ]
+  }
+]
