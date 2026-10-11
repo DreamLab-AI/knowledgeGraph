@@ -25,9 +25,9 @@
     "crossDomain": 690
   },
   "edges": {
-    "declared": 151641,
+    "declared": 151627,
     "declaredBackbone": 13617,
-    "declaredRelations": 138024,
+    "declaredRelations": 138010,
     "resolvable": 115013,
     "backbone": 12637,
     "relations": 102376

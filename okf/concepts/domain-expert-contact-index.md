@@ -22,7 +22,6 @@ bridgesTo:
 uses:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:logseq
 supports:
   - urn:ngm:class:knowledge-management
   - urn:ngm:class:education-and-ai

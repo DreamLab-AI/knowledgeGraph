@@ -1463,14 +1463,14 @@
       "Time-Series Forecasting",
       "Compute Governance",
       "Compute Resources",
-      "Large Language Models",
       "Deep Learning",
       "Neural Networks",
       "Reinforcement Learning",
       "Model Evaluation",
       "Evaluation Benchmarks and Leaderboards",
       "AI Governance",
-      "AI Safety Institute"
+      "AI Safety Institute",
+      "AISI Frontier AI Safety Framework"
     ]
   },
   {
@@ -1915,7 +1915,6 @@
     ],
     "wikilinks": [
       "Tool Use",
-      "Large Language Models",
       "Automated Planning",
       "Agentic AI",
       "Autonomous Agent",
@@ -1933,7 +1932,8 @@
       "Workflow Orchestration",
       "AI Safety",
       "Chatbot",
-      "Robotic Process Automation"
+      "Robotic Process Automation",
+      "Prompt Injection"
     ]
   },
   {
@@ -1955,7 +1955,6 @@
       "Goal-Directed System"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Tool Use",
       "Memory",
       "Reasoning",
@@ -1974,7 +1973,8 @@
       "Retrieval-Augmented Generation",
       "Sandboxing",
       "Chatbots",
-      "Robotic Process Automation"
+      "Robotic Process Automation",
+      "Reinforcement Learning"
     ]
   },
   {
@@ -2071,12 +2071,12 @@
       "Autonomous System",
       "AI Governance",
       "AI Risk Management",
-      "Large Language Models",
       "Transformer",
       "Recommendation System",
       "Industrial Robotics",
       "Autonomous Navigation",
-      "Image Recognition"
+      "Image Recognition",
+      "Neural Network"
     ]
   },
   {
@@ -2108,7 +2108,6 @@
       "Deep Learning",
       "Neural Network",
       "Transformer",
-      "Large Language Models",
       "Training Data",
       "Machine Learning",
       "Image-to-Image",
@@ -2120,7 +2119,8 @@
       "Stability AI",
       "Synthetic Media",
       "Content Creation",
-      "Creative Industries"
+      "Creative Industries",
+      "AI Ethics"
     ]
   },
   {
@@ -2215,9 +2215,7 @@
     "is_subclass_of": [
       "Software Engineering"
     ],
-    "wikilinks": [
-      "Large Language Models"
-    ]
+    "wikilinks": []
   },
   {
     "id": "ai-benchmarking",
@@ -3033,9 +3031,9 @@
       "EU AI Act",
       "Explainability",
       "Fairness",
-      "Large Language Models",
       "Lead Poisoning Hypothesis",
-      "Machine Learning"
+      "Machine Learning",
+      "MetaverseDomain"
     ]
   },
   {
@@ -3185,7 +3183,6 @@
       "Digital Economy"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Agent Frameworks",
       "Agentic AI",
       "AI Policy",
@@ -3204,7 +3201,8 @@
       "AI Chips",
       "Machine Learning",
       "Deep Learning",
-      "Natural Language Processing"
+      "Natural Language Processing",
+      "Computer Vision"
     ]
   },
   {
@@ -3575,7 +3573,6 @@
       "AI Research Area"
     ],
     "wikilinks": [
-      "presentation",
       "rework based on gpt",
       "Death of the Internet",
       "Education and AI",
@@ -3584,8 +3581,7 @@
       "Politics, Law, Privacy",
       "Proprietary Large Language Models",
       "Social contract and jobs",
-      "Trust and Safety",
-      "Update Cycle"
+      "Trust and Safety"
     ]
   },
   {
@@ -3712,7 +3708,6 @@
     ],
     "wikilinks": [
       "pol",
-      "presentation",
       "copyright",
       "Education and AI",
       "Politics, Law, Privacy",
@@ -3856,8 +3851,7 @@
     "wikilinks": [
       "Artificial Intelligence",
       "Autonomous Robot",
-      "Computer Hardware",
-      "Large Language Models"
+      "Computer Hardware"
     ]
   },
   {
@@ -4484,8 +4478,7 @@
       "Human Oversight",
       "MetaverseDomain",
       "Model Performance",
-      "Risk Management",
-      "Update Cycle"
+      "Risk Management"
     ]
   },
   {
@@ -4507,12 +4500,10 @@
     ],
     "wikilinks": [
       "ChatGPT",
-      "Consumer Tools for SMEs",
       "Gemini",
       "Image Generation",
       "Knowledge Graphing",
-      "Retrieval Augmented Generation - RAG",
-      "social media"
+      "Retrieval Augmented Generation - RAG"
     ]
   },
   {
@@ -4715,7 +4706,6 @@
       "Deep Learning",
       "Neural Network",
       "Transformer Architecture",
-      "Large Language Models",
       "Foundation Model",
       "Training Data",
       "Gradient Descent",
@@ -4723,7 +4713,8 @@
       "AI Model Architecture",
       "AI Model Card",
       "AI Governance",
-      "Transfer Learning"
+      "Transfer Learning",
+      "Reinforcement Learning from Human Feedback"
     ]
   },
   {
@@ -4760,12 +4751,12 @@
       "Hardware Accelerator",
       "Tensor Parallelism",
       "Transformer Architecture",
-      "Large Language Models",
       "Model Weights",
       "Operator Fusion",
       "Flash Attention",
       "On-Device AI",
-      "Edge Computing"
+      "Edge Computing",
+      "MLOps"
     ]
   },
   {
@@ -5569,7 +5560,6 @@
       "ArtificialIntelligenceDomain",
       "EU AI Act",
       "High Risk AI System",
-      "Large Language Models",
       "Risk Management",
       "Smart Contract"
     ]
@@ -5742,7 +5732,6 @@
       "Formal Verification",
       "Trustworthy AI",
       "Deep Learning",
-      "Large Language Models",
       "AI Regulation",
       "Reinforcement Learning from Human Feedback",
       "Mechanistic Interpretability",
@@ -5752,7 +5741,8 @@
       "Responsible AI",
       "AI Alignment",
       "AI Risk",
-      "Existential Risk"
+      "Existential Risk",
+      "Fairness in Machine Learning"
     ]
   },
   {
@@ -6944,8 +6934,7 @@
       "ChatGPT",
       "GPT Engineer",
       "Infrastructure",
-      "Microsoft Copilot",
-      "Tips and Tricks"
+      "Microsoft Copilot"
     ]
   },
   {
@@ -7024,7 +7013,6 @@
       "Software Engineering"
     ],
     "wikilinks": [
-      "\ud83e\udd16",
       "Research Tools"
     ]
   },
@@ -11308,10 +11296,10 @@
       "Tool Use",
       "Function Calling",
       "Model Context Protocol",
-      "Large Language Models",
       "Agent Loop",
       "Human-in-the-Loop",
-      "Prompt Injection"
+      "Prompt Injection",
+      "Sandboxed Code Execution"
     ]
   },
   {
@@ -11450,13 +11438,13 @@
       "Procedural Memory",
       "Working Memory",
       "Knowledge Graph",
-      "Large Language Models",
       "Cognitive Architecture",
       "Agent Loop",
       "Multi-Agent System",
       "Personalisation",
       "Consolidation",
-      "Continual Learning"
+      "Continual Learning",
+      "pgvector"
     ]
   },
   {
@@ -11491,14 +11479,14 @@
       "Working Memory",
       "Long-Term Memory",
       "Knowledge Graph",
-      "Large Language Models",
       "Foundation Model",
       "Cognitive Architecture",
       "Agent Loop",
       "Multi-Agent System",
       "Attention Mechanism",
       "ReAct Pattern",
-      "Reflexion Pattern"
+      "Reflexion Pattern",
+      "Tool Use"
     ]
   },
   {
@@ -11530,7 +11518,6 @@
       "Multi-Agent System",
       "Agent-to-Agent Protocol",
       "Chain-of-Thought",
-      "Large Language Models",
       "Model Context Protocol",
       "Tool Use",
       "LangGraph",
@@ -11538,7 +11525,8 @@
       "CrewAI",
       "OpenAI Agents SDK",
       "Task Decomposition",
-      "Directed Acyclic Graph"
+      "Directed Acyclic Graph",
+      "Error Recovery"
     ]
   },
   {
@@ -11718,12 +11706,12 @@
       "Stochastic Process",
       "Network Science",
       "Reinforcement Learning",
-      "Large Language Models",
       "Monte Carlo Simulation",
       "Cellular Automata",
       "Multi-Agent Systems",
       "Epidemiological Modelling",
-      "Economic Model"
+      "Economic Model",
+      "Digital Twin"
     ]
   },
   {
@@ -11922,7 +11910,6 @@
       "Agent-Based Modelling"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Memory Management",
       "Tool Use",
       "Conversational AI",
@@ -11941,7 +11928,8 @@
       "AI Agents",
       "Prompt Engineering",
       "AI Alignment",
-      "AI Safety"
+      "AI Safety",
+      "Human-in-the-Loop"
     ]
   },
   {
@@ -12131,7 +12119,6 @@
       "Retrieval-Augmented Generation",
       "RAG Pipeline",
       "Agentic AI",
-      "Large Language Models",
       "Information Retrieval",
       "Agent Loop",
       "Vector Database",
@@ -12147,7 +12134,8 @@
       "Dense Retrieval",
       "Multi-Agent System",
       "Orchestration",
-      "Prompt Engineering"
+      "Prompt Engineering",
+      "Natural Language Processing"
     ]
   },
   {
@@ -12221,8 +12209,8 @@
       "Autonomous Coding",
       "AI Research Assistant",
       "Context Window",
-      "Large Language Models",
-      "Agent Memory"
+      "Agent Memory",
+      "Plan-and-Execute Pattern"
     ]
   },
   {
@@ -14228,7 +14216,6 @@
       "fast.ai",
       "Jeremy Howard",
       "Applied Machine Learning",
-      "Large Language Models",
       "Parameter-Efficient Fine-Tuning",
       "LoRA Fine-Tuning",
       "Foundation Model",
@@ -14244,7 +14231,8 @@
       "Reinforcement Learning from Human Feedback",
       "Agentic AI",
       "Education and AI",
-      "Deep Learning Framework"
+      "Deep Learning Framework",
+      "Machine Learning Discipline"
     ]
   },
   {
@@ -14350,20 +14338,20 @@
       "Mechanistic Interpretability",
       "Responsible Scaling Policy",
       "Reinforcement Learning from Human Feedback",
-      "Large Language Models",
       "Transformer Architecture",
       "Red Teaming",
       "AI Alignment",
       "Scalable Oversight",
       "AI Governance",
       "OpenAI Research Organisation",
-      "Google DeepMind",
       "Meta AI",
       "Interpretability",
       "Frontier AI",
       "AI Governance",
       "AI Regulation",
-      "Model Context Protocol"
+      "Model Context Protocol",
+      "Agentic AI",
+      "Frontier Model Forum"
     ]
   },
   {
@@ -14990,7 +14978,6 @@
       "Software Engineering"
     ],
     "wikilinks": [
-      "presentation",
       "Hardware and Edge"
     ]
   },
@@ -16070,13 +16057,13 @@
       "Foundation Model",
       "Benchmark Evaluation",
       "Reproducibility",
-      "Large Language Models",
       "Multimodal AI",
       "AI Safety Research",
       "Alignment Research",
       "Explainable AI",
       "Academic Research",
-      "Peer Review"
+      "Peer Review",
+      "Empirical Evaluation"
     ]
   },
   {
@@ -17688,7 +17675,6 @@
       "Query Key Value",
       "Softmax Function",
       "Positional Encoding",
-      "Large Language Models",
       "Natural Language Processing",
       "Explainable AI",
       "Backpropagation",
@@ -17697,7 +17683,8 @@
       "Machine Translation",
       "Computer Vision",
       "Embedding",
-      "Matrix Multiplication"
+      "Matrix Multiplication",
+      "Layer Normalisation"
     ]
   },
   {
@@ -18097,7 +18084,7 @@
       "Spectrogram",
       "Audio Codec",
       "Natural Language Processing",
-      "Large Language Models"
+      "Multimodal AI"
     ]
   },
   {
@@ -19036,7 +19023,6 @@
       "AI Agent",
       "Function Calling",
       "Multi-Agent Systems",
-      "Large Language Models",
       "Agent Frameworks",
       "Orchestration",
       "Autonomous Agent",
@@ -19048,7 +19034,8 @@
       "OpenAI Agents SDK",
       "Model Context Protocol",
       "Retrieval-Augmented Generation",
-      "Chain of Thought"
+      "Chain of Thought",
+      "Autonomous Coding"
     ]
   },
   {
@@ -19226,10 +19213,10 @@
       "Evolutionary Algorithm",
       "Deep Generative Model",
       "Diffusion Model",
-      "Large Language Models",
       "Digital Twin",
       "Smart Manufacturing",
-      "Optimisation"
+      "Optimisation",
+      "Graph Neural Network"
     ]
   },
   {
@@ -19564,7 +19551,6 @@
       "AI-GroundedDomain",
       "NLPDomain",
       "Prompt Engineering",
-      "Large Language Models",
       "In-Context Learning",
       "Few-Shot Prompting",
       "Chain of Thought",
@@ -19578,7 +19564,8 @@
       "Transformer Architecture",
       "Training and Fine Tuning",
       "Instruction Following",
-      "Model Optimisation and Performance"
+      "Model Optimisation and Performance",
+      "Zhou et al. 2022 APE"
     ]
   },
   {
@@ -19842,7 +19829,6 @@
       "Reinforcement Learning",
       "Multi-Agent Systems",
       "Cognitive Architecture",
-      "Large Language Models",
       "AI Safety",
       "AI Alignment",
       "Human-in-the-Loop",
@@ -19850,7 +19836,8 @@
       "Swarm Intelligence",
       "Agent-Based Modelling",
       "Task Planning",
-      "Decision Making"
+      "Decision Making",
+      "World Model"
     ]
   },
   {
@@ -20147,7 +20134,7 @@
       "Decision Engine",
       "Perception Module",
       "Reinforcement Learning",
-      "Large Language Models"
+      "Multi-Agent Orchestration"
     ]
   },
   {
@@ -20251,7 +20238,6 @@
     ],
     "wikilinks": [
       "Agentic AI",
-      "Large Language Models",
       "Automated Planning",
       "Tool Use",
       "Working Memory",
@@ -20269,7 +20255,8 @@
       "LLM Agents",
       "Long-Horizon Planning",
       "ReAct Prompting",
-      "Robotics"
+      "Robotics",
+      "Distributed Collaboration"
     ]
   },
   {
@@ -20336,8 +20323,7 @@
       "Perception System",
       "Self Driving Car",
       "Sensor Fusion",
-      "Social contract and jobs",
-      "Some legacy Linked-JSON"
+      "Social contract and jobs"
     ]
   },
   {
@@ -22095,14 +22081,14 @@
       "Sequence-to-Sequence Model",
       "Encoder Decoder Architecture",
       "Attention Mechanism",
-      "Large Language Models",
       "Quality Estimation",
       "Semi-Supervised Learning",
       "Synthetic Data",
       "Transfer Learning",
       "Language Model",
       "Domain Adaptation",
-      "Text Generation"
+      "Text Generation",
+      "Multilingual Model"
     ]
   },
   {
@@ -22897,7 +22883,7 @@
       "Deep Learning Framework",
       "Distributed Inference",
       "Flash Attention",
-      "Large Language Models"
+      "Transformer Architecture"
     ]
   },
   {
@@ -23373,7 +23359,6 @@
     ],
     "wikilinks": [
       "Beam Search",
-      "Large Language Models",
       "Encoder Decoder Architecture",
       "Machine Translation",
       "Text Generation",
@@ -23391,7 +23376,8 @@
       "Constrained Decoding",
       "Language Model",
       "Natural Language Generation",
-      "Log-Probability"
+      "Log-Probability",
+      "Length Normalisation"
     ]
   },
   {
@@ -23420,7 +23406,6 @@
       "Text Generation",
       "Speech Recognition",
       "Natural Language Processing",
-      "Large Language Models",
       "Encoder Decoder Architecture",
       "Sequence-to-Sequence Learning",
       "Language Model",
@@ -23433,7 +23418,8 @@
       "Beam Search Decoding",
       "Constrained Decoding",
       "Speculative Decoding",
-      "Robotics"
+      "Robotics",
+      "Transformer Architecture"
     ]
   },
   {
@@ -23796,9 +23782,9 @@
       "Natural Language Processing",
       "Supervised Learning",
       "Transfer Learning",
-      "Large Language Models",
       "Computer Vision",
-      "Data Quality"
+      "Data Quality",
+      "AI Benchmark Epistemological Critique"
     ]
   },
   {
@@ -23838,12 +23824,12 @@
       "Frontier Model Evaluation",
       "Capability Evaluation",
       "Human Evaluation",
-      "Large Language Models",
       "Ground Truth Labels",
       "Natural Language Processing",
       "Data Annotation",
       "Overfitting",
-      "Bias"
+      "Bias",
+      "AI Ethics"
     ]
   },
   {
@@ -24308,10 +24294,8 @@
       "Bias in Large Language Models",
       "Deep Learning",
       "EU AI Act",
-      "Large Language Models",
       "Machine Learning",
-      "Safety and alignment",
-      "Update Cycle"
+      "Safety and alignment"
     ]
   },
   {
@@ -25402,7 +25386,6 @@
     ],
     "wikilinks": [
       "Digital Objects",
-      "Melvin Carvalho",
       "Runes and Glyphs",
       "Testnet"
     ]
@@ -33277,7 +33260,6 @@
     ],
     "wikilinks": [
       "Natural Language Processing",
-      "Large Language Models",
       "Conversational AI"
     ]
   },
@@ -33626,7 +33608,6 @@
       "Embedding Model",
       "Information Retrieval",
       "Vector Database",
-      "Large Language Models",
       "Natural Language Processing",
       "Semantic Search"
     ]
@@ -34064,7 +34045,6 @@
       "Inference Engine",
       "Decision Tree",
       "Supervised Learning",
-      "Large Language Models",
       "Explainability",
       "Interpretability",
       "Neurosymbolic AI",
@@ -34072,7 +34052,8 @@
       "Forward Chaining",
       "Backward Chaining",
       "Description Logic",
-      "Knowledge Representation"
+      "Knowledge Representation",
+      "Natural Language Processing"
     ]
   },
   {
@@ -34310,7 +34291,6 @@
     ],
     "wikilinks": [
       "Anthropic",
-      "Large Language Models",
       "Constitutional AI Training Methodology",
       "Reinforcement Learning from Human Feedback",
       "AI Safety",
@@ -34328,7 +34308,8 @@
       "Responsible Scaling Policy",
       "Transformer Architecture",
       "Tool Use",
-      "Conversational AI"
+      "Conversational AI",
+      "Function Calling"
     ]
   },
   {
@@ -35548,7 +35529,6 @@
       "AI Agent Systems",
       "CLI Multi-Agent Systems",
       "Agentic Workflow",
-      "Large Language Models",
       "Code Generation",
       "Tool Use",
       "Sandboxed Code Execution",
@@ -35564,7 +35544,8 @@
       "E2B",
       "Modal",
       "Reinforcement Learning",
-      "Function Calling"
+      "Function Calling",
+      "Prompt Engineering"
     ]
   },
   {
@@ -35591,7 +35572,6 @@
     "wikilinks": [
       "Artificial Intelligence",
       "Generative AI",
-      "Large Language Models",
       "Transformer Architecture",
       "Prompt Engineering",
       "Reinforcement Learning from Human Feedback",
@@ -35608,7 +35588,8 @@
       "Embedding",
       "Fine-Tuning",
       "Continuous Integration",
-      "Test-Driven Development"
+      "Test-Driven Development",
+      "Automated Code Review"
     ]
   },
   {
@@ -35838,7 +35819,7 @@
       "Neural Networks",
       "Bayesian Inference",
       "Reinforcement Learning",
-      "Large Language Models"
+      "Cognitive Science"
     ]
   },
   {
@@ -36044,8 +36025,8 @@
       "Machine Learning",
       "Computer Vision",
       "Reinforcement Learning",
-      "Large Language Models",
-      "Knowledge Graphs"
+      "Knowledge Graphs",
+      "Retrieval-Augmented Generation"
     ]
   },
   {
@@ -36092,7 +36073,6 @@
       "Retrieval-Augmented Generation",
       "Natural Language Processing",
       "Language Model",
-      "Large Language Models",
       "Fine-Tuning",
       "Vector Database",
       "API",
@@ -36104,7 +36084,8 @@
       "Question Answering",
       "Document Understanding",
       "Reranking",
-      "On-Premises Deployment"
+      "On-Premises Deployment",
+      "Cloud AI Platform"
     ]
   },
   {
@@ -37608,7 +37589,6 @@
       "GPT",
       "Machine Learning",
       "Synthetic Data",
-      "Large Language Models",
       "Natural Language Processing",
       "Training Data",
       "Data Curation",
@@ -37623,7 +37603,8 @@
       "BERT",
       "Transfer Learning",
       "Bias in Large Language Models",
-      "Data Governance"
+      "Data Governance",
+      "EU AI Act"
     ]
   },
   {
@@ -39347,7 +39328,6 @@
       "Deep Generative Model",
       "Diffusion Model",
       "Generative Adversarial Network",
-      "Large Language Models",
       "Transformer",
       "Natural Language Processing",
       "Machine Learning",
@@ -39360,7 +39340,8 @@
       "Music Generation",
       "Content Generation",
       "Human-AI Collaboration",
-      "Intellectual Property"
+      "Intellectual Property",
+      "AI in Games"
     ]
   },
   {
@@ -43285,8 +43266,7 @@
     "wikilinks": [
       "ArtificialIntelligenceDomain",
       "Autonomous Robot",
-      "Blockchain",
-      "Large Language Models"
+      "Blockchain"
     ]
   },
   {
@@ -43426,7 +43406,6 @@
     ],
     "wikilinks": [
       "Inference Optimisation",
-      "Large Language Models",
       "KV Cache",
       "Paged Attention",
       "vLLM",
@@ -43444,7 +43423,8 @@
       "Tensor Parallelism",
       "Flash Attention",
       "Quantisation",
-      "Batch Processing"
+      "Batch Processing",
+      "Memory Management"
     ]
   },
   {
@@ -44316,7 +44296,6 @@
       "Autonomous Robot",
       "Digital Twin",
       "Natural Language Processing",
-      "Large Language Models",
       "Dialogue System",
       "Transformer Architecture",
       "Retrieval-Augmented Generation",
@@ -45784,7 +45763,6 @@
       "Generative AI",
       "Diffusion Model",
       "Generative Adversarial Network",
-      "Large Language Models",
       "Transformer",
       "Variational Autoencoder",
       "Neural Style Transfer",
@@ -45800,7 +45778,8 @@
       "Human-AI Collaboration",
       "Copyright",
       "Creative Industries",
-      "Synthetic Media"
+      "Synthetic Media",
+      "Game Development"
     ]
   },
   {
@@ -45872,12 +45851,12 @@
       "Human-AI Collaboration",
       "AI Ethics",
       "Diffusion Model",
-      "Large Language Models",
       "Synthetic Media",
       "Image Generation",
       "Text-to-Image",
       "Procedural Content Generation",
-      "Digital Twin"
+      "Digital Twin",
+      "Augmented Reality"
     ]
   },
   {
@@ -47231,7 +47210,6 @@
       "Supervised Learning",
       "Language Modeling",
       "Transformer",
-      "Large Language Models",
       "Softmax Function",
       "Neural Network",
       "Deep Learning",
@@ -47244,7 +47222,8 @@
       "Label Smoothing",
       "Focal Loss",
       "Direct Preference Optimisation",
-      "Reinforcement Learning from Human Feedback"
+      "Reinforcement Learning from Human Feedback",
+      "Mean Squared Error"
     ]
   },
   {
@@ -49366,7 +49345,7 @@
       "Data Privacy",
       "Artificial Intelligence",
       "Natural Language Processing",
-      "Large Language Models"
+      "CRM"
     ]
   },
   {
@@ -49544,7 +49523,6 @@
       "Information Retrieval",
       "Workflow Automation",
       "Question Answering",
-      "Large Language Models",
       "Retrieval-Augmented Generation",
       "CRM",
       "CRM Integration",
@@ -49555,7 +49533,8 @@
       "Multi-Turn Dialogue",
       "Knowledge Retrieval",
       "Speech Recognition",
-      "Reinforcement Learning from Human Feedback"
+      "Reinforcement Learning from Human Feedback",
+      "Enterprise Workflow"
     ]
   },
   {
@@ -50819,7 +50798,6 @@
       "LLM Orchestration",
       "Chain-of-Thought Prompting",
       "LLM Agents",
-      "Large Language Models",
       "Retrieval Augmented Generation",
       "Few-Shot Prompting",
       "In-Context Learning",
@@ -50832,7 +50810,8 @@
       "Model Optimisation and Performance",
       "Hallucination",
       "Evaluation Benchmarks and Leaderboards",
-      "Reinforcement Learning"
+      "Reinforcement Learning",
+      "AI Agents"
     ]
   },
   {
@@ -54547,7 +54526,6 @@
       "Blockchain",
       "Distributed Computing",
       "Distributed Identity",
-      "Melvin Carvalho",
       "Nostr protocol",
       "Projects"
     ]
@@ -55406,7 +55384,6 @@
       "Expert Systems",
       "Machine Learning",
       "Explainable AI",
-      "Large Language Models",
       "Knowledge Representation",
       "Business Rules",
       "Automated Decision Making",
@@ -55414,7 +55391,8 @@
       "Workflow Automation",
       "Risk Scoring",
       "Recommendation Engine",
-      "Audit Trail"
+      "Audit Trail",
+      "Regulation"
     ]
   },
   {
@@ -60976,8 +60954,7 @@
       "Sensors",
       "metaverse",
       "Signal Processing",
-      "Spatial Audio",
-      "Video Processing"
+      "Spatial Audio"
     ]
   },
   {
@@ -64206,8 +64183,7 @@
     ],
     "wikilinks": [
       "Could",
-      "Education and AI",
-      "Large Language Models"
+      "Education and AI"
     ]
   },
   {
@@ -75950,13 +75926,13 @@
       "Inference Serving",
       "AI Inference",
       "Model Inference",
-      "Large Language Models",
       "Agent Frameworks",
       "Agent Execution Sandboxes",
       "Model Context Protocol",
       "Agent-to-Agent Protocol",
       "REST API",
-      "gRPC"
+      "gRPC",
+      "Message Queue"
     ]
   },
   {
@@ -76791,7 +76767,6 @@
       "Collective Communication",
       "Gradient Checkpointing",
       "Mixed Precision Training",
-      "Large Language Models",
       "PyTorch",
       "Megatron-LM",
       "Pipeline Parallelism",
@@ -79536,7 +79511,6 @@
       "Face Swap",
       "Fashion",
       "Flux.1",
-      "Large Language Models",
       "LoRA",
       "LoRA DoRA etc",
       "Model Optimisation and Performance",
@@ -82897,8 +82871,7 @@
       "Transformer",
       "OpenAI",
       "In-Context Learning",
-      "Multimodal AI",
-      "Large Language Models"
+      "Multimodal AI"
     ]
   },
   {
@@ -84560,7 +84533,6 @@
       "AI Model Architecture"
     ],
     "wikilinks": [
-      "\ud83e\udd16",
       "Diffusion Models",
       "Generative Adversarial Networks",
       "MetaverseDomain",
@@ -90368,7 +90340,6 @@
       "Governance and Safety"
     ],
     "wikilinks": [
-      "\ud83e\udd16",
       "MetaverseDomain",
       "Research Tools",
       "Sam Hammond"
@@ -90863,8 +90834,7 @@
       "Population Health",
       "Data Analytics",
       "Medical AI",
-      "MetaverseDomain",
-      "Update Cycle"
+      "MetaverseDomain"
     ]
   },
   {
@@ -93096,8 +93066,6 @@
       "Hardware and Edge",
       "Infrastructure",
       "Interfaces",
-      "Large Language Models",
-      "Node based visual interfaces",
       "Stable Diffusion"
     ]
   },
@@ -98300,7 +98268,6 @@
       "automation",
       "documentation",
       "optimization",
-      "presentation",
       "taleb2012antifragile",
       "Transfer Learning",
       "computer vision",
@@ -107254,7 +107221,6 @@
       "Nostr",
       "Hyper personalisation",
       "Knowledge Graphing",
-      "Logseq",
       "MetaverseDomain"
     ]
   },
@@ -108049,7 +108015,6 @@
       "Large Language Model"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Retrieval-Augmented Generation",
       "LangChain"
     ]
@@ -108080,7 +108045,6 @@
       "Retrieval-Augmented Generation",
       "Agentic RAG",
       "Vector Database",
-      "Large Language Models",
       "Tool Use",
       "Function Calling",
       "Model Context Protocol",
@@ -108090,7 +108054,8 @@
       "Reasoning",
       "Tool Call Loop",
       "Agent Memory",
-      "Agent Loop"
+      "Agent Loop",
+      "Foundation Models"
     ]
   },
   {
@@ -108129,7 +108094,6 @@
       "Large Language Model"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Tool Use",
       "Retrieval-Augmented Generation",
       "LangChain"
@@ -108746,14 +108710,11 @@
       "Large Language Model",
       "Omniverse",
       "OpenUSD",
-      "presentation",
       "BERT",
       "Diffusion Models",
       "Google",
       "GPT",
       "Knowledge Graphing",
-      "Large Language Models",
-      "Logseq",
       "Metaverse and Telecollaboration",
       "MetaverseDomain",
       "Natural Language Processing",
@@ -108762,7 +108723,8 @@
       "Open Generative AI tools",
       "Proprietary Large Language Models",
       "Self Attention",
-      "Text Generation"
+      "Text Generation",
+      "Transformer"
     ]
   },
   {
@@ -112820,9 +112782,7 @@
     "is_subclass_of": [
       "AI Application"
     ],
-    "wikilinks": [
-      "..."
-    ]
+    "wikilinks": []
   },
   {
     "id": "local-search",
@@ -114915,13 +114875,11 @@
       "Deep Learning"
     ],
     "wikilinks": [
-      "presentation",
       "RLHF",
       "Diffusion Models",
       "Direct Preference Optimization",
       "Generative Adversarial Networks",
       "Proprietary Large Language Models",
-      "State Space and Other Approaches",
       "Transformers"
     ]
   },
@@ -114988,7 +114946,6 @@
       "Diagrams as Code",
       "Gemini",
       "Google",
-      "Large Language Models",
       "Metaverse Ontology",
       "Natural Language Processing",
       "Prompt Engineering",
@@ -117945,7 +117902,6 @@
       "ComplianceDomain",
       "DistributedCollaborationDomain",
       "Distributed Learning Archive",
-      "DPO",
       "FCA SYSC 10A",
       "FINRA Rule 17a-4",
       "Full-text Search Index",
@@ -117955,7 +117911,8 @@
       "Meeting Documentation",
       "MP4 Encoding",
       "Network Bandwidth",
-      "Onboarding"
+      "Onboarding",
+      "Participant Consent"
     ]
   },
   {
@@ -119641,12 +119598,8 @@
       "ChatGPT",
       "Gemini",
       "Knowledge Graphing",
-      "Large Language Models",
       "Lightning and Similar L2",
-      "Logseq",
-      "Ontology conversation with AIs",
-      "RGB and Client Side Validation",
-      "Some legacy Linked-JSON"
+      "RGB and Client Side Validation"
     ]
   },
   {
@@ -121401,8 +121354,7 @@
       "Retrieval-Augmented Generation",
       "Function Calling",
       "Language Model",
-      "Natural Language Processing",
-      "Large Language Models"
+      "Natural Language Processing"
     ]
   },
   {
@@ -123380,7 +123332,6 @@
       "AI Technique"
     ],
     "wikilinks": [
-      "presentation",
       "3D and 4D",
       "ArtificialIntelligenceDomain",
       "Face Swap",
@@ -124420,13 +124371,10 @@
       "Trajectory Optimisation",
       "ComfyUI",
       "Control Theory",
-      "Delivery Planning",
       "MetaverseDomain",
       "Microsoft Copilot",
       "Music and Audio",
-      "Path Planning",
-      "social media",
-      "Update Cycle"
+      "Path Planning"
     ]
   },
   {
@@ -125250,7 +125198,6 @@
       "Diagrams as Code",
       "Gemini",
       "Google",
-      "Large Language Models",
       "Metaverse Ontology",
       "Prompt Engineering"
     ]
@@ -125739,7 +125686,6 @@
     ],
     "wikilinks": [
       "Apple",
-      "Large Language Models",
       "Multimodal",
       "Variational Autoencoders"
     ]
@@ -127834,7 +127780,6 @@
       "AI Research Area"
     ],
     "wikilinks": [
-      "Large Language Models",
       "Machine Translation",
       "Text Generation",
       "Transformers"
@@ -129370,8 +129315,7 @@
       "AI Technique"
     ],
     "wikilinks": [
-      "ArtificialIntelligenceDomain",
-      "Update Cycle"
+      "ArtificialIntelligenceDomain"
     ]
   },
   {
@@ -131675,7 +131619,6 @@
       "BC-0428-enterprise-blockchain-architecture",
       "BC-0429-permissioned-blockchain",
       "BC-0430-private-channels",
-      "...",
       "Block",
       "Blockchain Entity",
       "Consensus Mechanism",
@@ -131689,7 +131632,8 @@
       "Enterprise Blockchain Architecture",
       "Hyperledger Besu",
       "Hyperledger Fabric",
-      "Mathematical Science"
+      "Mathematical Science",
+      "Node"
     ]
   },
   {
@@ -142202,8 +142146,7 @@
     "wikilinks": [
       "Neocadia",
       "AI Video",
-      "ComfyUI",
-      "Player Two code"
+      "ComfyUI"
     ]
   },
   {
@@ -147722,7 +147665,6 @@
       "Model Context Protocol",
       "Tool Use",
       "Function Calling",
-      "Large Language Models",
       "Retrieval-Augmented Generation",
       "Embeddings",
       "Vector Database",
@@ -147732,7 +147674,8 @@
       "Prompt Engineering",
       "Information Retrieval",
       "Semantic Search",
-      "Agentic RAG"
+      "Agentic RAG",
+      "Terminal Coding Agents"
     ]
   },
   {
@@ -148137,7 +148080,6 @@
       "cloud computing",
       "ComfyUI",
       "knowledge management",
-      "Melvin Carvalho",
       "Stable Diffusion"
     ]
   },
@@ -150657,7 +150599,6 @@
     ],
     "wikilinks": [
       "ComfyUI",
-      "Large Language Models",
       "Machine Learning",
       "Nostr protocol",
       "Python and PyTorch"
@@ -150699,9 +150640,7 @@
     "is_subclass_of": [
       "AI Application"
     ],
-    "wikilinks": [
-      "..."
-    ]
+    "wikilinks": []
   },
   {
     "id": "python-3",
@@ -151854,7 +151793,6 @@
     ],
     "wikilinks": [
       "scalability",
-      "\ud83e\udd16",
       "Dialogue System",
       "Information Retrieval",
       "machine learning",
@@ -153101,9 +153039,7 @@
     "is_subclass_of": [
       "Network Component"
     ],
-    "wikilinks": [
-      "\ud83e\udd16"
-    ]
+    "wikilinks": []
   },
   {
     "id": "radio-access-network",
@@ -158922,8 +158858,7 @@
       "Deep Learning"
     ],
     "wikilinks": [
-      "MetaverseDomain",
-      "Update Cycle"
+      "MetaverseDomain"
     ]
   },
   {
@@ -164186,7 +164121,6 @@
       "Death of the Internet",
       "Decentralised Web",
       "Infrastructure",
-      "Large Language Models",
       "MetaverseDomain",
       "Politics, Law, Privacy",
       "Safety and alignment",
@@ -167862,13 +167796,11 @@
       "Attention Mechanism"
     ],
     "wikilinks": [
-      "presentation",
       "Visionflow",
       "Human vs AI",
       "Knowhere",
       "MetaverseDomain",
       "Proprietary Large Language Models",
-      "State Space and Other Approaches",
       "Transformers"
     ]
   },
@@ -168951,8 +168883,7 @@
       "Perception System",
       "robotics",
       "RoboticsDomain",
-      "Stable Diffusion Image Model",
-      "Update Cycle"
+      "Stable Diffusion Image Model"
     ]
   },
   {
@@ -171459,8 +171390,7 @@
     ],
     "wikilinks": [
       "Inference",
-      "Agentic Workflow",
-      "Large Language Models"
+      "Agentic Workflow"
     ]
   },
   {
@@ -172790,14 +172720,14 @@
       "Equity",
       "Generative AI",
       "Humans, Avatars , Character",
-      "Large Language Models",
-      "legacy media",
       "Meta Platforms",
       "Metaverse and Telecollaboration",
       "MetaverseDomain",
       "Money",
       "Nostr protocol",
-      "OpenAI"
+      "OpenAI",
+      "Politics, Law, Privacy",
+      "Social contract and jobs"
     ]
   },
   {
@@ -181021,7 +180951,6 @@
       "Image to Image Translation"
     ],
     "wikilinks": [
-      "presentation",
       "rework based on gpt",
       "Artificial Intelligence",
       "Convolutional Neural Network",
@@ -183765,7 +183694,6 @@
     ],
     "wikilinks": [
       "Speech Recognition",
-      "Large Language Models",
       "Meeting Transcription",
       "Conversational AI",
       "Telecollaboration"
@@ -185055,7 +184983,6 @@
       "Gemini",
       "Hyper personalisation",
       "Knowhere",
-      "Location Based Experience",
       "Metaverse and Telecollaboration",
       "Mixed Reality",
       "National Industrial Centre for Virtual Environments",
@@ -186143,8 +186070,7 @@
       "Inference Hardware"
     ],
     "wikilinks": [
-      "Inference Hardware",
-      "Large Language Models"
+      "Inference Hardware"
     ]
   },
   {
@@ -186296,7 +186222,6 @@
       "Agent Execution Sandboxes",
       "Agent Evaluation Benchmarks",
       "Multi-Agent Orchestration Frameworks",
-      "Large Language Models",
       "Tool Use",
       "Function Calling",
       "Model Context Protocol",
@@ -186309,7 +186234,8 @@
       "Prompt Injection",
       "AI Safety",
       "Foundation Model",
-      "Chain of Thought"
+      "Chain of Thought",
+      "ReAct Pattern"
     ]
   },
   {
@@ -199470,9 +199396,7 @@
     "is_subclass_of": [
       "Platform and Environment"
     ],
-    "wikilinks": [
-      "Update Cycle"
-    ]
+    "wikilinks": []
   },
   {
     "id": "virtual-economy",
@@ -206671,8 +206595,7 @@
       "Language Model",
       "Prompt Engineering",
       "In-Context Learning",
-      "Few-Shot Learning",
-      "Large Language Models"
+      "Few-Shot Learning"
     ]
   },
   {
@@ -209841,7 +209764,6 @@
       "GPU",
       "Model Serving",
       "Inference Serving",
-      "Large Language Models",
       "Latency"
     ]
   },

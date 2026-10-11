@@ -9179,7 +9179,6 @@ ngm:ai-app-store a owl:Class ;
     prov:wasAttributedTo <did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209> ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.35"^^xsd:float ;
-    vc:relatedTo ngm:chatgpt ;
     vc:relatedTo ngm:generative-ai ;
     vc:relatedTo ngm:third-party-integration ;
     vc:slug "ai-app-store" ;
@@ -15521,7 +15520,6 @@ ngm:ai-video a owl:Class ;
     vc:bridgesTo ngm:synthetic-media ;
     vc:contrastsWith ngm:classical-animation ;
     vc:contrastsWith ngm:motion-capture ;
-    vc:contrastsWith ngm:pika ;
     vc:contrastsWith ngm:procedural-animation ;
     vc:contrastsWith ngm:sora ;
     vc:contrastsWith ngm:traditional-vfx-pipeline ;
@@ -17692,8 +17690,6 @@ ngm:anchorage-digital a owl:Class ;
     vc:sourceDomain "blockchain" .
 ngm:andrey-kolmogorov a skos:Concept ;
     rdfs:label "Andrey Kolmogorov"@en .
-ngm:android a skos:Concept ;
-    rdfs:label "Android"@en .
 ngm:android-platform a skos:Concept ;
     rdfs:label "Android Platform"@en .
 ngm:anemometer a owl:Class ;
@@ -19368,7 +19364,6 @@ ngm:apple-inc-technology-corporation a owl:Class ;
     vc:bridgesTo ngm:federated-learning ;
     vc:bridgesTo ngm:large-language-model ;
     vc:bridgesTo ngm:spatial-ai ;
-    vc:contrastsWith ngm:android ;
     vc:contrastsWith ngm:google-ai-technology-corporation ;
     vc:contrastsWith ngm:microsoft ;
     vc:enables ngm:augmented-reality ;
@@ -39938,7 +39933,6 @@ ngm:bradley-terry-model a owl:Class ;
     rdfs:subClassOf _:r3583 ;
     prov:wasAttributedTo <did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0> ;
     vc:bridgesTo ngm:constitutional-ai ;
-    vc:bridgesTo ngm:dpo ;
     vc:bridgesTo ngm:ipo ;
     vc:bridgesTo ngm:reinforcement-learning-from-human-feedback ;
     vc:bridgesTo ngm:rlaif ;
@@ -47787,8 +47781,6 @@ ngm:chatbots a owl:Class ;
     vc:uses ngm:constitutional-ai ;
     vc:uses ngm:human-evaluation ;
     vc:uses ngm:reinforcement-learning-from-human-feedback .
-ngm:chatgpt a skos:Concept ;
-    rdfs:label "Chatgpt"@en .
 ngm:chaumian-ecash a owl:Class ;
     rdfs:comment "Chaumian ecash is a form of digital cash, invented by David Chaum, that uses blind signatures to issue bearer tokens redeemable at a central mint while preserving payer privacy. The mint signs blinded token requests so it cannot link issued tokens to the users who later spend them, providing strong untraceability with offline-style bearer transfer. It matters as the cryptographic foundation for privacy-preserving custodial payment systems, revived in Bitcoin through mints such as Cashu and Fedimint."@en ;
     rdfs:label "Chaumian Ecash"@en ;
@@ -78490,7 +78482,6 @@ ngm:database-schema a owl:Class ;
     vc:hasMaturity ngmi:maturity-established ;
     vc:hasPart ngm:database-view ;
     vc:hasPart ngm:foreign-key ;
-    vc:hasPart ngm:index ;
     vc:hasPart ngm:normalisation ;
     vc:hasPart ngm:primary-key ;
     vc:hasPart ngm:referential-integrity ;
@@ -85247,7 +85238,6 @@ ngm:diagrams-as-code a owl:Class ;
     vc:relatedTo ngm:documentation-as-code ;
     vc:relatedTo ngm:excalidraw ;
     vc:relatedTo ngm:kroki ;
-    vc:relatedTo ngm:logseq ;
     vc:relatedTo ngm:notion ;
     vc:relatedTo ngm:static-site-generator ;
     vc:requires ngm:layout-algorithm ;
@@ -94970,8 +94960,7 @@ ngm:domain-expert-contact-index a owl:Class ;
     vc:supports ngm:education-and-ai ;
     vc:supports ngm:knowledge-management ;
     vc:uses ngm:generative-ai ;
-    vc:uses ngm:large-language-model ;
-    vc:uses ngm:logseq .
+    vc:uses ngm:large-language-model .
 ngm:domain-expertise a skos:Concept ;
     rdfs:label "Domain Expertise"@en .
 ngm:domain-federation a skos:Concept ;
@@ -95309,8 +95298,6 @@ ngm:dpm-plus-plus-2m-karras-sampler a skos:Concept ;
     rdfs:label "Dpm Plus Plus 2m Karras Sampler"@en .
 ngm:dpm-solver a skos:Concept ;
     rdfs:label "Dpm Solver"@en .
-ngm:dpo a skos:Concept ;
-    rdfs:label "Dpo"@en .
 ngm:dpop-authentication a skos:Concept ;
     rdfs:label "Dpop Authentication"@en .
 ngm:dpop-token a skos:Concept ;
@@ -106644,7 +106631,6 @@ ngm:ethan-mollick a owl:Class ;
     vc:qualityScore "0.72"^^xsd:float ;
     vc:relatedTo ngm:ai-policy ;
     vc:relatedTo ngm:behavioural-economics ;
-    vc:relatedTo ngm:chatgpt ;
     vc:relatedTo ngm:co-intelligence ;
     vc:relatedTo ngm:cognitive-science ;
     vc:relatedTo ngm:educational-technology ;
@@ -128851,8 +128837,6 @@ ngm:grievance-mechanism a skos:Concept ;
     rdfs:label "Grievance Mechanism"@en .
 ngm:gripper-control a skos:Concept ;
     rdfs:label "Gripper Control"@en .
-ngm:grok a skos:Concept ;
-    rdfs:label "Grok"@en .
 ngm:grokking a owl:Class ;
     rdfs:comment "A training phenomenon in deep learning, first documented by Power et al. (2022) on algorithmic tasks, in which a network first memorises its training data — reaching perfect training accuracy while test accuracy stays at chance — and then, after continued training far beyond apparent convergence, abruptly transitions to near-perfect generalisation; interpreted as a delayed phase change from a memorising solution to a simpler, structured circuit, typically induced by regularisation such as weight decay."@en ;
     rdfs:label "Grokking"@en ;
@@ -139034,7 +139018,6 @@ ngm:image-processing a owl:Class ;
     vc:bridgesTo ngm:speckle-filtering ;
     vc:bridgesTo ngm:star-tracker ;
     vc:contrastsWith ngm:point-cloud-processing ;
-    vc:contrastsWith ngm:video-processing ;
     vc:enables ngm:augmented-reality ;
     vc:enables ngm:autonomous-vehicle ;
     vc:enables ngm:image-classification ;
@@ -141110,8 +141093,6 @@ ngm:independent-verification a owl:Class ;
     vc:sourceDomain "blockchain" .
 ngm:independent-wheel-motors a skos:Concept ;
     rdfs:label "Independent Wheel Motors"@en .
-ngm:index a skos:Concept ;
-    rdfs:label "Index"@en .
 ngm:index-buffer a skos:Concept ;
     rdfs:label "Index Buffer"@en .
 ngm:index-free-adjacency a skos:Concept ;
@@ -152181,7 +152162,6 @@ ngm:knowledge-graph-presentation-session-artefact a owl:Class ;
     vc:relatedTo ngm:dreamlab-creative-technology-collective ;
     vc:relatedTo ngm:knowledge-graph ;
     vc:relatedTo ngm:open-space-responsible-ai-gathering ;
-    vc:relatedTo ngm:presentation-conclusion ;
     vc:slug "knowledge-graph-presentation-session-artefact" ;
     vc:sourceDomain "infrastructure" .
 ngm:knowledge-graph-publication-classifier a owl:Class ;
@@ -159700,8 +159680,6 @@ ngm:logistics-optimisation a owl:Class ;
     vc:uses ngm:py-torch .
 ngm:logit-computation a skos:Concept ;
     rdfs:label "Logit Computation"@en .
-ngm:logseq a skos:Concept ;
-    rdfs:label "Logseq"@en .
 ngm:loha a skos:Concept ;
     rdfs:label "Loha"@en .
 ngm:lollerfirst a skos:Concept ;
@@ -168348,7 +168326,6 @@ ngm:microsoft-copilot a owl:Class ;
     vc:bridgesTo ngm:azure ;
     vc:bridgesTo ngm:role-based-access-control ;
     vc:contrastsWith ngm:amazon-q ;
-    vc:contrastsWith ngm:chatgpt ;
     vc:contrastsWith ngm:google-ai-technology-corporation-gemini ;
     vc:enables ngm:automated-meeting-notes ;
     vc:enables ngm:code-generation ;
@@ -171917,7 +171894,6 @@ ngm:model-training a owl:Class ;
     vc:supports ngm:constitutional-ai-training-methodology-language-model-family ;
     vc:supports ngm:evaluation-benchmarks-and-leaderboards ;
     vc:supports ngm:google-ai-technology-corporation-deep-mind ;
-    vc:supports ngm:grok ;
     vc:supports ngm:instruction-following-conversational-ai-system ;
     vc:uses ngm:checkpoints ;
     vc:uses ngm:cognitive-ai ;
@@ -187651,7 +187627,6 @@ ngm:openai-research-organisation a owl:Class ;
     vc:enables ngm:large-language-model ;
     vc:enables ngm:model-context-protocol ;
     vc:hasMaturity ngmi:maturity-established ;
-    vc:hasPart ngm:chatgpt ;
     vc:hasPart ngm:dall-e-3 ;
     vc:hasPart ngm:gpt ;
     vc:hasPart ngm:sora ;
@@ -195605,8 +195580,6 @@ ngm:pii-detection a skos:Concept ;
     rdfs:label "Pii Detection"@en .
 ngm:pii-detector a skos:Concept ;
     rdfs:label "Pii Detector"@en .
-ngm:pika a skos:Concept ;
-    rdfs:label "Pika"@en .
 ngm:pikchr a skos:Concept ;
     rdfs:label "Pikchr"@en .
 ngm:pillow a skos:Concept ;
@@ -200328,8 +200301,6 @@ ngm:presentation-concluding-synthesis-slide a owl:Class ;
     vc:relatedTo ngm:generative-ai ;
     vc:slug "presentation-concluding-synthesis-slide" ;
     vc:sourceDomain "infrastructure" .
-ngm:presentation-conclusion a skos:Concept ;
-    rdfs:label "Presentation Conclusion"@en .
 ngm:presentation-definition-engine a skos:Concept ;
     rdfs:label "Presentation Definition Engine"@en .
 ngm:presentation-exchange a owl:Class ;
@@ -253331,7 +253302,6 @@ ngm:tensor-flow-lite a owl:Class ;
     vc:requires ngm:machine-learning ;
     vc:slug "tensor-flow-lite" ;
     vc:sourceDomain "machine-learning" ;
-    vc:supports ngm:android ;
     vc:supports ngm:coral-edge-tpu ;
     vc:supports ngm:ios ;
     vc:supports ngm:microcontroller ;
@@ -269346,8 +269316,6 @@ ngm:video-passthrough-hmd a skos:Concept ;
     rdfs:label "Video Passthrough Hmd"@en .
 ngm:video-playback-infrastructure a skos:Concept ;
     rdfs:label "Video Playback Infrastructure"@en .
-ngm:video-processing a skos:Concept ;
-    rdfs:label "Video Processing"@en .
 ngm:video-production-pipeline a owl:Class ;
     rdfs:comment "A video production pipeline is the end-to-end sequence of stages through which video content moves from capture or generation through editing, effects, colour, restoration and final delivery. Increasingly it incorporates AI stages such as upscaling, denoising and restoration alongside traditional editorial and compositing steps. The pipeline coordinates assets, tools and review across teams to produce polished output efficiently."@en ;
     rdfs:label "Video Production Pipeline"@en ;
@@ -278968,7 +278936,7 @@ vc:utilises a owl:ObjectProperty ;
 <https://narrativegoldmine.com/ontology> dc:creator "Dr John O'Hare" ;
     a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Ontology"@en ;
-    owl:versionIRI <https://narrativegoldmine.com/ontology/sha256-12-0bc8c7857720> ;
+    owl:versionIRI <https://narrativegoldmine.com/ontology/sha256-12-34759d55b932> ;
     owl:versionInfo "3.1.0" .
 _:r1 a owl:Restriction ;
     owl:onProperty vc:requires ;

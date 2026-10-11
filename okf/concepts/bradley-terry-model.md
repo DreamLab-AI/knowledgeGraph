@@ -56,7 +56,6 @@ bridgesTo:
   - urn:ngm:class:rlaif
   - urn:ngm:class:simpo
   - urn:ngm:class:ipo
-  - urn:ngm:class:dpo
 uses:
   - urn:ngm:class:maximum-likelihood-estimation
   - urn:ngm:class:pairwise-comparison

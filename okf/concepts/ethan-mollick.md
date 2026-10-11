@@ -65,7 +65,6 @@ relatedTo:
   - urn:ngm:class:future-of-work
   - urn:ngm:class:ai-policy
   - urn:ngm:class:wharton-school
-  - urn:ngm:class:chatgpt
   - urn:ngm:class:co-intelligence
   - urn:ngm:class:behavioural-economics
   - urn:ngm:class:cognitive-science

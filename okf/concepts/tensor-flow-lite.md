@@ -44,7 +44,6 @@ uses:
   - urn:ngm:class:flatbuffers
   - urn:ngm:class:neural-network-quantisation
 supports:
-  - urn:ngm:class:android
   - urn:ngm:class:ios
   - urn:ngm:class:microcontroller
   - urn:ngm:class:coral-edge-tpu

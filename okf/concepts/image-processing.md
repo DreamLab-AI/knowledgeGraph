@@ -27,7 +27,6 @@ enables:
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:augmented-reality
 contrastsWith:
-  - urn:ngm:class:video-processing
   - urn:ngm:class:point-cloud-processing
 bridgesTo:
   - urn:ngm:class:spatial-computing

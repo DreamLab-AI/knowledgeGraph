@@ -13,7 +13,6 @@ is-a:
 hasPart:
   - urn:ngm:class:normalisation
   - urn:ngm:class:referential-integrity
-  - urn:ngm:class:index
   - urn:ngm:class:view
   - urn:ngm:class:database-view
   - urn:ngm:class:primary-key

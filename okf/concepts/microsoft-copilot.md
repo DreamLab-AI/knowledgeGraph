@@ -24,7 +24,6 @@ implements:
   - urn:ngm:class:prompt-engineering
 contrastsWith:
   - urn:ngm:class:google-ai-technology-corporation-gemini
-  - urn:ngm:class:chatgpt
   - urn:ngm:class:amazon-q
 bridgesTo:
   - urn:ngm:class:azure

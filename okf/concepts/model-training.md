@@ -85,7 +85,6 @@ supports:
   - urn:ngm:class:instruction-following-conversational-ai-system
   - urn:ngm:class:evaluation-benchmarks-and-leaderboards
   - urn:ngm:class:google-ai-technology-corporation-deep-mind
-  - urn:ngm:class:grok
 standardizedBy:
   - urn:ngm:class:aisi-frontier-ai-safety-framework
   - urn:ngm:class:scaling-laws

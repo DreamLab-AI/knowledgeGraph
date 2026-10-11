@@ -56,7 +56,6 @@ implements:
   - urn:ngm:class:rectified-flow
   - urn:ngm:class:score-based-generative-modelling
 contrastsWith:
-  - urn:ngm:class:pika
   - urn:ngm:class:sora
   - urn:ngm:class:traditional-vfx-pipeline
   - urn:ngm:class:classical-animation

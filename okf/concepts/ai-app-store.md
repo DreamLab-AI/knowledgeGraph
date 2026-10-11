@@ -11,7 +11,6 @@ is-a:
   - urn:ngm:class:generative-ai
 relatedTo:
   - urn:ngm:class:generative-ai
-  - urn:ngm:class:chatgpt
   - urn:ngm:class:third-party-integration
 ---
 

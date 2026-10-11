@@ -1,38 +1,38 @@
 {
-  "id": "visionGraph@b5e36abd172052cfb0d1dd8a904983f604e1b641",
-  "commit": "b5e36abd172052cfb0d1dd8a904983f604e1b641",
+  "id": "visionGraph@366236b385e9a6cdee5d1c1c0de909e980a5cc62",
+  "commit": "366236b385e9a6cdee5d1c1c0de909e980a5cc62",
   "dirty": false,
   "content_digest": "840ab1cec72dfcb48eb3dd2b51ae1cec16172a79540da7479807a064039ce0cb",
-  "ontology_digest": "sha256-12-0bc8c7857720",
-  "generated_at": "2026-10-11T17:28:39.999176+00:00",
+  "ontology_digest": "sha256-12-34759d55b932",
+  "generated_at": "2026-10-11T20:33:22.359100+00:00",
   "class_count": 9244,
   "page_count": 9244,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "data/ontology.ttl",
-      "sha256": "041b5816395749d92def13bf215a016a494f1aaa28a87e517e5071067100c09a",
-      "bytes": 18014524
+      "sha256": "7a90a14dc67ac1d9422aed59d3e768b9d5ae86ddf2e6d3d4618fac720d984a31",
+      "bytes": 18013519
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "8c1af92826092fe10d4fedcbe1c9a1968440a868afe68c7b18cf6e6c44a599c5",
+      "sha256": "a096196e4af687b608d0c4294776529e094e4bfa1fdfe43b59a2b0e72046d50c",
       "bytes": 3802753
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "fc3c98f058f7a46c1f6836c0c82856cc9a2c93d3a6742cb4e5111f06bf8c9b21",
-      "bytes": 10177753
+      "sha256": "b2f8f39589a0681b7a617ed43e5637b155c3ca3698d97f4e1119a6682bbf65ea",
+      "bytes": 10177602
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "779c4b1d6928e914fd173427dd157eb222e087030866e6468296d97cfbaa14d5",
+      "sha256": "438187d4c9dc4e2c752c1f7667caa70aacc3e6d6e66bbb7ba0b48cf41cfc277b",
       "bytes": 5536435
     },
     {
       "name": "api/search-index.json",
-      "sha256": "0a39a0605227058407cbc00fb71437bc7aab6318b83301dbb86bad8c1b5af9be",
-      "bytes": 9097948
+      "sha256": "80b177c6565d98d41a69f04bb878b1317c16b96d52ffb74d250bd1242385f88f",
+      "bytes": 9095823
     },
     {
       "name": "api/pages/1-hive.json",
@@ -256,8 +256,8 @@
     },
     {
       "name": "api/pages/a2-a-protocol.json",
-      "sha256": "7eada439e1bbe09792ac51d5d8065e1ce51ce89948e24e3024537fd27daced0c",
-      "bytes": 26512
+      "sha256": "ad33fb63c728951ede89e7ab6957a1b1f340b04fa40d0fd2d8979e2e5f50f658",
+      "bytes": 26397
     },
     {
       "name": "api/pages/aaai.json",
@@ -321,8 +321,8 @@
     },
     {
       "name": "api/pages/agi-timelines.json",
-      "sha256": "93d1e4677fddf2c430034fb48b3d4ffcf6e3b20cf7f166ff7fefb9e74721a02e",
-      "bytes": 26873
+      "sha256": "979f420e80a4c6d20ff71edd409120af6c3364605e2f7ff93e3d178e97e6eb07",
+      "bytes": 26782
     },
     {
       "name": "api/pages/agi.json",
@@ -361,8 +361,8 @@
     },
     {
       "name": "api/pages/ai-adoption.json",
-      "sha256": "060054311ceec58b9963de14784c698116cb3343ceb2491619446a16f4c7642b",
-      "bytes": 31770
+      "sha256": "d6a5dce30966ed282f4d5ecb60a7eea1a33669ae1e947860f84a6f87dbd668e9",
+      "bytes": 31679
     },
     {
       "name": "api/pages/ai-advertising.json",
@@ -416,13 +416,13 @@
     },
     {
       "name": "api/pages/ai-agent.json",
-      "sha256": "51104fe1fabc1f534737583ae7aa613f255b4fa9fd54474ded4268ba942e6c24",
-      "bytes": 22689
+      "sha256": "73ff6b8bfc9b3c69647b8c5e03b690ae9a1338af208d343297b7ca741be23f3f",
+      "bytes": 22598
     },
     {
       "name": "api/pages/ai-agents.json",
-      "sha256": "2906b369cd94e0cce4ea780504f20fafaefa2c27e1aa6d4e54ef63edc26f3122",
-      "bytes": 22447
+      "sha256": "dd3bb362d65ac8e6b8873b09b8565a2606b61943b88aefd3f2f96cd20a4d55c1",
+      "bytes": 22356
     },
     {
       "name": "api/pages/ai-alignment.json",
@@ -436,18 +436,18 @@
     },
     {
       "name": "api/pages/ai-app-store.json",
-      "sha256": "aa168c3c06c8f454d458796536da903eaebade33632c46e36ff5f902502b5b22",
-      "bytes": 11022
+      "sha256": "6d84840ebccb45e7b1e5920d59833c584e8cd49eb1fde469d112a4ec805c44d9",
+      "bytes": 10939
     },
     {
       "name": "api/pages/ai-applications.json",
-      "sha256": "861fbff8307fd460d705ddeebae7428e8f10aaeec8a97dd82db3975f6e927feb",
-      "bytes": 22160
+      "sha256": "0e315e919ef5d984b71dbfb10f7a507ea595fd55c53666b0c4772548f31ebc59",
+      "bytes": 22069
     },
     {
       "name": "api/pages/ai-art-generation.json",
-      "sha256": "07bdb7be2f2e8abdf2c8d253cda16f702980bddf6e5b1b0b02b2f86efeca8b27",
-      "bytes": 23693
+      "sha256": "40f45f61f3501de8cd6531d5fffe9f0627dd3c21da2fc9b54de39758c2d91a71",
+      "bytes": 23602
     },
     {
       "name": "api/pages/ai-audit.json",
@@ -461,8 +461,8 @@
     },
     {
       "name": "api/pages/ai-benchmark-epistemological-critique.json",
-      "sha256": "bf7244445961e84d2b54d18d15ac4831963e0cc9efbe0210b8c72cd519bb198a",
-      "bytes": 9248
+      "sha256": "ef47ab6c0c6b0714226ec29043d1eb7e2530ba085e4751151af302eb591d690a",
+      "bytes": 9155
     },
     {
       "name": "api/pages/ai-benchmarking.json",
@@ -576,8 +576,8 @@
     },
     {
       "name": "api/pages/ai-companies.json",
-      "sha256": "0888808ed997cf7ea339d85b0cbd10288906fe068a3d1d822520a9967c960cf2",
-      "bytes": 25986
+      "sha256": "cd7cf5c3ee8088cb314ac797bac94c3be1e3756b0ef98a98c9b2a360bceaab22",
+      "bytes": 25838
     },
     {
       "name": "api/pages/ai-compute-infrastructure.json",
@@ -656,8 +656,8 @@
     },
     {
       "name": "api/pages/ai-development.json",
-      "sha256": "85586bff4873bb75ade7364aa59c9e14ecf679482f8dfa41bdecd48f69501e3e",
-      "bytes": 11957
+      "sha256": "ff2905a0fb0f4094362f8b3688144c453bbab838ed3da5e6e6eb382b14d51e3e",
+      "bytes": 11866
     },
     {
       "name": "api/pages/ai-diagram-tools.json",
@@ -666,8 +666,8 @@
     },
     {
       "name": "api/pages/ai-documentation-standards.json",
-      "sha256": "c94a68a17b678abe7650d2189e74d76210c7ef866d55f91103475d3699979f62",
-      "bytes": 25182
+      "sha256": "01889d95f294cc8917a63e887a721b3d547fd1313abcbc7c087baf94493e82b0",
+      "bytes": 25091
     },
     {
       "name": "api/pages/ai-documentation.json",
@@ -681,8 +681,8 @@
     },
     {
       "name": "api/pages/ai-ecosystem.json",
-      "sha256": "fa34645544e5df60a069c912c951af45b18a234cf3e2f23e800b061f51fc0ee5",
-      "bytes": 19812
+      "sha256": "9b26e6d910edbfbeb28d5692edad58cbde37afada6449c662ac021e0fe62e312",
+      "bytes": 19721
     },
     {
       "name": "api/pages/ai-employment-effects.json",
@@ -721,8 +721,8 @@
     },
     {
       "name": "api/pages/ai-evaluation.json",
-      "sha256": "edeef9be4392978c6ff12f835804411ca35523d2a41f299a8daffc62f6ed3c84",
-      "bytes": 18296
+      "sha256": "41e19c6525cd4cbab0e9104bc2872af183e0a86598a9474d8b138d774473fe28",
+      "bytes": 18205
     },
     {
       "name": "api/pages/ai-executive-accountability.json",
@@ -751,13 +751,13 @@
     },
     {
       "name": "api/pages/ai-frontier-capability-survey.json",
-      "sha256": "07c7349b5ff47c345c4cd00bc9f5d7536d616d36076410b6fefb57092ca4bd7e",
-      "bytes": 6027
+      "sha256": "039459d1b0afd6d34e79ab7180a6730d3b9f065ab205ec2edbd4fd64a89ea2cf",
+      "bytes": 5881
     },
     {
       "name": "api/pages/ai-game-agent.json",
-      "sha256": "6e6d1a34d4324e15588cf25f30eb63e389d8ac8ba55658120b4bf4c684eb803d",
-      "bytes": 23324
+      "sha256": "fcb0a26777046f658208abb2e149bd721b8636c4b240f878ac87bbe016e8ec19",
+      "bytes": 23142
     },
     {
       "name": "api/pages/ai-geopolitics.json",
@@ -771,8 +771,8 @@
     },
     {
       "name": "api/pages/ai-governance-law-and-privacy.json",
-      "sha256": "d313422330815fd92f9703d46746c8a91a6fe826b56d8eb4d3fe6110b3c6c9ba",
-      "bytes": 10574
+      "sha256": "29067cbb18f3dd702201d83c62f039793fd35a6f9a13e25d36962264b5d69f45",
+      "bytes": 10501
     },
     {
       "name": "api/pages/ai-governance-maturity-model.json",
@@ -796,8 +796,8 @@
     },
     {
       "name": "api/pages/ai-hardware.json",
-      "sha256": "fe91670f55beb0fc1aa47619cfe22b3c032155f15c23cbb0f88f57338e602d92",
-      "bytes": 12625
+      "sha256": "f8ff76485b31bd8453b9c309e27ca018519f5f7f1dab78e3e92385fc4bdf8899",
+      "bytes": 12534
     },
     {
       "name": "api/pages/ai-harnesses.json",
@@ -856,8 +856,8 @@
     },
     {
       "name": "api/pages/ai-inference.json",
-      "sha256": "43383696270762d518cbdc4367d3f3916c66b1995e0a89cad6614fed1223c833",
-      "bytes": 20863
+      "sha256": "42a6d58f6c27cc355c86071eacdfb11561ba6fd53f24376a544b6c4501849a36",
+      "bytes": 20772
     },
     {
       "name": "api/pages/ai-infrastructure-capital-expenditure.json",
@@ -931,13 +931,13 @@
     },
     {
       "name": "api/pages/ai-lifecycle.json",
-      "sha256": "1fa97fe8ca860a71f1d85d1d9c9261ef265163e90a21e17bd4552659c65ea1d0",
-      "bytes": 13828
+      "sha256": "745bac789bbb8cc689fb35fd5c99c7e407cab5a62ccc09369c939f58a779253b",
+      "bytes": 13755
     },
     {
       "name": "api/pages/ai-literacy-training-for-designers.json",
-      "sha256": "a4ec5499aed42694f5f5280b9869658da33ab34576878baaef781734e9db8a00",
-      "bytes": 9662
+      "sha256": "bfb9d643e6ccdc54d9bb91b5d64fa84367069d453c5dd1dcaf137df50e7d22fc",
+      "bytes": 9494
     },
     {
       "name": "api/pages/ai-mandate.json",
@@ -986,13 +986,13 @@
     },
     {
       "name": "api/pages/ai-model-development.json",
-      "sha256": "ff8f45ae6d9b5b2e777c5130b0e245e88f54f7d000e5cb87c3e1e9c708c1cbf4",
-      "bytes": 22013
+      "sha256": "3caa4545b2ed452fae8e44297d7f15a759a525d5ab0ade0ba7d1dc1cff02e6c4",
+      "bytes": 21922
     },
     {
       "name": "api/pages/ai-model-inference-engine.json",
-      "sha256": "6992e17fba8435914d6b71bd64223be9b49adfd39252fb1a8b938e2439a7cb2d",
-      "bytes": 22814
+      "sha256": "bec73eca0d9683c884bee557e5d6596f2d6139f4e52b4295327ee8b533330204",
+      "bytes": 22723
     },
     {
       "name": "api/pages/ai-model-portfolio.json",
@@ -1011,8 +1011,8 @@
     },
     {
       "name": "api/pages/ai-model.json",
-      "sha256": "2133826119ece8b5a1d50c020ad27fa0fe7243b912aeefeb8e5b765f8f178cc6",
-      "bytes": 22886
+      "sha256": "6b95861e50d899a93092f5e3d6204587b1bd96cdc2eeba5105ddb4ad4152fc5c",
+      "bytes": 22795
     },
     {
       "name": "api/pages/ai-monitoring.json",
@@ -1166,8 +1166,8 @@
     },
     {
       "name": "api/pages/ai-risk.json",
-      "sha256": "fd8787c79d8f331975691b2e9cbca75ba5536ba4d410389fee65df913f473068",
-      "bytes": 11253
+      "sha256": "ba3907c029acc834e2561ac2219e9145fe3fb6cce1f62bd7f95054ec337c0b71",
+      "bytes": 11162
     },
     {
       "name": "api/pages/ai-risks.json",
@@ -1201,8 +1201,8 @@
     },
     {
       "name": "api/pages/ai-safety-research.json",
-      "sha256": "8e8d5c9b463c25cde94d752a3486032173437746ee62c184835639d59af71fa3",
-      "bytes": 14135
+      "sha256": "0553f6defd820f3e94f01e8bf0e8ef1a778d017a34c034656395bbb7b413ce28",
+      "bytes": 14044
     },
     {
       "name": "api/pages/ai-safety-summit.json",
@@ -1326,8 +1326,8 @@
     },
     {
       "name": "api/pages/ai-talent.json",
-      "sha256": "83ed70d511862cd8e9a92986c60513e654890ea7e78a58cd79254e044781a22c",
-      "bytes": 22234
+      "sha256": "31f5517d07be6a04b01f871cedaa8550b1e52269089517dcf2317f7f15979bbf",
+      "bytes": 22143
     },
     {
       "name": "api/pages/ai-tax-policy.json",
@@ -1381,8 +1381,8 @@
     },
     {
       "name": "api/pages/ai-upscaling-and-super-resolution.json",
-      "sha256": "2c00b4ddedd9a66feb772287df7952f10d1c4f35fd2ba064acd382545b5dfd39",
-      "bytes": 16695
+      "sha256": "431bb5d4696720fd57ff5cf86196fee5347b18291d8010223ad2fa069886b736",
+      "bytes": 16632
     },
     {
       "name": "api/pages/ai-user-demographics.json",
@@ -1391,8 +1391,8 @@
     },
     {
       "name": "api/pages/ai-user.json",
-      "sha256": "df340eb618fdccbd8fa48a8a014640a1da4977d1787c344157ee268b72386b69",
-      "bytes": 13311
+      "sha256": "8928d9da0fd5acd46ecc0ebf442784df01f44f14d5ab2b80a326426a37f5150b",
+      "bytes": 13153
     },
     {
       "name": "api/pages/ai-venture-capital.json",
@@ -1401,8 +1401,8 @@
     },
     {
       "name": "api/pages/ai-video.json",
-      "sha256": "8d8d6d2ce11245f990372e342645a880a76ac1c68d0742795b1ff28edc85bb2d",
-      "bytes": 32747
+      "sha256": "750671c522b15ff651b4d690eece1d050d1138b20fb9a7640866a868743f4ff7",
+      "bytes": 32613
     },
     {
       "name": "api/pages/ai-wearables.json",
@@ -1426,8 +1426,8 @@
     },
     {
       "name": "api/pages/ai-in-games.json",
-      "sha256": "4edb53779e5f08d06064009576c3eb74e2c4b8041a344e89d926f263c44b87ef",
-      "bytes": 32671
+      "sha256": "ddb5dc68d056f42f2538b54e361035aa0170525d9a5430f0f42affe1511492b4",
+      "bytes": 32580
     },
     {
       "name": "api/pages/ai-in-healthcare.json",
@@ -1436,8 +1436,8 @@
     },
     {
       "name": "api/pages/ai-assisted-developer-tooling.json",
-      "sha256": "cb4f99c96a083dd039b9b04d28ce6a508feacb3a30015e86287e5dce7a562dee",
-      "bytes": 9825
+      "sha256": "9697523594e69936172bfd6c384d52feaf4558f4f42206ee70af9addc586594a",
+      "bytes": 9746
     },
     {
       "name": "api/pages/ai-assisted-development-practice.json",
@@ -1456,8 +1456,8 @@
     },
     {
       "name": "api/pages/ai-augmented-research-tooling-suite.json",
-      "sha256": "d2df1f38bbc9b76e7fea5886ca80188ede84aa65ded5b823f1f4ed04eb3359c5",
-      "bytes": 9235
+      "sha256": "f3596904575f18784e64e58c74943e25167aa72f7b8e98ecb271343c4fcd3e11",
+      "bytes": 9166
     },
     {
       "name": "api/pages/ai-augmented-service-ecosystems.json",
@@ -1511,8 +1511,8 @@
     },
     {
       "name": "api/pages/ai-generated-content-disclosure.json",
-      "sha256": "a20a2c4b8d47c54f6c52ef549b184224629a546fef2f4267452f2664aa3df211",
-      "bytes": 20018
+      "sha256": "e68649a3659e840809f78135b225c85fbe4341b844a019eb73f24b73cda4b22c",
+      "bytes": 19927
     },
     {
       "name": "api/pages/ai-generated-pathogens.json",
@@ -1651,8 +1651,8 @@
     },
     {
       "name": "api/pages/arc-agi.json",
-      "sha256": "09128696b3def9d008bb1717ca334428bca74ad49ee911dd2a65dcfb79337b23",
-      "bytes": 24877
+      "sha256": "d9b3c1c55c7a6896660748d4804e7aeae338b8ff82fdf1313fbf2b421c2c12bc",
+      "bytes": 24786
     },
     {
       "name": "api/pages/arkg-i2-benchmark.json",
@@ -1731,8 +1731,8 @@
     },
     {
       "name": "api/pages/academic-conference.json",
-      "sha256": "2f280ba6f19fdd6f559ac3753a6263126e7e81e041ccec7ef637fd0227f019f0",
-      "bytes": 17130
+      "sha256": "e0bdbef88b53e7903022eb0950f06bbf5a6b6d0197d57be9d010ce8b7ca1f8d4",
+      "bytes": 17039
     },
     {
       "name": "api/pages/academic-research.json",
@@ -1911,8 +1911,8 @@
     },
     {
       "name": "api/pages/action-executor.json",
-      "sha256": "d6e3604064c80360477b0e1387452380daacb423254e28cc1d84c85997092f68",
-      "bytes": 27734
+      "sha256": "7724b904fbab0e23034d16c83df5268c41bc60451f4bb9df9d26416a0dfb9650",
+      "bytes": 27643
     },
     {
       "name": "api/pages/action-recognition.json",
@@ -1921,8 +1921,8 @@
     },
     {
       "name": "api/pages/action-space.json",
-      "sha256": "6c9f86a9157ee0f2a80fdf13671f639d058090d12245baa58685b0f594bf6c53",
-      "bytes": 28949
+      "sha256": "61385dae8bd09ab584265aebc0719d5b9ef32ff514782158c190afe5bb5f71e9",
+      "bytes": 28858
     },
     {
       "name": "api/pages/activation-function.json",
@@ -2111,13 +2111,13 @@
     },
     {
       "name": "api/pages/adobe-firefly.json",
-      "sha256": "953544e5783aa9298346487b9a4919c77b396052719407135ffc65931499dba5",
-      "bytes": 21356
+      "sha256": "72a9bc92693321f1e8e41ee0f1332a9c1bfafbafd16740e934fe44c1cf404814",
+      "bytes": 21265
     },
     {
       "name": "api/pages/adoption-of-convergent-technologies.json",
-      "sha256": "ccc865268733468b49a837e1a453bb337972c34e04e6123842eea89ed7554d86",
-      "bytes": 30180
+      "sha256": "906ec9db093ae2af1245274e29f54e45cba04272c42995fdd5b4bc5b0b19914a",
+      "bytes": 30089
     },
     {
       "name": "api/pages/advanced-driver-assistance-system.json",
@@ -2161,8 +2161,8 @@
     },
     {
       "name": "api/pages/adversarial-training.json",
-      "sha256": "9ad4c859b235064efcd993ef70dae37d29e9ad3e4234743674565fb60d99ee81",
-      "bytes": 15019
+      "sha256": "4799e0bde6e1b7c6b1584183522dee31c3805cb1437741ed242c0775d5fc24de",
+      "bytes": 15047
     },
     {
       "name": "api/pages/advertising-and-marketing.json",
@@ -2251,8 +2251,8 @@
     },
     {
       "name": "api/pages/agent-execution-sandboxes.json",
-      "sha256": "5c5e98778fc673ce415ebab0fc8894b8108c54d762d5d003860b58a76928bc9d",
-      "bytes": 29275
+      "sha256": "b2ea08f32b1aca1e2993693ab19888e253c275b952105901e17e69fdd3e4787a",
+      "bytes": 29184
     },
     {
       "name": "api/pages/agent-frameworks.json",
@@ -2266,13 +2266,13 @@
     },
     {
       "name": "api/pages/agent-harness.json",
-      "sha256": "73e4892b45371013e984945521a4466da200914d48cb2287b0492c3b46f4ac89",
-      "bytes": 28408
+      "sha256": "dc222fb833bcfa5fe483dc343ebd5148cfdd2e12ff1a52b94580934c61d39047",
+      "bytes": 28317
     },
     {
       "name": "api/pages/agent-identity.json",
-      "sha256": "1bbf0ff3c97b2fde0b942a86ded8678b64c5ff87759f0a2fe74052cd88e681f8",
-      "bytes": 24509
+      "sha256": "f602cb349eea20aab4828b81b1ff7a1b02f35ee1df7ac58df274e6cf73ac0f6a",
+      "bytes": 24418
     },
     {
       "name": "api/pages/agent-layer.json",
@@ -2291,18 +2291,18 @@
     },
     {
       "name": "api/pages/agent-memory-layers.json",
-      "sha256": "43df9c258f0549376494caeaad252068fe0edb79a76ba3cbae531d47328114f8",
-      "bytes": 28702
+      "sha256": "43b52dc8c10b070f4092b4ccb82869b9eeb80e189efe56fdabd1222b53caaf0b",
+      "bytes": 28611
     },
     {
       "name": "api/pages/agent-memory.json",
-      "sha256": "17515b1f4e32304bfa775e3ee75c4214cb8ec78cfbbc885dd1af48bc46b33c52",
-      "bytes": 27690
+      "sha256": "be46d4e72ec3f130cc1a69ec8e15047cbb087eb6573f054c8b1a59192be333d5",
+      "bytes": 27599
     },
     {
       "name": "api/pages/agent-orchestrator.json",
-      "sha256": "4bbf8fe029d9c8f3a9c62f940d9d724f0fb1027118fbf0d203a2cbb4e0716392",
-      "bytes": 21165
+      "sha256": "b662fbed45b0da96339170f7312bcd615b5ccd5287ef5e977acc9d47b44fd8a3",
+      "bytes": 21074
     },
     {
       "name": "api/pages/agent-primitives.json",
@@ -2311,8 +2311,8 @@
     },
     {
       "name": "api/pages/agent-runtime.json",
-      "sha256": "ef171771e3c765c104551f31956af2a462f8133e7434ce909e0fd54b7b741d87",
-      "bytes": 20761
+      "sha256": "0b29eb2e6fa77f06936a10e34829f0e07d681b514c52b8a31ab0459538460dc7",
+      "bytes": 20670
     },
     {
       "name": "api/pages/agent-security.json",
@@ -2326,13 +2326,13 @@
     },
     {
       "name": "api/pages/agent-based-modelling.json",
-      "sha256": "09fef5eb45679c4aa9317d1c7535a8cf16cc8aa74f9db72a3955cf2d251616da",
-      "bytes": 24274
+      "sha256": "a910abb4bd262eec01af3e636535ac825d0031867ff2402b073daeebb82c0e50",
+      "bytes": 24183
     },
     {
       "name": "api/pages/agent-based-models.json",
-      "sha256": "df637dc194ce0e0048d058808c520fc4963f40ee07b1c1181998fc52c70213b8",
-      "bytes": 23262
+      "sha256": "a6403fa5fca0819095c01619c35f1f7911f9cde5625afe9811c7cdb69cd82b71",
+      "bytes": 23171
     },
     {
       "name": "api/pages/agent-to-agent-protocol.json",
@@ -2366,8 +2366,8 @@
     },
     {
       "name": "api/pages/agentic-ai.json",
-      "sha256": "2a83282a137d5fd0db8638df66925cdae7ca219517559ebdeae9ed98db73cb63",
-      "bytes": 32744
+      "sha256": "4e5c20cce99a575fc538acb431db684ff21da2d231643b7720aa0ba4a10ef58f",
+      "bytes": 32653
     },
     {
       "name": "api/pages/agentic-architecture.json",
@@ -2406,8 +2406,8 @@
     },
     {
       "name": "api/pages/agentic-rag.json",
-      "sha256": "6a64e5a1b2aad794a222616c659ee1537621285b9d872182e67b0af632ff8c38",
-      "bytes": 22141
+      "sha256": "9df13497a38353094ed8c3c7ba693021892a91cff3badd31671ea44b008e19e9",
+      "bytes": 22050
     },
     {
       "name": "api/pages/agentic-shift.json",
@@ -2421,8 +2421,8 @@
     },
     {
       "name": "api/pages/agentic-workflow.json",
-      "sha256": "3ba463cbe8699bdc045f5c9eda69f25d64dad6606cc48a299f28f90d5b74ec81",
-      "bytes": 21083
+      "sha256": "486f8378111dbae7fa2c99b5dd9c63a683d374f65ef76ddbd3b8f8dcbb101b7e",
+      "bytes": 20992
     },
     {
       "name": "api/pages/agentic-workload-economics.json",
@@ -2476,8 +2476,8 @@
     },
     {
       "name": "api/pages/ai-governance-principle.json",
-      "sha256": "b82ffaf254d5808501054e865c6fd4d615199b32103f2dd6952e4c5e957eaf7a",
-      "bytes": 13356
+      "sha256": "805fc250d3ef7345d1c3722b91b029069cf219de87e86d9be1c1b0cad1e316cc",
+      "bytes": 13265
     },
     {
       "name": "api/pages/ai-machine-learning.json",
@@ -2831,8 +2831,8 @@
     },
     {
       "name": "api/pages/answer-ai.json",
-      "sha256": "c79b963ee4459ba7239b8b7f01c77c0a418a2271b89abcb4d6e3f00e32ff9719",
-      "bytes": 20319
+      "sha256": "ff7caea8731ef4916af6aa5ba4070016586cd01c010b69b90dcecb9b4835b354",
+      "bytes": 20228
     },
     {
       "name": "api/pages/ant-pool.json",
@@ -2856,8 +2856,8 @@
     },
     {
       "name": "api/pages/anthropic.json",
-      "sha256": "e5719318c6fc05ba74d97205bd006df9f57a12247dc8b0b3336793d699b1a16d",
-      "bytes": 24687
+      "sha256": "e7cd54f234fdad68b7a7b09a81bf1cf21433f7f30a7ab7858040973ca4b82bed",
+      "bytes": 24517
     },
     {
       "name": "api/pages/anti-aliasing.json",
@@ -2956,8 +2956,8 @@
     },
     {
       "name": "api/pages/apple-inc-technology-corporation.json",
-      "sha256": "7ea107e608811e27f1d46d4733abc27188ff0ad98ac8cc8c587572738cfbc3e1",
-      "bytes": 12420
+      "sha256": "c9200e67a6b4c392785d7364a1d5a799d16b92d07e3ba20edb55856d24134e0c",
+      "bytes": 12337
     },
     {
       "name": "api/pages/apple-mixed-reality-headset.json",
@@ -3006,8 +3006,8 @@
     },
     {
       "name": "api/pages/applied-ai-research-portfolio.json",
-      "sha256": "42a0a437724cc9871e19aa334978204c476245f9508e4a81ea4ca6e0d81a8a4b",
-      "bytes": 9571
+      "sha256": "3cf4eb82e08932e833ba00b768578cdad832c7e32c7265c4db945f6693b35647",
+      "bytes": 9498
     },
     {
       "name": "api/pages/applied-machine-learning.json",
@@ -3136,8 +3136,8 @@
     },
     {
       "name": "api/pages/architecture.json",
-      "sha256": "23aae31a091d75197bdaa051b29ca7abf6b21ac9e41af6f20080b366e1191b23",
-      "bytes": 21124
+      "sha256": "1c553e79de8e63fafa13dd453d2d4d76f1713d596b947194c8eff0d62867442e",
+      "bytes": 21033
     },
     {
       "name": "api/pages/archival-node.json",
@@ -3206,18 +3206,18 @@
     },
     {
       "name": "api/pages/artificial-intelligence-core.json",
-      "sha256": "cf7db9d6727184a6ab29f242b0f47f6379b93d79d56bbf0f1aed3e6643dbbc36",
-      "bytes": 17956
+      "sha256": "c5bb9f07e2e762aa5f855f0449faa20fbcf98465bd490b02672c6a4588794632",
+      "bytes": 17865
     },
     {
       "name": "api/pages/artificial-intelligence-research.json",
-      "sha256": "1df028b04c0f055624c97e62c73a1f80924f6bfd6650aa64ce0fed9a3f71c95c",
-      "bytes": 23804
+      "sha256": "36b21246823808846673823c877ad1d340097658f21d439fb3a7eb0a0666d4a6",
+      "bytes": 23713
     },
     {
       "name": "api/pages/artificial-intelligence.json",
-      "sha256": "15301a554cf5507a955268a56ceba38bc6c29bac24b76493f47a689d31f91e2a",
-      "bytes": 30530
+      "sha256": "c9ebab9310ea20ce95725f32f39a10b0fe7afd72094d403ba5ceaf357bd16a1e",
+      "bytes": 30439
     },
     {
       "name": "api/pages/artificial-superintelligence-theory.json",
@@ -3356,8 +3356,8 @@
     },
     {
       "name": "api/pages/assistive-technology-integration.json",
-      "sha256": "3986b98aec92b78517394306dc9d370a5e14a639ec63e43f249deeca989b39a4",
-      "bytes": 24919
+      "sha256": "8a9e94f87a947047b1e086a2061d5776e69b1362da662328dbf7481483af3047",
+      "bytes": 24828
     },
     {
       "name": "api/pages/assistive-technology-support.json",
@@ -3476,8 +3476,8 @@
     },
     {
       "name": "api/pages/asynchronous-video.json",
-      "sha256": "edb6765f3ffcf79c01dc62c1446f4450e914f6db21cffddc941bde56cea3184f",
-      "bytes": 25466
+      "sha256": "1c6be3773e8c14d30dc5c15619870ca72fe358ac08113f7c9d612a6c7a8546b5",
+      "bytes": 25375
     },
     {
       "name": "api/pages/at-protocol.json",
@@ -3561,13 +3561,13 @@
     },
     {
       "name": "api/pages/attention-mechanisms.json",
-      "sha256": "8746297da2a096eb110247b2ab82c1e794af73974eba2266f81c804bc6d9fe38",
-      "bytes": 17309
+      "sha256": "e80cd20ccdeda7b354152919818e1c05fa62f316bee7a1c15aefae6da90b30fe",
+      "bytes": 17218
     },
     {
       "name": "api/pages/attention-weight.json",
-      "sha256": "adb05101fd18deb7a617f2d43efa15b4ff937c1bc75b56e175629b85700d5534",
-      "bytes": 18978
+      "sha256": "c414353e1998838266c1328f234abe5ee50cb4b6891e7a133b30dd20ed1a2c19",
+      "bytes": 18887
     },
     {
       "name": "api/pages/attention.json",
@@ -3651,8 +3651,8 @@
     },
     {
       "name": "api/pages/audio-generation.json",
-      "sha256": "da103e50fe6bd91237bc50e452f3ad8a993e39f7ae84bc100f83c89a84199b37",
-      "bytes": 21574
+      "sha256": "2d5004f83ceedf8fb9aec006bea4b5413580f91e9b1b128d546abdcfcb1339a6",
+      "bytes": 21483
     },
     {
       "name": "api/pages/audio-parameters.json",
@@ -3836,8 +3836,8 @@
     },
     {
       "name": "api/pages/auto-gen.json",
-      "sha256": "fa14e07dda251ee0a6bfac811b2c1ed1548473620dbd6b8cb3996dcca5898d5f",
-      "bytes": 23746
+      "sha256": "b1e63754ffbb89a4033c929cdad050a47b55c9171648379fd25a3610daa164d3",
+      "bytes": 23655
     },
     {
       "name": "api/pages/auto-ml.json",
@@ -3871,8 +3871,8 @@
     },
     {
       "name": "api/pages/automated-design.json",
-      "sha256": "21d5b3968bbea265fdb59713308041cd879f899c4dbd7050ef3460100690fba4",
-      "bytes": 23630
+      "sha256": "d074e080e2c35b650f38f92bab7014854af8f9f4ed0d783e7f623c527f8fc1b3",
+      "bytes": 23539
     },
     {
       "name": "api/pages/automated-dispute-resolution.json",
@@ -3901,13 +3901,13 @@
     },
     {
       "name": "api/pages/automated-podcasting.json",
-      "sha256": "325d0c0772f670fbd179dded712f4b02fa42ba53e4b7c270a4a687d73a3979b7",
-      "bytes": 33382
+      "sha256": "0ad84e03d5dfde08819c7d0c594cddf56eb6ee8ea89a7fa1a78d8ca6e1fe43cc",
+      "bytes": 33291
     },
     {
       "name": "api/pages/automated-reasoning.json",
-      "sha256": "a7210b63454ecb4ae88268f6dd9f175d1d779b2fa813bd0ff509fb6d14006636",
-      "bytes": 22295
+      "sha256": "d0226dd0b436553fb74e586af721e7bd352e3be55ce035a10d965639b088080b",
+      "bytes": 22204
     },
     {
       "name": "api/pages/automated-summarization.json",
@@ -3926,18 +3926,18 @@
     },
     {
       "name": "api/pages/automatic-differentiation.json",
-      "sha256": "6958fdf2e99a5b33e5196d19383cf022c1cf152d67ee9a5e35ba7204e26ebc17",
-      "bytes": 20270
+      "sha256": "b199e6fd228033cbac18a10f7624e639027471ac78a4ab04e1e52751c1f3236d",
+      "bytes": 20179
     },
     {
       "name": "api/pages/automatic-prompt-optimisation.json",
-      "sha256": "3147a1025ba4583513b7cab44cb5438c3fa1fa0abf324b361b9ae7172242d230",
-      "bytes": 26168
+      "sha256": "584f7a1af9a752f8bbb82e6b6ad3475b577ce7ec1b50798f83af3c63192764b4",
+      "bytes": 26077
     },
     {
       "name": "api/pages/automatic-speech-recognition.json",
-      "sha256": "04aa69fa3206c256a05a8929412072d1a4ec3afb9f4deaba99bb43a66844b514",
-      "bytes": 23937
+      "sha256": "1cfe36684214e593045ddc960c35eedcfc1843e49bd4219c18b9d11e8719b1a0",
+      "bytes": 23846
     },
     {
       "name": "api/pages/automatic1111.json",
@@ -3976,8 +3976,8 @@
     },
     {
       "name": "api/pages/autonomous-behavior.json",
-      "sha256": "0cf40d42cbc40074554b366e5d969e0cdd622316f27efde74bf763dea7ab2e75",
-      "bytes": 25755
+      "sha256": "6b843c8ceccb743c4443fb8c83636db63dfda2888ef5b0f75d4a29445e43387a",
+      "bytes": 25664
     },
     {
       "name": "api/pages/autonomous-business-operations.json",
@@ -4036,8 +4036,8 @@
     },
     {
       "name": "api/pages/autonomous-operation.json",
-      "sha256": "2e0445acfdd7b2fda084fd116cf01e5f6a8328494571f9f4a86e7dc35203ea4d",
-      "bytes": 22216
+      "sha256": "9367b5157627bfd1c9db8212600064bc040cccbd8f66db0e455d1bd5c5d82032",
+      "bytes": 22125
     },
     {
       "name": "api/pages/autonomous-proof-generation.json",
@@ -4056,8 +4056,8 @@
     },
     {
       "name": "api/pages/autonomous-task-execution.json",
-      "sha256": "fe8b9f22fea1dfba53d9717f551ac2524ffd4a4ccd67cb42f09c95deb63bd97c",
-      "bytes": 28532
+      "sha256": "0ea7dfcd02d4b69b9210bd7fa1806ae7d765c2eda23f7c1f26201ac526d80af4",
+      "bytes": 28441
     },
     {
       "name": "api/pages/autonomous-vehicle-control.json",
@@ -4071,8 +4071,8 @@
     },
     {
       "name": "api/pages/autonomous-vehicle.json",
-      "sha256": "5825c9d93b4e64ee8550119d88078bfa8aeb04c217efaaa9827a0b8195fa64f3",
-      "bytes": 15771
+      "sha256": "c9708881611b01b71a64c2d61b8a3a92ce05c59b62e8459b21f3f5979e140a18",
+      "bytes": 15676
     },
     {
       "name": "api/pages/autonomy-level.json",
@@ -4441,8 +4441,8 @@
     },
     {
       "name": "api/pages/back-translation.json",
-      "sha256": "0e89e85dcaf05914b2d52260d73b61e93cb8da1b00a939111317fc01bb885c85",
-      "bytes": 18772
+      "sha256": "6dc02327dea339cc3700dfed8ef56d0bc46c7555aa1979aef1bd3791c2f10d73",
+      "bytes": 18681
     },
     {
       "name": "api/pages/backdoor-attack.json",
@@ -4616,13 +4616,13 @@
     },
     {
       "name": "api/pages/batch-image-processing.json",
-      "sha256": "ddac98d912c0a075f4b32d263e5cd51a7c492e25bacb6e0bfc8fcab0ce92c4a9",
-      "bytes": 8554
+      "sha256": "fbab0a00f7691f0deb730099933efc141df7c9feebc17a6ed6c35527c2737cf5",
+      "bytes": 8453
     },
     {
       "name": "api/pages/batch-inference.json",
-      "sha256": "365a9f7de25f1441a8c17ddf391c65a970b0d23988f64a122fa69b75745d1c1e",
-      "bytes": 20144
+      "sha256": "4e2b75442c19b9dff9a51423e77d3de8fd25502830e95c6a33f5e831e2a88369",
+      "bytes": 20053
     },
     {
       "name": "api/pages/batch-normalisation.json",
@@ -4711,13 +4711,13 @@
     },
     {
       "name": "api/pages/beam-search-decoding.json",
-      "sha256": "576f3b36a59b07ca4d4b4e6f1f90020f0d29ee803e53b5c2d3fabf7eb4cceac8",
-      "bytes": 25414
+      "sha256": "2376a1b26e75fabd561b3b5668d537e824b5359d7b1e3f2681609bbaf440c503",
+      "bytes": 25323
     },
     {
       "name": "api/pages/beam-search.json",
-      "sha256": "c95c87f6c7dd74b4ab20f1b1db0e9b3dd73f3d3a2aa321d8a52621f1f7b3ab52",
-      "bytes": 23212
+      "sha256": "d64ad7b44f4ec12a46cd661eb1693d7b28e1aa4bc0d4e9cfe8ab196c79a80132",
+      "bytes": 23121
     },
     {
       "name": "api/pages/beamforming.json",
@@ -4791,13 +4791,13 @@
     },
     {
       "name": "api/pages/benchmark-dataset.json",
-      "sha256": "6bb75d9e075858707908e8bc604b314b10203d38e8e885da6a8f9006a6baee78",
-      "bytes": 23308
+      "sha256": "62df64ab09abdd96991ac6ff56306a9187c7d4a591d8a504fbe8b534964678ab",
+      "bytes": 23217
     },
     {
       "name": "api/pages/benchmark-evaluation.json",
-      "sha256": "3e8b4b27c64b0309d4f07baaba2d94037c8dbdc76c6bc4f1b063d2f44a537a7c",
-      "bytes": 22429
+      "sha256": "ffbfde313b9c02fa44f84505c9897edf649b950d75aea3259fe1a3a2127375d9",
+      "bytes": 22338
     },
     {
       "name": "api/pages/benchmark-standard.json",
@@ -4891,8 +4891,8 @@
     },
     {
       "name": "api/pages/bias.json",
-      "sha256": "812b25e800257db1dd2709e56fddd3765aa4210b32f3442e98002597b77ab87c",
-      "bytes": 8632
+      "sha256": "2f2986f589ae2e74ce8e0f2776f822a621b09caba6b6a8e27a35ec1b08848132",
+      "bytes": 8468
     },
     {
       "name": "api/pages/bid-ask-spread.json",
@@ -4966,8 +4966,8 @@
     },
     {
       "name": "api/pages/bio-terror.json",
-      "sha256": "acb90ff8d7ffd2cb6765464b1f1e69c7fa8c6a2c96c832d8b595fa68fc2df383",
-      "bytes": 36258
+      "sha256": "3a42ce6b8e7f1f82c60ab7df6c25abb791e698ee15e785baec50ab7b55d15d06",
+      "bytes": 36167
     },
     {
       "name": "api/pages/biodiversity-conservation.json",
@@ -5121,8 +5121,8 @@
     },
     {
       "name": "api/pages/bitcoin-fungible-token-protocols.json",
-      "sha256": "65c8ab4bda423f715e232be63495cb6203ceada90f2f84dd4e0735b9042c034c",
-      "bytes": 9523
+      "sha256": "9227dd67b65b4f1cd6a37a343d3e36238ec2645ec446d24ff784a856fa4d2a45",
+      "bytes": 9444
     },
     {
       "name": "api/pages/bitcoin-halving.json",
@@ -5426,8 +5426,8 @@
     },
     {
       "name": "api/pages/blockchain-as-a-service.json",
-      "sha256": "b170d3dacbb0e4192eddaf1f51d50f77ce6b2bbf6314e1bc5251b06065ebf411",
-      "bytes": 41103
+      "sha256": "5abb10400013fece9980ce1b113e69fbee4b0545d22aa5935f6d23d94be44f8f",
+      "bytes": 41012
     },
     {
       "name": "api/pages/blockchain-collaboration.json",
@@ -5666,8 +5666,8 @@
     },
     {
       "name": "api/pages/bradley-terry-model.json",
-      "sha256": "bb4733edf4c10f17e20d95b33aeeaee45fcbc1620feeb4c4bdda1a95fe4f6c40",
-      "bytes": 20379
+      "sha256": "77c1873e48a81a68d2133d9a7cf112cefd63aa82b3f899c4a30a14b455e2b36f",
+      "bytes": 20304
     },
     {
       "name": "api/pages/brain-computer-interfaces.json",
@@ -6161,8 +6161,8 @@
     },
     {
       "name": "api/pages/call-centres.json",
-      "sha256": "3e7f5877e14ad09d97aac2d23475b29d3955c94784ecde51e6e8badc2ac8b491",
-      "bytes": 32950
+      "sha256": "e32436597449b5fece3b1eb4cf1a1ea1ad44c2c604b43395efa8bbf1ce2fbc5a",
+      "bytes": 32859
     },
     {
       "name": "api/pages/calldata-compression.json",
@@ -6816,13 +6816,13 @@
     },
     {
       "name": "api/pages/chatbot.json",
-      "sha256": "48b27b19ef6905cd3bfd3f3e0a8a049955665de7afab1cffc5664e1b2f5ceb0a",
-      "bytes": 17845
+      "sha256": "4c39a21325c4cfaf326f85f2969a1c4cb549eeb12ca8dba84236ac800739aea5",
+      "bytes": 17754
     },
     {
       "name": "api/pages/chatbots.json",
-      "sha256": "9cf9e58a50be54510cf02fdf78d639ff6721e717b2bb1252368df7b9b198375f",
-      "bytes": 23844
+      "sha256": "3d2800eb9c3590bb1658350d71508602fdfcc48f24c35ad1e6a8fbc932be8198",
+      "bytes": 23662
     },
     {
       "name": "api/pages/chaumian-ecash.json",
@@ -6846,8 +6846,8 @@
     },
     {
       "name": "api/pages/checkpoints.json",
-      "sha256": "0ef1dfb2dd6ecfa9fc9922d08e8b160d08a2d0a2720b4a79a7d98bbe20cf4857",
-      "bytes": 28238
+      "sha256": "4d00fece59b0cd19100dd6c357dd8bc820f88c73d4aee59447e97365de61c1f2",
+      "bytes": 28147
     },
     {
       "name": "api/pages/chemical-propulsion.json",
@@ -6891,8 +6891,8 @@
     },
     {
       "name": "api/pages/chunking.json",
-      "sha256": "37866d249193a6469b8e2ab4eaf7a27fa9549402e11b41d5b288ebae30ffac6b",
-      "bytes": 13501
+      "sha256": "e9e93d7710a8473cc901d29137750f77e94bc469c3eb56e496d4bfe3d7524d36",
+      "bytes": 13410
     },
     {
       "name": "api/pages/cinematic-rendering.json",
@@ -6971,8 +6971,8 @@
     },
     {
       "name": "api/pages/classical-planning.json",
-      "sha256": "df057b6a1eae69ab8f49744f17eb745657492cb09046012f47878c558f79e000",
-      "bytes": 13690
+      "sha256": "df9c2f13b7f416325902cbe9bd818b15429e800a8fa6c45b926609a79f96778b",
+      "bytes": 13599
     },
     {
       "name": "api/pages/classification-evaluation.json",
@@ -6981,8 +6981,8 @@
     },
     {
       "name": "api/pages/classification-rules.json",
-      "sha256": "bd15c9fff8e23fa8b2b755ff47cbd929e1d9a9971ac4bdbc40520d9f54967848",
-      "bytes": 17504
+      "sha256": "34d32e87ddac2e751de93e9ad24d685cfc7aeec909d50d903b406420ab697f18",
+      "bytes": 17413
     },
     {
       "name": "api/pages/classification-threshold.json",
@@ -7026,8 +7026,8 @@
     },
     {
       "name": "api/pages/claude.json",
-      "sha256": "8af3c50eb5c4ea9715f71dc56acd7cb0592d08cb3a8f2ccf159c3373ba33309f",
-      "bytes": 31986
+      "sha256": "ac3b1cd91b2c588d65be3f2256d79f4058eaa2a558d5ff2d053756bf975866d6",
+      "bytes": 31816
     },
     {
       "name": "api/pages/clean-spark.json",
@@ -7151,8 +7151,8 @@
     },
     {
       "name": "api/pages/closed-world-assumption.json",
-      "sha256": "9b3fb0c80ea72859fd0879b452d47a95298d72f28eed228756c3b5361a412e0d",
-      "bytes": 18050
+      "sha256": "dee94c1b4656daa588cfdeb0cab54ef3358d6068221e430d41270652dcf997c3",
+      "bytes": 17959
     },
     {
       "name": "api/pages/closed-loop-control.json",
@@ -7266,8 +7266,8 @@
     },
     {
       "name": "api/pages/co-training.json",
-      "sha256": "3723050bcffb4538da23bd4e88eed1da725c1f7662d235411e738c29f65092c4",
-      "bytes": 7516
+      "sha256": "dca3935f8369cd69f187b1c2b1c6d0ceababb321765c0dfb973647efbf2bbacd",
+      "bytes": 7425
     },
     {
       "name": "api/pages/co-presence.json",
@@ -7301,13 +7301,13 @@
     },
     {
       "name": "api/pages/code-execution.json",
-      "sha256": "98795f82502c103b974afee721f4bb46b9e9c846c4d83f22542580ef7e482a80",
-      "bytes": 29423
+      "sha256": "88815782f789612cad394788c5e6a2ed9ca6cbf0f7f5c792cb0a0dc7a8156bf0",
+      "bytes": 29332
     },
     {
       "name": "api/pages/code-generation.json",
-      "sha256": "a599bb1fbc4f8df64224ffaab4d3c0e832aad1b3c3346897bf94c0c2af6aab14",
-      "bytes": 26248
+      "sha256": "bc0cdb9cd8f6abe3b335326edab8431f011e9e623f62e679e419aa8304d0bda2",
+      "bytes": 26157
     },
     {
       "name": "api/pages/code-review.json",
@@ -7346,8 +7346,8 @@
     },
     {
       "name": "api/pages/cognitive-architecture.json",
-      "sha256": "a05b0724950f405b272a16868b5c378e0dbcfd4c10c47bb873bd54412c4601bf",
-      "bytes": 28124
+      "sha256": "bdc974b41bad08c3ef476b882f9b195e7bfbf14c6e59a46713bcf063fb6ae8ed",
+      "bytes": 28033
     },
     {
       "name": "api/pages/cognitive-automation-revolution.json",
@@ -7381,8 +7381,8 @@
     },
     {
       "name": "api/pages/cognitive-science.json",
-      "sha256": "135ade0e7cb8faf32b2f05acbba5859029918a5eb7b9adb894d11d1bdaeadb42",
-      "bytes": 16942
+      "sha256": "f80c45c02b90bdbf13d6b9cd310acfa8bb81fbc9908c17ee1f36f3f6585d1c2d",
+      "bytes": 16851
     },
     {
       "name": "api/pages/cognitive-walkthrough.json",
@@ -7391,8 +7391,8 @@
     },
     {
       "name": "api/pages/cohere.json",
-      "sha256": "90893f1976f883ee405f2e6ec8b073176824a3891e7524c08f52573461869ed7",
-      "bytes": 26690
+      "sha256": "36c424733eb2362c07e335c7ff609c17397700fd5f9d93eb40d959fb8ba4468a",
+      "bytes": 26599
     },
     {
       "name": "api/pages/coin.json",
@@ -7506,8 +7506,8 @@
     },
     {
       "name": "api/pages/collaborative-whiteboard.json",
-      "sha256": "d81631e7c375503d988cc573c64869e94b77835869f84ef163e564e9a97df046",
-      "bytes": 26494
+      "sha256": "37937bf8c03a5a7b6ad56496ee94967596a66da05f6d311eb95030cc084ad4fb",
+      "bytes": 26403
     },
     {
       "name": "api/pages/collateral-management.json",
@@ -7616,8 +7616,8 @@
     },
     {
       "name": "api/pages/comfy-ui-api-specification.json",
-      "sha256": "62fdee51514a5cb61f59660c3c37905c752f03acc6a703b10b1feef0bde13dcf",
-      "bytes": 27168
+      "sha256": "330a841f18856687144836d7de790a304b9ca56956383bd9cd922e48bc518e36",
+      "bytes": 27101
     },
     {
       "name": "api/pages/comfy-ui-client.json",
@@ -7666,8 +7666,8 @@
     },
     {
       "name": "api/pages/common-crawl.json",
-      "sha256": "4d402cff41e413bf040a3d05dfd1fa50386116cda27d68e9c2cd27c1bbc3a9b1",
-      "bytes": 24911
+      "sha256": "7cb60b6c91e2548052974c7e080fb30429769c72eda3604df93d9c7387fb7160",
+      "bytes": 24820
     },
     {
       "name": "api/pages/common-pool-resources.json",
@@ -7691,8 +7691,8 @@
     },
     {
       "name": "api/pages/commonsense-reasoning.json",
-      "sha256": "447c88cbeea4703261ec2fa64fb83fb8c56c489a422f31b67669325211fa4da9",
-      "bytes": 30960
+      "sha256": "c474b99a421ba63acd958fca9abf614f1378b509222680a6d031287c2d1c03ec",
+      "bytes": 30869
     },
     {
       "name": "api/pages/communication-channel.json",
@@ -7821,8 +7821,8 @@
     },
     {
       "name": "api/pages/complex-adaptive-systems.json",
-      "sha256": "9cd673147c6826da97b1c6600adf25ce9e95137c905eb5b433cc9c4581613dbe",
-      "bytes": 23403
+      "sha256": "837a960f11317fb09a54785ffee84df3cf1e82d4ffe91ea8cb3d190b1518748a",
+      "bytes": 23312
     },
     {
       "name": "api/pages/complex-event-processing.json",
@@ -7856,8 +7856,8 @@
     },
     {
       "name": "api/pages/compliance-control.json",
-      "sha256": "cd6827b8e84e4295655cbcf26d8a30dcc6c6051c1ee725a221526593069c4c8c",
-      "bytes": 33646
+      "sha256": "90151c12200fc77faa101390b351d281e38a5d4e1775dfedbd90ee1db68d01c2",
+      "bytes": 33555
     },
     {
       "name": "api/pages/compliance-dashboard.json",
@@ -7886,8 +7886,8 @@
     },
     {
       "name": "api/pages/compliance-monitoring.json",
-      "sha256": "ba51d40441ca3f652cca2828fb8b2ae16b86cc8b3ef5d88c380127665805507d",
-      "bytes": 33161
+      "sha256": "3f9d58d6f0599f94620d879151d6fb6199998ff90ba42199af6539b3f31cb1fd",
+      "bytes": 33070
     },
     {
       "name": "api/pages/compliance-standards.json",
@@ -7981,8 +7981,8 @@
     },
     {
       "name": "api/pages/computational-biology.json",
-      "sha256": "488984246659126be79c0a5be4015d3872a03036ae2d906bf5eca0ec327671cc",
-      "bytes": 24423
+      "sha256": "21735fcf9fb373eaad64b2bfb447c0efa617f8e9486b6affbeeeb7083570658e",
+      "bytes": 24332
     },
     {
       "name": "api/pages/computational-complexity-theory.json",
@@ -7996,8 +7996,8 @@
     },
     {
       "name": "api/pages/computational-creativity.json",
-      "sha256": "aabfc5753fbe0be1dae8addae9af9d28f316e79f5860817b27627d904d5f7c55",
-      "bytes": 19858
+      "sha256": "ae8a241aa6c733d1c3a3e440fc236cc46d4964df6c64119be74433022044a3eb",
+      "bytes": 19767
     },
     {
       "name": "api/pages/computational-geometry.json",
@@ -8021,8 +8021,8 @@
     },
     {
       "name": "api/pages/computational-imaging.json",
-      "sha256": "a6c51cd1cba0f33eec76c20ec8aeb0c034c6e363f06474fb541cea8c744fedd2",
-      "bytes": 8090
+      "sha256": "55ef3154f122ca6d1098309e63e8e86f85c2dd7a404d4be8f0aa306b442f21a1",
+      "bytes": 7989
     },
     {
       "name": "api/pages/computational-infrastructure.json",
@@ -8031,8 +8031,8 @@
     },
     {
       "name": "api/pages/computational-intelligence.json",
-      "sha256": "6b75c1cbff5b943eb27e00cdf54766a2778e251dedb09f3373dc51e9649ddfc1",
-      "bytes": 21926
+      "sha256": "2ebb6f6391ecc82962387a3e953a50eaa52b9444fe964b1279a2395f94f227c7",
+      "bytes": 21835
     },
     {
       "name": "api/pages/computational-linguistics.json",
@@ -8056,8 +8056,8 @@
     },
     {
       "name": "api/pages/computational-photography.json",
-      "sha256": "379c039af64a7e3e40239b4c60d026afec434c0c2b9887ac103167095da83cf7",
-      "bytes": 19312
+      "sha256": "525d87afde7aaa37ee357acf75d9e0f93d86e1c1e2fcd92c05fadc1613acde5e",
+      "bytes": 19211
     },
     {
       "name": "api/pages/computational-resources.json",
@@ -8076,8 +8076,8 @@
     },
     {
       "name": "api/pages/compute-infrastructure.json",
-      "sha256": "26c751498fc12e6d5a21a7f3a7a687ba8be0c71f6c44a15547264434de881595",
-      "bytes": 34517
+      "sha256": "95118bbd967ea6b6ac3d715cbcc856f27a91ed36272aec0c4d591b57acf1bd5d",
+      "bytes": 34446
     },
     {
       "name": "api/pages/compute-layer.json",
@@ -8191,8 +8191,8 @@
     },
     {
       "name": "api/pages/concept-drift.json",
-      "sha256": "a1e1c8aae14743d5cd52d986aff613f53e2df658d87ce4341ea2f215f02293c7",
-      "bytes": 22858
+      "sha256": "2566da46d2351f72687793b5ad32057215592001cf91598c477db8b44eb4f453",
+      "bytes": 22767
     },
     {
       "name": "api/pages/conceptual-hierarchy.json",
@@ -8321,8 +8321,8 @@
     },
     {
       "name": "api/pages/conformal-prediction.json",
-      "sha256": "f2e51d984b6736fa6542a04de3f7bf2c4a32d744964ebaeea6142a47b532fa2d",
-      "bytes": 23005
+      "sha256": "df57779d3ec9c37867fa64425cd396532ad20434aeb8bbba5476e3f65f62f890",
+      "bytes": 22914
     },
     {
       "name": "api/pages/conformity-assessment-body.json",
@@ -8771,8 +8771,8 @@
     },
     {
       "name": "api/pages/context-window.json",
-      "sha256": "f63ee9157e804d472760edea83e7b9657163f09f08f3ce401b0d37c8188adca9",
-      "bytes": 10186
+      "sha256": "f2a4bb9add6babd2f1dcf9038b3446d4536b5847f60454d5bd7331d2baf97350",
+      "bytes": 10095
     },
     {
       "name": "api/pages/contextual-embedding.json",
@@ -8781,8 +8781,8 @@
     },
     {
       "name": "api/pages/continual-learning.json",
-      "sha256": "adde5471832ff0a0e09d1d7165246a1ec21e26f6b8c8d9ffee5a1f451f03f906",
-      "bytes": 23029
+      "sha256": "2462f1238e466f9be708f8a1099288d67a211ed1d576e675586553874a6b289f",
+      "bytes": 22938
     },
     {
       "name": "api/pages/continued-pre-training.json",
@@ -8801,8 +8801,8 @@
     },
     {
       "name": "api/pages/continuous-batching.json",
-      "sha256": "5f397e49b54759ba3a7dea25f55b12d80b769f27d5aa17194dea33c28e9b95a6",
-      "bytes": 22867
+      "sha256": "47751860eb85924bc7cd68425b4b04cb2e28d7a44ccc16f419e1e87c39f9c6c4",
+      "bytes": 22776
     },
     {
       "name": "api/pages/continuous-care-navigator.json",
@@ -8966,8 +8966,8 @@
     },
     {
       "name": "api/pages/conversational-ai.json",
-      "sha256": "e143a8e0282dc4cfe51684e10290eb4137fa53ab727b7be7ab4161601509cef2",
-      "bytes": 17809
+      "sha256": "e0d4b66dbca209c1b948783459a65d54c938f4fdedba9e20cc2df0c705f20df7",
+      "bytes": 17718
     },
     {
       "name": "api/pages/conversational-commerce.json",
@@ -9196,8 +9196,8 @@
     },
     {
       "name": "api/pages/cost-function.json",
-      "sha256": "d321fc8c46f0c5d8da5e60e55e7c59dbe7e1604df47f9278f099278591d5c66f",
-      "bytes": 21771
+      "sha256": "beebdd3fc06b122c6dd67b393cc7bea5f09ff614402c7adda2dfebfeaaef3373",
+      "bytes": 21680
     },
     {
       "name": "api/pages/cost-optimisation.json",
@@ -9266,8 +9266,8 @@
     },
     {
       "name": "api/pages/creative-ai.json",
-      "sha256": "0cc7c31affd741c4c26d3147582bb1fb5cdea8a346236180d9cf6f6a93694d78",
-      "bytes": 22910
+      "sha256": "32b97e773b956502ed902d1b3f512c382287d9683e8168c87a894ec8dc7e9937",
+      "bytes": 22819
     },
     {
       "name": "api/pages/creative-commons.json",
@@ -9281,8 +9281,8 @@
     },
     {
       "name": "api/pages/creative-industries.json",
-      "sha256": "47bc84e40ecc839a0c00275250a767f913af5e9c290884dd4063e9b3457c19c1",
-      "bytes": 21476
+      "sha256": "7c1675df9d2f4c3564d3a66d2864606b9e3abe7fe724e1678ab7ad18064edf77",
+      "bytes": 21385
     },
     {
       "name": "api/pages/creative-software.json",
@@ -9561,13 +9561,13 @@
     },
     {
       "name": "api/pages/cross-encoder-reranking.json",
-      "sha256": "c65c408f81d8a1b591a1df7f0a8d8c1860e724e50706547913e6e8f381db66ac",
-      "bytes": 14848
+      "sha256": "8fbd0b887a22ae4a50f5ce246208ed52ed9a4a33f2970d54cc17a407b1df77b1",
+      "bytes": 14757
     },
     {
       "name": "api/pages/cross-entropy-loss.json",
-      "sha256": "5d950d12a4e10046d97877015f20ad3f1356d11205658c3749e3a60e025a8a06",
-      "bytes": 16796
+      "sha256": "084b5a5a66fb1b028dd048959a5ecb4f00545172df4780bc8e176aa93599b5fc",
+      "bytes": 16705
     },
     {
       "name": "api/pages/cross-functional-collaboration.json",
@@ -9991,13 +9991,13 @@
     },
     {
       "name": "api/pages/customer-experience-management.json",
-      "sha256": "9da2a3d36789fe4c794ecc2e80358973bcd507adb41f2731103a01a6f29d5be0",
-      "bytes": 20823
+      "sha256": "59beaaf6059da1bb2c1724d59dc8a8248ab919e2c5ac7f60afbabfe6fc601bc9",
+      "bytes": 20732
     },
     {
       "name": "api/pages/customer-experience.json",
-      "sha256": "e53568e9ff24758857d91e41065aa75efa2260ba8915c3e0e4ab4d86641e160d",
-      "bytes": 21275
+      "sha256": "c43ee81716aa152514d6d86f4016835a70f4f3acb588328a8849f03a4a2ab620",
+      "bytes": 21184
     },
     {
       "name": "api/pages/customer-lifetime-value.json",
@@ -10026,8 +10026,8 @@
     },
     {
       "name": "api/pages/customer-support.json",
-      "sha256": "5038800bbfff171ba199d2453617e090e63522faffe41a2d75ea1288da04009d",
-      "bytes": 22098
+      "sha256": "f049cdd3419f0fba0f1095ebb800fabb84546922af3ecf668598c69a4a0a1f3b",
+      "bytes": 22007
     },
     {
       "name": "api/pages/customer-world-model.json",
@@ -10256,8 +10256,8 @@
     },
     {
       "name": "api/pages/dspy.json",
-      "sha256": "bdf7782a2b9973927bd263031de56d482fe7c39d16657797d0709f30a732e8c1",
-      "bytes": 26670
+      "sha256": "d1c0e5e8e41da908eae87c0ab461143ed5a43b68d0e3f3fd559b6a490b6b99bb",
+      "bytes": 26579
     },
     {
       "name": "api/pages/dtcc.json",
@@ -10266,8 +10266,8 @@
     },
     {
       "name": "api/pages/dvc.json",
-      "sha256": "d2270acaa9a9ffe17c33cf37dd947dd4c50e5656be242a866e64fe00f6c1c5bd",
-      "bytes": 21505
+      "sha256": "39f3ac04724461ad6e44fc3061a0eefaa982935c6c27e5b749253beea136927b",
+      "bytes": 21428
     },
     {
       "name": "api/pages/dwpose.json",
@@ -10966,8 +10966,8 @@
     },
     {
       "name": "api/pages/database-schema.json",
-      "sha256": "a92f71df6e3491ba7f3c7cf6381400d82ed13798959cad2aec105dc508df1a89",
-      "bytes": 14823
+      "sha256": "f124a11b2ad5958ebbc399cd1d0e16aca48d667c6c7cef33b759cd7a52a343cc",
+      "bytes": 14744
     },
     {
       "name": "api/pages/database-system.json",
@@ -10996,8 +10996,8 @@
     },
     {
       "name": "api/pages/dataset.json",
-      "sha256": "dfe22d89cbbbe24141ab6413db0edbfd620ceeb10b737c7350e1131c369e5021",
-      "bytes": 26142
+      "sha256": "79f023bc0266805a756315622da846f9dc8c8e102cb031765f6bb832b02ec49c",
+      "bytes": 26051
     },
     {
       "name": "api/pages/datasheets-for-datasets.json",
@@ -11046,8 +11046,8 @@
     },
     {
       "name": "api/pages/death-of-the-internet.json",
-      "sha256": "27ab764b25685f757cfbfeb3fab4aad8098487b09abab2309922b5c608350027",
-      "bytes": 36321
+      "sha256": "70e64670dcea58ee78ce4d3fe283b23d24afe5cdce7d2c490210507baaaad201",
+      "bytes": 36084
     },
     {
       "name": "api/pages/debugging.json",
@@ -11071,8 +11071,8 @@
     },
     {
       "name": "api/pages/decentralised-agent-coordination-initiative.json",
-      "sha256": "a81e07408212363d82e2735f46875e3c06dd36d89863f9d87b24832f302a2156",
-      "bytes": 6025
+      "sha256": "a420e3e6c95d1625377696f2aff37d6424df3441395c4e928d658d53294caebe",
+      "bytes": 5946
     },
     {
       "name": "api/pages/decentralised-agentic-infrastructure-stack.json",
@@ -11211,13 +11211,13 @@
     },
     {
       "name": "api/pages/decision-engine.json",
-      "sha256": "5bc27f76b5d61f11abae2d6b995f40bc2f5f4d847517191066886828cd445825",
-      "bytes": 21256
+      "sha256": "fe35c9f15904dd7af0fbf3f4c3357686696b284e780af226d0f4f1ef78c7ef43",
+      "bytes": 21165
     },
     {
       "name": "api/pages/decision-making.json",
-      "sha256": "3ca4fafabdf1212eea599b3b98a2ec4ec3e5b7aa7d4acff2207e47c349f2f96f",
-      "bytes": 21289
+      "sha256": "dfa6489dec929d7bb08137cd8ce7232ae88527c049a6dc1136f8864b5345bf77",
+      "bytes": 21198
     },
     {
       "name": "api/pages/decision-rights.json",
@@ -11231,8 +11231,8 @@
     },
     {
       "name": "api/pages/decision-theory.json",
-      "sha256": "267e4115d8079df924e7d30dc86ef669f629a85cc4998720222cb84c6e1a2e08",
-      "bytes": 19233
+      "sha256": "9bf905c55cb994f037573065c0014dc894890365734162563327036eac524734",
+      "bytes": 19142
     },
     {
       "name": "api/pages/decision-transparency.json",
@@ -11351,8 +11351,8 @@
     },
     {
       "name": "api/pages/definitions-and-frameworks-for-metaverse.json",
-      "sha256": "7e1a4f69019b41f01819a81cc157867d512f19eacc3f01d7502d1f7a58ab515c",
-      "bytes": 12678
+      "sha256": "eba20eae391aad9f4d6d94d378479cf0bac330e3e0a24871c14434ff62c1af00",
+      "bytes": 12605
     },
     {
       "name": "api/pages/deflationary-token.json",
@@ -11691,8 +11691,8 @@
     },
     {
       "name": "api/pages/diagrams-as-code.json",
-      "sha256": "d44c95fbf6357fe1ffcc2f987166c874a4779292e69e5afbd5afe55e09b73a52",
-      "bytes": 30640
+      "sha256": "03eb28a6a64829a04c2c43abb751112580f727412d75a0a900ae1dbbad1d69bf",
+      "bytes": 30498
     },
     {
       "name": "api/pages/dialogue-management.json",
@@ -11881,8 +11881,8 @@
     },
     {
       "name": "api/pages/digital-asset-risks.json",
-      "sha256": "39b3f5fd0acf0d1e744d20d7512c0c88943fc409a9964affbc35aa94d3cbf678",
-      "bytes": 13364
+      "sha256": "39c0abfc358e4e4698904611b3f78a3713829d291df123063e9c5e155bb002ce",
+      "bytes": 13291
     },
     {
       "name": "api/pages/digital-asset-standards.json",
@@ -12296,8 +12296,8 @@
     },
     {
       "name": "api/pages/digital-signal-processing.json",
-      "sha256": "54a02f4fd2821746f7af1f22f3ef93e18aa245620bb69c83a87bdd338ff85ed5",
-      "bytes": 10692
+      "sha256": "709686c7053319c5e8ff352ef46ae4846c6c79fabf64a53678af40a085b1cafd",
+      "bytes": 10611
     },
     {
       "name": "api/pages/digital-signal-processor.json",
@@ -12946,8 +12946,8 @@
     },
     {
       "name": "api/pages/domain-expert-contact-index.json",
-      "sha256": "4ee0630806624100f4f5332f1cbc0d5a63a943812f7179ec0642f1414752047c",
-      "bytes": 11063
+      "sha256": "f99e18319b43fce0771a2d40ee48851a2fc525c1e82fff01f9df39cc96d81957",
+      "bytes": 10891
     },
     {
       "name": "api/pages/domain-model.json",
@@ -14191,8 +14191,8 @@
     },
     {
       "name": "api/pages/education-and-ai.json",
-      "sha256": "64af7628c66f3083f0d33436ec85ad1465509b5d71ced27cd30881524b18d04c",
-      "bytes": 29594
+      "sha256": "b35364d9d052f87f538e9d68025ee235199a085eb959899629d76b2dcd749042",
+      "bytes": 29503
     },
     {
       "name": "api/pages/education.json",
@@ -14506,8 +14506,8 @@
     },
     {
       "name": "api/pages/empathetic-ai.json",
-      "sha256": "57b4e8f3be7aea031c3c7e6127975f4b2870567a0402c725dbe21a20d0c8a398",
-      "bytes": 35885
+      "sha256": "214f2bbde66382086d3a624185e582ea65279903c1243cdbb38b7e92de8639c2",
+      "bytes": 35794
     },
     {
       "name": "api/pages/empirical-experimental-design.json",
@@ -14751,8 +14751,8 @@
     },
     {
       "name": "api/pages/enterprise-model-post-training.json",
-      "sha256": "5b9c36c013ce2e880b8f85126c0619db239251ef54c569ff101c0362f9741ece",
-      "bytes": 13534
+      "sha256": "a65b2e5431695daaab383d6a27f9e9f8cb2c6c5749910cebb30044c5a091e928",
+      "bytes": 13562
     },
     {
       "name": "api/pages/enterprise-resource-planning.json",
@@ -15056,8 +15056,8 @@
     },
     {
       "name": "api/pages/ethan-mollick.json",
-      "sha256": "297f43b9aa04f569d74782beeffeeec2b658c266a238b6d729c489d554c79049",
-      "bytes": 10633
+      "sha256": "d03382c409c5fe09fca41dc53b72a1db433c0563335c8566030cbd3b4bc07071",
+      "bytes": 10550
     },
     {
       "name": "api/pages/ether-cat.json",
@@ -15216,8 +15216,8 @@
     },
     {
       "name": "api/pages/evaluation-benchmarks-and-leaderboards.json",
-      "sha256": "8206afc794035aa201e16da34913dd74db96533f1d04e333883083821267673e",
-      "bytes": 29257
+      "sha256": "777c00910e5b4f89b884efd1305a51ec613fb5082972b46322c841095ab6c1ce",
+      "bytes": 29166
     },
     {
       "name": "api/pages/evapotranspiration-estimation.json",
@@ -15456,8 +15456,8 @@
     },
     {
       "name": "api/pages/exploration-exploitation-tradeoff.json",
-      "sha256": "8b3f3027c98a2dcad8b023b245583aff1cf9941a5967bddfaabc5efb5298ae5e",
-      "bytes": 22822
+      "sha256": "f4d719beb598f192c28a98c0d25a99f16dc7d00ca2f949f3c40cd4be136e829d",
+      "bytes": 22731
     },
     {
       "name": "api/pages/exploratory-concepts-seed-space.json",
@@ -15501,8 +15501,8 @@
     },
     {
       "name": "api/pages/external-ai-harness.json",
-      "sha256": "fc99e17228ed6225b6fe60ee4a30f13babe31dbd32c8490927766d2bea251858",
-      "bytes": 30464
+      "sha256": "faada6ff32c6705320857c54da06b0cc9539e6d03de07ced8ea6e4499feabb98",
+      "bytes": 30373
     },
     {
       "name": "api/pages/externally-owned-account.json",
@@ -15671,8 +15671,8 @@
     },
     {
       "name": "api/pages/fsdp.json",
-      "sha256": "92dcda3e2f2fc20180f7f79af85d981c14f1619ca2a51a28567c1045d79c9efc",
-      "bytes": 22887
+      "sha256": "e7fac3d5a39ac0fc912e568fd9fe917f9d1f26be1c08795fd8cf522cda573c22",
+      "bytes": 22796
     },
     {
       "name": "api/pages/fsma-2023.json",
@@ -15806,8 +15806,8 @@
     },
     {
       "name": "api/pages/fashion.json",
-      "sha256": "39f9af7c86a459317ff06b906fb13d0767f9b49e9bcd9b2bd2b2f6ad26ca94a7",
-      "bytes": 29307
+      "sha256": "9536ea4374a4d3d38c461e6eb632c216a5568766e80bcc123b0bf38a05a9e7d1",
+      "bytes": 29208
     },
     {
       "name": "api/pages/fast-fourier-transform.json",
@@ -16266,8 +16266,8 @@
     },
     {
       "name": "api/pages/fine-tuning.json",
-      "sha256": "26f9e4c32997f4fe08df0192e80ad80524408ab552102efcd7b99b251499481b",
-      "bytes": 21119
+      "sha256": "6549a63b14a7eda52331e71bfc810c364eabe54898f6a80191e7e5634876bdb4",
+      "bytes": 21056
     },
     {
       "name": "api/pages/finite-element-analysis.json",
@@ -16776,8 +16776,8 @@
     },
     {
       "name": "api/pages/full-fine-tuning.json",
-      "sha256": "230d9173579baf1c2d40bd57faa8c59a930e36db7fd5954d41ff5c378873ff4a",
-      "bytes": 15167
+      "sha256": "6d7a7d7120d04e36155e065fe6aa0d12e7909ab1653ca1054d71daae8ce62722",
+      "bytes": 15195
     },
     {
       "name": "api/pages/full-node.json",
@@ -17086,13 +17086,13 @@
     },
     {
       "name": "api/pages/gpt-4.json",
-      "sha256": "d3c718be657718e717b9b16f791b1e9d76c6a46ec054c86df1901048477161d3",
-      "bytes": 16079
+      "sha256": "a03c2d8bc37fa39dc504fc230bbe2e9920284ceab1379b11b53290d73008f8ee",
+      "bytes": 15988
     },
     {
       "name": "api/pages/gpt-engineer.json",
-      "sha256": "18e1e24f912eb87a425e5caeee124a3c9f99614254d4c80e299e329e56ddd27f",
-      "bytes": 35984
+      "sha256": "07d214b0e6aaff7407f99d368f9601e91eebfc1955beb7ced901da4284e0f484",
+      "bytes": 35893
     },
     {
       "name": "api/pages/gpt-5-3-codex-spark.json",
@@ -17106,8 +17106,8 @@
     },
     {
       "name": "api/pages/gpts-and-custom-assistants.json",
-      "sha256": "fcc5659bc978641fa98014691c1695990007a894c8de6fecb33ccec5df901838",
-      "bytes": 20519
+      "sha256": "2ebae07b55483268e2dbc6eec0b439cabb5552c77c32f6c234095e539f69b9f5",
+      "bytes": 20428
     },
     {
       "name": "api/pages/gpu-acceleration.json",
@@ -17441,13 +17441,13 @@
     },
     {
       "name": "api/pages/generative-ai.json",
-      "sha256": "3727627eeec5d6dd960c0f7e8191eec80245ba87261d5c39aba84fae1f6052f6",
-      "bytes": 24761
+      "sha256": "65bd66c8bd610b6493731803b18eeb3da379369401a59cc027945a9f33c7d472",
+      "bytes": 24670
     },
     {
       "name": "api/pages/generative-adversarial-network.json",
-      "sha256": "e9d69a9bab214c8afa74f47d651ea4b311e30dd7ccab4643327175ecf59214ae",
-      "bytes": 9831
+      "sha256": "0727966105fb5a903b6016af8db46211229677c8c39ab83886460849f2491c54",
+      "bytes": 9762
     },
     {
       "name": "api/pages/generative-adversarial-networks.json",
@@ -18041,8 +18041,8 @@
     },
     {
       "name": "api/pages/gradient-accumulation.json",
-      "sha256": "5bfb6404c159d312ae6af6330fef3d0caaa2e2037f23abd0526cc94689d06c29",
-      "bytes": 15141
+      "sha256": "c9b70c1e807c31fe9f59ea5994030a08e01fbc861cf36a1090ad3264270e26c9",
+      "bytes": 15169
     },
     {
       "name": "api/pages/gradient-aggregation.json",
@@ -18151,8 +18151,8 @@
     },
     {
       "name": "api/pages/graph-neural-network.json",
-      "sha256": "31ccaacc04f9c231e75ac8b685be208122433f94b82a5787b0647c078d2e860b",
-      "bytes": 16397
+      "sha256": "2a6d19c3643c80dfea0a1b0e64ffcd0ae012779066d96a4364b70bcdd20edb4e",
+      "bytes": 16037
     },
     {
       "name": "api/pages/graph-optimisation.json",
@@ -18746,8 +18746,8 @@
     },
     {
       "name": "api/pages/hardware-and-edge.json",
-      "sha256": "e2e4ed448f813f41fb264208b978eb2eaf60a091dda2737a7f0cb38987b18a75",
-      "bytes": 31178
+      "sha256": "015c79679df4e2a538141f2477e72931b842b66fb6be91187f05171d49692074",
+      "bytes": 31087
     },
     {
       "name": "api/pages/hardware-in-the-loop-testing.json",
@@ -18771,8 +18771,8 @@
     },
     {
       "name": "api/pages/harmlessness.json",
-      "sha256": "986723078089d0018205d160aab0ea5c51150d8b2ca1e255163cf28a8a99e7fa",
-      "bytes": 8875
+      "sha256": "374a5c8b2224280b61d9301d2492873603b5c5de44038fc5da769c5a4db7d6fb",
+      "bytes": 8806
     },
     {
       "name": "api/pages/harmonic-drive.json",
@@ -18876,8 +18876,8 @@
     },
     {
       "name": "api/pages/healthcare-analytics.json",
-      "sha256": "8fa865e4f8ddebb53354d2b6905742347fa53b69212959aa2960e31c812d515a",
-      "bytes": 13740
+      "sha256": "d6db5db94abf83501d5eff1a9af004e42c2593a6489697f24ee9750aee0c2894",
+      "bytes": 13667
     },
     {
       "name": "api/pages/healthcare-application-classification.json",
@@ -19076,8 +19076,8 @@
     },
     {
       "name": "api/pages/history-and-path-to-agi.json",
-      "sha256": "f14b37b6e307beb656af5e702b0b83f2fbf81b4d85047b1a71ef516cbfcd32d5",
-      "bytes": 26054
+      "sha256": "586f6c562719334170463d7fe17a8b16438ef6b2346e0a415441eede8d4fd4d4",
+      "bytes": 25963
     },
     {
       "name": "api/pages/hohmann-transfer.json",
@@ -19116,8 +19116,8 @@
     },
     {
       "name": "api/pages/home-assistant.json",
-      "sha256": "5da52a2a23993c5f72330cf3fc86243400d0b5cee7da8d7ab329e340f4e38b26",
-      "bytes": 34153
+      "sha256": "42eb0a760ac2b847c740fe1db2bd6aa055d408796d9febf5d949ca4130c47031",
+      "bytes": 34062
     },
     {
       "name": "api/pages/homeostasis.json",
@@ -19381,8 +19381,8 @@
     },
     {
       "name": "api/pages/human-agent-interaction-surfaces.json",
-      "sha256": "44d0964365d72d689ade89962af4a314bc714357e5d58b166db05c5d6960aa7c",
-      "bytes": 7741
+      "sha256": "6fa63c95791b4d4b793ed256dc1e01b61291b34945de125c38309b65a2650b1d",
+      "bytes": 7545
     },
     {
       "name": "api/pages/human-robot-collaboration.json",
@@ -19471,8 +19471,8 @@
     },
     {
       "name": "api/pages/hyper-personalisation.json",
-      "sha256": "08de5d929bc7b2fec827dd69d0db1e49c77d4c5551addc0546ff5668e108d64a",
-      "bytes": 28539
+      "sha256": "c7eb7d0245013788bfe8c939e632fe90092b2998119042c47897240e5562b26a",
+      "bytes": 28448
     },
     {
       "name": "api/pages/hyperautomation.json",
@@ -20571,8 +20571,8 @@
     },
     {
       "name": "api/pages/image-classification.json",
-      "sha256": "0d1e402b510223a60839550478a99f2780b01351f3eb31de257e94b759b7ab69",
-      "bytes": 9133
+      "sha256": "c6e1b11a6d314a975a09bc4dc30bf2435b217b3ba4de8dd3f1792dcff3b2815a",
+      "bytes": 9060
     },
     {
       "name": "api/pages/image-co-registration.json",
@@ -20596,8 +20596,8 @@
     },
     {
       "name": "api/pages/image-generation.json",
-      "sha256": "25b10d18ea59c055864aab5466dfd94c1df8625f27d765ef93c443d4b79c70c2",
-      "bytes": 22161
+      "sha256": "62dba1d1f1fe0ac266c14adba1592d9561842c906b0ce213f7557c79a7634fe2",
+      "bytes": 21997
     },
     {
       "name": "api/pages/image-mosaicking.json",
@@ -20606,8 +20606,8 @@
     },
     {
       "name": "api/pages/image-preprocessing.json",
-      "sha256": "30470adb8f61655177dd51c0f39553bbf3bbce32c6aa44edb8295a388cf10fc8",
-      "bytes": 9468
+      "sha256": "948d6b16306d5b91ef1330062b05a0ed3e64cf30afe2cfae8808ed266ffae8ca",
+      "bytes": 9367
     },
     {
       "name": "api/pages/image-processing-software.json",
@@ -20616,8 +20616,8 @@
     },
     {
       "name": "api/pages/image-processing.json",
-      "sha256": "ff73fbbce10ce88f2081f71438fb315f70a7a30d898c033220fe98cca88aa26b",
-      "bytes": 11914
+      "sha256": "631cb93f63d58ece982b6d87f5c016d5a20b983f2a31ee01550a2572f140a821",
+      "bytes": 11813
     },
     {
       "name": "api/pages/image-recognition.json",
@@ -20651,8 +20651,8 @@
     },
     {
       "name": "api/pages/image-and-video-restoration.json",
-      "sha256": "8885631e3fdaa50dbad0937901cb3431889ad2de05f3ad2cb2ca89af40b1463e",
-      "bytes": 23641
+      "sha256": "b80edc32fac71c765a5748491b9e01dfd442b756cfbb07c36c3cce45b934232e",
+      "bytes": 23459
     },
     {
       "name": "api/pages/image-to-image-translation.json",
@@ -21511,8 +21511,8 @@
     },
     {
       "name": "api/pages/instruction-tuning.json",
-      "sha256": "d96ea56a8ac890a166616b64635e4a2c07a105be9cb0d37d99ff398809c878b0",
-      "bytes": 16850
+      "sha256": "f53cc1ff29decffa48dbc699897b8b2a9eaf7a9b54bcb6c3bed0bfa91a1648a8",
+      "bytes": 16878
     },
     {
       "name": "api/pages/instruction-following-conversational-ai-system.json",
@@ -21816,8 +21816,8 @@
     },
     {
       "name": "api/pages/internal-ai-harness.json",
-      "sha256": "ec0a25bec7632f7ac5e076a3d0c8084eb9b6645e85e544b81ea4d6a29e29ffec",
-      "bytes": 29226
+      "sha256": "62f041fc8844179aa7e225b1003f447cfb65f59a96071adc4db32ce2c0091947",
+      "bytes": 29135
     },
     {
       "name": "api/pages/international-ai-cooperation.json",
@@ -21926,8 +21926,8 @@
     },
     {
       "name": "api/pages/interoperability.json",
-      "sha256": "f3c9d6e947661c4352a278dba9c21ec032f6f34597fd93c28315cf28170fa6e9",
-      "bytes": 24262
+      "sha256": "00bcda53ab4e697133f06a609715136861edcdaabd6f59356eb1af58ab15360d",
+      "bytes": 24199
     },
     {
       "name": "api/pages/interplanetary-magnetic-field.json",
@@ -22281,8 +22281,8 @@
     },
     {
       "name": "api/pages/jailbreaking.json",
-      "sha256": "e83583db7fa5bbbcd51a1af4628bc3d17c8790a39bef6b007cece6cf96834f0d",
-      "bytes": 26372
+      "sha256": "614f9d2fd96154edab9e5e5c4f232bb626ebb4db5d51a23315e7f64966e5a746",
+      "bytes": 26281
     },
     {
       "name": "api/pages/java.json",
@@ -22386,8 +22386,8 @@
     },
     {
       "name": "api/pages/kohya-dreambooth-and-similar.json",
-      "sha256": "b9bfcda782ceb88a234a1b25ecd3a28633430287fac0fcace55975d35146167e",
-      "bytes": 35378
+      "sha256": "b2b7851a443f4d363cf2a17be6796df588d8190ff33ebe4c8a65b47a0cb7c7f8",
+      "bytes": 35287
     },
     {
       "name": "api/pages/kto.json",
@@ -22661,8 +22661,8 @@
     },
     {
       "name": "api/pages/knowledge-distillation.json",
-      "sha256": "7604627a10eb27db6ccb89db677608093c25a7cc4d9fc352e9a0b4c2a49e0387",
-      "bytes": 9219
+      "sha256": "3dd729bd98dde8a7bea6206a8aea83b2d54572148c6d8e37989f6f90645a92a1",
+      "bytes": 9158
     },
     {
       "name": "api/pages/knowledge-economy.json",
@@ -22691,8 +22691,8 @@
     },
     {
       "name": "api/pages/knowledge-graph-presentation-session-artefact.json",
-      "sha256": "928fa6b45ec723cd16e6b0b9b83bba4d4a9127e690dd38e5ac3b187c5c599d3e",
-      "bytes": 9376
+      "sha256": "0c820256d1c25138fc4e5e894c29fcedcf59e45efe296c6117aad4e886d7dea6",
+      "bytes": 9259
     },
     {
       "name": "api/pages/knowledge-graph-publication-classifier.json",
@@ -22711,8 +22711,8 @@
     },
     {
       "name": "api/pages/knowledge-graphing.json",
-      "sha256": "4eb1b3bfac7c370435ec54cb8ccd2e6e031100f2aed7eb50e4912193d48473ae",
-      "bytes": 36607
+      "sha256": "6b713dd247ceb85af39bbd03f856f2baea58ffba1ead76c200c3fc7bfa38c3f1",
+      "bytes": 36065
     },
     {
       "name": "api/pages/knowledge-graphs.json",
@@ -22841,13 +22841,13 @@
     },
     {
       "name": "api/pages/llm-application-framework.json",
-      "sha256": "631d609b2069af7ac08dfed4bf59dae2151424b454c89639c57812f6479fdebd",
-      "bytes": 13370
+      "sha256": "2e7a37ce6ccd21874f61963523888a2c181a9593219b36f600872156f27565df",
+      "bytes": 13279
     },
     {
       "name": "api/pages/llm-application-frameworks.json",
-      "sha256": "70dd7c5d7d25eb290ed3c409924af189d3ba1d4592ab2740f2aa6ebd98ebb297",
-      "bytes": 27841
+      "sha256": "b002678edaf13ca0880ee057047f4bb42cf018fdd2316df2bfdd1e6761ceb548",
+      "bytes": 27750
     },
     {
       "name": "api/pages/llm-evaluation.json",
@@ -22856,8 +22856,8 @@
     },
     {
       "name": "api/pages/llm-orchestration.json",
-      "sha256": "1e54d90d7d71c8a903fab888e8ff3cfc64da24e8ccd0114f854b82b78a726ee3",
-      "bytes": 13786
+      "sha256": "e7da28df6687a7bbba979c39999db3a1b492ccae79db4c34d4c64005efa59071",
+      "bytes": 13695
     },
     {
       "name": "api/pages/llm-token-expenditure-index.json",
@@ -23006,8 +23006,8 @@
     },
     {
       "name": "api/pages/language-modeling.json",
-      "sha256": "82739fcc68df19ffa4b2fa848c795fe09f524768e9064f5ba889dc46cd9aebfe",
-      "bytes": 10019
+      "sha256": "d74f7bc558fde9b46d9dae61b0cfa43d0f3cd1c5e16e1b0cd3fac6af318382ee",
+      "bytes": 9794
     },
     {
       "name": "api/pages/language-translation.json",
@@ -23031,8 +23031,8 @@
     },
     {
       "name": "api/pages/large-language-model.json",
-      "sha256": "547c6619620ab72c3b03f76c59afc3f64e914837b2baa3de3a3e50547add737c",
-      "bytes": 29873
+      "sha256": "a00c8e5e5398b327e8cc52705b097437b37f9ed665a25ef97dec6cd7a330964b",
+      "bytes": 29782
     },
     {
       "name": "api/pages/large-scale-compute.json",
@@ -23056,8 +23056,8 @@
     },
     {
       "name": "api/pages/large-scale-training.json",
-      "sha256": "8c4baf0dcb148c368d5242741c12ea08c0d2e59a237a05fd3dcd246e72ef8e1f",
-      "bytes": 14716
+      "sha256": "fe210e145986865b3379505adc0a6585ca0c836a23764360c40e6824d10a9482",
+      "bytes": 14744
     },
     {
       "name": "api/pages/laser-altimetry.json",
@@ -23106,8 +23106,8 @@
     },
     {
       "name": "api/pages/latent-diffusion-model-training.json",
-      "sha256": "7f3373f16c67f6a8dd5b1877336c2c05ba29e0ba176503d23086cfce644d82cd",
-      "bytes": 14053
+      "sha256": "5016add2c16f97fa5a49f3c226e9209926409b80b3d283cf41abd22aae39c210",
+      "bytes": 14081
     },
     {
       "name": "api/pages/latent-diffusion.json",
@@ -23426,8 +23426,8 @@
     },
     {
       "name": "api/pages/lens-and-camera-calibration.json",
-      "sha256": "2a9267c68cd671540d3158bc96f10a444aa61e35e9a5ce541909dfe070847df6",
-      "bytes": 34068
+      "sha256": "9f3a3baf974370944b372b5288293d3a2bb8aad67fd821b9bc905f3feb994bd8",
+      "bytes": 34074
     },
     {
       "name": "api/pages/levee.json",
@@ -23556,8 +23556,8 @@
     },
     {
       "name": "api/pages/light-field.json",
-      "sha256": "af65893d0a1e863fe30f818e5e1dd9efeced0131aeeb868b7afb4f192af3e338",
-      "bytes": 24124
+      "sha256": "2ecfce8b0640fa53a6e6412c05af72cc3b0554f621da862bb18774a6feda0ac5",
+      "bytes": 24023
     },
     {
       "name": "api/pages/lightning-labs.json",
@@ -23836,8 +23836,8 @@
     },
     {
       "name": "api/pages/lo-ra-do-ra-etc.json",
-      "sha256": "bf0081d1b140fa0d22bff5028c6644a9ed2865cff2f9e86a9d55d53d72dea1dd",
-      "bytes": 27138
+      "sha256": "663c3824a0878c7317e3022320951542f96cc5aa5d7ae5fefa83b72fa5635aec",
+      "bytes": 27047
     },
     {
       "name": "api/pages/lo-ra-fine-tuning.json",
@@ -23896,8 +23896,8 @@
     },
     {
       "name": "api/pages/local-rag-corpus-ingestion-pipeline.json",
-      "sha256": "8f2097f12ced9263c36ddcb3c5d46e482598b1a5c16affe62a689484a271c5e7",
-      "bytes": 5620
+      "sha256": "053aeafc851f372262ffd4af160154238d2583f5b5e2c2e02a5e030f8f7e9538",
+      "bytes": 5558
     },
     {
       "name": "api/pages/local-search.json",
@@ -24331,8 +24331,8 @@
     },
     {
       "name": "api/pages/ms-phi-models.json",
-      "sha256": "c9d5bb9222ba7ed2e0e8fba1ee48975e24c035177aa7371f11dd14ac77d7349b",
-      "bytes": 34230
+      "sha256": "63e3f4658a8b214d17d004f5c2d26eac38311046de7c2c773c18f5c386b5b91e",
+      "bytes": 34052
     },
     {
       "name": "api/pages/mteb-benchmark.json",
@@ -24396,8 +24396,8 @@
     },
     {
       "name": "api/pages/machine-learning-techniques-survey.json",
-      "sha256": "1f8dc027ce5b168e7a036043fccbe9f33ba9509c740095c4a841413fd19a7e7a",
-      "bytes": 12855
+      "sha256": "d416fcc5f13318738c363e9bc2c243f9afbc8488bd47a4c8e50276b23fd806b2",
+      "bytes": 12669
     },
     {
       "name": "api/pages/machine-learning.json",
@@ -24406,8 +24406,8 @@
     },
     {
       "name": "api/pages/machine-translation.json",
-      "sha256": "4f252d10c144c533eda8c4a288c968600b7d20debb0aeb427ff54ccee957c9c8",
-      "bytes": 10868
+      "sha256": "bff2f9e723baa9659e5ca0591a620a4a5c1a5aa848f4e7a1d7d593d37fc66121",
+      "bytes": 10777
     },
     {
       "name": "api/pages/machine-unlearning.json",
@@ -25101,13 +25101,13 @@
     },
     {
       "name": "api/pages/meeting-ai-assistant.json",
-      "sha256": "1f2cf2a4154006759c03583a1bc9979a65a6afdac9b4d5d57650d31c154fca7a",
-      "bytes": 29002
+      "sha256": "fa57c8b2dc810ee56f9c2f5fca1068d3b002981e4f1c5c81bdf0a122d8cdb9ea",
+      "bytes": 28911
     },
     {
       "name": "api/pages/meeting-recording.json",
-      "sha256": "56502101d1a613fe96e167bdf76f72cd5be0b927abb6ac769728299ba81b1f51",
-      "bytes": 29925
+      "sha256": "23c78f2ba02445f0cd145a922ac2afe3a0f67fc844cd48c50b23c4f0db5e6d9f",
+      "bytes": 29870
     },
     {
       "name": "api/pages/meeting-transcription.json",
@@ -25166,8 +25166,8 @@
     },
     {
       "name": "api/pages/memory-efficient-training.json",
-      "sha256": "0b29957ecd27d32cc0caf99875d4917b95f8e436108b313885f1858da95fe9f8",
-      "bytes": 13894
+      "sha256": "c13de95183ab15230b934bc9f9a6b14278bad86e682cad2530d1cd6427bebdbd",
+      "bytes": 13922
     },
     {
       "name": "api/pages/memory.json",
@@ -25481,8 +25481,8 @@
     },
     {
       "name": "api/pages/metaverse-ontology.json",
-      "sha256": "46463959f38306d64f85f8ad7c390aa8748f781f067016de0e9fe3ae1a2d5221",
-      "bytes": 13022
+      "sha256": "549c24c2b6ee2ee1c6d34ac7740ec3d0ac5761c858c4fdaff965884e9083e894",
+      "bytes": 12666
     },
     {
       "name": "api/pages/metaverse-platform.json",
@@ -25666,8 +25666,8 @@
     },
     {
       "name": "api/pages/microsoft-copilot.json",
-      "sha256": "0efb3381025ed49a0dda47c796b8a14c2b6c3b3b67042a8cc5d309217d5e5fed",
-      "bytes": 15521
+      "sha256": "125e362556f65e102bec5924ee1a40da99787c7ecc7aa01f90a05212b50d573a",
+      "bytes": 15438
     },
     {
       "name": "api/pages/microsoft-entra-verified-id.json",
@@ -25861,8 +25861,8 @@
     },
     {
       "name": "api/pages/mistral.json",
-      "sha256": "b6984f3391b26005a828680286c90722b1754bffa1acb9cea6b327d54049c17b",
-      "bytes": 14027
+      "sha256": "5cf1aa5a58890f09f9bc9b28caae0dc19eef855efbeb718bb35fc3f54b4c78d5",
+      "bytes": 13936
     },
     {
       "name": "api/pages/mixed-precision-training.json",
@@ -26051,8 +26051,8 @@
     },
     {
       "name": "api/pages/model-control-protocols-like-mcp.json",
-      "sha256": "702fcb4502f428e30c5666f5982ede66f94174faaaa564875e9541bb4c1db2ba",
-      "bytes": 34241
+      "sha256": "342f87c5fbf11aaf465c6fc5023f24cdeda7062e6138e87426d5cd6df897cfe2",
+      "bytes": 34150
     },
     {
       "name": "api/pages/model-debugging.json",
@@ -26141,8 +26141,8 @@
     },
     {
       "name": "api/pages/model-optimisation-and-performance.json",
-      "sha256": "9be3911e963d0536071aa8a1a10791ae0350af05c3120f62aeb513c74d1cbed3",
-      "bytes": 27752
+      "sha256": "5196f349f348c7e1037eaa21d2c09e974adde082951aa1e28dd8d42303dc1d33",
+      "bytes": 27661
     },
     {
       "name": "api/pages/model-optimization.json",
@@ -26251,8 +26251,8 @@
     },
     {
       "name": "api/pages/model-training.json",
-      "sha256": "95ec1d9d7197ec6f355ba128b8e82f720f27efbb3b1b478a7ba1f6dde16922d4",
-      "bytes": 33569
+      "sha256": "f9dcd3035f6b2a42270188dd6bbddc732a70ca1be9859b2eba7bfd93ce7c7d8e",
+      "bytes": 33344
     },
     {
       "name": "api/pages/model-transparency.json",
@@ -26276,8 +26276,8 @@
     },
     {
       "name": "api/pages/model-width.json",
-      "sha256": "0b71e282d2e9d3191b4acee086a05bf0dd9b6092288191dd5eb57d25353906eb",
-      "bytes": 5853
+      "sha256": "44cb9ae5fadbf41bb3de0897d6a294024d9d66ffa59120709fc406b11e12dd6e",
+      "bytes": 5780
     },
     {
       "name": "api/pages/model-based-systems-engineering.json",
@@ -26496,8 +26496,8 @@
     },
     {
       "name": "api/pages/motion-planning.json",
-      "sha256": "27e987d3b08054054291581f789b3c8b481aef66bea5ae0871ce913174062361",
-      "bytes": 15994
+      "sha256": "f1644b47e0947ecc14f558e5c26d6fc07d00764c7be9ddf063c57962fa30e958",
+      "bytes": 15765
     },
     {
       "name": "api/pages/motion-solver-software.json",
@@ -26686,8 +26686,8 @@
     },
     {
       "name": "api/pages/multi-layer-agentic-governance-framework.json",
-      "sha256": "d9328cda3b70e89f9f08e512372b05f0cf56a8f598fde2f2df723b1c6f7156a3",
-      "bytes": 16689
+      "sha256": "2346b75c11fac50d39b02317e15a6ad857aa7163d1052677e86d1f33107c7baa",
+      "bytes": 16598
     },
     {
       "name": "api/pages/multi-model-orchestration.json",
@@ -26816,8 +26816,8 @@
     },
     {
       "name": "api/pages/multimodal-ai-architecture.json",
-      "sha256": "b5b31bd6809466f75c8aba954dbd0eb3ca8ded072cec4a0ec491c8106bf61750",
-      "bytes": 6107
+      "sha256": "55f2fe51b9369cffe1f422fdb19465b30f3c1ffab300e5392efdc4fba7f5d545",
+      "bytes": 6016
     },
     {
       "name": "api/pages/multimodal-ai.json",
@@ -27286,8 +27286,8 @@
     },
     {
       "name": "api/pages/natural-language-processing.json",
-      "sha256": "cb43b2e8ac8a5a725d84ac73303895d2c4710100d7da690eae55ceea644f3701",
-      "bytes": 22282
+      "sha256": "b10f437652a06297e432fce4bd0082a9f04db78af2157fce0046ebfc76650d07",
+      "bytes": 22191
     },
     {
       "name": "api/pages/natural-language-understanding.json",
@@ -27641,8 +27641,8 @@
     },
     {
       "name": "api/pages/neural-network-text-tokenisation.json",
-      "sha256": "926bb2b40649d67186334c49572c3fc14182d152389fdcd206500bc0a9ba5a04",
-      "bytes": 7872
+      "sha256": "b2351e2ba59a7858ea276bacd1d97d0200cf6a5643e0ec19c0b37e06e7bae9e4",
+      "bytes": 7799
     },
     {
       "name": "api/pages/neural-network-training.json",
@@ -28171,8 +28171,8 @@
     },
     {
       "name": "api/pages/ontology-technical-details.json",
-      "sha256": "347aab3d2102e026cb4c7cf9d81534cda48cddf41622c342722f92fb8595e3fe",
-      "bytes": 16662
+      "sha256": "75e5195b74384fdc3c27cda5ff5e75e8e367341fc17bc830de5bd1cd025896a1",
+      "bytes": 16602
     },
     {
       "name": "api/pages/opc-ua.json",
@@ -28636,8 +28636,8 @@
     },
     {
       "name": "api/pages/open-generative-ai-tools.json",
-      "sha256": "30d4d6646d460a9f751fbbcaa0493775cb29b9155c2a2269a628729a8bbdb738",
-      "bytes": 31584
+      "sha256": "5a86adcc35fb379a00830df72b1333e9291338f81c006a9afcdbead23dc765e2",
+      "bytes": 31406
     },
     {
       "name": "api/pages/open-governance.json",
@@ -28771,8 +28771,8 @@
     },
     {
       "name": "api/pages/open-webui-and-pipelines.json",
-      "sha256": "6f3779eea84ace5c8c04f98bb8786721c0fb54fc3fea59901b05357381a114f6",
-      "bytes": 24992
+      "sha256": "7683fbd4f6759994a45fc3de7fab20f718804268867f31f407556040cd18ee02",
+      "bytes": 24814
     },
     {
       "name": "api/pages/open-world-assumption.json",
@@ -28841,8 +28841,8 @@
     },
     {
       "name": "api/pages/openai-research-organisation.json",
-      "sha256": "1ceda1f284a73727045de4b1d2a3a43ec9e892e541a219f48155369ca173f66f",
-      "bytes": 7652
+      "sha256": "799ccf3b4e1840960ec3b1cb107d2afb0fbe26fa6ee9bc42c4534fadaa8071a3",
+      "bytes": 7569
     },
     {
       "name": "api/pages/openapi.json",
@@ -30661,8 +30661,8 @@
     },
     {
       "name": "api/pages/player-two.json",
-      "sha256": "41e7efa0102815a1bbb926a5f230914c919f3e451f6b5bb9c8171bd2d3f2b937",
-      "bytes": 12097
+      "sha256": "d4a029614a7f08d7fb5036d7d55be5e53e1f1b3093005b23b8cd675536cab3a2",
+      "bytes": 12018
     },
     {
       "name": "api/pages/plot.json",
@@ -31296,8 +31296,8 @@
     },
     {
       "name": "api/pages/pretraining.json",
-      "sha256": "1c74246fc941f489e52ef97d46d4b06ab345017a5363ccae399bfda42023bca8",
-      "bytes": 18618
+      "sha256": "098cf64bf1c9dfae1eee915453405a30a2604f51655126e413334b910a91468e",
+      "bytes": 18373
     },
     {
       "name": "api/pages/price-discovery.json",
@@ -31321,8 +31321,8 @@
     },
     {
       "name": "api/pages/prime-intellect.json",
-      "sha256": "f5fa364553a21631b17b336e368985e6ab6b3e50a7b0dcd09b723faccc349b8d",
-      "bytes": 33262
+      "sha256": "461b0444e1d93565c883c4ce9483faf319c6b812568aedb42310fd623ac589fe",
+      "bytes": 33100
     },
     {
       "name": "api/pages/prime-meridian.json",
@@ -31546,8 +31546,8 @@
     },
     {
       "name": "api/pages/privacy.json",
-      "sha256": "5c2d37493f66f709e9456b137107ccfdb62799b8fa5d1e5b5368be94fd267d73",
-      "bytes": 16110
+      "sha256": "b859900be0fe7061138e4f8b984a3baa5b7aaf9437883a341f4034cf05cb30cd",
+      "bytes": 15946
     },
     {
       "name": "api/pages/private-5g-network.json",
@@ -31881,8 +31881,8 @@
     },
     {
       "name": "api/pages/progressive-disclosure-harnesses.json",
-      "sha256": "bcdfd61f7bfc446eb01826d29450fb20aec0d0e723f3c3d01b456930f93180d7",
-      "bytes": 28934
+      "sha256": "7a171b4265615288a615fe044063da1a768858093c749dd9add6b853300b1dc1",
+      "bytes": 28843
     },
     {
       "name": "api/pages/progressive-download.json",
@@ -31961,8 +31961,8 @@
     },
     {
       "name": "api/pages/prompt-engineering.json",
-      "sha256": "a80bafe0d3d0326b33867da06bfb336fba421650c4065056ad9b85d1ee9df8aa",
-      "bytes": 32779
+      "sha256": "c228e9286009e5c769e3990a1c7e4fed11508905a4501a9022d2e6128c40fa89",
+      "bytes": 32688
     },
     {
       "name": "api/pages/prompt-injection.json",
@@ -31976,8 +31976,8 @@
     },
     {
       "name": "api/pages/prompt-tuning.json",
-      "sha256": "3aa798a9a962d58300205943f9253c966aff7251bda61cddbe3ba15db145b2fd",
-      "bytes": 10248
+      "sha256": "6556cd53a30ac1f71b24531033e28bc0ccfc1d392e620b3ab8073fdc9f834259",
+      "bytes": 10169
     },
     {
       "name": "api/pages/proof-of-personhood.json",
@@ -32126,8 +32126,8 @@
     },
     {
       "name": "api/pages/proprietary-ai-video.json",
-      "sha256": "ea72c7e713e8226f27f231b5fe6a1b86d1d5bb97626d93e7527fe94d66d5d540",
-      "bytes": 29806
+      "sha256": "e12e04ffbb1c87cd9120eb25849476b263bc4b0cafca805d3e99914778b8965c",
+      "bytes": 29680
     },
     {
       "name": "api/pages/proprietary-evals.json",
@@ -32146,8 +32146,8 @@
     },
     {
       "name": "api/pages/proprietary-large-language-models.json",
-      "sha256": "dd0c77b0e025b703fb7e4031be733e4f678d08116be39515fc88d8ac9cd7318b",
-      "bytes": 34720
+      "sha256": "c0defd2a4464659161ae17a2506f9cbd10e37477d814ba4c4e95b3b8dca4aec3",
+      "bytes": 34629
     },
     {
       "name": "api/pages/proprietary-model.json",
@@ -32541,8 +32541,8 @@
     },
     {
       "name": "api/pages/py-torch.json",
-      "sha256": "acf40dbdd5103b8f05efd5096cd1edded2d8e003b1285eda6e22d53a4468b9fa",
-      "bytes": 15243
+      "sha256": "e1802e719a3b100c17920a611c09bce188be9f5e9ff61497713d4943a2aa97bc",
+      "bytes": 15152
     },
     {
       "name": "api/pages/pyodide-knowledge-graph-node-enumerator.json",
@@ -32551,8 +32551,8 @@
     },
     {
       "name": "api/pages/pyodide-rag-corpus-builder-script.json",
-      "sha256": "6b040a2f6154dda985e50634aab9a45e31484a8f4ccb90c16e2eaf97186bf79e",
-      "bytes": 5693
+      "sha256": "8d018df70286dd3b95bf09e4df5b181c4cc180b20bfa81b2816ac99d1a3a59f1",
+      "bytes": 5631
     },
     {
       "name": "api/pages/python-3.json",
@@ -32831,8 +32831,8 @@
     },
     {
       "name": "api/pages/question-answering.json",
-      "sha256": "f3d2b00f18bf654ca11e8aa58b1bf1a088923c94089d06719e8135157994fd3a",
-      "bytes": 9740
+      "sha256": "402c8ce919b2e6920ad795e82ec331ab3cfa8da5ea6a9058fd92f277bedb54b0",
+      "bytes": 9671
     },
     {
       "name": "api/pages/quorum-blockchain.json",
@@ -33111,8 +33111,8 @@
     },
     {
       "name": "api/pages/radicle-decentralised-code-forge.json",
-      "sha256": "d6370e56fdc81f06795de524a9c6f93850fb5a66d292c7222a20172efba1b3c2",
-      "bytes": 11347
+      "sha256": "00fe8cb737e5662c60d693bad6e26336530e151ba73a1c0f4252f03f02733c26",
+      "bytes": 11276
     },
     {
       "name": "api/pages/radio-access-network.json",
@@ -33681,8 +33681,8 @@
     },
     {
       "name": "api/pages/reasoning.json",
-      "sha256": "f2ea9e9d4fb1cb93766c9b1d522ae96fe2b1b7474809d2033e28463ec6127256",
-      "bytes": 29287
+      "sha256": "62af4f7e22f545b6cfa8ca478811b546d6d1da6ae3d25423375380462a2ed2ff",
+      "bytes": 29196
     },
     {
       "name": "api/pages/recall.json",
@@ -34471,8 +34471,8 @@
     },
     {
       "name": "api/pages/residual-network.json",
-      "sha256": "ca6068ca503d27444887c9992919df1f006b5d9e3ad6aadc000df20db25aae81",
-      "bytes": 11798
+      "sha256": "0b8849a0ffcaf1a965cb5332b02705d01c38bf53556518cc3d14b0c07d91a44b",
+      "bytes": 11725
     },
     {
       "name": "api/pages/resilience-engineering.json",
@@ -34571,13 +34571,13 @@
     },
     {
       "name": "api/pages/retraining.json",
-      "sha256": "7ef0be8b4a1d99c7885154b4d109e0f97142639ab16e483ccfb755ed78a6fed2",
-      "bytes": 13634
+      "sha256": "bc9139dd693749efa2dae87fa3630ffab52a912d94b89110ee080e5c387a72c8",
+      "bytes": 13662
     },
     {
       "name": "api/pages/retrieval-augmented-generation-rag.json",
-      "sha256": "8e0a30fca158d939f0e5f6237bb06e9d9b8a77b1e2555edc7488faff0d1b4a5a",
-      "bytes": 27986
+      "sha256": "f2fc08679ba975ef656a8eb1103a67da1b9d3bfded9d9a6953184a961e89a005",
+      "bytes": 27895
     },
     {
       "name": "api/pages/retrieval-augmented-generation.json",
@@ -35656,8 +35656,8 @@
     },
     {
       "name": "api/pages/safety-and-alignment.json",
-      "sha256": "0b02df93747878d81887e2d4285c6f7c9bd96ad01d0fed0c74d982abf355e57f",
-      "bytes": 26043
+      "sha256": "d8638afca01987a4dfca8c050601dcf0e343cb28a1e86763ed9798c72d8811c7",
+      "bytes": 25952
     },
     {
       "name": "api/pages/safety-critical-systems.json",
@@ -35666,8 +35666,8 @@
     },
     {
       "name": "api/pages/safety.json",
-      "sha256": "8b49b10e3548ce024ab08f30a808e3a90cfcffb599ecf2ec9b2f399a5d41e1b0",
-      "bytes": 11593
+      "sha256": "d572457d15a8b1ae00410c27180c2eadb56fe58e49cfe32aba5bb63c14d4dae5",
+      "bytes": 11502
     },
     {
       "name": "api/pages/saga-pattern.json",
@@ -35721,8 +35721,8 @@
     },
     {
       "name": "api/pages/sampling.json",
-      "sha256": "522e07f0eb871352f2748ef378a0a6fdf00029f604381ee31ea7a8d8eef9bf71",
-      "bytes": 26342
+      "sha256": "38dc25597487559bd650b8997f30afc5a61668a69762173a414243ad269f744d",
+      "bytes": 26251
     },
     {
       "name": "api/pages/sanctions-compliance.json",
@@ -36561,8 +36561,8 @@
     },
     {
       "name": "api/pages/self-attention.json",
-      "sha256": "8c68b53ab3091768c1af01a27f0d95b5cd22d7b76fb1d923069999c89d25f018",
-      "bytes": 10577
+      "sha256": "96a28f9031110d24ee45c9d145b2a11a653e31c1dc7bc9c953afa13604922a15",
+      "bytes": 10391
     },
     {
       "name": "api/pages/self-driving-car.json",
@@ -36686,8 +36686,8 @@
     },
     {
       "name": "api/pages/semantic-search.json",
-      "sha256": "53fc1cb2c728f0184645277b8f11a64477d72b547acbce71a43a15a74df02c4e",
-      "bytes": 21946
+      "sha256": "f60af9a5127fe88ad4bd63000a1100bb914a40273b25bd6a7cb03be0582d0642",
+      "bytes": 21855
     },
     {
       "name": "api/pages/semantic-segmentation.json",
@@ -36801,8 +36801,8 @@
     },
     {
       "name": "api/pages/sensor-fusion.json",
-      "sha256": "cab5a2b15da13bea1ae56471298329bd214c997f65bb30601e5b6307d8cfe397",
-      "bytes": 16484
+      "sha256": "193bf262619710b76da81698b1021f926328e915a17931b09e4597bc72fbf372",
+      "bytes": 16411
     },
     {
       "name": "api/pages/sensor-housing.json",
@@ -37411,8 +37411,8 @@
     },
     {
       "name": "api/pages/single-turn-inference.json",
-      "sha256": "c3f62dbe6fb9041aeb904cb4201367ad0ed128dd3de7bc4598f7d63a1975a7b4",
-      "bytes": 7455
+      "sha256": "b08f73bd50ec966a61819f1a278e0b28100fe8c9f4be1ac0314e4ab538817b52",
+      "bytes": 7364
     },
     {
       "name": "api/pages/singular-value-decomposition.json",
@@ -37701,8 +37701,8 @@
     },
     {
       "name": "api/pages/social-impact.json",
-      "sha256": "c642cb0c9c2be87da2c489391713cec61a84857b76cb65ff89f43007736f3e15",
-      "bytes": 10799
+      "sha256": "4f5a6db8b4579ddbf00a20d74021f27f488fbe7e8b64c9515544d037bd2f6934",
+      "bytes": 10635
     },
     {
       "name": "api/pages/social-interaction.json",
@@ -38876,8 +38876,8 @@
     },
     {
       "name": "api/pages/speech-and-voice.json",
-      "sha256": "6ec8ff8999e4729de523f1cbe6eb4d937e098b88aabdf0dbf5ee9be6f2fd73cf",
-      "bytes": 24813
+      "sha256": "9bb2756aa13691e8801032f22d57c891c6c79b8257d237643d8598ad050c8c65",
+      "bytes": 24722
     },
     {
       "name": "api/pages/speech-synthesis.json",
@@ -39666,13 +39666,13 @@
     },
     {
       "name": "api/pages/structurizr-dsl.json",
-      "sha256": "4c6debb8d9836e02a9ef314aa788394cef319269d81d21f1899035d2e3de6949",
+      "sha256": "31e0f68716cbfe3cdc8d78c238a7d049f212ef80311be222b5aa664cd42ab567",
       "bytes": 13264
     },
     {
       "name": "api/pages/style-transfer.json",
-      "sha256": "14c9ee2b74767a6b303ea406eb9b4ab29c358f79f8b1bfb50f0e041f8e7eb23d",
-      "bytes": 12420
+      "sha256": "6554ddad09e80c464af04c5d00e2cd640fd7a4d57bbc3cf1a499fbb28d40f00f",
+      "bytes": 12347
     },
     {
       "name": "api/pages/sub-millisecond-latency.json",
@@ -39726,8 +39726,8 @@
     },
     {
       "name": "api/pages/suggested-reading-order.json",
-      "sha256": "65bbf869eb79dac5dc15e16a4bfcca729de271bad76e593e7e85401748f8891e",
-      "bytes": 12444
+      "sha256": "2c9a4866b038a2146cbc8457d642c1f51e812e81c309d3a24ccaa9ef6679ab4b",
+      "bytes": 12371
     },
     {
       "name": "api/pages/sun-sensor.json",
@@ -39791,8 +39791,8 @@
     },
     {
       "name": "api/pages/supervised-fine-tuning.json",
-      "sha256": "32fdee7e50ec6c300cdd9f2e7b8bbf2aa413dd34d540a752be52fab02c59b0fa",
-      "bytes": 17267
+      "sha256": "196cf7d9baf63f24d97aefc1382f0322d76804c8649effe098134ae38358940a",
+      "bytes": 17295
     },
     {
       "name": "api/pages/supervised-learning.json",
@@ -40311,8 +40311,8 @@
     },
     {
       "name": "api/pages/tele-107-ai-meeting-assistants.json",
-      "sha256": "e9588ffa98d4c92ead236b4e094d8a598ff6b28161a91ee22b115851a6f5db26",
-      "bytes": 11319
+      "sha256": "ec545fcce745eca6361282c66f5cc6bd8b320946a7d861c552baa9cca89b453c",
+      "bytes": 11228
     },
     {
       "name": "api/pages/tele-110-spatial-audio-processing.json",
@@ -40506,8 +40506,8 @@
     },
     {
       "name": "api/pages/task-planning.json",
-      "sha256": "37adda24224f02f36ad061f422a5f4bce83528858b0e4978d4872703ed17eb53",
-      "bytes": 25337
+      "sha256": "83ca6acc9faf81586a63c9f2594ef0b22ca5081a449d1ac64a97a79fd3401d6a",
+      "bytes": 25246
     },
     {
       "name": "api/pages/task-scheduling.json",
@@ -40601,8 +40601,8 @@
     },
     {
       "name": "api/pages/technical-history-extended-cv.json",
-      "sha256": "e83846396390564e781eb43bb4452e3e9159b63b6fa1ce855a39cf36d22d8c78",
-      "bytes": 10911
+      "sha256": "6cc495af183063859492764e31e2336b49b2ee8fa03d408283c305ad90c4fafc",
+      "bytes": 10812
     },
     {
       "name": "api/pages/technical-robustness-and-safety.json",
@@ -40691,8 +40691,8 @@
     },
     {
       "name": "api/pages/telecollaboration-and-telepresence.json",
-      "sha256": "69ae6764e308b9a8b8b2c1ca28aa27ee515b9a082210eecc175eb4576a6cbcd0",
-      "bytes": 89900
+      "sha256": "931aa8c81a47475628769c128521f963edf3b91b30f2118be3664bcf5b7aed60",
+      "bytes": 89837
     },
     {
       "name": "api/pages/telecollaboration.json",
@@ -40846,8 +40846,8 @@
     },
     {
       "name": "api/pages/tensor-processing-unit.json",
-      "sha256": "0e73d7ee89ef83f699b160e76ab55ed43bc60b8046b99495b8eb1580790584ae",
-      "bytes": 13984
+      "sha256": "1fe8699e00678a460dc0b6b24799a4127e676b4543946ae582d88d7e404836bc",
+      "bytes": 13893
     },
     {
       "name": "api/pages/tensor.json",
@@ -40856,8 +40856,8 @@
     },
     {
       "name": "api/pages/tensor-flow-lite.json",
-      "sha256": "b701d35fc6dacafba48f7aee391f4f4490d3c14b61baea2d67095f24b8f07f36",
-      "bytes": 14746
+      "sha256": "c1247f5460c14672ece57d6ec6a9c92a2e4b89d94639eeeabfe9b64643c7cd1a",
+      "bytes": 14663
     },
     {
       "name": "api/pages/tensor-flow.json",
@@ -40881,8 +40881,8 @@
     },
     {
       "name": "api/pages/terminal-coding-agents.json",
-      "sha256": "6b36ee7d8a71768304e1b4d0488465d2ae2ab541de11303b8cf9721f527d0ca3",
-      "bytes": 28128
+      "sha256": "9b764651d3b6879db51ad858ce2ca4c14e87433a80b65191ad7f9805f8618d39",
+      "bytes": 28037
     },
     {
       "name": "api/pages/terminology-playbook.json",
@@ -40996,8 +40996,8 @@
     },
     {
       "name": "api/pages/text-generation.json",
-      "sha256": "acdbfff4ec00ef6f5e901f0f16b97b990faf0f724a0cb8e89ddf5f6a19f7e5d1",
-      "bytes": 13367
+      "sha256": "5434caed2cc3948730ddb2d3fad2884c62ef0f4795e73ff85948be2504d0fe65",
+      "bytes": 13276
     },
     {
       "name": "api/pages/text-mining.json",
@@ -41601,8 +41601,8 @@
     },
     {
       "name": "api/pages/tone-mapping.json",
-      "sha256": "4d5e126e6e294657dfdff747406b9e0f5055a22458c6f0072e1411f99c1b498d",
-      "bytes": 8988
+      "sha256": "1c0351feacbd0eeb3a0f2a4db09acbddce940fee81f35dd0b09916afcd7c4757",
+      "bytes": 8887
     },
     {
       "name": "api/pages/tool-call-loop.json",
@@ -41656,8 +41656,8 @@
     },
     {
       "name": "api/pages/topological-map.json",
-      "sha256": "4542d60b7e62d6112e7614292c099af394c8bffddbc2e9936bc13b2fc8ed5886",
-      "bytes": 26362
+      "sha256": "73237d8377d1a515540b2df1c27ef63f989402c70addcc12abded84f4ce37378",
+      "bytes": 26180
     },
     {
       "name": "api/pages/topology.json",
@@ -41851,8 +41851,8 @@
     },
     {
       "name": "api/pages/training-data.json",
-      "sha256": "941cb7606404396d8df573590241a46db2f98a3291d985f40104ef8178dbcc62",
-      "bytes": 32192
+      "sha256": "06c8fd687ba0c9e0349711b7bce88c5fd0a7553cd6c643a66bd09051de236560",
+      "bytes": 32101
     },
     {
       "name": "api/pages/training-dataset-metadata.json",
@@ -41901,8 +41901,8 @@
     },
     {
       "name": "api/pages/training-and-fine-tuning.json",
-      "sha256": "7ead02a8561d5d18d0faa2da826ba078ad7d7623f71a024a021b69862729578f",
-      "bytes": 26642
+      "sha256": "14b9af78744c37c6b0c4da86a2232aa1b78ee174da4460e64a07317a6ec359af",
+      "bytes": 26464
     },
     {
       "name": "api/pages/training.json",
@@ -42106,8 +42106,8 @@
     },
     {
       "name": "api/pages/translation.json",
-      "sha256": "0188d55d785083442144c7b005dec53c10567761d58cb208a51eedbbd694d727",
-      "bytes": 25675
+      "sha256": "e25112bc5f828cced2a2dba8b6b19549d7da4a000fb26fe85355876a0d4fc50f",
+      "bytes": 25584
     },
     {
       "name": "api/pages/transmission-control-protocol.json",
@@ -42386,8 +42386,8 @@
     },
     {
       "name": "api/pages/trust-and-safety.json",
-      "sha256": "6b7abea9e84877c74baf669dddc8785a6ec0e382ce2a81c40a74c7b488074b62",
-      "bytes": 31737
+      "sha256": "b8824c98298f9003f073eb7ce6f4b8e104d3b76516fb3ac9e3b10c7c04cf5e36",
+      "bytes": 31646
     },
     {
       "name": "api/pages/trust-in-automation.json",
@@ -43461,8 +43461,8 @@
     },
     {
       "name": "api/pages/variational-autoencoders.json",
-      "sha256": "7db07e36cbfb6d26a814d929386b5a62f51050047b028cf4c864485c5c81970d",
-      "bytes": 39417
+      "sha256": "30687f856d9c636461e7e2482de4a0b490c72e60ff7e258ae1a4c08c0ca8c15e",
+      "bytes": 39326
     },
     {
       "name": "api/pages/variational-inference.json",
@@ -43881,8 +43881,8 @@
     },
     {
       "name": "api/pages/virtual-economy-market-framing.json",
-      "sha256": "b8344e4fef181cfda7692050285e53a7315b902f4e8b0a2a918afe5ebb6ba129",
-      "bytes": 8552
+      "sha256": "e61a12c174f5c63b8c5edba28905781650ad402026b357b057f7f83d733ec3ca",
+      "bytes": 8477
     },
     {
       "name": "api/pages/virtual-economy.json",
@@ -44681,8 +44681,8 @@
     },
     {
       "name": "api/pages/wallet.json",
-      "sha256": "67756bc1bae9cc2e3a3a4b51de8ddd3bb64b5e6c262e0187a3da2fb9a3e6b24e",
-      "bytes": 33705
+      "sha256": "12624e019047f40e8e3fc6d3069b2a4e8c5b0ca5aefe0ad03a8dfe281bb53a1f",
+      "bytes": 33642
     },
     {
       "name": "api/pages/walmart.json",
@@ -45516,8 +45516,8 @@
     },
     {
       "name": "api/pages/zero-shot-prompting.json",
-      "sha256": "fea171b5388f1a6c3a9a9101f211d59c5d3df7b027e041865b294166bb7ee878",
-      "bytes": 15069
+      "sha256": "b38f8b497f0b6bf2c6b9797ed611623602dbcdbaf47ba655fc45aaa094dcff04",
+      "bytes": 14978
     },
     {
       "name": "api/pages/zero-trust-architecture-zta.json",
@@ -45671,13 +45671,13 @@
     },
     {
       "name": "api/pages/ecash.json",
-      "sha256": "fad300453e2d4293a136772cba4fb1d13af1971b76ee06d792e04ba958e1c086",
-      "bytes": 9438
+      "sha256": "2221e65827ec4f9357c411d89df0ad06e4f65bca7814d34a07d51f893031dd1e",
+      "bytes": 9365
     },
     {
       "name": "api/pages/fast-ai.json",
-      "sha256": "e2a58dfcdcde0ee4f54579fbc293c8e0fdf72779f63d0a333b57e0bfa5430da3",
-      "bytes": 22148
+      "sha256": "0733772dac9f2d6431e74a17be6134e69dcb8e9fbac44093e50b41508f0fc930",
+      "bytes": 22049
     },
     {
       "name": "api/pages/g-rpc.json",
@@ -46231,8 +46231,8 @@
     },
     {
       "name": "api/pages/v-llm.json",
-      "sha256": "1664c11e8e94ae42b6c9a04b4c79c3498749acbbcbf808c691cd9f3bbb2440ed",
-      "bytes": 15912
+      "sha256": "36afd5e2c62ba91b96be3a498ff607cbf44bfd53327e59d49b1d1868c5d2a37c",
+      "bytes": 15821
     },
     {
       "name": "api/pages/visionflow.json",
@@ -46241,8 +46241,8 @@
     },
     {
       "name": "api/pages/x402-and-l402-payment-protocols.json",
-      "sha256": "12fa1e930e5afae6e11c5c95a2a01e688ecf0506ae8a1fc0d440eb10366dadfe",
-      "bytes": 38248
+      "sha256": "7e3cdbf34824ddc9d2fa3a2d593af526c6e83cb6a71d0a1afb658fbe5e27ac0c",
+      "bytes": 38175
     },
     {
       "name": "api/pages/x-dai.json",
@@ -46341,7 +46341,7 @@
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "d590d4fddd40ab6ff03e758c58464fd1299988cde656e97d3adb740352071fcc",
+      "sha256": "d260469c0ba7d66fe281d5078ca2565dd1dc63564507c649e664933560f49874",
       "bytes": 3127
     },
     {
@@ -46906,8 +46906,8 @@
     },
     {
       "name": "api/markdown/AI Companies.md",
-      "sha256": "d196a969b234cc48c014f47baa8aaeccbeb646699c484bf1c36e212953d2e3fa",
-      "bytes": 81633
+      "sha256": "326ca3e00dfe9f9b84206a9a1c2bdcb48ce8c759a2d2cba4fdfbe44730c08a41",
+      "bytes": 81639
     },
     {
       "name": "api/markdown/AI Compute Infrastructure.md",
@@ -47086,8 +47086,8 @@
     },
     {
       "name": "api/markdown/AI Frontier Capability Survey.md",
-      "sha256": "270b839ded9d59046e8e2f820c3db92d6bfb5bf61735f8c4bcce7e545ebbf2fd",
-      "bytes": 11049
+      "sha256": "3642af740af4587f2fa5866a3a99316636489500bba820add60803f11164b21d",
+      "bytes": 11047
     },
     {
       "name": "api/markdown/AI Game Agent.md",
@@ -47106,8 +47106,8 @@
     },
     {
       "name": "api/markdown/AI Governance Law and Privacy.md",
-      "sha256": "e7dd2d25010854f3eaf678c6c179cc660fc2ee1bb9bf13c2b570c5a5cd41e1f2",
-      "bytes": 38260
+      "sha256": "536d1881ae0bec67d2726d7795061b8b1bcc39e0aced7ac8a589e9e0f3f33dab",
+      "bytes": 38258
     },
     {
       "name": "api/markdown/AI Governance Maturity Model.md",
@@ -47731,8 +47731,8 @@
     },
     {
       "name": "api/markdown/AI Upscaling and Super-Resolution.md",
-      "sha256": "fc4fd410090764097d60acc978aacdbddc2ff070775ac9cdc86e9292d0c8f93e",
-      "bytes": 44708
+      "sha256": "c40023fc037108d624fc4f35837bf84411939e1c31a0b5d78fadcf1e2149316b",
+      "bytes": 44711
     },
     {
       "name": "api/markdown/AI User Demographics.md",
@@ -47741,8 +47741,8 @@
     },
     {
       "name": "api/markdown/AI User.md",
-      "sha256": "52e513f516403422114a78a69adbaaef336856a63547ca515dcd7f15b97aaf58",
-      "bytes": 528407
+      "sha256": "fd1f103174905ecba2e85ea2a88893391cf073b2bb6838306169964720bf37ee",
+      "bytes": 528413
     },
     {
       "name": "api/markdown/AI Venture Capital.md",
@@ -47751,8 +47751,8 @@
     },
     {
       "name": "api/markdown/AI Video.md",
-      "sha256": "a5ab6498efda07168ff3426791f4d669f7e1dc137b624cd47eaec13e4541fd2c",
-      "bytes": 59899
+      "sha256": "4be2f2e1d80cf665772dbcf8f163830175bd60ffa1409a5d336e159966cfa8af",
+      "bytes": 59905
     },
     {
       "name": "api/markdown/AI Wearables.md",
@@ -49401,8 +49401,8 @@
     },
     {
       "name": "api/markdown/Applied AI Research Portfolio.md",
-      "sha256": "d57570d38e85db70fe0be51ceb8371a4ec2041e3e110b95d876833e21e9f8ddb",
-      "bytes": 1963
+      "sha256": "c2b6ff69584ac001cbc91918e66ec4131c4719933f9986f8c0d5ba9ff96ad577",
+      "bytes": 1961
     },
     {
       "name": "api/markdown/Applied Machine Learning.md",
@@ -49616,8 +49616,8 @@
     },
     {
       "name": "api/markdown/Artificial Intelligence.md",
-      "sha256": "f8afbdfb90f25fe6f0cfe921f79d020133abc2b333cc2d921e6a7ad5a78167fb",
-      "bytes": 61033
+      "sha256": "d5a08bd6d85a0ba27654da13dc3f002fb115ea97387af938e861dccfc1e66b5f",
+      "bytes": 61036
     },
     {
       "name": "api/markdown/Artificial Superintelligence Theory.md",
@@ -53831,8 +53831,8 @@
     },
     {
       "name": "api/markdown/CodeFormer.md",
-      "sha256": "21488d943b99a46f1a54249adc4db246d0a5b821a50c2ca216a9fbd71371f4db",
-      "bytes": 76247
+      "sha256": "515e92c660234408a4ccf1ff60a2c992d2eb3a41b5d787018d9228fd649b2c1d",
+      "bytes": 76250
     },
     {
       "name": "api/markdown/Codec.md",
@@ -58316,8 +58316,8 @@
     },
     {
       "name": "api/markdown/Diagrams as Code.md",
-      "sha256": "633848a5b57f58024f83d3c299746d52b907c2833ade3390ee54490dbdadbad2",
-      "bytes": 76344
+      "sha256": "a8ef489861fbd6909e75ba763c3747071f544183e3da32beef926a24c90bd3cd",
+      "bytes": 76348
     },
     {
       "name": "api/markdown/Dialogue Management.md",
@@ -63036,8 +63036,8 @@
     },
     {
       "name": "api/markdown/Fine-Tuning.md",
-      "sha256": "b7327b32de3be4eb2edfac13d8b40dc2b31a8442bc5c34bf012b95c49cc486b6",
-      "bytes": 93780
+      "sha256": "a31ff732966e8be75d0778214b4b712eef74d495e917a26b930e189698d1d095",
+      "bytes": 93776
     },
     {
       "name": "api/markdown/Finite Element Analysis.md",
@@ -64976,8 +64976,8 @@
     },
     {
       "name": "api/markdown/Graph Neural Network.md",
-      "sha256": "a03f2f84a21fb2f55544ec5e266709dac8842215062eb2bf0e5da9369948741c",
-      "bytes": 18053
+      "sha256": "43a9f835c3b06aeae47eaafc1ad16485fa8cbfc24226abfd39e203c51e6f259f",
+      "bytes": 18061
     },
     {
       "name": "api/markdown/Graph Optimisation.md",
@@ -67586,8 +67586,8 @@
     },
     {
       "name": "api/markdown/Image Classification.md",
-      "sha256": "58044a7f910b261b677f2b680031443c87de90ad05cab0f34599955c5b1cc63d",
-      "bytes": 27648
+      "sha256": "6f9305208df1a5dc033a28f1bec7636bf6916d4ea76f062a8f502669b3c9b85f",
+      "bytes": 27644
     },
     {
       "name": "api/markdown/Image Co-registration.md",
@@ -68551,8 +68551,8 @@
     },
     {
       "name": "api/markdown/Instruction-Following Conversational AI System.md",
-      "sha256": "f4fa8f52b8f9657ab0859bd8090542badbcaf70a88946ec3940b6d165205bf55",
-      "bytes": 12721
+      "sha256": "2e5c3ec57a394c738f868ae9d5d5a56c5a8ed5c8b4eb945e4cdca27b45da9033",
+      "bytes": 12727
     },
     {
       "name": "api/markdown/Instrumental Convergence.md",
@@ -68966,8 +68966,8 @@
     },
     {
       "name": "api/markdown/Interoperability.md",
-      "sha256": "b66beef09cfd908be48b0ec055ce31c67072bef639ce64701eb5fec6245bfd9a",
-      "bytes": 28474
+      "sha256": "7f993cdaf57dee29b564190c5573c3602e3b5f252a84e84aa2ea2f97a5546c1d",
+      "bytes": 28477
     },
     {
       "name": "api/markdown/Interplanetary Magnetic Field.md",
@@ -69726,8 +69726,8 @@
     },
     {
       "name": "api/markdown/Knowledge Artefact Update Cycle.md",
-      "sha256": "769abdabb10f324c45528f9357a20761b8464565d323f590f89385e00e5e2448",
-      "bytes": 8450
+      "sha256": "0041a08f4300ef27a60d553ba3081a70d6b2ae35f75efa9f58fc8345770fb8e3",
+      "bytes": 8454
     },
     {
       "name": "api/markdown/Knowledge Base.md",
@@ -69766,8 +69766,8 @@
     },
     {
       "name": "api/markdown/Knowledge Distillation.md",
-      "sha256": "c2d69c808a47fa9d707a5986853c32a60f42eaeb979f333f4cb0cd22eacd8cd4",
-      "bytes": 21905
+      "sha256": "45c5ec9f3977056c86261682e31916d69f4401c5d4f9da22578aa1644fa176f7",
+      "bytes": 21913
     },
     {
       "name": "api/markdown/Knowledge Economy.md",
@@ -69791,8 +69791,8 @@
     },
     {
       "name": "api/markdown/Knowledge Graph Kanban Board.md",
-      "sha256": "d5176bc214c8736149e7a4162fc5cc38175e540c8e2a6dfeb3d22fa9d814ae3c",
-      "bytes": 859
+      "sha256": "98815a9f7b03e62c5b9c42b3c600dffe1cc238f865e44132760e1cd3fdd75a0e",
+      "bytes": 853
     },
     {
       "name": "api/markdown/Knowledge Graph Presentation Session Artefact.md",
@@ -69816,8 +69816,8 @@
     },
     {
       "name": "api/markdown/Knowledge Graphing.md",
-      "sha256": "03295314099ca3a9c11a5da7ffdd14dfbb91a0586f026a822b35e9b4d5e39458",
-      "bytes": 89614
+      "sha256": "564376b7cfb9643e3f2364db0c0b5a870da41f3f6290a27a5759b5afd72a5aa0",
+      "bytes": 89618
     },
     {
       "name": "api/markdown/Knowledge Graphs.md",
@@ -70111,8 +70111,8 @@
     },
     {
       "name": "api/markdown/Language Modeling.md",
-      "sha256": "6ee1479a6483b36426b1c8047fd07db9c560f855e9a0fc673351e048c9bfe27b",
-      "bytes": 50868
+      "sha256": "958bc130d7c6ac47a22e01b2526310e37c8e8481b920702a19d960a346035306",
+      "bytes": 50864
     },
     {
       "name": "api/markdown/Language Translation.md",
@@ -71551,8 +71551,8 @@
     },
     {
       "name": "api/markdown/Machine Learning Techniques Survey.md",
-      "sha256": "bab5668eabb6071b69824f509565dd61651684438947d72c67a2d325ba673d86",
-      "bytes": 7516
+      "sha256": "dd3c52684d2116d2699adbd497dcc18c48d30194bfef0708c2292186a8f29448",
+      "bytes": 7514
     },
     {
       "name": "api/markdown/Machine Learning.md",
@@ -72281,8 +72281,8 @@
     },
     {
       "name": "api/markdown/Meeting Recording.md",
-      "sha256": "8d5e3991f465684f68daabaa7ed6c8bd5d8c9cd77a43f30df3c2c8b92067967c",
-      "bytes": 32873
+      "sha256": "abd5ba03c453c4a92b2129d761fb2ab76d088686210f2bdf7e4e1f6abd67dff5",
+      "bytes": 32880
     },
     {
       "name": "api/markdown/Meeting Transcription.md",
@@ -72661,8 +72661,8 @@
     },
     {
       "name": "api/markdown/Metaverse Ontology.md",
-      "sha256": "dac7706316533339c37bc051209021178d8de505c4da085ea70b268325fc3aea",
-      "bytes": 42680
+      "sha256": "c57371f4677d29582d3a10ca58c887ffd0438413e1752d1deccac004fb697482",
+      "bytes": 42684
     },
     {
       "name": "api/markdown/Metaverse Platform.md",
@@ -72846,8 +72846,8 @@
     },
     {
       "name": "api/markdown/Microsoft Copilot.md",
-      "sha256": "46e1d84c6d3ffe7c303c0f06cee1906c5e3474db1aa9039ffa635efa76d99382",
-      "bytes": 9949
+      "sha256": "82f5902ac207c837ff6dba6b50e157a8e8c61014921fd3acec363f62f9eeeffb",
+      "bytes": 9952
     },
     {
       "name": "api/markdown/Microsoft Entra Verified ID.md",
@@ -76086,8 +76086,8 @@
     },
     {
       "name": "api/markdown/OpenAI Research Organisation.md",
-      "sha256": "212d0350bc2b317a900108cff36ac91c32f3b8176498f08b6c21ef0d8650e4aa",
-      "bytes": 9967
+      "sha256": "aafee0820848c7941e497cc91939849b1e9dcf92509731345a995698b568d2f5",
+      "bytes": 9973
     },
     {
       "name": "api/markdown/OpenAPI.md",
@@ -83996,8 +83996,8 @@
     },
     {
       "name": "api/markdown/Self Attention.md",
-      "sha256": "2a2b98ef69acb8c13bcfca4ead73530fff6a58c5c423fd262eb91f2dd0b158e5",
-      "bytes": 23282
+      "sha256": "5d128b86aad9f2770ada71cafe7c8d255a3a7eb3c2c6ebbc5b4dcb6993fbb0a3",
+      "bytes": 23278
     },
     {
       "name": "api/markdown/Self Driving Car.md",
@@ -85191,8 +85191,8 @@
     },
     {
       "name": "api/markdown/Social Impact.md",
-      "sha256": "75e90008c4996d606e860c0d4dc095a775d89596c245dd0d92644c44dc794caf",
-      "bytes": 48289
+      "sha256": "844074e5bea9711b863090bdfb7f7df96c1ca08a082af5c64ab96fde303dd941",
+      "bytes": 48283
     },
     {
       "name": "api/markdown/Social Interaction.md",
@@ -87181,8 +87181,8 @@
     },
     {
       "name": "api/markdown/Style Transfer.md",
-      "sha256": "e922ae705c7e50082d82d89e50089494fdbd0633a66be7ab25e3ded2221f19bf",
-      "bytes": 44319
+      "sha256": "aae1c077ca7a384627ae968fa821e97dac8419869c855cb593dbaf11344730af",
+      "bytes": 44315
     },
     {
       "name": "api/markdown/Sub-Millisecond Latency.md",
@@ -88246,8 +88246,8 @@
     },
     {
       "name": "api/markdown/Telecollaboration and Telepresence.md",
-      "sha256": "c52a8cb7e3cb6a195e504b4a61876811c3075f02902143976084a0504ef3f8f2",
-      "bytes": 84721
+      "sha256": "34daa6a2487b4a0900217db8bb0d378d5bfd7c8ac0b6eedb19ef8d39848d791f",
+      "bytes": 84724
     },
     {
       "name": "api/markdown/Telecollaboration.md",
@@ -88576,8 +88576,8 @@
     },
     {
       "name": "api/markdown/Text Summarisation.md",
-      "sha256": "c41c4fefecbde9c5f6d0235be6a764f07f375999d85989a6168faeaa7786f5a0",
-      "bytes": 16082
+      "sha256": "1856158df6dcde905f208e02dd0239417731564cbadaf7c6b50ef1077b22d099",
+      "bytes": 16070
     },
     {
       "name": "api/markdown/Text-to-3D.md",
@@ -89046,8 +89046,8 @@
     },
     {
       "name": "api/markdown/Token Embedding.md",
-      "sha256": "ccaede532e5dfb0e72502dec9724923eebba1dd5f2a4cd3047890851618e8f5a",
-      "bytes": 19935
+      "sha256": "53cbd89ddf9234206b7f147975b396f73c877442c279c08f648efc3893a32303",
+      "bytes": 19939
     },
     {
       "name": "api/markdown/Token Emission.md",
@@ -92356,8 +92356,8 @@
     },
     {
       "name": "api/markdown/Wallet.md",
-      "sha256": "935d456fdcac5fd269c17a51458f1c81cc67872bfa98e487ddfe5d65b00485ac",
-      "bytes": 22671
+      "sha256": "01acacd787f69c8c51eb2407c1d0918552194d5574dda71133f42ed14a0a7bc2",
+      "bytes": 22680
     },
     {
       "name": "api/markdown/Walmart.md",
@@ -94136,7 +94136,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "7ddb2daded021d9989e46bc9105b4a5e6bdc6cc4f3b1d290b6f43db82661f43f",
+      "sha256": "e04d5261e4e8664021cdcfaf19abd33cfef38386f776942d64e475b8638f2fe3",
       "bytes": 866404
     },
     {
@@ -95306,8 +95306,8 @@
     },
     {
       "name": "okf/concepts/ai-app-store.md",
-      "sha256": "1106c63d75c50f9878e5cf545a8038a5f324e4dcc75a00ec50f747edca8a8ed2",
-      "bytes": 687
+      "sha256": "f1ee2df5f22c6fb83c996b389d4ad41b241d9011232f33251b30a01e262321d2",
+      "bytes": 661
     },
     {
       "name": "okf/concepts/ai-application.md",
@@ -96436,8 +96436,8 @@
     },
     {
       "name": "okf/concepts/ai-video.md",
-      "sha256": "f4ab6c3637a15f82b566f6b66a4403488c1095fee27d50c4b8e6f37bf28b6273",
-      "bytes": 3951
+      "sha256": "cafe552619da70666b93216c546f0f13a8f886aea04460e83cc6e54079c56ea5",
+      "bytes": 3928
     },
     {
       "name": "okf/concepts/ai-wearables.md",
@@ -97021,8 +97021,8 @@
     },
     {
       "name": "okf/concepts/apple-inc-technology-corporation.md",
-      "sha256": "2264a0fe49a8046e9881aca69391e8c61cd8399a37fe794196c566b9f6c5ea30",
-      "bytes": 2773
+      "sha256": "4c10ee7bd86a06cf4544cb5706b7383e45d247c0d73777efa692d88ff638b5bf",
+      "bytes": 2747
     },
     {
       "name": "okf/concepts/apple-inc-technology-corporation-mixed-reality-headset.md",
@@ -99826,8 +99826,8 @@
     },
     {
       "name": "okf/concepts/bradley-terry-model.md",
-      "sha256": "655629af39ac4a995398b36e9f0c8b043c1bf4450ad80285fc71b22f19f8a578",
-      "bytes": 3684
+      "sha256": "1e961f7ca8d25d67d3e5e7d23e3f035717a60ee75c5136af5dd8661cb6332823",
+      "bytes": 3662
     },
     {
       "name": "okf/concepts/brain-computer-interfaces.md",
@@ -105036,8 +105036,8 @@
     },
     {
       "name": "okf/concepts/database-schema.md",
-      "sha256": "e300d6262825aa44fe883a46ac31ad03af4d66f0fe33981a9374e5049ff94f12",
-      "bytes": 3083
+      "sha256": "0ea17da35711fdd66729a913e121c73ab5fbbbffe6660c985c1251e9a125fd72",
+      "bytes": 3059
     },
     {
       "name": "okf/concepts/database-system.md",
@@ -105806,8 +105806,8 @@
     },
     {
       "name": "okf/concepts/diagrams-as-code.md",
-      "sha256": "53bc40f81f611e55c92dc0fbbcebc6275a6c36bbec0409125864d32a1c854ab5",
-      "bytes": 3637
+      "sha256": "e9209bf0eba1d31585b320b9ab7d8d57641ad0dd4489556189f527f7f2da4ced",
+      "bytes": 3612
     },
     {
       "name": "okf/concepts/dialogue-management.md",
@@ -107141,8 +107141,8 @@
     },
     {
       "name": "okf/concepts/domain-expert-contact-index.md",
-      "sha256": "26f5c4271c97d6028f3034b58b67a63735948095b028a338feb27bae5793147d",
-      "bytes": 1662
+      "sha256": "d622e82afe524df715e48e46d22066f4a213f51a1593b6f79e1d48b4adb75f3b",
+      "bytes": 1637
     },
     {
       "name": "okf/concepts/domain-model.md",
@@ -108951,8 +108951,8 @@
     },
     {
       "name": "okf/concepts/ethan-mollick.md",
-      "sha256": "dc57f628387a07e8fc5a7c42fb6e5a2edec880e96c0d0d30155072877b483749",
-      "bytes": 3381
+      "sha256": "ecbee73c7547bd8bc73e6d29b5d0e158d081387bd95fab51555f42b5f0f34d37",
+      "bytes": 3355
     },
     {
       "name": "okf/concepts/ether-cat.md",
@@ -114341,8 +114341,8 @@
     },
     {
       "name": "okf/concepts/image-processing.md",
-      "sha256": "3f0ef421410bb427d79fd1ca4eaf74b3037655e0cf2af0ebf62df6d79b795202",
-      "bytes": 3094
+      "sha256": "eb2f9d0522d316d2e6279d04cf3c39be8ab49eaa0f76c98aff9334de493a48b3",
+      "bytes": 3059
     },
     {
       "name": "okf/concepts/image-processing-software.md",
@@ -116936,8 +116936,8 @@
     },
     {
       "name": "okf/concepts/knowledge-graph-presentation-session-artefact.md",
-      "sha256": "e82aeac34ac95c71aa38a3220fabedde0d45d3d131dd395679dfbc5ebc99c07a",
-      "bytes": 1585
+      "sha256": "b845f0467f2a23aba185bc402543ec71838b10a5085734096daed32dff321e87",
+      "bytes": 1543
     },
     {
       "name": "okf/concepts/knowledge-graph-publication-classifier.md",
@@ -119921,8 +119921,8 @@
     },
     {
       "name": "okf/concepts/microsoft-copilot.md",
-      "sha256": "86db477a4b48e35f9475ad4fd473e5ccc9808dcbb4d9e72aee0a9cc3ec7d4dbc",
-      "bytes": 2463
+      "sha256": "556428e37b9a27bd341004c304d2a9f4451eeb5afecf6831eaa78a1b0aaabecc",
+      "bytes": 2437
     },
     {
       "name": "okf/concepts/microsoft-entra-verified-id.md",
@@ -120531,8 +120531,8 @@
     },
     {
       "name": "okf/concepts/model-training.md",
-      "sha256": "7b916ff44ea26d2c4f309e9e747e514dbedb0848f63d66e823af20f849c6f429",
-      "bytes": 3992
+      "sha256": "b54df6872ae091d17d797b8a8397398c9de7e4e4d8292df551fc8a74c0a369d6",
+      "bytes": 3969
     },
     {
       "name": "okf/concepts/model-training-pipeline.md",
@@ -123191,8 +123191,8 @@
     },
     {
       "name": "okf/concepts/openai-research-organisation.md",
-      "sha256": "93411b1907a5dce64b9360b7dfab4538804a32ee1ec5edc13b3dcfd39a7ea3fc",
-      "bytes": 2636
+      "sha256": "edef630df3ac1eb79e17ef4090535aa70d080db4970e52b80e1fb73cf9d4a74e",
+      "bytes": 2610
     },
     {
       "name": "okf/concepts/openai-research-organisation-agents-sdk.md",
@@ -135596,8 +135596,8 @@
     },
     {
       "name": "okf/concepts/tensor-flow-lite.md",
-      "sha256": "a02bf350e4c38f12a1a61606c0bb4ce5dedc2c916a94cf10e7d68082a56e1f7e",
-      "bytes": 2714
+      "sha256": "e27b2b4940339668c6e52a9c3368f4ea3c59d35eb9738fa6dfafb4e02ff1447c",
+      "bytes": 2688
     },
     {
       "name": "okf/concepts/tensor-parallelism.md",

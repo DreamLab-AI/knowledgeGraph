@@ -13,7 +13,6 @@ hasPart:
   - urn:ngm:class:gpt
   - urn:ngm:class:dall-e-3
   - urn:ngm:class:whisper
-  - urn:ngm:class:chatgpt
   - urn:ngm:class:dall-e-3
   - urn:ngm:class:sora
 enables:

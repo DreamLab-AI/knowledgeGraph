@@ -29,7 +29,6 @@ implements:
 contrastsWith:
   - urn:ngm:class:microsoft
   - urn:ngm:class:google-ai-technology-corporation
-  - urn:ngm:class:android
   - urn:ngm:class:microsoft
   - urn:ngm:class:google-ai-technology-corporation
 bridgesTo:

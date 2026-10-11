@@ -93,7 +93,6 @@ relatedTo:
   - urn:ngm:class:excalidraw
   - urn:ngm:class:notion
   - urn:ngm:class:ai-diagram-tools
-  - urn:ngm:class:logseq
   - urn:ngm:class:kroki
   - urn:ngm:class:diagrams-py
   - urn:ngm:class:adr
