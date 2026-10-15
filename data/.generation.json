@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@cea8813f51d863b416dc31ac597c0607df9e3415",
-  "commit": "cea8813f51d863b416dc31ac597c0607df9e3415",
+  "id": "visionGraph@b0e4f838a893729bf6fb58da238b342ba64df9fa",
+  "commit": "b0e4f838a893729bf6fb58da238b342ba64df9fa",
   "dirty": false,
   "content_digest": "d00323e3b8301df9468d544ac5a9cdb520200eaff7ee7a26ec8ffc3ab47eacda",
   "ontology_digest": "sha256-12-ffd81685844c",
-  "generated_at": "2026-10-15T11:27:57.368528+00:00",
+  "generated_at": "2026-10-15T12:27:48.298650+00:00",
   "class_count": 9244,
   "page_count": 9244,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "ontology-inferred.ttl",
-      "sha256": "6b19e7d440b1283de0e8d2b0536e0f23f124c22ac6f616441e7da7dc9fb3d310",
+      "sha256": "de8c59b6ada4edf2cf5b1876003fec01d6ac48871a7f6f0ab3cef9b618bb0407",
       "bytes": 3802753
     },
     {
       "name": "scaffold-index.json",
-      "sha256": "fb3023861e360cf1848d5cde29de02f07922200e2ff06e3b02492fa2ef0e5730",
+      "sha256": "4bd751e1464297e91dce259eee3eed09f226525561b57b1cb6a6c44b4e83dfb9",
       "bytes": 10177610
     },
     {
       "name": "prose-index.json",
-      "sha256": "3aaaa8057b8d54cf83acfb0cbfc71ddcbe7083fe8bf0e9f60053ceed116d7e87",
+      "sha256": "5264dfd3350c04e0698c0bc26132359da96feb6d256254485d9767d95e8fade9",
       "bytes": 5536435
     },
     {
