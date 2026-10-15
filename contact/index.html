@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Narrative Gold Mine</title>
+  <meta name="description" content="Get in touch about the Narrative Gold Mine ontology corpus. Messages are encrypted in your browser and delivered to DreamLab AI over Nostr.">
+  <link rel="canonical" href="https://narrativegoldmine.com/contact/">
+  <style>
+    :root { --bg:#fbfaf7; --fg:#1d1b16; --muted:#5f594b; --card:#ffffff; --line:#ddd6c4; --gold:#9a6b14; --ok:#1d7a4d; --err:#b3261e; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#14120e; --fg:#f0ebdd; --muted:#b0a88f; --card:#1d1a14; --line:#3a3427; --gold:#d4a574; --ok:#4fc58c; --err:#f87171; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:400 1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:36rem; margin:0 auto; padding:2.5rem 1rem 4rem; }
+    nav a { color:var(--gold); text-decoration:none; font-size:.9rem; margin-right:1rem; }
+    nav a:hover { text-decoration:underline; }
+    h1 { font-size:1.75rem; margin:1.5rem 0 .5rem; }
+    .lead { color:var(--muted); margin:0 0 1.5rem; }
+    .contact-card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.25rem; }
+    .cf { display:flex; flex-direction:column; gap:.9rem; }
+    .cf-field { display:flex; flex-direction:column; gap:.35rem; font-size:.85rem; color:var(--muted); }
+    .cf-field input, .cf-field textarea { font:inherit; font-size:1rem; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:.7rem .85rem; min-height:44px; }
+    .cf-field textarea { resize:vertical; min-height:7rem; }
+    .cf-field input:focus-visible, .cf-field textarea:focus-visible, .cf-send:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+    .cf-hp { position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+    .cf-send { min-height:48px; border:0; border-radius:10px; cursor:pointer; font:700 1rem system-ui,sans-serif; background:var(--gold); color:#14120e; }
+    .cf-send:disabled { opacity:.6; cursor:progress; }
+    .cf-status { min-height:1.25rem; margin:0; font-size:.9rem; color:var(--muted); }
+    .cf-status[data-state="ok"] { color:var(--ok); }
+    .cf-status[data-state="error"] { color:var(--err); }
+    .cf-note { margin:0; font-size:.75rem; color:var(--muted); }
+    noscript p { color:var(--err); }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Site"><a href="/">Explorer</a><a href="/notes/">Notes</a></nav>
+    <h1>Contact</h1>
+    <p class="lead">Questions about the Narrative Gold Mine ontology corpus, licensing, or working with it? Write to us. DreamLab AI maintains the corpus and replies by email.</p>
+    <div class="contact-card" data-contact-form data-topic="Narrative Gold Mine" data-source="narrativegoldmine_contact_form">
+      <noscript><p>This form needs JavaScript to encrypt your message in the browser. You can also reach DreamLab AI at <a href="https://www.dreamlab-ai.com/contact">dreamlab-ai.com/contact</a>.</p></noscript>
+    </div>
+  </main>
+  <script type="module" src="contact.js"></script>
+</body>
+</html>

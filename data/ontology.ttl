@@ -78482,6 +78482,7 @@ ngm:database-schema a owl:Class ;
     vc:hasMaturity ngmi:maturity-established ;
     vc:hasPart ngm:database-view ;
     vc:hasPart ngm:foreign-key ;
+    vc:hasPart ngm:index ;
     vc:hasPart ngm:normalisation ;
     vc:hasPart ngm:primary-key ;
     vc:hasPart ngm:referential-integrity ;
@@ -141093,6 +141094,8 @@ ngm:independent-verification a owl:Class ;
     vc:sourceDomain "blockchain" .
 ngm:independent-wheel-motors a skos:Concept ;
     rdfs:label "Independent Wheel Motors"@en .
+ngm:index a skos:Concept ;
+    rdfs:label "Index"@en .
 ngm:index-buffer a skos:Concept ;
     rdfs:label "Index Buffer"@en .
 ngm:index-free-adjacency a skos:Concept ;
@@ -278936,7 +278939,7 @@ vc:utilises a owl:ObjectProperty ;
 <https://narrativegoldmine.com/ontology> dc:creator "Dr John O'Hare" ;
     a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Ontology"@en ;
-    owl:versionIRI <https://narrativegoldmine.com/ontology/sha256-12-34759d55b932> ;
+    owl:versionIRI <https://narrativegoldmine.com/ontology/sha256-12-ffd81685844c> ;
     owl:versionInfo "3.1.0" .
 _:r1 a owl:Restriction ;
     owl:onProperty vc:requires ;
