@@ -3,13 +3,13 @@
   "public_pages": 9244,
   "non_public_pages": 14,
   "rejected": 0,
-  "excluded": 28,
+  "excluded": 1,
   "parsed": 9258,
   "counts": {
-    "excluded_directory": 28,
+    "excluded_directory": 1,
     "included_private": 14,
     "included_public": 9244,
-    "input_files": 9286
+    "input_files": 9259
   },
   "balanced": true
 }
