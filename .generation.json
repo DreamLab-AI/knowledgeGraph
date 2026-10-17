@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@a3ee56ecf841627a84a9695d055fdf229eb0f85a",
-  "commit": "a3ee56ecf841627a84a9695d055fdf229eb0f85a",
+  "id": "visionGraph@de30b0d58794ecc2acb35619b6a5d2975fb237c0",
+  "commit": "de30b0d58794ecc2acb35619b6a5d2975fb237c0",
   "dirty": false,
   "content_digest": "2ed9f748ee77e075205fa7cadda9c388393def2033b430bfa967f602b84cf63b",
   "ontology_digest": "sha256-12-ffd81685844c",
-  "generated_at": "2026-10-16T13:57:52.289510+00:00",
+  "generated_at": "2026-10-17T09:52:26.532675+00:00",
   "class_count": 9244,
   "page_count": 9244,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "6064f62c8992fe84c5b062e9491209fc9f78813927409ab45eb962bc96f7f2df",
+      "sha256": "1f64db3e6d28adc231b934f70473fb3456faeba4b5d96fc8c8e9257f4460c401",
       "bytes": 3802753
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "0a4948599f82803f39b70eb5c862ca5716eef45956d2062ddaeca4af7cf6169b",
+      "sha256": "937c3fc6570739e3f8a8e10e8363ce286259c403e6ca6eed66a3dfe6be98dd6c",
       "bytes": 10177610
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "c8a033dcd8b760fac62b4bfd7739fc2ca7693456253387e254aacdb592c66195",
+      "sha256": "f92eda46711a6f0dd05b209e6c12a802ad22a5f202e683561d4c752ee30a9f16",
       "bytes": 5536435
     },
     {
@@ -46291,7 +46291,7 @@
     },
     {
       "name": "data/graph/overview.json",
-      "sha256": "32207a2055d00bba9ef2264497c1e29545e3d4852a654f357728ad1739504ca9",
+      "sha256": "5e6017e027d7ec64b480af644fd017f0f9922f4f19dec42e7b1928f441d62d83",
       "bytes": 40396
     },
     {
@@ -46341,7 +46341,7 @@
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "f7f758a087d6a359cfb03bbadd86eec9433996897f10f0a17ff6423058e9f443",
+      "sha256": "3cd51cafc52ccbd5e43b8b67b3d7a2d70a066927a4da6eaa7efae8e7a5396f8d",
       "bytes": 3127
     },
     {
@@ -94136,7 +94136,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "59669bf6ab9b1138253e14e8e16247e3734e870d7f27ef28604c091bc41786c1",
+      "sha256": "210aa3aab04eab343e66557520a9125da8d6cd2d33b5b564716b9b0cdbc21a4f",
       "bytes": 866404
     },
     {
@@ -187441,7 +187441,7 @@
     },
     {
       "name": "data/.generation.json",
-      "sha256": "48ed57d272cdae5ba1af71ce06f5d812e6e54b988558cc91b545f7740d57d1f9",
+      "sha256": "78882f3392da504a26a162e2866d006dfb88a484c091c09f4d4e2403f8099ee0",
       "bytes": 3199
     }
   ]
