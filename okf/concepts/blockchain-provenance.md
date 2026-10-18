@@ -46,6 +46,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:interplanetary-file-system
   - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:digital-product-passport
 ---
 
 # Blockchain Provenance

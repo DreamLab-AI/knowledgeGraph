@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:mixed-reality
   - urn:ngm:class:digital-twin
   - urn:ngm:class:augmented-reality
+  - urn:ngm:class:supply-chain
 ---
 
 # Simulation

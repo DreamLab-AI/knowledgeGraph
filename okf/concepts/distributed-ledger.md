@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:web3
   - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:supply-chain
 ---
 
 # Distributed Ledger

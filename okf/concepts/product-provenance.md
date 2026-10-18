@@ -3,14 +3,19 @@ okf_version: "0.2"
 type: Class
 title: Product Provenance
 resource: urn:ngm:class:product-provenance
-domain: supply-chain
-description: Product provenance is the verifiable record of a product's origin and the chain of custody it has passed through from raw material to end consumer. It is established by capturing and linking events, such as manufacture, inspection and transfer, into an auditable trail, increasingly recorded on distributed ledgers to resist tampering. Platforms such as VeChain implement product provenance by anchor
+domain: supply-chains-and-logistics
+description: Product provenance is the provenance of an individual product, meaning the recorded information about where it came from and what was done to it, and no source opened here defines the term, so the page combines a general definition of provenance with identification standards.[^1]
 maturity: established
 quality: 0.55
 is-a:
-  - urn:ngm:class:supply-chain-traceability
+  - urn:ngm:class:supply-chain-provenance
+bridgesTo:
+  - urn:ngm:class:zero-knowledge-proof
+relatedTo:
+  - urn:ngm:class:w3-c-prov
+  - urn:ngm:class:gs1-digital-link
 ---
 
 # Product Provenance
 
-Product provenance is the verifiable record of a product's origin and the chain of custody it has passed through from raw material to end consumer. It is established by capturing and linking events, such as manufacture, inspection and transfer, into an auditable trail, increasingly recorded on distributed ledgers to resist tampering. Platforms such as VeChain implement product provenance by anchoring supply-chain traceability events on-chain so that authenticity claims can be independently verified.
+Product provenance is the provenance of an individual product, meaning the recorded information about where it came from and what was done to it, and no source opened here defines the term, so the page combines a general definition of provenance with identification standards.[^1]

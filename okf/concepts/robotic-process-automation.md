@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:task-automation
   - urn:ngm:class:enterprise-resource-planning
   - urn:ngm:class:document-processing
+  - urn:ngm:class:supply-chain
 ---
 
 # Robotic Process Automation

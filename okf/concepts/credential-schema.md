@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:ontology
   - urn:ngm:class:schema-registry
   - urn:ngm:class:credential-governance
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Credential Schema

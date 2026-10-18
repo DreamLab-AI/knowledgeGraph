@@ -65,6 +65,7 @@ relatedTo:
   - urn:ngm:class:trust-framework
   - urn:ngm:class:access-control
   - urn:ngm:class:data-sovereignty
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Decentralised Identity

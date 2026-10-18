@@ -9,7 +9,6 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:infra-legal-and-regulatory
-  - urn:ngm:class:supply-chain
   - urn:ngm:class:monitoring-systems
   - urn:ngm:class:sensor-networks
   - urn:ngm:class:traceability
@@ -74,6 +73,7 @@ contrastsWith:
   - urn:ngm:class:periodic-checkpoint-monitoring
 bridgesTo:
   - urn:ngm:class:logistics-management
+  - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:gs1-epcis
   - urn:ngm:class:lo-ra-wan
@@ -119,6 +119,8 @@ relatedTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:digital-twin
   - urn:ngm:class:smart-contracts
+  - urn:ngm:class:food-supply-chain
+  - urn:ngm:class:pharmaceutical-logistics
 ---
 
 # Cold Chain Monitoring

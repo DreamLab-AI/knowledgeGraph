@@ -36,7 +36,7 @@ bridgesTo:
   - urn:ngm:class:nvidia-corporation-omniverse-platform
 uses:
   - urn:ngm:class:parallel-computing
-  - urn:ngm:class:tsmc
+  - urn:ngm:class:taiwan-semiconductor-manufacturing-company
 supports:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:scientific-computing

@@ -8,7 +8,7 @@ description: IBM Food Trust is a permissioned blockchain network, built on Hyper
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:blockchain-application
 hasPart:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:distributed-ledger
@@ -32,6 +32,7 @@ bridgesTo:
   - urn:ngm:class:iot-sensor
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:erp-system
+  - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:cryptographic-hash
   - urn:ngm:class:consensus-mechanism

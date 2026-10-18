@@ -9,8 +9,11 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:governance-framework
+bridgesTo:
+  - urn:ngm:class:supply-chain-due-diligence
 relatedTo:
   - urn:ngm:class:ethical-sourcing
+  - urn:ngm:class:supply-chain-due-diligence-instrument
 ---
 
 # UN Guiding Principles on Business and Human Rights

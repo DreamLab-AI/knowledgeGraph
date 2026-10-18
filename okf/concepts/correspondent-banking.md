@@ -21,7 +21,7 @@ enables:
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:trade-finance
   - urn:ngm:class:foreign-exchange
-  - urn:ngm:class:documentary-credit
+  - urn:ngm:class:documentary-letter-of-credit
 contrastsWith:
   - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:payment-hub

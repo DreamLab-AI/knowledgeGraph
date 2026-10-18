@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Inventory Management
 resource: urn:ngm:class:inventory-management
-domain: infrastructure
-description: Inventory Management is the discipline of ordering, storing, tracking and controlling the stock of goods, components and materials an organisation holds across its supply chain. It seeks to balance the cost of holding stock against the risk of stock-outs, using forecasting, reorder policies and real-time visibility of quantities and locations. Modern implementations integrate barcodes, RFID and di
+domain: supply-chains-and-logistics
+description: Inventory management is a set of policies and controls designed to monitor the levels of inventory, including raw materials, components and finished products, across the locations of a supply chain such as warehouses and production systems.[^1]
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:supply-chains-and-logistics
 hasPart:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:asset-tracking
@@ -22,6 +22,8 @@ dependsOn:
   - urn:ngm:class:demand-forecasting
 bridgesTo:
   - urn:ngm:class:supply-chain-visibility
+  - urn:ngm:class:asset-tracking
+  - urn:ngm:class:rfid
 uses:
   - urn:ngm:class:barcode
   - urn:ngm:class:rfid
@@ -38,4 +40,4 @@ relatedTo:
 
 # Inventory Management
 
-Inventory Management is the discipline of ordering, storing, tracking and controlling the stock of goods, components and materials an organisation holds across its supply chain. It seeks to balance the cost of holding stock against the risk of stock-outs, using forecasting, reorder policies and real-time visibility of quantities and locations. Modern implementations integrate barcodes, RFID and digital identifiers so that physical items can be reconciled against system records continuously.
+Inventory management is a set of policies and controls designed to monitor the levels of inventory, including raw materials, components and finished products, across the locations of a supply chain such as warehouses and production systems.[^1]

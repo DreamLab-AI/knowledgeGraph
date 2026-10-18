@@ -44,6 +44,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:digital-evidence-chain-of-custody
   - urn:ngm:class:data-provenance
+  - urn:ngm:class:supply-chain
 ---
 
 # Chain of Custody

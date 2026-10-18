@@ -30,6 +30,8 @@ bridgesTo:
   - urn:ngm:class:supply-chain-transparency
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:blockchain-carbon-credits
+  - urn:ngm:class:supply-chain-decarbonisation
+  - urn:ngm:class:supply-chain-environmental-accounting
 uses:
   - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:carbon-footprint-measurement
@@ -43,6 +45,8 @@ relatedTo:
   - urn:ngm:class:net-zero-transition
   - urn:ngm:class:eu-csrd
   - urn:ngm:class:cdp-reporting
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:digital-product-passport
 ---
 
 # GHG Protocol

@@ -3,17 +3,22 @@ okf_version: "0.2"
 type: Class
 title: Last-Mile Delivery
 resource: urn:ngm:class:last-mile-delivery
-domain: robotics
-description: Last-mile delivery is the final stage of a logistics chain in which goods move from a transport hub or distribution centre to the end recipient. It is typically the most expensive, time-sensitive and operationally complex segment because of fragmented destinations and traffic constraints. It is a primary target for automation through delivery robots, drones and route-optimisation systems.
+domain: supply-chains-and-logistics
+description: Last-mile delivery is the last leg of the supply chain, in which goods are moved to their final destinations.[^1]
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:robo-navigation-and-planning
+  - urn:ngm:class:warehousing-and-distribution
+bridgesTo:
+  - urn:ngm:class:autonomous-delivery
+  - urn:ngm:class:unmanned-aerial-vehicle
+  - urn:ngm:class:path-planning
 relatedTo:
   - urn:ngm:class:logistics-optimisation
   - urn:ngm:class:ground-robot
+  - urn:ngm:class:parcel-carrier
 ---
 
 # Last-Mile Delivery
 
-Last-mile delivery is the final stage of a logistics chain in which goods move from a transport hub or distribution centre to the end recipient. It is typically the most expensive, time-sensitive and operationally complex segment because of fragmented destinations and traffic constraints. It is a primary target for automation through delivery robots, drones and route-optimisation systems.
+Last-mile delivery is the last leg of the supply chain, in which goods are moved to their final destinations.[^1]

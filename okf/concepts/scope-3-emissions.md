@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Scope 3 Emissions
 resource: urn:ngm:class:scope-3-emissions
-domain: supply-chain
-description: Scope 3 emissions are the indirect greenhouse gas (GHG) emissions that occur across an organisation's value chain as a consequence of its activities but outside its operational boundary, encompassing both upstream sources such as purchased goods and services, capital goods, and business travel, and downstream sources such as the use and end-of-life treatment of sold products. Defined under Categor
+domain: supply-chains-and-logistics
+description: Scope 3 emissions are all indirect greenhouse gas emissions in a company's value chain other than those from purchased energy, and they arise from activities the reporting company does not own or control.[^1]
 maturity: established
 quality: 0.75
 is-a:
-  - urn:ngm:class:carbon-accounting
+  - urn:ngm:class:supply-chain-environmental-accounting
 requires:
   - urn:ngm:class:data-collection
   - urn:ngm:class:supply-chain-transparency
@@ -23,6 +23,11 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:blockchain-provenance
+  - urn:ngm:class:carbon-accounting
+  - urn:ngm:class:greenhouse-gas-inventory
+  - urn:ngm:class:scope-1-emissions
+  - urn:ngm:class:scope-2-emissions
+  - urn:ngm:class:ghg-protocol-corporate-standard
 uses:
   - urn:ngm:class:emission-factors
   - urn:ngm:class:environmental-accounting
@@ -39,4 +44,4 @@ relatedTo:
 
 # Scope 3 Emissions
 
-Scope 3 emissions are the indirect greenhouse gas (GHG) emissions that occur across an organisation's value chain as a consequence of its activities but outside its operational boundary, encompassing both upstream sources such as purchased goods and services, capital goods, and business travel, and downstream sources such as the use and end-of-life treatment of sold products. Defined under Category 3 of the GHG Protocol Corporate Standard, Scope 3 emissions typically constitute the largest share of a company's total carbon footprint — often exceeding 70 percent — making their measurement, reporting, and reduction critical to credible corporate climate strategies. Accurate Scope 3 accounting requires collaboration across supply chains and the use of spend-based, activity-based, or supplier-specific emission factors.
+Scope 3 emissions are all indirect greenhouse gas emissions in a company's value chain other than those from purchased energy, and they arise from activities the reporting company does not own or control.[^1]

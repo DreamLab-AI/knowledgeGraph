@@ -19,6 +19,7 @@ standardizedBy:
   - urn:ngm:class:sbti
 relatedTo:
   - urn:ngm:class:paris-agreement
+  - urn:ngm:class:supply-chain-environmental-accounting
 ---
 
 # Science Based Targets

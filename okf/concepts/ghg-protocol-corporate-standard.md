@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:technical-standard
 enables:
   - urn:ngm:class:regulatory-compliance
+bridgesTo:
+  - urn:ngm:class:scope-3-emissions
 supports:
   - urn:ngm:class:carbon-accounting
 relatedTo:

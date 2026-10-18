@@ -45,6 +45,11 @@ relatedTo:
   - urn:ngm:class:risk-based-regulation
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:digital-identity
+  - urn:ngm:class:corporate-sustainability-due-diligence-directive
+  - urn:ngm:class:deforestation-free-sourcing
+  - urn:ngm:class:eu-union-customs-code
+  - urn:ngm:class:freight-transport-regulation
+  - urn:ngm:class:responsible-minerals-sourcing
 ---
 
 # European Commission

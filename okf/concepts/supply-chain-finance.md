@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Finance
 resource: urn:ngm:class:supply-chain-finance
-domain: blockchain
-description: Supply chain finance is a set of financing and risk-mitigation techniques that optimise working capital and liquidity across the parties in a supply chain. It typically allows suppliers to receive early payment on approved invoices while buyers extend their payment terms, using the buyer's stronger credit standing to lower financing costs. Blockchain and distributed-ledger implementations add shar
+domain: supply-chains-and-logistics
+description: Supply chain finance (SCF) is the use of financing and risk mitigation practices and techniques to optimise the management of the working capital and liquidity invested in supply chain processes and transactions.[^1] The Standard Definitions for Techniques of Supply Chain Finance add that SCF is typically applied to open account trade and is triggered by supply chain events, and that visibility of
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:trade-finance
+  - urn:ngm:class:supply-chain-performance-and-finance
 requires:
   - urn:ngm:class:asset-tokenisation
 enables:
@@ -19,6 +19,8 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:trade-finance
   - urn:ngm:class:supply-chain
+  - urn:ngm:class:trade-finance-automation
+  - urn:ngm:class:real-world-asset-tokenisation
 uses:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:smart-contract
@@ -30,8 +32,11 @@ partOf:
 relatedTo:
   - urn:ngm:class:trade-finance-automation
   - urn:ngm:class:procurement
+  - urn:ngm:class:programmable-money
+  - urn:ngm:class:real-world-asset-tokenisation
+  - urn:ngm:class:traditional-banking
 ---
 
 # Supply Chain Finance
 
-Supply chain finance is a set of financing and risk-mitigation techniques that optimise working capital and liquidity across the parties in a supply chain. It typically allows suppliers to receive early payment on approved invoices while buyers extend their payment terms, using the buyer's stronger credit standing to lower financing costs. Blockchain and distributed-ledger implementations add shared visibility, automated settlement and tamper-evident provenance to these flows.
+Supply chain finance (SCF) is the use of financing and risk mitigation practices and techniques to optimise the management of the working capital and liquidity invested in supply chain processes and transactions.[^1] The Standard Definitions for Techniques of Supply Chain Finance add that SCF is typically applied to open account trade and is triggered by supply chain events, and that visibility of the underlying trade flows by the finance provider is a necessary component, which can be enabled by a technology platform.[^1]

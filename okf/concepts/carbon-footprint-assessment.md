@@ -20,6 +20,8 @@ enables:
   - urn:ngm:class:reduction-strategy
 bridgesTo:
   - urn:ngm:class:blockchain
+relatedTo:
+  - urn:ngm:class:iso-14067
 ---
 
 # Carbon Footprint Assessment

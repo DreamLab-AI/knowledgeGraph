@@ -20,6 +20,7 @@ contrastsWith:
   - urn:ngm:class:nfc
 bridgesTo:
   - urn:ngm:class:supply-chain-traceability
+  - urn:ngm:class:global-trade-item-number
 uses:
   - urn:ngm:class:qr-code
   - urn:ngm:class:rfid

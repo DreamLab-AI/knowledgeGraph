@@ -8,7 +8,7 @@ description: A permissioned blockchain network for the pharmaceutical industry t
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:pharmaceutical-supply-chain
+  - urn:ngm:class:blockchain-application
 requires:
   - urn:ngm:class:permissioned-blockchain
   - urn:ngm:class:gs1
@@ -17,6 +17,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:supply-chain
+  - urn:ngm:class:pharmaceutical-supply-chain
 ---
 
 # MediLedger

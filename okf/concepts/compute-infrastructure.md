@@ -45,7 +45,7 @@ enables:
   - urn:ngm:class:ai-factory
 dependsOn:
   - urn:ngm:class:semiconductor-manufacturing
-  - urn:ngm:class:tsmc
+  - urn:ngm:class:taiwan-semiconductor-manufacturing-company
   - urn:ngm:class:hbm-supply
   - urn:ngm:class:electrical-grid
   - urn:ngm:class:optical-networking

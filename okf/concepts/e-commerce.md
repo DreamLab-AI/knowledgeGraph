@@ -40,6 +40,8 @@ relatedTo:
   - urn:ngm:class:conversion-rate-optimisation
   - urn:ngm:class:customer-data-platform
   - urn:ngm:class:virtual-tourism
+  - urn:ngm:class:order-fulfilment
+  - urn:ngm:class:supply-chain
 ---
 
 # E-Commerce

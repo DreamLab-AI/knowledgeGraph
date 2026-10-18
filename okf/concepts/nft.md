@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:digital-asset
   - urn:ngm:class:eip-process
   - urn:ngm:class:real-world-asset-tokenisation
+  - urn:ngm:class:supply-chain
 ---
 
 # NFT

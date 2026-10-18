@@ -93,6 +93,7 @@ relatedTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:swarm-robotics
+  - urn:ngm:class:automated-storage-and-retrieval-system
 ---
 
 # Mobile Robot Platform

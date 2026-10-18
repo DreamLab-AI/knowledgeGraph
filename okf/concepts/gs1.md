@@ -8,7 +8,7 @@ description: GS1 is the global not-for-profit standards organisation responsible
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:standards-body
 hasPart:
   - urn:ngm:class:global-trade-item-number
   - urn:ngm:class:global-location-number
@@ -31,6 +31,7 @@ bridgesTo:
   - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:supply-chain-management
 supports:
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:rfid
@@ -47,6 +48,7 @@ relatedTo:
   - urn:ngm:class:logistics-optimisation
   - urn:ngm:class:retail-technology
   - urn:ngm:class:healthcare-supply-chain
+  - urn:ngm:class:digital-product-passport
 ---
 
 # GS1

@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:anomaly-detection
   - urn:ngm:class:automation
   - urn:ngm:class:regulation
+  - urn:ngm:class:six-sigma
 ---
 
 # Statistical Process Control

@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:agent-communication-language
   - urn:ngm:class:auction-mechanism
   - urn:ngm:class:plan-merging
+  - urn:ngm:class:supply-chain
 ---
 
 # Multi-Agent Coordination

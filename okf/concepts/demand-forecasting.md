@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Demand Forecasting
 resource: urn:ngm:class:demand-forecasting
-domain: supply-chain
-description: Demand forecasting is the analytical process of estimating future customer demand for products or services over a specified time horizon using historical sales data, statistical models, and increasingly machine learning algorithms. Accurate demand forecasts drive inventory replenishment, capacity planning, production scheduling, and financial budgeting decisions across retail, manufacturing, logis
+domain: supply-chains-and-logistics
+description: Demand forecasting is the prediction of future demand for a product by analysing historical and contemporary data.[^1][^2]
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:predictive-analytics
+  - urn:ngm:class:demand-management
 hasPart:
   - urn:ngm:class:forecast-horizon
   - urn:ngm:class:time-series-analysis
@@ -22,6 +22,11 @@ enables:
 bridgesTo:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:predictive-analytics
+  - urn:ngm:class:time-series-forecasting
+  - urn:ngm:class:probabilistic-forecasting
+  - urn:ngm:class:machine-learning
+  - urn:ngm:class:mean-absolute-error
 uses:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:gradient-boosted-trees
@@ -37,4 +42,4 @@ relatedTo:
 
 # Demand Forecasting
 
-Demand forecasting is the analytical process of estimating future customer demand for products or services over a specified time horizon using historical sales data, statistical models, and increasingly machine learning algorithms. Accurate demand forecasts drive inventory replenishment, capacity planning, production scheduling, and financial budgeting decisions across retail, manufacturing, logistics, and energy sectors.
+Demand forecasting is the prediction of future demand for a product by analysing historical and contemporary data.[^1][^2]

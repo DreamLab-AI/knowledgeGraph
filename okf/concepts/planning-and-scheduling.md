@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:heuristic-search
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:reinforcement-learning
+  - urn:ngm:class:supply-chain-planning-system
 ---
 
 # Planning and Scheduling

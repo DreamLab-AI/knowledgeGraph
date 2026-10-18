@@ -68,7 +68,7 @@ uses:
   - urn:ngm:class:brax
   - urn:ngm:class:bullet-physics
   - urn:ngm:class:drake
-  - urn:ngm:class:fcl
+  - urn:ngm:class:full-container-load
   - urn:ngm:class:havok-physics
   - urn:ngm:class:jolt-physics
   - urn:ngm:class:mu-jo-co

@@ -3,18 +3,13 @@ okf_version: "0.2"
 type: Class
 title: Logistics Optimisation
 resource: urn:ngm:class:logistics-optimisation
-domain: supply-chain
-description: Logistics optimisation is the application of mathematical optimisation and operations-research techniques to minimise cost or time across logistics operations such as routing, scheduling, and inventory placement. It formulates problems like vehicle routing, network flow, and bin packing, often solved with linear programming, heuristics, or machine learning. The goal is to extract maximal efficienc
+domain: supply-chains-and-logistics
+description: Logistics optimisation is the use of mathematical optimisation and operational research methods to choose routes and facility locations, and to arrange loads, within cost and feasibility constraints.[^1]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:optimisation
-  - urn:ngm:class:ai-technique
-  - urn:ngm:class:applied-machine-learning
-  - urn:ngm:class:operations-research
   - urn:ngm:class:supply-chain-management
-  - urn:ngm:class:combinatorial-optimization
-  - urn:ngm:class:industrial-ai
+  - urn:ngm:class:transport-planning
 hasPart:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:fleet-management
@@ -23,7 +18,7 @@ hasPart:
   - urn:ngm:class:warehouse-management-system
   - urn:ngm:class:digital-twin
   - urn:ngm:class:vehicle-routing-problem
-  - urn:ngm:class:transport-management-system
+  - urn:ngm:class:transportation-management-system
   - urn:ngm:class:logistics-optimisation
   - urn:ngm:class:warehouse-slotting
 requires:
@@ -45,7 +40,7 @@ enables:
   - urn:ngm:class:predictive-maintenance
   - urn:ngm:class:just-in-time-inventory
   - urn:ngm:class:autonomous-warehousing
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:supply-chain-resilience
 dependsOn:
   - urn:ngm:class:graph-theory
   - urn:ngm:class:linear-programming
@@ -73,6 +68,8 @@ contrastsWith:
   - urn:ngm:class:paper-based-freight-management
 bridgesTo:
   - urn:ngm:class:data-management
+  - urn:ngm:class:optimisation
+  - urn:ngm:class:operations-research
 uses:
   - urn:ngm:class:apache-kafka
   - urn:ngm:class:kubernetes
@@ -99,7 +96,7 @@ standardizedBy:
   - urn:ngm:class:gs1
   - urn:ngm:class:iso-28000
   - urn:ngm:class:iata
-  - urn:ngm:class:world-customs-organisation
+  - urn:ngm:class:world-customs-organization
   - urn:ngm:class:gri-standards
   - urn:ngm:class:glec-framework
 relatedTo:
@@ -139,4 +136,4 @@ relatedTo:
 
 # Logistics Optimisation
 
-Logistics optimisation is the application of mathematical optimisation and operations-research techniques to minimise cost or time across logistics operations such as routing, scheduling, and inventory placement. It formulates problems like vehicle routing, network flow, and bin packing, often solved with linear programming, heuristics, or machine learning. The goal is to extract maximal efficiency from constrained transport and storage resources.
+Logistics optimisation is the use of mathematical optimisation and operational research methods to choose routes and facility locations, and to arrange loads, within cost and feasibility constraints.[^1]

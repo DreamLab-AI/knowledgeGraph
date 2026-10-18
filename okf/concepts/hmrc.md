@@ -46,6 +46,9 @@ relatedTo:
   - urn:ngm:class:hm-treasury
   - urn:ngm:class:companies-house
   - urn:ngm:class:oecd-tax-framework
+  - urn:ngm:class:customs-duty
+  - urn:ngm:class:customs-declaration
+  - urn:ngm:class:customs-procedure
 ---
 
 # HMRC

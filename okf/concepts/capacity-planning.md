@@ -39,6 +39,7 @@ relatedTo:
   - urn:ngm:class:scalability-pattern
   - urn:ngm:class:autoscaling
   - urn:ngm:class:kubernetes
+  - urn:ngm:class:capacity-requirements-planning
 ---
 
 # Capacity Planning

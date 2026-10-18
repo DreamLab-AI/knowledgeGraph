@@ -43,6 +43,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:cyber-physical-systems
   - urn:ngm:class:industry-4-0
+  - urn:ngm:class:cold-chain-logistics
 ---
 
 # Industrial IoT

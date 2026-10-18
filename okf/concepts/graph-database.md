@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:ontology
   - urn:ngm:class:knowledge-graph
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:supply-chain
 ---
 
 # Graph Database

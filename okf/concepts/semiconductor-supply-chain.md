@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Semiconductor Supply Chain
 resource: urn:ngm:class:semiconductor-supply-chain
-domain: governance
+domain: supply-chains-and-logistics
 description: The semiconductor supply chain is the globally distributed network of design, fabrication, assembly, testing and distribution activities that produce integrated circuits. It is highly specialised and geographically concentrated, depending on leading-edge foundries, advanced lithography equipment, rare materials and complex logistics. Because chips underpin computing, AI and critical infrastructure
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:sector-supply-chain
 requires:
   - urn:ngm:class:foundry
   - urn:ngm:class:logistics
@@ -23,6 +23,7 @@ contrastsWith:
   - urn:ngm:class:supply-chain-management
 bridgesTo:
   - urn:ngm:class:resilience
+  - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:supply-chain-management
 supports:

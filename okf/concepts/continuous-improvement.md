@@ -21,6 +21,8 @@ relatedTo:
   - urn:ngm:class:quality-assurance
   - urn:ngm:class:performance-metrics
   - urn:ngm:class:monitoring-system
+  - urn:ngm:class:six-sigma
+  - urn:ngm:class:total-quality-management
 ---
 
 # continuous improvement

@@ -49,6 +49,8 @@ relatedTo:
   - urn:ngm:class:multi-agent-systems
   - urn:ngm:class:grasp-planning
   - urn:ngm:class:motion-planning
+  - urn:ngm:class:warehouse-storage-system
+  - urn:ngm:class:third-party-logistics-provider
 ---
 
 # Warehouse Automation

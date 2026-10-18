@@ -16,6 +16,8 @@ enables:
   - urn:ngm:class:provenance-tracking
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:audit-trail
+bridgesTo:
+  - urn:ngm:class:oecd-due-diligence-guidance
 uses:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:permissioned-blockchain
@@ -26,6 +28,8 @@ relatedTo:
   - urn:ngm:class:consortium-blockchain
   - urn:ngm:class:esg-reporting
   - urn:ngm:class:blockchain-compliance
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:corporate-sustainability-due-diligence-directive
 ---
 
 # Conflict Mineral Tracking

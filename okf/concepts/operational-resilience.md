@@ -41,8 +41,9 @@ relatedTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:third-party-risk-management
   - urn:ngm:class:service-level-agreement
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:supply-chain-risk-and-resilience
   - urn:ngm:class:cyber-risk
+  - urn:ngm:class:supply-chain-risk-and-resilience
 ---
 
 # Operational Resilience

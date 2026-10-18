@@ -8,7 +8,7 @@ description: Systems employing immutable distributed ledgers, IoT sensors, and s
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:blockchain-application
 hasPart:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:traceability-mechanism
@@ -33,6 +33,8 @@ bridgesTo:
   - urn:ngm:class:ai-governance-framework
   - urn:ngm:class:data-lineage
   - urn:ngm:class:ai-governance-framework
+  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:gs1-epcis
 uses:
   - urn:ngm:class:smart-contract
   - urn:ngm:class:distributed-ledger-technology
@@ -45,6 +47,7 @@ relatedTo:
   - urn:ngm:class:supply-chain-blockchain
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:blockchain-compliance
+  - urn:ngm:class:corporate-sustainability-due-diligence-directive
 ---
 
 # Provenance Tracking

@@ -52,6 +52,7 @@ relatedTo:
   - urn:ngm:class:cross-chain-messaging
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:supply-chain
 ---
 
 # Chainlink

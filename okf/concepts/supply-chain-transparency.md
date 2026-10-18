@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Transparency
 resource: urn:ngm:class:supply-chain-transparency
-domain: supply-chain
-description: Supply chain transparency is the degree to which information about the origins, provenance, custody chain, working conditions, and environmental and social impacts of goods and services is visible, accessible, and verifiable to stakeholders across the entire value network — including manufacturers, tier-n suppliers, logistics operators, retailers, regulators, and end consumers. It encompasses volu
+domain: supply-chains-and-logistics
+description: Supply chain transparency is the disclosure of information about the suppliers, conditions and impacts in a supply chain to parties outside the organisation, and no source opened here defines the term.[^1][^2]
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:traceability-and-product-identification
 hasPart:
   - urn:ngm:class:provenance-tracking
   - urn:ngm:class:audit-trail
@@ -47,8 +47,9 @@ relatedTo:
   - urn:ngm:class:pharmaceutical-traceability
   - urn:ngm:class:logistics-optimisation
   - urn:ngm:class:modern-slavery-reporting
+  - urn:ngm:class:un-global-compact
 ---
 
 # Supply Chain Transparency
 
-Supply chain transparency is the degree to which information about the origins, provenance, custody chain, working conditions, and environmental and social impacts of goods and services is visible, accessible, and verifiable to stakeholders across the entire value network — including manufacturers, tier-n suppliers, logistics operators, retailers, regulators, and end consumers. It encompasses voluntary disclosure practices, mandatory reporting frameworks (such as the UK Modern Slavery Act and the EU Corporate Sustainability Due Diligence Directive), and technical systems — including blockchain-based provenance tracking, IoT sensor data chains, and Digital Product Passports — that create auditable, tamper-resistant records of supply chain events. Transparency is increasingly mandated through due diligence regulations and ESG market expectations, requiring organisations to verify and disclose conditions several tiers deep into their supplier networks.
+Supply chain transparency is the disclosure of information about the suppliers, conditions and impacts in a supply chain to parties outside the organisation, and no source opened here defines the term.[^1][^2]

@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:cross-border-payments
   - urn:ngm:class:payment-system
   - urn:ngm:class:financial-instruments
+  - urn:ngm:class:international-chamber-of-commerce
 ---
 
 # Trade Finance

@@ -8,7 +8,7 @@ description: A technology company that built a blockchain-based registry for tra
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:blockchain-application
 requires:
   - urn:ngm:class:distributed-ledger-technology
 enables:
@@ -16,6 +16,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:permissioned-blockchain
   - urn:ngm:class:distributed-ledger
+  - urn:ngm:class:supply-chain
 ---
 
 # Everledger

@@ -38,6 +38,8 @@ implements:
 contrastsWith:
   - urn:ngm:class:convex-optimisation
   - urn:ngm:class:bayesian-optimisation
+bridgesTo:
+  - urn:ngm:class:production-scheduling
 uses:
   - urn:ngm:class:integer-programming
   - urn:ngm:class:linear-programming

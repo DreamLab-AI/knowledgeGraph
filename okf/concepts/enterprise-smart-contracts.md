@@ -119,6 +119,7 @@ relatedTo:
   - urn:ngm:class:we-trade
   - urn:ngm:class:dtcc
   - urn:ngm:class:finastra-fusion-lendercomm
+  - urn:ngm:class:supply-chain
 ---
 
 # Enterprise Smart Contracts

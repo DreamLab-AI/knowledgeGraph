@@ -431,6 +431,8 @@ ngm:aave-companies rdfs:subClassOf ngm:bc-defi-and-economics ;
 ngm:aave-governance rdfs:subClassOf ngm:bc-governance-and-regulation ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:abc-analysis rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:abi-encoding rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -1371,6 +1373,9 @@ ngm:adr-012 rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:advance-ship-notice rdfs:subClassOf ngm:b2b-integration ;
+    rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:advanced-driver-assistance-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -1423,6 +1428,8 @@ ngm:advanced-metering-infrastructure rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:advanced-planning-and-scheduling rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:adversarial-attack rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -2392,6 +2399,8 @@ ngm:aggelos-kiayias rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
+ngm:aggregate-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:agi rdfs:subClassOf ngm:thing .
 ngm:agi-timelines rdfs:subClassOf ngm:accountability ;
     rdfs:subClassOf ngm:accountability-mechanism ;
@@ -2440,6 +2449,8 @@ ngm:agile-software-development rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:agile-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:agreement-protocol rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:blockchain ;
@@ -4263,6 +4274,8 @@ ngm:aiops rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:air-freight rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:air-gap rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:custody ;
@@ -4546,6 +4559,8 @@ ngm:alu-vm rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:amazon rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ambient-awareness rdfs:subClassOf ngm:dc-telepresence ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
@@ -5667,6 +5682,8 @@ ngm:asic-hardware rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:assemble-to-order rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:assembly-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -6569,6 +6586,8 @@ ngm:authorisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
+ngm:authorised-economic-operator rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:authorised-representative rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -6790,6 +6809,8 @@ ngm:automated-reasoning rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:pre-trained-model ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:automated-storage-and-retrieval-system rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:automated-summarization rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -6873,6 +6894,7 @@ ngm:automatic-differentiation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:mathematical-science ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:thing .
+ngm:automatic-identification-and-data-capture rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:automatic-prompt-optimisation rdfs:subClassOf ngm:ai-alignment ;
     rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
@@ -7281,6 +7303,8 @@ ngm:av1-codec rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:specification ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:thing .
+ngm:available-to-promise rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:avalanche rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -7461,6 +7485,7 @@ ngm:b-tree-index rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:b2b-integration rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:babylon-js rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:computer-graphics ;
@@ -7687,6 +7712,9 @@ ngm:base-learner rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:machine-learning ;
     rdfs:subClassOf ngm:machine-learning-discipline-models ;
     rdfs:subClassOf ngm:thing .
+ngm:base-stock-policy rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:inventory-policy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:base64url-encoding rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -7762,6 +7790,8 @@ ngm:batch-inference rdfs:subClassOf ngm:ai-model-architecture ;
 ngm:batch-normalisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:batch-number rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:batch-processing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -7769,6 +7799,8 @@ ngm:batch-processing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:batch-production rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:batch-size rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -8371,6 +8403,10 @@ ngm:bilingual-rag-hallucination-mitigation-framework rdfs:subClassOf ngm:ai-rese
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:bill-of-lading rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:bill-of-materials rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:bim-software rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -10532,6 +10568,8 @@ ngm:bolt-specifications rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:specification ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:thing .
+ngm:bonded-warehouse rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:boosting rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:artificial-intelligence-core ;
@@ -10947,6 +10985,8 @@ ngm:bulletproofs rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
+ngm:bullwhip-effect rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:bundle-adjustment rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -11554,6 +11594,8 @@ ngm:capacity-planning rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:capacity-requirements-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:capital-adequacy rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -11850,6 +11892,8 @@ ngm:cash-app rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:cash-to-cash-cycle-time rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:cashu rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-protocol-and-consensus ;
@@ -11956,6 +12000,8 @@ ngm:category-hierarchies rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:category-management rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:causal-attention rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -12356,6 +12402,8 @@ ngm:centralized-swarm-control rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics-domain ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:centre-of-gravity-analysis rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:centrifuge rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:digital-asset ;
@@ -12434,10 +12482,19 @@ ngm:cha-cha20-poly1305 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
-ngm:chain-of-custody rdfs:subClassOf ngm:dc-protocol-and-infra ;
+ngm:chain-of-custody rdfs:subClassOf ngm:ai-model-architecture ;
+    rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:bc-network-component ;
+    rdfs:subClassOf ngm:blockchain ;
+    rdfs:subClassOf ngm:blockchain-application ;
+    rdfs:subClassOf ngm:dc-protocol-and-infra ;
+    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:network-architecture ;
+    rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
+ngm:chain-of-custody-model rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:chain-of-thought rdfs:subClassOf ngm:ai-alignment ;
     rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
@@ -12899,6 +12956,8 @@ ngm:chivo-wallet rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
+ngm:chokepoint-disruption rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:chromosphere rdfs:subClassOf ngm:astronomy ;
     rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems ;
@@ -12983,6 +13042,7 @@ ngm:circular-economy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
 ngm:circular-orbit rdfs:subClassOf ngm:space-science-and-systems .
+ngm:circular-supply-chain rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:circulating-supply rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:blockchain ;
@@ -13387,6 +13447,9 @@ ngm:cli-multi-agent-systems rdfs:subClassOf ngm:agent ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:workflow-automation .
+ngm:click-and-collect rdfs:subClassOf ngm:order-fulfilment ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:client-server-architecture rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -13491,6 +13554,8 @@ ngm:climate-policy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:climate-related-supply-chain-risk rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:climate-risk rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -13684,6 +13749,10 @@ ngm:clustering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:knowledge-discovery ;
     rdfs:subClassOf ngm:knowledge-management ;
     rdfs:subClassOf ngm:thing .
+ngm:cma-cgm rdfs:subClassOf ngm:freight-carrier ;
+    rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:cnc-machining rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -14100,39 +14169,16 @@ ngm:colbert rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:search-technology ;
     rdfs:subClassOf ngm:semantic-search ;
     rdfs:subClassOf ngm:thing .
+ngm:cold-chain-logistics rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:cold-chain-monitoring rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
     rdfs:subClassOf ngm:automation ;
-    rdfs:subClassOf ngm:bc-defi-and-economics ;
-    rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-entity ;
-    rdfs:subClassOf ngm:blockchain-technology ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
     rdfs:subClassOf ngm:computer-science ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:digital-infrastructure ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:distributed-ledger-technology ;
-    rdfs:subClassOf ngm:distributed-systems ;
-    rdfs:subClassOf ngm:economic-mechanism ;
-    rdfs:subClassOf ngm:entity ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:knowledge-representation ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:owl-thing ;
-    rdfs:subClassOf ngm:process ;
+    rdfs:subClassOf ngm:logistics ;
     rdfs:subClassOf ngm:robo-perception ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:robotics-domain ;
@@ -14140,8 +14186,9 @@ ngm:cold-chain-monitoring rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sensors ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:temporal-entity ;
-    rdfs:subClassOf ngm:thing .
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:thing ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:cold-gas-propulsion rdfs:subClassOf ngm:space-science-and-systems .
 ngm:cold-storage rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
@@ -14184,6 +14231,10 @@ ngm:collaborative-editing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:tc-0001-telecollaboration-domain ;
     rdfs:subClassOf ngm:telecollaboration ;
     rdfs:subClassOf ngm:thing .
+ngm:collaborative-planning-forecasting-and-replenishment rdfs:subClassOf ngm:supply-chain-design-principle ;
+    rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:collaborative-systems-modality rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -15147,6 +15198,8 @@ ngm:component rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:component-shortage rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:composability rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -16288,6 +16341,9 @@ ngm:container-runtime rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:container-shipping rdfs:subClassOf ngm:freight-transport-mode ;
+    rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:containerisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -16697,6 +16753,8 @@ ngm:continuous-monitoring rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:continuous-review-policy rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:continuous-training rdfs:subClassOf ngm:ai-governance ;
     rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -16747,6 +16805,8 @@ ngm:contract-enforcement rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:legal-framework ;
     rdfs:subClassOf ngm:thing .
+ngm:contract-manufacturer rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:contract-net-protocol rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:contract-theory rdfs:subClassOf ngm:ai-research-area ;
@@ -17304,6 +17364,8 @@ ngm:corporate-governance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:organisational-framework ;
     rdfs:subClassOf ngm:thing .
+ngm:corporate-sustainability-due-diligence-directive rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:corporate-sustainability-reporting rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -17563,6 +17625,9 @@ ngm:cost-optimisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:cost-per-intelligence rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:cost-to-serve rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-measure ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:costmap rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -17675,13 +17740,8 @@ ngm:cqrs rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:cradle-to-cradle-design rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:governance ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
+ngm:cradle-to-cradle-design rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:crash-fault-tolerance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -17919,6 +17979,9 @@ ngm:crewed-spacecraft rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
+ngm:critical-tracking-event rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:crm rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -18306,6 +18369,8 @@ ngm:cross-chain-swap rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:thing .
 ngm:cross-dao-benchmarking rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:cross-docking rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:cross-domain-authentication rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -19188,6 +19253,8 @@ ngm:customer-lifetime-value rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:customer-order-decoupling-point rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:customer-retention rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-defi-and-economics ;
@@ -19250,6 +19317,17 @@ ngm:customer-world-model rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:knowledge-representation ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:thing .
+ngm:customs-broker rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:customs-clearance rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:customs-declaration rdfs:subClassOf ngm:customs-procedure ;
+    rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:customs-duty rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:customs-procedure rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:customs-regulation rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:customs-trade-facilitation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-governance-principle ;
     rdfs:subClassOf ngm:ai-model-architecture ;
@@ -19258,7 +19336,6 @@ ngm:customs-trade-facilitation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-network-component ;
     rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-application ;
     rdfs:subClassOf ngm:blockchain-entity ;
     rdfs:subClassOf ngm:blockchain-technology ;
     rdfs:subClassOf ngm:byzantine-fault-tolerant-system ;
@@ -19267,7 +19344,6 @@ ngm:customs-trade-facilitation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:customer-onboarding-discipline ;
     rdfs:subClassOf ngm:dc-protocol-and-infra ;
     rdfs:subClassOf ngm:digital-infrastructure ;
-    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:distributed-ledger-technology ;
     rdfs:subClassOf ngm:distributed-system ;
@@ -19416,6 +19492,8 @@ ngm:cybersecurity-standard rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:technical-standard ;
     rdfs:subClassOf ngm:thing .
+ngm:cycle-counting rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:cycloidal-drive rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -21439,6 +21517,10 @@ ngm:deflationary-token rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:deforestation-free-sourcing rdfs:subClassOf ngm:human-rights-due-diligence ;
+    rdfs:subClassOf ngm:supply-chain-due-diligence ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:deforestation-monitoring rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:delay-tolerant-space-networking rdfs:subClassOf ngm:space-science-and-systems .
 ngm:delegate-democracy rdfs:subClassOf ngm:ai-governance-and-ethics ;
@@ -21585,6 +21667,11 @@ ngm:deliberate-demonstration rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:artificial-intelligence-core ;
     rdfs:subClassOf ngm:thing .
+ngm:delivered-duty-paid rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:trade-term .
+ngm:delivery-performance-measure rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:delivery-versus-payment rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -21621,15 +21708,11 @@ ngm:delta-robot rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:technology-domain ;
     rdfs:subClassOf ngm:thing .
 ngm:delta-v rdfs:subClassOf ngm:space-science-and-systems .
-ngm:demand-forecasting rdfs:subClassOf ngm:ai-application ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:thing .
-ngm:demand-planning rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:human-computer-interaction ;
-    rdfs:subClassOf ngm:spatial-computing ;
-    rdfs:subClassOf ngm:thing .
+ngm:demand-forecasting rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:demand-management rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:demand-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:demand-response rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -21656,6 +21739,9 @@ ngm:demand-response-mining rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:demand-sensing rdfs:subClassOf ngm:demand-management ;
+    rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:demand-side-response rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -21775,13 +21861,9 @@ ngm:deployer rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:deposit-return-scheme rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:governance ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
+ngm:deposit-return-scheme rdfs:subClassOf ngm:circular-supply-chain ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:depth-buffer rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -22144,6 +22226,9 @@ ngm:dexterous-manipulation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:technology-domain ;
     rdfs:subClassOf ngm:thing .
+ngm:dhl-supply-chain rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:di-lo-co rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -23236,8 +23321,7 @@ ngm:digital-preservation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:digital-product-passport rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
+ngm:digital-product-passport rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:digital-property-rights rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -23505,6 +23589,7 @@ ngm:digital-technology-access-equity rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
 ngm:digital-terrain-model rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:digital-trade-platform rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:digital-transformation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -23709,6 +23794,8 @@ ngm:direct-preference-optimisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:direct-procurement rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:direct3d rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:application-programming-interface ;
@@ -24422,6 +24509,11 @@ ngm:distributed-work rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:distribution-centre rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
+ngm:distribution-requirements-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:distribution-strategy rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:distributor rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -24586,6 +24678,8 @@ ngm:document-verification rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:trust-architecture ;
     rdfs:subClassOf ngm:trust-establishment .
+ngm:documentary-letter-of-credit rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:documentation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -24789,6 +24883,8 @@ ngm:drone-navigation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:drop-shipping rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:dropout rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -24811,11 +24907,10 @@ ngm:drug-discovery rdfs:subClassOf ngm:ai-research-area ;
 ngm:drug-discovery-ai rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
-ngm:dscsa-compliance rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf ngm:ai-governance-principle ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:thing .
+ngm:dry-port rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:dscsa-compliance rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:dspy rdfs:subClassOf ngm:ai-alignment ;
     rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
@@ -24867,6 +24962,9 @@ ngm:dtcc rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:dual-sourcing rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:strategic-sourcing ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:dublin-core rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -25394,11 +25492,8 @@ ngm:ecmascript rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:ecodesign-for-sustainable-products-regulation rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf ngm:ai-governance-principle ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:thing .
+ngm:ecodesign-for-sustainable-products-regulation rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:econometrics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:applied-mathematics ;
@@ -25527,6 +25622,8 @@ ngm:economic-multiplier-effect rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
+ngm:economic-order-quantity rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:economic-parameters rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-defi-and-economics ;
@@ -25821,6 +25918,9 @@ ngm:edge-server rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:edifact rdfs:subClassOf ngm:b2b-integration ;
+    rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:education rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 ngm:education-and-ai rdfs:subClassOf ngm:ai-research-area ;
@@ -25869,6 +25969,8 @@ ngm:educational-technology rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:effective-isotropic-radiated-power rdfs:subClassOf ngm:space-science-and-systems .
 ngm:efficiency-ai rdfs:subClassOf ngm:thing .
+ngm:efficient-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:eidas-regulation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-governance-principle ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -26043,6 +26145,11 @@ ngm:electromyography rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:electronic-bill-of-lading rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:trade-document .
+ngm:electronic-data-interchange rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:electronic-design-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:design-software ;
@@ -26841,6 +26948,8 @@ ngm:engagement-optimisation rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:statistical-learning-theory ;
     rdfs:subClassOf ngm:statistics ;
     rdfs:subClassOf ngm:thing .
+ngm:engineer-to-order rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:enhanced-due-diligence rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-governance-principle ;
     rdfs:subClassOf ngm:ai-infrastructure ;
@@ -27992,8 +28101,8 @@ ngm:ethical-framework rdfs:subClassOf ngm:ai-research-area ;
 ngm:ethical-review-process rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
-ngm:ethical-sourcing rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:thing .
+ngm:ethical-sourcing rdfs:subClassOf ngm:supply-chain-due-diligence ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ethics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -28521,18 +28630,8 @@ ngm:eu-taxonomy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:specification ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:thing .
-ngm:eu-union-customs-code rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:eu-union-customs-code rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:euclidean-distance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -28695,22 +28794,16 @@ ngm:eventual-consistency rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:everledger rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
+ngm:everledger rdfs:subClassOf ngm:ai-model-architecture ;
+    rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
+    rdfs:subClassOf ngm:bc-network-component ;
+    rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:dc-protocol-and-infra ;
+    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:network-architecture ;
+    rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
 ngm:evidence-based-design rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -29282,6 +29375,8 @@ ngm:facial-capture-system rdfs:subClassOf ngm:ai-research-area ;
 ngm:facial-recognition rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:facility-location-problem rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:factor-graph rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -29432,9 +29527,7 @@ ngm:fashion rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:complexity-science ;
     rdfs:subClassOf ngm:computer-science ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
     rdfs:subClassOf ngm:deep-learning ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:economics ;
     rdfs:subClassOf ngm:information-theory ;
     rdfs:subClassOf ngm:infra-software-engineering ;
@@ -29444,6 +29537,7 @@ ngm:fashion rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:mathematical-science ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
     rdfs:subClassOf ngm:thing .
 ngm:fast-ai rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -29808,6 +29902,10 @@ ngm:federation-surface rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:fedex rdfs:subClassOf ngm:freight-carrier ;
+    rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:fedimint rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
@@ -30122,6 +30220,9 @@ ngm:filecoin rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:fill-rate rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-measure ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:fill-value rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:film-production rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -30413,6 +30514,8 @@ ngm:fine-tuning rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:optimisation ;
     rdfs:subClassOf ngm:pre-trained-model ;
     rdfs:subClassOf ngm:thing .
+ngm:finished-goods-inventory rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:finite-element-analysis rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:owl-thing ;
@@ -30646,6 +30749,9 @@ ngm:flexible-manufacturing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:flexport rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:flight-control-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -30754,6 +30860,8 @@ ngm:food-safety-blockchain rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
+ngm:food-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:fooocus rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -30823,6 +30931,8 @@ ngm:force-torque-sensor rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:forecast-accuracy rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:forecast-horizon rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -31023,6 +31133,8 @@ ngm:fourier-transform rdfs:subClassOf ngm:ai-research-area ;
 ngm:fourth-industrial-revolution rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:fourth-party-logistics-provider rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:foveated-rendering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -31030,6 +31142,9 @@ ngm:foveated-rendering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:three-dimensional-graphics .
+ngm:foxconn rdfs:subClassOf ngm:supplier ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:fpga rdfs:subClassOf ngm:ai-hardware ;
     rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -31127,6 +31242,9 @@ ngm:fraud-proof rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
 ngm:frazil-ice rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:free-on-board rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:trade-term .
 ngm:free-software rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -31136,6 +31254,7 @@ ngm:free-software rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
 ngm:free-space-path-loss rdfs:subClassOf ngm:space-science-and-systems .
+ngm:free-trade-zone rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:free-troposphere rdfs:subClassOf ngm:atmosphere-layer ;
     rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:earth-system-phenomena .
@@ -31154,6 +31273,17 @@ ngm:freedom-of-expression rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-governance-and-safety ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:freight-carrier rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-consolidation rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-containerisation rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-forwarder rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-node rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-service rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-transport-mode rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:freight-transport-regulation rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:frequentist-statistics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:measure-theory ;
@@ -31169,6 +31299,8 @@ ngm:friction rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:friendshoring rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:front-running rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -31283,6 +31415,11 @@ ngm:fsma-2023 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:ftx rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:fulfilment-centre rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehouse-facility-type ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
+ngm:full-container-load rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:full-duplex-communication rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -32154,6 +32291,8 @@ ngm:geometry-shader rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-display-and-rendering ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:geopolitical-supply-chain-risk rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:geopolitics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -32416,6 +32555,9 @@ ngm:global-localisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:global-location-number rdfs:subClassOf ngm:supply-chain-identifier ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:global-metaverse-operations rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -32455,6 +32597,11 @@ ngm:global-trade rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
+ngm:global-trade-item-number rdfs:subClassOf ngm:supply-chain-identifier ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
+ngm:global-trade-management-system rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:glossary-index rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -32680,6 +32827,11 @@ ngm:golden-set rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:software-architecture ;
     rdfs:subClassOf ngm:system-architecture ;
     rdfs:subClassOf ngm:thing .
+ngm:goods-receiving rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
+ngm:goods-to-person-picking rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehouse-operation ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:google-ai-technology-corporation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -33137,24 +33289,9 @@ ngm:gpu-resources rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:computing-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:gpu-supply-chain rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:gpu-supply-chain rdfs:subClassOf ngm:sector-supply-chain ;
+    rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:graceful-degradation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -33768,25 +33905,23 @@ ngm:gs-1-standards rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:semantic-spatial-web-layer ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:gs1 rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
-ngm:gs1-digital-link rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
-ngm:gs1-epcis rdfs:subClassOf ngm:ai-research-area ;
+ngm:gs1 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:thing .
+ngm:gs1-digital-link rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
+    rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:standards-body ;
+    rdfs:subClassOf ngm:thing .
+ngm:gs1-epcis rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
+ngm:gs1-identification-key rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:guaranteed-bandwidth rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -34178,6 +34313,7 @@ ngm:harmonised-standard rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:technical-standard ;
     rdfs:subClassOf ngm:thing .
+ngm:harmonised-system rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:harness-configuration-packs rdfs:subClassOf ngm:agent ;
     rdfs:subClassOf ngm:agent-based-modelling ;
     rdfs:subClassOf ngm:ai-agent-system ;
@@ -35481,6 +35617,8 @@ ngm:human-rights rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:metaverse-governance-and-safeguarding ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:human-rights-due-diligence rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:human-rights-law rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -35506,6 +35644,8 @@ ngm:human-robot-interaction rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:humanitarian-logistics rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:humanities-last-exam rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -35904,18 +36044,8 @@ ngm:i-proov rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:iata-temperature-control-regulations rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:iata-temperature-control-regulations rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ibc rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -35962,22 +36092,16 @@ ngm:ibm rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:ibm-food-trust rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
+ngm:ibm-food-trust rdfs:subClassOf ngm:ai-model-architecture ;
+    rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
+    rdfs:subClassOf ngm:bc-network-component ;
+    rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:dc-protocol-and-infra ;
+    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:network-architecture ;
+    rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
 ngm:ibm-true-north rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -37445,6 +37569,8 @@ ngm:inclusive-xr-experience rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:user-experience .
+ngm:incoterms rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:independent-living rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -37471,6 +37597,8 @@ ngm:indexing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:indirect-procurement rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:indoor-navigation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -38744,6 +38872,8 @@ ngm:interferometric-synthetic-aperture-radar rdfs:subClassOf ngm:active-remote-s
     rdfs:subClassOf ngm:thing .
 ngm:intergalactic-medium rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
+ngm:intergovernmental-trade-organisation rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:intermodal-transport rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:internal-ai-harness rdfs:subClassOf ngm:agent ;
     rdfs:subClassOf ngm:agent-based-modelling ;
     rdfs:subClassOf ngm:agentic-ai ;
@@ -38803,6 +38933,8 @@ ngm:international-ai-cooperation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:thing .
 ngm:international-atomic-time rdfs:subClassOf ngm:space-science-and-systems .
 ngm:international-celestial-reference-system rdfs:subClassOf ngm:space-science-and-systems .
+ngm:international-chamber-of-commerce rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:international-cooperation rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -38811,6 +38943,8 @@ ngm:international-cooperation rdfs:subClassOf ngm:ai-governance-and-ethics ;
 ngm:international-financial-architecture rdfs:subClassOf ngm:bc-defi-and-economics ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:international-maritime-organization rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:international-monetary-fund rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:applied-mathematics ;
@@ -38977,9 +39111,16 @@ ngm:intrusion-detection-system rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:inventory-management rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
+ngm:inventory-classification rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-control-practice rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-model rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-performance-measure rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-policy rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-turnover rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-measure ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:inventory-type rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:inverse-kinematics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -39467,18 +39608,8 @@ ngm:iso-14064 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:standards ;
     rdfs:subClassOf ngm:technical-standards ;
     rdfs:subClassOf ngm:thing .
-ngm:iso-14067 rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:iso-14067 rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:iso-14721 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -39499,18 +39630,8 @@ ngm:iso-20022 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:technical-standard ;
     rdfs:subClassOf ngm:thing .
-ngm:iso-20400 rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:iso-20400 rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:iso-21448 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -40555,6 +40676,8 @@ ngm:jitter rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:network-infrastructure ;
     rdfs:subClassOf ngm:quality-of-service ;
     rdfs:subClassOf ngm:thing .
+ngm:job-shop-production rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:join-semilattice rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -40774,6 +40897,9 @@ ngm:just-in-time-compilation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:software-development ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:just-in-time-production rdfs:subClassOf ngm:production-management-philosophy ;
+    rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:just-transition rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -40814,6 +40940,9 @@ ngm:kademlia-dht rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:kaizen rdfs:subClassOf ngm:production-management-philosophy ;
+    rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:kalman-filter rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -40828,6 +40957,10 @@ ngm:kalman-filter rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:statistical-inference ;
     rdfs:subClassOf ngm:statistics ;
     rdfs:subClassOf ngm:thing .
+ngm:kanban rdfs:subClassOf ngm:lean-production ;
+    rdfs:subClassOf ngm:production-management-philosophy ;
+    rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:kanban-board rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 ngm:karpatkey rdfs:subClassOf ngm:bc-governance-and-regulation ;
@@ -41401,6 +41534,8 @@ ngm:kqml rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:kraken rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:kraljic-portfolio-matrix rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:kto rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -41411,6 +41546,9 @@ ngm:kubernetes rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:kuehne-nagel rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:kuiper-belt-object rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
 ngm:kullback-leibler-divergence rdfs:subClassOf ngm:ai-research-area ;
@@ -41902,16 +42040,7 @@ ngm:laser-scanner rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:last-mile-delivery rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:automation ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:computer-science ;
-    rdfs:subClassOf ngm:infra-software-engineering ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:robotics ;
-    rdfs:subClassOf ngm:software-engineering ;
-    rdfs:subClassOf ngm:thing .
+ngm:last-mile-delivery rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:latency rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -42257,6 +42386,10 @@ ngm:leaderboard rdfs:subClassOf ngm:ai-evaluation ;
     rdfs:subClassOf ngm:optimization-technique ;
     rdfs:subClassOf ngm:performance-optimization ;
     rdfs:subClassOf ngm:thing .
+ngm:lean-production rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:lean-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:leap-second rdfs:subClassOf ngm:space-science-and-systems .
 ngm:learner-model rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -43008,6 +43141,8 @@ ngm:lindy-effect rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:line-balancing rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:linear rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -43977,41 +44112,21 @@ ngm:logical-inference rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:pre-trained-model ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:logistics rdfs:subClassOf ngm:ai-research-area ;
+ngm:logistics rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:logistics-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:entity ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:computer-science ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:knowledge-representation ;
-    rdfs:subClassOf ngm:owl-thing ;
-    rdfs:subClassOf ngm:temporal-entity ;
+    rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:logistics-automation rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
-ngm:logistics-management rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:bc-defi-and-economics ;
-    rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-entity ;
-    rdfs:subClassOf ngm:blockchain-technology ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:digital-infrastructure ;
-    rdfs:subClassOf ngm:distributed-ledger-technology ;
-    rdfs:subClassOf ngm:distributed-systems ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
-ngm:logistics-optimisation rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:thing .
+ngm:logistics-management rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:logistics-optimisation rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:logistics-service-provider rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:long-context-modelling rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -44494,6 +44609,10 @@ ngm:macroprudential-policy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:maersk rdfs:subClassOf ngm:freight-carrier ;
+    rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:magnetar rdfs:subClassOf ngm:astronomical-body ;
     rdfs:subClassOf ngm:astronomy ;
     rdfs:subClassOf ngm:space-science ;
@@ -44538,6 +44657,10 @@ ngm:main-sequence-star rdfs:subClassOf ngm:astronomical-body ;
 ngm:majority-voting rdfs:subClassOf ngm:bc-protocol-and-consensus ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:make-to-order rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:make-to-stock rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:maker-dao rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
 ngm:making-available rdfs:subClassOf ngm:ai-research-area ;
@@ -44677,6 +44800,8 @@ ngm:manufacturing-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:manufacturing-execution-system rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:manufacturing-process rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -44696,6 +44821,9 @@ ngm:manufacturing-process rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:manufacturing-resource-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:supply-planning .
 ngm:map-projection rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:maple-finance rdfs:subClassOf ngm:bc-defi-and-economics ;
     rdfs:subClassOf ngm:blockchain ;
@@ -45094,19 +45222,12 @@ ngm:mass-adoption rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:mass-customisation rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:bc-defi-and-economics ;
-    rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-entity ;
-    rdfs:subClassOf ngm:blockchain-technology ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:digital-infrastructure ;
-    rdfs:subClassOf ngm:distributed-ledger-technology ;
-    rdfs:subClassOf ngm:distributed-systems ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
+ngm:mass-balance rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
+ngm:mass-customisation rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:mass-production rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:massive-mimo rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -45121,6 +45242,8 @@ ngm:master-data-management rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:master-production-scheduling rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:mastercard rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -45153,13 +45276,10 @@ ngm:material-definition rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-display-and-rendering ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:material-flow-analysis rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:governance ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
+ngm:material-flow-analysis rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
+ngm:material-requirements-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:material-science rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -45288,6 +45408,9 @@ ngm:maximum-sequence-length rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:maximum-valid-data-value rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:earth-observation-processing .
+ngm:mckesson rdfs:subClassOf ngm:product-distributor ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:mcp-client rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -45432,9 +45555,16 @@ ngm:mechanistic-interpretability rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
-ngm:medi-ledger rdfs:subClassOf ngm:dc-protocol-and-infra ;
+ngm:medi-ledger rdfs:subClassOf ngm:ai-model-architecture ;
+    rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:bc-network-component ;
+    rdfs:subClassOf ngm:blockchain ;
+    rdfs:subClassOf ngm:dc-protocol-and-infra ;
+    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:network-architecture ;
+    rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
 ngm:media-authentication rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -45580,6 +45710,10 @@ ngm:medication-safety rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:mediterranean-shipping-company rdfs:subClassOf ngm:freight-carrier ;
+    rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:medium-earth-orbit rdfs:subClassOf ngm:space-science-and-systems .
 ngm:meeting-ai-assistant rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -47365,6 +47499,8 @@ ngm:mobile-robotics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:modal-shift rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:modality-specific-encoder rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -48658,6 +48794,8 @@ ngm:multi-cloud rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
 ngm:multi-constellation-gnss rdfs:subClassOf ngm:space-science-and-systems .
+ngm:multi-echelon-inventory-optimisation rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:multi-factor-authentication rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:authentication ;
@@ -48875,6 +49013,8 @@ ngm:multi-tenancy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:multi-tier-supply-chain-mapping rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:multi-turn-dialogue rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -49467,6 +49607,8 @@ ngm:nearest-neighbor-search rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:nearshoring rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:negotiation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -50063,6 +50205,8 @@ ngm:newcastle rdfs:subClassOf ngm:ai-research-area ;
 ngm:newcastle-ai-and-health-innovation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:newsvendor-model rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:newton-euler-dynamics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -51163,7 +51307,12 @@ ngm:occupancy-grid rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:ocean-carrier rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ocean-colour-remote-sensing rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:ocean-freight rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ocean-world rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
 ngm:ocsp rdfs:subClassOf ngm:ai-research-area ;
@@ -51213,18 +51362,8 @@ ngm:oecd-ai-principles rdfs:subClassOf ngm:ai-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
-ngm:oecd-due-diligence-guidance rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:oecd-due-diligence-guidance rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:ofcom rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -51291,6 +51430,8 @@ ngm:offline-verification rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:offshoring rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ohb rdfs:subClassOf ngm:prime-contractor ;
     rdfs:subClassOf ngm:space-science-and-systems .
 ngm:olap rdfs:subClassOf ngm:ai-research-area ;
@@ -51342,6 +51483,8 @@ ngm:omnichannel rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:user-experience .
+ngm:omnichannel-fulfilment rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:omnichannel-routing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -51548,6 +51691,9 @@ ngm:on-device-learning rdfs:subClassOf ngm:ai-research-area ;
 ngm:on-premises rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:on-time-in-full rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-measure ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:onboard-computer rdfs:subClassOf ngm:space-science-and-systems .
 ngm:ondo-finance rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
@@ -51810,6 +51956,8 @@ ngm:open-access rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:open-account-trade rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:open-banking rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:economic-systems ;
@@ -52919,6 +53067,12 @@ ngm:order-book-exchange rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
+ngm:order-fulfilment rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:order-management-system rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:order-picking rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
+ngm:order-promising rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ordinals rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -53109,6 +53263,8 @@ ngm:output rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
+ngm:outsourcing rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:over-collateralisation rdfs:subClassOf ngm:bc-defi-and-economics ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
@@ -53129,6 +53285,8 @@ ngm:over-the-air-update rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:overall-equipment-effectiveness rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:overfitting rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
 ngm:overlay-network rdfs:subClassOf ngm:ai-research-area ;
@@ -53382,6 +53540,11 @@ ngm:parametric-design-methodology-modeling rdfs:subClassOf ngm:3-d-development ;
 ngm:parametric-insurance rdfs:subClassOf ngm:bc-defi-and-economics ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:parcel-carrier rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:parcel-locker rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
 ngm:parental-controls rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -54228,6 +54391,8 @@ ngm:perimeter-security rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:periodic-review-policy rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:permissioned-blockchain rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:append-only-log ;
@@ -54591,14 +54756,10 @@ ngm:peter-todd rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:state-machine-replication ;
     rdfs:subClassOf ngm:thing .
-ngm:pharmaceutical-logistics rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:human-computer-interaction ;
-    rdfs:subClassOf ngm:spatial-computing ;
-    rdfs:subClassOf ngm:thing .
-ngm:pharmaceutical-supply-chain rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
+ngm:pharmaceutical-logistics rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:warehousing-and-distribution .
+ngm:pharmaceutical-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:pharmaceutical-traceability rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -54827,6 +54988,8 @@ ngm:pinecone rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:pipeline-inventory rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:pipeline-parallelism rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -54956,6 +55119,7 @@ ngm:planning rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:planning-and-scheduling ;
     rdfs:subClassOf ngm:thing .
 ngm:planning-and-scheduling rdfs:subClassOf ngm:thing .
+ngm:planning-master-data rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:planning-module rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -55643,6 +55807,8 @@ ngm:population-health-management rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:port-congestion rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:portability rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -55853,6 +56019,8 @@ ngm:postgre-sql rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:postponement rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:potential-field-method rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -57163,23 +57331,9 @@ ngm:processing-hardware rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:processing-lineage rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
-ngm:procurement rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:procure-to-pay rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:procurement rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:product-adoption-metrics rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -57203,6 +57357,9 @@ ngm:product-design rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:product-distributor rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:product-information-management rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:product-liability rdfs:subClassOf ngm:ai-governance ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -57253,18 +57410,8 @@ ngm:product-management rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:product-provenance rdfs:subClassOf ngm:ai-model-architecture ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:bc-network-component ;
-    rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-application ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-application ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:network-architecture ;
-    rdfs:subClassOf ngm:network-component ;
-    rdfs:subClassOf ngm:thing .
+ngm:product-provenance rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:product-recall-management rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -57274,6 +57421,10 @@ ngm:product-recall-management rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:thing .
+ngm:product-serialisation rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
+ngm:product-take-back-scheme rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:product-validation rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:production-design rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -57285,15 +57436,21 @@ ngm:production-facility rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:production-management-philosophy rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:production-pipeline rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:production-planning-and-control rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:production-rules rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:thing .
+ngm:production-scheduling rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:production-strategy rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:production-system-type rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:profile-management rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -58299,8 +58456,16 @@ ngm:provenance-standard rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:provenance-tracking rdfs:subClassOf ngm:dc-protocol-and-infra ;
+ngm:provenance-tracking rdfs:subClassOf ngm:ai-model-architecture ;
+    rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:bc-network-component ;
+    rdfs:subClassOf ngm:blockchain ;
+    rdfs:subClassOf ngm:dc-protocol-and-infra ;
+    rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
+    rdfs:subClassOf ngm:network-architecture ;
+    rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
 ngm:provenance-verification rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -58814,14 +58979,14 @@ ngm:qlo-ra rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:qr-code rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:entity ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:knowledge-representation ;
-    rdfs:subClassOf ngm:owl-thing ;
-    rdfs:subClassOf ngm:process ;
-    rdfs:subClassOf ngm:temporal-entity ;
+    rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:metaverse ;
+    rdfs:subClassOf ngm:multiverse ;
+    rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sc-standards-and-interop ;
+    rdfs:subClassOf ngm:semantic-spatial-web-layer ;
+    rdfs:subClassOf ngm:spatial-computing ;
+    rdfs:subClassOf ngm:standards ;
     rdfs:subClassOf ngm:thing .
 ngm:qt-framework rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -59469,6 +59634,10 @@ ngm:raid rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:technology-infrastructure-domain-component ;
     rdfs:subClassOf ngm:thing .
+ngm:rail-freight rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:rain-rfid-tag rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:rainbow-wallet rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -59678,6 +59847,8 @@ ngm:raw-data rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:raw-materials-inventory rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:ray-marching rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -61219,6 +61390,8 @@ ngm:real-time-translation rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:signal-processing ;
     rdfs:subClassOf ngm:thing .
+ngm:real-time-transportation-visibility-platform rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:real-time-vfx rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -61353,6 +61526,8 @@ ngm:recall rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:receivables-factoring rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:receiver-autonomous-integrity-monitoring rdfs:subClassOf ngm:space-science-and-systems .
 ngm:receiver-clock-bias rdfs:subClassOf ngm:space-science-and-systems .
 ngm:reciprocal-rank-fusion rdfs:subClassOf ngm:ai-research-area ;
@@ -61488,6 +61663,9 @@ ngm:reed-solomon-erasure-coding rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:reefer-container rdfs:subClassOf ngm:freight-containerisation ;
+    rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:reentrancy-attack rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -62181,6 +62359,9 @@ ngm:renewable-energy-tracking rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:reorder-point-policy rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:inventory-policy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:reparameterisation-trick rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -62354,6 +62535,10 @@ ngm:request-for-comments rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:standards ;
     rdfs:subClassOf ngm:thing .
+ngm:request-for-proposal rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:request-for-quotation rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:request-response-pattern rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -62446,6 +62631,8 @@ ngm:reserve-requirements rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:economic-governance ;
     rdfs:subClassOf ngm:thing .
+ngm:reshoring rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:residual-connection rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -62549,6 +62736,10 @@ ngm:responsible-ai-principles rdfs:subClassOf ngm:ai-research-area ;
 ngm:responsible-deployment rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:responsible-minerals-sourcing rdfs:subClassOf ngm:human-rights-due-diligence ;
+    rdfs:subClassOf ngm:supply-chain-due-diligence ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:responsible-scaling-policy rdfs:subClassOf ngm:ai-governance ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -62562,6 +62753,8 @@ ngm:responsible-scaling-policy rdfs:subClassOf ngm:ai-governance ;
     rdfs:subClassOf ngm:organisational-framework ;
     rdfs:subClassOf ngm:policy-framework ;
     rdfs:subClassOf ngm:thing .
+ngm:responsive-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:rest rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -62588,6 +62781,7 @@ ngm:restful-api rdfs:subClassOf ngm:ai-infrastructure ;
 ngm:restricted-three-body-problem rdfs:subClassOf ngm:space-science-and-systems .
 ngm:retail-cbdc rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
+ngm:retailer rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:retention-policy rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -62677,6 +62871,8 @@ ngm:revenue-threshold rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:reverse-auction rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:reverse-engineering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:computer-vision ;
@@ -62684,17 +62880,10 @@ ngm:reverse-engineering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-content-and-assets ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:reverse-logistics rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:entity ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:knowledge-representation ;
-    rdfs:subClassOf ngm:owl-thing ;
-    rdfs:subClassOf ngm:process ;
-    rdfs:subClassOf ngm:temporal-entity ;
-    rdfs:subClassOf ngm:thing .
+ngm:reverse-factoring rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:reverse-logistics rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:reverse-proxy rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -63018,6 +63207,8 @@ ngm:riot-platforms rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:state-machine-replication ;
     rdfs:subClassOf ngm:thing .
+ngm:ripple-effect rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:risk rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -63180,6 +63371,8 @@ ngm:rmsprop rdfs:subClassOf ngm:ai-research-area ;
 ngm:ro-berta rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:road-freight rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:robin-hanson-ai-sceptic-economist rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -63994,6 +64187,8 @@ ngm:rough-consensus rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:rough-cut-capacity-planning rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:round-trip-time rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -64203,6 +64398,8 @@ ngm:rule-of-law rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:rules-of-origin rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:runbook rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -64292,18 +64489,8 @@ ngm:s3-api rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:technology-infrastructure-domain-component ;
     rdfs:subClassOf ngm:thing .
-ngm:sa8000 rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:sa8000 rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:saas-pricing-models rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -64637,6 +64824,8 @@ ngm:safety-standard rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:legal-framework ;
     rdfs:subClassOf ngm:regulatory-framework ;
     rdfs:subClassOf ngm:thing .
+ngm:safety-stock rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:safety-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -64661,6 +64850,7 @@ ngm:saga-pattern rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:sales-and-operations-planning rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:salt rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-cryptographic-primitive ;
@@ -65329,23 +65519,16 @@ ngm:scope-2-emissions rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:sustainable-development ;
     rdfs:subClassOf ngm:thing .
-ngm:scope-3-emissions rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:corporate-governance ;
-    rdfs:subClassOf ngm:environmental-accounting ;
-    rdfs:subClassOf ngm:governance-framework ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:organisational-framework ;
-    rdfs:subClassOf ngm:sustainability-reporting ;
-    rdfs:subClassOf ngm:thing .
+ngm:scope-3-emissions rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:scope-definition rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:scor-model rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:score-based-generative-model rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -65552,6 +65735,8 @@ ngm:sea-ice-lead rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:sea-ice-monitoring rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:sea-surface-height-measurement rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:sea-surface-temperature-retrieval rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:seaport rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:search-algorithm rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -65732,6 +65917,8 @@ ngm:section-508 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:specification ;
     rdfs:subClassOf ngm:technical-documentation ;
     rdfs:subClassOf ngm:thing .
+ngm:sector-logistics rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:sector-supply-chain rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:secure-aggregation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -66403,23 +66590,8 @@ ngm:semiconductor-self-reliance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:semiconductor-supply-chain rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:semiconductor-supply-chain rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:sensitivity rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-safety ;
@@ -66749,6 +66921,9 @@ ngm:sequential-monte-carlo rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:thing .
+ngm:serial-shipping-container-code rdfs:subClassOf ngm:supply-chain-identifier ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:serialisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -67281,6 +67456,8 @@ ngm:sheffield-advanced-manufacturing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:technology-industry ;
     rdfs:subClassOf ngm:thing .
+ngm:shipping-container rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:side-channel-attack rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -67549,6 +67726,9 @@ ngm:single-sign-on rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:single-sourcing rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:strategic-sourcing ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:single-turn-inference rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -67573,6 +67753,8 @@ ngm:single-use-seals rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
+ngm:single-window rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:singular-value-decomposition rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -67673,6 +67855,9 @@ ngm:six-degrees-of-freedom rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-tracking-system ;
     rdfs:subClassOf ngm:thing ;
     rdfs:subClassOf ngm:xr-input-technologies .
+ngm:six-sigma rdfs:subClassOf ngm:production-management-philosophy ;
+    rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:skeletal-animation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:animation ;
     rdfs:subClassOf ngm:animation-technique ;
@@ -68781,6 +68966,9 @@ ngm:solar-radiation-pressure rdfs:subClassOf ngm:space-science ;
 ngm:solar-sail rdfs:subClassOf ngm:space-science-and-systems .
 ngm:solar-wind rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
+ngm:sole-sourcing rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:strategic-sourcing ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:solid rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -68865,6 +69053,9 @@ ngm:source-routing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:sourcing-event rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:sourcing-strategy rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:sovereign-ai rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -68961,25 +69152,8 @@ ngm:space-station rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
-ngm:space-supply-chain rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:prime-contractor ;
-    rdfs:subClassOf ngm:space-science-and-systems ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:space-supply-chain rdfs:subClassOf ngm:prime-contractor ;
+    rdfs:subClassOf ngm:space-science-and-systems .
 ngm:space-systems-engineering rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -69536,6 +69710,8 @@ ngm:speech-synthesis rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:natural-language-processing ;
     rdfs:subClassOf ngm:thing .
+ngm:spend-analysis rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:spherical-harmonic-analysis rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:spherical-harmonics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -70754,6 +70930,7 @@ ngm:stochastic-processes rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:measure-theory ;
     rdfs:subClassOf ngm:thing .
+ngm:stockout rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:storage-architecture rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -70863,6 +71040,11 @@ ngm:strategic-planning rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:strategic-sourcing rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:strategic-stockpile rdfs:subClassOf ngm:supply-chain-resilience ;
+    rdfs:subClassOf ngm:supply-chain-resilience-strategy ;
+    rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:stratopause rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:stratosphere rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:earth-system-phenomena .
@@ -71247,6 +71429,22 @@ ngm:supervisory-authority rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:supplier rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-code-of-conduct rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
+ngm:supplier-concentration-risk rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chain-risk-type ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-diversification rdfs:subClassOf ngm:supply-chain-resilience ;
+    rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-management rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-qualification rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-relationship-management rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supplier-selection rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:supply-and-demand rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:applied-mathematics ;
@@ -71270,22 +71468,6 @@ ngm:supply-cap rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:supply-chain rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
 ngm:supply-chain-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -71305,79 +71487,13 @@ ngm:supply-chain-blockchain rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
-ngm:supply-chain-data rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-decarbonisation rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:governance ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:sustainability ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-finance rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:economic-systems ;
-    rdfs:subClassOf ngm:financial-services ;
-    rdfs:subClassOf ngm:human-computer-interaction ;
-    rdfs:subClassOf ngm:sc-platform-and-environment ;
-    rdfs:subClassOf ngm:spatial-computing ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-management rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-optimisation rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-provenance rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-resilience rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-risk-management rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:risk-management ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-security rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:information-security ;
-    rdfs:subClassOf ngm:infra-security-and-identity ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-traceability rdfs:subClassOf ngm:ai-model-architecture ;
+ngm:supply-chain-collaboration rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-configuration-decision rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-control-tower rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-cost-measure rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-data rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-network-component ;
@@ -71388,23 +71504,72 @@ ngm:supply-chain-traceability rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
+ngm:supply-chain-decarbonisation rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-design-principle rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-digital-twin rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-disruption rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-due-diligence rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-due-diligence-instrument rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-dynamics rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-environmental-accounting rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-execution-system rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-finance rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-governance rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-identifier rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-master-data rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-maturity-model rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-network-design rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-optimisation rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-performance-framework rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-performance-measure rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-planning-system rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-provenance rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-redundancy rdfs:subClassOf ngm:supply-chain-resilience ;
+    rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-regionalisation rdfs:subClassOf ngm:supply-chain-resilience ;
+    rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-resilience rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-resilience-strategy rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-risk-management rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-risk-type rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-security rdfs:subClassOf ngm:ai-governance-and-ethics ;
+    rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:information-security ;
+    rdfs:subClassOf ngm:infra-security-and-identity ;
+    rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:thing .
+ngm:supply-chain-segmentation rdfs:subClassOf ngm:supply-chain-strategy ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-simulation rdfs:subClassOf ngm:supply-chain-planning ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-strategy-type rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-stress-testing rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-traceability rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:traceability-and-product-identification .
 ngm:supply-chain-tracking rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-network-component ;
-    rdfs:subClassOf ngm:blockchain-application ;
+    rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:dc-protocol-and-infra ;
     rdfs:subClassOf ngm:distributed-application ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:network-component ;
     rdfs:subClassOf ngm:thing .
-ngm:supply-chain-transparency rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
-ngm:supply-chain-visibility rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
+ngm:supply-chain-transparency rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-visibility rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-chain-visibility-platform rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-planning rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:supply-risk rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:support-vector-machine rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -71609,6 +71774,11 @@ ngm:sustainable-finance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:sustainable-procurement rdfs:subClassOf ngm:human-rights-due-diligence ;
+    rdfs:subClassOf ngm:sourcing-and-procurement ;
+    rdfs:subClassOf ngm:supply-chain-due-diligence ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:sustainable-supply-chains .
 ngm:sustainable-technology rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -72047,6 +72217,12 @@ ngm:tagged-hash rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
+ngm:taiwan-semiconductor-manufacturing-company rdfs:subClassOf ngm:supplier ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:takt-time rdfs:subClassOf ngm:production-management-philosophy ;
+    rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:talent-concentration rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:applied-mathematics ;
@@ -72190,6 +72366,8 @@ ngm:targeted-advertising rdfs:subClassOf ngm:advertising-and-marketing ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:tariff-classification rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:task-adaptation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -73338,6 +73516,8 @@ ngm:theoretical-computer-science rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:theory-of-constraints rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:theory-of-mind rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:interdisciplinary-science ;
@@ -73456,6 +73636,8 @@ ngm:third-party-certification rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:third-party-logistics-provider rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:third-party-risk-management rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:ai-governance-principle ;
     rdfs:subClassOf ngm:ai-research-area ;
@@ -73776,6 +73958,8 @@ ngm:time-synchronisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:time-to-recover rdfs:subClassOf ngm:supply-chain-risk-and-resilience ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:timelock rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -74416,6 +74600,9 @@ ngm:torque-sensor rdfs:subClassOf ngm:ai-research-area ;
 ngm:total-cost-of-ownership rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
 ngm:total-ionising-dose rdfs:subClassOf ngm:space-science-and-systems .
+ngm:total-landed-cost rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-measure ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:total-order-broadcast rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -74423,6 +74610,8 @@ ngm:total-order-broadcast rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:total-quality-management rdfs:subClassOf ngm:production-operations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:total-supply rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:blockchain ;
@@ -74482,19 +74671,12 @@ ngm:tpu rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:traceability rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:entity ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:knowledge-representation ;
-    rdfs:subClassOf ngm:owl-thing ;
-    rdfs:subClassOf ngm:temporal-entity ;
-    rdfs:subClassOf ngm:thing .
+ngm:traceability rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:traceability-data-standard rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:traceability-mechanism rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
+ngm:traceability-regulation rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:tracked-robot rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -74540,6 +74722,10 @@ ngm:tracking-technology rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:trade-body rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:trade-credit rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:trade-document rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:trade-execution rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:applied-mathematics ;
@@ -74554,6 +74740,7 @@ ngm:trade-execution rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
+ngm:trade-facilitation rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:trade-finance rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:economic-systems ;
@@ -74569,23 +74756,11 @@ ngm:trade-finance-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:trade-lens rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:trade-lens rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:trade-measure rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:trade-payment-method rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:trade-term rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:traditional-banking rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -75366,12 +75541,15 @@ ngm:transport-network rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:network-infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:transport-planning rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:transport-protocol rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:transportation-management-system rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:trapdoor-function rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:bc-cryptographic-primitive ;
@@ -76400,6 +76578,10 @@ ngm:united-kingdom rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:united-parcel-service rdfs:subClassOf ngm:freight-carrier ;
+    rdfs:subClassOf ngm:logistics-service-provider ;
+    rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:united-states rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -77502,6 +77684,10 @@ ngm:vector-store rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
 ngm:vegetation-index rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:vehicle-routing-problem rdfs:subClassOf ngm:freight-transportation ;
+    rdfs:subClassOf ngm:supply-chain-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics ;
+    rdfs:subClassOf ngm:transport-planning .
 ngm:vehicle-to-grid rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -77575,6 +77761,8 @@ ngm:vendor-lock-in rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:vendor-managed-inventory rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:vendor-neutrality rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:human-computer-interaction ;
@@ -79569,23 +79757,8 @@ ngm:wallet-address rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:security ;
     rdfs:subClassOf ngm:thing .
-ngm:walmart rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:applied-machine-learning ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:artificial-intelligence-core ;
-    rdfs:subClassOf ngm:combinatorial-optimization ;
-    rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:industrial-ai ;
-    rdfs:subClassOf ngm:logistics-optimisation ;
-    rdfs:subClassOf ngm:machine-learning ;
-    rdfs:subClassOf ngm:mathematical-foundations ;
-    rdfs:subClassOf ngm:mathematical-science ;
-    rdfs:subClassOf ngm:operations-research ;
-    rdfs:subClassOf ngm:optimisation ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:walmart rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:warehouse-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -79605,10 +79778,10 @@ ngm:warehouse-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
-ngm:warehouse-management-system rdfs:subClassOf ngm:dc-protocol-and-infra ;
-    rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:supply-chain-management ;
-    rdfs:subClassOf ngm:thing .
+ngm:warehouse-facility-type rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:warehouse-management-system rdfs:subClassOf ngm:supply-chain-information-systems ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
+ngm:warehouse-operation rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:warehouse-robotics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -79619,6 +79792,7 @@ ngm:warehouse-robotics rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
     rdfs:subClassOf ngm:thing .
+ngm:warehouse-storage-system rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:warm-pool rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:warmup rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -79746,18 +79920,8 @@ ngm:wcag-2-2 rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:sc-governance-and-safety ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
-ngm:wco-safe-framework rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:wco-safe-framework rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:wd14-tagger rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -80285,18 +80449,9 @@ ngm:white-dwarf rdfs:subClassOf ngm:astronomical-body ;
     rdfs:subClassOf ngm:astronomy ;
     rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
-ngm:who-evm rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:data ;
-    rdfs:subClassOf ngm:data-management ;
-    rdfs:subClassOf ngm:documentation ;
-    rdfs:subClassOf ngm:infra-data-management ;
-    rdfs:subClassOf ngm:infra-legal-and-regulatory ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:specification ;
-    rdfs:subClassOf ngm:technical-documentation ;
-    rdfs:subClassOf ngm:thing .
+ngm:who-evm rdfs:subClassOf ngm:supply-chain-performance-and-finance ;
+    rdfs:subClassOf ngm:supply-chain-performance-framework ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:whole-body-control rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -80334,6 +80489,8 @@ ngm:wholesale-power-auction rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:infra-legal-and-regulatory ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
+ngm:wholesaler rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:wi-fi rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -80470,6 +80627,8 @@ ngm:word-piece rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:work-in-progress-inventory rdfs:subClassOf ngm:inventory-management ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:workflow-automation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:thing .
@@ -80551,6 +80710,8 @@ ngm:world-building rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:human-computer-interaction ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
+ngm:world-customs-organization rdfs:subClassOf ngm:supply-chain-organisations ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:world-economic-forum rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -80646,11 +80807,8 @@ ngm:write-blocker rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:wto-trade-facilitation-agreement rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf ngm:ai-governance-principle ;
-    rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:thing .
+ngm:wto-trade-facilitation-agreement rdfs:subClassOf ngm:international-trade-and-customs ;
+    rdfs:subClassOf ngm:supply-chains-and-logistics .
 ngm:wyoming-protocol rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -81249,5 +81407,5 @@ ngm:zoom-meetings rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-10-17T09:52:26.532675+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-10-18T19:50:36.107147+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "whelk-el++-closure" .

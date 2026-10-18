@@ -49,6 +49,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
+  - urn:ngm:class:vehicle-routing-problem
 uses:
   - urn:ngm:class:algorithm
   - urn:ngm:class:search-algorithm

@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:digital-asset
   - urn:ngm:class:jpmorgan
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Quorum Blockchain

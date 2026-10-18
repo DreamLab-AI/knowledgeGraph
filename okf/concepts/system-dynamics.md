@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:computational-modelling
 contrastsWith:
   - urn:ngm:class:agent-based-modelling
+bridgesTo:
+  - urn:ngm:class:supply-chain-simulation
 uses:
   - urn:ngm:class:differential-equations
   - urn:ngm:class:feedback-loop

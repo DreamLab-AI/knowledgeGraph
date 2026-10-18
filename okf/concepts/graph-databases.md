@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:linked-data
   - urn:ngm:class:social-network-analysis
   - urn:ngm:class:nosql-database
+  - urn:ngm:class:supply-chain
 ---
 
 # Graph Databases

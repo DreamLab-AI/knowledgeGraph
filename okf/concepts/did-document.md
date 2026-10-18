@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:did-resolution
   - urn:ngm:class:did-url
+  - urn:ngm:class:supply-chain
 ---
 
 # DID Document

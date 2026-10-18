@@ -105,6 +105,7 @@ relatedTo:
   - urn:ngm:class:brain-computer-interfaces
   - urn:ngm:class:node-based-diffusion-pipeline-interface-client
   - urn:ngm:class:node-based-diffusion-pipeline-interface-workflows
+  - urn:ngm:class:digital-product-passport
 ---
 
 # Fashion

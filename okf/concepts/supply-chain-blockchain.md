@@ -46,6 +46,9 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:hyperledger-fabric
   - urn:ngm:class:non-fungible-token
+  - urn:ngm:class:food-supply-chain
+  - urn:ngm:class:digital-product-passport
+  - urn:ngm:class:gs1-epcis
 ---
 
 # Supply Chain Blockchain

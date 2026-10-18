@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Reverse Logistics
 resource: urn:ngm:class:reverse-logistics
-domain: supply-chain
-description: Reverse logistics encompasses all operations related to the reuse, processing, and management of products and materials flowing backward through the supply chain from the consumer or end-of-life point toward the manufacturer or recycler. It includes product returns, refurbishment, remanufacturing, recycling, and responsible disposal, and is a key operational component of circular economy strategie
+domain: supply-chains-and-logistics
+description: Reverse logistics is the management of flows of goods, materials and related information back from the point of use or consumption towards a producer, a point of recovery or a point of proper disposal.[^1]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:logistics
+  - urn:ngm:class:circular-supply-chain
 requires:
   - urn:ngm:class:warehouse-management-system
 enables:
@@ -36,4 +36,4 @@ relatedTo:
 
 # Reverse Logistics
 
-Reverse logistics encompasses all operations related to the reuse, processing, and management of products and materials flowing backward through the supply chain from the consumer or end-of-life point toward the manufacturer or recycler. It includes product returns, refurbishment, remanufacturing, recycling, and responsible disposal, and is a key operational component of circular economy strategies.
+Reverse logistics is the management of flows of goods, materials and related information back from the point of use or consumption towards a producer, a point of recovery or a point of proper disposal.[^1]

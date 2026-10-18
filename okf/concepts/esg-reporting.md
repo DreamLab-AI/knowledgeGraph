@@ -150,6 +150,7 @@ relatedTo:
   - urn:ngm:class:eu-omnibus-2025
   - urn:ngm:class:dws-greenwashing-settlement
   - urn:ngm:class:texas-anti-esg-legislation
+  - urn:ngm:class:corporate-sustainability-due-diligence-directive
 ---
 
 # ESG Reporting

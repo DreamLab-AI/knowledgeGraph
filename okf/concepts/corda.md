@@ -46,6 +46,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:distributed-systems
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Corda

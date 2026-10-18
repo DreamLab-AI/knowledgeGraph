@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:systemic-risk
   - urn:ngm:class:anti-money-laundering
   - urn:ngm:class:financial-inclusion
+  - urn:ngm:class:supply-chain-finance
 ---
 
 # Traditional Banking

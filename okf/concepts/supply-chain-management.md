@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Management
 resource: urn:ngm:class:supply-chain-management
-domain: supply-chain
-description: Supply Chain Management (SCM) is the end-to-end coordination of the flow of goods, services, information, and finances from raw-material suppliers through manufacturers, distributors, and retailers to end consumers, with the goal of maximising value and minimising waste. It encompasses strategic planning, demand forecasting, procurement, inventory control, logistics, and supplier relationship mana
+domain: supply-chains-and-logistics
+description: "Supply chain management (SCM) is the management of the activities by which products and services are sourced, converted and delivered across the organisations of a supply chain. The Council of Supply Chain Management Professionals (CSCMP) defines it as the planning and management of all activities involved in sourcing and procurement, conversion and all logistics management activities, and states "
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:dc-protocol-and-infra
+  - urn:ngm:class:supply-chains-and-logistics
 hasPart:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:inventory-management
@@ -48,8 +48,11 @@ relatedTo:
   - urn:ngm:class:circular-economy
   - urn:ngm:class:trade-compliance
   - urn:ngm:class:space-prime
+  - urn:ngm:class:logistics
+  - urn:ngm:class:automation
+  - urn:ngm:class:optimisation
 ---
 
 # Supply Chain Management
 
-Supply Chain Management (SCM) is the end-to-end coordination of the flow of goods, services, information, and finances from raw-material suppliers through manufacturers, distributors, and retailers to end consumers, with the goal of maximising value and minimising waste. It encompasses strategic planning, demand forecasting, procurement, inventory control, logistics, and supplier relationship management as an integrated discipline. Modern SCM increasingly employs digital technologies — including IoT sensors, AI-driven demand planning, blockchain-based provenance tracking, and digital twins — to achieve visibility, resilience, and sustainability across multi-tier networks. The field draws on operations research, systems theory, and data science to optimise trade-offs between cost, service levels, lead times, and risk.
+Supply chain management (SCM) is the management of the activities by which products and services are sourced, converted and delivered across the organisations of a supply chain. The Council of Supply Chain Management Professionals (CSCMP) defines it as the planning and management of all activities involved in sourcing and procurement, conversion and all logistics management activities, and states that in essence it integrates supply and demand management within and across companies.[^1]

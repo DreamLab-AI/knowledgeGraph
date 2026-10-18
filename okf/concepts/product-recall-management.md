@@ -21,6 +21,7 @@ uses:
 relatedTo:
   - urn:ngm:class:pharmaceutical-traceability
   - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:supply-chain
 ---
 
 # Product Recall Management

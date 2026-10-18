@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Visibility
 resource: urn:ngm:class:supply-chain-visibility
-domain: supply-chain
-description: Supply chain visibility is the capability to track, monitor, and share accurate, real-time information about the location, status, and condition of goods, components, and materials as they move through a supply network from raw material sourcing through production, distribution, and delivery to end customers. It requires integration of data from disparate logistics systems, IoT sensors, carrier AP
+domain: supply-chains-and-logistics
+description: Supply chain visibility is the ability of an organisation to see what is happening in its supply chain, including who is involved, where goods are and what risks exist, and the sources opened here describe it in three ways without one agreed definition.[^1][^2]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:traceability-and-product-identification
 requires:
   - urn:ngm:class:data-integration
   - urn:ngm:class:real-time-data-processing
@@ -21,6 +21,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:blockchain
+  - urn:ngm:class:internet-of-things
 uses:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:provenance-tracking
@@ -36,8 +37,11 @@ relatedTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:supply-chain-transparency
   - urn:ngm:class:supply-chain-blockchain
+  - urn:ngm:class:supply-chain-visibility-platform
+  - urn:ngm:class:supply-chain-control-tower
+  - urn:ngm:class:data-interoperability
 ---
 
 # Supply Chain Visibility
 
-Supply chain visibility is the capability to track, monitor, and share accurate, real-time information about the location, status, and condition of goods, components, and materials as they move through a supply network from raw material sourcing through production, distribution, and delivery to end customers. It requires integration of data from disparate logistics systems, IoT sensors, carrier APIs, and ERP platforms, and provides the situational awareness needed for proactive disruption management, regulatory compliance, and demand-driven inventory optimisation.
+Supply chain visibility is the ability of an organisation to see what is happening in its supply chain, including who is involved, where goods are and what risks exist, and the sources opened here describe it in three ways without one agreed definition.[^1][^2]

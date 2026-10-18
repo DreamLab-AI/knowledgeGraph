@@ -58,6 +58,7 @@ relatedTo:
   - urn:ngm:class:infra-computing-and-cloud
   - urn:ngm:class:software-engineering
   - urn:ngm:class:data-product-version
+  - urn:ngm:class:supply-chain
 ---
 
 # Data Management

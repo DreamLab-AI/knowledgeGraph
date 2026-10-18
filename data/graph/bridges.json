@@ -4232,7 +4232,7 @@
       "domains": [
         1,
         2,
-        5
+        8
       ],
       "parents": [
         "Governance and Regulation",
@@ -5533,18 +5533,17 @@
       "label": "Cold Chain Monitoring",
       "categories": [
         32,
-        0,
         18,
-        28,
-        9
+        63,
+        67
       ],
       "domains": [
         5,
-        3
+        3,
+        8
       ],
       "parents": [
         "Legal and Regulatory",
-        "Supply Chain",
         "Monitoring Systems",
         "Sensor Networks",
         "Traceability",
@@ -5601,6 +5600,21 @@
         "Machine Learning Technique",
         "Information Retrieval",
         "Machine Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/collaborative-planning-forecasting-and-replenishment",
+      "label": "Collaborative Planning, Forecasting and Replenishment",
+      "categories": [
+        54,
+        53
+      ],
+      "domains": [
+        8
+      ],
+      "parents": [
+        "Demand Management",
+        "Supply Chain Collaboration"
       ]
     },
     {
@@ -7370,9 +7384,9 @@
       "label": "Customs Trade Facilitation",
       "categories": [
         11,
-        10,
         3,
-        15
+        15,
+        10
       ],
       "domains": [
         1,
@@ -7380,7 +7394,6 @@
       ],
       "parents": [
         "Governance and Regulation",
-        "Supply Chain Traceability",
         "Regulatory Technology",
         "Trade Finance",
         "Digital Customs",
@@ -10978,12 +10991,13 @@
         33,
         5,
         2,
-        27,
+        67,
         8
       ],
       "domains": [
         5,
         0,
+        8,
         1
       ],
       "parents": [
@@ -13904,22 +13918,15 @@
       "iri": "https://narrativegoldmine.com/class/logistics-optimisation",
       "label": "Logistics Optimisation",
       "categories": [
-        5,
-        0,
-        27
+        67,
+        59
       ],
       "domains": [
-        0,
-        5
+        8
       ],
       "parents": [
-        "Optimisation",
-        "AI Technique",
-        "Applied Machine Learning",
-        "Operations Research",
         "Supply Chain Management",
-        "Combinatorial Optimization",
-        "Industrial AI"
+        "Transport Planning"
       ]
     },
     {
@@ -19493,22 +19500,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/space-supply-chain",
-      "label": "Space Supply Chain",
-      "categories": [
-        0,
-        46
-      ],
-      "domains": [
-        5,
-        6
-      ],
-      "parents": [
-        "Supply Chain",
-        "Space Prime"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/spacecraft-housekeeping-data",
       "label": "Spacecraft Housekeeping Data",
       "categories": [
@@ -20205,21 +20196,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/supply-chain-tracking",
-      "label": "Supply Chain Tracking",
-      "categories": [
-        10
-      ],
-      "domains": [
-        1,
-        5
-      ],
-      "parents": [
-        "Blockchain",
-        "Supply Chain Traceability"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/sustainable-consensus",
       "label": "Sustainable Consensus",
       "categories": [
@@ -20236,6 +20212,21 @@
         "Blockchain Infrastructure",
         "Energy Efficient Computing",
         "Climate Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sustainable-procurement",
+      "label": "Sustainable Procurement",
+      "categories": [
+        62,
+        55
+      ],
+      "domains": [
+        8
+      ],
+      "parents": [
+        "Ethical Sourcing",
+        "Procurement"
       ]
     },
     {

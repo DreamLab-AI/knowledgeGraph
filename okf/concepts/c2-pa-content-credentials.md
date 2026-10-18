@@ -15,7 +15,7 @@ requires:
 enables:
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:ai-transparency-framework
-  - urn:ngm:class:supply-chain-traceability
+  - urn:ngm:class:content-provenance
   - urn:ngm:class:creator-attribution
   - urn:ngm:class:ai-transparency-framework
 implements:

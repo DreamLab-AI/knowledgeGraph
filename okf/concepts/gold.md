@@ -90,6 +90,7 @@ relatedTo:
   - urn:ngm:class:decentralized-finance-de-fi
   - urn:ngm:class:digital-asset
   - urn:ngm:class:stablecoin
+  - urn:ngm:class:oecd-due-diligence-guidance
 ---
 
 # Gold

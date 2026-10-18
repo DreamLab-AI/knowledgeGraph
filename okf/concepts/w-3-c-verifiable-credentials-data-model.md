@@ -73,6 +73,7 @@ relatedTo:
   - urn:ngm:class:open-badges
   - urn:ngm:class:eidas-regulation
   - urn:ngm:class:zero-knowledge-proof
+  - urn:ngm:class:supply-chain
 ---
 
 # W3C Verifiable Credentials Data Model

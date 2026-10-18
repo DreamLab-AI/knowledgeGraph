@@ -62,6 +62,7 @@ relatedTo:
   - urn:ngm:class:hierarchical-task-network
   - urn:ngm:class:large-language-model
   - urn:ngm:class:a-star-algorithm
+  - urn:ngm:class:supply-chain
 ---
 
 # Classical Planning

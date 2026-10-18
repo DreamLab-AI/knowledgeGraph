@@ -1,15 +1,15 @@
 {
   "policy_version": 1,
-  "public_pages": 9244,
+  "public_pages": 9532,
   "non_public_pages": 14,
   "rejected": 0,
   "excluded": 1,
-  "parsed": 9258,
+  "parsed": 9546,
   "counts": {
     "excluded_directory": 1,
     "included_private": 14,
-    "included_public": 9244,
-    "input_files": 9259
+    "included_public": 9532,
+    "input_files": 9547
   },
   "balanced": true
 }

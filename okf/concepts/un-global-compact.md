@@ -12,6 +12,11 @@ is-a:
 relatedTo:
   - urn:ngm:class:ethical-sourcing
   - urn:ngm:class:sustainability
+  - urn:ngm:class:supplier-code-of-conduct
+  - urn:ngm:class:supply-chain-governance
+  - urn:ngm:class:supply-chain-transparency
+  - urn:ngm:class:sustainable-procurement
+  - urn:ngm:class:sustainable-supply-chains
 ---
 
 # UN Global Compact

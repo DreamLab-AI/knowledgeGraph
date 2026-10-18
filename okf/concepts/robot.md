@@ -52,6 +52,7 @@ relatedTo:
   - urn:ngm:class:humanoid-robot
   - urn:ngm:class:cobotic-system
   - urn:ngm:class:uncrewed-spacecraft
+  - urn:ngm:class:supply-chain
 ---
 
 # Robot

@@ -8,7 +8,7 @@ description: Supply chain data is the structured information captured as goods, 
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:blockchain-application
 hasPart:
   - urn:ngm:class:provenance
   - urn:ngm:class:traceability
@@ -25,6 +25,7 @@ dependsOn:
   - urn:ngm:class:sensor-networks
 bridgesTo:
   - urn:ngm:class:internet-of-things
+  - urn:ngm:class:supply-chain
 uses:
   - urn:ngm:class:blockchain
   - urn:ngm:class:oracle

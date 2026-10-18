@@ -8,7 +8,8 @@ description: Supply chain tracking is the end-to-end recording of a product's mo
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:blockchain
+  - urn:ngm:class:blockchain-application
+bridgesTo:
   - urn:ngm:class:supply-chain-traceability
 relatedTo:
   - urn:ngm:class:ve-chain

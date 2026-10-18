@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:eidas-regulation
   - urn:ngm:class:w3c-credentials-community-group
   - urn:ngm:class:internet-identity-workshop
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Trust Over IP Foundation

@@ -23,6 +23,8 @@ contrastsWith:
   - urn:ngm:class:supply-chain-management
 bridgesTo:
   - urn:ngm:class:crm
+  - urn:ngm:class:advanced-planning-and-scheduling
+  - urn:ngm:class:procure-to-pay
 uses:
   - urn:ngm:class:data-model
 supports:
@@ -31,6 +33,7 @@ supports:
 relatedTo:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:data-integration
+  - urn:ngm:class:manufacturing-resource-planning
 ---
 
 # Enterprise Resource Planning

@@ -79,6 +79,8 @@ relatedTo:
   - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:enterprise-token-standards
   - urn:ngm:class:ethical-sourcing
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:food-supply-chain
 ---
 
 # Asset Registry

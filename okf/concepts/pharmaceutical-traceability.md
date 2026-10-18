@@ -24,6 +24,9 @@ relatedTo:
   - urn:ngm:class:blockchain-compliance
   - urn:ngm:class:healthcare-technology
   - urn:ngm:class:consortium-blockchain
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:cold-chain-logistics
+  - urn:ngm:class:gs1-epcis
 ---
 
 # Pharmaceutical Traceability

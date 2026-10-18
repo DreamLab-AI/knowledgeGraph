@@ -37,6 +37,7 @@ supports:
 relatedTo:
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:logistics-optimisation
+  - urn:ngm:class:logistics-management
 ---
 
 # Fleet Management

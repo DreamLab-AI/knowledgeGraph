@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:low-code-platform
   - urn:ngm:class:integration-platform-as-a-service
   - urn:ngm:class:low-code-platform
+  - urn:ngm:class:supply-chain
 ---
 
 # Workflow Automation

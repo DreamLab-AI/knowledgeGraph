@@ -109,6 +109,7 @@ relatedTo:
   - urn:ngm:class:design-research
   - urn:ngm:class:design-operations
   - urn:ngm:class:cad-software
+  - urn:ngm:class:digital-product-passport
 ---
 
 # Product Design

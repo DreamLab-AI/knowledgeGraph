@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Resilience
 resource: urn:ngm:class:supply-chain-resilience
-domain: supply-chain
-description: Supply chain resilience is the capacity of a supply network to anticipate, absorb, adapt to, and recover from disruptions while maintaining the continuity of supply at acceptable cost and service levels. It combines visibility into the network, redundancy and flexibility in sourcing and capacity, and the ability to reconfigure flows when shocks occur. Resilience strategies balance efficiency again
+domain: supply-chains-and-logistics
+description: Supply chain resilience is the ability of a supply chain to return to its original state, or move to a new and more desirable one, after being disturbed.[^1]
 maturity: established
 quality: 0.62
 is-a:
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:supply-chain-risk-and-resilience
 requires:
   - urn:ngm:class:risk-management
   - urn:ngm:class:traceability
@@ -24,6 +24,8 @@ bridgesTo:
   - urn:ngm:class:business-continuity
   - urn:ngm:class:logistics
   - urn:ngm:class:space-supply-chain
+  - urn:ngm:class:resilience
+  - urn:ngm:class:organisational-resilience
 uses:
   - urn:ngm:class:redundancy
   - urn:ngm:class:inventory-management
@@ -34,8 +36,9 @@ partOf:
 relatedTo:
   - urn:ngm:class:resilience
   - urn:ngm:class:risk-management
+  - urn:ngm:class:supply-chain-risk-management
 ---
 
 # Supply Chain Resilience
 
-Supply chain resilience is the capacity of a supply network to anticipate, absorb, adapt to, and recover from disruptions while maintaining the continuity of supply at acceptable cost and service levels. It combines visibility into the network, redundancy and flexibility in sourcing and capacity, and the ability to reconfigure flows when shocks occur. Resilience strategies balance efficiency against the buffers and diversification needed to withstand events such as supplier failure, natural disaster, or demand volatility.
+Supply chain resilience is the ability of a supply chain to return to its original state, or move to a new and more desirable one, after being disturbed.[^1]

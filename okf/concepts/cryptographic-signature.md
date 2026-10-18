@@ -33,7 +33,7 @@ bridgesTo:
   - urn:ngm:class:provenance
   - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:provenance
-  - urn:ngm:class:supply-chain-traceability
+  - urn:ngm:class:software-supply-chain
 uses:
   - urn:ngm:class:public-key-cryptography
   - urn:ngm:class:hash-function

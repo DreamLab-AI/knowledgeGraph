@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:pharmaceutical-traceability
   - urn:ngm:class:data-provenance
   - urn:ngm:class:blockchain-compliance
+  - urn:ngm:class:critical-tracking-event
 ---
 
 # Food Safety Blockchain

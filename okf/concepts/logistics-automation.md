@@ -8,10 +8,12 @@ description: Logistics automation is the application of robotics, software, and 
 maturity: established
 quality: 0.8
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:supply-chain-automation
 enables:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:logistics-optimisation
+bridgesTo:
+  - urn:ngm:class:supply-chain-management
 uses:
   - urn:ngm:class:warehouse-automation
   - urn:ngm:class:autonomous-vehicle

@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Digital Product Passport
 resource: urn:ngm:class:digital-product-passport
-domain: supply-chain
-description: A Digital Product Passport (DPP) is a standardised, machine-readable digital record that captures and communicates authoritative information about a product's material composition, manufacturing origin, environmental footprint, repair history, and end-of-life options throughout its full lifecycle. Mandated across product categories by the EU Ecodesign for Sustainable Products Regulation (ESPR) and
+domain: supply-chains-and-logistics
+description: A digital product passport is, in the EU Ecodesign for Sustainable Products Regulation, a set of data specific to a product that includes the information specified in the applicable delegated act and that is accessible via electronic means through a data carrier.[^1]
 maturity: emerging
 quality: 0.72
 is-a:
-  - urn:ngm:class:dc-protocol-and-infra
+  - urn:ngm:class:traceability-and-product-identification
 requires:
   - urn:ngm:class:data-interoperability
   - urn:ngm:class:open-standard
@@ -31,6 +31,8 @@ bridgesTo:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:semantic-web
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:verifiable-credentials
+  - urn:ngm:class:decentralised-identifier
 uses:
   - urn:ngm:class:provenance-tracking
   - urn:ngm:class:verifiable-credentials
@@ -47,8 +49,18 @@ relatedTo:
   - urn:ngm:class:carbon-footprint
   - urn:ngm:class:eu-battery-regulation
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:ecodesign-for-sustainable-products-regulation
+  - urn:ngm:class:conformity-assessment
+  - urn:ngm:class:ghg-protocol
+  - urn:ngm:class:carbon-footprint-measurement
+  - urn:ngm:class:fashion
+  - urn:ngm:class:blockchain-provenance
+  - urn:ngm:class:supply-chain-blockchain
+  - urn:ngm:class:gs1
+  - urn:ngm:class:gs-1-standards
+  - urn:ngm:class:product-design
 ---
 
 # Digital Product Passport
 
-A Digital Product Passport (DPP) is a standardised, machine-readable digital record that captures and communicates authoritative information about a product's material composition, manufacturing origin, environmental footprint, repair history, and end-of-life options throughout its full lifecycle. Mandated across product categories by the EU Ecodesign for Sustainable Products Regulation (ESPR) and related instruments such as the EU Battery Regulation, DPPs are accessible to consumers, regulators, recyclers, and supply chain actors via data carriers such as QR codes, NFC tags, or RFID. They serve as a foundational infrastructure of circular economy policy by enabling traceability, transparency, and interoperability across complex global supply chains. DPPs are frequently implemented atop distributed ledger or verifiable credential technologies to ensure provenance integrity and tamper-evident audit trails.
+A digital product passport is, in the EU Ecodesign for Sustainable Products Regulation, a set of data specific to a product that includes the information specified in the applicable delegated act and that is accessible via electronic means through a data carrier.[^1]

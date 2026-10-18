@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Provenance
 resource: urn:ngm:class:supply-chain-provenance
-domain: supply-chain
-description: "Supply chain provenance is the verified documentary record of an item's origin, material composition, transformation steps, custody changes, and transportation history from raw material extraction through to the end consumer, enabling authenticity verification, ethical sourcing attestation, and regulatory compliance. It extends data provenance principles to physical goods, typically combining IoT "
+domain: supply-chains-and-logistics
+description: Supply chain provenance is information about the origin and history of goods as they pass through a supply chain, and no source opened here defines the term in that sense, so the page is bounded by a general definition of provenance and by what traceability sources record.[^1][^2]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:provenance-tracking
+  - urn:ngm:class:traceability-and-product-identification
 requires:
   - urn:ngm:class:data-integrity
   - urn:ngm:class:unique-identifier
@@ -22,6 +22,10 @@ implements:
   - urn:ngm:class:gs-1-standards
 bridgesTo:
   - urn:ngm:class:zero-knowledge-proof
+  - urn:ngm:class:provenance-tracking
+  - urn:ngm:class:data-provenance
+  - urn:ngm:class:everledger
+  - urn:ngm:class:w3-c-prov
 uses:
   - urn:ngm:class:supply-chain-blockchain
   - urn:ngm:class:audit-trail
@@ -42,8 +46,15 @@ relatedTo:
   - urn:ngm:class:chain-of-custody
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:conflict-mineral-tracking
+  - urn:ngm:class:trust-over-ip-foundation
+  - urn:ngm:class:corda
+  - urn:ngm:class:credential-schema
+  - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:hyperledger-foundation
+  - urn:ngm:class:quorum-blockchain
+  - urn:ngm:class:self-sovereign-identity
 ---
 
 # Supply Chain Provenance
 
-Supply chain provenance is the verified documentary record of an item's origin, material composition, transformation steps, custody changes, and transportation history from raw material extraction through to the end consumer, enabling authenticity verification, ethical sourcing attestation, and regulatory compliance. It extends data provenance principles to physical goods, typically combining IoT sensor data, third-party audit records, and cryptographic anchors (hashes or blockchain transactions) to create an immutable chain of evidence that resists falsification and supports granular attribution.
+Supply chain provenance is information about the origin and history of goods as they pass through a supply chain, and no source opened here defines the term in that sense, so the page is bounded by a general definition of provenance and by what traceability sources record.[^1][^2]

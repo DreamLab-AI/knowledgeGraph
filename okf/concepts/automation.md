@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:autonomous-system
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:autonomous-system
+  - urn:ngm:class:supply-chain-management
 ---
 
 # Automation

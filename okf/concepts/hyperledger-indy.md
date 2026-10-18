@@ -121,6 +121,7 @@ relatedTo:
   - urn:ngm:class:sovrin-foundation
   - urn:ngm:class:indicio
   - urn:ngm:class:idunion
+  - urn:ngm:class:supply-chain
 ---
 
 # Hyperledger Indy

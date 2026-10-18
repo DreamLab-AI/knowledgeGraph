@@ -9,7 +9,6 @@ maturity: established
 quality: 0.52
 is-a:
   - urn:ngm:class:bc-governance-and-regulation
-  - urn:ngm:class:supply-chain-traceability
   - urn:ngm:class:regulatory-technology
   - urn:ngm:class:trade-finance
   - urn:ngm:class:digital-customs
@@ -80,6 +79,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:infra-legal-and-regulatory
   - urn:ngm:class:trade-finance
+  - urn:ngm:class:supply-chain-traceability
+  - urn:ngm:class:single-window
 uses:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:decentralised-identifier
@@ -114,6 +115,14 @@ relatedTo:
   - urn:ngm:class:carbon-credit-tracking
   - urn:ngm:class:cold-chain-monitoring
   - urn:ngm:class:gsbn
+  - urn:ngm:class:world-customs-organization
+  - urn:ngm:class:bill-of-lading
+  - urn:ngm:class:tariff-classification
+  - urn:ngm:class:customs-broker
+  - urn:ngm:class:rules-of-origin
+  - urn:ngm:class:harmonised-system
+  - urn:ngm:class:trade-document
+  - urn:ngm:class:customs-clearance
 ---
 
 # Customs Trade Facilitation

@@ -3,17 +3,20 @@ okf_version: "0.2"
 type: Class
 title: Demand Planning
 resource: urn:ngm:class:demand-planning
-domain: supply-chain
-description: Demand planning is the supply-chain process of estimating future customer demand and aligning inventory, production, and procurement to meet it efficiently. It consolidates statistical forecasts, market intelligence, and business constraints into an actionable plan that minimises stockouts and excess holding. Modern demand planning increasingly relies on time-series forecasting and machine-learnin
+domain: supply-chains-and-logistics
+description: Demand planning is the part of supply chain planning that produces the demand plan, which serves as the strategy from which the other plans in the supply chain are generated.[^1]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:sc-platform-and-environment
+  - urn:ngm:class:demand-management
+bridgesTo:
+  - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:demand-forecasting
   - urn:ngm:class:time-series-forecasting
+  - urn:ngm:class:sales-and-operations-planning
 ---
 
 # Demand Planning
 
-Demand planning is the supply-chain process of estimating future customer demand and aligning inventory, production, and procurement to meet it efficiently. It consolidates statistical forecasts, market intelligence, and business constraints into an actionable plan that minimises stockouts and excess holding. Modern demand planning increasingly relies on time-series forecasting and machine-learning models fed by historical sales and external signals.
+Demand planning is the part of supply chain planning that produces the demand plan, which serves as the strategy from which the other plans in the supply chain are generated.[^1]

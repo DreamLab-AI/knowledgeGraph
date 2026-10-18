@@ -54,6 +54,7 @@ relatedTo:
   - urn:ngm:class:net-zero
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:double-materiality
+  - urn:ngm:class:supply-chain-due-diligence
 ---
 
 # SustainabilityReporting

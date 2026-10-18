@@ -30,6 +30,15 @@ relatedTo:
   - urn:ngm:class:macroeconomics
   - urn:ngm:class:gross-domestic-product
   - urn:ngm:class:global-trade
+  - urn:ngm:class:documentary-letter-of-credit
+  - urn:ngm:class:free-trade-zone
+  - urn:ngm:class:incoterms
+  - urn:ngm:class:open-account-trade
+  - urn:ngm:class:trade-credit
+  - urn:ngm:class:trade-facilitation
+  - urn:ngm:class:trade-payment-method
+  - urn:ngm:class:trade-term
+  - urn:ngm:class:supply-chain
 ---
 
 # International Trade

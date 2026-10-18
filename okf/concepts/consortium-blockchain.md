@@ -111,6 +111,7 @@ relatedTo:
   - urn:ngm:class:neural-network-text-tokenisation
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:central-bank-digital-currency
+  - urn:ngm:class:supply-chain
 ---
 
 # Consortium Blockchain

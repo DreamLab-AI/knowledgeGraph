@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:logistics
   - urn:ngm:class:economic-growth
+  - urn:ngm:class:supply-chain
 ---
 
 # Global Trade

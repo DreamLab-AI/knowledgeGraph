@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@de30b0d58794ecc2acb35619b6a5d2975fb237c0
+generation: visionGraph@1ec5774ad73719bb2782f5fea69b395141ce63c5
 vocabulary_version: 1
-concept_count: 9244
+concept_count: 9532
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-9244 concepts, exported from generation `visionGraph@de30b0d58794ecc2acb35619b6a5d2975fb237c0`.
+9532 concepts, exported from generation `visionGraph@1ec5774ad73719bb2782f5fea69b395141ce63c5`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -60,6 +60,7 @@ concept_count: 9244
 - [Aave](concepts/aave.md) — `urn:ngm:class:aave`
 - [Aave Companies](concepts/aave-companies.md) — `urn:ngm:class:aave-companies`
 - [Aave Governance](concepts/aave-governance.md) — `urn:ngm:class:aave-governance`
+- [ABC Analysis](concepts/abc-analysis.md) — `urn:ngm:class:abc-analysis`
 - [ABI Encoding](concepts/abi-encoding.md) — `urn:ngm:class:abi-encoding`
 - [Ablation Zone](concepts/ablation-zone.md) — `urn:ngm:class:ablation-zone`
 - [Absolute Magnitude](concepts/absolute-magnitude.md) — `urn:ngm:class:absolute-magnitude`
@@ -150,9 +151,11 @@ concept_count: 9244
 - [Adoption of Convergent Technologies](concepts/adoption-of-convergent-technologies.md) — `urn:ngm:class:adoption-of-convergent-technologies`
 - [ADR-008](concepts/adr-008.md) — `urn:ngm:class:adr-008`
 - [ADR-012](concepts/adr-012.md) — `urn:ngm:class:adr-012`
+- [Advance Ship Notice](concepts/advance-ship-notice.md) — `urn:ngm:class:advance-ship-notice`
 - [Advanced Driver Assistance System](concepts/advanced-driver-assistance-system.md) — `urn:ngm:class:advanced-driver-assistance-system`
 - [Advanced Manufacturing](concepts/advanced-manufacturing.md) — `urn:ngm:class:advanced-manufacturing`
 - [Advanced Metering Infrastructure](concepts/advanced-metering-infrastructure.md) — `urn:ngm:class:advanced-metering-infrastructure`
+- [Advanced Planning and Scheduling](concepts/advanced-planning-and-scheduling.md) — `urn:ngm:class:advanced-planning-and-scheduling`
 - [Adversarial Attack](concepts/adversarial-attack.md) — `urn:ngm:class:adversarial-attack`
 - [Adversarial Attacks](concepts/adversarial-attacks.md) — `urn:ngm:class:adversarial-attacks`
 - [Adversarial Machine Learning](concepts/adversarial-machine-learning.md) — `urn:ngm:class:adversarial-machine-learning`
@@ -216,9 +219,11 @@ concept_count: 9244
 - [Agentic Workload Economics](concepts/agentic-workload-economics.md) — `urn:ngm:class:agentic-workload-economics`
 - [Agents](concepts/agents.md) — `urn:ngm:class:agents`
 - [Aggelos Kiayias](concepts/aggelos-kiayias.md) — `urn:ngm:class:aggelos-kiayias`
+- [Aggregate Planning](concepts/aggregate-planning.md) — `urn:ngm:class:aggregate-planning`
 - [AGI](concepts/agi.md) — `urn:ngm:class:agi`
 - [AGI Timelines](concepts/agi-timelines.md) — `urn:ngm:class:agi-timelines`
 - [Agile Software Development](concepts/agile-software-development.md) — `urn:ngm:class:agile-software-development`
+- [Agile Supply Chain](concepts/agile-supply-chain.md) — `urn:ngm:class:agile-supply-chain`
 - [Agreement Protocol](concepts/agreement-protocol.md) — `urn:ngm:class:agreement-protocol`
 - [Agricultural Robot](concepts/agricultural-robot.md) — `urn:ngm:class:agricultural-robot`
 - [Agricultural Robotics](concepts/agricultural-robotics.md) — `urn:ngm:class:agricultural-robotics`
@@ -476,6 +481,7 @@ concept_count: 9244
 - [AI Workforce Impact](concepts/ai-workforce-impact.md) — `urn:ngm:class:ai-workforce-impact`
 - [AICafev6](concepts/aicafev6.md) — `urn:ngm:class:aicafev6`
 - [AIOps](concepts/aiops.md) — `urn:ngm:class:aiops`
+- [Air Freight](concepts/air-freight.md) — `urn:ngm:class:air-freight`
 - [Air Gap](concepts/air-gap.md) — `urn:ngm:class:air-gap`
 - [Air Quality Monitoring](concepts/air-quality-monitoring.md) — `urn:ngm:class:air-quality-monitoring`
 - [Airborne Remote Sensing](concepts/airborne-remote-sensing.md) — `urn:ngm:class:airborne-remote-sensing`
@@ -516,6 +522,7 @@ concept_count: 9244
 - [ALPR Networks](concepts/alpr-networks.md) — `urn:ngm:class:alpr-networks`
 - [AltspaceVR](concepts/altspace-vr.md) — `urn:ngm:class:altspace-vr`
 - [AluVM](concepts/alu-vm.md) — `urn:ngm:class:alu-vm`
+- [Amazon](concepts/amazon.md) — `urn:ngm:class:amazon`
 - [Ambient Awareness](concepts/ambient-awareness.md) — `urn:ngm:class:ambient-awareness`
 - [Ambient Computing](concepts/ambient-computing.md) — `urn:ngm:class:ambient-computing`
 - [Ambient Observation](concepts/ambient-observation.md) — `urn:ngm:class:ambient-observation`
@@ -656,6 +663,7 @@ concept_count: 9244
 - [Asia Pacific Regulation](concepts/asia-pacific-regulation.md) — `urn:ngm:class:asia-pacific-regulation`
 - [ASIC](concepts/asic.md) — `urn:ngm:class:asic`
 - [ASIC Hardware](concepts/asic-hardware.md) — `urn:ngm:class:asic-hardware`
+- [Assemble-to-Order](concepts/assemble-to-order.md) — `urn:ngm:class:assemble-to-order`
 - [Assembly Automation](concepts/assembly-automation.md) — `urn:ngm:class:assembly-automation`
 - [Asset Archive](concepts/asset-archive.md) — `urn:ngm:class:asset-archive`
 - [Asset Creation](concepts/asset-creation.md) — `urn:ngm:class:asset-creation`
@@ -776,6 +784,7 @@ concept_count: 9244
 - [Authenticity Certification](concepts/authenticity-certification.md) — `urn:ngm:class:authenticity-certification`
 - [Authoring Tool](concepts/authoring-tool.md) — `urn:ngm:class:authoring-tool`
 - [Authorisation](concepts/authorisation.md) — `urn:ngm:class:authorisation`
+- [Authorised Economic Operator](concepts/authorised-economic-operator.md) — `urn:ngm:class:authorised-economic-operator`
 - [Authorised Representative](concepts/authorised-representative.md) — `urn:ngm:class:authorised-representative`
 - [AutoGen](concepts/auto-gen.md) — `urn:ngm:class:auto-gen`
 - [AutoML](concepts/auto-ml.md) — `urn:ngm:class:auto-ml`
@@ -792,11 +801,13 @@ concept_count: 9244
 - [Automated Planning](concepts/automated-planning.md) — `urn:ngm:class:automated-planning`
 - [Automated Podcasting](concepts/automated-podcasting.md) — `urn:ngm:class:automated-podcasting`
 - [Automated Reasoning](concepts/automated-reasoning.md) — `urn:ngm:class:automated-reasoning`
+- [Automated Storage and Retrieval System](concepts/automated-storage-and-retrieval-system.md) — `urn:ngm:class:automated-storage-and-retrieval-system`
 - [Automated Summarization](concepts/automated-summarization.md) — `urn:ngm:class:automated-summarization`
 - [Automated Testing](concepts/automated-testing.md) — `urn:ngm:class:automated-testing`
 - [Automated Theorem Proving](concepts/automated-theorem-proving.md) — `urn:ngm:class:automated-theorem-proving`
 - [AUTOMATIC1111 WebUI](concepts/automatic-1111-web-ui.md) — `urn:ngm:class:automatic-1111-web-ui`
 - [Automatic Differentiation](concepts/automatic-differentiation.md) — `urn:ngm:class:automatic-differentiation`
+- [Automatic Identification and Data Capture](concepts/automatic-identification-and-data-capture.md) — `urn:ngm:class:automatic-identification-and-data-capture`
 - [Automatic Prompt Optimisation](concepts/automatic-prompt-optimisation.md) — `urn:ngm:class:automatic-prompt-optimisation`
 - [Automatic Speech Recognition](concepts/automatic-speech-recognition.md) — `urn:ngm:class:automatic-speech-recognition`
 - [Automatic1111](concepts/automatic1111.md) — `urn:ngm:class:automatic1111`
@@ -832,6 +843,7 @@ concept_count: 9244
 - [Autoregressive Model](concepts/autoregressive-model.md) — `urn:ngm:class:autoregressive-model`
 - [Autoscaling](concepts/autoscaling.md) — `urn:ngm:class:autoscaling`
 - [AV1 Codec](concepts/av1-codec.md) — `urn:ngm:class:av1-codec`
+- [Available-to-Promise](concepts/available-to-promise.md) — `urn:ngm:class:available-to-promise`
 - [Avalanche](concepts/avalanche.md) — `urn:ngm:class:avalanche`
 - [Avalanche Effect](concepts/avalanche-effect.md) — `urn:ngm:class:avalanche-effect`
 - [Avatar](concepts/avatar.md) — `urn:ngm:class:avatar`
@@ -854,6 +866,7 @@ concept_count: 9244
 - [Aztec Protocol](concepts/aztec-protocol.md) — `urn:ngm:class:aztec-protocol`
 - [Azure](concepts/azure.md) — `urn:ngm:class:azure`
 - [B-Tree Index](concepts/b-tree-index.md) — `urn:ngm:class:b-tree-index`
+- [B2B Integration](concepts/b2b-integration.md) — `urn:ngm:class:b2b-integration`
 - [Babylon Js](concepts/babylon-js.md) — `urn:ngm:class:babylon-js`
 - [Back-Translation](concepts/back-translation.md) — `urn:ngm:class:back-translation`
 - [Backdoor Attack](concepts/backdoor-attack.md) — `urn:ngm:class:backdoor-attack`
@@ -886,6 +899,7 @@ concept_count: 9244
 - [Base](concepts/base.md) — `urn:ngm:class:base`
 - [Base Fee](concepts/base-fee.md) — `urn:ngm:class:base-fee`
 - [Base Learner](concepts/base-learner.md) — `urn:ngm:class:base-learner`
+- [Base Stock Policy](concepts/base-stock-policy.md) — `urn:ngm:class:base-stock-policy`
 - [Base64URL Encoding](concepts/base64url-encoding.md) — `urn:ngm:class:base64url-encoding`
 - [based on](concepts/based-on.md) — `urn:ngm:class:based-on`
 - [Basel Accords](concepts/basel-accords.md) — `urn:ngm:class:basel-accords`
@@ -896,7 +910,9 @@ concept_count: 9244
 - [Batch Image Processing](concepts/batch-image-processing.md) — `urn:ngm:class:batch-image-processing`
 - [Batch Inference](concepts/batch-inference.md) — `urn:ngm:class:batch-inference`
 - [Batch Normalisation](concepts/batch-normalisation.md) — `urn:ngm:class:batch-normalisation`
+- [Batch Number](concepts/batch-number.md) — `urn:ngm:class:batch-number`
 - [Batch Processing](concepts/batch-processing.md) — `urn:ngm:class:batch-processing`
+- [Batch Production](concepts/batch-production.md) — `urn:ngm:class:batch-production`
 - [Batch Size](concepts/batch-size.md) — `urn:ngm:class:batch-size`
 - [Batch Verification](concepts/batch-verification.md) — `urn:ngm:class:batch-verification`
 - [Batching](concepts/batching.md) — `urn:ngm:class:batching`
@@ -971,6 +987,8 @@ concept_count: 9244
 - [Big Data](concepts/big-data.md) — `urn:ngm:class:big-data`
 - [Bilinear Pairing](concepts/bilinear-pairing.md) — `urn:ngm:class:bilinear-pairing`
 - [Bilingual RAG Hallucination Mitigation Framework](concepts/bilingual-rag-hallucination-mitigation-framework.md) — `urn:ngm:class:bilingual-rag-hallucination-mitigation-framework`
+- [Bill of Lading](concepts/bill-of-lading.md) — `urn:ngm:class:bill-of-lading`
+- [Bill of Materials](concepts/bill-of-materials.md) — `urn:ngm:class:bill-of-materials`
 - [BIM Software](concepts/bim-software.md) — `urn:ngm:class:bim-software`
 - [BIM Virtual Model](concepts/bim-virtual-model.md) — `urn:ngm:class:bim-virtual-model`
 - [Binance](concepts/binance.md) — `urn:ngm:class:binance`
@@ -1140,6 +1158,7 @@ concept_count: 9244
 - [BOLT11](concepts/bolt-11.md) — `urn:ngm:class:bolt-11`
 - [BOLT12](concepts/bolt-12.md) — `urn:ngm:class:bolt-12`
 - [BOLT Specifications](concepts/bolt-specifications.md) — `urn:ngm:class:bolt-specifications`
+- [Bonded Warehouse](concepts/bonded-warehouse.md) — `urn:ngm:class:bonded-warehouse`
 - [Boosting](concepts/boosting.md) — `urn:ngm:class:boosting`
 - [Bootstrap Node](concepts/bootstrap-node.md) — `urn:ngm:class:bootstrap-node`
 - [Boston Dynamics Spot](concepts/boston-dynamics-spot.md) — `urn:ngm:class:boston-dynamics-spot`
@@ -1175,6 +1194,7 @@ concept_count: 9244
 - [Building Information Modelling](concepts/building-information-modelling.md) — `urn:ngm:class:building-information-modelling`
 - [Bullet Physics](concepts/bullet-physics.md) — `urn:ngm:class:bullet-physics`
 - [Bulletproofs](concepts/bulletproofs.md) — `urn:ngm:class:bulletproofs`
+- [Bullwhip Effect](concepts/bullwhip-effect.md) — `urn:ngm:class:bullwhip-effect`
 - [Bundle Adjustment](concepts/bundle-adjustment.md) — `urn:ngm:class:bundle-adjustment`
 - [Buoy](concepts/buoy.md) — `urn:ngm:class:buoy`
 - [Burn-and-Mint Bridge](concepts/burn-and-mint-bridge.md) — `urn:ngm:class:burn-and-mint-bridge`
@@ -1238,6 +1258,7 @@ concept_count: 9244
 - [Capability Forecasting](concepts/capability-forecasting.md) — `urn:ngm:class:capability-forecasting`
 - [Capability Overhang](concepts/capability-overhang.md) — `urn:ngm:class:capability-overhang`
 - [Capacity Planning](concepts/capacity-planning.md) — `urn:ngm:class:capacity-planning`
+- [Capacity Requirements Planning](concepts/capacity-requirements-planning.md) — `urn:ngm:class:capacity-requirements-planning`
 - [Capital Adequacy](concepts/capital-adequacy.md) — `urn:ngm:class:capital-adequacy`
 - [Capital Allocation](concepts/capital-allocation.md) — `urn:ngm:class:capital-allocation`
 - [Capital Efficiency](concepts/capital-efficiency.md) — `urn:ngm:class:capital-efficiency`
@@ -1278,12 +1299,14 @@ concept_count: 9244
 - [Case Management](concepts/case-management.md) — `urn:ngm:class:case-management`
 - [Case Management System](concepts/case-management-system.md) — `urn:ngm:class:case-management-system`
 - [Cash App](concepts/cash-app.md) — `urn:ngm:class:cash-app`
+- [Cash-to-Cash Cycle Time](concepts/cash-to-cash-cycle-time.md) — `urn:ngm:class:cash-to-cash-cycle-time`
 - [Cashu](concepts/cashu.md) — `urn:ngm:class:cashu`
 - [Casper Ffg](concepts/casper-ffg.md) — `urn:ngm:class:casper-ffg`
 - [AI Infrastructure (Artificial Intelligence)](concepts/cat-ai-infrastructure.md) — `urn:ngm:class:cat-ai-infrastructure`
 - [Catastrophic Risk Assessment](concepts/catastrophic-risk-assessment.md) — `urn:ngm:class:catastrophic-risk-assessment`
 - [Catastrophic Risk Reduction](concepts/catastrophic-risk-reduction.md) — `urn:ngm:class:catastrophic-risk-reduction`
 - [Category Hierarchies](concepts/category-hierarchies.md) — `urn:ngm:class:category-hierarchies`
+- [Category Management](concepts/category-management.md) — `urn:ngm:class:category-management`
 - [Causal Attention](concepts/causal-attention.md) — `urn:ngm:class:causal-attention`
 - [Causal Inference](concepts/causal-inference.md) — `urn:ngm:class:causal-inference`
 - [Causal Language Modelling](concepts/causal-language-modelling.md) — `urn:ngm:class:causal-language-modelling`
@@ -1323,6 +1346,7 @@ concept_count: 9244
 - [Centralised Application](concepts/centralized-application.md) — `urn:ngm:class:centralized-application`
 - [Centralized Identity Provider](concepts/centralized-identity-provider.md) — `urn:ngm:class:centralized-identity-provider`
 - [Centralized Swarm Control](concepts/centralized-swarm-control.md) — `urn:ngm:class:centralized-swarm-control`
+- [Centre of Gravity Analysis](concepts/centre-of-gravity-analysis.md) — `urn:ngm:class:centre-of-gravity-analysis`
 - [Centrifuge](concepts/centrifuge.md) — `urn:ngm:class:centrifuge`
 - [CEO-led AI Strategy](concepts/ceo-led-ai-strategy.md) — `urn:ngm:class:ceo-led-ai-strategy`
 - [Ceph](concepts/ceph.md) — `urn:ngm:class:ceph`
@@ -1335,6 +1359,7 @@ concept_count: 9244
 - [CFTC](concepts/cftc.md) — `urn:ngm:class:cftc`
 - [ChaCha20-Poly1305](concepts/cha-cha20-poly1305.md) — `urn:ngm:class:cha-cha20-poly1305`
 - [Chain of Custody](concepts/chain-of-custody.md) — `urn:ngm:class:chain-of-custody`
+- [Chain of Custody Model](concepts/chain-of-custody-model.md) — `urn:ngm:class:chain-of-custody-model`
 - [Chain of Thought](concepts/chain-of-thought.md) — `urn:ngm:class:chain-of-thought`
 - [Chain-of-Thought Prompting](concepts/chain-of-thought-prompting.md) — `urn:ngm:class:chain-of-thought-prompting`
 - [Chain-of-Thought Reasoning](concepts/chain-of-thought-reasoning.md) — `urn:ngm:class:chain-of-thought-reasoning`
@@ -1372,6 +1397,7 @@ concept_count: 9244
 - [Chinese AI Ecosystem](concepts/chinese-ai-ecosystem.md) — `urn:ngm:class:chinese-ai-ecosystem`
 - [Chinese Seal Art AI Classification Pipeline](concepts/chinese-seal-art-ai-classification-pipeline.md) — `urn:ngm:class:chinese-seal-art-ai-classification-pipeline`
 - [Chivo Wallet](concepts/chivo-wallet.md) — `urn:ngm:class:chivo-wallet`
+- [Chokepoint Disruption](concepts/chokepoint-disruption.md) — `urn:ngm:class:chokepoint-disruption`
 - [Chromosphere](concepts/chromosphere.md) — `urn:ngm:class:chromosphere`
 - [Chunking](concepts/chunking.md) — `urn:ngm:class:chunking`
 - [CI/CD](concepts/ci-cd.md) — `urn:ngm:class:ci-cd`
@@ -1382,6 +1408,7 @@ concept_count: 9244
 - [Circuit Breaker](concepts/circuit-breaker.md) — `urn:ngm:class:circuit-breaker`
 - [Circular Economy](concepts/circular-economy.md) — `urn:ngm:class:circular-economy`
 - [Circular Orbit](concepts/circular-orbit.md) — `urn:ngm:class:circular-orbit`
+- [Circular Supply Chain](concepts/circular-supply-chain.md) — `urn:ngm:class:circular-supply-chain`
 - [Circulating Supply](concepts/circulating-supply.md) — `urn:ngm:class:circulating-supply`
 - [Cis-Mars Space Environment](concepts/cis-mars-space-environment.md) — `urn:ngm:class:cis-mars-space-environment`
 - [Cis-Mars Space Radiation Environment](concepts/cis-mars-space-radiation-environment.md) — `urn:ngm:class:cis-mars-space-radiation-environment`
@@ -1409,6 +1436,7 @@ concept_count: 9244
 - [Clearing And Settlement](concepts/clearing-and-settlement.md) — `urn:ngm:class:clearing-and-settlement`
 - [Clearing House](concepts/clearing-house.md) — `urn:ngm:class:clearing-house`
 - [CLI Multi-Agent Systems](concepts/cli-multi-agent-systems.md) — `urn:ngm:class:cli-multi-agent-systems`
+- [Click and Collect](concepts/click-and-collect.md) — `urn:ngm:class:click-and-collect`
 - [Client-Server Architecture](concepts/client-server-architecture.md) — `urn:ngm:class:client-server-architecture`
 - [Client-Side Validation](concepts/client-side-validation.md) — `urn:ngm:class:client-side-validation`
 - [Client-Side Validation Theory](concepts/client-side-validation-theory.md) — `urn:ngm:class:client-side-validation-theory`
@@ -1422,6 +1450,7 @@ concept_count: 9244
 - [Climate Governance](concepts/climate-governance.md) — `urn:ngm:class:climate-governance`
 - [Climate Modelling](concepts/climate-modelling.md) — `urn:ngm:class:climate-modelling`
 - [Climate Policy](concepts/climate-policy.md) — `urn:ngm:class:climate-policy`
+- [Climate-Related Supply Chain Risk](concepts/climate-related-supply-chain-risk.md) — `urn:ngm:class:climate-related-supply-chain-risk`
 - [Climate Risk](concepts/climate-risk.md) — `urn:ngm:class:climate-risk`
 - [Climate Risk Assessment](concepts/climate-risk-assessment.md) — `urn:ngm:class:climate-risk-assessment`
 - [Climate Scenario Analysis](concepts/climate-scenario-analysis.md) — `urn:ngm:class:climate-scenario-analysis`
@@ -1453,6 +1482,7 @@ concept_count: 9244
 - [Cloud Storage Infrastructure](concepts/cloud-storage-infrastructure.md) — `urn:ngm:class:cloud-storage-infrastructure`
 - [Clustered Data State](concepts/clustered-data-state.md) — `urn:ngm:class:clustered-data-state`
 - [Clustering](concepts/clustering.md) — `urn:ngm:class:clustering`
+- [CMA CGM](concepts/cma-cgm.md) — `urn:ngm:class:cma-cgm`
 - [CNC Machining](concepts/cnc-machining.md) — `urn:ngm:class:cnc-machining`
 - [CoAP](concepts/co-ap.md) — `urn:ngm:class:co-ap`
 - [Co-creation](concepts/co-creation.md) — `urn:ngm:class:co-creation`
@@ -1487,6 +1517,7 @@ concept_count: 9244
 - [Coinbase](concepts/coinbase.md) — `urn:ngm:class:coinbase`
 - [Coinbase Transaction](concepts/coinbase-transaction.md) — `urn:ngm:class:coinbase-transaction`
 - [ColBERT](concepts/colbert.md) — `urn:ngm:class:colbert`
+- [Cold Chain Logistics](concepts/cold-chain-logistics.md) — `urn:ngm:class:cold-chain-logistics`
 - [Cold Chain Monitoring](concepts/cold-chain-monitoring.md) — `urn:ngm:class:cold-chain-monitoring`
 - [Cold Gas Propulsion](concepts/cold-gas-propulsion.md) — `urn:ngm:class:cold-gas-propulsion`
 - [Cold Storage](concepts/cold-storage.md) — `urn:ngm:class:cold-storage`
@@ -1495,6 +1526,7 @@ concept_count: 9244
 - [Collaboration Technology](concepts/collaboration-technology.md) — `urn:ngm:class:collaboration-technology`
 - [Collaboration Tools](concepts/collaboration-tools.md) — `urn:ngm:class:collaboration-tools`
 - [Collaborative Editing](concepts/collaborative-editing.md) — `urn:ngm:class:collaborative-editing`
+- [Collaborative Planning, Forecasting and Replenishment](concepts/collaborative-planning-forecasting-and-replenishment.md) — `urn:ngm:class:collaborative-planning-forecasting-and-replenishment`
 - [Collaborative Systems Modality](concepts/collaborative-systems-modality.md) — `urn:ngm:class:collaborative-systems-modality`
 - [Collaborative Design](concepts/collaborative-systems-modality-design.md) — `urn:ngm:class:collaborative-systems-modality-design`
 - [Collaborative Filtering](concepts/collaborative-systems-modality-filtering.md) — `urn:ngm:class:collaborative-systems-modality-filtering`
@@ -1591,6 +1623,7 @@ concept_count: 9244
 - [Compliant Manipulation](concepts/compliant-manipulation.md) — `urn:ngm:class:compliant-manipulation`
 - [Compliant Motion](concepts/compliant-motion.md) — `urn:ngm:class:compliant-motion`
 - [Component](concepts/component.md) — `urn:ngm:class:component`
+- [Component Shortage](concepts/component-shortage.md) — `urn:ngm:class:component-shortage`
 - [Composability](concepts/composability.md) — `urn:ngm:class:composability`
 - [Composable Architecture](concepts/composable-architecture.md) — `urn:ngm:class:composable-architecture`
 - [Composite AI](concepts/composite-ai.md) — `urn:ngm:class:composite-ai`
@@ -1720,6 +1753,7 @@ concept_count: 9244
 - [Container Orchestration](concepts/container-orchestration.md) — `urn:ngm:class:container-orchestration`
 - [Container Registry](concepts/container-registry.md) — `urn:ngm:class:container-registry`
 - [Container Runtime](concepts/container-runtime.md) — `urn:ngm:class:container-runtime`
+- [Container Shipping](concepts/container-shipping.md) — `urn:ngm:class:container-shipping`
 - [Containerisation](concepts/containerisation.md) — `urn:ngm:class:containerisation`
 - [Content-Addressed Storage](concepts/content-addressed-storage.md) — `urn:ngm:class:content-addressed-storage`
 - [Content Addressing](concepts/content-addressing.md) — `urn:ngm:class:content-addressing`
@@ -1772,9 +1806,11 @@ concept_count: 9244
 - [continuous improvement](concepts/continuous-improvement.md) — `urn:ngm:class:continuous-improvement`
 - [Continuous Integration](concepts/continuous-integration.md) — `urn:ngm:class:continuous-integration`
 - [Continuous Monitoring](concepts/continuous-monitoring.md) — `urn:ngm:class:continuous-monitoring`
+- [Continuous Review Policy](concepts/continuous-review-policy.md) — `urn:ngm:class:continuous-review-policy`
 - [Continuous Training](concepts/continuous-training.md) — `urn:ngm:class:continuous-training`
 - [Contract Code](concepts/contract-code.md) — `urn:ngm:class:contract-code`
 - [Contract Enforcement](concepts/contract-enforcement.md) — `urn:ngm:class:contract-enforcement`
+- [Contract Manufacturer](concepts/contract-manufacturer.md) — `urn:ngm:class:contract-manufacturer`
 - [Contract Net Protocol](concepts/contract-net-protocol.md) — `urn:ngm:class:contract-net-protocol`
 - [Contract Theory](concepts/contract-theory.md) — `urn:ngm:class:contract-theory`
 - [Contractum Language](concepts/contractum-language.md) — `urn:ngm:class:contractum-language`
@@ -1829,6 +1865,7 @@ concept_count: 9244
 - [Coreference Resolution](concepts/coreference-resolution.md) — `urn:ngm:class:coreference-resolution`
 - [Coronal Mass Ejection](concepts/coronal-mass-ejection.md) — `urn:ngm:class:coronal-mass-ejection`
 - [Corporate Governance](concepts/corporate-governance.md) — `urn:ngm:class:corporate-governance`
+- [Corporate Sustainability Due Diligence Directive](concepts/corporate-sustainability-due-diligence-directive.md) — `urn:ngm:class:corporate-sustainability-due-diligence-directive`
 - [Corporate Sustainability Reporting](concepts/corporate-sustainability-reporting.md) — `urn:ngm:class:corporate-sustainability-reporting`
 - [Corporate Sustainability Reporting Directive](concepts/corporate-sustainability-reporting-directive.md) — `urn:ngm:class:corporate-sustainability-reporting-directive`
 - [Corporate Tax Compliance Framework](concepts/corporate-tax-compliance-framework.md) — `urn:ngm:class:corporate-tax-compliance-framework`
@@ -1851,6 +1888,7 @@ concept_count: 9244
 - [Cost Function](concepts/cost-function.md) — `urn:ngm:class:cost-function`
 - [Cost Optimisation](concepts/cost-optimisation.md) — `urn:ngm:class:cost-optimisation`
 - [Cost-Per-Intelligence](concepts/cost-per-intelligence.md) — `urn:ngm:class:cost-per-intelligence`
+- [Cost to Serve](concepts/cost-to-serve.md) — `urn:ngm:class:cost-to-serve`
 - [Costmap](concepts/costmap.md) — `urn:ngm:class:costmap`
 - [Counter-Terrorist Financing](concepts/counter-terrorist-financing.md) — `urn:ngm:class:counter-terrorist-financing`
 - [Counterfactual Explanation](concepts/counterfactual-explanation.md) — `urn:ngm:class:counterfactual-explanation`
@@ -1892,6 +1930,7 @@ concept_count: 9244
 - [CrewAI](concepts/crew-ai.md) — `urn:ngm:class:crew-ai`
 - [Crew Health Monitoring](concepts/crew-health-monitoring.md) — `urn:ngm:class:crew-health-monitoring`
 - [Crewed Spacecraft](concepts/crewed-spacecraft.md) — `urn:ngm:class:crewed-spacecraft`
+- [Critical Tracking Event](concepts/critical-tracking-event.md) — `urn:ngm:class:critical-tracking-event`
 - [CRM](concepts/crm.md) — `urn:ngm:class:crm`
 - [CRM Integration](concepts/crm-integration.md) — `urn:ngm:class:crm-integration`
 - [CRM Systems](concepts/crm-systems.md) — `urn:ngm:class:crm-systems`
@@ -1922,6 +1961,7 @@ concept_count: 9244
 - [Cross-Chain NFT](concepts/cross-chain-nft.md) — `urn:ngm:class:cross-chain-nft`
 - [Cross-Chain Swap](concepts/cross-chain-swap.md) — `urn:ngm:class:cross-chain-swap`
 - [Cross-DAO Benchmarking](concepts/cross-dao-benchmarking.md) — `urn:ngm:class:cross-dao-benchmarking`
+- [Cross-Docking](concepts/cross-docking.md) — `urn:ngm:class:cross-docking`
 - [Cross Domain Authentication](concepts/cross-domain-authentication.md) — `urn:ngm:class:cross-domain-authentication`
 - [Cross Domain Bridge](concepts/cross-domain-bridge.md) — `urn:ngm:class:cross-domain-bridge`
 - [Cross-Domain Reference Corpus](concepts/cross-domain-reference-corpus.md) — `urn:ngm:class:cross-domain-reference-corpus`
@@ -2019,12 +2059,19 @@ concept_count: 9244
 - [Customer Experience](concepts/customer-experience.md) — `urn:ngm:class:customer-experience`
 - [Customer Experience Management](concepts/customer-experience-management.md) — `urn:ngm:class:customer-experience-management`
 - [Customer Lifetime Value](concepts/customer-lifetime-value.md) — `urn:ngm:class:customer-lifetime-value`
+- [Customer Order Decoupling Point](concepts/customer-order-decoupling-point.md) — `urn:ngm:class:customer-order-decoupling-point`
 - [Customer Retention](concepts/customer-retention.md) — `urn:ngm:class:customer-retention`
 - [Customer Rewards](concepts/customer-rewards.md) — `urn:ngm:class:customer-rewards`
 - [Customer Service Automation](concepts/customer-service-automation.md) — `urn:ngm:class:customer-service-automation`
 - [Customer Support](concepts/customer-support.md) — `urn:ngm:class:customer-support`
 - [Customer Support Automation](concepts/customer-support-automation.md) — `urn:ngm:class:customer-support-automation`
 - [Customer World Model](concepts/customer-world-model.md) — `urn:ngm:class:customer-world-model`
+- [Customs Broker](concepts/customs-broker.md) — `urn:ngm:class:customs-broker`
+- [Customs Clearance](concepts/customs-clearance.md) — `urn:ngm:class:customs-clearance`
+- [Customs Declaration](concepts/customs-declaration.md) — `urn:ngm:class:customs-declaration`
+- [Customs Duty](concepts/customs-duty.md) — `urn:ngm:class:customs-duty`
+- [Customs Procedure](concepts/customs-procedure.md) — `urn:ngm:class:customs-procedure`
+- [Customs Regulation](concepts/customs-regulation.md) — `urn:ngm:class:customs-regulation`
 - [Customs Trade Facilitation](concepts/customs-trade-facilitation.md) — `urn:ngm:class:customs-trade-facilitation`
 - [Cut Mix](concepts/cut-mix.md) — `urn:ngm:class:cut-mix`
 - [CVPR](concepts/cvpr.md) — `urn:ngm:class:cvpr`
@@ -2039,6 +2086,7 @@ concept_count: 9244
 - [Cybersecurity Policy](concepts/cybersecurity-policy.md) — `urn:ngm:class:cybersecurity-policy`
 - [Cybersecurity Risk Management](concepts/cybersecurity-risk-management.md) — `urn:ngm:class:cybersecurity-risk-management`
 - [Cybersecurity Standard](concepts/cybersecurity-standard.md) — `urn:ngm:class:cybersecurity-standard`
+- [Cycle Counting](concepts/cycle-counting.md) — `urn:ngm:class:cycle-counting`
 - [Cycloidal Drive](concepts/cycloidal-drive.md) — `urn:ngm:class:cycloidal-drive`
 - [Cylindrical Robot](concepts/cylindrical-robot.md) — `urn:ngm:class:cylindrical-robot`
 - [Cypher Query Language](concepts/cypher-query-language.md) — `urn:ngm:class:cypher-query-language`
@@ -2277,6 +2325,7 @@ concept_count: 9244
 - [DeFi Protocol](concepts/defi-protocol.md) — `urn:ngm:class:defi-protocol`
 - [Definitions and frameworks for Metaverse](concepts/definitions-and-frameworks-for-metaverse.md) — `urn:ngm:class:definitions-and-frameworks-for-metaverse`
 - [Deflationary Token](concepts/deflationary-token.md) — `urn:ngm:class:deflationary-token`
+- [Deforestation-Free Sourcing](concepts/deforestation-free-sourcing.md) — `urn:ngm:class:deforestation-free-sourcing`
 - [Deforestation Monitoring](concepts/deforestation-monitoring.md) — `urn:ngm:class:deforestation-monitoring`
 - [Delay-tolerant Space Networking](concepts/delay-tolerant-space-networking.md) — `urn:ngm:class:delay-tolerant-space-networking`
 - [Delegate Democracy](concepts/delegate-democracy.md) — `urn:ngm:class:delegate-democracy`
@@ -2286,14 +2335,18 @@ concept_count: 9244
 - [Delegation Registry](concepts/delegation-registry.md) — `urn:ngm:class:delegation-registry`
 - [Delegation System](concepts/delegation-system.md) — `urn:ngm:class:delegation-system`
 - [Deliberate Demonstration](concepts/deliberate-demonstration.md) — `urn:ngm:class:deliberate-demonstration`
+- [Delivered Duty Paid](concepts/delivered-duty-paid.md) — `urn:ngm:class:delivered-duty-paid`
+- [Delivery Performance Measure](concepts/delivery-performance-measure.md) — `urn:ngm:class:delivery-performance-measure`
 - [Delivery-Versus-Payment](concepts/delivery-versus-payment.md) — `urn:ngm:class:delivery-versus-payment`
 - [Delta Differential One-way Ranging](concepts/delta-differential-one-way-ranging.md) — `urn:ngm:class:delta-differential-one-way-ranging`
 - [Delta Robot](concepts/delta-robot.md) — `urn:ngm:class:delta-robot`
 - [Delta-v](concepts/delta-v.md) — `urn:ngm:class:delta-v`
 - [Demand Forecasting](concepts/demand-forecasting.md) — `urn:ngm:class:demand-forecasting`
+- [Demand Management](concepts/demand-management.md) — `urn:ngm:class:demand-management`
 - [Demand Planning](concepts/demand-planning.md) — `urn:ngm:class:demand-planning`
 - [Demand Response](concepts/demand-response.md) — `urn:ngm:class:demand-response`
 - [Demand Response Mining](concepts/demand-response-mining.md) — `urn:ngm:class:demand-response-mining`
+- [Demand Sensing](concepts/demand-sensing.md) — `urn:ngm:class:demand-sensing`
 - [Demand-Side Response](concepts/demand-side-response.md) — `urn:ngm:class:demand-side-response`
 - [Democratic Engagement](concepts/democratic-engagement.md) — `urn:ngm:class:democratic-engagement`
 - [Democratic Governance](concepts/democratic-governance.md) — `urn:ngm:class:democratic-governance`
@@ -2343,6 +2396,7 @@ concept_count: 9244
 - [DEX](concepts/dex.md) — `urn:ngm:class:dex`
 - [Dexterous Grasping](concepts/dexterous-grasping.md) — `urn:ngm:class:dexterous-grasping`
 - [Dexterous Manipulation](concepts/dexterous-manipulation.md) — `urn:ngm:class:dexterous-manipulation`
+- [DHL Supply Chain](concepts/dhl-supply-chain.md) — `urn:ngm:class:dhl-supply-chain`
 - [DiLoCo](concepts/di-lo-co.md) — `urn:ngm:class:di-lo-co`
 - [Diagrams as Code](concepts/diagrams-as-code.md) — `urn:ngm:class:diagrams-as-code`
 - [Dialogue Management](concepts/dialogue-management.md) — `urn:ngm:class:dialogue-management`
@@ -2491,6 +2545,7 @@ concept_count: 9244
 - [Digital Technology](concepts/digital-technology.md) — `urn:ngm:class:digital-technology`
 - [Digital Technology Access Equity](concepts/digital-technology-access-equity.md) — `urn:ngm:class:digital-technology-access-equity`
 - [Digital Terrain Model](concepts/digital-terrain-model.md) — `urn:ngm:class:digital-terrain-model`
+- [Digital Trade Platform](concepts/digital-trade-platform.md) — `urn:ngm:class:digital-trade-platform`
 - [Digital Transformation](concepts/digital-transformation.md) — `urn:ngm:class:digital-transformation`
 - [Digital Trust](concepts/digital-trust.md) — `urn:ngm:class:digital-trust`
 - [Digital Twin](concepts/digital-twin.md) — `urn:ngm:class:digital-twin`
@@ -2519,6 +2574,7 @@ concept_count: 9244
 - [Direct Air Capture](concepts/direct-air-capture.md) — `urn:ngm:class:direct-air-capture`
 - [Direct Answer Prompting](concepts/direct-answer-prompting.md) — `urn:ngm:class:direct-answer-prompting`
 - [Direct Preference Optimisation](concepts/direct-preference-optimisation.md) — `urn:ngm:class:direct-preference-optimisation`
+- [Direct Procurement](concepts/direct-procurement.md) — `urn:ngm:class:direct-procurement`
 - [Direct3D](concepts/direct3d.md) — `urn:ngm:class:direct3d`
 - [Directed Acyclic Graph](concepts/directed-acyclic-graph.md) — `urn:ngm:class:directed-acyclic-graph`
 - [Directed Acyclic Graph Execution](concepts/directed-acyclic-graph-execution.md) — `urn:ngm:class:directed-acyclic-graph-execution`
@@ -2588,6 +2644,9 @@ concept_count: 9244
 - [Distributed Trust](concepts/distributed-trust.md) — `urn:ngm:class:distributed-trust`
 - [Distributed Validator Technology](concepts/distributed-validator-technology.md) — `urn:ngm:class:distributed-validator-technology`
 - [Distributed Work](concepts/distributed-work.md) — `urn:ngm:class:distributed-work`
+- [Distribution Centre](concepts/distribution-centre.md) — `urn:ngm:class:distribution-centre`
+- [Distribution Requirements Planning](concepts/distribution-requirements-planning.md) — `urn:ngm:class:distribution-requirements-planning`
+- [Distribution Strategy](concepts/distribution-strategy.md) — `urn:ngm:class:distribution-strategy`
 - [Distributor](concepts/distributor.md) — `urn:ngm:class:distributor`
 - [Disturbance Rejection](concepts/disturbance-rejection.md) — `urn:ngm:class:disturbance-rejection`
 - [Diversity, Non-Discrimination, and Fairness](concepts/diversity-non-discrimination-and-fairness.md) — `urn:ngm:class:diversity-non-discrimination-and-fairness`
@@ -2603,6 +2662,7 @@ concept_count: 9244
 - [Document Store](concepts/document-store.md) — `urn:ngm:class:document-store`
 - [Document Summarisation](concepts/document-summarisation.md) — `urn:ngm:class:document-summarisation`
 - [Document Verification](concepts/document-verification.md) — `urn:ngm:class:document-verification`
+- [Documentary Letter of Credit](concepts/documentary-letter-of-credit.md) — `urn:ngm:class:documentary-letter-of-credit`
 - [Documentation](concepts/documentation.md) — `urn:ngm:class:documentation`
 - [Documentation As Code](concepts/documentation-as-code.md) — `urn:ngm:class:documentation-as-code`
 - [Documentation Generation](concepts/documentation-generation.md) — `urn:ngm:class:documentation-generation`
@@ -2629,13 +2689,16 @@ concept_count: 9244
 - [Drift Ice](concepts/drift-ice.md) — `urn:ngm:class:drift-ice`
 - [Driver Software](concepts/driver-software.md) — `urn:ngm:class:driver-software`
 - [Drone Navigation](concepts/drone-navigation.md) — `urn:ngm:class:drone-navigation`
+- [Drop Shipping](concepts/drop-shipping.md) — `urn:ngm:class:drop-shipping`
 - [Dropout](concepts/dropout.md) — `urn:ngm:class:dropout`
 - [Drought Monitoring](concepts/drought-monitoring.md) — `urn:ngm:class:drought-monitoring`
 - [Drug Discovery](concepts/drug-discovery.md) — `urn:ngm:class:drug-discovery`
 - [Drug Discovery AI](concepts/drug-discovery-ai.md) — `urn:ngm:class:drug-discovery-ai`
+- [Dry Port](concepts/dry-port.md) — `urn:ngm:class:dry-port`
 - [DSCSA Compliance](concepts/dscsa-compliance.md) — `urn:ngm:class:dscsa-compliance`
 - [DSPy](concepts/dspy.md) — `urn:ngm:class:dspy`
 - [DTCC](concepts/dtcc.md) — `urn:ngm:class:dtcc`
+- [Dual Sourcing](concepts/dual-sourcing.md) — `urn:ngm:class:dual-sourcing`
 - [Dublin Core](concepts/dublin-core.md) — `urn:ngm:class:dublin-core`
 - [Dune Analytics](concepts/dune-analytics.md) — `urn:ngm:class:dune-analytics`
 - [Dutch Auction](concepts/dutch-auction.md) — `urn:ngm:class:dutch-auction`
@@ -2724,6 +2787,7 @@ concept_count: 9244
 - [Economic Mechanism](concepts/economic-mechanism.md) — `urn:ngm:class:economic-mechanism`
 - [Economic Model](concepts/economic-model.md) — `urn:ngm:class:economic-model`
 - [Economic Multiplier Effect](concepts/economic-multiplier-effect.md) — `urn:ngm:class:economic-multiplier-effect`
+- [Economic Order Quantity](concepts/economic-order-quantity.md) — `urn:ngm:class:economic-order-quantity`
 - [Economic Parameters](concepts/economic-parameters.md) — `urn:ngm:class:economic-parameters`
 - [Economic Participation](concepts/economic-participation.md) — `urn:ngm:class:economic-participation`
 - [Economic Security](concepts/economic-security.md) — `urn:ngm:class:economic-security`
@@ -2754,6 +2818,7 @@ concept_count: 9244
 - [Edge Network](concepts/edge-network.md) — `urn:ngm:class:edge-network`
 - [Edge Orchestration](concepts/edge-orchestration.md) — `urn:ngm:class:edge-orchestration`
 - [Edge Server](concepts/edge-server.md) — `urn:ngm:class:edge-server`
+- [EDIFACT](concepts/edifact.md) — `urn:ngm:class:edifact`
 - [Education](concepts/education.md) — `urn:ngm:class:education`
 - [Education and AI](concepts/education-and-ai.md) — `urn:ngm:class:education-and-ai`
 - [Education Metaverse](concepts/education-metaverse.md) — `urn:ngm:class:education-metaverse`
@@ -2764,6 +2829,7 @@ concept_count: 9244
 - [Educational Technology](concepts/educational-technology.md) — `urn:ngm:class:educational-technology`
 - [Effective Isotropic Radiated Power](concepts/effective-isotropic-radiated-power.md) — `urn:ngm:class:effective-isotropic-radiated-power`
 - [Efficiency AI](concepts/efficiency-ai.md) — `urn:ngm:class:efficiency-ai`
+- [Efficient Supply Chain](concepts/efficient-supply-chain.md) — `urn:ngm:class:efficient-supply-chain`
 - [eIDAS Regulation](concepts/eidas-regulation.md) — `urn:ngm:class:eidas-regulation`
 - [EigenLayer](concepts/eigen-layer.md) — `urn:ngm:class:eigen-layer`
 - [EIP-1271](concepts/eip-1271.md) — `urn:ngm:class:eip-1271`
@@ -2785,6 +2851,8 @@ concept_count: 9244
 - [Electricity Consumption](concepts/electricity-consumption.md) — `urn:ngm:class:electricity-consumption`
 - [Electromagnetic Compatibility Testing](concepts/electromagnetic-compatibility-testing.md) — `urn:ngm:class:electromagnetic-compatibility-testing`
 - [Electromyography](concepts/electromyography.md) — `urn:ngm:class:electromyography`
+- [Electronic Bill of Lading](concepts/electronic-bill-of-lading.md) — `urn:ngm:class:electronic-bill-of-lading`
+- [Electronic Data Interchange](concepts/electronic-data-interchange.md) — `urn:ngm:class:electronic-data-interchange`
 - [Electronic Design Automation](concepts/electronic-design-automation.md) — `urn:ngm:class:electronic-design-automation`
 - [Electronic Health Record](concepts/electronic-health-record.md) — `urn:ngm:class:electronic-health-record`
 - [Electronic Signature](concepts/electronic-signature.md) — `urn:ngm:class:electronic-signature`
@@ -2864,6 +2932,7 @@ concept_count: 9244
 - [Enforcement Action](concepts/enforcement-action.md) — `urn:ngm:class:enforcement-action`
 - [Enforcement Mechanism](concepts/enforcement-mechanism.md) — `urn:ngm:class:enforcement-mechanism`
 - [Engagement Optimisation](concepts/engagement-optimisation.md) — `urn:ngm:class:engagement-optimisation`
+- [Engineer-to-Order](concepts/engineer-to-order.md) — `urn:ngm:class:engineer-to-order`
 - [Enhanced Due Diligence](concepts/enhanced-due-diligence.md) — `urn:ngm:class:enhanced-due-diligence`
 - [Enhanced Vegetation Index](concepts/enhanced-vegetation-index.md) — `urn:ngm:class:enhanced-vegetation-index`
 - [ENS](concepts/ens.md) — `urn:ngm:class:ens`
@@ -3144,6 +3213,7 @@ concept_count: 9244
 - [Facial Animation](concepts/facial-animation.md) — `urn:ngm:class:facial-animation`
 - [Facial Capture System](concepts/facial-capture-system.md) — `urn:ngm:class:facial-capture-system`
 - [Facial Recognition](concepts/facial-recognition.md) — `urn:ngm:class:facial-recognition`
+- [Facility Location Problem](concepts/facility-location-problem.md) — `urn:ngm:class:facility-location-problem`
 - [Factor Graph](concepts/factor-graph.md) — `urn:ngm:class:factor-graph`
 - [Failover](concepts/failover.md) — `urn:ngm:class:failover`
 - [Failure Mode And Effects Analysis](concepts/failure-mode-and-effects-analysis.md) — `urn:ngm:class:failure-mode-and-effects-analysis`
@@ -3207,6 +3277,7 @@ concept_count: 9244
 - [Federation](concepts/federation.md) — `urn:ngm:class:federation`
 - [Federation Protocol](concepts/federation-protocol.md) — `urn:ngm:class:federation-protocol`
 - [Federation Surface](concepts/federation-surface.md) — `urn:ngm:class:federation-surface`
+- [FedEx](concepts/fedex.md) — `urn:ngm:class:fedex`
 - [Fedimint](concepts/fedimint.md) — `urn:ngm:class:fedimint`
 - [Fee Market](concepts/fee-market.md) — `urn:ngm:class:fee-market`
 - [Fee Tier](concepts/fee-tier.md) — `urn:ngm:class:fee-tier`
@@ -3239,6 +3310,7 @@ concept_count: 9244
 - [File Storage](concepts/file-storage.md) — `urn:ngm:class:file-storage`
 - [File System](concepts/file-system.md) — `urn:ngm:class:file-system`
 - [Filecoin](concepts/filecoin.md) — `urn:ngm:class:filecoin`
+- [Fill Rate](concepts/fill-rate.md) — `urn:ngm:class:fill-rate`
 - [Fill Value](concepts/fill-value.md) — `urn:ngm:class:fill-value`
 - [Film Production](concepts/film-production.md) — `urn:ngm:class:film-production`
 - [Film VFX](concepts/film-vfx.md) — `urn:ngm:class:film-vfx`
@@ -3271,6 +3343,7 @@ concept_count: 9244
 - [Financial Trading](concepts/financial-trading.md) — `urn:ngm:class:financial-trading`
 - [Financial Transactions](concepts/financial-transactions.md) — `urn:ngm:class:financial-transactions`
 - [Fine-Tuning](concepts/fine-tuning.md) — `urn:ngm:class:fine-tuning`
+- [Finished Goods Inventory](concepts/finished-goods-inventory.md) — `urn:ngm:class:finished-goods-inventory`
 - [Finite Element Analysis](concepts/finite-element-analysis.md) — `urn:ngm:class:finite-element-analysis`
 - [Finite Field](concepts/finite-field.md) — `urn:ngm:class:finite-field`
 - [Finite Field Arithmetic](concepts/finite-field-arithmetic.md) — `urn:ngm:class:finite-field-arithmetic`
@@ -3293,6 +3366,7 @@ concept_count: 9244
 - [Flat Panel Display](concepts/flat-panel-display.md) — `urn:ngm:class:flat-panel-display`
 - [Fleet Management](concepts/fleet-management.md) — `urn:ngm:class:fleet-management`
 - [Flexible Manufacturing](concepts/flexible-manufacturing.md) — `urn:ngm:class:flexible-manufacturing`
+- [Flexport](concepts/flexport.md) — `urn:ngm:class:flexport`
 - [Flight Control System](concepts/flight-control-system.md) — `urn:ngm:class:flight-control-system`
 - [Flight Software](concepts/flight-software.md) — `urn:ngm:class:flight-software`
 - [Floating-Point Arithmetic](concepts/floating-point-arithmetic.md) — `urn:ngm:class:floating-point-arithmetic`
@@ -3308,12 +3382,14 @@ concept_count: 9244
 - [Fog Computing](concepts/fog-computing.md) — `urn:ngm:class:fog-computing`
 - [Food Safety](concepts/food-safety.md) — `urn:ngm:class:food-safety`
 - [Food Safety Blockchain](concepts/food-safety-blockchain.md) — `urn:ngm:class:food-safety-blockchain`
+- [Food Supply Chain](concepts/food-supply-chain.md) — `urn:ngm:class:food-supply-chain`
 - [Fooocus](concepts/fooocus.md) — `urn:ngm:class:fooocus`
 - [Force Control](concepts/force-control.md) — `urn:ngm:class:force-control`
 - [Force Feedback](concepts/force-feedback.md) — `urn:ngm:class:force-feedback`
 - [Force Sensor](concepts/force-sensor.md) — `urn:ngm:class:force-sensor`
 - [Force Torque Control](concepts/force-torque-control.md) — `urn:ngm:class:force-torque-control`
 - [Force Torque Sensor](concepts/force-torque-sensor.md) — `urn:ngm:class:force-torque-sensor`
+- [Forecast Accuracy](concepts/forecast-accuracy.md) — `urn:ngm:class:forecast-accuracy`
 - [Forecast Horizon](concepts/forecast-horizon.md) — `urn:ngm:class:forecast-horizon`
 - [Foreign Exchange](concepts/foreign-exchange.md) — `urn:ngm:class:foreign-exchange`
 - [Foreign Exchange Market](concepts/foreign-exchange-market.md) — `urn:ngm:class:foreign-exchange-market`
@@ -3345,7 +3421,9 @@ concept_count: 9244
 - [Fourier Analysis](concepts/fourier-analysis.md) — `urn:ngm:class:fourier-analysis`
 - [Fourier Transform](concepts/fourier-transform.md) — `urn:ngm:class:fourier-transform`
 - [Fourth Industrial Revolution](concepts/fourth-industrial-revolution.md) — `urn:ngm:class:fourth-industrial-revolution`
+- [Fourth-Party Logistics Provider](concepts/fourth-party-logistics-provider.md) — `urn:ngm:class:fourth-party-logistics-provider`
 - [Foveated Rendering](concepts/foveated-rendering.md) — `urn:ngm:class:foveated-rendering`
+- [Foxconn](concepts/foxconn.md) — `urn:ngm:class:foxconn`
 - [FPGA](concepts/fpga.md) — `urn:ngm:class:fpga`
 - [Fractional Ownership](concepts/fractional-ownership.md) — `urn:ngm:class:fractional-ownership`
 - [Fractional Reserve Banking](concepts/fractional-reserve-banking.md) — `urn:ngm:class:fractional-reserve-banking`
@@ -3358,13 +3436,25 @@ concept_count: 9244
 - [Fraud Prevention](concepts/fraud-prevention.md) — `urn:ngm:class:fraud-prevention`
 - [Fraud Proof](concepts/fraud-proof.md) — `urn:ngm:class:fraud-proof`
 - [Frazil Ice](concepts/frazil-ice.md) — `urn:ngm:class:frazil-ice`
+- [Free on Board](concepts/free-on-board.md) — `urn:ngm:class:free-on-board`
 - [Free Software](concepts/free-software.md) — `urn:ngm:class:free-software`
 - [Free-space Path Loss](concepts/free-space-path-loss.md) — `urn:ngm:class:free-space-path-loss`
+- [Free Trade Zone](concepts/free-trade-zone.md) — `urn:ngm:class:free-trade-zone`
 - [Free Troposphere](concepts/free-troposphere.md) — `urn:ngm:class:free-troposphere`
 - [Free-Viewpoint Video](concepts/free-viewpoint-video.md) — `urn:ngm:class:free-viewpoint-video`
 - [Freedom Of Expression](concepts/freedom-of-expression.md) — `urn:ngm:class:freedom-of-expression`
+- [Freight Carrier](concepts/freight-carrier.md) — `urn:ngm:class:freight-carrier`
+- [Freight Consolidation](concepts/freight-consolidation.md) — `urn:ngm:class:freight-consolidation`
+- [Freight Containerisation](concepts/freight-containerisation.md) — `urn:ngm:class:freight-containerisation`
+- [Freight Forwarder](concepts/freight-forwarder.md) — `urn:ngm:class:freight-forwarder`
+- [Freight Node](concepts/freight-node.md) — `urn:ngm:class:freight-node`
+- [Freight Service](concepts/freight-service.md) — `urn:ngm:class:freight-service`
+- [Freight Transport Mode](concepts/freight-transport-mode.md) — `urn:ngm:class:freight-transport-mode`
+- [Freight Transport Regulation](concepts/freight-transport-regulation.md) — `urn:ngm:class:freight-transport-regulation`
+- [Freight Transportation](concepts/freight-transportation.md) — `urn:ngm:class:freight-transportation`
 - [Frequentist Statistics](concepts/frequentist-statistics.md) — `urn:ngm:class:frequentist-statistics`
 - [Friction](concepts/friction.md) — `urn:ngm:class:friction`
+- [Friendshoring](concepts/friendshoring.md) — `urn:ngm:class:friendshoring`
 - [Front-Running](concepts/front-running.md) — `urn:ngm:class:front-running`
 - [Frontier AI](concepts/frontier-ai.md) — `urn:ngm:class:frontier-ai`
 - [Frontier AI Competition](concepts/frontier-ai-competition.md) — `urn:ngm:class:frontier-ai-competition`
@@ -3383,6 +3473,8 @@ concept_count: 9244
 - [FSDP](concepts/fsdp.md) — `urn:ngm:class:fsdp`
 - [FSMA 2023](concepts/fsma-2023.md) — `urn:ngm:class:fsma-2023`
 - [FTX](concepts/ftx.md) — `urn:ngm:class:ftx`
+- [Fulfilment Centre](concepts/fulfilment-centre.md) — `urn:ngm:class:fulfilment-centre`
+- [Full Container Load](concepts/full-container-load.md) — `urn:ngm:class:full-container-load`
 - [Full Duplex Communication](concepts/full-duplex-communication.md) — `urn:ngm:class:full-duplex-communication`
 - [Full Fine Tuning](concepts/full-fine-tuning.md) — `urn:ngm:class:full-fine-tuning`
 - [Full Node](concepts/full-node.md) — `urn:ngm:class:full-node`
@@ -3498,6 +3590,7 @@ concept_count: 9244
 - [Geometry](concepts/geometry.md) — `urn:ngm:class:geometry`
 - [Geometry Processing](concepts/geometry-processing.md) — `urn:ngm:class:geometry-processing`
 - [Geometry Shader](concepts/geometry-shader.md) — `urn:ngm:class:geometry-shader`
+- [Geopolitical Supply Chain Risk](concepts/geopolitical-supply-chain-risk.md) — `urn:ngm:class:geopolitical-supply-chain-risk`
 - [Geopolitics](concepts/geopolitics.md) — `urn:ngm:class:geopolitics`
 - [Georeferenced Data State](concepts/georeferenced-data-state.md) — `urn:ngm:class:georeferenced-data-state`
 - [Georeferencing](concepts/georeferencing.md) — `urn:ngm:class:georeferencing`
@@ -3544,9 +3637,12 @@ concept_count: 9244
 - [Global Illumination](concepts/global-illumination.md) — `urn:ngm:class:global-illumination`
 - [Global Inequality](concepts/global-inequality.md) — `urn:ngm:class:global-inequality`
 - [Global Localisation](concepts/global-localisation.md) — `urn:ngm:class:global-localisation`
+- [Global Location Number](concepts/global-location-number.md) — `urn:ngm:class:global-location-number`
 - [Global Metaverse Operations](concepts/global-metaverse-operations.md) — `urn:ngm:class:global-metaverse-operations`
 - [Global Navigation Satellite System](concepts/global-navigation-satellite-system.md) — `urn:ngm:class:global-navigation-satellite-system`
 - [Global Trade](concepts/global-trade.md) — `urn:ngm:class:global-trade`
+- [Global Trade Item Number](concepts/global-trade-item-number.md) — `urn:ngm:class:global-trade-item-number`
+- [Global Trade Management System](concepts/global-trade-management-system.md) — `urn:ngm:class:global-trade-management-system`
 - [Glossary Index](concepts/glossary-index.md) — `urn:ngm:class:glossary-index`
 - [GLSL](concepts/glsl.md) — `urn:ngm:class:glsl`
 - [GLUE Benchmark](concepts/glue-benchmark.md) — `urn:ngm:class:glue-benchmark`
@@ -3591,6 +3687,8 @@ concept_count: 9244
 - [Gold](concepts/gold.md) — `urn:ngm:class:gold`
 - [Gold Standard](concepts/gold-standard.md) — `urn:ngm:class:gold-standard`
 - [Golden Set](concepts/golden-set.md) — `urn:ngm:class:golden-set`
+- [Goods Receiving](concepts/goods-receiving.md) — `urn:ngm:class:goods-receiving`
+- [Goods-to-Person Picking](concepts/goods-to-person-picking.md) — `urn:ngm:class:goods-to-person-picking`
 - [Google AI Technology Corporation](concepts/google-ai-technology-corporation.md) — `urn:ngm:class:google-ai-technology-corporation`
 - [Google Cloud](concepts/google-ai-technology-corporation-cloud.md) — `urn:ngm:class:google-ai-technology-corporation-cloud`
 - [Google DeepMind](concepts/google-ai-technology-corporation-deep-mind.md) — `urn:ngm:class:google-ai-technology-corporation-deep-mind`
@@ -3721,6 +3819,7 @@ concept_count: 9244
 - [GS1](concepts/gs1.md) — `urn:ngm:class:gs1`
 - [Gs1 Digital Link](concepts/gs1-digital-link.md) — `urn:ngm:class:gs1-digital-link`
 - [GS1 EPCIS](concepts/gs1-epcis.md) — `urn:ngm:class:gs1-epcis`
+- [GS1 Identification Key](concepts/gs1-identification-key.md) — `urn:ngm:class:gs1-identification-key`
 - [Guaranteed Bandwidth](concepts/guaranteed-bandwidth.md) — `urn:ngm:class:guaranteed-bandwidth`
 - [Guardrail](concepts/guardrail.md) — `urn:ngm:class:guardrail`
 - [Gyroscope](concepts/gyroscope.md) — `urn:ngm:class:gyroscope`
@@ -3771,6 +3870,7 @@ concept_count: 9244
 - [Harmlessness](concepts/harmlessness.md) — `urn:ngm:class:harmlessness`
 - [Harmonic Drive](concepts/harmonic-drive.md) — `urn:ngm:class:harmonic-drive`
 - [Harmonised Standard](concepts/harmonised-standard.md) — `urn:ngm:class:harmonised-standard`
+- [Harmonised System](concepts/harmonised-system.md) — `urn:ngm:class:harmonised-system`
 - [Harness Configuration Packs](concepts/harness-configuration-packs.md) — `urn:ngm:class:harness-configuration-packs`
 - [Hash Collision](concepts/hash-collision.md) — `urn:ngm:class:hash-collision`
 - [Hash Function](concepts/hash-function.md) — `urn:ngm:class:hash-function`
@@ -3908,9 +4008,11 @@ concept_count: 9244
 - [Human Pose SLAM Capture System](concepts/human-pose-slam-capture-system.md) — `urn:ngm:class:human-pose-slam-capture-system`
 - [Human Preference](concepts/human-preference.md) — `urn:ngm:class:human-preference`
 - [Human Rights](concepts/human-rights.md) — `urn:ngm:class:human-rights`
+- [Human Rights Due Diligence](concepts/human-rights-due-diligence.md) — `urn:ngm:class:human-rights-due-diligence`
 - [Human Rights Law](concepts/human-rights-law.md) — `urn:ngm:class:human-rights-law`
 - [Human-Robot Collaboration](concepts/human-robot-collaboration.md) — `urn:ngm:class:human-robot-collaboration`
 - [Human Robot Interaction](concepts/human-robot-interaction.md) — `urn:ngm:class:human-robot-interaction`
+- [Humanitarian Logistics](concepts/humanitarian-logistics.md) — `urn:ngm:class:humanitarian-logistics`
 - [Humanities Last Exam](concepts/humanities-last-exam.md) — `urn:ngm:class:humanities-last-exam`
 - [Humanity Attestation](concepts/humanity-attestation.md) — `urn:ngm:class:humanity-attestation`
 - [Humanoid Robot](concepts/humanoid-robot.md) — `urn:ngm:class:humanoid-robot`
@@ -4132,9 +4234,11 @@ concept_count: 9244
 - [Inclusive Participation](concepts/inclusive-participation.md) — `urn:ngm:class:inclusive-participation`
 - [Inclusive Xr Design](concepts/inclusive-xr-design.md) — `urn:ngm:class:inclusive-xr-design`
 - [Inclusive Xr Experience](concepts/inclusive-xr-experience.md) — `urn:ngm:class:inclusive-xr-experience`
+- [Incoterms](concepts/incoterms.md) — `urn:ngm:class:incoterms`
 - [Independent Living](concepts/independent-living.md) — `urn:ngm:class:independent-living`
 - [Independent Verification](concepts/independent-verification.md) — `urn:ngm:class:independent-verification`
 - [Indexing](concepts/indexing.md) — `urn:ngm:class:indexing`
+- [Indirect Procurement](concepts/indirect-procurement.md) — `urn:ngm:class:indirect-procurement`
 - [Indoor Navigation](concepts/indoor-navigation.md) — `urn:ngm:class:indoor-navigation`
 - [Inductive Bias](concepts/inductive-bias.md) — `urn:ngm:class:inductive-bias`
 - [IndustrialAutomation](concepts/industrial-automation.md) — `urn:ngm:class:industrial-automation`
@@ -4299,15 +4403,20 @@ concept_count: 9244
 - [Interferometric Phase](concepts/interferometric-phase.md) — `urn:ngm:class:interferometric-phase`
 - [Interferometric Synthetic Aperture Radar](concepts/interferometric-synthetic-aperture-radar.md) — `urn:ngm:class:interferometric-synthetic-aperture-radar`
 - [Intergalactic Medium](concepts/intergalactic-medium.md) — `urn:ngm:class:intergalactic-medium`
+- [Intergovernmental Trade Organisation](concepts/intergovernmental-trade-organisation.md) — `urn:ngm:class:intergovernmental-trade-organisation`
+- [Intermodal Transport](concepts/intermodal-transport.md) — `urn:ngm:class:intermodal-transport`
 - [Internal AI Harness](concepts/internal-ai-harness.md) — `urn:ngm:class:internal-ai-harness`
 - [International AI Cooperation](concepts/international-ai-cooperation.md) — `urn:ngm:class:international-ai-cooperation`
 - [International Atomic Time](concepts/international-atomic-time.md) — `urn:ngm:class:international-atomic-time`
 - [International Celestial Reference System](concepts/international-celestial-reference-system.md) — `urn:ngm:class:international-celestial-reference-system`
+- [International Chamber of Commerce](concepts/international-chamber-of-commerce.md) — `urn:ngm:class:international-chamber-of-commerce`
 - [International Cooperation](concepts/international-cooperation.md) — `urn:ngm:class:international-cooperation`
 - [International Financial Architecture](concepts/international-financial-architecture.md) — `urn:ngm:class:international-financial-architecture`
+- [International Maritime Organization](concepts/international-maritime-organization.md) — `urn:ngm:class:international-maritime-organization`
 - [International Monetary Fund](concepts/international-monetary-fund.md) — `urn:ngm:class:international-monetary-fund`
 - [International Terrestrial Reference System](concepts/international-terrestrial-reference-system.md) — `urn:ngm:class:international-terrestrial-reference-system`
 - [International Trade](concepts/international-trade.md) — `urn:ngm:class:international-trade`
+- [International Trade and Customs](concepts/international-trade-and-customs.md) — `urn:ngm:class:international-trade-and-customs`
 - [Internet Connectivity](concepts/internet-connectivity.md) — `urn:ngm:class:internet-connectivity`
 - [Internet Engineering Task Force](concepts/internet-engineering-task-force.md) — `urn:ngm:class:internet-engineering-task-force`
 - [Internet Governance](concepts/internet-governance.md) — `urn:ngm:class:internet-governance`
@@ -4335,7 +4444,14 @@ concept_count: 9244
 - [Intrinsic Interpretability](concepts/intrinsic-interpretability.md) — `urn:ngm:class:intrinsic-interpretability`
 - [Intrusion Detection](concepts/intrusion-detection.md) — `urn:ngm:class:intrusion-detection`
 - [Intrusion Detection System](concepts/intrusion-detection-system.md) — `urn:ngm:class:intrusion-detection-system`
+- [Inventory Classification](concepts/inventory-classification.md) — `urn:ngm:class:inventory-classification`
+- [Inventory Control Practice](concepts/inventory-control-practice.md) — `urn:ngm:class:inventory-control-practice`
 - [Inventory Management](concepts/inventory-management.md) — `urn:ngm:class:inventory-management`
+- [Inventory Model](concepts/inventory-model.md) — `urn:ngm:class:inventory-model`
+- [Inventory Performance Measure](concepts/inventory-performance-measure.md) — `urn:ngm:class:inventory-performance-measure`
+- [Inventory Policy](concepts/inventory-policy.md) — `urn:ngm:class:inventory-policy`
+- [Inventory Turnover](concepts/inventory-turnover.md) — `urn:ngm:class:inventory-turnover`
+- [Inventory Type](concepts/inventory-type.md) — `urn:ngm:class:inventory-type`
 - [Inverse Kinematics](concepts/inverse-kinematics.md) — `urn:ngm:class:inverse-kinematics`
 - [Inverse Reinforcement Learning](concepts/inverse-reinforcement-learning.md) — `urn:ngm:class:inverse-reinforcement-learning`
 - [Inversion Layer](concepts/inversion-layer.md) — `urn:ngm:class:inversion-layer`
@@ -4488,6 +4604,7 @@ concept_count: 9244
 - [Jedec](concepts/jedec.md) — `urn:ngm:class:jedec`
 - [Jira](concepts/jira.md) — `urn:ngm:class:jira`
 - [Jitter](concepts/jitter.md) — `urn:ngm:class:jitter`
+- [Job Shop Production](concepts/job-shop-production.md) — `urn:ngm:class:job-shop-production`
 - [Join-Semilattice](concepts/join-semilattice.md) — `urn:ngm:class:join-semilattice`
 - [Joint Configuration](concepts/joint-configuration.md) — `urn:ngm:class:joint-configuration`
 - [Joint Encoder](concepts/joint-encoder.md) — `urn:ngm:class:joint-encoder`
@@ -4512,11 +4629,14 @@ concept_count: 9244
 - [Jurisdiction](concepts/jurisdiction.md) — `urn:ngm:class:jurisdiction`
 - [Jurisdictional Boundary](concepts/jurisdictional-boundary.md) — `urn:ngm:class:jurisdictional-boundary`
 - [Just-In-Time Compilation](concepts/just-in-time-compilation.md) — `urn:ngm:class:just-in-time-compilation`
+- [Just-in-Time Production](concepts/just-in-time-production.md) — `urn:ngm:class:just-in-time-production`
 - [Just Transition](concepts/just-transition.md) — `urn:ngm:class:just-transition`
 - [JVM Runtime](concepts/jvm-runtime.md) — `urn:ngm:class:jvm-runtime`
 - [k-Anonymity in Datasets](concepts/k-anonymity-in-datasets.md) — `urn:ngm:class:k-anonymity-in-datasets`
 - [Kademlia DHT](concepts/kademlia-dht.md) — `urn:ngm:class:kademlia-dht`
+- [Kaizen](concepts/kaizen.md) — `urn:ngm:class:kaizen`
 - [Kalman Filter](concepts/kalman-filter.md) — `urn:ngm:class:kalman-filter`
+- [Kanban](concepts/kanban.md) — `urn:ngm:class:kanban`
 - [Kanban Board](concepts/kanban-board.md) — `urn:ngm:class:kanban-board`
 - [Karpatkey](concepts/karpatkey.md) — `urn:ngm:class:karpatkey`
 - [Keccak-256](concepts/keccak-256.md) — `urn:ngm:class:keccak-256`
@@ -4588,8 +4708,10 @@ concept_count: 9244
 - [Kotlin](concepts/kotlin.md) — `urn:ngm:class:kotlin`
 - [Kqml](concepts/kqml.md) — `urn:ngm:class:kqml`
 - [Kraken](concepts/kraken.md) — `urn:ngm:class:kraken`
+- [Kraljic Portfolio Matrix](concepts/kraljic-portfolio-matrix.md) — `urn:ngm:class:kraljic-portfolio-matrix`
 - [KTO](concepts/kto.md) — `urn:ngm:class:kto`
 - [Kubernetes](concepts/kubernetes.md) — `urn:ngm:class:kubernetes`
+- [Kuehne+Nagel](concepts/kuehne-nagel.md) — `urn:ngm:class:kuehne-nagel`
 - [Kuiper Belt Object](concepts/kuiper-belt-object.md) — `urn:ngm:class:kuiper-belt-object`
 - [Kullback-Leibler Divergence](concepts/kullback-leibler-divergence.md) — `urn:ngm:class:kullback-leibler-divergence`
 - [KV Cache](concepts/kv-cache.md) — `urn:ngm:class:kv-cache`
@@ -4674,6 +4796,8 @@ concept_count: 9244
 - [Lead Screw Actuator](concepts/lead-screw-actuator.md) — `urn:ngm:class:lead-screw-actuator`
 - [Leader Election](concepts/leader-election.md) — `urn:ngm:class:leader-election`
 - [Leaderboard](concepts/leaderboard.md) — `urn:ngm:class:leaderboard`
+- [Lean Production](concepts/lean-production.md) — `urn:ngm:class:lean-production`
+- [Lean Supply Chain](concepts/lean-supply-chain.md) — `urn:ngm:class:lean-supply-chain`
 - [Leap Second](concepts/leap-second.md) — `urn:ngm:class:leap-second`
 - [Learner Model](concepts/learner-model.md) — `urn:ngm:class:learner-model`
 - [Learning](concepts/learning.md) — `urn:ngm:class:learning`
@@ -4751,6 +4875,7 @@ concept_count: 9244
 - [Limit Order](concepts/limit-order.md) — `urn:ngm:class:limit-order`
 - [Limited Risk AI](concepts/limited-risk-ai.md) — `urn:ngm:class:limited-risk-ai`
 - [Lindy Effect](concepts/lindy-effect.md) — `urn:ngm:class:lindy-effect`
+- [Line Balancing](concepts/line-balancing.md) — `urn:ngm:class:line-balancing`
 - [Linear](concepts/linear.md) — `urn:ngm:class:linear`
 - [Linear Algebra](concepts/linear-algebra.md) — `urn:ngm:class:linear-algebra`
 - [Linear Encoder](concepts/linear-encoder.md) — `urn:ngm:class:linear-encoder`
@@ -4836,6 +4961,7 @@ concept_count: 9244
 - [Logistics Automation](concepts/logistics-automation.md) — `urn:ngm:class:logistics-automation`
 - [Logistics Management](concepts/logistics-management.md) — `urn:ngm:class:logistics-management`
 - [Logistics Optimisation](concepts/logistics-optimisation.md) — `urn:ngm:class:logistics-optimisation`
+- [Logistics Service Provider](concepts/logistics-service-provider.md) — `urn:ngm:class:logistics-service-provider`
 - [Long Context Modelling](concepts/long-context-modelling.md) — `urn:ngm:class:long-context-modelling`
 - [Long-Horizon Planning](concepts/long-horizon-planning.md) — `urn:ngm:class:long-horizon-planning`
 - [Long-Horizon Task Benchmark](concepts/long-horizon-task-benchmark.md) — `urn:ngm:class:long-horizon-task-benchmark`
@@ -4910,6 +5036,7 @@ concept_count: 9244
 - [MACI](concepts/maci.md) — `urn:ngm:class:maci`
 - [Macroeconomics](concepts/macroeconomics.md) — `urn:ngm:class:macroeconomics`
 - [Macroprudential Policy](concepts/macroprudential-policy.md) — `urn:ngm:class:macroprudential-policy`
+- [Maersk](concepts/maersk.md) — `urn:ngm:class:maersk`
 - [Magnetar](concepts/magnetar.md) — `urn:ngm:class:magnetar`
 - [Magnetic Pole](concepts/magnetic-pole.md) — `urn:ngm:class:magnetic-pole`
 - [Magnetic Reconnection](concepts/magnetic-reconnection.md) — `urn:ngm:class:magnetic-reconnection`
@@ -4921,6 +5048,8 @@ concept_count: 9244
 - [Magnetotail](concepts/magnetotail.md) — `urn:ngm:class:magnetotail`
 - [Main-sequence Star](concepts/main-sequence-star.md) — `urn:ngm:class:main-sequence-star`
 - [Majority Voting](concepts/majority-voting.md) — `urn:ngm:class:majority-voting`
+- [Make-to-Order](concepts/make-to-order.md) — `urn:ngm:class:make-to-order`
+- [Make-to-Stock](concepts/make-to-stock.md) — `urn:ngm:class:make-to-stock`
 - [MakerDAO](concepts/maker-dao.md) — `urn:ngm:class:maker-dao`
 - [Making Available](concepts/making-available.md) — `urn:ngm:class:making-available`
 - [Malware](concepts/malware.md) — `urn:ngm:class:malware`
@@ -4934,7 +5063,9 @@ concept_count: 9244
 - [Manometer](concepts/manometer.md) — `urn:ngm:class:manometer`
 - [Mantle](concepts/mantle.md) — `urn:ngm:class:mantle`
 - [Manufacturing Automation](concepts/manufacturing-automation.md) — `urn:ngm:class:manufacturing-automation`
+- [Manufacturing Execution System](concepts/manufacturing-execution-system.md) — `urn:ngm:class:manufacturing-execution-system`
 - [Manufacturing Process](concepts/manufacturing-process.md) — `urn:ngm:class:manufacturing-process`
+- [Manufacturing Resource Planning](concepts/manufacturing-resource-planning.md) — `urn:ngm:class:manufacturing-resource-planning`
 - [Map Projection](concepts/map-projection.md) — `urn:ngm:class:map-projection`
 - [Maple Finance](concepts/maple-finance.md) — `urn:ngm:class:maple-finance`
 - [Mapped Data State](concepts/mapped-data-state.md) — `urn:ngm:class:mapped-data-state`
@@ -4973,15 +5104,19 @@ concept_count: 9244
 - [MAS](concepts/mas.md) — `urn:ngm:class:mas`
 - [Masked Language Modelling](concepts/masked-language-modelling.md) — `urn:ngm:class:masked-language-modelling`
 - [Mass Adoption](concepts/mass-adoption.md) — `urn:ngm:class:mass-adoption`
+- [Mass Balance](concepts/mass-balance.md) — `urn:ngm:class:mass-balance`
 - [Mass Customisation](concepts/mass-customisation.md) — `urn:ngm:class:mass-customisation`
+- [Mass Production](concepts/mass-production.md) — `urn:ngm:class:mass-production`
 - [Massive MIMO](concepts/massive-mimo.md) — `urn:ngm:class:massive-mimo`
 - [Master Data Management](concepts/master-data-management.md) — `urn:ngm:class:master-data-management`
+- [Master Production Scheduling](concepts/master-production-scheduling.md) — `urn:ngm:class:master-production-scheduling`
 - [Mastercard](concepts/mastercard.md) — `urn:ngm:class:mastercard`
 - [Mastery Learning](concepts/mastery-learning.md) — `urn:ngm:class:mastery-learning`
 - [Matching Algorithm](concepts/matching-algorithm.md) — `urn:ngm:class:matching-algorithm`
 - [Material](concepts/material.md) — `urn:ngm:class:material`
 - [Material Definition](concepts/material-definition.md) — `urn:ngm:class:material-definition`
 - [Material Flow Analysis](concepts/material-flow-analysis.md) — `urn:ngm:class:material-flow-analysis`
+- [Material Requirements Planning](concepts/material-requirements-planning.md) — `urn:ngm:class:material-requirements-planning`
 - [Material Science](concepts/material-science.md) — `urn:ngm:class:material-science`
 - [Material System](concepts/material-system.md) — `urn:ngm:class:material-system`
 - [MaterialX](concepts/material-x.md) — `urn:ngm:class:material-x`
@@ -5001,6 +5136,7 @@ concept_count: 9244
 - [Maximum Likelihood Estimation](concepts/maximum-likelihood-estimation.md) — `urn:ngm:class:maximum-likelihood-estimation`
 - [Maximum Sequence Length](concepts/maximum-sequence-length.md) — `urn:ngm:class:maximum-sequence-length`
 - [Maximum Valid Data Value](concepts/maximum-valid-data-value.md) — `urn:ngm:class:maximum-valid-data-value`
+- [McKesson](concepts/mckesson.md) — `urn:ngm:class:mckesson`
 - [MCP Client](concepts/mcp-client.md) — `urn:ngm:class:mcp-client`
 - [MCP Connectors](concepts/mcp-connectors.md) — `urn:ngm:class:mcp-connectors`
 - [MCP Server](concepts/mcp-server.md) — `urn:ngm:class:mcp-server`
@@ -5046,6 +5182,7 @@ concept_count: 9244
 - [Medical Segmentation Decathlon](concepts/medical-segmentation-decathlon.md) — `urn:ngm:class:medical-segmentation-decathlon`
 - [Medical Simulation](concepts/medical-simulation.md) — `urn:ngm:class:medical-simulation`
 - [Medication Safety](concepts/medication-safety.md) — `urn:ngm:class:medication-safety`
+- [Mediterranean Shipping Company](concepts/mediterranean-shipping-company.md) — `urn:ngm:class:mediterranean-shipping-company`
 - [Medium Earth Orbit](concepts/medium-earth-orbit.md) — `urn:ngm:class:medium-earth-orbit`
 - [Meeting AI Assistant](concepts/meeting-ai-assistant.md) — `urn:ngm:class:meeting-ai-assistant`
 - [Meeting Recording](concepts/meeting-recording.md) — `urn:ngm:class:meeting-recording`
@@ -5229,6 +5366,7 @@ concept_count: 9244
 - [Mobile Robot](concepts/mobile-robot.md) — `urn:ngm:class:mobile-robot`
 - [Mobile Robot Platform](concepts/mobile-robot-platform.md) — `urn:ngm:class:mobile-robot-platform`
 - [Mobile Robotics](concepts/mobile-robotics.md) — `urn:ngm:class:mobile-robotics`
+- [Modal Shift](concepts/modal-shift.md) — `urn:ngm:class:modal-shift`
 - [Modality-Specific Encoder](concepts/modality-specific-encoder.md) — `urn:ngm:class:modality-specific-encoder`
 - [Model](concepts/model.md) — `urn:ngm:class:model`
 - [Model Access Suspension](concepts/model-access-suspension.md) — `urn:ngm:class:model-access-suspension`
@@ -5371,6 +5509,7 @@ concept_count: 9244
 - [Multi-Chain DeFi](concepts/multi-chain-de-fi.md) — `urn:ngm:class:multi-chain-de-fi`
 - [Multi-Cloud](concepts/multi-cloud.md) — `urn:ngm:class:multi-cloud`
 - [Multi-constellation GNSS](concepts/multi-constellation-gnss.md) — `urn:ngm:class:multi-constellation-gnss`
+- [Multi-Echelon Inventory Optimisation](concepts/multi-echelon-inventory-optimisation.md) — `urn:ngm:class:multi-echelon-inventory-optimisation`
 - [Multi-Factor Authentication](concepts/multi-factor-authentication.md) — `urn:ngm:class:multi-factor-authentication`
 - [Multi-frequency GNSS](concepts/multi-frequency-gnss.md) — `urn:ngm:class:multi-frequency-gnss`
 - [Multi-Head Attention](concepts/multi-head-attention.md) — `urn:ngm:class:multi-head-attention`
@@ -5392,6 +5531,7 @@ concept_count: 9244
 - [Multi-Step Reasoning](concepts/multi-step-reasoning.md) — `urn:ngm:class:multi-step-reasoning`
 - [Multi Task Learning](concepts/multi-task-learning.md) — `urn:ngm:class:multi-task-learning`
 - [Multi-Tenancy](concepts/multi-tenancy.md) — `urn:ngm:class:multi-tenancy`
+- [Multi-Tier Supply Chain Mapping](concepts/multi-tier-supply-chain-mapping.md) — `urn:ngm:class:multi-tier-supply-chain-mapping`
 - [Multi-Turn Dialogue](concepts/multi-turn-dialogue.md) — `urn:ngm:class:multi-turn-dialogue`
 - [Multi User Systems](concepts/multi-user-systems.md) — `urn:ngm:class:multi-user-systems`
 - [Multi-View Images](concepts/multi-view-images.md) — `urn:ngm:class:multi-view-images`
@@ -5470,6 +5610,7 @@ concept_count: 9244
 - [NeRF](concepts/ne-rf.md) — `urn:ngm:class:ne-rf`
 - [Near Field Communication](concepts/near-field-communication.md) — `urn:ngm:class:near-field-communication`
 - [Nearest Neighbor Search](concepts/nearest-neighbor-search.md) — `urn:ngm:class:nearest-neighbor-search`
+- [Nearshoring](concepts/nearshoring.md) — `urn:ngm:class:nearshoring`
 - [Negotiation](concepts/negotiation.md) — `urn:ngm:class:negotiation`
 - [Negotiation Protocol](concepts/negotiation-protocol.md) — `urn:ngm:class:negotiation-protocol`
 - [Neo4j](concepts/neo-4-j.md) — `urn:ngm:class:neo-4-j`
@@ -5552,6 +5693,7 @@ concept_count: 9244
 - [Neutron Star](concepts/neutron-star.md) — `urn:ngm:class:neutron-star`
 - [Newcastle](concepts/newcastle.md) — `urn:ngm:class:newcastle`
 - [Newcastle AI & Health Innovation](concepts/newcastle-ai-and-health-innovation.md) — `urn:ngm:class:newcastle-ai-and-health-innovation`
+- [Newsvendor Model](concepts/newsvendor-model.md) — `urn:ngm:class:newsvendor-model`
 - [Newton-Euler Dynamics](concepts/newton-euler-dynamics.md) — `urn:ngm:class:newton-euler-dynamics`
 - [Next Token Prediction](concepts/next-token-prediction.md) — `urn:ngm:class:next-token-prediction`
 - [NFT](concepts/nft.md) — `urn:ngm:class:nft`
@@ -5690,7 +5832,9 @@ concept_count: 9244
 - [Occlusion Culling](concepts/occlusion-culling.md) — `urn:ngm:class:occlusion-culling`
 - [Occlusion Rendering](concepts/occlusion-rendering.md) — `urn:ngm:class:occlusion-rendering`
 - [Occupancy Grid](concepts/occupancy-grid.md) — `urn:ngm:class:occupancy-grid`
+- [Ocean Carrier](concepts/ocean-carrier.md) — `urn:ngm:class:ocean-carrier`
 - [Ocean Colour Remote Sensing](concepts/ocean-colour-remote-sensing.md) — `urn:ngm:class:ocean-colour-remote-sensing`
+- [Ocean Freight](concepts/ocean-freight.md) — `urn:ngm:class:ocean-freight`
 - [Ocean World](concepts/ocean-world.md) — `urn:ngm:class:ocean-world`
 - [Ocsp](concepts/ocsp.md) — `urn:ngm:class:ocsp`
 - [Octave Immersive Research Facility](concepts/octave-immersive-research-facility.md) — `urn:ngm:class:octave-immersive-research-facility`
@@ -5708,6 +5852,7 @@ concept_count: 9244
 - [Offline Reinforcement Learning](concepts/offline-reinforcement-learning.md) — `urn:ngm:class:offline-reinforcement-learning`
 - [Offline Rendering](concepts/offline-rendering.md) — `urn:ngm:class:offline-rendering`
 - [Offline Verification](concepts/offline-verification.md) — `urn:ngm:class:offline-verification`
+- [Offshoring](concepts/offshoring.md) — `urn:ngm:class:offshoring`
 - [OHB](concepts/ohb.md) — `urn:ngm:class:ohb`
 - [Olap](concepts/olap.md) — `urn:ngm:class:olap`
 - [Olympus DAO](concepts/olympus-dao.md) — `urn:ngm:class:olympus-dao`
@@ -5715,6 +5860,7 @@ concept_count: 9244
 - [OMA3 Media WG](concepts/oma-3-media-wg.md) — `urn:ngm:class:oma-3-media-wg`
 - [Omnichain Application](concepts/omnichain-application.md) — `urn:ngm:class:omnichain-application`
 - [Omnichannel](concepts/omnichannel.md) — `urn:ngm:class:omnichannel`
+- [Omnichannel Fulfilment](concepts/omnichannel-fulfilment.md) — `urn:ngm:class:omnichannel-fulfilment`
 - [Omnichannel Routing](concepts/omnichannel-routing.md) — `urn:ngm:class:omnichannel-routing`
 - [Omnidirectional Robot](concepts/omnidirectional-robot.md) — `urn:ngm:class:omnidirectional-robot`
 - [Omniverse](concepts/omniverse.md) — `urn:ngm:class:omniverse`
@@ -5730,6 +5876,7 @@ concept_count: 9244
 - [On-Device Inference](concepts/on-device-inference.md) — `urn:ngm:class:on-device-inference`
 - [On-Device Learning](concepts/on-device-learning.md) — `urn:ngm:class:on-device-learning`
 - [On-Premises](concepts/on-premises.md) — `urn:ngm:class:on-premises`
+- [On-Time In-Full](concepts/on-time-in-full.md) — `urn:ngm:class:on-time-in-full`
 - [Onboard Computer](concepts/onboard-computer.md) — `urn:ngm:class:onboard-computer`
 - [Ondo Finance](concepts/ondo-finance.md) — `urn:ngm:class:ondo-finance`
 - [One Hot Encoding](concepts/one-hot-encoding.md) — `urn:ngm:class:one-hot-encoding`
@@ -5759,6 +5906,7 @@ concept_count: 9244
 - [OPC UA](concepts/opc-ua.md) — `urn:ngm:class:opc-ua`
 - [Opcodes](concepts/opcodes.md) — `urn:ngm:class:opcodes`
 - [Open Access](concepts/open-access.md) — `urn:ngm:class:open-access`
+- [Open Account Trade](concepts/open-account-trade.md) — `urn:ngm:class:open-account-trade`
 - [Open Banking](concepts/open-banking.md) — `urn:ngm:class:open-banking`
 - [Open Bridge Standard](concepts/open-bridge-standard.md) — `urn:ngm:class:open-bridge-standard`
 - [Open Container Initiative](concepts/open-container-initiative.md) — `urn:ngm:class:open-container-initiative`
@@ -5891,6 +6039,10 @@ concept_count: 9244
 - [Orchestration Layer](concepts/orchestration-layer.md) — `urn:ngm:class:orchestration-layer`
 - [Order Book](concepts/order-book.md) — `urn:ngm:class:order-book`
 - [Order Book Exchange](concepts/order-book-exchange.md) — `urn:ngm:class:order-book-exchange`
+- [Order Fulfilment](concepts/order-fulfilment.md) — `urn:ngm:class:order-fulfilment`
+- [Order Management System](concepts/order-management-system.md) — `urn:ngm:class:order-management-system`
+- [Order Picking](concepts/order-picking.md) — `urn:ngm:class:order-picking`
+- [Order Promising](concepts/order-promising.md) — `urn:ngm:class:order-promising`
 - [Ordinals](concepts/ordinals.md) — `urn:ngm:class:ordinals`
 - [Ordinary Differential Equation](concepts/ordinary-differential-equation.md) — `urn:ngm:class:ordinary-differential-equation`
 - [Organisational Layer](concepts/organisational-layer.md) — `urn:ngm:class:organisational-layer`
@@ -5911,8 +6063,10 @@ concept_count: 9244
 - [Outlier Detection](concepts/outlier-detection.md) — `urn:ngm:class:outlier-detection`
 - [Outpainting](concepts/outpainting.md) — `urn:ngm:class:outpainting`
 - [Output](concepts/output.md) — `urn:ngm:class:output`
+- [Outsourcing](concepts/outsourcing.md) — `urn:ngm:class:outsourcing`
 - [Over Collateralisation](concepts/over-collateralisation.md) — `urn:ngm:class:over-collateralisation`
 - [Over The Air Update](concepts/over-the-air-update.md) — `urn:ngm:class:over-the-air-update`
+- [Overall Equipment Effectiveness](concepts/overall-equipment-effectiveness.md) — `urn:ngm:class:overall-equipment-effectiveness`
 - [Overfitting](concepts/overfitting.md) — `urn:ngm:class:overfitting`
 - [Overlay Network](concepts/overlay-network.md) — `urn:ngm:class:overlay-network`
 - [OWASP LLM Top 10 2025](concepts/owasp-llm-top-10-2025.md) — `urn:ngm:class:owasp-llm-top-10-2025`
@@ -5960,6 +6114,8 @@ concept_count: 9244
 - [Parametric Design Methodology](concepts/parametric-design-methodology.md) — `urn:ngm:class:parametric-design-methodology`
 - [Parametric Modeling](concepts/parametric-design-methodology-modeling.md) — `urn:ngm:class:parametric-design-methodology-modeling`
 - [Parametric Insurance](concepts/parametric-insurance.md) — `urn:ngm:class:parametric-insurance`
+- [Parcel Carrier](concepts/parcel-carrier.md) — `urn:ngm:class:parcel-carrier`
+- [Parcel Locker](concepts/parcel-locker.md) — `urn:ngm:class:parcel-locker`
 - [Parental Controls](concepts/parental-controls.md) — `urn:ngm:class:parental-controls`
 - [Paris Agreement](concepts/paris-agreement.md) — `urn:ngm:class:paris-agreement`
 - [Paris Agreement Article 6](concepts/paris-agreement-article-6.md) — `urn:ngm:class:paris-agreement-article-6`
@@ -6057,6 +6213,7 @@ concept_count: 9244
 - [Periapsis](concepts/periapsis.md) — `urn:ngm:class:periapsis`
 - [Perigee](concepts/perigee.md) — `urn:ngm:class:perigee`
 - [Perimeter Security](concepts/perimeter-security.md) — `urn:ngm:class:perimeter-security`
+- [Periodic Review Policy](concepts/periodic-review-policy.md) — `urn:ngm:class:periodic-review-policy`
 - [Permissioned Blockchain](concepts/permissioned-blockchain.md) — `urn:ngm:class:permissioned-blockchain`
 - [Permissioned Network](concepts/permissioned-network.md) — `urn:ngm:class:permissioned-network`
 - [Permissionless Innovation](concepts/permissionless-innovation.md) — `urn:ngm:class:permissionless-innovation`
@@ -6124,6 +6281,7 @@ concept_count: 9244
 - [Pid Controller](concepts/pid-controller.md) — `urn:ngm:class:pid-controller`
 - [Piezometer](concepts/piezometer.md) — `urn:ngm:class:piezometer`
 - [Pinecone](concepts/pinecone.md) — `urn:ngm:class:pinecone`
+- [Pipeline Inventory](concepts/pipeline-inventory.md) — `urn:ngm:class:pipeline-inventory`
 - [Pipeline Parallelism](concepts/pipeline-parallelism.md) — `urn:ngm:class:pipeline-parallelism`
 - [Piracy Prevention](concepts/piracy-prevention.md) — `urn:ngm:class:piracy-prevention`
 - [Pixel Quality Flag](concepts/pixel-quality-flag.md) — `urn:ngm:class:pixel-quality-flag`
@@ -6154,6 +6312,7 @@ concept_count: 9244
 - [Planner-Executor Pattern](concepts/planner-executor-pattern.md) — `urn:ngm:class:planner-executor-pattern`
 - [Planning](concepts/planning.md) — `urn:ngm:class:planning`
 - [Planning and Scheduling](concepts/planning-and-scheduling.md) — `urn:ngm:class:planning-and-scheduling`
+- [Planning Master Data](concepts/planning-master-data.md) — `urn:ngm:class:planning-master-data`
 - [Planning Module](concepts/planning-module.md) — `urn:ngm:class:planning-module`
 - [Plant Model](concepts/plant-model.md) — `urn:ngm:class:plant-model`
 - [Plasma](concepts/plasma.md) — `urn:ngm:class:plasma`
@@ -6224,6 +6383,7 @@ concept_count: 9244
 - [Pool Share](concepts/pool-share.md) — `urn:ngm:class:pool-share`
 - [Pooling Layer](concepts/pooling-layer.md) — `urn:ngm:class:pooling-layer`
 - [Population Health Management](concepts/population-health-management.md) — `urn:ngm:class:population-health-management`
+- [Port Congestion](concepts/port-congestion.md) — `urn:ngm:class:port-congestion`
 - [Portability](concepts/portability.md) — `urn:ngm:class:portability`
 - [Portable Document Format Standard](concepts/portable-document-format-standard.md) — `urn:ngm:class:portable-document-format-standard`
 - [Portable Identity](concepts/portable-identity.md) — `urn:ngm:class:portable-identity`
@@ -6250,6 +6410,7 @@ concept_count: 9244
 - [Post Training Quantisation](concepts/post-training-quantisation.md) — `urn:ngm:class:post-training-quantisation`
 - [Posterior Distribution](concepts/posterior-distribution.md) — `urn:ngm:class:posterior-distribution`
 - [PostgreSQL](concepts/postgre-sql.md) — `urn:ngm:class:postgre-sql`
+- [Postponement](concepts/postponement.md) — `urn:ngm:class:postponement`
 - [Potential Field Method](concepts/potential-field-method.md) — `urn:ngm:class:potential-field-method`
 - [Potentiometric Surface](concepts/potentiometric-surface.md) — `urn:ngm:class:potentiometric-surface`
 - [Poverty Reduction](concepts/poverty-reduction.md) — `urn:ngm:class:poverty-reduction`
@@ -6396,19 +6557,30 @@ concept_count: 9244
 - [Processed Data State](concepts/processed-data-state.md) — `urn:ngm:class:processed-data-state`
 - [Processing Hardware](concepts/processing-hardware.md) — `urn:ngm:class:processing-hardware`
 - [Processing Lineage](concepts/processing-lineage.md) — `urn:ngm:class:processing-lineage`
+- [Procure-to-Pay](concepts/procure-to-pay.md) — `urn:ngm:class:procure-to-pay`
 - [Procurement](concepts/procurement.md) — `urn:ngm:class:procurement`
 - [Product Adoption Metrics](concepts/product-adoption-metrics.md) — `urn:ngm:class:product-adoption-metrics`
 - [Product Design](concepts/product-design.md) — `urn:ngm:class:product-design`
+- [Product Distributor](concepts/product-distributor.md) — `urn:ngm:class:product-distributor`
+- [Product Information Management](concepts/product-information-management.md) — `urn:ngm:class:product-information-management`
 - [Product Liability](concepts/product-liability.md) — `urn:ngm:class:product-liability`
 - [Product Liability Directive](concepts/product-liability-directive.md) — `urn:ngm:class:product-liability-directive`
 - [Product Management](concepts/product-management.md) — `urn:ngm:class:product-management`
 - [Product Provenance](concepts/product-provenance.md) — `urn:ngm:class:product-provenance`
 - [Product Recall Management](concepts/product-recall-management.md) — `urn:ngm:class:product-recall-management`
+- [Product Serialisation](concepts/product-serialisation.md) — `urn:ngm:class:product-serialisation`
+- [Product Take-Back Scheme](concepts/product-take-back-scheme.md) — `urn:ngm:class:product-take-back-scheme`
 - [Product Validation](concepts/product-validation.md) — `urn:ngm:class:product-validation`
 - [Production Design](concepts/production-design.md) — `urn:ngm:class:production-design`
 - [Production Facility](concepts/production-facility.md) — `urn:ngm:class:production-facility`
+- [Production Management Philosophy](concepts/production-management-philosophy.md) — `urn:ngm:class:production-management-philosophy`
+- [Production Operations](concepts/production-operations.md) — `urn:ngm:class:production-operations`
 - [Production Pipeline](concepts/production-pipeline.md) — `urn:ngm:class:production-pipeline`
+- [Production Planning and Control](concepts/production-planning-and-control.md) — `urn:ngm:class:production-planning-and-control`
 - [Production Rules](concepts/production-rules.md) — `urn:ngm:class:production-rules`
+- [Production Scheduling](concepts/production-scheduling.md) — `urn:ngm:class:production-scheduling`
+- [Production Strategy](concepts/production-strategy.md) — `urn:ngm:class:production-strategy`
+- [Production System Type](concepts/production-system-type.md) — `urn:ngm:class:production-system-type`
 - [Profile Management](concepts/profile-management.md) — `urn:ngm:class:profile-management`
 - [Profiling](concepts/profiling.md) — `urn:ngm:class:profiling`
 - [Profinet](concepts/profinet.md) — `urn:ngm:class:profinet`
@@ -6652,6 +6824,8 @@ concept_count: 9244
 - [RAG Pipeline](concepts/rag-pipeline.md) — `urn:ngm:class:rag-pipeline`
 - [Ragdoll Physics](concepts/ragdoll-physics.md) — `urn:ngm:class:ragdoll-physics`
 - [Raid](concepts/raid.md) — `urn:ngm:class:raid`
+- [Rail Freight](concepts/rail-freight.md) — `urn:ngm:class:rail-freight`
+- [RAIN RFID Tag](concepts/rain-rfid-tag.md) — `urn:ngm:class:rain-rfid-tag`
 - [Rainbow Wallet](concepts/rainbow-wallet.md) — `urn:ngm:class:rainbow-wallet`
 - [Raised Bank](concepts/raised-bank.md) — `urn:ngm:class:raised-bank`
 - [Random Forest](concepts/random-forest.md) — `urn:ngm:class:random-forest`
@@ -6675,6 +6849,7 @@ concept_count: 9244
 - [Rate Limiting](concepts/rate-limiting.md) — `urn:ngm:class:rate-limiting`
 - [Rational Agent](concepts/rational-agent.md) — `urn:ngm:class:rational-agent`
 - [Raw Data](concepts/raw-data.md) — `urn:ngm:class:raw-data`
+- [Raw Materials Inventory](concepts/raw-materials-inventory.md) — `urn:ngm:class:raw-materials-inventory`
 - [Ray Marching](concepts/ray-marching.md) — `urn:ngm:class:ray-marching`
 - [Ray Tracing](concepts/ray-tracing.md) — `urn:ngm:class:ray-tracing`
 - [Raycast System](concepts/raycast-system.md) — `urn:ngm:class:raycast-system`
@@ -6815,6 +6990,7 @@ concept_count: 9244
 - [Real Time Systems](concepts/real-time-systems.md) — `urn:ngm:class:real-time-systems`
 - [Real-time Transcription](concepts/real-time-transcription.md) — `urn:ngm:class:real-time-transcription`
 - [Real-time Translation](concepts/real-time-translation.md) — `urn:ngm:class:real-time-translation`
+- [Real-Time Transportation Visibility Platform](concepts/real-time-transportation-visibility-platform.md) — `urn:ngm:class:real-time-transportation-visibility-platform`
 - [Real-Time VFX](concepts/real-time-vfx.md) — `urn:ngm:class:real-time-vfx`
 - [Real World Asset](concepts/real-world-asset.md) — `urn:ngm:class:real-world-asset`
 - [Real-World Asset Tokenisation](concepts/real-world-asset-tokenisation.md) — `urn:ngm:class:real-world-asset-tokenisation`
@@ -6831,6 +7007,7 @@ concept_count: 9244
 - [Reasoning Models](concepts/reasoning-models.md) — `urn:ngm:class:reasoning-models`
 - [Reasoning Trace](concepts/reasoning-trace.md) — `urn:ngm:class:reasoning-trace`
 - [Recall](concepts/recall.md) — `urn:ngm:class:recall`
+- [Receivables Factoring](concepts/receivables-factoring.md) — `urn:ngm:class:receivables-factoring`
 - [Receiver Autonomous Integrity Monitoring](concepts/receiver-autonomous-integrity-monitoring.md) — `urn:ngm:class:receiver-autonomous-integrity-monitoring`
 - [Receiver Clock Bias](concepts/receiver-clock-bias.md) — `urn:ngm:class:receiver-clock-bias`
 - [Reciprocal Rank Fusion](concepts/reciprocal-rank-fusion.md) — `urn:ngm:class:reciprocal-rank-fusion`
@@ -6857,6 +7034,7 @@ concept_count: 9244
 - [Reed Smith](concepts/reed-smith.md) — `urn:ngm:class:reed-smith`
 - [Reed-Solomon Codes](concepts/reed-solomon-codes.md) — `urn:ngm:class:reed-solomon-codes`
 - [Reed-Solomon Erasure Coding](concepts/reed-solomon-erasure-coding.md) — `urn:ngm:class:reed-solomon-erasure-coding`
+- [Reefer Container](concepts/reefer-container.md) — `urn:ngm:class:reefer-container`
 - [Reentrancy Attack](concepts/reentrancy-attack.md) — `urn:ngm:class:reentrancy-attack`
 - [Refactoring](concepts/refactoring.md) — `urn:ngm:class:refactoring`
 - [Reference Architecture](concepts/reference-architecture.md) — `urn:ngm:class:reference-architecture`
@@ -6955,6 +7133,7 @@ concept_count: 9244
 - [Renewable Energy Integration](concepts/renewable-energy-integration.md) — `urn:ngm:class:renewable-energy-integration`
 - [Renewable Energy Investment](concepts/renewable-energy-investment.md) — `urn:ngm:class:renewable-energy-investment`
 - [Renewable Energy Tracking](concepts/renewable-energy-tracking.md) — `urn:ngm:class:renewable-energy-tracking`
+- [Reorder Point Policy](concepts/reorder-point-policy.md) — `urn:ngm:class:reorder-point-policy`
 - [Reparameterisation Trick](concepts/reparameterisation-trick.md) — `urn:ngm:class:reparameterisation-trick`
 - [Repeat Ground Track](concepts/repeat-ground-track.md) — `urn:ngm:class:repeat-ground-track`
 - [Replication](concepts/replication.md) — `urn:ngm:class:replication`
@@ -6971,6 +7150,8 @@ concept_count: 9244
 - [Reputation Scoring Model](concepts/reputation-scoring-model.md) — `urn:ngm:class:reputation-scoring-model`
 - [Reputation System](concepts/reputation-system.md) — `urn:ngm:class:reputation-system`
 - [Request For Comments](concepts/request-for-comments.md) — `urn:ngm:class:request-for-comments`
+- [Request for Proposal](concepts/request-for-proposal.md) — `urn:ngm:class:request-for-proposal`
+- [Request for Quotation](concepts/request-for-quotation.md) — `urn:ngm:class:request-for-quotation`
 - [Request-Response Pattern](concepts/request-response-pattern.md) — `urn:ngm:class:request-response-pattern`
 - [Requirements Engineering](concepts/requirements-engineering.md) — `urn:ngm:class:requirements-engineering`
 - [Reranker](concepts/reranker.md) — `urn:ngm:class:reranker`
@@ -6988,6 +7169,7 @@ concept_count: 9244
 - [Research University](concepts/research-university.md) — `urn:ngm:class:research-university`
 - [Reserve Asset](concepts/reserve-asset.md) — `urn:ngm:class:reserve-asset`
 - [Reserve Requirements](concepts/reserve-requirements.md) — `urn:ngm:class:reserve-requirements`
+- [Reshoring](concepts/reshoring.md) — `urn:ngm:class:reshoring`
 - [Residual Connection](concepts/residual-connection.md) — `urn:ngm:class:residual-connection`
 - [Residual Network](concepts/residual-network.md) — `urn:ngm:class:residual-network`
 - [Resilience](concepts/resilience.md) — `urn:ngm:class:resilience`
@@ -7005,12 +7187,15 @@ concept_count: 9244
 - [Responsible AI Deployment](concepts/responsible-ai-deployment.md) — `urn:ngm:class:responsible-ai-deployment`
 - [Responsible AI Principles](concepts/responsible-ai-principles.md) — `urn:ngm:class:responsible-ai-principles`
 - [Responsible Deployment](concepts/responsible-deployment.md) — `urn:ngm:class:responsible-deployment`
+- [Responsible Minerals Sourcing](concepts/responsible-minerals-sourcing.md) — `urn:ngm:class:responsible-minerals-sourcing`
 - [Responsible Scaling Policy](concepts/responsible-scaling-policy.md) — `urn:ngm:class:responsible-scaling-policy`
+- [Responsive Supply Chain](concepts/responsive-supply-chain.md) — `urn:ngm:class:responsive-supply-chain`
 - [REST](concepts/rest.md) — `urn:ngm:class:rest`
 - [REST API](concepts/rest-api.md) — `urn:ngm:class:rest-api`
 - [RESTful API](concepts/restful-api.md) — `urn:ngm:class:restful-api`
 - [Restricted Three-body Problem](concepts/restricted-three-body-problem.md) — `urn:ngm:class:restricted-three-body-problem`
 - [Retail CBDC](concepts/retail-cbdc.md) — `urn:ngm:class:retail-cbdc`
+- [Retailer](concepts/retailer.md) — `urn:ngm:class:retailer`
 - [Retention Policy](concepts/retention-policy.md) — `urn:ngm:class:retention-policy`
 - [Retraining](concepts/retraining.md) — `urn:ngm:class:retraining`
 - [Retrieval-Augmented Generation](concepts/retrieval-augmented-generation.md) — `urn:ngm:class:retrieval-augmented-generation`
@@ -7022,7 +7207,9 @@ concept_count: 9244
 - [Revenue Distribution](concepts/revenue-distribution.md) — `urn:ngm:class:revenue-distribution`
 - [Revenue Sharing](concepts/revenue-sharing.md) — `urn:ngm:class:revenue-sharing`
 - [Revenue Threshold](concepts/revenue-threshold.md) — `urn:ngm:class:revenue-threshold`
+- [Reverse Auction](concepts/reverse-auction.md) — `urn:ngm:class:reverse-auction`
 - [Reverse Engineering](concepts/reverse-engineering.md) — `urn:ngm:class:reverse-engineering`
+- [Reverse Factoring](concepts/reverse-factoring.md) — `urn:ngm:class:reverse-factoring`
 - [Reverse Logistics](concepts/reverse-logistics.md) — `urn:ngm:class:reverse-logistics`
 - [Reverse Proxy](concepts/reverse-proxy.md) — `urn:ngm:class:reverse-proxy`
 - [Revisit Time](concepts/revisit-time.md) — `urn:ngm:class:revisit-time`
@@ -7055,6 +7242,7 @@ concept_count: 9244
 - [Rigid Body Dynamics](concepts/rigid-body-dynamics.md) — `urn:ngm:class:rigid-body-dynamics`
 - [Ring Signature](concepts/ring-signature.md) — `urn:ngm:class:ring-signature`
 - [Riot Platforms](concepts/riot-platforms.md) — `urn:ngm:class:riot-platforms`
+- [Ripple Effect](concepts/ripple-effect.md) — `urn:ngm:class:ripple-effect`
 - [Risk](concepts/risk.md) — `urn:ngm:class:risk`
 - [Risk Analysis](concepts/risk-analysis.md) — `urn:ngm:class:risk-analysis`
 - [Risk Assessment](concepts/risk-assessment.md) — `urn:ngm:class:risk-assessment`
@@ -7079,6 +7267,7 @@ concept_count: 9244
 - [RMSNorm](concepts/rmsnorm.md) — `urn:ngm:class:rmsnorm`
 - [RMSProp](concepts/rmsprop.md) — `urn:ngm:class:rmsprop`
 - [RoBERTa](concepts/ro-berta.md) — `urn:ngm:class:ro-berta`
+- [Road Freight](concepts/road-freight.md) — `urn:ngm:class:road-freight`
 - [Robin Hanson AI Sceptic Economist](concepts/robin-hanson-ai-sceptic-economist.md) — `urn:ngm:class:robin-hanson-ai-sceptic-economist`
 - [Roblox](concepts/roblox.md) — `urn:ngm:class:roblox`
 - [Actuation and Control](concepts/robo-actuation-and-control.md) — `urn:ngm:class:robo-actuation-and-control`
@@ -7154,6 +7343,7 @@ concept_count: 9244
 - [Rotary Position Embedding](concepts/rotary-position-embedding.md) — `urn:ngm:class:rotary-position-embedding`
 - [Rotation Matrix](concepts/rotation-matrix.md) — `urn:ngm:class:rotation-matrix`
 - [Rough Consensus](concepts/rough-consensus.md) — `urn:ngm:class:rough-consensus`
+- [Rough-Cut Capacity Planning](concepts/rough-cut-capacity-planning.md) — `urn:ngm:class:rough-cut-capacity-planning`
 - [Round-Trip Time](concepts/round-trip-time.md) — `urn:ngm:class:round-trip-time`
 - [Routing](concepts/routing.md) — `urn:ngm:class:routing`
 - [Routing Algorithm](concepts/routing-algorithm.md) — `urn:ngm:class:routing-algorithm`
@@ -7171,6 +7361,7 @@ concept_count: 9244
 - [Rule-Based Systems](concepts/rule-based-systems.md) — `urn:ngm:class:rule-based-systems`
 - [Rule Engine](concepts/rule-engine.md) — `urn:ngm:class:rule-engine`
 - [Rule of Law](concepts/rule-of-law.md) — `urn:ngm:class:rule-of-law`
+- [Rules of Origin](concepts/rules-of-origin.md) — `urn:ngm:class:rules-of-origin`
 - [Runbook](concepts/runbook.md) — `urn:ngm:class:runbook`
 - [Runes](concepts/runes.md) — `urn:ngm:class:runes`
 - [Runes Protocol](concepts/runes-protocol.md) — `urn:ngm:class:runes-protocol`
@@ -7214,9 +7405,11 @@ concept_count: 9244
 - [Safety (OECD)](concepts/safety-oecd.md) — `urn:ngm:class:safety-oecd`
 - [Safety PLC](concepts/safety-plc.md) — `urn:ngm:class:safety-plc`
 - [Safety Standard](concepts/safety-standard.md) — `urn:ngm:class:safety-standard`
+- [Safety Stock](concepts/safety-stock.md) — `urn:ngm:class:safety-stock`
 - [Safety System](concepts/safety-system.md) — `urn:ngm:class:safety-system`
 - [Safety Vulnerability](concepts/safety-vulnerability.md) — `urn:ngm:class:safety-vulnerability`
 - [Saga Pattern](concepts/saga-pattern.md) — `urn:ngm:class:saga-pattern`
+- [Sales and Operations Planning](concepts/sales-and-operations-planning.md) — `urn:ngm:class:sales-and-operations-planning`
 - [Salt](concepts/salt.md) — `urn:ngm:class:salt`
 - [Sam Hammond AI Policy Economist](concepts/sam-hammond-ai-policy-economist.md) — `urn:ngm:class:sam-hammond-ai-policy-economist`
 - [SAML](concepts/saml.md) — `urn:ngm:class:saml`
@@ -7326,6 +7519,7 @@ concept_count: 9244
 - [Scope 2 Emissions](concepts/scope-2-emissions.md) — `urn:ngm:class:scope-2-emissions`
 - [Scope 3 Emissions](concepts/scope-3-emissions.md) — `urn:ngm:class:scope-3-emissions`
 - [Scope Definition](concepts/scope-definition.md) — `urn:ngm:class:scope-definition`
+- [SCOR Model](concepts/scor-model.md) — `urn:ngm:class:scor-model`
 - [Score-Based Generative Model](concepts/score-based-generative-model.md) — `urn:ngm:class:score-based-generative-model`
 - [Score Function](concepts/score-function.md) — `urn:ngm:class:score-function`
 - [Score Matching](concepts/score-matching.md) — `urn:ngm:class:score-matching`
@@ -7348,6 +7542,7 @@ concept_count: 9244
 - [Sea Ice Monitoring](concepts/sea-ice-monitoring.md) — `urn:ngm:class:sea-ice-monitoring`
 - [Sea Surface Height Measurement](concepts/sea-surface-height-measurement.md) — `urn:ngm:class:sea-surface-height-measurement`
 - [Sea Surface Temperature Retrieval](concepts/sea-surface-temperature-retrieval.md) — `urn:ngm:class:sea-surface-temperature-retrieval`
+- [Seaport](concepts/seaport.md) — `urn:ngm:class:seaport`
 - [Search Algorithm](concepts/search-algorithm.md) — `urn:ngm:class:search-algorithm`
 - [Search Algorithms](concepts/search-algorithms.md) — `urn:ngm:class:search-algorithms`
 - [Search and Rescue Robotics](concepts/search-and-rescue-robotics.md) — `urn:ngm:class:search-and-rescue-robotics`
@@ -7368,6 +7563,8 @@ concept_count: 9244
 - [secp256k1 Elliptic Curve](concepts/secp256k1-elliptic-curve.md) — `urn:ngm:class:secp256k1-elliptic-curve`
 - [Secret Sharing](concepts/secret-sharing.md) — `urn:ngm:class:secret-sharing`
 - [Section 508](concepts/section-508.md) — `urn:ngm:class:section-508`
+- [Sector Logistics](concepts/sector-logistics.md) — `urn:ngm:class:sector-logistics`
+- [Sector Supply Chain](concepts/sector-supply-chain.md) — `urn:ngm:class:sector-supply-chain`
 - [Secure Aggregation](concepts/secure-aggregation.md) — `urn:ngm:class:secure-aggregation`
 - [Secure Boot](concepts/secure-boot.md) — `urn:ngm:class:secure-boot`
 - [Secure Channel](concepts/secure-channel.md) — `urn:ngm:class:secure-channel`
@@ -7492,6 +7689,7 @@ concept_count: 9244
 - [Sequence To Sequence Model](concepts/sequence-to-sequence-model.md) — `urn:ngm:class:sequence-to-sequence-model`
 - [Sequencer](concepts/sequencer.md) — `urn:ngm:class:sequencer`
 - [Sequential Monte Carlo](concepts/sequential-monte-carlo.md) — `urn:ngm:class:sequential-monte-carlo`
+- [Serial Shipping Container Code](concepts/serial-shipping-container-code.md) — `urn:ngm:class:serial-shipping-container-code`
 - [Serialisation](concepts/serialisation.md) — `urn:ngm:class:serialisation`
 - [Serialisation Format](concepts/serialisation-format.md) — `urn:ngm:class:serialisation-format`
 - [Series Elastic Actuation](concepts/series-elastic-actuation.md) — `urn:ngm:class:series-elastic-actuation`
@@ -7557,6 +7755,7 @@ concept_count: 9244
 - [Shared Workspace](concepts/shared-workspace.md) — `urn:ngm:class:shared-workspace`
 - [Sheffield](concepts/sheffield.md) — `urn:ngm:class:sheffield`
 - [Sheffield Advanced Manufacturing](concepts/sheffield-advanced-manufacturing.md) — `urn:ngm:class:sheffield-advanced-manufacturing`
+- [Shipping Container](concepts/shipping-container.md) — `urn:ngm:class:shipping-container`
 - [Side-Channel Attack](concepts/side-channel-attack.md) — `urn:ngm:class:side-channel-attack`
 - [Sidechain](concepts/sidechain.md) — `urn:ngm:class:sidechain`
 - [Sidetree Protocol](concepts/sidetree-protocol.md) — `urn:ngm:class:sidetree-protocol`
@@ -7594,8 +7793,10 @@ concept_count: 9244
 - [Single Event Upset](concepts/single-event-upset.md) — `urn:ngm:class:single-event-upset`
 - [Single Point Of Failure](concepts/single-point-of-failure.md) — `urn:ngm:class:single-point-of-failure`
 - [Single Sign-On](concepts/single-sign-on.md) — `urn:ngm:class:single-sign-on`
+- [Single Sourcing](concepts/single-sourcing.md) — `urn:ngm:class:single-sourcing`
 - [Single-Turn Inference](concepts/single-turn-inference.md) — `urn:ngm:class:single-turn-inference`
 - [Single Use Seals](concepts/single-use-seals.md) — `urn:ngm:class:single-use-seals`
+- [Single Window](concepts/single-window.md) — `urn:ngm:class:single-window`
 - [Singular Value Decomposition](concepts/singular-value-decomposition.md) — `urn:ngm:class:singular-value-decomposition`
 - [Singularity](concepts/singularity.md) — `urn:ngm:class:singularity`
 - [Singularity Analysis](concepts/singularity-analysis.md) — `urn:ngm:class:singularity-analysis`
@@ -7604,6 +7805,7 @@ concept_count: 9244
 - [Site Reliability Engineering](concepts/site-reliability-engineering.md) — `urn:ngm:class:site-reliability-engineering`
 - [Situational Awareness](concepts/situational-awareness.md) — `urn:ngm:class:situational-awareness`
 - [Six Degrees Of Freedom](concepts/six-degrees-of-freedom.md) — `urn:ngm:class:six-degrees-of-freedom`
+- [Six Sigma](concepts/six-sigma.md) — `urn:ngm:class:six-sigma`
 - [Skeletal Animation](concepts/skeletal-animation.md) — `urn:ngm:class:skeletal-animation`
 - [Skeletal Mesh](concepts/skeletal-mesh.md) — `urn:ngm:class:skeletal-mesh`
 - [Skeletal Rig](concepts/skeletal-rig.md) — `urn:ngm:class:skeletal-rig`
@@ -7720,6 +7922,7 @@ concept_count: 9244
 - [Solar Radiation Pressure](concepts/solar-radiation-pressure.md) — `urn:ngm:class:solar-radiation-pressure`
 - [Solar Sail](concepts/solar-sail.md) — `urn:ngm:class:solar-sail`
 - [Solar Wind](concepts/solar-wind.md) — `urn:ngm:class:solar-wind`
+- [Sole Sourcing](concepts/sole-sourcing.md) — `urn:ngm:class:sole-sourcing`
 - [Solid](concepts/solid.md) — `urn:ngm:class:solid`
 - [Solid-OIDC](concepts/solid-oidc.md) — `urn:ngm:class:solid-oidc`
 - [Solid Pod](concepts/solid-pod.md) — `urn:ngm:class:solid-pod`
@@ -7731,6 +7934,9 @@ concept_count: 9244
 - [Sound Money](concepts/sound-money.md) — `urn:ngm:class:sound-money`
 - [Sound Money Principles](concepts/sound-money-principles.md) — `urn:ngm:class:sound-money-principles`
 - [Source Routing](concepts/source-routing.md) — `urn:ngm:class:source-routing`
+- [Sourcing and Procurement](concepts/sourcing-and-procurement.md) — `urn:ngm:class:sourcing-and-procurement`
+- [Sourcing Event](concepts/sourcing-event.md) — `urn:ngm:class:sourcing-event`
+- [Sourcing Strategy](concepts/sourcing-strategy.md) — `urn:ngm:class:sourcing-strategy`
 - [Sovereign AI](concepts/sovereign-ai.md) — `urn:ngm:class:sovereign-ai`
 - [Sovereign Keyset](concepts/sovereign-keyset.md) — `urn:ngm:class:sovereign-keyset`
 - [Sovereign Mesh](concepts/sovereign-mesh.md) — `urn:ngm:class:sovereign-mesh`
@@ -7902,6 +8108,7 @@ concept_count: 9244
 - [Speech Processing](concepts/speech-processing.md) — `urn:ngm:class:speech-processing`
 - [Speech Recognition](concepts/speech-recognition.md) — `urn:ngm:class:speech-recognition`
 - [SpeechSynthesis](concepts/speech-synthesis.md) — `urn:ngm:class:speech-synthesis`
+- [Spend Analysis](concepts/spend-analysis.md) — `urn:ngm:class:spend-analysis`
 - [Spherical Harmonic Analysis](concepts/spherical-harmonic-analysis.md) — `urn:ngm:class:spherical-harmonic-analysis`
 - [Spherical Harmonics](concepts/spherical-harmonics.md) — `urn:ngm:class:spherical-harmonics`
 - [Spin Stabilisation](concepts/spin-stabilisation.md) — `urn:ngm:class:spin-stabilisation`
@@ -8029,6 +8236,7 @@ concept_count: 9244
 - [Stochastic Optimisation](concepts/stochastic-optimisation.md) — `urn:ngm:class:stochastic-optimisation`
 - [Stochastic Process](concepts/stochastic-process.md) — `urn:ngm:class:stochastic-process`
 - [Stochastic Processes](concepts/stochastic-processes.md) — `urn:ngm:class:stochastic-processes`
+- [Stockout](concepts/stockout.md) — `urn:ngm:class:stockout`
 - [Storage Architecture](concepts/storage-architecture.md) — `urn:ngm:class:storage-architecture`
 - [Storage Engine](concepts/storage-engine.md) — `urn:ngm:class:storage-engine`
 - [Storage Hardware](concepts/storage-hardware.md) — `urn:ngm:class:storage-hardware`
@@ -8044,6 +8252,8 @@ concept_count: 9244
 - [Stranded Energy Monetisation](concepts/stranded-energy-monetisation.md) — `urn:ngm:class:stranded-energy-monetisation`
 - [Strategic Bitcoin Reserve](concepts/strategic-bitcoin-reserve.md) — `urn:ngm:class:strategic-bitcoin-reserve`
 - [Strategic Planning](concepts/strategic-planning.md) — `urn:ngm:class:strategic-planning`
+- [Strategic Sourcing](concepts/strategic-sourcing.md) — `urn:ngm:class:strategic-sourcing`
+- [Strategic Stockpile](concepts/strategic-stockpile.md) — `urn:ngm:class:strategic-stockpile`
 - [Stratopause](concepts/stratopause.md) — `urn:ngm:class:stratopause`
 - [Stratosphere](concepts/stratosphere.md) — `urn:ngm:class:stratosphere`
 - [Stratum Protocol](concepts/stratum-protocol.md) — `urn:ngm:class:stratum-protocol`
@@ -8095,24 +8305,70 @@ concept_count: 9244
 - [Supervised Learning](concepts/supervised-learning.md) — `urn:ngm:class:supervised-learning`
 - [Supervisor-Worker Pattern](concepts/supervisor-worker-pattern.md) — `urn:ngm:class:supervisor-worker-pattern`
 - [Supervisory Authority](concepts/supervisory-authority.md) — `urn:ngm:class:supervisory-authority`
+- [Supplier](concepts/supplier.md) — `urn:ngm:class:supplier`
+- [Supplier Code of Conduct](concepts/supplier-code-of-conduct.md) — `urn:ngm:class:supplier-code-of-conduct`
+- [Supplier Concentration Risk](concepts/supplier-concentration-risk.md) — `urn:ngm:class:supplier-concentration-risk`
+- [Supplier Diversification](concepts/supplier-diversification.md) — `urn:ngm:class:supplier-diversification`
+- [Supplier Management](concepts/supplier-management.md) — `urn:ngm:class:supplier-management`
+- [Supplier Qualification](concepts/supplier-qualification.md) — `urn:ngm:class:supplier-qualification`
+- [Supplier Relationship Management](concepts/supplier-relationship-management.md) — `urn:ngm:class:supplier-relationship-management`
+- [Supplier Selection](concepts/supplier-selection.md) — `urn:ngm:class:supplier-selection`
 - [Supply and Demand](concepts/supply-and-demand.md) — `urn:ngm:class:supply-and-demand`
 - [Supply Cap](concepts/supply-cap.md) — `urn:ngm:class:supply-cap`
 - [Supply Chain](concepts/supply-chain.md) — `urn:ngm:class:supply-chain`
 - [Supply Chain Automation](concepts/supply-chain-automation.md) — `urn:ngm:class:supply-chain-automation`
 - [Supply Chain Blockchain](concepts/supply-chain-blockchain.md) — `urn:ngm:class:supply-chain-blockchain`
+- [Supply Chain Collaboration](concepts/supply-chain-collaboration.md) — `urn:ngm:class:supply-chain-collaboration`
+- [Supply Chain Configuration Decision](concepts/supply-chain-configuration-decision.md) — `urn:ngm:class:supply-chain-configuration-decision`
+- [Supply Chain Control Tower](concepts/supply-chain-control-tower.md) — `urn:ngm:class:supply-chain-control-tower`
+- [Supply Chain Cost Measure](concepts/supply-chain-cost-measure.md) — `urn:ngm:class:supply-chain-cost-measure`
 - [Supply Chain Data](concepts/supply-chain-data.md) — `urn:ngm:class:supply-chain-data`
 - [Supply Chain Decarbonisation](concepts/supply-chain-decarbonisation.md) — `urn:ngm:class:supply-chain-decarbonisation`
+- [Supply Chain Design Principle](concepts/supply-chain-design-principle.md) — `urn:ngm:class:supply-chain-design-principle`
+- [Supply Chain Digital Twin](concepts/supply-chain-digital-twin.md) — `urn:ngm:class:supply-chain-digital-twin`
+- [Supply Chain Disruption](concepts/supply-chain-disruption.md) — `urn:ngm:class:supply-chain-disruption`
+- [Supply Chain Due Diligence](concepts/supply-chain-due-diligence.md) — `urn:ngm:class:supply-chain-due-diligence`
+- [Supply Chain Due Diligence Instrument](concepts/supply-chain-due-diligence-instrument.md) — `urn:ngm:class:supply-chain-due-diligence-instrument`
+- [Supply Chain Dynamics](concepts/supply-chain-dynamics.md) — `urn:ngm:class:supply-chain-dynamics`
+- [Supply Chain Environmental Accounting](concepts/supply-chain-environmental-accounting.md) — `urn:ngm:class:supply-chain-environmental-accounting`
+- [Supply Chain Execution System](concepts/supply-chain-execution-system.md) — `urn:ngm:class:supply-chain-execution-system`
 - [Supply Chain Finance](concepts/supply-chain-finance.md) — `urn:ngm:class:supply-chain-finance`
+- [Supply Chain Governance](concepts/supply-chain-governance.md) — `urn:ngm:class:supply-chain-governance`
+- [Supply Chain Identifier](concepts/supply-chain-identifier.md) — `urn:ngm:class:supply-chain-identifier`
+- [Supply Chain Information Systems](concepts/supply-chain-information-systems.md) — `urn:ngm:class:supply-chain-information-systems`
 - [Supply Chain Management](concepts/supply-chain-management.md) — `urn:ngm:class:supply-chain-management`
+- [Supply Chain Master Data](concepts/supply-chain-master-data.md) — `urn:ngm:class:supply-chain-master-data`
+- [Supply Chain Maturity Model](concepts/supply-chain-maturity-model.md) — `urn:ngm:class:supply-chain-maturity-model`
+- [Supply Chain Network Design](concepts/supply-chain-network-design.md) — `urn:ngm:class:supply-chain-network-design`
 - [Supply Chain Optimisation](concepts/supply-chain-optimisation.md) — `urn:ngm:class:supply-chain-optimisation`
+- [Supply Chain Organisations](concepts/supply-chain-organisations.md) — `urn:ngm:class:supply-chain-organisations`
+- [Supply Chain Performance and Finance](concepts/supply-chain-performance-and-finance.md) — `urn:ngm:class:supply-chain-performance-and-finance`
+- [Supply Chain Performance Framework](concepts/supply-chain-performance-framework.md) — `urn:ngm:class:supply-chain-performance-framework`
+- [Supply Chain Performance Measure](concepts/supply-chain-performance-measure.md) — `urn:ngm:class:supply-chain-performance-measure`
+- [Supply Chain Planning](concepts/supply-chain-planning.md) — `urn:ngm:class:supply-chain-planning`
+- [Supply Chain Planning System](concepts/supply-chain-planning-system.md) — `urn:ngm:class:supply-chain-planning-system`
 - [Supply Chain Provenance](concepts/supply-chain-provenance.md) — `urn:ngm:class:supply-chain-provenance`
+- [Supply Chain Redundancy](concepts/supply-chain-redundancy.md) — `urn:ngm:class:supply-chain-redundancy`
+- [Supply Chain Regionalisation](concepts/supply-chain-regionalisation.md) — `urn:ngm:class:supply-chain-regionalisation`
 - [Supply Chain Resilience](concepts/supply-chain-resilience.md) — `urn:ngm:class:supply-chain-resilience`
+- [Supply Chain Resilience Strategy](concepts/supply-chain-resilience-strategy.md) — `urn:ngm:class:supply-chain-resilience-strategy`
+- [Supply Chain Risk and Resilience](concepts/supply-chain-risk-and-resilience.md) — `urn:ngm:class:supply-chain-risk-and-resilience`
 - [Supply Chain Risk Management](concepts/supply-chain-risk-management.md) — `urn:ngm:class:supply-chain-risk-management`
+- [Supply Chain Risk Type](concepts/supply-chain-risk-type.md) — `urn:ngm:class:supply-chain-risk-type`
 - [Supply Chain Security](concepts/supply-chain-security.md) — `urn:ngm:class:supply-chain-security`
+- [Supply Chain Segmentation](concepts/supply-chain-segmentation.md) — `urn:ngm:class:supply-chain-segmentation`
+- [Supply Chain Simulation](concepts/supply-chain-simulation.md) — `urn:ngm:class:supply-chain-simulation`
+- [Supply Chain Strategy](concepts/supply-chain-strategy.md) — `urn:ngm:class:supply-chain-strategy`
+- [Supply Chain Strategy Type](concepts/supply-chain-strategy-type.md) — `urn:ngm:class:supply-chain-strategy-type`
+- [Supply Chain Stress Testing](concepts/supply-chain-stress-testing.md) — `urn:ngm:class:supply-chain-stress-testing`
 - [Supply Chain Traceability](concepts/supply-chain-traceability.md) — `urn:ngm:class:supply-chain-traceability`
 - [Supply Chain Tracking](concepts/supply-chain-tracking.md) — `urn:ngm:class:supply-chain-tracking`
 - [Supply Chain Transparency](concepts/supply-chain-transparency.md) — `urn:ngm:class:supply-chain-transparency`
 - [Supply Chain Visibility](concepts/supply-chain-visibility.md) — `urn:ngm:class:supply-chain-visibility`
+- [Supply Chain Visibility Platform](concepts/supply-chain-visibility-platform.md) — `urn:ngm:class:supply-chain-visibility-platform`
+- [Supply Chains and Logistics](concepts/supply-chains-and-logistics.md) — `urn:ngm:class:supply-chains-and-logistics`
+- [Supply Planning](concepts/supply-planning.md) — `urn:ngm:class:supply-planning`
+- [Supply Risk](concepts/supply-risk.md) — `urn:ngm:class:supply-risk`
 - [Support Vector Machine](concepts/support-vector-machine.md) — `urn:ngm:class:support-vector-machine`
 - [supports](concepts/supports.md) — `urn:ngm:class:supports`
 - [Surface Marine Robot](concepts/surface-marine-robot.md) — `urn:ngm:class:surface-marine-robot`
@@ -8139,6 +8395,8 @@ concept_count: 9244
 - [Sustainable Development](concepts/sustainable-development.md) — `urn:ngm:class:sustainable-development`
 - [Sustainable Development Goals](concepts/sustainable-development-goals.md) — `urn:ngm:class:sustainable-development-goals`
 - [Sustainable Finance](concepts/sustainable-finance.md) — `urn:ngm:class:sustainable-finance`
+- [Sustainable Procurement](concepts/sustainable-procurement.md) — `urn:ngm:class:sustainable-procurement`
+- [Sustainable Supply Chains](concepts/sustainable-supply-chains.md) — `urn:ngm:class:sustainable-supply-chains`
 - [Sustainable Technology](concepts/sustainable-technology.md) — `urn:ngm:class:sustainable-technology`
 - [Swarm Control](concepts/swarm-control.md) — `urn:ngm:class:swarm-control`
 - [Swarm Intelligence](concepts/swarm-intelligence.md) — `urn:ngm:class:swarm-intelligence`
@@ -8191,6 +8449,8 @@ concept_count: 9244
 - [Tactile Sensing](concepts/tactile-sensing.md) — `urn:ngm:class:tactile-sensing`
 - [Tactile Sensor](concepts/tactile-sensor.md) — `urn:ngm:class:tactile-sensor`
 - [Tagged Hash](concepts/tagged-hash.md) — `urn:ngm:class:tagged-hash`
+- [Taiwan Semiconductor Manufacturing Company](concepts/taiwan-semiconductor-manufacturing-company.md) — `urn:ngm:class:taiwan-semiconductor-manufacturing-company`
+- [Takt Time](concepts/takt-time.md) — `urn:ngm:class:takt-time`
 - [Talent Concentration](concepts/talent-concentration.md) — `urn:ngm:class:talent-concentration`
 - [Tally](concepts/tally.md) — `urn:ngm:class:tally`
 - [Tamper Detection](concepts/tamper-detection.md) — `urn:ngm:class:tamper-detection`
@@ -8201,6 +8461,7 @@ concept_count: 9244
 - [Taproot Assets](concepts/taproot-assets.md) — `urn:ngm:class:taproot-assets`
 - [Target Tracking](concepts/target-tracking.md) — `urn:ngm:class:target-tracking`
 - [Targeted Advertising](concepts/targeted-advertising.md) — `urn:ngm:class:targeted-advertising`
+- [Tariff Classification](concepts/tariff-classification.md) — `urn:ngm:class:tariff-classification`
 - [Task Adaptation](concepts/task-adaptation.md) — `urn:ngm:class:task-adaptation`
 - [Task Allocation](concepts/task-allocation.md) — `urn:ngm:class:task-allocation`
 - [Task Analysis](concepts/task-analysis.md) — `urn:ngm:class:task-analysis`
@@ -8356,6 +8617,7 @@ concept_count: 9244
 - [Theorem Proving](concepts/theorem-proving.md) — `urn:ngm:class:theorem-proving`
 - [Theoretical Astrophysics](concepts/theoretical-astrophysics.md) — `urn:ngm:class:theoretical-astrophysics`
 - [Theoretical Computer Science](concepts/theoretical-computer-science.md) — `urn:ngm:class:theoretical-computer-science`
+- [Theory of Constraints](concepts/theory-of-constraints.md) — `urn:ngm:class:theory-of-constraints`
 - [Theory of Mind](concepts/theory-of-mind.md) — `urn:ngm:class:theory-of-mind`
 - [Therapeutic VR](concepts/therapeutic-vr.md) — `urn:ngm:class:therapeutic-vr`
 - [Thermal Balance](concepts/thermal-balance.md) — `urn:ngm:class:thermal-balance`
@@ -8372,6 +8634,7 @@ concept_count: 9244
 - [Third Party Auditing](concepts/third-party-auditing.md) — `urn:ngm:class:third-party-auditing`
 - [Third Party Auditor](concepts/third-party-auditor.md) — `urn:ngm:class:third-party-auditor`
 - [Third Party Certification](concepts/third-party-certification.md) — `urn:ngm:class:third-party-certification`
+- [Third-Party Logistics Provider](concepts/third-party-logistics-provider.md) — `urn:ngm:class:third-party-logistics-provider`
 - [Third-Party Risk Management](concepts/third-party-risk-management.md) — `urn:ngm:class:third-party-risk-management`
 - [Third Party Verification](concepts/third-party-verification.md) — `urn:ngm:class:third-party-verification`
 - [Third-Party Vulnerability](concepts/third-party-vulnerability.md) — `urn:ngm:class:third-party-vulnerability`
@@ -8411,6 +8674,7 @@ concept_count: 9244
 - [Time-Series Database](concepts/time-series-database.md) — `urn:ngm:class:time-series-database`
 - [Time Series Forecasting](concepts/time-series-forecasting.md) — `urn:ngm:class:time-series-forecasting`
 - [Time Synchronisation](concepts/time-synchronisation.md) — `urn:ngm:class:time-synchronisation`
+- [Time to Recover](concepts/time-to-recover.md) — `urn:ngm:class:time-to-recover`
 - [Timelock](concepts/timelock.md) — `urn:ngm:class:timelock`
 - [Timelock Contract](concepts/timelock-contract.md) — `urn:ngm:class:timelock-contract`
 - [Timelock Controller](concepts/timelock-controller.md) — `urn:ngm:class:timelock-controller`
@@ -8480,7 +8744,9 @@ concept_count: 9244
 - [Torque Sensor](concepts/torque-sensor.md) — `urn:ngm:class:torque-sensor`
 - [Total Cost of Ownership](concepts/total-cost-of-ownership.md) — `urn:ngm:class:total-cost-of-ownership`
 - [Total Ionising Dose](concepts/total-ionising-dose.md) — `urn:ngm:class:total-ionising-dose`
+- [Total Landed Cost](concepts/total-landed-cost.md) — `urn:ngm:class:total-landed-cost`
 - [Total Order Broadcast](concepts/total-order-broadcast.md) — `urn:ngm:class:total-order-broadcast`
+- [Total Quality Management](concepts/total-quality-management.md) — `urn:ngm:class:total-quality-management`
 - [Total Supply](concepts/total-supply.md) — `urn:ngm:class:total-supply`
 - [Total Value Locked](concepts/total-value-locked.md) — `urn:ngm:class:total-value-locked`
 - [Toucan Protocol](concepts/toucan-protocol.md) — `urn:ngm:class:toucan-protocol`
@@ -8490,15 +8756,25 @@ concept_count: 9244
 - [Toxicity Detection](concepts/toxicity-detection.md) — `urn:ngm:class:toxicity-detection`
 - [TPU](concepts/tpu.md) — `urn:ngm:class:tpu`
 - [Traceability](concepts/traceability.md) — `urn:ngm:class:traceability`
+- [Traceability and Product Identification](concepts/traceability-and-product-identification.md) — `urn:ngm:class:traceability-and-product-identification`
+- [Traceability Data Standard](concepts/traceability-data-standard.md) — `urn:ngm:class:traceability-data-standard`
 - [Traceability Mechanism](concepts/traceability-mechanism.md) — `urn:ngm:class:traceability-mechanism`
+- [Traceability Regulation](concepts/traceability-regulation.md) — `urn:ngm:class:traceability-regulation`
 - [Tracked Robot](concepts/tracked-robot.md) — `urn:ngm:class:tracked-robot`
 - [Tracking Hardware](concepts/tracking-hardware.md) — `urn:ngm:class:tracking-hardware`
 - [Tracking System](concepts/tracking-system.md) — `urn:ngm:class:tracking-system`
 - [Tracking Technology](concepts/tracking-technology.md) — `urn:ngm:class:tracking-technology`
+- [Trade Body](concepts/trade-body.md) — `urn:ngm:class:trade-body`
+- [Trade Credit](concepts/trade-credit.md) — `urn:ngm:class:trade-credit`
+- [Trade Document](concepts/trade-document.md) — `urn:ngm:class:trade-document`
 - [Trade Execution](concepts/trade-execution.md) — `urn:ngm:class:trade-execution`
+- [Trade Facilitation](concepts/trade-facilitation.md) — `urn:ngm:class:trade-facilitation`
 - [Trade Finance](concepts/trade-finance.md) — `urn:ngm:class:trade-finance`
 - [Trade Finance Automation](concepts/trade-finance-automation.md) — `urn:ngm:class:trade-finance-automation`
 - [TradeLens](concepts/trade-lens.md) — `urn:ngm:class:trade-lens`
+- [Trade Measure](concepts/trade-measure.md) — `urn:ngm:class:trade-measure`
+- [Trade Payment Method](concepts/trade-payment-method.md) — `urn:ngm:class:trade-payment-method`
+- [Trade Term](concepts/trade-term.md) — `urn:ngm:class:trade-term`
 - [Traditional Banking](concepts/traditional-banking.md) — `urn:ngm:class:traditional-banking`
 - [Traditional Carbon Registry](concepts/traditional-carbon-registry.md) — `urn:ngm:class:traditional-carbon-registry`
 - [Traditional Corporation](concepts/traditional-corporation.md) — `urn:ngm:class:traditional-corporation`
@@ -8581,7 +8857,9 @@ concept_count: 9244
 - [Transport Layer](concepts/transport-layer.md) — `urn:ngm:class:transport-layer`
 - [Transport Layer Security](concepts/transport-layer-security.md) — `urn:ngm:class:transport-layer-security`
 - [Transport Network](concepts/transport-network.md) — `urn:ngm:class:transport-network`
+- [Transport Planning](concepts/transport-planning.md) — `urn:ngm:class:transport-planning`
 - [Transport Protocol](concepts/transport-protocol.md) — `urn:ngm:class:transport-protocol`
+- [Transportation Management System](concepts/transportation-management-system.md) — `urn:ngm:class:transportation-management-system`
 - [Trapdoor Function](concepts/trapdoor-function.md) — `urn:ngm:class:trapdoor-function`
 - [Travel Rule](concepts/travel-rule.md) — `urn:ngm:class:travel-rule`
 - [Travel Rule Protocol](concepts/travel-rule-protocol.md) — `urn:ngm:class:travel-rule-protocol`
@@ -8698,6 +8976,7 @@ concept_count: 9244
 - [Uniswap Governance](concepts/uniswap-governance.md) — `urn:ngm:class:uniswap-governance`
 - [Unit Testing](concepts/unit-testing.md) — `urn:ngm:class:unit-testing`
 - [United Kingdom](concepts/united-kingdom.md) — `urn:ngm:class:united-kingdom`
+- [United Parcel Service](concepts/united-parcel-service.md) — `urn:ngm:class:united-parcel-service`
 - [United States](concepts/united-states.md) — `urn:ngm:class:united-states`
 - [Unity](concepts/unity.md) — `urn:ngm:class:unity`
 - [Universal Access](concepts/universal-access.md) — `urn:ngm:class:universal-access`
@@ -8838,10 +9117,12 @@ concept_count: 9244
 - [Vector Space Model](concepts/vector-space-model.md) — `urn:ngm:class:vector-space-model`
 - [Vector Store](concepts/vector-store.md) — `urn:ngm:class:vector-store`
 - [Vegetation Index](concepts/vegetation-index.md) — `urn:ngm:class:vegetation-index`
+- [Vehicle Routing Problem](concepts/vehicle-routing-problem.md) — `urn:ngm:class:vehicle-routing-problem`
 - [Vehicle to Grid](concepts/vehicle-to-grid.md) — `urn:ngm:class:vehicle-to-grid`
 - [Velocity](concepts/velocity.md) — `urn:ngm:class:velocity`
 - [VelocityControl](concepts/velocity-control.md) — `urn:ngm:class:velocity-control`
 - [Vendor Lock-in](concepts/vendor-lock-in.md) — `urn:ngm:class:vendor-lock-in`
+- [Vendor-Managed Inventory](concepts/vendor-managed-inventory.md) — `urn:ngm:class:vendor-managed-inventory`
 - [Vendor Neutrality](concepts/vendor-neutrality.md) — `urn:ngm:class:vendor-neutrality`
 - [Venture Capital](concepts/venture-capital.md) — `urn:ngm:class:venture-capital`
 - [Venue-Tethered Immersive Experience](concepts/venue-tethered-immersive-experience.md) — `urn:ngm:class:venue-tethered-immersive-experience`
@@ -9076,8 +9357,12 @@ concept_count: 9244
 - [Wallet Address](concepts/wallet-address.md) — `urn:ngm:class:wallet-address`
 - [Walmart](concepts/walmart.md) — `urn:ngm:class:walmart`
 - [Warehouse Automation](concepts/warehouse-automation.md) — `urn:ngm:class:warehouse-automation`
+- [Warehouse Facility Type](concepts/warehouse-facility-type.md) — `urn:ngm:class:warehouse-facility-type`
 - [Warehouse Management System](concepts/warehouse-management-system.md) — `urn:ngm:class:warehouse-management-system`
+- [Warehouse Operation](concepts/warehouse-operation.md) — `urn:ngm:class:warehouse-operation`
 - [Warehouse Robotics](concepts/warehouse-robotics.md) — `urn:ngm:class:warehouse-robotics`
+- [Warehouse Storage System](concepts/warehouse-storage-system.md) — `urn:ngm:class:warehouse-storage-system`
+- [Warehousing and Distribution](concepts/warehousing-and-distribution.md) — `urn:ngm:class:warehousing-and-distribution`
 - [Warm Pool](concepts/warm-pool.md) — `urn:ngm:class:warm-pool`
 - [Warmup](concepts/warmup.md) — `urn:ngm:class:warmup`
 - [Waste Management](concepts/waste-management.md) — `urn:ngm:class:waste-management`
@@ -9156,6 +9441,7 @@ concept_count: 9244
 - [Whole Body Control](concepts/whole-body-control.md) — `urn:ngm:class:whole-body-control`
 - [Wholesale CBDC](concepts/wholesale-cbdc.md) — `urn:ngm:class:wholesale-cbdc`
 - [Wholesale Power Auction](concepts/wholesale-power-auction.md) — `urn:ngm:class:wholesale-power-auction`
+- [Wholesaler](concepts/wholesaler.md) — `urn:ngm:class:wholesaler`
 - [Wi-Fi](concepts/wi-fi.md) — `urn:ngm:class:wi-fi`
 - [Wide Area Network](concepts/wide-area-network.md) — `urn:ngm:class:wide-area-network`
 - [Wiener Process](concepts/wiener-process.md) — `urn:ngm:class:wiener-process`
@@ -9172,6 +9458,7 @@ concept_count: 9244
 - [Word Embedding](concepts/word-embedding.md) — `urn:ngm:class:word-embedding`
 - [Word Embeddings](concepts/word-embeddings.md) — `urn:ngm:class:word-embeddings`
 - [WordPiece](concepts/word-piece.md) — `urn:ngm:class:word-piece`
+- [Work-in-Progress Inventory](concepts/work-in-progress-inventory.md) — `urn:ngm:class:work-in-progress-inventory`
 - [Workflow Automation](concepts/workflow-automation.md) — `urn:ngm:class:workflow-automation`
 - [Workflow Engine](concepts/workflow-engine.md) — `urn:ngm:class:workflow-engine`
 - [Workflow Orchestration](concepts/workflow-orchestration.md) — `urn:ngm:class:workflow-orchestration`
@@ -9183,6 +9470,7 @@ concept_count: 9244
 - [Workspace Analysis](concepts/workspace-analysis.md) — `urn:ngm:class:workspace-analysis`
 - [Workspace Templates](concepts/workspace-templates.md) — `urn:ngm:class:workspace-templates`
 - [World Building](concepts/world-building.md) — `urn:ngm:class:world-building`
+- [World Customs Organization](concepts/world-customs-organization.md) — `urn:ngm:class:world-customs-organization`
 - [World Economic Forum](concepts/world-economic-forum.md) — `urn:ngm:class:world-economic-forum`
 - [World Inequality Database](concepts/world-inequality-database.md) — `urn:ngm:class:world-inequality-database`
 - [World Instance](concepts/world-instance.md) — `urn:ngm:class:world-instance`

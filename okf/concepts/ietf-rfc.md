@@ -30,6 +30,8 @@ partOf:
 relatedTo:
   - urn:ngm:class:network-communication
   - urn:ngm:class:tcp-ip
+  - urn:ngm:class:b2b-integration
+  - urn:ngm:class:electronic-data-interchange
 ---
 
 # IETF RFC

@@ -19,6 +19,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:domain-name-system
   - urn:ngm:class:rotary-encoder
+  - urn:ngm:class:global-trade-item-number
 ---
 
 # Resolver

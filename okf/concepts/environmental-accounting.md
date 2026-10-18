@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:environmental-assessment
   - urn:ngm:class:waste-management
   - urn:ngm:class:carbon-markets
+  - urn:ngm:class:iso-14067
 ---
 
 # Environmental Accounting

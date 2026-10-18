@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:technical-debt
   - urn:ngm:class:observability
   - urn:ngm:class:spacecraft-environmental-testing
+  - urn:ngm:class:six-sigma
 ---
 
 # Quality Assurance

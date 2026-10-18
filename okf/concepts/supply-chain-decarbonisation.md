@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Supply Chain Decarbonisation
 resource: urn:ngm:class:supply-chain-decarbonisation
-domain: governance
-description: Supply chain decarbonisation is the systematic reduction of greenhouse gas emissions arising across an organisation's upstream and downstream value chain, including the indirect Scope 3 emissions that typically dominate a company's total footprint. It combines supplier engagement, low-carbon procurement, logistics optimisation, materials substitution and product redesign with rigorous emissions ac
+domain: supply-chains-and-logistics
+description: Supply chain decarbonisation is the reduction of greenhouse gas emissions across a company's supply chain, in its suppliers' operations and in transport, and no source opened here defines the term, so the page describes measures the sources discuss.[^1][^2]
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:decarbonisation
+  - urn:ngm:class:sustainable-supply-chains
 requires:
   - urn:ngm:class:scope-3-emissions
   - urn:ngm:class:greenhouse-gas-protocol
@@ -23,6 +23,9 @@ implements:
 bridgesTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:climate-governance
+  - urn:ngm:class:decarbonisation
+  - urn:ngm:class:science-based-targets
+  - urn:ngm:class:ghg-protocol
 uses:
   - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:carbon-footprint
@@ -40,4 +43,4 @@ relatedTo:
 
 # Supply Chain Decarbonisation
 
-Supply chain decarbonisation is the systematic reduction of greenhouse gas emissions arising across an organisation's upstream and downstream value chain, including the indirect Scope 3 emissions that typically dominate a company's total footprint. It combines supplier engagement, low-carbon procurement, logistics optimisation, materials substitution and product redesign with rigorous emissions accounting. Because most value-chain emissions lie outside a firm's direct operational control, decarbonisation depends on data sharing, contractual incentives and collaboration across many tiers of suppliers. It is a core operational lever within broader climate governance and net-zero strategy.
+Supply chain decarbonisation is the reduction of greenhouse gas emissions across a company's supply chain, in its suppliers' operations and in transport, and no source opened here defines the term, so the page describes measures the sources discuss.[^1][^2]

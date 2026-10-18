@@ -124,6 +124,7 @@ relatedTo:
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:brain-computer-interfaces
   - urn:ngm:class:cbdc-frameworks
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Self Sovereign Identity

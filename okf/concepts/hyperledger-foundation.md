@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:blockchain-governance
   - urn:ngm:class:open-source-software
+  - urn:ngm:class:supply-chain-provenance
 ---
 
 # Hyperledger Foundation

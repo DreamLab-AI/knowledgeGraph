@@ -76,6 +76,7 @@ relatedTo:
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:operations-research
+  - urn:ngm:class:supply-chain
 ---
 
 # Constraint Solver

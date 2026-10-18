@@ -14,6 +14,7 @@ contrastsWith:
   - urn:ngm:class:root-mean-square-error
 bridgesTo:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:demand-forecasting
 uses:
   - urn:ngm:class:machine-learning-discipline-model
 supports:

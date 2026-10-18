@@ -99,6 +99,7 @@ relatedTo:
   - urn:ngm:class:circular-economy
   - urn:ngm:class:regulatory-technology
   - urn:ngm:class:sustainability
+  - urn:ngm:class:digital-product-passport
 ---
 
 # Carbon Footprint Measurement

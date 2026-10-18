@@ -49,6 +49,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:certification
   - urn:ngm:class:accreditation
+  - urn:ngm:class:digital-product-passport
 ---
 
 # Conformity Assessment

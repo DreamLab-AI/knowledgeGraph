@@ -36,6 +36,10 @@ bridgesTo:
   - urn:ngm:class:semantic-web
   - urn:ngm:class:linked-data
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:global-trade-item-number
+  - urn:ngm:class:global-location-number
+  - urn:ngm:class:serial-shipping-container-code
+  - urn:ngm:class:gs1-epcis
 uses:
   - urn:ngm:class:barcode
   - urn:ngm:class:rfid
@@ -52,6 +56,10 @@ relatedTo:
   - urn:ngm:class:synchronisation
   - urn:ngm:class:product-master-data
   - urn:ngm:class:synchronisation
+  - urn:ngm:class:electronic-data-interchange
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:digital-product-passport
+  - urn:ngm:class:edifact
 ---
 
 # GS1 Standards

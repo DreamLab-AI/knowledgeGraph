@@ -12,9 +12,11 @@ is-a:
 bridgesTo:
   - urn:ngm:class:observation-provenance
   - urn:ngm:class:processing-lineage
+  - urn:ngm:class:supply-chain-provenance
 relatedTo:
   - urn:ngm:class:metadata-management
   - urn:ngm:class:data-management
+  - urn:ngm:class:product-provenance
 ---
 
 # W3C PROV

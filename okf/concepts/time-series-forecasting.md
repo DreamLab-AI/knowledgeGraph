@@ -92,6 +92,8 @@ relatedTo:
   - urn:ngm:class:epidemiological-modelling
   - urn:ngm:class:operations-research
   - urn:ngm:class:signal-processing
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:demand-management
 ---
 
 # Time Series Forecasting

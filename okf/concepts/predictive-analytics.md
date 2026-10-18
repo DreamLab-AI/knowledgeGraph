@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:exploratory-data-analysis
   - urn:ngm:class:model-inference
   - urn:ngm:class:natural-language-processing
+  - urn:ngm:class:supply-chain
 ---
 
 # Predictive Analytics

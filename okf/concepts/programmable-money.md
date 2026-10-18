@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:liquidity
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:decentralised-autonomous-organisation
+  - urn:ngm:class:supply-chain-finance
 ---
 
 # Programmable Money

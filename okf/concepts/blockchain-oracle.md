@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:smart-contract-platform
   - urn:ngm:class:oracle-extractable-value
   - urn:ngm:class:reputation-system
+  - urn:ngm:class:supply-chain
 ---
 
 # Blockchain Oracle

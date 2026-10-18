@@ -9,6 +9,8 @@ maturity: draft
 quality: 0.5
 is-a:
   - urn:ngm:class:data-sharing
+relatedTo:
+  - urn:ngm:class:supply-chain-collaboration
 ---
 
 # Information Sharing

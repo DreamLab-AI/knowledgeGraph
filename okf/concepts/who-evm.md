@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: WHO EVM
 resource: urn:ngm:class:who-evm
-domain: supply-chain
-description: WHO EVM (Effective Vaccine Management) is a World Health Organization assessment framework and set of standards for evaluating and improving immunisation supply chains, with particular emphasis on cold-chain integrity, storage, and distribution. It defines criteria and scored indicators across receipt, storage, temperature monitoring, and stock management to ensure vaccine potency from manufacture
+domain: supply-chains-and-logistics
+description: Effective Vaccine Management (EVM) is a World Health Organization initiative and assessment tool for vaccine supply chains, built around nine global criteria.[^1][^2]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:technical-standard
+  - urn:ngm:class:supply-chain-maturity-model
 relatedTo:
   - urn:ngm:class:cold-chain-monitoring
   - urn:ngm:class:standards-body
@@ -16,4 +16,4 @@ relatedTo:
 
 # WHO EVM
 
-WHO EVM (Effective Vaccine Management) is a World Health Organization assessment framework and set of standards for evaluating and improving immunisation supply chains, with particular emphasis on cold-chain integrity, storage, and distribution. It defines criteria and scored indicators across receipt, storage, temperature monitoring, and stock management to ensure vaccine potency from manufacturer to point of use. EVM assessments guide investments in cold-chain equipment and monitoring practice.
+Effective Vaccine Management (EVM) is a World Health Organization initiative and assessment tool for vaccine supply chains, built around nine global criteria.[^1][^2]

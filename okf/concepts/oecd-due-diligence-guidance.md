@@ -3,16 +3,19 @@ okf_version: "0.2"
 type: Class
 title: OECD Due Diligence Guidance
 resource: urn:ngm:class:oecd-due-diligence-guidance
-domain: supply-chain
-description: The OECD Due Diligence Guidance is an internationally recognised framework that sets out how companies should identify, prevent, and mitigate human-rights and ethical risks in their supply chains, most notably for minerals from conflict-affected and high-risk areas. It defines a five-step, risk-based process for responsible sourcing and reporting. It serves as the reference standard underpinning m
+domain: supply-chains-and-logistics
+description: The OECD Due Diligence Guidance is guidance published by the Organisation for Economic Co-operation and Development on how enterprises can carry out due diligence for responsible business conduct, and this page is written without the OECD's own text, which could not be opened, from the way other instruments describe it.[^1]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:technical-standard
+  - urn:ngm:class:supply-chain-due-diligence-instrument
+bridgesTo:
+  - urn:ngm:class:conflict-mineral-tracking
 relatedTo:
   - urn:ngm:class:ethical-sourcing
+  - urn:ngm:class:gold
 ---
 
 # OECD Due Diligence Guidance
 
-The OECD Due Diligence Guidance is an internationally recognised framework that sets out how companies should identify, prevent, and mitigate human-rights and ethical risks in their supply chains, most notably for minerals from conflict-affected and high-risk areas. It defines a five-step, risk-based process for responsible sourcing and reporting. It serves as the reference standard underpinning many corporate and regulatory responsible-sourcing requirements.
+The OECD Due Diligence Guidance is guidance published by the Organisation for Economic Co-operation and Development on how enterprises can carry out due diligence for responsible business conduct, and this page is written without the OECD's own text, which could not be opened, from the way other instruments describe it.[^1]

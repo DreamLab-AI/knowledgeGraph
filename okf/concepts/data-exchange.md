@@ -32,9 +32,11 @@ supports:
 standardizedBy:
   - urn:ngm:class:standards
 relatedTo:
-  - urn:ngm:class:edi
+  - urn:ngm:class:electronic-data-interchange
   - urn:ngm:class:data-pipeline
   - urn:ngm:class:messaging
+  - urn:ngm:class:electronic-data-interchange
+  - urn:ngm:class:supply-chain
 ---
 
 # Data Exchange

@@ -8,11 +8,11 @@ description: A space supply chain is the network of organisations that supply, b
 maturity: draft
 quality: 0
 is-a:
-  - urn:ngm:class:supply-chain
   - urn:ngm:class:space-prime
 bridgesTo:
   - urn:ngm:class:supply-chain-resilience
   - urn:ngm:class:export-controls
+  - urn:ngm:class:supply-chain
 relatedTo:
   - urn:ngm:class:space-prime
   - urn:ngm:class:space-systems-integrator

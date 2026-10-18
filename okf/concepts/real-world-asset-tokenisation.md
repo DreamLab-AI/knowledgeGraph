@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:security-token-offering
   - urn:ngm:class:stablecoin
   - urn:ngm:class:tokenised-fund
+  - urn:ngm:class:supply-chain-finance
 ---
 
 # Real-World Asset Tokenisation

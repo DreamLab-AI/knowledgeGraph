@@ -20,6 +20,9 @@ dependsOn:
   - urn:ngm:class:gs1
 implements:
   - urn:ngm:class:web-standard
+bridgesTo:
+  - urn:ngm:class:gs1-epcis
+  - urn:ngm:class:global-trade-item-number
 uses:
   - urn:ngm:class:qr-code
   - urn:ngm:class:barcode
@@ -34,6 +37,8 @@ partOf:
 relatedTo:
   - urn:ngm:class:resolver
   - urn:ngm:class:interoperability
+  - urn:ngm:class:product-provenance
+  - urn:ngm:class:traceability-and-product-identification
 ---
 
 # Gs1 Digital Link

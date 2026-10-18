@@ -3,16 +3,17 @@ okf_version: "0.2"
 type: Class
 title: WTO Trade Facilitation Agreement
 resource: urn:ngm:class:wto-trade-facilitation-agreement
-domain: supply-chain
-description: The WTO Trade Facilitation Agreement (TFA) is a multilateral treaty, in force since 2017, that sets binding measures to expedite the movement, release, and clearance of goods across borders. It mandates simplified customs procedures, advance ruling systems, electronic payment, single-window submission, and cooperation between border agencies. The TFA matters because it reduces trade costs and dela
+domain: supply-chains-and-logistics
+description: The WTO Trade Facilitation Agreement (TFA) is a multilateral agreement of the World Trade Organization (WTO), concluded at the 2013 Bali Ministerial Conference, that entered into force on 22 February 2017 after ratification by two-thirds of the WTO membership.[^1]
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:regulatory-compliance
+  - urn:ngm:class:trade-facilitation
 relatedTo:
   - urn:ngm:class:customs-trade-facilitation
+  - urn:ngm:class:world-trade-organization
 ---
 
 # WTO Trade Facilitation Agreement
 
-The WTO Trade Facilitation Agreement (TFA) is a multilateral treaty, in force since 2017, that sets binding measures to expedite the movement, release, and clearance of goods across borders. It mandates simplified customs procedures, advance ruling systems, electronic payment, single-window submission, and cooperation between border agencies. The TFA matters because it reduces trade costs and delays, with provisions tied to the capacity of developing-country members.
+The WTO Trade Facilitation Agreement (TFA) is a multilateral agreement of the World Trade Organization (WTO), concluded at the 2013 Bali Ministerial Conference, that entered into force on 22 February 2017 after ratification by two-thirds of the WTO membership.[^1]

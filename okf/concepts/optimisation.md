@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:numerical-methods
   - urn:ngm:class:game-theory
   - urn:ngm:class:information-theory
+  - urn:ngm:class:supply-chain-management
 ---
 
 # Optimisation

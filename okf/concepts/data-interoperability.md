@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:data-integration
   - urn:ngm:class:data-mesh
   - urn:ngm:class:data-fabric
+  - urn:ngm:class:supply-chain-visibility
 ---
 
 # Data Interoperability

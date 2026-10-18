@@ -39,7 +39,7 @@ enables:
   - urn:ngm:class:identity-verification
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:document-signing
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:software-supply-chain
 dependsOn:
   - urn:ngm:class:number-theory
   - urn:ngm:class:elliptic-curve-theory

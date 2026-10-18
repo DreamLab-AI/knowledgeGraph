@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:network-topology
   - urn:ngm:class:node
   - urn:ngm:class:sybil-attack
+  - urn:ngm:class:supply-chain
 ---
 
 # Blockchain Network

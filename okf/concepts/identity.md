@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:reputation-system
   - urn:ngm:class:reputation-system
+  - urn:ngm:class:supply-chain
 ---
 
 # Identity

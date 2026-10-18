@@ -15,6 +15,8 @@ contrastsWith:
   - urn:ngm:class:oecd
 relatedTo:
   - urn:ngm:class:international-monetary-fund
+  - urn:ngm:class:trade-facilitation
+  - urn:ngm:class:wto-trade-facilitation-agreement
 ---
 
 # World Trade Organization

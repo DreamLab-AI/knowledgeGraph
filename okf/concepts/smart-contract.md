@@ -99,6 +99,7 @@ relatedTo:
   - urn:ngm:class:mev
   - urn:ngm:class:token
   - urn:ngm:class:zero-knowledge-proof
+  - urn:ngm:class:supply-chain
 ---
 
 # Smart Contract

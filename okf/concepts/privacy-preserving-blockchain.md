@@ -92,7 +92,7 @@ supports:
   - urn:ngm:class:healthcare-data-privacy
   - urn:ngm:class:supply-chain
   - urn:ngm:class:enterprise-blockchain
-  - urn:ngm:class:supply-chain
+  - urn:ngm:class:supply-chain-security
 standardizedBy:
   - urn:ngm:class:fatf-travel-rule
   - urn:ngm:class:ieee-2418-1

@@ -3,17 +3,13 @@ okf_version: "0.2"
 type: Class
 title: Ethical Sourcing
 resource: urn:ngm:class:ethical-sourcing
-domain: blockchain
-description: ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks (
+domain: supply-chains-and-logistics
+description: Ethical sourcing is the practice of buying goods and services from suppliers under agreed labour and human rights standards, and the sources opened here describe codes and guidance without defining the term.[^1][^2]
 maturity: established
 quality: 0.52
 is-a:
-  - urn:ngm:class:bc-governance-and-regulation
-  - urn:ngm:class:sustainable-procurement
-  - urn:ngm:class:supply-chain-governance
-  - urn:ngm:class:corporate-social-responsibility
   - urn:ngm:class:human-rights-due-diligence
-  - urn:ngm:class:responsible-business-conduct
+  - urn:ngm:class:sustainable-supply-chains
 hasPart:
   - urn:ngm:class:chain-of-custody
   - urn:ngm:class:remediation-plan
@@ -63,6 +59,7 @@ contrastsWith:
   - urn:ngm:class:tier-1-only-sourcing
 bridgesTo:
   - urn:ngm:class:governance
+  - urn:ngm:class:greenwashing
 uses:
   - urn:ngm:class:blockchain-provenance
   - urn:ngm:class:satellite-monitoring
@@ -97,12 +94,13 @@ relatedTo:
   - urn:ngm:class:conflict-mineral-tracking
   - urn:ngm:class:apple-supplier-responsibility
   - urn:ngm:class:tony-s-chocolonely
-  - urn:ngm:class:csddd
+  - urn:ngm:class:corporate-sustainability-due-diligence-directive
   - urn:ngm:class:eu-forced-labour-regulation
   - urn:ngm:class:bangladesh-accord
   - urn:ngm:class:uyghur-forced-labour
+  - urn:ngm:class:supplier-code-of-conduct
 ---
 
 # Ethical Sourcing
 
-ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks (
+Ethical sourcing is the practice of buying goods and services from suppliers under agreed labour and human rights standards, and the sources opened here describe codes and guidance without defining the term.[^1][^2]

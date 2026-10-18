@@ -23,6 +23,10 @@ uses:
   - urn:ngm:class:smart-contract
 standardizedBy:
   - urn:ngm:class:blockchain-compliance
+relatedTo:
+  - urn:ngm:class:supply-chain
+  - urn:ngm:class:dscsa-compliance
+  - urn:ngm:class:global-trade-item-number
 ---
 
 # Anti Counterfeiting

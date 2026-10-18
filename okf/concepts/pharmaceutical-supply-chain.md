@@ -3,12 +3,12 @@ okf_version: "0.2"
 type: Class
 title: Pharmaceutical Supply Chain
 resource: urn:ngm:class:pharmaceutical-supply-chain
-domain: supply-chain
-description: The Pharmaceutical Supply Chain encompasses all entities, processes, and systems involved in the production, storage, distribution, and dispensing of medicinal products, from active pharmaceutical ingredient (API) synthesis through to patient delivery. It is subject to stringent regulatory serialisation and traceability requirements designed to prevent counterfeit medicines from entering the legit
+domain: supply-chains-and-logistics
+description: A pharmaceutical supply chain is the set of stages and organisations through which medicinal products are discovered, made, distributed and supplied to patients, and it is subject to package-level identification and verification rules in the United States and the European Union.[^1][^2][^3]
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:supply-chain-management
+  - urn:ngm:class:sector-supply-chain
 hasPart:
   - urn:ngm:class:pharmaceutical-logistics
   - urn:ngm:class:cold-chain-monitoring
@@ -41,4 +41,4 @@ relatedTo:
 
 # Pharmaceutical Supply Chain
 
-The Pharmaceutical Supply Chain encompasses all entities, processes, and systems involved in the production, storage, distribution, and dispensing of medicinal products, from active pharmaceutical ingredient (API) synthesis through to patient delivery. It is subject to stringent regulatory serialisation and traceability requirements designed to prevent counterfeit medicines from entering the legitimate supply chain.
+A pharmaceutical supply chain is the set of stages and organisations through which medicinal products are discovered, made, distributed and supplied to patients, and it is subject to package-level identification and verification rules in the United States and the European Union.[^1][^2][^3]
