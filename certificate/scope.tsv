@@ -1,0 +1,7 @@
+oo-scope/1
+selector	rdfs-certificate
+semantics_version	rdfs-certificate/1
+default_graph	true
+complete	true
+graph	*
+generation	visionGraph@c2cef6c42c2fb36d162ec295ee527b25963e78f9
