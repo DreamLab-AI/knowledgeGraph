@@ -11,6 +11,10 @@ This repository is **not** under a single licence. It contains three kinds of th
 original software, a vendored MIT-licensed derivative, and a machine-generated
 database. Each is licensed on its own terms.
 
+## Current paths (21 October 2026)
+
+The September archive move changed paths, not licence grants. In the scope table below, the former `pipeline/` is now `archive/logseq-era-2026-09-22/pipeline/`, the former `ontology/pages/` corpus is now `archive/logseq-era-2026-09-22/pages/`, and the retired root build workflow is now `archive/github-workflows/build.yml`. Their existing AGPL/data terms continue to apply. The former root `ontology/` path no longer holds the active source corpus. Counts and build-contract descriptions later in this document are historical observations of the July/August tree, not current-publication requirements. The top-level README identifies the current distribution role.
+
 ## Scope table
 
 | Path | Licence | SPDX | Full text |

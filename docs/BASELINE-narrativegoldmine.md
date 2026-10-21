@@ -24,6 +24,10 @@ date: 2026-08-31
 
 # NarrativeGoldmine Baseline — Corpus, Pipeline, Explorer
 
+## Publication boundary update (21 October 2026)
+
+The implementation described below is a historical baseline for the pre-archive tree at its declared revision. Since September 2026, `main` retains that corpus and Python pipeline under `archive/logseq-era-2026-09-22/`; the former root build workflow is under `archive/github-workflows/`. Current authoring and publishing are upstream, with the shared compiler owned by Ontomark. This repository is the public `gh-pages` target and historical archive. The [top-level README](../README.md) separates the served dataset from the committed August artefacts. Historical invariants and counts below do not assert that the archived workflow remains active or define the current compiler's contract.
+
 ## Purpose
 
 Single governing document for what NarrativeGoldmine **is** at this commit: a
