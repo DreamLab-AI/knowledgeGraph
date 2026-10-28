@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@c2cef6c42c2fb36d162ec295ee527b25963e78f9",
-  "commit": "c2cef6c42c2fb36d162ec295ee527b25963e78f9",
+  "id": "visionGraph@59e7dcc8d05ca447d03c74c819a740b390b93074",
+  "commit": "59e7dcc8d05ca447d03c74c819a740b390b93074",
   "dirty": false,
-  "content_digest": "0350088ea0fcff923d30a1646cbf429f4852262d83a211139394765aaa3deee2",
+  "content_digest": "e53eefec330d52962d3d0b25991dbc6e275d3afa28130c9223b0bd6eda02b197",
   "ontology_digest": "sha256-12-c2b0e4290f7a",
-  "generated_at": "2026-10-20T15:39:33.731315+00:00",
+  "generated_at": "2026-10-28T13:00:47.433313+00:00",
   "class_count": 9532,
   "page_count": 9532,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "745cd5320774ccfe87f79c2f5c8d97c5f0d4faee4e9049cd6b138770a1fb7e95",
+      "sha256": "18a87c5a354a0e3759f98f547522f67685f9cc0a4dfc88ee406a0671e0565f92",
       "bytes": 3820974
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "2b65aed812d269e77a82f4b22cbf22494596976e59c1e9a1b836c1f09b5c1265",
+      "sha256": "507668df1862ca6abaaecff7ed5243e1cb418f71f5c38787580ff0041402ee5f",
       "bytes": 10335735
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "c9c1be3fb5ace6f6858da78aa3b2caa29c26665146628d13c734574e5d5ea0b6",
+      "sha256": "2d181024ae055df5dc5e77623130ed9c8a3299e25cef847f7ac3408cadcde38e",
       "bytes": 5518798
     },
     {
@@ -47731,7 +47731,7 @@
     },
     {
       "name": "data/graph/overview.json",
-      "sha256": "87e10304a131ec27e95cbe22bfee6b64424a960d8caa7557947fa0be578a2b5c",
+      "sha256": "76d022546973f414b49b649a372202408fd98ecc1cb37a333b8cbcc4092d3d0a",
       "bytes": 47373
     },
     {
@@ -47786,7 +47786,7 @@
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "a8bd938382b7dc1cde6d5ee8d91d263d16119bc0aea23f0ed720c463157e4d01",
+      "sha256": "37b4ceac04036918adaae35d8c9ae95072d8ad66e8216b893d78a8ec0d51376a",
       "bytes": 3343
     },
     {
@@ -97021,7 +97021,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "3078cf0fe59c49008a200d019fe30843d2a9074cc5f17af41248557655288674",
+      "sha256": "5497970b03c7593c6ba36e6fb38fdb9a7f0316b47752ca456b59b81a0d2b2a96",
       "bytes": 895787
     },
     {
@@ -193206,7 +193206,7 @@
     },
     {
       "name": "data/.generation.json",
-      "sha256": "26504798e5ac542245b47a3aafe633d3beb1a0603f4de22b3348db2a0c646625",
+      "sha256": "9e9a91f32b1e49892d5bc191f9241b4fd732cf26973700799781343eccb8575d",
       "bytes": 3379
     }
   ]
