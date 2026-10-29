@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@ab6071a9ce133d468475603bf7f6671324946d6b",
-  "commit": "ab6071a9ce133d468475603bf7f6671324946d6b",
+  "id": "visionGraph@6d91d1e15afb6a58089e769606e2020d3e389587",
+  "commit": "6d91d1e15afb6a58089e769606e2020d3e389587",
   "dirty": false,
-  "content_digest": "e53eefec330d52962d3d0b25991dbc6e275d3afa28130c9223b0bd6eda02b197",
+  "content_digest": "d2c6e55a1c208da4dc23fb1a132d14a9460c9a5ff1da2ac80c6e809af94fac68",
   "ontology_digest": "sha256-12-c2b0e4290f7a",
-  "generated_at": "2026-10-29T10:17:42.101126+00:00",
+  "generated_at": "2026-10-29T11:39:10.717073+00:00",
   "class_count": 9532,
   "page_count": 9532,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "961afcdb5e1d298f70034ccd01f2c68d5057ee863c077c4408a616742321d986",
+      "sha256": "254918558604593a2192156409039a7bca6de7e38be7e71eaad39f866e181aa1",
       "bytes": 3820974
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "33b92b38ff9ffce3da804681f6066bd03116a810f37941c77302deed4edcabb1",
+      "sha256": "18e8d05347442e7104d602ee6fc9c9f006d2f15b3e3017dd9095213af64bf8b1",
       "bytes": 10335735
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "04e8ce64e8198584032f5090efd02f5afcae233b96b18e733571881c94b38148",
+      "sha256": "56d1e68159931534d2447e2a06fac17a38e9686dd18d58471ac2babbb936bee4",
       "bytes": 5518798
     },
     {
@@ -49191,8 +49191,8 @@
     },
     {
       "name": "api/markdown/AI User.md",
-      "sha256": "fd1f103174905ecba2e85ea2a88893391cf073b2bb6838306169964720bf37ee",
-      "bytes": 528413
+      "sha256": "d53d97d7866dbd634f200e71317763dba51ec198d21a49606701b1c05cdd8db7",
+      "bytes": 528449
     },
     {
       "name": "api/markdown/AI Venture Capital.md",
@@ -54951,7 +54951,7 @@
     },
     {
       "name": "api/markdown/Chinese Seal Art AI Classification Pipeline.md",
-      "sha256": "e5e1279966a6252b11018a1579bc0b08a38ec7e71fe9eee1763dce4fb1e1c550",
+      "sha256": "dd412ceb313fbbbcd281586c468ce695095b9a891d8abeb7bdc6b2419f26fbfe",
       "bytes": 1699
     },
     {
@@ -59366,8 +59366,8 @@
     },
     {
       "name": "api/markdown/Decentralised Agent Coordination Initiative.md",
-      "sha256": "09fcfc3337edfb7f78f1dad9a963f603712e85e56c444611b354b83561597a9b",
-      "bytes": 5341
+      "sha256": "1686d16e297f8f75f4d81ba13251200b7a3296999252e39d11b44c7f383396de",
+      "bytes": 5351
     },
     {
       "name": "api/markdown/Decentralised Agentic Infrastructure Stack.md",
@@ -59406,7 +59406,7 @@
     },
     {
       "name": "api/markdown/Decentralised Creative Metaverse Framework.md",
-      "sha256": "db1def88069e529d126c03230e1e117e5e77568771cf84937d73e2b78c618c25",
+      "sha256": "cf306e908e4c5658467ef2e33965a9674644d530eb3aa2af4d1ee8361266731d",
       "bytes": 2585
     },
     {
@@ -69566,7 +69566,7 @@
     },
     {
       "name": "api/markdown/Image Generation.md",
-      "sha256": "c97054915f340a26b8a9fb70f4e0f4699f4b7f2d919853b1660c863eea80e647",
+      "sha256": "3da0f51dd89ebf3a9c69f39b13a39bbff779b566c4640ddf6498a28dfed5ded8",
       "bytes": 61007
     },
     {
@@ -71761,8 +71761,8 @@
     },
     {
       "name": "api/markdown/KnoWhere Visitor Attention System.md",
-      "sha256": "dba0db7410b917402ed4b1ad9d70c646c0cc80f95c3201c15b68d69fc8a976b9",
-      "bytes": 15263
+      "sha256": "2447e5d42fe33db23e22caeca4f8b66fa4f58bee399d9d095cef63445a1c531a",
+      "bytes": 15259
     },
     {
       "name": "api/markdown/Know Your Customer.md",
@@ -74791,8 +74791,8 @@
     },
     {
       "name": "api/markdown/Metaverse Ontology.md",
-      "sha256": "c57371f4677d29582d3a10ca58c887ffd0438413e1752d1deccac004fb697482",
-      "bytes": 42684
+      "sha256": "e768beec47a1a5ddc7a7dbd2da774a5fa51363cd129f1351f8d1e9f31a3f03b5",
+      "bytes": 42680
     },
     {
       "name": "api/markdown/Metaverse Platform.md",
@@ -75951,8 +75951,8 @@
     },
     {
       "name": "api/markdown/Multi-Agent RAG Architecture Compendium.md",
-      "sha256": "dbbdf28185ceaaed8d35169b2ccedce3b6d2119af706d6ff8f3241ed9d91b0c9",
-      "bytes": 6633
+      "sha256": "39671d08c9963b3469eaa7b0a7ecdd704d2d2f912bd36847b349c61308fdedbc",
+      "bytes": 6637
     },
     {
       "name": "api/markdown/Multi-Agent Reinforcement Learning.md",
@@ -76156,7 +76156,7 @@
     },
     {
       "name": "api/markdown/Multimodal AI Architecture.md",
-      "sha256": "416078e978c8ff4c26a89c1765af15912aadfd4b8816a210bf93d79ae0568f7d",
+      "sha256": "57915a2fb7cab24fef9d2856a0d24289309f55649c1e561d8d3a9464106f7b39",
       "bytes": 5222
     },
     {
@@ -80181,7 +80181,7 @@
     },
     {
       "name": "api/markdown/Player Two Platform Implementation.md",
-      "sha256": "07caef50b94fdbcbf26bfb52c123e01b0f99192a6c8114f0cf8501c9aad021b9",
+      "sha256": "d0647be3c94d8e8f6fa3dc18d885225e18adb88228d3250977644af132908bb5",
       "bytes": 3489
     },
     {
@@ -89261,8 +89261,8 @@
     },
     {
       "name": "api/markdown/State Space Sequence Models.md",
-      "sha256": "6042f37afa9e11e3811d3e6b5be3ab89c008e79c9e0989338edc4a43551dfab8",
-      "bytes": 29075
+      "sha256": "7943c53c6cfa1115abe1b61dec25daf59c4a50406764ce7e2d29e2473bca68c2",
+      "bytes": 29073
     },
     {
       "name": "api/markdown/State Space.md",
@@ -90971,8 +90971,8 @@
     },
     {
       "name": "api/markdown/Technology Programme Delivery Planning.md",
-      "sha256": "27b82601adda9ec180dd8e4837186eba5d448f4ce3a16c03c65eab16098ce92e",
-      "bytes": 4622
+      "sha256": "9f982cb2235c97a0348d75941be267791c369dcac0b9df870dcf2be377d821a6",
+      "bytes": 4607
     },
     {
       "name": "api/markdown/Technology Race.md",
@@ -97021,7 +97021,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "7afff16fdb298ce16239d6fd6ee93938d270c8ca9f70d8555b6e2425704869a9",
+      "sha256": "1384ffa3fd85c60dc21355971cbcdc455416becaf1f3a1bb1cfb1c7ee1319b1c",
       "bytes": 895787
     },
     {
@@ -146046,8 +146046,8 @@
     },
     {
       "name": "publish/pages/AI User.md",
-      "sha256": "1915ab63f77fe4f9e14fe7e281c867376e32571f4c264542fb13795e5db3ebdd",
-      "bytes": 534631
+      "sha256": "61ade0dc426f121f00db4fef26ba1f3c2cf510ee9b3b9fe921a9e1fc4e0c6dde",
+      "bytes": 534667
     },
     {
       "name": "publish/pages/AI Venture Capital.md",
@@ -151656,7 +151656,7 @@
     },
     {
       "name": "publish/pages/Chinese Seal Art AI Classification Pipeline.md",
-      "sha256": "a70afaec4e3e70d868902345642e464e56654dc062479817e12f368c102ef381",
+      "sha256": "2fe03905a7bb8e3a5ec5d9110121c188771426265664f5c68e73c71aa5ebbddc",
       "bytes": 2363
     },
     {
@@ -155966,8 +155966,8 @@
     },
     {
       "name": "publish/pages/Decentralised Agent Coordination Initiative.md",
-      "sha256": "265e8e71569855a727966188812012b432b0597bd7ac7a7f627cf28b11307f63",
-      "bytes": 6391
+      "sha256": "1fead2d5abb027b2a28bead406285592de27dc2ed9687f735ee07e635219e54f",
+      "bytes": 6401
     },
     {
       "name": "publish/pages/Decentralised Agentic Infrastructure Stack.md",
@@ -156001,7 +156001,7 @@
     },
     {
       "name": "publish/pages/Decentralised Creative Metaverse Framework.md",
-      "sha256": "6a1a96037a6a91f51e1cc82b0e86a7694f1a1c41b05d8150f314e48562325770",
+      "sha256": "9e04a1b0d9e21e5d6b0ed2d43612f9758f7f7d5f08a53afac937fddb59642956",
       "bytes": 3404
     },
     {
@@ -165756,7 +165756,7 @@
     },
     {
       "name": "publish/pages/Image Generation.md",
-      "sha256": "0e4a3770eb0685d0b9a08e35218263c2d1a4e2b229fd62edd75ceb678ecc8982",
+      "sha256": "ab112cd8b1aa750311a247eba4c1ee4cb1d6a9f06f77a4d3b7f5dd85eae1c84d",
       "bytes": 64638
     },
     {
@@ -167866,8 +167866,8 @@
     },
     {
       "name": "publish/pages/KnoWhere Visitor Attention System.md",
-      "sha256": "2d5dd42f6fa2fddc86869d535ff0eb921b74def2a153179fe37cae3f411cd6e3",
-      "bytes": 16286
+      "sha256": "3d590f863a842691d4bd0ae50632f2929bd21c568e6c45323d6b693f2ae55856",
+      "bytes": 16282
     },
     {
       "name": "publish/pages/Know Your Customer.md",
@@ -170816,8 +170816,8 @@
     },
     {
       "name": "publish/pages/Metaverse Ontology.md",
-      "sha256": "ee129b55a9055cc800bf6dc2472822923e3f9d27d3969b7f8cb2378ec97f85b8",
-      "bytes": 44518
+      "sha256": "066137351a9f7c7c014ac43a5660a7cdcc9eaed0eeaebe574390cbf921abe03d",
+      "bytes": 44514
     },
     {
       "name": "publish/pages/Metaverse Platform.md",
@@ -171966,8 +171966,8 @@
     },
     {
       "name": "publish/pages/Multi-Agent RAG Architecture Compendium.md",
-      "sha256": "2484a2520b3f1850fac6f2edb0c0d5689c97d9ae3db3d3faab23781a6a29797f",
-      "bytes": 7527
+      "sha256": "e072bbb635db22cdd7052f4a14f8241d6b8858f91d5649cb99e9a26e74c44893",
+      "bytes": 7531
     },
     {
       "name": "publish/pages/Multi-Agent Reinforcement Learning.md",
@@ -172166,7 +172166,7 @@
     },
     {
       "name": "publish/pages/Multimodal AI Architecture.md",
-      "sha256": "3f79b20c3679807f039613ec4e0ed2ac61d84684644dc12fef973c6155840771",
+      "sha256": "cd5039ecf7897dd2e873a710229ff8f6bfd2bc8fea09bd05e95ccd5fffde21f5",
       "bytes": 6171
     },
     {
@@ -176101,7 +176101,7 @@
     },
     {
       "name": "publish/pages/Player Two Platform Implementation.md",
-      "sha256": "0af9a597b869e16f56e5272cbf3a7da71eee7fcf44d3b24c4495eafa071b182e",
+      "sha256": "91f8114845861429b37c03e0579cbe70b1bcad481df849869689c703ebae7ebb",
       "bytes": 4208
     },
     {
@@ -184961,8 +184961,8 @@
     },
     {
       "name": "publish/pages/State Space Sequence Models.md",
-      "sha256": "37a61e30d4718bfba5f7eb28a84a5b8f8e61ffea39d8ec66fed16d3b773603ff",
-      "bytes": 29811
+      "sha256": "330142ab48a1c845ad80fbab60370ae8a81bf73f7cc66532ec68c650cea83d6e",
+      "bytes": 29809
     },
     {
       "name": "publish/pages/State Space.md",
@@ -186621,8 +186621,8 @@
     },
     {
       "name": "publish/pages/Technology Programme Delivery Planning.md",
-      "sha256": "fca7fec6e765c13d6584d76edb8cace5d305a961e1c86cecbf6f46206785ef17",
-      "bytes": 5412
+      "sha256": "39ae8ecdbb4f1984995ae98ce177d9b684716ad32db9fe111068d5df51aaae03",
+      "bytes": 5397
     },
     {
       "name": "publish/pages/Technology Race.md",
@@ -192386,13 +192386,13 @@
     },
     {
       "name": "publish/working/Agentic Alliance.md",
-      "sha256": "4d7c23c0ed03d3f5e1e8f5e62848547005a36ed3a6026f89a19464d8fe608554",
-      "bytes": 8045
+      "sha256": "6a87b2dab7543b2346b121da7fc070226b13b4924c7f1613b9337ec5a8aaaecb",
+      "bytes": 8055
     },
     {
-      "name": "publish/working/Agentic Internet.md",
-      "sha256": "2c35ddb9679c7d24aa163e5e8c606af145881e84cffab89ddfd8403bbcbe894f",
-      "bytes": 11120
+      "name": "publish/working/Agentic Internet Briefing.md",
+      "sha256": "f909b3ecc8b21d35c287647ddb58d19f6654f756cdc94a2d438508ab7477f4f6",
+      "bytes": 11159
     },
     {
       "name": "publish/working/Agentic Metaverse for Global Creatives.md",
@@ -193206,7 +193206,7 @@
     },
     {
       "name": "data/.generation.json",
-      "sha256": "399bf07673b50c230bfdec56a00d12fbeebc4377f8b327df125e9bea280875c3",
+      "sha256": "dc25a9e30425dbd896a620a7b6d6fb78707919de05cbb4131a447422c9c34e94",
       "bytes": 3379
     }
   ]
