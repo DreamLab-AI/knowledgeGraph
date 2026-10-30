@@ -1,11 +1,11 @@
 # Bundled JavaScript runtime notices
 
-These package versions contribute rendered code to the browser or physics-worker bundles. Their original licence and copyright notices are preserved below. Rust/WASM dependency notices are served separately in vowl-wasm-0.2.0.md.
+These package versions contribute rendered code to the browser or physics-worker bundles. Their original licence and copyright notices are preserved below. Rust/WASM dependency notices are served separately in vowl-wasm-0.2.2.md.
 
 | Package | Version | Declared licence | Upstream source |
 | --- | --- | --- | --- |
-| @dreamlab-ai/ontomark-graph | 0.1.0 | MIT OR Apache-2.0 | https://github.com/DreamLab-AI/ontomark |
-| @dreamlab-ai/vowl-wasm | 0.2.0 | MIT | https://github.com/DreamLab-AI/vowl-wasm |
+| @dreamlab-ai/ontomark-graph | 0.2.0 | MIT OR Apache-2.0 | https://github.com/DreamLab-AI/ontomark |
+| @dreamlab-ai/vowl-wasm | 0.2.2 | MIT | https://github.com/DreamLab-AI/vowl-wasm |
 | @remix-run/router | 1.23.4 | MIT | https://github.com/remix-run/react-router |
 | @tanstack/query-core | 5.90.10 | MIT | https://github.com/TanStack/query |
 | @tanstack/react-query | 5.90.10 | MIT | https://github.com/TanStack/query |
@@ -104,11 +104,11 @@ These package versions contribute rendered code to the browser or physics-worker
 | zustand | 5.0.8 | MIT | https://github.com/pmndrs/zustand |
 | zwitch | 2.0.4 | MIT | https://github.com/wooorm/zwitch |
 
-## @dreamlab-ai/ontomark-graph 0.1.0
+## @dreamlab-ai/ontomark-graph 0.2.0
 
 Upstream: https://github.com/DreamLab-AI/ontomark
 
-Exact locked source: https://github.com/DreamLab-AI/ontomark/releases/download/ontomark-graph-v0.1.0/dreamlab-ai-ontomark-graph-0.1.0.tgz
+Exact locked source: https://github.com/DreamLab-AI/ontomark/releases/download/ontomark-graph-v0.2.0/dreamlab-ai-ontomark-graph-0.2.0.tgz
 
 ### LICENSE-APACHE
 
@@ -365,11 +365,11 @@ https://github.com/DreamLab-AI/ontomark/blob/main/THIRD-PARTY-NOTICES.md
 
 ```
 
-## @dreamlab-ai/vowl-wasm 0.2.0
+## @dreamlab-ai/vowl-wasm 0.2.2
 
 Upstream: https://github.com/DreamLab-AI/vowl-wasm
 
-Exact locked source: https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.0/vowl-wasm-0.2.0-pkg.tgz
+Exact locked source: https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.2/vowl-wasm-0.2.2-pkg.tgz
 
 ### LICENSE
 

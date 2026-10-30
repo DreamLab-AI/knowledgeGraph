@@ -1,8 +1,8 @@
-# Ontomark Graph 0.1.0 notices
+# Ontomark Graph 0.2.0 notices
 
-Source: https://github.com/DreamLab-AI/ontomark/tree/ontomark-graph-v0.1.0/packages/graph
+Source: https://github.com/DreamLab-AI/ontomark/tree/ontomark-graph-v0.2.0/packages/graph
 
-Release: https://github.com/DreamLab-AI/ontomark/releases/tag/ontomark-graph-v0.1.0
+Release: https://github.com/DreamLab-AI/ontomark/releases/tag/ontomark-graph-v0.2.0
 
 The shared renderer has no third-party JavaScript runtime dependencies. The upstream project notice and both offered licences are preserved below.
 

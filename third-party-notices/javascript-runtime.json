@@ -1,10 +1,10 @@
 [
   {
     "name": "@dreamlab-ai/ontomark-graph",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT OR Apache-2.0",
     "repository": "https://github.com/DreamLab-AI/ontomark",
-    "source": "https://github.com/DreamLab-AI/ontomark/releases/download/ontomark-graph-v0.1.0/dreamlab-ai-ontomark-graph-0.1.0.tgz",
+    "source": "https://github.com/DreamLab-AI/ontomark/releases/download/ontomark-graph-v0.2.0/dreamlab-ai-ontomark-graph-0.2.0.tgz",
     "noticeFiles": [
       "LICENSE-APACHE",
       "LICENSE-MIT",
@@ -13,10 +13,10 @@
   },
   {
     "name": "@dreamlab-ai/vowl-wasm",
-    "version": "0.2.0",
+    "version": "0.2.2",
     "license": "MIT",
     "repository": "https://github.com/DreamLab-AI/vowl-wasm",
-    "source": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.0/vowl-wasm-0.2.0-pkg.tgz",
+    "source": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.2/vowl-wasm-0.2.2-pkg.tgz",
     "noticeFiles": [
       "LICENSE"
     ]
