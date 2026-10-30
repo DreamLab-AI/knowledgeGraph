@@ -26,6 +26,7 @@ enables:
 dependsOn:
   - urn:ngm:class:cryptographic-algorithm
   - urn:ngm:class:entropy-source
+  - urn:ngm:class:hardware-root-of-trust
 implements:
   - urn:ngm:class:asymmetric-cryptography
   - urn:ngm:class:symmetric-cryptography
@@ -50,6 +51,7 @@ partOf:
   - urn:ngm:class:public-key-infrastructure
 relatedTo:
   - urn:ngm:class:key-exchange
+  - urn:ngm:class:key-type
 ---
 
 # Cryptographic Key

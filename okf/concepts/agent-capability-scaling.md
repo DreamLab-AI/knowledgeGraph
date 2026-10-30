@@ -8,11 +8,12 @@ description: The empirical trend and theoretical analysis of how the complexity 
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:agent
+  - urn:ngm:class:ai-research-area
 relatedTo:
   - urn:ngm:class:agent
   - urn:ngm:class:scaling-laws
   - urn:ngm:class:autonomous-decision-making
+  - urn:ngm:class:agent-capability
 ---
 
 # Agent Capability Scaling

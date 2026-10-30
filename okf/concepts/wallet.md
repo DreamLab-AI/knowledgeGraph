@@ -19,6 +19,7 @@ uses:
   - urn:ngm:class:digital-signature
 partOf:
   - urn:ngm:class:bc-defi-and-economics
+  - urn:ngm:class:agent-wallet-set
 relatedTo:
   - urn:ngm:class:utxo-model
   - urn:ngm:class:blockchain-transaction

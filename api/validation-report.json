@@ -1,5 +1,5 @@
 {
-  "total_pages": 9546,
+  "total_pages": 9609,
   "total_journals": 0,
   "skipped": [
     {
@@ -7,16 +7,16 @@
       "reason": "excluded_directory"
     }
   ],
-  "pages_with_ontology": 9546,
-  "public_pages": 9532,
-  "total_issues": 31184,
+  "pages_with_ontology": 9609,
+  "public_pages": 9595,
+  "total_issues": 31185,
   "errors": 0,
   "warnings": 28806,
-  "info": 2378,
+  "info": 2379,
   "by_code": {
     "DANGLING_LINK": 20441,
     "INVALID_ENUM": 38,
-    "MULTI_PARENT": 2378,
+    "MULTI_PARENT": 2379,
     "PUBLIC_LINKS_PRIVATE": 2,
     "UNTERMINATED_FENCE": 2,
     "UNVERIFIED_STABLE": 8323

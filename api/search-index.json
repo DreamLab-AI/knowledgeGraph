@@ -8485,6 +8485,28 @@
     "wikilinks": []
   },
   {
+    "id": "access-control-rule",
+    "title": "Access Control Rule",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An access control rule is a rule that permits an agent or role to perform an action on a resource.[^1] visionGraph places it under [[Access Control Policy]] and as part of an [[Execution Context]], which holds its rules through `hasAccessControlRule`.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:access-control-rule",
+    "labels": [
+      "Access Control Rule"
+    ],
+    "is_subclass_of": [
+      "Access Control Policy"
+    ],
+    "wikilinks": [
+      "Access Control Policy",
+      "Execution Context",
+      "Data Handling Policy"
+    ]
+  },
+  {
     "id": "access-control-system",
     "title": "Access Control System",
     "domain": "infrastructure",
@@ -9045,6 +9067,32 @@
     ]
   },
   {
+    "id": "accountability-event",
+    "title": "Accountability Event",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An accountability event is an evaluative record that assesses one executed action for correctness, authorisation and compliance.[^1] It is distinct from the runtime event it evaluates, which is a [[Ledger Event]]; the property `linkedLedgerEvent` joins the two. visionGraph places it under [[Event]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:accountability-event",
+    "labels": [
+      "Accountability Event"
+    ],
+    "is_subclass_of": [
+      "Event"
+    ],
+    "wikilinks": [
+      "Ledger Event",
+      "Event",
+      "Agent Action",
+      "Delegation Basis",
+      "Responsibility Attribution",
+      "Conformity Assessment",
+      "Accountability"
+    ]
+  },
+  {
     "id": "accountability-framework",
     "title": "Accountability Framework",
     "domain": "governance",
@@ -9487,6 +9535,28 @@
       "Combinatorial Optimisation",
       "Exploration-Exploitation",
       "Deep Learning"
+    ]
+  },
+  {
+    "id": "action-type",
+    "title": "Action Type",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An action type is a category of actionable execution unit, declared as `ActionType` in the intent module of the Agent Ontology.[^1] visionGraph places it under [[Schema]] and as part of [[Agent Action]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:action-type",
+    "labels": [
+      "Action Type"
+    ],
+    "is_subclass_of": [
+      "Schema"
+    ],
+    "wikilinks": [
+      "Schema",
+      "Agent Action",
+      "Intent Type"
     ]
   },
   {
@@ -9940,7 +10010,6 @@
       "Adaptive Swarm Behaviour"
     ],
     "is_subclass_of": [
-      "Agent",
       "AI Research Area",
       "Reinforcement Learning",
       "Self-Organising Systems",
@@ -11007,6 +11076,56 @@
     "wikilinks": []
   },
   {
+    "id": "agent-action",
+    "title": "Agent Action",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent action is a concrete execution event initiated by an agent, producing observable or verifiable consequences.[^1] visionGraph places it under [[Event]]: it depends on an [[Execution Context]] and produces an [[Agent Artefact]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-action",
+    "labels": [
+      "Agent Action"
+    ],
+    "is_subclass_of": [
+      "Event"
+    ],
+    "wikilinks": [
+      "Event",
+      "Execution Context",
+      "Agent Artefact",
+      "Agent Trace Event",
+      "Action Type",
+      "Runtime Ledger Event",
+      "Agent Intent",
+      "Agent Task"
+    ]
+  },
+  {
+    "id": "agent-artefact",
+    "title": "Agent Artefact",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent artefact is a produced output or result generated through agent execution. The Agent Ontology declares it as `Artifact`, using American spelling for the identifier.[^1] visionGraph places it under the AI Research Area hub.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-artefact",
+    "labels": [
+      "Agent Artefact",
+      "Agent Artifact"
+    ],
+    "is_subclass_of": [
+      "AI Research Area"
+    ],
+    "wikilinks": [
+      "Agent Action",
+      "Agent Intent",
+      "Agent Trace Event"
+    ]
+  },
+  {
     "id": "agent-capability-scaling",
     "title": "Agent Capability Scaling",
     "domain": "artificial-intelligence",
@@ -11020,9 +11139,35 @@
       "Agent Capability Scaling"
     ],
     "is_subclass_of": [
-      "Agent"
+      "AI Research Area"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "agent-capability",
+    "title": "Agent Capability",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent capability is a describable functional competence or operational capacity of an agent, or in the threat-model reading a functional ability that an agent claims or possesses.[^1][^3] visionGraph places it under the AI Research Area hub.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-capability",
+    "labels": [
+      "Agent Capability"
+    ],
+    "is_subclass_of": [
+      "AI Research Area"
+    ],
+    "wikilinks": [
+      "Atomic Skill",
+      "Capability Constraint",
+      "Capability Provenance",
+      "Capability Advertisement",
+      "Agent Task",
+      "Critical Capability",
+      "Restricted Capability"
+    ]
   },
   {
     "id": "agent-communication-language",
@@ -11084,6 +11229,104 @@
     ]
   },
   {
+    "id": "agent-contract-set",
+    "title": "Agent Contract Set",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent contract set is the collection of contracts attached to an AI agent, declared as `ContractSet` in the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its properties. visionGraph places it under [[Configuration]], with [[Agent Contract]] as its part.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-contract-set",
+    "labels": [
+      "Agent Contract Set"
+    ],
+    "is_subclass_of": [
+      "Configuration"
+    ],
+    "wikilinks": [
+      "Configuration",
+      "Agent Contract",
+      "Agent",
+      "Agent Wallet Set",
+      "Agent Identity Set"
+    ]
+  },
+  {
+    "id": "agent-contract",
+    "title": "Agent Contract",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent contract is an agreed set of terms that an AI agent exposes, declared as `Contract` in the contract module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its properties. visionGraph places it under [[Api Contract]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-contract",
+    "labels": [
+      "Agent Contract"
+    ],
+    "is_subclass_of": [
+      "Api Contract"
+    ],
+    "wikilinks": [
+      "Api Contract",
+      "Agent Contract Set",
+      "Smart Contract",
+      "Contract Net Protocol"
+    ]
+  },
+  {
+    "id": "agent-decommission-record",
+    "title": "Agent Decommission Record",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent decommission record is the record of an agent's retirement from service, declared as `DecommissionRecord` in the lifecycle module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its position. visionGraph places it under [[Lifecycle Management]] and as part of an [[Agent Lifecycle Record]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-decommission-record",
+    "labels": [
+      "Agent Decommission Record"
+    ],
+    "is_subclass_of": [
+      "Lifecycle Management"
+    ],
+    "wikilinks": [
+      "Lifecycle Management",
+      "Agent Lifecycle Record",
+      "Agent Genesis Record",
+      "Health Check"
+    ]
+  },
+  {
+    "id": "agent-delegation",
+    "title": "Agent Delegation",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent delegation is a structured transfer of authority that allows one agent to act, under a bounded and semantically defined scope, on behalf of another.[^1] visionGraph places it under [[Agent Relationship]] and [[Authorisation]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-delegation",
+    "labels": [
+      "Agent Delegation",
+      "Delegation of Authority"
+    ],
+    "is_subclass_of": [
+      "Agent Relationship",
+      "Authorisation"
+    ],
+    "wikilinks": [
+      "Agent Relationship",
+      "Authorisation",
+      "Delegation Scope",
+      "Delegation Chain",
+      "Task Delegation",
+      "Agent Trace Event",
+      "Delegation"
+    ]
+  },
+  {
     "id": "agent-development-sdks",
     "title": "Agent Development SDKs",
     "domain": "ai",
@@ -11141,6 +11384,32 @@
       "Agents"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "agent-entity",
+    "title": "Agent Entity",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent entity is a general semantic entity participating in agent communication, delegation or execution.[^1] It is declared as `AgentEntity` in the core module and is the most general class of the vocabulary. visionGraph places it under the AI Research Area hub.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-entity",
+    "labels": [
+      "Agent Entity"
+    ],
+    "is_subclass_of": [
+      "AI Research Area"
+    ],
+    "wikilinks": [
+      "Agent",
+      "Human Agent",
+      "Organisational Agent",
+      "Agent System Integration",
+      "Agent Capability",
+      "Agent Task",
+      "Agent Action"
+    ]
   },
   {
     "id": "agent-evaluation-benchmarks",
@@ -11306,6 +11575,29 @@
     ]
   },
   {
+    "id": "agent-genesis-record",
+    "title": "Agent Genesis Record",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent genesis record is the record of an agent's creation, declared as `GenesisRecord` in the lifecycle module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its position. visionGraph places it under [[Lifecycle Management]] and as part of an [[Agent Lifecycle Record]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-genesis-record",
+    "labels": [
+      "Agent Genesis Record"
+    ],
+    "is_subclass_of": [
+      "Lifecycle Management"
+    ],
+    "wikilinks": [
+      "Lifecycle Management",
+      "Agent Lifecycle Record",
+      "Agent Decommission Record",
+      "Health Check"
+    ]
+  },
+  {
     "id": "agent-handoff",
     "title": "Agent Handoff",
     "domain": "artificial-intelligence",
@@ -11372,6 +11664,29 @@
     ]
   },
   {
+    "id": "agent-identity-set",
+    "title": "Agent Identity Set",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent identity set is the collection of identity bindings that an agent holds at once, declared as `IdentitySet` in the agent module of the Agent Ontology under the heading \"Identity Interfaces (Multi-DID)\".[^1] The Agent Ontology declares the class without a definition; this one follows from its properties. visionGraph places it under [[Configuration]], with [[Identity Binding]] as its part.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-identity-set",
+    "labels": [
+      "Agent Identity Set"
+    ],
+    "is_subclass_of": [
+      "Configuration"
+    ],
+    "wikilinks": [
+      "Configuration",
+      "Identity Binding",
+      "Decentralised Identifier",
+      "Agent Identity"
+    ]
+  },
+  {
     "id": "agent-identity",
     "title": "Agent Identity",
     "domain": "artificial-intelligence",
@@ -11387,7 +11702,8 @@
     "is_subclass_of": [
       "Identity Management",
       "Trust Framework",
-      "Decentralised Identity"
+      "Decentralised Identity",
+      "Agent Entity"
     ],
     "wikilinks": [
       "AI Agent",
@@ -11410,6 +11726,80 @@
       "Artificial Intelligence",
       "Model Context Protocol",
       "Agent-to-Agent Protocol"
+    ]
+  },
+  {
+    "id": "agent-input-specification",
+    "title": "Agent Input Specification",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent input specification describes what an agent accepts as input, declared as `InputSpec` in the agent module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its position. visionGraph places it under [[Data Schema]] and as part of an [[Agent Operational Profile]], which reaches it through `input`.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-input-specification",
+    "labels": [
+      "Agent Input Specification"
+    ],
+    "is_subclass_of": [
+      "Data Schema"
+    ],
+    "wikilinks": [
+      "Data Schema",
+      "Agent Operational Profile",
+      "Agent Trigger",
+      "Agent Output Specification",
+      "Input State",
+      "Execution Context"
+    ]
+  },
+  {
+    "id": "agent-intent",
+    "title": "Agent Intent",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent intent is a semantic expression of purpose, objective or expected action outcome.[^1] The intent module reads it as a statement of what an agent aims to achieve,[^2] and the threat-model module as a purpose or goal communicated by an agent, which is the basis of the intent-ambiguity threat.[^3] visionGraph places it under [[Goal]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-intent",
+    "labels": [
+      "Agent Intent"
+    ],
+    "is_subclass_of": [
+      "Goal"
+    ],
+    "wikilinks": [
+      "Goal",
+      "Intent Type",
+      "Intent Parameter",
+      "Agent Delegation",
+      "Agent Action",
+      "Agent Task",
+      "Intent Recognition"
+    ]
+  },
+  {
+    "id": "agent-interface-specification",
+    "title": "Agent Interface Specification",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent interface specification is a declaration of an interface through which an agent integrates with its surrounding system, declared as `InterfaceSpec` in the agent module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its use. visionGraph places it under [[Specification]] and relates it to [[Interface]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-interface-specification",
+    "labels": [
+      "Agent Interface Specification"
+    ],
+    "is_subclass_of": [
+      "Specification"
+    ],
+    "wikilinks": [
+      "Specification",
+      "Interface",
+      "Agent System Integration",
+      "Agent Contract"
     ]
   },
   {
@@ -11437,6 +11827,30 @@
       "Autonomous Agent",
       "Reinforcement Learning",
       "owl:Thing"
+    ]
+  },
+  {
+    "id": "agent-lifecycle-record",
+    "title": "Agent Lifecycle Record",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent lifecycle record is the record of the lifecycle of an AI agent, declared as `LifecycleRecord` in the lifecycle module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its properties. visionGraph places it under [[Lifecycle Management]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-lifecycle-record",
+    "labels": [
+      "Agent Lifecycle Record"
+    ],
+    "is_subclass_of": [
+      "Lifecycle Management"
+    ],
+    "wikilinks": [
+      "Lifecycle Management",
+      "Agent",
+      "Agent Genesis Record",
+      "Agent Decommission Record",
+      "Health Check"
     ]
   },
   {
@@ -11559,6 +11973,34 @@
     ]
   },
   {
+    "id": "agent-operational-profile",
+    "title": "Agent Operational Profile",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent operational profile gives the triggers, input schema and output schema of an agent, declared as `OperationalProfile` in the agent module of the Agent Ontology.[^1] visionGraph places it under [[Specification]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-operational-profile",
+    "labels": [
+      "Agent Operational Profile"
+    ],
+    "is_subclass_of": [
+      "Specification"
+    ],
+    "wikilinks": [
+      "Specification",
+      "Agent",
+      "Agent Trigger",
+      "Agent Input Specification",
+      "Agent Output Specification",
+      "Input State",
+      "Output State",
+      "Execution Context",
+      "Agent Purpose and Role"
+    ]
+  },
+  {
     "id": "agent-orchestrator",
     "title": "Agent Orchestrator",
     "domain": "ai",
@@ -11599,6 +12041,55 @@
     ]
   },
   {
+    "id": "agent-output-specification",
+    "title": "Agent Output Specification",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent output specification describes what an agent produces as output, declared as `OutputSpec` in the agent module of the Agent Ontology.[^1] The Agent Ontology declares the class without a definition; this one follows from its position. visionGraph places it under [[Data Schema]] and as part of an [[Agent Operational Profile]], which reaches it through `output`.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-output-specification",
+    "labels": [
+      "Agent Output Specification"
+    ],
+    "is_subclass_of": [
+      "Data Schema"
+    ],
+    "wikilinks": [
+      "Data Schema",
+      "Agent Operational Profile",
+      "Agent Artefact",
+      "Agent Input Specification",
+      "Agent Trigger",
+      "Output State",
+      "Execution Context"
+    ]
+  },
+  {
+    "id": "agent-personality",
+    "title": "Agent Personality",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent personality is a stable behavioural schema for an agent that shapes decision preference, risk style, response architecture and interaction patterns.[^1] visionGraph places it under [[Persona]] and as part of an [[Agent Profile]], to which it is attached by `hasPersonality`.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-personality",
+    "labels": [
+      "Agent Personality"
+    ],
+    "is_subclass_of": [
+      "Persona"
+    ],
+    "wikilinks": [
+      "Persona",
+      "Agent Profile",
+      "Tone Model",
+      "Language Preference"
+    ]
+  },
+  {
     "id": "agent-primitives",
     "title": "Agent Primitives",
     "domain": "artificial-intelligence",
@@ -11612,9 +12103,77 @@
       "Agent Primitives"
     ],
     "is_subclass_of": [
-      "Agent"
+      "AI Research Area"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "agent-profile",
+    "title": "Agent Profile",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent profile is a stable behavioural descriptor for an autonomous agent, covering its pragmatic and behavioural parameters.[^1] Where identity, capability, delegation and ledger describe what an agent can do, the profile describes how it behaves. visionGraph places it under [[Persona]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-profile",
+    "labels": [
+      "Agent Profile"
+    ],
+    "is_subclass_of": [
+      "Persona"
+    ],
+    "wikilinks": [
+      "Persona",
+      "Agent Personality",
+      "Language Preference",
+      "Tone Model",
+      "Agent"
+    ]
+  },
+  {
+    "id": "agent-purpose-and-role",
+    "title": "Agent Purpose and Role",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent purpose and role declares the operational purpose and ownership of an agent, declared as `PurposeRole` in the agent module of the Agent Ontology.[^1] visionGraph places it under [[Specification]] and as part of [[Agent]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-purpose-and-role",
+    "labels": [
+      "Agent Purpose and Role"
+    ],
+    "is_subclass_of": [
+      "Specification"
+    ],
+    "wikilinks": [
+      "Specification",
+      "Agent",
+      "Agent Operational Profile"
+    ]
+  },
+  {
+    "id": "agent-relationship",
+    "title": "Agent Relationship",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent relationship is a relationship between two or more agents.[^1] It is declared as `AgentRelationship` in the delegation module, and visionGraph places it under the AI Research Area hub and as part of [[Multi-Agent System]]. The schema.org mapping aligns it with `schema:Role`.[^2]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-relationship",
+    "labels": [
+      "Agent Relationship"
+    ],
+    "is_subclass_of": [
+      "AI Research Area"
+    ],
+    "wikilinks": [
+      "Multi-Agent System",
+      "Agent Delegation",
+      "Delegation Chain"
+    ]
   },
   {
     "id": "agent-runtime",
@@ -11696,6 +12255,121 @@
       "ToolUse",
       "ContextManagement",
       "AgenticWorkflow"
+    ]
+  },
+  {
+    "id": "agent-system-integration",
+    "title": "Agent System Integration",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent system integration is a declaration of the dependencies and interfaces an agent needs in order to run at operating-system level, declared as `SystemIntegration` in the agent module of the Agent Ontology.[^1] visionGraph places it under [[System Integration]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-system-integration",
+    "labels": [
+      "Agent System Integration"
+    ],
+    "is_subclass_of": [
+      "System Integration"
+    ],
+    "wikilinks": [
+      "System Integration",
+      "Agent",
+      "Agent Entity",
+      "Agent Interface Specification"
+    ]
+  },
+  {
+    "id": "agent-task",
+    "title": "Agent Task",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent task is a well-defined action unit exchanged between agents, declared as `Task` in the core module of the Agent Ontology.[^1] The threat-model module restates it and notes that it corresponds to the task graph.[^2] visionGraph places it under [[Task Planning]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-task",
+    "labels": [
+      "Agent Task"
+    ],
+    "is_subclass_of": [
+      "Task Planning"
+    ],
+    "wikilinks": [
+      "Task Planning",
+      "Agent Capability",
+      "Task Decomposition",
+      "Task Node",
+      "Task Delegation",
+      "Agent Intent"
+    ]
+  },
+  {
+    "id": "agent-trace-event",
+    "title": "Agent Trace Event",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent trace event is a verifiable record linking an agent, an action and contextual constraints. This wording is the ontology's own definition of `TraceEvent`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-trace-event",
+    "labels": [
+      "Agent Trace Event"
+    ],
+    "is_subclass_of": [
+      "Event"
+    ],
+    "wikilinks": [
+      "Agent Delegation",
+      "Event",
+      "Audit Trail"
+    ]
+  },
+  {
+    "id": "agent-trigger",
+    "title": "Agent Trigger",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An agent trigger is the condition or event that starts an agent, as part of its operational profile. The Agent Ontology declares `Trigger` without a definition; this one follows from its properties.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-trigger",
+    "labels": [
+      "Agent Trigger"
+    ],
+    "is_subclass_of": [
+      "Event"
+    ],
+    "wikilinks": [
+      "Agent Operational Profile",
+      "Event",
+      "Webhook"
+    ]
+  },
+  {
+    "id": "agent-wallet-set",
+    "title": "Agent Wallet Set",
+    "domain": "blockchain",
+    "domain_name": "Blockchain",
+    "definition": "An agent wallet set is the collection of wallets belonging to an AI agent, declared in the Agent Ontology as `WalletSet`.[^1] The ontology declares it without a definition; this one follows from its properties.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:agent-wallet-set",
+    "labels": [
+      "Agent Wallet Set"
+    ],
+    "is_subclass_of": [
+      "Configuration"
+    ],
+    "wikilinks": [
+      "Agent",
+      "Wallet",
+      "Agent Contract Set",
+      "Payment Intent"
     ]
   },
   {
@@ -11839,8 +12513,7 @@
       "Monolithic Agent"
     ],
     "is_subclass_of": [
-      "Autonomous System",
-      "Blockchain"
+      "Agent Entity"
     ],
     "wikilinks": [
       "Action",
@@ -17604,6 +18277,29 @@
     "wikilinks": []
   },
   {
+    "id": "atomic-skill",
+    "title": "Atomic Skill",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An atomic skill is an \"atomic, machine-executable operation with defined parameters\", declared as `Skill` in the Agent Ontology's capability module.[^1] The same comment states that a capability \"is composed of one or more Skills\", and the `hasSkill` property links an [[Agent Capability]] to the skills that implement it.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:atomic-skill",
+    "labels": [
+      "Atomic Skill",
+      "Executable Skill"
+    ],
+    "is_subclass_of": [
+      "Agent Action"
+    ],
+    "wikilinks": [
+      "Agent Capability",
+      "Skill Parameter",
+      "Agent Skill"
+    ]
+  },
+  {
     "id": "atomic-swap",
     "title": "Atomic Swap",
     "domain": "blockchain",
@@ -20032,7 +20728,8 @@
       "AutonomousAgent"
     ],
     "is_subclass_of": [
-      "Platform and Environment"
+      "Platform and Environment",
+      "Agent"
     ],
     "wikilinks": [
       "Action Executor",
@@ -31162,6 +31859,29 @@
     "wikilinks": []
   },
   {
+    "id": "capability-constraint",
+    "title": "Capability Constraint",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A capability constraint is a set of \"restrictions on the use of a capability, including safety, context limitations, or policy-bound execution gates\". It is declared as `CapabilityConstraint` in the Agent Ontology's capability module.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:capability-constraint",
+    "labels": [
+      "Capability Constraint"
+    ],
+    "is_subclass_of": [
+      "Constraint"
+    ],
+    "wikilinks": [
+      "Agent Capability",
+      "Constraint",
+      "Delegation Scope",
+      "Execution Constraint"
+    ]
+  },
+  {
     "id": "capability-elicitation",
     "title": "Capability Elicitation",
     "domain": "ai",
@@ -31239,6 +31959,26 @@
       "Enterprise AI"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "capability-provenance",
+    "title": "Capability Provenance",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "Capability provenance records the \"origin, version, or derivation lineage of a capability\". It is declared as `CapabilityProvenance` in the Agent Ontology's capability module.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:capability-provenance",
+    "labels": [
+      "Capability Provenance"
+    ],
+    "is_subclass_of": [
+      "Provenance"
+    ],
+    "wikilinks": [
+      "Agent Capability"
+    ]
   },
   {
     "id": "capacity-planning",
@@ -41734,7 +42474,8 @@
     "labels": [
       "Conformity Assessment",
       "AI Conformity Assessment",
-      "Conformity Assessment (AI-0103)"
+      "Conformity Assessment (AI-0103)",
+      "Compliance Assessment"
     ],
     "is_subclass_of": [
       "AI Governance and Ethics"
@@ -47257,6 +47998,27 @@
     "wikilinks": []
   },
   {
+    "id": "critical-capability",
+    "title": "Critical Capability",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A critical capability is a kind of [[Agent Capability]] whose exercise is consequential enough to need distinct handling. It is the sibling of [[Restricted Capability]], and the two classes are disjoint. The Agent Ontology declares `CriticalCapability` without a definition; this one follows from its position and its one axiom.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:critical-capability",
+    "labels": [
+      "Critical Capability"
+    ],
+    "is_subclass_of": [
+      "Agent Capability"
+    ],
+    "wikilinks": [
+      "Agent Capability",
+      "Restricted Capability"
+    ]
+  },
+  {
     "id": "critical-tracking-event",
     "title": "Critical Tracking Event",
     "domain": "supply-chains-and-logistics",
@@ -49147,7 +49909,8 @@
     "maturity": "established",
     "iri": "urn:ngm:class:cryptographic-key",
     "labels": [
-      "Cryptographic Key"
+      "Cryptographic Key",
+      "Key Material"
     ],
     "is_subclass_of": [
       "Cryptography"
@@ -53283,6 +54046,28 @@
     "wikilinks": [
       "Blockchain",
       "owl:Thing"
+    ]
+  },
+  {
+    "id": "data-handling-policy",
+    "title": "Data Handling Policy",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A data handling policy is a policy governing the processing, storage and transmission of data, declared in the Agent Ontology as the class `DataHandlingPolicy`.[^1] visionGraph places it under [[Data Protection]] and as a part of the [[Execution Context]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:data-handling-policy",
+    "labels": [
+      "Data Handling Policy"
+    ],
+    "is_subclass_of": [
+      "Data Protection"
+    ],
+    "wikilinks": [
+      "Data Protection",
+      "Execution Context",
+      "Security Binding"
     ]
   },
   {
@@ -57539,6 +58324,51 @@
     ]
   },
   {
+    "id": "delegation-basis",
+    "title": "Delegation Basis",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A delegation basis is a chain of delegation evaluations supporting the legitimacy of an action, declared in the Agent Ontology as `DelegationBasis`.[^1] visionGraph places it under [[Provenance]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:delegation-basis",
+    "labels": [
+      "Delegation Basis"
+    ],
+    "is_subclass_of": [
+      "Provenance"
+    ],
+    "wikilinks": [
+      "Provenance",
+      "Accountability Event",
+      "Agent Delegation",
+      "Responsibility Attribution"
+    ]
+  },
+  {
+    "id": "delegation-chain",
+    "title": "Delegation Chain",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A delegation chain is a sequence of delegation instances forming a multi-level authority graph. The ontology adds that it is \"useful for modeling nested or transitive delegation across agents\".[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:delegation-chain",
+    "labels": [
+      "Delegation Chain"
+    ],
+    "is_subclass_of": [
+      "Agent Relationship"
+    ],
+    "wikilinks": [
+      "Agent Relationship",
+      "Agent Delegation",
+      "Delegation Scope"
+    ]
+  },
+  {
     "id": "delegation-registry",
     "title": "Delegation Registry",
     "domain": "blockchain",
@@ -57555,6 +58385,30 @@
       "Smart Contract"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "delegation-scope",
+    "title": "Delegation Scope",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A delegation scope defines the semantic boundaries of delegated authority, including capability constraints, intent framing and operational limits.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:delegation-scope",
+    "labels": [
+      "Delegation Scope"
+    ],
+    "is_subclass_of": [
+      "Least Privilege"
+    ],
+    "wikilinks": [
+      "Agent Delegation",
+      "Agent Capability",
+      "Agent Intent",
+      "Execution Constraint",
+      "Least Privilege"
+    ]
   },
   {
     "id": "delegation-system",
@@ -76691,6 +77545,100 @@
     "wikilinks": []
   },
   {
+    "id": "execution-budget",
+    "title": "Execution Budget",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An execution budget is a constraint on the financial expenditure for a task.[^1] The ontology's class is named `Budget`.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:execution-budget",
+    "labels": [
+      "Execution Budget"
+    ],
+    "is_subclass_of": [
+      "Resource Constraint"
+    ],
+    "wikilinks": [
+      "Execution Environment",
+      "Resource Constraint",
+      "Rate Limiting"
+    ]
+  },
+  {
+    "id": "execution-constraint",
+    "title": "Execution Constraint",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An execution constraint is an operational or environmental constraint limiting the delegate's permissible actions.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:execution-constraint",
+    "labels": [
+      "Execution Constraint"
+    ],
+    "is_subclass_of": [
+      "Constraint"
+    ],
+    "wikilinks": [
+      "Delegation Scope",
+      "Resource Constraint",
+      "Execution Budget",
+      "Rate Limiting",
+      "Constraint"
+    ]
+  },
+  {
+    "id": "execution-context",
+    "title": "Execution Context",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An execution context is a contextual frame describing conditions, trust anchors or constraints associated with an agent action.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:execution-context",
+    "labels": [
+      "Execution Context"
+    ],
+    "is_subclass_of": [
+      "Runtime Environment"
+    ],
+    "wikilinks": [
+      "Execution Environment",
+      "Security Context",
+      "Input State",
+      "Output State",
+      "Runtime Environment"
+    ]
+  },
+  {
+    "id": "execution-environment",
+    "title": "Execution Environment",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An execution environment describes the host environment where an action is executed.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:execution-environment",
+    "labels": [
+      "Execution Environment"
+    ],
+    "is_subclass_of": [
+      "Runtime Environment"
+    ],
+    "wikilinks": [
+      "Execution Context",
+      "Resource Constraint",
+      "Rate Limiting",
+      "Execution Budget",
+      "Runtime Environment"
+    ]
+  },
+  {
     "id": "execution-model",
     "title": "Execution Model",
     "domain": "infrastructure",
@@ -89037,6 +89985,29 @@
     ]
   },
   {
+    "id": "governance-ledger-event",
+    "title": "Governance Ledger Event",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A governance ledger event is a ledger event that represents governance or specification update events, declared in the Agent Ontology as `GovernanceLedgerEvent` and a subclass of [[Ledger Event]].[^1] It is the counterpart of the [[Runtime Ledger Event]]: where the runtime kind records what an agent did, the governance kind records changes to the rules and specifications around it.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:governance-ledger-event",
+    "labels": [
+      "Governance Ledger Event"
+    ],
+    "is_subclass_of": [
+      "Ledger Event"
+    ],
+    "wikilinks": [
+      "Ledger Event",
+      "Runtime Ledger Event",
+      "Governance Proposal",
+      "On-chain Governance"
+    ]
+  },
+  {
     "id": "governance-model",
     "title": "Governance Model",
     "domain": "artificial-intelligence",
@@ -94729,6 +95700,28 @@
     ]
   },
   {
+    "id": "human-agent",
+    "title": "Human Agent",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A human agent is an agent that is a person. The Agent Ontology declares it as `Person` in its agent module, a subclass of the core `Agent` with the label \"Person\" and the comment \"An agent that is a human.\"[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:human-agent",
+    "labels": [
+      "Human Agent",
+      "Person Agent"
+    ],
+    "is_subclass_of": [
+      "Agent"
+    ],
+    "wikilinks": [
+      "Agent",
+      "Organisational Agent"
+    ]
+  },
+  {
     "id": "human-annotation",
     "title": "Human Annotation Data",
     "domain": "machine-learning",
@@ -100039,6 +101032,29 @@
     "wikilinks": []
   },
   {
+    "id": "identity-binding",
+    "title": "Identity Binding",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An identity binding is a member of an agent's identity set that ties one identity to the key management arrangement behind it. In the SAC-CG Agent Ontology it is the class `IdentityBinding`, declared without a definition; this one follows from its properties.[^1] An `IdentitySet` reaches it through the `identity` property, and its declared property `keyManagementSystem` is a datatype property with a string value. The value names the [[Key Management System]] that holds the keys for the identity.",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:identity-binding",
+    "labels": [
+      "Identity Binding"
+    ],
+    "is_subclass_of": [
+      "Identity Management"
+    ],
+    "wikilinks": [
+      "Key Management System",
+      "Agent Identity Set",
+      "Agent Identity",
+      "Security Binding"
+    ]
+  },
+  {
     "id": "identity-federation",
     "title": "Identity Federation",
     "domain": "infrastructure",
@@ -104285,6 +105301,28 @@
     ]
   },
   {
+    "id": "input-state",
+    "title": "Input State",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An input state represents the inputs provided to an action.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:input-state",
+    "labels": [
+      "Input State"
+    ],
+    "is_subclass_of": [
+      "Input"
+    ],
+    "wikilinks": [
+      "Execution Context",
+      "Output State",
+      "Input"
+    ]
+  },
+  {
     "id": "input",
     "title": "Input",
     "domain": "blockchain",
@@ -105398,6 +106436,28 @@
     "wikilinks": []
   },
   {
+    "id": "intent-parameter",
+    "title": "Intent Parameter",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An intent parameter is a typed parameter that specifies \"the scope and execution conditions of an intent\". It is declared as `IntentParameter` in the Agent Ontology's intent module.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:intent-parameter",
+    "labels": [
+      "Intent Parameter"
+    ],
+    "is_subclass_of": [
+      "Parameter"
+    ],
+    "wikilinks": [
+      "Agent Intent",
+      "Skill Parameter",
+      "Atomic Skill"
+    ]
+  },
+  {
     "id": "intent-recognition",
     "title": "Intent Recognition",
     "domain": "ai",
@@ -105415,6 +106475,28 @@
       "Natural Language Processing"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "intent-type",
+    "title": "Intent Type",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An intent type categorises an [[Agent Intent]]. The Agent Ontology declares it as `IntentType` in the intent module, with the comment \"Categorizes an intent (e.g., fetch-data, make-decision, generate-artifact).\"[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:intent-type",
+    "labels": [
+      "Intent Type"
+    ],
+    "is_subclass_of": [
+      "Schema"
+    ],
+    "wikilinks": [
+      "Agent Intent",
+      "Action Type",
+      "Agent Action"
+    ]
   },
   {
     "id": "inter-process-communication",
@@ -109416,6 +110498,27 @@
     "wikilinks": []
   },
   {
+    "id": "key-type",
+    "title": "Key Type",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A key type specifies the cryptographic algorithm or format of a key. In the SAC-CG Agent Ontology the class `KeyType` is defined as specifying \"the cryptographic algorithm or format (Ed25519, RSA, secp256k1)\".[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:key-type",
+    "labels": [
+      "Key Type"
+    ],
+    "is_subclass_of": [
+      "Cryptographic Algorithm"
+    ],
+    "wikilinks": [
+      "Cryptographic Key",
+      "Cryptographic Algorithm"
+    ]
+  },
+  {
     "id": "key-vector",
     "title": "Key Vector",
     "domain": "artificial-intelligence",
@@ -111571,6 +112674,29 @@
     ]
   },
   {
+    "id": "language-preference",
+    "title": "Language Preference",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A language preference is a set of linguistic parameters that govern how an agent expresses and parses language. In the SAC-CG Agent Ontology the class `LanguagePreference` is defined as covering \"preferred language, register, clarity constraints, or structural tendencies affecting expression and parsing\".[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:language-preference",
+    "labels": [
+      "Language Preference"
+    ],
+    "is_subclass_of": [
+      "Configuration"
+    ],
+    "wikilinks": [
+      "Agent Profile",
+      "Tone Model",
+      "Agent Personality",
+      "Configuration"
+    ]
+  },
+  {
     "id": "language-translation",
     "title": "Language Translation",
     "domain": "distributed-collaboration",
@@ -113041,6 +114167,31 @@
       "Access Control"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "ledger-event",
+    "title": "Ledger Event",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A ledger event is the canonical semantic event in an append-only ledger stream, declared in the Agent Ontology as `LedgerEvent`.[^1] It has two declared subclasses, the [[Runtime Ledger Event]] and the [[Governance Ledger Event]]. visionGraph places it under [[Event]] and as a part of a [[Ledger]].",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:ledger-event",
+    "labels": [
+      "Ledger Event"
+    ],
+    "is_subclass_of": [
+      "Event"
+    ],
+    "wikilinks": [
+      "Runtime Ledger Event",
+      "Governance Ledger Event",
+      "Event",
+      "Ledger",
+      "Agent Delegation",
+      "Accountability Event"
+    ]
   },
   {
     "id": "ledger",
@@ -139776,6 +140927,29 @@
     "wikilinks": []
   },
   {
+    "id": "organisational-agent",
+    "title": "Organisational Agent",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An organisational agent is an agent that is an organisation. The Agent Ontology declares it as `Organization` in its agent module, a subclass of the core `Agent`, with the comment \"An agent that is an organization.\"[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:organisational-agent",
+    "labels": [
+      "Organisational Agent",
+      "Organization Agent",
+      "Organizational Agent"
+    ],
+    "is_subclass_of": [
+      "Agent"
+    ],
+    "wikilinks": [
+      "Agent",
+      "Human Agent"
+    ]
+  },
+  {
     "id": "organisational-layer",
     "title": "Organisational Layer",
     "domain": "governance",
@@ -140078,6 +141252,29 @@
       "AI Application"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "output-state",
+    "title": "Output State",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "An output state is the record of what an action returned, held inside an [[Execution Context]]. It is the output-side counterpart of [[Input State]], which records what the action received, and the Agent Ontology declares it as `OutputState`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:output-state",
+    "labels": [
+      "Output State"
+    ],
+    "is_subclass_of": [
+      "Schema"
+    ],
+    "wikilinks": [
+      "Execution Context",
+      "Input State",
+      "Agent Artefact",
+      "Schema"
+    ]
   },
   {
     "id": "output",
@@ -142433,6 +143630,31 @@
       "Financial Infrastructure"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "payment-intent",
+    "title": "Payment Intent",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A payment intent is an [[Agent Intent]] to transfer value from one agent to another. The Agent Ontology declares it as `PaymentIntent`, a subclass of `Intent`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:payment-intent",
+    "labels": [
+      "Payment Intent"
+    ],
+    "is_subclass_of": [
+      "Agent Intent"
+    ],
+    "wikilinks": [
+      "Agent Intent",
+      "Agent Entity",
+      "Settlement Interface",
+      "Wallet",
+      "Agent Wallet Set",
+      "AI Agent Payments"
+    ]
   },
   {
     "id": "payment-network",
@@ -157821,7 +159043,8 @@
     ],
     "is_subclass_of": [
       "Infrastructure",
-      "Network Infrastructure"
+      "Network Infrastructure",
+      "Resource Constraint"
     ],
     "wikilinks": []
   },
@@ -163281,6 +164504,30 @@
     "wikilinks": []
   },
   {
+    "id": "resource-constraint",
+    "title": "Resource Constraint",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A resource constraint is a [[Constraint]] on a computational resource such as memory, processor time or storage. The Agent Ontology declares it as `ResourceConstraint`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:resource-constraint",
+    "labels": [
+      "Resource Constraint"
+    ],
+    "is_subclass_of": [
+      "Constraint"
+    ],
+    "wikilinks": [
+      "Constraint",
+      "Execution Environment",
+      "Execution Budget",
+      "Rate Limiting",
+      "Resource Allocation"
+    ]
+  },
+  {
     "id": "resource-efficiency",
     "title": "Resource Efficiency",
     "domain": "infrastructure",
@@ -163337,6 +164584,28 @@
       "Computing and Cloud"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "responsibility-attribution",
+    "title": "Responsibility Attribution",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A responsibility attribution is a record that assigns responsibility for an executed action to an agent or principal, on the strength of execution evidence. The Agent Ontology declares it as `ResponsibilityAttribution`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:responsibility-attribution",
+    "labels": [
+      "Responsibility Attribution"
+    ],
+    "is_subclass_of": [
+      "Accountability"
+    ],
+    "wikilinks": [
+      "Accountability Event",
+      "Delegation Basis",
+      "Accountability"
+    ]
   },
   {
     "id": "responsible-ai-deployment",
@@ -163493,6 +164762,27 @@
       "Efficient Supply Chain",
       "Agile Supply Chain",
       "Supply Chain Strategy Type"
+    ]
+  },
+  {
+    "id": "restricted-capability",
+    "title": "Restricted Capability",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A restricted capability is an [[Agent Capability]] whose exercise is limited, and it is the sibling of [[Critical Capability]]. The two classes are disjoint: no capability is both critical and restricted. The Agent Ontology declares the class without a definition; this one follows from its parent and the axiom that involves it.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:restricted-capability",
+    "labels": [
+      "Restricted Capability"
+    ],
+    "is_subclass_of": [
+      "Agent Capability"
+    ],
+    "wikilinks": [
+      "Agent Capability",
+      "Critical Capability"
     ]
   },
   {
@@ -166869,6 +168159,30 @@
       "Virtual Machine",
       "Garbage Collection",
       "owl:Thing"
+    ]
+  },
+  {
+    "id": "runtime-ledger-event",
+    "title": "Runtime Ledger Event",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A runtime ledger event is a [[Ledger Event]] that records the execution of an agent-level runtime action. The Agent Ontology declares it as `RuntimeLedgerEvent`, a subclass of Ledger Event.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:runtime-ledger-event",
+    "labels": [
+      "Runtime Ledger Event"
+    ],
+    "is_subclass_of": [
+      "Ledger Event"
+    ],
+    "wikilinks": [
+      "Ledger Event",
+      "Agent Action",
+      "Agent Capability",
+      "Execution Context",
+      "Governance Proposal"
     ]
   },
   {
@@ -171806,6 +173120,31 @@
     "wikilinks": []
   },
   {
+    "id": "security-binding",
+    "title": "Security Binding",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A security binding is the chain that links an agent's identifier to the hardware and ledger that vouch for it. In the SAC-CG Agent Ontology the class `SecurityBinding` \"represents the chain binding DID \u2192 Key Material \u2192 Hardware \u2192 Ledger verification.\"[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:security-binding",
+    "labels": [
+      "Security Binding"
+    ],
+    "is_subclass_of": [
+      "Attestation"
+    ],
+    "wikilinks": [
+      "Hardware Root of Trust",
+      "Trust Anchor",
+      "Decentralised Identifier",
+      "Cryptographic Key",
+      "Attestation",
+      "Identity Binding"
+    ]
+  },
+  {
     "id": "security-by-design",
     "title": "Security By Design",
     "domain": "security",
@@ -171823,6 +173162,29 @@
       "Cybersecurity"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "security-context",
+    "title": "Security Context",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A security context is the set of security-related constraints and guarantees in force while an action executes. The Agent Ontology declares it as `SecurityContext`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:security-context",
+    "labels": [
+      "Security Context"
+    ],
+    "is_subclass_of": [
+      "Security Policy"
+    ],
+    "wikilinks": [
+      "Execution Context",
+      "Hardware Root of Trust",
+      "Key Management System",
+      "Security Policy"
+    ]
   },
   {
     "id": "security-engineering",
@@ -174775,6 +176137,28 @@
     "wikilinks": []
   },
   {
+    "id": "settlement-interface",
+    "title": "Settlement Interface",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A settlement interface is a description of the technical and semantic requirements for settling a payment. The Agent Ontology declares it as `SettlementInterface`.[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:settlement-interface",
+    "labels": [
+      "Settlement Interface"
+    ],
+    "is_subclass_of": [
+      "Settlement"
+    ],
+    "wikilinks": [
+      "Payment Intent",
+      "Settlement",
+      "Payment Protocol"
+    ]
+  },
+  {
     "id": "settlement-layer",
     "title": "Settlement Layer",
     "domain": "blockchain",
@@ -176340,6 +177724,28 @@
       "3D Modelling"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "skill-parameter",
+    "title": "Skill Parameter",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A skill parameter defines one parameter of an [[Atomic Skill]], including its name and type. The Agent Ontology declares it as `Parameter` in the capability module, with the comment \"Defines a parameter for a Skill, including its name and type.\"[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:skill-parameter",
+    "labels": [
+      "Skill Parameter"
+    ],
+    "is_subclass_of": [
+      "Parameter"
+    ],
+    "wikilinks": [
+      "Atomic Skill",
+      "Intent Parameter",
+      "Parameter"
+    ]
   },
   {
     "id": "skinning",
@@ -190623,9 +192029,31 @@
       "Task Delegation"
     ],
     "is_subclass_of": [
-      "Multi-Agent System"
+      "Agent Delegation"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "task-dependency",
+    "title": "Task Dependency",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A task dependency is the relation that orders one task before another in a task graph. The Agent Ontology describes it as a \"dependency relation in a task graph\", declared as `TaskDependency`.[^1][^2]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:task-dependency",
+    "labels": [
+      "Task Dependency"
+    ],
+    "is_subclass_of": [
+      "Dependency Graph"
+    ],
+    "wikilinks": [
+      "Task Node",
+      "Dependency Graph",
+      "Task Delegation"
+    ]
   },
   {
     "id": "task-execution",
@@ -190648,6 +192076,28 @@
       "Task Planning",
       "Automation",
       "Robotics"
+    ]
+  },
+  {
+    "id": "task-node",
+    "title": "Task Node",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A task node is a node in a task dependency graph, the unit of work that the graph orders. The Agent Ontology declares it as `TaskNode`.[^1][^2]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:task-node",
+    "labels": [
+      "Task Node"
+    ],
+    "is_subclass_of": [
+      "Dependency Graph"
+    ],
+    "wikilinks": [
+      "Task Dependency",
+      "Agent Task",
+      "Dependency Graph"
     ]
   },
   {
@@ -195543,6 +196993,29 @@
       "Colour Grading",
       "Computational Photography",
       "Photorealism"
+    ]
+  },
+  {
+    "id": "tone-model",
+    "title": "Tone Model",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "A tone model is a pragmatic modulation model that guides an agent's emotional stance and manner of interaction. In the SAC-CG Agent Ontology the class `ToneModel` is defined as guiding \"emotional stance, pacing, softness/firmness, or collaborative rhythm\".[^1]",
+    "entityType": "Class",
+    "qualityScore": 0.0,
+    "maturity": "emerging",
+    "iri": "urn:ngm:class:tone-model",
+    "labels": [
+      "Tone Model"
+    ],
+    "is_subclass_of": [
+      "Natural Language Generation"
+    ],
+    "wikilinks": [
+      "Agent Profile",
+      "Agent Personality",
+      "Language Preference",
+      "Natural Language Generation"
     ]
   },
   {

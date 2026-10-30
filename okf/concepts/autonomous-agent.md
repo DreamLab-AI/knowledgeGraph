@@ -9,6 +9,7 @@ maturity: established
 quality: 0.35
 is-a:
   - urn:ngm:class:sc-platform-and-environment
+  - urn:ngm:class:agent
 hasPart:
   - urn:ngm:class:action-executor
   - urn:ngm:class:decision-engine

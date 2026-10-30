@@ -8,8 +8,7 @@ description: An autonomous computational or physical entity that perceives its e
 maturity: emerging
 quality: 0.7
 is-a:
-  - urn:ngm:class:autonomous-system
-  - urn:ngm:class:blockchain
+  - urn:ngm:class:agent-entity
 hasPart:
   - urn:ngm:class:autonomy-level
   - urn:ngm:class:perception-module
@@ -36,6 +35,8 @@ uses:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:bdi-model
   - urn:ngm:class:goal
+  - urn:ngm:class:agent-capability
+  - urn:ngm:class:cryptographic-key
 supports:
   - urn:ngm:class:human-in-the-loop
   - urn:ngm:class:ai-agent-system
@@ -47,6 +48,19 @@ relatedTo:
   - urn:ngm:class:alignment
   - urn:ngm:class:trust
   - urn:ngm:class:human-in-the-loop
+  - urn:ngm:class:agent-identity
+  - urn:ngm:class:agent-profile
+  - urn:ngm:class:agent-purpose-and-role
+  - urn:ngm:class:agent-operational-profile
+  - urn:ngm:class:agent-system-integration
+  - urn:ngm:class:agent-lifecycle-record
+  - urn:ngm:class:agent-identity-set
+  - urn:ngm:class:agent-wallet-set
+  - urn:ngm:class:agent-contract-set
+  - urn:ngm:class:agent-intent
+  - urn:ngm:class:agent-task
+  - urn:ngm:class:agent-action
+  - urn:ngm:class:autonomous-system
 ---
 
 # Agent

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:identity-management
   - urn:ngm:class:trust-framework
   - urn:ngm:class:decentralised-identity
+  - urn:ngm:class:agent-entity
 hasPart:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:decentralised-identifier
@@ -29,7 +30,7 @@ enables:
   - urn:ngm:class:accountability
   - urn:ngm:class:trust
   - urn:ngm:class:tool-use
-  - urn:ngm:class:delegation
+  - urn:ngm:class:agent-delegation
   - urn:ngm:class:authorisation
   - urn:ngm:class:non-repudiation
   - urn:ngm:class:agentic-workflow
@@ -58,6 +59,7 @@ uses:
   - urn:ngm:class:oauth
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:spiffe
+  - urn:ngm:class:key-management-system
 supports:
   - urn:ngm:class:multi-agent-system
   - urn:ngm:class:ai-safety

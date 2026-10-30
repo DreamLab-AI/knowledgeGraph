@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 1349,
+  "count": 1351,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/2-d-li-dar",
@@ -1539,7 +1539,6 @@
       "iri": "https://narrativegoldmine.com/class/adaptive-behaviour",
       "label": "Adaptive Behaviour",
       "categories": [
-        20,
         5,
         0,
         33
@@ -1548,7 +1547,6 @@
         0
       ],
       "parents": [
-        "Agent",
         "AI Research Area",
         "Reinforcement Learning",
         "Self-Organising Systems",
@@ -1695,6 +1693,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/agent-delegation",
+      "label": "Agent Delegation",
+      "categories": [
+        5,
+        30
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Agent Relationship",
+        "Authorisation"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/agent-development-sdks",
       "label": "Agent Development SDKs",
       "categories": [
@@ -1788,16 +1802,19 @@
       "label": "Agent Identity",
       "categories": [
         30,
-        11
+        11,
+        5
       ],
       "domains": [
         5,
-        1
+        1,
+        0
       ],
       "parents": [
         "Identity Management",
         "Trust Framework",
-        "Decentralised Identity"
+        "Decentralised Identity",
+        "Agent Entity"
       ]
     },
     {
@@ -1885,21 +1902,6 @@
       "parents": [
         "Agent Communication Protocol",
         "Coordination Protocol"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/agent",
-      "label": "Agent",
-      "categories": [
-        20
-      ],
-      "domains": [
-        3,
-        1
-      ],
-      "parents": [
-        "Autonomous System",
-        "Blockchain"
       ]
     },
     {
@@ -2852,6 +2854,22 @@
         "Image Generation",
         "Generative AI",
         "Open Source Software"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/autonomous-agent",
+      "label": "Autonomous Agent",
+      "categories": [
+        15,
+        5
+      ],
+      "domains": [
+        2,
+        0
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Agent"
       ]
     },
     {
@@ -5464,7 +5482,6 @@
       "label": "Cognitive Architecture",
       "categories": [
         1,
-        20,
         5
       ],
       "domains": [
@@ -17460,6 +17477,23 @@
       "parents": [
         "Display and Rendering",
         "Metaverse"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rate-limiting",
+      "label": "Rate Limiting",
+      "categories": [
+        29,
+        0
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "Network Infrastructure",
+        "Resource Constraint"
       ]
     },
     {

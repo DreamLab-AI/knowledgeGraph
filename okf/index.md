@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@6d91d1e15afb6a58089e769606e2020d3e389587
+generation: visionGraph@faa3c0447cb74f860f02c6171c523c6a03244fa9
 vocabulary_version: 1
-concept_count: 9532
+concept_count: 9595
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-9532 concepts, exported from generation `visionGraph@6d91d1e15afb6a58089e769606e2020d3e389587`.
+9595 concepts, exported from generation `visionGraph@faa3c0447cb74f860f02c6171c523c6a03244fa9`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -74,6 +74,7 @@ concept_count: 9532
 - [Access Control Decisions](concepts/access-control-decisions.md) — `urn:ngm:class:access-control-decisions`
 - [Access Control Module](concepts/access-control-module.md) — `urn:ngm:class:access-control-module`
 - [Access Control Policy](concepts/access-control-policy.md) — `urn:ngm:class:access-control-policy`
+- [Access Control Rule](concepts/access-control-rule.md) — `urn:ngm:class:access-control-rule`
 - [Access Control System](concepts/access-control-system.md) — `urn:ngm:class:access-control-system`
 - [Access Controls](concepts/access-controls.md) — `urn:ngm:class:access-controls`
 - [Access Token](concepts/access-token.md) — `urn:ngm:class:access-token`
@@ -89,6 +90,7 @@ concept_count: 9532
 - [Account Model](concepts/account-model.md) — `urn:ngm:class:account-model`
 - [Accountability](concepts/accountability.md) — `urn:ngm:class:accountability`
 - [Accountability (AI-0068)](concepts/accountability-ai-0068.md) — `urn:ngm:class:accountability-ai-0068`
+- [Accountability Event](concepts/accountability-event.md) — `urn:ngm:class:accountability-event`
 - [Accountability Framework](concepts/accountability-framework.md) — `urn:ngm:class:accountability-framework`
 - [Accountability Mechanism](concepts/accountability-mechanism.md) — `urn:ngm:class:accountability-mechanism`
 - [Accountability (OECD)](concepts/accountability-oecd.md) — `urn:ngm:class:accountability-oecd`
@@ -108,6 +110,7 @@ concept_count: 9532
 - [Action Executor](concepts/action-executor.md) — `urn:ngm:class:action-executor`
 - [Action Recognition](concepts/action-recognition.md) — `urn:ngm:class:action-recognition`
 - [Action Space](concepts/action-space.md) — `urn:ngm:class:action-space`
+- [Action Type](concepts/action-type.md) — `urn:ngm:class:action-type`
 - [Activation Function](concepts/activation-function.md) — `urn:ngm:class:activation-function`
 - [Active Earth Observation Sensor](concepts/active-earth-observation-sensor.md) — `urn:ngm:class:active-earth-observation-sensor`
 - [Active Galactic Nucleus](concepts/active-galactic-nucleus.md) — `urn:ngm:class:active-galactic-nucleus`
@@ -175,31 +178,56 @@ concept_count: 9532
 - [Affordance](concepts/affordance.md) — `urn:ngm:class:affordance`
 - [Age Verification](concepts/age-verification.md) — `urn:ngm:class:age-verification`
 - [Agent](concepts/agent.md) — `urn:ngm:class:agent`
+- [Agent Action](concepts/agent-action.md) — `urn:ngm:class:agent-action`
+- [Agent Artefact](concepts/agent-artefact.md) — `urn:ngm:class:agent-artefact`
 - [Agent-Based Modelling](concepts/agent-based-modelling.md) — `urn:ngm:class:agent-based-modelling`
 - [Agent-Based Models](concepts/agent-based-models.md) — `urn:ngm:class:agent-based-models`
+- [Agent Capability](concepts/agent-capability.md) — `urn:ngm:class:agent-capability`
 - [Agent Capability Scaling](concepts/agent-capability-scaling.md) — `urn:ngm:class:agent-capability-scaling`
 - [Agent Communication Language](concepts/agent-communication-language.md) — `urn:ngm:class:agent-communication-language`
 - [Agent Communication Protocol](concepts/agent-communication-protocol.md) — `urn:ngm:class:agent-communication-protocol`
+- [Agent Contract](concepts/agent-contract.md) — `urn:ngm:class:agent-contract`
+- [Agent Contract Set](concepts/agent-contract-set.md) — `urn:ngm:class:agent-contract-set`
+- [Agent Decommission Record](concepts/agent-decommission-record.md) — `urn:ngm:class:agent-decommission-record`
+- [Agent Delegation](concepts/agent-delegation.md) — `urn:ngm:class:agent-delegation`
 - [Agent Development SDKs](concepts/agent-development-sdks.md) — `urn:ngm:class:agent-development-sdks`
 - [Agent Ecosystem](concepts/agent-ecosystem.md) — `urn:ngm:class:agent-ecosystem`
+- [Agent Entity](concepts/agent-entity.md) — `urn:ngm:class:agent-entity`
 - [Agent Evaluation Benchmarks](concepts/agent-evaluation-benchmarks.md) — `urn:ngm:class:agent-evaluation-benchmarks`
 - [Agent Event Stream](concepts/agent-event-stream.md) — `urn:ngm:class:agent-event-stream`
 - [Agent Execution Sandboxes](concepts/agent-execution-sandboxes.md) — `urn:ngm:class:agent-execution-sandboxes`
 - [Agent Frameworks](concepts/agent-frameworks.md) — `urn:ngm:class:agent-frameworks`
+- [Agent Genesis Record](concepts/agent-genesis-record.md) — `urn:ngm:class:agent-genesis-record`
 - [Agent Handoff](concepts/agent-handoff.md) — `urn:ngm:class:agent-handoff`
 - [Agent Harness](concepts/agent-harness.md) — `urn:ngm:class:agent-harness`
 - [Agent Identity](concepts/agent-identity.md) — `urn:ngm:class:agent-identity`
+- [Agent Identity Set](concepts/agent-identity-set.md) — `urn:ngm:class:agent-identity-set`
+- [Agent Input Specification](concepts/agent-input-specification.md) — `urn:ngm:class:agent-input-specification`
+- [Agent Intent](concepts/agent-intent.md) — `urn:ngm:class:agent-intent`
+- [Agent Interface Specification](concepts/agent-interface-specification.md) — `urn:ngm:class:agent-interface-specification`
 - [Agent Layer](concepts/agent-layer.md) — `urn:ngm:class:agent-layer`
+- [Agent Lifecycle Record](concepts/agent-lifecycle-record.md) — `urn:ngm:class:agent-lifecycle-record`
 - [Agent Loop](concepts/agent-loop.md) — `urn:ngm:class:agent-loop`
 - [Agent Management](concepts/agent-management.md) — `urn:ngm:class:agent-management`
 - [Agent Memory](concepts/agent-memory.md) — `urn:ngm:class:agent-memory`
 - [Agent Memory Layers](concepts/agent-memory-layers.md) — `urn:ngm:class:agent-memory-layers`
+- [Agent Operational Profile](concepts/agent-operational-profile.md) — `urn:ngm:class:agent-operational-profile`
 - [Agent Orchestrator](concepts/agent-orchestrator.md) — `urn:ngm:class:agent-orchestrator`
+- [Agent Output Specification](concepts/agent-output-specification.md) — `urn:ngm:class:agent-output-specification`
+- [Agent Personality](concepts/agent-personality.md) — `urn:ngm:class:agent-personality`
 - [Agent Primitives](concepts/agent-primitives.md) — `urn:ngm:class:agent-primitives`
+- [Agent Profile](concepts/agent-profile.md) — `urn:ngm:class:agent-profile`
+- [Agent Purpose and Role](concepts/agent-purpose-and-role.md) — `urn:ngm:class:agent-purpose-and-role`
+- [Agent Relationship](concepts/agent-relationship.md) — `urn:ngm:class:agent-relationship`
 - [Agent Runtime](concepts/agent-runtime.md) — `urn:ngm:class:agent-runtime`
 - [Agent Security](concepts/agent-security.md) — `urn:ngm:class:agent-security`
 - [Agent Skill](concepts/agent-skill.md) — `urn:ngm:class:agent-skill`
+- [Agent System Integration](concepts/agent-system-integration.md) — `urn:ngm:class:agent-system-integration`
+- [Agent Task](concepts/agent-task.md) — `urn:ngm:class:agent-task`
 - [Agent-to-Agent Protocol](concepts/agent-to-agent-protocol.md) — `urn:ngm:class:agent-to-agent-protocol`
+- [Agent Trace Event](concepts/agent-trace-event.md) — `urn:ngm:class:agent-trace-event`
+- [Agent Trigger](concepts/agent-trigger.md) — `urn:ngm:class:agent-trigger`
+- [Agent Wallet Set](concepts/agent-wallet-set.md) — `urn:ngm:class:agent-wallet-set`
 - [Agent2Agent Protocol](concepts/agent2-agent-protocol.md) — `urn:ngm:class:agent2-agent-protocol`
 - [Agent2Agent Protocol (Google 2025)](concepts/agent2-agent-protocol-google-2025.md) — `urn:ngm:class:agent2-agent-protocol-google-2025`
 - [Agentic AI](concepts/agentic-ai.md) — `urn:ngm:class:agentic-ai`
@@ -722,6 +750,7 @@ concept_count: 9532
 - [Atomic Broadcast](concepts/atomic-broadcast.md) — `urn:ngm:class:atomic-broadcast`
 - [Atomic Delivery versus Payment](concepts/atomic-delivery-versus-payment.md) — `urn:ngm:class:atomic-delivery-versus-payment`
 - [Atomic Settlement](concepts/atomic-settlement.md) — `urn:ngm:class:atomic-settlement`
+- [Atomic Skill](concepts/atomic-skill.md) — `urn:ngm:class:atomic-skill`
 - [Atomic Swap](concepts/atomic-swap.md) — `urn:ngm:class:atomic-swap`
 - [Attack Vector](concepts/attack-vector.md) — `urn:ngm:class:attack-vector`
 - [Attention](concepts/attention.md) — `urn:ngm:class:attention`
@@ -1253,10 +1282,12 @@ concept_count: 9532
 - [Canonical JSON](concepts/canonical-json.md) — `urn:ngm:class:canonical-json`
 - [CAP Theorem](concepts/cap-theorem.md) — `urn:ngm:class:cap-theorem`
 - [Capability Advertisement](concepts/capability-advertisement.md) — `urn:ngm:class:capability-advertisement`
+- [Capability Constraint](concepts/capability-constraint.md) — `urn:ngm:class:capability-constraint`
 - [Capability Elicitation](concepts/capability-elicitation.md) — `urn:ngm:class:capability-elicitation`
 - [Capability Evaluation](concepts/capability-evaluation.md) — `urn:ngm:class:capability-evaluation`
 - [Capability Forecasting](concepts/capability-forecasting.md) — `urn:ngm:class:capability-forecasting`
 - [Capability Overhang](concepts/capability-overhang.md) — `urn:ngm:class:capability-overhang`
+- [Capability Provenance](concepts/capability-provenance.md) — `urn:ngm:class:capability-provenance`
 - [Capacity Planning](concepts/capacity-planning.md) — `urn:ngm:class:capacity-planning`
 - [Capacity Requirements Planning](concepts/capacity-requirements-planning.md) — `urn:ngm:class:capacity-requirements-planning`
 - [Capital Adequacy](concepts/capital-adequacy.md) — `urn:ngm:class:capital-adequacy`
@@ -1930,6 +1961,7 @@ concept_count: 9532
 - [CrewAI](concepts/crew-ai.md) — `urn:ngm:class:crew-ai`
 - [Crew Health Monitoring](concepts/crew-health-monitoring.md) — `urn:ngm:class:crew-health-monitoring`
 - [Crewed Spacecraft](concepts/crewed-spacecraft.md) — `urn:ngm:class:crewed-spacecraft`
+- [Critical Capability](concepts/critical-capability.md) — `urn:ngm:class:critical-capability`
 - [Critical Tracking Event](concepts/critical-tracking-event.md) — `urn:ngm:class:critical-tracking-event`
 - [CRM](concepts/crm.md) — `urn:ngm:class:crm`
 - [CRM Integration](concepts/crm-integration.md) — `urn:ngm:class:crm-integration`
@@ -2157,6 +2189,7 @@ concept_count: 9532
 - [Data Format Standard](concepts/data-format-standard.md) — `urn:ngm:class:data-format-standard`
 - [Data Governance](concepts/data-governance.md) — `urn:ngm:class:data-governance`
 - [Data Governance Framework](concepts/data-governance-framework.md) — `urn:ngm:class:data-governance-framework`
+- [Data Handling Policy](concepts/data-handling-policy.md) — `urn:ngm:class:data-handling-policy`
 - [Data Infrastructure](concepts/data-infrastructure.md) — `urn:ngm:class:data-infrastructure`
 - [Data Ingestion](concepts/data-ingestion.md) — `urn:ngm:class:data-ingestion`
 - [Data Integration](concepts/data-integration.md) — `urn:ngm:class:data-integration`
@@ -2332,7 +2365,10 @@ concept_count: 9532
 - [Delegated Authorisation](concepts/delegated-authorisation.md) — `urn:ngm:class:delegated-authorisation`
 - [Delegated Proof of Stake](concepts/delegated-proof-of-stake.md) — `urn:ngm:class:delegated-proof-of-stake`
 - [Delegation](concepts/delegation.md) — `urn:ngm:class:delegation`
+- [Delegation Basis](concepts/delegation-basis.md) — `urn:ngm:class:delegation-basis`
+- [Delegation Chain](concepts/delegation-chain.md) — `urn:ngm:class:delegation-chain`
 - [Delegation Registry](concepts/delegation-registry.md) — `urn:ngm:class:delegation-registry`
+- [Delegation Scope](concepts/delegation-scope.md) — `urn:ngm:class:delegation-scope`
 - [Delegation System](concepts/delegation-system.md) — `urn:ngm:class:delegation-system`
 - [Deliberate Demonstration](concepts/deliberate-demonstration.md) — `urn:ngm:class:deliberate-demonstration`
 - [Delivered Duty Paid](concepts/delivered-duty-paid.md) — `urn:ngm:class:delivered-duty-paid`
@@ -3164,6 +3200,10 @@ concept_count: 9532
 - [Exchange Mechanism](concepts/exchange-mechanism.md) — `urn:ngm:class:exchange-mechanism`
 - [Exchange Rate](concepts/exchange-rate.md) — `urn:ngm:class:exchange-rate`
 - [Exchange-Traded Fund](concepts/exchange-traded-fund.md) — `urn:ngm:class:exchange-traded-fund`
+- [Execution Budget](concepts/execution-budget.md) — `urn:ngm:class:execution-budget`
+- [Execution Constraint](concepts/execution-constraint.md) — `urn:ngm:class:execution-constraint`
+- [Execution Context](concepts/execution-context.md) — `urn:ngm:class:execution-context`
+- [Execution Environment](concepts/execution-environment.md) — `urn:ngm:class:execution-environment`
 - [Execution Model](concepts/execution-model.md) — `urn:ngm:class:execution-model`
 - [Executive Sponsorship](concepts/executive-sponsorship.md) — `urn:ngm:class:executive-sponsorship`
 - [Existential AI Risk](concepts/existential-ai-risk.md) — `urn:ngm:class:existential-ai-risk`
@@ -3703,6 +3743,7 @@ concept_count: 9532
 - [Governance Frameworks](concepts/governance-frameworks.md) — `urn:ngm:class:governance-frameworks`
 - [Governance Infrastructure](concepts/governance-infrastructure.md) — `urn:ngm:class:governance-infrastructure`
 - [Governance Layer](concepts/governance-layer.md) — `urn:ngm:class:governance-layer`
+- [Governance Ledger Event](concepts/governance-ledger-event.md) — `urn:ngm:class:governance-ledger-event`
 - [Governance Model](concepts/governance-model.md) — `urn:ngm:class:governance-model`
 - [Governance Proposal](concepts/governance-proposal.md) — `urn:ngm:class:governance-proposal`
 - [Governance Risk Compliance](concepts/governance-risk-compliance.md) — `urn:ngm:class:governance-risk-compliance`
@@ -3984,6 +4025,7 @@ concept_count: 9532
 - [HuggingFace Hub](concepts/hugging-face-hub.md) — `urn:ngm:class:hugging-face-hub`
 - [Hugging Face Model Hub](concepts/hugging-face-model-hub.md) — `urn:ngm:class:hugging-face-model-hub`
 - [Human Agency and Oversight](concepts/human-agency-and-oversight.md) — `urn:ngm:class:human-agency-and-oversight`
+- [Human Agent](concepts/human-agent.md) — `urn:ngm:class:human-agent`
 - [Human-Agent Interaction Surfaces](concepts/human-agent-interaction-surfaces.md) — `urn:ngm:class:human-agent-interaction-surfaces`
 - [Human-AI Capability Complementarity](concepts/human-ai-capability-complementarity.md) — `urn:ngm:class:human-ai-capability-complementarity`
 - [Human-AI Collaboration](concepts/human-ai-collaboration.md) — `urn:ngm:class:human-ai-collaboration`
@@ -4086,6 +4128,7 @@ concept_count: 9532
 - [Identity](concepts/identity.md) — `urn:ngm:class:identity`
 - [Identity and Access Management](concepts/identity-and-access-management.md) — `urn:ngm:class:identity-and-access-management`
 - [Identity Attestation](concepts/identity-attestation.md) — `urn:ngm:class:identity-attestation`
+- [Identity Binding](concepts/identity-binding.md) — `urn:ngm:class:identity-binding`
 - [Identity Federation](concepts/identity-federation.md) — `urn:ngm:class:identity-federation`
 - [Identity Graph](concepts/identity-graph.md) — `urn:ngm:class:identity-graph`
 - [Identity Layer](concepts/identity-layer.md) — `urn:ngm:class:identity-layer`
@@ -4320,6 +4363,7 @@ concept_count: 9532
 - [Innovation Ecosystems](concepts/innovation-ecosystems.md) — `urn:ngm:class:innovation-ecosystems`
 - [Inpainting](concepts/inpainting.md) — `urn:ngm:class:inpainting`
 - [Input](concepts/input.md) — `urn:ngm:class:input`
+- [Input State](concepts/input-state.md) — `urn:ngm:class:input-state`
 - [Inscription](concepts/inscription.md) — `urn:ngm:class:inscription`
 - [Inside Out Tracking](concepts/inside-out-tracking.md) — `urn:ngm:class:inside-out-tracking`
 - [Insider Trading](concepts/insider-trading.md) — `urn:ngm:class:insider-trading`
@@ -4372,7 +4416,9 @@ concept_count: 9532
 - [Intelligent Tutoring System](concepts/intelligent-tutoring-system.md) — `urn:ngm:class:intelligent-tutoring-system`
 - [Intelligent Virtual Entity](concepts/intelligent-virtual-entity.md) — `urn:ngm:class:intelligent-virtual-entity`
 - [Intent Classification](concepts/intent-classification.md) — `urn:ngm:class:intent-classification`
+- [Intent Parameter](concepts/intent-parameter.md) — `urn:ngm:class:intent-parameter`
 - [Intent Recognition](concepts/intent-recognition.md) — `urn:ngm:class:intent-recognition`
+- [Intent Type](concepts/intent-type.md) — `urn:ngm:class:intent-type`
 - [Inter-Agent Communication](concepts/inter-agent-communication.md) — `urn:ngm:class:inter-agent-communication`
 - [Inter-Annotator Agreement](concepts/inter-annotator-agreement.md) — `urn:ngm:class:inter-annotator-agreement`
 - [Inter-Blockchain Communication](concepts/inter-blockchain-communication.md) — `urn:ngm:class:inter-blockchain-communication`
@@ -4656,6 +4702,7 @@ concept_count: 9532
 - [Key Management](concepts/key-management.md) — `urn:ngm:class:key-management`
 - [Key Management System](concepts/key-management-system.md) — `urn:ngm:class:key-management-system`
 - [Key Pair](concepts/key-pair.md) — `urn:ngm:class:key-pair`
+- [Key Type](concepts/key-type.md) — `urn:ngm:class:key-type`
 - [Key-Value Cache](concepts/key-value-cache.md) — `urn:ngm:class:key-value-cache`
 - [Key Vector](concepts/key-vector.md) — `urn:ngm:class:key-vector`
 - [Keyframe Animation](concepts/keyframe-animation.md) — `urn:ngm:class:keyframe-animation`
@@ -4746,6 +4793,7 @@ concept_count: 9532
 - [Language Model](concepts/language-model.md) — `urn:ngm:class:language-model`
 - [Language Model Alignment](concepts/language-model-alignment.md) — `urn:ngm:class:language-model-alignment`
 - [Language Modeling](concepts/language-modeling.md) — `urn:ngm:class:language-modeling`
+- [Language Preference](concepts/language-preference.md) — `urn:ngm:class:language-preference`
 - [Language Translation](concepts/language-translation.md) — `urn:ngm:class:language-translation`
 - [Laplace Mechanism](concepts/laplace-mechanism.md) — `urn:ngm:class:laplace-mechanism`
 - [Laplace Transform](concepts/laplace-transform.md) — `urn:ngm:class:laplace-transform`
@@ -4813,6 +4861,7 @@ concept_count: 9532
 - [Learning Resources](concepts/learning-resources.md) — `urn:ngm:class:learning-resources`
 - [Least Privilege](concepts/least-privilege.md) — `urn:ngm:class:least-privilege`
 - [Ledger](concepts/ledger.md) — `urn:ngm:class:ledger`
+- [Ledger Event](concepts/ledger-event.md) — `urn:ngm:class:ledger-event`
 - [Leeds](concepts/leeds.md) — `urn:ngm:class:leeds`
 - [Leeds Digital Hub](concepts/leeds-digital-hub.md) — `urn:ngm:class:leeds-digital-hub`
 - [Legal Accountability](concepts/legal-accountability.md) — `urn:ngm:class:legal-accountability`
@@ -6045,6 +6094,7 @@ concept_count: 9532
 - [Order Promising](concepts/order-promising.md) — `urn:ngm:class:order-promising`
 - [Ordinals](concepts/ordinals.md) — `urn:ngm:class:ordinals`
 - [Ordinary Differential Equation](concepts/ordinary-differential-equation.md) — `urn:ngm:class:ordinary-differential-equation`
+- [Organisational Agent](concepts/organisational-agent.md) — `urn:ngm:class:organisational-agent`
 - [Organisational Layer](concepts/organisational-layer.md) — `urn:ngm:class:organisational-layer`
 - [Organisational Learning](concepts/organisational-learning.md) — `urn:ngm:class:organisational-learning`
 - [Organisational Resilience](concepts/organisational-resilience.md) — `urn:ngm:class:organisational-resilience`
@@ -6063,6 +6113,7 @@ concept_count: 9532
 - [Outlier Detection](concepts/outlier-detection.md) — `urn:ngm:class:outlier-detection`
 - [Outpainting](concepts/outpainting.md) — `urn:ngm:class:outpainting`
 - [Output](concepts/output.md) — `urn:ngm:class:output`
+- [Output State](concepts/output-state.md) — `urn:ngm:class:output-state`
 - [Outsourcing](concepts/outsourcing.md) — `urn:ngm:class:outsourcing`
 - [Over Collateralisation](concepts/over-collateralisation.md) — `urn:ngm:class:over-collateralisation`
 - [Over The Air Update](concepts/over-the-air-update.md) — `urn:ngm:class:over-the-air-update`
@@ -6169,6 +6220,7 @@ concept_count: 9532
 - [Payment Channels](concepts/payment-channels.md) — `urn:ngm:class:payment-channels`
 - [Payment Gateway](concepts/payment-gateway.md) — `urn:ngm:class:payment-gateway`
 - [Payment Infrastructure](concepts/payment-infrastructure.md) — `urn:ngm:class:payment-infrastructure`
+- [Payment Intent](concepts/payment-intent.md) — `urn:ngm:class:payment-intent`
 - [Payment Network](concepts/payment-network.md) — `urn:ngm:class:payment-network`
 - [Payment Preimage](concepts/payment-preimage.md) — `urn:ngm:class:payment-preimage`
 - [Payment Processing](concepts/payment-processing.md) — `urn:ngm:class:payment-processing`
@@ -7180,9 +7232,11 @@ concept_count: 9532
 - [Resolution Test Chart](concepts/resolution-test-chart.md) — `urn:ngm:class:resolution-test-chart`
 - [Resolver](concepts/resolver.md) — `urn:ngm:class:resolver`
 - [Resource Allocation](concepts/resource-allocation.md) — `urn:ngm:class:resource-allocation`
+- [Resource Constraint](concepts/resource-constraint.md) — `urn:ngm:class:resource-constraint`
 - [Resource Efficiency](concepts/resource-efficiency.md) — `urn:ngm:class:resource-efficiency`
 - [Resource Management](concepts/resource-management.md) — `urn:ngm:class:resource-management`
 - [Response Time Prediction](concepts/response-time-prediction.md) — `urn:ngm:class:response-time-prediction`
+- [Responsibility Attribution](concepts/responsibility-attribution.md) — `urn:ngm:class:responsibility-attribution`
 - [Responsible AI](concepts/responsible-ai.md) — `urn:ngm:class:responsible-ai`
 - [Responsible AI Deployment](concepts/responsible-ai-deployment.md) — `urn:ngm:class:responsible-ai-deployment`
 - [Responsible AI Principles](concepts/responsible-ai-principles.md) — `urn:ngm:class:responsible-ai-principles`
@@ -7193,6 +7247,7 @@ concept_count: 9532
 - [REST](concepts/rest.md) — `urn:ngm:class:rest`
 - [REST API](concepts/rest-api.md) — `urn:ngm:class:rest-api`
 - [RESTful API](concepts/restful-api.md) — `urn:ngm:class:restful-api`
+- [Restricted Capability](concepts/restricted-capability.md) — `urn:ngm:class:restricted-capability`
 - [Restricted Three-body Problem](concepts/restricted-three-body-problem.md) — `urn:ngm:class:restricted-three-body-problem`
 - [Retail CBDC](concepts/retail-cbdc.md) — `urn:ngm:class:retail-cbdc`
 - [Retailer](concepts/retailer.md) — `urn:ngm:class:retailer`
@@ -7368,6 +7423,7 @@ concept_count: 9532
 - [Runtime Environment](concepts/runtime-environment.md) — `urn:ngm:class:runtime-environment`
 - [Runtime Inspection](concepts/runtime-inspection.md) — `urn:ngm:class:runtime-inspection`
 - [Runtime Layer](concepts/runtime-layer.md) — `urn:ngm:class:runtime-layer`
+- [Runtime Ledger Event](concepts/runtime-ledger-event.md) — `urn:ngm:class:runtime-ledger-event`
 - [Russell Group](concepts/russell-group.md) — `urn:ngm:class:russell-group`
 - [Rust Systems Programming Language](concepts/rust-systems-programming-language.md) — `urn:ngm:class:rust-systems-programming-language`
 - [ruv-FANN Multi-Agent Swarm Framework](concepts/ruv-fann-multi-agent-swarm-framework.md) — `urn:ngm:class:ruv-fann-multi-agent-swarm-framework`
@@ -7586,7 +7642,9 @@ concept_count: 9532
 - [Security Architecture](concepts/security-architecture.md) — `urn:ngm:class:security-architecture`
 - [Security Audit](concepts/security-audit.md) — `urn:ngm:class:security-audit`
 - [security audit guide](concepts/security-audit-guide.md) — `urn:ngm:class:security-audit-guide`
+- [Security Binding](concepts/security-binding.md) — `urn:ngm:class:security-binding`
 - [Security By Design](concepts/security-by-design.md) — `urn:ngm:class:security-by-design`
+- [Security Context](concepts/security-context.md) — `urn:ngm:class:security-context`
 - [Security Engineering](concepts/security-engineering.md) — `urn:ngm:class:security-engineering`
 - [Security Framework](concepts/security-framework.md) — `urn:ngm:class:security-framework`
 - [Security Information and Event Management](concepts/security-information-and-event-management.md) — `urn:ngm:class:security-information-and-event-management`
@@ -7726,6 +7784,7 @@ concept_count: 9532
 - [Setpoint](concepts/setpoint.md) — `urn:ngm:class:setpoint`
 - [Settlement](concepts/settlement.md) — `urn:ngm:class:settlement`
 - [Settlement Finality](concepts/settlement-finality.md) — `urn:ngm:class:settlement-finality`
+- [Settlement Interface](concepts/settlement-interface.md) — `urn:ngm:class:settlement-interface`
 - [Settlement Layer](concepts/settlement-layer.md) — `urn:ngm:class:settlement-layer`
 - [ShEx](concepts/sh-ex.md) — `urn:ngm:class:sh-ex`
 - [SHA-256](concepts/sha-256.md) — `urn:ngm:class:sha-256`
@@ -7809,6 +7868,7 @@ concept_count: 9532
 - [Skeletal Animation](concepts/skeletal-animation.md) — `urn:ngm:class:skeletal-animation`
 - [Skeletal Mesh](concepts/skeletal-mesh.md) — `urn:ngm:class:skeletal-mesh`
 - [Skeletal Rig](concepts/skeletal-rig.md) — `urn:ngm:class:skeletal-rig`
+- [Skill Parameter](concepts/skill-parameter.md) — `urn:ngm:class:skill-parameter`
 - [Skinning](concepts/skinning.md) — `urn:ngm:class:skinning`
 - [Skos Vocabulary](concepts/skos-vocabulary.md) — `urn:ngm:class:skos-vocabulary`
 - [Slack](concepts/slack.md) — `urn:ngm:class:slack`
@@ -8469,7 +8529,9 @@ concept_count: 9532
 - [Task Automation](concepts/task-automation.md) — `urn:ngm:class:task-automation`
 - [Task Decomposition](concepts/task-decomposition.md) — `urn:ngm:class:task-decomposition`
 - [Task Delegation](concepts/task-delegation.md) — `urn:ngm:class:task-delegation`
+- [Task Dependency](concepts/task-dependency.md) — `urn:ngm:class:task-dependency`
 - [Task Execution](concepts/task-execution.md) — `urn:ngm:class:task-execution`
+- [Task Node](concepts/task-node.md) — `urn:ngm:class:task-node`
 - [Task-Oriented Dialogue](concepts/task-oriented-dialogue.md) — `urn:ngm:class:task-oriented-dialogue`
 - [Task Planning](concepts/task-planning.md) — `urn:ngm:class:task-planning`
 - [Task Scheduling](concepts/task-scheduling.md) — `urn:ngm:class:task-scheduling`
@@ -8725,6 +8787,7 @@ concept_count: 9532
 - [Tokenomics](concepts/tokenomics.md) — `urn:ngm:class:tokenomics`
 - [Tokenomics Governance](concepts/tokenomics-governance.md) — `urn:ngm:class:tokenomics-governance`
 - [Tone Mapping](concepts/tone-mapping.md) — `urn:ngm:class:tone-mapping`
+- [Tone Model](concepts/tone-model.md) — `urn:ngm:class:tone-model`
 - [Tool-Augmented LLM](concepts/tool-augmented-llm.md) — `urn:ngm:class:tool-augmented-llm`
 - [Tool-Augmented Reasoning](concepts/tool-augmented-reasoning.md) — `urn:ngm:class:tool-augmented-reasoning`
 - [Tool Call Loop](concepts/tool-call-loop.md) — `urn:ngm:class:tool-call-loop`

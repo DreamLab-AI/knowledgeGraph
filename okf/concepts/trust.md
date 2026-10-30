@@ -17,7 +17,7 @@ enables:
   - urn:ngm:class:trust-establishment
   - urn:ngm:class:trust-infrastructure
   - urn:ngm:class:trust-score-metric
-  - urn:ngm:class:delegation
+  - urn:ngm:class:agent-delegation
   - urn:ngm:class:cooperation
 dependsOn:
   - urn:ngm:class:identity

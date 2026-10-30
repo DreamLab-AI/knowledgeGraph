@@ -18,6 +18,8 @@ requires:
 enables:
   - urn:ngm:class:authentication
   - urn:ngm:class:digital-signature
+dependsOn:
+  - urn:ngm:class:trust-anchor
 uses:
   - urn:ngm:class:encryption
   - urn:ngm:class:certificate-authority
@@ -30,6 +32,8 @@ relatedTo:
   - urn:ngm:class:secure-enclave
   - urn:ngm:class:secure-element
   - urn:ngm:class:side-channel-attack
+  - urn:ngm:class:trusted-execution-environment
+  - urn:ngm:class:remote-attestation
 ---
 
 # Hardware Root of Trust

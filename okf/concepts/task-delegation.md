@@ -8,7 +8,7 @@ description: "Task Delegation is the mechanism by which an agent assigns a sub-t
 maturity: emerging
 quality: 0.62
 is-a:
-  - urn:ngm:class:multi-agent-system
+  - urn:ngm:class:agent-delegation
 requires:
   - urn:ngm:class:agent-communication-language
 enables:

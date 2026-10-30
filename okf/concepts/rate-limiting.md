@@ -10,6 +10,7 @@ quality: 0.62
 is-a:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:network-infrastructure
+  - urn:ngm:class:resource-constraint
 hasPart:
   - urn:ngm:class:caching
 requires:

@@ -50,6 +50,7 @@ relatedTo:
   - urn:ngm:class:certification
   - urn:ngm:class:accreditation
   - urn:ngm:class:digital-product-passport
+  - urn:ngm:class:eu-ai-act
 ---
 
 # Conformity Assessment

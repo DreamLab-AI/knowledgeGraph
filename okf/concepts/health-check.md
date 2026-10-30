@@ -28,6 +28,7 @@ supports:
   - urn:ngm:class:kubernetes
 partOf:
   - urn:ngm:class:high-availability
+  - urn:ngm:class:agent-lifecycle-record
 relatedTo:
   - urn:ngm:class:uptime
   - urn:ngm:class:service-level-agreement

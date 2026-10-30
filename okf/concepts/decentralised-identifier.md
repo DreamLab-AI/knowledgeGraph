@@ -110,6 +110,7 @@ standardizedBy:
 partOf:
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:identity-management
+  - urn:ngm:class:agent-identity
 relatedTo:
   - urn:ngm:class:oauth
   - urn:ngm:class:public-key-infrastructure

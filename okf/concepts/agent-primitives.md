@@ -8,7 +8,7 @@ description: The foundational software components and abstractions, such as orch
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:agent
+  - urn:ngm:class:ai-research-area
 relatedTo:
   - urn:ngm:class:agent
   - urn:ngm:class:multi-agent-system

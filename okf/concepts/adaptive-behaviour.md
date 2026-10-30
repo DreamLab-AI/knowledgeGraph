@@ -8,7 +8,6 @@ description: "Adaptive behaviour refers to the capacity of an agent, system, or 
 maturity: established
 quality: 0.91
 is-a:
-  - urn:ngm:class:agent
   - urn:ngm:class:ai-research-area
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:self-organising-systems
@@ -84,6 +83,7 @@ relatedTo:
   - urn:ngm:class:causal-inference
   - urn:ngm:class:safe-ai
   - urn:ngm:class:distribution-shift
+  - urn:ngm:class:agent
 ---
 
 # Adaptive Behaviour
