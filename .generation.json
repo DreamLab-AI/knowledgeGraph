@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@c4add86360d04f27561780d9424101d51aa54014",
-  "commit": "c4add86360d04f27561780d9424101d51aa54014",
+  "id": "visionGraph@136af986f2974534df9d63bb25aabf534c79e6c7",
+  "commit": "136af986f2974534df9d63bb25aabf534c79e6c7",
   "dirty": false,
-  "content_digest": "359231e2da9653c0e7fc8f6db6bc5e93bae1e001fcd40af235137550e0ac04a2",
+  "content_digest": "5837e57c3462bd7916d09d087bf51e15c5db1775faa40616ffc00715a502138a",
   "ontology_digest": "sha256-12-b5e547c50de7",
-  "generated_at": "2026-10-31T09:35:55.469673+00:00",
+  "generated_at": "2026-10-31T10:02:34.432303+00:00",
   "class_count": 9595,
   "page_count": 9595,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "5971554e12321c3e9814e84cc16b6322a69437821f0ab58dbcff3fd0b121983e",
+      "sha256": "2764362b24636b9c9529c60836f961b1f8145e2de6dcd3c60552dcbbfc0546c5",
       "bytes": 3832292
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "6df5e86f26df01c7e3e31c35714bfb19e0d9069438c9964eb53e846518c00531",
+      "sha256": "1497b8db3385c4e8b09ecb8eed34e269e5b4d391a777beec6b8a2a4a6ab948fc",
       "bytes": 10373953
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "4129603ac84e3d374e68257cc2a461dc7b5db01d3327238c71562aa30fa83f9c",
+      "sha256": "3acb7ec964b2c0505be912aa6d452ae66f8fad75d1acf4da0d8b00cec36996f9",
       "bytes": 5519333
     },
     {
@@ -50246,8 +50246,8 @@
     },
     {
       "name": "api/markdown/Admittance Control.md",
-      "sha256": "e6e25f6e967a62c1202e42dd83b5c18d549130993983820dcc49a713c29f81e7",
-      "bytes": 62453
+      "sha256": "32c8a8edf71ce28930d9e569729d0204344e63bc50dd289e4e873c89c85c6150",
+      "bytes": 62167
     },
     {
       "name": "api/markdown/Adobe Creative Cloud.md",
@@ -59376,8 +59376,8 @@
     },
     {
       "name": "api/markdown/Data Layer.md",
-      "sha256": "9b78cf6da628232f299fa80a39228d38bf43c2155fa0e371812fd4e59594431f",
-      "bytes": 69352
+      "sha256": "1bdb24f4a1752d221c874baa285d784ea1820664a05a17ee3f63f6a24dcc4804",
+      "bytes": 68976
     },
     {
       "name": "api/markdown/Data Lifecycle.md",
@@ -59851,8 +59851,8 @@
     },
     {
       "name": "api/markdown/Decentralised Agentic Infrastructure Stack.md",
-      "sha256": "bead5afff17cea5530ec1da74798bc864f296ba0816187b9b3bdb0f3ca15105b",
-      "bytes": 28891
+      "sha256": "4ed256cfdf89138664144348a1575465e96e4a52f97fbb9642de81f5dc55bfeb",
+      "bytes": 28709
     },
     {
       "name": "api/markdown/Decentralised Ai.md",
@@ -60526,8 +60526,8 @@
     },
     {
       "name": "api/markdown/Diagrams as Code.md",
-      "sha256": "a8ef489861fbd6909e75ba763c3747071f544183e3da32beef926a24c90bd3cd",
-      "bytes": 76348
+      "sha256": "fa50d0f5dc58099a25a79ce7b29a830af1b8aae6182ea57aa91dcac9cdd2f7d1",
+      "bytes": 76353
     },
     {
       "name": "api/markdown/Dialogue Management.md",
@@ -61366,8 +61366,8 @@
     },
     {
       "name": "api/markdown/Direct Preference Optimisation.md",
-      "sha256": "14fdfb81afb08cf2dfdd184829245ee5c03ee7d8c0d4684fd953ba40cf2c7ef3",
-      "bytes": 73950
+      "sha256": "4356f395099461f1702b6898973100838d2a5e24bc85968defccd5b3b594bf6a",
+      "bytes": 73579
     },
     {
       "name": "api/markdown/Direct Procurement.md",
@@ -66011,8 +66011,8 @@
     },
     {
       "name": "api/markdown/Function Calling.md",
-      "sha256": "4582adc7da28a260dcf6b2f1d3e594e37492b840d8c875c55d533fd118f56145",
-      "bytes": 65901
+      "sha256": "3db206b56f0f951ed32f8ec79fbd2af797100ff22818392e550207015e07de0f",
+      "bytes": 65850
     },
     {
       "name": "api/markdown/Function Schemas.md",
@@ -72036,8 +72036,8 @@
     },
     {
       "name": "api/markdown/KOHYA Dreambooth and similar.md",
-      "sha256": "0b8034c0eb5afec775930ad3c104e554b1ab76399934ea738845291ec40e4c41",
-      "bytes": 65860
+      "sha256": "49d02179a414d52511dd9378e15119d5152048a33c1e0b8595aaeeac24ca7a36",
+      "bytes": 65863
     },
     {
       "name": "api/markdown/KTO.md",
@@ -73671,8 +73671,8 @@
     },
     {
       "name": "api/markdown/Local RAG Corpus Ingestion Pipeline.md",
-      "sha256": "6ef077fe7a5d5552b9b4e06607d19354f09c187a42e61e36bfbb0f2ffa1d6767",
-      "bytes": 3488
+      "sha256": "4fcfbb59c7b9212a08652ba38fa63317cf6a7eb48cfcd12a725dfb94dc97d8a7",
+      "bytes": 3463
     },
     {
       "name": "api/markdown/Local Search.md",
@@ -82151,8 +82151,8 @@
     },
     {
       "name": "api/markdown/Prompt Engineering.md",
-      "sha256": "e4070c27fe3d1c9815c0d5a064bd18d56a2205847791dbb3a1436b0ef719fd3a",
-      "bytes": 71100
+      "sha256": "6adae65c4cc9dd3e51c451ec46a895cce5534451e9ecb5058dd74fb4b59bd511",
+      "bytes": 71026
     },
     {
       "name": "api/markdown/Prompt Injection.md",
@@ -85366,8 +85366,8 @@
     },
     {
       "name": "api/markdown/RobotLink.md",
-      "sha256": "024bf0caab78acae2bd6e6251ffb10785c6953f5abb2c48b8ac5e9456e4e7583",
-      "bytes": 45353
+      "sha256": "fe9730f4bfd00a12bb2801be4f8e6b8800896fd8274c84268c3de9a4f04a61cc",
+      "bytes": 45369
     },
     {
       "name": "api/markdown/Robotaxi.md",
@@ -88526,8 +88526,8 @@
     },
     {
       "name": "api/markdown/Solar PV Installation Engineering Plan.md",
-      "sha256": "db331b2db79660e3f06ba016bca0c591ee850a8e40ed2a24e1309180c72b0f69",
-      "bytes": 10902
+      "sha256": "90548402fc0610ae5a9bc5bada86d546cefb9d1365f9255426fb131f769c5234",
+      "bytes": 10912
     },
     {
       "name": "api/markdown/Solar Physics.md",
@@ -94661,8 +94661,8 @@
     },
     {
       "name": "api/markdown/VelocityControl.md",
-      "sha256": "7d7185d5358250e2bd31d28d9c62612af263c134b7fae193570242d3e0e268b2",
-      "bytes": 46588
+      "sha256": "06efe46f590c26cf6a34b093527631ac789db7683cc6a06bd44522240a00e9b0",
+      "bytes": 46613
     },
     {
       "name": "api/markdown/Vendor Lock-in.md",
@@ -97651,7 +97651,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "c9e5083e163e700c21908db166ad399f486b6095bc9261e70d002d8960410401",
+      "sha256": "e17497577200b0cd86bf603e747c2cff89c075327ba0ee6af39df4c4bf4256a3",
       "bytes": 901544
     },
     {
@@ -147716,8 +147716,8 @@
     },
     {
       "name": "publish/pages/Admittance Control.md",
-      "sha256": "38f9e0f58abfcc4360ac08fe81b9557b6ebb78245d299c63836660aae769b562",
-      "bytes": 66629
+      "sha256": "0fed12159860f53dd96aeef841a72dc39e7b09ffb8e6d35a49960b5ec2e0e37a",
+      "bytes": 66343
     },
     {
       "name": "publish/pages/Adobe Creative Cloud.md",
@@ -156616,8 +156616,8 @@
     },
     {
       "name": "publish/pages/Data Layer.md",
-      "sha256": "a28088ef41792a0c7b32bc7a0446458f6d7c783f029f48186e53a37011be93ad",
-      "bytes": 75961
+      "sha256": "a30324af9e00f5aa777cb32d25825876edc29a1c081fa19842ee034f09c1d94b",
+      "bytes": 75585
     },
     {
       "name": "publish/pages/Data Lifecycle.md",
@@ -157081,8 +157081,8 @@
     },
     {
       "name": "publish/pages/Decentralised Agentic Infrastructure Stack.md",
-      "sha256": "31dcb1105dd71acff315ff880df1bcd5ea3a2d607613fc15c8bad635f44b4b33",
-      "bytes": 29624
+      "sha256": "5ac5d5e598fdf122fc759bd7d54b86c90afeec707560d0ea3e1d0e54f8e4949f",
+      "bytes": 29442
     },
     {
       "name": "publish/pages/Decentralised Ai.md",
@@ -157736,8 +157736,8 @@
     },
     {
       "name": "publish/pages/Diagrams as Code.md",
-      "sha256": "dc65c2391c79c4f98e95f22424912405789f98e266c30c9b3a4acb90795aa9be",
-      "bytes": 86335
+      "sha256": "126666d026015eb6abae27f418de711a5f72ccf53d4db4387cabb573b42c39af",
+      "bytes": 86340
     },
     {
       "name": "publish/pages/Dialogue Management.md",
@@ -158561,8 +158561,8 @@
     },
     {
       "name": "publish/pages/Direct Preference Optimisation.md",
-      "sha256": "0f72966f0d67d43a20e7a51b1f8d6c97df360017a0df93839ed24fbd6802ee47",
-      "bytes": 76224
+      "sha256": "1ba0a803cca5ecee90a6c9de70a2112c4f879d226114eb6513d7135c7065794c",
+      "bytes": 75853
     },
     {
       "name": "publish/pages/Direct Procurement.md",
@@ -163046,8 +163046,8 @@
     },
     {
       "name": "publish/pages/Function Calling.md",
-      "sha256": "e5110f2f38a1665c3b3c4d1ac32f80ef67da7c2d8f9d3b7245d246e844d0d3af",
-      "bytes": 75311
+      "sha256": "b24ce5e967637156d3ee030e2fa557a3d8b3e46d5aa09ebff2af59c3a39e8f33",
+      "bytes": 75260
     },
     {
       "name": "publish/pages/Function Schemas.md",
@@ -168801,8 +168801,8 @@
     },
     {
       "name": "publish/pages/KOHYA Dreambooth and similar.md",
-      "sha256": "2443fd7eba3e4b76da544ea5b3085d81ed7c71f61e6fedede2f9809a8b5fafb9",
-      "bytes": 73705
+      "sha256": "3951d90bff2929697672a6c5602e6cbca1c357b06e4bb08984d883ca9043b08e",
+      "bytes": 73708
     },
     {
       "name": "publish/pages/KTO.md",
@@ -170361,8 +170361,8 @@
     },
     {
       "name": "publish/pages/Local RAG Corpus Ingestion Pipeline.md",
-      "sha256": "cff8a97f004712cfd3cc8262bac9ab14d1d01232fa1987109ff09ec60ffcfae0",
-      "bytes": 4229
+      "sha256": "bf78c12600dcedca9ad5430ee8759efac5d5d89aab7d28230ae13be2bbae6352",
+      "bytes": 4204
     },
     {
       "name": "publish/pages/Local Search.md",
@@ -178676,8 +178676,8 @@
     },
     {
       "name": "publish/pages/Prompt Engineering.md",
-      "sha256": "f008c3bc40fb302b080a93cf866d74f70a483ec801add06573fbe77c29961007",
-      "bytes": 78490
+      "sha256": "070b849d546a1896b4e726e0f75877ccebc8759b45061199612acc420e06aac9",
+      "bytes": 78416
     },
     {
       "name": "publish/pages/Prompt Injection.md",
@@ -181791,8 +181791,8 @@
     },
     {
       "name": "publish/pages/RobotLink.md",
-      "sha256": "0a68943ae1ba751d00d6ac8b11c4ea0ec0be9df32b49ad2f7f695d9c4a5e49b7",
-      "bytes": 47763
+      "sha256": "9e556f1da65c19791f47bcb2d54ee03c3270e3d292c2eeb6cb87b32c97123c35",
+      "bytes": 47779
     },
     {
       "name": "publish/pages/Robotaxi.md",
@@ -184871,8 +184871,8 @@
     },
     {
       "name": "publish/pages/Solar PV Installation Engineering Plan.md",
-      "sha256": "a6661cd6a84e1e183d5ce54b2465105b21892f4d5007c767fdaf81a1845f87b8",
-      "bytes": 11702
+      "sha256": "ac8b690176ea713a28822f47544c01a886a37e2bd8394f5337d282f551ba3a44",
+      "bytes": 11712
     },
     {
       "name": "publish/pages/Solar Physics.md",
@@ -190851,8 +190851,8 @@
     },
     {
       "name": "publish/pages/VelocityControl.md",
-      "sha256": "282ae896e837ecbdd815f1a5bf6b4973720f7a5b6b50146985b8c14994854343",
-      "bytes": 49879
+      "sha256": "55d5cf01676eff8b500f35178aede7cc2a9c3556f6a6658fe6f12d8a23d6728b",
+      "bytes": 49904
     },
     {
       "name": "publish/pages/Vendor Lock-in.md",
@@ -194466,7 +194466,7 @@
     },
     {
       "name": "data/.generation.json",
-      "sha256": "e6fff056ce6e9784c6ceeb87f520697797ec8273300d54b7d7d3cf0512ed1fd7",
+      "sha256": "90065ba3a4d486bfa501c8adbc4cdcfb2fa0e6d9378b791914b77bda33dcc95f",
       "bytes": 3379
     }
   ]
