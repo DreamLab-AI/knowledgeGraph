@@ -201,3 +201,16 @@ claim is made about the deployed site.
 ## Publication baseline re-verification — 2026-09-07
 
 Re-read against pipeline source at `d09a476124caa14aa0165c642d0950f6026c46fb`. The four-record ledger, class/individual distinction, immutable corpus identities and 8,138-class tripwire remain the scoped decisions. The canonical builder now projects known-private references before inference and public Markdown export, refuses malformed input in either mode, and preserves prior output through promotion rollback. The baseline/build guide now describe those current boundaries and distinguish fresh manifest UUID/time from deterministic graph ordering. `./.venv/bin/python -m pytest pipeline/tests -q` passes **96 tests**; the ADR generator validates all four records. Historical measurements, missing upstream documents and consumer limitations above remain dated evidence. No decision or activation axis was promoted by this re-verification.
+
+## Ledger tooling note — 2026-10-31
+
+Written after acceptance; the Decision above is unchanged. The text above (the
+"Artifacts introduced" list and the `REPO_IDENTITY` bullet) describes a vendored,
+repo-local copy of `scripts/adr-index-gen.js`. That copy has been removed: the
+estate now has one canonical checker (agentbox `scripts/adr-index-gen.js`),
+fetched at a pinned commit and verified by sha256 through
+`scripts/adr-ledger.sh`, and run in CI (`.github/workflows/adr-ledger.yml`). The
+two accepted `repo` values (`narrativegoldmine`, `DreamLab-AI/knowledgeGraph`)
+moved from the vendored script's `REPO_IDENTITY` into `docs/adr/.ledger.json`;
+the canonical-repository sentence moved into `docs/adr/PREAMBLE.md`. The
+regeneration command is now `bash scripts/adr-ledger.sh write`.

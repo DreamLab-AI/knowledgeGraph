@@ -28,6 +28,15 @@ in `docs/methodology/corpus-generation.md`). The Logseq pages `ADR-008` and
 **Making a decision:** copy [`TEMPLATE.md`](TEMPLATE.md) to `ADR-NNNN-slug.md`
 (next free number), fill the three-axis status honestly, update the affected
 governing document **in the same change**, and regenerate this index
-(`node scripts/adr-index-gen.js docs/adr` — it validates every record's
+(`bash scripts/adr-ledger.sh write` — it validates every record's
 frontmatter against the required fields and enums and exits non-zero on a bad
-record, so run it before committing; it is not yet wired into CI).
+record, so run it before committing; CI runs `bash scripts/adr-ledger.sh check`,
+which also fails on a stale index). The checker is the estate's canonical
+`adr-index-gen.js`, fetched from agentbox at a pinned commit and verified by
+sha256; it is not vendored here (`docs/adr/.ledger.json` sets the accepted
+`repo` values).
+
+_Canonical repository: **DreamLab-AI/knowledgeGraph**. The `repo` column may carry
+the historical publishing name `narrativegoldmine` — the name minted into every
+class IRI, the CNAME and the site — which maps to the canonical repository above;
+ADR-2004 makes those identifiers immutable, so the alias is kept, not rewritten._

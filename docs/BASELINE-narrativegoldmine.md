@@ -229,7 +229,7 @@ and the stale `7,874` figures in `docs/architecture/*.md` **in the same
 commit**; (4) bumping `version` and
 re-recording `verified_commit` from `git rev-parse --short HEAD`. New decisions
 are recorded in `docs/adr/` from `docs/adr/TEMPLATE.md` and the index
-regenerated (`node scripts/adr-index-gen.js docs/adr`). Legacy prose — including
+regenerated (`bash scripts/adr-ledger.sh write`). Legacy prose — including
 the absent `ADR-NG-001` and the `ADR-008`/`ADR-012` corpus pages — is evidence,
 not authority: cite it, do not defer to it.
 

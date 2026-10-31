@@ -1,0 +1,4 @@
+{
+  "repo": ["narrativegoldmine", "DreamLab-AI/knowledgeGraph"],
+  "regenerate": "bash scripts/adr-ledger.sh write"
+}

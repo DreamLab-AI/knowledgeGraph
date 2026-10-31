@@ -32,17 +32,24 @@ in `docs/methodology/corpus-generation.md`). The Logseq pages `ADR-008` and
 **Making a decision:** copy [`TEMPLATE.md`](TEMPLATE.md) to `ADR-NNNN-slug.md`
 (next free number), fill the three-axis status honestly, update the affected
 governing document **in the same change**, and regenerate this index
-(`node scripts/adr-index-gen.js docs/adr` — it validates every record's
+(`bash scripts/adr-ledger.sh write` — it validates every record's
 frontmatter against the required fields and enums and exits non-zero on a bad
-record, so run it before committing; it is not yet wired into CI).
+record, so run it before committing; CI runs `bash scripts/adr-ledger.sh check`,
+which also fails on a stale index). The checker is the estate's canonical
+`adr-index-gen.js`, fetched from agentbox at a pinned commit and verified by
+sha256; it is not vendored here (`docs/adr/.ledger.json` sets the accepted
+`repo` values).
 
-_4 record(s). Regenerate with_ `node scripts/adr-index-gen.js ../knowledgeGraph/docs/adr`.
+_Canonical repository: **DreamLab-AI/knowledgeGraph**. The `repo` column may carry
+the historical publishing name `narrativegoldmine` — the name minted into every
+class IRI, the CNAME and the site — which maps to the canonical repository above;
+ADR-2004 makes those identifiers immutable, so the alias is kept, not rewritten._
 
-_Canonical repository: **DreamLab-AI/knowledgeGraph**. The `repo` column may carry the historical publishing name `narrativegoldmine` — the name minted into every class IRI, the CNAME and the site — which maps to the canonical repository above._
+_4 record(s). Regenerate with_ `bash scripts/adr-ledger.sh write`.
 
-| ID | Title | Date | Decision | Impl | Activation | Supersedes | Superseded by | Owner | Repo |
-|----|-------|------|----------|------|------------|------------|---------------|-------|------|
-| [ADR-2001](ADR-2001-corpus-consolidation.md) | Consolidate ADR corpus into a living baseline and thin ledger | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
-| [ADR-2002](ADR-2002-corpus-is-the-ontology.md) | Fuse corpus and ontology — a Logseq page IS an OWL class | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
-| [ADR-2003](ADR-2003-expected-classes-tripwire.md) | Gate corpus integrity with a hand-typed EXPECTED_CLASSES tripwire | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
-| [ADR-2004](ADR-2004-corpus-page-identity-immutable.md) | Treat corpus page identity as immutable — no file moves, no archive tree | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| ID | Title | Domain | Date | Decision | Impl | Activation | Supersedes | Superseded by | Owner | Repo |
+|----|-------|--------|------|----------|------|------------|------------|---------------|-------|------|
+| [ADR-2001](ADR-2001-corpus-consolidation.md) | Consolidate ADR corpus into a living baseline and thin ledger | — | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2002](ADR-2002-corpus-is-the-ontology.md) | Fuse corpus and ontology — a Logseq page IS an OWL class | BASELINE-narrativegoldmine.md | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2003](ADR-2003-expected-classes-tripwire.md) | Gate corpus integrity with a hand-typed EXPECTED_CLASSES tripwire | BASELINE-narrativegoldmine.md | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |
+| [ADR-2004](ADR-2004-corpus-page-identity-immutable.md) | Treat corpus page identity as immutable — no file moves, no archive tree | BASELINE-narrativegoldmine.md | 2026-08-31 | accepted | complete | live | — | — | jjohare | narrativegoldmine |

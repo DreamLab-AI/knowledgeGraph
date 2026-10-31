@@ -1,0 +1,29 @@
+name: adr-ledger
+# Estate ADR ledger gate (docs/adr/.ledger.json). The checker is fetched from
+# agentbox at a pinned commit and verified against a pinned sha256 by
+# scripts/adr-ledger.sh; nothing is vendored. Read-only: it deploys nothing.
+on:
+  push:
+    paths:
+      - 'docs/adr/**'
+      - 'scripts/adr-ledger.sh'
+      - '.github/workflows/adr-ledger.yml'
+  pull_request:
+    paths:
+      - 'docs/adr/**'
+      - 'scripts/adr-ledger.sh'
+      - '.github/workflows/adr-ledger.yml'
+permissions:
+  contents: read
+jobs:
+  adr-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Records valid, supersession reciprocal, docs/adr/README.md in sync
+        run: bash scripts/adr-ledger.sh check
