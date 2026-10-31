@@ -1,10 +1,10 @@
 {
-  "id": "visionGraph@7b0875f2c26b9e69dc5c97e9c88166acc14c47dc",
-  "commit": "7b0875f2c26b9e69dc5c97e9c88166acc14c47dc",
+  "id": "visionGraph@c4add86360d04f27561780d9424101d51aa54014",
+  "commit": "c4add86360d04f27561780d9424101d51aa54014",
   "dirty": false,
-  "content_digest": "a931f3f67c7fe1136b732259be1218ef3632324779de86bda7278237e061ddc0",
+  "content_digest": "359231e2da9653c0e7fc8f6db6bc5e93bae1e001fcd40af235137550e0ac04a2",
   "ontology_digest": "sha256-12-b5e547c50de7",
-  "generated_at": "2026-10-30T13:40:37.792928+00:00",
+  "generated_at": "2026-10-31T09:35:55.469673+00:00",
   "class_count": 9595,
   "page_count": 9595,
   "vocabulary_version": 1,
@@ -16,17 +16,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "587106b3b929279cbd178044474f0b3df5da4d023060551d281620effd97aa9a",
+      "sha256": "5971554e12321c3e9814e84cc16b6322a69437821f0ab58dbcff3fd0b121983e",
       "bytes": 3832292
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "c241c9630a7b93fcf9a551036dac0aca9771bc38e729be8d4772e87ef1437b88",
+      "sha256": "6df5e86f26df01c7e3e31c35714bfb19e0d9069438c9964eb53e846518c00531",
       "bytes": 10373953
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "14b4675a859ff6587b3d045ae1e5ba366c2899c911e80a594b646a8f683d85d9",
+      "sha256": "4129603ac84e3d374e68257cc2a461dc7b5db01d3327238c71562aa30fa83f9c",
       "bytes": 5519333
     },
     {
@@ -48021,7 +48021,7 @@
     },
     {
       "name": "api/validation-report.json",
-      "sha256": "d3d41c225251f7fb4c9c8aab864f3b5b10eb55e826b4afd4ce09119a62412066",
+      "sha256": "ef475467e2063807c6431d5d792de68a4b32b86c7762b7114032f9e43e5db108",
       "bytes": 496
     },
     {
@@ -48046,7 +48046,7 @@
     },
     {
       "name": "data/graph/overview.json",
-      "sha256": "579646f4a039879b219b1fdad96f817a8c3e776b9fd2cd8fbc2e422f27adc6e1",
+      "sha256": "f30eac3677d9b7e277b6e87c920457e294365bdcef30d73e0e6fb4a74c048eed",
       "bytes": 47373
     },
     {
@@ -48101,7 +48101,7 @@
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "86499c0a9cd4ee34dd02b746fe8a415b50f4247e61d811096788253e39246932",
+      "sha256": "2f17440bbfee7e61422d0e3cf7b1a2add9f19b81bd6c9fb53c43e68b6a761ba8",
       "bytes": 3343
     },
     {
@@ -49171,8 +49171,8 @@
     },
     {
       "name": "api/markdown/AI Product and Risk Framework.md",
-      "sha256": "4b5bb73b9cb6c08ded710f3de72cd9bc86060376dd631bb80f857dacdf633988",
-      "bytes": 4559
+      "sha256": "62f9b13b4fbc2ecb62c03ad1168fcc1cab958f2c192086bea3a18cfdd10b9165",
+      "bytes": 4573
     },
     {
       "name": "api/markdown/AI Productivity Debate.md",
@@ -49506,8 +49506,8 @@
     },
     {
       "name": "api/markdown/AI User.md",
-      "sha256": "d53d97d7866dbd634f200e71317763dba51ec198d21a49606701b1c05cdd8db7",
-      "bytes": 528449
+      "sha256": "0acb271965abaee88467b2d0c5a1e5b8d76e248f6dca733a3d5339f84809e74e",
+      "bytes": 528438
     },
     {
       "name": "api/markdown/AI Venture Capital.md",
@@ -53301,8 +53301,8 @@
     },
     {
       "name": "api/markdown/Bias.md",
-      "sha256": "cb4898e7ae56cf84d0a3d7a79adccc9c70a7ec4c51235337fa05087c926dc7c8",
-      "bytes": 38996
+      "sha256": "3d71eef9a93449b62eff6eb83cdd55114548eccae3fe67b95b90106605c2c183",
+      "bytes": 38945
     },
     {
       "name": "api/markdown/Bid Ask Spread.md",
@@ -66076,8 +66076,8 @@
     },
     {
       "name": "api/markdown/GAN Virtual Landscape Art.md",
-      "sha256": "e656b2b10078bc32bc34868a79a5950a1a1d85af20cb2551961d36572a716a50",
-      "bytes": 16022
+      "sha256": "1ebb67e39c612fec4f7944e0e8b729f744050a36129bafe14f1f449c59d38929",
+      "bytes": 16038
     },
     {
       "name": "api/markdown/GAN.md",
@@ -80756,8 +80756,8 @@
     },
     {
       "name": "api/markdown/Player Two Platform Implementation.md",
-      "sha256": "d0647be3c94d8e8f6fa3dc18d885225e18adb88228d3250977644af132908bb5",
-      "bytes": 3489
+      "sha256": "2eba9aaea7817355d470d43fafd3b4dc1075cc3193b12fe4710c9958f54060b7",
+      "bytes": 3447
     },
     {
       "name": "api/markdown/Player Two.md",
@@ -97651,7 +97651,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "3c11f4092680b0f0f0b1bd179087be42a05a508f96effef5dac61d77a1c8eaa6",
+      "sha256": "c9e5083e163e700c21908db166ad399f486b6095bc9261e70d002d8960410401",
       "bytes": 901544
     },
     {
@@ -146666,8 +146666,8 @@
     },
     {
       "name": "publish/pages/AI Product and Risk Framework.md",
-      "sha256": "d40639b1d71780b309ccb8c65401ec8400e08b8352ccae4ac77a67c01f19c4bc",
-      "bytes": 5420
+      "sha256": "31c22e7858e67eadc29f2f8172e65da394de31ffc9679fa2f6080f1abb1ded69",
+      "bytes": 5434
     },
     {
       "name": "publish/pages/AI Productivity Debate.md",
@@ -146991,8 +146991,8 @@
     },
     {
       "name": "publish/pages/AI User.md",
-      "sha256": "61ade0dc426f121f00db4fef26ba1f3c2cf510ee9b3b9fe921a9e1fc4e0c6dde",
-      "bytes": 534667
+      "sha256": "effaff366ba20cdc038dc210625242a85f1b002c18593a90ae218caddba8304a",
+      "bytes": 534656
     },
     {
       "name": "publish/pages/AI Venture Capital.md",
@@ -150711,8 +150711,8 @@
     },
     {
       "name": "publish/pages/Bias.md",
-      "sha256": "94ad95f4dd86997c015f997a7f50777add85408c5a925913c7895d5f427c6d52",
-      "bytes": 40970
+      "sha256": "0f66a6ea377d60b22e5527c89bfc0c617f9e99d6df18542dd67d133332925892",
+      "bytes": 40919
     },
     {
       "name": "publish/pages/Bid Ask Spread.md",
@@ -163111,8 +163111,8 @@
     },
     {
       "name": "publish/pages/GAN Virtual Landscape Art.md",
-      "sha256": "2eb4b9adeaeb7da8760310c8a392e8c71fd0550119e7e0593fa0bae9aa8296f6",
-      "bytes": 16625
+      "sha256": "6a4b5e1717bb612355a120268b0e199ff5d0e87d490e92641f2c085fe56afaa5",
+      "bytes": 16641
     },
     {
       "name": "publish/pages/GAN.md",
@@ -177306,8 +177306,8 @@
     },
     {
       "name": "publish/pages/Player Two Platform Implementation.md",
-      "sha256": "91f8114845861429b37c03e0579cbe70b1bcad481df849869689c703ebae7ebb",
-      "bytes": 4208
+      "sha256": "e7a5341cfd159c62219b9325d40f65c13b5ca33004a9f4c7c8a70d4d147f2d53",
+      "bytes": 4166
     },
     {
       "name": "publish/pages/Player Two.md",
@@ -193871,8 +193871,8 @@
     },
     {
       "name": "publish/working/Diagrams as Code.md",
-      "sha256": "59c70366f21312d38b34985fe4f6b13ad23f4109f2e49af2f7794ffe80e92596",
-      "bytes": 18733
+      "sha256": "ec07fde30b2792c2f0e4dc33fdd2e3b36805788c701955fe0028a3ac711f3238",
+      "bytes": 18704
     },
     {
       "name": "publish/working/Digital Asset Risks.md",
@@ -193981,8 +193981,8 @@
     },
     {
       "name": "publish/working/Hardware and Edge.md",
-      "sha256": "ec79ef23505abf5b20e524dc45d265682229d0b0d4cb9b32020ad42dceb11d62",
-      "bytes": 32328
+      "sha256": "012d0534721c188e06de9aa15de4dcc3e79e00eb4a20c45e5c0c6c15272ea435",
+      "bytes": 32336
     },
     {
       "name": "publish/working/Human tracking and SLAM capture.md",
@@ -194191,8 +194191,8 @@
     },
     {
       "name": "publish/working/Product and Risk Management.md",
-      "sha256": "21418058241cd1d651ed28d10d32f45d93862f392e03b04abadcb3bece5b5397",
-      "bytes": 4288
+      "sha256": "4eb9bbc22875b93d0335e23161fccfa4ae4d041365bb97d7cfb3d59034bf5440",
+      "bytes": 4302
     },
     {
       "name": "publish/working/Project BroBots.md",
@@ -194466,7 +194466,7 @@
     },
     {
       "name": "data/.generation.json",
-      "sha256": "b52f88bf1f2ee6c5fff9eb6a534d2490e2c9c6f33cf4aae0429f848495146bec",
+      "sha256": "e6fff056ce6e9784c6ceeb87f520697797ec8273300d54b7d7d3cf0512ed1fd7",
       "bytes": 3379
     }
   ]
