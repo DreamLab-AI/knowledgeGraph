@@ -9,16 +9,16 @@
   ],
   "pages_with_ontology": 9609,
   "public_pages": 9595,
-  "total_issues": 31186,
+  "total_issues": 31184,
   "errors": 0,
-  "warnings": 28807,
+  "warnings": 28805,
   "info": 2379,
   "by_code": {
     "DANGLING_LINK": 20441,
     "INVALID_ENUM": 38,
     "MULTI_PARENT": 2379,
     "PUBLIC_LINKS_PRIVATE": 2,
-    "UNTERMINATED_FENCE": 3,
+    "UNTERMINATED_FENCE": 1,
     "UNVERIFIED_STABLE": 8323
   },
   "issues": []
