@@ -17,6 +17,12 @@ lineage: distils the ADR-NG-001 explorer-architecture reconstruction and the ADR
 
 # ADR-2002 — Fuse corpus and ontology — a Logseq page IS an OWL class
 
+## External review reconciliation — 2026-11-02
+
+Source at `4ed9ac159da` retains the legacy explorer independently of the authored-vault publisher. `explorer/modern/package.json:20` pins the vowl-wasm v0.1.1 release tarball. Its `src/workers/positionTransport.ts:76-82` requires returned buffers to retain object identity in `owned`, which transferable round-trips do not preserve; the external DoubleBuffer finding remains relevant to this copy.
+
+Choose retirement or a tested consumer upgrade explicitly; neither a newer renderer checkout nor visionGraph's own fix updates this retained explorer. The historical Logseq authoring description above is lineage, not the current visionGraph authoring interface. No website build or deployment was performed here.
+
 ## Context
 
 The baseline records *that* every page in `ontology/pages/` carries a `Page`
