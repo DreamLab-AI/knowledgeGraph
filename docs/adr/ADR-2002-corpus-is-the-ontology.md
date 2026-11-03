@@ -17,6 +17,10 @@ lineage: distils the ADR-NG-001 explorer-architecture reconstruction and the ADR
 
 # ADR-2002 — Fuse corpus and ontology — a Logseq page IS an OWL class
 
+## External findings repair — 2026-11-03
+
+The retained explorer's DoubleBuffer now counts outstanding transfers, rather than requiring object identity to survive a worker transfer. Its caller remains responsible for generation admission. The regression uses structuredClone with transfer to detach the original and return a fresh object; all eleven position transport tests pass. This repairs the local legacy copy without claiming an upgrade of its v0.1.1 renderer dependency or remote publication.
+
 ## External review reconciliation — 2026-11-02
 
 Source at `4ed9ac159da` retains the legacy explorer independently of the authored-vault publisher. `explorer/modern/package.json:20` pins the vowl-wasm v0.1.1 release tarball. Its `src/workers/positionTransport.ts:76-82` requires returned buffers to retain object identity in `owned`, which transferable round-trips do not preserve; the external DoubleBuffer finding remains relevant to this copy.

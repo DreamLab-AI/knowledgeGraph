@@ -34,6 +34,15 @@ describe('copyPositions', () => {
 });
 
 describe('DoubleBuffer ping-pong swap', () => {
+  it('reclaims a transferred buffer whose object identity changed', () => {
+    const db = new DoubleBuffer(8);
+    const original = db.acquire()!;
+    const returned = structuredClone(original, { transfer: [original] });
+    expect(original.byteLength).toBe(0);
+    expect(db.release(returned)).toBe(true);
+    expect(db.freeCount).toBe(2);
+    expect(db.acquire()).toBe(returned);
+  });
   it('hands out exactly two distinct buffers of the right size', () => {
     const db = new DoubleBuffer(24);
     expect(db.freeCount).toBe(2);
