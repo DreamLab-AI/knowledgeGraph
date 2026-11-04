@@ -1,13 +1,13 @@
 {
-  "id": "visionGraph@84c1cee32b6ad03b58bcb31ba33320142c330523",
-  "commit": "84c1cee32b6ad03b58bcb31ba33320142c330523",
+  "id": "visionGraph@5ba194ae395ecece1abad0d0988828da93794882",
+  "commit": "5ba194ae395ecece1abad0d0988828da93794882",
   "dirty": false,
-  "content_digest": "5837e57c3462bd7916d09d087bf51e15c5db1775faa40616ffc00715a502138a",
+  "content_digest": "c1fc68d74ef7ad190ffba37d5efaf1fecacd893bc2dbcdfa9e4b326e802763c7",
   "ontology_digest": "sha256-12-b5e547c50de7",
-  "generated_at": "2026-10-31T14:46:05.322496+00:00",
+  "generated_at": "2026-11-04T09:41:02.031034+00:00",
   "class_count": 9595,
   "page_count": 9595,
-  "vocabulary_version": 1,
+  "vocabulary_version": 2,
   "artifacts": [
     {
       "name": "ontology.ttl",
@@ -16,17 +16,17 @@
     },
     {
       "name": "ontology-inferred.ttl",
-      "sha256": "278b3013238ebd814a017c45a1a6065990a95db5523b84ba4913d63bedcd1dce",
+      "sha256": "4d112ddcffbcdb269bb4db7229c74b67dd83836e455c450e93bd516e59b8bca7",
       "bytes": 3832292
     },
     {
       "name": "scaffold-index.json",
-      "sha256": "ef9c0dddffaa538924e4c8dc97e28d17cc0bf2ffe588bfa5ed60337c20b2ab72",
+      "sha256": "fe28d316ede2e83d55a3b72de4bbc7e34faa40d9adf8b345e3559eaeb00fd085",
       "bytes": 10373953
     },
     {
       "name": "prose-index.json",
-      "sha256": "a5eedfac2bd12a8c4f0838e3fb073d4c0f49ddd067ed761a36a578788fe0dd21",
+      "sha256": "c032b1da586b43b6c7aa4fdaeae1120dee9b062f6cf68264e65187671e661592",
       "bytes": 5519333
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "name": "graph/overview.json",
-      "sha256": "07b28700ecaa86c36e896dfe63deb95fcc63f23854b7ef267103583904ca7fe5",
+      "sha256": "5cc237dd7596c62c2e14a1e42bc8dbb5fbb4b326748b1a53a8efd81f435f474e",
       "bytes": 47389
     },
     {
@@ -91,7 +91,7 @@
     },
     {
       "name": "graph/stats.json",
-      "sha256": "2f17440bbfee7e61422d0e3cf7b1a2add9f19b81bd6c9fb53c43e68b6a761ba8",
+      "sha256": "ced055527143fa1d83c2e4cf491615267ddec7deefe08eac71ffc71e00e28cc1",
       "bytes": 3343
     },
     {
