@@ -46,20 +46,20 @@ export function copyPositions(src: Float32Array, dst: Float32Array): void {
  * regardless.
  *
  * Invariant: a buffer is either free (in the pool) or in flight (acquired, not
- * yet released) — never both, never lost. `release()` ignores foreign buffers
- * (wrong size or not one of ours) so a stale ReturnBuffer from a superseded
- * generation cannot corrupt the pool.
+ * yet released) — never both, never lost. Transfer changes object identity;
+ * the worker's generation guard rejects stale messages, while this pool
+ * bounds returned buffers by size and the outstanding transfer count.
  */
 export class DoubleBuffer {
   readonly byteLength: number;
-  private readonly owned: ArrayBuffer[];
+  private inFlight = 0;
+  private static readonly SIZE = 2;
   private free: ArrayBuffer[];
 
   constructor(byteLength: number) {
     this.byteLength = byteLength;
     const a = new ArrayBuffer(byteLength);
     const b = new ArrayBuffer(byteLength);
-    this.owned = [a, b];
     this.free = [a, b];
   }
 
@@ -70,24 +70,26 @@ export class DoubleBuffer {
 
   /** Pop a free buffer to compute into, or undefined when both are in flight. */
   acquire(): ArrayBuffer | undefined {
-    return this.free.pop();
+    const buffer = this.free.pop();
+    if (buffer !== undefined) this.inFlight++;
+    return buffer;
   }
 
   /**
-   * Return a buffer to the pool. Accepts only a buffer this pool owns and of the
-   * right size that is not already free (idempotent, ignores foreign/stale
-   * buffers). Returns true if it was reclaimed.
+   * Return one in-flight buffer of the right size. Generation validation
+   * belongs to the caller because transferred objects have new identities.
    */
   release(buf: ArrayBuffer): boolean {
     if (buf.byteLength !== this.byteLength) return false;
-    if (!this.owned.includes(buf)) return false;
+    if (this.inFlight === 0) return false;
     if (this.free.includes(buf)) return false;
+    this.inFlight--;
     this.free.push(buf);
     return true;
   }
 
   /** True when neither buffer is in flight. */
   get allFree(): boolean {
-    return this.free.length === this.owned.length;
+    return this.free.length === DoubleBuffer.SIZE;
   }
 }

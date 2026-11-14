@@ -17,6 +17,20 @@ lineage: distils the ADR-NG-001 explorer-architecture reconstruction and the ADR
 
 # ADR-2002 — Fuse corpus and ontology — a Logseq page IS an OWL class
 
+## Retained explorer verification — 2026-11-14
+
+Reviewed the pending buffer repair before publication. The worker admission path still checks the current generation before releasing a return. The regression now exercises twenty rounds with both slots occupied and two structured-clone transfers per buffer, detaching each outbound wrapper. All 26 worker tests pass, including 12 position-transport tests. Replacing only the implementation with remote main's original source makes both transfer regressions fail (10 other position-transport tests pass); the repaired source was restored before the passing run. This verifies the retained copy only: no renderer dependency upgrade, website build or live deployment is claimed.
+
+## External findings repair — 2026-11-03
+
+The retained explorer's DoubleBuffer now counts outstanding transfers, rather than requiring object identity to survive a worker transfer. Its caller remains responsible for generation admission. The regression uses structuredClone with transfer to detach the original and return a fresh object; all eleven position transport tests pass. This repairs the local legacy copy without claiming an upgrade of its v0.1.1 renderer dependency or remote publication.
+
+## External review reconciliation — 2026-11-02
+
+Source at `4ed9ac159da` retains the legacy explorer independently of the authored-vault publisher. `explorer/modern/package.json:20` pins the vowl-wasm v0.1.1 release tarball. Its `src/workers/positionTransport.ts:76-82` requires returned buffers to retain object identity in `owned`, which transferable round-trips do not preserve; the external DoubleBuffer finding remains relevant to this copy.
+
+Choose retirement or a tested consumer upgrade explicitly; neither a newer renderer checkout nor visionGraph's own fix updates this retained explorer. The historical Logseq authoring description above is lineage, not the current visionGraph authoring interface. No website build or deployment was performed here.
+
 ## Context
 
 The baseline records *that* every page in `ontology/pages/` carries a `Page`

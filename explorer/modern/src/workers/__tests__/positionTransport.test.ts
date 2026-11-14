@@ -34,6 +34,33 @@ describe('copyPositions', () => {
 });
 
 describe('DoubleBuffer ping-pong swap', () => {
+  it('reclaims a transferred buffer whose object identity changed', () => {
+    const db = new DoubleBuffer(8);
+    const original = db.acquire()!;
+    const returned = structuredClone(original, { transfer: [original] });
+    expect(original.byteLength).toBe(0);
+    expect(db.release(returned)).toBe(true);
+    expect(db.freeCount).toBe(2);
+    expect(db.acquire()).toBe(returned);
+  });
+  it('keeps both slots reusable across repeated two-way transfers', () => {
+    const db = new DoubleBuffer(8);
+    for (let frame = 0; frame < 20; frame++) {
+      const first = db.acquire()!;
+      const second = db.acquire()!;
+      expect(db.acquire()).toBeUndefined();
+      for (const outbound of [first, second]) {
+        const onMain = structuredClone(outbound, { transfer: [outbound] });
+        expect(outbound.byteLength).toBe(0);
+        const onWorker = structuredClone(onMain, { transfer: [onMain] });
+        expect(onMain.byteLength).toBe(0);
+        expect(db.release(onWorker)).toBe(true);
+      }
+      expect(db.allFree).toBe(true);
+      expect(db.freeCount).toBe(2);
+    }
+  });
+
   it('hands out exactly two distinct buffers of the right size', () => {
     const db = new DoubleBuffer(24);
     expect(db.freeCount).toBe(2);
@@ -62,12 +89,12 @@ describe('DoubleBuffer ping-pong swap', () => {
     expect(db.acquire()).toBe(a); // the reclaimed one comes back
   });
 
-  it('is idempotent on double-release and rejects foreign buffers', () => {
+  it('rejects duplicate, unsolicited and wrong-sized returns', () => {
     const db = new DoubleBuffer(8);
     const a = db.acquire()!;
     expect(db.release(a)).toBe(true);
     expect(db.release(a)).toBe(false); // already free
-    expect(db.release(new ArrayBuffer(8))).toBe(false); // not ours
+    expect(db.release(new ArrayBuffer(8))).toBe(false); // no outstanding transfer
     expect(db.release(new ArrayBuffer(16))).toBe(false); // wrong size
     expect(db.freeCount).toBe(2);
   });
