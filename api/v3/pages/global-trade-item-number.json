@@ -1,0 +1,167 @@
+{
+  "id": "urn:ngm:class:global-trade-item-number",
+  "title": "Global Trade Item Number",
+  "slug": "global-trade-item-number",
+  "public": true,
+  "classIri": "urn:ngm:class:global-trade-item-number",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The Global Trade Item Number (GTIN) is the GS1 identifier for any made-to-stock product or service, and is used to support trade, meaning pricing, ordering and invoicing.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gs1-identification-key",
+      "label": "GS1 Identification Key"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti Counterfeiting"
+      },
+      {
+        "id": "urn:ngm:class:resolver",
+        "label": "Resolver"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-identifier",
+      "label": "Supply Chain Identifier",
+      "slug": "supply-chain-identifier"
+    },
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "batch-number",
+      "label": "Batch Number"
+    },
+    {
+      "slug": "product-serialisation",
+      "label": "Product Serialisation"
+    },
+    {
+      "slug": "gs1-identification-key",
+      "label": "GS1 Identification Key"
+    },
+    {
+      "slug": "global-location-number",
+      "label": "Global Location Number"
+    },
+    {
+      "slug": "serial-shipping-container-code",
+      "label": "Serial Shipping Container Code"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "batch-number",
+      "label": "Batch Number"
+    },
+    {
+      "slug": "gs1-identification-key",
+      "label": "GS1 Identification Key"
+    },
+    {
+      "slug": "global-location-number",
+      "label": "Global Location Number"
+    },
+    {
+      "slug": "product-information-management",
+      "label": "Product Information Management"
+    },
+    {
+      "slug": "product-serialisation",
+      "label": "Product Serialisation"
+    },
+    {
+      "slug": "serial-shipping-container-code",
+      "label": "Serial Shipping Container Code"
+    },
+    {
+      "slug": "supply-chain-identifier",
+      "label": "Supply Chain Identifier"
+    },
+    {
+      "slug": "supply-chain-master-data",
+      "label": "Supply Chain Master Data"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

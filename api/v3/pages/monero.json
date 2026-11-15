@@ -1,0 +1,347 @@
+{
+  "id": "urn:visionflow:page:6430912ef24bbcbd4ca2c6951b36e0384fd15d7061dbf6087b2edaa51058a1c4",
+  "title": "Monero",
+  "slug": "monero",
+  "public": true,
+  "classIri": "urn:ngm:class:monero",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Monero (XMR) is an open-source, privacy-preserving cryptocurrency launched in April 2014 as a fork of the Bytecoin codebase, distinguished by making confidentiality mandatory for every transaction rather than optional. It achieves unlinkability and untraceability through three complementary cryptographic primitives: ring signatures that blend the spender's output among decoys drawn from the blockchain history, one-time stealth addresses that prevent linking payments to a recipient's public key, and Ring Confidential Transactions (RingCT) that hide transferred amounts using Pedersen commitments. The protocol employs a proof-of-work algorithm \u2014 originally CryptoNight, later RandomX \u2014 engineered to maintain parity between CPUs and GPUs while resisting ASIC specialisation, thereby preserving decentralised mining participation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:stealth-address",
+        "label": "Stealth Address"
+      },
+      {
+        "id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "id": "urn:ngm:class:fungibility",
+        "label": "Fungibility"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Ring Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Ring Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:cryptonote-protocol",
+        "label": "CryptoNote Protocol"
+      },
+      {
+        "id": "urn:ngm:class:randomx",
+        "label": "RandomX"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      },
+      {
+        "id": "urn:ngm:class:dash",
+        "label": "Dash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "id": "urn:ngm:class:dandelion",
+        "label": "Dandelion++"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "ring-signature",
+      "label": "Ring Signature"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

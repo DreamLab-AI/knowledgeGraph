@@ -30,6 +30,7 @@ relatedTo:
   - urn:ngm:class:redundancy
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:block-storage
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Raid

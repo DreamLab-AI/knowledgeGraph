@@ -50,6 +50,7 @@ relatedTo:
   - urn:ngm:class:patient-safety
   - urn:ngm:class:orthopaedic-robotics
   - urn:ngm:class:neurosurgical-robotics
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Surgical Robotics

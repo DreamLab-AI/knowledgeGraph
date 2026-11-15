@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:trajectory-planning
   - urn:ngm:class:probabilistic-roadmap
   - urn:ngm:class:velocity-control
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Local Planner

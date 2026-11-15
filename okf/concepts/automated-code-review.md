@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:static-analysis
   - urn:ngm:class:code-generation
   - urn:ngm:class:technical-debt
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Automated Code Review

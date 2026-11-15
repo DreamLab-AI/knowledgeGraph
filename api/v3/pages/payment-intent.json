@@ -1,0 +1,284 @@
+{
+  "id": "urn:ngm:class:payment-intent",
+  "title": "Payment Intent",
+  "slug": "payment-intent",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-intent",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:0dc89e6b22d787a7b237a231362b6384c69bb5c6d809370357545d628d2b7f9f",
+    "label": "agent-ontology-import",
+    "actor": "agent:agent-ontology-import/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A payment intent is an [[Agent Intent]] to transfer value from one agent to another. The Agent Ontology declares it as `PaymentIntent`, a subclass of `Intent`.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-intent",
+      "label": "Agent Intent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:settlement-interface",
+        "label": "Settlement Interface"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-payments",
+        "label": "AI Agent Payments"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:goal",
+      "label": "Goal",
+      "slug": "goal"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:objective",
+      "label": "Objective",
+      "slug": "objective"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:agent-delegation",
+        "label": "Agent Delegation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-task",
+        "label": "Agent Task"
+      },
+      {
+        "id": "urn:ngm:class:intent-parameter",
+        "label": "Intent Parameter"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:intent-type",
+        "label": "Intent Type"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      },
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-intent",
+      "label": "Agent Intent"
+    },
+    {
+      "slug": "agent-entity",
+      "label": "Agent Entity"
+    },
+    {
+      "slug": "settlement-interface",
+      "label": "Settlement Interface"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "agent-wallet-set",
+      "label": "Agent Wallet Set"
+    },
+    {
+      "slug": "ai-agent-payments",
+      "label": "AI Agent Payments"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-wallet-set",
+      "label": "Agent Wallet Set"
+    },
+    {
+      "slug": "settlement-interface",
+      "label": "Settlement Interface"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:continuous-improvement
   - urn:ngm:class:quality-assurance
   - urn:ngm:class:statistical-process-control
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Six Sigma

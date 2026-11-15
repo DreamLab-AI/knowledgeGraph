@@ -14,6 +14,7 @@ uses:
   - urn:ngm:class:cryptographic-key
   - urn:ngm:class:hardware-root-of-trust
   - urn:ngm:class:ledger
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Security Binding

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:intergovernmental-trade-organisation
 relatedTo:
   - urn:ngm:class:customs-trade-facilitation
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # World Customs Organization

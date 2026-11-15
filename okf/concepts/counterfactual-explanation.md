@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:lime
   - urn:ngm:class:shap
   - urn:ngm:class:counterfactual-reasoning
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Counterfactual Explanation

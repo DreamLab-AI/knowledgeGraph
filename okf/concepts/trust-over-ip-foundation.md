@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:w3c-credentials-community-group
   - urn:ngm:class:internet-identity-workshop
   - urn:ngm:class:supply-chain-provenance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Trust Over IP Foundation

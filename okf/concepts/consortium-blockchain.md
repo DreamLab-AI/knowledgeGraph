@@ -112,6 +112,7 @@ relatedTo:
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:supply-chain
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Consortium Blockchain

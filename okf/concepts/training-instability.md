@@ -25,6 +25,7 @@ relatedTo:
   - urn:ngm:class:model-training
   - urn:ngm:class:deep-learning
   - urn:ngm:class:mixed-precision-training
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Training Instability

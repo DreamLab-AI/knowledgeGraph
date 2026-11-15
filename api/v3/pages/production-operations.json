@@ -1,0 +1,107 @@
+{
+  "id": "urn:ngm:class:production-operations",
+  "title": "Production Operations",
+  "slug": "production-operations",
+  "public": true,
+  "classIri": "urn:ngm:class:production-operations",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Production operations is the part of an organisation that turns resources into goods, together with the decisions about how that work is organised: when production is triggered, how the process is laid out, and which management approach runs it.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "production-strategy",
+      "label": "Production Strategy"
+    },
+    {
+      "slug": "production-system-type",
+      "label": "Production System Type"
+    },
+    {
+      "slug": "production-management-philosophy",
+      "label": "Production Management Philosophy"
+    },
+    {
+      "slug": "mass-production",
+      "label": "Mass Production"
+    },
+    {
+      "slug": "job-shop-production",
+      "label": "Job Shop Production"
+    },
+    {
+      "slug": "batch-production",
+      "label": "Batch Production"
+    },
+    {
+      "slug": "mass-customisation",
+      "label": "Mass Customisation"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:inventory-control-practice
 bridgesTo:
   - urn:ngm:class:internet-of-things
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Vendor-Managed Inventory

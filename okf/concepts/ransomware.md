@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:data-breach
   - urn:ngm:class:disaster-recovery
   - urn:ngm:class:incident-response
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Ransomware

@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:settlement-interface
   - urn:ngm:class:ai-agent-payments
   - urn:ngm:class:wallet
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Payment Intent

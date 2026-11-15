@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:passive-thermal-control
   - urn:ngm:class:spacecraft-radiator
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:38:02Z"}
 ---
 
 # Spacecraft Thermal Coating

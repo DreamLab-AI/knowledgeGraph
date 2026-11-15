@@ -36,6 +36,7 @@ partOf:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:identity-management-system
   - urn:ngm:class:zero-trust-architecture
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Biometric Binding Mechanism

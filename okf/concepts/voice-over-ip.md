@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:real-time
   - urn:ngm:class:real-time-computing
   - urn:ngm:class:secure-channel
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Voice Over Ip

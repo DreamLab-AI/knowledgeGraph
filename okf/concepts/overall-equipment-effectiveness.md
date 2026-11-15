@@ -14,6 +14,7 @@ bridgesTo:
   - urn:ngm:class:condition-monitoring
 relatedTo:
   - urn:ngm:class:total-quality-management
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Overall Equipment Effectiveness

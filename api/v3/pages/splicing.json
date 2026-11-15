@@ -1,0 +1,338 @@
+{
+  "id": "urn:visionflow:page:splicing",
+  "title": "Splicing",
+  "slug": "splicing",
+  "public": true,
+  "classIri": "urn:ngm:class:splicing",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Splicing is a Lightning Network operation that resizes an existing payment channel by adding or removing on-chain funds without closing and reopening it, preserving the channel's state and routing history. A splice-in increases capacity by committing additional bitcoin, while a splice-out withdraws funds to an on-chain address, both executed through a single funding transaction. This keeps the channel continuously available and reduces the on-chain cost and downtime of channel management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-channel",
+      "label": "Payment Channel"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:core-lightning",
+        "label": "Core Lightning"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:off-chain-scaling",
+      "label": "Off-Chain Scaling",
+      "slug": "off-chain-scaling"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:commitment-transaction",
+        "label": "Commitment Transaction"
+      },
+      {
+        "id": "urn:ngm:class:funding-transaction",
+        "label": "Funding Transaction"
+      },
+      {
+        "id": "urn:ngm:class:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:off-chain-scaling",
+        "label": "Off-Chain Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot-payments",
+        "label": "IoT Payments"
+      },
+      {
+        "id": "urn:ngm:class:machine-economy",
+        "label": "Machine Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

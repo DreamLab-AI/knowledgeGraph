@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngm:class:delivery-performance-measure",
+  "title": "Delivery Performance Measure",
+  "slug": "delivery-performance-measure",
+  "public": true,
+  "classIri": "urn:ngm:class:delivery-performance-measure",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A delivery performance measure expresses how reliably a supply chain delivers to customers against the quantity and schedule that were agreed.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-measure",
+      "label": "Supply Chain Performance Measure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    },
+    {
+      "slug": "fill-rate",
+      "label": "Fill Rate"
+    },
+    {
+      "slug": "supply-chain-performance-measure",
+      "label": "Supply Chain Performance Measure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fill-rate",
+      "label": "Fill Rate"
+    },
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    },
+    {
+      "slug": "supply-chain-performance-measure",
+      "label": "Supply Chain Performance Measure"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "urn:ngm:class:supply-chain-information-systems",
+  "title": "Supply Chain Information Systems",
+  "slug": "supply-chain-information-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-information-systems",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain information systems are the software systems that plan, run and connect the activities of a supply chain.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "manufacturing-execution-system",
+      "label": "Manufacturing Execution System"
+    },
+    {
+      "slug": "warehouse-management-system",
+      "label": "Warehouse Management System"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    },
+    {
+      "slug": "order-management-system",
+      "label": "Order Management System"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "b2b-integration",
+      "label": "B2B Integration"
+    },
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-planning-system",
+      "label": "Supply Chain Planning System"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "b2b-integration",
+      "label": "B2B Integration"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "supply-chain-control-tower",
+      "label": "Supply Chain Control Tower"
+    },
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-planning-system",
+      "label": "Supply Chain Planning System"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

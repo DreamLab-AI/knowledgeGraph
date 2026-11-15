@@ -1,0 +1,364 @@
+{
+  "id": "urn:visionflow:page:87d0f6803703c242cab9941870704ae02fd5d9b8b0985baf111a6ee70fc28bd3",
+  "title": "Constant Product Formula",
+  "slug": "constant-product-formula",
+  "public": true,
+  "classIri": "urn:ngm:class:constant-product-formula",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The constant product formula is the pricing rule used by many automated market makers in which the product of the two pooled token reserves is held constant during trades.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:defi-protocol",
+      "label": "DeFi Protocol",
+      "slug": "defi-protocol"
+    },
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance",
+      "slug": "decentralised-finance"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pools",
+        "label": "Liquidity Pools"
+      },
+      {
+        "id": "urn:ngm:class:pricing-algorithms",
+        "label": "Pricing Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:token-swaps",
+        "label": "Token Swaps"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:composability",
+        "label": "Composability"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:token-bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

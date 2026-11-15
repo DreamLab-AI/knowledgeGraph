@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:agent
   - urn:ngm:class:bdi-model
   - urn:ngm:class:autonomy-level
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Goal

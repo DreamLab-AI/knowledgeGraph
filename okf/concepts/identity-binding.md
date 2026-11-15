@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:agent-identity
   - urn:ngm:class:security-binding
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Identity Binding

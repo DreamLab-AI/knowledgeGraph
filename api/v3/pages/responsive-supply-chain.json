@@ -1,0 +1,112 @@
+{
+  "id": "urn:ngm:class:responsive-supply-chain",
+  "title": "Responsive Supply Chain",
+  "slug": "responsive-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:responsive-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "In Fisher's framework a responsive supply chain, which he calls a market-responsive chain, is one designed to respond quickly to unpredictable demand in order to minimise stockouts, forced markdowns and obsolete inventory, and it is the chain he matches to \u201cinnovative products\u201d.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy-type",
+      "label": "Supply Chain Strategy Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "efficient-supply-chain",
+      "label": "Efficient Supply Chain"
+    },
+    {
+      "slug": "agile-supply-chain",
+      "label": "Agile Supply Chain"
+    },
+    {
+      "slug": "supply-chain-strategy-type",
+      "label": "Supply Chain Strategy Type"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agile-supply-chain",
+      "label": "Agile Supply Chain"
+    },
+    {
+      "slug": "efficient-supply-chain",
+      "label": "Efficient Supply Chain"
+    },
+    {
+      "slug": "supply-chain-segmentation",
+      "label": "Supply Chain Segmentation"
+    },
+    {
+      "slug": "supply-chain-strategy-type",
+      "label": "Supply Chain Strategy Type"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

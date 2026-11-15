@@ -1,0 +1,98 @@
+{
+  "id": "urn:ngm:class:bill-of-materials",
+  "title": "Bill of Materials",
+  "slug": "bill-of-materials",
+  "public": true,
+  "classIri": "urn:ngm:class:bill-of-materials",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A bill of materials (BOM) is a record of the components needed to make a product, and in manufacturing planning it identifies the finished product, its subassemblies and its components and the quantity of each.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:planning-master-data",
+      "label": "Planning Master Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning",
+      "slug": "supply-chain-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "planning-master-data",
+      "label": "Planning Master Data"
+    },
+    {
+      "slug": "material-requirements-planning",
+      "label": "Material Requirements Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "direct-procurement",
+      "label": "Direct Procurement"
+    },
+    {
+      "slug": "material-requirements-planning",
+      "label": "Material Requirements Planning"
+    },
+    {
+      "slug": "planning-master-data",
+      "label": "Planning Master Data"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

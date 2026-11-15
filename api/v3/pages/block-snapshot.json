@@ -1,0 +1,169 @@
+{
+  "id": "urn:visionflow:page:block-snapshot",
+  "title": "Block Snapshot",
+  "slug": "block-snapshot",
+  "public": true,
+  "classIri": "urn:ngm:class:block-snapshot",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A block snapshot is a record of on-chain state, typically token balances or governance weights, captured at a specific block height. In decentralised governance it freezes voting power at a chosen block so that token holdings used to weight votes cannot be manipulated by transfers during the voting window. Snapshots underpin gasless off-chain voting systems and fair airdrop distributions by providing a tamper-evident, reproducible baseline state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

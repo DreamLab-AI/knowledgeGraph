@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:tendermint
   - urn:ngm:class:byzantine-generals-problem
   - urn:ngm:class:partial-synchrony
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Consensus

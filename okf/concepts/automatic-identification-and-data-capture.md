@@ -14,6 +14,7 @@ bridgesTo:
   - urn:ngm:class:rfid
   - urn:ngm:class:qr-code
   - urn:ngm:class:near-field-communication
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Automatic Identification and Data Capture

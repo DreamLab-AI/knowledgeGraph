@@ -20,6 +20,7 @@ dependsOn:
 uses:
   - urn:ngm:class:state-machine
   - urn:ngm:class:conversational-ai
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Non Player Character

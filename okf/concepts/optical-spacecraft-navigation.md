@@ -14,6 +14,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:astrometry
   - urn:ngm:class:spacecraft-navigation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:03:18Z"}
 ---
 
 # Optical Spacecraft Navigation

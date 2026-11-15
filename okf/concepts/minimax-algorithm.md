@@ -12,6 +12,7 @@ is-a:
   - urn:ngm:class:search-algorithms
 enables:
   - urn:ngm:class:adversarial-search
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Minimax Algorithm

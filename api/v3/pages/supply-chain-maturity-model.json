@@ -1,0 +1,104 @@
+{
+  "id": "urn:ngm:class:supply-chain-maturity-model",
+  "title": "Supply Chain Maturity Model",
+  "slug": "supply-chain-maturity-model",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-maturity-model",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain maturity model is a staged model for benchmarking how mature a firm's supply chain practices are relative to best practice.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-framework",
+      "label": "Supply Chain Performance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "who-evm",
+      "label": "WHO EVM"
+    },
+    {
+      "slug": "supply-chain-performance-framework",
+      "label": "Supply Chain Performance Framework"
+    },
+    {
+      "slug": "scor-model",
+      "label": "SCOR Model"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "scor-model",
+      "label": "SCOR Model"
+    },
+    {
+      "slug": "supply-chain-performance-framework",
+      "label": "Supply Chain Performance Framework"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

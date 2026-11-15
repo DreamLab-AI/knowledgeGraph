@@ -1,0 +1,259 @@
+{
+  "id": "urn:visionflow:page:af99b703eec35295430f2e279ba00d1f3c6bd5242d1ef215d935a07a52e40402",
+  "title": "Protocol and Consensus",
+  "slug": "bc-protocol-and-consensus",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-protocol-and-consensus",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Taxonomy category grouping all protocol-level and consensus-layer concepts within the blockchain domain, including proof-of-work and proof-of-stake variants, Byzantine fault-tolerant algorithms, finality models, and the rules governing block production and chain selection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "block-propagation",
+      "label": "Block Propagation"
+    },
+    {
+      "slug": "coinbase-transaction",
+      "label": "Coinbase Transaction"
+    },
+    {
+      "slug": "consensus-rule",
+      "label": "Consensus Rule"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "Difficulty Target"
+    },
+    {
+      "slug": "fork-choice-rule",
+      "label": "Fork Choice Rule"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest Chain Rule"
+    },
+    {
+      "slug": "miner",
+      "label": "Miner"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-reward",
+      "label": "Mining Reward"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "network-synchronization",
+      "label": "Network Synchronization"
+    },
+    {
+      "slug": "pool-share",
+      "label": "Pool Share"
+    },
+    {
+      "slug": "solo-mining",
+      "label": "Solo Mining"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

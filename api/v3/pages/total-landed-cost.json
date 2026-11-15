@@ -1,0 +1,123 @@
+{
+  "id": "urn:ngm:class:total-landed-cost",
+  "title": "Total Landed Cost",
+  "slug": "total-landed-cost",
+  "public": true,
+  "classIri": "urn:ngm:class:total-landed-cost",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Total landed cost is the total cost of a product once it has arrived at the buyer, made up of the original price and the costs of getting the product there.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-cost-measure",
+      "label": "Supply Chain Cost Measure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:total-cost-of-ownership",
+        "label": "Total Cost of Ownership"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incoterms",
+        "label": "Incoterms"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-measure",
+      "label": "Supply Chain Performance Measure",
+      "slug": "supply-chain-performance-measure"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "total-cost-of-ownership",
+      "label": "Total Cost of Ownership"
+    },
+    {
+      "slug": "incoterms",
+      "label": "Incoterms"
+    },
+    {
+      "slug": "supply-chain-cost-measure",
+      "label": "Supply Chain Cost Measure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cost-to-serve",
+      "label": "Cost to Serve"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "supply-chain-cost-measure",
+      "label": "Supply Chain Cost Measure"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

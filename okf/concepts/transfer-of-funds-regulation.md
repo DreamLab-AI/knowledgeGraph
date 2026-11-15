@@ -29,6 +29,7 @@ relatedTo:
   - urn:ngm:class:payment-service-provider
   - urn:ngm:class:crypto-asset-service-provider
   - urn:ngm:class:governance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Transfer Of Funds Regulation

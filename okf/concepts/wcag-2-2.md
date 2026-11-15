@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:accessibility-audit-tool
   - urn:ngm:class:user-interface-standard
   - urn:ngm:class:accessibility-standards
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # WCAG 2.2

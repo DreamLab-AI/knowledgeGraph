@@ -1,0 +1,250 @@
+{
+  "id": "urn:visionflow:page:supply-chain-provenance",
+  "title": "Supply Chain Provenance",
+  "slug": "supply-chain-provenance",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-provenance",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain provenance is information about the origin and history of goods as they pass through a supply chain, and no source opened here defines the term in that sense, so the page is bounded by a general definition of provenance and by what traceability sources record.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti Counterfeiting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:everledger",
+        "label": "Everledger"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "W3C PROV"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Minerals"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:corda",
+        "label": "Corda"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:quorum-blockchain",
+        "label": "Quorum Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "traceability-and-product-identification",
+      "label": "Traceability and Product Identification"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

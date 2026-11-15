@@ -15,6 +15,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:probability-distribution
   - urn:ngm:class:random-sampling
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Variance

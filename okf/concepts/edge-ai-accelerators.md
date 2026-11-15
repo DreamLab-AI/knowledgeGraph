@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:inference-hardware
   - urn:ngm:class:neuromorphic-computing
   - urn:ngm:class:edge-ai-security
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Edge AI Accelerators

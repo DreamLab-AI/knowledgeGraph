@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:three-js
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:scene-graph
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Babylon Js

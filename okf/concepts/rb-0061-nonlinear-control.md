@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0060-optimal-control
   - urn:ngm:class:adaptive-control
   - urn:ngm:class:rb-0047-feedback-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0061 nonlinear control

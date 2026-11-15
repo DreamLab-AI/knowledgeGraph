@@ -69,6 +69,7 @@ relatedTo:
   - urn:ngm:class:dc-workspace-tools
   - urn:ngm:class:dc-communication
   - urn:ngm:class:robotics-telepresence-bridge
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Telepresence

@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:geodetic-latitude
   - urn:ngm:class:reference-ellipsoid
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:35:45Z"}
 ---
 
 # Geocentric Latitude

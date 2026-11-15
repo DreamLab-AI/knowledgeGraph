@@ -1,0 +1,92 @@
+{
+  "id": "urn:ngm:class:drought-monitoring",
+  "title": "Drought Monitoring",
+  "slug": "drought-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:drought-monitoring",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Drought monitoring follows an evolving shortage of water and its effects across the hydrological cycle. Low rainfall may first appear as meteorological drought, then reduce soil moisture, river flow, groundwater recharge, reservoir storage or ecosystem function. Agricultural, environmental and water-supply drought can overlap, develop at different rates and recover at different times. No single satellite image, gauge or index determines the whole condition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-observation-applications",
+      "label": "Earth Observation Applications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-applications",
+        "label": "Earth Observation Applications"
+      },
+      {
+        "id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+      "label": "Earth Observation and Geospatial Sensing",
+      "slug": "earth-observation-and-geospatial-sensing"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

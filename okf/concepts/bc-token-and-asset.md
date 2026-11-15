@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:erc-721
   - urn:ngm:class:digital-asset
   - urn:ngm:class:asset-tokenisation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Token and Asset

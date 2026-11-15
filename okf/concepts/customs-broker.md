@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:customs-declaration
   - urn:ngm:class:customs-trade-facilitation
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # Customs Broker

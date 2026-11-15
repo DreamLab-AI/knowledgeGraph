@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:force-control
   - urn:ngm:class:admittance-control
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Safe Human-Robot Interaction

@@ -28,6 +28,7 @@ relatedTo:
   - urn:ngm:class:regulatory-compliance
   - urn:ngm:class:ai-transparency-framework
   - urn:ngm:class:algorithmic-accountability
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Ethical Framework

@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:hydraulic-actuator
   - urn:ngm:class:servo-motor
   - urn:ngm:class:stepper-motor
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Electric Linear Actuator

@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:computer-supported-cooperative-work
   - urn:ngm:class:groupware
   - urn:ngm:class:social-software
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Distributed Collaboration

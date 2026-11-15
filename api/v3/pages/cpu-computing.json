@@ -1,0 +1,399 @@
+{
+  "id": "urn:visionflow:page:cpu-computing",
+  "title": "CPU Computing",
+  "slug": "cpu-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:cpu-computing",
+  "domain": "spatial-computing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "CPU computing is the execution of computational workloads on a general-purpose central processing unit, which performs instructions sequentially across a small number of high-clock cores optimised for low latency and complex control flow. It excels at branch-heavy, irregular, and serial tasks but contrasts with the massively parallel throughput model of GPU computing. CPUs follow a stored-program architecture with deep cache hierarchies, out-of-order execution, and rich instruction sets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)",
+      "slug": "infra-software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      },
+      {
+        "id": "urn:ngm:class:task-parallelism",
+        "label": "Task Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:algorithms",
+        "label": "Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:computer-networks",
+        "label": "Computer Networks"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning Training"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cache-coherence",
+        "label": "Cache Coherence"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation-primitive",
+        "label": "Synchronisation Primitive"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sequential-computing",
+        "label": "Sequential Computing"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:acm",
+        "label": "ACM"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "integrated-circuit",
+      "label": "Integrated Circuit"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

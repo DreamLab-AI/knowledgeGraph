@@ -15,6 +15,7 @@ bridgesTo:
   - urn:ngm:class:ghg-protocol
 relatedTo:
   - urn:ngm:class:science-based-targets
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Supply Chain Environmental Accounting

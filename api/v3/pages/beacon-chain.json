@@ -1,0 +1,282 @@
+{
+  "id": "urn:visionflow:page:beacon-chain",
+  "title": "Beacon Chain",
+  "slug": "beacon-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:beacon-chain",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The Beacon Chain is the proof-of-stake consensus backbone introduced to Ethereum that coordinates validators, manages staking, and finalises blocks. It organises time into slots and epochs, assigns block-proposal and attestation duties, and applies a finality gadget that locks in the canonical chain. The Beacon Chain decouples consensus from execution, providing the security and randomness that the broader sharded and execution layers build upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-layer",
+      "label": "Consensus Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

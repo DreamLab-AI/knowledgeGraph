@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:procedural-and-hybrid-4-d
   - urn:ngm:class:procedural-texture
   - urn:ngm:class:rendering-engine
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Procedural Terrain

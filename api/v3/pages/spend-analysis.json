@@ -1,0 +1,121 @@
+{
+  "id": "urn:ngm:class:spend-analysis",
+  "title": "Spend Analysis",
+  "slug": "spend-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:spend-analysis",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Spend analysis is the examination of what an organisation spends, on what and with whom, as an evidence base for procurement decisions.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:strategic-sourcing",
+      "label": "Strategic Sourcing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:total-cost-of-ownership",
+        "label": "Total Cost of Ownership"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    },
+    {
+      "slug": "category-management",
+      "label": "Category Management"
+    },
+    {
+      "slug": "indirect-procurement",
+      "label": "Indirect Procurement"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "category-management",
+      "label": "Category Management"
+    },
+    {
+      "slug": "indirect-procurement",
+      "label": "Indirect Procurement"
+    },
+    {
+      "slug": "sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    },
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

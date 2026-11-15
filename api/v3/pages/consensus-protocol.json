@@ -1,0 +1,417 @@
+{
+  "id": "urn:visionflow:page:8edfcde8c6dfc18c8995b25b7db0d14d3606c27d661dea919aa2a70a138aba2f",
+  "title": "Consensus Protocol",
+  "slug": "consensus-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:consensus-protocol",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A consensus protocol is a set of rules and algorithms by which distributed network participants reach agreement on a single shared state or value without requiring centralised authority, ensuring liveness, safety, and Byzantine fault tolerance up to a specified threshold of adversarial nodes. Classical families include compute-bound Proof-of-Work, stake-weighted Proof-of-Stake, and message-passing BFT protocols such as PBFT, Tendermint, and HotStuff. Each protocol specifies leader election, block proposal, voting rounds, and finality conditions that together determine throughput, latency, decentralisation, and security trade-offs. Consensus protocols underpin blockchains, distributed databases, and any replicated state machine requiring deterministic agreement across potentially unreliable or malicious peers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      },
+      {
+        "id": "urn:ngm:class:distributed-agreement",
+        "label": "Distributed Agreement"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-protocol",
+      "label": "Bitcoin Protocol"
+    },
+    {
+      "slug": "block-propagation",
+      "label": "Block Propagation"
+    },
+    {
+      "slug": "blockchain-collaboration",
+      "label": "Blockchain Collaboration"
+    },
+    {
+      "slug": "coinbase-transaction",
+      "label": "Coinbase Transaction"
+    },
+    {
+      "slug": "consensus-rule",
+      "label": "Consensus Rule"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "difficulty-adjustment",
+      "label": "Difficulty Adjustment"
+    },
+    {
+      "slug": "difficulty-target",
+      "label": "Difficulty Target"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "fork-choice-rule",
+      "label": "Fork Choice Rule"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "layer-1",
+      "label": "Layer 1"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest Chain Rule"
+    },
+    {
+      "slug": "miner",
+      "label": "Miner"
+    },
+    {
+      "slug": "mining-pool",
+      "label": "Mining Pool"
+    },
+    {
+      "slug": "mining-reward",
+      "label": "Mining Reward"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "nakamoto-consensus",
+      "label": "Nakamoto Consensus"
+    },
+    {
+      "slug": "network-hash-rate",
+      "label": "Network Hash Rate"
+    },
+    {
+      "slug": "network-synchronization",
+      "label": "Network Synchronization"
+    },
+    {
+      "slug": "pool-share",
+      "label": "Pool Share"
+    },
+    {
+      "slug": "private-channels",
+      "label": "Private Channels"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "solo-mining",
+      "label": "Solo Mining"
+    },
+    {
+      "slug": "stacks",
+      "label": "Stacks"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "tezos",
+      "label": "Tezos"
+    },
+    {
+      "slug": "validator",
+      "label": "Validator"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

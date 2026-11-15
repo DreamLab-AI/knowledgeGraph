@@ -1,0 +1,81 @@
+{
+  "id": "urn:ngm:class:launch-vehicle",
+  "title": "Launch Vehicle",
+  "slug": "launch-vehicle",
+  "public": true,
+  "classIri": "urn:ngm:class:launch-vehicle",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A launch vehicle is the integrated flight system that carries a payload from the ground, sea or air to a specified trajectory or orbit. It must supply the required velocity while supporting and protecting the payload through acceleration, vibration, acoustic loading, aerodynamic pressure and heating. In UK law, *launch vehicle* has a broader regulatory meaning that covers the vehicle and its component parts but excludes the payload; the exact legal scope depends on the licensed activity.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-bus",
+      "label": "Spacecraft Bus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "launch-vehicle-stage",
+      "label": "stages"
+    },
+    {
+      "slug": "spacecraft-propulsion",
+      "label": "spacecraft propulsion systems"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

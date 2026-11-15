@@ -29,6 +29,7 @@ relatedTo:
   - urn:ngm:class:difficulty-adjustment
   - urn:ngm:class:incentive-alignment
   - urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Halving

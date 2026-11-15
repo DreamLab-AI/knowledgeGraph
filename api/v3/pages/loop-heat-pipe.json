@@ -1,0 +1,87 @@
+{
+  "id": "urn:ngm:class:loop-heat-pipe",
+  "title": "Loop Heat Pipe",
+  "slug": "loop-heat-pipe",
+  "public": true,
+  "classIri": "urn:ngm:class:loop-heat-pipe",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A loop heat pipe is a sealed two-phase thermal-transport device driven by capillary pressure rather than a mechanical pump. Its primary wick sits in the evaporator. Heat vaporises working fluid at the wick surface; vapour passes through a dedicated line to the condenser; liquid returns through a separate line and compensation chamber. The physical separation of vapour and liquid paths permits routing and transport distances that are difficult for a conventional heat pipe.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:heat-pipe",
+      "label": "Heat Pipe"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-thermal-control",
+        "label": "Spacecraft Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+      "label": "Spacecraft Power and Thermal Control",
+      "slug": "spacecraft-power-and-thermal-control"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+        "label": "Spacecraft Power and Thermal Control"
+      },
+      {
+        "id": "urn:ngm:class:space-data-centers",
+        "label": "Space Data Centers"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

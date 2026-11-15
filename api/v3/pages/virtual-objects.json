@@ -1,0 +1,396 @@
+{
+  "id": "urn:visionflow:page:45279faaef30f140089efd5da67cf4a6e42629b4da7e2961c549a203751c8a10",
+  "title": "Virtual Objects",
+  "slug": "virtual-objects",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-objects",
+  "domain": "spatial-computing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customise, including avatars, wearables, furniture, vehicles, and environmental elements. NFT smart contracts on blockchain networks provide verifiable, transferable ownership records, while interoperable formats such as glTF and VRM support cross-platform portability of virtual objects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar-wearable",
+        "label": "Avatar Wearable"
+      },
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:geodesy",
+        "label": "Geodesy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

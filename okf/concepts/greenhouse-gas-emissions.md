@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:climate-change
   - urn:ngm:class:ghg-protocol
   - urn:ngm:class:net-zero-targets
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Greenhouse Gas Emissions

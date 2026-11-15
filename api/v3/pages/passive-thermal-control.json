@@ -1,0 +1,83 @@
+{
+  "id": "urn:ngm:class:passive-thermal-control",
+  "title": "Passive Thermal Control",
+  "slug": "passive-thermal-control",
+  "public": true,
+  "classIri": "urn:ngm:class:passive-thermal-control",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Passive thermal control maintains spacecraft temperatures through material properties, geometry and unpowered heat transport. It uses no electrical power for the thermal-control function. Coatings, films, multilayer insulation (MLI), radiator surfaces, conductive straps, selected structural interfaces, sunshades, phase-change material and conventional heat pipes are established passive techniques.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-thermal-control",
+      "label": "Spacecraft Thermal Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+        "label": "Spacecraft Power and Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+      "label": "Spacecraft Power and Thermal Control",
+      "slug": "spacecraft-power-and-thermal-control"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-data-centers",
+        "label": "Space Data Centers"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -118,6 +118,7 @@ relatedTo:
   - urn:ngm:class:token-engineering
   - urn:ngm:class:dao-legal-structures
   - urn:ngm:class:karma-delegate-scoring
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Snapshot Voting

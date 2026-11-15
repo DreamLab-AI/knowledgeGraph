@@ -1,0 +1,113 @@
+{
+  "id": "urn:ngm:class:manufacturing-execution-system",
+  "title": "Manufacturing Execution System",
+  "slug": "manufacturing-execution-system",
+  "public": true,
+  "classIri": "urn:ngm:class:manufacturing-execution-system",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A manufacturing execution system (MES) is a system at Level 3 of the ISA-95 model that manages manufacturing operations, between process control and business planning.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "overall-equipment-effectiveness",
+      "label": "Overall Equipment Effectiveness"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

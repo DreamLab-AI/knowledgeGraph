@@ -21,6 +21,7 @@ partOf:
   - urn:ngm:class:etsi-domain-human-interface
 relatedTo:
   - urn:ngm:class:inclusive-xr-design
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ETSI_Domain_Human_Interface_UX

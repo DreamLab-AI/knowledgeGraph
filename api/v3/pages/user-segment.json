@@ -1,0 +1,68 @@
+{
+  "id": "urn:ngm:class:user-segment",
+  "title": "User Segment",
+  "slug": "user-segment",
+  "public": true,
+  "classIri": "urn:ngm:class:user-segment",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "In satellite navigation, the user segment is the part of a navigation system made up of receivers that use the broadcast signals, and in the GPS architecture it is one of three segments alongside the space segment and the ground segment.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-bus",
+      "label": "Spacecraft Bus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

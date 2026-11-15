@@ -18,6 +18,7 @@ standardizedBy:
   - urn:ngm:class:wcag-2-2
 relatedTo:
   - urn:ngm:class:transparency
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Accessibility Captioning

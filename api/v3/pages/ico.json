@@ -1,0 +1,340 @@
+{
+  "id": "urn:visionflow:page:ico",
+  "title": "ICO",
+  "slug": "ico",
+  "public": true,
+  "classIri": "urn:ngm:class:ico",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An Initial Coin Offering (ICO) is a blockchain-based fundraising mechanism in which a project or organisation sells newly issued cryptographic tokens to investors in exchange for established cryptocurrencies (typically ETH or BTC) or fiat currency, with the tokens granting access to a future service, governance rights, or speculative value appreciation. ICOs gained widespread use in 2017\u20132018 as an alternative to traditional venture capital and IPO processes, raising billions of dollars before facing significant regulatory scrutiny from securities authorities worldwide. They differ from traditional securities offerings in being permissionless, globally accessible, and typically not subject to investor accreditation requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:crypto-token",
+      "label": "Crypto Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:securities-and-exchange-commission",
+        "label": "Securities and Exchange Commission"
+      },
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:governance-voting",
+        "label": "Governance Voting"
+      },
+      {
+        "id": "urn:ngm:class:programmable-value",
+        "label": "Programmable Value"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

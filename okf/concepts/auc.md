@@ -14,6 +14,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
 relatedTo:
   - urn:ngm:class:artificial-intelligence
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AUC

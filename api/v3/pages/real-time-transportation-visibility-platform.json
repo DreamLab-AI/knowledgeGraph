@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngm:class:real-time-transportation-visibility-platform",
+  "title": "Real-Time Transportation Visibility Platform",
+  "slug": "real-time-transportation-visibility-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-transportation-visibility-platform",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A real-time transportation visibility platform is software that tracks in-transit freight in near real time and presents it in a single view.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-visibility-platform",
+      "label": "Supply Chain Visibility Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    },
+    {
+      "slug": "supply-chain-visibility-platform",
+      "label": "Supply Chain Visibility Platform"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-visibility-platform",
+      "label": "Supply Chain Visibility Platform"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

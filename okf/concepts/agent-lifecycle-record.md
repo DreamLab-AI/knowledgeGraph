@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:agent-genesis-record
   - urn:ngm:class:agent-decommission-record
   - urn:ngm:class:health-check
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Lifecycle Record

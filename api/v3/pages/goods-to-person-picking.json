@@ -1,0 +1,134 @@
+{
+  "id": "urn:ngm:class:goods-to-person-picking",
+  "title": "Goods-to-Person Picking",
+  "slug": "goods-to-person-picking",
+  "public": true,
+  "classIri": "urn:ngm:class:goods-to-person-picking",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Goods-to-person picking is an order picking method in which stock is brought to a stationary picker, so that the picker does not travel to the storage location.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:order-picking",
+      "label": "Order Picking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:warehouse-operation",
+      "label": "Warehouse Operation",
+      "slug": "warehouse-operation"
+    },
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution",
+      "slug": "warehousing-and-distribution"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mobile-manipulator",
+        "label": "Mobile Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "order-picking",
+      "label": "Order Picking"
+    },
+    {
+      "slug": "automated-storage-and-retrieval-system",
+      "label": "Automated Storage and Retrieval System"
+    },
+    {
+      "slug": "autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automated-storage-and-retrieval-system",
+      "label": "Automated Storage and Retrieval System"
+    },
+    {
+      "slug": "order-picking",
+      "label": "Order Picking"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

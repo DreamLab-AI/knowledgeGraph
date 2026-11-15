@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:economics
   - urn:ngm:class:economic-growth
   - urn:ngm:class:central-bank
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Consumer Price Index

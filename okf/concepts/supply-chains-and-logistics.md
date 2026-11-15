@@ -11,6 +11,7 @@ relatedTo:
   - urn:ngm:class:supply-chain
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:logistics
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Supply Chains and Logistics

@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:control-theory
   - urn:ngm:class:impedance-control
   - urn:ngm:class:visual-servoing
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Robotic Control

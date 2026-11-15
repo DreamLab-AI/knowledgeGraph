@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:3-d-gaussian-splatting
   - urn:ngm:class:signed-distance-function
   - urn:ngm:class:generative-ai
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Implicit Neural Representation

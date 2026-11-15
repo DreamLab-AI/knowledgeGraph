@@ -1,0 +1,153 @@
+{
+  "id": "urn:ngm:class:customs-duty",
+  "title": "Customs Duty",
+  "slug": "customs-duty",
+  "public": true,
+  "classIri": "urn:ngm:class:customs-duty",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A customs duty is a tax charged by a government on goods when they are imported or exported.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-measure",
+      "label": "Trade Measure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hmrc",
+        "label": "HMRC"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs",
+      "slug": "international-trade-and-customs"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:china-tech-export-controls",
+        "label": "China Tech Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "tariff-classification",
+      "label": "Tariff Classification"
+    },
+    {
+      "slug": "rules-of-origin",
+      "label": "Rules of Origin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bonded-warehouse",
+      "label": "Bonded Warehouse"
+    },
+    {
+      "slug": "customs-regulation",
+      "label": "Customs Regulation"
+    },
+    {
+      "slug": "delivered-duty-paid",
+      "label": "Delivered Duty Paid"
+    },
+    {
+      "slug": "free-trade-zone",
+      "label": "Free Trade Zone"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "international-trade-and-customs",
+      "label": "International Trade and Customs"
+    },
+    {
+      "slug": "rules-of-origin",
+      "label": "Rules of Origin"
+    },
+    {
+      "slug": "tariff-classification",
+      "label": "Tariff Classification"
+    },
+    {
+      "slug": "trade-measure",
+      "label": "Trade Measure"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

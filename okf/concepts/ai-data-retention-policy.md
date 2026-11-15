@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:trust-and-safety
   - urn:ngm:class:data-governance
   - urn:ngm:class:content-moderation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Data Retention Policy

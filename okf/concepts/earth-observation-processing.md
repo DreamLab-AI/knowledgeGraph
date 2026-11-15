@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:data-pipeline
 relatedTo:
   - urn:ngm:class:earth-observation-data-product
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T09:59:53Z"}
 ---
 
 # Earth Observation Processing

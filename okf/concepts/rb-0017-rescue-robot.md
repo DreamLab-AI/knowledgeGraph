@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:rb-0008-autonomous-robot
   - urn:ngm:class:rb-0018-inspection-robot
   - urn:ngm:class:mobile-robot-platform
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0017 rescue robot

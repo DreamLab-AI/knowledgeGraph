@@ -38,6 +38,7 @@ standardizedBy:
   - urn:ngm:class:world-wide-web-consortium
 relatedTo:
   - urn:ngm:class:owl-2-web-ontology-language
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # OWL

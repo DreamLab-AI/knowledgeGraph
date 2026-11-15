@@ -1,0 +1,348 @@
+{
+  "id": "urn:visionflow:page:bytecode",
+  "title": "Bytecode",
+  "slug": "bytecode",
+  "public": true,
+  "classIri": "urn:ngm:class:bytecode",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Bytecode is a compact, platform-independent instruction set produced by compiling source code, designed to be executed by a virtual machine rather than directly by hardware. In blockchain systems, smart contracts written in high-level languages such as Solidity are compiled to bytecode that the Ethereum Virtual Machine deterministically executes across every node. Bytecode strikes a balance between the portability of source code and the efficiency of native machine code.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract-execution",
+      "label": "Smart Contract Execution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-transfer",
+        "label": "Token Transfer"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-execution",
+        "label": "Centralised Execution"
+      },
+      {
+        "id": "urn:ngm:class:traditional-contract",
+        "label": "Traditional Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-ai-inference",
+        "label": "Decentralised AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:application-binary-interface",
+        "label": "Application Binary Interface"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inter-blockchain-communication",
+        "label": "Inter-Blockchain Communication"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-audit",
+        "label": "Smart Contract Audit"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

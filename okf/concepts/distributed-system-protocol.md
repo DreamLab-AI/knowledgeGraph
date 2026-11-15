@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:cap-theorem
   - urn:ngm:class:raft-consensus
   - urn:ngm:class:paxos
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Distributed System Protocol

@@ -14,6 +14,7 @@ contrastsWith:
 uses:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:infrastructure-as-a-service
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Multi-Cloud

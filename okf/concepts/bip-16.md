@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:technical-standard
 relatedTo:
   - urn:ngm:class:multi-sig-governance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # BIP-16

@@ -1,0 +1,66 @@
+{
+  "id": "urn:ngm:class:space-reference-systems",
+  "title": "Space Reference Systems",
+  "slug": "space-reference-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:space-reference-systems",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Space reference systems are the coordinate and timing conventions adopted so that the locations and motions of observers, natural objects and spacecraft can be identified consistently.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:coordinate-reference-system",
+        "label": "Coordinate Reference System"
+      },
+      {
+        "id": "urn:ngm:class:geodetic-reference-frame",
+        "label": "Geodetic Reference Frame"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

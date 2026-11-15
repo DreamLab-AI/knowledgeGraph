@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:point-cloud
 relatedTo:
   - urn:ngm:class:geodesy
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:37:36Z"}
 ---
 
 # Digital Terrain Model

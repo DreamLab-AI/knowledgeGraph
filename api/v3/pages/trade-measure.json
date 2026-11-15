@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngm:class:trade-measure",
+  "title": "Trade Measure",
+  "slug": "trade-measure",
+  "public": true,
+  "classIri": "urn:ngm:class:trade-measure",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A trade measure is a policy instrument that affects the flow of goods across a border, whether a tariff or a non-tariff measure.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "id": "urn:ngm:class:china-tech-export-controls",
+        "label": "China Tech Export Controls"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "customs-duty",
+      "label": "Customs Duty"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "international-trade-and-customs",
+      "label": "International Trade and Customs"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

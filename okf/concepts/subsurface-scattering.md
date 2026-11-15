@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:ray-tracing
   - urn:ngm:class:texture-mapping
   - urn:ngm:class:rendering-pipeline
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Subsurface Scattering

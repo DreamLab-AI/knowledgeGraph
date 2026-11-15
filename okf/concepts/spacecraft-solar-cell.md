@@ -13,6 +13,7 @@ partOf:
   - urn:ngm:class:spacecraft-solar-array
 relatedTo:
   - urn:ngm:class:spacecraft-electrical-power-system
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:38:02Z"}
 ---
 
 # Spacecraft Solar Cell

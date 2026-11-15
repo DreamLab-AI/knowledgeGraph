@@ -1,0 +1,124 @@
+{
+  "id": "urn:ngm:class:supply-chain-control-tower",
+  "title": "Supply Chain Control Tower",
+  "slug": "supply-chain-control-tower",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-control-tower",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain control tower is a technological solution that provides real-time visibility, coordination and optimization throughout a supply chain.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-visibility-platform",
+      "label": "Supply Chain Visibility Platform"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    },
+    {
+      "slug": "supply-chain-digital-twin",
+      "label": "Supply Chain Digital Twin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fourth-party-logistics-provider",
+      "label": "Fourth-Party Logistics Provider"
+    },
+    {
+      "slug": "supply-chain-digital-twin",
+      "label": "Supply Chain Digital Twin"
+    },
+    {
+      "slug": "supply-chain-visibility-platform",
+      "label": "Supply Chain Visibility Platform"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

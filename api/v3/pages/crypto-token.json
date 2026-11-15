@@ -1,0 +1,353 @@
+{
+  "id": "urn:visionflow:page:3d4513c3d85d8b63109e434b613b712e2174e73208c4c1cb7093df09784fd714",
+  "title": "Crypto Token",
+  "slug": "crypto-token",
+  "public": true,
+  "classIri": "urn:ngm:class:crypto-token",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A blockchain-based programmable token representing assets, rights, or utility within a decentralized system, with transferability governed by smart contract logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-voting",
+        "label": "Governance Voting"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:programmable-value",
+        "label": "Programmable Value"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "cryptographic-key",
+      "label": "Cryptographic Key"
+    },
+    {
+      "slug": "governance-voting",
+      "label": "Governance Voting"
+    },
+    {
+      "slug": "iso-24165",
+      "label": "ISO 24165"
+    },
+    {
+      "slug": "programmable-value",
+      "label": "Programmable Value"
+    },
+    {
+      "slug": "reed-smith",
+      "label": "Reed Smith"
+    },
+    {
+      "slug": "tokenization-system",
+      "label": "Tokenization System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-ownership",
+      "label": "Digital Ownership"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    },
+    {
+      "slug": "middleware-layer",
+      "label": "Middleware Layer"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "virtual-economy",
+      "label": "VirtualEconomyDomain"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

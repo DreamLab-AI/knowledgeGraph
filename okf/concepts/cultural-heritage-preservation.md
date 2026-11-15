@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:digital-preservation
   - urn:ngm:class:intangible-cultural-heritage
   - urn:ngm:class:open-archival-information-system
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cultural Heritage Preservation

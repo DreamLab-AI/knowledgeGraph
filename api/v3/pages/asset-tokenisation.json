@@ -1,0 +1,431 @@
+{
+  "id": "urn:visionflow:page:40a4e009c6f2b42290f675d4da21276556d1aacb69a9e9a6540e55ad490b40b8",
+  "title": "asset tokenisation",
+  "slug": "asset-tokenisation",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-tokenisation",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Asset tokenisation is the process of representing ownership, revenue rights, or access rights in a real-world or digital asset as a cryptographically secured blockchain token governed by a smart contract. The token encodes legally binding claims \u2014 to real estate, private equity, bonds, commodities, or intellectual property \u2014 while embedding compliance logic such as KYC whitelisting and transfer restrictions directly on-chain. Tokenisation enables fractional ownership, continuous secondary trading, and automated settlement without traditional intermediaries, sitting at the convergence of securities regulation, distributed ledger infrastructure, and programmable finance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-securities",
+        "label": "Traditional Securities"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:real-estate",
+        "label": "Real Estate"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-in-finance",
+        "label": "Artificial Intelligence in Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:international-organisation-of-securities-commissions",
+        "label": "International Organisation of Securities Commissions"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "black-rock-buidl",
+      "label": "BlackRock BUIDL"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "centrifuge",
+      "label": "Centrifuge"
+    },
+    {
+      "slug": "dtcc",
+      "label": "DTCC"
+    },
+    {
+      "slug": "decentraland",
+      "label": "Decentraland"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "institutional-adoption",
+      "label": "Institutional Adoption"
+    },
+    {
+      "slug": "ondo-finance",
+      "label": "Ondo Finance"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "securitize",
+      "label": "Securitize"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

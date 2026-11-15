@@ -1,0 +1,142 @@
+{
+  "id": "urn:ngm:class:supply-chain-performance-measure",
+  "title": "Supply Chain Performance Measure",
+  "slug": "supply-chain-performance-measure",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-performance-measure",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain performance measure, also called a supply chain KPI or metric, is a standard for measuring the performance of a supply chain or one of its processes.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "delivery-performance-measure",
+      "label": "Delivery Performance Measure"
+    },
+    {
+      "slug": "inventory-performance-measure",
+      "label": "Inventory Performance Measure"
+    },
+    {
+      "slug": "forecast-accuracy",
+      "label": "Forecast Accuracy"
+    },
+    {
+      "slug": "overall-equipment-effectiveness",
+      "label": "Overall Equipment Effectiveness"
+    },
+    {
+      "slug": "supply-chain-cost-measure",
+      "label": "Supply Chain Cost Measure"
+    },
+    {
+      "slug": "supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance"
+    },
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cash-to-cash-cycle-time",
+      "label": "Cash-to-Cash Cycle Time"
+    },
+    {
+      "slug": "delivery-performance-measure",
+      "label": "Delivery Performance Measure"
+    },
+    {
+      "slug": "forecast-accuracy",
+      "label": "Forecast Accuracy"
+    },
+    {
+      "slug": "inventory-performance-measure",
+      "label": "Inventory Performance Measure"
+    },
+    {
+      "slug": "overall-equipment-effectiveness",
+      "label": "Overall Equipment Effectiveness"
+    },
+    {
+      "slug": "scor-model",
+      "label": "SCOR Model"
+    },
+    {
+      "slug": "supply-chain-cost-measure",
+      "label": "Supply Chain Cost Measure"
+    },
+    {
+      "slug": "supply-chain-performance-framework",
+      "label": "Supply Chain Performance Framework"
+    },
+    {
+      "slug": "supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

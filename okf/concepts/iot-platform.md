@@ -22,6 +22,7 @@ uses:
   - urn:ngm:class:event-driven-architecture
 partOf:
   - urn:ngm:class:internet-of-things
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IoT Platform

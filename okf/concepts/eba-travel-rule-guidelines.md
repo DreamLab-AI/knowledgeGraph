@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:financial-regulation
 relatedTo:
   - urn:ngm:class:travel-rule
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # EBA Travel Rule Guidelines

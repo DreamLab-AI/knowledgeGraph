@@ -101,6 +101,7 @@ relatedTo:
   - urn:ngm:class:social-choice-theory
   - urn:ngm:class:mechanism-design
   - urn:ngm:class:public-choice-theory
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Community Governance Model

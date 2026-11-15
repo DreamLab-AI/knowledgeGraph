@@ -1,0 +1,171 @@
+{
+  "id": "urn:ngm:class:customs-declaration",
+  "title": "Customs Declaration",
+  "slug": "customs-declaration",
+  "public": true,
+  "classIri": "urn:ngm:class:customs-declaration",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A customs declaration is the act, or the document, by which a person tells customs authorities what goods are being moved and which customs procedure they are to be placed under.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customs-clearance",
+      "label": "Customs Clearance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hmrc",
+        "label": "HMRC"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:customs-procedure",
+      "label": "Customs Procedure",
+      "slug": "customs-procedure"
+    },
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs",
+      "slug": "international-trade-and-customs"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-compliance",
+        "label": "Sanctions Compliance"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-broker",
+        "label": "Customs Broker"
+      },
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "customs-clearance",
+      "label": "Customs Clearance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customs-broker",
+      "label": "Customs Broker"
+    },
+    {
+      "slug": "customs-clearance",
+      "label": "Customs Clearance"
+    },
+    {
+      "slug": "customs-procedure",
+      "label": "Customs Procedure"
+    },
+    {
+      "slug": "customs-regulation",
+      "label": "Customs Regulation"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "delivered-duty-paid",
+      "label": "Delivered Duty Paid"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "international-trade-and-customs",
+      "label": "International Trade and Customs"
+    },
+    {
+      "slug": "trade-document",
+      "label": "Trade Document"
+    },
+    {
+      "slug": "world-customs-organization",
+      "label": "World Customs Organization"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

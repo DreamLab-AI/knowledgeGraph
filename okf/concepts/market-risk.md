@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:operational-risk
   - urn:ngm:class:basel-iii
   - urn:ngm:class:capital-adequacy
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Market Risk

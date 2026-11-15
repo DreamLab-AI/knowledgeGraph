@@ -1,0 +1,125 @@
+{
+  "id": "urn:ngm:class:bonded-warehouse",
+  "title": "Bonded Warehouse",
+  "slug": "bonded-warehouse",
+  "public": true,
+  "classIri": "urn:ngm:class:bonded-warehouse",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A bonded warehouse, called a customs warehouse in United Kingdom and European Union usage, is a warehouse in which imported goods are stored under customs supervision with duty suspended until they are released or leave.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:warehouse-facility-type",
+      "label": "Warehouse Facility Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-procedure",
+        "label": "Customs Procedure"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution",
+      "slug": "warehousing-and-distribution"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "warehouse-facility-type",
+      "label": "Warehouse Facility Type"
+    },
+    {
+      "slug": "customs-procedure",
+      "label": "Customs Procedure"
+    },
+    {
+      "slug": "customs-duty",
+      "label": "Customs Duty"
+    },
+    {
+      "slug": "free-trade-zone",
+      "label": "Free Trade Zone"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customs-procedure",
+      "label": "Customs Procedure"
+    },
+    {
+      "slug": "free-trade-zone",
+      "label": "Free Trade Zone"
+    },
+    {
+      "slug": "goods-receiving",
+      "label": "Goods Receiving"
+    },
+    {
+      "slug": "warehouse-facility-type",
+      "label": "Warehouse Facility Type"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "urn:ngm:class:taiwan-semiconductor-manufacturing-company",
+  "title": "Taiwan Semiconductor Manufacturing Company",
+  "slug": "taiwan-semiconductor-manufacturing-company",
+  "public": true,
+  "classIri": "urn:ngm:class:taiwan-semiconductor-manufacturing-company",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Taiwan Semiconductor Manufacturing Company (TSMC) is a semiconductor foundry that manufactures chips designed by its customers. TSMC's own site says it was established in 1987 by Dr. Morris Chang and that it pioneered the pure-play foundry business model with an exclusive focus on manufacturing its customers' products.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:contract-manufacturer",
+      "label": "Contract Manufacturer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semiconductor-supply-chain",
+        "label": "Semiconductor Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:gpu-supply-chain",
+        "label": "GPU Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supplier",
+      "label": "Supplier",
+      "slug": "supplier"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:prime-contractor",
+        "label": "Prime Contractor"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:outsourcing",
+        "label": "Outsourcing"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "contract-manufacturer",
+      "label": "Contract Manufacturer"
+    },
+    {
+      "slug": "semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    },
+    {
+      "slug": "semiconductor-manufacturing",
+      "label": "Semiconductor Manufacturing"
+    },
+    {
+      "slug": "gpu-supply-chain",
+      "label": "GPU Supply Chain"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -26,6 +26,7 @@ relatedTo:
   - urn:ngm:class:virtual-world-platform
   - urn:ngm:class:decentralised-governance
   - urn:ngm:class:cross-metaverse-commerce
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Virtual Society

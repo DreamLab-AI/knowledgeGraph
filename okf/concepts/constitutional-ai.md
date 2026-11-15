@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:corrigibility
   - urn:ngm:class:instruction-following
   - urn:ngm:class:safety-evaluation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Constitutional AI

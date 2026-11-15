@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:building-information-modelling
   - urn:ngm:class:geospatial-data
   - urn:ngm:class:3d-object-detection
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Point Cloud Processing

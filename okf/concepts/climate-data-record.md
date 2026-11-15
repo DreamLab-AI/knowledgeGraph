@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:earth-observation-data-quality
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:open-data
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T07:26:53Z"}
 ---
 
 # Climate Data Record

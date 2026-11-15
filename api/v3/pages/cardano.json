@@ -1,0 +1,342 @@
+{
+  "id": "urn:visionflow:page:f6d15049c8e7f2a27811a6631f48a83a4eef2eb328f01ee9556cc4c4ce960c9a",
+  "title": "Cardano",
+  "slug": "cardano",
+  "public": true,
+  "classIri": "urn:ngm:class:cardano",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Cardano is a public proof-of-stake blockchain platform launched in 2017 by IOHK, with Charles Hoskinson, a co-founder of Ethereum, among its founders. It is distinctive for its emphasis on peer-reviewed academic research and formal methods, and its consensus protocol Ouroboros was the first proof-of-stake protocol with published security proofs. The platform separates a settlement layer for its ADA cryptocurrency from a computation layer for smart contracts, which were enabled through the Alonzo upgrade in 2021. Cardano uses an extended UTXO accounting model and the functional language Plutus for on-chain logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:settlement-layer",
+        "label": "Cardano Settlement Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "ADA Cryptocurrency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ouroboros-consensus",
+        "label": "Ouroboros Protocol"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "Extended UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "kiayias-et-al-2017-ouroboros-a-provably-secure-proof-of-stake-blockchain-protocol",
+      "label": "Kiayias et al. 2017, Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
+    },
+    {
+      "slug": "aggelos-kiayias",
+      "label": "Aggelos Kiayias"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "ouroboros",
+      "label": "Ouroboros"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "public-blockchain",
+      "label": "Public Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

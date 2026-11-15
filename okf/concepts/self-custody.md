@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:social-recovery
   - urn:ngm:class:air-gap
   - urn:ngm:class:social-recovery
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Self-Custody

@@ -1,0 +1,407 @@
+{
+  "id": "urn:visionflow:page:3f412634a4ea9da04b558d0e32b0062a692e41a1c1d10f0c5c707f14440392ce",
+  "title": "supply chain",
+  "slug": "supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain is the network of organisations, facilities and processes through which products or services are sourced, made and delivered to customers.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-in-Time Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:demand-chain",
+        "label": "Demand Chain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti Counterfeiting"
+      },
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Mineral Tracking"
+      },
+      {
+        "id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:product-recall-management",
+        "label": "Product Recall Management"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "everledger",
+      "label": "Everledger"
+    },
+    {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
+    },
+    {
+      "slug": "global-trade",
+      "label": "Global Trade"
+    },
+    {
+      "slug": "ibm-food-trust",
+      "label": "IBM Food Trust"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    },
+    {
+      "slug": "trade-lens",
+      "label": "TradeLens"
+    },
+    {
+      "slug": "walmart",
+      "label": "Walmart"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

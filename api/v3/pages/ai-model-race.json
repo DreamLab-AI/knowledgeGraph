@@ -1,0 +1,199 @@
+{
+  "id": "urn:visionflow:page:ai-model-race",
+  "title": "AI Model Race",
+  "slug": "ai-model-race",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-model-race",
+  "domain": "economics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
+    "label": "lcr-swarm",
+    "actor": "agent:lcr-swarm/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The competitive dynamic among AI developers and providers, characterized by multiple parallel races for superiority in capability, speed, cost, distribution, and other strategic dimensions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:strategic-positioning",
+        "label": "Strategic Positioning"
+      },
+      {
+        "id": "urn:ngm:class:inference-speed",
+        "label": "Inference Speed"
+      },
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

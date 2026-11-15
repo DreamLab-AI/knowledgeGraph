@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:digital-content-creation
   - urn:ngm:class:spatial-web
   - urn:ngm:class:iso-iec-14496-16
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # 3D Asset Standard

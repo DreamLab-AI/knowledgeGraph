@@ -1,0 +1,86 @@
+{
+  "id": "urn:ngm:class:delta-differential-one-way-ranging",
+  "title": "Delta Differential One-way Ranging",
+  "slug": "delta-differential-one-way-ranging",
+  "public": true,
+  "classIri": "urn:ngm:class:delta-differential-one-way-ranging",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Delta Differential One-way Ranging (Delta-DOR or \u0394DOR) is a differential radio-tracking technique that constrains a spacecraft\u2019s position in the plane of the sky.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-communications",
+      "label": "Spacecraft Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbit-determination",
+        "label": "Orbit Determination"
+      },
+      {
+        "id": "urn:ngm:class:quasar",
+        "label": "Quasar"
+      },
+      {
+        "id": "urn:ngm:class:radiometric-spacecraft-navigation",
+        "label": "Radiometric Spacecraft Navigation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "id": "urn:visionflow:page:3f445960723a4f7e172497ee9e8362aa248bb4a0c4e8dc8336a6237460e7311f",
+  "title": "3D Asset",
+  "slug": "3-d-asset",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-asset",
+  "domain": "spatial-computing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A 3D Asset is a discrete, self-contained digital artefact encoding three-dimensional geometry, surface materials, skeletal animation rigs, and associated metadata in a machine-readable interchange format such as glTF 2.0, USD, FBX, or OBJ. Such assets are produced by digital content creation tools, stored in asset management systems with versioning and provenance records, and consumed at runtime by rendering engines, game engines, and spatial computing platforms. Production-quality 3D assets typically incorporate multiple levels of detail (LOD), physically-based rendering (PBR) material maps (albedo, metallic-roughness, normal, occlusion, emissive), collision meshes for physics simulation, and compressed texture atlases optimised for a target hardware envelope. Cross-platform delivery relies on open standards maintained by the Khronos Group and Pixar/Academy Software Foundation, enabling asset reuse across metaverse environments, digital twins, extended reality (XR) applications, and game titles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:texture-map",
+        "label": "Texture Map"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:collision-mesh",
+        "label": "Collision Mesh"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      },
+      {
+        "id": "urn:ngm:class:2d-sprite",
+        "label": "2D Sprite"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "w3-c",
+      "label": "W3C"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "khronos-group-gl-tf-2-0-specification",
+      "label": "Khronos Group glTF 2.0 Specification"
+    },
+    {
+      "slug": "luma-ai",
+      "label": "Luma AI"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "virtual-model",
+      "label": "Virtual Model"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

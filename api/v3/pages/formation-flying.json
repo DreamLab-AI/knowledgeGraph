@@ -1,0 +1,77 @@
+{
+  "id": "urn:ngm:class:formation-flying",
+  "title": "Formation Flying",
+  "slug": "formation-flying",
+  "public": true,
+  "classIri": "urn:ngm:class:formation-flying",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Formation flying is the operation of two or more spacecraft in a controlled relative arrangement, which the NASA small-spacecraft survey treats as a research area needing relative navigation, guidance and actuation.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-bus",
+      "label": "Spacecraft Bus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

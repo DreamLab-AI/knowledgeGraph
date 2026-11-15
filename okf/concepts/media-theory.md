@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:media-richness-theory
   - urn:ngm:class:social-presence-theory
   - urn:ngm:class:communication-theory
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Media Theory

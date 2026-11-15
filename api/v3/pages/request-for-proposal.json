@@ -1,0 +1,110 @@
+{
+  "id": "urn:ngm:class:request-for-proposal",
+  "title": "Request for Proposal",
+  "slug": "request-for-proposal",
+  "public": true,
+  "classIri": "urn:ngm:class:request-for-proposal",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A request for proposal (RFP) is a solicitation used in negotiated acquisitions to communicate requirements to prospective suppliers and to ask them for proposals.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sourcing-event",
+      "label": "Sourcing Event"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "request-for-quotation",
+      "label": "Request for Quotation"
+    },
+    {
+      "slug": "reverse-auction",
+      "label": "Reverse Auction"
+    },
+    {
+      "slug": "procurement",
+      "label": "Procurement"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "request-for-quotation",
+      "label": "Request for Quotation"
+    },
+    {
+      "slug": "reverse-auction",
+      "label": "Reverse Auction"
+    },
+    {
+      "slug": "sourcing-event",
+      "label": "Sourcing Event"
+    },
+    {
+      "slug": "sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    },
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

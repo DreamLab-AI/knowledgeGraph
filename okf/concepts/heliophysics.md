@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:space-science
 relatedTo:
   - urn:ngm:class:power-grid
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:35:58Z"}
 ---
 
 # Heliophysics

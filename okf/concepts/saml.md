@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:zero-trust-architecture
   - urn:ngm:class:identity-and-access-management
   - urn:ngm:class:zero-trust
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # SAML

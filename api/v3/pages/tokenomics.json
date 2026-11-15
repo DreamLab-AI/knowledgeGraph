@@ -1,0 +1,362 @@
+{
+  "id": "urn:visionflow:page:553a07ab9c0632973a8ce710abac7688e9ca8ad458865f29b2c2ce0a4e78d3e8",
+  "title": "Tokenomics",
+  "slug": "tokenomics",
+  "public": true,
+  "classIri": "urn:ngm:class:tokenomics",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Tokenomics is the study and design of the economic systems underpinning blockchain-based tokens, encompassing token supply mechanics (fixed supply, inflationary, or deflationary schedules), distribution models (initial coin offerings, airdrops, liquidity mining), utility functions (governance rights, access control, fee payment), and incentive alignment mechanisms. A well-designed tokenomic model balances value creation and capture across stakeholders \u2014 developers, users, liquidity providers, and governance participants \u2014 through mechanisms such as staking, burning, bonding curves, and vesting schedules. Tokenomics draws from monetary theory, game theory, and mechanism design to engineer sustainable digital economies where token holders are incentivised to act in ways that grow the ecosystem's long-term value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "id": "urn:ngm:class:token-bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "id": "urn:ngm:class:token-supply",
+        "label": "Token Supply"
+      },
+      {
+        "id": "urn:ngm:class:token-burn",
+        "label": "Token Burn"
+      },
+      {
+        "id": "urn:ngm:class:token-bonding-curve",
+        "label": "Bonding Curve"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Digital Token"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Digital Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "commons-stack",
+      "label": "Commons Stack"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "gauge-voting",
+      "label": "Gauge Voting"
+    },
+    {
+      "slug": "hidden-hand",
+      "label": "Hidden Hand"
+    },
+    {
+      "slug": "mint-burn-mechanism",
+      "label": "Mint-Burn Mechanism"
+    },
+    {
+      "slug": "play-to-earn-p2-e",
+      "label": "Play-to-Earn (P2E)"
+    },
+    {
+      "slug": "reward-distribution",
+      "label": "Reward Distribution"
+    },
+    {
+      "slug": "sink-mechanism",
+      "label": "Sink Mechanism"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-engineering",
+      "label": "Token Engineering"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "votium",
+      "label": "Votium"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

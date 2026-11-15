@@ -1,0 +1,128 @@
+{
+  "id": "urn:ngm:class:production-system-type",
+  "title": "Production System Type",
+  "slug": "production-system-type",
+  "public": true,
+  "classIri": "urn:ngm:class:production-system-type",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A production system type is a class of production process distinguished by the variety and volume of what it makes and by how work and equipment are arranged.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-operations",
+      "label": "Production Operations"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "job-shop-production",
+      "label": "Job Shop Production"
+    },
+    {
+      "slug": "batch-production",
+      "label": "Batch Production"
+    },
+    {
+      "slug": "mass-production",
+      "label": "Mass Production"
+    },
+    {
+      "slug": "production-strategy",
+      "label": "Production Strategy"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "batch-production",
+      "label": "Batch Production"
+    },
+    {
+      "slug": "job-shop-production",
+      "label": "Job Shop Production"
+    },
+    {
+      "slug": "mass-production",
+      "label": "Mass Production"
+    },
+    {
+      "slug": "production-operations",
+      "label": "Production Operations"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

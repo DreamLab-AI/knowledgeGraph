@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:formation-flying
   - urn:ngm:class:spacecraft-docking
   - urn:ngm:class:spacecraft-rendezvous
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:21:55Z"}
 ---
 
 # Spacecraft Proximity Operations

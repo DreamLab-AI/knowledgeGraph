@@ -1,0 +1,371 @@
+{
+  "id": "urn:visionflow:page:3f0515e4dc21532f0b27822858938d084c2d29bcd00b4e164b1511d026bc4a87",
+  "title": "DAI",
+  "slug": "dai",
+  "public": true,
+  "classIri": "urn:ngm:class:dai",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "DAI is a decentralised stablecoin issued by the MakerDAO protocol on Ethereum that aims to hold a value close to one US dollar through collateral backing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:crypto-token",
+      "label": "Crypto Token",
+      "slug": "crypto-token"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Reserves"
+      },
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-transactions",
+        "label": "Cross-Border Transactions"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:remittances",
+        "label": "Remittance"
+      },
+      {
+        "id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ledger",
+        "label": "Decentralized Ledger"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:peg-mechanism",
+        "label": "Peg Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      },
+      {
+        "id": "urn:ngm:class:stabilization-algorithm",
+        "label": "Stabilization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fiat-backed-token",
+        "label": "Fiat-Backed Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Volatile Cryptocurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange-market",
+        "label": "Foreign Exchange Market"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Traditional Payment System"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:over-collateralisation",
+        "label": "Overcollateralization"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "FSB Regulatory Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenized Asset"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

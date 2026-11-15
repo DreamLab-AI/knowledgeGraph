@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:graph-neural-network
   - urn:ngm:class:semantic-search
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Knowledge Graph Embedding

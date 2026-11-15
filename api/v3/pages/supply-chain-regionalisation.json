@@ -1,0 +1,205 @@
+{
+  "id": "urn:ngm:class:supply-chain-regionalisation",
+  "title": "Supply Chain Regionalisation",
+  "slug": "supply-chain-regionalisation",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-regionalisation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain regionalisation is the shortening or concentration of supply chains into regional networks, for example by sourcing nearer to the market or within a group of allied countries, and no source opened here defines the term itself.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-resilience-strategy",
+      "label": "Supply Chain Resilience Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-resilience",
+      "label": "Supply Chain Resilience",
+      "slug": "supply-chain-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience",
+      "slug": "supply-chain-risk-and-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-resilience-strategy",
+      "label": "Supply Chain Resilience Strategy"
+    },
+    {
+      "slug": "supplier-diversification",
+      "label": "Supplier Diversification"
+    },
+    {
+      "slug": "geopolitical-supply-chain-risk",
+      "label": "Geopolitical Supply Chain Risk"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supplier-diversification",
+      "label": "Supplier Diversification"
+    },
+    {
+      "slug": "supply-chain-resilience-strategy",
+      "label": "Supply Chain Resilience Strategy"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

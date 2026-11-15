@@ -1,0 +1,79 @@
+{
+  "id": "urn:ngm:class:satellite-uplink",
+  "title": "Satellite Uplink",
+  "slug": "satellite-uplink",
+  "public": true,
+  "classIri": "urn:ngm:class:satellite-uplink",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A satellite uplink is a transmission from an Earth-based station or terminal to a satellite.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-to-ground-link",
+      "label": "Space-to-ground Link"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-communications",
+      "label": "Spacecraft Communications",
+      "slug": "spacecraft-communications"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:retrieval-augmented-generation-rag
   - urn:ngm:class:knowledge-base
   - urn:ngm:class:graph-database
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Email Corpus Retrieval Architecture

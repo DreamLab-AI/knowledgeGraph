@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:model-inversion
   - urn:ngm:class:pattern-recognition
   - urn:ngm:class:data-pipeline
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Privacy Preserving Data Mining

@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:rb-0075-range-finder
   - urn:ngm:class:proximity-sensor
   - urn:ngm:class:infrared-sensor
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0078 infrared sensor

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:supply-chain-execution-system
 bridgesTo:
   - urn:ngm:class:industry-4-0
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Manufacturing Execution System

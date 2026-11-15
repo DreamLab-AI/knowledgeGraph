@@ -25,6 +25,7 @@ relatedTo:
   - urn:ngm:class:proof-of-stake-sustainability
   - urn:ngm:class:sustainability
   - urn:ngm:class:carbon-footprint-measurement
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Low Energy Consumption

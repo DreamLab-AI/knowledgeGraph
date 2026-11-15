@@ -32,6 +32,7 @@ relatedTo:
   - urn:ngm:class:policy-framework
   - urn:ngm:class:impact-assessment
   - urn:ngm:class:transparency
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Stakeholder Consultation

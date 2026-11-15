@@ -1,0 +1,87 @@
+{
+  "id": "urn:ngm:class:low-earth-orbit",
+  "title": "Low Earth Orbit",
+  "slug": "low-earth-orbit",
+  "public": true,
+  "classIri": "urn:ngm:class:low-earth-orbit",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Low Earth orbit (LEO) is the family of Earth-centred orbits closest to the planet. NASA and ESA commonly use an upper altitude of 2,000 km.[^1][^2] This is a practical classification boundary rather than a discontinuity in orbital physics. Any dataset or rule should state how it treats an eccentric orbit that crosses the boundary.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:orbital-dynamics",
+      "label": "Orbital Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbital-dynamics",
+        "label": "Orbital Dynamics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-satellite",
+        "label": "Earth Observation Satellite"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:revisit-time",
+        "label": "Revisit Time"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

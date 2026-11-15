@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:model-registry
   - urn:ngm:class:empirical-experimental-design-tracking
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Infrastructure

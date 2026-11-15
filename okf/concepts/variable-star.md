@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:star
 relatedTo:
   - urn:ngm:class:stellar-astrophysics
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:29:39Z"}
 ---
 
 # Variable Star

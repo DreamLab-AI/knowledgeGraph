@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:basel-committee
   - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:world-bank
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IOSCO

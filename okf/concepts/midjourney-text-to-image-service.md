@@ -38,6 +38,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:image-generation
   - urn:ngm:class:data-provenance
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Midjourney Text-to-Image Service

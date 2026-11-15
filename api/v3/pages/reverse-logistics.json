@@ -1,0 +1,182 @@
+{
+  "id": "urn:visionflow:page:reverse-logistics",
+  "title": "Reverse Logistics",
+  "slug": "reverse-logistics",
+  "public": true,
+  "classIri": "urn:ngm:class:reverse-logistics",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Reverse logistics is the management of flows of goods, materials and related information back from the point of use or consumption towards a producer, a point of recovery or a point of proper disposal.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:circular-supply-chain",
+      "label": "Circular Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      },
+      {
+        "id": "urn:ngm:class:deposit-return-scheme",
+        "label": "Deposit Return Scheme"
+      },
+      {
+        "id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      },
+      {
+        "id": "urn:ngm:class:right-to-repair",
+        "label": "Right to Repair"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "circular-supply-chain",
+      "label": "Circular Supply Chain"
+    },
+    {
+      "slug": "product-take-back-scheme",
+      "label": "Product Take-Back Scheme"
+    },
+    {
+      "slug": "sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:ngm:class:orbital-dynamics",
+  "title": "Orbital Dynamics",
+  "slug": "orbital-dynamics",
+  "public": true,
+  "classIri": "urn:ngm:class:orbital-dynamics",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Orbital dynamics is the study and prediction of spacecraft and natural-body motion under gravity and other forces. A two-body Keplerian orbit supplies the baseline: two point masses interact through mutual gravity, producing a conic trajectory. An operational trajectory is an estimate produced by integrating a stated initial state under a stated force model. It is not an immutable path.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-satellite",
+        "label": "Earth Observation Satellite"
+      },
+      {
+        "id": "urn:ngm:class:revisit-time",
+        "label": "Revisit Time"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

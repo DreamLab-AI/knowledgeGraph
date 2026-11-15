@@ -1,0 +1,305 @@
+{
+  "id": "urn:visionflow:page:86ec8e1163c7bcfdda121786b1c5d812b0f06e1212bd204c6f57dbeeb872d3c9",
+  "title": "retroactive public goods funding",
+  "slug": "retroactive-public-goods-funding",
+  "public": true,
+  "classIri": "urn:ngm:class:retroactive-public-goods-funding",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Retroactive Public Goods Funding (RetroPGF) is a capital allocation mechanism that rewards contributors to open-source software, protocol infrastructure, or public-benefit projects after they have demonstrably created value, rather than distributing speculative upfront grants based on predicted future impact. By funding proven outcomes rather than promises, RetroPGF reduces misallocation risk and aligns incentives so that contributors can invest effort in public goods with confidence that eventual recognition is possible. Evaluation is typically performed by a trusted body \u2014 such as a DAO committee, a citizen house of badge holders, or an expert panel \u2014 who assess demonstrated impact and distribute treasury funds accordingly. The mechanism was pioneered by Vitalik Buterin and operationalised at scale by the Optimism Collective, making it one of the most influential experiments in decentralised public goods economics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:impact-evaluation",
+        "label": "Impact Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:revenue-distribution",
+        "label": "Protocol Revenue Distribution"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Contributor Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:revenue-distribution",
+        "label": "Protocol Revenue Distribution"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Contributor Incentive Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:prospective-grant-funding",
+        "label": "Prospective Grant Funding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:impact-attestation",
+        "label": "Impact Attestation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:coordination-failure",
+        "label": "Coordination Failure"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

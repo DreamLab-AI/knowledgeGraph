@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:automatic-identification-and-data-capture
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # RAIN RFID Tag

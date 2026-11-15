@@ -1,0 +1,104 @@
+{
+  "id": "urn:ngm:class:dhl-supply-chain",
+  "title": "DHL Supply Chain",
+  "slug": "dhl-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:dhl-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "DHL Supply Chain is the contract logistics division of the DHL group. DHL's own United Kingdom site presents it under the title \u201cDHL Supply Chain \u2013 The world\u2019s leading contract logistics provider\u201d, which is the company's description of itself, and lists it among the group's divisions with DHL Express, DHL Global Forwarding, DHL Freight and DHL eCommerce.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider",
+      "slug": "logistics-service-provider"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

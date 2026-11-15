@@ -1,0 +1,129 @@
+{
+  "id": "urn:ngm:class:global-trade-management-system",
+  "title": "Global Trade Management System",
+  "slug": "global-trade-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:global-trade-management-system",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A global trade management system is software that supports cross-border trade work, mainly trade compliance, customs and landed cost.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-declaration",
+        "label": "Customs Declaration"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "total-landed-cost",
+      "label": "Total Landed Cost"
+    },
+    {
+      "slug": "customs-declaration",
+      "label": "Customs Declaration"
+    },
+    {
+      "slug": "customs-duty",
+      "label": "Customs Duty"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

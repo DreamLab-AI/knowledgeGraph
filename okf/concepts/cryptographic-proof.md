@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:blockchain-protocol
   - urn:ngm:class:secure-multi-party-computation
   - urn:ngm:class:homomorphic-encryption
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cryptographic Proof

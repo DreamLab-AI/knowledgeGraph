@@ -1,0 +1,133 @@
+{
+  "id": "urn:ngm:class:electronic-data-interchange",
+  "title": "Electronic Data Interchange",
+  "slug": "electronic-data-interchange",
+  "public": true,
+  "classIri": "urn:ngm:class:electronic-data-interchange",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Electronic data interchange (EDI) is the computer to computer interchange of data according to a message standard with a minimum of human intervention, which allows business documents such as purchase orders, invoices and customs declarations to be exchanged and processed electronically.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:b2b-integration",
+      "label": "B2B Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      },
+      {
+        "id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "edifact",
+      "label": "EDIFACT"
+    },
+    {
+      "slug": "advance-ship-notice",
+      "label": "Advance Ship Notice"
+    },
+    {
+      "slug": "b2b-integration",
+      "label": "B2B Integration"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advance-ship-notice",
+      "label": "Advance Ship Notice"
+    },
+    {
+      "slug": "b2b-integration",
+      "label": "B2B Integration"
+    },
+    {
+      "slug": "edifact",
+      "label": "EDIFACT"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

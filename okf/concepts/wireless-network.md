@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:wi-fi
   - urn:ngm:class:5-g
   - urn:ngm:class:satellite-communication
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Wireless Network

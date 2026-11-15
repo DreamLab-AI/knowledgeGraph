@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:36:21Z"}
 ---
 
 # Spaceflight Plant Biology

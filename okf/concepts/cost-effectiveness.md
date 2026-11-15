@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:ai-model
   - urn:ngm:class:model-performance
   - urn:ngm:class:ai-inference
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cost-Effectiveness

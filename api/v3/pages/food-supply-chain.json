@@ -1,0 +1,125 @@
+{
+  "id": "urn:ngm:class:food-supply-chain",
+  "title": "Food Supply Chain",
+  "slug": "food-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:food-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A food supply chain is the full range of actors and their interlinked activities involved in the production, aggregation, processing, distribution, labelling, marketing, consumption and disposal of food products.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sector-supply-chain",
+      "label": "Sector Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "sector-supply-chain",
+      "label": "Sector Supply Chain"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "supply-chain-resilience",
+      "label": "Supply Chain Resilience"
+    },
+    {
+      "slug": "digital-product-passport",
+      "label": "Digital Product Passport"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-chain-logistics",
+      "label": "Cold Chain Logistics"
+    },
+    {
+      "slug": "sector-supply-chain",
+      "label": "Sector Supply Chain"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

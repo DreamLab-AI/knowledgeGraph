@@ -17,6 +17,7 @@ contrastsWith:
   - urn:ngm:class:closed-loop-control
 uses:
   - urn:ngm:class:actuator
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Open-Loop Control

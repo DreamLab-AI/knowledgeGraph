@@ -1,0 +1,121 @@
+{
+  "id": "urn:ngm:class:component-shortage",
+  "title": "Component Shortage",
+  "slug": "component-shortage",
+  "public": true,
+  "classIri": "urn:ngm:class:component-shortage",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A component shortage is a shortage of a part or material that a producer needs and cannot readily replace, so that output is held back until supply recovers.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semiconductor-supply-chain",
+        "label": "Semiconductor Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:gpu-supply-chain",
+        "label": "GPU Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience",
+      "slug": "supply-chain-risk-and-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    },
+    {
+      "slug": "semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    },
+    {
+      "slug": "supply-risk",
+      "label": "Supply Risk"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

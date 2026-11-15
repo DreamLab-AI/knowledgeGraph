@@ -14,6 +14,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:coordinate-transformation
   - urn:ngm:class:map-projection
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:37:36Z"}
 ---
 
 # Coordinate Conversion

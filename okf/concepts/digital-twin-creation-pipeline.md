@@ -22,6 +22,7 @@ enables:
 bridgesTo:
   - urn:ngm:class:3-d-content-pipeline
   - urn:ngm:class:computer-vision
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Twin Creation Pipeline

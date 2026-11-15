@@ -14,6 +14,7 @@ enables:
   - urn:ngm:class:secure-digital-systems
 bridgesTo:
   - urn:ngm:class:cryptographic-security
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Mathematical Hard Problems

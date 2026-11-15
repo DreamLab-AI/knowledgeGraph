@@ -38,6 +38,7 @@ relatedTo:
   - urn:ngm:class:depth-sensor
   - urn:ngm:class:camera-calibration
   - urn:ngm:class:time-of-flight-sensor
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Structured Light

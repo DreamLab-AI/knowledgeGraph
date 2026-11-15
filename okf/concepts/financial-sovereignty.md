@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:self-custody
   - urn:ngm:class:censorship-resistance
   - urn:ngm:class:financial-inclusion
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Financial Sovereignty

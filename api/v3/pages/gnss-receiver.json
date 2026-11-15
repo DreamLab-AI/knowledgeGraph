@@ -1,0 +1,539 @@
+{
+  "id": "urn:ngm:class:gnss-receiver",
+  "title": "GNSS Receiver",
+  "slug": "gnss-receiver",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-receiver",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A GNSS receiver is user equipment that processes one or more satellite navigation signals to form measurements or estimate position, velocity and time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    },
+    {
+      "id": "urn:ngm:class:global-navigation-satellite-system",
+      "label": "Global Navigation Satellite System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:positioning-navigation-and-timing",
+        "label": "Positioning Navigation and Timing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component",
+      "slug": "hardware-component"
+    },
+    {
+      "id": "urn:ngm:class:localisation",
+      "label": "Localisation",
+      "slug": "localisation"
+    },
+    {
+      "id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System",
+      "slug": "navigation-system"
+    },
+    {
+      "id": "urn:ngm:class:spacecraft-subsystem",
+      "label": "Spacecraft Subsystem",
+      "slug": "spacecraft-subsystem"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning",
+      "slug": "robo-navigation-and-planning"
+    },
+    {
+      "id": "urn:ngm:class:spacecraft",
+      "label": "Spacecraft",
+      "slug": "spacecraft"
+    },
+    {
+      "id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation",
+      "slug": "state-estimation"
+    },
+    {
+      "id": "urn:ngm:class:system",
+      "label": "System",
+      "slug": "system"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference",
+      "slug": "probabilistic-inference"
+    },
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics",
+      "slug": "robotics"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation",
+      "slug": "automation"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering",
+      "slug": "software-engineering"
+    },
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science",
+      "slug": "computer-science"
+    },
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)",
+      "slug": "infra-software-engineering"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-robotics",
+        "label": "Probabilistic Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Software Component"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:global-localisation",
+        "label": "Global Localisation"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "Position Tracking"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-control",
+        "label": "Deterministic Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:bus-interface",
+        "label": "Bus Interface"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1451",
+        "label": "IEEE 1451"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee-std-730",
+        "label": "IEEE Std 730"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-12207",
+        "label": "ISO/IEC 12207"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:printed-circuit-board",
+        "label": "Printed Circuit Board"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

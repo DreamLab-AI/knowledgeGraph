@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:residual-connection
   - urn:ngm:class:layer-normalisation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Neural Network Layer

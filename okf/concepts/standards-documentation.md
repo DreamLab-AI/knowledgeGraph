@@ -22,6 +22,7 @@ supports:
   - urn:ngm:class:standards-compliance
 relatedTo:
   - urn:ngm:class:standards-body
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Standards Documentation

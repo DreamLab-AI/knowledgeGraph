@@ -1,0 +1,152 @@
+{
+  "id": "urn:ngm:class:freight-transportation",
+  "title": "Freight Transportation",
+  "slug": "freight-transportation",
+  "public": true,
+  "classIri": "urn:ngm:class:freight-transportation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Freight transportation is the carriage of goods by one or more modes of transport: rail, road, inland waterways, sea, air and, for goods only, pipelines.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "intermodal-transport",
+      "label": "Intermodal Transport"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    },
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "freight-transport-mode",
+      "label": "Freight Transport Mode"
+    },
+    {
+      "slug": "supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    },
+    {
+      "slug": "road-freight",
+      "label": "Road Freight"
+    },
+    {
+      "slug": "rail-freight",
+      "label": "Rail Freight"
+    },
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "air-freight",
+      "label": "Air Freight"
+    },
+    {
+      "slug": "freight-service",
+      "label": "Freight Service"
+    },
+    {
+      "slug": "fleet-management",
+      "label": "Fleet Management"
+    },
+    {
+      "slug": "satellite-communication",
+      "label": "Satellite Communication"
+    },
+    {
+      "slug": "warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "freight-service",
+      "label": "Freight Service"
+    },
+    {
+      "slug": "freight-transport-mode",
+      "label": "Freight Transport Mode"
+    },
+    {
+      "slug": "freight-transport-regulation",
+      "label": "Freight Transport Regulation"
+    },
+    {
+      "slug": "intermodal-transport",
+      "label": "Intermodal Transport"
+    },
+    {
+      "slug": "transport-planning",
+      "label": "Transport Planning"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

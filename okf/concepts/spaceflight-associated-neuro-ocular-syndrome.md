@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:space-medicine
   - urn:ngm:class:spaceflight-fluid-shift
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:40:00Z"}
 ---
 
 # Spaceflight-associated Neuro-ocular Syndrome

@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:atmospheric-composition-monitoring
   - urn:ngm:class:earth-observation-data-assimilation
   - urn:ngm:class:global-navigation-satellite-system
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:39:30Z"}
 ---
 
 # GNSS Radio Occultation

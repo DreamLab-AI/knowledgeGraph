@@ -1,0 +1,129 @@
+{
+  "id": "urn:ngm:class:production-scheduling",
+  "title": "Production Scheduling",
+  "slug": "production-scheduling",
+  "public": true,
+  "classIri": "urn:ngm:class:production-scheduling",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Production scheduling is the allocation of resources to tasks over time, producing a schedule that gives the start and completion time of each task and the times when resources process tasks across the planning horizon.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-planning-and-control",
+      "label": "Production Planning and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:production-operations",
+      "label": "Production Operations",
+      "slug": "production-operations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "job-shop-production",
+      "label": "Job Shop Production"
+    },
+    {
+      "slug": "production-planning-and-control",
+      "label": "Production Planning and Control"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "production-planning-and-control",
+      "label": "Production Planning and Control"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

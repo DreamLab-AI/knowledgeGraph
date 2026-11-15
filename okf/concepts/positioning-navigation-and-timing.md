@@ -18,6 +18,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:geodetic-datum
   - urn:ngm:class:spatial-computing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T12:02:28Z"}
 ---
 
 # Positioning Navigation and Timing

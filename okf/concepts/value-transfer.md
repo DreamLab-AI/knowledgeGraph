@@ -32,6 +32,7 @@ bridgesTo:
   - urn:ngm:class:payment-system
   - urn:ngm:class:robot-to-robot-commerce
   - urn:ngm:class:ai-agent-economic-interaction
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Value Transfer

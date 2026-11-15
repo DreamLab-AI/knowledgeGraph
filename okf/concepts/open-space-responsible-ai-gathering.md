@@ -17,6 +17,7 @@ contrastsWith:
 relatedTo:
   - urn:ngm:class:responsible-ai
   - urn:ngm:class:ai-ethics
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Open-Space Responsible AI Gathering

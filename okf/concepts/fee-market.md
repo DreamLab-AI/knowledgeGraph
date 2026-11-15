@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:gas-price
   - urn:ngm:class:tokenomics
   - urn:ngm:class:proof-of-work
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Fee Market

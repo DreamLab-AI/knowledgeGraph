@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:annual-percentage-yield
   - urn:ngm:class:total-value-locked
   - urn:ngm:class:flash-loan
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Yield Farming

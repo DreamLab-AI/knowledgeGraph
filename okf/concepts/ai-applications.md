@@ -94,6 +94,7 @@ relatedTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:generative-ai
   - urn:ngm:class:natural-language-processing
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Applications

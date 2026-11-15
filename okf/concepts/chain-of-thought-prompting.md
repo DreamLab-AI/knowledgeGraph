@@ -84,6 +84,7 @@ relatedTo:
   - urn:ngm:class:automatic-prompt-optimisation
   - urn:ngm:class:scratchpad-reasoning
   - urn:ngm:class:llm-agents
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Chain-of-Thought Prompting

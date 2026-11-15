@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0063-sliding-mode-control
   - urn:ngm:class:rb-0060-optimal-control
   - urn:ngm:class:feedback-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0048 pid controller

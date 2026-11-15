@@ -32,6 +32,7 @@ relatedTo:
   - urn:ngm:class:financial-regulation
   - urn:ngm:class:digital-asset-standards
   - urn:ngm:class:bitcoin
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # FASB ASU 2023-08

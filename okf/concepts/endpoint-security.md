@@ -17,6 +17,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:remote-work
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Endpoint Security

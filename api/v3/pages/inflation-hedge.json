@@ -1,0 +1,309 @@
+{
+  "id": "urn:visionflow:page:13d37d1c8404028fd8e640fdc08b264c30886ec2bf261504786fba0ac4872303",
+  "title": "Inflation Hedge",
+  "slug": "inflation-hedge",
+  "public": true,
+  "classIri": "urn:ngm:class:inflation-hedge",
+  "domain": "finance",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An inflation hedge is an asset expected to retain or increase its value as the general price level rises, protecting purchasing power. Commonly cited examples include gold, real estate and index-linked bonds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:store-of-value",
+      "label": "Store of Value"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:durability",
+        "label": "Durability"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      },
+      {
+        "id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-preservation",
+        "label": "Capital Preservation"
+      },
+      {
+        "id": "urn:ngm:class:intertemporal-exchange",
+        "label": "Intertemporal Exchange"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-hedging",
+        "label": "Portfolio Hedging"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:market-confidence",
+        "label": "Market Confidence"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:medium-of-exchange",
+        "label": "Medium of Exchange"
+      },
+      {
+        "id": "urn:ngm:class:unit-of-account",
+        "label": "Unit of Account"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Tokenisation of Assets"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation-linked-bonds",
+        "label": "Inflation-Linked Bonds"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:austrian-hard-money-theory",
+        "label": "Austrian Hard Money Theory"
+      },
+      {
+        "id": "urn:ngm:class:fixed-supply-monetary-policy",
+        "label": "Fixed Supply Monetary Policy"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:functions-of-money",
+        "label": "Functions of Money"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:currency-debasement",
+        "label": "Currency Debasement"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "id": "urn:ngm:class:hard-money",
+        "label": "Hard Money"
+      },
+      {
+        "id": "urn:ngm:class:monetary-function",
+        "label": "Monetary Function"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:purchasing-power",
+        "label": "Purchasing Power"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "store-of-value",
+      "label": "Store of Value"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

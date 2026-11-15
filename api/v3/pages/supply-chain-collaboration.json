@@ -1,0 +1,118 @@
+{
+  "id": "urn:ngm:class:supply-chain-collaboration",
+  "title": "Supply Chain Collaboration",
+  "slug": "supply-chain-collaboration",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-collaboration",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A collaborative supply chain consists of two or more independent companies working together to plan and execute supply chain operations with greater success than when performing the same activities individually.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-design-principle",
+      "label": "Supply Chain Design Principle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-planning-forecasting-and-replenishment",
+        "label": "Collaborative Planning, Forecasting and Replenishment"
+      },
+      {
+        "id": "urn:ngm:class:information-sharing",
+        "label": "Information Sharing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "information-sharing",
+      "label": "Information Sharing"
+    },
+    {
+      "slug": "collaborative-planning-forecasting-and-replenishment",
+      "label": "Collaborative Planning, Forecasting and Replenishment"
+    },
+    {
+      "slug": "vendor-managed-inventory",
+      "label": "Vendor-Managed Inventory"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "collaborative-planning-forecasting-and-replenishment",
+      "label": "Collaborative Planning, Forecasting and Replenishment"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

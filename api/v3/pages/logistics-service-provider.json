@@ -1,0 +1,147 @@
+{
+  "id": "urn:ngm:class:logistics-service-provider",
+  "title": "Logistics Service Provider",
+  "slug": "logistics-service-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:logistics-service-provider",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A logistics service provider is a business that provides logistics services to other organisations. The Industrial Ontologies Foundry gives the Council of Supply Chain Management Professionals wording for the role: \u201cAny business which provides logistics services\u201d, adding that it \u201cIncludes those businesses typically referred to as 3PL, 4PL, LLP, etc\u201d and that the services \u201cmay include provisioning, transport, warehousing, packaging, etc\u201d.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    },
+    {
+      "slug": "fourth-party-logistics-provider",
+      "label": "Fourth-Party Logistics Provider"
+    },
+    {
+      "slug": "freight-forwarder",
+      "label": "Freight Forwarder"
+    },
+    {
+      "slug": "customs-broker",
+      "label": "Customs Broker"
+    },
+    {
+      "slug": "freight-carrier",
+      "label": "Freight Carrier"
+    },
+    {
+      "slug": "logistics-management",
+      "label": "Logistics Management"
+    },
+    {
+      "slug": "supply-chain-organisations",
+      "label": "Supply Chain Organisations"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customs-broker",
+      "label": "Customs Broker"
+    },
+    {
+      "slug": "fedex",
+      "label": "FedEx"
+    },
+    {
+      "slug": "fourth-party-logistics-provider",
+      "label": "Fourth-Party Logistics Provider"
+    },
+    {
+      "slug": "freight-carrier",
+      "label": "Freight Carrier"
+    },
+    {
+      "slug": "freight-forwarder",
+      "label": "Freight Forwarder"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    },
+    {
+      "slug": "supply-chain-organisations",
+      "label": "Supply Chain Organisations"
+    },
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    },
+    {
+      "slug": "united-parcel-service",
+      "label": "United Parcel Service"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

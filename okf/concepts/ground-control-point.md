@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:geodesy
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T07:42:58Z"}
 ---
 
 # Ground Control Point

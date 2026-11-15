@@ -1,0 +1,87 @@
+{
+  "id": "urn:ngm:class:solar-cycle",
+  "title": "Solar Cycle",
+  "slug": "solar-cycle",
+  "public": true,
+  "classIri": "urn:ngm:class:solar-cycle",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Sunspot number shows an approximately 11-year repetition known as the solar cycle.[^1] NOAA calls the peak of sunspot activity solar maximum and the lull solar minimum. A new cycle is considered to have begun when sunspot groups emerge at higher latitudes with the leading-spot magnetic polarities opposite to those of the previous cycle, which means the start of a cycle is recognised from observed groups rather than predicted exactly.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:heliophysics",
+      "label": "Heliophysics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:heliophysics",
+        "label": "Heliophysics"
+      },
+      {
+        "id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "urn:visionflow:page:cbda6dadecb39e174f2b27685d068fe69c359aebee5911cecbe27a1539d4df1d",
+  "title": "TradeLens",
+  "slug": "trade-lens",
+  "public": true,
+  "classIri": "urn:ngm:class:trade-lens",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "TradeLens was a blockchain-enabled shipping platform announced in 2018 and jointly developed by IBM and GTD Solution, a division of Maersk, to promote more efficient and secure global trade; Maersk and IBM announced its discontinuation on 29 November 2022.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-trade-platform",
+      "label": "Digital Trade Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:maersk",
+        "label": "Maersk"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

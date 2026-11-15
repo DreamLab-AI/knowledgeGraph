@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:llm-orchestration
   - urn:ngm:class:supervisorworkerpattern
   - urn:ngm:class:llmorchestration
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Planner-Executor Pattern

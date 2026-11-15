@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:spacecraft-navigation
   - urn:ngm:class:spacecraft-rendezvous
   - urn:ngm:class:localisation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:03:18Z"}
 ---
 
 # Relative Spacecraft Navigation

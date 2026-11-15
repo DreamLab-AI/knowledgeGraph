@@ -66,6 +66,7 @@ relatedTo:
   - urn:ngm:class:vrm-format
   - urn:ngm:class:e-commerce-3-d
   - urn:ngm:class:web-xr
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # glTF

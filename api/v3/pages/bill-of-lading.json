@@ -1,0 +1,129 @@
+{
+  "id": "urn:ngm:class:bill-of-lading",
+  "title": "Bill of Lading",
+  "slug": "bill-of-lading",
+  "public": true,
+  "classIri": "urn:ngm:class:bill-of-lading",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A bill of lading is a carrier's document that serves as a receipt for goods, as written evidence of the contract of carriage, and, in its negotiable form, as a document of title.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-document",
+      "label": "Trade Document"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ocean-carrier",
+        "label": "Ocean Carrier"
+      },
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs",
+      "slug": "international-trade-and-customs"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "electronic-bill-of-lading",
+      "label": "Electronic Bill of Lading"
+    },
+    {
+      "slug": "trade-document",
+      "label": "Trade Document"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "electronic-bill-of-lading",
+      "label": "Electronic Bill of Lading"
+    },
+    {
+      "slug": "international-trade-and-customs",
+      "label": "International Trade and Customs"
+    },
+    {
+      "slug": "trade-document",
+      "label": "Trade Document"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

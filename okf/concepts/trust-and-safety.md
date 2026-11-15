@@ -84,6 +84,7 @@ relatedTo:
   - urn:ngm:class:meta
   - urn:ngm:class:safety-and-alignment
   - urn:ngm:class:meta
+generated: {"by":"human:npub16kv2h3hdalphuyzj8tkycq8cm9n54ymer23558ds80afkc9e7frqwrawzj","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Trust and Safety

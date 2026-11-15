@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:robotic-process-automation
   - urn:ngm:class:information-extraction
   - urn:ngm:class:document-summarisation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Document Processing

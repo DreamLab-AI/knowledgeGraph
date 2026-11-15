@@ -1,0 +1,121 @@
+{
+  "id": "urn:ngm:class:bullwhip-effect",
+  "title": "Bullwhip Effect",
+  "slug": "bullwhip-effect",
+  "public": true,
+  "classIri": "urn:ngm:class:bullwhip-effect",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Orders passed up a supply chain tend to vary more than the sales they respond to, and the distortion grows at each step upstream; this is the bullwhip effect.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-planning-forecasting-and-replenishment",
+        "label": "Collaborative Planning, Forecasting and Replenishment"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience",
+      "slug": "supply-chain-risk-and-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agile-supply-chain",
+      "label": "Agile Supply Chain"
+    },
+    {
+      "slug": "ripple-effect",
+      "label": "Ripple Effect"
+    },
+    {
+      "slug": "supply-chain-design-principle",
+      "label": "Supply Chain Design Principle"
+    },
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

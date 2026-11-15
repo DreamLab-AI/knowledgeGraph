@@ -31,6 +31,7 @@ supports:
 relatedTo:
   - urn:ngm:class:edge-cloud-collaboration
   - urn:ngm:class:latency-aware-edge-ai
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IoT AI Integration

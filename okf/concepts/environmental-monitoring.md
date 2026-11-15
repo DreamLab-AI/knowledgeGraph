@@ -25,6 +25,7 @@ relatedTo:
   - urn:ngm:class:monitoring-system
   - urn:ngm:class:wireless-connectivity
   - urn:ngm:class:land-surface-temperature
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Environmental Monitoring

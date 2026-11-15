@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:digital-infrastructure
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:peer-to-peer-network
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Distributed Systems

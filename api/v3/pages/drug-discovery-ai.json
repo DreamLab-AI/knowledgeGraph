@@ -1,0 +1,253 @@
+{
+  "id": "urn:visionflow:page:2d1d735d42c0fdffd1758cd68cda910eeac88e12915e77992a372c3544c89291",
+  "title": "Drug Discovery AI",
+  "slug": "drug-discovery-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:drug-discovery-ai",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning \u2014 including graph neural networks and generative models \u2014 to reduce drug development timelines and costs whilst improving candidate success rates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:treatment-planning-ai",
+        "label": "Treatment Planning AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-models",
+      "label": "Generative Models"
+    },
+    {
+      "slug": "molecular-design",
+      "label": "Molecular Design"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "metaverse",
+      "label": "MetaverseDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "precision-medicine",
+      "label": "Precision Medicine"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

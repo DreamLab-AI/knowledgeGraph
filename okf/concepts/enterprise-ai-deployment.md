@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:ai-adoption
   - urn:ngm:class:human-ai-collaboration
   - urn:ngm:class:enterprise-software-integration
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Enterprise AI Deployment

@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:vanishing-gradient
   - urn:ngm:class:weight-initialisation
   - urn:ngm:class:batch-normalisation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Activation Function

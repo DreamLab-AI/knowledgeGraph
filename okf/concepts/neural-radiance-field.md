@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:depth-estimation
   - urn:ngm:class:tele-060-instant-ngp
   - urn:ngm:class:computer-vision
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Neural Radiance Field

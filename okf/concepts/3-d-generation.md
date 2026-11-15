@@ -88,6 +88,7 @@ relatedTo:
   - urn:ngm:class:neural-3-d-generation
   - urn:ngm:class:text-to-3-d
   - urn:ngm:class:latent-diffusion
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # 3D Generation

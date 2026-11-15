@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:rigid-body-dynamics
   - urn:ngm:class:rb-0043-torque
   - urn:ngm:class:rb-0045-acceleration
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0041 inertia

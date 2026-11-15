@@ -39,6 +39,7 @@ relatedTo:
   - urn:ngm:class:gradient-descent
   - urn:ngm:class:optimisation
   - urn:ngm:class:technique
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Batch Normalisation

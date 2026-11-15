@@ -28,6 +28,7 @@ relatedTo:
   - urn:ngm:class:xml
   - urn:ngm:class:schema-registry
   - urn:ngm:class:data-serialization
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Protocol Buffer

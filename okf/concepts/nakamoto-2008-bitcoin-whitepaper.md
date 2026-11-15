@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:double-spending
   - urn:ngm:class:mining-incentive
   - urn:ngm:class:51-attack
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Nakamoto 2008 Bitcoin Whitepaper

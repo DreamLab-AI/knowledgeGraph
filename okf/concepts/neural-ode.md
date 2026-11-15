@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:residual-network
   - urn:ngm:class:differential-equations
   - urn:ngm:class:dynamical-systems
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Neural Ode

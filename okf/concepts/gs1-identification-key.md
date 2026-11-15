@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:supply-chain-identifier
 bridgesTo:
   - urn:ngm:class:gs1-digital-link
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # GS1 Identification Key

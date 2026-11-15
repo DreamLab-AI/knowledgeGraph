@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:logistics
   - urn:ngm:class:automation
   - urn:ngm:class:optimisation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Supply Chain Management

@@ -1,0 +1,81 @@
+{
+  "id": "urn:ngm:class:power-conditioning-and-distribution",
+  "title": "Power Conditioning and Distribution",
+  "slug": "power-conditioning-and-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:power-conditioning-and-distribution",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Power conditioning and distribution controls electrical energy between the source, battery, main bus and loads. Conditioning regulates the array and battery interfaces and creates usable rails. Distribution switches and protects load branches, measures their state and prevents a fault on one branch from collapsing the shared source or bus.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+      "label": "Spacecraft Power and Thermal Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+        "label": "Spacecraft Power and Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-data-centers",
+        "label": "Space Data Centers"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

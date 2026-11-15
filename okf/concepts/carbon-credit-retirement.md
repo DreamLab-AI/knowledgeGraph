@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:icvcm-core-carbon-principles
   - urn:ngm:class:climate-action-dao
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Carbon Credit Retirement

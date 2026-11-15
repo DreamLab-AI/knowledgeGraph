@@ -1,0 +1,141 @@
+{
+  "id": "urn:ngm:class:ocean-freight",
+  "title": "Ocean Freight",
+  "slug": "ocean-freight",
+  "public": true,
+  "classIri": "urn:ngm:class:ocean-freight",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Ocean freight is the carriage of goods by merchant ship on journeys undertaken wholly or partly at sea.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-transport-mode",
+      "label": "Freight Transport Mode"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:synthetic-aperture-radar",
+        "label": "Synthetic Aperture Radar"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:freight-transportation",
+      "label": "Freight Transportation",
+      "slug": "freight-transportation"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "container-shipping",
+      "label": "Container Shipping"
+    },
+    {
+      "slug": "freight-transport-mode",
+      "label": "Freight Transport Mode"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
+    },
+    {
+      "slug": "synthetic-aperture-radar",
+      "label": "Synthetic Aperture Radar"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chokepoint-disruption",
+      "label": "Chokepoint Disruption"
+    },
+    {
+      "slug": "container-shipping",
+      "label": "Container Shipping"
+    },
+    {
+      "slug": "freight-transport-mode",
+      "label": "Freight Transport Mode"
+    },
+    {
+      "slug": "freight-transportation",
+      "label": "Freight Transportation"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

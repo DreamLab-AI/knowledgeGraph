@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:spacecraft-navigation
   - urn:ngm:class:state-estimation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:03:18Z"}
 ---
 
 # Spacecraft Navigation Filter

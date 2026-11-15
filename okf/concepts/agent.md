@@ -61,6 +61,7 @@ relatedTo:
   - urn:ngm:class:agent-task
   - urn:ngm:class:agent-action
   - urn:ngm:class:autonomous-system
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Agent

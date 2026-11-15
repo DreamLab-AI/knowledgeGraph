@@ -98,6 +98,7 @@ relatedTo:
   - urn:ngm:class:parasocial-interaction
   - urn:ngm:class:loneliness-epidemic
   - urn:ngm:class:artificial-intimacy
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI companions

@@ -13,6 +13,7 @@ hasPart:
   - urn:ngm:class:ieee-802-15-4
 relatedTo:
   - urn:ngm:class:ieee-802-15-4
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IEEE 802-X

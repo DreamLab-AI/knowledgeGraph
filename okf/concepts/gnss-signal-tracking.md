@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:digital-signal-processing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T12:28:59Z"}
 ---
 
 # GNSS Signal Tracking

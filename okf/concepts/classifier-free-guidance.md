@@ -107,6 +107,7 @@ relatedTo:
   - urn:ngm:class:score-distillation-sampling
   - urn:ngm:class:energy-based-model
   - urn:ngm:class:bayesian-inference
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Classifier-Free Guidance

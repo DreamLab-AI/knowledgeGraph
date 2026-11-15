@@ -13,6 +13,7 @@ partOf:
   - urn:ngm:class:pose-estimation
 relatedTo:
   - urn:ngm:class:dwpose
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # MMPose

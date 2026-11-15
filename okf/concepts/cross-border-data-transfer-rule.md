@@ -32,6 +32,7 @@ bridgesTo:
   - urn:ngm:class:telecollaboration
 partOf:
   - urn:ngm:class:data-privacy-governance-framework
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cross-Border Data Transfer Rule

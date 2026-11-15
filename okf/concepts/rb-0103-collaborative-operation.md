@@ -23,6 +23,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:rb-0007-collaborative-robot
   - urn:ngm:class:cobot-safety-levels
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0103 collaborative operation

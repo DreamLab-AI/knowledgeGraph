@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:agent-trace-event
   - urn:ngm:class:runtime-ledger-event
   - urn:ngm:class:action-type
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Action

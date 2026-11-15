@@ -38,6 +38,7 @@ relatedTo:
   - urn:ngm:class:post-quantum-cryptography
   - urn:ngm:class:http-protocol
   - urn:ngm:class:mutual-tls
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # TLS 1.3

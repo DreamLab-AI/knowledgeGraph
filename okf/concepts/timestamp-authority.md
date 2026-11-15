@@ -37,6 +37,7 @@ relatedTo:
   - urn:ngm:class:digital-signature
   - urn:ngm:class:public-key-infrastructure
   - urn:ngm:class:non-repudiation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Timestamp Authority

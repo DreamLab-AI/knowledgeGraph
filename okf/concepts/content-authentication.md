@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:digital-rights-management
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:non-fungible-token
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Content Authentication

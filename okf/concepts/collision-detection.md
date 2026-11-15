@@ -112,6 +112,7 @@ relatedTo:
   - urn:ngm:class:soft-body-dynamics
   - urn:ngm:class:training-data
   - urn:ngm:class:deepsdf
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Collision Detection

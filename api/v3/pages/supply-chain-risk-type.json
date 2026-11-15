@@ -1,0 +1,140 @@
+{
+  "id": "urn:ngm:class:supply-chain-risk-type",
+  "title": "Supply Chain Risk Type",
+  "slug": "supply-chain-risk-type",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-risk-type",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain risk type is a category into which sources of supply chain risk are sorted, and the sources opened here do not agree on one classification.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:ai-supply-chain-risk",
+        "label": "AI Supply Chain Risk"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-risk",
+      "label": "Supply Risk"
+    },
+    {
+      "slug": "supplier-concentration-risk",
+      "label": "Supplier Concentration Risk"
+    },
+    {
+      "slug": "geopolitical-supply-chain-risk",
+      "label": "Geopolitical Supply Chain Risk"
+    },
+    {
+      "slug": "climate-related-supply-chain-risk",
+      "label": "Climate-Related Supply Chain Risk"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "climate-related-supply-chain-risk",
+      "label": "Climate-Related Supply Chain Risk"
+    },
+    {
+      "slug": "geopolitical-supply-chain-risk",
+      "label": "Geopolitical Supply Chain Risk"
+    },
+    {
+      "slug": "supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    },
+    {
+      "slug": "supply-risk",
+      "label": "Supply Risk"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

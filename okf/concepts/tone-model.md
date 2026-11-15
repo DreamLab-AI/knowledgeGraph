@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:natural-language-generation
 partOf:
   - urn:ngm:class:agent-profile
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Tone Model

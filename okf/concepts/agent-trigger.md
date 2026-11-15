@@ -13,6 +13,7 @@ partOf:
   - urn:ngm:class:agent-operational-profile
 relatedTo:
   - urn:ngm:class:webhook
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Trigger

@@ -20,6 +20,7 @@ supports:
   - urn:ngm:class:spatial-computing
 relatedTo:
   - urn:ngm:class:calibration-tools
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Environmental Verification

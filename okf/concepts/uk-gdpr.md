@@ -37,6 +37,7 @@ relatedTo:
   - urn:ngm:class:ico
   - urn:ngm:class:data-protection-law
   - urn:ngm:class:uk-data-protection-act-2018
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # UK GDPR

@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:earth-observation-satellite
   - urn:ngm:class:revisit-time
   - urn:ngm:class:numerical-methods
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T08:17:02Z"}
 ---
 
 # Orbital Dynamics

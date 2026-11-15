@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:space-systems-engineering
   - urn:ngm:class:aerospace-engineering
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-01T20:30:00Z"}
 ---
 
 # Launch Vehicle

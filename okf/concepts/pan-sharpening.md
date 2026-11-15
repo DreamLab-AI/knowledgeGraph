@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:image-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T10:03:21Z"}
 ---
 
 # Pan-sharpening

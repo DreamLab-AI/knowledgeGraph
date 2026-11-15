@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngm:class:sector-supply-chain",
+  "title": "Sector Supply Chain",
+  "slug": "sector-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:sector-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A sector supply chain is a supply chain considered by the industry or product group it serves, such as food, medical or semiconductor supply chains.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "food-supply-chain",
+      "label": "Food Supply Chain"
+    },
+    {
+      "slug": "pharmaceutical-supply-chain",
+      "label": "Pharmaceutical Supply Chain"
+    },
+    {
+      "slug": "semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    },
+    {
+      "slug": "space-supply-chain",
+      "label": "Space Supply Chain"
+    },
+    {
+      "slug": "gpu-supply-chain",
+      "label": "GPU Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "food-supply-chain",
+      "label": "Food Supply Chain"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:measurement-uncertainty
   - urn:ngm:class:radiometric-calibration
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T10:08:22Z"}
 ---
 
 # Sensor Intercalibration

@@ -1,0 +1,145 @@
+{
+  "id": "urn:ngm:class:ocean-carrier",
+  "title": "Ocean Carrier",
+  "slug": "ocean-carrier",
+  "public": true,
+  "classIri": "urn:ngm:class:ocean-carrier",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An ocean carrier is a business that operates the vessels carrying cargo by sea. In United States law an ocean common carrier is defined as a vessel-operating common carrier.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-carrier",
+      "label": "Freight Carrier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider",
+      "slug": "logistics-service-provider"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "freight-carrier",
+      "label": "Freight Carrier"
+    },
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    },
+    {
+      "slug": "container-shipping",
+      "label": "Container Shipping"
+    },
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "freight-forwarder",
+      "label": "Freight Forwarder"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bill-of-lading",
+      "label": "Bill of Lading"
+    },
+    {
+      "slug": "cma-cgm",
+      "label": "CMA CGM"
+    },
+    {
+      "slug": "freight-carrier",
+      "label": "Freight Carrier"
+    },
+    {
+      "slug": "international-maritime-organization",
+      "label": "International Maritime Organization"
+    },
+    {
+      "slug": "maersk",
+      "label": "Maersk"
+    },
+    {
+      "slug": "mediterranean-shipping-company",
+      "label": "Mediterranean Shipping Company"
+    },
+    {
+      "slug": "supply-chain-organisations",
+      "label": "Supply Chain Organisations"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

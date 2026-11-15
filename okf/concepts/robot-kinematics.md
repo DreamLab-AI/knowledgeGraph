@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:manipulator
   - urn:ngm:class:humanoid-robot
   - urn:ngm:class:soft-robotics
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Robot Kinematics

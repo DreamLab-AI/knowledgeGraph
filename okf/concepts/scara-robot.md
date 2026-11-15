@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:inverse-kinematics
   - urn:ngm:class:motion-control
   - urn:ngm:class:trajectory-planning
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # SCARA Robot

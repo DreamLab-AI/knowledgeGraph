@@ -1,0 +1,209 @@
+{
+  "id": "urn:ngm:class:inventory-policy",
+  "title": "Inventory Policy",
+  "slug": "inventory-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:inventory-policy",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An inventory policy is a rule that decides when to order and how much, so that an inventory system answers the questions of when to place the order to replenish stock and how much to order.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inventory-management",
+      "label": "Inventory Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "continuous-review-policy",
+      "label": "Continuous Review Policy"
+    },
+    {
+      "slug": "periodic-review-policy",
+      "label": "Periodic Review Policy"
+    },
+    {
+      "slug": "reorder-point-policy",
+      "label": "Reorder Point Policy"
+    },
+    {
+      "slug": "base-stock-policy",
+      "label": "Base Stock Policy"
+    },
+    {
+      "slug": "economic-order-quantity",
+      "label": "Economic Order Quantity"
+    },
+    {
+      "slug": "newsvendor-model",
+      "label": "Newsvendor Model"
+    },
+    {
+      "slug": "inventory-management",
+      "label": "Inventory Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cycle-counting",
+      "label": "Cycle Counting"
+    },
+    {
+      "slug": "inventory-control-practice",
+      "label": "Inventory Control Practice"
+    },
+    {
+      "slug": "inventory-model",
+      "label": "Inventory Model"
+    },
+    {
+      "slug": "periodic-review-policy",
+      "label": "Periodic Review Policy"
+    },
+    {
+      "slug": "raw-materials-inventory",
+      "label": "Raw Materials Inventory"
+    },
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "id": "urn:visionflow:page:149d544e130978bc04440a0d01802f7d56896fd0919894acc791b21dd82c9b0c",
+  "title": "cross-chain governance",
+  "slug": "cross-chain-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-governance",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Cross-Chain Governance is a coordination framework and set of protocols that enable governance proposals, voting outcomes, and policy updates to propagate and be enforced across multiple heterogeneous blockchain networks without requiring a single trusted intermediary. It extends on-chain governance mechanisms \u2014 token-weighted voting, quadratic voting, time-locked execution \u2014 to multi-chain environments using interoperability layers such as IBC (Inter-Blockchain Communication), cross-chain message-passing bridges, or relay networks. Achieving consistent governance state across chains requires solving distributed consensus problems while preserving each chain's sovereignty. The field sits at the intersection of blockchain interoperability, distributed systems coordination, and decentralised decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:relay-network",
+        "label": "Relay Network"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-governance",
+        "label": "Off-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Time-Lock"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polkadot-parachains",
+        "label": "Polkadot Parachain"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:polkadot-parachains",
+        "label": "Polkadot Parachain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

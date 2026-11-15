@@ -74,6 +74,7 @@ relatedTo:
   - urn:ngm:class:transformative-ai
   - urn:ngm:class:frontier-ai
   - urn:ngm:class:robustness
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AGI Timelines

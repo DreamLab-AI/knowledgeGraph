@@ -28,6 +28,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:audio-system
   - urn:ngm:class:microphone-array
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Head Related Transfer Function

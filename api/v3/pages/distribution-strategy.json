@@ -1,0 +1,115 @@
+{
+  "id": "urn:ngm:class:distribution-strategy",
+  "title": "Distribution Strategy",
+  "slug": "distribution-strategy",
+  "public": true,
+  "classIri": "urn:ngm:class:distribution-strategy",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A distribution strategy is the choice of how goods flow from source to customer, in particular whether they are shipped directly or pass through intermediate storage points.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    },
+    {
+      "slug": "last-mile-delivery",
+      "label": "Last-Mile Delivery"
+    },
+    {
+      "slug": "distribution-centre",
+      "label": "Distribution Centre"
+    },
+    {
+      "slug": "warehouse-facility-type",
+      "label": "Warehouse Facility Type"
+    },
+    {
+      "slug": "supply-chain-network-design",
+      "label": "Supply Chain Network Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cross-docking",
+      "label": "Cross-Docking"
+    },
+    {
+      "slug": "drop-shipping",
+      "label": "Drop Shipping"
+    },
+    {
+      "slug": "warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

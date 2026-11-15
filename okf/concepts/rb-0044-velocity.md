@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0043-torque
   - urn:ngm:class:rb-0030-jacobian-matrix
   - urn:ngm:class:differential-kinematics
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0044 velocity

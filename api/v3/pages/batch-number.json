@@ -1,0 +1,124 @@
+{
+  "id": "urn:ngm:class:batch-number",
+  "title": "Batch Number",
+  "slug": "batch-number",
+  "public": true,
+  "classIri": "urn:ngm:class:batch-number",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A batch number, also called a lot number, is a distinctive code that identifies a batch or lot of a product, from which the history of how that quantity was made and handled can be traced.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-identifier",
+      "label": "Supply Chain Identifier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "global-trade-item-number",
+      "label": "Global Trade Item Number"
+    },
+    {
+      "slug": "product-serialisation",
+      "label": "Product Serialisation"
+    },
+    {
+      "slug": "traceability-regulation",
+      "label": "Traceability Regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gs1-identification-key",
+      "label": "GS1 Identification Key"
+    },
+    {
+      "slug": "global-trade-item-number",
+      "label": "Global Trade Item Number"
+    },
+    {
+      "slug": "product-serialisation",
+      "label": "Product Serialisation"
+    },
+    {
+      "slug": "supply-chain-identifier",
+      "label": "Supply Chain Identifier"
+    },
+    {
+      "slug": "traceability-regulation",
+      "label": "Traceability Regulation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

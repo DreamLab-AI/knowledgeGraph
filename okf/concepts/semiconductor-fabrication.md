@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:moore-s-law
   - urn:ngm:class:technology-node
   - urn:ngm:class:yield-management
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Semiconductor Fabrication

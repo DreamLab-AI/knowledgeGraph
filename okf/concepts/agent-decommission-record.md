@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:lifecycle-management
 partOf:
   - urn:ngm:class:agent-lifecycle-record
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Decommission Record

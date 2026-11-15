@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:gps
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:slam
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-01T20:45:00Z"}
 ---
 
 # Global Navigation Satellite System

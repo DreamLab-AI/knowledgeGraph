@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0055-velocity-control
   - urn:ngm:class:rb-0053-force-control
   - urn:ngm:class:rb-0056-impedance-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0054 position control

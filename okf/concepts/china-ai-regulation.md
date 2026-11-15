@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:china
   - urn:ngm:class:regulatory-framework
   - urn:ngm:class:ai-policy
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # China AI Regulation

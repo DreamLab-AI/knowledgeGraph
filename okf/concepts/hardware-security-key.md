@@ -28,6 +28,7 @@ uses:
   - urn:ngm:class:security-token
 partOf:
   - urn:ngm:class:multi-factor-authentication
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hardware Security Key

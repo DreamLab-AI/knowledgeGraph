@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:active-learning
   - urn:ngm:class:continual-learning
   - urn:ngm:class:meta-learning
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Curriculum Learning

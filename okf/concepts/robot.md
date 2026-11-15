@@ -53,6 +53,7 @@ relatedTo:
   - urn:ngm:class:cobotic-system
   - urn:ngm:class:uncrewed-spacecraft
   - urn:ngm:class:supply-chain
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Robot

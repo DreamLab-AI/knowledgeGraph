@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:network-topology
   - urn:ngm:class:graph-database
   - urn:ngm:class:digital-ontology-repository
+generated: {"by":"human:npub16kv2h3hdalphuyzj8tkycq8cm9n54ymer23558ds80afkc9e7frqwrawzj","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Distributed Logseq Knowledge Network

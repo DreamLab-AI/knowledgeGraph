@@ -1,0 +1,79 @@
+{
+  "id": "urn:ngm:class:biosignature",
+  "title": "Biosignature",
+  "slug": "biosignature",
+  "public": true,
+  "classIri": "urn:ngm:class:biosignature",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A biosignature is a characteristic, substance, structure or pattern that can provide evidence of past or present life. Candidates include fossils and textures, minerals, isotopic ratios, organic molecules, atmospheric gases, surface reflectance and changes through time. NASA defines a *potential* biosignature as something that might have a biological origin but still needs more data or study before a conclusion about life can be reached.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:planetary-science",
+      "label": "Planetary Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planetary-science",
+        "label": "Planetary Science"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

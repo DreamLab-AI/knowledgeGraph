@@ -1,0 +1,380 @@
+{
+  "id": "urn:visionflow:page:ab0e8defb62a8497a7cfe0e8498d64d6fc0927af1f20b061deb9a50ed85eaef1",
+  "title": "Environmental Asset Market",
+  "slug": "environmental-asset-market",
+  "public": true,
+  "classIri": "urn:ngm:class:environmental-asset-market",
+  "domain": "spatial-computing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
+      "id": "urn:ngm:class:digital-asset-market",
+      "label": "Digital Asset Market"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
+        "label": "Spatial Embodiment Harm Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:custodial-settlement",
+        "label": "Custodial Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:geodesy",
+        "label": "Geodesy"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-token",
+        "label": "Cryptographic Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Global Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "sustainable-finance",
+      "label": "Sustainable Finance"
+    },
+    {
+      "slug": "digital-asset-market",
+      "label": "Digital Asset Market"
+    },
+    {
+      "slug": "metaverse",
+      "label": "metaverse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:earth-observation-applications
   - urn:ngm:class:resilience
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T10:05:00Z"}
 ---
 
 # Wildfire Monitoring

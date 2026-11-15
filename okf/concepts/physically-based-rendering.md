@@ -52,6 +52,7 @@ relatedTo:
   - urn:ngm:class:path-tracing
   - urn:ngm:class:global-illumination
   - urn:ngm:class:subsurface-scattering
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Physically Based Rendering

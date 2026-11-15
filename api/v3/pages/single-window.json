@@ -1,0 +1,117 @@
+{
+  "id": "urn:ngm:class:single-window",
+  "title": "Single Window",
+  "slug": "single-window",
+  "public": true,
+  "classIri": "urn:ngm:class:single-window",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A single window is a facility that allows parties involved in trade and transport to lodge standardised information and documents at a single entry point to fulfil all import, export and transit-related regulatory requirements, with each data element submitted only once electronically; this is the definition of UN/CEFACT Recommendation No. 33.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-facilitation",
+      "label": "Trade Facilitation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs",
+      "slug": "international-trade-and-customs"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "wco-safe-framework",
+      "label": "WCO SAFE Framework"
+    },
+    {
+      "slug": "trade-facilitation",
+      "label": "Trade Facilitation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "trade-facilitation",
+      "label": "Trade Facilitation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

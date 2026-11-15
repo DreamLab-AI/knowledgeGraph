@@ -38,6 +38,7 @@ relatedTo:
   - urn:ngm:class:compiler
   - urn:ngm:class:virtual-machine
   - urn:ngm:class:operating-system
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Instruction Set Architecture

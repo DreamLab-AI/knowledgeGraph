@@ -1,0 +1,185 @@
+{
+  "id": "urn:ngm:class:agent-artefact",
+  "title": "Agent Artefact",
+  "slug": "agent-artefact",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-artefact",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:0dc89e6b22d787a7b237a231362b6384c69bb5c6d809370357545d628d2b7f9f",
+    "label": "agent-ontology-import",
+    "actor": "agent:agent-ontology-import/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An agent artefact is a produced output or result generated through agent execution. The Agent Ontology declares it as `Artifact`, using American spelling for the identifier.[^1] visionGraph places it under the AI Research Area hub.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-action",
+      "label": "Agent Action"
+    },
+    {
+      "slug": "agent-intent",
+      "label": "Agent Intent"
+    },
+    {
+      "slug": "agent-trace-event",
+      "label": "Agent Trace Event"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-action",
+      "label": "Agent Action"
+    },
+    {
+      "slug": "agent-output-specification",
+      "label": "Agent Output Specification"
+    },
+    {
+      "slug": "output-state",
+      "label": "Output State"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

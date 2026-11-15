@@ -14,6 +14,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:space-systems-engineering
   - urn:ngm:class:safety-assurance
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:44:42Z"}
 ---
 
 # Spacecraft Reliability

@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:sustainability-reporting
   - urn:ngm:class:ieee-2418-1
   - urn:ngm:class:iso-23257
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Supply Chain Traceability

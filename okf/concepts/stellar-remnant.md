@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:astronomical-body
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:23:24Z"}
 ---
 
 # Stellar Remnant

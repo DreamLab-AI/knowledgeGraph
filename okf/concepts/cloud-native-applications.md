@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:technology-infrastructure-domain-architecture
   - urn:ngm:class:site-reliability-engineering
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cloud-Native Applications

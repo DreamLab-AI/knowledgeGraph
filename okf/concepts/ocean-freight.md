@@ -12,6 +12,7 @@ is-a:
 bridgesTo:
   - urn:ngm:class:synthetic-aperture-radar
   - urn:ngm:class:satellite-imagery
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Ocean Freight

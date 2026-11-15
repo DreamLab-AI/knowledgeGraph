@@ -14,6 +14,7 @@ bridgesTo:
 relatedTo:
   - urn:ngm:class:satellite-communication
   - urn:ngm:class:time-series-data
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T11:22:15Z"}
 ---
 
 # Spacecraft Telemetry

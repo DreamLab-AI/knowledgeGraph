@@ -1,0 +1,91 @@
+{
+  "id": "urn:ngm:class:orbital-debris",
+  "title": "Orbital Debris",
+  "slug": "orbital-debris",
+  "public": true,
+  "classIri": "urn:ngm:class:orbital-debris",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Orbital debris comprises artificial objects in Earth orbit or re-entry that no longer serve a useful function, including defunct spacecraft, abandoned rocket stages, mission-related objects and fragments.[^1] Natural meteoroids are a separate population. Debris ranges from intact tonnes-scale hardware to particles too small to track individually, yet capable of damaging a spacecraft at orbital relative velocity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:orbital-dynamics",
+      "label": "Orbital Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbital-dynamics",
+        "label": "Orbital Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-satellite",
+        "label": "Earth Observation Satellite"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:revisit-time",
+        "label": "Revisit Time"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "launch-vehicle-stage",
+      "label": "Launch Vehicle Stage"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

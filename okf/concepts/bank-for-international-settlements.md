@@ -34,6 +34,7 @@ relatedTo:
   - urn:ngm:class:international-monetary-fund
   - urn:ngm:class:financial-stability-board
   - urn:ngm:class:swift
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Bank for International Settlements

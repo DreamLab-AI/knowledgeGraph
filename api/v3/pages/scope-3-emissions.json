@@ -1,0 +1,226 @@
+{
+  "id": "urn:visionflow:page:scope-3-emissions",
+  "title": "Scope 3 Emissions",
+  "slug": "scope-3-emissions",
+  "public": true,
+  "classIri": "urn:ngm:class:scope-3-emissions",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Scope 3 emissions are all indirect greenhouse gas emissions in a company's value chain other than those from purchased energy, and they arise from activities the reporting company does not own or control.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-environmental-accounting",
+      "label": "Supply Chain Environmental Accounting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.75,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Supplier Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Value Chain Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net-Zero Commitments"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Supplier Decarbonisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      },
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "supply-chain-environmental-accounting",
+      "label": "Supply Chain Environmental Accounting"
+    },
+    {
+      "slug": "sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

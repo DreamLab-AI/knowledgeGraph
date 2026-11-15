@@ -21,6 +21,7 @@ uses:
   - urn:ngm:class:constrained-decoding
   - urn:ngm:class:contentmoderation
   - urn:ngm:class:constraineddecoding
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Guardrail

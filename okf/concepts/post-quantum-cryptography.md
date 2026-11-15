@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:blockchain-application
   - urn:ngm:class:digital-signature-verification
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Post-Quantum Cryptography

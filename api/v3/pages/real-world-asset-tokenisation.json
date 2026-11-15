@@ -1,0 +1,318 @@
+{
+  "id": "urn:visionflow:page:5d498a1a6f5ada2d4e6b420ab4a5c806ef62271e753b8ed01a0425d308602b39",
+  "title": "real-world asset tokenisation",
+  "slug": "real-world-asset-tokenisation",
+  "public": true,
+  "classIri": "urn:ngm:class:real-world-asset-tokenisation",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Real-world asset tokenisation (RWA) is the process of issuing blockchain-based digital tokens that represent legally enforceable ownership or economic claims over physical or financial assets \u2014 including real estate, government bonds, private credit, commodities, and infrastructure. Ownership rights, transfer restrictions, and distribution logic are encoded in smart contracts, enabling fractional ownership and 24/7 secondary-market liquidity. The process requires a legal wrapper such as a special purpose vehicle or trust, oracle infrastructure to price off-chain assets on-chain, and compliance with applicable securities regulation in each issuing jurisdiction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      },
+      {
+        "id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-restriction-mechanism",
+        "label": "Transfer Restriction Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-collateral",
+        "label": "On-Chain Collateral"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-fund",
+        "label": "Tokenised Fund"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

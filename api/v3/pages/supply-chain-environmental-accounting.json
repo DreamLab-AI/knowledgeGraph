@@ -1,0 +1,125 @@
+{
+  "id": "urn:ngm:class:supply-chain-environmental-accounting",
+  "title": "Supply Chain Environmental Accounting",
+  "slug": "supply-chain-environmental-accounting",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-environmental-accounting",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain environmental accounting is the measurement and reporting of the environmental effects of a supply chain, such as its emissions and material flows, and no source opened here defines the term, so this page describes two established methods that fall within it.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "scope-3-emissions",
+      "label": "Scope 3 Emissions"
+    },
+    {
+      "slug": "material-flow-analysis",
+      "label": "Material Flow Analysis"
+    },
+    {
+      "slug": "sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    },
+    {
+      "slug": "supply-chain-decarbonisation",
+      "label": "Supply Chain Decarbonisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

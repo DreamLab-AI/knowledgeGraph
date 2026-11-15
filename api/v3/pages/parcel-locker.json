@@ -1,0 +1,128 @@
+{
+  "id": "urn:ngm:class:parcel-locker",
+  "title": "Parcel Locker",
+  "slug": "parcel-locker",
+  "public": true,
+  "classIri": "urn:ngm:class:parcel-locker",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A parcel locker is a secure collection point, managed with digital technology, at which a parcel is left for the recipient to collect, and reviews treat it as a type of alternative delivery point for last-mile delivery.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:last-mile-delivery",
+      "label": "Last-Mile Delivery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution",
+      "slug": "warehousing-and-distribution"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-delivery",
+        "label": "Autonomous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:parcel-carrier",
+        "label": "Parcel Carrier"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "last-mile-delivery",
+      "label": "Last-Mile Delivery"
+    },
+    {
+      "slug": "click-and-collect",
+      "label": "Click and Collect"
+    },
+    {
+      "slug": "parcel-carrier",
+      "label": "Parcel Carrier"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "click-and-collect",
+      "label": "Click and Collect"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "urn:ngm:class:rain-rfid-tag",
+  "title": "RAIN RFID Tag",
+  "slug": "rain-rfid-tag",
+  "public": true,
+  "classIri": "urn:ngm:class:rain-rfid-tag",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A RAIN RFID tag is a passive ultra-high-frequency radio tag that uses the ISO/IEC 18000-63 air interface protocol, also known as GS1 UHF Gen2, and can carry an Electronic Product Code that identifies the item it is attached to.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automatic-identification-and-data-capture",
+      "label": "Automatic Identification and Data Capture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:near-field-communication",
+        "label": "Near Field Communication"
+      },
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "rfid",
+      "label": "RFID"
+    },
+    {
+      "slug": "automatic-identification-and-data-capture",
+      "label": "Automatic Identification and Data Capture"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automatic-identification-and-data-capture",
+      "label": "Automatic Identification and Data Capture"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

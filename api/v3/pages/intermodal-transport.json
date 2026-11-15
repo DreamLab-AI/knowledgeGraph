@@ -1,0 +1,149 @@
+{
+  "id": "urn:ngm:class:intermodal-transport",
+  "title": "Intermodal Transport",
+  "slug": "intermodal-transport",
+  "public": true,
+  "classIri": "urn:ngm:class:intermodal-transport",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Intermodal transport is the multimodal transport of goods in one and the same intermodal transport unit by successive modes of transport, without handling of the goods themselves when changing modes.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-transportation",
+      "label": "Freight Transportation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shipping-container",
+        "label": "Shipping Container"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "freight-transportation",
+      "label": "Freight Transportation"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    },
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "rail-freight",
+      "label": "Rail Freight"
+    },
+    {
+      "slug": "road-freight",
+      "label": "Road Freight"
+    },
+    {
+      "slug": "integer-programming",
+      "label": "Integer Programming"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dry-port",
+      "label": "Dry Port"
+    },
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "freight-node",
+      "label": "Freight Node"
+    },
+    {
+      "slug": "freight-transport-mode",
+      "label": "Freight Transport Mode"
+    },
+    {
+      "slug": "freight-transportation",
+      "label": "Freight Transportation"
+    },
+    {
+      "slug": "rail-freight",
+      "label": "Rail Freight"
+    },
+    {
+      "slug": "road-freight",
+      "label": "Road Freight"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

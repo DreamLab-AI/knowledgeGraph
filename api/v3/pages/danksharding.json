@@ -1,0 +1,576 @@
+{
+  "id": "urn:visionflow:page:danksharding",
+  "title": "Danksharding",
+  "slug": "danksharding",
+  "public": true,
+  "classIri": "urn:ngm:class:danksharding",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Danksharding is a data-availability scaling design for Ethereum that scales the blockchain by providing large amounts of cheap data space for rollups rather than sharding execution. It uses a unified fee market and a merged block-building process in which a single proposer commits to a block containing many data blobs, the availability of which is verified through data-availability sampling and erasure coding. Danksharding is the long-term target architecture that proto-danksharding incrementally builds towards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sharding",
+      "label": "Sharding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:beacon-chain",
+        "label": "Beacon Chain"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability",
+      "slug": "blockchain-scalability"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity",
+      "slug": "blockchain-entity"
+    },
+    {
+      "id": "urn:ngm:class:performance",
+      "label": "performance",
+      "slug": "performance"
+    },
+    {
+      "id": "urn:ngm:class:protocol-architecture",
+      "label": "Protocol Architecture",
+      "slug": "protocol-architecture"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:beacon-chain",
+        "label": "Beacon Chain"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solution",
+        "label": "Layer 2 Solution"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:high-throughput",
+        "label": "High Throughput"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:mass-adoption",
+        "label": "Mass Adoption"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-trilemma",
+        "label": "Blockchain Trilemma"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Traditional Payment System"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:performance",
+        "label": "System Performance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

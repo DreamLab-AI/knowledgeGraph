@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:condensed-matter-physics
   - urn:ngm:class:surface-science
   - urn:ngm:class:materials-informatics
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Material Science

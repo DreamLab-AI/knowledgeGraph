@@ -1,0 +1,89 @@
+{
+  "id": "urn:ngm:class:exoplanet-direct-imaging",
+  "title": "Exoplanet Direct Imaging",
+  "slug": "exoplanet-direct-imaging",
+  "public": true,
+  "classIri": "urn:ngm:class:exoplanet-direct-imaging",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Exoplanet direct imaging is the detection of a planet orbiting another star by capturing light from the planet itself, as though photographing it, rather than inferring it from indirect effects.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:astronomy",
+      "label": "Astronomy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exoplanet",
+        "label": "Exoplanet"
+      },
+      {
+        "id": "urn:ngm:class:observational-astronomy",
+        "label": "Observational Astronomy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telescope",
+        "label": "Telescope"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

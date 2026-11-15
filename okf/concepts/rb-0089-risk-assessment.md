@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0100-safety-integrity-level
   - urn:ngm:class:risk-assessment
   - urn:ngm:class:functional-safety
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0089 risk assessment

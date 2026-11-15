@@ -132,6 +132,7 @@ relatedTo:
   - urn:ngm:class:multi-agent-rag-architecture-compendium
   - urn:ngm:class:ai-assisted-ontology-elicitation-method
   - urn:ngm:class:semantic-web
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Knowledge Graphing

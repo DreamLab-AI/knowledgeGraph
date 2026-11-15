@@ -14,6 +14,7 @@ requires:
   - urn:ngm:class:human-oversight
   - urn:ngm:class:conformity-assessment
   - urn:ngm:class:human-oversight
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # High Risk AI System

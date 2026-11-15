@@ -55,6 +55,7 @@ relatedTo:
   - urn:ngm:class:mlops
   - urn:ngm:class:model-optimisation-and-performance
   - urn:ngm:class:neural-network-compilation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ONNX Runtime

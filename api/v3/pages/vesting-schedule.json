@@ -1,0 +1,420 @@
+{
+  "id": "urn:visionflow:page:f4e6ce0752f742a96aa082b79b8491f88c051875502a00dbe450482bfeef8974",
+  "title": "Vesting Schedule",
+  "slug": "vesting-schedule",
+  "public": true,
+  "classIri": "urn:ngm:class:vesting-schedule",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A vesting schedule is a contractually or programmatically enforced timetable that releases allocated digital assets or equity to recipients incrementally over a defined period, typically beginning after an initial cliff during which no release occurs. In blockchain and token-based systems, schedules are commonly encoded in smart contracts that autonomously unlock portions of a token allocation at fixed intervals or milestones, aligning the long-term incentives of founders, contributors, and investors with project health. The schedule's parameters \u2014 cliff length, total duration, release cadence, and revocation conditions \u2014 are a principal instrument of tokenomics design and governance risk management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
+      "id": "urn:ngm:class:token-distribution",
+      "label": "Token Distribution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cliff-period",
+        "label": "Cliff Period"
+      },
+      {
+        "id": "urn:ngm:class:release-interval",
+        "label": "Release Interval"
+      },
+      {
+        "id": "urn:ngm:class:revocation-clause",
+        "label": "Revocation Clause"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-allocation",
+        "label": "Token Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:supply-schedule",
+        "label": "Supply Schedule"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:airdrop",
+        "label": "Airdrop"
+      },
+      {
+        "id": "urn:ngm:class:immediate-token-release",
+        "label": "Immediate Token Release"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:equity-vesting",
+        "label": "Equity Vesting"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:escrow-system",
+        "label": "Escrow"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:escrow-system",
+        "label": "Escrow"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics",
+      "slug": "tokenomics"
+    },
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

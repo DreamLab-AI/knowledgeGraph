@@ -1,0 +1,300 @@
+{
+  "id": "urn:visionflow:page:c714b48f5fa637461856abe03de3db9819b8af0fec6dfda78283dfd43779f190",
+  "title": "Financial System",
+  "slug": "financial-system",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-system",
+  "domain": "finance",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:banking-system",
+        "label": "Banking System"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-transactions",
+        "label": "Financial Transactions"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Tokenised Economy"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:economic-systems",
+        "label": "Economic System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "ecb",
+      "label": "ECB"
+    },
+    {
+      "slug": "fsb",
+      "label": "FSB"
+    },
+    {
+      "slug": "monetary-system",
+      "label": "Monetary System"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

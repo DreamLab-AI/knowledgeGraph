@@ -1,0 +1,133 @@
+{
+  "id": "urn:visionflow:page:oecd-due-diligence-guidance",
+  "title": "OECD Due Diligence Guidance",
+  "slug": "oecd-due-diligence-guidance",
+  "public": true,
+  "classIri": "urn:ngm:class:oecd-due-diligence-guidance",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The OECD Due Diligence Guidance is guidance published by the Organisation for Economic Co-operation and Development on how enterprises can carry out due diligence for responsible business conduct, and this page is written without the OECD's own text, which could not be opened, from the way other instruments describe it.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Mineral Tracking"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "responsible-minerals-sourcing",
+      "label": "Responsible Minerals Sourcing"
+    },
+    {
+      "slug": "supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    },
+    {
+      "slug": "supply-chain-due-diligence",
+      "label": "Supply Chain Due Diligence"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

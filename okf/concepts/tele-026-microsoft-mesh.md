@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:virtual-reality
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:metaverse
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # TELE-026-microsoft-mesh

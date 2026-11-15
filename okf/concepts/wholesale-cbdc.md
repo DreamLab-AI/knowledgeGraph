@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:financial-infrastructure
   - urn:ngm:class:real-time-gross-settlement
   - urn:ngm:class:correspondent-banking
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Wholesale CBDC

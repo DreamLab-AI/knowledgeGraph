@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:accountability-event
   - urn:ngm:class:agent-delegation
   - urn:ngm:class:event-log
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Ledger Event

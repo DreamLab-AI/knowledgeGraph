@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:iata-temperature-control-regulations
   - urn:ngm:class:industrial-io-t
   - urn:ngm:class:pharmaceutical-traceability
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Cold Chain Logistics

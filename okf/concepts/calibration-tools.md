@@ -21,6 +21,7 @@ supports:
   - urn:ngm:class:optical-tracking
   - urn:ngm:class:environmental-verification
   - urn:ngm:class:xr-runtime-environment
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Calibration Tools

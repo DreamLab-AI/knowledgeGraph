@@ -1,0 +1,93 @@
+{
+  "id": "urn:ngm:class:flood-mapping",
+  "title": "Flood Mapping",
+  "slug": "flood-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:flood-mapping",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Flood mapping locates land affected by water or describes the probability, depth, velocity or consequences of flooding. The name covers several products with different meanings: an image-derived outline of an event, a forecast of what may happen, a modelled risk zone, or a planning scenario. A useful map therefore states its source, acquisition or valid time, spatial scale and intended decision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-observation-applications",
+      "label": "Earth Observation Applications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-applications",
+        "label": "Earth Observation Applications"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+      "label": "Earth Observation and Geospatial Sensing",
+      "slug": "earth-observation-and-geospatial-sensing"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanitarian-logistics",
+      "label": "Humanitarian Logistics"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

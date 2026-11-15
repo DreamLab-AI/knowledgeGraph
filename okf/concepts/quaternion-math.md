@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:ray-tracing
   - urn:ngm:class:vr-rendering-engine
   - urn:ngm:class:xr-hardware
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Quaternion Math

@@ -1,0 +1,176 @@
+{
+  "id": "urn:visionflow:page:supply-chain-finance",
+  "title": "Supply Chain Finance",
+  "slug": "supply-chain-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-finance",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain finance (SCF) is the use of financing and risk mitigation practices and techniques to optimise the management of the working capital and liquidity invested in supply chain processes and transactions.[^1] The Standard Definitions for Techniques of Supply Chain Finance add that SCF is typically applied to open account trade and is triggered by supply chain events, and that visibility of the underlying trade flows by the finance provider is a necessary component, which can be enabled by a technology platform.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "real-world asset tokenisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cash-to-cash-cycle-time",
+      "label": "Cash-to-Cash Cycle Time"
+    },
+    {
+      "slug": "open-account-trade",
+      "label": "Open Account Trade"
+    },
+    {
+      "slug": "receivables-factoring",
+      "label": "Receivables Factoring"
+    },
+    {
+      "slug": "reverse-factoring",
+      "label": "Reverse Factoring"
+    },
+    {
+      "slug": "supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance"
+    },
+    {
+      "slug": "trade-payment-method",
+      "label": "Trade Payment Method"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

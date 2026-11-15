@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:heat-pipe
 relatedTo:
   - urn:ngm:class:spacecraft-thermal-control
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T08:31:48Z"}
 ---
 
 # Loop Heat Pipe

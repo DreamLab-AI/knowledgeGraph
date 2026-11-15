@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:risk-management
   - urn:ngm:class:blockchain
   - urn:ngm:class:cryptocurrency
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Asset Risks

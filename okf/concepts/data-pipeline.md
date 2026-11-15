@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:feature-store
   - urn:ngm:class:earth-observation-data-cube
   - urn:ngm:class:earth-observation-analysis-ready-data
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Data Pipeline

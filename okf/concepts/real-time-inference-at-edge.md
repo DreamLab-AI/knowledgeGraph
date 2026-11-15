@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:edge-ai-system
   - urn:ngm:class:knowledge-distillation-for-edge
   - urn:ngm:class:model-pruning-for-edge-deployment
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Real-Time Inference at Edge

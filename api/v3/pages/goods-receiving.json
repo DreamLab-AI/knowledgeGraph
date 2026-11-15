@@ -1,0 +1,117 @@
+{
+  "id": "urn:ngm:class:goods-receiving",
+  "title": "Goods Receiving",
+  "slug": "goods-receiving",
+  "public": true,
+  "classIri": "urn:ngm:class:goods-receiving",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Goods receiving is the warehouse activity of unloading inbound products from the transport carrier, recording their arrival and inspecting them for quantity or quality problems.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:warehouse-operation",
+      "label": "Warehouse Operation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution",
+      "slug": "warehousing-and-distribution"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    },
+    {
+      "slug": "warehouse-storage-system",
+      "label": "Warehouse Storage System"
+    },
+    {
+      "slug": "bonded-warehouse",
+      "label": "Bonded Warehouse"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

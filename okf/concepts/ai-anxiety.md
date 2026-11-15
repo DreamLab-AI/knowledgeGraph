@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:ai-adoption
   - urn:ngm:class:job-displacement
   - urn:ngm:class:future-of-work
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Anxiety

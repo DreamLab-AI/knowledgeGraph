@@ -19,6 +19,7 @@ relatedTo:
   - urn:ngm:class:algorithmic-transparency-index
   - urn:ngm:class:algorithmic-transparency-reports
   - urn:ngm:class:decision-transparency
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Algorithmic Transparency

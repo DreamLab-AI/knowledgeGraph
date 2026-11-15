@@ -1,0 +1,103 @@
+{
+  "id": "urn:ngm:class:gnss-signal-acquisition",
+  "title": "GNSS Signal Acquisition",
+  "slug": "gnss-signal-acquisition",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-signal-acquisition",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "GNSS signal acquisition is the receiver process that detects a candidate satellite signal and estimates initial code-delay and carrier-frequency parameters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:positioning-navigation-and-timing",
+      "label": "Positioning Navigation and Timing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:positioning-navigation-and-timing",
+        "label": "Positioning Navigation and Timing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ground-control-point",
+        "label": "Ground Control Point"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geodetic-datum",
+        "label": "Geodetic Datum"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

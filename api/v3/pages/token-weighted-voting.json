@@ -1,0 +1,316 @@
+{
+  "id": "urn:visionflow:page:3f952ebd8bba87024c3b5ab7800ca5879fadf2126b044fc5c17d0f53240c2ea5",
+  "title": "token-weighted voting",
+  "slug": "token-weighted-voting",
+  "public": true,
+  "classIri": "urn:ngm:class:token-weighted-voting",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Token-weighted voting is an on-chain governance mechanism in which each participant's voting power is directly proportional to the quantity of governance tokens they hold, lock, or stake. It is the dominant decision-making primitive in decentralised autonomous organisations and DeFi protocols, enabling transparent, programmable, and censorship-resistant governance of parameter changes, treasury allocations, and protocol upgrades. The mechanism exhibits plutocratic tendencies in which large token holders disproportionately control outcomes, motivating research into alternative weighting schemes such as quadratic voting, conviction voting, and vote-escrow models. Implementations range from fully on-chain execution via Governor Bravo and OpenZeppelin Governor to off-chain gasless signalling via platforms such as Snapshot.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Token"
+      },
+      {
+        "id": "urn:ngm:class:quorum-threshold",
+        "label": "Quorum Threshold"
+      },
+      {
+        "id": "urn:ngm:class:erc20-token",
+        "label": "ERC-20 Token"
+      },
+      {
+        "id": "urn:ngm:class:proposal-mechanism",
+        "label": "Proposal Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:parameter-governance",
+        "label": "Parameter Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:one-person-one-vote",
+        "label": "One Person One Vote"
+      },
+      {
+        "id": "urn:ngm:class:reputation-based-voting",
+        "label": "Reputation-Based Voting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:plutocracy",
+        "label": "Plutocracy"
+      },
+      {
+        "id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
+      },
+      {
+        "id": "urn:ngm:class:voter-turnout",
+        "label": "Voter Turnout"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

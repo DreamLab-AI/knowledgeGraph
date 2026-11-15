@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:bandwidth-adaptation
   - urn:ngm:class:network-congestion
   - urn:ngm:class:jitter
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Quality Of Service

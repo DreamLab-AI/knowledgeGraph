@@ -55,6 +55,7 @@ relatedTo:
   - urn:ngm:class:system-on-chip
   - urn:ngm:class:field-programmable-gate-array
   - urn:ngm:class:printed-circuit-board
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hardware Component

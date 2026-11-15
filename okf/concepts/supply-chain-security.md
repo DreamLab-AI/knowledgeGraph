@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:third-party-risk-management
   - urn:ngm:class:secure-boot
   - urn:ngm:class:hardware-security
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Supply Chain Security

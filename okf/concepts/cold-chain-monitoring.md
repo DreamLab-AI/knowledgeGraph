@@ -121,6 +121,7 @@ relatedTo:
   - urn:ngm:class:smart-contracts
   - urn:ngm:class:food-supply-chain
   - urn:ngm:class:pharmaceutical-logistics
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cold Chain Monitoring

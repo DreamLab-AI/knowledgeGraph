@@ -1,0 +1,181 @@
+{
+  "id": "urn:visionflow:page:warehouse-management-system",
+  "title": "Warehouse Management System",
+  "slug": "warehouse-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:warehouse-management-system",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A warehouse management system (WMS) is a large software system that coordinates the activities of a warehouse.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:order-picking",
+        "label": "Order Picking"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems",
+      "slug": "supply-chain-information-systems"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "order-management-system",
+      "label": "Order Management System"
+    },
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    },
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

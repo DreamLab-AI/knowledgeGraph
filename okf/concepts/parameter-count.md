@@ -19,6 +19,7 @@ partOf:
   - urn:ngm:class:large-language-model
 relatedTo:
   - urn:ngm:class:machine-learning-discipline-infrastructure
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Parameter Count

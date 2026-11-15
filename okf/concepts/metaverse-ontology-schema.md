@@ -34,6 +34,7 @@ partOf:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:semantic-web-linked-data-standard-infrastructure
   - urn:ngm:class:knowledge-representation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Metaverse Ontology Schema

@@ -1,0 +1,524 @@
+{
+  "id": "urn:visionflow:page:924ed24ffbc912340826ee9cd4e691432b8fab21aedce556a739347085b3863a",
+  "title": "Digital Asset",
+  "slug": "digital-asset",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-asset",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A digital asset is any electronically stored item of value that carries ownership rights and can be transferred, traded, or programmatically controlled \u2014 encompassing cryptocurrencies, tokenised securities, non-fungible tokens, stablecoins, and programmable financial instruments. Digital assets achieve verifiable scarcity and ownership through cryptographic proofs, with blockchain-based variants recorded immutably on distributed ledgers and governed by smart contracts. The class spans both on-chain native assets (e.g., BTC, ETH) and real-world asset tokenisations (RWAs), where legal property rights are encoded into blockchain representations enabling fractional ownership, automated compliance, and atomic settlement. Regulatory frameworks globally now classify digital assets across securities, commodities, payment instruments, and utility categories, shaping issuance, custody, and trading obligations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-augmented-software-engineering",
+      "label": "AI-Augmented Software Engineering"
+    },
+    {
+      "slug": "avatar-wearable",
+      "label": "Avatar Wearable"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "binance",
+      "label": "Binance"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "coinbase",
+      "label": "Coinbase"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "fireblocks",
+      "label": "Fireblocks"
+    },
+    {
+      "slug": "global-digital-finance",
+      "label": "Global Digital Finance"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "inter-world-remittance",
+      "label": "Inter-world Remittance"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "liquid-network",
+      "label": "Liquid Network"
+    },
+    {
+      "slug": "metaverse-technology",
+      "label": "Metaverse Technology"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-fungible-token-nft",
+      "label": "Non-Fungible Token (NFT)"
+    },
+    {
+      "slug": "open-sea",
+      "label": "OpenSea"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "symbolic-object-library",
+      "label": "Symbolic Object Library"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "the-sandbox",
+      "label": "The Sandbox"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    },
+    {
+      "slug": "virtual-currency",
+      "label": "Virtual Currency"
+    },
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    },
+    {
+      "slug": "virtual-objects",
+      "label": "Virtual Objects"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

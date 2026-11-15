@@ -19,6 +19,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:software-engineering
   - urn:ngm:class:semantic-web-linked-data-standard-standards
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Knowledge Graph Style Guide

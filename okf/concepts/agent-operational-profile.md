@@ -13,6 +13,7 @@ hasPart:
   - urn:ngm:class:agent-trigger
   - urn:ngm:class:agent-input-specification
   - urn:ngm:class:agent-output-specification
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Operational Profile

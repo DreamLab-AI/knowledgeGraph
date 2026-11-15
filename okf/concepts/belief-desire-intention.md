@@ -103,6 +103,7 @@ relatedTo:
   - urn:ngm:class:modal-logic
   - urn:ngm:class:temporal-logic
   - urn:ngm:class:goal-oriented-action-planning
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Belief Desire Intention

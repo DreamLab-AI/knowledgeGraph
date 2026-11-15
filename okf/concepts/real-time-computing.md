@@ -50,6 +50,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:concurrency
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Real-Time Computing

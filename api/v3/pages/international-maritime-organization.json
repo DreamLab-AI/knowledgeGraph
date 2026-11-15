@@ -1,0 +1,108 @@
+{
+  "id": "urn:ngm:class:international-maritime-organization",
+  "title": "International Maritime Organization",
+  "slug": "international-maritime-organization",
+  "public": true,
+  "classIri": "urn:ngm:class:international-maritime-organization",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The International Maritime Organization (IMO) is the United Nations specialized agency with responsibility for the safety and security of shipping and the prevention of marine and atmospheric pollution by ships. That is the organisation's own description, and the United Nations lists the IMO among its specialized agencies, which it describes as autonomous international organizations working with the United Nations, with the IMO's headquarters in London.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:intergovernmental-trade-organisation",
+      "label": "Intergovernmental Trade Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "intergovernmental-trade-organisation",
+      "label": "Intergovernmental Trade Organisation"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    },
+    {
+      "slug": "container-shipping",
+      "label": "Container Shipping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "intergovernmental-trade-organisation",
+      "label": "Intergovernmental Trade Organisation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

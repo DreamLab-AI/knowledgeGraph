@@ -64,6 +64,7 @@ relatedTo:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:quantum-computing
   - urn:ngm:class:constraint-solver
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Combinatorial Optimisation

@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:smart-contract-execution
   - urn:ngm:class:ethereum-smart-contract-platform-virtual-machine
   - urn:ngm:class:web-assembly
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Virtual Machine

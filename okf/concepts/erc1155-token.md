@@ -29,6 +29,7 @@ relatedTo:
   - urn:ngm:class:fungible-token
   - urn:ngm:class:web3
   - urn:ngm:class:smart-contracts
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ERC1155 Token

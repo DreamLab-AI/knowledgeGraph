@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:3-d-scanning
   - urn:ngm:class:ne-rf
   - urn:ngm:class:gaussian-splatting
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # 3D Scene Reconstruction

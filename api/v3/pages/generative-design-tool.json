@@ -1,0 +1,361 @@
+{
+  "id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92",
+  "title": "Generative Design Tool",
+  "slug": "generative-design-tool",
+  "public": true,
+  "classIri": "urn:ngm:class:generative-design-tool",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:design-optimizer",
+        "label": "Design Optimizer"
+      },
+      {
+        "id": "urn:ngm:class:3d-generator",
+        "label": "3D Generator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:design-database",
+        "label": "Design Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:design-optimization",
+        "label": "Design Optimization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-engine",
+        "label": "AI Engine"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-creation-tool",
+        "label": "Content Creation Tool"
+      },
+      {
+        "id": "urn:ngm:class:authoring-tool",
+        "label": "Authoring Tool"
+      }
+    ],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "3-d-generator",
+      "label": "3D Generator"
+    },
+    {
+      "slug": "ai-engine",
+      "label": "AI Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "autodesk-design-ml",
+      "label": "Autodesk Design ML"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "content-creation-tool",
+      "label": "Content Creation Tool"
+    },
+    {
+      "slug": "design-database",
+      "label": "Design Database"
+    },
+    {
+      "slug": "design-optimization",
+      "label": "Design Optimization"
+    },
+    {
+      "slug": "design-optimizer",
+      "label": "Design Optimizer"
+    },
+    {
+      "slug": "siggraph-ai-design-wg",
+      "label": "SIGGRAPH AI Design WG"
+    },
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint-Based Design"
+    },
+    {
+      "slug": "ai-application",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "parametric-modeling",
+      "label": "Parametric Modeling"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

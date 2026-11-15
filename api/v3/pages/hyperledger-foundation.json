@@ -1,0 +1,318 @@
+{
+  "id": "urn:visionflow:page:b2afffed2a0f04e077960bec406bb6bf2f5f0d7a7707585cb3f091b065358238",
+  "title": "hyperledger foundation",
+  "slug": "hyperledger-foundation",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperledger-foundation",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The Hyperledger Foundation is an open-source collaborative initiative hosted by the Linux Foundation, founded in December 2015, that stewards a portfolio of enterprise-grade distributed ledger frameworks, identity toolkits, and interoperability libraries. Its flagship projects include Hyperledger Fabric (a modular permissioned DLT with pluggable consensus and chaincode-based smart contracts), Hyperledger Besu (an Ethereum-compatible client for public and private enterprise networks), Hyperledger Aries (a decentralised identity and verifiable credentials stack), and Hyperledger Cacti (a cross-ledger interoperability framework). The Foundation operates under an open-governance model with a Technical Steering Committee, project lifecycle governance (Incubation, Graduated, Dormant), and membership tiers spanning major technology vendors, financial institutions, and government bodies worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-cacti",
+        "label": "Hyperledger Cacti"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:open-governance",
+        "label": "Open Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-besu",
+      "label": "Hyperledger Besu"
+    },
+    {
+      "slug": "hyperledger-fabric",
+      "label": "Hyperledger Fabric"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

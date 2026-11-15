@@ -14,6 +14,7 @@ enables:
 relatedTo:
   - urn:ngm:class:instant-messaging
   - urn:ngm:class:read-receipts
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Typing Indicators

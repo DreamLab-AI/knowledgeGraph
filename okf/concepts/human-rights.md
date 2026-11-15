@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:sa8000
   - urn:ngm:class:supplier-code-of-conduct
   - urn:ngm:class:supply-chain-due-diligence
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Human Rights

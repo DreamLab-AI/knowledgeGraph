@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:stereo-camera
   - urn:ngm:class:rb-0068-vision-system
   - urn:ngm:class:rb-0069-lidar
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0077 depth camera

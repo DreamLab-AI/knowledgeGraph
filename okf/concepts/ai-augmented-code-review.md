@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:pull-request
   - urn:ngm:class:static-analysis
   - urn:ngm:class:ai-code-generation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI-Augmented Code Review

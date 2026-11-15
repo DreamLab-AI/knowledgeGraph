@@ -1,0 +1,104 @@
+{
+  "id": "urn:ngm:class:kuehne-nagel",
+  "title": "Kuehne+Nagel",
+  "slug": "kuehne-nagel",
+  "public": true,
+  "classIri": "urn:ngm:class:kuehne-nagel",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Kuehne+Nagel is a freight forwarding and logistics group headquartered in Switzerland. Its own site says that in 1890 August Kuehne and Friedrich Nagel founded a freight forwarding company in Bremen, Germany, and that Kuehne+Nagel is today headquartered in Switzerland with a presence all over the world.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-forwarder",
+      "label": "Freight Forwarder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider",
+      "slug": "logistics-service-provider"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:freight-consolidation",
+        "label": "Freight Consolidation"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "freight-forwarder",
+      "label": "Freight Forwarder"
+    },
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

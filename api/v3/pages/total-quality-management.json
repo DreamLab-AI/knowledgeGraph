@@ -1,0 +1,138 @@
+{
+  "id": "urn:ngm:class:total-quality-management",
+  "title": "Total Quality Management",
+  "slug": "total-quality-management",
+  "public": true,
+  "classIri": "urn:ngm:class:total-quality-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Total quality management is a management approach in which all departments, employees and managers are responsible for continuously improving quality so that products and services meet or exceed customer expectations.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-management-philosophy",
+      "label": "Production Management Philosophy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:statistical-process-control",
+        "label": "Statistical Process Control"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:production-operations",
+      "label": "Production Operations",
+      "slug": "production-operations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "kaizen",
+      "label": "Kaizen"
+    },
+    {
+      "slug": "lean-production",
+      "label": "Lean Production"
+    },
+    {
+      "slug": "six-sigma",
+      "label": "Six Sigma"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "kaizen",
+      "label": "Kaizen"
+    },
+    {
+      "slug": "overall-equipment-effectiveness",
+      "label": "Overall Equipment Effectiveness"
+    },
+    {
+      "slug": "production-management-philosophy",
+      "label": "Production Management Philosophy"
+    },
+    {
+      "slug": "six-sigma",
+      "label": "Six Sigma"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

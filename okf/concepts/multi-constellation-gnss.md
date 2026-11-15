@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
   - urn:ngm:class:sensor-fusion
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:40:00Z"}
 ---
 
 # Multi-constellation GNSS

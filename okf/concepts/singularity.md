@@ -75,6 +75,7 @@ relatedTo:
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:emergence
   - urn:ngm:class:history-and-path-to-agi
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Singularity

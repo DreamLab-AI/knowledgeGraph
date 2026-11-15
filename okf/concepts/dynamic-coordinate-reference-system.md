@@ -13,6 +13,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:coordinate-epoch
   - urn:ngm:class:geodetic-reference-frame
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:35:45Z"}
 ---
 
 # Dynamic Coordinate Reference System

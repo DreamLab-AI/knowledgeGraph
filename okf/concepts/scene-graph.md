@@ -36,6 +36,7 @@ partOf:
   - urn:ngm:class:gl-tf-3-d-file-format
   - urn:ngm:class:rendering-engine
   - urn:ngm:class:virtual-world
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Scene Graph

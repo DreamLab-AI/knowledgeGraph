@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:rb-0091-safety-rated-monitored-stop
   - urn:ngm:class:rb-0094-power-and-force-limiting
   - urn:ngm:class:rb-0093-speed-limitation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0096 safeguarding

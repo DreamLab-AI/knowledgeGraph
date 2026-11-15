@@ -82,6 +82,7 @@ relatedTo:
   - urn:ngm:class:wisdom-of-crowds
   - urn:ngm:class:distributed-artificial-intelligence
   - urn:ngm:class:human-computer-interaction
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Collective Intelligence System

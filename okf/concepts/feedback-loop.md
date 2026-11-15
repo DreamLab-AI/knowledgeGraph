@@ -95,6 +95,7 @@ relatedTo:
   - urn:ngm:class:autopoiesis
   - urn:ngm:class:goodhart-s-law
   - urn:ngm:class:tipping-point
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Feedback Loop

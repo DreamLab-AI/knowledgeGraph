@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:energy-efficiency
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:reliability
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Non Volatile Memory

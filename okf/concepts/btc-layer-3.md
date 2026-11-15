@@ -120,6 +120,7 @@ relatedTo:
   - urn:ngm:class:scalability-solutions
   - urn:ngm:class:defi-protocols
   - urn:ngm:class:state-channel
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # BTC Layer 3

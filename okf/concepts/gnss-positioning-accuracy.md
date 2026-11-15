@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:gnss-integrity
   - urn:ngm:class:gnss-positioning-error
   - urn:ngm:class:measurement-accuracy
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:40:00Z"}
 ---
 
 # GNSS Positioning Accuracy

@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:data-schema
   - urn:ngm:class:schema-registry
   - urn:ngm:class:xml
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Document Store

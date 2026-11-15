@@ -1,0 +1,186 @@
+{
+  "id": "urn:ngm:class:supply-chain-simulation",
+  "title": "Supply Chain Simulation",
+  "slug": "supply-chain-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-simulation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain simulation is the use of simulation models to investigate supply chain problems, and the choice of simulation type depends on the managerial question to be answered.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-optimisation",
+      "label": "Supply Chain Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete Event Simulation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning",
+      "slug": "supply-chain-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-optimisation",
+        "label": "Stochastic Optimisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-optimisation",
+      "label": "Supply Chain Optimisation"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

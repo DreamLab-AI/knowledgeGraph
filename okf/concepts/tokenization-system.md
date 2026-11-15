@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:fractionalized-nft
   - urn:ngm:class:crypto-token
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Tokenization System

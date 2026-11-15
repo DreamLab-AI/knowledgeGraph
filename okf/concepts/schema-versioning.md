@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:data-schema
   - urn:ngm:class:xml-schema-definition
   - urn:ngm:class:rest-api
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Schema Versioning

@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:optimisation-algorithm
   - urn:ngm:class:answer-set-programming
   - urn:ngm:class:constraint-logic-programming
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Constraint Satisfaction

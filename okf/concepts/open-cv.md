@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:object-detection
   - urn:ngm:class:optical-flow
   - urn:ngm:class:stereo-vision
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # OpenCV

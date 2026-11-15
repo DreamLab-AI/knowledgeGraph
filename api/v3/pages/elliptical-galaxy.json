@@ -1,0 +1,94 @@
+{
+  "id": "urn:ngm:class:elliptical-galaxy",
+  "title": "Elliptical Galaxy",
+  "slug": "elliptical-galaxy",
+  "public": true,
+  "classIri": "urn:ngm:class:elliptical-galaxy",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An elliptical galaxy is a galaxy with a shape ranging from completely round to oval, usually containing little gas and dust and showing very little organised structure.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:galaxy",
+      "label": "Galaxy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body",
+      "slug": "astronomical-body"
+    },
+    {
+      "id": "urn:ngm:class:astronomy",
+      "label": "Astronomy",
+      "slug": "astronomy"
+    },
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telescope",
+        "label": "Telescope"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

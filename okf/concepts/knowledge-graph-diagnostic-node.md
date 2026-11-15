@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:node
   - urn:ngm:class:linked-data
   - urn:ngm:class:distributed-logseq-knowledge-network
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Knowledge Graph Diagnostic Node

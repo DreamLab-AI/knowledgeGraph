@@ -1,0 +1,405 @@
+{
+  "id": "urn:visionflow:page:lender-of-last-resort",
+  "title": "Lender Of Last Resort",
+  "slug": "lender-of-last-resort",
+  "public": true,
+  "classIri": "urn:ngm:class:lender-of-last-resort",
+  "domain": "finance",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A lender of last resort is an institution, typically a central bank, that provides liquidity to solvent but illiquid financial institutions during a crisis when no other source of funding is available. By standing ready to lend freely against good collateral at a penalty rate, it aims to halt bank runs and contagion and to preserve financial stability. The role embodies Bagehot's principle of lending to solvent firms to stem systemic panic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System",
+      "slug": "monetary-system"
+    },
+    {
+      "id": "urn:ngm:class:financial-system",
+      "label": "Financial System",
+      "slug": "financial-system"
+    },
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:discount-window",
+        "label": "Discount Window"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank-independence",
+        "label": "Central Bank Independence"
+      },
+      {
+        "id": "urn:ngm:class:foreign-exchange-reserves",
+        "label": "Foreign Exchange Reserves"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:economic-exchange",
+        "label": "Economic Exchange"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:government-bond-market",
+        "label": "Government Bond Market"
+      },
+      {
+        "id": "urn:ngm:class:interbank-market",
+        "label": "Interbank Market"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      },
+      {
+        "id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Tokenised Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposit",
+        "label": "Tokenised Deposit"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

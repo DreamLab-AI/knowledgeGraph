@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:natural-language-processing
   - urn:ngm:class:context-awareness
   - urn:ngm:class:a-b-testing
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Predictive Personalization

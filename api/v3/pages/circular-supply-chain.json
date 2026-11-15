@@ -1,0 +1,120 @@
+{
+  "id": "urn:ngm:class:circular-supply-chain",
+  "title": "Circular Supply Chain",
+  "slug": "circular-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:circular-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A circular supply chain is a supply chain organised so that products and materials are kept in use and returned to the economy, in contrast to a linear chain that ends in waste, and no source opened here defines the term itself.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "reverse-logistics",
+      "label": "Reverse Logistics"
+    },
+    {
+      "slug": "product-take-back-scheme",
+      "label": "Product Take-Back Scheme"
+    },
+    {
+      "slug": "deposit-return-scheme",
+      "label": "Deposit Return Scheme"
+    },
+    {
+      "slug": "cradle-to-cradle-design",
+      "label": "Cradle-to-Cradle Design"
+    },
+    {
+      "slug": "material-flow-analysis",
+      "label": "Material Flow Analysis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "product-take-back-scheme",
+      "label": "Product Take-Back Scheme"
+    },
+    {
+      "slug": "sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

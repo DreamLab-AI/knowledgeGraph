@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:5-g-network
 uses:
   - urn:ngm:class:network-slicing
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Private 5G Network

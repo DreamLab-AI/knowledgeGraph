@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:healthcare-employment
   - urn:ngm:class:continuous-preventative-healthcare
   - urn:ngm:class:decision-support
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Continuous Care Navigator

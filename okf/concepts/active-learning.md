@@ -52,6 +52,7 @@ implements:
   - urn:ngm:class:expected-model-change
   - urn:ngm:class:expected-error-reduction
   - urn:ngm:class:density-weighted-methods
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Active Learning

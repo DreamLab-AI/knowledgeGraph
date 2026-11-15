@@ -28,6 +28,7 @@ relatedTo:
   - urn:ngm:class:gross-domestic-product
   - urn:ngm:class:monetary-policy
   - urn:ngm:class:fiscal-policy
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Economic Growth

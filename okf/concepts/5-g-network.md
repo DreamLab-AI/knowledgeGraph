@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:open-ran
   - urn:ngm:class:mobile-edge-computing
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # 5G Network

@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:carbon-neutrality-planning
   - urn:ngm:class:responsible-ai-principles
   - urn:ngm:class:transparency
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Societal and Environmental Wellbeing

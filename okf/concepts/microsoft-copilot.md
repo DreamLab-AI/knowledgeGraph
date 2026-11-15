@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:openai-research-organisation
   - urn:ngm:class:enterprise-ai
   - urn:ngm:class:openai-research-organisation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Microsoft Copilot

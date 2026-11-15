@@ -1,0 +1,462 @@
+{
+  "id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4",
+  "title": "Consensus Algorithm",
+  "slug": "consensus-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:consensus-algorithm",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority, tolerating a bounded fraction of faulty or malicious nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "achieves-finality",
+      "label": "achievesFinality"
+    },
+    {
+      "slug": "consensus-algorithms",
+      "label": "Consensus Algorithms"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "data-integrity",
+      "label": "Data Integrity"
+    },
+    {
+      "slug": "distributed-consensus",
+      "label": "DistributedConsensus"
+    },
+    {
+      "slug": "dt-coordinates",
+      "label": "dt:coordinates"
+    },
+    {
+      "slug": "dt-governs",
+      "label": "dt:governs"
+    },
+    {
+      "slug": "dt-secures",
+      "label": "dt:secures"
+    },
+    {
+      "slug": "dt-synchronizes",
+      "label": "dt:synchronizes"
+    },
+    {
+      "slug": "dt-validates",
+      "label": "dt:validates"
+    },
+    {
+      "slug": "implemented-by",
+      "label": "implementedBy"
+    },
+    {
+      "slug": "iso-iec-2382-2025",
+      "label": "ISO/IEC 2382:2025"
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "label": "Metaverse Standards Forum"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "MultiAgentSystem"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "network-security",
+      "label": "NetworkSecurity"
+    },
+    {
+      "slug": "requires-validators",
+      "label": "requiresValidators"
+    },
+    {
+      "slug": "tolerates-faults",
+      "label": "toleratesFaults"
+    },
+    {
+      "slug": "trustless-coordination",
+      "label": "Trustless Coordination"
+    },
+    {
+      "slug": "validator-network",
+      "label": "ValidatorNetwork"
+    },
+    {
+      "slug": "blockchain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "DAO"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "DigitalAsset"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "DigitalTwin"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "FaultTolerance"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof of Stake"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "ProofOfStake"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "VirtualWorld"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    },
+    {
+      "slug": "flp-impossibility",
+      "label": "FLP Impossibility"
+    },
+    {
+      "slug": "hedera-hashgraph",
+      "label": "Hedera Hashgraph"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "qbft",
+      "label": "QBFT"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:compute-infrastructure
   - urn:ngm:class:quantum-network-node
   - urn:ngm:class:cryptography
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Quantum AI

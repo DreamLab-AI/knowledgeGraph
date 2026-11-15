@@ -1,0 +1,232 @@
+{
+  "id": "urn:visionflow:page:073e0c9f1c4b15d5b5ca45d461c5fd043e05759118df2b058a9ed175f2c395e7",
+  "title": "Supply Chain Management",
+  "slug": "supply-chain-management",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain management (SCM) is the management of the activities by which products and services are sourced, converted and delivered across the organisations of a supply chain. The Council of Supply Chain Management Professionals (CSCMP) defines it as the planning and management of all activities involved in sourcing and procurement, conversion and all logistics management activities, and states that in essence it integrates supply and demand management within and across companies.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:supplier-relationship-management",
+        "label": "Supplier Relationship Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-In-Time Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:value-chain-management",
+        "label": "Value Chain Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operations-management",
+        "label": "Operations Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      },
+      {
+        "id": "urn:ngm:class:space-prime",
+        "label": "Space Prime"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

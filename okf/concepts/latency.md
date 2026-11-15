@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:round-trip-time
   - urn:ngm:class:edge-computing
   - urn:ngm:class:content-delivery-network
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Latency

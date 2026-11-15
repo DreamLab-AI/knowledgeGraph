@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:cryptocurrency-token
   - urn:ngm:class:staking
   - urn:ngm:class:miner-extractable-value
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Blockchain Economics

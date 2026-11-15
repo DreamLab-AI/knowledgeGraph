@@ -1,0 +1,115 @@
+{
+  "id": "urn:ngm:class:reverse-auction",
+  "title": "Reverse Auction",
+  "slug": "reverse-auction",
+  "public": true,
+  "classIri": "urn:ngm:class:reverse-auction",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A reverse auction is an auction in which suppliers bid prices downwards against each other in real time, and the buyer selects the winner.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sourcing-event",
+      "label": "Sourcing Event"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "request-for-quotation",
+      "label": "Request for Quotation"
+    },
+    {
+      "slug": "request-for-proposal",
+      "label": "Request for Proposal"
+    },
+    {
+      "slug": "sourcing-event",
+      "label": "Sourcing Event"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "request-for-proposal",
+      "label": "Request for Proposal"
+    },
+    {
+      "slug": "request-for-quotation",
+      "label": "Request for Quotation"
+    },
+    {
+      "slug": "sourcing-event",
+      "label": "Sourcing Event"
+    },
+    {
+      "slug": "sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

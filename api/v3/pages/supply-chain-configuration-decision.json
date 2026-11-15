@@ -1,0 +1,135 @@
+{
+  "id": "urn:ngm:class:supply-chain-configuration-decision",
+  "title": "Supply Chain Configuration Decision",
+  "slug": "supply-chain-configuration-decision",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-configuration-decision",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain configuration decision is a choice about how the operations of a supply chain are arranged, including what a firm makes and what it buys, and where its facilities and sources are located.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "outsourcing",
+      "label": "Outsourcing"
+    },
+    {
+      "slug": "offshoring",
+      "label": "Offshoring"
+    },
+    {
+      "slug": "nearshoring",
+      "label": "Nearshoring"
+    },
+    {
+      "slug": "reshoring",
+      "label": "Reshoring"
+    },
+    {
+      "slug": "friendshoring",
+      "label": "Friendshoring"
+    },
+    {
+      "slug": "supply-chain-strategy",
+      "label": "Supply Chain Strategy"
+    },
+    {
+      "slug": "supply-chain-network-design",
+      "label": "Supply Chain Network Design"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "friendshoring",
+      "label": "Friendshoring"
+    },
+    {
+      "slug": "nearshoring",
+      "label": "Nearshoring"
+    },
+    {
+      "slug": "offshoring",
+      "label": "Offshoring"
+    },
+    {
+      "slug": "outsourcing",
+      "label": "Outsourcing"
+    },
+    {
+      "slug": "reshoring",
+      "label": "Reshoring"
+    },
+    {
+      "slug": "sourcing-strategy",
+      "label": "Sourcing Strategy"
+    },
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

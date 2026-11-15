@@ -1,0 +1,138 @@
+{
+  "id": "urn:ngm:class:kaizen",
+  "title": "Kaizen",
+  "slug": "kaizen",
+  "public": true,
+  "classIri": "urn:ngm:class:kaizen",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Kaizen is a Japanese word that means continuous improvement, and in production it names the practice of making small, incremental improvements in processes and systems that lead to significant long-term benefits.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lean-production",
+      "label": "Lean Production"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:production-management-philosophy",
+      "label": "Production Management Philosophy",
+      "slug": "production-management-philosophy"
+    },
+    {
+      "id": "urn:ngm:class:production-operations",
+      "label": "Production Operations",
+      "slug": "production-operations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-factory",
+        "label": "Virtual Factory"
+      },
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "lean-production",
+      "label": "Lean Production"
+    },
+    {
+      "slug": "six-sigma",
+      "label": "Six Sigma"
+    },
+    {
+      "slug": "total-quality-management",
+      "label": "Total Quality Management"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "lean-production",
+      "label": "Lean Production"
+    },
+    {
+      "slug": "production-management-philosophy",
+      "label": "Production Management Philosophy"
+    },
+    {
+      "slug": "six-sigma",
+      "label": "Six Sigma"
+    },
+    {
+      "slug": "total-quality-management",
+      "label": "Total Quality Management"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

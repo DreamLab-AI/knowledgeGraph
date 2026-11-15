@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:sa8000",
+  "title": "SA8000",
+  "slug": "sa8000",
+  "public": true,
+  "classIri": "urn:ngm:class:sa8000",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "SA8000 is a social certification standard, owned by Social Accountability International, that sets requirements for decent work and a management system for meeting them.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "supplier-code-of-conduct",
+      "label": "Supplier Code of Conduct"
+    },
+    {
+      "slug": "supply-chain-governance",
+      "label": "Supply Chain Governance"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

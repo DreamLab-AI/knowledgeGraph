@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:differential-privacy
   - urn:ngm:class:internet-of-things
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # On-Device Learning

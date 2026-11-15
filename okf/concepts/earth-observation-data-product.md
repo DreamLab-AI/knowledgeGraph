@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:observation-provenance
   - urn:ngm:class:processing-lineage
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:48:23Z"}
 ---
 
 # Earth Observation Data Product

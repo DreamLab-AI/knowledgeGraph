@@ -1,0 +1,368 @@
+{
+  "id": "urn:visionflow:page:futarchy",
+  "title": "Futarchy",
+  "slug": "futarchy",
+  "public": true,
+  "classIri": "urn:ngm:class:futarchy",
+  "domain": "governance",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Futarchy is a governance mechanism proposed by economist Robin Hanson in which policy decisions are made by first defining measurable societal welfare metrics and then adopting whichever policy candidate is predicted by speculative prediction markets to maximise those metrics. Under futarchy, democratic institutions vote on the values or welfare criteria to optimise, while market prices \u2014 which aggregate information from many participants through financial incentives \u2014 determine the means by which those values are pursued, on the premise that markets are better information aggregators than committees for empirical questions about causal consequences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:voting-mechanism",
+      "label": "Voting Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:evidence-based-policy",
+        "label": "Evidence-Based Policy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:efficient-market-hypothesis",
+        "label": "Efficient Market Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:wisdom-of-crowds",
+        "label": "Wisdom of Crowds"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:representative-democracy",
+        "label": "Representative Democracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Market"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decision-market",
+        "label": "Decision Market"
+      },
+      {
+        "id": "urn:ngm:class:epistocracy",
+        "label": "Epistocracy"
+      },
+      {
+        "id": "urn:ngm:class:technocracy",
+        "label": "Technocracy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-off-chain-voting",
+        "label": "Off-Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Plutocratic Governance"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

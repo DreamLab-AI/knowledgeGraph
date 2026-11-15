@@ -1,0 +1,343 @@
+{
+  "id": "urn:visionflow:page:c5c3d96670b55afee25d4c5583b929bf9fb1b3c2e67e9bcf8e95d3dd5ba2862c",
+  "title": "OpenSea",
+  "slug": "open-sea",
+  "public": true,
+  "classIri": "urn:ngm:class:open-sea",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "OpenSea is a peer-to-peer decentralised marketplace for non-fungible tokens (NFTs), enabling users to mint, list, auction, and trade digital assets on multiple blockchain networks including Ethereum, Polygon, Solana, and others. Founded in 2017, it operates through integration with self-custodial crypto wallets and on-chain smart contracts that escrow assets and execute transfers atomically upon payment settlement. OpenSea pioneered the concept of a permissionless NFT trading platform, supporting diverse token standards such as ERC-721 and ERC-1155, and providing creator royalty enforcement mechanisms at the contract level.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nft-marketplace",
+      "label": "NFT Marketplace"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-trading",
+        "label": "Peer-to-Peer Trading"
+      },
+      {
+        "id": "urn:ngm:class:creator-royalties",
+        "label": "Creator Royalties"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rarible",
+        "label": "Rarible"
+      },
+      {
+        "id": "urn:ngm:class:blur",
+        "label": "Blur"
+      },
+      {
+        "id": "urn:ngm:class:foundation",
+        "label": "Foundation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-real-estate",
+        "label": "Virtual Real Estate"
+      },
+      {
+        "id": "urn:ngm:class:digital-real-estate",
+        "label": "Virtual Real Estate"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "id": "urn:ngm:class:nft-renting",
+        "label": "NFT Renting"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "digital-asset",
+      "label": "Digital Asset"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "nft-marketplace",
+      "label": "NFT Marketplace"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

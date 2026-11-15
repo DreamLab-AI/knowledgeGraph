@@ -55,6 +55,7 @@ relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:double-materiality
   - urn:ngm:class:supply-chain-due-diligence
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # SustainabilityReporting

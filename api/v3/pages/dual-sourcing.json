@@ -1,0 +1,130 @@
+{
+  "id": "urn:ngm:class:dual-sourcing",
+  "title": "Dual Sourcing",
+  "slug": "dual-sourcing",
+  "public": true,
+  "classIri": "urn:ngm:class:dual-sourcing",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Dual sourcing is the practice of buying the same item from two suppliers rather than one, most often to reduce the risk of disruption.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sourcing-strategy",
+      "label": "Sourcing Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supplier-diversification",
+        "label": "Supplier Diversification"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:strategic-sourcing",
+      "label": "Strategic Sourcing",
+      "slug": "strategic-sourcing"
+    },
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:total-cost-of-ownership",
+        "label": "Total Cost of Ownership"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "single-sourcing",
+      "label": "Single Sourcing"
+    },
+    {
+      "slug": "sole-sourcing",
+      "label": "Sole Sourcing"
+    },
+    {
+      "slug": "sourcing-strategy",
+      "label": "Sourcing Strategy"
+    },
+    {
+      "slug": "supply-chain-resilience",
+      "label": "Supply Chain Resilience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "single-sourcing",
+      "label": "Single Sourcing"
+    },
+    {
+      "slug": "sole-sourcing",
+      "label": "Sole Sourcing"
+    },
+    {
+      "slug": "sourcing-strategy",
+      "label": "Sourcing Strategy"
+    },
+    {
+      "slug": "sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

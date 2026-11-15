@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:hot-stuff-consensus
   - urn:ngm:class:leader-based-protocol
   - urn:ngm:class:total-order-broadcast
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Practical Byzantine Fault Tolerance

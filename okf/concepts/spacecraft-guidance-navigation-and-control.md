@@ -15,6 +15,7 @@ bridgesTo:
   - urn:ngm:class:hardware-in-the-loop-testing
 relatedTo:
   - urn:ngm:class:monte-carlo-simulation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:19:27Z"}
 ---
 
 # Spacecraft Guidance Navigation and Control

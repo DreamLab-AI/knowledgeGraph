@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:ethereum-improvement-proposal
   - urn:ngm:class:reverse-resolution
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Ethereum Name Service

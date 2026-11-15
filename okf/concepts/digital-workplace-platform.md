@@ -119,6 +119,7 @@ relatedTo:
   - urn:ngm:class:employee-engagement
   - urn:ngm:class:workplace-analytics
   - urn:ngm:class:digital-employee-experience
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Workplace Platform

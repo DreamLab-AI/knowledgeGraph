@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:radio-frequency-spectrum
 relatedTo:
   - urn:ngm:class:satellite-communication
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T11:19:03Z"}
 ---
 
 # Radio-frequency Communication

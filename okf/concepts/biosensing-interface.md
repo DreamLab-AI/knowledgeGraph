@@ -38,6 +38,7 @@ partOf:
   - urn:ngm:class:affective-computing
   - urn:ngm:class:physiological-computing-system
   - urn:ngm:class:affective-computing
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Biosensing Interface

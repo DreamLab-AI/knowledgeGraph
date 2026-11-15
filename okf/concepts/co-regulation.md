@@ -32,6 +32,7 @@ relatedTo:
   - urn:ngm:class:ofcom
   - urn:ngm:class:uk-online-safety-act
   - urn:ngm:class:content-moderation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Co Regulation

@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:data-localisation
   - urn:ngm:class:data-protection-regulation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Data Residency

@@ -1,0 +1,474 @@
+{
+  "id": "urn:visionflow:page:66a54702040a5b942c1893d16a4e19fe0d2dae3b826b5294874e2471e6446163",
+  "title": "Snapshot",
+  "slug": "snapshot",
+  "public": true,
+  "classIri": "urn:ngm:class:snapshot",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Snapshot is an off-chain governance platform that lets token holders and decentralised autonomous organisations vote on proposals without paying on-chain transaction fees. Votes are signed cryptographically with a wallet and weighted according to token holdings recorded at a chosen block height, then aggregated and stored on the InterPlanetary File System. Because voting is gasless and non-binding at the protocol level, results are typically executed separately by multisignature wallets or on-chain modules.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voting-systems",
+        "label": "Voting Strategy"
+      },
+      {
+        "id": "urn:ngm:class:governance-proposal",
+        "label": "Governance Proposal"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Compound Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aragon",
+        "label": "Aragon"
+      },
+      {
+        "id": "urn:ngm:class:tally",
+        "label": "Tally"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-derivatives",
+        "label": "On-Chain Derivatives"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ipfs",
+      "label": "IPFS"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "gnosis-safe",
+      "label": "Gnosis Safe"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    },
+    {
+      "slug": "safe-snap",
+      "label": "SafeSnap"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

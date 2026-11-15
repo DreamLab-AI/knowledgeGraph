@@ -29,6 +29,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:safety-evaluation
   - urn:ngm:class:hazard-analysis
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Fault Tree Analysis

@@ -1,0 +1,312 @@
+{
+  "id": "urn:visionflow:page:0a49793e1c81370afdf3fe61c617286150d37fc60d4dfa6dc2e54984eae6a26d",
+  "title": "liquid democracy",
+  "slug": "liquid-democracy",
+  "public": true,
+  "classIri": "urn:ngm:class:liquid-democracy",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Liquid democracy is a hybrid participatory governance model that synthesises direct democracy and representative democracy by permitting each participant either to cast their vote on a proposal directly or to delegate their voting weight transitively to a trusted proxy, who may in turn re-delegate to another agent, forming an arbitrarily deep delegation chain. Delegations are revocable at any point before a proposal closes, preserving individual sovereignty over the vote. In distributed-systems and blockchain governance contexts the model is implemented via smart-contract delegation registries and off-chain signalling layers, enabling token holders or identity-verified citizens to assign on-chain voting power to domain experts while retaining the right to override on any individual proposal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:vote-checkpointing",
+        "label": "Vote Checkpointing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegative Democracy"
+      },
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegative Democracy"
+      },
+      {
+        "id": "urn:ngm:class:participatory-governance",
+        "label": "Participatory Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transitive-delegation",
+        "label": "Transitive Delegation"
+      },
+      {
+        "id": "urn:ngm:class:vote-weight-aggregation",
+        "label": "Vote Weight Aggregation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:representative-democracy",
+        "label": "Representative Democracy"
+      },
+      {
+        "id": "urn:ngm:class:direct-democracy",
+        "label": "Direct Democracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:delegation-graph",
+        "label": "Delegation Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "id": "urn:ngm:class:holographic-consensus",
+        "label": "Holographic Consensus"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "1-hive",
+      "label": "1Hive"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

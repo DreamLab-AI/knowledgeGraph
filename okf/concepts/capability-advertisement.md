@@ -17,6 +17,7 @@ partOf:
   - urn:ngm:class:agent-communication-protocol
 relatedTo:
   - urn:ngm:class:agent-to-agent-protocol
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Capability Advertisement

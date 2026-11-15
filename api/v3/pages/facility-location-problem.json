@@ -1,0 +1,129 @@
+{
+  "id": "urn:ngm:class:facility-location-problem",
+  "title": "Facility Location Problem",
+  "slug": "facility-location-problem",
+  "public": true,
+  "classIri": "urn:ngm:class:facility-location-problem",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "In operations research, the facility location problem is the problem of deciding where to place one or more facilities, and often how many and how large, so as to optimise an objective such as total cost, given the demand they serve.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-network-design",
+      "label": "Supply Chain Network Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "integer-programming",
+      "label": "Integer Programming"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "supply-chain-network-design",
+      "label": "Supply Chain Network Design"
+    },
+    {
+      "slug": "centre-of-gravity-analysis",
+      "label": "Centre of Gravity Analysis"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centre-of-gravity-analysis",
+      "label": "Centre of Gravity Analysis"
+    },
+    {
+      "slug": "supply-chain-network-design",
+      "label": "Supply Chain Network Design"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

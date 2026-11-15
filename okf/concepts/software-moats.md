@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:software-as-a-service
   - urn:ngm:class:ai-agent
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Software Moats

@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:odometry
   - urn:ngm:class:spacecraft-attitude
   - urn:ngm:class:earth-centred-earth-fixed-frame
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Coordinate Frame

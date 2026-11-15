@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:global-illumination
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:rasterization
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Shadow Mapping

@@ -54,6 +54,7 @@ relatedTo:
   - urn:ngm:class:unity
   - urn:ngm:class:unreal-engine
   - urn:ngm:class:blender-3d-creation-suite
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # FBX

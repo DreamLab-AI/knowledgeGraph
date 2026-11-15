@@ -19,6 +19,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework
   - urn:ngm:class:robo-robot-type
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Structural Member

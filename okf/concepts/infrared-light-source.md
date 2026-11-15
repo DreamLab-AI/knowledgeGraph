@@ -12,6 +12,7 @@ is-a:
   - urn:ngm:class:tracking-hardware
 enables:
   - urn:ngm:class:foveated-rendering
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Infrared Light Source

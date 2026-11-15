@@ -29,6 +29,7 @@ relatedTo:
   - urn:ngm:class:cognitive-load
   - urn:ngm:class:user-research
   - urn:ngm:class:usability
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Task Analysis

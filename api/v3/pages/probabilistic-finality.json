@@ -1,0 +1,320 @@
+{
+  "id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a",
+  "title": "Probabilistic Finality",
+  "slug": "probabilistic-finality",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-finality",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^...",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:block-confirmation",
+        "label": "Block Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51 Percent Attack"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spend"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:liveness",
+        "label": "Liveness"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation Time"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "blockchain",
+      "label": "BlockchainDomain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "longest-chain-rule",
+      "label": "Longest Chain Rule"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "transaction-confirmation",
+      "label": "Transaction Confirmation"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "transaction-finality",
+      "label": "Transaction Finality"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

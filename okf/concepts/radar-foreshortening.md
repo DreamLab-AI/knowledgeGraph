@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:quality-mask
   - urn:ngm:class:sar-terrain-correction
   - urn:ngm:class:synthetic-aperture-radar
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:45:39Z"}
 ---
 
 # Radar Foreshortening

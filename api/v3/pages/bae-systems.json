@@ -1,0 +1,89 @@
+{
+  "id": "urn:ngm:class:bae-systems",
+  "title": "BAE Systems",
+  "slug": "bae-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:bae-systems",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "BAE Systems is a UK-based defence contractor whose space activity in the retained sources includes the Space and Mission Systems business formed from its purchase of Ball's aerospace business and the prime contractor role in the space lot of a UK Ministry of Defence research framework.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-prime",
+      "label": "Space Prime"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uk-space-prime",
+        "label": "UK Space Prime"
+      },
+      {
+        "id": "urn:ngm:class:space-systems-integrator",
+        "label": "Space Systems Integrator"
+      },
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:prime-contractor",
+      "label": "Prime Contractor",
+      "slug": "prime-contractor"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

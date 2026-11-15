@@ -1,0 +1,176 @@
+{
+  "id": "urn:ngm:class:receivables-factoring",
+  "title": "Receivables Factoring",
+  "slug": "receivables-factoring",
+  "public": true,
+  "classIri": "urn:ngm:class:receivables-factoring",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Receivables factoring is a form of receivables purchase in which sellers of goods and services sell their receivables, represented by outstanding invoices, at a discount to a finance provider, commonly known as the factor.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-finance",
+      "label": "Supply Chain Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "real-world asset tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "reverse-factoring",
+      "label": "Reverse Factoring"
+    },
+    {
+      "slug": "supply-chain-finance",
+      "label": "Supply Chain Finance"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "reverse-factoring",
+      "label": "Reverse Factoring"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

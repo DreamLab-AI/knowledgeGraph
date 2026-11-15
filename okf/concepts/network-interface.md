@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:osi-model
   - urn:ngm:class:ethernet
   - urn:ngm:class:packet-switching
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Network Interface

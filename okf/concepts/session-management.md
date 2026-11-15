@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:distributed-systems
   - urn:ngm:class:oauth-2-0
   - urn:ngm:class:oauth-2-0
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Session Management

@@ -1,0 +1,407 @@
+{
+  "id": "urn:visionflow:page:yield-generation",
+  "title": "Yield Generation",
+  "slug": "yield-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:yield-generation",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Yield generation in the context of decentralised finance (DeFi) refers to the set of mechanisms by which cryptocurrency holders earn returns on their assets by deploying them into productive on-chain activities \u2014 including liquidity provision to automated market makers, lending on money market protocols, staking in proof-of-stake consensus, and participating in yield optimisation vaults \u2014 thereby converting idle digital assets into income-generating positions. Yield is typically expressed as an annualised percentage rate (APR) or annual percentage yield (APY) and derives from trading fees, interest payments from borrowers, block rewards, and protocol token emissions. Yield generation is a core economic primitive of DeFi, enabling capital efficiency but also introducing smart contract, liquidation, and impermanent loss risks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:passive-income",
+        "label": "Passive Income"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:annual-percentage-yield",
+        "label": "Annual Percentage Yield"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenization"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-derivatives",
+        "label": "On-Chain Derivatives"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

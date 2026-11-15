@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:bitcoin-proof-of-work-protocol-standard
   - urn:ngm:class:sound-money
   - urn:ngm:class:inflation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hyperbitcoinization

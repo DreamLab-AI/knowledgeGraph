@@ -1,0 +1,340 @@
+{
+  "id": "urn:visionflow:page:fe573114145ca230161077c18c505721302d7e98e1341926dba169138cd70f1d",
+  "title": "Double Spending",
+  "slug": "double-spending",
+  "public": true,
+  "classIri": "urn:ngm:class:double-spending",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Double spending is the fraudulent attempt to spend the same digital asset more than once by broadcasting conflicting transactions to different parts of a blockchain network before they are confirmed. It represents the fundamental security problem that consensus mechanisms are designed to prevent in distributed ledger systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51 Percent Attack"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:transaction-propagation",
+        "label": "Transaction Propagation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:block-confirmation",
+        "label": "Block Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ieee-2418-1",
+      "label": "IEEE 2418.1"
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "label": "ISO/IEC 23257:2021"
+    },
+    {
+      "slug": "nist-nistir",
+      "label": "NIST NISTIR"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "CryptographicDomain"
+    },
+    {
+      "slug": "network-component",
+      "label": "NetworkComponent"
+    },
+    {
+      "slug": "security-layer",
+      "label": "SecurityLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
+    },
+    {
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
+    },
+    {
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "settlement-layer",
+      "label": "Settlement Layer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

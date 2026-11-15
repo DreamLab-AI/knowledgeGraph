@@ -1,0 +1,87 @@
+{
+  "id": "urn:ngm:class:perigee",
+  "title": "Perigee",
+  "slug": "perigee",
+  "public": true,
+  "classIri": "urn:ngm:class:perigee",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Perigee is the Earth-specific periapsis, where an Earth-centred orbit or trajectory reaches its least geocentric distance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:periapsis",
+      "label": "Periapsis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbital-dynamics",
+        "label": "Orbital Dynamics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:orbital-dynamics",
+      "label": "Orbital Dynamics",
+      "slug": "orbital-dynamics"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-satellite",
+        "label": "Earth Observation Satellite"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:revisit-time",
+        "label": "Revisit Time"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

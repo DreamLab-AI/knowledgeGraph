@@ -55,6 +55,7 @@ relatedTo:
   - urn:ngm:class:systematic-error
   - urn:ngm:class:kinematic-calibration
   - urn:ngm:class:reference-measurement
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Calibration

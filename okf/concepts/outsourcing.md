@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:supply-chain-configuration-decision
 bridgesTo:
   - urn:ngm:class:prime-contractor
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Outsourcing

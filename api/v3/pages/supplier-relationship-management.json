@@ -1,0 +1,107 @@
+{
+  "id": "urn:ngm:class:supplier-relationship-management",
+  "title": "Supplier Relationship Management",
+  "slug": "supplier-relationship-management",
+  "public": true,
+  "classIri": "urn:ngm:class:supplier-relationship-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supplier relationship management (SRM) is the management of a buyer's relationships with its suppliers across the course of the relationship, treating different types of supplier differently, with the closest partners given the most collaborative treatment.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supplier-management",
+      "label": "Supplier Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supplier-management",
+      "label": "Supplier Management"
+    },
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    },
+    {
+      "slug": "kraljic-portfolio-matrix",
+      "label": "Kraljic Portfolio Matrix"
+    },
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supplier-management",
+      "label": "Supplier Management"
+    },
+    {
+      "slug": "supplier",
+      "label": "Supplier"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

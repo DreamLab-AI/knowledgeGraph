@@ -33,6 +33,7 @@ partOf:
   - urn:ngm:class:communication-network
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:communication-network
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Quantum Network Node

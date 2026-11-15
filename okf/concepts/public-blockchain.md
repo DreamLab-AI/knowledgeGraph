@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:distributed-ledger-technology
   - urn:ngm:class:layer-2-scaling
   - urn:ngm:class:cross-chain-interoperability
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Public Blockchain

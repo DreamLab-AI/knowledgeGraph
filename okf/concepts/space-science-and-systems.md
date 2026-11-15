@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 relatedTo:
   - urn:ngm:class:earth-observation-and-geospatial-sensing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:37:27Z"}
 ---
 
 # Space Science and Systems

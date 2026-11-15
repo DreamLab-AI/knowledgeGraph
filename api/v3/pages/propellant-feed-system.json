@@ -1,0 +1,76 @@
+{
+  "id": "urn:ngm:class:propellant-feed-system",
+  "title": "Propellant Feed System",
+  "slug": "propellant-feed-system",
+  "public": true,
+  "classIri": "urn:ngm:class:propellant-feed-system",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A propellant feed system is the part of a liquid propulsion system that delivers propellants from the tanks to the thrust chamber at the required flow rate and pressure, and in a liquid rocket engine it comprises the tanks, feed lines, valves and pressurisation devices.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-propulsion",
+      "label": "Spacecraft Propulsion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:propellant-tank",
+        "label": "Propellant Tank"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      },
+      {
+        "id": "urn:ngm:class:thruster",
+        "label": "Thruster"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

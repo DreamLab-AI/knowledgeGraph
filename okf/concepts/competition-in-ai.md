@@ -91,6 +91,7 @@ relatedTo:
   - urn:ngm:class:google-ai-technology-corporation-deep-mind
   - urn:ngm:class:openai-research-organisation
   - urn:ngm:class:mistral-ai-open-weight-model-family
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Competition in AI

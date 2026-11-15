@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:nicve-virtual-reality-research-centre
   - urn:ngm:class:mixed-reality
   - urn:ngm:class:metaverse-and-telecollaboration
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Technical History (extended CV)

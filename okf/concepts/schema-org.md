@@ -32,6 +32,7 @@ relatedTo:
   - urn:ngm:class:open-graph-link-preview-protocol
   - urn:ngm:class:dublin-core
   - urn:ngm:class:wikidata
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Schema.org

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:graphics-api
 uses:
   - urn:ngm:class:graphics-api
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cross-Platform Rendering

@@ -50,6 +50,7 @@ relatedTo:
   - urn:ngm:class:open-id-connect
   - urn:ngm:class:saml
   - urn:ngm:class:federated-identity
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # OAuth 2.0

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:freight-transportation
 bridgesTo:
   - urn:ngm:class:carbon-footprint
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Freight Transport Mode

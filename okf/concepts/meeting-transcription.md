@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:audio-processing-system
   - urn:ngm:class:audio-technology
   - urn:ngm:class:speech-recognition
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Meeting Transcription

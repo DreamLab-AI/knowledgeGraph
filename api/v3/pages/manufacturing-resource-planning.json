@@ -1,0 +1,134 @@
+{
+  "id": "urn:ngm:class:manufacturing-resource-planning",
+  "title": "Manufacturing Resource Planning",
+  "slug": "manufacturing-resource-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:manufacturing-resource-planning",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Manufacturing resource planning (MRP II) is an extension of material requirements planning that adds procedures for capacity, feedback and other functions so that planning covers manufacturing resources as well as materials.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:material-requirements-planning",
+      "label": "Material Requirements Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-planning",
+      "label": "Supply Planning",
+      "slug": "supply-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning",
+      "slug": "supply-chain-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bill-of-materials",
+        "label": "Bill of Materials"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "material-requirements-planning",
+      "label": "Material Requirements Planning"
+    },
+    {
+      "slug": "rough-cut-capacity-planning",
+      "label": "Rough-Cut Capacity Planning"
+    },
+    {
+      "slug": "capacity-requirements-planning",
+      "label": "Capacity Requirements Planning"
+    },
+    {
+      "slug": "enterprise-resource-planning",
+      "label": "Enterprise Resource Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "capacity-requirements-planning",
+      "label": "Capacity Requirements Planning"
+    },
+    {
+      "slug": "material-requirements-planning",
+      "label": "Material Requirements Planning"
+    },
+    {
+      "slug": "rough-cut-capacity-planning",
+      "label": "Rough-Cut Capacity Planning"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "urn:ngm:class:chemical-propulsion",
+  "title": "Chemical Propulsion",
+  "slug": "chemical-propulsion",
+  "public": true,
+  "classIri": "urn:ngm:class:chemical-propulsion",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Chemical propulsion converts energy released by a chemical reaction or catalytic decomposition into hot, pressurised gas and then directs that gas through a nozzle to produce thrust. It is used where a spacecraft needs comparatively high thrust or a rapid manoeuvre, provided the available total impulse and the integrated system meet the mission need.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-propulsion",
+      "label": "Spacecraft Propulsion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "monopropellant-propulsion",
+      "label": "monopropellant"
+    },
+    {
+      "slug": "bipropellant-propulsion",
+      "label": "bipropellant"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:training-data
 partOf:
   - urn:ngm:class:training-data
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Unlabeled Data

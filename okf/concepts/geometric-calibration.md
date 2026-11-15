@@ -12,6 +12,7 @@ is-a:
   - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T09:58:42Z"}
 ---
 
 # Geometric Calibration

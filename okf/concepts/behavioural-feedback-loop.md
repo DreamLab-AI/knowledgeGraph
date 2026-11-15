@@ -30,6 +30,7 @@ dependsOn:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:affective-computing
   - urn:ngm:class:user-modeling
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Behavioural Feedback Loop

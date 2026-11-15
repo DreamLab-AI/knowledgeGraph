@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:nostr
   - urn:ngm:class:farcaster
   - urn:ngm:class:decentralisation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Open Protocol

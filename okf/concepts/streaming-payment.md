@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:superfluid
   - urn:ngm:class:sablier
   - urn:ngm:class:lightning-network
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Streaming Payment

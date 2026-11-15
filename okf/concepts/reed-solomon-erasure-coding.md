@@ -16,6 +16,7 @@ uses:
   - urn:ngm:class:error-correction
 relatedTo:
   - urn:ngm:class:distributed-storage
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Reed-Solomon Erasure Coding

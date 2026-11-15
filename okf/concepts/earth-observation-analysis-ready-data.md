@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:geometric-calibration
   - urn:ngm:class:radiometric-calibration
   - urn:ngm:class:data-pipeline
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T07:26:52Z"}
 ---
 
 # Earth Observation Analysis Ready Data

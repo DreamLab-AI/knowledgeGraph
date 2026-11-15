@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:chain-of-custody-model
 bridgesTo:
   - urn:ngm:class:carbon-credits
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Mass Balance

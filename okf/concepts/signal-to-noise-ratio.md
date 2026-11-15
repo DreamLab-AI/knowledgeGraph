@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:signal-processing
 relatedTo:
   - urn:ngm:class:earth-observation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:41:49Z"}
 ---
 
 # Signal-to-noise Ratio

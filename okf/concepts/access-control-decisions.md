@@ -21,6 +21,7 @@ uses:
 relatedTo:
   - urn:ngm:class:role-based-access-control
   - urn:ngm:class:policy-enforcement-point
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Access Control Decisions

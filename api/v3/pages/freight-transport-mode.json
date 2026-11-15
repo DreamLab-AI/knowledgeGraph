@@ -1,0 +1,136 @@
+{
+  "id": "urn:ngm:class:freight-transport-mode",
+  "title": "Freight Transport Mode",
+  "slug": "freight-transport-mode",
+  "public": true,
+  "classIri": "urn:ngm:class:freight-transport-mode",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A freight transport mode is the way in which goods are physically carried: by rail, road, inland waterway, sea, air or pipeline.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-transportation",
+      "label": "Freight Transportation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "freight-transportation",
+      "label": "Freight Transportation"
+    },
+    {
+      "slug": "road-freight",
+      "label": "Road Freight"
+    },
+    {
+      "slug": "rail-freight",
+      "label": "Rail Freight"
+    },
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "air-freight",
+      "label": "Air Freight"
+    },
+    {
+      "slug": "intermodal-transport",
+      "label": "Intermodal Transport"
+    },
+    {
+      "slug": "carbon-footprint",
+      "label": "Carbon Footprint"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "air-freight",
+      "label": "Air Freight"
+    },
+    {
+      "slug": "freight-transportation",
+      "label": "Freight Transportation"
+    },
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "rail-freight",
+      "label": "Rail Freight"
+    },
+    {
+      "slug": "road-freight",
+      "label": "Road Freight"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

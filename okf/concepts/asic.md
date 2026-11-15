@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:hardware-component
   - urn:ngm:class:tape-out
   - urn:ngm:class:node-shrink
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ASIC

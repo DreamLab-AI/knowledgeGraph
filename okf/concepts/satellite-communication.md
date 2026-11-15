@@ -37,6 +37,7 @@ supports:
 relatedTo:
   - urn:ngm:class:low-earth-orbit
   - urn:ngm:class:geostationary-orbit
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T11:27:22Z"}
 ---
 
 # Satellite Communication

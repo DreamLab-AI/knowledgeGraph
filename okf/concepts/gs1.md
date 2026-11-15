@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:retail-technology
   - urn:ngm:class:healthcare-supply-chain
   - urn:ngm:class:digital-product-passport
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # GS1

@@ -61,6 +61,7 @@ relatedTo:
   - urn:ngm:class:authentication-standards
   - urn:ngm:class:nis2-directive
   - urn:ngm:class:digital-identity-wallet
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # eIDAS 2.0

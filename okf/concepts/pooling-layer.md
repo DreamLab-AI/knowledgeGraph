@@ -14,6 +14,7 @@ contrastsWith:
 partOf:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:embedding-model
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Pooling Layer

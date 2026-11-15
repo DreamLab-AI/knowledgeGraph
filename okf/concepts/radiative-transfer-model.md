@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:atmospheric-correction
   - urn:ngm:class:spectral-radiance
   - urn:ngm:class:surface-reflectance
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T10:05:45Z"}
 ---
 
 # Radiative Transfer Model

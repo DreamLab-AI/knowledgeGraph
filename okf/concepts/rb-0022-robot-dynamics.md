@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:rigid-body-dynamics
   - urn:ngm:class:newton-euler-dynamics
   - urn:ngm:class:rb-0030-jacobian-matrix
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0022 robot dynamics

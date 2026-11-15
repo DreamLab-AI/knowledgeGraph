@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:ietf-rfc
   - urn:ngm:class:data-exchange
   - urn:ngm:class:gs-1-standards
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Electronic Data Interchange

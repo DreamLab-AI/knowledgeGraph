@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:fatf
   - urn:ngm:class:aml-kyc-compliance
   - urn:ngm:class:virtual-asset
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IVMS 101

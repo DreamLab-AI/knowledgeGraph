@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:biomechanics
   - urn:ngm:class:bipedal-robot
   - urn:ngm:class:zero-moment-point
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Legged Locomotion

@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:ai-benchmark-epistemological-critique
   - urn:ngm:class:benchmarks
   - urn:ngm:class:chain-of-thought
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Capability Elicitation

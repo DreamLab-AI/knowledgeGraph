@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:java-script
   - urn:ngm:class:serialisation-format
   - urn:ngm:class:data-interchange
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # JSON

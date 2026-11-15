@@ -1,0 +1,232 @@
+{
+  "id": "urn:visionflow:page:supply-chain-transparency",
+  "title": "Supply Chain Transparency",
+  "slug": "supply-chain-transparency",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-transparency",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain transparency is the disclosure of information about the suppliers, conditions and impacts in a supply chain to parties outside the organisation, and no source opened here defines the term.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:supplier-due-diligence",
+        "label": "Supplier Due Diligence"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supply-chain-opacity",
+        "label": "Supply Chain Opacity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:ai-document-verification",
+        "label": "AI Document Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "GS1 EPCIS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-20400",
+        "label": "ISO 20400"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:modern-slavery-reporting",
+        "label": "Modern Slavery Reporting"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "traceability-and-product-identification",
+      "label": "Traceability and Product Identification"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

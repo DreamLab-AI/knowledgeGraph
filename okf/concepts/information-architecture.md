@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:human-computer-interaction
   - urn:ngm:class:content-management-system
   - urn:ngm:class:library-science
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Information Architecture

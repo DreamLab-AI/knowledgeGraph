@@ -1,0 +1,321 @@
+{
+  "id": "urn:visionflow:page:f6c3848fc2ab9188dd2c563828019be7cee4e269f5438c19f5173f79898e9ee6",
+  "title": "tendermint",
+  "slug": "tendermint",
+  "public": true,
+  "classIri": "urn:ngm:class:tendermint",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Tendermint is a Byzantine fault-tolerant (BFT) consensus engine that implements a partially synchronous, round-based, leader-elected protocol providing deterministic finality on each block. It separates the consensus layer from the application layer via the Application BlockChain Interface (ABCI), allowing any deterministic state machine to be driven by its consensus guarantees. Tendermint is the consensus core of the Cosmos SDK and underpins a large family of interoperable application-specific blockchains, offering safety guarantees so long as fewer than one-third of validator voting power is Byzantine. Its design derives from Practical Byzantine Fault Tolerance (PBFT) but introduces pragmatic modifications \u2014 rotating proposers, weighted voting, and a three-phase commit protocol \u2014 optimised for open, permissionless validator sets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:hot-stuff",
+        "label": "HotStuff"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:abci",
+        "label": "ABCI"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "P2P Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "P2P Gossip Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos Network"
+      },
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consensus-mechanisms",
+      "label": "Consensus Mechanisms"
+    },
+    {
+      "slug": "consensus",
+      "label": "Consensus"
+    },
+    {
+      "slug": "cosmos-sdk",
+      "label": "Cosmos SDK"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "ibc",
+      "label": "IBC"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

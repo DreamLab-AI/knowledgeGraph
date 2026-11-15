@@ -1,0 +1,320 @@
+{
+  "id": "urn:visionflow:page:88d4b18dd735b70a76b50b496be3e06a667a229f22ee32660f7bed5727816a88",
+  "title": "on-chain governance",
+  "slug": "on-chain-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:on-chain-governance",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "On-chain governance is a blockchain coordination model in which protocol upgrade proposals, parameter changes, and treasury spending decisions are formally submitted, deliberated, voted on by token holders, and automatically enacted through the execution of smart contracts recorded on the distributed ledger. Governance logic is codified directly in the protocol layer, making all votes, quorum checks, and execution outcomes immutable, censorship-resistant, and publicly auditable on-chain records. It contrasts with off-chain governance, where decisions emerge from social consensus (forums, developer meetings, improvement-proposal repositories) and are implemented by core developers without cryptographic enforcement, creating reliance on trust in key actors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:parameter-governance",
+        "label": "Parameter Governance"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:voting-power",
+        "label": "Voting Power"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:off-chain-governance",
+        "label": "Off-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:plutocracy",
+        "label": "Plutocracy"
+      },
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-stakeholder Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      },
+      {
+        "id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:tezos",
+        "label": "Tezos"
+      },
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-governance",
+        "label": "Cosmos Governance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "governance-ledger-event",
+      "label": "Governance Ledger Event"
+    },
+    {
+      "slug": "lido-dao",
+      "label": "Lido DAO"
+    },
+    {
+      "slug": "nouns-dao",
+      "label": "Nouns DAO"
+    },
+    {
+      "slug": "token-governance",
+      "label": "Token Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "voting-power",
+      "label": "Voting Power"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

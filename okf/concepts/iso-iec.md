@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:iso-iec-42001
   - urn:ngm:class:cybersecurity-standard
   - urn:ngm:class:compliance-standards
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ISO/IEC

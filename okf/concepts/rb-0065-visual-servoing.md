@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:rb-0064-computed-torque-control
   - urn:ngm:class:object-detection
   - urn:ngm:class:pose-estimation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0065 visual servoing

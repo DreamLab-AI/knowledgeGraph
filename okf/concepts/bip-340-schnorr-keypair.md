@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:bip-341
   - urn:ngm:class:discrete-logarithm-problem
   - urn:ngm:class:bip-327
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # BIP-340 Schnorr Keypair

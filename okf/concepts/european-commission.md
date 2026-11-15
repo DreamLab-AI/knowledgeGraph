@@ -50,6 +50,7 @@ relatedTo:
   - urn:ngm:class:eu-union-customs-code
   - urn:ngm:class:freight-transport-regulation
   - urn:ngm:class:responsible-minerals-sourcing
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # European Commission

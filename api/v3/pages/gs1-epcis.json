@@ -1,0 +1,141 @@
+{
+  "id": "urn:visionflow:page:gs1-epcis",
+  "title": "GS1 EPCIS",
+  "slug": "gs1-epcis",
+  "public": true,
+  "classIri": "urn:ngm:class:gs1-epcis",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "GS1 EPCIS (Electronic Product Code Information Services) is a GS1 standard that lets applications create and share visibility event data, both within and across enterprises.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:traceability-data-standard",
+      "label": "Traceability Data Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:provenance-ontology-prov-o",
+        "label": "Provenance Ontology (PROV-O)"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "critical-tracking-event",
+      "label": "Critical Tracking Event"
+    },
+    {
+      "slug": "global-location-number",
+      "label": "Global Location Number"
+    },
+    {
+      "slug": "serial-shipping-container-code",
+      "label": "Serial Shipping Container Code"
+    },
+    {
+      "slug": "traceability-data-standard",
+      "label": "Traceability Data Standard"
+    },
+    {
+      "slug": "traceability-regulation",
+      "label": "Traceability Regulation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

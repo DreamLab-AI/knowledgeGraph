@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:smart-cities
   - urn:ngm:class:smart-city
   - urn:ngm:class:pervasive-computing
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Urban Computing

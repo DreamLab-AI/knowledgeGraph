@@ -18,6 +18,7 @@ partOf:
   - urn:ngm:class:neural-network-text-tokenisation
 relatedTo:
   - urn:ngm:class:natural-language-understanding
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Subword Tokenisation

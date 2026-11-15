@@ -1,0 +1,632 @@
+{
+  "id": "urn:visionflow:page:c2f3f7c8d5993d02c75b82a3d3817c40375181a8306c4103de7bb5c2ae7ebc48",
+  "title": "Digital Asset Risks",
+  "slug": "digital-asset-risks",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-asset-risks",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems. Covers attack vectors such as 51% attacks, selfish mining, network partitioning, exchange failures, and regulatory suppression, alongside macro-level risks including volatility, liquidity crises, and stablecoin depegging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agustin-carstens",
+      "label": "Agustin Carstens"
+    },
+    {
+      "slug": "alameda-research",
+      "label": "Alameda Research"
+    },
+    {
+      "slug": "anti-money-laundering",
+      "label": "AML"
+    },
+    {
+      "slug": "anderson2002free",
+      "label": "anderson2002free"
+    },
+    {
+      "slug": "apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
+      "label": "apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof"
+    },
+    {
+      "slug": "apostolaki2017hijacking",
+      "label": "apostolaki2017hijacking"
+    },
+    {
+      "slug": "balaji-srinivasan",
+      "label": "Balaji Srinivasan"
+    },
+    {
+      "slug": "bank-of-international-settlement",
+      "label": "Bank of International Settlement"
+    },
+    {
+      "slug": "basel-committee-on-banking-supervision",
+      "label": "Basel Committee on Banking Supervision"
+    },
+    {
+      "slug": "biden",
+      "label": "Biden"
+    },
+    {
+      "slug": "bis",
+      "label": "BIS"
+    },
+    {
+      "slug": "black-rock",
+      "label": "BlackRock"
+    },
+    {
+      "slug": "black-swan",
+      "label": "Black Swan"
+    },
+    {
+      "slug": "booth2022bitcoin",
+      "label": "booth2022bitcoin"
+    },
+    {
+      "slug": "budish2018economic",
+      "label": "budish2018economic"
+    },
+    {
+      "slug": "carlsten2016instability",
+      "label": "carlsten2016instability"
+    },
+    {
+      "slug": "cbdc",
+      "label": "CBDC"
+    },
+    {
+      "slug": "cboe",
+      "label": "CBOE"
+    },
+    {
+      "slug": "central-bank-digital-currencies",
+      "label": "central bank digital currencies"
+    },
+    {
+      "slug": "cftc",
+      "label": "CFTC"
+    },
+    {
+      "slug": "chainalysis",
+      "label": "Chainalysis"
+    },
+    {
+      "slug": "chicago-mercantile-exchange",
+      "label": "Chicago Mercantile Exchange"
+    },
+    {
+      "slug": "circle",
+      "label": "Circle"
+    },
+    {
+      "slug": "cme",
+      "label": "CME"
+    },
+    {
+      "slug": "cory-doctorow",
+      "label": "Cory Doctorow"
+    },
+    {
+      "slug": "dccpa",
+      "label": "DCCPA"
+    },
+    {
+      "slug": "de-fi",
+      "label": "DeFi"
+    },
+    {
+      "slug": "dymydiuk2020rubicon",
+      "label": "dymydiuk2020rubicon"
+    },
+    {
+      "slug": "el-salvador",
+      "label": "El Salvador"
+    },
+    {
+      "slug": "executive-order",
+      "label": "Executive Order"
+    },
+    {
+      "slug": "executive-order-14067",
+      "label": "Executive Order 14067"
+    },
+    {
+      "slug": "fibre",
+      "label": "FIBRE"
+    },
+    {
+      "slug": "fidelity",
+      "label": "Fidelity"
+    },
+    {
+      "slug": "fractional-reserve",
+      "label": "Fractional Reserve"
+    },
+    {
+      "slug": "ftx",
+      "label": "FTX"
+    },
+    {
+      "slug": "fuchsbauer2019aggregate",
+      "label": "fuchsbauer2019aggregate"
+    },
+    {
+      "slug": "goldman-sachs",
+      "label": "Goldman Sachs"
+    },
+    {
+      "slug": "grayscale",
+      "label": "Grayscale"
+    },
+    {
+      "slug": "hard-fork",
+      "label": "Hard Fork"
+    },
+    {
+      "slug": "https-doi-org-10-48550-arxiv-2208-01908",
+      "label": "https://doi.org/10.48550/arxiv.2208.01908"
+    },
+    {
+      "slug": "hyperbitcoinization",
+      "label": "Hyperbitcoinization"
+    },
+    {
+      "slug": "international-monetary-fund",
+      "label": "IMF"
+    },
+    {
+      "slug": "iran",
+      "label": "Iran"
+    },
+    {
+      "slug": "jurisdictional-arbitrage",
+      "label": "Jurisdictional Arbitrage"
+    },
+    {
+      "slug": "krawisz2014hyperbitcoinization",
+      "label": "krawisz2014hyperbitcoinization"
+    },
+    {
+      "slug": "know-your-customer",
+      "label": "KYC"
+    },
+    {
+      "slug": "liquidity-crisis",
+      "label": "Liquidity Crisis"
+    },
+    {
+      "slug": "litecoin",
+      "label": "Litecoin"
+    },
+    {
+      "slug": "lowery2023",
+      "label": "Lowery2023"
+    },
+    {
+      "slug": "malherbe2019cryptocurrencies",
+      "label": "malherbe2019cryptocurrencies"
+    },
+    {
+      "slug": "mastercard",
+      "label": "Mastercard"
+    },
+    {
+      "slug": "monetary-policy",
+      "label": "Monetary Policy"
+    },
+    {
+      "slug": "moser2013inquiry",
+      "label": "moser2013inquiry"
+    },
+    {
+      "slug": "nassim-taleb",
+      "label": "Nassim Taleb"
+    },
+    {
+      "slug": "network-state",
+      "label": "Network State"
+    },
+    {
+      "slug": "paper-bitcoin",
+      "label": "Paper Bitcoin"
+    },
+    {
+      "slug": "pay-pal",
+      "label": "PayPal"
+    },
+    {
+      "slug": "re-org-attack",
+      "label": "Re-org Attack"
+    },
+    {
+      "slug": "rehypothecation",
+      "label": "Rehypothecation"
+    },
+    {
+      "slug": "sam-bankman-fried",
+      "label": "Sam Bankman-Fried"
+    },
+    {
+      "slug": "sanctions",
+      "label": "Sanctions"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "sec",
+      "label": "SEC"
+    },
+    {
+      "slug": "securities-and-exchange-commission",
+      "label": "Securities and Exchange Commission"
+    },
+    {
+      "slug": "self-custody",
+      "label": "Self-Custody"
+    },
+    {
+      "slug": "srinivasan2022",
+      "label": "Srinivasan2022"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "stratum-v2",
+      "label": "Stratum V2"
+    },
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    },
+    {
+      "slug": "taleb2012antifragile",
+      "label": "taleb2012antifragile"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "tor",
+      "label": "Tor"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "trump",
+      "label": "Trump"
+    },
+    {
+      "slug": "unctad",
+      "label": "UNCTAD"
+    },
+    {
+      "slug": "united-nations",
+      "label": "United Nations"
+    },
+    {
+      "slug": "us-treasury",
+      "label": "US Treasury"
+    },
+    {
+      "slug": "usdc",
+      "label": "USDC"
+    },
+    {
+      "slug": "utxo",
+      "label": "UTXO"
+    },
+    {
+      "slug": "utxos",
+      "label": "UTXOs"
+    },
+    {
+      "slug": "visa",
+      "label": "VISA"
+    },
+    {
+      "slug": "warren2023bitcoin",
+      "label": "warren2023bitcoin"
+    },
+    {
+      "slug": "western-union",
+      "label": "Western Union"
+    },
+    {
+      "slug": "wouters2022",
+      "label": "Wouters2022"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "block-reward",
+      "label": "Block Reward"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "central bank digital currency"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double-Spending"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "mining",
+      "label": "Mining"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "dr-o-hare-writing-for-log-seq",
+      "label": "Dr O'Hare Writing for LogSeq"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

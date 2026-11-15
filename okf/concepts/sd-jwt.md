@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:credential-format-standard
   - urn:ngm:class:w-3-c-verifiable-credentials-2-0
   - urn:ngm:class:decentralised-identifier
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # SD-JWT

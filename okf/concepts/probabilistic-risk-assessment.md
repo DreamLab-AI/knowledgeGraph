@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:safety-engineering
   - urn:ngm:class:reliability-engineering
   - urn:ngm:class:fault-tolerance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Probabilistic Risk Assessment

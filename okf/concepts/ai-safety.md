@@ -75,6 +75,7 @@ relatedTo:
   - urn:ngm:class:autonomous-robot
   - urn:ngm:class:apollo-research
   - urn:ngm:class:ai-security-institute
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Safety

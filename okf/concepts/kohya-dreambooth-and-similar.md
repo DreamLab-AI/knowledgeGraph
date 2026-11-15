@@ -153,6 +153,7 @@ relatedTo:
   - urn:ngm:class:attention-mechanism
   - urn:ngm:class:ai-art-generation
   - urn:ngm:class:creative-ai
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # KOHYA Dreambooth and similar

@@ -1,0 +1,121 @@
+{
+  "id": "urn:ngm:class:seaport",
+  "title": "Seaport",
+  "slug": "seaport",
+  "public": true,
+  "classIri": "urn:ngm:class:seaport",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A seaport is a node in global supply chains where goods move between ships and inland transport, together with the activities clustered around that interface.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:freight-node",
+      "label": "Freight Node"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:5-g",
+        "label": "5G"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:freight-transportation",
+      "label": "Freight Transportation",
+      "slug": "freight-transportation"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "freight-node",
+      "label": "Freight Node"
+    },
+    {
+      "slug": "dry-port",
+      "label": "Dry Port"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "dry-port",
+      "label": "Dry Port"
+    },
+    {
+      "slug": "freight-node",
+      "label": "Freight Node"
+    },
+    {
+      "slug": "port-congestion",
+      "label": "Port Congestion"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

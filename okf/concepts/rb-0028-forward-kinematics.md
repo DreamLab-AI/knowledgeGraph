@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:rb-0030-jacobian-matrix
   - urn:ngm:class:rb-0031-singularity
   - urn:ngm:class:rb-0024-workspace
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0028 forward kinematics

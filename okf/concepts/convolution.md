@@ -62,6 +62,7 @@ relatedTo:
   - urn:ngm:class:pooling-layer
   - urn:ngm:class:activation-function
   - urn:ngm:class:transfer-learning
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Convolution

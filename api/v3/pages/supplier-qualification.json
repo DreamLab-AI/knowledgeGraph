@@ -1,0 +1,112 @@
+{
+  "id": "urn:ngm:class:supplier-qualification",
+  "title": "Supplier Qualification",
+  "slug": "supplier-qualification",
+  "public": true,
+  "classIri": "urn:ngm:class:supplier-qualification",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supplier qualification is the documented process of establishing that a supplier is able to meet the buyer's requirements before it is approved.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supplier-management",
+      "label": "Supplier Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-9001",
+        "label": "Iso 9001"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement",
+      "slug": "sourcing-and-procurement"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    },
+    {
+      "slug": "supplier-management",
+      "label": "Supplier Management"
+    },
+    {
+      "slug": "pharmaceutical-supply-chain",
+      "label": "Pharmaceutical Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supplier-management",
+      "label": "Supplier Management"
+    },
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

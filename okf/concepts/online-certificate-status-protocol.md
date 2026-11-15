@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:x-509-certificate
   - urn:ngm:class:certificate-revocation
   - urn:ngm:class:ocsp
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Online Certificate Status Protocol

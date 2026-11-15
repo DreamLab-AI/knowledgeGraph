@@ -1,0 +1,109 @@
+{
+  "id": "urn:ngm:class:cma-cgm",
+  "title": "CMA CGM",
+  "slug": "cma-cgm",
+  "public": true,
+  "classIri": "urn:ngm:class:cma-cgm",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "CMA CGM is a container shipping and logistics group whose parent company is governed by French law. The European Commission described CMA CGM in a 2016 decision as the parent company of an international group of companies involved in the sectors of containerised liner shipping and port terminal management, offering a range of services including shipping, reefer transport, handling facilities in port as well as freight transport and logistics on land.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ocean-carrier",
+      "label": "Ocean Carrier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:freight-carrier",
+      "label": "Freight Carrier",
+      "slug": "freight-carrier"
+    },
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider",
+      "slug": "logistics-service-provider"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    },
+    {
+      "slug": "container-shipping",
+      "label": "Container Shipping"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

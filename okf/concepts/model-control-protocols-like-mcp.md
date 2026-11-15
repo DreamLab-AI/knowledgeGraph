@@ -95,6 +95,7 @@ relatedTo:
   - urn:ngm:class:constitutional-ai-training-methodology-language-model-family
   - urn:ngm:class:api-gateway
   - urn:ngm:class:instruction-following-conversational-ai-system
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Model Control Protocols like MCP

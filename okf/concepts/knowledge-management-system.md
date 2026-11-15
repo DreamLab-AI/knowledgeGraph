@@ -41,6 +41,7 @@ supports:
 relatedTo:
   - urn:ngm:class:enterprise-architecture
   - urn:ngm:class:learning-management-system
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Knowledge Management System

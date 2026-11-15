@@ -1,0 +1,77 @@
+{
+  "id": "urn:ngm:class:pulsed-plasma-thruster",
+  "title": "Pulsed Plasma Thruster",
+  "slug": "pulsed-plasma-thruster",
+  "public": true,
+  "classIri": "urn:ngm:class:pulsed-plasma-thruster",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A pulsed plasma thruster is an electric thruster that produces thrust by triggering an electric arc between a pair of electrodes, typically ablating a solid propellant such as polytetrafluoroethylene or ionising a gaseous propellant.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:thruster",
+      "label": "Thruster"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electric-propulsion",
+        "label": "Electric Propulsion"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-propulsion",
+      "label": "Spacecraft Propulsion",
+      "slug": "spacecraft-propulsion"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

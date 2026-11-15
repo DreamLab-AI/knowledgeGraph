@@ -37,6 +37,7 @@ relatedTo:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:computer-science
   - urn:ngm:class:set-theory
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Theorem Proving

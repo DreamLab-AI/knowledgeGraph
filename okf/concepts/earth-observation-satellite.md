@@ -18,6 +18,7 @@ supports:
   - urn:ngm:class:earth-observation
 relatedTo:
   - urn:ngm:class:satellite-constellation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:35:58Z"}
 ---
 
 # Earth Observation Satellite

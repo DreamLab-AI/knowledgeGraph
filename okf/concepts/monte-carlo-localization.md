@@ -25,6 +25,7 @@ uses:
   - urn:ngm:class:importance-sampling
   - urn:ngm:class:rb-1008-odometry
   - urn:ngm:class:sensor-fusion
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Monte Carlo Localization

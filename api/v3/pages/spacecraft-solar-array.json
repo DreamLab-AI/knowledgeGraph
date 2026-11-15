@@ -1,0 +1,77 @@
+{
+  "id": "urn:ngm:class:spacecraft-solar-array",
+  "title": "Spacecraft Solar Array",
+  "slug": "spacecraft-solar-array",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-solar-array",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A spacecraft solar array is the complete assembly that converts sunlight into electrical power: photovoltaic cells and their interconnects are arranged into strings on one or more panels, with cabling, mounting hardware and any hinges, hold-down devices, release mechanisms or pointing drives. The array feeds a [[Spacecraft Electrical Power System]], which controls its operating point, stores energy and distributes power. Cell efficiency, panel power density and power delivered to a spacecraft bus describe different boundaries and should not be quoted as though they were the same.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+      "label": "Spacecraft Power and Thermal Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+        "label": "Spacecraft Power and Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-data-centers",
+        "label": "Space Data Centers"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "spacecraft-electrical-power-system",
+      "label": "Spacecraft Electrical Power System"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

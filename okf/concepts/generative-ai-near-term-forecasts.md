@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:generative-ai
   - urn:ngm:class:ai-video
   - urn:ngm:class:video-generation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Generative AI Near-Term Forecasts

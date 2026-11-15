@@ -18,6 +18,7 @@ relatedTo:
   - urn:ngm:class:scene-geometry
   - urn:ngm:class:voronoi-diagram
   - urn:ngm:class:topology
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Geometry

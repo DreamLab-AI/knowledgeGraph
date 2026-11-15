@@ -20,6 +20,7 @@ contrastsWith:
 supports:
   - urn:ngm:class:extended-reality
   - urn:ngm:class:metaverse-architecture
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hardware Platform Agnostic

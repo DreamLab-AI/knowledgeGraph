@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:solid
   - urn:ngm:class:fair-data-principles
   - urn:ngm:class:climate-data-record
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Open Data

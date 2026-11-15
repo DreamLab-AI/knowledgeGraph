@@ -1,0 +1,344 @@
+{
+  "id": "urn:visionflow:page:dao-treasury",
+  "title": "Dao Treasury",
+  "slug": "dao-treasury",
+  "public": true,
+  "classIri": "urn:ngm:class:dao-treasury",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A DAO treasury is the pool of on-chain assets collectively owned and governed by a decentralised autonomous organisation, typically held in smart contracts and controlled through member governance. It funds operations, grants and incentives, with disbursements authorised by token-weighted votes and executed by multisignature or programmatic controls. Treasury management balances runway, diversification and accountability without a central custodian.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation",
+      "slug": "bc-governance-and-regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance Module"
+      },
+      {
+        "id": "urn:ngm:class:governance-proposal",
+        "label": "Governance Proposal"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:treasury-contract",
+        "label": "Treasury Contract"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-treasury",
+        "label": "On-Chain Treasury"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

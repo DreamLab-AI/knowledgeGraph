@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0
 is-a:
   - urn:ngm:class:ai-research-area
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Entity

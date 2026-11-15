@@ -1,0 +1,686 @@
+{
+  "id": "urn:visionflow:page:0b37e85cf2f59dae0dcfe4ea61c068bbabd8108924fe9bb4feedd91072e04536",
+  "title": "Blockchain Governance",
+  "slug": "blockchain-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-governance",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
+    "label": "ontology-mesh",
+    "actor": "agent:ontology-mesh/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols, encompassing on-chain voting systems, decentralised autonomous organisations, and community-driven decision-making frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralized Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.68,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "DAO Structure"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralized Organization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:delegation-system",
+        "label": "Delegation Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "DAO Structure"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token-Based Representation"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token-Based Representation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralized Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralized Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:protocol-evolution",
+        "label": "Protocol Evolution"
+      },
+      {
+        "id": "urn:ngm:class:community-alignment",
+        "label": "Community Alignment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:network-effects",
+        "label": "Network Effect"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-technology",
+      "label": "Blockchain Technology",
+      "slug": "blockchain-technology"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology",
+      "slug": "distributed-ledger-technology"
+    },
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems",
+      "slug": "distributed-systems"
+    },
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure",
+      "slug": "digital-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "slug": "infra-computing-and-cloud"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Transparent Audit Trails"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-treasury",
+        "label": "On-Chain Treasury"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Traditional Payment System"
+      },
+      {
+        "id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:network-component",
+        "label": "Network Component"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain-technology",
+      "label": "Blockchain Technology"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "community-alignment",
+      "label": "Community Alignment"
+    },
+    {
+      "slug": "dao-structure",
+      "label": "DAO Structure"
+    },
+    {
+      "slug": "decentralized-decision-making",
+      "label": "Decentralized Decision-Making"
+    },
+    {
+      "slug": "decentralized-organization",
+      "label": "Decentralized Organization"
+    },
+    {
+      "slug": "protocol-evolution",
+      "label": "Protocol Evolution"
+    },
+    {
+      "slug": "token-based-representation",
+      "label": "Token-Based Representation"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On-Chain Voting"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "stakeholder-coordination",
+      "label": "Stakeholder Coordination"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

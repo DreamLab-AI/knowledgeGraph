@@ -1,0 +1,488 @@
+{
+  "id": "urn:visionflow:page:e2ba4167ea5051a4df369b45b7a6d204f27e7ce54496d7fe302e4e921a09a83b",
+  "title": "Rootstock",
+  "slug": "rootstock",
+  "public": true,
+  "classIri": "urn:ngm:class:rootstock",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A Bitcoin sidechain that supports Ethereum-compatible smart contracts, secured by merged mining with Bitcoin and connected through a two-way peg.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sidechain",
+      "label": "Sidechain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      },
+      {
+        "id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Federated Validator"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:federated-byzantine-fault-tolerance",
+        "label": "Federated Byzantine Agreement"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:two-way-peg",
+        "label": "Two-Way Peg"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:scalability-solutions",
+        "label": "Scalability Solutions"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon PoS"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "sidechain",
+      "label": "Sidechain"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

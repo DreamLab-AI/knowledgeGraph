@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:science-based-targets
   - urn:ngm:class:deforestation-monitoring
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Carbon Accounting

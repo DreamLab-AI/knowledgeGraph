@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0061-nonlinear-control
   - urn:ngm:class:rb-0062-model-predictive-control
   - urn:ngm:class:rb-0056-impedance-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0064 computed torque control

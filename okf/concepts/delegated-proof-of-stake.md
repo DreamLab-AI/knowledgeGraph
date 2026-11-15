@@ -29,6 +29,7 @@ relatedTo:
   - urn:ngm:class:liquid-proof-of-stake
   - urn:ngm:class:delegate-democracy
   - urn:ngm:class:blockchain-governance
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Delegated Proof of Stake

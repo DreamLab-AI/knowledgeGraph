@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:stellar-active-region
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:05:00Z"}
 ---
 
 # Solar Active Region

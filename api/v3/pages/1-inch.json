@@ -1,0 +1,584 @@
+{
+  "id": "urn:visionflow:page:b4284e8dbb926c35f84ee43a5cb9b1c4316f7864638716d2a7bc56d54a269e4c",
+  "title": "1inch",
+  "slug": "1-inch",
+  "public": true,
+  "classIri": "urn:ngm:class:1-inch",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A decentralised exchange aggregator that routes trades across multiple liquidity sources to find favourable execution prices on Ethereum and other chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-exchange",
+      "label": "Decentralised Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-application",
+      "label": "Blockchain Application",
+      "slug": "blockchain-application"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-finance-primitive",
+      "label": "Decentralised Finance Primitive",
+      "slug": "decentralised-finance-primitive"
+    },
+    {
+      "id": "urn:ngm:class:exchange-mechanism",
+      "label": "Exchange Mechanism",
+      "slug": "exchange-mechanism"
+    },
+    {
+      "id": "urn:ngm:class:financial-protocol",
+      "label": "Financial Protocol",
+      "slug": "financial-protocol"
+    },
+    {
+      "id": "urn:ngm:class:marketplace",
+      "label": "Marketplace",
+      "slug": "marketplace"
+    },
+    {
+      "id": "urn:ngm:class:trading-venue",
+      "label": "Trading Venue",
+      "slug": "trading-venue"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:distributed-application",
+      "label": "Distributed Application",
+      "slug": "distributed-application"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment",
+      "slug": "sc-platform-and-environment"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing",
+      "slug": "spatial-computing"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction",
+      "slug": "human-computer-interaction"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity Position"
+      },
+      {
+        "id": "urn:ngm:class:fee-tier",
+        "label": "Fee Tier"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provider-token",
+        "label": "Liquidity Provider Token"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:pool-manager",
+        "label": "Pool Manager"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:composable-finance",
+        "label": "Composable Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:long-tail-asset-listing",
+        "label": "Long-Tail Asset Listing"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:token-swapping",
+        "label": "Token Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:payment-protocol",
+        "label": "Payment Protocol"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:batch-auction-matching",
+        "label": "Batch Auction Matching"
+      },
+      {
+        "id": "urn:ngm:class:coincidence-of-wants",
+        "label": "Coincidence of Wants"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Invariant"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:intent-based-execution",
+        "label": "Intent-Based Execution"
+      },
+      {
+        "id": "urn:ngm:class:native-asset-cross-chain-swap",
+        "label": "Native Asset Cross-Chain Swap"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:dark-pool",
+        "label": "Dark Pool"
+      },
+      {
+        "id": "urn:ngm:class:market-maker-brokerage",
+        "label": "Market Maker Brokerage"
+      },
+      {
+        "id": "urn:ngm:class:over-the-counter-trading",
+        "label": "Over-the-Counter Trading"
+      },
+      {
+        "id": "urn:ngm:class:traditional-stock-exchange",
+        "label": "Traditional Stock Exchange"
+      },
+      {
+        "id": "urn:ngm:class:centralized-application",
+        "label": "Centralized Application"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:financial-market",
+        "label": "Financial Market"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:dutch-auction",
+        "label": "Dutch Auction"
+      },
+      {
+        "id": "urn:ngm:class:flash-accounting",
+        "label": "Flash Accounting"
+      },
+      {
+        "id": "urn:ngm:class:geometric-mean-invariant",
+        "label": "Geometric Mean Invariant"
+      },
+      {
+        "id": "urn:ngm:class:hooks-pattern",
+        "label": "Hooks Pattern"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aggregator",
+        "label": "Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "uniswap",
+      "label": "Uniswap"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "urn:ngm:class:fourth-party-logistics-provider",
+  "title": "Fourth-Party Logistics Provider",
+  "slug": "fourth-party-logistics-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:fourth-party-logistics-provider",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A fourth-party logistics provider (4PL), also called a lead logistics provider (LLP), is usually described as an integrator that coordinates the other logistics providers serving a client. Maersk describes a traditional 4PL provider as an orchestrator that oversees all transport management, taking ownership of the coordination and management of a variety of 2PL and 3PL players in an end-to-end logistics offering, as well as coordinating the vendors.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-control-tower",
+        "label": "Supply Chain Control Tower"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    },
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    },
+    {
+      "slug": "supply-chain-control-tower",
+      "label": "Supply Chain Control Tower"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    },
+    {
+      "slug": "supply-chain-organisations",
+      "label": "Supply Chain Organisations"
+    },
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:just-transition
   - urn:ngm:class:cop26
   - urn:ngm:class:loss-and-damage
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Paris Agreement

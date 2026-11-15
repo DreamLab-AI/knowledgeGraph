@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:food-supply-chain
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:gs1-epcis
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Supply Chain Blockchain

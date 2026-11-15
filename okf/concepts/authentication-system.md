@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:identity-provider
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:authentication-standards
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Authentication System

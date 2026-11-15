@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:07:57Z"}
 ---
 
 # Dark Energy

@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:secp256k1
   - urn:ngm:class:p-256-curve
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ECDSA

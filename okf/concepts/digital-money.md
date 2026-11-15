@@ -20,6 +20,7 @@ enables:
   - urn:ngm:class:electronic-payments
 bridgesTo:
   - urn:ngm:class:financial-instruments
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Money

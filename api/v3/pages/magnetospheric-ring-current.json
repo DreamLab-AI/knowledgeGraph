@@ -1,0 +1,87 @@
+{
+  "id": "urn:ngm:class:magnetospheric-ring-current",
+  "title": "Magnetospheric Ring Current",
+  "slug": "magnetospheric-ring-current",
+  "public": true,
+  "classIri": "urn:ngm:class:magnetospheric-ring-current",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A population of medium-energy charged particles drifts around Earth to form the magnetospheric ring current, with protons drifting in one direction and electrons in the opposite direction.[^1] Because the two species drift oppositely, the population forms a ring of current around the planet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:heliophysics",
+      "label": "Heliophysics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geomagnetic-storm",
+        "label": "Geomagnetic Storm"
+      },
+      {
+        "id": "urn:ngm:class:space-plasma",
+        "label": "Space Plasma"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

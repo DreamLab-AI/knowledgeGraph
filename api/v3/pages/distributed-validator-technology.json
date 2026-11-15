@@ -1,0 +1,287 @@
+{
+  "id": "urn:visionflow:page:distributed-validator-technology",
+  "title": "Distributed Validator Technology",
+  "slug": "distributed-validator-technology",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-validator-technology",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
+    "label": "lcr-swarm",
+    "actor": "agent:lcr-swarm/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Distributed Validator Technology (DVT) splits the signing key and duties of a single blockchain validator across multiple independent nodes, so that consensus on each validator action requires threshold agreement among the participating operators. It uses threshold cryptography to reconstruct or aggregate signatures without any single node holding the complete private key, removing single points of failure. DVT is used in proof-of-stake networks such as Ethereum to improve validator fault tolerance, decentralisation, and resilience against slashing from individual node outages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:validator",
+      "label": "Validator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol",
+      "slug": "consensus-protocol"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "id": "urn:ngm:class:validator-committee",
+        "label": "Validator Committee"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-network",
+        "label": "Decentralised Network"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Block Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:distributed-agreement",
+        "label": "Distributed Agreement"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

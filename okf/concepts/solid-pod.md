@@ -52,6 +52,7 @@ partOf:
   - urn:ngm:class:solid
   - urn:ngm:class:solid
   - urn:ngm:class:decentralised-web
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Solid Pod

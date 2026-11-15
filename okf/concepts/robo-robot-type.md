@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:robo-actuation-and-control
   - urn:ngm:class:robo-navigation-and-planning
   - urn:ngm:class:human-robot-interaction
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Robot Type

@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:orbit-determination
   - urn:ngm:class:quasar
   - urn:ngm:class:radiometric-spacecraft-navigation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T11:22:15Z"}
 ---
 
 # Delta Differential One-way Ranging

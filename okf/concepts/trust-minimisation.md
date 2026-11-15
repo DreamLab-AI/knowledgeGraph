@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:decentralisation
 requires:
   - urn:ngm:class:cryptographic-proofs
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Trust Minimisation

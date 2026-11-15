@@ -1,0 +1,181 @@
+{
+  "id": "urn:ngm:class:inventory-classification",
+  "title": "Inventory Classification",
+  "slug": "inventory-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:inventory-classification",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Inventory classification is the grouping of inventory items so that different levels of control can be applied to different groups.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inventory-management",
+      "label": "Inventory Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "abc-analysis",
+      "label": "ABC Analysis"
+    },
+    {
+      "slug": "cycle-counting",
+      "label": "Cycle Counting"
+    },
+    {
+      "slug": "inventory-control-practice",
+      "label": "Inventory Control Practice"
+    },
+    {
+      "slug": "inventory-type",
+      "label": "Inventory Type"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "abc-analysis",
+      "label": "ABC Analysis"
+    },
+    {
+      "slug": "inventory-control-practice",
+      "label": "Inventory Control Practice"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

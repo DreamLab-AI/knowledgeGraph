@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:time-series-forecasting
 relatedTo:
   - urn:ngm:class:heliophysics
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:04:42Z"}
 ---
 
 # Space Weather Forecasting

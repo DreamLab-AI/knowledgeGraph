@@ -1,0 +1,148 @@
+{
+  "id": "urn:visionflow:page:6b24a2d3c9042dbd6a1240fb90404790c793ba09ed5e700dde081251d444ad34",
+  "title": "Walmart",
+  "slug": "walmart",
+  "public": true,
+  "classIri": "urn:ngm:class:walmart",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Walmart is a retail company that operates stores in the United States and internationally and is a retailer in the sense used throughout this domain. Its own site says that, since Sam Walton opened the first Walmart, it has opened thousands of stores across the U.S. and internationally.[^1] In a 1999 merger decision the European Commission described Wal-Mart as a US-based international retailer offering a broad range of general merchandise and food, on a self-service basis.[^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:retailer",
+      "label": "Retailer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:ibm-food-trust",
+        "label": "IBM Food Trust"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vendor-managed-inventory",
+        "label": "Vendor-Managed Inventory"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "food-safety",
+      "label": "Food Safety"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    },
+    {
+      "slug": "retailer",
+      "label": "Retailer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

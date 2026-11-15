@@ -1,0 +1,132 @@
+{
+  "id": "urn:ngm:class:supply-chain-disruption",
+  "title": "Supply Chain Disruption",
+  "slug": "supply-chain-disruption",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-disruption",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain disruption is an event that interrupts or degrades the flow of goods, information or cash through a supply chain, and no source opened here defines the term more precisely than that.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "port-congestion",
+      "label": "Port Congestion"
+    },
+    {
+      "slug": "chokepoint-disruption",
+      "label": "Chokepoint Disruption"
+    },
+    {
+      "slug": "component-shortage",
+      "label": "Component Shortage"
+    },
+    {
+      "slug": "supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    },
+    {
+      "slug": "ripple-effect",
+      "label": "Ripple Effect"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chokepoint-disruption",
+      "label": "Chokepoint Disruption"
+    },
+    {
+      "slug": "climate-related-supply-chain-risk",
+      "label": "Climate-Related Supply Chain Risk"
+    },
+    {
+      "slug": "component-shortage",
+      "label": "Component Shortage"
+    },
+    {
+      "slug": "port-congestion",
+      "label": "Port Congestion"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -104,6 +104,7 @@ relatedTo:
   - urn:ngm:class:curriculum-learning
   - urn:ngm:class:federated-learning
   - urn:ngm:class:semi-supervised-learning
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Learning Algorithm

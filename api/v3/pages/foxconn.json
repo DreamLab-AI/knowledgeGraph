@@ -1,0 +1,113 @@
+{
+  "id": "urn:ngm:class:foxconn",
+  "title": "Foxconn",
+  "slug": "foxconn",
+  "public": true,
+  "classIri": "urn:ngm:class:foxconn",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Foxconn is the name used by Hon Hai Technology Group, an electronics contract manufacturer established in Taiwan in 1974.[^2] The European Commission described Hon Hai in a 2016 decision as a provider of third-party electronic manufacturing services (EMS) to original equipment manufacturers (OEMs) of electronic products such as computers, mobile phones, video game consoles and televisions, with operations across the Americas, Asia and Europe.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:contract-manufacturer",
+      "label": "Contract Manufacturer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple Inc Technology Corporation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supplier",
+      "label": "Supplier",
+      "slug": "supplier"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:prime-contractor",
+        "label": "Prime Contractor"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:outsourcing",
+        "label": "Outsourcing"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "contract-manufacturer",
+      "label": "Contract Manufacturer"
+    },
+    {
+      "slug": "apple-inc-technology-corporation",
+      "label": "Apple Inc Technology Corporation"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

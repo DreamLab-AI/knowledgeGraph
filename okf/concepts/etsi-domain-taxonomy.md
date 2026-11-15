@@ -90,6 +90,7 @@ relatedTo:
   - urn:ngm:class:etsi-gr-arf-012
   - urn:ngm:class:etsi-eni-008
   - urn:ngm:class:etsi-gr-mec-032
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ETSI Domain Taxonomy

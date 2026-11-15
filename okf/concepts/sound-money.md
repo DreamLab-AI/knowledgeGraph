@@ -39,6 +39,7 @@ relatedTo:
   - urn:ngm:class:purchasing-power
   - urn:ngm:class:store-of-value
   - urn:ngm:class:commodity-money
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Sound Money

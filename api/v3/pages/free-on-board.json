@@ -1,0 +1,125 @@
+{
+  "id": "urn:ngm:class:free-on-board",
+  "title": "Free on Board",
+  "slug": "free-on-board",
+  "public": true,
+  "classIri": "urn:ngm:class:free-on-board",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Free on Board (FOB) is an Incoterms 2020 rule under which the seller delivers the goods on board the vessel nominated by the buyer at the named port of shipment, and the risk of loss or damage passes to the buyer when the goods are on board.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:incoterms",
+      "label": "Incoterms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:trade-term",
+      "label": "Trade Term",
+      "slug": "trade-term"
+    },
+    {
+      "id": "urn:ngm:class:international-trade-and-customs",
+      "label": "International Trade and Customs",
+      "slug": "international-trade-and-customs"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:international-chamber-of-commerce",
+        "label": "International Chamber of Commerce"
+      },
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "incoterms",
+      "label": "Incoterms"
+    },
+    {
+      "slug": "trade-term",
+      "label": "Trade Term"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "delivered-duty-paid",
+      "label": "Delivered Duty Paid"
+    },
+    {
+      "slug": "incoterms",
+      "label": "Incoterms"
+    },
+    {
+      "slug": "trade-term",
+      "label": "Trade Term"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

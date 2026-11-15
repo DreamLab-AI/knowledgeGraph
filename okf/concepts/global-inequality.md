@@ -92,6 +92,7 @@ relatedTo:
   - urn:ngm:class:migration
   - urn:ngm:class:social-mobility
   - urn:ngm:class:poverty
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Global Inequality

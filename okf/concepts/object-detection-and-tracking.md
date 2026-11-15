@@ -20,6 +20,7 @@ uses:
   - urn:ngm:class:convolutional-neural-network
 partOf:
   - urn:ngm:class:object-detection
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Object Detection and Tracking

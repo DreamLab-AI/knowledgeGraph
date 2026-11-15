@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:reference-frames
   - urn:ngm:class:earth-orientation-parameter
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:35:45Z"}
 ---
 
 # Geodesy

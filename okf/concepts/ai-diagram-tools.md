@@ -100,6 +100,7 @@ relatedTo:
   - urn:ngm:class:napkin-ai
   - urn:ngm:class:markdown-diagramming-as-code-tool
   - urn:ngm:class:claude
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Diagram Tools

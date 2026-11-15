@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:nft-marketplace
   - urn:ngm:class:royalty-distribution
   - urn:ngm:class:digital-rights-management
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # NFT Ownership Proof

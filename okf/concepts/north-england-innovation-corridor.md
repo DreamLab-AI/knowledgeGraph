@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:digital-economy
   - urn:ngm:class:productivity-gap
   - urn:ngm:class:uk-industrial-strategy
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # North England Innovation Corridor

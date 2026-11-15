@@ -18,6 +18,7 @@ uses:
 relatedTo:
   - urn:ngm:class:collaborative-systems-modality-simulation
   - urn:ngm:class:cloth-simulation
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Collision Detection System

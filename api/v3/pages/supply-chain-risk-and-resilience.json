@@ -1,0 +1,109 @@
+{
+  "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+  "title": "Supply Chain Risk and Resilience",
+  "slug": "supply-chain-risk-and-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-risk-and-resilience",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain risk and resilience is the area of study and practice concerned with disturbances to the flows of product, information and cash through a supply network, and with the capacity of the network to recover from them.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    },
+    {
+      "slug": "supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    },
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    },
+    {
+      "slug": "supply-chain-risk-management",
+      "label": "Supply Chain Risk Management"
+    },
+    {
+      "slug": "supply-chain-resilience",
+      "label": "Supply Chain Resilience"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    },
+    {
+      "slug": "supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

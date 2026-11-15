@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:rb-0057-admittance-control
   - urn:ngm:class:rb-0053-force-control
   - urn:ngm:class:rb-0038-compliance
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0056 impedance control

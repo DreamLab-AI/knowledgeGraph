@@ -1,0 +1,226 @@
+{
+  "id": "urn:visionflow:page:simplified-payment-verification",
+  "title": "Simplified Payment Verification",
+  "slug": "simplified-payment-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:simplified-payment-verification",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Simplified Payment Verification (SPV) is a technique that lets a lightweight client confirm that a transaction is included in a blockchain without downloading the entire chain, by holding only block headers and requesting a Merkle proof linking the transaction to a header's Merkle root. Described in the original Bitcoin design, it trades the full validation guarantees of a complete node for drastically reduced storage and bandwidth, relying on the proof-of-work in headers and the honest-majority assumption. It is what makes mobile and embedded cryptocurrency wallets practical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

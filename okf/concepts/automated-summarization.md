@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:knowledge-graph-construction
   - urn:ngm:class:meeting-transcription
   - urn:ngm:class:sentiment-analysis
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Automated Summarization

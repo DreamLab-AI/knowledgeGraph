@@ -50,6 +50,7 @@ relatedTo:
   - urn:ngm:class:carbon-markets
   - urn:ngm:class:sustainability-reporting
   - urn:ngm:class:carbon-markets
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Renewable Energy

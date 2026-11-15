@@ -1,0 +1,98 @@
+{
+  "id": "urn:ngm:class:spacecraft-proximity-operations",
+  "title": "Spacecraft Proximity Operations",
+  "slug": "spacecraft-proximity-operations",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-proximity-operations",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Spacecraft proximity operations are controlled relative motions close enough to another object that navigation, control or propulsion errors can create a collision, plume or contact hazard.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+      "label": "Spacecraft Guidance Navigation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:formation-flying",
+        "label": "Formation Flying"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-docking",
+        "label": "Spacecraft Docking"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-rendezvous",
+        "label": "Spacecraft Rendezvous"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:hardware-in-the-loop-testing",
+        "label": "Hardware-in-the-Loop Testing"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

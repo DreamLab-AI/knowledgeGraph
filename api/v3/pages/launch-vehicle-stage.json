@@ -1,0 +1,78 @@
+{
+  "id": "urn:ngm:class:launch-vehicle-stage",
+  "title": "Launch Vehicle Stage",
+  "slug": "launch-vehicle-stage",
+  "public": true,
+  "classIri": "urn:ngm:class:launch-vehicle-stage",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A launch vehicle stage is a complete launcher element that produces thrust during a defined phase of a launch mission.[^1] It is more than an engine or propellant tank: a stage normally combines propulsion, tanks or motor casing, primary structure, interfaces, separation equipment and control hardware. Depending on the vehicle, it may also carry avionics, batteries, telemetry and flight computers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-bus",
+      "label": "Spacecraft Bus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "orbital-debris",
+      "label": "Orbital Debris"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "launch-vehicle",
+      "label": "Launch Vehicle"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

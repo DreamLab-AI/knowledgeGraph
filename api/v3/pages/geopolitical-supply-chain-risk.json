@@ -1,0 +1,133 @@
+{
+  "id": "urn:ngm:class:geopolitical-supply-chain-risk",
+  "title": "Geopolitical Supply Chain Risk",
+  "slug": "geopolitical-supply-chain-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:geopolitical-supply-chain-risk",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Geopolitical supply chain risk is the risk that conflict, sanctions, export controls or other trade policy interrupts or raises the cost of supply, and the sources opened here describe it through examples rather than a fixed definition.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience",
+      "slug": "supply-chain-risk-and-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-supply-chain-risk",
+        "label": "AI Supply Chain Risk"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supplier-concentration-risk",
+      "label": "Supplier Concentration Risk"
+    },
+    {
+      "slug": "supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supplier-concentration-risk",
+      "label": "Supplier Concentration Risk"
+    },
+    {
+      "slug": "supply-chain-regionalisation",
+      "label": "Supply Chain Regionalisation"
+    },
+    {
+      "slug": "supply-chain-risk-type",
+      "label": "Supply Chain Risk Type"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

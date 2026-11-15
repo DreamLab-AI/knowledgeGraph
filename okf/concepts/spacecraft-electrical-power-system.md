@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
   - urn:ngm:class:power-management
   - urn:ngm:class:failure-mode-and-effects-analysis
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T08:17:26Z"}
 ---
 
 # Spacecraft Electrical Power System

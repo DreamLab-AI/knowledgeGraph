@@ -18,6 +18,7 @@ supports:
 relatedTo:
   - urn:ngm:class:hugging-face-diffusers
   - urn:ngm:class:generative-ai
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # HuggingFace Hub

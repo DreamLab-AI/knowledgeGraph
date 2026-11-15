@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:virtual-world
   - urn:ngm:class:immersive-experience
   - urn:ngm:class:technology-sector-landscape-analysis
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Landvaettir Generative AI Art Research

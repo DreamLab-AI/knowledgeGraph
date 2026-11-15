@@ -15,6 +15,7 @@ relatedTo:
   - urn:ngm:class:eventual-consistency
   - urn:ngm:class:consistency-model
   - urn:ngm:class:replication-protocol
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Partition Tolerance

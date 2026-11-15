@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:accreditation
   - urn:ngm:class:digital-product-passport
   - urn:ngm:class:eu-ai-act
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Conformity Assessment

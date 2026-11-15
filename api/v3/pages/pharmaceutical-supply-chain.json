@@ -1,0 +1,195 @@
+{
+  "id": "urn:visionflow:page:pharmaceutical-supply-chain",
+  "title": "Pharmaceutical Supply Chain",
+  "slug": "pharmaceutical-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:pharmaceutical-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A pharmaceutical supply chain is the set of stages and organisations through which medicinal products are discovered, made, distributed and supplied to patients, and it is subject to package-level identification and verification rules in the United States and the European Union.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sector-supply-chain",
+      "label": "Sector Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pharmaceutical-logistics",
+        "label": "Pharmaceutical Logistics"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:dscsa-compliance",
+        "label": "DSCSA Compliance"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:product-recall-management",
+        "label": "Product Recall Management"
+      },
+      {
+        "id": "urn:ngm:class:medication-safety",
+        "label": "Medication Safety"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode-scanning",
+        "label": "Barcode Scanning"
+      },
+      {
+        "id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:eu-falsified-medicines-directive",
+        "label": "EU Falsified Medicines Directive"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-resilience",
+        "label": "Supply Chain Resilience"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "mckesson",
+      "label": "McKesson"
+    },
+    {
+      "slug": "medi-ledger",
+      "label": "MediLedger"
+    },
+    {
+      "slug": "sector-supply-chain",
+      "label": "Sector Supply Chain"
+    },
+    {
+      "slug": "supplier-qualification",
+      "label": "Supplier Qualification"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

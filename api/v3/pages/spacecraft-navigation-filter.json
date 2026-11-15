@@ -1,0 +1,103 @@
+{
+  "id": "urn:ngm:class:spacecraft-navigation-filter",
+  "title": "Spacecraft Navigation Filter",
+  "slug": "spacecraft-navigation-filter",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-navigation-filter",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A spacecraft navigation filter estimates a state by combining a propagated model with measurements and explicit uncertainty assumptions. The state can contain position and velocity, attitude and angular rate, clock terms, sensor biases, force-model parameters or a target-relative pose. The associated covariance describes uncertainty within the estimator's model. It is not measured truth and can be badly overconfident when the dynamics, sensor errors or linearisation assumptions are wrong.[^1][^4]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+      "label": "Spacecraft Guidance Navigation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-navigation",
+        "label": "Spacecraft Navigation"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:hardware-in-the-loop-testing",
+        "label": "Hardware-in-the-Loop Testing"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

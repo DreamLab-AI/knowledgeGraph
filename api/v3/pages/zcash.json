@@ -1,0 +1,331 @@
+{
+  "id": "urn:visionflow:page:9958d600c435a3dac02be53d485dde51fad9cda39d08fa86509209766fed7502",
+  "title": "Zcash",
+  "slug": "zcash",
+  "public": true,
+  "classIri": "urn:ngm:class:zcash",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Zcash is a privacy-oriented cryptocurrency launched in 2016 that uses zero-knowledge proofs to allow transactions to be verified without revealing the sender, recipient or amount. It was the first widespread deployment of zk-SNARKs, succinct non-interactive arguments of knowledge, in a public blockchain. Zcash supports both transparent addresses, similar to Bitcoin, and shielded addresses that conceal transaction details, giving users a choice of privacy level. The protocol derives from the Zerocash academic proposal and is developed by the Electric Coin Company.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:trusted-setup-ceremony",
+        "label": "Trusted Setup Ceremony"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:anonymous-payment",
+        "label": "Anonymous Payment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:shielded-transaction",
+        "label": "Shielded Transaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:note-commitment",
+        "label": "Note Commitment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof of Work"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "ben-sasson-et-al-2014-zerocash-decentralized-anonymous-payments-from-bitcoin",
+      "label": "Ben-Sasson et al. 2014, Zerocash: Decentralized Anonymous Payments from Bitcoin"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "fatf-recommendations",
+      "label": "FATF Recommendations"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

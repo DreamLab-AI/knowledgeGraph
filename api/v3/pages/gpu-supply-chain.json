@@ -1,0 +1,188 @@
+{
+  "id": "urn:visionflow:page:gpu-supply-chain",
+  "title": "GPU Supply Chain",
+  "slug": "gpu-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
+    "label": "lcr-swarm",
+    "actor": "agent:lcr-swarm/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The GPU supply chain is the network of design, fabrication, packaging and distribution processes that produce graphics processing units used for AI training and inference, spanning fabless designers, foundries such as TSMC, memory suppliers and system integrators. Its capacity constraints and export controls directly shape which organisations can access the compute needed for frontier model development. It is a specific, compute-focused segment of the broader semiconductor supply chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sector-supply-chain",
+      "label": "Sector Supply Chain",
+      "slug": "sector-supply-chain"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "requires": [
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "sector-supply-chain",
+      "label": "Sector Supply Chain"
+    },
+    {
+      "slug": "taiwan-semiconductor-manufacturing-company",
+      "label": "Taiwan Semiconductor Manufacturing Company"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

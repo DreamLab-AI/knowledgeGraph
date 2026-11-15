@@ -1,0 +1,196 @@
+{
+  "id": "urn:visionflow:page:demand-forecasting",
+  "title": "Demand Forecasting",
+  "slug": "demand-forecasting",
+  "public": true,
+  "classIri": "urn:ngm:class:demand-forecasting",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Demand forecasting is the prediction of future demand for a product by analysing historical and contemporary data.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:demand-management",
+      "label": "Demand Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forecast-horizon",
+        "label": "Forecast Horizon"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-forecasting",
+        "label": "Probabilistic Forecasting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-planning",
+        "label": "Demand Planning"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-forecasting",
+        "label": "Probabilistic Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:mean-absolute-error",
+        "label": "Mean Absolute Error"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:exponential-smoothing",
+        "label": "Exponential Smoothing"
+      },
+      {
+        "id": "urn:ngm:class:arima",
+        "label": "ARIMA"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-planning",
+        "label": "Supply Chain Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning",
+      "slug": "supply-chain-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "demand-management",
+      "label": "Demand Management"
+    },
+    {
+      "slug": "demand-sensing",
+      "label": "Demand Sensing"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "forecast-accuracy",
+      "label": "Forecast Accuracy"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

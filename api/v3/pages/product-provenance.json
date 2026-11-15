@@ -1,0 +1,229 @@
+{
+  "id": "urn:visionflow:page:product-provenance",
+  "title": "Product Provenance",
+  "slug": "product-provenance",
+  "public": true,
+  "classIri": "urn:ngm:class:product-provenance",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
+    "label": "lcr-swarm",
+    "actor": "agent:lcr-swarm/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Product provenance is the provenance of an individual product, meaning the recorded information about where it came from and what was done to it, and no source opened here defines the term, so the page combines a general definition of provenance with identification standards.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-provenance",
+      "label": "Supply Chain Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      },
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti Counterfeiting"
+      },
+      {
+        "id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:everledger",
+        "label": "Everledger"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "W3C PROV"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Minerals"
+      },
+      {
+        "id": "urn:ngm:class:corda",
+        "label": "Corda"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:quorum-blockchain",
+        "label": "Quorum Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

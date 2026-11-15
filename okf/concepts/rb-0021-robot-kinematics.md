@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:rb-0022-robot-dynamics
   - urn:ngm:class:rb-0023-degrees-of-freedom
   - urn:ngm:class:rb-0031-singularity
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0021 robot kinematics

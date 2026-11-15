@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:euclidean-geometry
   - urn:ngm:class:projection-model
   - urn:ngm:class:equatorial-coordinate-system
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Coordinate System

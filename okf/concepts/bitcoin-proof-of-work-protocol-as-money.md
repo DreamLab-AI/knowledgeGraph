@@ -102,6 +102,7 @@ relatedTo:
   - urn:ngm:class:sound-money
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:micro-strategy
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Bitcoin As Money

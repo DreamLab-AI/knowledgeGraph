@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:linear-encoder
   - urn:ngm:class:proprioceptive-sensor
   - urn:ngm:class:imu
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Position Sensor

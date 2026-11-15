@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:interoperability
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T09:58:36Z"}
 ---
 
 # Geospatial Service

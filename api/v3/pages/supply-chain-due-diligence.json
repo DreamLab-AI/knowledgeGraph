@@ -1,0 +1,145 @@
+{
+  "id": "urn:ngm:class:supply-chain-due-diligence",
+  "title": "Supply Chain Due Diligence",
+  "slug": "supply-chain-due-diligence",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-due-diligence",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain due diligence is a risk-based process through which a company identifies, prevents, mitigates and accounts for adverse impacts on people and the environment in its own operations and in its supply chain.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "human-rights-due-diligence",
+      "label": "Human Rights Due Diligence"
+    },
+    {
+      "slug": "oecd-due-diligence-guidance",
+      "label": "OECD Due Diligence Guidance"
+    },
+    {
+      "slug": "responsible-minerals-sourcing",
+      "label": "Responsible Minerals Sourcing"
+    },
+    {
+      "slug": "supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "corporate-sustainability-due-diligence-directive",
+      "label": "Corporate Sustainability Due Diligence Directive"
+    },
+    {
+      "slug": "deforestation-free-sourcing",
+      "label": "Deforestation-Free Sourcing"
+    },
+    {
+      "slug": "human-rights-due-diligence",
+      "label": "Human Rights Due Diligence"
+    },
+    {
+      "slug": "responsible-minerals-sourcing",
+      "label": "Responsible Minerals Sourcing"
+    },
+    {
+      "slug": "supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    },
+    {
+      "slug": "supply-chain-governance",
+      "label": "Supply Chain Governance"
+    },
+    {
+      "slug": "sustainable-procurement",
+      "label": "Sustainable Procurement"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

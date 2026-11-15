@@ -1,0 +1,111 @@
+{
+  "id": "urn:ngm:class:supply-chain-dynamics",
+  "title": "Supply Chain Dynamics",
+  "slug": "supply-chain-dynamics",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-dynamics",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain dynamics is the study of how the stocks, flows, delays and ordering rules of a supply chain interact to produce its behaviour over time, including oscillation and the amplification of disturbances.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "bullwhip-effect",
+      "label": "Bullwhip Effect"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    },
+    {
+      "slug": "ripple-effect",
+      "label": "Ripple Effect"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bullwhip-effect",
+      "label": "Bullwhip Effect"
+    },
+    {
+      "slug": "ripple-effect",
+      "label": "Ripple Effect"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

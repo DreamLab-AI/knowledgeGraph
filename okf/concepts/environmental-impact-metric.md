@@ -38,6 +38,7 @@ partOf:
   - urn:ngm:class:sustainability-framework
   - urn:ngm:class:esg-reporting
   - urn:ngm:class:green-computing-initiative
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Environmental Impact Metric

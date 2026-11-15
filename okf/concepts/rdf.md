@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:ontology
   - urn:ngm:class:schema-org
   - urn:ngm:class:provenance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # RDF

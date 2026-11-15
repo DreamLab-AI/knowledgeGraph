@@ -14,6 +14,7 @@ enables:
   - urn:ngm:class:civil-society
   - urn:ngm:class:democratic-governance
   - urn:ngm:class:constitutional-law
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Social Contract

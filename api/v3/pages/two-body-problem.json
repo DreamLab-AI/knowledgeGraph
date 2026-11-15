@@ -1,0 +1,86 @@
+{
+  "id": "urn:ngm:class:two-body-problem",
+  "title": "Two-body Problem",
+  "slug": "two-body-problem",
+  "public": true,
+  "classIri": "urn:ngm:class:two-body-problem",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A gravitational two-body problem models two masses interacting only through their mutual attraction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:orbital-dynamics",
+      "label": "Orbital Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbital-dynamics",
+        "label": "Orbital Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-satellite",
+        "label": "Earth Observation Satellite"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:revisit-time",
+        "label": "Revisit Time"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

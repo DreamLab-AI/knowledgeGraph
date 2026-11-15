@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:photorealistic-rendering
   - urn:ngm:class:reality-gap
   - urn:ngm:class:policy-gradient-methods
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Sim-to-Real Transfer

@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:microservices-architecture
   - urn:ngm:class:fault-tolerance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cloud Native

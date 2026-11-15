@@ -1,0 +1,458 @@
+{
+  "id": "urn:visionflow:page:d3658c1b6e5681ce5101d87ed1ef25353bf19ec7bc8793c4761d747167fe39b5",
+  "title": "dYdX",
+  "slug": "d-yd-x",
+  "public": true,
+  "classIri": "urn:ngm:class:d-yd-x",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "dYdX is a decentralised exchange focused on perpetual-futures trading, allowing users to take leveraged long and short positions on cryptocurrencies. Earlier versions operated on Ethereum using a layer-two scaling solution with an off-chain order book and on-chain settlement, while a later version migrated to a purpose-built application-specific blockchain in the Cosmos ecosystem. It combines the order-book trading experience of centralised venues with non-custodial settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:liquidation-engine",
+        "label": "Liquidation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:collateral-management",
+        "label": "Margin Collateral"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      },
+      {
+        "id": "urn:ngm:class:leveraged-trading",
+        "label": "Leveraged Trading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Central Limit Order Book"
+      },
+      {
+        "id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-Two Scaling"
+      },
+      {
+        "id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics",
+      "slug": "bc-defi-and-economics"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-derivatives",
+        "label": "On-Chain Derivatives"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "order-book",
+      "label": "Order Book"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "perpetual-futures",
+      "label": "Perpetual Futures"
+    },
+    {
+      "slug": "leveraged-trading",
+      "label": "Leveraged Trading"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "cosmos",
+      "label": "Cosmos"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

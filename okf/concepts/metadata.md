@@ -40,6 +40,7 @@ relatedTo:
   - urn:ngm:class:data-catalogue
   - urn:ngm:class:ontology
   - urn:ngm:class:earth-observation-granule
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Metadata

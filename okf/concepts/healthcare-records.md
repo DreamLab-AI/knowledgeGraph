@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:digital-identity-wallet
   - urn:ngm:class:data-sovereignty
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Healthcare Records

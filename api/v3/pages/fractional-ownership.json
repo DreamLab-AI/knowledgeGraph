@@ -1,0 +1,459 @@
+{
+  "id": "urn:visionflow:page:fractional-ownership",
+  "title": "Fractional Ownership",
+  "slug": "fractional-ownership",
+  "public": true,
+  "classIri": "urn:ngm:class:fractional-ownership",
+  "domain": "finance",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Fractional ownership is a model in which a high-value asset is divided into discrete shares that multiple parties hold simultaneously, each acquiring proportional economic rights and, in some structures, governance rights over the underlying asset. Historically applied to aircraft, real estate, and fine art through legal syndication, it has been radically simplified by blockchain-based tokenisation, which encodes shares as on-chain tokens transferable without traditional intermediaries. Fractional ownership democratises access to asset classes previously restricted to institutional or wealthy investors. It raises important questions of regulatory classification, valuation, and liquidity management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ownership-share",
+        "label": "Ownership Share"
+      },
+      {
+        "id": "urn:ngm:class:governance-rights",
+        "label": "Governance Rights"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:asset-valuation",
+        "label": "Asset Valuation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sole-ownership",
+        "label": "Sole Ownership"
+      },
+      {
+        "id": "urn:ngm:class:timeshare",
+        "label": "Timeshare"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-land-ownership",
+        "label": "Metaverse Land Ownership"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:alternative-investment",
+        "label": "Alternative Investment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:digital-property-rights",
+        "label": "Digital Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      },
+      {
+        "id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset",
+      "slug": "digital-asset"
+    },
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset",
+      "slug": "bc-token-and-asset"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:traditional-securities",
+        "label": "Traditional Securities"
+      },
+      {
+        "id": "urn:ngm:class:physical-asset",
+        "label": "Physical Asset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-in-finance",
+        "label": "Artificial Intelligence in Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:real-estate",
+        "label": "Real Estate"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-economy",
+        "label": "Metaverse Economy"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:international-organisation-of-securities-commissions",
+        "label": "International Organisation of Securities Commissions"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

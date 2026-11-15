@@ -103,6 +103,7 @@ relatedTo:
   - urn:ngm:class:node-based-diffusion-pipeline-interface
   - urn:ngm:class:computer-vision
   - urn:ngm:class:human-pose-slam-capture-system
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Segmentation and Identification

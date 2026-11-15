@@ -94,6 +94,7 @@ relatedTo:
   - urn:ngm:class:algorithmic-bias-and-variance
   - urn:ngm:class:cyber-security-and-cryptography
   - urn:ngm:class:election-integrity
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Deepfakes and fraudulent content

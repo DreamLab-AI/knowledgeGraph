@@ -130,6 +130,7 @@ relatedTo:
   - urn:ngm:class:central-bank-digital-currency
   - urn:ngm:class:interoperability
   - urn:ngm:class:zero-knowledge-proof
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # CBDC Frameworks

@@ -1,0 +1,391 @@
+{
+  "id": "urn:visionflow:page:0b7812ac5c5825bb16efebbbba8241e0a4744575f54c3d0a83d1e6efb9d83406",
+  "title": "Starknet",
+  "slug": "starknet",
+  "public": true,
+  "classIri": "urn:ngm:class:starknet",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A Layer 2 validity rollup for Ethereum that uses STARK proofs to verify off-chain execution of transactions written in the Cairo programming language, enabling high-throughput, low-cost transactions while inheriting Ethereum's settlement security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stark",
+        "label": "STARK Proof"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Cairo Programming Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Provable Computation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon-zkevm",
+        "label": "Polygon zkEVM"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus",
+      "slug": "bc-protocol-and-consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechains"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channels"
+      },
+      {
+        "id": "urn:ngm:class:validium",
+        "label": "Validium"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      },
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proofs"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-1",
+        "label": "Layer 1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "layer-2-networks",
+      "label": "Layer 2 Networks"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

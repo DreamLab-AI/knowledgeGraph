@@ -1,0 +1,461 @@
+{
+  "id": "urn:visionflow:page:39d40b1bb24173cd7ad81b104f8aadf2bca503d7a3db5db8b6ccd9146a74cfa5",
+  "title": "erc-721",
+  "slug": "erc-721",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-721",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "ERC-721 is the Ethereum Request for Comments standard that defines the interface for non-fungible tokens (NFTs), where each token is uniquely identified by a uint256 token ID paired with an owner address stored immutably on-chain. Unlike ERC-20 fungible tokens, every ERC-721 token is distinct and non-interchangeable, making the standard suitable for representing provably unique digital or tokenised physical assets. The mandatory interface specifies ownership queries, safe and unsafe transfer methods, and operator approval delegation, while an optional metadata extension enables each token to reference off-chain JSON describing name, description, and media. Proposed by William Entriken, Dieter Shirley, Jacob Evans, and Nastassia Sachs and finalised as an Ethereum standard in January 2018, ERC-721 underpins digital art, collectibles, gaming items, domain names, and real-world asset tokenisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
+      "id": "urn:ngm:class:nft-standard",
+      "label": "NFT Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:royalty-enforcement",
+        "label": "Royalty Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:eip-2981",
+        "label": "EIP-2981"
+      },
+      {
+        "id": "urn:ngm:class:cryptopunks",
+        "label": "CryptoPunks"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:eip-2981",
+        "label": "EIP-2981"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-royalty",
+        "label": "On-Chain Royalty"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:gaming-asset",
+        "label": "Gaming Asset"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real-World Asset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "ownership-transfer",
+      "label": "Ownership Transfer"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "non-fungible-token",
+      "label": "Non-Fungible Token"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

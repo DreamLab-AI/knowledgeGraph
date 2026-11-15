@@ -56,6 +56,7 @@ relatedTo:
   - urn:ngm:class:post-quantum-cryptography
   - urn:ngm:class:threshold-signature-scheme
   - urn:ngm:class:blind-signatures
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cryptographic Signature

@@ -1,0 +1,138 @@
+{
+  "id": "urn:ngm:class:material-requirements-planning",
+  "title": "Material Requirements Planning",
+  "slug": "material-requirements-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:material-requirements-planning",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Material requirements planning (MRP) is a computer-based system that develops plans for ordering and producing dependent demand items.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-planning",
+      "label": "Supply Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bill-of-materials",
+        "label": "Bill of Materials"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning",
+      "slug": "supply-chain-planning"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "master-production-scheduling",
+      "label": "Master Production Scheduling"
+    },
+    {
+      "slug": "bill-of-materials",
+      "label": "Bill of Materials"
+    },
+    {
+      "slug": "manufacturing-resource-planning",
+      "label": "Manufacturing Resource Planning"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "bill-of-materials",
+      "label": "Bill of Materials"
+    },
+    {
+      "slug": "distribution-requirements-planning",
+      "label": "Distribution Requirements Planning"
+    },
+    {
+      "slug": "manufacturing-resource-planning",
+      "label": "Manufacturing Resource Planning"
+    },
+    {
+      "slug": "master-production-scheduling",
+      "label": "Master Production Scheduling"
+    },
+    {
+      "slug": "planning-master-data",
+      "label": "Planning Master Data"
+    },
+    {
+      "slug": "production-planning-and-control",
+      "label": "Production Planning and Control"
+    },
+    {
+      "slug": "supply-chain-planning",
+      "label": "Supply Chain Planning"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

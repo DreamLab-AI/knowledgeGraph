@@ -37,6 +37,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:tls-1-3
   - urn:ngm:class:public-key-cryptography
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Certificate Transparency

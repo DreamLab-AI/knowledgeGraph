@@ -1,0 +1,127 @@
+{
+  "id": "urn:ngm:class:sourcing-and-procurement",
+  "title": "Sourcing and Procurement",
+  "slug": "sourcing-and-procurement",
+  "public": true,
+  "classIri": "urn:ngm:class:sourcing-and-procurement",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Sourcing and procurement is the group of activities by which an organisation decides what to buy from outside and acquires goods and services from suppliers, from the make-or-buy choice to ordering and payment.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "procurement",
+      "label": "Procurement"
+    },
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    },
+    {
+      "slug": "category-management",
+      "label": "Category Management"
+    },
+    {
+      "slug": "spend-analysis",
+      "label": "Spend Analysis"
+    },
+    {
+      "slug": "kraljic-portfolio-matrix",
+      "label": "Kraljic Portfolio Matrix"
+    },
+    {
+      "slug": "sourcing-strategy",
+      "label": "Sourcing Strategy"
+    },
+    {
+      "slug": "single-sourcing",
+      "label": "Single Sourcing"
+    },
+    {
+      "slug": "sole-sourcing",
+      "label": "Sole Sourcing"
+    },
+    {
+      "slug": "dual-sourcing",
+      "label": "Dual Sourcing"
+    },
+    {
+      "slug": "procure-to-pay",
+      "label": "Procure-to-Pay"
+    },
+    {
+      "slug": "supplier-management",
+      "label": "Supplier Management"
+    },
+    {
+      "slug": "request-for-quotation",
+      "label": "Request for Quotation"
+    },
+    {
+      "slug": "request-for-proposal",
+      "label": "Request for Proposal"
+    },
+    {
+      "slug": "reverse-auction",
+      "label": "Reverse Auction"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "procure-to-pay",
+      "label": "Procure-to-Pay"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -35,6 +35,7 @@ bridgesTo:
   - urn:ngm:class:ai-energy-optimisation
   - urn:ngm:class:carbon-credit-tracking
   - urn:ngm:class:sustainable-virtual-infrastructure
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Proof Of Stake Sustainability

@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:operations-research
   - urn:ngm:class:mathematical-optimisation
   - urn:ngm:class:geographic-information-system
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Supply Chain Network Design

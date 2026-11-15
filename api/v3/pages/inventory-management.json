@@ -1,0 +1,183 @@
+{
+  "id": "urn:visionflow:page:inventory-management",
+  "title": "Inventory Management",
+  "slug": "inventory-management",
+  "public": true,
+  "classIri": "urn:ngm:class:inventory-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Inventory management is a set of policies and controls designed to monitor the levels of inventory, including raw materials, components and finished products, across the locations of a supply chain such as warehouses and production systems.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cycle-counting",
+      "label": "Cycle Counting"
+    },
+    {
+      "slug": "finished-goods-inventory",
+      "label": "Finished Goods Inventory"
+    },
+    {
+      "slug": "inventory-control-practice",
+      "label": "Inventory Control Practice"
+    },
+    {
+      "slug": "inventory-model",
+      "label": "Inventory Model"
+    },
+    {
+      "slug": "inventory-policy",
+      "label": "Inventory Policy"
+    },
+    {
+      "slug": "inventory-type",
+      "label": "Inventory Type"
+    },
+    {
+      "slug": "stockout",
+      "label": "Stockout"
+    },
+    {
+      "slug": "supply-chain-redundancy",
+      "label": "Supply Chain Redundancy"
+    },
+    {
+      "slug": "vendor-managed-inventory",
+      "label": "Vendor-Managed Inventory"
+    },
+    {
+      "slug": "warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

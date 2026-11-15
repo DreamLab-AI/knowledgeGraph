@@ -12,6 +12,7 @@ is-a:
   - urn:ngm:class:educational-technology
 enables:
   - urn:ngm:class:structured-training
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Learning Module

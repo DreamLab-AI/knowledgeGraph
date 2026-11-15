@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:delivery-performance-measure
 relatedTo:
   - urn:ngm:class:safety-stock
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Fill Rate

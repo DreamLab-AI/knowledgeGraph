@@ -24,6 +24,7 @@ relatedTo:
   - urn:ngm:class:knowledge-distillation-for-edge
   - urn:ngm:class:edge-ai-accelerator
   - urn:ngm:class:edge-computing
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Model Pruning for Edge Deployment

@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:intent-recognition
   - urn:ngm:class:intent-type
   - urn:ngm:class:intent-parameter
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Intent

@@ -30,6 +30,7 @@ relatedTo:
   - urn:ngm:class:self-sovereign-identity
   - urn:ngm:class:verifiable-credentials
   - urn:ngm:class:verifiable-credentials
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Anonymous Credential

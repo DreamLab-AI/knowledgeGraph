@@ -1,0 +1,124 @@
+{
+  "id": "urn:ngm:class:agile-supply-chain",
+  "title": "Agile Supply Chain",
+  "slug": "agile-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:agile-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An agile supply chain is one able to respond rapidly to changes in demand in both volume and variety, suited to volatile and unpredictable markets where availability is the order winner.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy-type",
+      "label": "Supply Chain Strategy Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "postponement",
+      "label": "Postponement"
+    },
+    {
+      "slug": "customer-order-decoupling-point",
+      "label": "Customer Order Decoupling Point"
+    },
+    {
+      "slug": "bullwhip-effect",
+      "label": "Bullwhip Effect"
+    },
+    {
+      "slug": "lean-supply-chain",
+      "label": "Lean Supply Chain"
+    },
+    {
+      "slug": "responsive-supply-chain",
+      "label": "Responsive Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "customer-order-decoupling-point",
+      "label": "Customer Order Decoupling Point"
+    },
+    {
+      "slug": "lean-supply-chain",
+      "label": "Lean Supply Chain"
+    },
+    {
+      "slug": "postponement",
+      "label": "Postponement"
+    },
+    {
+      "slug": "responsive-supply-chain",
+      "label": "Responsive Supply Chain"
+    },
+    {
+      "slug": "supply-chain-strategy-type",
+      "label": "Supply Chain Strategy Type"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

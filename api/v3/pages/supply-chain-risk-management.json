@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:supply-chain-risk-management",
+  "title": "Supply Chain Risk Management",
+  "slug": "supply-chain-risk-management",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-risk-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain risk management is the organised management of risks to a supply network, and the sources opened here define it only for particular settings rather than as a general term.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:nist-csf",
+        "label": "NIST CSF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-tier-supply-chain-mapping",
+      "label": "Multi-Tier Supply Chain Mapping"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    },
+    {
+      "slug": "supply-chain-resilience-strategy",
+      "label": "Supply Chain Resilience Strategy"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    },
+    {
+      "slug": "supply-chain-stress-testing",
+      "label": "Supply Chain Stress Testing"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

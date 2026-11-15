@@ -1,0 +1,248 @@
+{
+  "id": "urn:ngm:class:skill-parameter",
+  "title": "Skill Parameter",
+  "slug": "skill-parameter",
+  "public": true,
+  "classIri": "urn:ngm:class:skill-parameter",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:0dc89e6b22d787a7b237a231362b6384c69bb5c6d809370357545d628d2b7f9f",
+    "label": "agent-ontology-import",
+    "actor": "agent:agent-ontology-import/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A skill parameter defines one parameter of an [[Atomic Skill]], including its name and type. The Agent Ontology declares it as `Parameter` in the capability module, with the comment \"Defines a parameter for a Skill, including its name and type.\"[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parameter",
+      "label": "Parameter"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:atomic-skill",
+        "label": "Atomic Skill"
+      }
+    ],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "atomic-skill",
+      "label": "Atomic Skill"
+    },
+    {
+      "slug": "intent-parameter",
+      "label": "Intent Parameter"
+    },
+    {
+      "slug": "parameter",
+      "label": "Parameter"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "atomic-skill",
+      "label": "Atomic Skill"
+    },
+    {
+      "slug": "intent-parameter",
+      "label": "Intent Parameter"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "urn:ngm:class:supplier-management",
+  "title": "Supplier Management",
+  "slug": "supplier-management",
+  "public": true,
+  "classIri": "urn:ngm:class:supplier-management",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supplier management is the set of activities by which a buyer works with its suppliers over the course of the relationship, and it is usually treated in the literature under the heading of supplier relationship management.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supplier-relationship-management",
+      "label": "Supplier Relationship Management"
+    },
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    },
+    {
+      "slug": "supplier-qualification",
+      "label": "Supplier Qualification"
+    },
+    {
+      "slug": "strategic-sourcing",
+      "label": "Strategic Sourcing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "sourcing-and-procurement",
+      "label": "Sourcing and Procurement"
+    },
+    {
+      "slug": "supplier-qualification",
+      "label": "Supplier Qualification"
+    },
+    {
+      "slug": "supplier-relationship-management",
+      "label": "Supplier Relationship Management"
+    },
+    {
+      "slug": "supplier-selection",
+      "label": "Supplier Selection"
+    },
+    {
+      "slug": "supplier",
+      "label": "Supplier"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

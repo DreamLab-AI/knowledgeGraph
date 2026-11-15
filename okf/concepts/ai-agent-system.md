@@ -66,6 +66,7 @@ bridgesTo:
   - urn:ngm:class:lightning-network-node
   - urn:ngm:class:bitcoin-proof-of-work-protocol
   - urn:ngm:class:payment-channel-management
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Agent System

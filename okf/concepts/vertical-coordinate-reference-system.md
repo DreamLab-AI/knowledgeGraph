@@ -13,6 +13,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:orthometric-height
   - urn:ngm:class:vertical-datum
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:37:01Z"}
 ---
 
 # Vertical Coordinate Reference System

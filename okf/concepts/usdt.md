@@ -39,6 +39,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:liquidity-provision
   - urn:ngm:class:automated-market-maker
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # USDT

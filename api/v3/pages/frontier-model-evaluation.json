@@ -1,0 +1,202 @@
+{
+  "id": "urn:visionflow:page:frontier-model-evaluation",
+  "title": "Frontier Model Evaluation",
+  "slug": "frontier-model-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:frontier-model-evaluation",
+  "domain": "ai",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Frontier model evaluation is the systematic assessment of the capabilities, limitations, and risks of the most advanced AI systems, including dangerous-capability and safety testing. It uses benchmarks, red-teaming, and threat-model-driven evaluations to inform deployment decisions and regulation. Such evaluation is increasingly required by AI governance regimes before high-capability models are released.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

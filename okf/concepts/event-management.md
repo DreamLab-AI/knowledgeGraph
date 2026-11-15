@@ -19,6 +19,7 @@ relatedTo:
   - urn:ngm:class:metaverse-venue
   - urn:ngm:class:virtual-location
   - urn:ngm:class:access-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Event Management

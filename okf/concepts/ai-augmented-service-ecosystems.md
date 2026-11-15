@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:continuous-support-workers
   - urn:ngm:class:job-ecosystems
   - urn:ngm:class:cross-industry-ai-impact
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI-Augmented Service Ecosystems

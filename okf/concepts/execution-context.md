@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:output-state
   - urn:ngm:class:access-control-rule
   - urn:ngm:class:data-handling-policy
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Execution Context

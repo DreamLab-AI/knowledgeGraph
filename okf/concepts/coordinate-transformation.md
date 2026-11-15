@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:reference-frames
   - urn:ngm:class:kinematics
   - urn:ngm:class:rigid-body-dynamics
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Coordinate Transformation

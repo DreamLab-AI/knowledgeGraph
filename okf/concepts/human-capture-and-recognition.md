@@ -33,6 +33,7 @@ dependsOn:
   - urn:ngm:class:3-d-reconstruction
 partOf:
   - urn:ngm:class:reality-capture
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Human Capture & Recognition

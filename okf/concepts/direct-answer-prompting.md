@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:zero-shot-prompting
   - urn:ngm:class:few-shot-prompting
   - urn:ngm:class:prompt-template
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Direct Answer Prompting

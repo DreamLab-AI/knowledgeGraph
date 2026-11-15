@@ -29,6 +29,7 @@ enables:
   - urn:ngm:class:knowledge-sharing
   - urn:ngm:class:vocabulary-governance
   - urn:ngm:class:cross-domain-integration
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Ontology Repository

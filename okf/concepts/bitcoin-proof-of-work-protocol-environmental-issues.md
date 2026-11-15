@@ -102,6 +102,7 @@ relatedTo:
   - urn:ngm:class:mining-economics
   - urn:ngm:class:energy-markets
   - urn:ngm:class:methane-emissions
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Bitcoin Environmental Issues

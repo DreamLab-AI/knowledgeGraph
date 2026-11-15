@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:ai-alignment
   - urn:ngm:class:existential-risk
   - urn:ngm:class:compute-governance
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Frontier AI

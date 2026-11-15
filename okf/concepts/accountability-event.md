@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:agent-action
   - urn:ngm:class:ledger-event
   - urn:ngm:class:accountability
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Accountability Event

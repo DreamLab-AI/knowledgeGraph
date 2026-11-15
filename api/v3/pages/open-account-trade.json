@@ -1,0 +1,112 @@
+{
+  "id": "urn:ngm:class:open-account-trade",
+  "title": "Open Account Trade",
+  "slug": "open-account-trade",
+  "public": true,
+  "classIri": "urn:ngm:class:open-account-trade",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Open account trade is a sale in which the goods are shipped and delivered before payment is due, which in international sales is typically 30, 60 or 90 days.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-payment-method",
+      "label": "Trade Payment Method"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-finance",
+      "label": "Supply Chain Finance"
+    },
+    {
+      "slug": "trade-credit",
+      "label": "Trade Credit"
+    },
+    {
+      "slug": "trade-payment-method",
+      "label": "Trade Payment Method"
+    },
+    {
+      "slug": "documentary-letter-of-credit",
+      "label": "Documentary Letter of Credit"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "trade-credit",
+      "label": "Trade Credit"
+    },
+    {
+      "slug": "trade-payment-method",
+      "label": "Trade Payment Method"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

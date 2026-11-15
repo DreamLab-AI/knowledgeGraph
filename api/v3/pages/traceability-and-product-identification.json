@@ -1,0 +1,113 @@
+{
+  "id": "urn:ngm:class:traceability-and-product-identification",
+  "title": "Traceability and Product Identification",
+  "slug": "traceability-and-product-identification",
+  "public": true,
+  "classIri": "urn:ngm:class:traceability-and-product-identification",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Traceability and product identification is the area concerned with following goods through a supply chain and with the identifiers and data carriers that make that possible.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    },
+    {
+      "slug": "traceability",
+      "label": "Traceability"
+    },
+    {
+      "slug": "critical-tracking-event",
+      "label": "Critical Tracking Event"
+    },
+    {
+      "slug": "chain-of-custody-model",
+      "label": "Chain of Custody Model"
+    },
+    {
+      "slug": "supply-chain-provenance",
+      "label": "Supply Chain Provenance"
+    },
+    {
+      "slug": "supply-chain-transparency",
+      "label": "Supply Chain Transparency"
+    },
+    {
+      "slug": "supply-chain-visibility",
+      "label": "Supply Chain Visibility"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "chain-of-custody-model",
+      "label": "Chain of Custody Model"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

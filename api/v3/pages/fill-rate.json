@@ -1,0 +1,110 @@
+{
+  "id": "urn:ngm:class:fill-rate",
+  "title": "Fill Rate",
+  "slug": "fill-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:fill-rate",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Fill rate is the long-range average fraction of demand that is delivered from inventory on the shelf.[^1] Georgia Tech course notes call it the type 2 service level, also written as the beta or P2 service level.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:delivery-performance-measure",
+      "label": "Delivery Performance Measure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-stock",
+        "label": "Safety Stock"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-performance-measure",
+      "label": "Supply Chain Performance Measure",
+      "slug": "supply-chain-performance-measure"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-performance-and-finance",
+      "label": "Supply Chain Performance and Finance",
+      "slug": "supply-chain-performance-and-finance"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    },
+    {
+      "slug": "delivery-performance-measure",
+      "label": "Delivery Performance Measure"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "delivery-performance-measure",
+      "label": "Delivery Performance Measure"
+    },
+    {
+      "slug": "on-time-in-full",
+      "label": "On-Time In-Full"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

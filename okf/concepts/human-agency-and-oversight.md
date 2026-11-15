@@ -26,6 +26,7 @@ relatedTo:
   - urn:ngm:class:robustness
   - urn:ngm:class:audit-trail
   - urn:ngm:class:model-interpretability
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Human Agency and Oversight

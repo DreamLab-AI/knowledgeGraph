@@ -1,0 +1,120 @@
+{
+  "id": "urn:ngm:class:terrestrial-reference-frame",
+  "title": "Terrestrial Reference Frame",
+  "slug": "terrestrial-reference-frame",
+  "public": true,
+  "classIri": "urn:ngm:class:terrestrial-reference-frame",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A terrestrial reference frame is the realisation of a terrestrial reference system, through the realisation of its origin, orientation axes and scale and their time evolution, by a set of points with precisely determined coordinates.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-reference-systems",
+      "label": "Space Reference Systems"
+    },
+    {
+      "id": "urn:ngm:class:geodetic-reference-frame",
+      "label": "Geodetic Reference Frame"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-reference-systems",
+        "label": "Space Reference Systems"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:geodesy",
+      "label": "Geodesy",
+      "slug": "geodesy"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    },
+    {
+      "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+      "label": "Earth Observation and Geospatial Sensing",
+      "slug": "earth-observation-and-geospatial-sensing"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:coordinate-reference-system",
+        "label": "Coordinate Reference System"
+      },
+      {
+        "id": "urn:ngm:class:geodetic-reference-frame",
+        "label": "Geodetic Reference Frame"
+      },
+      {
+        "id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frames"
+      },
+      {
+        "id": "urn:ngm:class:space-reference-systems",
+        "label": "Space Reference Systems"
+      },
+      {
+        "id": "urn:ngm:class:earth-orientation-parameter",
+        "label": "Earth Orientation Parameter"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geodesy",
+        "label": "Geodesy"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

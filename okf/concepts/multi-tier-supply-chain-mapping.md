@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:supply-chain-risk-management
 bridgesTo:
   - urn:ngm:class:graph-database
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Multi-Tier Supply Chain Mapping

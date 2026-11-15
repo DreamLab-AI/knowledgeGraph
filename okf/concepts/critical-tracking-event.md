@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:gs1-epcis
   - urn:ngm:class:food-safety-blockchain
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Critical Tracking Event

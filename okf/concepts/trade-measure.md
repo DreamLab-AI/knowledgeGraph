@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:export-controls
   - urn:ngm:class:geopolitics
   - urn:ngm:class:china-tech-export-controls
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T14:53:56Z"}
 ---
 
 # Trade Measure

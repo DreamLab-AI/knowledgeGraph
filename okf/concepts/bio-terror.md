@@ -118,6 +118,7 @@ relatedTo:
   - urn:ngm:class:crispr-gene-editing
   - urn:ngm:class:dual-use-research
   - urn:ngm:class:global-catastrophic-risk
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Bio Terror

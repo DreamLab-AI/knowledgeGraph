@@ -41,6 +41,8 @@ relatedTo:
   - urn:ngm:class:deflationary-token
   - urn:ngm:class:tokenomics
   - urn:ngm:class:token-standard
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
+verified: [{"by":"human:npub1kst9gqtldpgtzwzh6xwc4c8rlz83xetqpj4sxg0gzqwfayng9aaqlz0mmn","at":"2026-10-05T18:59:14.000Z"}]
 ---
 
 # Fungible Token

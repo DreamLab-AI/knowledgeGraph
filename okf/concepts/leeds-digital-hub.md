@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:uk-tech-ecosystem
   - urn:ngm:class:north-england-innovation-corridor
   - urn:ngm:class:digital-economy
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Leeds Digital Hub

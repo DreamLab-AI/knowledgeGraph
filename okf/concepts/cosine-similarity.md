@@ -85,6 +85,7 @@ relatedTo:
   - urn:ngm:class:cross-encoder-reranking
   - urn:ngm:class:hybrid-search
   - urn:ngm:class:information-retrieval
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Cosine Similarity

@@ -16,6 +16,7 @@ relatedTo:
   - urn:ngm:class:delegation-scope
   - urn:ngm:class:agent-trace-event
   - urn:ngm:class:task-delegation
+generated: {"by":"agent:agent-ontology-import/0.1.0","process":"process:agent-ontology-import/0.1.0","at":"2026-10-30T12:00:00Z"}
 ---
 
 # Agent Delegation

@@ -1,0 +1,83 @@
+{
+  "id": "urn:ngm:class:solar-energetic-particle",
+  "title": "Solar Energetic Particle",
+  "slug": "solar-energetic-particle",
+  "public": true,
+  "classIri": "urn:ngm:class:solar-energetic-particle",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A solar energetic particle is a charged particle, most importantly a proton, accelerated in the solar atmosphere to a large fraction of the speed of light by a large-scale magnetic eruption.[^1] NOAA describes such eruptions as often producing a coronal mass ejection and an associated solar flare. When the fast protons reach Earth they can penetrate the magnetosphere that shields the planet from lower energy charged particles.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:heliophysics",
+      "label": "Heliophysics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:heliophysics",
+        "label": "Heliophysics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science",
+      "slug": "space-science"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

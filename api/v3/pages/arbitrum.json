@@ -1,0 +1,419 @@
+{
+  "id": "urn:visionflow:page:94f78bf12e5c8627c90f6d955e94cd5339ac5de4454d1ed41056c46ca4d080da",
+  "title": "Arbitrum",
+  "slug": "arbitrum",
+  "public": true,
+  "classIri": "urn:ngm:class:arbitrum",
+  "domain": "blockchain",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Arbitrum is a family of Ethereum layer-2 scaling solutions developed by Offchain Labs that use optimistic rollup technology to increase transaction throughput and reduce fees. Its flagship network, Arbitrum One, launched on mainnet in 2021 and executes transactions in a custom virtual machine while posting transaction data and state commitments to Ethereum. Arbitrum's interactive multi-round fraud-proof protocol distinguishes it from other optimistic rollups by narrowing disputes to a single instruction before on-chain resolution. The ARB token governs the network through the Arbitrum DAO, and Arbitrum Nitro and Orbit extend the technology to custom chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-domain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance-domain",
+        "label": "Decentralised Finance Domain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Ethereum Data Availability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Interactive Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calldata-compression",
+        "label": "Calldata Compression"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:plasma",
+        "label": "Plasma"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling Solution"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "fraud-proof",
+      "label": "Fraud Proof"
+    },
+    {
+      "slug": "decentralised-finance",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-exchange",
+      "label": "Decentralised Exchange"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "gmx",
+      "label": "GMX"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "optimism",
+      "label": "Optimism"
+    },
+    {
+      "slug": "polygon",
+      "label": "Polygon"
+    },
+    {
+      "slug": "rollup",
+      "label": "Rollup"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

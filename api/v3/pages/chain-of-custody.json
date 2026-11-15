@@ -1,0 +1,581 @@
+{
+  "id": "urn:visionflow:page:chain-of-custody",
+  "title": "Chain of Custody",
+  "slug": "chain-of-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:chain-of-custody",
+  "domain": "security",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Chain of Custody is a documented, unbroken sequence of records that tracks the possession, handling, transfer, analysis, and disposition of physical or digital items from their point of origin to their ultimate use\u2014most critically in legal proceedings and regulated industries. Each handoff event must be recorded with the identity of the parties involved, the time and location of transfer, and the state of the item, ensuring that the integrity and authenticity of the item can be demonstrated to any subsequent examiner. In digital contexts the concept extends to data provenance, AI training datasets, and blockchain-based asset transfer records.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody Log"
+      },
+      {
+        "id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper-Evident Seal"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:legal-evidence",
+        "label": "Admissibility of Evidence"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Timestamping"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:record-keeping",
+        "label": "Informal Record Keeping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "AI Training Data Lineage"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Regulatory Compliance Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain-application",
+      "label": "Blockchain Application",
+      "slug": "blockchain-application"
+    },
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:distributed-application",
+      "label": "Distributed Application",
+      "slug": "distributed-application"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component",
+      "slug": "network-component"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)",
+      "slug": "bc-network-component"
+    },
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure",
+      "slug": "dc-protocol-and-infra"
+    },
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture",
+      "slug": "network-architecture"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture",
+      "slug": "ai-model-architecture"
+    },
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration",
+      "slug": "distributed-collaboration"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:traceability-mechanism",
+        "label": "Traceability Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:luxury-goods-authentication",
+        "label": "Luxury Goods Authentication"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:centralized-application",
+        "label": "Centralized Application"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:centralised-workflow",
+        "label": "Centralised Workflow"
+      },
+      {
+        "id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:gs1-epcis",
+        "label": "GS1 EPCIS"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:corporate-sustainability-due-diligence-directive",
+        "label": "Corporate Sustainability Due Diligence Directive"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

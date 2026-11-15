@@ -18,6 +18,7 @@ uses:
 relatedTo:
   - urn:ngm:class:disruptive-technology
   - urn:ngm:class:digital-infrastructure
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Technology

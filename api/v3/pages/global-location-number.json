@@ -1,0 +1,134 @@
+{
+  "id": "urn:ngm:class:global-location-number",
+  "title": "Global Location Number",
+  "slug": "global-location-number",
+  "public": true,
+  "classIri": "urn:ngm:class:global-location-number",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The Global Location Number (GLN) is the GS1 identifier for a location or a party. The General Specifications define it separately as the identifier for a physical location that may be fixed or mobile, for a party that is a legal entity or department or function, and for a digital location.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gs1-identification-key",
+      "label": "GS1 Identification Key"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs-1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-identifier",
+      "label": "Supply Chain Identifier",
+      "slug": "supply-chain-identifier"
+    },
+    {
+      "id": "urn:ngm:class:traceability-and-product-identification",
+      "label": "Traceability and Product Identification",
+      "slug": "traceability-and-product-identification"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "gs1-identification-key",
+      "label": "GS1 Identification Key"
+    },
+    {
+      "slug": "global-trade-item-number",
+      "label": "Global Trade Item Number"
+    },
+    {
+      "slug": "serial-shipping-container-code",
+      "label": "Serial Shipping Container Code"
+    },
+    {
+      "slug": "gs1-epcis",
+      "label": "GS1 EPCIS"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "gs1-identification-key",
+      "label": "GS1 Identification Key"
+    },
+    {
+      "slug": "global-trade-item-number",
+      "label": "Global Trade Item Number"
+    },
+    {
+      "slug": "supply-chain-identifier",
+      "label": "Supply Chain Identifier"
+    },
+    {
+      "slug": "supply-chain-master-data",
+      "label": "Supply Chain Master Data"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

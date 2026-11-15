@@ -13,6 +13,7 @@ uses:
   - urn:ngm:class:virtual-production-volume
 partOf:
   - urn:ngm:class:virtual-production-vp
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # In-Camera VFX

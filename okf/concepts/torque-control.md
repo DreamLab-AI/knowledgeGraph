@@ -54,6 +54,7 @@ relatedTo:
   - urn:ngm:class:robot-kinematics
   - urn:ngm:class:inverse-kinematics
   - urn:ngm:class:admittance-control
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Torque Control

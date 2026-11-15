@@ -1,0 +1,116 @@
+{
+  "id": "urn:ngm:class:customer-order-decoupling-point",
+  "title": "Customer Order Decoupling Point",
+  "slug": "customer-order-decoupling-point",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-order-decoupling-point",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A customer order decoupling point (CODP) is the stock point at which the forecast-driven part of a supply system meets the customer-order-driven part.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-design-principle",
+      "label": "Supply Chain Design Principle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "make-to-stock",
+      "label": "Make-to-Stock"
+    },
+    {
+      "slug": "make-to-order",
+      "label": "Make-to-Order"
+    },
+    {
+      "slug": "postponement",
+      "label": "Postponement"
+    },
+    {
+      "slug": "lean-supply-chain",
+      "label": "Lean Supply Chain"
+    },
+    {
+      "slug": "agile-supply-chain",
+      "label": "Agile Supply Chain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agile-supply-chain",
+      "label": "Agile Supply Chain"
+    },
+    {
+      "slug": "postponement",
+      "label": "Postponement"
+    },
+    {
+      "slug": "supply-chain-design-principle",
+      "label": "Supply Chain Design Principle"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

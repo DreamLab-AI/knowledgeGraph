@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:manufacturing-automation
   - urn:ngm:class:trade-finance-automation
   - urn:ngm:class:enterprise-resource-planning
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Process Automation

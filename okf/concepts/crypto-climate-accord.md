@@ -37,6 +37,7 @@ relatedTo:
   - urn:ngm:class:paris-agreement
   - urn:ngm:class:proof-of-work
   - urn:ngm:class:scope-2-emissions
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Crypto Climate Accord

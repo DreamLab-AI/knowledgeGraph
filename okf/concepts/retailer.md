@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:supply-chain-organisations
 bridgesTo:
   - urn:ngm:class:platform-economy
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # Retailer

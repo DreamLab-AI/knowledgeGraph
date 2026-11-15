@@ -1,0 +1,177 @@
+{
+  "id": "urn:visionflow:page:semiconductor-supply-chain",
+  "title": "Semiconductor Supply Chain",
+  "slug": "semiconductor-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:semiconductor-supply-chain",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The semiconductor supply chain is the globally distributed network of design, fabrication, assembly, testing and distribution activities that produce integrated circuits. It is highly specialised and geographically concentrated, depending on leading-edge foundries, advanced lithography equipment, rare materials and complex logistics. Because chips underpin computing, AI and critical infrastructure, the semiconductor supply chain has become a focal point of geopolitics, export controls and national-security policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sector-supply-chain",
+      "label": "Sector Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy",
+      "slug": "supply-chain-strategy"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "component-shortage",
+      "label": "Component Shortage"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "sector-supply-chain",
+      "label": "Sector Supply Chain"
+    },
+    {
+      "slug": "taiwan-semiconductor-manufacturing-company",
+      "label": "Taiwan Semiconductor Manufacturing Company"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

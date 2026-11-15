@@ -26,6 +26,7 @@ relatedTo:
   - urn:ngm:class:carbon-footprint-measurement
   - urn:ngm:class:environmental-impact-metric
   - urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # High Energy Consumption

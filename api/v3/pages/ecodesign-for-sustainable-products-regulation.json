@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:ecodesign-for-sustainable-products-regulation",
+  "title": "Ecodesign For Sustainable Products Regulation",
+  "slug": "ecodesign-for-sustainable-products-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Regulation (EU) 2024/1781, the Ecodesign for Sustainable Products Regulation, establishes a framework for the setting of ecodesign requirements that products have to comply with to be placed on the market or put into service.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

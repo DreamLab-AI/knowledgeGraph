@@ -14,6 +14,7 @@ relatedTo:
   - urn:ngm:class:agentic-ai
   - urn:ngm:class:claude
   - urn:ngm:class:frontier-ai
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Product Strategy

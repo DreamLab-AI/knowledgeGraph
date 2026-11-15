@@ -1,0 +1,165 @@
+{
+  "id": "urn:visionflow:page:supply-chain-optimisation",
+  "title": "Supply Chain Optimisation",
+  "slug": "supply-chain-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-optimisation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain optimisation is the use of mathematical optimisation to find the best supply chain configuration and plans, so that operations run efficiently.[^1][^2][^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-planning",
+      "label": "Supply Chain Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-optimisation",
+        "label": "Stochastic Optimisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "supply-chain-simulation",
+      "label": "Supply Chain Simulation"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

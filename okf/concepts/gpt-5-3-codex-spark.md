@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:gpt
   - urn:ngm:class:cerebras-wafer-scale-chips
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # GPT-5.3 Codex Spark

@@ -14,6 +14,7 @@ bridgesTo:
   - urn:ngm:class:w3-c-prov
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:45:19Z"}
 ---
 
 # Observation Provenance

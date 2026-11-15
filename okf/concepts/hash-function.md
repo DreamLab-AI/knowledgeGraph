@@ -95,6 +95,7 @@ relatedTo:
   - urn:ngm:class:cryptanalysis
   - urn:ngm:class:birthday-attack
   - urn:ngm:class:length-extension-attack
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hash Function

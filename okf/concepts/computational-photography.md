@@ -88,6 +88,7 @@ relatedTo:
   - urn:ngm:class:3-d-reconstruction
   - urn:ngm:class:computational-imaging
   - urn:ngm:class:image-noise-reduction
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Computational Photography

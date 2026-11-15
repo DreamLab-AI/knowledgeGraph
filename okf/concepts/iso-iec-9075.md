@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:data-layer
   - urn:ngm:class:database-systems
   - urn:ngm:class:data-management
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # ISO/IEC 9075 SQL Standard

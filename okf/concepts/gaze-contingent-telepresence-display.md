@@ -19,6 +19,7 @@ relatedTo:
   - urn:ngm:class:tele020virtualrealitytelepresence
   - urn:ngm:class:tele-050-neural-rendering-telepresence
   - urn:ngm:class:avatar
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Gaze Contingent Telepresence Display

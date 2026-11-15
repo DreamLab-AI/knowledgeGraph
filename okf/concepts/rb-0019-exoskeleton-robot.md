@@ -23,6 +23,7 @@ relatedTo:
   - urn:ngm:class:rb-0007-collaborative-robot
   - urn:ngm:class:service-robot
   - urn:ngm:class:wearable-computing-platform
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0019 exoskeleton robot

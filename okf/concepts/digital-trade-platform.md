@@ -12,6 +12,7 @@ is-a:
 bridgesTo:
   - urn:ngm:class:permissioned-blockchain
   - urn:ngm:class:hyperledger-fabric
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # Digital Trade Platform

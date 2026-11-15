@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:earth-observation-and-geospatial-sensing
 relatedTo:
   - urn:ngm:class:earth-observation
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-11T10:08:00Z"}
 ---
 
 # Earth System Phenomena

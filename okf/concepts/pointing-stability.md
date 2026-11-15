@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T09:01:01Z"}
 ---
 
 # Pointing Stability

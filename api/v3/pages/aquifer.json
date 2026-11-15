@@ -1,0 +1,86 @@
+{
+  "id": "urn:ngm:class:aquifer",
+  "title": "Aquifer",
+  "slug": "aquifer",
+  "public": true,
+  "classIri": "urn:ngm:class:aquifer",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An aquifer is a geological body with enough saturated, permeable material to yield significant quantities of water to wells and springs.[^1][^2] The University of Arizona guide adds that the water is held in fractures and cracks of rock or in the pores between grains of sand and gravel.[^3]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-system-phenomena",
+      "label": "Earth System Phenomena"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-system-phenomena",
+        "label": "Earth System Phenomena"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+      "label": "Earth Observation and Geospatial Sensing",
+      "slug": "earth-observation-and-geospatial-sensing"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

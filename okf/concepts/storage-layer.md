@@ -28,6 +28,7 @@ dependsOn:
   - urn:ngm:class:replication-protocol
 partOf:
   - urn:ngm:class:technology-infrastructure-domain-layer
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Storage Layer

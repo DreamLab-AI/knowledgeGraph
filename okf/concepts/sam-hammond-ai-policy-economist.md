@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:ai-capability-temporal-horizon-framework
   - urn:ngm:class:social-contract
   - urn:ngm:class:artificial-general-intelligence
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Sam Hammond AI Policy Economist

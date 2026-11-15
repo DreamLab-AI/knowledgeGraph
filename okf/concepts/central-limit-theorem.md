@@ -77,6 +77,7 @@ relatedTo:
   - urn:ngm:class:markov-chain-monte-carlo
   - urn:ngm:class:conformal-prediction
   - urn:ngm:class:information-theory
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Central Limit Theorem

@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:esg
   - urn:ngm:class:carbon-accounting
   - urn:ngm:class:existential-risk
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Climate Risk

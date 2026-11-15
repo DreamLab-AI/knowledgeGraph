@@ -22,6 +22,7 @@ relatedTo:
   - urn:ngm:class:gasper-consensus
   - urn:ngm:class:checkpoints
   - urn:ngm:class:epoch
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Finality Gadget

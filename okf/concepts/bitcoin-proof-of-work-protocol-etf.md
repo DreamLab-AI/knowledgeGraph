@@ -96,6 +96,7 @@ relatedTo:
   - urn:ngm:class:european-bitcoin-etp
   - urn:ngm:class:bitcoin-options
   - urn:ngm:class:grayscale-v-sec
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Bitcoin ETF

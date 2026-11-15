@@ -1,0 +1,156 @@
+{
+  "id": "urn:ngm:class:supply-chain-organisations",
+  "title": "Supply Chain Organisations",
+  "slug": "supply-chain-organisations",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-organisations",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain organisations are the persons and business organisations that take part in a supply chain. The Industrial Ontologies Foundry calls such a party a supply chain agent and defines it as a \u201cperson or business organization who supplies material products or commercial services to other agents in a supply chain\u201d, with a manufacturer in a supply chain and a carrier in a supply chain as examples.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supplier",
+      "label": "Supplier"
+    },
+    {
+      "slug": "contract-manufacturer",
+      "label": "Contract Manufacturer"
+    },
+    {
+      "slug": "product-distributor",
+      "label": "Product Distributor"
+    },
+    {
+      "slug": "wholesaler",
+      "label": "Wholesaler"
+    },
+    {
+      "slug": "retailer",
+      "label": "Retailer"
+    },
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    },
+    {
+      "slug": "third-party-logistics-provider",
+      "label": "Third-Party Logistics Provider"
+    },
+    {
+      "slug": "fourth-party-logistics-provider",
+      "label": "Fourth-Party Logistics Provider"
+    },
+    {
+      "slug": "freight-forwarder",
+      "label": "Freight Forwarder"
+    },
+    {
+      "slug": "customs-broker",
+      "label": "Customs Broker"
+    },
+    {
+      "slug": "freight-carrier",
+      "label": "Freight Carrier"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    },
+    {
+      "slug": "parcel-carrier",
+      "label": "Parcel Carrier"
+    },
+    {
+      "slug": "trade-body",
+      "label": "Trade Body"
+    },
+    {
+      "slug": "intergovernmental-trade-organisation",
+      "label": "Intergovernmental Trade Organisation"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    },
+    {
+      "slug": "retailer",
+      "label": "Retailer"
+    },
+    {
+      "slug": "supplier",
+      "label": "Supplier"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

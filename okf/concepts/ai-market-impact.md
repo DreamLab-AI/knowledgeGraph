@@ -12,6 +12,7 @@ is-a:
   - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:artificial-intelligence
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Market Impact

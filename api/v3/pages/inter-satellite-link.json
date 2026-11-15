@@ -1,0 +1,83 @@
+{
+  "id": "urn:ngm:class:inter-satellite-link",
+  "title": "Inter-satellite Link",
+  "slug": "inter-satellite-link",
+  "public": true,
+  "classIri": "urn:ngm:class:inter-satellite-link",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An inter-satellite link is a direct communication path between spacecraft. It may use an optical carrier or a radio-frequency band, and it can connect satellites in the same orbital regime or bridge different orbits. The term describes the physical link; routing, storage and delivery to an end user belong to the wider network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-to-space-link",
+      "label": "Space-to-space Link"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-communications",
+      "label": "Spacecraft Communications",
+      "slug": "spacecraft-communications"
+    },
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

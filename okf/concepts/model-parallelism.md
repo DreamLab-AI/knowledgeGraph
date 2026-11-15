@@ -40,6 +40,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:micro-batch-scheduling
   - urn:ngm:class:gradient-checkpointing
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Model Parallelism

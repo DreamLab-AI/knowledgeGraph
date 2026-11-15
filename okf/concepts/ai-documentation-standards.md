@@ -92,6 +92,7 @@ relatedTo:
   - urn:ngm:class:ai-ethics-board
   - urn:ngm:class:algorithmic-transparency-index
   - urn:ngm:class:ai-governance-law-and-privacy
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # AI Documentation Standards

@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:data-schema
   - urn:ngm:class:schema
   - urn:ngm:class:graph-ql
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Xml Schema Definition

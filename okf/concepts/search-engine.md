@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:semantic-search
   - urn:ngm:class:enterprise-search
   - urn:ngm:class:search-engine-optimisation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Search Engine

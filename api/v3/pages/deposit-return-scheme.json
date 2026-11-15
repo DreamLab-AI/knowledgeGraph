@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:deposit-return-scheme",
+  "title": "Deposit Return Scheme",
+  "slug": "deposit-return-scheme",
+  "public": true,
+  "classIri": "urn:ngm:class:deposit-return-scheme",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A deposit return scheme is a system in which a refundable deposit is charged on a product container and refunded when the empty container is returned.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:product-take-back-scheme",
+      "label": "Product Take-Back Scheme"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:circular-supply-chain",
+      "label": "Circular Supply Chain",
+      "slug": "circular-supply-chain"
+    },
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "circular-supply-chain",
+      "label": "Circular Supply Chain"
+    },
+    {
+      "slug": "product-take-back-scheme",
+      "label": "Product Take-Back Scheme"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

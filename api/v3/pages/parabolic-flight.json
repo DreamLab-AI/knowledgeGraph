@@ -1,0 +1,80 @@
+{
+  "id": "urn:ngm:class:parabolic-flight",
+  "title": "Parabolic Flight",
+  "slug": "parabolic-flight",
+  "public": true,
+  "classIri": "urn:ngm:class:parabolic-flight",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Parabolic flight is flight within the atmosphere in which an aircraft describes a series of parabolic arcs lasting tens of seconds to simulate microgravity.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-life-sciences",
+      "label": "Space Life Sciences"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microgravity",
+        "label": "Microgravity"
+      },
+      {
+        "id": "urn:ngm:class:space-life-sciences",
+        "label": "Space Life Sciences"
+      },
+      {
+        "id": "urn:ngm:class:spaceflight-analogue",
+        "label": "Spaceflight Analogue"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

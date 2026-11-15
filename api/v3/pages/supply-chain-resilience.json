@@ -1,0 +1,196 @@
+{
+  "id": "urn:visionflow:page:supply-chain-resilience",
+  "title": "Supply Chain Resilience",
+  "slug": "supply-chain-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-resilience",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain resilience is the ability of a supply chain to return to its original state, or move to a new and more desirable one, after being disturbed.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:space-supply-chain",
+        "label": "Space Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dual-sourcing",
+      "label": "Dual Sourcing"
+    },
+    {
+      "slug": "food-supply-chain",
+      "label": "Food Supply Chain"
+    },
+    {
+      "slug": "friendshoring",
+      "label": "Friendshoring"
+    },
+    {
+      "slug": "ripple-effect",
+      "label": "Ripple Effect"
+    },
+    {
+      "slug": "supply-chain-resilience-strategy",
+      "label": "Supply Chain Resilience Strategy"
+    },
+    {
+      "slug": "supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience"
+    },
+    {
+      "slug": "time-to-recover",
+      "label": "Time to Recover"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

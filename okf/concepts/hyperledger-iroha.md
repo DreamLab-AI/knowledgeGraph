@@ -111,6 +111,7 @@ relatedTo:
   - urn:ngm:class:hyperledger-indy
   - urn:ngm:class:hyperledger-sawtooth
   - urn:ngm:class:mbridge
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Hyperledger Iroha

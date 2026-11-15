@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:logistics-service-provider
 bridgesTo:
   - urn:ngm:class:fleet-management
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # Freight Carrier

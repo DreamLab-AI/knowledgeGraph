@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:anti-windup
   - urn:ngm:class:bode-plot
   - urn:ngm:class:ziegler-nichols-method
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # PID Control

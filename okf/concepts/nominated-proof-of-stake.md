@@ -27,6 +27,7 @@ relatedTo:
   - urn:ngm:class:liquid-proof-of-stake
   - urn:ngm:class:polkadot-parachains
   - urn:ngm:class:blockchain-protocol
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Nominated Proof of Stake

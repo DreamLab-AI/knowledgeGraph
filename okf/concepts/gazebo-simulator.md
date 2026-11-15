@@ -48,6 +48,7 @@ partOf:
   - urn:ngm:class:sim-to-real-transfer
   - urn:ngm:class:robot-operating-system
   - urn:ngm:class:sim-to-real-transfer
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Gazebo Simulator

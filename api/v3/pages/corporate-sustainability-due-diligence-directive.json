@@ -1,0 +1,133 @@
+{
+  "id": "urn:ngm:class:corporate-sustainability-due-diligence-directive",
+  "title": "Corporate Sustainability Due Diligence Directive",
+  "slug": "corporate-sustainability-due-diligence-directive",
+  "public": true,
+  "classIri": "urn:ngm:class:corporate-sustainability-due-diligence-directive",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "The Corporate Sustainability Due Diligence Directive, Directive (EU) 2024/1760, lays down rules requiring companies to address actual and potential human rights and environmental adverse impacts in their own operations, those of their subsidiaries and those of their business partners in their chains of activities.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Mineral Tracking"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:sustainable-supply-chains",
+      "label": "Sustainable Supply Chains",
+      "slug": "sustainable-supply-chains"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
+        "label": "Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    },
+    {
+      "slug": "supply-chain-due-diligence",
+      "label": "Supply Chain Due Diligence"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "supply-chain-due-diligence-instrument",
+      "label": "Supply Chain Due Diligence Instrument"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -19,6 +19,7 @@ relatedTo:
   - urn:ngm:class:open-xr
   - urn:ngm:class:web-xr
   - urn:ngm:class:khronos-group
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # XR Technical Standard

@@ -1,0 +1,140 @@
+{
+  "id": "urn:ngm:class:supply-chain-network-design",
+  "title": "Supply Chain Network Design",
+  "slug": "supply-chain-network-design",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-network-design",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Supply chain network design is the strategic planning of the facilities in a supply chain and the flows between them, deciding their number, location, capacity and technology.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-strategy",
+      "label": "Supply Chain Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "facility-location-problem",
+      "label": "Facility Location Problem"
+    },
+    {
+      "slug": "centre-of-gravity-analysis",
+      "label": "Centre of Gravity Analysis"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "centre-of-gravity-analysis",
+      "label": "Centre of Gravity Analysis"
+    },
+    {
+      "slug": "distribution-strategy",
+      "label": "Distribution Strategy"
+    },
+    {
+      "slug": "facility-location-problem",
+      "label": "Facility Location Problem"
+    },
+    {
+      "slug": "multi-echelon-inventory-optimisation",
+      "label": "Multi-Echelon Inventory Optimisation"
+    },
+    {
+      "slug": "supply-chain-configuration-decision",
+      "label": "Supply Chain Configuration Decision"
+    },
+    {
+      "slug": "supply-chain-design-principle",
+      "label": "Supply Chain Design Principle"
+    },
+    {
+      "slug": "supply-chain-planning",
+      "label": "Supply Chain Planning"
+    },
+    {
+      "slug": "supply-chain-strategy",
+      "label": "Supply Chain Strategy"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "id": "urn:visionflow:page:aes-encryption",
+  "title": "AES Encryption",
+  "slug": "aes-encryption",
+  "public": true,
+  "classIri": "urn:ngm:class:aes-encryption",
+  "domain": "security",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
+    "label": "lcr-swarm",
+    "actor": "agent:lcr-swarm/1"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "AES encryption is the Advanced Encryption Standard, a symmetric block cipher adopted as a US federal standard that operates on fixed-size blocks using a shared secret key for both encryption and decryption. It is the most widely deployed symmetric cipher, used by hardware security features such as Intel SGX for memory encryption and by low-power wireless protocols such as Zigbee for link-layer security. It supports 128, 192 and 256-bit key lengths, with 128-bit remaining secure against all known practical attacks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain",
+      "slug": "blockchain"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "slug": "cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)",
+      "slug": "bc-cryptographic-primitive"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography",
+      "slug": "cryptography"
+    },
+    {
+      "id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security",
+      "slug": "cryptographic-security"
+    },
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security",
+      "slug": "security"
+    },
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance",
+      "slug": "governance"
+    },
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity",
+      "slug": "infra-security-and-identity"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)",
+      "slug": "cat-ai-infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "slug": "infra-legal-and-regulatory"
+    },
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure",
+      "slug": "infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:initialization-vector",
+        "label": "Initialization Vector"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Authentication Tag"
+      },
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Secure Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cha-cha20-poly1305",
+        "label": "ChaCha20-Poly1305"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:anarchy",
+        "label": "Anarchy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:block-cipher",
+        "label": "Block Cipher"
+      },
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:stream-cipher",
+        "label": "Stream Cipher"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-encryption-at-rest",
+        "label": "Data Encryption at Rest"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-38500",
+        "label": "ISO-IEC 38500"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD Principles on AI"
+      },
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Hybrid Encryption"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

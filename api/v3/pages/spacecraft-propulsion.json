@@ -1,0 +1,71 @@
+{
+  "id": "urn:ngm:class:spacecraft-propulsion",
+  "title": "Spacecraft Propulsion",
+  "slug": "spacecraft-propulsion",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-propulsion",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Spacecraft propulsion produces controlled forces or impulses after launch. It changes a spacecraft's orbit or trajectory, maintains its assigned orbit, supports attitude control, avoids collisions, performs rendezvous and provides an end-of-life disposal manoeuvre. The propulsion architecture is chosen with the mission because thrust, total impulse, manoeuvre duration, power, mass, volume, safety and lifetime cannot be optimised independently.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "electric-propulsion",
+      "label": "Electric Propulsion"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cold-gas-propulsion",
+      "label": "Cold Gas Propulsion"
+    },
+    {
+      "slug": "launch-vehicle",
+      "label": "Launch Vehicle"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

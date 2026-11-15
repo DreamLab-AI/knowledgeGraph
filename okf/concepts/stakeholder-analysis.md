@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:stakeholder-trust
   - urn:ngm:class:risk-assessment
   - urn:ngm:class:stakeholder-theory
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Stakeholder Analysis

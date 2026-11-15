@@ -115,6 +115,7 @@ relatedTo:
   - urn:ngm:class:privacy-preserving-blockchain
   - urn:ngm:class:quadratic-voting
   - urn:ngm:class:stable-coins
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # On Chain Voting

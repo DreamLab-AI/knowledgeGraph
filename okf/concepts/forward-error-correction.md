@@ -33,6 +33,7 @@ supports:
   - urn:ngm:class:satellite-communication
 relatedTo:
   - urn:ngm:class:erasure-coding
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T11:56:07Z"}
 ---
 
 # Forward Error Correction

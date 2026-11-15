@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:ai-training-infrastructure
   - urn:ngm:class:compute-power
   - urn:ngm:class:spacex
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Spacefaring Data Centers

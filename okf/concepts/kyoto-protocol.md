@@ -17,6 +17,7 @@ contrastsWith:
 relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:scope-1-emissions
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Kyoto Protocol

@@ -16,6 +16,7 @@ dependsOn:
 relatedTo:
   - urn:ngm:class:crypto-regulation
   - urn:ngm:class:hm-treasury
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Taxation

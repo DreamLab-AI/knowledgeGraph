@@ -14,6 +14,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:encoder
   - urn:ngm:class:masked-language-modelling
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Contextual Embedding

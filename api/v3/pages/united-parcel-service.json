@@ -1,0 +1,109 @@
+{
+  "id": "urn:ngm:class:united-parcel-service",
+  "title": "United Parcel Service",
+  "slug": "united-parcel-service",
+  "public": true,
+  "classIri": "urn:ngm:class:united-parcel-service",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "United Parcel Service (UPS) is a package delivery and logistics company. Its own site says that the story of UPS, which it calls the world's largest package delivery company, began more than a century ago with a $100 loan to jumpstart a tiny messenger service, and that it serves 200+ countries and territories.[^1] The European Commission described UPS in a 2013 decision as one of the world's largest logistics providers that operates mainly in the small package delivery, freight transport and contract logistics sectors.[^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parcel-carrier",
+      "label": "Parcel Carrier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:freight-carrier",
+      "label": "Freight Carrier",
+      "slug": "freight-carrier"
+    },
+    {
+      "id": "urn:ngm:class:logistics-service-provider",
+      "label": "Logistics Service Provider",
+      "slug": "logistics-service-provider"
+    },
+    {
+      "id": "urn:ngm:class:supply-chain-organisations",
+      "label": "Supply Chain Organisations",
+      "slug": "supply-chain-organisations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "parcel-carrier",
+      "label": "Parcel Carrier"
+    },
+    {
+      "slug": "logistics-service-provider",
+      "label": "Logistics Service Provider"
+    }
+  ],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

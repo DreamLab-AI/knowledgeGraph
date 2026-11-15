@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:carbon-neutrality-verification
   - urn:ngm:class:direct-air-capture
   - urn:ngm:class:eu-green-claims-directive
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Carbon Neutrality

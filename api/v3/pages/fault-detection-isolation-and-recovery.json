@@ -1,0 +1,85 @@
+{
+  "id": "urn:ngm:class:fault-detection-isolation-and-recovery",
+  "title": "Fault Detection Isolation and Recovery",
+  "slug": "fault-detection-isolation-and-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:fault-detection-isolation-and-recovery",
+  "domain": "space-science-and-systems",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
+    "label": "space-corpus-research",
+    "actor": "agent:space-corpus-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Fault detection, isolation and recovery is the onboard capability by which a spacecraft monitors its own condition, limits the effect of a fault and works to restore function or communication, which NASA sources describe under the heading of fault protection and safing.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-bus",
+      "label": "Spacecraft Bus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:health-monitoring",
+        "label": "Health Monitoring"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-science-and-systems",
+      "label": "Space Science and Systems",
+      "slug": "space-science-and-systems"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-and-geospatial-sensing",
+        "label": "Earth Observation and Geospatial Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

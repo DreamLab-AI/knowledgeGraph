@@ -1,0 +1,112 @@
+{
+  "id": "urn:ngm:class:supply-chain-planning-system",
+  "title": "Supply Chain Planning System",
+  "slug": "supply-chain-planning-system",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-planning-system",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain planning system is software that supports supply chain planning, which Yin and colleagues describe as the process of anticipating future demand and coordinating operational activities across the logistics network.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "advanced-planning-and-scheduling",
+      "label": "Advanced Planning and Scheduling"
+    },
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "advanced-planning-and-scheduling",
+      "label": "Advanced Planning and Scheduling"
+    },
+    {
+      "slug": "supply-chain-execution-system",
+      "label": "Supply Chain Execution System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "urn:visionflow:page:mass-customisation",
+  "title": "Mass Customisation",
+  "slug": "mass-customisation",
+  "public": true,
+  "classIri": "urn:ngm:class:mass-customisation",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Mass customisation is a production strategy that combines the low cost of high-volume output with orders customised to each customer's specification.[^1][^2]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-strategy",
+      "label": "Production Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:production-operations",
+      "label": "Production Operations",
+      "slug": "production-operations"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "mass-production",
+      "label": "Mass Production"
+    },
+    {
+      "slug": "production-operations",
+      "label": "Production Operations"
+    },
+    {
+      "slug": "production-strategy",
+      "label": "Production Strategy"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

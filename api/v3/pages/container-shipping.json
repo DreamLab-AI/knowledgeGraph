@@ -1,0 +1,157 @@
+{
+  "id": "urn:ngm:class:container-shipping",
+  "title": "Container Shipping",
+  "slug": "container-shipping",
+  "public": true,
+  "classIri": "urn:ngm:class:container-shipping",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Container shipping, also called liner shipping, is the provision of regular, scheduled services for the carriage of cargo by container.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ocean-freight",
+      "label": "Ocean Freight"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:freight-transport-mode",
+      "label": "Freight Transport Mode",
+      "slug": "freight-transport-mode"
+    },
+    {
+      "id": "urn:ngm:class:freight-transportation",
+      "label": "Freight Transportation",
+      "slug": "freight-transportation"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-aperture-radar",
+        "label": "Synthetic Aperture Radar"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    },
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "reefer-container",
+      "label": "Reefer Container"
+    },
+    {
+      "slug": "freight-service",
+      "label": "Freight Service"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cma-cgm",
+      "label": "CMA CGM"
+    },
+    {
+      "slug": "freight-containerisation",
+      "label": "Freight Containerisation"
+    },
+    {
+      "slug": "freight-service",
+      "label": "Freight Service"
+    },
+    {
+      "slug": "international-maritime-organization",
+      "label": "International Maritime Organization"
+    },
+    {
+      "slug": "maersk",
+      "label": "Maersk"
+    },
+    {
+      "slug": "ocean-carrier",
+      "label": "Ocean Carrier"
+    },
+    {
+      "slug": "ocean-freight",
+      "label": "Ocean Freight"
+    },
+    {
+      "slug": "shipping-container",
+      "label": "Shipping Container"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

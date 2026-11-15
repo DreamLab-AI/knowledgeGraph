@@ -1,0 +1,142 @@
+{
+  "id": "urn:ngm:class:ripple-effect",
+  "title": "Ripple Effect",
+  "slug": "ripple-effect",
+  "public": true,
+  "classIri": "urn:ngm:class:ripple-effect",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Ripple effect is the propagation of a disruption through a supply chain, so that a failure at one point spreads to others and changes how the whole chain performs.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-tier-supply-chain-mapping",
+        "label": "Multi-Tier Supply Chain Mapping"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chain-risk-and-resilience",
+      "label": "Supply Chain Risk and Resilience",
+      "slug": "supply-chain-risk-and-resilience"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "bullwhip-effect",
+      "label": "Bullwhip Effect"
+    },
+    {
+      "slug": "port-congestion",
+      "label": "Port Congestion"
+    },
+    {
+      "slug": "supply-chain-redundancy",
+      "label": "Supply Chain Redundancy"
+    },
+    {
+      "slug": "supply-chain-resilience",
+      "label": "Supply Chain Resilience"
+    },
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    },
+    {
+      "slug": "multi-tier-supply-chain-mapping",
+      "label": "Multi-Tier Supply Chain Mapping"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "multi-tier-supply-chain-mapping",
+      "label": "Multi-Tier Supply Chain Mapping"
+    },
+    {
+      "slug": "supply-chain-disruption",
+      "label": "Supply Chain Disruption"
+    },
+    {
+      "slug": "supply-chain-dynamics",
+      "label": "Supply Chain Dynamics"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

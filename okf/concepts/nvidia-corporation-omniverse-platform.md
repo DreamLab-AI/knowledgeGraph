@@ -49,6 +49,7 @@ relatedTo:
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:collaboration-platform
   - urn:ngm:class:cross-platform-digital-twins
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # NVIDIA Omniverse Platform

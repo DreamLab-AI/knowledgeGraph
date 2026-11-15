@@ -1,0 +1,141 @@
+{
+  "id": "urn:ngm:class:order-picking",
+  "title": "Order Picking",
+  "slug": "order-picking",
+  "public": true,
+  "classIri": "urn:ngm:class:order-picking",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Order picking is the process of retrieving products from storage, or from buffer areas, in response to a specific customer request.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:warehouse-operation",
+      "label": "Warehouse Operation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:mobile-manipulator",
+        "label": "Mobile Manipulator"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution",
+      "slug": "warehousing-and-distribution"
+    },
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "goods-to-person-picking",
+      "label": "Goods-to-Person Picking"
+    },
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    },
+    {
+      "slug": "automated-storage-and-retrieval-system",
+      "label": "Automated Storage and Retrieval System"
+    },
+    {
+      "slug": "pick-and-place",
+      "label": "Pick and Place"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "fulfilment-centre",
+      "label": "Fulfilment Centre"
+    },
+    {
+      "slug": "goods-to-person-picking",
+      "label": "Goods-to-Person Picking"
+    },
+    {
+      "slug": "order-fulfilment",
+      "label": "Order Fulfilment"
+    },
+    {
+      "slug": "warehouse-operation",
+      "label": "Warehouse Operation"
+    },
+    {
+      "slug": "warehouse-storage-system",
+      "label": "Warehouse Storage System"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

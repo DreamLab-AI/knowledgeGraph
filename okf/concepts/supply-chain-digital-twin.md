@@ -14,6 +14,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin-technology
 relatedTo:
   - urn:ngm:class:supply-chain-simulation
+generated: {"by":"agent:supply-chain-research/0.1.0","process":"process:supply-chain-research/0.1.0","at":"2026-10-18T15:13:40Z"}
 ---
 
 # Supply Chain Digital Twin

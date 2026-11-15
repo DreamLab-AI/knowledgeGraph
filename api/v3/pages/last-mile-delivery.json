@@ -1,0 +1,144 @@
+{
+  "id": "urn:visionflow:page:last-mile-delivery",
+  "title": "Last-Mile Delivery",
+  "slug": "last-mile-delivery",
+  "public": true,
+  "classIri": "urn:ngm:class:last-mile-delivery",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
+    "label": "enrichment-swarm",
+    "actor": "agent:enrichment-swarm/6"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "Last-mile delivery is the last leg of the supply chain, in which goods are moved to their final destinations.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-delivery",
+        "label": "Autonomous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:parcel-carrier",
+        "label": "Parcel Carrier"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
+      "slug": "click-and-collect",
+      "label": "Click and Collect"
+    },
+    {
+      "slug": "distribution-strategy",
+      "label": "Distribution Strategy"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "omnichannel-fulfilment",
+      "label": "Omnichannel Fulfilment"
+    },
+    {
+      "slug": "order-fulfilment",
+      "label": "Order Fulfilment"
+    },
+    {
+      "slug": "parcel-carrier",
+      "label": "Parcel Carrier"
+    },
+    {
+      "slug": "parcel-locker",
+      "label": "Parcel Locker"
+    },
+    {
+      "slug": "warehousing-and-distribution",
+      "label": "Warehousing and Distribution"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

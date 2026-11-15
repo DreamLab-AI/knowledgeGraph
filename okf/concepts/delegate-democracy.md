@@ -110,6 +110,7 @@ relatedTo:
   - urn:ngm:class:ai16z-dao
   - urn:ngm:class:olas-autonolas
   - urn:ngm:class:sortition-foundation
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Delegate Democracy

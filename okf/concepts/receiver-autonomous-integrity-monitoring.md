@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:anomaly-detection
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T21:38:09Z"}
 ---
 
 # Receiver Autonomous Integrity Monitoring

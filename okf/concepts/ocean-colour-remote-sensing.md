@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
+generated: {"by":"agent:space-corpus-research/0.1.0","process":"process:space-corpus-research/0.1.0","at":"2026-10-02T22:49:20Z"}
 ---
 
 # Ocean Colour Remote Sensing

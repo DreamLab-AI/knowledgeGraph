@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:economic-model
   - urn:ngm:class:devolution
   - urn:ngm:class:regional-development-agency
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Northern Powerhouse

@@ -1,0 +1,306 @@
+{
+  "id": "urn:ngm:class:agent-intent",
+  "title": "Agent Intent",
+  "slug": "agent-intent",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-intent",
+  "domain": "artificial-intelligence",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:0dc89e6b22d787a7b237a231362b6384c69bb5c6d809370357545d628d2b7f9f",
+    "label": "agent-ontology-import",
+    "actor": "agent:agent-ontology-import/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "An agent intent is a semantic expression of purpose, objective or expected action outcome.[^1] The intent module reads it as a statement of what an agent aims to achieve,[^2] and the threat-model module as a purpose or goal communicated by an agent, which is the basis of the intent-ambiguity threat.[^3] visionGraph places it under [[Goal]].",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:goal",
+      "label": "Goal"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:agent-delegation",
+        "label": "Agent Delegation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-task",
+        "label": "Agent Task"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:intent-type",
+        "label": "Intent Type"
+      },
+      {
+        "id": "urn:ngm:class:intent-parameter",
+        "label": "Intent Parameter"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique",
+      "slug": "ai-technique"
+    },
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence",
+      "slug": "artificial-intelligence"
+    },
+    {
+      "id": "urn:ngm:class:objective",
+      "label": "Objective",
+      "slug": "objective"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area",
+      "slug": "ai-research-area"
+    }
+  ],
+  "inheritedRelations": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      },
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "goal",
+      "label": "Goal"
+    },
+    {
+      "slug": "intent-type",
+      "label": "Intent Type"
+    },
+    {
+      "slug": "intent-parameter",
+      "label": "Intent Parameter"
+    },
+    {
+      "slug": "agent-delegation",
+      "label": "Agent Delegation"
+    },
+    {
+      "slug": "agent-action",
+      "label": "Agent Action"
+    },
+    {
+      "slug": "agent-task",
+      "label": "Agent Task"
+    },
+    {
+      "slug": "intent-recognition",
+      "label": "Intent Recognition"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-action",
+      "label": "Agent Action"
+    },
+    {
+      "slug": "agent-artefact",
+      "label": "Agent Artefact"
+    },
+    {
+      "slug": "agent-task",
+      "label": "Agent Task"
+    },
+    {
+      "slug": "delegation-scope",
+      "label": "Delegation Scope"
+    },
+    {
+      "slug": "intent-parameter",
+      "label": "Intent Parameter"
+    },
+    {
+      "slug": "intent-type",
+      "label": "Intent Type"
+    },
+    {
+      "slug": "payment-intent",
+      "label": "Payment Intent"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}

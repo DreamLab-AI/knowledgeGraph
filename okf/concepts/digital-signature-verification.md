@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:certificate-authority
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:private-key
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Signature Verification

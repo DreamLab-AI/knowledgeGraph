@@ -17,6 +17,7 @@ relatedTo:
   - urn:ngm:class:case-management-system
   - urn:ngm:class:records-management
   - urn:ngm:class:workflow-automation
+generated: {"by":"agent:lcr-swarm/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Case Management

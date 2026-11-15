@@ -21,6 +21,7 @@ relatedTo:
   - urn:ngm:class:ieee-control-systems-society
   - urn:ngm:class:robotics-core-concepts
   - urn:ngm:class:technical-standards
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # IEEE Robotics And Automation Society

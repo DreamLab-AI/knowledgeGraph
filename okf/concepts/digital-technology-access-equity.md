@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:data-sovereignty
   - urn:ngm:class:human-rights
   - urn:ngm:class:human-rights
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Digital Technology Access Equity

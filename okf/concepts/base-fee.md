@@ -33,6 +33,7 @@ relatedTo:
   - urn:ngm:class:priority-fee
   - urn:ngm:class:block-reward
   - urn:ngm:class:blockchain-economics
+generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Base Fee

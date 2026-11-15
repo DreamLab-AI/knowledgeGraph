@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:head-mounted-display
   - urn:ngm:class:mixed-reality
   - urn:ngm:class:optical-see-through
+generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Holographic Display

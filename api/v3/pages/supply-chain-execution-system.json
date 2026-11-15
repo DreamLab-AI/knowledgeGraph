@@ -1,0 +1,136 @@
+{
+  "id": "urn:ngm:class:supply-chain-execution-system",
+  "title": "Supply Chain Execution System",
+  "slug": "supply-chain-execution-system",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-execution-system",
+  "domain": "supply-chains-and-logistics",
+  "provenance": {
+    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
+    "label": "supply-chain-research",
+    "actor": "agent:supply-chain-research/0.1.0"
+  },
+  "certification": {
+    "state": "pending",
+    "keys": []
+  },
+  "definition": "A supply chain execution system is software that carries out the day-to-day operations of a supply chain, as distinct from software that plans them.[^1]",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:supply-chains-and-logistics",
+      "label": "Supply Chains and Logistics",
+      "slug": "supply-chains-and-logistics"
+    }
+  ],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "warehouse-management-system",
+      "label": "Warehouse Management System"
+    },
+    {
+      "slug": "manufacturing-execution-system",
+      "label": "Manufacturing Execution System"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    },
+    {
+      "slug": "order-management-system",
+      "label": "Order Management System"
+    },
+    {
+      "slug": "global-trade-management-system",
+      "label": "Global Trade Management System"
+    },
+    {
+      "slug": "supply-chain-planning-system",
+      "label": "Supply Chain Planning System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "manufacturing-execution-system",
+      "label": "Manufacturing Execution System"
+    },
+    {
+      "slug": "order-management-system",
+      "label": "Order Management System"
+    },
+    {
+      "slug": "supply-chain-information-systems",
+      "label": "Supply Chain Information Systems"
+    },
+    {
+      "slug": "supply-chain-planning-system",
+      "label": "Supply Chain Planning System"
+    },
+    {
+      "slug": "transportation-management-system",
+      "label": "Transportation Management System"
+    }
+  ],
+  "reviewBinding": {
+    "current": 0,
+    "stale": 0,
+    "unbound": 0
+  }
+}
