@@ -3,12 +3,12 @@
     "name": "ontomark-compile",
     "version": "0.9.0"
   },
-  "id": "visionGraph@1df8eb49051b6e55f35ea493b3c42e79ffd77bb8",
-  "commit": "1df8eb49051b6e55f35ea493b3c42e79ffd77bb8",
+  "id": "visionGraph@0e29b85a7ca0bde46120446990219cb360b47117",
+  "commit": "0e29b85a7ca0bde46120446990219cb360b47117",
   "dirty": false,
-  "content_digest": "c1fc68d74ef7ad190ffba37d5efaf1fecacd893bc2dbcdfa9e4b326e802763c7",
+  "content_digest": "406b90c3ced38df12f265a2bdd46b778cbbe394b7dd0bfc5085a8598c7ae8225",
   "ontology_digest": "sha256-12-b5e547c50de7",
-  "generated_at": "2026-11-15T13:48:35.270904+00:00",
+  "generated_at": "2026-11-23T20:28:13.265624+00:00",
   "class_count": 9595,
   "page_count": 9595,
   "vocabulary_version": 2,
@@ -30,7 +30,7 @@
     },
     {
       "name": "certificate/scope.tsv",
-      "sha256": "29675024390dbd7f9d41183d1b79a36ce9aee99f23800a5c13c033b064a56734",
+      "sha256": "62df322f0315adec0eb637b9cbfd390c58911b5aa7c20438a2821a7444222f2e",
       "bytes": 179
     },
     {
@@ -40,17 +40,17 @@
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "9ede64722ce9db80b138b390990a409df2312be9b77883d233ddae5ec6cf4668",
+      "sha256": "311f02efb0ad79778dde9889484263131afdae67c961cb375240a96dc78c153d",
       "bytes": 3832292
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "e230add30776ef0056da137d97e78a0652d4b9a72752b3ec8f2ceca9b1807253",
+      "sha256": "a955ac996a826eb0608bad6656fac6c7298f6272aa70d98a3ab19942b33d30b2",
       "bytes": 12053349
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "b4b9940d88de0b4a677b12118ef4ad7903ec2dee2f1be9edc447dadfa3d6fc72",
+      "sha256": "c2f26081b49f7cc1b2c43de52de3f778bb319029adca9fa703d5aebdc3b03dd0",
       "bytes": 5519333
     },
     {
@@ -96065,7 +96065,7 @@
     },
     {
       "name": "data/graph/overview.json",
-      "sha256": "40502f6e59cf1bfa15b426f9420bbe9471e9ec71a60925f41872a15104d00ffe",
+      "sha256": "e26b884ec5ca9513225ddb46b6a091fcb1881e9c29b6478d4b689cbcc1077eac",
       "bytes": 47389
     },
     {
@@ -96120,7 +96120,7 @@
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "f94e3d05775fdffaf85c6d6f7375029e4e379d35b496261c036725893764c8d9",
+      "sha256": "4a030d11c12461b1b39dfec791b3be3ea9d6e928a8c165cc9d948d6885a869a8",
       "bytes": 3343
     },
     {
@@ -145670,7 +145670,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "efe23945fd2c74dbc0dd611440f2250e2c3ced73cfc93a4230d4f66af83f22bf",
+      "sha256": "c3cabbae8e5dff8e83eb75b3cff70ffd15d3b02828a2ae6550d23f57e9c2c5b1",
       "bytes": 901544
     },
     {
@@ -241630,8 +241630,8 @@
     },
     {
       "name": "publish/working/AI Companies.md",
-      "sha256": "f793c32bc567311feb86c2519963b90a0140d2c944728a5ab784fb5e13ee3318",
-      "bytes": 8716
+      "sha256": "d11ab69f976672d0e5064d70091f120935fc27cd1a390e0081540bdf1ae95b83",
+      "bytes": 8706
     },
     {
       "name": "publish/working/AI Risks.md",
@@ -241680,8 +241680,8 @@
     },
     {
       "name": "publish/working/Agentic Mycelia.md",
-      "sha256": "b3e2015702e9dc1365eb4bc14a90b46b6d04cf662c973d81ed9d7fa9b6a3c1ba",
-      "bytes": 26596
+      "sha256": "390d7d5f80ace2fb5831fd934e43cb2c7aaa77800fc18c25a5fd658f8e3f6d53",
+      "bytes": 26586
     },
     {
       "name": "publish/working/Agentic Workshop.md",
@@ -241695,8 +241695,8 @@
     },
     {
       "name": "publish/working/Ai in Games.md",
-      "sha256": "b928868826ac3b65af651db6fc229a94ed2a644efd4e2a5a811f92ee876da91f",
-      "bytes": 4658
+      "sha256": "d0888188137fdf918056610011d55acefacb14e2856a93bdf1cabebcbbb80d3c",
+      "bytes": 4648
     },
     {
       "name": "publish/working/Algorithmic Bias and Variance.md",
@@ -241710,8 +241710,8 @@
     },
     {
       "name": "publish/working/Anthropic Claude.md",
-      "sha256": "c3a22ea6e2c4c84c674773795113468bb6b30cc4ca81a78dc67b4a9d9a5453ea",
-      "bytes": 1940
+      "sha256": "83c4f1b41d5dee3a75997b0976cfbfc2e3a70aa5cf1d0c880c9b760ad15646b2",
+      "bytes": 1930
     },
     {
       "name": "publish/working/Apple.md",
@@ -241720,8 +241720,8 @@
     },
     {
       "name": "publish/working/Artificial Intelligence.md",
-      "sha256": "5ad7b2dd4a7848c76b86d61117818474c87c162fc5680aea750aa1beb898ac48",
-      "bytes": 2926
+      "sha256": "620ed8ca6137eef902ba12743e5ac63c8389517cee866103c46fedc7275031bc",
+      "bytes": 2916
     },
     {
       "name": "publish/working/Automated Podcasting.md",
@@ -241805,8 +241805,8 @@
     },
     {
       "name": "publish/working/ComfyUI.md",
-      "sha256": "cd679a98b50346c2d42c9c3f66df7b9f331c84985b8d5bce041741fa3636cd2a",
-      "bytes": 36733
+      "sha256": "ec92b1cacd5bbeddafac138c8219a6d01d3e6f55819dc6e61864e90049c885db",
+      "bytes": 36713
     },
     {
       "name": "publish/working/Comparison of GPT4 and Gemini Ultra.md",
@@ -241845,8 +241845,8 @@
     },
     {
       "name": "publish/working/Cyber Security and Military.md",
-      "sha256": "649a548dcfc5929057a7e83a3f736d474320cd0549d8e07a6c7e0e65d12954d6",
-      "bytes": 7669
+      "sha256": "2732981e2c044815d955242529eb39952fcd33a3ffa26193bf0e3ed65f094dc2",
+      "bytes": 7659
     },
     {
       "name": "publish/working/Cyber security and Cryptography.md",
@@ -241855,8 +241855,8 @@
     },
     {
       "name": "publish/working/Death of the Internet.md",
-      "sha256": "964c25e0665de7a957bebcc4bb49765bf0d8c1d9b7a3b1af6fa942bc03b24ca9",
-      "bytes": 31960
+      "sha256": "4dddff0c7dad4b30bb3589afcd52bd2944d971c5f645d3990b9232e271c80a04",
+      "bytes": 31950
     },
     {
       "name": "publish/working/Debug Test Page.md",
@@ -241925,8 +241925,8 @@
     },
     {
       "name": "publish/working/Education and AI.md",
-      "sha256": "a2f9a7fb46f49a67cd93f26631cb14570230dbbb07f858e1a9d80aded5649d81",
-      "bytes": 17415
+      "sha256": "5c69154736fe71968d16be3fcab0c58fbae1bfdda1d18e12325e0ecf42e0ac83",
+      "bytes": 17405
     },
     {
       "name": "publish/working/Emergence.md",
@@ -241965,8 +241965,8 @@
     },
     {
       "name": "publish/working/Foundation Models.md",
-      "sha256": "b432bb01aecaade25e55e72d73c5933072e7687997c935bac95d5e4896cc62c1",
-      "bytes": 2559
+      "sha256": "aedba9fddc3be0b4f723d7dabc6d28d3f3b5dffeffdf399d0fd670d715755e69",
+      "bytes": 2549
     },
     {
       "name": "publish/working/Future Bernard.md",
@@ -242030,8 +242030,8 @@
     },
     {
       "name": "publish/working/Interfaces.md",
-      "sha256": "7874608d34c178598b83bf94a5774e84bd01b0df5e1bffb812b3c3a960573ca8",
-      "bytes": 5456
+      "sha256": "eda4925853b1b09ec2bad032b885f21c82d0150eb36628c8e591e99d26d7d1bd",
+      "bytes": 5426
     },
     {
       "name": "publish/working/Introduction to Agentics.md",
@@ -242090,8 +242090,8 @@
     },
     {
       "name": "publish/working/LoRA DoRA etc.md",
-      "sha256": "189ff3a066c717e917201badb91c40e285f13fdae60035e75be91c4681b5e844",
-      "bytes": 1639
+      "sha256": "cf2caecc237c87fb5785017fdb7fc54cd3d64f0fd00909fc13e264fb0662ac34",
+      "bytes": 1629
     },
     {
       "name": "publish/working/Machine Learning.md",
@@ -242205,8 +242205,8 @@
     },
     {
       "name": "publish/working/Privacy, Trust and Safety.md",
-      "sha256": "726abb1d8bf6251025d7f9e9380ac73097e57b180875085f858b62ed7d22aa7b",
-      "bytes": 20337
+      "sha256": "51191e3539a1024e1e64c0f9f0a80efd277c461ed105b3f55b16169cc07079a0",
+      "bytes": 20327
     },
     {
       "name": "publish/working/Product and Risk Management.md",
@@ -242330,8 +242330,8 @@
     },
     {
       "name": "publish/working/Speech and voice.md",
-      "sha256": "6e010ee0e3b9ad66549eb443fbf4c9ff40e77f5dfdea578c544a0995589216db",
-      "bytes": 13536
+      "sha256": "fc13ab397b33e61941800c336f853b95eb6591d85897eacc87e724e80c52ad0a",
+      "bytes": 13526
     },
     {
       "name": "publish/working/Stable Coins.md",
@@ -242455,8 +242455,8 @@
     },
     {
       "name": "publish/working/multimodal.md",
-      "sha256": "aec41bb51866f456c98d17377654e826e03b64b6ee81d8bf80069ecd6aec9d13",
-      "bytes": 4608
+      "sha256": "f273a26e7f0427552de2bc61dbd6b62dbda5187aec02c1837b2919188e85a009",
+      "bytes": 4588
     },
     {
       "name": "publish/working/ollama.md",
@@ -242480,12 +242480,12 @@
     },
     {
       "name": "publish/index.md",
-      "sha256": "9a436a31f92e94c30e2b3dfdb4e94cbbf62fdcbe68cd470bc57d17f36ac68c01",
+      "sha256": "c94a79ea7a1ee26604d02e524d8aad3a415bbbe75587f75095ec226677f2c803",
       "bytes": 398
     },
     {
       "name": "data/.generation.json",
-      "sha256": "1436f84411ef7f10a942ec36e4951a2008a4ea51e0e3cf3e6438ad52002f45ba",
+      "sha256": "36937d0cb5e3ba86eb3709b001d87eb891b406f8d184644bf0ba454abb8ec53d",
       "bytes": 3455
     }
   ]

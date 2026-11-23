@@ -13,10 +13,10 @@
   },
   {
     "name": "@dreamlab-ai/vowl-wasm",
-    "version": "0.2.3",
+    "version": "0.4.0",
     "license": "MIT",
     "repository": "https://github.com/DreamLab-AI/vowl-wasm",
-    "source": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.2.3/vowl-wasm-0.2.3-pkg.tgz",
+    "source": "https://github.com/DreamLab-AI/vowl-wasm/releases/download/v0.4.0/vowl-wasm-0.4.0-pkg.tgz",
     "noticeFiles": [
       "LICENSE"
     ]
