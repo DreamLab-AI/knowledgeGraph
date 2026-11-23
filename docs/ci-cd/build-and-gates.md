@@ -93,7 +93,7 @@ mistaken for a clean corpus.
 
 **NGG1 golden fixture.** `test_golden_183_bytes_byte_exact` builds a 3-node /
 2-edge graph and asserts the packed output is byte-identical to the hex dump in
-`explorer/FORMAT-NGG1.md` §7 (exactly 183 bytes), then writes
+`docs/reference/FORMAT-NGG1.md` §7 (exactly 183 bytes), then writes
 `pipeline/tests/fixtures/ngg1-3n2e.bin`. That file is byte-identical to its twin
 at `explorer/modern/src/lib/__fixtures__/ngg1-3n2e.bin`, which the TypeScript
 reader test consumes. One worked example, two independent sides, one contract.

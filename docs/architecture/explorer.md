@@ -1,5 +1,15 @@
 # Explorer architecture: Rust/WASM + React
 
+> **Retired 2026-11-23.** The `explorer/` tree this document describes has been removed
+> from `main`; nothing in this repository built or deployed it. The text below is kept
+> unchanged as a historical record, and its `explorer/…` paths resolve at commit
+> `7815bbcb9f8ab04c2e76f5f8c5c32c69a9dbc56c` (`git show 7815bbcb9f8:explorer/<path>`). The NGG1 contract moved to
+> [`docs/reference/FORMAT-NGG1.md`](../reference/FORMAT-NGG1.md). The live explorer
+> source is `publishing-tools/WasmVOWL/modern` in
+> the private visionGraph repository,
+> built by that repository's publish workflow and served at
+> <https://narrativegoldmine.com/graph/>.
+
 The explorer is the browser half of this repository: it turns the binary and JSON
 artefacts under `dist/data/` into a navigable graph and a readable page view. It
 lives in `explorer/`, 227 files (excluding `node_modules/`, `target/`, `pkg/`,

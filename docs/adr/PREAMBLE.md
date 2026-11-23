@@ -12,7 +12,7 @@ says how to amend it:
 Detailed, non-normative references the baseline governs: `docs/architecture/pipeline.md`
 (pipeline internals), `docs/architecture/explorer.md` (explorer internals),
 `docs/methodology/corpus-generation.md` (how the corpus was generated),
-`explorer/FORMAT-NGG1.md` (the frozen binary tier contract).
+`docs/reference/FORMAT-NGG1.md` (the frozen binary tier contract).
 
 **Lookup order:** governing doc → its `file:line` citations into code → the ledger
 records below. (There is no `docs/archive/`: this consolidation moved nothing, so
