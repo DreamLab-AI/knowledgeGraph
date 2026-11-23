@@ -25,7 +25,8 @@ The September archive move changed paths, not licence grants. In the scope table
 | `docs/` (original prose) | GNU Affero General Public License v3.0 or later | `AGPL-3.0-or-later` | [`LICENSE`](LICENSE) |
 | `examples/` | GNU Affero General Public License v3.0 or later | `AGPL-3.0-or-later` | [`LICENSE`](LICENSE) |
 | `README.md`, `LICENSING.md`, `COMMERCIAL.md`, `CONTRIBUTING.md`, `NOTICE` | GNU Affero General Public License v3.0 or later | `AGPL-3.0-or-later` | [`LICENSE`](LICENSE) |
-| `explorer/` | MIT License | `MIT` | [`LICENSE-EXPLORER`](LICENSE-EXPLORER) |
+| `explorer/` (removed from `main` 2026-11-23; last present at `7815bbcb9f8`) | MIT License | `MIT` | [`LICENSE-EXPLORER`](LICENSE-EXPLORER) |
+| `assets/images/ngm-hero.webp`, `docs/reference/FORMAT-NGG1.md` (moved out of `explorer/` 2026-11-23) | MIT License | `MIT` | [`LICENSE-EXPLORER`](LICENSE-EXPLORER) |
 | `ontology/` | Open Database License v1.0 | `ODbL-1.0` | [`LICENSE-DATA`](LICENSE-DATA) |
 | `dist/` | Open Database License v1.0 | `ODbL-1.0` | [`LICENSE-DATA`](LICENSE-DATA) |
 
@@ -56,7 +57,9 @@ working tree on 2026-07-25.
 - **`static/`**: `ns/v2.jsonld`, the JSON-LD `@context` document that maps the corpus
   vocabulary onto `owl:`, `rdfs:`, `skos:`, `prov:` and the local `vc:` namespace
   (`https://narrativegoldmine.com/ns/v1#`). Original work.
-- **`explorer/`**: WasmVOWL. Subtrees: `modern/` (React + TypeScript SPA),
+- **`explorer/`** (removed from `main` on 2026-11-23; the description below is kept as a
+  record of commit `7815bbcb9f8`. Live source: `publishing-tools/WasmVOWL/modern` in
+  jjohare/visionGraph): WasmVOWL. Subtrees: `modern/` (React + TypeScript SPA),
   `rust-wasm/` (Rust → WebAssembly layout engine and NGG1 reader), `docs/`, `tests/`,
   `scripts/`, `.github/workflows/wasm-publish.yml`, plus the design and format notes at
   the tree root (`FORMAT-NGG1.md`, `VOWL-SPEC.md`, `CAPABILITIES.md` and others) and

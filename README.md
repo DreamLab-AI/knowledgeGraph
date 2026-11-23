@@ -8,9 +8,9 @@
 
 </div>
 
-![Narrative Goldmine decorative graph illustration](explorer/modern/public/images/heroes/ngm-hero.webp)
+![Narrative Goldmine decorative graph illustration](assets/images/ngm-hero.webp)
 
-**knowledgeGraph is the publication target and historical archive for Narrative Goldmine.** It hosts the public Markdown corpus and compiled ontology at [narrativegoldmine.com](https://narrativegoldmine.com/). Authoring and the active publication build live upstream; this checkout's `main` branch retains the earlier corpus, pipeline, explorer and their method.
+**knowledgeGraph is the publication target and historical archive for Narrative Goldmine.** It hosts the public Markdown corpus and compiled ontology at [narrativegoldmine.com](https://narrativegoldmine.com/). Authoring and the active publication build live upstream; this checkout's `main` branch retains the earlier corpus, pipeline and their method.
 
 Use the public site to read concepts, explore their relationships or download machine-readable artefacts. Use [Ontomark](https://github.com/DreamLab-AI/ontomark) to build a new corpus from Markdown. Running the archived Python pipeline here reproduces an older dataset; it does not rebuild today's public site.
 
@@ -65,9 +65,8 @@ The repository's former seven-stage rdflib build and Logseq-format source were r
 | [`archive/github-workflows/`](archive/github-workflows/) | Retired workflow; historical build and gate definitions |
 | [`dist/data/`](dist/data/) | Committed historical Turtle, WebVOWL JSON and graph artefacts |
 | [`static/ns/v2.jsonld`](static/ns/v2.jsonld) | Local namespace document; distinguish it from the current served version |
-| [`explorer/`](explorer/) | Retained React/Rust/WASM explorer implementation |
-| [`explorer/FORMAT-NGG1.md`](explorer/FORMAT-NGG1.md) | Local binary format documentation |
-| [`explorer/CAPABILITIES.md`](explorer/CAPABILITIES.md) | Explorer capability record and its evidence limits |
+| [`docs/reference/FORMAT-NGG1.md`](docs/reference/FORMAT-NGG1.md) | NGG1 binary format of the committed `dist/data/graph/*.bin` tiers (moved from `explorer/`) |
+| [`assets/images/`](assets/images/) | README imagery (moved from `explorer/`) |
 | [`docs/`](docs/) | Architecture, methodology and historical acceptance records |
 
 <details>
@@ -93,7 +92,7 @@ The earlier representation puts machine assertions in fenced JSON-LD and readabl
 <details>
 <summary><strong>Explorer and graph-format boundaries</strong></summary>
 
-The retained explorer has its own build and acceptance record. Its presence here does not establish that the upstream publisher deploys this exact copy. Consult [`explorer/CAPABILITIES.md`](explorer/CAPABILITIES.md) and [`docs/architecture/explorer.md`](docs/architecture/explorer.md) before reusing it.
+**Explorer retired from this repository (23 November 2026).** The `explorer/` tree was a stale copy of the WasmVOWL explorer (pinning `@dreamlab-ai/vowl-wasm` v0.1.1) that nothing here built or deployed, and it has been removed from `main`. The live explorer source is `publishing-tools/WasmVOWL/modern` in [jjohare/visionGraph](https://github.com/jjohare/visionGraph/tree/main/publishing-tools/WasmVOWL/modern), whose publish workflow builds it and pushes the site to this repository's `gh-pages` branch; it is served at [narrativegoldmine.com/graph/](https://narrativegoldmine.com/graph/). The removed tree, and every `explorer/…` path cited by the historical records in [`docs/`](docs/), remains readable at commit `7815bbcb9f8ab04c2e76f5f8c5c32c69a9dbc56c` (for example `git show 7815bbcb9f8:explorer/CAPABILITIES.md`). [`docs/architecture/explorer.md`](docs/architecture/explorer.md) describes that retired copy.
 
 NGG1 represents graph tiers with a compact node table and CSR adjacency. The local format uses 24-byte node records and stores one category per node; it cannot by itself represent every multiple-inheritance membership. Sidecar metadata carries additional memberships. Check the producer and consumer versions together before using a binary tier.
 
