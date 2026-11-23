@@ -514,7 +514,7 @@ content, produced under human direction, by design"* and that provenance attests
 
 ## NGG1 binary format
 
-Contract: `explorer/FORMAT-NGG1.md`. Writer: `pack_ngg1`, `emit_graph_tiers.py:288-344`. Readers:
+Contract: `docs/reference/FORMAT-NGG1.md`. Writer: `pack_ngg1`, `emit_graph_tiers.py:288-344`. Readers:
 `explorer/modern/src/lib/ngg1.ts` and the `explorer/rust-wasm/` crate. Little-endian
 throughout; every section starts on a 4-byte boundary and readers must use the
 declared offsets rather than assume back-to-back packing.

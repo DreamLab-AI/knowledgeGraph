@@ -173,7 +173,7 @@ five times the file size.
 
 ### NGG1 binary header (VERIFIED)
 
-The format is documented in `explorer/FORMAT-NGG1.md`. Little-endian, 32-byte
+The format is documented in `docs/reference/FORMAT-NGG1.md`. Little-endian, 32-byte
 header, 24-byte node records:
 
 ```python
@@ -206,7 +206,7 @@ Planning.
 
 Flags: `0x01` domain root, `0x02` category root, `0x04` has page, `0x08` bridge.
 The writer also emits `0x10` for an Individual (`pipeline/emit_graph_tiers.py:221`,
-`FLAG_INDIVIDUAL`); `explorer/FORMAT-NGG1.md` §5 still lists bits 4–7 as reserved,
+`FLAG_INDIVIDUAL`); `docs/reference/FORMAT-NGG1.md` §5 still lists bits 4–7 as reserved,
 so the file is the newer of the two. The extracted corpus has 0 individuals, so no
 node in `full.bin` carries that bit.
 
@@ -261,7 +261,7 @@ Output:
 *AI Documentation Standards* is a single class sitting under two parents that
 resolve to two categories in two different domains. Read the same node out of
 `full.bin` and it reports `category 3` and nothing else — the NGG1 node record
-holds a **single** `u16` category (`explorer/FORMAT-NGG1.md` §3, byte offset 14),
+holds a **single** `u16` category (`docs/reference/FORMAT-NGG1.md` §3, byte offset 14),
 so the tiers keep only the nearest category ancestor and drop the rest. The full
 membership exists only in `bridges.json`. If you are computing anything over
 category overlap, read the JSON; the binary cannot answer the question.

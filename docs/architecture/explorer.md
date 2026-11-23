@@ -6,7 +6,7 @@
 > `7815bbcb9f8ab04c2e76f5f8c5c32c69a9dbc56c` (`git show 7815bbcb9f8:explorer/<path>`). The NGG1 contract moved to
 > [`docs/reference/FORMAT-NGG1.md`](../reference/FORMAT-NGG1.md). The live explorer
 > source is `publishing-tools/WasmVOWL/modern` in
-> [jjohare/visionGraph](https://github.com/jjohare/visionGraph/tree/main/publishing-tools/WasmVOWL/modern),
+> the private visionGraph repository,
 > built by that repository's publish workflow and served at
 > <https://narrativegoldmine.com/graph/>.
 

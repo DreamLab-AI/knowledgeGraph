@@ -10,7 +10,7 @@ sources:
   - pipeline/jsonld_to_turtle.py
   - pipeline/jsonld_parser.py
   - pipeline/validate.py
-  - explorer/FORMAT-NGG1.md
+  - docs/reference/FORMAT-NGG1.md
   - explorer/rust-wasm/src/ngg1.rs
   - explorer/modern/src/types/scope.ts
   - explorer/modern/src/workers/protocol.ts
@@ -46,7 +46,7 @@ Detailed references this baseline governs, not replaces:
 - Pipeline internals — `docs/architecture/pipeline.md`
 - Explorer internals — `docs/architecture/explorer.md`
 - Corpus provenance & generation — `docs/methodology/corpus-generation.md`
-- Binary tier contract — `explorer/FORMAT-NGG1.md`
+- Binary tier contract — `docs/reference/FORMAT-NGG1.md`
 - CI gates — `docs/ci-cd/build-and-gates.md`
 
 ## Current State
@@ -87,7 +87,7 @@ Exporter-local visibility checks in `pipeline/visibility.py` remain defensive bo
 ### The NGG1 binary tier contract
 
 The graph tiers (`full.bin`, six `domain-*.bin`) use the frozen NGG1 format
-(`explorer/FORMAT-NGG1.md`). Little-endian; 32-byte header; four 4-byte-aligned
+(`docs/reference/FORMAT-NGG1.md`). Little-endian; 32-byte header; four 4-byte-aligned
 sections (node table, CSR adjacency, edge types, string table). The node record
 is **24 bytes, not 20** — the sprint brief's field widths summed to 22 and a
 `u32 degree` cannot be 4-aligned inside 20 bytes, so the pad was widened to 3.
@@ -136,7 +136,7 @@ CI glue are **AGPL-3.0-or-later** (`LICENSE`); the `ontology/` corpus is
   decision this repo did not take would fabricate authority. Instead each cited
   section is mapped to the in-tree surface that carries its content today
   (ADR-2001 "ADR-NG-001 resolution"), so a reader following a citation reaches
-  a real document. `explorer/FORMAT-NGG1.md:3` links the absent record by the
+  a real document. `docs/reference/FORMAT-NGG1.md:3` links the absent record by the
   path `../../docs/adr/ADR-NG-001-explorer-architecture.md`, which is **doubly
   broken**: from `explorer/` that normalises to *above* the repo root (the
   correct depth would be `../docs/adr/…`). Since the target is classified
