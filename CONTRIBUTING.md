@@ -95,6 +95,8 @@ not launder employer-owned code.
 
 ### `explorer/` is different
 
+> **Note, 2026-11-24.** `explorer/` was removed from `main` on 2026-11-23 (PR #6), so new explorer work does not land here. The two files that moved out of it, `docs/reference/FORMAT-NGG1.md` and `assets/images/ngm-hero.webp`, are still MIT under the terms below. The live explorer is `publishing-tools/WasmVOWL/modern` in the private visionGraph repository; WebVOWL-general work still goes upstream as described below.
+
 `explorer/` is MIT and is a derivative of WebVOWL by Vincent Link, Steffen Lohmann,
 Eduard Marbach, Stefan Negru and Vitalis Wiens. Contributions there need the **DCO
 sign-off only** (no `Copyright-Grant` trailer). MIT already permits everything the grant
@@ -151,7 +153,7 @@ pull request description:
 - Bug fixes in `pipeline/`, with a test in `pipeline/tests/` that fails before and passes
   after.
 - Emitter improvements: correctness of the Turtle, WebVOWL JSON, page API, search index
-  or NGG1 tier output against its specification. `explorer/FORMAT-NGG1.md` is the NGG1
+  or NGG1 tier output against its specification. `docs/reference/FORMAT-NGG1.md` is the NGG1
   format reference.
 - Validation rules that catch a real class of corpus defect, with the count of existing
   pages they would flag.

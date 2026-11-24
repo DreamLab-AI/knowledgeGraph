@@ -1,10 +1,17 @@
 # FORMAT-NGG1 — the canonical binary graph-tier format
 
-**Status:** Contract (frozen for the ng-overhaul sprint) · derives from [ADR-NG-001 §2](../../docs/adr/ADR-NG-001-explorer-architecture.md)
-**Consumers:** `pipeline/emit_graph_tiers.py` (writer), `rust-wasm/` crate (`load_csr`), `modern/src/lib/ngg1.ts` (reader).
+**Status:** Contract (frozen for the ng-overhaul sprint) · derives from ADR-NG-001 §2 (never checked in to this repository; see the note below)
+**Consumers:** the committed `dist/data/graph/*.bin` tiers were written by `archive/logseq-era-2026-09-22/pipeline/emit_graph_tiers.py`. The live reader is the explorer at `publishing-tools/WasmVOWL/modern` in the private visionGraph repository: its `src/lib/nggGraph.ts` decodes through `decodeNgg1` in `@dreamlab-ai/vowl-wasm` (the Rust `ontomark-ngg1` codec), and `NggExplorer` lays the tiers out.
+
+> **Note, 2026-11-24.** This file moved here verbatim from `explorer/FORMAT-NGG1.md` when `explorer/` was retired (PR #6, 2026-11-23). Three things were corrected:
+> - **Consumers.** The line above used to name paths relative to that tree: `pipeline/emit_graph_tiers.py` (writer), the `rust-wasm/` crate (`load_csr`) and `modern/src/lib/ngg1.ts` (reader). Those paths resolve at `7815bbcb9f8`. The TypeScript codec `ngg1.ts` no longer exists in the live explorer either.
+> - **ADR-NG-001.** The status line linked `../../docs/adr/ADR-NG-001-explorer-architecture.md`, a record that was never written here; ADR-2001 classifies it `historical-absent` ("ADR-NG-001 resolution"). The link is now plain text.
+> - **DDD-NG-001.** The links to `DDD-NG-001` below were dead for the same reason (there is no `docs/ddd/` here) and are also plain text now.
+>
+> The byte layout below is unchanged and still describes the committed tiers.
 **Applies to:** `www/data/graph/domain-<slug>.bin` (×6) and `full.bin`. `overview.json` (T0) stays JSON — it is ~40 nodes with pre-baked positions and needs no binary tier.
 
-NGG1 is the anti-corruption layer named in [DDD-NG-001 §4](../../docs/ddd/DDD-NG-001-publication-context.md): WebVOWL's mirror-array vocabulary stops at the compiler; everything downstream reads **only** this format. Parsed zero-copy in Rust and in `ngg1.ts`; JS never materialises edge arrays as objects.
+NGG1 is the anti-corruption layer named in DDD-NG-001 §4 (absent here): WebVOWL's mirror-array vocabulary stops at the compiler; everything downstream reads **only** this format. Parsed zero-copy in Rust and in `ngg1.ts`; JS never materialises edge arrays as objects.
 
 ---
 
@@ -127,7 +134,7 @@ String `s` spans `blob[offset[s] .. (s+1 < count ? offset[s+1] : blob_len)]`.
 
 ### Canonical domain ids (§3 `domain`)
 
-Index order is fixed by [DDD-NG-001 §2](../../docs/ddd/DDD-NG-001-publication-context.md) and matches `overview.json` domain order:
+Index order is fixed by DDD-NG-001 §2 (absent here) and matches `overview.json` domain order:
 
 | id | slug | label |
 |----|------|-------|
@@ -241,4 +248,4 @@ Section offsets: header 32 → nodes `off_nodes=32` (3×24=72, ends 104) → adj
 - `label(1) == "ML"`, `iri(1) == "ng:1"` via `strings[2]`, `strings[3]`.
 - Ego graph of n1, radius 1: nodes `{1,0,2}`, edges `{0,1}` with types `{0,1}`.
 
-Any writer whose output matches these 183 bytes for this input is conformant. Fixtures live at `pipeline/tests/fixtures/ngg1-3n2e.bin` (writer golden) and `modern/src/lib/__fixtures__/ngg1-3n2e.bin` (reader golden) — keep them byte-identical.
+Any writer whose output matches these 183 bytes for this input is conformant. Fixtures live at `pipeline/tests/fixtures/ngg1-3n2e.bin` (writer golden) and `modern/src/lib/__fixtures__/ngg1-3n2e.bin` (reader golden) — keep them byte-identical. (Note 2026-11-24: the writer golden is now `archive/logseq-era-2026-09-22/pipeline/tests/fixtures/ngg1-3n2e.bin`; the reader golden is `publishing-tools/WasmVOWL/modern/src/lib/__fixtures__/ngg1-3n2e.bin` in visionGraph. They are still byte-identical, SHA-256 `b4580c96…6f0c3f`.)

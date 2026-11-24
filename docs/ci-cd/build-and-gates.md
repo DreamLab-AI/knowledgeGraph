@@ -57,6 +57,8 @@ between the parser and the validator, and validation errors were printed as
 
 ### 2.2 Gates in this tree that `build.yml` does not run
 
+> **Note, 2026-11-24.** These gates are no longer in this tree. They belonged to `explorer/`, which PR #6 removed from `main` on 2026-11-23. The table below, and the "Rust tests", "Honesty grep" and "Explorer smoke" sections, describe that copy as it was; every `explorer/…` path in them can be read at `7815bbcb9f8`. The live explorer is `publishing-tools/WasmVOWL/modern` in the private visionGraph repository. That repository's publish workflow runs the current equivalents before it deploys to this repository's `gh-pages` branch: the same honesty grep scoped to `publishing-tools/WasmVOWL`, `npm run test` and `npm run build` in `modern/`, and `tests/smoke/graph-smoke.mjs` against the built site. The `explorer/rust-wasm` crate has no successor there: the layout engine is the published `@dreamlab-ai/vowl-wasm` package. The NGG1 golden fixture referenced in this document is now `archive/logseq-era-2026-09-22/pipeline/tests/fixtures/ngg1-3n2e.bin` (writer) and `publishing-tools/WasmVOWL/modern/src/lib/__fixtures__/ngg1-3n2e.bin` in visionGraph (reader). The two are still byte-identical.
+
 The workflow installs Python and nothing else. These six need a Rust or Node
 toolchain; they run in the private publishing CI, and locally from a clone with
 those toolchains present.
@@ -532,7 +534,7 @@ must remap:
 | Private CI | This repository |
 |------------|-----------------|
 | `mainKnowledgeGraph/pages` | `ontology/pages` |
-| `publishing-tools/WasmVOWL` | `explorer` |
+| `publishing-tools/WasmVOWL` | `explorer` (removed 2026-11-23; no counterpart here now) |
 | `www` (output) | `dist` (`dist/data` committed, `dist/api` gitignored) |
 
 A separate PR-scoped workflow in the source repository gates changed corpus pages
@@ -545,7 +547,7 @@ of this extraction and is not reproduced.
 every Python number in this document is reproducible from a clone with
 `rdflib>=7.0.0` and `pytest`.
 
-The Rust and Node numbers are not, and the gap is worth naming.
+The Rust and Node numbers are not, and the gap is worth naming. (Note 2026-11-24: since `explorer/` was retired on 2026-11-23, these numbers are historical; they can be read at `7815bbcb9f8`.)
 `explorer/CAPABILITIES.md` records its evidence under a specific combination:
 rustc 1.97.0, wasm-pack 0.15.0, node 22.23.1, vite 6.4.3, python 3.12, measured
 2026-07-23. Nothing in this repository pins any of them. Two of the counts

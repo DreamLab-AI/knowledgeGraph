@@ -17,6 +17,12 @@ lineage: distils the ADR-NG-001 explorer-architecture reconstruction and the ADR
 
 # ADR-2002 — Fuse corpus and ontology — a Logseq page IS an OWL class
 
+## Retained explorer retired — 2026-11-24
+
+The choice the 2026-11-02 reconciliation below asked for has been made: retirement. PR #6 (`d77a41cfdf0`, merged 2026-11-23) removed `explorer/` from `main`. It was a stale copy pinning vowl-wasm v0.1.1 that nothing in this repository built or deployed. No consumer upgrade was attempted. The tree, and the `explorer/…` paths cited in the sections below, can still be read at `7815bbcb9f8`. The live explorer is `publishing-tools/WasmVOWL/modern` in the private visionGraph repository; its publish workflow pushes the site to this repository's `gh-pages` branch. The NGG1 contract moved verbatim to `docs/reference/FORMAT-NGG1.md`.
+
+The status axes do not change. The decision here is the fusion of corpus page and OWL class, and the retained explorer was only a downstream consumer of it. So `decision_status: accepted`, `implementation_status: complete` and `activation_status: live` are unaffected, and `verified_commit` still records the evidence for the fusion. The sections below are kept as written.
+
 ## Retained explorer verification — 2026-11-14
 
 Reviewed the pending buffer repair before publication. The worker admission path still checks the current generation before releasing a return. The regression now exercises twenty rounds with both slots occupied and two structured-clone transfers per buffer, detaching each outbound wrapper. All 26 worker tests pass, including 12 position-transport tests. Replacing only the implementation with remote main's original source makes both transfer regressions fail (10 other position-transport tests pass); the repaired source was restored before the passing run. This verifies the retained copy only: no renderer dependency upgrade, website build or live deployment is claimed.
