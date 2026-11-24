@@ -11,6 +11,7 @@ sources:
   - pipeline/jsonld_parser.py
   - pipeline/validate.py
   - docs/reference/FORMAT-NGG1.md
+  # explorer/ paths: removed from main 2026-11-23 (PR #6); read them at 7815bbcb9f8
   - explorer/rust-wasm/src/ngg1.rs
   - explorer/modern/src/types/scope.ts
   - explorer/modern/src/workers/protocol.ts
@@ -28,6 +29,10 @@ date: 2026-08-31
 
 The implementation described below is a historical baseline for the pre-archive tree at its declared revision. Since September 2026, `main` retains that corpus and Python pipeline under `archive/logseq-era-2026-09-22/`; the former root build workflow is under `archive/github-workflows/`. Current authoring and publishing are upstream, with the shared compiler owned by Ontomark. This repository is the public `gh-pages` target and historical archive. The [top-level README](../README.md) separates the served dataset from the committed August artefacts. Historical invariants and counts below do not assert that the archived workflow remains active or define the current compiler's contract.
 
+## Explorer retirement update (24 November 2026)
+
+`explorer/` was removed from `main` by PR #6 on 2026-11-23. It was a stale copy of the WasmVOWL explorer, pinning `@dreamlab-ai/vowl-wasm` v0.1.1, that nothing here built or deployed. The live explorer is `publishing-tools/WasmVOWL/modern` in the private visionGraph repository, which builds the site and pushes it to this repository's `gh-pages` branch. Every `explorer/…` path in this document is a historical citation and can be read at `7815bbcb9f8`: the frontmatter `sources`, "The NGG1 tiers", "The explorer" and "Licence split". `docs/architecture/explorer.md` describes that retired copy. `FORMAT-NGG1.md` moved verbatim to `docs/reference/FORMAT-NGG1.md`, together with `ngm-hero.webp`, now at `assets/images/`. Both remain MIT. On 2026-11-24 its consumers line was corrected and its dead `ADR-NG-001`/`DDD-NG-001` links were turned into plain text.
+
 ## Purpose
 
 Single governing document for what NarrativeGoldmine **is** at this commit: a
@@ -44,7 +49,7 @@ authority.
 
 Detailed references this baseline governs, not replaces:
 - Pipeline internals — `docs/architecture/pipeline.md`
-- Explorer internals — `docs/architecture/explorer.md`
+- Explorer internals — `docs/architecture/explorer.md` (the retired `explorer/` copy; see the update above)
 - Corpus provenance & generation — `docs/methodology/corpus-generation.md`
 - Binary tier contract — `docs/reference/FORMAT-NGG1.md`
 - CI gates — `docs/ci-cd/build-and-gates.md`
@@ -141,7 +146,9 @@ CI glue are **AGPL-3.0-or-later** (`LICENSE`); the `ontology/` corpus is
   broken**: from `explorer/` that normalises to *above* the repo root (the
   correct depth would be `../docs/adr/…`). Since the target is classified
   absent, the link is recorded as a dangling historical citation rather than
-  repaired to point at nothing.
+  repaired to point at nothing. *(Note 2026-11-24: the file now lives at
+  `docs/reference/FORMAT-NGG1.md`, and the dangling link has been replaced by a
+  plain-text citation with a dated note there.)*
 - **The `7,874` figure is stale corpus-wide.** `docs/architecture/pipeline.md`
   and `docs/architecture/explorer.md` are written against a 7,874-page corpus,
   but the corpus is now **8,138** pages (`EXPECTED_CLASSES: '8138'`,
