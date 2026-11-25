@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-navigation-filter",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -99,5 +100,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-navigation-filter-practices",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20250002787/downloads/20250002787.pdf"
+    },
+    {
+      "id": "nasa-geons",
+      "rel": "reference",
+      "resource": "https://etd.gsfc.nasa.gov/capabilities/capabilities-listing/geons/"
+    },
+    {
+      "id": "jpl-ekf-ukf-comparison",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20210007687"
+    },
+    {
+      "id": "ccsds-orbit-data-messages",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/502x0b3e1.pdf"
+    },
+    {
+      "id": "esa-godot-estimation",
+      "rel": "reference",
+      "resource": "https://godot.io.esa.int/docs/guides/cosmos/estimation.html"
+    },
+    {
+      "id": "nasa-orion-filter-tuning",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20130008967.pdf"
+    },
+    {
+      "id": "esa-roddas",
+      "rel": "reference",
+      "resource": "https://conference.sdo.esoc.esa.int/proceedings/sdc9/paper/311"
+    },
+    {
+      "id": "nasa-od-covariance-requirements",
+      "rel": "reference",
+      "resource": "https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8079_0001_&page_name=AppendixD"
+    }
+  ]
 }

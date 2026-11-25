@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:electronic-bill-of-lading",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -150,5 +151,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "dcsa-bill-of-lading",
+      "rel": "reference",
+      "resource": "https://dcsa.org/standards/bill-of-lading"
+    },
+    {
+      "id": "etda-2023-s1",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/ukpga/2023/38/section/1"
+    },
+    {
+      "id": "etda-2023-s2",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/ukpga/2023/38/section/2"
+    },
+    {
+      "id": "etda-2023-s3",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/ukpga/2023/38/section/3"
+    },
+    {
+      "id": "uncitral-mletr",
+      "rel": "reference",
+      "resource": "https://uncitral.un.org/en/texts/ecommerce/modellaw/electronic_transferable_records"
+    },
+    {
+      "id": "uncitral-mletr-note",
+      "rel": "reference",
+      "resource": "https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/mletr_ebook_e.pdf"
+    }
+  ]
 }

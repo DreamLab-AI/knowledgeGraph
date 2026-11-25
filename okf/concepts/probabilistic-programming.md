@@ -31,7 +31,7 @@ relatedTo:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:representation-learning
   - urn:ngm:class:gradient-descent
-generated: {"by":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
+generated: {"by":"did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a","via":"agent:enrichment-swarm/6","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # Probabilistic Programming

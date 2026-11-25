@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:atmospheric-composition-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -81,5 +82,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nceo-carbon-monoxide-reactive-trace-gases",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/our-research/atmosphere-and-land-emissions/carbon-monoxide-reactive-trace-gases/"
+    },
+    {
+      "id": "nceo-data-assimilation",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/our-research/data-assimilation/"
+    },
+    {
+      "id": "met-office-air-quality-composition",
+      "rel": "reference",
+      "resource": "https://www.metoffice.gov.uk/research/weather/atmospheric-dispersion/atmospheric-composition"
+    },
+    {
+      "id": "gcos-precursors-aerosols-ozone",
+      "rel": "reference",
+      "resource": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables/precursors-aerosols-and-ozone"
+    },
+    {
+      "id": "cams-production-systems",
+      "rel": "reference",
+      "resource": "https://atmosphere.copernicus.eu/production-systems"
+    },
+    {
+      "id": "cams-satellite-observations",
+      "rel": "reference",
+      "resource": "https://atmosphere.copernicus.eu/satellite-observations"
+    },
+    {
+      "id": "esa-sentinel-5p-data-products",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Data_products"
+    },
+    {
+      "id": "tropomi-validation-report-31",
+      "rel": "reference",
+      "resource": "https://mpc-vdaf.tropomi.eu/index.php?format=rawhtml&id=71&option=com_vdaf&view=showReport"
+    }
+  ]
 }

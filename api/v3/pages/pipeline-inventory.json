@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:pipeline-inventory",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -178,5 +179,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "mit-dlab-graves",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/15-772j-d-lab-supply-chains-fall-2014/b0b41cc09a83ffa4cf1335ac65f5f9ab_MIT15_772JF14_Lec13.pdf"
+    },
+    {
+      "id": "lt-types-of-inventory",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/09%3A_Inventory_Management/9.01%3A_Types_of_Inventory"
+    },
+    {
+      "id": "gatech-inventory-systems",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~mgoetsch/cali/logistics_systems_design/inventory_systems/inventory_systems.pdf"
+    },
+    {
+      "id": "penn-state-tyworth-2014",
+      "rel": "reference",
+      "resource": "https://courses.smeal.psu.edu/SCM810/scm_810_module_3/Multi%20Period%20Inventory%20Systems%20Teaching%20Note.pdf"
+    }
+  ]
 }

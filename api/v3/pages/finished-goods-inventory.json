@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:finished-goods-inventory",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -186,5 +187,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lt-types-of-inventory",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/09%3A_Inventory_Management/9.01%3A_Types_of_Inventory"
+    },
+    {
+      "id": "openstax-managerial-4-3",
+      "rel": "reference",
+      "resource": "https://openstax.org/books/principles-managerial-accounting/pages/4-3-use-the-job-order-costing-method-to-trace-the-flow-of-product-costs-through-the-inventory-accounts"
+    },
+    {
+      "id": "gatech-inventory-systems",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~mgoetsch/cali/logistics_systems_design/inventory_systems/inventory_systems.pdf"
+    },
+    {
+      "id": "petropoulos-2025",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/2503.05749"
+    },
+    {
+      "id": "mit-dlab-graves",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/15-772j-d-lab-supply-chains-fall-2014/b0b41cc09a83ffa4cf1335ac65f5f9ab_MIT15_772JF14_Lec13.pdf"
+    }
+  ]
 }

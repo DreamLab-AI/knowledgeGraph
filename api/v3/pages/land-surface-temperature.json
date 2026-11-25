@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:land-surface-temperature",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -90,5 +91,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nceo-land-surface-temperature",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/our-research/climate-analysis/land-surface-temperature/"
+    },
+    {
+      "id": "nceo-instrument-development-lab",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/data-facilities/laboratories/instrument-development-laboratory/"
+    },
+    {
+      "id": "ceda-esa-lst-cci-v3",
+      "rel": "reference",
+      "resource": "https://catalogue.ceda.ac.uk/uuid/6ab837fc79e4487a9930a221b294df01/"
+    },
+    {
+      "id": "ceos-lst-emissivity",
+      "rel": "reference",
+      "resource": "https://lpvs.gsfc.nasa.gov/LSTE/LSTE_home.html"
+    },
+    {
+      "id": "nasa-mod21-atbd",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20160009380"
+    },
+    {
+      "id": "ceos-land-product-validation",
+      "rel": "reference",
+      "resource": "https://lpvs.gsfc.nasa.gov/"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:postponement",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -118,5 +119,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ferreira-2012",
+      "rel": "reference",
+      "resource": "https://periodicos.pucpr.br/REBRAE/article/download/13793/13223"
+    },
+    {
+      "id": "yang-2004",
+      "rel": "reference",
+      "resource": "https://eprints.whiterose.ac.uk/id/eprint/6436/"
+    },
+    {
+      "id": "yang-uncertainty",
+      "rel": "reference",
+      "resource": "https://eprints.whiterose.ac.uk/id/eprint/6434/"
+    },
+    {
+      "id": "christopher-towill-2001",
+      "rel": "reference",
+      "resource": "https://dspace.lib.cranfield.ac.uk/bitstreams/db14daf6-8518-476e-9211-b6af2f1515a5/download"
+    }
+  ]
 }

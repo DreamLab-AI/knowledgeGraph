@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:halo-orbit",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "1345",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20220000309/downloads/AAS_Breckenridge_DavisSpreenScheuerleHowell_v2.pdf"
+    },
+    {
+      "id": "1347",
+      "rel": "reference",
+      "resource": "https://ssd-api.jpl.nasa.gov/doc/periodic_orbits.html"
+    },
+    {
+      "id": "1352",
+      "rel": "reference",
+      "resource": "https://jwst-docs.stsci.edu/jwst-observatory-characteristics/jwst-orbit"
+    },
+    {
+      "id": "1356",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/19930015532/downloads/19930015532.pdf"
+    },
+    {
+      "id": "1357",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/19730051618"
+    },
+    {
+      "id": "1359",
+      "rel": "reference",
+      "resource": "https://www.surrey.ac.uk/surrey-space-centre/research/astrodynamics"
+    },
+    {
+      "id": "1360",
+      "rel": "reference",
+      "resource": "https://eprints.gla.ac.uk/30844/"
+    },
+    {
+      "id": "1369",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20190028877"
+    }
+  ]
 }

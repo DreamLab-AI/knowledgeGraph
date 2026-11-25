@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:multilayer-insulation",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -68,5 +69,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "esa-thermal-control",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Thermal_Control"
+    },
+    {
+      "id": "nasa-smallsat-thermal-control",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+    },
+    {
+      "id": "esa-thermal-techniques",
+      "rel": "reference",
+      "resource": "https://www.esa.int/esapub/bulletin/bullet87/paroli87.htm"
+    },
+    {
+      "id": "nasa-mli-seam-evaluation",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20170008804.pdf"
+    },
+    {
+      "id": "esa-bepicolombo-thermal-design",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/How_we_heat-proofed_ESA_s_Mercury_mission"
+    },
+    {
+      "id": "esa-nebula-mli-mounting",
+      "rel": "reference",
+      "resource": "https://nebula.esa.int/content/efficient-mounting-mli-blankets-spacecraft-structures"
+    },
+    {
+      "id": "esa-metop-thermal-control",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp/Thermal_control"
+    },
+    {
+      "id": "ral-space-test-facilities",
+      "rel": "reference",
+      "resource": "https://www.ralspace.stfc.ac.uk/facilities/small-scale-test-facilities"
+    }
+  ]
 }

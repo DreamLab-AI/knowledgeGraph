@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:horizon-sensor",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -490,5 +491,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-ir-horizon",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/19850010706"
+    },
+    {
+      "id": "esa-ires-n2",
+      "rel": "reference",
+      "resource": "https://resilience.esa.int/archives/projects/infrared-earth-sensor-ires-n2"
+    },
+    {
+      "id": "esa-ers2",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/ERS-2_goes_gyro-less"
+    },
+    {
+      "id": "esa-meteosat",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/Meteosat/Satellite_Architecture"
+    },
+    {
+      "id": "surrey-solar-sail",
+      "rel": "reference",
+      "resource": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Cubesat-solar-sail-attitude-determination-and/99514108302346"
+    },
+    {
+      "id": "nasa-sensor-calibration",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/19820016405/downloads/19820016405.pdf"
+    }
+  ]
 }

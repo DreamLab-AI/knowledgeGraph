@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:high-earth-orbit",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "1390",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/"
+    },
+    {
+      "id": "1391",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/reference/scan-glossary/"
+    },
+    {
+      "id": "1397",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/space-domain-awareness-requirements/cross-government-space-domain-awareness-sda-requirements"
+    },
+    {
+      "id": "1398",
+      "rel": "reference",
+      "resource": "https://www.itu.int/en/ITU-R/seminars/rrs/rrs-25-africa/Plenaries/0.%20ITU-R%20Regulatory%20Documents/1.%20Radio%20Regulations%20%202024%20and%20Rules%20of%20Procedure/Radio%20Regulations%20Ed%202024/RR_Ed-2024_Vol%201-E.pdf"
+    },
+    {
+      "id": "1400",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits"
+    }
+  ]
 }

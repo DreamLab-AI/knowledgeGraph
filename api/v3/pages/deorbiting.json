@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:deorbiting",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-deorbit-systems",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/deorbit-systems/"
+    },
+    {
+      "id": "iadc-debris-guidelines",
+      "rel": "reference",
+      "resource": "https://orbitaldebris.jsc.nasa.gov/library/iadc-space-debris-guidelines-revision-2.pdf"
+    },
+    {
+      "id": "esa-debris-mitigation",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Space_Safety/Space_Debris/Mitigating_space_debris_generation"
+    },
+    {
+      "id": "uk-caa-eol",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/space/guidance/disposal-phase-and-end-of-life/"
+    },
+    {
+      "id": "caa-cap2210",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/publication/download/18909"
+    },
+    {
+      "id": "uk-orbital-licensing",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/operating-an-orbital-space-object-rules-and-regulations"
+    },
+    {
+      "id": "uk-launch-return-guidance",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/5f21792ed3bf7f1b1119243b/guidance-for-launch-and-return-operator-licence-applicants-and-licensees.pdf"
+    },
+    {
+      "id": "esa-aeolus",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Newsroom/Press_Releases/Aeolus_a_historic_end_to_a_trailblazing_mission"
+    },
+    {
+      "id": "esa-integral",
+      "rel": "reference",
+      "resource": "https://esoc.esa.int/content/integral"
+    }
+  ]
 }

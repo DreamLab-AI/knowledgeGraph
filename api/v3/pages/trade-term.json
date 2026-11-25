@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:trade-term",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -120,5 +121,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "icc-incoterms-rules",
+      "rel": "reference",
+      "resource": "https://iccwbo.org/business-solutions/incoterms-rules/"
+    },
+    {
+      "id": "ita-know-your-incoterms",
+      "rel": "reference",
+      "resource": "https://www.trade.gov/know-your-incoterms"
+    },
+    {
+      "id": "lii-ucc-2-319",
+      "rel": "reference",
+      "resource": "https://www.law.cornell.edu/ucc/2/2-319"
+    },
+    {
+      "id": "eca-fob",
+      "rel": "reference",
+      "resource": "https://export.org.au/?p=17266"
+    }
+  ]
 }

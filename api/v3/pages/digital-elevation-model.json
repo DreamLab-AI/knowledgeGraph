@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:digital-elevation-model",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -93,5 +94,57 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "guth-dem-terminology",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/publications/digital-elevation-models-terminology-and-definitions"
+    },
+    {
+      "id": "usgs-dem-reference-systems",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/faqs/what-projection-horizontal-datum-vertical-datum-and-resolution-a-usgs-digital-elevation-model"
+    },
+    {
+      "id": "environment-agency-lidar-catalogue",
+      "rel": "reference",
+      "resource": "https://environment.data.gov.uk/KB6uNVj5ZcJr7jUP/ArcGIS/rest/services/National_LIDAR_Programme_Catalogues/FeatureServer/0"
+    },
+    {
+      "id": "environment-agency-lidar-dtm",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/8275e71e-1516-42a1-bb0c-4fa73807fe2b/lidar-dtm-time-stamped-tiles"
+    },
+    {
+      "id": "environment-agency-lidar-point-cloud",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/977a4ca4-1759-4f26-baa7-b566bd7ca7bf/lidar-time-stamped-point-cloud"
+    },
+    {
+      "id": "environment-agency-lidar-composite-dtm",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/e529ca2f-b4ce-403e-8cef-ab821061c4f3/lidar-composite-digital-terrain-model-dtm-2m"
+    },
+    {
+      "id": "environment-agency-lidar-ground-truth",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/123fd228-9033-4cac-afc4-4084977dd30a/lidar-ground-truth-surveys"
+    },
+    {
+      "id": "os-coordinate-systems-guide",
+      "rel": "reference",
+      "resource": "https://www.ordnancesurvey.co.uk/documents/resources/guide-coordinate-systems-great-britain.pdf"
+    },
+    {
+      "id": "defra-marine-dem",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/20e7d416-dde6-4c19-86e9-faf38bc29259/defras-marine-digital-elevation-model-dem-6-arc-seconds"
+    },
+    {
+      "id": "usgs-landsat-processing-levels",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/landsat-missions/landsat-levels-processing"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:three-axis-stabilisation",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -95,5 +96,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-gnc",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/guidance-navigation-and-control/"
+    },
+    {
+      "id": "nasa-onboard-systems",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter11-2/"
+    },
+    {
+      "id": "nasa-attitude-accuracy",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/19950006445/downloads/19950006445.pdf"
+    },
+    {
+      "id": "nasa-control-fundamentals",
+      "rel": "reference",
+      "resource": "https://nescacademy.nasa.gov/video/a7a5f8a39011410a86c1124231358ab31d"
+    },
+    {
+      "id": "nasa-lro-safe",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20100014251"
+    },
+    {
+      "id": "sstl-micro",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/getmedia/78c3ae88-0f17-40a1-9448-8c3c7e9f6944/SSTL-MICRO.pdf"
+    },
+    {
+      "id": "aac-iadcs200",
+      "rel": "reference",
+      "resource": "https://www.aac-clyde.space/what-we-do/space-products-components/adcs/iadcs200"
+    },
+    {
+      "id": "surrey-solar-sail",
+      "rel": "reference",
+      "resource": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Cubesat-solar-sail-attitude-determination-and/99514108302346"
+    },
+    {
+      "id": "nasa-sensor-calibration",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/19820016405/downloads/19820016405.pdf"
+    }
+  ]
 }

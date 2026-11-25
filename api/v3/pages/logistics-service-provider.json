@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:logistics-service-provider",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -143,5 +144,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "iof",
+      "rel": "reference",
+      "resource": "https://raw.githubusercontent.com/iofoundry/ontology/50a88d4bfed6cd388bb11e132778cb2dcd1d7483/supplychain/SupplyChain.rdf"
+    },
+    {
+      "id": "ec-logistics",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/logistics_en"
+    },
+    {
+      "id": "hmrc-agents",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/appoint-someone-to-deal-with-customs-on-your-behalf"
+    },
+    {
+      "id": "usc49",
+      "rel": "reference",
+      "resource": "https://www.law.cornell.edu/uscode/text/49/13102"
+    }
+  ]
 }

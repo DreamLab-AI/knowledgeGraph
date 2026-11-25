@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:space-weather",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -79,5 +80,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/heliophysics/"
+    },
+    {
+      "id": "met-office-research",
+      "rel": "reference",
+      "resource": "https://www.metoffice.gov.uk/research/weather/space-weather"
+    },
+    {
+      "id": "moswoc-role",
+      "rel": "reference",
+      "resource": "https://weather.metoffice.gov.uk/learn-about/space-weather/met-office-role"
+    },
+    {
+      "id": "uk-national-risk-register-2025",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/67b5f85732b2aab18314bbe4/National_Risk_Register_2025.pdf"
+    },
+    {
+      "id": "ukri-swimmr",
+      "rel": "reference",
+      "resource": "https://www.ukri.org/what-we-do/strategic-priorities-fund/space-weather-innovation-measurement-modelling-and-risk/"
+    },
+    {
+      "id": "met-office-forecasting",
+      "rel": "reference",
+      "resource": "https://www.metoffice.gov.uk/blog/2026/how-the-met-office-forecasts-space-weather-and-why-it-matters"
+    }
+  ]
 }

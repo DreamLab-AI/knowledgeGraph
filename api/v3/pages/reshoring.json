@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:reshoring",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -113,5 +114,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "pylypenko-2022",
+      "rel": "reference",
+      "resource": "https://ev.nmu.org.ua/docs/2022/4/EV20224_034-041.pdf"
+    },
+    {
+      "id": "ep-2021",
+      "rel": "reference",
+      "resource": "https://www.europarl.europa.eu/RegData/etudes/STUD/2021/653626/EXPO_STU(2021)653626_EN.pdf"
+    },
+    {
+      "id": "oecd-2024",
+      "rel": "reference",
+      "resource": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/11/promoting-resilience-and-preparedness-in-supply-chains_c0320739/be692d01-en.pdf"
+    },
+    {
+      "id": "eurofound-reshoring",
+      "rel": "reference",
+      "resource": "https://apps.eurofound.europa.eu/restructuring-events/types/Reshoring"
+    }
+  ]
 }

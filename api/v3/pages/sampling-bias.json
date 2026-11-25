@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:sampling-bias",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -85,5 +86,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "npl-op11",
+      "rel": "reference",
+      "resource": "https://eprintspublications.npl.co.uk/6571/1/OP11.pdf"
+    },
+    {
+      "id": "amt-orbital-drift-cfc",
+      "rel": "reference",
+      "resource": "https://amt.copernicus.org/articles/13/6771/2020/amt-13-6771-2020.pdf"
+    },
+    {
+      "id": "acp-gewex-tcwv",
+      "rel": "reference",
+      "resource": "https://acp.copernicus.org/articles/24/9667/2024/acp-24-9667-2024.pdf"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:drought-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -88,5 +89,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "environment-agency-drought-management",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/drought-management-for-england/drought-how-it-is-managed-in-england"
+    },
+    {
+      "id": "ukceh-water-resources-portal",
+      "rel": "reference",
+      "resource": "https://ukwrp.ceh.ac.uk/?datasetID=river-flows&stationID=41011"
+    },
+    {
+      "id": "ukceh-water-resources-about",
+      "rel": "reference",
+      "resource": "https://ukwrp.ceh.ac.uk/about/"
+    },
+    {
+      "id": "ukceh-drought-indices",
+      "rel": "reference",
+      "resource": "https://ukwrp.ceh.ac.uk/about/drought-indices"
+    },
+    {
+      "id": "ukceh-hydrological-outlooks",
+      "rel": "reference",
+      "resource": "https://ukho.ceh.ac.uk/?stationID=89003&viewType=esp"
+    },
+    {
+      "id": "jrc-drought-indicators",
+      "rel": "reference",
+      "resource": "https://joint-research-centre.ec.europa.eu/european-and-global-drought-observatories/drought-indicators_en"
+    },
+    {
+      "id": "environment-agency-drought-may-2025",
+      "rel": "reference",
+      "resource": "https://environmentagency.blog.gov.uk/2025/05/07/are-we-prepared-for-a-drought-the-water-resilience-challenge/"
+    },
+    {
+      "id": "ukceh-hydrological-summary-may-2025",
+      "rel": "reference",
+      "resource": "https://nrfa.ceh.ac.uk/sites/default/files/2025-06/HS_202505%20v2.pdf"
+    }
+  ]
 }

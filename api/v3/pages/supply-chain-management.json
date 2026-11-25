@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-management",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
-    "label": "ontology-mesh",
-    "actor": "agent:ontology-mesh/1"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:ontology-mesh/1"
   },
   "certification": {
     "state": "pending",
@@ -228,5 +229,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "cscmp",
+      "rel": "reference",
+      "resource": "https://cscmp.org/CSCMP/Educate/SCM_Definitions_and_Glossary_of_Terms.aspx"
+    },
+    {
+      "id": "ec-logistics",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/logistics_en"
+    },
+    {
+      "id": "nist-sc",
+      "rel": "reference",
+      "resource": "https://csrc.nist.gov/glossary/term/supply_chain"
+    },
+    {
+      "id": "mentzer",
+      "rel": "reference",
+      "resource": "https://api.crossref.org/works/10.1002/j.2158-1592.2001.tb00001.x"
+    },
+    {
+      "id": "nist-mep",
+      "rel": "reference",
+      "resource": "https://www.nist.gov/mep/supply-chain"
+    }
+  ]
 }

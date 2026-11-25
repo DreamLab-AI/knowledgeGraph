@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:gnss-satellite",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -222,5 +223,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://gssc.esa.int/navipedia/index.php/Category:Fundamentals"
+    },
+    {
+      "id": "esa-gnss-data-processing",
+      "rel": "reference",
+      "resource": "https://gssc.esa.int/navipedia/GNSS_Book/ESA_GNSS-Book_TM-23_Vol_I.pdf"
+    },
+    {
+      "id": "euspa-galileo-architecture",
+      "rel": "reference",
+      "resource": "https://www.euspa.europa.eu/eu-space-programme/galileo/faqs/what-does-galileo-consist"
+    },
+    {
+      "id": "esa-galileo-clocks",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_s_clocks"
+    },
+    {
+      "id": "esa-galileo-signals",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Satellite_navigation/Galileo/Galileo_navigation_signals_and_frequencies"
+    },
+    {
+      "id": "sstl-galileo-payloads",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/space-portfolio/launched-missions/2020-2029/galileo-navigation-payloads-2010-2020"
+    },
+    {
+      "id": "esa-ecsat",
+      "rel": "reference",
+      "resource": "https://www.esa.int/About_Us/Corporate_news/ESA_ECSAT"
+    }
+  ]
 }

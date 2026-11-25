@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:deforestation-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -89,5 +90,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nceo-carbon-cycle",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/our-research/carbon/"
+    },
+    {
+      "id": "uk-space-agency-annual-report-2025-2026",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/uk-space-agency-annual-report-and-accounts-2025-2026/uk-space-agency-annual-report-2025-2026"
+    },
+    {
+      "id": "esa-biomass-science-operations",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass/ESA_s_Biomass_goes_live_with_data_now_open_to_all"
+    },
+    {
+      "id": "fao-fra-2025-definitions",
+      "rel": "reference",
+      "resource": "https://www.fao.org/3/cc4691en/cc4691en.pdf"
+    },
+    {
+      "id": "global-forest-review-methods",
+      "rel": "reference",
+      "resource": "https://gfr.wri.org/data-methods"
+    },
+    {
+      "id": "gfoi-methods-guidance",
+      "rel": "reference",
+      "resource": "https://www.fao.org/gfoi/components/methods-and-guidance-documentation/en/"
+    },
+    {
+      "id": "copernicus-land-cover-v3-validation",
+      "rel": "reference",
+      "resource": "https://land.copernicus.eu/en/technical-library/global-dynamic-land-cover-validation-report-v3.0/@@download/file"
+    }
+  ]
 }

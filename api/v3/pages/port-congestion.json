@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:port-congestion",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -118,5 +119,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "world-bank-cppi-2026",
+      "rel": "reference",
+      "resource": "https://thedocs.worldbank.org/en/doc/aac122f6df85534428d66a7b9af4b7f6-0400012026/original/CPPI-Methodology-Note.pdf"
+    },
+    {
+      "id": "amro-2022",
+      "rel": "reference",
+      "resource": "https://amro-asia.org/wp-content/uploads/2022/07/AMRO-Analytical-Note_The-Great-Supply-Chain-Disruption_What-Does-the-Shipping-Crystal-Ball-Foretell-_July-25-2022.pdf"
+    }
+  ]
 }

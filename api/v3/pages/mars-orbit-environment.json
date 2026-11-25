@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:mars-orbit-environment",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -73,5 +74,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "esa-mars-facts",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Facts_about_Mars"
+    },
+    {
+      "id": "nasa-mgs-gravity-and-aerobraking",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/mission/mars-global-surveyor/technology/"
+    },
+    {
+      "id": "nasa-mgs-aerobraking",
+      "rel": "reference",
+      "resource": "https://mgs-mager.gsfc.nasa.gov/overview/aerobraking.html"
+    },
+    {
+      "id": "nasa-aerobraking-dust-effects",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20000057306.pdf"
+    },
+    {
+      "id": "mars-upper-atmosphere-observations",
+      "rel": "reference",
+      "resource": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005GL024447"
+    },
+    {
+      "id": "esa-phobos-flyby",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_heading_towards_daring_flyby_of_Phobos"
+    },
+    {
+      "id": "nasa-meteoroid-model",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/meteoroid-environment-office/sporadic-meteoroid-environment/"
+    },
+    {
+      "id": "nasa-orbital-thermal",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+    },
+    {
+      "id": "nasa-maven-mars-plasma",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/news-release/maven-maps-electric-currents-around-mars-that-are-fundamental-to-atmospheric-loss/"
+    }
+  ]
 }

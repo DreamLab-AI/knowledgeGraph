@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:propellant",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -64,5 +65,57 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-basics-space-flight",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-2/"
+    },
+    {
+      "id": "ecss-propulsion-general",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/standards/ecss-e/ECSS-E-ST-35C_Rev.16March2009.pdf"
+    },
+    {
+      "id": "esa-propulsion-overview",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Propulsion_and_Aerothermodynamics"
+    },
+    {
+      "id": "nasa-low-gravity-propellant-management",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20170000667"
+    },
+    {
+      "id": "nasa-cryogenic-fluid-management",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/space-technology-mission-directorate/tdm/cryogenic-fluid-management-cfm/"
+    },
+    {
+      "id": "nasa-zero-boil-off-tank",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/physical-sciences-program/fluid-science/zero-boil-off-tank-zbot/"
+    },
+    {
+      "id": "ukhsa-hydrazine",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/hydrazine-properties-and-incident-management/hydrazine-general-information"
+    },
+    {
+      "id": "esa-green-propellant-compatibility",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/Testing_Green_Propellants_with_Existing_Systems"
+    },
+    {
+      "id": "uk-space-agency-propulsion-test-facility",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/new-satellite-propulsion-test-facility-to-propel-uk-into-new-space-age"
+    },
+    {
+      "id": "esa-peroxide-bipropellant-thruster",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/Development_of_a_low_thrust_bipropellant_thruster_based_on_green_propellants"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:agile-supply-chain",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -120,5 +121,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "christopher-2000",
+      "rel": "reference",
+      "resource": "https://dspace.lib.cranfield.ac.uk/server/api/core/bitstreams/3e60f75d-28c1-4659-a260-6608c0e863f2/content"
+    },
+    {
+      "id": "christopher-towill-2001",
+      "rel": "reference",
+      "resource": "https://dspace.lib.cranfield.ac.uk/bitstreams/db14daf6-8518-476e-9211-b6af2f1515a5/download"
+    },
+    {
+      "id": "mason-jones-2000",
+      "rel": "reference",
+      "resource": "https://pure.cardiffmet.ac.uk/en/publications/lean-agile-or-leagile-matching-your-supply-chain-to-the-marketpla/"
+    },
+    {
+      "id": "fisher-hbr-1997",
+      "rel": "reference",
+      "resource": "https://eclass.upatras.gr/modules/document/file.php/MECH1277/%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%99%CE%95%CE%A3-PAPERS%20%CE%91%CE%9D%CE%9F%CE%99%CE%9E%CE%97%202024/2-Right%20Supply%20Chain%20B.pdf"
+    }
+  ]
 }

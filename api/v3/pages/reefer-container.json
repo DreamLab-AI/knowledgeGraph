@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:reefer-container",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -118,5 +119,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "gdv-container-handbook-7",
+      "rel": "reference",
+      "resource": "https://containerhandbuch.de/chb_e/wild/wild_07_00.html"
+    },
+    {
+      "id": "usda-ers-reefers",
+      "rel": "reference",
+      "resource": "https://ers.usda.gov/media/12267/transportation-technology-and-the-rising-share-of-us-perishable-food-trade.pdf?v=40805"
+    },
+    {
+      "id": "gdv-container-handbook-7-2",
+      "rel": "reference",
+      "resource": "https://containerhandbuch.de/chb_e/wild/wild_07_02.html"
+    },
+    {
+      "id": "gdv-container-handbook-7-2-1",
+      "rel": "reference",
+      "resource": "https://containerhandbuch.de/chb_e/wild/wild_07_02_01.html"
+    },
+    {
+      "id": "iso-1496-2",
+      "rel": "reference",
+      "resource": "https://www.iso.org/standard/45621.html"
+    },
+    {
+      "id": "ec-m8594-cosco-ooil",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32017M8594"
+    }
+  ]
 }

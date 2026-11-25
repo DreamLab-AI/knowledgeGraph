@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:customs-regulation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -102,5 +103,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "wco-kyoto-general-annex-definitions",
+      "rel": "reference",
+      "resource": "https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/conventions/pf_revised_kyoto_conv/kyoto_new/gach2.aspx"
+    },
+    {
+      "id": "eurlex-ucc-regulation",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0952"
+    },
+    {
+      "id": "wco-revised-kyoto",
+      "rel": "reference",
+      "resource": "https://www.wcoomd.org/en/topics/facilitation/instrument-and-tools/conventions/pf_revised_kyoto_conv.aspx"
+    },
+    {
+      "id": "legislation-gov-uk-cema-1979",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/ukpga/1979/2/introduction"
+    },
+    {
+      "id": "lii-19-cfr-chapter-i",
+      "rel": "reference",
+      "resource": "https://www.law.cornell.edu/cfr/text/19/chapter-I"
+    },
+    {
+      "id": "wto-tfa-text",
+      "rel": "reference",
+      "resource": "https://www.wto.org/english/docs_e/legal_e/tfa-nov14_e.htm"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:parcel-locker",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -124,5 +125,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "zhang-demir-lockers",
+      "rel": "reference",
+      "resource": "https://www.frontiersin.org/journals/future-transportation/articles/10.3389/ffutr.2025.1654621/pdf"
+    },
+    {
+      "id": "mohri-adp-2024",
+      "rel": "reference",
+      "resource": "https://minerva-access.unimelb.edu.au/rest/bitstreams/a4100875-4af3-46bd-9e31-5638559a10e4/retrieve"
+    }
+  ]
 }

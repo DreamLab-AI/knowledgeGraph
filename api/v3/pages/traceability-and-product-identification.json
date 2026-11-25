@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:traceability-and-product-identification",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -109,5 +110,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "gs1-gts",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/gs1-global-traceability-standard/current-standard"
+    },
+    {
+      "id": "ungc-traceability-2014",
+      "rel": "reference",
+      "resource": "https://www.unglobalcompact.org/docs/issues_doc/supply_chain/Traceability/Guide_to_Traceability.pdf"
+    },
+    {
+      "id": "gs1-id-keys",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/id-keys"
+    },
+    {
+      "id": "gs1-digital-link",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/gs1-digital-link"
+    },
+    {
+      "id": "gs1-rfid",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/rfid"
+    },
+    {
+      "id": "espr-2024",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1781"
+    },
+    {
+      "id": "reg-178-2002",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32002R0178"
+    }
+  ]
 }

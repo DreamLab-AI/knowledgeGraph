@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:freight-transport-regulation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -91,5 +92,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "tg-transport-policy",
+      "rel": "reference",
+      "resource": "https://transportgeography.org/contents/chapter9/nature-transport-policy/"
+    },
+    {
+      "id": "ec-driving-time",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-modes/road/social-provisions/driving-time-and-rest-periods_en"
+    },
+    {
+      "id": "cmr-convention",
+      "rel": "reference",
+      "resource": "https://jus.uio.no/english/services/library/treaties/07/7-02/cmr-consolidated.html"
+    },
+    {
+      "id": "west-pandi-vgm",
+      "rel": "reference",
+      "resource": "https://www.westpandi.com/publications/news/solas-verified-gross-mass-of-packed-containers"
+    },
+    {
+      "id": "iata-tcr",
+      "rel": "reference",
+      "resource": "https://www.iata.org/en/publications/manuals/temperature-control-regulations/"
+    }
+  ]
 }

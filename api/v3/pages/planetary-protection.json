@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:planetary-protection",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -75,5 +76,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/planetary-science/"
+    },
+    {
+      "id": "uk-planetary-protection-framework",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/uk-planetary-protection-technical-framework/technical-framework-for-implementing-planetary-protection-requirements"
+    },
+    {
+      "id": "cospar-policy-2024",
+      "rel": "reference",
+      "resource": "https://cosparhq.cnes.fr/assets/uploads/2024/07/PP-Policy_SRT_220-July-2024.pdf"
+    },
+    {
+      "id": "unoosa-outer-space-treaty",
+      "rel": "reference",
+      "resource": "https://www.unoosa.org/pdf/publications/st_space_11rev2E.pdf"
+    },
+    {
+      "id": "ecss-u-st-20c",
+      "rel": "reference",
+      "resource": "https://technology.esa.int/upload/media/ECSS-Planetary-Protection-Standard-ECSS-U-ST-20C.pdf"
+    },
+    {
+      "id": "open-university-olsson-francis",
+      "rel": "reference",
+      "resource": "https://profiles.open.ac.uk/karen-olsson-francis"
+    }
+  ]
 }

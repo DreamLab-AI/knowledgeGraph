@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:trade-measure",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -104,5 +105,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "wto-market-access",
+      "rel": "reference",
+      "resource": "https://www.wto.org/english/tratop_e/markacc_e/markacc_e.htm"
+    },
+    {
+      "id": "wto-tariffs",
+      "rel": "reference",
+      "resource": "https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm"
+    },
+    {
+      "id": "eu-union-customs-code",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0952"
+    },
+    {
+      "id": "ec-prohibitions-restrictions",
+      "rel": "reference",
+      "resource": "https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions_en"
+    },
+    {
+      "id": "govuk-commodity-codes",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/finding-commodity-codes-for-imports-or-exports"
+    }
+  ]
 }

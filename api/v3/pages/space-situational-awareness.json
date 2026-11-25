@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:space-situational-awareness",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-1/"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.esa.int/About_Us/ESAC/Space_Situational_Awareness_-_SSA"
+    },
+    {
+      "id": "nspoc-about",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/organisations/national-space-operations-centre/about"
+    },
+    {
+      "id": "esa-sst-segment",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Space_Safety/Space_Surveillance_and_Tracking_-_SST_Segment"
+    },
+    {
+      "id": "nasa-cara-risk-assessment",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/cara/step-2-close-approach-risk-assessment/"
+    },
+    {
+      "id": "uk-monitor-space-hazards",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/monitor-space-hazards-new-feature-satellite-manoeuvre-support"
+    }
+  ]
 }

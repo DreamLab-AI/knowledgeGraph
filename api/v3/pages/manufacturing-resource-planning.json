@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:manufacturing-resource-planning",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -130,5 +131,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "gallego-mrp",
+      "rel": "reference",
+      "resource": "http://www.columbia.edu/~gmg2/4000/pdf/lect_06.pdf"
+    },
+    {
+      "id": "ifm-mrp2",
+      "rel": "reference",
+      "resource": "https://www.ifm.eng.cam.ac.uk/research/dstools/mrp-ii/"
+    },
+    {
+      "id": "beasley-mrp",
+      "rel": "reference",
+      "resource": "https://people.brunel.ac.uk/~mastjjb/jeb/or/mrp.html"
+    }
+  ]
 }

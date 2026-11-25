@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:change-detection",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -99,5 +100,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "usgs-lcmap-spectral-change",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/media/videos/lcmap-time-spectral-change-spectral-change-magnitude"
+    },
+    {
+      "id": "tollerud-change-detection",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/publications/toward-consistent-change-detection-across-irregular-remote-sensing-time-series"
+    },
+    {
+      "id": "copernicus-corine",
+      "rel": "reference",
+      "resource": "https://land.copernicus.eu/en/products/corine-land-cover/?tab=technical_summary"
+    },
+    {
+      "id": "copernicus-corine-faq",
+      "rel": "reference",
+      "resource": "https://land.copernicus.eu/en/faq/products/corine-land-cover"
+    },
+    {
+      "id": "nceo-eodh-access",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/news-media/call-for-expressions-of-interest-eo-datahub-user-access/"
+    }
+  ]
 }

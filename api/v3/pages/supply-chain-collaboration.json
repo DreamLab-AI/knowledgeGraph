@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-collaboration",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -114,5 +115,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "marqui-2012",
+      "rel": "reference",
+      "resource": "https://publications.aston.ac.uk/id/eprint/32737/1/Collaborative_supply_chain.pdf"
+    },
+    {
+      "id": "simatupang-2004",
+      "rel": "reference",
+      "resource": "https://mro.massey.ac.nz/server/api/core/bitstreams/51ceb2dc-55b4-47f3-bff1-35bc118f5c2b/content"
+    },
+    {
+      "id": "sridharan-2009",
+      "rel": "reference",
+      "resource": "https://journal.ugm.ac.id/gamaijb/article/download/5527/4499"
+    },
+    {
+      "id": "ouazzani-2013",
+      "rel": "reference",
+      "resource": "https://hrmars.com/papers_submitted/131/Article_25_Collaboration_within_the_Supply_Chain.pdf"
+    }
+  ]
 }

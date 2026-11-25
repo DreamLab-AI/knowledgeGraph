@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:space-traffic-management",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -82,5 +83,72 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "unoosa-lts-guidelines",
+      "rel": "reference",
+      "resource": "https://lts.unoosa.org/unoosa_lts/en/resources/guidelines/guidelinesabout.html"
+    },
+    {
+      "id": "esa-sst",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Space_Safety/Space_Surveillance_and_Tracking_-_SST_Segment"
+    },
+    {
+      "id": "esa-ssa",
+      "rel": "reference",
+      "resource": "https://www.esa.int/About_Us/ESAC/Space_Situational_Awareness_-_SSA"
+    },
+    {
+      "id": "uk-nspoc-services",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/nspoc-civil-space-protection-services"
+    },
+    {
+      "id": "monitor-space-hazards",
+      "rel": "reference",
+      "resource": "https://www.monitor-space-hazards.service.gov.uk/"
+    },
+    {
+      "id": "uk-nspoc-about",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/organisations/national-space-operations-centre/about"
+    },
+    {
+      "id": "uk-sda-evaluation",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/evaluation-of-civil-space-domain-awareness-activities-2024-2025/executive-summary"
+    },
+    {
+      "id": "caa-orbital-operator",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/space/licences-and-permissions/orbital-operator/"
+    },
+    {
+      "id": "uk-orbital-rules",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/operating-an-orbital-space-object-rules-and-regulations"
+    },
+    {
+      "id": "caa-lcola",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/space/resources/launch-collision-avoidance-analysis-lcola/"
+    },
+    {
+      "id": "caa-cap2224",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/publication/download/18921"
+    },
+    {
+      "id": "uk-space-strategy",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/uk-space-strategy/uk-space-strategy"
+    },
+    {
+      "id": "uk-orbital-consultation-2023",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/consultations/consultation-on-orbital-liabilities-insurance-charging-and-space-sustainability/consultation-on-orbital-liabilities-insurance-charging-and-space-sustainability"
+    }
+  ]
 }

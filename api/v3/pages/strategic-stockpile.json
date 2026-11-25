@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:strategic-stockpile",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -207,5 +208,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "crs-r47400",
+      "rel": "reference",
+      "resource": "https://www.everycrsreport.com/files/2023-01-25_R47400_01bc6ffca8363c8d92653367c9023ead08da7d46.pdf"
+    },
+    {
+      "id": "doe-spr",
+      "rel": "reference",
+      "resource": "https://www.energy.gov/ceser/strategic-petroleum-reserve"
+    },
+    {
+      "id": "directive-2009-119",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32009L0119"
+    },
+    {
+      "id": "resceu",
+      "rel": "reference",
+      "resource": "https://civil-protection-humanitarian-aid.ec.europa.eu/what/civil-protection/resceu_en"
+    },
+    {
+      "id": "white-house-2021",
+      "rel": "reference",
+      "resource": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2021/06/100-day-supply-chain-review-report.pdf"
+    }
+  ]
 }

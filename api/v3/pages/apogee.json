@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:apogee",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -83,5 +84,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-spaceflight-glossary",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/glossary/"
+    },
+    {
+      "id": "nasa-orbital-debris-handbook",
+      "rel": "reference",
+      "resource": "https://standards.nasa.gov/sites/default/files/standards/NASA/Baseline/1/nasa-hdbk-871914_baseline_with_change_1.pdf"
+    },
+    {
+      "id": "ccsds-orbit-data-messages",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/502x0b3e1.pdf"
+    },
+    {
+      "id": "nasa-gmat-orbit-state",
+      "rel": "reference",
+      "resource": "https://documentation.help/GMAT/SpacecraftOrbitState.html"
+    },
+    {
+      "id": "nasa-gmat-calculation-parameters",
+      "rel": "reference",
+      "resource": "https://documentation.help/GMAT/CalculationParameters.html"
+    },
+    {
+      "id": "ordnance-survey-coordinate-systems",
+      "rel": "reference",
+      "resource": "https://www.ordnancesurvey.co.uk/documents/resources/guide-coordinate-systems-great-britain.pdf"
+    },
+    {
+      "id": "esa-orbit-types",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits"
+    },
+    {
+      "id": "vallado-sgp4",
+      "rel": "reference",
+      "resource": "https://celestrak.org/publications/AIAA/2006-6753/"
+    }
+  ]
 }

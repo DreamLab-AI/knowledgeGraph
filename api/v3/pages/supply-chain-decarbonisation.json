@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-decarbonisation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -187,5 +188,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sbti-supplier-engagement",
+      "rel": "reference",
+      "resource": "https://sciencebasedtargets.org/resources/files/Supplier-Engagement-Guidance.pdf"
+    },
+    {
+      "id": "ghg-scope3-2011",
+      "rel": "reference",
+      "resource": "https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf"
+    },
+    {
+      "id": "ghgp-glec-2019",
+      "rel": "reference",
+      "resource": "https://ghgprotocol.org/blog/glec-framework-universal-method-logistics-emissions-accounting"
+    },
+    {
+      "id": "council-2016",
+      "rel": "reference",
+      "resource": "https://data.consilium.europa.eu/doc/document/ST-8149-2016-INIT/en/pdf"
+    },
+    {
+      "id": "eca-2023",
+      "rel": "reference",
+      "resource": "https://op.europa.eu/webpub/eca/special-reports/intermodal-freight-transport-08-2023/en/index.html"
+    }
+  ]
 }

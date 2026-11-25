@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-performance-framework",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -98,5 +99,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "scor14",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2025/https://www.ascm.org/globalassets/ascm_website_assets/docs/scor/intro-and-front-matter-scor-digital-standard-2025.pdf"
+    },
+    {
+      "id": "gunasekaran-2004",
+      "rel": "reference",
+      "resource": "https://pure.psu.edu/en/publications/a-framework-for-supply-chain-performance-measurement/"
+    },
+    {
+      "id": "pohlen",
+      "rel": "reference",
+      "resource": "https://digitalcommons.wayne.edu/jotm/vol14/iss2/3"
+    },
+    {
+      "id": "ncsu-metrics",
+      "rel": "reference",
+      "resource": "https://scm.ncsu.edu/scm-articles/article/supply-chain-metrics1"
+    }
+  ]
 }

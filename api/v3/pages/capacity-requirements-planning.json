@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:capacity-requirements-planning",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -113,5 +114,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "oracle-crp",
+      "rel": "reference",
+      "resource": "https://docs.oracle.com/cd/E18727_01/doc.121/e15189/T473818T474891.htm"
+    },
+    {
+      "id": "infor-crp",
+      "rel": "reference",
+      "resource": "https://docs.infor.com/s21/3.1/en-us/useradminlist/Infor%20System21%2031%20CP%20Capacity%20Requirements%20Planning%20Product%20Guide_50049.pdf"
+    },
+    {
+      "id": "oracle-jdworld-rccp",
+      "rel": "reference",
+      "resource": "https://docs.oracle.com/cd/E26228_01/doc.93/e21770/ch_validate_mstr_sched.htm"
+    },
+    {
+      "id": "gallego-mrp",
+      "rel": "reference",
+      "resource": "http://www.columbia.edu/~gmg2/4000/pdf/lect_06.pdf"
+    }
+  ]
 }

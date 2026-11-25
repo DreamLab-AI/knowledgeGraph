@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:maersk",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -124,5 +125,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ec-m10559",
+      "rel": "reference",
+      "resource": "https://ec.europa.eu/competition/mergers/cases1/202238/M_10559_8500254_440_3.pdf"
+    },
+    {
+      "id": "maersk-about",
+      "rel": "reference",
+      "resource": "https://www.maersk.com/about"
+    },
+    {
+      "id": "alphaliner",
+      "rel": "reference",
+      "resource": "https://alphaliner.axsmarine.com/PublicTop100/"
+    },
+    {
+      "id": "iof",
+      "rel": "reference",
+      "resource": "https://raw.githubusercontent.com/iofoundry/ontology/50a88d4bfed6cd388bb11e132778cb2dcd1d7483/supplychain/SupplyChain.rdf"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:delay-tolerant-space-networking",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -92,5 +93,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ietf-bpv7",
+      "rel": "reference",
+      "resource": "https://datatracker.ietf.org/doc/rfc9171/"
+    },
+    {
+      "id": "ietf-bpsec",
+      "rel": "reference",
+      "resource": "https://datatracker.ietf.org/doc/rfc9172/"
+    },
+    {
+      "id": "ietf-dtn-architecture",
+      "rel": "reference",
+      "resource": "https://datatracker.ietf.org/doc/rfc4838/"
+    },
+    {
+      "id": "nasa-dtn-service",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/communicating-with-missions/delay-disruption-tolerant-networking/"
+    },
+    {
+      "id": "ccsds-sabr",
+      "rel": "reference",
+      "resource": "https://ccsds.org/publications/allpubs/entry/3167/"
+    },
+    {
+      "id": "ccsds-bpv7-experimental",
+      "rel": "reference",
+      "resource": "https://ccsds.org/wp-content/uploads/gravity_forms/5-448e85c647331d9cbaf66c096458bdd5/2025/06/734x20o1.pdf"
+    },
+    {
+      "id": "uksa-agile-lunanet",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/uk-backs-next-generation-satellite-communications-with-69-million-investment"
+    }
+  ]
 }

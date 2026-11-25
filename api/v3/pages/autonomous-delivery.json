@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:autonomous-delivery",
   "domain": "robotics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:2da6efde6ed7f8f7658934a30ade9697c4a151d1e190983d6c27f7686e3b7209",
-    "label": "lcr-swarm",
-    "actor": "agent:lcr-swarm/1"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:lcr-swarm/1"
   },
   "certification": {
     "state": "pending",

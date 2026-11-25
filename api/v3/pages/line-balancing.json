@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:line-balancing",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -116,5 +117,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lovejoy-henkel-2016",
+      "rel": "reference",
+      "resource": "https://westpointpressjournals.westpoint.edu/index.php/iser/article/download/34/pdf_12/260"
+    },
+    {
+      "id": "moreira-costa-2012",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/1003.3676"
+    },
+    {
+      "id": "castellucci-costa-2014",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/1211.6406"
+    },
+    {
+      "id": "lt-times",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/06:_Process_Design/6.05:_Some_important_Times_to_be_familiar_with-"
+    },
+    {
+      "id": "lei-takt-time",
+      "rel": "reference",
+      "resource": "https://www.lean.org/lexicon-terms/takt-time/"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:sales-and-operations-planning",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -110,5 +111,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ecamp-horizons",
+      "rel": "reference",
+      "resource": "https://ecampusontario.pressbooks.pub/opsmgmt/chapter/14-2-concept-and-horizon-of-aggregate-planning/"
+    },
+    {
+      "id": "martins-2017",
+      "rel": "reference",
+      "resource": "https://www.maxwell.vrac.puc-rio.br/33680/33680.PDF"
+    },
+    {
+      "id": "jatta-2016",
+      "rel": "reference",
+      "resource": "https://soar.wichita.edu/server/api/core/bitstreams/282b6411-c8a8-463c-b478-ce91fe475a23/content"
+    },
+    {
+      "id": "uncw-mrp",
+      "rel": "reference",
+      "resource": "https://csbapp.uncw.edu/janickit/ops370/modules/Module11.pdf"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-finance",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -172,5 +173,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sdtscf",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2023/https://cdn.iccwbo.org/content/uploads/sites/3/2017/01/ICC-Standard-Definitions-for-Techniques-of-Supply-Chain-Finance-Global-SCF-Forum-2016.pdf"
+    },
+    {
+      "id": "icc-news",
+      "rel": "reference",
+      "resource": "https://iccwbo.org/news-publications/news/five-things-you-need-to-know-about-our-new-supply-chain-finance-terminology/"
+    },
+    {
+      "id": "fasb",
+      "rel": "reference",
+      "resource": "https://storage.fasb.org/ASU%202022-04.pdf"
+    }
+  ]
 }

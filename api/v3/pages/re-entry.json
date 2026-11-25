@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:re-entry",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "esa-reentry-safety",
+      "rel": "reference",
+      "resource": "https://technology.esa.int/page/re-entry-safety"
+    },
+    {
+      "id": "esa-reentry-prediction",
+      "rel": "reference",
+      "resource": "https://www.esa.int/content/view/full/413425"
+    },
+    {
+      "id": "esa-casualty-risk-2026",
+      "rel": "reference",
+      "resource": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Casualty_risk_on_the_ground_2026_Space_environment_report"
+    },
+    {
+      "id": "esa-containment",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/How_can_we_contain_all_the_parts_of_a_space_craft_on_re-entry"
+    },
+    {
+      "id": "uk-caa-eol",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/space/guidance/disposal-phase-and-end-of-life/"
+    },
+    {
+      "id": "uk-launch-return-guidance",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/5f21792ed3bf7f1b1119243b/guidance-for-launch-and-return-operator-licence-applicants-and-licensees.pdf"
+    },
+    {
+      "id": "esa-aeolus",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Newsroom/Press_Releases/Aeolus_a_historic_end_to_a_trailblazing_mission"
+    },
+    {
+      "id": "esa-aeolus-map",
+      "rel": "reference",
+      "resource": "https://www.esa.int/ESA_Multimedia/Images/2023/08/Right_on_track_Aeolus_reentry_map"
+    }
+  ]
 }

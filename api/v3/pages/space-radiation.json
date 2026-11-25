@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:space-radiation",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -68,5 +69,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/biological-physical/"
+    },
+    {
+      "id": "nasa-space-radiation-hazard",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/hrp/hazard-space-radiation/"
+    },
+    {
+      "id": "esa-biological-effects-radiation",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Space_for_Earth/Space_for_health/Biological_effects_of_radiation"
+    },
+    {
+      "id": "ukhsa-space-radiation-rbe",
+      "rel": "reference",
+      "resource": "https://researchportal.ukhsa.gov.uk/en/publications/rbe-of-radiations-in-space-and-the-implications-for-space-travel/"
+    },
+    {
+      "id": "nasa-human-performance-standard",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/reference/4-0-human-performance/"
+    },
+    {
+      "id": "national-academies-mars-strategy-2026",
+      "rel": "reference",
+      "resource": "https://www.nationalacademies.org/read/28594/chapter/4"
+    },
+    {
+      "id": "esa-mars-radiation-dose-model-2026",
+      "rel": "reference",
+      "resource": "https://www.esa.int/ESA_Multimedia/Images/2026/03/Radiation_doses_on_the_way_to_Mars"
+    }
+  ]
 }

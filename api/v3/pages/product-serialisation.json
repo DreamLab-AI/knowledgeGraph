@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:product-serialisation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -134,5 +135,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "gs1-gs",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/docs/barcodes/GS1_General_Specifications.pdf"
+    },
+    {
+      "id": "eu-fmd",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/eur/2016/161/adopted/data.htm"
+    },
+    {
+      "id": "us-dscsa",
+      "rel": "reference",
+      "resource": "https://www.govinfo.gov/content/pkg/PLAW-113publ54/html/PLAW-113publ54.htm"
+    },
+    {
+      "id": "fda-dscsa",
+      "rel": "reference",
+      "resource": "https://www.fda.gov/drugs/drug-supply-chain-integrity/drug-supply-chain-security-act-dscsa"
+    }
+  ]
 }

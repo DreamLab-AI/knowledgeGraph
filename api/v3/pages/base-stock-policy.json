@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:base-stock-policy",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -196,5 +197,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "penn-state-tyworth-2014",
+      "rel": "reference",
+      "resource": "https://courses.smeal.psu.edu/SCM810/scm_810_module_3/Multi%20Period%20Inventory%20Systems%20Teaching%20Note.pdf"
+    },
+    {
+      "id": "mit-caplice-2006",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/esd-260j-logistics-systems-fall-2006/8b53c45fd26ffff706d815131e8d177e_lect11.pdf"
+    },
+    {
+      "id": "gallego-positive-ordering-costs",
+      "rel": "reference",
+      "resource": "https://www.columbia.edu/~gmg2/4000/pdf/lect_09.pdf"
+    },
+    {
+      "id": "petropoulos-2025",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/2503.05749"
+    }
+  ]
 }

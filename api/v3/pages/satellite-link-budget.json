@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:satellite-link-budget",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -70,5 +71,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ecss-rf-modulation",
+      "rel": "reference",
+      "resource": "https://ecss.nl/standard/ecss-e-st-50-05c-rev2-radio-frequency-and-modulation-4-october-2011/"
+    },
+    {
+      "id": "itu-p618",
+      "rel": "reference",
+      "resource": "https://www.itu.int/rec/R-REC-P.618-14-202308-I"
+    },
+    {
+      "id": "nasa-smallsat-link-budget",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/ground-data-systems-and-mission-operations/"
+    },
+    {
+      "id": "ofcom-satellite-earth-stations",
+      "rel": "reference",
+      "resource": "https://www.ofcom.org.uk/spectrum/space-and-satellites/satellite-earth?language=en"
+    },
+    {
+      "id": "uksa-goonhilly-deep-space",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/goonhilly-to-boost-deep-space-communications-capacity"
+    }
+  ]
 }

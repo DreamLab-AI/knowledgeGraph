@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:interferometric-synthetic-aperture-radar",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -473,5 +474,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "comet-insar",
+      "rel": "reference",
+      "resource": "https://comet.nerc.ac.uk/insar/"
+    },
+    {
+      "id": "bgs-insar-research",
+      "rel": "reference",
+      "resource": "https://www.bgs.ac.uk/geology-projects/geodesy/insar-research/"
+    },
+    {
+      "id": "esa-sentinel-1-tops-insar",
+      "rel": "reference",
+      "resource": "https://step.esa.int/docs/tutorials/S1TBX%20TOPSAR%20Interferometry%20with%20Sentinel-1%20Tutorial_v2.pdf"
+    },
+    {
+      "id": "esa-insar-principles",
+      "rel": "reference",
+      "resource": "https://www.esa.int/About_Us/ESA_Publications/InSAR_Principles_Guidelines_for_SAR_Interferometry_Processing_and_Interpretation_br_ESA_TM-19"
+    },
+    {
+      "id": "esa-sentinel-1-facts",
+      "rel": "reference",
+      "resource": "https://www.esa.int/content/view/full/427259"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:ohb",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -85,5 +86,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "official",
+      "rel": "reference",
+      "resource": "https://www.ohb.de/en/corporate"
+    },
+    {
+      "id": "business-segments",
+      "rel": "reference",
+      "resource": "https://www.ohb.de/en/business-segments"
+    },
+    {
+      "id": "esa-harmony-prime-contract",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Contract_secures_build_for_ESA_s_Harmony_mission"
+    },
+    {
+      "id": "sstl-galileo-2010",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/media-hub/latest-news/2010/ohb-and-sstl-selected-for-the-construction-of-14-g"
+    }
+  ]
 }

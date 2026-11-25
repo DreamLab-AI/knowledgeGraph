@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:gnss-interference",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -98,5 +99,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "faa-gnss-interference-guide",
+      "rel": "reference",
+      "resource": "https://www.faa.gov/about/office_org/headquarters_offices/avs/offices/afx/afs/afs400/afs410/GNSS/GPS_GNSS_Interference_Resource_Guide.pdf"
+    },
+    {
+      "id": "euspa-rfi-workshop",
+      "rel": "reference",
+      "resource": "https://www.euspa.europa.eu/newsroom-events/news-archive/gsa-hosted-workshop-rfi-threats-gnss-receivers"
+    },
+    {
+      "id": "gps-sps-performance-standard",
+      "rel": "reference",
+      "resource": "https://navcen.uscg.gov/sites/default/files/pdf/gps/geninfo/2020SPSPerformanceStandardFINAL.pdf"
+    }
+  ]
 }

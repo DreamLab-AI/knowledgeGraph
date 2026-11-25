@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:lunar-orbit-environment",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -73,5 +74,67 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-grail",
+      "rel": "reference",
+      "resource": "https://www.jpl.nasa.gov/news/nasas-grail-mission-solves-mystery-of-moons-surface-gravity/"
+    },
+    {
+      "id": "nasa-grail-gravity-map",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/resource/grails-gravity-map-of-the-moon/"
+    },
+    {
+      "id": "nasa-ldex-pds",
+      "rel": "reference",
+      "resource": "https://pds.nasa.gov/ds-view/pds/viewContext.jsp?identifier=urn:nasa:pds:context:instrument:ladee.ldex&version=1.2"
+    },
+    {
+      "id": "nasa-moon-eclipses",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/moon/eclipses/"
+    },
+    {
+      "id": "nasa-lro-eclipses",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/missions/nasas-lunar-reconnaissance-orbiters-dance-with-eclipses/"
+    },
+    {
+      "id": "nasa-moon-weather",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/moon/weather-on-the-moon/"
+    },
+    {
+      "id": "nasa-ladee",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/mission/ladee/in-depth/"
+    },
+    {
+      "id": "nasa-magnetotail",
+      "rel": "reference",
+      "resource": "https://svs.gsfc.nasa.gov/5623"
+    },
+    {
+      "id": "nasa-meteoroid-model",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/meteoroid-environment-office/sporadic-meteoroid-environment/"
+    },
+    {
+      "id": "nasa-lro-thermal",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20110022486/downloads/20110022486.pdf?attachment=true"
+    },
+    {
+      "id": "nasa-orbital-thermal",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+    },
+    {
+      "id": "nasa-lunar-orbit",
+      "rel": "reference",
+      "resource": "https://eclipse.gsfc.nasa.gov/SEhelp/moonorbit.html"
+    }
+  ]
 }

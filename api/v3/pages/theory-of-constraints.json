@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:theory-of-constraints",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -100,5 +101,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lei-toc",
+      "rel": "reference",
+      "resource": "https://www.lean.org/lexicon-terms/theory-of-constraints/"
+    },
+    {
+      "id": "verma-1997",
+      "rel": "reference",
+      "resource": "https://ecommons.cornell.edu/server/api/core/bitstreams/81611c91-9449-4c30-8670-404c7a5853a3/content"
+    },
+    {
+      "id": "mukherjee-wheatley-1999",
+      "rel": "reference",
+      "resource": "https://absel-ojs-ttu.tdl.org/absel/article/view/976/945"
+    }
+  ]
 }

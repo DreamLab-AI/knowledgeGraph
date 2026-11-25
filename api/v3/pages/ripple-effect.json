@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:ripple-effect",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -138,5 +139,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "dolgui-2018",
+      "rel": "reference",
+      "resource": "https://ideas.repec.org/a/taf/tprsxx/v56y2018i1-2p414-430.html"
+    },
+    {
+      "id": "smith-2025",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/2511.07289"
+    },
+    {
+      "id": "amro-2022",
+      "rel": "reference",
+      "resource": "https://amro-asia.org/wp-content/uploads/2022/07/AMRO-Analytical-Note_The-Great-Supply-Chain-Disruption_What-Does-the-Shipping-Crystal-Ball-Foretell-_July-25-2022.pdf"
+    }
+  ]
 }

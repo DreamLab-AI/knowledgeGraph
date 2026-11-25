@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:open-account-trade",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -108,5 +109,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ita-tfg",
+      "rel": "reference",
+      "resource": "https://www.trade.gov/sites/default/files/2021-03/Trade%20Finance%20Guide%20Updated%20030421%20FINAL.pdf"
+    },
+    {
+      "id": "bizgov-decide",
+      "rel": "reference",
+      "resource": "https://www.business.gov.uk/export-from-uk/learn/categories/funding-financing-and-getting-paid/get-paid/decide-when-get-paid-export-orders/"
+    },
+    {
+      "id": "tbml",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/trade-based-money-laundering-tbml-handbook/common-techniques-of-trade-based-money-laundering"
+    },
+    {
+      "id": "sdtscf",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2023/https://cdn.iccwbo.org/content/uploads/sites/3/2017/01/ICC-Standard-Definitions-for-Techniques-of-Supply-Chain-Finance-Global-SCF-Forum-2016.pdf"
+    },
+    {
+      "id": "os-trade-credit",
+      "rel": "reference",
+      "resource": "https://openstax.org/books/principles-finance/pages/19-2-what-is-trade-credit"
+    }
+  ]
 }

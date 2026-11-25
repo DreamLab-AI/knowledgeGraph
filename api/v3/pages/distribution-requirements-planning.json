@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:distribution-requirements-planning",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -95,5 +96,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "jde-drp",
+      "rel": "reference",
+      "resource": "https://docs.oracle.com/en/applications/jd-edwards/supply-chain-manufacturing/9.2/eoafm/distribution-requirements-planning.html"
+    },
+    {
+      "id": "jdw-overview",
+      "rel": "reference",
+      "resource": "https://docs.oracle.com/cd/E26228_01/doc.93/e21770/ch_over_manf_dist_pln.htm"
+    },
+    {
+      "id": "sap-drp",
+      "rel": "reference",
+      "resource": "https://help.sap.com/doc/saphelp_scm700_ehp02/7.0.2/en-US/4d/9e3757c2e11162e10000000a42189b/content.htm?no_cache=true"
+    }
+  ]
 }

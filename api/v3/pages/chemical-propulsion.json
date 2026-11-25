@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:chemical-propulsion",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -73,5 +74,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-in-space-propulsion",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+    },
+    {
+      "id": "ecss-liquid-electric-propulsion",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/standards/ecss-e/ECSS-E-ST-35-01C15November2008.pdf"
+    },
+    {
+      "id": "esa-cubesat-propulsion-harmonisation",
+      "rel": "reference",
+      "resource": "https://technology.esa.int/page/harmonisation/2"
+    },
+    {
+      "id": "esa-electric-pump-fed-project",
+      "rel": "reference",
+      "resource": "https://resilience.esa.int/archives/projects/epfb"
+    },
+    {
+      "id": "nasa-transit-habitat-rcs",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20240015687/downloads/TH%20RCS%20Propulsion%20v6%2024-12-06.pdf"
+    },
+    {
+      "id": "nasa-hydrazine-freeze-thaw",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/general/risk-of-hydrazine-use-following-freeze-thaw-exposure/"
+    },
+    {
+      "id": "nasa-hydrazine-contaminants",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20220013364"
+    },
+    {
+      "id": "nammo-westcott",
+      "rel": "reference",
+      "resource": "https://www.nammo.com/locations/westcott/"
+    },
+    {
+      "id": "uksa-national-propulsion-facility",
+      "rel": "reference",
+      "resource": "https://space.blog.gov.uk/2022/05/20/in-person-at-the-space-propulsion-conference/"
+    }
+  ]
 }

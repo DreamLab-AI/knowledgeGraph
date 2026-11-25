@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:positioning-navigation-and-timing",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -83,5 +84,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/uk-space-strategy/uk-space-strategy"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/collections/positioning-navigation-and-timing"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/uk-space-agency-annual-report-and-accounts-2025-2026/uk-space-agency-annual-report-2025-2026"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/space-based-pnt-technical-concepts/space-based-pnt-technical-concepts"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.euspa.europa.eu/eu-space-programme/galileo"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.euspa.europa.eu/eu-space-programme/galileo/faqs/what-status-galileo-services"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://joint-research-centre.ec.europa.eu/scientific-activities/position-navigation-and-time-services-eu_en"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.euspa.europa.eu/sites/default/files/documents/Galileo_Open_Service_Infographic.pdf"
+    }
+  ]
 }

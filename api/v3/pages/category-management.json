@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:category-management",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -116,5 +117,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "omb-m-19-13",
+      "rel": "reference",
+      "resource": "https://www.whitehouse.gov/wp-content/uploads/2019/03/M-19-13.pdf"
+    },
+    {
+      "id": "federal-register-cm",
+      "rel": "reference",
+      "resource": "https://www.federalregister.gov/documents/2016/10/07/2016-24054/category-management"
+    },
+    {
+      "id": "uk-cas",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/607e85b0d3bf7f01343a06e0/Procurement_CAS_Definition_Release_9_v1__2_.pdf"
+    }
+  ]
 }

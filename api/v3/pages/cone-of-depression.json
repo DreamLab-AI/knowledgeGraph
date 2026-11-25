@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:cone-of-depression",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -82,5 +83,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "kgs-glossary",
+      "rel": "reference",
+      "resource": "https://www.kgs.ku.edu/Hydro/GWtutor/Plume_Busters/gwGlossary.html"
+    },
+    {
+      "id": "wou-hydrologic-glossary",
+      "rel": "reference",
+      "resource": "https://people.wou.edu/~taylors/nssi/glossary.htm"
+    },
+    {
+      "id": "usgs-circ1217-boxa",
+      "rel": "reference",
+      "resource": "https://pubs.usgs.gov/circ/circ1217/html/boxa.html"
+    },
+    {
+      "id": "usgs-theis-1940",
+      "rel": "reference",
+      "resource": "https://water.usgs.gov/ogw/pubs/Theis-1940.pdf"
+    },
+    {
+      "id": "usgs-circ1186-boxa",
+      "rel": "reference",
+      "resource": "https://pubs.usgs.gov/circ/circ1186/html/boxa.html"
+    }
+  ]
 }

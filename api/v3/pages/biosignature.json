@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:biosignature",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -75,5 +76,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/planetary-science/"
+    },
+    {
+      "id": "nasa-potential-biosignature",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/resource/what-is-a-potential-biosignature/"
+    },
+    {
+      "id": "catling-biosignature-framework",
+      "rel": "reference",
+      "resource": "https://pubmed.ncbi.nlm.nih.gov/29676932/"
+    },
+    {
+      "id": "meadows-oxygen-context",
+      "rel": "reference",
+      "resource": "https://journals.sagepub.com/doi/full/10.1089/ast.2017.1727"
+    },
+    {
+      "id": "green-life-detection-framework",
+      "rel": "reference",
+      "resource": "https://pubmed.ncbi.nlm.nih.gov/34707302/"
+    },
+    {
+      "id": "open-university-exoplanet-signatures",
+      "rel": "reference",
+      "resource": "https://www.open.ac.uk/blogs/news/science-mct/how-astronomers-plan-to-detect-the-signatures-of-alien-life-in-the-atmospheres-of-distant-planets/"
+    },
+    {
+      "id": "madhusudhan-k2-18b",
+      "rel": "reference",
+      "resource": "https://orca.cardiff.ac.uk/id/eprint/177806/"
+    },
+    {
+      "id": "stevenson-k2-18b",
+      "rel": "reference",
+      "resource": "https://arxiv.org/abs/2508.05961"
+    }
+  ]
 }

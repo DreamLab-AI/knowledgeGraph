@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:measurement-uncertainty",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -93,5 +94,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "bipm-jcgm-vim",
+      "rel": "reference",
+      "resource": "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf"
+    },
+    {
+      "id": "bipm-jcgm-gum",
+      "rel": "reference",
+      "resource": "https://www.bipm.org/documents/20126/2071204/JCGM_100_2008_E.pdf"
+    },
+    {
+      "id": "nist-tn-1297",
+      "rel": "reference",
+      "resource": "https://www.nist.gov/pml/nist-technical-note-1297"
+    }
+  ]
 }

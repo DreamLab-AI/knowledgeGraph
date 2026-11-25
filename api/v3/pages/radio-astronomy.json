@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:radio-astronomy",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -94,5 +95,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/astrophysics/"
+    },
+    {
+      "id": "nrao-radio-technology",
+      "rel": "reference",
+      "resource": "https://public.nrao.edu/radio-astronomy/the-technology-of-radio-astronomy/"
+    },
+    {
+      "id": "ska-interferometry",
+      "rel": "reference",
+      "resource": "https://www.skao.int/en/explore/telescopes/357/interferometry"
+    },
+    {
+      "id": "e-merlin",
+      "rel": "reference",
+      "resource": "https://www.e-merlin.ac.uk/"
+    },
+    {
+      "id": "e-merlin-support",
+      "rel": "reference",
+      "resource": "https://www.e-merlin.ac.uk/support.html"
+    },
+    {
+      "id": "ska-spectrum",
+      "rel": "reference",
+      "resource": "https://www.skao.int/en/explore/sustainability-skao/517/radio-spectrum"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-digital-twin",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -105,5 +106,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ivanov",
+      "rel": "reference",
+      "resource": "https://ideas.repec.org/a/taf/tprsxx/v62y2024i6p2220-2232.html"
+    },
+    {
+      "id": "aalto-dt",
+      "rel": "reference",
+      "resource": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/c317f721-6018-4e2e-83ae-ce5e7ca2ee60/content"
+    }
+  ]
 }

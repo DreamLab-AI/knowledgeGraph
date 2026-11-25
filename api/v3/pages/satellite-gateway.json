@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:satellite-gateway",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -70,5 +71,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.ofcom.org.uk/spectrum/space-and-satellites/non-geo-fss?language=en"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.ofcom.org.uk/siteassets/resources/documents/consultations/category-2-6-weeks/222439-non-geostationary-satellite-systems/associated-documents/statement-ngso-licensing.pdf?v=327294"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Connectivity_and_Secure_Communications/Hylas/Ground_segment"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Multiple_Access_Telecom_Reconfigurable_Intersatellites"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/artes-call-2/artes-ground-station-innovation-call-guidance"
+    }
+  ]
 }

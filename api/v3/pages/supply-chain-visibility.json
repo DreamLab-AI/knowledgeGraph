@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-visibility",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -196,5 +197,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sedex-visibility",
+      "rel": "reference",
+      "resource": "https://www.sedex.com/blog/supply-chain-visibility-beyond-tier-1/"
+    },
+    {
+      "id": "gs1-epcis",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/epcis"
+    },
+    {
+      "id": "gs1-gts",
+      "rel": "reference",
+      "resource": "https://www.gs1.org/standards/gs1-global-traceability-standard/current-standard"
+    },
+    {
+      "id": "christopher-peck-2004",
+      "rel": "reference",
+      "resource": "https://dspace.lib.cranfield.ac.uk/server/api/core/bitstreams/6ce1ceca-e8c6-4b37-8f26-6fdbe3c08a8a/content"
+    }
+  ]
 }

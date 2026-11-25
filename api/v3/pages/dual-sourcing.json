@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:dual-sourcing",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -126,5 +127,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lucker-2024",
+      "rel": "reference",
+      "resource": "https://openaccess.city.ac.uk/id/eprint/33699/8/lucker-et-al-2024-balancing-resilience-and-efficiency-a-literature-review-on-overcoming-supply-chain-disruptions.pdf"
+    },
+    {
+      "id": "bimpikis-2018",
+      "rel": "reference",
+      "resource": "https://www.kellogg.northwestern.edu/faculty/alirezat/Multisourcing.pdf"
+    },
+    {
+      "id": "psu-single-sole",
+      "rel": "reference",
+      "resource": "https://courses.smeal.psu.edu/scm824fa20/scm824fa20_module_4/2011/06/SCM820-M4L1Single-or-Sole-Sourcing.html"
+    },
+    {
+      "id": "chod-2019",
+      "rel": "reference",
+      "resource": "https://web.mit.edu/nitric/www/SupplierDiv.pdf"
+    },
+    {
+      "id": "federgruen-yang-2011",
+      "rel": "reference",
+      "resource": "https://business.columbia.edu/sites/default/files-efs/pubfiles/5371/procurement%20strategies.pdf"
+    }
+  ]
 }

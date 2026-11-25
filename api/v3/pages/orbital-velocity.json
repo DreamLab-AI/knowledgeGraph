@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:orbital-velocity",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,67 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "1234",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/502x0b3e1.pdf"
+    },
+    {
+      "id": "1235",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/19710015676/downloads/19710015676.pdf"
+    },
+    {
+      "id": "1236",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/solar-system/orbits-and-keplers-laws/"
+    },
+    {
+      "id": "1240",
+      "rel": "reference",
+      "resource": "https://pwg.gsfc.nasa.gov/stargaze/Skepl3rd.htm"
+    },
+    {
+      "id": "1241",
+      "rel": "reference",
+      "resource": "https://ssd.jpl.nasa.gov/horizons/manual.html"
+    },
+    {
+      "id": "1242",
+      "rel": "reference",
+      "resource": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/FORTRAN/spicelib/conics.html"
+    },
+    {
+      "id": "1243",
+      "rel": "reference",
+      "resource": "https://esa.github.io/kep3/elements.html"
+    },
+    {
+      "id": "1245",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20080031744"
+    },
+    {
+      "id": "1250",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits"
+    },
+    {
+      "id": "1251",
+      "rel": "reference",
+      "resource": "https://www.esa.int/gsp/ACT/projects/HybridPropagation/"
+    },
+    {
+      "id": "1252",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/"
+    },
+    {
+      "id": "1249",
+      "rel": "reference",
+      "resource": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Closing-the-gap-between-SGP4-and/99940266502346"
+    }
+  ]
 }

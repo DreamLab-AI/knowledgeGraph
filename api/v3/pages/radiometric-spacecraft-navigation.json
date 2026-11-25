@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:radiometric-spacecraft-navigation",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -107,5 +108,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "jpl-radiometric-tracking",
+      "rel": "reference",
+      "resource": "https://descanso.jpl.nasa.gov/monograph/series1_section.html"
+    },
+    {
+      "id": "esa-delta-dor",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/Keeping_track_of_spacecraft_with_Delta-DOR"
+    },
+    {
+      "id": "nasa-deep-space-network",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter18-1/"
+    },
+    {
+      "id": "nasa-navigation",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter13-1/"
+    },
+    {
+      "id": "ccsds-tracking-data-message",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/503x0b2c1.pdf"
+    },
+    {
+      "id": "jpl-dsn-doppler-ranging",
+      "rel": "reference",
+      "resource": "https://deepspace.jpl.nasa.gov/dsndocs/810-005/204/204.pdf"
+    },
+    {
+      "id": "esa-estrack",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/ESA_Ground_Stations/Estrack_ESA_s_global_ground_station_network"
+    }
+  ]
 }

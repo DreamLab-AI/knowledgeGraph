@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:atmospheric-drag",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "1266",
+      "rel": "reference",
+      "resource": "https://ccmc.gsfc.nasa.gov/models/NRLMSIS~00/"
+    },
+    {
+      "id": "1267",
+      "rel": "reference",
+      "resource": "https://swe.ssa.esa.int/en/sst_atm"
+    },
+    {
+      "id": "1268",
+      "rel": "reference",
+      "resource": "https://conference.sdo.esoc.esa.int/proceedings/sdc8/paper/25"
+    },
+    {
+      "id": "1269",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/wp-content/uploads/2018/01/oce_51-nasa_spacecraft_conjunction_assessment_and_collision_avoidance_best_practices_handbook.pdf"
+    },
+    {
+      "id": "1271",
+      "rel": "reference",
+      "resource": "https://ilrs.gsfc.nasa.gov/docs/ANDE_AAS_07-265.pdf"
+    },
+    {
+      "id": "1272",
+      "rel": "reference",
+      "resource": "https://documentation.help/GMAT/SpacecraftBallisticMass.html"
+    },
+    {
+      "id": "1273",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/GOCE_operations"
+    }
+  ]
 }

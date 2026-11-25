@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:orbit-determination",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -87,5 +88,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-navigation",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter13-1/"
+    },
+    {
+      "id": "nasa-empirical-covariance",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20150004606"
+    },
+    {
+      "id": "esa-delta-dor",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/Keeping_track_of_spacecraft_with_Delta-DOR"
+    },
+    {
+      "id": "esa-navigation-missions",
+      "rel": "reference",
+      "resource": "https://dgnl7.esoc.esa.int/ESA_Missions_and_Programmes.html"
+    },
+    {
+      "id": "esa-godot-estimation",
+      "rel": "reference",
+      "resource": "https://godot.io.esa.int/docs/guides/cosmos/estimation.html"
+    },
+    {
+      "id": "nasa-artemis-orbit-determination",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20110009960"
+    },
+    {
+      "id": "nspoc-monitor-space-hazards",
+      "rel": "reference",
+      "resource": "https://www.monitor-space-hazards.service.gov.uk/"
+    },
+    {
+      "id": "uk-sda-requirements",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/space-domain-awareness-requirements/cross-government-space-domain-awareness-sda-requirements"
+    },
+    {
+      "id": "caa-cap2210",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/publication/download/18909"
+    }
+  ]
 }

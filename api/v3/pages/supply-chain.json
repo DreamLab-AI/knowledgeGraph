@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -403,5 +404,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "iof-sco",
+      "rel": "reference",
+      "resource": "https://raw.githubusercontent.com/iofoundry/ontology/50a88d4bfed6cd388bb11e132778cb2dcd1d7483/supplychain/SupplyChain.rdf"
+    },
+    {
+      "id": "melo-2007",
+      "rel": "reference",
+      "resource": "https://kluedo.ub.rptu.de/files/1985/bericht130.pdf"
+    },
+    {
+      "id": "nist-csrc-supply-chain",
+      "rel": "reference",
+      "resource": "https://csrc.nist.gov/glossary/term/supply_chain"
+    },
+    {
+      "id": "cscmp-glossary",
+      "rel": "reference",
+      "resource": "https://cscmp.org/CSCMP/Educate/SCM_Definitions_and_Glossary_of_Terms.aspx"
+    },
+    {
+      "id": "ec-logistics",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/logistics_en"
+    },
+    {
+      "id": "mentzer-2001",
+      "rel": "reference",
+      "resource": "https://api.crossref.org/works/10.1002/j.2158-1592.2001.tb00001.x"
+    },
+    {
+      "id": "fisher-hbr-1997",
+      "rel": "reference",
+      "resource": "https://eclass.upatras.gr/modules/document/file.php/MECH1277/%CE%95%CE%A1%CE%93%CE%91%CE%A3%CE%99%CE%95%CE%A3-PAPERS%20%CE%91%CE%9D%CE%9F%CE%99%CE%9E%CE%97%202024/2-Right%20Supply%20Chain%20B.pdf"
+    }
+  ]
 }

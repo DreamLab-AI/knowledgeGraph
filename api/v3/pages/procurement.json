@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:procurement",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -197,5 +198,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "uncitral-model-law",
+      "rel": "reference",
+      "resource": "https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/2011-model-law-on-public-procurement-e.pdf"
+    },
+    {
+      "id": "uk-sourcing-playbook",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/64901fcc5f7bb700127fac5e/Sourcing_Playbook_Final.pdf"
+    },
+    {
+      "id": "kraljic-1983",
+      "rel": "reference",
+      "resource": "https://hbr.org/1983/09/purchasing-must-become-supply-management"
+    },
+    {
+      "id": "hmrc-p2p",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/help-with-vat-compliance-controls-guidelines-for-compliance-gfc8/procure-to-pay-part-4"
+    }
+  ]
 }

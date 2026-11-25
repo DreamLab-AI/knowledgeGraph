@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:freight-containerisation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -115,5 +116,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "glossary-transport-statistics-2019",
+      "rel": "reference",
+      "resource": "https://www.sipotra.it/wp-content/uploads/2019/09/Glossary-for-transport-statistics-2019.pdf"
+    },
+    {
+      "id": "hbs-mclean",
+      "rel": "reference",
+      "resource": "https://www.library.hbs.edu/working-knowledge/the-truck-driver-who-reinvented-shipping"
+    },
+    {
+      "id": "usc-sea-grant-box",
+      "rel": "reference",
+      "resource": "https://dornsife.usc.edu/uscseagrant/2020/05/29/2-the-box-an-inside-look-at-the-shipping-container/"
+    },
+    {
+      "id": "imo-csc",
+      "rel": "reference",
+      "resource": "https://www.imo.org/en/about/Conventions/Pages/International-Convention-for-Safe-Containers-(CSC).aspx"
+    }
+  ]
 }

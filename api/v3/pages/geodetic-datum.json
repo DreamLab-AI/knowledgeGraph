@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:geodetic-datum",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -89,5 +90,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ogc-coordinate-referencing",
+      "rel": "reference",
+      "resource": "https://docs.ogc.org/as/18-005r8/18-005r8.pdf"
+    },
+    {
+      "id": "iso-19111-2019",
+      "rel": "reference",
+      "resource": "https://www.iso.org/standard/74039.html"
+    },
+    {
+      "id": "os-coordinate-systems-guide",
+      "rel": "reference",
+      "resource": "https://www.ordnancesurvey.co.uk/documents/resources/guide-coordinate-systems-great-britain.pdf"
+    },
+    {
+      "id": "os-coordinate-systems",
+      "rel": "reference",
+      "resource": "https://docs.os.uk/more-than-maps/a-guide-to-coordinate-systems-in-great-britain/ordnance-survey-coordinate-systems"
+    },
+    {
+      "id": "os-osgm15",
+      "rel": "reference",
+      "resource": "https://docs.os.uk/more-than-maps/a-guide-to-coordinate-systems-in-great-britain/from-one-coordinate-system-to-another-geodetic-transformations/national-geoid-model-osgm15-etrs89-orthometric-height"
+    },
+    {
+      "id": "ukho-third-party-data",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/use-of-third-party-data-and-h-notes"
+    }
+  ]
 }

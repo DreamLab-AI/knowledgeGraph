@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:eclipse-power-budget",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -68,5 +69,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ecss-electrical-electronic",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/2022/04/ECSS-E-ST-20C-Rev.2(8April2022).pdf"
+    },
+    {
+      "id": "nasa-power-systems-2026",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/wp-content/uploads/2026/05/3-soa-power-2026-final.pdf"
+    },
+    {
+      "id": "esa-mars-express-eclipse",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_Express_successfully_powers_through_eclipse_season"
+    },
+    {
+      "id": "esa-cluster-eclipses",
+      "rel": "reference",
+      "resource": "https://www.esa.int/esapub/bulletin/bulletin129/bul129c_volpp.pdf"
+    },
+    {
+      "id": "esa-space-weather-cdf",
+      "rel": "reference",
+      "resource": "https://swe.ssa.esa.int/TECEES/spweather/esa_initiatives/spweatherstudies/CDF_study/SpaceWeatherReport.pdf"
+    },
+    {
+      "id": "esa-nea-cdf",
+      "rel": "reference",
+      "resource": "https://sci.esa.int/documents/34923/36148/1567256261418-NEA_SR_TRS_Overview.pdf"
+    },
+    {
+      "id": "nasa-ssri-electrical-power",
+      "rel": "reference",
+      "resource": "https://s3vi.ndc.nasa.gov/ssri-kb/topics/30/"
+    }
+  ]
 }

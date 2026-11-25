@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:trade-body",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -112,5 +113,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "cma-trade-assoc",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/competition-law-dos-and-donts-for-trade-associations/what-do-trade-associations-need-to-know-about-competition-law"
+    },
+    {
+      "id": "fiata",
+      "rel": "reference",
+      "resource": "https://fiata.org/"
+    },
+    {
+      "id": "icc-about",
+      "rel": "reference",
+      "resource": "https://iccwbo.org/about-us/"
+    },
+    {
+      "id": "wto-who",
+      "rel": "reference",
+      "resource": "https://www.wto.org/english/thewto_e/whatis_e/who_we_are_e.htm"
+    },
+    {
+      "id": "bgov-incoterms",
+      "rel": "reference",
+      "resource": "https://www.business.gov.uk/export-from-uk/learn/categories/selling-across-borders-product-and-services-regulations-licensing-and-logistics/logistics-and-freight-forwarders/incoterms/"
+    }
+  ]
 }

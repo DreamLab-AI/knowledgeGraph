@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:crew-health-monitoring",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -89,5 +90,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/biological-physical/"
+    },
+    {
+      "id": "nasa-exploration-medical-technologies",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/human-health-performance/exploration-medical-technologies/"
+    },
+    {
+      "id": "nasa-multifunctional-medical-devices",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/glenn/glenn-expertise-space-exploration/human-health-performance/exploration-medical-technologies/multifunctional-integrated-medical-devices/"
+    },
+    {
+      "id": "nasa-health-sample-collection",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/hrp/research-operations-integration/sample-collection-and-portable-systems-and-blood-collection-data/"
+    },
+    {
+      "id": "nasa-wearable-tech",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/humans-in-space/wearable-tech-for-space-station-research/"
+    },
+    {
+      "id": "esa-physiotool",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/epsilon/PhysioTool_Understanding_how_the_body_and_mind_adapt_to_microgravity"
+    },
+    {
+      "id": "esa-tempus-pro-antarctica",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/From_Antarctica_to_space_telemedicine_at_the_limit"
+    },
+    {
+      "id": "khan-et-al-2026",
+      "rel": "reference",
+      "resource": "https://pubmed.ncbi.nlm.nih.gov/42004690/"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:forecast-accuracy",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -101,5 +102,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "mit-forecast",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/esd-260j-logistics-systems-fall-2006/f2396de71c17e2d45d69aa506eda27ce_lect4.pdf"
+    },
+    {
+      "id": "fpp3",
+      "rel": "reference",
+      "resource": "https://otexts.com/fpp3/toolbox.html"
+    },
+    {
+      "id": "hk2006",
+      "rel": "reference",
+      "resource": "https://robjhyndman.com/papers/mase.pdf"
+    }
+  ]
 }

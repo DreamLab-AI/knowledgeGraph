@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:inventory-management",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -179,5 +180,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "petropoulos-2025",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/2503.05749"
+    },
+    {
+      "id": "lt-inventory-management",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/09%3A_Inventory_Management"
+    },
+    {
+      "id": "gatech-inventory-systems",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~mgoetsch/cali/logistics_systems_design/inventory_systems/inventory_systems.pdf"
+    },
+    {
+      "id": "mit-dlab-graves",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/15-772j-d-lab-supply-chains-fall-2014/b0b41cc09a83ffa4cf1335ac65f5f9ab_MIT15_772JF14_Lec13.pdf"
+    }
+  ]
 }

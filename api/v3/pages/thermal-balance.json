@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:thermal-balance",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -68,5 +69,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-thermal-control",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+    },
+    {
+      "id": "ecss-thermal-analysis-handbook",
+      "rel": "reference",
+      "resource": "https://ecss.nl/home/ecss-e-hb-31-03a-15november2016/"
+    },
+    {
+      "id": "nasa-payload-test-requirements",
+      "rel": "reference",
+      "resource": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7002B-w-Change-1.pdf"
+    },
+    {
+      "id": "gsfc-environmental-verification",
+      "rel": "reference",
+      "resource": "https://standards.nasa.gov/sites/default/files/standards/GSFC/B/0/gsfc-std-7000b_signature_cycle_04_28_2021_fixed_links.pdf"
+    },
+    {
+      "id": "esa-ypsat-thermal-campaign",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_Young_Professionals_Satellites/YPSat-1_successfully_completed_the_initial_thermal_vacuum_test_campaign"
+    },
+    {
+      "id": "uk-space-facilities-review-2017",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/665552/UK_Space_Facilities_Review_December_2017.pdf"
+    },
+    {
+      "id": "esa-plato-ucl-thermal-balance",
+      "rel": "reference",
+      "resource": "https://indico.esa.int/event/406/contributions/7174/"
+    },
+    {
+      "id": "nasa-mms-thermal-testing",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20150018320"
+    },
+    {
+      "id": "nasa-jwst-isim-thermal-testing",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20160013540"
+    }
+  ]
 }

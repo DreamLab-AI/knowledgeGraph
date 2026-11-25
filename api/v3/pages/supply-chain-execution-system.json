@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-execution-system",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -132,5 +133,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "zaidi",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/1905.00687"
+    },
+    {
+      "id": "bartholdi",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~spyros/courses/IE6202/Fall-2002/Bartholdi-Hackman.pdf"
+    },
+    {
+      "id": "isa95",
+      "rel": "reference",
+      "resource": "https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard"
+    },
+    {
+      "id": "gsa-tmss",
+      "rel": "reference",
+      "resource": "https://www.gsa.gov/buy-through-us/products-and-services/transportation-and-logistics-services/transportation-programs/tmss-20"
+    },
+    {
+      "id": "ibm-oms",
+      "rel": "reference",
+      "resource": "https://www.ibm.com/think/topics/order-management"
+    }
+  ]
 }

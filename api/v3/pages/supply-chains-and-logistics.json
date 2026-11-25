@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chains-and-logistics",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -72,5 +73,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "cscmp-glossary",
+      "rel": "reference",
+      "resource": "https://cscmp.org/CSCMP/Educate/SCM_Definitions_and_Glossary_of_Terms.aspx"
+    },
+    {
+      "id": "ec-logistics",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/logistics_en"
+    },
+    {
+      "id": "iof-sco-readme",
+      "rel": "reference",
+      "resource": "https://raw.githubusercontent.com/iofoundry/ontology/50a88d4bfed6cd388bb11e132778cb2dcd1d7483/supplychain/README.md"
+    },
+    {
+      "id": "mentzer-2001",
+      "rel": "reference",
+      "resource": "https://api.crossref.org/works/10.1002/j.2158-1592.2001.tb00001.x"
+    }
+  ]
 }

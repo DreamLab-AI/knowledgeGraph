@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supplier-qualification",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -108,5 +109,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "uncitral-model-law",
+      "rel": "reference",
+      "resource": "https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/2011-model-law-on-public-procurement-e.pdf"
+    },
+    {
+      "id": "eu-gmp-chapter-5",
+      "rel": "reference",
+      "resource": "https://health.ec.europa.eu/document/download/4a1fdb4f-6f6f-49c4-b264-8056e5bbe078_en?filename=chapter_5.pdf"
+    },
+    {
+      "id": "ich-q7-fda",
+      "rel": "reference",
+      "resource": "https://www.fda.gov/files/drugs/published/Q7-Good-Manufacturing-Practice-Guidance-for-Active-Pharmaceutical-Ingredients-Guidance-for-Industry.pdf"
+    },
+    {
+      "id": "uk-sourcing-playbook",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/media/64901fcc5f7bb700127fac5e/Sourcing_Playbook_Final.pdf"
+    }
+  ]
 }

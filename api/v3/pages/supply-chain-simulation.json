@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-simulation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -182,5 +183,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "kleijnen-2003",
+      "rel": "reference",
+      "resource": "https://research.tilburguniversity.edu/en/publications/supply-chain-simulation-a-survey/"
+    },
+    {
+      "id": "owen-2010",
+      "rel": "reference",
+      "resource": "https://publications.aston.ac.uk/id/eprint/20732/1/SW10.11.11.Owen.Albores.Greasley.Love.pdf"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:demand-forecasting",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -192,5 +193,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ecamp-forecasting",
+      "rel": "reference",
+      "resource": "https://ecampusontario.pressbooks.pub/opsmgmt/chapter/3-2-the-role-of-forecasting-in-marketing-strategy/"
+    },
+    {
+      "id": "goetschalckx-forecasting",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~mgoetsch/cali/logistics_systems_design/forecasting/forecasting.pdf"
+    },
+    {
+      "id": "nist-time-series",
+      "rel": "reference",
+      "resource": "https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc41.htm"
+    },
+    {
+      "id": "sas-chase-2020",
+      "rel": "reference",
+      "resource": "https://blogs.sas.com/content/sascom/2020/10/19/is-short-term-demand-sensing-a-key-component-of-your-digital-supply-chain-transformation/"
+    },
+    {
+      "id": "chopra-meindl-ch7",
+      "rel": "reference",
+      "resource": "https://host.kelley.iu.edu/mabert/e730/chopra-chap-7.pdf"
+    },
+    {
+      "id": "jatta-2016",
+      "rel": "reference",
+      "resource": "https://soar.wichita.edu/server/api/core/bitstreams/282b6411-c8a8-463c-b478-ce91fe475a23/content"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:advance-ship-notice",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -139,5 +140,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "x12",
+      "rel": "reference",
+      "resource": "https://x12.org/products/transaction-sets"
+    },
+    {
+      "id": "desadv",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2024/https://service.unece.org/trade/untdid/d01b/trmd/desadv_c.htm"
+    },
+    {
+      "id": "gs1se-sscc",
+      "rel": "reference",
+      "resource": "https://gs1.se/en/standards-and-services/serial-shipping-container-code-sscc/"
+    }
+  ]
 }

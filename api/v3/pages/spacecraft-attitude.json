@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-attitude",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -100,5 +101,57 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ccsds-attitude-data-messages",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/504x0b2.pdf"
+    },
+    {
+      "id": "ccsds-navigation-conventions",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/500x0g4.pdf"
+    },
+    {
+      "id": "ecss-aocs-requirements",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/standards/ecss-e/ECSS-E-ST-60-30C30August2013.pdf"
+    },
+    {
+      "id": "ecss-control-performance",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/2008/11/ECSS-E-ST-60-10C(15November2008).pdf"
+    },
+    {
+      "id": "esa-control-systems",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/About_Control_Systems"
+    },
+    {
+      "id": "esa-gaia-spacecraft",
+      "rel": "reference",
+      "resource": "https://gea.esac.esa.int/archive/documentation/GEDR3/Introduction/chap_cu0int/cu0int_sec_mission/cu0int_ssec_spacecraft_intro.html"
+    },
+    {
+      "id": "esa-proba-payloads",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Proba_Missions/Proba_payloads2"
+    },
+    {
+      "id": "esa-eo-pointing-library",
+      "rel": "reference",
+      "resource": "https://opensf.esa.int/Repo/PUBLIC/DOCUMENTATION/CFI/EOCFI/BRANCH_4X/latest/CPP-Docs/SUM/PointingSUM/index.html"
+    },
+    {
+      "id": "nasa-smallsat-gnc",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/guidance-navigation-and-control/"
+    },
+    {
+      "id": "esa-airbus-star-tracker-safe-mode",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/Safeguarding_Safe_Mode_with_Star_Trackers"
+    }
+  ]
 }

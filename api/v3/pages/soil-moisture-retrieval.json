@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:soil-moisture-retrieval",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -85,5 +86,57 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "met-office-ps43",
+      "rel": "reference",
+      "resource": "https://www.metoffice.gov.uk/services/data/met-office-data-for-reuse/ps43_ftp"
+    },
+    {
+      "id": "ceda-esa-soil-moisture-v081",
+      "rel": "reference",
+      "resource": "https://catalogue.ceda.ac.uk/uuid/6f99cdb86a9e4d3da2d47c79612c00a2/"
+    },
+    {
+      "id": "esa-cci-soil-moisture-documents",
+      "rel": "reference",
+      "resource": "https://climate.esa.int/en/projects/soil-moisture/soil-moisture-key-documents/"
+    },
+    {
+      "id": "esa-cci-soil-moisture-atbd",
+      "rel": "reference",
+      "resource": "https://climate.esa.int/documents/3007/ESA_CCI_SM_RD_D2.4_v2.0_ATBD_v09.0_I1.0.pdf"
+    },
+    {
+      "id": "eumetsat-ascat-handbook",
+      "rel": "reference",
+      "resource": "https://user.eumetsat.int/s3/eup-strapi-media/pdf_soilmoisture_prod_hb_1d71a1af97.pdf"
+    },
+    {
+      "id": "ceos-soil-moisture-validation",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/publications/soil-moisture-product-validation-good-practices-protocol-version-10"
+    },
+    {
+      "id": "gruber-esa-cci-merging",
+      "rel": "reference",
+      "resource": "https://essd.copernicus.org/articles/11/717/2019/"
+    },
+    {
+      "id": "eumetsat-flood-drought-monitoring",
+      "rel": "reference",
+      "resource": "https://www.eumetsat.int/features/towards-better-flood-and-drought-monitoring"
+    },
+    {
+      "id": "nsidc-smap-l2-user-guide",
+      "rel": "reference",
+      "resource": "https://nsidc.org/sites/default/files/documents/user-guide/spl2smp-v005-userguide.pdf"
+    },
+    {
+      "id": "nsidc-smap-sentinel-atbd",
+      "rel": "reference",
+      "resource": "https://nsidc.org/sites/default/files/spl2smap_s_atbd_2019.pdf"
+    }
+  ]
 }

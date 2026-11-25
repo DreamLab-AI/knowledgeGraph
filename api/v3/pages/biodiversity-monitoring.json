@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:biodiversity-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -88,5 +89,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "jncc-uk-biodiversity-indicators",
+      "rel": "reference",
+      "resource": "https://www.jncc.gov.uk/our-work/uk-biodiversity-indicators/"
+    },
+    {
+      "id": "jncc-monitoring",
+      "rel": "reference",
+      "resource": "https://www.jncc.gov.uk/monitoring/"
+    },
+    {
+      "id": "jncc-habitat-condition",
+      "rel": "reference",
+      "resource": "https://jncc.gov.uk/our-work/habitat-condition/"
+    },
+    {
+      "id": "natural-england-living-england-transparency",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/algorithmic-transparency-records/natural-england-living-england"
+    },
+    {
+      "id": "natural-england-living-england-2022",
+      "rel": "reference",
+      "resource": "https://naturalengland.blog.gov.uk/2022/04/05/living-england-from-satellite-imagery-to-a-national-scale-habitat-map/"
+    },
+    {
+      "id": "natural-england-living-england-guide",
+      "rel": "reference",
+      "resource": "https://environment.data.gov.uk/api/file/download?fileDataSetId=1e6bc6dd-ee15-4bf4-b913-9ccfdf557646&fileName=Edition+1+NERR108+Living+England+Satellite+based+habitat+classification-+Technical+User+Guide.pdf"
+    },
+    {
+      "id": "defra-environmental-indicator-wildlife",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/environmental-indicator-framework-theme-d-wildlife/environmental-indicator-framework-theme-d-wildlife"
+    },
+    {
+      "id": "jncc-report-780",
+      "rel": "reference",
+      "resource": "https://data.jncc.gov.uk/data/f592f2bc-ab02-4acd-a615-90d5fe9c9069/jncc-report-780.pdf"
+    }
+  ]
 }

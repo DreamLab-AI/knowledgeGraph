@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-navigation",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -97,5 +98,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-gnc",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/guidance-navigation-and-control/"
+    },
+    {
+      "id": "nasa-spaceflight-navigation",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter13-1/"
+    },
+    {
+      "id": "ccsds-attitude-data-messages",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/504x0b2.pdf"
+    },
+    {
+      "id": "ccsds-orbit-data-messages",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/502x0b3e1.pdf"
+    },
+    {
+      "id": "jpl-deep-space-one-autonav",
+      "rel": "reference",
+      "resource": "https://www.jpl.nasa.gov/nmp/ds1/tech/autonav.html"
+    },
+    {
+      "id": "esa-gaia-spacecraft",
+      "rel": "reference",
+      "resource": "https://gea.esac.esa.int/archive/documentation/GEDR3/Introduction/chap_cu0int/cu0int_sec_mission/cu0int_ssec_spacecraft_intro.html"
+    },
+    {
+      "id": "esa-proba-payloads",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Proba_Missions/Proba_payloads2"
+    },
+    {
+      "id": "nasa-geons",
+      "rel": "reference",
+      "resource": "https://etd.gsfc.nasa.gov/capabilities/capabilities-listing/geons/"
+    },
+    {
+      "id": "esa-godot-estimation",
+      "rel": "reference",
+      "resource": "https://godot.io.esa.int/docs/guides/cosmos/estimation.html"
+    }
+  ]
 }

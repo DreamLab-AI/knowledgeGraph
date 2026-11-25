@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:flood-mapping",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -89,5 +90,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "environment-agency-remotely-sensed-flood-estimates",
+      "rel": "reference",
+      "resource": "https://www.data.gov.uk/dataset/d6c3993c-7d9e-4418-8427-ef5effac1b7e/remotely-sensed-flood-estimates"
+    },
+    {
+      "id": "environment-agency-flood-modelling",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/using-modelling-for-flood-risk-assessments"
+    },
+    {
+      "id": "met-office-flood-forecasting",
+      "rel": "reference",
+      "resource": "https://www.metoffice.gov.uk/services/government/environmental-hazard-resilience/floodforecasting"
+    },
+    {
+      "id": "ukceh-flood-forecasting",
+      "rel": "reference",
+      "resource": "https://www.ceh.ac.uk/solutions/industries/water/floods/flood-forecasting"
+    },
+    {
+      "id": "environment-agency-evidence-review",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/guidance/flood-and-coastal-risk-products-submit-an-evidence-review-request"
+    },
+    {
+      "id": "copernicus-gfm-sentinel-1c",
+      "rel": "reference",
+      "resource": "https://emergency.copernicus.eu/news/gfm-now-includes-data-from-sentinel-1c/"
+    },
+    {
+      "id": "copernicus-exflos",
+      "rel": "reference",
+      "resource": "https://mapping.emergency.copernicus.eu/about/rapid-mapping-manual/detection-methods-damage-assessment/enhanced-flood-modelling-and-depth-mapping-capabilities-exflos/"
+    }
+  ]
 }

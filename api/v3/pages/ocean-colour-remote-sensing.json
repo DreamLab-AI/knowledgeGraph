@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:ocean-colour-remote-sensing",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -80,5 +81,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-earthdata-ocean-color",
+      "rel": "reference",
+      "resource": "https://www.earthdata.nasa.gov/topics/ocean/ocean-color"
+    },
+    {
+      "id": "nasa-phytoplankton",
+      "rel": "reference",
+      "resource": "https://earthobservatory.nasa.gov/features/Phytoplankton"
+    },
+    {
+      "id": "ioccg-report-1",
+      "rel": "reference",
+      "resource": "https://ioccg.org/wp-content/uploads/2015/10/ioccg-report-01.pdf"
+    },
+    {
+      "id": "esa-sentinel-3-instruments",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Instruments"
+    }
+  ]
 }

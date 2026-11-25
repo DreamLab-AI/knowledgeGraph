@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:climate-data-record",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -97,5 +98,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "gcos-essential-climate-variables",
+      "rel": "reference",
+      "resource": "https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables/about-essential-climate-variables"
+    },
+    {
+      "id": "met-office-hadcrut5",
+      "rel": "reference",
+      "resource": "https://hadleyserver.metoffice.gov.uk/hadcrut5/"
+    },
+    {
+      "id": "ceda-archive",
+      "rel": "reference",
+      "resource": "https://archive.ceda.ac.uk/"
+    },
+    {
+      "id": "ceda-haduk-grid-provisional",
+      "rel": "reference",
+      "resource": "https://catalogue.ceda.ac.uk/uuid/4507b91bf5094c82b43f2f546cc224e0/"
+    },
+    {
+      "id": "ceda-midas-temperature-v202607",
+      "rel": "reference",
+      "resource": "https://catalogue.ceda.ac.uk/uuid/1854bb17ec454841b04e243a1352f25a/"
+    },
+    {
+      "id": "esa-cci-generation",
+      "rel": "reference",
+      "resource": "https://climate.esa.int/en/about-us-new/climate-change-initiative/essential-climate-variables/how-cci-ecvs-are-generated/"
+    },
+    {
+      "id": "copernicus-climate-data-methods",
+      "rel": "reference",
+      "resource": "https://climate.copernicus.eu/about-data-and-methods"
+    }
+  ]
 }

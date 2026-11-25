@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:atmospheric-correction",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -86,5 +87,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "copernicus-sentinel-2-l2a",
+      "rel": "reference",
+      "resource": "https://sentinels.copernicus.eu/-/collection-1-level-2a"
+    },
+    {
+      "id": "sentinel-2-l2a-atbd",
+      "rel": "reference",
+      "resource": "https://sentinels.copernicus.eu/documents/247904/446933/Sentinel-2-Level-2A-Algorithm-Theoretical-Basis-Document-ATBD.pdf"
+    },
+    {
+      "id": "sentinel-2-l2a-quality",
+      "rel": "reference",
+      "resource": "https://sentinels.copernicus.eu/documents/247904/3912630/Sentinel-2-L2A-Data-Quality-Report/e2981cd6-bb5e-4351-8b7f-fdb87a418727?version=1.1"
+    },
+    {
+      "id": "usgs-surface-reflectance-qa",
+      "rel": "reference",
+      "resource": "https://www.usgs.gov/landsat-missions/landsat-surface-reflectance-quality-assessment"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-thermal-control",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -73,5 +74,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-thermal-control",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/"
+    },
+    {
+      "id": "ecss-thermal-control",
+      "rel": "reference",
+      "resource": "https://ecss.nl/standard/ecss-e-st-31c-thermal-control/"
+    },
+    {
+      "id": "ecss-thermal-analysis-handbook",
+      "rel": "reference",
+      "resource": "https://ecss.nl/home/ecss-e-hb-31-03a-15november2016/"
+    },
+    {
+      "id": "nasa-payload-test-requirements",
+      "rel": "reference",
+      "resource": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7002B-w-Change-1.pdf"
+    },
+    {
+      "id": "gsfc-environmental-verification",
+      "rel": "reference",
+      "resource": "https://standards.nasa.gov/sites/default/files/standards/GSFC/B/0/gsfc-std-7000b_signature_cycle_04_28_2021_fixed_links.pdf"
+    },
+    {
+      "id": "ukri-ral-space",
+      "rel": "reference",
+      "resource": "https://www.ukri.org/who-we-are/stfc/facilities/rutherford-appleton-laboratory/ral-space/"
+    },
+    {
+      "id": "ukri-national-satellite-test-facility",
+      "rel": "reference",
+      "resource": "https://www.ukri.org/what-we-do/browse-our-areas-of-investment-and-support/national-satellite-test-facility/"
+    },
+    {
+      "id": "ukri-microcarb-launch",
+      "rel": "reference",
+      "resource": "https://www.ukri.org/news/uk-french-satellite-launches-to-transform-climate-monitoring/"
+    }
+  ]
 }

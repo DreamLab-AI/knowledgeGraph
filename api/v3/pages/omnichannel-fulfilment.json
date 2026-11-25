@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:omnichannel-fulfilment",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -125,5 +126,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "kusuda-bops",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/1909.00822"
+    },
+    {
+      "id": "souza-omnichannel-2026",
+      "rel": "reference",
+      "resource": "https://www.scielo.br/j/prod/a/fRqBx8m6fY9q7m9CqNnFdFw/?lang=en"
+    },
+    {
+      "id": "bielozorov-bopis",
+      "rel": "reference",
+      "resource": "https://www.scitepress.org/Papers/2020/102142/102142.pdf"
+    }
+  ]
 }

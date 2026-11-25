@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-rendezvous",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -86,5 +87,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-jsc-rpod",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/reference/jsc-rendezvous-prox-ops-docking-subsystems/"
+    },
+    {
+      "id": "nasa-shuttle-rpo",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20070013549"
+    },
+    {
+      "id": "esa-atv-rendezvous",
+      "rel": "reference",
+      "resource": "https://www.esa.int/esapub/onstation/os11.pdf"
+    },
+    {
+      "id": "nasa-orion-rpod",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20070025134"
+    },
+    {
+      "id": "nasa-human-rating",
+      "rel": "reference",
+      "resource": "https://nodis3.gsfc.nasa.gov/displayAll.cfm?Internal_ID=N_PR_8705_002B_&page_name=all"
+    },
+    {
+      "id": "nasa-multisensor-rpod-test",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20080018957"
+    },
+    {
+      "id": "uksa-rpo-sandbox",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/publications/regulatory-sandbox-for-rendezvous-and-proximity-operations-stage-1/regulatory-sandbox-for-rendezvous-and-proximity-operations-stage-1-report"
+    }
+  ]
 }

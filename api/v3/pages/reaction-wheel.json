@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:reaction-wheel",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -448,5 +449,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-smallsat-gnc",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/guidance-navigation-and-control/"
+    },
+    {
+      "id": "aac-clyde-trillian-1",
+      "rel": "reference",
+      "resource": "https://www.aac-clyde.space/what-we-do/space-products-components/adcs/trillian-1"
+    },
+    {
+      "id": "surrey-two-wheel-control",
+      "rel": "reference",
+      "resource": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Practical-implementation-of-attitude-control-algorithms/99515857702346"
+    },
+    {
+      "id": "surrey-reaction-wheel-microvibration",
+      "rel": "reference",
+      "resource": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Microvibration-simulation-of-reaction-wheel-ball/99822132402346"
+    },
+    {
+      "id": "sstl-geo-wheel",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/getmedia/75583aad-183e-4130-9139-f71786b45a00/SSTL-GEO-Wheel-Datasheet-v2-2021.pdf"
+    },
+    {
+      "id": "esa-proba-2-spacecraft",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Proba_Missions/Proba-2_Spacecraft"
+    }
+  ]
 }

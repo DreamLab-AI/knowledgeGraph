@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:earth-observation-sensor",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -385,5 +386,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sosa-ssn-2023",
+      "rel": "reference",
+      "resource": "https://www.w3.org/TR/vocab-ssn-2023/"
+    },
+    {
+      "id": "bipm-vim-sensor",
+      "rel": "reference",
+      "resource": "https://jcgm.bipm.org/vim/en/3.8.html"
+    },
+    {
+      "id": "esa-earth-observation-glossary",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Applications/Observing_the_Earth/Earth_observation_glossary"
+    },
+    {
+      "id": "qa4eo-principles",
+      "rel": "reference",
+      "resource": "https://qa4eo.org/docs/QA4EO_Principles_v4.0.pdf"
+    },
+    {
+      "id": "ceos-frm-framework",
+      "rel": "reference",
+      "resource": "https://calvalportal.ceos.org/documents/10136/958898/CEOS-FRM_Assessment_Framework_V1.pdf/a8318317-9f64-6f02-44db-e64f234c4036?t=1697787396736"
+    },
+    {
+      "id": "nceo-instrument-development",
+      "rel": "reference",
+      "resource": "https://www.nceo.ac.uk/data-facilities/laboratories/instrument-development-laboratory/"
+    },
+    {
+      "id": "uk-space-agency-microcarb",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/case-studies/microcarb"
+    }
+  ]
 }

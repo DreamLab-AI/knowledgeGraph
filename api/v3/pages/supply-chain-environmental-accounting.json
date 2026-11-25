@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-environmental-accounting",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -121,5 +122,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ghg-scope3-2011",
+      "rel": "reference",
+      "resource": "https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613_2.pdf"
+    },
+    {
+      "id": "mit-mfa-lecture",
+      "rel": "reference",
+      "resource": "https://ocw.iti.hr/courses/engineering-systems-division/esd-123j-systems-perspectives-on-industrial-ecology-spring-2006/lecture-notes/lec14.pdf"
+    },
+    {
+      "id": "sbti-supplier-engagement",
+      "rel": "reference",
+      "resource": "https://sciencebasedtargets.org/resources/files/Supplier-Engagement-Guidance.pdf"
+    },
+    {
+      "id": "eurostat-mfa-guide-2001",
+      "rel": "reference",
+      "resource": "https://ec.europa.eu/eurostat/documents/1798247/6191533/3-Economy-wide-material-flow-accounts...-A-methodological-guide-2001-edition.pdf"
+    }
+  ]
 }

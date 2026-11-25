@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:bullwhip-effect",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -117,5 +118,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lee-1997",
+      "rel": "reference",
+      "resource": "https://courses.ie.bilkent.edu.tr/ie102/wp-content/uploads/sites/12/2019/02/Lee-Padmanabhan-Whang-1997-MS.pdf"
+    },
+    {
+      "id": "sterman-2015",
+      "rel": "reference",
+      "resource": "https://dspace.mit.edu/handle/1721.1/121087"
+    },
+    {
+      "id": "kaminsky-simchi-levi-1998",
+      "rel": "reference",
+      "resource": "https://kaminsky.ieor.berkeley.edu/Reprints/PK_DSL_98b.pdf"
+    }
+  ]
 }

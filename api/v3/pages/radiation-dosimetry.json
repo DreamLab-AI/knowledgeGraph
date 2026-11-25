@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:radiation-dosimetry",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -68,5 +69,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "icru-report-85",
+      "rel": "reference",
+      "resource": "https://www.icru.org/report/fundamental-quantities-and-units-for-ionizing-radiation-icru-report-85/"
+    },
+    {
+      "id": "hassler-2014",
+      "rel": "reference",
+      "resource": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.1244797&format=json&resultType=core"
+    },
+    {
+      "id": "nasa-space-radiation",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/humans-in-space/space-radiation/"
+    },
+    {
+      "id": "nasa-hrp-sre",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/hrp/elements/radiation"
+    }
+  ]
 }

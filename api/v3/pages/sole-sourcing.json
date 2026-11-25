@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:sole-sourcing",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -118,5 +119,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "psu-single-sole",
+      "rel": "reference",
+      "resource": "https://courses.smeal.psu.edu/scm824fa20/scm824fa20_module_4/2011/06/SCM820-M4L1Single-or-Sole-Sourcing.html"
+    },
+    {
+      "id": "suny-oswego",
+      "rel": "reference",
+      "resource": "https://ww1.oswego.edu/purchasing/single-and-sole-source-procurements"
+    },
+    {
+      "id": "far-6-302-1",
+      "rel": "reference",
+      "resource": "https://www.acquisition.gov/far/6.302-1"
+    },
+    {
+      "id": "uncitral-model-law",
+      "rel": "reference",
+      "resource": "https://uncitral.un.org/sites/uncitral.un.org/files/media-documents/uncitral/en/2011-model-law-on-public-procurement-e.pdf"
+    }
+  ]
 }

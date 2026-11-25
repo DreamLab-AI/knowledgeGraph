@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:etsi-domain-human-interface-ux",
   "domain": "spatial-computing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:569d6bce29b6d3e37810b9306215a9a6425bb43aa21d16075959eff8b8366399",
-    "label": "ontology-mesh",
-    "actor": "agent:ontology-mesh/1"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:ontology-mesh/1"
   },
   "certification": {
     "state": "pending",

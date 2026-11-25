@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:supply-chain-risk-management",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -183,5 +184,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nist-800-161r1",
+      "rel": "reference",
+      "resource": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1-upd1.pdf"
+    },
+    {
+      "id": "christopher-peck-2004",
+      "rel": "reference",
+      "resource": "https://dspace.lib.cranfield.ac.uk/server/api/core/bitstreams/6ce1ceca-e8c6-4b37-8f26-6fdbe3c08a8a/content"
+    },
+    {
+      "id": "simchi-levi-2015",
+      "rel": "reference",
+      "resource": "https://dspace.mit.edu/entities/publication/d44ef29a-78b6-4ec5-a537-d6e4c4f3f55a"
+    },
+    {
+      "id": "c2es-2025",
+      "rel": "reference",
+      "resource": "https://www.c2es.org/wp-content/uploads/2025/09/Climate-Risk-and-Supply-Chain-Report_FINAL_v3.pdf"
+    }
+  ]
 }

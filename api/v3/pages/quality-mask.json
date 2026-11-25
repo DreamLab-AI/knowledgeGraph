@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:quality-mask",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -86,5 +87,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "usgs-qa-tools",
+      "rel": "reference",
+      "resource": "https://landsat.usgs.gov/sites/default/files/documents/landsat_QA_tools_userguide.pdf"
+    },
+    {
+      "id": "usgs-l2sp-guide",
+      "rel": "reference",
+      "resource": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/files/LSDS-1618_Landsat-4-7_C2-L2-ScienceProductGuide-v4.pdf"
+    },
+    {
+      "id": "nasa-hls-atmospheric-correction",
+      "rel": "reference",
+      "resource": "https://hls.gsfc.nasa.gov/atmospheric-correction/"
+    }
+  ]
 }

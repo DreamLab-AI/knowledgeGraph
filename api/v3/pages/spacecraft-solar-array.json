@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:spacecraft-solar-array",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -73,5 +74,82 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ecss-electrical-electronic",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/2022/04/ECSS-E-ST-20C-Rev.2(8April2022).pdf"
+    },
+    {
+      "id": "ecss-photovoltaic",
+      "rel": "reference",
+      "resource": "https://ecss.nl/standard/ecss-e-st-20-08c-rev-2-photovoltaic-assemblies-and-components-20-april-2023/"
+    },
+    {
+      "id": "nasa-power-systems-2026",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/wp-content/uploads/2026/05/3-soa-power-2026-final.pdf"
+    },
+    {
+      "id": "nasa-mechanisms",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/structures-materials-and-mechanisms/"
+    },
+    {
+      "id": "aac-photon",
+      "rel": "reference",
+      "resource": "https://www.aac-clyde.space/what-we-do/space-products-components/photon-solar-arrays"
+    },
+    {
+      "id": "airbus-solar-arrays",
+      "rel": "reference",
+      "resource": "https://www.airbus.com/en/products-services/space/equipment/power/solar-array-products"
+    },
+    {
+      "id": "airbus-uk-neosmg",
+      "rel": "reference",
+      "resource": "https://www.airbus.com/en/newsroom/stories/2023-11-collaborating-for-success-how-airbus-partners-to-grow-the-uk-space-sector"
+    },
+    {
+      "id": "airbus-bepicolombo",
+      "rel": "reference",
+      "resource": "https://www.airbus.com/sites/g/files/jlcbta136/files/7d81b8dd020c8d5b9ea060975efe467f_Press-Release-SPACE-SYSTEMS-02102018-EN.pdf"
+    },
+    {
+      "id": "sstl-exactview-1",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/media-hub/latest-news/2012/exactview-1-satellite-operational-in-orbit"
+    },
+    {
+      "id": "sstl-otb",
+      "rel": "reference",
+      "resource": "https://www.sstl.co.uk/space-portfolio/launched-missions/2010-2019/orbital-test-bed-(otb)-launched-2019"
+    },
+    {
+      "id": "nasa-lucy-test",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/solar-system/nasas-lucy-stretches-its-wings-in-successful-solar-panel-deployment-test/"
+    },
+    {
+      "id": "nasa-lucy-operations",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/blogs/lucy/2023/01/19/nasas-lucy-mission-suspending-further-solar-array-deployment-activities/"
+    },
+    {
+      "id": "nasa-lucy-verification",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/citations/20250002257"
+    },
+    {
+      "id": "esa-space-solar-cells",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Space_for_Earth/Energy/Drinking_in_the_Sun_in_space"
+    },
+    {
+      "id": "nunez-space-cell-reliability",
+      "rel": "reference",
+      "resource": "https://oa.upm.es/81532/"
+    }
+  ]
 }

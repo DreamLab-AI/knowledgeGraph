@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:bill-of-materials",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -94,5 +95,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "jde-bom",
+      "rel": "reference",
+      "resource": "https://docs.oracle.com/cd/E16582_01/doc.91/e15128/set_up_boms.htm"
+    },
+    {
+      "id": "uncw-mrp",
+      "rel": "reference",
+      "resource": "https://csbapp.uncw.edu/janickit/ops370/modules/Module11.pdf"
+    },
+    {
+      "id": "gallego-mrp",
+      "rel": "reference",
+      "resource": "http://www.columbia.edu/~gmg2/4000/pdf/lect_06.pdf"
+    },
+    {
+      "id": "mit-gershwin-mrp",
+      "rel": "reference",
+      "resource": "https://ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/4eec617bb52d64f4ea1bed6d9905bc00_MIT2_854F16_MatrialRequire.pdf"
+    }
+  ]
 }

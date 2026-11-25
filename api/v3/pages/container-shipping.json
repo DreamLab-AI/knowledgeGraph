@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:container-shipping",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -153,5 +154,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "ec-m8594-cosco-ooil",
+      "rel": "reference",
+      "resource": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A32017M8594"
+    },
+    {
+      "id": "worldbank-cppi-2020",
+      "rel": "reference",
+      "resource": "https://documents1.worldbank.org/curated/en/099645006082227512/pdf/P1758330e0760804c082810d112b2854b09.pdf"
+    },
+    {
+      "id": "glossary-transport-statistics-2019",
+      "rel": "reference",
+      "resource": "https://www.sipotra.it/wp-content/uploads/2019/09/Glossary-for-transport-statistics-2019.pdf"
+    },
+    {
+      "id": "usc-sea-grant-box",
+      "rel": "reference",
+      "resource": "https://dornsife.usc.edu/uscseagrant/2020/05/29/2-the-box-an-inside-look-at-the-shipping-container/"
+    }
+  ]
 }

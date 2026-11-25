@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:transfer-orbit",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,52 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-trajectories",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter4-1/"
+    },
+    {
+      "id": "esa-orbits",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Transportation/Types_of_orbits"
+    },
+    {
+      "id": "nasa-finite-burn",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20200011552/downloads/20200011552.pdf"
+    },
+    {
+      "id": "nasa-propulsion",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/smallsat-institute/sst-soa/in-space_propulsion/"
+    },
+    {
+      "id": "ccsds-odm",
+      "rel": "reference",
+      "resource": "https://ccsds.org/wp-content/uploads/gravity_forms/5-448e85c647331d9cbaf66c096458bdd5/2025/11/502x0b3e2.pdf"
+    },
+    {
+      "id": "ecss-aocs",
+      "rel": "reference",
+      "resource": "https://ecss.nl/wp-content/uploads/standards/ecss-e/ECSS-E-ST-60-30C30August2013.pdf"
+    },
+    {
+      "id": "nasa-navigation",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter13-1/"
+    },
+    {
+      "id": "nasa-copernicus",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20190001055/downloads/20190001055.pdf"
+    },
+    {
+      "id": "uk-nspoc-manoeuvre",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/monitor-space-hazards-new-feature-satellite-manoeuvre-support"
+    }
+  ]
 }

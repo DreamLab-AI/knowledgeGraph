@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:traceability-regulation",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -111,5 +112,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "eu-178-3",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/eur/2002/178/article/3"
+    },
+    {
+      "id": "eu-178-18",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/eur/2002/178/article/18/data.htm?view=plain"
+    },
+    {
+      "id": "fda-fsma204",
+      "rel": "reference",
+      "resource": "https://www.fda.gov/food/food-safety-modernization-act-fsma/fsma-final-rule-requirements-additional-traceability-records-certain-foods"
+    },
+    {
+      "id": "eu-lot",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/eudr/2011/91/data.htm?view=plain"
+    },
+    {
+      "id": "eu-fmd",
+      "rel": "reference",
+      "resource": "https://www.legislation.gov.uk/eur/2016/161/adopted/data.htm"
+    },
+    {
+      "id": "fda-dscsa",
+      "rel": "reference",
+      "resource": "https://www.fda.gov/drugs/drug-supply-chain-integrity/drug-supply-chain-security-act-dscsa"
+    },
+    {
+      "id": "iso-22005",
+      "rel": "reference",
+      "resource": "https://www.iso.org/standard/36297.html"
+    }
+  ]
 }

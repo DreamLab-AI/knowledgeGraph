@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:environmental-control-and-life-support-system",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -72,5 +73,47 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/biological-physical/"
+    },
+    {
+      "id": "nasa-eclss",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/"
+    },
+    {
+      "id": "nasa-scor",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/spacecraft-oxygen-recovery-scor/"
+    },
+    {
+      "id": "ecss-e-st-34c",
+      "rel": "reference",
+      "resource": "https://ecss.nl/standard/ecss-e-st-34c-environmantal-control-and-life-support-ecls/"
+    },
+    {
+      "id": "esa-melissa-compartments",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Melissa/Closed_Loop_Compartments"
+    },
+    {
+      "id": "esa-advanced-closed-loop-system",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Advanced_Closed_Loop_System"
+    },
+    {
+      "id": "hendrickx-et-al-2023",
+      "rel": "reference",
+      "resource": "https://pubmed.ncbi.nlm.nih.gov/37620398/"
+    },
+    {
+      "id": "ukspace-exploration-roadmap-2023",
+      "rel": "reference",
+      "resource": "https://www.ukspace.org/wp-content/uploads/2023/07/Space_Exploration_Technology_Roadmap_July2023.pdf"
+    }
+  ]
 }

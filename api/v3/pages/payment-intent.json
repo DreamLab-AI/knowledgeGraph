@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:payment-intent",
   "domain": "artificial-intelligence",
   "provenance": {
-    "wasAttributedTo": "did:nostr:0dc89e6b22d787a7b237a231362b6384c69bb5c6d809370357545d628d2b7f9f",
-    "label": "agent-ontology-import",
-    "actor": "agent:agent-ontology-import/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:agent-ontology-import/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -280,5 +281,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sac-agent-ontology:payment:PaymentIntent",
+      "rel": "reference",
+      "resource": "https://w3id.org/agent-ontology/payment#PaymentIntent"
+    },
+    {
+      "id": "sac-agent-ontology-repo",
+      "rel": "reference",
+      "resource": "https://github.com/s-agent-comm/agent-ontology/tree/750e06d276dd568313a6c03c4e78203887d3fa4b"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:orbital-conjunction",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -83,5 +84,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-cara-risk",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/cara/step-2-close-approach-risk-assessment/"
+    },
+    {
+      "id": "nasa-conjunction-procedure",
+      "rel": "reference",
+      "resource": "https://nodis3.gsfc.nasa.gov/displayDir.cfm?Internal_ID=N_PR_8079_0001_&page_name=Chapter5"
+    },
+    {
+      "id": "nasa-cara-best-practices",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/wp-content/uploads/2023/07/oce-51.pdf?emrc=c0a365%3Femrc%3Dc0a365"
+    },
+    {
+      "id": "ccsds-cdm",
+      "rel": "reference",
+      "resource": "https://ccsds.org/publications/bluebooks/entry/3064/"
+    },
+    {
+      "id": "esa-collision-avoidance",
+      "rel": "reference",
+      "resource": "https://www.esa.int/content/view/full/413425"
+    }
+  ]
 }

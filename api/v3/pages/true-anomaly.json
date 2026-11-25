@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:true-anomaly",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-planetary-orbits",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter5-1/"
+    },
+    {
+      "id": "nasa-cartesian-classical-conversion",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20040084254/downloads/20040084254.pdf"
+    },
+    {
+      "id": "nasa-scenic",
+      "rel": "reference",
+      "resource": "https://ntrs.nasa.gov/api/citations/20180008672/downloads/20180008672.pdf"
+    },
+    {
+      "id": "jpl-naif-conics",
+      "rel": "reference",
+      "resource": "https://naif.jpl.nasa.gov/pub/naif/toolkit_docs/FORTRAN/spicelib/conics.html"
+    },
+    {
+      "id": "esa-pykep-elements",
+      "rel": "reference",
+      "resource": "https://esa.github.io/kep3/elements.html"
+    },
+    {
+      "id": "ansys-stk-classical-elements",
+      "rel": "reference",
+      "resource": "https://help.agi.com/stk/Content/stk/vehSat_coordType_classical.htm"
+    },
+    {
+      "id": "nasa-gsfc-orbital-motion",
+      "rel": "reference",
+      "resource": "https://cdaweb.gsfc.nasa.gov/pub/documents/archived_websites/pwg.gsfc.nasa.gov/stargaze/Smotion.htm"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:receivables-factoring",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -172,5 +173,17 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "sdtscf",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2023/https://cdn.iccwbo.org/content/uploads/sites/3/2017/01/ICC-Standard-Definitions-for-Techniques-of-Supply-Chain-Finance-Global-SCF-Forum-2016.pdf"
+    },
+    {
+      "id": "unidroit",
+      "rel": "reference",
+      "resource": "https://unidroit.org/english/conventions/1988factoring/convention-factoring1988.pdf"
+    }
+  ]
 }

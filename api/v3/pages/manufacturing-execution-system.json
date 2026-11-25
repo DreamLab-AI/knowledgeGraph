@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:manufacturing-execution-system",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -109,5 +110,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "isa95",
+      "rel": "reference",
+      "resource": "https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard"
+    },
+    {
+      "id": "iec62264",
+      "rel": "reference",
+      "resource": "https://web.archive.org/web/2025/https://www.iso.org/standard/57308.html"
+    },
+    {
+      "id": "nist-mes",
+      "rel": "reference",
+      "resource": "https://www.nist.gov/publications/nist-response-mes-request-information"
+    },
+    {
+      "id": "zaidi",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/1905.00687"
+    }
+  ]
 }

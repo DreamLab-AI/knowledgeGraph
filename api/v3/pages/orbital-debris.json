@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:orbital-debris",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -87,5 +88,37 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-1/"
+    },
+    {
+      "id": "reference",
+      "rel": "reference",
+      "resource": "https://orbitaldebris.jsc.nasa.gov/mitigation/"
+    },
+    {
+      "id": "esa-space-debris-statistics",
+      "rel": "reference",
+      "resource": "https://sdup.esoc.esa.int/discosweb/statistics/"
+    },
+    {
+      "id": "iso-24113-2023",
+      "rel": "reference",
+      "resource": "https://www.iso.org/standard/83494.html"
+    },
+    {
+      "id": "caa-orbital-operator-guidance",
+      "rel": "reference",
+      "resource": "https://www.caa.co.uk/publication/download/18909"
+    },
+    {
+      "id": "uksa-active-debris-removal-tender",
+      "rel": "reference",
+      "resource": "https://www.gov.uk/government/news/uk-launches-tender-for-mission-to-clean-up-space-and-safeguard-vital-services"
+    }
+  ]
 }

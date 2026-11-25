@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:last-mile-delivery",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -140,5 +141,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lamilo-last-mile",
+      "rel": "reference",
+      "resource": "https://crossriverpartnership.org/wp-content/uploads/2019/03/LaMiLo-Public-Sector-Influence-on-Last-Mile-Logistics.-Action-8.-Output-5.-FINAL-report.pdf"
+    },
+    {
+      "id": "mohri-adp-2024",
+      "rel": "reference",
+      "resource": "https://minerva-access.unimelb.edu.au/rest/bitstreams/a4100875-4af3-46bd-9e31-5638559a10e4/retrieve"
+    },
+    {
+      "id": "wef-last-mile-2020",
+      "rel": "reference",
+      "resource": "https://www3.weforum.org/docs/WEF_Future_of_the_last_mile_ecosystem.pdf"
+    },
+    {
+      "id": "zhang-demir-lockers",
+      "rel": "reference",
+      "resource": "https://www.frontiersin.org/journals/future-transportation/articles/10.3389/ffutr.2025.1654621/pdf"
+    }
+  ]
 }

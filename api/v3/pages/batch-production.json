@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:batch-production",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -120,5 +121,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lt-process-types",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/06:_Process_Design/6.03:_Process_Types"
+    },
+    {
+      "id": "gatech-manufacturing-systems",
+      "rel": "reference",
+      "resource": "https://www2.isye.gatech.edu/~mgoetsch/cali/Logistics%20Systems%20Design/Full%20Text%20PDF/Manufacturing%20Systems.pdf"
+    },
+    {
+      "id": "newcastle-hicks-eto",
+      "rel": "reference",
+      "resource": "https://www.staff.ncl.ac.uk/chris.hicks/make_to_order.htm"
+    }
+  ]
 }

@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:make-to-stock",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -132,5 +133,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lt-make-to-order-stock",
+      "rel": "reference",
+      "resource": "https://eng.libretexts.org/Under_Construction/Purgatory/Introduction_to_Operations_Management_1st_Ed./06:_Process_Design/6.02:_Make-to-order_and_Make-to-stock"
+    },
+    {
+      "id": "pressbooks-operations-management",
+      "rel": "reference",
+      "resource": "https://ecampusontario.pressbooks.pub/bus108g/chapter/opsmanagement/"
+    },
+    {
+      "id": "mit-ctl-mts-mto",
+      "rel": "reference",
+      "resource": "https://ctl.mit.edu/sites/default/files/documents/optimizing-hybrid-assembly-strategies-in-supply-networks-evaluation-of-make-to-stock-and-make-to-order-models-capstone.pdf"
+    },
+    {
+      "id": "ghalehkhondabi-suer-2018",
+      "rel": "reference",
+      "resource": "https://www.redalyc.org/journal/3967/396754754007/html/"
+    }
+  ]
 }

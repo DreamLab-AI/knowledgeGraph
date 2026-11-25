@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:mars-orbit-radiation-environment",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -83,5 +84,42 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-marie-instrument",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/mission/odyssey/science-instruments/"
+    },
+    {
+      "id": "nasa-marie-pds",
+      "rel": "reference",
+      "resource": "https://pds.nasa.gov/ds-view/pds/viewContext.jsp?identifier=urn:nasa:pds:context:instrument:ody.mar&version=1.0"
+    },
+    {
+      "id": "nasa-mars-orbit-solar-event",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/resource/solar-storms-radiation-at-martian-orbit-and-surface/"
+    },
+    {
+      "id": "nasa-mars-surface-rad",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/resource/radiation-measurements-on-mars/"
+    },
+    {
+      "id": "nasa-oltaris-uncertainties",
+      "rel": "reference",
+      "resource": "https://oltaris.nasa.gov/help_documentation/uncertainties.html"
+    },
+    {
+      "id": "nasa-maven-mars-plasma",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/news-release/maven-maps-electric-currents-around-mars-that-are-fundamental-to-atmospheric-loss/"
+    },
+    {
+      "id": "nasa-crew-radiation-requirements",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/reference/4-0-human-performance/"
+    }
+  ]
 }

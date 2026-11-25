@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:orbital-insertion",
   "domain": "space-science-and-systems",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -78,5 +79,32 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "nasa-navigation",
+      "rel": "reference",
+      "resource": "https://science.nasa.gov/learn/basics-of-space-flight/chapter13-1/"
+    },
+    {
+      "id": "ariane6-manual",
+      "rel": "reference",
+      "resource": "https://ariane.group/app/uploads/sites/4/2024/10/Mua-6_Issue-2_Revision-0_March-2021-1.pdf"
+    },
+    {
+      "id": "ccsds-orbit-data",
+      "rel": "reference",
+      "resource": "https://ccsds.org/Pubs/502x0b3e1.pdf"
+    },
+    {
+      "id": "esa-flight-dynamics",
+      "rel": "reference",
+      "resource": "https://www.esa.int/Enabling_Support/Operations/Ground_Systems_Engineering/Flight_Dynamics"
+    },
+    {
+      "id": "nasa-artemis-correction",
+      "rel": "reference",
+      "resource": "https://www.nasa.gov/blogs/missions/2026/04/03/artemis-ii-flight-day-3-outbound-trajectory-correction-burn-update/"
+    }
+  ]
 }

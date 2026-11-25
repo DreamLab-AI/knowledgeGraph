@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:calibration-traceability",
   "domain": "earth-observation-and-geospatial-sensing",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ddfa0441074f65158c8283902bea0e524e46a1aa246c95c1fca6245c51a01cff",
-    "label": "space-corpus-research",
-    "actor": "agent:space-corpus-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:space-corpus-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -85,5 +86,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "jcgm-vim",
+      "rel": "reference",
+      "resource": "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf"
+    },
+    {
+      "id": "qa4eo-quality-indicator",
+      "rel": "reference",
+      "resource": "http://qa4eo.org/docs/QA4EO-QAEO-GEN-DQK-001_v4.0.pdf"
+    },
+    {
+      "id": "ceos-ard-sr-pfs",
+      "rel": "reference",
+      "resource": "https://ceos.org/ard/files/PFS/SR/v5.0.2/CEOS-ARD-PFS-SR-v5.0.2.pdf"
+    },
+    {
+      "id": "nasa-landsat-calval",
+      "rel": "reference",
+      "resource": "https://landsat.gsfc.nasa.gov/calibration-validation/"
+    }
+  ]
 }

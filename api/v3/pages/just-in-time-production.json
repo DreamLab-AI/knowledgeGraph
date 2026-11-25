@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:just-in-time-production",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -125,5 +126,22 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "lei-jit",
+      "rel": "reference",
+      "resource": "https://www.lean.org/lexicon-terms/just-in-time-production/"
+    },
+    {
+      "id": "toyota-tps",
+      "rel": "reference",
+      "resource": "https://global.toyota/en/company/vision-and-philosophy/production-system/"
+    },
+    {
+      "id": "lt-jit-systems",
+      "rel": "reference",
+      "resource": "https://biz.libretexts.org/Courses/Northeast_Wisconsin_Technical_College/Introduction_to_Operations_Management_(NWTC)/10:_Just_in_Time_Lean_Systems/10.03:_Just-In-Time_(JIT)_Systems"
+    }
+  ]
 }

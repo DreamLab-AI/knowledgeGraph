@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:facility-location-problem",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:ea3d03d62a8eb3ce6364c0dd02f239a16fa22956a9f31626619f330361be9c00",
-    "label": "supply-chain-research",
-    "actor": "agent:supply-chain-research/0.1.0"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:supply-chain-research/0.1.0"
   },
   "certification": {
     "state": "pending",
@@ -125,5 +126,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "petropoulos-2023",
+      "rel": "reference",
+      "resource": "https://arxiv.org/pdf/2303.14217"
+    },
+    {
+      "id": "tran-aalto",
+      "rel": "reference",
+      "resource": "https://mycourses.aalto.fi/pluginfile.php/2142267/mod_folder/content/0/Lecture%209%20-%2015.11./LSA%202023%20Session%209%20-%20Facility%20location%20problems.pdf"
+    },
+    {
+      "id": "reese-2006",
+      "rel": "reference",
+      "resource": "https://digitalcommons.trinity.edu/math_faculty/28"
+    },
+    {
+      "id": "dinitz-jhu",
+      "rel": "reference",
+      "resource": "https://www.cs.jhu.edu/~mdinitz/classes/ApproxAlgorithms/Spring2021/Lectures/Lecture10/lecture10.pdf"
+    }
+  ]
 }

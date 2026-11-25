@@ -6,9 +6,10 @@
   "classIri": "urn:ngm:class:logistics",
   "domain": "supply-chains-and-logistics",
   "provenance": {
-    "wasAttributedTo": "did:nostr:94773a699927da1ef879b90843890b1fe0e671ae898163f4337dcbe5f96992c0",
-    "label": "enrichment-swarm",
-    "actor": "agent:enrichment-swarm/6"
+    "wasAttributedTo": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "label": "jjohare",
+    "actor": "did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a",
+    "via": "agent:enrichment-swarm/6"
   },
   "certification": {
     "state": "pending",
@@ -242,5 +243,27 @@
     "current": 0,
     "stale": 0,
     "unbound": 0
-  }
+  },
+  "sources": [
+    {
+      "id": "cscmp",
+      "rel": "reference",
+      "resource": "https://cscmp.org/CSCMP/Educate/SCM_Definitions_and_Glossary_of_Terms.aspx"
+    },
+    {
+      "id": "ec-logistics",
+      "rel": "reference",
+      "resource": "https://transport.ec.europa.eu/transport-themes/logistics-and-multimodal-transport/logistics_en"
+    },
+    {
+      "id": "iof",
+      "rel": "reference",
+      "resource": "https://raw.githubusercontent.com/iofoundry/ontology/50a88d4bfed6cd388bb11e132778cb2dcd1d7483/supplychain/SupplyChain.rdf"
+    },
+    {
+      "id": "nato-ajp4",
+      "rel": "reference",
+      "resource": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/907825/doctrine_nato_logistics_ajp_4.pdf"
+    }
+  ]
 }

@@ -22,7 +22,7 @@ relatedTo:
   - urn:ngm:class:torque-control
   - urn:ngm:class:velocity
   - urn:ngm:class:velocity-control
-generated: {"by":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
+generated: {"by":"did:nostr:b41654017f6850b13857d19d8ae0e3f88f1365600cab0321e8101c9e92682f7a","via":"agent:ontology-mesh/1","process":"process:vault-migrate/1.0","at":"2026-09-22T12:41:39.024503178Z"}
 ---
 
 # rb 0055 velocity control
